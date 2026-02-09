@@ -1,68 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Portal -->
     <url>
         <loc>https://www.25maths.com/</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- CIE 0580 Module -->
     <url>
-        <loc>https://www.25maths.com/products.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <loc>https://www.25maths.com/cie0580/</loc>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.25maths.com/products/algebra.html</loc>
-        <lastmod>2026-02-09</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://www.25maths.com/cie0580/products.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.25maths.com/products/functions.html</loc>
-        <lastmod>2026-02-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/products/number.html</loc>
-        <lastmod>2026-02-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/pricing.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <loc>https://www.25maths.com/cie0580/products/algebra.html</loc>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://www.25maths.com/cie0580/products/functions.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/cie0580/products/number.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/cie0580/pricing.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/cie0580/free/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Edexcel 4MA1 Module -->
+    <url>
+        <loc>https://www.25maths.com/edx4ma1/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/edx4ma1/products.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/edx4ma1/pricing.html</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/edx4ma1/free/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Coming Soon Modules -->
+    <url>
+        <loc>https://www.25maths.com/amc8/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/edx-ial-p1/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/edx-ial-p2/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+    <!-- Global Pages -->
+    <url>
         <loc>https://www.25maths.com/about.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.25maths.com/support.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.25maths.com/free/</loc>
-        <lastmod>2026-02-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://www.25maths.com/terms.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
         <loc>https://www.25maths.com/privacy.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-02-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>

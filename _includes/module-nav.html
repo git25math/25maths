@@ -1,0 +1,35 @@
+<!-- Module Navigation -->
+{% assign current_module = nil %}
+{% for mod in site.modules %}
+    {% if mod.key == page.module %}
+        {% assign current_module = mod %}
+    {% endif %}
+{% endfor %}
+
+{% if current_module %}
+<nav class="bg-white shadow-sm border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center h-12 space-x-6 overflow-x-auto">
+            <span class="text-sm font-bold text-primary whitespace-nowrap">{{ current_module.name }}</span>
+            <a href="{{ current_module.path }}"
+               class="text-sm whitespace-nowrap {% if page.active_page == 'overview' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+                Overview
+            </a>
+            {% if current_module.status == 'active' %}
+            <a href="{{ current_module.path }}products.html"
+               class="text-sm whitespace-nowrap {% if page.active_page == 'products' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+                Products
+            </a>
+            <a href="{{ current_module.path }}pricing.html"
+               class="text-sm whitespace-nowrap {% if page.active_page == 'pricing' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+                Pricing
+            </a>
+            <a href="{{ current_module.path }}free/"
+               class="text-sm whitespace-nowrap {% if page.active_page == 'free' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+                Free Resources
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+{% endif %}

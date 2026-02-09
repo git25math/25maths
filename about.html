@@ -1,160 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | 25Maths</title>
-    <meta name="description" content="Learn about 25Maths — premium bilingual IGCSE mathematics resources designed to help students excel in Cambridge IGCSE 0580.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#8B1538',
-                        secondary: '#2563EB',
-                        warning: '#F59E0B',
-                        success: '#10B981',
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>body{font-family:'Inter',sans-serif;}</style>
-</head>
-<body class="bg-gray-50">
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-primary">25Maths</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="/products.html" class="text-gray-700 hover:text-primary transition">Products</a>
-                    <a href="/pricing.html" class="text-gray-700 hover:text-primary transition">Pricing</a>
-                    <a href="/about.html" class="text-primary font-semibold">About</a>
-                    <a href="/support.html" class="text-gray-700 hover:text-primary transition">Support</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 pt-2 pb-4 space-y-2">
-                <a href="/products.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Products</a>
-                <a href="/pricing.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Pricing</a>
-                <a href="/about.html" class="block px-3 py-2 text-primary font-semibold hover:bg-gray-100 rounded">About</a>
-                <a href="/support.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Support</a>
-            </div>
-        </div>
-    </nav>
+---
+layout: global
+title: About
+description: "Learn about 25Maths — premium bilingual mathematics resources designed to help students excel across multiple international exam boards."
+active_global: about
+---
 
-    <section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold mb-4">About 25Maths</h1>
-            <p class="text-xl">Empowering international students to excel in IGCSE Mathematics</p>
-        </div>
-    </section>
+<section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-4">About 25Maths</h1>
+        <p class="text-xl">Empowering international students to excel in mathematics</p>
+    </div>
+</section>
 
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
-            <p class="text-lg text-gray-700 mb-4">At 25Maths, we believe every student deserves access to high-quality, understandable mathematics resources—regardless of their language background.</p>
-            <p class="text-lg text-gray-700">We create premium bilingual (English/Chinese) IGCSE mathematics resources that bridge language barriers and make complex concepts accessible. Our materials are meticulously aligned with the Cambridge IGCSE 0580 syllabus, professionally typeset, and independently reviewed by experienced teachers.</p>
-        </div>
-    </section>
+<section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+        <p class="text-lg text-gray-700 mb-4">At 25Maths, we believe every student deserves access to high-quality, understandable mathematics resources — regardless of their language background.</p>
+        <p class="text-lg text-gray-700">We create premium bilingual (English/Chinese) mathematics resources that bridge language barriers and make complex concepts accessible. Our materials cover multiple international exam boards including Cambridge CIE 0580, Edexcel 4MA1, AMC 8, and Edexcel IAL Pure Mathematics, and are professionally typeset and independently reviewed by experienced teachers.</p>
+    </div>
+</section>
 
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">What Makes Us Different</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="text-4xl mb-4">🌐</div>
-                    <h3 class="text-xl font-bold mb-3">Only Bilingual IGCSE Provider</h3>
-                    <p class="text-gray-700">We're the first and only provider of comprehensive bilingual (English/Chinese) IGCSE mathematics resources. Every term, formula, and solution is explained in both languages.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="text-4xl mb-4">⭐</div>
-                    <h3 class="text-xl font-bold mb-3">Exceptional Quality</h3>
-                    <p class="text-gray-700">Professional LaTeX typesetting, independently reviewed by qualified IGCSE teachers, aligned with latest CIE 0580 syllabus. Average rating: 9.7/10.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="text-4xl mb-4">📚</div>
-                    <h3 class="text-xl font-bold mb-3">Complete Solutions</h3>
-                    <p class="text-gray-700">Unlike many resources, we provide detailed step-by-step solutions for every question, following CIE mark scheme standards with common mistakes highlighted.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="text-4xl mb-4">🎓</div>
-                    <h3 class="text-xl font-bold mb-3">Created by Educators</h3>
-                    <p class="text-gray-700">Our resources are developed by teachers with 10+ years of IGCSE mathematics teaching experience in international schools.</p>
-                </div>
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">What Makes Us Different</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="text-4xl mb-4">🌐</div>
+                <h3 class="text-xl font-bold mb-3">Only Bilingual IGCSE Provider</h3>
+                <p class="text-gray-700">We're the first and only provider of comprehensive bilingual (English/Chinese) IGCSE mathematics resources. Every term, formula, and solution is explained in both languages.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="text-4xl mb-4">⭐</div>
+                <h3 class="text-xl font-bold mb-3">Exceptional Quality</h3>
+                <p class="text-gray-700">Professional LaTeX typesetting, independently reviewed by qualified IGCSE teachers, aligned with latest syllabuses. Average rating: 9.7/10.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="text-4xl mb-4">📚</div>
+                <h3 class="text-xl font-bold mb-3">Complete Solutions</h3>
+                <p class="text-gray-700">Unlike many resources, we provide detailed step-by-step solutions for every question, following official mark scheme standards with common mistakes highlighted.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="text-4xl mb-4">🎓</div>
+                <h3 class="text-xl font-bold mb-3">Created by Educators</h3>
+                <p class="text-gray-700">Our resources are developed by teachers with 10+ years of IGCSE mathematics teaching experience in international schools.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Our Quality Promise</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div><p class="font-semibold text-primary">✓ Expert Review</p><p class="text-sm text-gray-600">All materials reviewed by qualified IGCSE teachers</p></div>
-                <div><p class="font-semibold text-primary">✓ Syllabus Aligned</p><p class="text-sm text-gray-600">Matched to CIE 0580 official syllabus</p></div>
-                <div><p class="font-semibold text-primary">✓ Student Tested</p><p class="text-sm text-gray-600">Tested with real students for clarity</p></div>
-            </div>
+<section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Our Quality Promise</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div><p class="font-semibold text-primary">✓ Expert Review</p><p class="text-sm text-gray-600">All materials reviewed by qualified teachers</p></div>
+            <div><p class="font-semibold text-primary">✓ Syllabus Aligned</p><p class="text-sm text-gray-600">Matched to official exam board syllabuses</p></div>
+            <div><p class="font-semibold text-primary">✓ Student Tested</p><p class="text-sm text-gray-600">Tested with real students for clarity</p></div>
         </div>
-    </section>
-
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-white text-2xl font-bold mb-4">25Maths</h3>
-                    <p class="text-sm">Premium Bilingual IGCSE Mathematics Resources</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Products</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/products.html" class="hover:text-white transition">All Products</a></li>
-                        <li><a href="/products/algebra.html" class="hover:text-white transition">Algebra Bundle</a></li>
-                        <li><a href="/products/functions.html" class="hover:text-white transition">Functions Bundle</a></li>
-                        <li><a href="/products/number.html" class="hover:text-white transition">Number Pack</a></li>
-                        <li><a href="/pricing.html" class="hover:text-white transition">Pricing</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/about.html" class="hover:text-white transition">About</a></li>
-                        <li><a href="/support.html" class="hover:text-white transition">Support</a></li>
-                        <li><a href="/free/" class="hover:text-white transition">Free Resources</a></li>
-                        <li><a href="mailto:support@25maths.com" class="hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/terms.html" class="hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>&copy; 2026 25Maths. All rights reserved.</p>
-                <p class="mt-2"><a href="mailto:support@25maths.com" class="hover:text-white transition">support@25maths.com</a></p>
-            </div>
-        </div>
-    </footer>
-    <script>
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-</script>
-</body>
-</html>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-5 gap-8 mb-8">
+            <div>
+                <h3 class="text-white text-2xl font-bold mb-4">25Maths</h3>
+                <p class="text-sm">
+                    Premium bilingual mathematics resources covering multiple international exam boards.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Exam Boards</h4>
+                <ul class="space-y-2 text-sm">
+                    {% for mod in site.modules %}
+                    <li>
+                        <a href="{{ mod.path }}" class="hover:text-white transition">
+                            {{ mod.name }}
+                            {% if mod.status == 'coming_soon' %}<span class="text-gray-500">(soon)</span>{% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Free Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    {% for mod in site.modules %}
+                    {% if mod.status == 'active' and mod.free_count > 0 %}
+                    <li>
+                        <a href="{{ mod.path }}free/" class="hover:text-white transition">
+                            {{ mod.name }} ({{ mod.free_count }})
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/about.html" class="hover:text-white transition">About</a></li>
+                    <li><a href="/support.html" class="hover:text-white transition">Support</a></li>
+                    <li><a href="mailto:support@25maths.com" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                    <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+            <p>&copy; 2026 25Maths. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="mailto:support@25maths.com" class="hover:text-white transition">support@25maths.com</a>
+            </p>
+        </div>
+    </div>
+</footer>

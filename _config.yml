@@ -1,0 +1,65 @@
+# 25Maths Site Configuration
+title: 25Maths
+description: "Premium bilingual mathematics resources for international exam boards"
+url: "https://www.25maths.com"
+baseurl: ""
+
+# Build settings
+plugins:
+  - jekyll-redirect-from
+
+# Module definitions
+modules:
+  - key: cie0580
+    name: CIE 0580
+    full_name: Cambridge IGCSE Mathematics 0580
+    path: /cie0580/
+    status: active
+    color: primary
+    description: "Premium bilingual resources for Cambridge IGCSE 0580"
+    free_count: 8
+    product_count: 3
+  - key: edx4ma1
+    name: Edexcel 4MA1
+    full_name: Pearson Edexcel IGCSE Mathematics 4MA1
+    path: /edx4ma1/
+    status: active
+    color: secondary
+    description: "Bilingual resources for Edexcel IGCSE 4MA1"
+    free_count: 6
+    product_count: 0
+  - key: amc8
+    name: AMC 8
+    full_name: AMC 8 Competition Mathematics
+    path: /amc8/
+    status: coming_soon
+    color: warning
+    description: "Competition math resources coming soon"
+    free_count: 0
+    product_count: 0
+  - key: edx-ial-p1
+    name: IAL P1
+    full_name: Edexcel IAL Pure Mathematics 1
+    path: /edx-ial-p1/
+    status: coming_soon
+    color: success
+    description: "IAL Pure Mathematics 1 resources coming soon"
+    free_count: 0
+    product_count: 0
+  - key: edx-ial-p2
+    name: IAL P2
+    full_name: Edexcel IAL Pure Mathematics 2
+    path: /edx-ial-p2/
+    status: coming_soon
+    color: success
+    description: "IAL Pure Mathematics 2 resources coming soon"
+    free_count: 0
+    product_count: 0
+
+# Exclude from build
+exclude:
+  - PROJECT-PLAN.md
+  - README.md
+  - tasks/
+  - Gemfile
+  - Gemfile.lock
