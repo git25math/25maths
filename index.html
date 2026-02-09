@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25Maths | Bilingual IGCSE Mathematics Resources</title>
+    <meta name="description" content="Premium bilingual (English/Chinese) IGCSE mathematics resources. Vocabulary cards, practice worksheets, and complete solutions for Cambridge 0580. Trusted by international students worldwide.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B1538',    // Burgundy
+                        secondary: '#2563EB',   // Logic Blue
+                        warning: '#F59E0B',     // Amber
+                        success: '#10B981',     // Green
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-primary">25Maths</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/products.html" class="text-gray-700 hover:text-primary transition">Products</a>
+                    <a href="/pricing.html" class="text-gray-700 hover:text-primary transition">Pricing</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="/support.html" class="text-gray-700 hover:text-primary transition">Support</a>
+                    <a href="#subscribe" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Get Started</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/products.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Products</a>
+                <a href="/pricing.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Pricing</a>
+                <a href="/about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">About</a>
+                <a href="/support.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Support</a>
+                <a href="#subscribe" class="block px-3 py-2 bg-primary text-white rounded">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Master IGCSE Maths with<br>Bilingual Excellence
+            </h1>
+            <p class="text-xl md:text-2xl mb-4 text-gray-100">
+                Premium English-Chinese resources for Cambridge IGCSE 0580
+            </p>
+            <p class="text-lg mb-8 text-gray-200">
+                Trusted by students and teachers worldwide
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/products.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition transform hover:-translate-y-1">
+                    Browse Free Resources
+                </a>
+                <a href="#products" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition">
+                    View Premium Bundles →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Bilingual Support<br><span class="text-lg text-gray-600">双语支持</span></h3>
+                    <p class="text-gray-600">
+                        Complete English/Chinese translations make complex mathematics concepts accessible to international students. Every term, every solution explained in both languages.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">✅</div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Exam-Ready Content<br><span class="text-lg text-gray-600">考试就绪</span></h3>
+                    <p class="text-gray-600">
+                        Meticulously aligned with CIE 0580 syllabus and official mark schemes. Practice with confidence knowing you're preparing exactly what examiners expect.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">⭐</div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Quality Guaranteed<br><span class="text-lg text-gray-600">质量保证</span></h3>
+                    <p class="text-gray-600">
+                        Professional LaTeX typesetting, independently reviewed by experienced IGCSE teachers. Rated 9.7/10 for accuracy and clarity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Premium Bundles</h2>
+                <p class="text-xl text-gray-600">Complete practice packages designed by experienced IGCSE educators</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product 1 - Algebra -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="bg-primary h-48 flex items-center justify-center text-white text-6xl font-bold">
+                        A
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Algebra Complete Bundle</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                            <span class="ml-2 text-gray-600">9.5/10</span>
+                        </div>
+                        <div class="text-3xl font-bold text-primary mb-4">£15.00</div>
+
+                        <ul class="space-y-2 mb-6 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                45+ Practice Questions
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                20 Bilingual Vocabulary Terms
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Complete Answer Key
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Foundation to Challenge Levels
+                            </li>
+                        </ul>
+
+                        <a href="/products/algebra.html" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 - Functions (Coming Soon) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden opacity-90">
+                    <div class="bg-secondary h-48 flex items-center justify-center text-white text-6xl font-bold relative">
+                        F
+                        <div class="absolute top-4 right-4 bg-warning text-white text-xs px-3 py-1 rounded-full font-bold">
+                            🚧 COMING SOON
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Functions & Graphs Bundle</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                            <span class="ml-2 text-gray-600">9.8/10</span>
+                        </div>
+                        <div class="text-3xl font-bold text-gray-400 mb-4">£15.00</div>
+
+                        <ul class="space-y-2 mb-6 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                50+ Practice Questions
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Quadratics & Graph Analysis
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Composites & Inverses
+                            </li>
+                        </ul>
+
+                        <button onclick="notifyMe('Functions')" class="block w-full bg-gray-400 text-white text-center py-3 rounded-lg font-semibold cursor-not-allowed">
+                            Notify Me
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 - Number (Coming Soon) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden opacity-90">
+                    <div class="bg-success h-48 flex items-center justify-center text-white text-6xl font-bold relative">
+                        N
+                        <div class="absolute top-4 right-4 bg-warning text-white text-xs px-3 py-1 rounded-full font-bold">
+                            🚧 COMING SOON
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Number System Starter Pack</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                            <span class="ml-2 text-gray-600">9.7/10</span>
+                        </div>
+                        <div class="text-3xl font-bold text-gray-400 mb-4">£12.00</div>
+
+                        <ul class="space-y-2 mb-6 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                45+ Practice Questions
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                40+ Bilingual Terms
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                Perfect for Foundation Level
+                            </li>
+                        </ul>
+
+                        <button onclick="notifyMe('Number')" class="block w-full bg-gray-400 text-white text-center py-3 rounded-lg font-semibold cursor-not-allowed">
+                            Notify Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">599+</div>
+                    <div class="text-gray-600">Bilingual Terms</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">14</div>
+                    <div class="text-gray-600">Free Resources</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">9.7/10</div>
+                    <div class="text-gray-600">Quality Rating</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">1000+</div>
+                    <div class="text-gray-600">Students Helped</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section id="subscribe" class="py-20 bg-gradient-to-r from-primary to-purple-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Get Free IGCSE Math Resources</h2>
+            <p class="text-xl mb-8 text-gray-100">
+                Download 3 free vocabulary card sets and receive exclusive study tips, exam strategies, and early access to new products.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto" onsubmit="subscribeEmail(event)">
+                <input
+                    type="email"
+                    id="email-input"
+                    placeholder="Your email address"
+                    required
+                    class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
+                >
+                <button type="submit" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+                    Subscribe →
+                </button>
+            </form>
+            <p class="mt-4 text-sm text-gray-200">
+                We respect your privacy. Unsubscribe anytime. No spam, ever.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-2xl font-bold mb-4">25Maths</h3>
+                    <p class="text-sm">
+                        Premium Bilingual IGCSE Mathematics Resources. Empowering international students to excel.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/products.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="/products/algebra.html" class="hover:text-white transition">Algebra Bundle</a></li>
+                        <li><a href="/pricing.html" class="hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="/support.html" class="hover:text-white transition">Support</a></li>
+                        <li><a href="mailto:support@25maths.com" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>© 2026 25Maths. All rights reserved.</p>
+                <p class="mt-2">
+                    <a href="mailto:support@25maths.com" class="hover:text-white transition">support@25maths.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Notify Me function
+        function notifyMe(product) {
+            const email = prompt(`Enter your email to be notified when ${product} Bundle is available:`);
+            if (email && email.includes('@')) {
+                alert(`Thank you! We'll notify you at ${email} when ${product} Bundle launches.`);
+                // TODO: Implement actual email collection
+            }
+        }
+
+        // Email subscription
+        function subscribeEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email-input').value;
+            alert(`Thank you for subscribing! We'll send free resources to ${email}`);
+            // TODO: Implement actual email collection (ConvertKit/Mailchimp)
+            document.getElementById('email-input').value = '';
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
