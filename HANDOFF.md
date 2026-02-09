@@ -1,7 +1,7 @@
 # 25Maths 网站 — 项目交接文档
 
 > **最后更新**: 2026-02-09
-> **状态**: Wave 1 + Wave 2 全部完成，未提交 Git，未部署
+> **状态**: 已部署上线，2 项外部服务待配置
 
 ---
 
@@ -9,11 +9,18 @@
 
 ```
 规划 ████████████ 100%
-开发 ████████████ 100%  (6 个 Agent 全部完成)
+开发 ████████████ 100%  (6 个 Agent 全部完成 + 小修复 + Edexcel 资源)
 审计 ████████████ 100%  (Agent F 一致性审查 + 全站验证报告)
-Git  ░░░░░░░░░░░░   0%  ← 你在这里
-部署 ░░░░░░░░░░░░   0%
+Git  ████████████ 100%  (2 commits pushed, GitHub Pages live)
+部署 ██████████░░  85%  ← 你在这里 (Formspree + Gumroad 待配置)
 ```
+
+### Git 提交记录
+
+| Commit | 描述 |
+|--------|------|
+| `b216472` | Complete website overhaul — all products, legal, SEO, free resources, minor fixes |
+| `794e18a` | Add 6 Edexcel 4MA1 vocabulary cards to free resources |
 
 ### 已完成的 Agent 任务
 
@@ -23,67 +30,43 @@ Git  ░░░░░░░░░░░░   0%  ← 你在这里
 | B | 法律 + SEO | `terms.html`, `privacy.html`, `sitemap.xml`, `robots.txt` | ✅ 新建 |
 | C | 首页大修 | `index.html` | ✅ 修改 |
 | D | 产品列表 + 定价 | `products.html`, `pricing.html` | ✅ 修改 |
-| E | 辅助页面 + 免费资源 | `about.html`, `support.html`, `free/index.html`, 8 PDF | ✅ 新建/修改 |
+| E | 辅助页面 + 免费资源 | `about.html`, `support.html`, `free/index.html`, 8 CIE PDF | ✅ 新建/修改 |
 | F | 全站一致性审查 | `products/algebra.html`, `products.html`, `pricing.html` | ✅ 修复 |
+| — | 小修复 + Edexcel | `number.html` CTA 文案、meta desc、6 Edexcel PDF | ✅ 额外修复 |
 
 ---
 
-## 二、Git 状态（未提交）
+## 二、上线前待办清单
 
-### 已修改（6 个文件）
-- `index.html` — 首页：产品卡 Available Now、Formspree 邮件表单、完整 footer
-- `products.html` — 3 个产品卡全部可用、Google Fonts preconnect
-- `pricing.html` — 移除 Coming Soon、mailto 按钮、preconnect
-- `products/algebra.html` — 添加 mobile menu、修复 footer
-- `about.html` — 添加 mobile menu、完整 footer
-- `support.html` — 添加 mobile menu、完整 footer
+### 🔴 需要配置外部服务（2 项）
 
-### 新文件（9 个文件 + 8 PDF）
-- `products/functions.html` — Functions 产品详情页
-- `products/number.html` — Number 产品详情页
-- `terms.html` — 服务条款
-- `privacy.html` — 隐私政策
-- `sitemap.xml` — 全站 11 URL
-- `robots.txt` — SEO 爬虫配置
-- `free/index.html` — 免费资源下载页
-- `free/*.pdf` — 8 套双语词汇卡 PDF
-- `tasks/` — Agent 任务文档（文档类，非网站页面）
-- `PROJECT-PLAN.md` — 总体规划文档
+| # | 任务 | 操作 |
+|---|------|------|
+| 1 | **替换 Formspree ID** | 去 [formspree.io](https://formspree.io) 注册 → 创建 form → 在 `index.html` 中搜索 `{FORM_ID}` 替换为真实 endpoint → commit & push |
+| 2 | **创建 Gumroad 产品** | 在 Gumroad 后台创建 3 个产品，URL slug 必须为：`25maths-algebra`、`25maths-functions`、`25maths-number` |
+
+### ✅ 已修复的小问题（无需再处理）
+
+| 问题 | 状态 |
+|------|------|
+| `products/number.html` CTA 写了 "algebra skills" | ✅ 已改为 "number skills" |
+| `about.html` 缺 `<meta name="description">` | ✅ 已添加 |
+| `pricing.html` 缺 `<meta name="description">` | ✅ 已添加 |
 
 ---
 
-## 三、部署前必做清单
-
-### 🔴 必须完成（阻塞部署）
-
-| # | 任务 | 位置 | 操作 |
-|---|------|------|------|
-| 1 | **替换 Formspree ID** | `index.html` 搜索 `{FORM_ID}` | 去 [formspree.io](https://formspree.io) 注册，创建 form，用真实 endpoint 替换 `{FORM_ID}` |
-| 2 | **创建 Gumroad 产品** | Gumroad 后台 | 创建 3 个产品，URL slug 必须为：`25maths-algebra`、`25maths-functions`、`25maths-number` |
-| 3 | **Git commit & push** | 终端 | 提交所有更改并推送到 GitHub，触发 Pages 部署 |
-
-### 🟡 建议修复（不阻塞部署，但推荐）
-
-| # | 问题 | 位置 | 修复方法 |
-|---|------|------|---------|
-| 1 | Number 页 CTA 写了 "algebra skills" | `products/number.html:437` | 改为 "number skills" |
-| 2 | about.html 缺 meta description | `about.html` `<head>` | 添加 `<meta name="description" content="...">` |
-| 3 | pricing.html 缺 meta description | `pricing.html` `<head>` | 添加 `<meta name="description" content="...">` |
-
----
-
-## 四、网站文件完整清单
+## 三、网站文件完整清单
 
 ```
 25maths-website/
 ├── index.html              # 首页 (405 行)
 ├── products.html           # 产品列表 (215 行)
-├── pricing.html            # 定价页 (179 行)
-├── about.html              # 关于页 (159 行)
+├── pricing.html            # 定价页 (180 行)
+├── about.html              # 关于页 (160 行)
 ├── support.html            # 支持页 (174 行)
 ├── terms.html              # 服务条款 (191 行)
 ├── privacy.html            # 隐私政策 (196 行)
-├── sitemap.xml             # SEO 站点地图
+├── sitemap.xml             # SEO 站点地图 (11 URL)
 ├── robots.txt              # SEO 爬虫规则
 ├── CNAME                   # GitHub Pages 域名: www.25maths.com
 ├── products/
@@ -91,15 +74,21 @@ Git  ░░░░░░░░░░░░   0%  ← 你在这里
 │   ├── functions.html      # Functions 产品页 (506 行) £15
 │   └── number.html         # Number 产品页 (506 行) £12
 ├── free/
-│   ├── index.html          # 免费资源下载页 (227 行)
-│   ├── Algebra-Vocab-Cards.pdf
-│   ├── Coordinate-Geometry-Vocab-Cards.pdf
-│   ├── Geometry-Vocab-Cards.pdf
-│   ├── Mensuration-Vocab-Cards.pdf
-│   ├── Number-Vocab-Cards.pdf
-│   ├── Statistics-Vocab-Cards.pdf
-│   ├── Trigonometry-Vocab-Cards.pdf
-│   └── Vectors-Vocab-Cards.pdf
+│   ├── index.html          # 免费资源下载页 (CIE 8 + Edexcel 6)
+│   ├── Algebra-Vocab-Cards.pdf           # ┐
+│   ├── Coordinate-Geometry-Vocab-Cards.pdf # │
+│   ├── Geometry-Vocab-Cards.pdf          # │ CIE 0580
+│   ├── Mensuration-Vocab-Cards.pdf       # │ (8 套)
+│   ├── Number-Vocab-Cards.pdf            # │
+│   ├── Statistics-Vocab-Cards.pdf        # │
+│   ├── Trigonometry-Vocab-Cards.pdf      # │
+│   ├── Vectors-Vocab-Cards.pdf           # ┘
+│   ├── 4MA1-Number-Vocab-Cards.pdf       # ┐
+│   ├── 4MA1-Algebra-Vocab-Cards.pdf      # │
+│   ├── 4MA1-Functions-Vocab-Cards.pdf    # │ Edexcel 4MA1
+│   ├── 4MA1-Geometry-Vocab-Cards.pdf     # │ (6 套)
+│   ├── 4MA1-Vectors-Vocab-Cards.pdf      # │
+│   └── 4MA1-Statistics-Vocab-Cards.pdf   # ┘
 ├── PROJECT-PLAN.md         # 总体规划（设计系统、产品数据）
 ├── HANDOFF.md              # ← 本文件
 └── tasks/                  # Agent 任务文档
@@ -112,7 +101,7 @@ Git  ░░░░░░░░░░░░   0%  ← 你在这里
 
 ---
 
-## 五、技术架构速查
+## 四、技术架构速查
 
 | 项目 | 值 |
 |------|-----|
@@ -129,20 +118,26 @@ Git  ░░░░░░░░░░░░   0%  ← 你在这里
 
 ---
 
+## 五、免费资源来源
+
+| 考试局 | 数量 | 源目录 | 网站文件名前缀 |
+|--------|------|--------|---------------|
+| Cambridge CIE 0580 | 8 套 | `/ExamBoard/25Maths/products/freebies/` | 无前缀 |
+| Edexcel 4MA1 | 6 套 | `/ExamBoard/25Maths-4MA1/products/freebies/` | `4MA1-` |
+
+首页统计数字 "14 Free Resources" = 8 + 6 ✅
+
+---
+
 ## 六、恢复工作指引
 
 当你回来继续这个项目时：
 
-### 如果要部署
-```bash
-# 1. 先修复小问题（可选）
-# 2. 替换 Formspree ID 和确认 Gumroad 链接
-# 3. 提交并推送
-git add -A
-git commit -m "feat: Complete website overhaul — all products, legal, SEO, free resources"
-git push origin main
-# 4. 等待 GitHub Pages 部署，访问 www.25maths.com 验证
-```
+### 如果要配置 Formspree
+1. 注册 [formspree.io](https://formspree.io)
+2. 创建新 form，获取 endpoint (格式: `f/xxxxxxxx`)
+3. 在 `index.html` 中搜索 `{FORM_ID}` 替换为真实 ID
+4. `git add index.html && git commit -m "fix: Add Formspree endpoint" && git push`
 
 ### 如果要继续开发
 - 阅读 `tasks/reports/VERIFICATION-REPORT.md` 了解全站审计详情
@@ -154,6 +149,12 @@ git push origin main
 - 修改：Hero 颜色、字母、产品数据、FAQ、Gumroad 链接
 - 更新：`products.html` 添加卡片、`sitemap.xml` 添加 URL、footer 添加链接
 
+### 如果要添加更多免费资源
+- CIE PDF 直接放 `free/` 目录
+- Edexcel PDF 用 `4MA1-` 前缀
+- 更新 `free/index.html` 对应板块
+- 更新首页统计数字
+
 ---
 
 ## 七、验证报告摘要
@@ -162,7 +163,7 @@ git push origin main
 
 | 审计项 | 结果 |
 |--------|------|
-| 文件完整性 (21 文件) | PASS |
+| 文件完整性 (27 文件) | PASS |
 | 导航一致性 (11 页) | PASS |
 | 移动端菜单 (11 页) | PASS |
 | Footer 一致性 (11 页) | PASS |
@@ -174,3 +175,4 @@ git push origin main
 | 版权年份 2026 | PASS |
 | 邮件表单 | PASS (占位符) |
 | SEO 文件 | PASS |
+| 免费资源 (14 PDF) | PASS |
