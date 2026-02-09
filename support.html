@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | 25Maths</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#8B1538'}}}}</script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>body{font-family:'Inter',sans-serif;}</style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-primary">25Maths</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="/products.html" class="text-gray-700 hover:text-primary">Products</a>
+                <a href="/pricing.html" class="text-gray-700 hover:text-primary">Pricing</a>
+                <a href="/about.html" class="text-gray-700 hover:text-primary">About</a>
+                <a href="/support.html" class="text-primary font-semibold">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Support & Contact</h1>
+            <p class="text-xl">We're here to help!</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="bg-gray-50 p-6 rounded-lg">
+                    <summary class="font-semibold cursor-pointer">How do I purchase a product?</summary>
+                    <p class="mt-3 text-gray-700">Click "Buy Now" on any product page. You'll be directed to our secure checkout. After payment, you'll instantly receive download links via email.</p>
+                </details>
+                <details class="bg-gray-50 p-6 rounded-lg">
+                    <summary class="font-semibold cursor-pointer">What payment methods are accepted?</summary>
+                    <p class="mt-3 text-gray-700">We accept all major credit cards, debit cards, and PayPal through our secure payment processor.</p>
+                </details>
+                <details class="bg-gray-50 p-6 rounded-lg">
+                    <summary class="font-semibold cursor-pointer">Can I print the resources?</summary>
+                    <p class="mt-3 text-gray-700">Yes! Our PDFs are optimized for printing. Print as many copies as you need for personal/classroom use.</p>
+                </details>
+                <details class="bg-gray-50 p-6 rounded-lg">
+                    <summary class="font-semibold cursor-pointer">Do you offer refunds?</summary>
+                    <p class="mt-3 text-gray-700">Yes! We offer a 14-day money-back guarantee. If you're not satisfied, email us within 14 days for a full refund.</p>
+                </details>
+                <details class="bg-gray-50 p-6 rounded-lg">
+                    <summary class="font-semibold cursor-pointer">What if I find an error?</summary>
+                    <p class="mt-3 text-gray-700">Email us at support@25maths.com with your order number. We'll send corrected files within 24 hours.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <form action="mailto:support@25maths.com" method="post" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Name</label>
+                        <input type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Email</label>
+                        <input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Subject</label>
+                        <select name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                            <option>General Inquiry</option>
+                            <option>Product Question</option>
+                            <option>Technical Support</option>
+                            <option>School Licensing</option>
+                            <option>Report an Error</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Message</label>
+                        <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90">Send Message</button>
+                </form>
+                <p class="text-center text-sm text-gray-600 mt-6">Or email us directly: <a href="mailto:support@25maths.com" class="text-primary font-semibold">support@25maths.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2026 25Maths. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
