@@ -4,20 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing | 25Maths</title>
+    <meta name="description" content="Choose your 25Maths bundle — individual packs from £12, 2-bundle deals, or the complete package. Lifetime access with 14-day money-back guarantee.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config={theme:{extend:{colors:{primary:'#8B1538'}}}}</script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B1538',
+                        secondary: '#2563EB',
+                        warning: '#F59E0B',
+                        success: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>body{font-family:'Inter',sans-serif;}</style>
 </head>
 <body class="bg-gray-50">
     <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-primary">25Maths</a>
-            <div class="hidden md:flex space-x-8">
-                <a href="/products.html" class="text-gray-700 hover:text-primary">Products</a>
-                <a href="/pricing.html" class="text-primary font-semibold">Pricing</a>
-                <a href="/about.html" class="text-gray-700 hover:text-primary">About</a>
-                <a href="/support.html" class="text-gray-700 hover:text-primary">Support</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-primary">25Maths</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/products.html" class="text-gray-700 hover:text-primary transition">Products</a>
+                    <a href="/pricing.html" class="text-primary font-semibold">Pricing</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="/support.html" class="text-gray-700 hover:text-primary transition">Support</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="/products.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Products</a>
+                <a href="/pricing.html" class="block px-3 py-2 text-primary font-semibold hover:bg-gray-100 rounded">Pricing</a>
+                <a href="/about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">About</a>
+                <a href="/support.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Support</a>
             </div>
         </div>
     </nav>
@@ -47,7 +82,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg p-8 text-center border-4 border-primary relative">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">COMING SOON</div>
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">BEST FOR 2 TOPICS</div>
                     <h3 class="text-2xl font-bold mb-4">2-Bundle Deal</h3>
                     <div class="text-4xl font-bold text-primary mb-2">£25</div>
                     <p class="text-success font-semibold mb-4">Save £5</p>
@@ -59,7 +94,9 @@
                         <li>✓ Bilingual support</li>
                         <li>✓ Lifetime access</li>
                     </ul>
-                    <button class="block w-full bg-gray-400 text-white py-3 rounded-lg font-semibold">Available Soon</button>
+                    <a href="mailto:support@25maths.com?subject=2-Bundle%20Deal%20Inquiry" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        Contact to Purchase
+                    </a>
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg p-8 text-center">
@@ -75,7 +112,9 @@
                         <li>✓ Priority support</li>
                         <li>✓ Lifetime updates</li>
                     </ul>
-                    <button class="block w-full bg-gray-400 text-white py-3 rounded-lg font-semibold">Coming Soon</button>
+                    <a href="mailto:support@25maths.com?subject=Complete%20Package%20Inquiry" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        Contact to Purchase
+                    </a>
                 </div>
             </div>
 
@@ -93,9 +132,49 @@
     </section>
 
     <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p>© 2026 25Maths. All rights reserved.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-2xl font-bold mb-4">25Maths</h3>
+                    <p class="text-sm">Premium Bilingual IGCSE Mathematics Resources</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/products.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="/products/algebra.html" class="hover:text-white transition">Algebra Bundle</a></li>
+                        <li><a href="/products/functions.html" class="hover:text-white transition">Functions Bundle</a></li>
+                        <li><a href="/products/number.html" class="hover:text-white transition">Number Pack</a></li>
+                        <li><a href="/pricing.html" class="hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="/support.html" class="hover:text-white transition">Support</a></li>
+                        <li><a href="/free/" class="hover:text-white transition">Free Resources</a></li>
+                        <li><a href="mailto:support@25maths.com" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 25Maths. All rights reserved.</p>
+                <p class="mt-2"><a href="mailto:support@25maths.com" class="hover:text-white transition">support@25maths.com</a></p>
+            </div>
         </div>
     </footer>
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
