@@ -1,6 +1,6 @@
 # 25Maths Site Configuration
 title: 25Maths
-description: "Premium bilingual mathematics resources for international exam boards"
+description: "Premium exam-aligned mathematics resources for international exam boards"
 url: "https://www.25maths.com"
 baseurl: ""
 
@@ -16,7 +16,7 @@ modules:
     path: /cie0580/
     status: active
     color: primary
-    description: "Premium bilingual resources for Cambridge IGCSE 0580"
+    description: "Premium exam-aligned resources for Cambridge IGCSE 0580"
     free_count: 8
     product_count: 3
   - key: edx4ma1
@@ -25,7 +25,7 @@ modules:
     path: /edx4ma1/
     status: active
     color: secondary
-    description: "Bilingual resources for Edexcel IGCSE 4MA1"
+    description: "Exam-aligned resources for Edexcel IGCSE 4MA1"
     free_count: 6
     product_count: 0
 
