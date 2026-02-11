@@ -63,6 +63,7 @@ git push -u origin main
 - Added blog highlights on homepage and blog link in global navigation
 - Added EN / 简体 / 繁體 paths for home, subscription, and blog with language switcher
 - Added EN / 简体 / 繁體 versions for About, Support, Terms, Privacy
+- Removed AMC8 and IAL modules from site navigation and sitemap
 
 ---
 

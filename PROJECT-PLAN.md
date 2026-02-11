@@ -156,6 +156,7 @@ active_global: about   # highlights in global-nav
 | 2026-02-11 | **Blog launch** — blog index, post layout, starter articles |
 | 2026-02-11 | **Homepage update** — latest articles section + blog navigation |
 | 2026-02-11 | **Multilingual rollout** — EN/简体/繁體 home, subscription, blog, starter posts |
+| 2026-02-11 | **Scope change** — removed AMC8 and IAL modules from active site |
 
 ## Next Steps
 

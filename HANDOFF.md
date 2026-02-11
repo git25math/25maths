@@ -152,6 +152,7 @@
 - ✅ 首页加入最新文章区块，导航加入 Blog 入口
 - ✅ 三语页面上线（EN/简体/繁體：首页、订阅、博客与文章）
 - ✅ 三语 About/Support/Terms/Privacy 上线
+- ✅ 移除 AMC8 / IAL P1 / IAL P2 模块
 
 ### 中期
 
