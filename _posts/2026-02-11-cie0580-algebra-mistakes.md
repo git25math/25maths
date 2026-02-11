@@ -11,9 +11,6 @@ lang_links:
   - code: zh-CN
     label: 简体
     url: /zh-cn/blog/cie0580-daishu-changjian-cuowu.html
-  - code: zh-Hant
-    label: 繁體
-    url: /zh-hant/blog/cie0580-daishu-changjian-cuowu.html
 ---
 
 Algebra questions in CIE 0580 are predictable — but small mistakes can cost full marks.  

@@ -12,9 +12,6 @@ lang_links:
   - code: zh-CN
     label: 简体
     url: /zh-cn/blog/cie0580-daishu-changjian-cuowu.html
-  - code: zh-Hant
-    label: 繁體
-    url: /zh-hant/blog/cie0580-daishu-changjian-cuowu.html
 ---
 
 代数题型规律很稳定，但细小错误会直接丢分。  

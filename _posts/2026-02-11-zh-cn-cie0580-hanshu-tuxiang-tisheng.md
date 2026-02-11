@@ -12,9 +12,6 @@ lang_links:
   - code: zh-CN
     label: 简体
     url: /zh-cn/blog/cie0580-hanshu-tuxiang-tisheng.html
-  - code: zh-Hant
-    label: 繁體
-    url: /zh-hant/blog/cie0580-hanshu-tuxiang-tisheng.html
 ---
 
 函数与图像的题型很集中，抓住套路就能稳拿分。

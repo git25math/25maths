@@ -11,9 +11,6 @@ lang_links:
   - code: zh-CN
     label: 简体
     url: /zh-cn/blog/4ma1-bili-baifenbi-cuowu.html
-  - code: zh-Hant
-    label: 繁體
-    url: /zh-hant/blog/4ma1-bili-baifenbi-cuowu.html
 ---
 
 Ratio and percentage questions look easy — but they hide common traps.  

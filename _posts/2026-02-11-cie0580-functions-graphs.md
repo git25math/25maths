@@ -11,9 +11,6 @@ lang_links:
   - code: zh-CN
     label: 简体
     url: /zh-cn/blog/cie0580-hanshu-tuxiang-tisheng.html
-  - code: zh-Hant
-    label: 繁體
-    url: /zh-hant/blog/cie0580-hanshu-tuxiang-tisheng.html
 ---
 
 Functions and graphs usually include a small set of patterns.  
