@@ -58,6 +58,7 @@
 - [ ] **README 状态更新**（与当前实际进度一致）
 - [x] **订阅页面上线**（subscription.html）
 - [x] **订阅节奏与8周专题表落地**（见 plan/SUBSCRIPTION-PLAN.md）
+- [x] **博客与主页入口上线**（/blog + 首页最新文章）
 
 ### P2 SEO 与可维护性
 - [ ] **admin 页面禁止索引**（robots 或 noindex）

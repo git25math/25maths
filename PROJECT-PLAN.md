@@ -153,6 +153,7 @@ active_global: about   # highlights in global-nav
 | 2026-02-10 | Strategic framework integration (30-60-90, IP, constraints) |
 | 2026-02-11 | **Membership launch prep** — subscription page, waitlist flow, email templates |
 | 2026-02-11 | **Blog launch** — blog index, post layout, starter articles |
+| 2026-02-11 | **Homepage update** — latest articles section + blog navigation |
 
 ## Next Steps
 

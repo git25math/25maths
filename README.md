@@ -60,6 +60,7 @@ git push -u origin main
 - Removed direct-download PDFs to enforce Payhip email gate
 - Added membership CTAs across homepage, CIE pages, and product pages
 - Launched blog section with starter articles for SEO and lead capture
+- Added blog highlights on homepage and blog link in global navigation
 
 ---
 

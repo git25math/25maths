@@ -64,6 +64,7 @@
 - [x] 订阅页面上线（subscription.html）
 - [x] 8 周专题规划文档（plan/SUBSCRIPTION-PLAN.md）
 - [x] 会员入口加入导航与核心页面
+- [x] 博客与首页最新文章入口
 - [ ] Payhip 订阅链接替换占位符
 
 ---
