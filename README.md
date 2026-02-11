@@ -62,6 +62,7 @@ git push -u origin main
 - Launched blog section with starter articles for SEO and lead capture
 - Added blog highlights on homepage and blog link in global navigation
 - Added EN / 简体 / 繁體 paths for home, subscription, and blog with language switcher
+- Added EN / 简体 / 繁體 versions for About, Support, Terms, Privacy
 
 ---
 

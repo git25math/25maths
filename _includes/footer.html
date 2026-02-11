@@ -5,6 +5,8 @@
 {% assign about_label = "About" %}
 {% assign support_label = "Support" %}
 {% assign membership_label = "Membership" %}
+{% assign terms_label = "Terms of Service" %}
+{% assign privacy_label = "Privacy Policy" %}
 {% if page.lang == 'en' %}
     {% assign blog_path = "/en/blog/" %}
     {% assign membership_path = "/en/subscription.html" %}
@@ -15,6 +17,8 @@
     {% assign about_label = "关于" %}
     {% assign support_label = "支持" %}
     {% assign membership_label = "会员" %}
+    {% assign terms_label = "服务条款" %}
+    {% assign privacy_label = "隐私政策" %}
 {% elsif page.lang == 'zh-Hant' %}
     {% assign blog_path = "/zh-hant/blog/" %}
     {% assign membership_path = "/zh-hant/subscription.html" %}
@@ -22,6 +26,8 @@
     {% assign about_label = "關於" %}
     {% assign support_label = "支援" %}
     {% assign membership_label = "會員" %}
+    {% assign terms_label = "服務條款" %}
+    {% assign privacy_label = "隱私政策" %}
 {% endif %}
 <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,8 +69,8 @@
                 <h4 class="text-white font-semibold mb-4">Company</h4>
                 <ul class="space-y-2 text-sm">
                     <li><a href="{{ blog_path }}" class="hover:text-white transition">{{ blog_label }}</a></li>
-                    <li><a href="/about.html" class="hover:text-white transition">{{ about_label }}</a></li>
-                    <li><a href="/support.html" class="hover:text-white transition">{{ support_label }}</a></li>
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/about.html{% elsif page.lang == 'zh-Hant' %}/zh-hant/about.html{% elsif page.lang == 'en' %}/en/about.html{% else %}/about.html{% endif %}" class="hover:text-white transition">{{ about_label }}</a></li>
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/support.html{% elsif page.lang == 'zh-Hant' %}/zh-hant/support.html{% elsif page.lang == 'en' %}/en/support.html{% else %}/support.html{% endif %}" class="hover:text-white transition">{{ support_label }}</a></li>
                     <li><a href="{{ membership_path }}" class="hover:text-white transition">{{ membership_label }}</a></li>
                     <li><a href="mailto:support@25maths.com" class="hover:text-white transition">Contact</a></li>
                 </ul>
@@ -72,8 +78,8 @@
             <div>
                 <h4 class="text-white font-semibold mb-4">Legal</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/terms.html" class="hover:text-white transition">Terms of Service</a></li>
-                    <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/terms.html{% elsif page.lang == 'zh-Hant' %}/zh-hant/terms.html{% elsif page.lang == 'en' %}/en/terms.html{% else %}/terms.html{% endif %}" class="hover:text-white transition">{{ terms_label }}</a></li>
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/privacy.html{% elsif page.lang == 'zh-Hant' %}/zh-hant/privacy.html{% elsif page.lang == 'en' %}/en/privacy.html{% else %}/privacy.html{% endif %}" class="hover:text-white transition">{{ privacy_label }}</a></li>
                 </ul>
             </div>
         </div>
