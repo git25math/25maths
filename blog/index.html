@@ -1,0 +1,38 @@
+---
+layout: global
+title: Blog
+description: "Weekly topic analysis, study strategies, and CIE/Edexcel exam tips."
+active_global: blog
+---
+
+<section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">25Maths Blog</h1>
+        <p class="text-lg md:text-xl opacity-90">Topic breakdowns, exam strategies, and weekly practice guidance.</p>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-8">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="block bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition">
+                <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">{{ post.title }}</h2>
+                {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
+                <p class="text-primary font-semibold">Read article →</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-3">Want weekly practice packs?</h2>
+        <p class="text-gray-600 mb-6">Join the membership and receive one topical pack every week.</p>
+        <a href="/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+            View Membership
+        </a>
+    </div>
+</section>

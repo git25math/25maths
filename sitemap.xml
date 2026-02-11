@@ -135,4 +135,28 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
+    <url>
+        <loc>https://www.25maths.com/blog/</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/2026/02/11/cie0580-algebra-mistakes.html</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/2026/02/11/cie0580-functions-graphs.html</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/2026/02/11/4ma1-ratio-percentage.html</loc>
+        <lastmod>2026-02-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>

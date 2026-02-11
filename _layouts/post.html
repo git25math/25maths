@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="bg-gray-50">
+    {% include global-nav.html %}
+
+    <article class="bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="mb-8">
+                <p class="text-sm text-gray-500">{{ page.date | date: "%B %d, %Y" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+                <h1 class="text-4xl font-bold text-gray-900 mt-2">{{ page.title }}</h1>
+                {% if page.subtitle %}<p class="text-lg text-gray-600 mt-3">{{ page.subtitle }}</p>{% endif %}
+            </div>
+
+            <div class="prose max-w-none">
+                {{ content }}
+            </div>
+
+            <div class="mt-12 border-t pt-8">
+                <div class="bg-gray-50 rounded-2xl p-6 text-center">
+                    <h2 class="text-2xl font-bold mb-2">Get weekly topic practice</h2>
+                    <p class="text-gray-600 mb-5">Join the waitlist to receive new packs and early‑bird pricing.</p>
+                    <a href="/subscription.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        Join Waitlist
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold mb-4">Ask a question</h2>
+                <form action="https://formspree.io/f/{FORM_ID}" method="POST" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" name="name" required placeholder="Your name"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                        <input type="email" name="email" required placeholder="Email for reply"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <textarea name="message" rows="5" required placeholder="Your question"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        Send Question
+                    </button>
+                    <p class="text-xs text-gray-500">We’ll reply by email. No spam. <a href="/privacy.html" class="underline">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    {% include footer.html %}
+    {% include mobile-menu-js.html %}
+</body>
+</html>

@@ -13,7 +13,7 @@
 
 25Maths is a modular static website (Jekyll on GitHub Pages) selling bilingual (English/Chinese) mathematics resources for multiple international exam boards. The site uses a per-module architecture where each exam board has independent pages for products, pricing, and free resources.
 
-## Current State (as of 2026-02-10)
+## Current State (as of 2026-02-11)
 
 ### Site Architecture
 
@@ -45,6 +45,9 @@ www.25maths.com/privacy.html      → Global page
 | Page | Path | Status |
 |------|------|--------|
 | Portal homepage | `index.html` | ✅ Live |
+| Membership | `subscription.html` | ✅ Live |
+| Waitlist thank-you | `thanks.html` | ✅ Live |
+| Blog index | `blog/index.html` | ✅ Live |
 | CIE 0580 homepage | `cie0580/index.html` | ✅ Live |
 | CIE 0580 products | `cie0580/products.html` | ✅ Live |
 | CIE 0580 pricing | `cie0580/pricing.html` | ✅ Live |
@@ -148,6 +151,8 @@ active_global: about   # highlights in global-nav
 | 2026-02-10 | Currency migration: GBP → USD site-wide |
 | 2026-02-10 | Admin changelog (admin/changelog.html) |
 | 2026-02-10 | Strategic framework integration (30-60-90, IP, constraints) |
+| 2026-02-11 | **Membership launch prep** — subscription page, waitlist flow, email templates |
+| 2026-02-11 | **Blog launch** — blog index, post layout, starter articles |
 
 ## Next Steps
 

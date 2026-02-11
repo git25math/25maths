@@ -52,6 +52,15 @@ git push -u origin main
 - ✅ Legal pages + SEO + sitemap
 - ⏳ Payhip paid product listings (waiting on live URLs)
 
+## 🧾 Latest Updates (2026-02-11)
+
+- Added weekly membership page ($9.99/month) and subscription plan doc
+- Implemented waitlist forms + thank-you flow for paid products
+- Standardized pricing and bundle deal messaging
+- Removed direct-download PDFs to enforce Payhip email gate
+- Added membership CTAs across homepage, CIE pages, and product pages
+- Launched blog section with starter articles for SEO and lead capture
+
 ---
 
 © 2026 25Maths

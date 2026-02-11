@@ -56,8 +56,8 @@
 - [ ] **Functions/Number Bundle 质量审查**
 - [ ] **定价页“School & Bulk Licensing”是否保留**（若暂不做则下线）
 - [ ] **README 状态更新**（与当前实际进度一致）
-- [ ] **订阅页面上线**（subscription.html）
-- [ ] **订阅节奏与8周专题表落地**（见 plan/SUBSCRIPTION-PLAN.md）
+- [x] **订阅页面上线**（subscription.html）
+- [x] **订阅节奏与8周专题表落地**（见 plan/SUBSCRIPTION-PLAN.md）
 
 ### P2 SEO 与可维护性
 - [ ] **admin 页面禁止索引**（robots 或 noindex）

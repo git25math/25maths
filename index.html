@@ -61,6 +61,29 @@ description: "25Maths — Premium bilingual (English/Chinese) mathematics resour
     </div>
 </section>
 
+<!-- Latest Articles -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Latest Articles</h2>
+                <p class="text-gray-600">Short, practical guides for CIE and Edexcel students.</p>
+            </div>
+            <a href="/blog/" class="text-primary font-semibold hover:underline">View all →</a>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            {% for post in site.posts limit:3 %}
+            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+                <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ post.title }}</h3>
+                {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
+                <span class="text-primary font-semibold">Read article →</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <!-- Value Propositions -->
 <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
