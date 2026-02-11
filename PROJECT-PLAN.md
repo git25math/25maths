@@ -156,6 +156,7 @@ active_global: about   # highlights in global-nav
 | 2026-02-11 | **Blog launch** — blog index, post layout, starter articles |
 | 2026-02-11 | **Homepage update** — latest articles section + blog navigation |
 | 2026-02-11 | **Multilingual rollout** — EN/简体/繁體 home, subscription, blog, starter posts |
+| 2026-02-11 | **CIE 0580 multilingual expansion** — localized module pages + product detail pages |
 | 2026-02-11 | **Scope change** — removed AMC8 and IAL modules from active site |
 
 ## Next Steps
@@ -166,15 +167,15 @@ active_global: about   # highlights in global-nav
 3. **Edexcel 4MA1 products** — Create premium bundles when content is ready, update products.html and pricing.html
 
 ### Medium-term
-4. **Tailwind build pipeline** — Replace CDN with CLI-built CSS for production (< 10KB vs ~300KB)
-5. **AMC 8 content** — Create resources, update module status in _config.yml from coming_soon to active
-6. **IAL Pure content** — Same as above for IAL P1 and P2
-7. **favicon.ico / apple-touch-icon.png** — Generate from favicon.svg for broader browser support
+5. **Tailwind build pipeline** — Replace CDN with CLI-built CSS for production (< 10KB vs ~300KB)
+6. **AMC 8 content** — Create resources, update module status in _config.yml from coming_soon to active
+7. **IAL Pure content** — Same as above for IAL P1 and P2
+8. **favicon.ico / apple-touch-icon.png** — Generate from favicon.svg for broader browser support
 
 ### Long-term
-8. **Subscription model** — Add subscription_price to module config, implement on pricing pages
-9. **Migrate hosting** — Consider Cloudflare Pages/Netlify for true 301 redirects
-10. **Analytics** — Add privacy-friendly analytics (Plausible/Umami)
+9. **Subscription model** — Add subscription_price to module config, implement on pricing pages
+10. **Migrate hosting** — Consider Cloudflare Pages/Netlify for true 301 redirects
+11. **Analytics** — Add privacy-friendly analytics (Plausible/Umami)
 
 ## How to Add a New Module
 
