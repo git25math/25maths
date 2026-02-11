@@ -11,7 +11,7 @@
 
 ## Project Overview
 
-25Maths is a modular static website (Jekyll on GitHub Pages) selling bilingual (English/Chinese) mathematics resources for multiple international exam boards. The site uses a per-module architecture where each exam board has independent pages for products, pricing, and free resources.
+25Maths is a modular static website (Jekyll on GitHub Pages) selling bilingual (English/Chinese) mathematics resources for multiple international exam boards. The site uses a per-module architecture where each exam board has independent pages for products, pricing, and free resources. A weekly membership model ($9.99/month) provides ongoing topical practice packs.
 
 ## Current State (as of 2026-02-11)
 
@@ -19,6 +19,7 @@
 
 ```
 www.25maths.com/                  → Portal (module selector)
+www.25maths.com/subscription.html → Weekly membership (CIE 0580)
 www.25maths.com/cie0580/          → CIE 0580 module (active)
 www.25maths.com/edx4ma1/          → Edexcel 4MA1 module (active)
 www.25maths.com/amc8/             → AMC 8 module (coming soon)
