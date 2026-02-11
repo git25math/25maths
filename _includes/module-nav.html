@@ -7,26 +7,45 @@
 {% endfor %}
 
 {% if current_module %}
+{% assign module_base = current_module.path %}
+{% if page.module_path %}
+    {% assign module_base = page.module_path %}
+{% endif %}
+{% assign nav_label_overview = "Overview" %}
+{% assign nav_label_products = "Products" %}
+{% assign nav_label_pricing = "Pricing" %}
+{% assign nav_label_free = "Free Resources" %}
+{% if page.lang == "zh-CN" %}
+    {% assign nav_label_overview = "概览" %}
+    {% assign nav_label_products = "产品" %}
+    {% assign nav_label_pricing = "价格" %}
+    {% assign nav_label_free = "免费资源" %}
+{% elsif page.lang == "zh-Hant" %}
+    {% assign nav_label_overview = "概覽" %}
+    {% assign nav_label_products = "產品" %}
+    {% assign nav_label_pricing = "價格" %}
+    {% assign nav_label_free = "免費資源" %}
+{% endif %}
 <nav class="bg-white shadow-sm border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-12 space-x-6 overflow-x-auto">
             <span class="text-sm font-bold text-primary whitespace-nowrap">{{ current_module.name }}</span>
-            <a href="{{ current_module.path }}"
+            <a href="{{ module_base }}"
                class="text-sm whitespace-nowrap {% if page.active_page == 'overview' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
-                Overview
+                {{ nav_label_overview }}
             </a>
             {% if current_module.status == 'active' %}
-            <a href="{{ current_module.path }}products.html"
+            <a href="{{ module_base }}products.html"
                class="text-sm whitespace-nowrap {% if page.active_page == 'products' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
-                Products
+                {{ nav_label_products }}
             </a>
-            <a href="{{ current_module.path }}pricing.html"
+            <a href="{{ module_base }}pricing.html"
                class="text-sm whitespace-nowrap {% if page.active_page == 'pricing' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
-                Pricing
+                {{ nav_label_pricing }}
             </a>
-            <a href="{{ current_module.path }}free/"
+            <a href="{{ module_base }}free/"
                class="text-sm whitespace-nowrap {% if page.active_page == 'free' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
-                Free Resources
+                {{ nav_label_free }}
             </a>
             {% endif %}
         </div>
