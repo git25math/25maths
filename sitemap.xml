@@ -78,26 +78,6 @@
         <priority>0.7</priority>
     </url>
 
-    <!-- Coming Soon Modules -->
-    <url>
-        <loc>https://www.25maths.com/amc8/</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/edx-ial-p1/</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/edx-ial-p2/</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
-    </url>
-
     <!-- Global Pages -->
     <url>
         <loc>https://www.25maths.com/about.html</loc>

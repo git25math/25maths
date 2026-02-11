@@ -28,33 +28,6 @@ modules:
     description: "Bilingual resources for Edexcel IGCSE 4MA1"
     free_count: 6
     product_count: 0
-  - key: amc8
-    name: AMC 8
-    full_name: AMC 8 Competition Mathematics
-    path: /amc8/
-    status: coming_soon
-    color: warning
-    description: "Competition math resources coming soon"
-    free_count: 0
-    product_count: 0
-  - key: edx-ial-p1
-    name: IAL P1
-    full_name: Edexcel IAL Pure Mathematics 1
-    path: /edx-ial-p1/
-    status: coming_soon
-    color: success
-    description: "IAL Pure Mathematics 1 resources coming soon"
-    free_count: 0
-    product_count: 0
-  - key: edx-ial-p2
-    name: IAL P2
-    full_name: Edexcel IAL Pure Mathematics 2
-    path: /edx-ial-p2/
-    status: coming_soon
-    color: success
-    description: "IAL Pure Mathematics 2 resources coming soon"
-    free_count: 0
-    product_count: 0
 
 # Exclude from build
 exclude:

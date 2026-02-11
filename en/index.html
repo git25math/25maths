@@ -1,7 +1,7 @@
 ---
 layout: global
 title: Bilingual Mathematics Resources
-description: "25Maths — Premium bilingual (English/Chinese) mathematics resources covering CIE 0580, Edexcel 4MA1, AMC 8, and more. Trusted by international students worldwide."
+description: "25Maths — Premium bilingual (English/Chinese) mathematics resources covering CIE 0580 and Edexcel 4MA1. Trusted by international students worldwide."
 lang: en
 lang_links:
   - code: en
@@ -44,7 +44,7 @@ lang_links:
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for mod in site.modules %}
             <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
-                <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}bg-secondary{% elsif mod.key == 'amc8' %}bg-warning{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
+                <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}bg-secondary{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
                     <span class="text-3xl font-bold">{{ mod.name }}</span>
                     {% if mod.status == 'coming_soon' %}
                     <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
