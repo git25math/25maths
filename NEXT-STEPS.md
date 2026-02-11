@@ -41,6 +41,35 @@
 
 ---
 
+## 2026-02-11 网站进展复盘 → 待办清单（按优先级）
+
+### P0 直接影响收入与信任
+- [ ] **Payhip 付费产品上线**（获取 3 个付费产品 URL）
+- [ ] **替换付费产品购买链接**（Gumroad → Payhip，3 个产品页）
+- [ ] **Payhip 脚本加载**（产品页增加 `payhip: true` 或全站加载）
+- [ ] **全站价格统一为 $17/$17/$12**（产品页 + 产品列表 + 定价页）
+- [ ] **套餐价与折扣一致**（Complete Package、2-Bundle Deal 文案与价格）
+- [ ] **移除站内直链免费 PDF/ZIP**（避免绕过邮箱墙）
+
+### P1 转化与一致性
+- [ ] **Algebra Bundle v2.0 完成重构与 QA**
+- [ ] **Functions/Number Bundle 质量审查**
+- [ ] **定价页“School & Bulk Licensing”是否保留**（若暂不做则下线）
+- [ ] **README 状态更新**（与当前实际进度一致）
+- [ ] **订阅页面上线**（subscription.html）
+- [ ] **订阅节奏与8周专题表落地**（见 plan/SUBSCRIPTION-PLAN.md）
+
+### P2 SEO 与可维护性
+- [ ] **admin 页面禁止索引**（robots 或 noindex）
+- [ ] **产品页补充 OG 图**（提升分享转化）
+- [ ] **sitemap.xml lastmod 更新**（完成修改后）
+
+### P3 性能优化（可延后）
+- [ ] **Tailwind CDN → 构建版 CSS**
+- [ ] **生成 favicon.ico 与 apple-touch-icon**
+
+---
+
 ## Day 31-60: 自动化（2026-03-13 → 04-11）
 
 **核心目标**: 建立邮件自动化流程，扩展产品线

@@ -10,12 +10,13 @@
                 <a href="{{ mod.path }}"
                    class="px-3 py-2 rounded text-sm {% if page.module == mod.key %}text-white bg-gray-700 font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">
                     {{ mod.name }}
-                    {% if mod.status == 'coming_soon' %}<span class="text-xs text-gray-500">(soon)</span>{% endif %}
+                    {% if mod.status == 'coming_soon' %}<span class="text-xs text-gray-500">(coming soon)</span>{% endif %}
                 </a>
                 {% endfor %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
                 <a href="/about.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'about' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">About</a>
                 <a href="/support.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'support' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">Support</a>
+                <a href="/subscription.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">Membership</a>
             </div>
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
@@ -34,12 +35,13 @@
             <a href="{{ mod.path }}"
                class="block px-3 py-2 rounded text-sm {% if page.module == mod.key %}text-white bg-gray-700 font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-700{% endif %}">
                 {{ mod.name }}
-                {% if mod.status == 'coming_soon' %}<span class="text-xs text-gray-500">(soon)</span>{% endif %}
+                {% if mod.status == 'coming_soon' %}<span class="text-xs text-gray-500">(coming soon)</span>{% endif %}
             </a>
             {% endfor %}
             <div class="border-t border-gray-700 mt-2 pt-2">
                 <a href="/about.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">About</a>
                 <a href="/support.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">Support</a>
+                <a href="/subscription.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">Membership</a>
             </div>
         </div>
     </div>

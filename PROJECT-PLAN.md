@@ -4,6 +4,8 @@
 > **Status**: DEPLOYED (Modular Restructure Complete)
 > **Website**: https://www.25maths.com (GitHub Pages + Jekyll)
 > **Tech Stack**: Jekyll + Tailwind CSS CDN + Google Fonts (Inter)
+> **Payment**: Payhip (5% fee, built-in email marketing)
+> **Pricing**: USD ($17/$17/$12)
 
 ---
 
@@ -32,7 +34,7 @@ www.25maths.com/privacy.html      → Global page
 
 | Module | Status | Products | Free Resources | Pricing |
 |--------|--------|----------|----------------|---------|
-| CIE 0580 | Active | 3 (Algebra £15, Functions £15, Number £12) | 8 vocab card sets | Live |
+| CIE 0580 | Active | 3 (Algebra $17, Functions $17, Number $12) | 8 vocab card sets | Live |
 | Edexcel 4MA1 | Active (free only) | 0 (coming soon) | 6 vocab card sets | Coming soon |
 | AMC 8 | Coming Soon | — | — | — |
 | IAL Pure 1 | Coming Soon | — | — | — |
@@ -113,19 +115,23 @@ active_global: about   # highlights in global-nav
 ## Product Data
 
 ### Algebra (LIVE)
-- **Price**: £15.00 | **Rating**: 9.5/10
+- **Price**: $17.00 | **Rating**: 9.5/10
 - **Content**: 20 bilingual vocab cards + 45+ practice questions (3 levels) + answer key = 39 pages
-- **Gumroad**: `https://gumroad.com/l/25maths-algebra`
+- **Payhip**: `https://payhip.com/b/{PRODUCT_ID}` (to be updated)
 
 ### Functions (LIVE)
-- **Price**: £15.00 | **Rating**: 9.8/10
+- **Price**: $17.00 | **Rating**: 9.8/10
 - **Content**: 20 bilingual vocab cards + 50+ practice questions (3 levels) = 41 pages
-- **Gumroad**: `https://gumroad.com/l/25maths-functions`
+- **Payhip**: `https://payhip.com/b/{PRODUCT_ID}` (to be updated)
 
 ### Number (LIVE)
-- **Price**: £12.00 | **Rating**: 9.7/10
+- **Price**: $12.00 | **Rating**: 9.7/10
 - **Content**: 40+ bilingual vocab cards + 45+ practice questions (3 levels) = 27 pages
-- **Gumroad**: `https://gumroad.com/l/25maths-number`
+- **Payhip**: `https://payhip.com/b/{PRODUCT_ID}` (to be updated)
+
+### Free Resources
+- CIE 0580: https://payhip.com/b/5j2Sz (8 vocab card sets)
+- Edexcel 4MA1: https://payhip.com/b/JzU7h (6 vocab card sets)
 
 ## Completed Milestones
 
@@ -135,12 +141,18 @@ active_global: about   # highlights in global-nav
 | 2026-02-09 | Added 6 Edexcel 4MA1 vocabulary cards |
 | 2026-02-10 | **Modular restructure** — Jekyll templates, per-exam-board architecture, 5 modules |
 | 2026-02-10 | Bug fixes — footer links, redirect layouts, ARIA, favicon, OG tags, PDF cleanup |
-| 2026-02-10 | Removed subscription forms (Formspree not yet configured) |
+| 2026-02-10 | **Payment platform migration** — Switched from Gumroad to Payhip (5% vs 12.5% fees) |
+| 2026-02-10 | **Pricing strategy update** — Changed from GBP to USD ($17/$17/$12 for global market) |
+| 2026-02-10 | Free resources → Payhip email gate (CIE + 4MA1) |
+| 2026-02-10 | Refund policy: all sales final + quality promise |
+| 2026-02-10 | Currency migration: GBP → USD site-wide |
+| 2026-02-10 | Admin changelog (admin/changelog.html) |
+| 2026-02-10 | Strategic framework integration (30-60-90, IP, constraints) |
 
 ## Next Steps
 
 ### Short-term
-1. **Formspree integration** — Register at formspree.io, create form, add subscription sections back with real form ID
+1. **Complete Payhip integration** — Upload 3 paid products, replace remaining Gumroad purchase links
 2. **Google Search Console** — Submit sitemap.xml, verify site ownership
 3. **Edexcel 4MA1 products** — Create premium bundles when content is ready, update products.html and pricing.html
 
@@ -166,8 +178,9 @@ active_global: about   # highlights in global-nav
 
 ## How to Add a New Product (to existing module)
 
-1. Copy `cie0580/products/algebra.html` as template
-2. Update: hero gradient, product data, FAQ, Gumroad link
-3. Add card to module's `products.html`
-4. Add URL to `sitemap.xml`
-5. Update `product_count` in `_config.yml`
+1. Create product in Payhip, upload files, get product URL
+2. Copy `cie0580/products/algebra.html` as template
+3. Update: hero gradient, product data, FAQ, Payhip link
+4. Add card to module's `products.html`
+5. Add URL to `sitemap.xml`
+6. Update `product_count` in `_config.yml`

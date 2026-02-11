@@ -36,7 +36,7 @@ description: "25Maths — Premium bilingual (English/Chinese) mathematics resour
                 <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}bg-secondary{% elsif mod.key == 'amc8' %}bg-warning{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
                     <span class="text-3xl font-bold">{{ mod.name }}</span>
                     {% if mod.status == 'coming_soon' %}
-                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">COMING SOON</div>
+                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
                     {% endif %}
                 </div>
                 <div class="p-6">
@@ -93,6 +93,25 @@ description: "25Maths — Premium bilingual (English/Chinese) mathematics resour
     </div>
 </section>
 
+<!-- Membership CTA -->
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+                <div class="text-xs font-bold text-primary mb-2">NEW</div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Weekly Topic Membership</h2>
+                <p class="text-gray-600">One topical practice pack every week with full solutions. Built for CIE 0580.</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-2xl font-bold text-primary">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
+                <a href="/subscription.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    View Membership
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Statistics -->
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -116,4 +135,3 @@ description: "25Maths — Premium bilingual (English/Chinese) mathematics resour
         </div>
     </div>
 </section>
-

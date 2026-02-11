@@ -2,6 +2,7 @@
 layout: bare
 title: 25Maths Changelog
 ---
+<meta name="robots" content="noindex, nofollow">
 
 <div id="auth-wall" class="min-h-screen flex items-center justify-center">
     <div class="bg-white rounded-xl shadow-lg p-8 max-w-sm w-full mx-4">
@@ -23,6 +24,86 @@ title: 25Maths Changelog
                 <p class="text-gray-500 mt-1">25Maths.com site updates — internal use only</p>
             </div>
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
+        </div>
+
+        <!-- 2026-02-11 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-11</span>
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">MAJOR</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Membership launch prep + waitlist flow + site consistency</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>subscription.html</strong>: New weekly membership page with $9.99 plan and CTA placeholder for Payhip subscription</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Waitlist flow</strong>: Product pages use email capture + thank‑you page, privacy link, and value bullets</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Emails</strong>: Added waitlist + launch email templates and subscription plan doc</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Pricing consistency</strong>: Updated CIE prices to $17/$17/$12 and bundle deal to $29/$39</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Copy cleanup</strong>: Removed "lifetime access" claims, standardized "Coming Soon" and waitlist language</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">x</span>
+                    <span><strong>Free PDF direct downloads removed</strong>: files deleted, Payhip remains the download path</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Navigation + SEO</strong>: Membership link added, admin noindex, sitemap updated</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: subscription.html, thanks.html, cie0580/products/*.html, cie0580/free/index.html, edx4ma1/free/index.html, emails/*, plan/SUBSCRIPTION-PLAN.md, _includes/*, sitemap.xml, robots.txt
+            </div>
+        </div>
+
+        <!-- 2026-02-10 docs -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-10</span>
+                <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-semibold">DOCS</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Strategic framework integration + documentation overhaul</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>terms.html</strong>: IP clause strengthened — distinguishes exam board IP vs 25Maths original IP (LaTeX source, translations, designs)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>NEXT-STEPS.md</strong>: Rewritten as 30-60-90 day execution plan (replaced loose "Phase 1-5" structure)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>STRATEGY.md</strong>: Added "Strategic Identity" (Content System Builder) and "Constraint Principles" sections</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>DECISIONS.md</strong>: New entry — strategic framework decisions (positioning, 30-60-90, refund, IP, constraints)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>HANDOFF.md</strong>: Corrected Payhip upload claims (free=uploaded, paid=pending), added commit history</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>PROJECT-PLAN.md</strong>: Added milestones and free product Payhip URLs</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: terms.html, NEXT-STEPS.md, STRATEGY.md, DECISIONS.md, HANDOFF.md, PROJECT-PLAN.md, SESSION-HANDOFF.md
+            </div>
         </div>
 
         <!-- 2026-02-10 -->

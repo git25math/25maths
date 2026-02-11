@@ -44,10 +44,13 @@ git push -u origin main
 
 ---
 
-## 📁 Current Status
+## 📁 Current Status (2026-02-11)
 
-- ✅ index.html - Complete
-- ⏳ Other pages - Creating...
+- ✅ Portal + module architecture (Jekyll)
+- ✅ CIE 0580 module (products, pricing, free page)
+- ✅ Edexcel 4MA1 free resources (products/pricing placeholders)
+- ✅ Legal pages + SEO + sitemap
+- ⏳ Payhip paid product listings (waiting on live URLs)
 
 ---
 
