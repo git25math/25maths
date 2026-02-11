@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 <head>
     {% include head.html %}
 </head>
 <body class="bg-gray-50">
     {% include global-nav.html %}
+
+    {% assign cta_title = "Get weekly topic practice" %}
+    {% assign cta_text = "Join the waitlist to receive new packs and early‑bird pricing." %}
+    {% assign cta_button = "Join Waitlist" %}
+    {% assign cta_link = "/subscription.html" %}
+    {% assign ask_title = "Ask a question" %}
+    {% assign name_ph = "Your name" %}
+    {% assign email_ph = "Email for reply" %}
+    {% assign msg_ph = "Your question" %}
+    {% assign send_label = "Send Question" %}
+    {% assign privacy_text = "We’ll reply by email. No spam." %}
+    {% if page.lang == "zh-CN" %}
+        {% assign cta_title = "获取每周专题练习" %}
+        {% assign cta_text = "加入等待名单，获得新内容与早鸟优惠。" %}
+        {% assign cta_button = "加入等待名单" %}
+        {% assign cta_link = "/zh-cn/subscription.html" %}
+        {% assign ask_title = "留言提问" %}
+        {% assign name_ph = "姓名" %}
+        {% assign email_ph = "邮箱（便于回复）" %}
+        {% assign msg_ph = "你的问题" %}
+        {% assign send_label = "提交问题" %}
+        {% assign privacy_text = "我们会邮件回复，不发送垃圾邮件。" %}
+    {% elsif page.lang == "zh-Hant" %}
+        {% assign cta_title = "取得每週專題練習" %}
+        {% assign cta_text = "加入等待名單，獲得新內容與早鳥優惠。" %}
+        {% assign cta_button = "加入等待名單" %}
+        {% assign cta_link = "/zh-hant/subscription.html" %}
+        {% assign ask_title = "留言提問" %}
+        {% assign name_ph = "姓名" %}
+        {% assign email_ph = "電郵（便於回覆）" %}
+        {% assign msg_ph = "你的問題" %}
+        {% assign send_label = "提交問題" %}
+        {% assign privacy_text = "我們會以電郵回覆，不發送垃圾郵件。" %}
+    {% endif %}
 
     <article class="bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,29 +54,29 @@
 
             <div class="mt-12 border-t pt-8">
                 <div class="bg-gray-50 rounded-2xl p-6 text-center">
-                    <h2 class="text-2xl font-bold mb-2">Get weekly topic practice</h2>
-                    <p class="text-gray-600 mb-5">Join the waitlist to receive new packs and early‑bird pricing.</p>
-                    <a href="/subscription.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                        Join Waitlist
+                    <h2 class="text-2xl font-bold mb-2">{{ cta_title }}</h2>
+                    <p class="text-gray-600 mb-5">{{ cta_text }}</p>
+                    <a href="{{ cta_link }}" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        {{ cta_button }}
                     </a>
                 </div>
             </div>
 
             <div class="mt-12">
-                <h2 class="text-2xl font-bold mb-4">Ask a question</h2>
+                <h2 class="text-2xl font-bold mb-4">{{ ask_title }}</h2>
                 <form action="https://formspree.io/f/{FORM_ID}" method="POST" class="space-y-4">
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" name="name" required placeholder="Your name"
+                        <input type="text" name="name" required placeholder="{{ name_ph }}"
                             class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
-                        <input type="email" name="email" required placeholder="Email for reply"
+                        <input type="email" name="email" required placeholder="{{ email_ph }}"
                             class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
                     </div>
-                    <textarea name="message" rows="5" required placeholder="Your question"
+                    <textarea name="message" rows="5" required placeholder="{{ msg_ph }}"
                         class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
                     <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                        Send Question
+                        {{ send_label }}
                     </button>
-                    <p class="text-xs text-gray-500">We’ll reply by email. No spam. <a href="/privacy.html" class="underline">Privacy Policy</a>.</p>
+                    <p class="text-xs text-gray-500">{{ privacy_text }} <a href="/privacy.html" class="underline">Privacy Policy</a>.</p>
                 </form>
             </div>
         </div>

@@ -3,6 +3,17 @@ layout: post
 title: "CIE 0580 Algebra: 7 Common Mistakes and How to Fix Them"
 subtitle: "Target the errors that cost the most marks in IGCSE algebra questions."
 category: CIE 0580 Topic Guide
+lang: en
+lang_links:
+  - code: en
+    label: EN
+    url: /2026/02/11/cie0580-algebra-mistakes.html
+  - code: zh-CN
+    label: 简体
+    url: /zh-cn/blog/cie0580-daishu-changjian-cuowu.html
+  - code: zh-Hant
+    label: 繁體
+    url: /zh-hant/blog/cie0580-daishu-changjian-cuowu.html
 ---
 
 Algebra questions in CIE 0580 are predictable — but small mistakes can cost full marks.  

@@ -3,6 +3,17 @@ layout: post
 title: "Edexcel 4MA1 Ratio & Percentage: Avoid These Mistakes"
 subtitle: "Simple fixes that unlock easy marks in exam‑style questions."
 category: Edexcel 4MA1 Topic Guide
+lang: en
+lang_links:
+  - code: en
+    label: EN
+    url: /2026/02/11/4ma1-ratio-percentage.html
+  - code: zh-CN
+    label: 简体
+    url: /zh-cn/blog/4ma1-bili-baifenbi-cuowu.html
+  - code: zh-Hant
+    label: 繁體
+    url: /zh-hant/blog/4ma1-bili-baifenbi-cuowu.html
 ---
 
 Ratio and percentage questions look easy — but they hide common traps.  

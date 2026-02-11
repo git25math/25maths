@@ -61,6 +61,7 @@ git push -u origin main
 - Added membership CTAs across homepage, CIE pages, and product pages
 - Launched blog section with starter articles for SEO and lead capture
 - Added blog highlights on homepage and blog link in global navigation
+- Added EN / 简体 / 繁體 paths for home, subscription, and blog with language switcher
 
 ---
 

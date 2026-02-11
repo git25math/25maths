@@ -155,6 +155,7 @@ active_global: about   # highlights in global-nav
 | 2026-02-11 | **Membership launch prep** — subscription page, waitlist flow, email templates |
 | 2026-02-11 | **Blog launch** — blog index, post layout, starter articles |
 | 2026-02-11 | **Homepage update** — latest articles section + blog navigation |
+| 2026-02-11 | **Multilingual rollout** — EN/简体/繁體 home, subscription, blog, starter posts |
 
 ## Next Steps
 

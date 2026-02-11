@@ -5,6 +5,11 @@
 {% if page.noindex %}
 <meta name="robots" content="noindex, nofollow">
 {% endif %}
+{% if page.lang_links %}
+{% for item in page.lang_links %}
+<link rel="alternate" hreflang="{{ item.code }}" href="{{ item.url }}">
+{% endfor %}
+{% endif %}
 
 <!-- Favicon -->
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">

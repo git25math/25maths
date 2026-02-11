@@ -1,4 +1,28 @@
 <!-- Footer -->
+{% assign blog_path = "/blog/" %}
+{% assign membership_path = "/subscription.html" %}
+{% assign blog_label = "Blog" %}
+{% assign about_label = "About" %}
+{% assign support_label = "Support" %}
+{% assign membership_label = "Membership" %}
+{% if page.lang == 'en' %}
+    {% assign blog_path = "/en/blog/" %}
+    {% assign membership_path = "/en/subscription.html" %}
+{% elsif page.lang == 'zh-CN' %}
+    {% assign blog_path = "/zh-cn/blog/" %}
+    {% assign membership_path = "/zh-cn/subscription.html" %}
+    {% assign blog_label = "博客" %}
+    {% assign about_label = "关于" %}
+    {% assign support_label = "支持" %}
+    {% assign membership_label = "会员" %}
+{% elsif page.lang == 'zh-Hant' %}
+    {% assign blog_path = "/zh-hant/blog/" %}
+    {% assign membership_path = "/zh-hant/subscription.html" %}
+    {% assign blog_label = "部落格" %}
+    {% assign about_label = "關於" %}
+    {% assign support_label = "支援" %}
+    {% assign membership_label = "會員" %}
+{% endif %}
 <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-5 gap-8 mb-8">
@@ -38,10 +62,10 @@
             <div>
                 <h4 class="text-white font-semibold mb-4">Company</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
-                    <li><a href="/about.html" class="hover:text-white transition">About</a></li>
-                    <li><a href="/support.html" class="hover:text-white transition">Support</a></li>
-                    <li><a href="/subscription.html" class="hover:text-white transition">Membership</a></li>
+                    <li><a href="{{ blog_path }}" class="hover:text-white transition">{{ blog_label }}</a></li>
+                    <li><a href="/about.html" class="hover:text-white transition">{{ about_label }}</a></li>
+                    <li><a href="/support.html" class="hover:text-white transition">{{ support_label }}</a></li>
+                    <li><a href="{{ membership_path }}" class="hover:text-white transition">{{ membership_label }}</a></li>
                     <li><a href="mailto:support@25maths.com" class="hover:text-white transition">Contact</a></li>
                 </ul>
             </div>

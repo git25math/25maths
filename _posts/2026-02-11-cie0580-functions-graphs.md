@@ -3,6 +3,17 @@ layout: post
 title: "CIE 0580 Functions & Graphs: How to Score Higher"
 subtitle: "A quick guide to common question types and the fastest ways to improve."
 category: CIE 0580 Topic Guide
+lang: en
+lang_links:
+  - code: en
+    label: EN
+    url: /2026/02/11/cie0580-functions-graphs.html
+  - code: zh-CN
+    label: 简体
+    url: /zh-cn/blog/cie0580-hanshu-tuxiang-tisheng.html
+  - code: zh-Hant
+    label: 繁體
+    url: /zh-hant/blog/cie0580-hanshu-tuxiang-tisheng.html
 ---
 
 Functions and graphs usually include a small set of patterns.  

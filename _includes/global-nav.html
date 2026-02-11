@@ -1,4 +1,28 @@
 <!-- Global Navigation -->
+{% assign blog_path = "/blog/" %}
+{% assign membership_path = "/subscription.html" %}
+{% assign blog_label = "Blog" %}
+{% assign about_label = "About" %}
+{% assign support_label = "Support" %}
+{% assign membership_label = "Membership" %}
+{% if page.lang == 'en' %}
+    {% assign blog_path = "/en/blog/" %}
+    {% assign membership_path = "/en/subscription.html" %}
+{% elsif page.lang == 'zh-CN' %}
+    {% assign blog_path = "/zh-cn/blog/" %}
+    {% assign membership_path = "/zh-cn/subscription.html" %}
+    {% assign blog_label = "博客" %}
+    {% assign about_label = "关于" %}
+    {% assign support_label = "支持" %}
+    {% assign membership_label = "会员" %}
+{% elsif page.lang == 'zh-Hant' %}
+    {% assign blog_path = "/zh-hant/blog/" %}
+    {% assign membership_path = "/zh-hant/subscription.html" %}
+    {% assign blog_label = "部落格" %}
+    {% assign about_label = "關於" %}
+    {% assign support_label = "支援" %}
+    {% assign membership_label = "會員" %}
+{% endif %}
 <nav class="bg-gray-900 text-gray-300 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-14">
@@ -14,10 +38,18 @@
                 </a>
                 {% endfor %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
-                <a href="/blog/" class="px-3 py-2 rounded text-sm {% if page.active_global == 'blog' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">Blog</a>
-                <a href="/about.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'about' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">About</a>
-                <a href="/support.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'support' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">Support</a>
-                <a href="/subscription.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">Membership</a>
+                <a href="{{ blog_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'blog' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ blog_label }}</a>
+                <a href="/about.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'about' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ about_label }}</a>
+                <a href="/support.html" class="px-3 py-2 rounded text-sm {% if page.active_global == 'support' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ support_label }}</a>
+                <a href="{{ membership_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ membership_label }}</a>
+                {% if page.lang_links %}
+                <span class="border-l border-gray-700 h-6 mx-2"></span>
+                <div class="flex items-center space-x-1">
+                    {% for item in page.lang_links %}
+                    <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs {% if page.lang == item.code %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ item.label }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
@@ -40,10 +72,20 @@
             </a>
             {% endfor %}
             <div class="border-t border-gray-700 mt-2 pt-2">
-                <a href="/blog/" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">Blog</a>
-                <a href="/about.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">About</a>
-                <a href="/support.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">Support</a>
-                <a href="/subscription.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">Membership</a>
+                <a href="{{ blog_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ blog_label }}</a>
+                <a href="/about.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ about_label }}</a>
+                <a href="/support.html" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ support_label }}</a>
+                <a href="{{ membership_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ membership_label }}</a>
+                {% if page.lang_links %}
+                <div class="border-t border-gray-700 mt-2 pt-2">
+                    <div class="px-3 text-xs text-gray-500 mb-2">Language</div>
+                    <div class="flex flex-wrap gap-2 px-3">
+                        {% for item in page.lang_links %}
+                        <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">{{ item.label }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>

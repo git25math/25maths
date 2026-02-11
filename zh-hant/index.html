@@ -1,0 +1,101 @@
+---
+layout: global
+title: 雙語數學資源
+description: "25Maths — 覆蓋 CIE 0580、Edexcel 4MA1 等考試局的中英雙語數學資源。"
+lang: zh-Hant
+lang_links:
+  - code: en
+    label: EN
+    url: /en/
+  - code: zh-CN
+    label: 简体
+    url: /zh-cn/
+  - code: zh-Hant
+    label: 繁體
+    url: /zh-hant/
+---
+
+<section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">全球考試局<br>雙語數學資源</h1>
+        <p class="text-xl md:text-2xl mb-4 text-gray-100">覆蓋多考試局的高品質中英雙語資源</p>
+        <p class="text-lg mb-8 text-gray-200">被國際學校學生與教師廣泛使用</p>
+        <a href="#modules" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition transform hover:-translate-y-1">
+            選擇考試局
+        </a>
+    </div>
+</section>
+
+<section id="modules" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">選擇你的考試局</h2>
+            <p class="text-xl text-gray-600">按考試大綱取得對應資源</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for mod in site.modules %}
+            <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
+                <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}bg-secondary{% elsif mod.key == 'amc8' %}bg-warning{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
+                    <span class="text-3xl font-bold">{{ mod.name }}</span>
+                    {% if mod.status == 'coming_soon' %}
+                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
+                    {% endif %}
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">{{ mod.full_name }}</h3>
+                    <p class="text-gray-600 text-sm mb-4">{{ mod.description }}</p>
+                    {% if mod.status == 'active' %}
+                    <div class="flex items-center text-sm text-gray-500 space-x-4">
+                        {% if mod.free_count > 0 %}<span>{{ mod.free_count }} 套免費資源</span>{% endif %}
+                        {% if mod.product_count > 0 %}<span>{{ mod.product_count }} 付費產品</span>{% endif %}
+                    </div>
+                    {% else %}
+                    <span class="text-sm text-gray-400">正在準備中</span>
+                    {% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">最新文章</h2>
+                <p class="text-gray-600">考試專題解析與學習策略。</p>
+            </div>
+            <a href="/zh-hant/blog/" class="text-primary font-semibold hover:underline">查看全部 →</a>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            {% assign hant_posts = site.posts | where: "lang", "zh-Hant" %}
+            {% for post in hant_posts limit:3 %}
+            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+                <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ post.title }}</h3>
+                {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
+                <span class="text-primary font-semibold">閱讀文章 →</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+                <div class="text-xs font-bold text-primary mb-2">NEW</div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">每週專題會員</h2>
+                <p class="text-gray-600">每週一套專題練習包（含解析），對標 CIE 0580。</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-2xl font-bold text-primary">$9.99<span class="text-sm text-gray-500 font-medium">/月</span></div>
+                <a href="/zh-hant/subscription.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    查看會員
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
