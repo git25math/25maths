@@ -6,7 +6,7 @@ baseurl: ""
 
 # Waitlist collection (single endpoint for all topics)
 waitlist:
-  endpoint: "https://script.google.com/macros/s/{WEB_APP_ID}/exec"
+  endpoint: "https://script.google.com/macros/s/AKfycbyYo6IqW_XAjvWq3axPzetJQjsCxPRzloYC8C7JYyehRC3EnQ645A7lHf3r0u-3S2hhzQ/exec"
   success_path: "/thanks.html"
 
 # Build settings
