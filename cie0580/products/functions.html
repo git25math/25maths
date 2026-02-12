@@ -45,10 +45,15 @@ payhip: true
                 </div>
                 <div class="text-5xl font-bold text-primary mb-6">$17.00</div>
                 <div class="space-y-3 mb-6">
-                    <form action="https://formspree.io/f/{FORM_ID}" method="POST" class="space-y-3">
+                    <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-3">
                         <input type="hidden" name="product" value="CIE 0580 Functions Bundle">
                         <input type="hidden" name="_subject" value="Waitlist — CIE 0580 — Functions">
-                        <input type="hidden" name="_next" value="/thanks.html">
+                        <input type="hidden" name="topic" value="Functions">
+                        <input type="hidden" name="module" value="CIE 0580">
+                        <input type="hidden" name="lang" value="en">
+                        <input type="hidden" name="source_page" value="{{ page.url }}">
+                        <input type="hidden" name="entry_point" value="waitlist_form">
+                        <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                         <div class="flex flex-col sm:flex-row gap-3">
                             <input type="email" name="email" required placeholder="Email for launch updates"
                                 class="flex-1 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
@@ -251,10 +256,15 @@ payhip: true
         <h2 class="text-4xl font-bold mb-4">Ready to Master IGCSE Functions & Graphs?</h2>
         <p class="text-xl mb-8 opacity-90">Join hundreds of students who've improved their skills with 25Maths resources.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <form action="https://formspree.io/f/{FORM_ID}" method="POST" class="w-full max-w-xl mx-auto space-y-4">
+            <form action="{{ site.waitlist.endpoint }}" method="POST" class="w-full max-w-xl mx-auto space-y-4">
                 <input type="hidden" name="product" value="CIE 0580 Functions Bundle">
                 <input type="hidden" name="_subject" value="Waitlist — CIE 0580 — Functions">
-                <input type="hidden" name="_next" value="/thanks.html">
+                        <input type="hidden" name="topic" value="Functions">
+                        <input type="hidden" name="module" value="CIE 0580">
+                        <input type="hidden" name="lang" value="en">
+                        <input type="hidden" name="source_page" value="{{ page.url }}">
+                        <input type="hidden" name="entry_point" value="waitlist_form">
+                <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                 <div class="flex flex-col sm:flex-row gap-3">
                     <input type="email" name="email" required placeholder="Email for launch updates"
                         class="flex-1 border border-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white">

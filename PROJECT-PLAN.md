@@ -1,6 +1,6 @@
 # 25Maths Website - Project Plan
 
-> **Last Updated**: 2026-02-10
+> **Last Updated**: 2026-02-12
 > **Status**: DEPLOYED (Modular Restructure Complete)
 > **Website**: https://www.25maths.com (GitHub Pages + Jekyll)
 > **Tech Stack**: Jekyll + Tailwind CSS CDN + Google Fonts (Inter)
@@ -195,3 +195,13 @@ active_global: about   # highlights in global-nav
 4. Add card to module's `products.html`
 5. Add URL to `sitemap.xml`
 6. Update `product_count` in `_config.yml`
+
+## Waitlist Data Pipeline (2026-02-12)
+
+- **Collection endpoint**: one Google Apps Script Web App URL (configured in `_config.yml` `waitlist.endpoint`)
+- **Form scope**: CIE 0580 product pages (EN + zh-CN), 12 form entries total
+- **Metadata fields**: `topic`, `module`, `lang`, `source_page`, `redirect_url`
+- **Dedupe rule**: primary key `email`; topic intent tracked with `email + topic`
+- **Implementation files**:
+  - Plan: `plan/WAITLIST-GSHEETS-PLAN.md`
+  - GAS template: `plan/WAITLIST-GSHEETS.gs`

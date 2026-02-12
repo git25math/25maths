@@ -4,6 +4,11 @@ description: "Premium exam-aligned mathematics resources for international exam 
 url: "https://www.25maths.com"
 baseurl: ""
 
+# Waitlist collection (single endpoint for all topics)
+waitlist:
+  endpoint: "https://script.google.com/macros/s/{WEB_APP_ID}/exec"
+  success_path: "/thanks.html"
+
 # Build settings
 plugins:
   - jekyll-redirect-from

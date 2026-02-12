@@ -60,6 +60,10 @@
 - [x] **订阅节奏与8周专题表落地**（见 plan/SUBSCRIPTION-PLAN.md）
 - [x] **博客与主页入口上线**（/blog + 首页最新文章）
 - [x] **移除 AMC8 / IAL P1 / IAL P2 模块**
+- [x] **Waitlist 架构升级（单端点 + 分专题标签）**
+  - 方案文档：`plan/WAITLIST-GSHEETS-PLAN.md`
+  - 脚本模板：`plan/WAITLIST-GSHEETS.gs`
+  - 表单改造：6 个产品页共 12 个入口统一到一个 endpoint，并保留 `topic/lang/source_page` 字段
 
 ### P2 SEO 与可维护性
 - [ ] **admin 页面禁止索引**（robots 或 noindex）
@@ -116,3 +120,4 @@
 - [x] 货币迁移：GBP → USD 全站
 - [x] IP 条款强化（terms.html）
 - [x] 战略框架整合（STRATEGY.md, DECISIONS.md）
+- [x] Waitlist 数据方案落地（Google Sheets 去重模型：email 主键 + topic 标签）
