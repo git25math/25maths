@@ -12,12 +12,15 @@ function doPost(e) {
 
   var emailRaw = (params.email || '').trim();
   var email = emailRaw.toLowerCase();
+  var name = (params.name || '').trim();
   var topic = (params.topic || '').trim();
   var moduleName = (params.module || '').trim();
   var lang = (params.lang || '').trim();
   var sourcePage = (params.source_page || '').trim();
   var entryPoint = (params.entry_point || '').trim();
   var product = (params.product || '').trim();
+  var ticketSubject = (params.subject || '').trim();
+  var message = (params.message || '').trim();
   var subject = (params._subject || '').trim();
   var redirectUrl = (params.redirect_url || 'https://www.25maths.com/thanks.html').trim();
   var now = new Date();
@@ -45,12 +48,15 @@ function doPost(e) {
   var events = getOrCreateSheet_(ss, 'waitlist_events', [
     'submitted_at',
     'email',
+    'name',
     'topic',
     'module',
     'lang',
     'source_page',
     'entry_point',
     'product',
+    'ticket_subject',
+    'message',
     'subject',
     'is_new_email',
     'is_new_topic',
@@ -70,12 +76,15 @@ function doPost(e) {
   events.appendRow([
     nowIso,
     email,
+    name,
     topic,
     moduleName,
     lang,
     sourcePage,
     entryPoint,
     product,
+    ticketSubject,
+    message,
     subject,
     upsert.isNewEmail ? '1' : '0',
     upsert.isNewTopic ? '1' : '0',
@@ -175,11 +184,16 @@ function upsertSubscriber_(sheet, input) {
 
 function redirectHtml(url) {
   var safeUrl = url || 'https://www.25maths.com/thanks.html';
+  var escaped = safeUrl.replace(/"/g, '&quot;');
   var html = '' +
     '<!doctype html>' +
-    '<html><head><meta charset="utf-8">' +
-    '<meta http-equiv="refresh" content="0; url=' + safeUrl + '"></head>' +
-    '<body>Redirecting...</body></html>';
+    '<html><head><meta charset="utf-8"><base target="_top"></head>' +
+    '<body>' +
+    '<script>try{top.location.replace("' + escaped + '");}catch(e){window.location.replace("' + escaped + '");}</script>' +
+    '<noscript><meta http-equiv="refresh" content="0; url=' + escaped + '"></noscript>' +
+    '<a href="' + escaped + '">Continue</a>' +
+    '</body></html>';
 
-  return HtmlService.createHtmlOutput(html);
+  return HtmlService.createHtmlOutput(html)
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }

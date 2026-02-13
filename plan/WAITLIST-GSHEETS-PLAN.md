@@ -1,7 +1,7 @@
 # Waitlist + Google Sheets Optimization Plan
 
 > Date: 2026-02-12
-> Scope: CIE 0580 product waitlist forms (EN + zh-CN)
+> Scope: CIE 0580 product waitlist forms + support contact form
 
 ## Goal
 
@@ -43,12 +43,15 @@ Columns:
 Columns:
 - `submitted_at`
 - `email`
+- `name`
 - `topic`
 - `module`
 - `lang`
 - `source_page`
 - `entry_point`
 - `product`
+- `ticket_subject`
+- `message`
 - `subject`
 - `is_new_email`
 - `is_new_topic`
@@ -68,6 +71,7 @@ Columns:
 - All CIE 0580 product waitlist forms post to `site.waitlist.endpoint`
 - Hidden fields added: `topic`, `module`, `lang`, `source_page`, `redirect_url`
 - Topic-specific differentiation remains in `_subject`
+- `support.html` contact form also posts to same endpoint with `entry_point=support_contact_form`
 
 ## Verification checklist
 
@@ -77,6 +81,7 @@ Columns:
 - [ ] GAS endpoint writes both sheets correctly (requires live deployment test)
 - [ ] Duplicate same email/topic does not create duplicate subscriber row (requires live deployment test)
 - [ ] Same email different topic updates topic tags (requires live deployment test)
+- [ ] Support contact captures `name`, `ticket_subject`, `message` in `waitlist_events`
 
 ## Rollout steps
 

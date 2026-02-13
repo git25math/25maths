@@ -32,6 +32,32 @@ title: 25Maths Changelog
                 <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-12</span>
                 <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">SYSTEM</span>
             </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Support contact routing fix + GAS event fields</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">x</span>
+                    <span><strong>support.html form</strong>: Removed unreliable `mailto:` submission flow</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Contact queue</strong>: Support form now posts to unified GAS endpoint with `entry_point=support_contact_form`</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Apps Script template</strong>: Added `name`, `ticket_subject`, and `message` fields to `waitlist_events`; upgraded redirect handling</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: support.html, plan/WAITLIST-GSHEETS.gs, plan/WAITLIST-GSHEETS-PLAN.md, _includes/mobile-menu-js.html
+            </div>
+        </div>
+
+        <!-- 2026-02-12 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-12</span>
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">SYSTEM</span>
+            </div>
             <h2 class="text-xl font-bold text-gray-900 mb-3">Waitlist unified endpoint + Google Sheets dedupe plan</h2>
             <ul class="space-y-2 text-gray-700 text-sm">
                 <li class="flex items-start gap-2">
