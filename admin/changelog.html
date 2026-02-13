@@ -30,6 +30,40 @@ title: 25Maths Changelog
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
                 <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-13</span>
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">CONSISTENCY</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">English-first consistency pass + visitor stats</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Language switch labels</strong>: Updated non-zh pages from `简体` to `ZH-CN` for English-first UI consistency</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Homepage metrics</strong>: `Exam Boards` stat now uses dynamic `site.modules | size` instead of hardcoded number</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>About copy</strong>: Removed outdated AMC/IAL scope language and aligned messaging to active modules + Chinese terminology support</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Support parity</strong>: Added contact forms to `/en/support.html` and `/zh-cn/support.html` with localized redirect targets</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Visitor stats</strong>: Added CountAPI-powered site/page view counters in footer (`analytics.countapi_namespace`)</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: _config.yml, _includes/footer.html, _includes/mobile-menu-js.html, about.html, index.html, en/support.html, zh-cn/support.html, */lang_links labels
+            </div>
+        </div>
+
+        <!-- 2026-02-13 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-13</span>
                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">UX</span>
             </div>
             <h2 class="text-xl font-bold text-gray-900 mb-3">Support confirmation flow split from waitlist</h2>

@@ -33,3 +33,45 @@ lang_links:
         </ul>
     </div>
 </section>
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">联系我们</h2>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-6">
+                <input type="hidden" name="topic" value="Support">
+                <input type="hidden" name="module" value="General Support">
+                <input type="hidden" name="lang" value="zh-CN">
+                <input type="hidden" name="source_page" value="{{ page.url }}">
+                <input type="hidden" name="entry_point" value="support_contact_form">
+                <input type="hidden" name="_subject" value="Support Contact Form">
+                <input type="hidden" name="product" value="Support Request">
+                <input type="hidden" name="redirect_url" value="{{ site.url }}/zh-cn/support-thanks.html">
+                <div>
+                    <label class="block text-sm font-semibold mb-2">姓名</label>
+                    <input type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">邮箱</label>
+                    <input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">主题</label>
+                    <select name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                        <option>一般咨询</option>
+                        <option>产品问题</option>
+                        <option>技术支持</option>
+                        <option>学校授权</option>
+                        <option>错误反馈</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">留言内容</label>
+                    <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">提交留言</button>
+            </form>
+            <p class="text-center text-sm text-gray-600 mt-6">你的留言会进入客服处理队列，我们会通过 <a href="mailto:support@25maths.com" class="text-primary font-semibold">support@25maths.com</a> 尽快回复。</p>
+        </div>
+    </div>
+</section>

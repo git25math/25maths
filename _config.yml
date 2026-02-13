@@ -9,6 +9,11 @@ waitlist:
   endpoint: "https://script.google.com/macros/s/AKfycbyjJS9KL06UBo2MlxZ-WlleuXHeLzi1tG6MeoRqNTEGHdPg7Zhjc94J6w1iJmk8mFMT9g/exec"
   success_path: "/thanks.html"
 
+# Visitor analytics (simple page/site view counters)
+analytics:
+  provider: "countapi"
+  countapi_namespace: "25maths.com"
+
 # Build settings
 plugins:
   - jekyll-redirect-from

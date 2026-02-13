@@ -9,7 +9,7 @@ lang_links:
     label: EN
     url: /en/support.html
   - code: zh-CN
-    label: 简体
+    label: ZH-CN
     url: /zh-cn/support.html
 ---
 
@@ -31,5 +31,47 @@ lang_links:
             <li>• Product content questions</li>
             <li>• Payment or receipt requests</li>
         </ul>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-6">
+                <input type="hidden" name="topic" value="Support">
+                <input type="hidden" name="module" value="General Support">
+                <input type="hidden" name="lang" value="en">
+                <input type="hidden" name="source_page" value="{{ page.url }}">
+                <input type="hidden" name="entry_point" value="support_contact_form">
+                <input type="hidden" name="_subject" value="Support Contact Form">
+                <input type="hidden" name="product" value="Support Request">
+                <input type="hidden" name="redirect_url" value="{{ site.url }}/en/support-thanks.html">
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Name</label>
+                    <input type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Email</label>
+                    <input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Subject</label>
+                    <select name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                        <option>General Inquiry</option>
+                        <option>Product Question</option>
+                        <option>Technical Support</option>
+                        <option>School Licensing</option>
+                        <option>Report an Error</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Message</label>
+                    <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Send Message</button>
+            </form>
+            <p class="text-center text-sm text-gray-600 mt-6">We'll receive your request in our support queue and reply from <a href="mailto:support@25maths.com" class="text-primary font-semibold">support@25maths.com</a>.</p>
+        </div>
     </div>
 </section>

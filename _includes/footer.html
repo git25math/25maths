@@ -7,6 +7,9 @@
 {% assign membership_label = "Membership" %}
 {% assign terms_label = "Terms of Service" %}
 {% assign privacy_label = "Privacy Policy" %}
+{% assign stats_label = "Visitor Stats" %}
+{% assign stats_site_label = "Site views" %}
+{% assign stats_page_label = "This page views" %}
 {% if page.lang == 'en' %}
     {% assign blog_path = "/en/blog/" %}
     {% assign membership_path = "/en/subscription.html" %}
@@ -19,6 +22,9 @@
     {% assign membership_label = "会员" %}
     {% assign terms_label = "服务条款" %}
     {% assign privacy_label = "隐私政策" %}
+    {% assign stats_label = "访问统计" %}
+    {% assign stats_site_label = "全站浏览量" %}
+    {% assign stats_page_label = "本页浏览量" %}
 {% endif %}
 <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,6 +82,11 @@
         </div>
         <div class="border-t border-gray-800 pt-8 text-center text-sm">
             <p>&copy; 2026 25Maths. All rights reserved.</p>
+            {% if site.analytics and site.analytics.provider == 'countapi' %}
+            <p class="mt-2 text-gray-400" id="visitor-stats" data-countapi-namespace="{{ site.analytics.countapi_namespace }}">
+                {{ stats_label }}: {{ stats_site_label }} <span id="site-view-count">-</span> · {{ stats_page_label }} <span id="page-view-count">-</span>
+            </p>
+            {% endif %}
             <p class="mt-2">
                 <a href="mailto:support@25maths.com" class="hover:text-white transition">support@25maths.com</a>
             </p>

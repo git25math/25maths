@@ -50,4 +50,34 @@
             });
         });
     });
+
+    // Lightweight visitor counters via CountAPI.
+    (function() {
+        var statsEl = document.getElementById('visitor-stats');
+        if (!statsEl) return;
+
+        var namespace = statsEl.getAttribute('data-countapi-namespace');
+        if (!namespace) return;
+
+        var siteEl = document.getElementById('site-view-count');
+        var pageEl = document.getElementById('page-view-count');
+        var pageKey = (window.location.pathname || '/').replace(/[^a-zA-Z0-9_-]/g, '_') || 'home';
+
+        function hitCount(key, targetEl) {
+            if (!targetEl) return;
+            fetch('https://api.countapi.xyz/hit/' + encodeURIComponent(namespace) + '/' + encodeURIComponent(key))
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (data && typeof data.value !== 'undefined') {
+                        targetEl.textContent = String(data.value);
+                    }
+                })
+                .catch(function() {
+                    targetEl.textContent = '-';
+                });
+        }
+
+        hitCount('site_views', siteEl);
+        hitCount('page_' + pageKey, pageEl);
+    })();
 </script>
