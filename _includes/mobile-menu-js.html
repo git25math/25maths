@@ -99,39 +99,12 @@
             }
         }
 
-        function tryBusuanziFallback() {
-            if (window.__busuanziLoaded25) return;
-            window.__busuanziLoaded25 = true;
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
-            script.onload = function() {
-                var tries = 0;
-                var timer = setInterval(function() {
-                    tries += 1;
-                    var sitePv = document.getElementById('busuanzi_value_site_pv');
-                    var pagePv = document.getElementById('busuanzi_value_page_pv');
-                    var siteText = sitePv && sitePv.textContent && sitePv.textContent.trim();
-                    var pageText = pagePv && pagePv.textContent && pagePv.textContent.trim();
-                    if (siteText && pageText) {
-                        clearInterval(timer);
-                        if (siteEl) siteEl.textContent = siteText;
-                        if (pageEl) pageEl.textContent = pageText;
-                    } else if (tries > 20) {
-                        clearInterval(timer);
-                    }
-                }, 250);
-            };
-            document.head.appendChild(script);
-        }
-
         Promise.all([hitCount('site_views'), hitCount('page_' + pageKey)])
             .then(function(values) {
                 if (siteEl) siteEl.textContent = values[0];
                 if (pageEl) pageEl.textContent = values[1];
             })
             .catch(function() {
-                tryBusuanziFallback();
                 setFallbackLocal();
             });
     })();
