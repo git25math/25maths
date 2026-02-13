@@ -1,13 +1,17 @@
 <!-- Mobile Menu Scripts -->
 <script>
     // Global navigation mobile menu
-    document.getElementById('global-menu-button').addEventListener('click', function() {
-        var menu = document.getElementById('global-mobile-menu');
-        menu.classList.toggle('hidden');
-        var expanded = !menu.classList.contains('hidden');
-        this.setAttribute('aria-expanded', expanded);
-        this.setAttribute('aria-label', expanded ? 'Close menu' : 'Open menu');
-    });
+    var globalMenuButton = document.getElementById('global-menu-button');
+    if (globalMenuButton) {
+        globalMenuButton.addEventListener('click', function() {
+            var menu = document.getElementById('global-mobile-menu');
+            if (!menu) return;
+            menu.classList.toggle('hidden');
+            var expanded = !menu.classList.contains('hidden');
+            this.setAttribute('aria-expanded', expanded);
+            this.setAttribute('aria-label', expanded ? 'Close menu' : 'Open menu');
+        });
+    }
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -17,6 +21,33 @@
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
+        });
+    });
+
+    // Keep users on site domain: submit waitlist via fetch, then redirect locally.
+    document.querySelectorAll('form[action*="script.google.com/macros/s/"]').forEach(function(form) {
+        if ((form.method || '').toUpperCase() !== 'POST') return;
+        if (form.dataset.waitlistBound === '1') return;
+        form.dataset.waitlistBound = '1';
+
+        form.addEventListener('submit', function(e) {
+            var redirectInput = form.querySelector('input[name="redirect_url"]');
+            if (!redirectInput || !redirectInput.value) return;
+
+            e.preventDefault();
+            var redirectUrl = redirectInput.value;
+            var data = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: data
+            }).then(function() {
+                window.location.assign(redirectUrl);
+            }).catch(function() {
+                // Fallback to standard form POST if fetch fails.
+                form.submit();
+            });
         });
     });
 </script>
