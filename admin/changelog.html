@@ -30,6 +30,36 @@ title: 25Maths Changelog
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
                 <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-13</span>
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">FUNNEL</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Free gift survey funnel launch (CIE + Edexcel vocab packs)</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>New capture pages</strong>: Added `/free-gift.html`, `/en/free-gift.html`, `/zh-cn/free-gift.html` with one shared GAS endpoint</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>New thank-you pages</strong>: Added `/gift-thanks.html`, `/en/gift-thanks.html`, `/zh-cn/gift-thanks.html` with direct links to both free packs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>CTA rewiring</strong>: Homepage/module/free-resource CTA buttons now route to the survey funnel instead of direct Payhip links</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Data model</strong>: Extended GAS template and plan docs with `persona`, `exam_board_interest`, `target_exam_session`, `consent_updates` fields</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: free-gift.html, en/free-gift.html, zh-cn/free-gift.html, gift-thanks.html, en/gift-thanks.html, zh-cn/gift-thanks.html, index pages, module/free pages, plan/*, sitemap.xml
+            </div>
+        </div>
+
+        <!-- 2026-02-13 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-13</span>
                 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">CONSISTENCY</span>
             </div>
             <h2 class="text-xl font-bold text-gray-900 mb-3">English-first consistency pass + visitor stats</h2>

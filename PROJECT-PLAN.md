@@ -1,6 +1,6 @@
 # 25Maths Website - Project Plan
 
-> **Last Updated**: 2026-02-12
+> **Last Updated**: 2026-02-13
 > **Status**: DEPLOYED (Modular Restructure Complete)
 > **Website**: https://www.25maths.com (GitHub Pages + Jekyll)
 > **Tech Stack**: Jekyll + Tailwind CSS CDN + Google Fonts (Inter)
@@ -199,9 +199,10 @@ active_global: about   # highlights in global-nav
 ## Waitlist Data Pipeline (2026-02-12)
 
 - **Collection endpoint**: one Google Apps Script Web App URL (configured in `_config.yml` `waitlist.endpoint`)
-- **Form scope**: CIE 0580 product pages (EN + zh-CN), 12 form entries total
-- **Metadata fields**: `topic`, `module`, `lang`, `source_page`, `redirect_url`
+- **Form scope**: CIE 0580 product pages + support forms + free gift survey pages
+- **Metadata fields**: `topic`, `module`, `lang`, `source_page`, `redirect_url`, `entry_point`
 - **Dedupe rule**: primary key `email`; topic intent tracked with `email + topic`
+- **Gift survey fields**: `persona`, `exam_board_interest`, `target_exam_session`, `consent_updates`
 - **Implementation files**:
   - Plan: `plan/WAITLIST-GSHEETS-PLAN.md`
   - GAS template: `plan/WAITLIST-GSHEETS.gs`

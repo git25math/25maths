@@ -1,7 +1,7 @@
 # Waitlist + Google Sheets Optimization Plan
 
-> Date: 2026-02-12
-> Scope: CIE 0580 product waitlist forms + support contact form
+> Date: 2026-02-13
+> Scope: CIE 0580 product waitlist forms + support contact form + free gift survey funnel
 
 ## Goal
 
@@ -72,6 +72,8 @@ Columns:
 - Hidden fields added: `topic`, `module`, `lang`, `source_page`, `redirect_url`
 - Topic-specific differentiation remains in `_subject`
 - `support.html` contact form also posts to same endpoint with `entry_point=support_contact_form`
+- New free gift pages (`/free-gift.html`, `/en/free-gift.html`, `/zh-cn/free-gift.html`) post to the same endpoint with `entry_point=free_gift_survey`
+- Free gift survey adds fields: `persona`, `exam_board_interest`, `target_exam_session`, `consent_updates`
 
 ## Verification checklist
 
@@ -82,6 +84,7 @@ Columns:
 - [ ] Duplicate same email/topic does not create duplicate subscriber row (requires live deployment test)
 - [ ] Same email different topic updates topic tags (requires live deployment test)
 - [ ] Support contact captures `name`, `ticket_subject`, `message` in `waitlist_events`
+- [ ] Free gift survey captures `persona`, `exam_board_interest`, `target_exam_session`, `consent_updates` in `waitlist_events`
 
 ## Rollout steps
 

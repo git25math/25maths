@@ -121,3 +121,7 @@
 - [x] IP 条款强化（terms.html）
 - [x] 战略框架整合（STRATEGY.md, DECISIONS.md）
 - [x] Waitlist 数据方案落地（Google Sheets 去重模型：email 主键 + topic 标签）
+- [x] 免费赠品漏斗上线（统一问卷入口 + 感谢页双资源下载）
+  - 页面：`/free-gift.html`、`/en/free-gift.html`、`/zh-cn/free-gift.html`
+  - 感谢页：`/gift-thanks.html`、`/en/gift-thanks.html`、`/zh-cn/gift-thanks.html`
+  - 入口替换：首页 + CIE/Edexcel 免费资源 CTA 改为问卷领取

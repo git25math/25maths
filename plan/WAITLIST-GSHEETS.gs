@@ -21,6 +21,10 @@ function doPost(e) {
   var product = (params.product || '').trim();
   var ticketSubject = (params.subject || '').trim();
   var message = (params.message || '').trim();
+  var persona = (params.persona || '').trim();
+  var examBoardInterest = (params.exam_board_interest || '').trim();
+  var targetExamSession = (params.target_exam_session || '').trim();
+  var consentUpdates = (params.consent_updates || '').trim();
   var subject = (params._subject || '').trim();
   var redirectUrl = (params.redirect_url || 'https://www.25maths.com/thanks.html').trim();
   var now = new Date();
@@ -57,6 +61,10 @@ function doPost(e) {
     'product',
     'ticket_subject',
     'message',
+    'persona',
+    'exam_board_interest',
+    'target_exam_session',
+    'consent_updates',
     'subject',
     'is_new_email',
     'is_new_topic',
@@ -85,6 +93,10 @@ function doPost(e) {
     product,
     ticketSubject,
     message,
+    persona,
+    examBoardInterest,
+    targetExamSession,
+    consentUpdates,
     subject,
     upsert.isNewEmail ? '1' : '0',
     upsert.isNewTopic ? '1' : '0',
