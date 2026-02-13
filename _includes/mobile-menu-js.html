@@ -61,23 +61,78 @@
 
         var siteEl = document.getElementById('site-view-count');
         var pageEl = document.getElementById('page-view-count');
-        var pageKey = (window.location.pathname || '/').replace(/[^a-zA-Z0-9_-]/g, '_') || 'home';
+        var pageKeyRaw = (window.location.pathname || '/').replace(/[^a-zA-Z0-9_-]/g, '_') || 'home';
+        var pageKey = pageKeyRaw.slice(0, 64);
 
-        function hitCount(key, targetEl) {
-            if (!targetEl) return;
-            fetch('https://api.countapi.xyz/hit/' + encodeURIComponent(namespace) + '/' + encodeURIComponent(key))
-                .then(function(res) { return res.json(); })
-                .then(function(data) {
-                    if (data && typeof data.value !== 'undefined') {
-                        targetEl.textContent = String(data.value);
-                    }
-                })
-                .catch(function() {
-                    targetEl.textContent = '-';
-                });
+        function withTimeout(promise, ms) {
+            return new Promise(function(resolve, reject) {
+                var timer = setTimeout(function() { reject(new Error('timeout')); }, ms);
+                promise.then(function(v) { clearTimeout(timer); resolve(v); })
+                    .catch(function(err) { clearTimeout(timer); reject(err); });
+            });
         }
 
-        hitCount('site_views', siteEl);
-        hitCount('page_' + pageKey, pageEl);
+        function hitCount(key) {
+            return withTimeout(
+                fetch('https://api.countapi.xyz/hit/' + encodeURIComponent(namespace) + '/' + encodeURIComponent(key))
+                    .then(function(res) { return res.json(); }),
+                3000
+            ).then(function(data) {
+                if (!data || typeof data.value === 'undefined') throw new Error('bad payload');
+                return String(data.value);
+            });
+        }
+
+        function setFallbackLocal() {
+            try {
+                var siteLocalKey = 'stats_site_views_local';
+                var pageLocalKey = 'stats_page_' + pageKey + '_local';
+                var siteValue = Number(localStorage.getItem(siteLocalKey) || '0') + 1;
+                var pageValue = Number(localStorage.getItem(pageLocalKey) || '0') + 1;
+                localStorage.setItem(siteLocalKey, String(siteValue));
+                localStorage.setItem(pageLocalKey, String(pageValue));
+                if (siteEl) siteEl.textContent = String(siteValue);
+                if (pageEl) pageEl.textContent = String(pageValue);
+            } catch (_) {
+                if (siteEl) siteEl.textContent = 'N/A';
+                if (pageEl) pageEl.textContent = 'N/A';
+            }
+        }
+
+        function tryBusuanziFallback() {
+            if (window.__busuanziLoaded25) return;
+            window.__busuanziLoaded25 = true;
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+            script.onload = function() {
+                var tries = 0;
+                var timer = setInterval(function() {
+                    tries += 1;
+                    var sitePv = document.getElementById('busuanzi_value_site_pv');
+                    var pagePv = document.getElementById('busuanzi_value_page_pv');
+                    var siteText = sitePv && sitePv.textContent && sitePv.textContent.trim();
+                    var pageText = pagePv && pagePv.textContent && pagePv.textContent.trim();
+                    if (siteText && pageText) {
+                        clearInterval(timer);
+                        if (siteEl) siteEl.textContent = siteText;
+                        if (pageEl) pageEl.textContent = pageText;
+                    } else if (tries > 20) {
+                        clearInterval(timer);
+                    }
+                }, 250);
+            };
+            document.head.appendChild(script);
+        }
+
+        Promise.all([hitCount('site_views'), hitCount('page_' + pageKey)])
+            .then(function(values) {
+                if (siteEl) siteEl.textContent = values[0];
+                if (pageEl) pageEl.textContent = values[1];
+            })
+            .catch(function() {
+                tryBusuanziFallback();
+                setFallbackLocal();
+            });
     })();
 </script>

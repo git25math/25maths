@@ -12,7 +12,7 @@ waitlist:
 # Visitor analytics (simple page/site view counters)
 analytics:
   provider: "countapi"
-  countapi_namespace: "25maths.com"
+  countapi_namespace: "25maths_website"
 
 # Build settings
 plugins:
