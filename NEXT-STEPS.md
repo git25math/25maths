@@ -33,6 +33,7 @@
 - [ ] 上传到 Payhip（替换旧版本）
 - [ ] Functions Bundle 质量审查（是否需要重构？）
 - [ ] Number Bundle 质量审查（是否需要重构？）
+- [ ] **结合 Edexcel 4MA1 考纲更新 Kahoot 主题，并创建对应 worksheet 配套资源**（含答案与分层练习）
 - [ ] 网站付费链接 Gumroad → Payhip
 - [ ] Google Search Console 提交
 - [ ] 第一篇社交媒体内容（小红书/Reddit）
