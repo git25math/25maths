@@ -1,4 +1,4 @@
-# Worksheet Brief Template
+# Worksheet Brief Template (10-Question Standard)
 
 ## 1. Topic Metadata
 - Board:
@@ -6,29 +6,34 @@
 - Topic Name:
 - Worksheet Version:
 
-## 2. Layout Specification
-- Page 1: Quick recap + worked example
-- Page 2-3: Multiple choice section
-- Page 4-5: Structured response section
-- Page 6: Challenge problems (optional)
+## 2. Syllabus Requirement Notes
+- Required skill 1:
+- Required skill 2:
+- Required skill 3:
 
-## 3. Question Distribution
-- Easy:
-- Medium:
-- Hard:
-- Total questions:
+## 3. Common Exam Styles
+- Style A:
+- Style B:
+- Style C:
 
-## 4. Style Notes
+## 4. Model Example (Must Include)
+- Example prompt:
+- Step 1:
+- Step 2:
+- Step 3:
+- Final answer:
+
+## 5. Practice Set Rule
+- Total questions: exactly 10
+- Suggested split: 4 easy, 4 medium, 2 harder exam-style
+- Question language: concise, exam-style wording only
+
+## 6. Formatting Notes
 - Printable A4, grayscale-safe
 - Keep reusable 25Maths border style
-- Keep generous writing space for steps
+- Keep writing space for working steps
 
-## 5. Pedagogical Focus
-- Core skill targets:
-- Common error alerts:
-- Exam wording reminders:
-
-## 6. Export Checklist
-- [ ] Student worksheet PDF
-- [ ] Teacher answer key PDF
-- [ ] Worked solutions PDF
+## 7. Export Checklist
+- [ ] Student worksheet (10 questions)
+- [ ] Answer key
+- [ ] Marker notes (short)

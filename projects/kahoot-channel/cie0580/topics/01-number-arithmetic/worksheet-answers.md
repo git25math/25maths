@@ -1,32 +1,17 @@
 # CIE 0580 Worksheet (Answers)
-## Topic: Number Arithmetic and Order of Operations
+## Topic: Number Arithmetic (BIDMAS, HCF/LCM, Standard Form)
 
-### Section A
-1) B
-2) A
-3) C
-4) A
-5) A
-6) B
-7) B
-8) C
-9) B
-10) C
-11) B
-12) B
+1. `14 - 3 x 2 = 14 - 6 = 8`
+2. `(18 / 3) x (5 - 2) = 6 x 3 = 18`
+3. HCF(24, 36) = `12`
+4. LCM(8, 12) = `24`
+5. `0.0032 = 3.2 x 10^-3`
+6. `7.5 x 10^2 = 750`
+7. `12.467` to 2 d.p. = `12.47`
+8. `20 - (-4) = 24`
+9. Estimate `49.8 / 10.1` using `50 / 10` = `5`
+10. LCM(15, 20) = `60` minutes, so next same departure is `10:00`
 
-### Section B
-13) 18
-14) HCF = 6, LCM = 126
-15) \(5.6\times10^{-4}\)
-16) 0.0042
-17) Greatest number of groups = 12; each group: 4 red, 5 blue
-18) 19
-19) Estimated value = \(20\times4=80\)
-20) Example answer: Doing subtraction before multiplication in \(14-3\times2\); correct is \(14-6=8\), not \(22\).
-
-### Challenge
-21) 21
-22) 60
-23) 24
-24) 1.44
+## Marker notes
+- Q9 accepts values close to 5 with valid estimation method.
+- Q10 method mark if learner identifies LCM even with time-format slip.

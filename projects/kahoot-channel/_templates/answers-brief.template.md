@@ -1,21 +1,19 @@
-# Answers & Solutions Brief Template
+# Answers & Listing Brief Template
 
 ## 1. Answer Key Format
-- Section A (MCQ): answer letters + final value
-- Section B (Structured): final answers only
+- Q1-Q10: final answers with concise method
+- Include units/notation where needed
+- Add 1-2 marker notes for common alternative methods
 
-## 2. Worked Solution Format
-- Step 1: setup
-- Step 2: operation / transformation
-- Step 3: final answer and short check
-
-## 3. Marking Notes
-- Method marks where relevant
-- Common wrong-path annotations
-- Calculator/non-calculator hints
-
-## 4. QA Checklist
+## 2. Accuracy QA
 - [ ] Numerical accuracy
-- [ ] Algebraic simplification consistency
-- [ ] Units / notation consistency
-- [ ] Board-appropriate vocabulary
+- [ ] Algebra/notation consistency
+- [ ] Board-appropriate wording
+
+## 3. Listing Copy Block (for store/page upload)
+- Product title:
+- One-line hook:
+- Short description (60-120 words):
+- Includes list (bullet):
+- Best for:
+- CTA:
