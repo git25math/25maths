@@ -1,0 +1,4 @@
+member_email,status,period_start,period_end,board_focus,topic_focus,last_delivery_date,last_delivery_batch,notes
+sample1@example.com,active,2026-02-01,2026-02-29,cie0580,algebra,2026-02-15,2026-W07-cie0580-algebra,Welcome cohort
+sample2@example.com,active,2026-02-07,2026-03-06,edx4ma1,geometry,2026-02-15,2026-W07-edx4ma1-geometry,
+sample3@example.com,cancelled,2026-01-05,2026-02-04,mixed,numbers,,,
