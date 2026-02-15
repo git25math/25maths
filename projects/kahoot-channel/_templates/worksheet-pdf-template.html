@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25Maths Worksheet PDF Template</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    :root {
+      --brand-primary: #8b1538;
+      --brand-secondary: #2563eb;
+      --brand-accent: #f2e7d5;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --paper: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f7f8;
+      color: var(--ink);
+      font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: var(--paper);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .frame {
+      position: absolute;
+      inset: 8mm;
+      border: 2px solid var(--brand-primary);
+      pointer-events: none;
+    }
+
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 5mm;
+      border: 1px solid #c9a56a;
+    }
+
+    .corner {
+      position: absolute;
+      width: 16mm;
+      height: 16mm;
+      border: 2px solid var(--brand-primary);
+      background:
+        linear-gradient(135deg, rgba(139, 21, 56, 0.12), transparent 60%),
+        linear-gradient(315deg, rgba(37, 99, 235, 0.14), transparent 58%);
+    }
+
+    .corner.tl { top: 6mm; left: 6mm; border-right: none; border-bottom: none; }
+    .corner.tr { top: 6mm; right: 6mm; border-left: none; border-bottom: none; }
+    .corner.bl { bottom: 6mm; left: 6mm; border-right: none; border-top: none; }
+    .corner.br { bottom: 6mm; right: 6mm; border-left: none; border-top: none; }
+
+    .content {
+      padding: 16mm 16mm 14mm 16mm;
+      position: relative;
+      z-index: 1;
+    }
+
+    .topband {
+      border: 1px solid #e8d8b7;
+      background: linear-gradient(90deg, #f8f2e7, #fffdf9);
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      font-weight: 800;
+      color: var(--brand-primary);
+      letter-spacing: 0.2px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .meta {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 23px;
+      line-height: 1.2;
+      color: var(--brand-primary);
+    }
+
+    .subtitle {
+      margin: 2px 0 12px;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .field {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 11px;
+      min-height: 37px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .field .label {
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .field .value {
+      border-bottom: 1px dashed #cfd4dc;
+      min-height: 14px;
+    }
+
+    .objective {
+      border-left: 4px solid var(--brand-secondary);
+      padding: 7px 10px;
+      background: #f8fbff;
+      margin-bottom: 10px;
+      font-size: 11.5px;
+    }
+
+    .objective strong {
+      color: #1e40af;
+    }
+
+    .section-title {
+      margin: 10px 0 6px;
+      font-weight: 700;
+      color: #111827;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--brand-primary);
+    }
+
+    .notes {
+      border: 1px solid #f0e5cf;
+      background: #fffaf1;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 10.8px;
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+
+    .questions {
+      margin-top: 6px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .q {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 11.4px;
+      line-height: 1.45;
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 8px;
+      min-height: 28px;
+    }
+
+    .q:last-child {
+      border-bottom: none;
+    }
+
+    .qnum {
+      font-weight: 700;
+      color: var(--brand-primary);
+    }
+
+    .qtext {
+      color: #111827;
+    }
+
+    .answer-space {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      margin-top: 9px;
+      padding: 8px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+      font-size: 10.5px;
+    }
+
+    .answer-cell {
+      border: 1px dashed #cfd4dc;
+      border-radius: 7px;
+      min-height: 28px;
+      padding: 4px 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="frame"></div>
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+
+    <section class="content">
+      <div class="topband">
+        <div class="logo">25Maths Worksheet Companion</div>
+        <div class="meta">Board: CIE 0580 / Edexcel 4MA1<br>Format: Printable A4 PDF</div>
+      </div>
+
+      <h1>Number Arithmetic: BIDMAS, HCF, LCM</h1>
+      <p class="subtitle">Kahoot Extension Worksheet | Topic ID: 01 | Difficulty: Core</p>
+
+      <div class="row">
+        <div class="field"><span class="label">Student Name</span><span class="value"></span></div>
+        <div class="field"><span class="label">Class / Group</span><span class="value"></span></div>
+        <div class="field"><span class="label">Date</span><span class="value"></span></div>
+      </div>
+
+      <div class="objective">
+        <strong>Syllabus focus:</strong> apply order of operations, calculate HCF/LCM, and convert between ordinary form and standard form using exam-style wording.
+      </div>
+
+      <div class="section-title">Common exam reminders</div>
+      <div class="notes">
+        Do powers first, then multiplication/division, then addition/subtraction. In word problems, identify whether HCF (grouping) or LCM (cycle timing) is required before calculating.
+      </div>
+
+      <div class="section-title">Practice (10 Questions)</div>
+      <div class="questions">
+        <div class="q"><div class="qnum">1.</div><div class="qtext">Evaluate: <strong>14 - 3 x 2</strong></div></div>
+        <div class="q"><div class="qnum">2.</div><div class="qtext">Evaluate: <strong>(18 / 3) x (5 - 2)</strong></div></div>
+        <div class="q"><div class="qnum">3.</div><div class="qtext">Find the <strong>HCF</strong> of 24 and 36.</div></div>
+        <div class="q"><div class="qnum">4.</div><div class="qtext">Find the <strong>LCM</strong> of 8 and 12.</div></div>
+        <div class="q"><div class="qnum">5.</div><div class="qtext">Write <strong>0.0032</strong> in standard form.</div></div>
+        <div class="q"><div class="qnum">6.</div><div class="qtext">Write <strong>7.5 x 10<sup>2</sup></strong> as an ordinary number.</div></div>
+        <div class="q"><div class="qnum">7.</div><div class="qtext">Round <strong>12.467</strong> to 2 decimal places.</div></div>
+        <div class="q"><div class="qnum">8.</div><div class="qtext">Evaluate: <strong>20 - (-4)</strong></div></div>
+        <div class="q"><div class="qnum">9.</div><div class="qtext">Estimate: <strong>49.8 / 10.1</strong></div></div>
+        <div class="q"><div class="qnum">10.</div><div class="qtext">Two buses leave every 15 min and 20 min. They leave together at 09:00. When next together?</div></div>
+      </div>
+
+      <div class="section-title">Answer box (student quick record)</div>
+      <div class="answer-space">
+        <div class="answer-cell">Q1:</div>
+        <div class="answer-cell">Q2:</div>
+        <div class="answer-cell">Q3:</div>
+        <div class="answer-cell">Q4:</div>
+        <div class="answer-cell">Q5:</div>
+        <div class="answer-cell">Q6:</div>
+        <div class="answer-cell">Q7:</div>
+        <div class="answer-cell">Q8:</div>
+        <div class="answer-cell">Q9:</div>
+        <div class="answer-cell">Q10:</div>
+      </div>
+
+      <div class="footer">
+        <span>www.25maths.com</span>
+        <span>For classroom use in the 25Maths resource system</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
