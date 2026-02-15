@@ -71,14 +71,26 @@ lang_links:
 <section class="py-16 bg-white" id="pricing">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">Membership Pricing</h2>
-        <p class="text-gray-600 mb-8">Simple monthly plan. Cancel anytime.</p>
+        <p class="text-gray-600 mb-8">Membership checkout opens soon. Join the priority list now and get first access.</p>
         <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border">
             <div class="text-5xl font-bold text-primary mb-2">$9.99</div>
             <div class="text-gray-600 mb-6">per month</div>
-            <a href="https://payhip.com/b/{SUBSCRIPTION_ID}" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition inline-block">
-                Join the Membership
-            </a>
-            <p class="text-sm text-gray-500 mt-4">You’ll receive a confirmation email with access details.</p>
+            <form action="{{ site.waitlist.endpoint }}" method="POST" class="max-w-md mx-auto space-y-4 text-left">
+                <input type="hidden" name="topic" value="Weekly Membership">
+                <input type="hidden" name="module" value="CIE 0580">
+                <input type="hidden" name="lang" value="en">
+                <input type="hidden" name="source_page" value="{{ page.url }}">
+                <input type="hidden" name="entry_point" value="membership_waitlist">
+                <input type="hidden" name="product" value="Weekly Membership">
+                <input type="hidden" name="_subject" value="Weekly Membership Waitlist">
+                <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
+                <input type="text" name="name" placeholder="Name (optional)" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                <input type="email" name="email" required placeholder="Email address" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    Join Priority Waitlist
+                </button>
+            </form>
+            <p class="text-sm text-gray-500 mt-4">You will receive launch notice, early access link, and onboarding details by email.</p>
         </div>
     </div>
 </section>

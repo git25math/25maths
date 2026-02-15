@@ -26,7 +26,7 @@ function doPost(e) {
   var targetExamSession = (params.target_exam_session || '').trim();
   var consentUpdates = (params.consent_updates || '').trim();
   var subject = (params._subject || '').trim();
-  var redirectUrl = (params.redirect_url || 'https://www.25maths.com/thanks.html').trim();
+  var redirectUrl = normalizeRedirectUrl_((params.redirect_url || 'https://www.25maths.com/thanks.html').trim());
   var now = new Date();
   var nowIso = now.toISOString();
 
@@ -83,21 +83,21 @@ function doPost(e) {
 
   events.appendRow([
     nowIso,
-    email,
-    name,
-    topic,
-    moduleName,
-    lang,
-    sourcePage,
-    entryPoint,
-    product,
-    ticketSubject,
-    message,
-    persona,
-    examBoardInterest,
-    targetExamSession,
-    consentUpdates,
-    subject,
+    safeCell_(email),
+    safeCell_(name),
+    safeCell_(topic),
+    safeCell_(moduleName),
+    safeCell_(lang),
+    safeCell_(sourcePage),
+    safeCell_(entryPoint),
+    safeCell_(product),
+    safeCell_(ticketSubject),
+    safeCell_(message),
+    safeCell_(persona),
+    safeCell_(examBoardInterest),
+    safeCell_(targetExamSession),
+    safeCell_(consentUpdates),
+    safeCell_(subject),
     upsert.isNewEmail ? '1' : '0',
     upsert.isNewTopic ? '1' : '0',
     redirectUrl,
@@ -105,6 +105,21 @@ function doPost(e) {
   ]);
 
   return redirectHtml(redirectUrl + '?status=ok');
+}
+
+function normalizeRedirectUrl_(url) {
+  var fallback = 'https://www.25maths.com/thanks.html';
+  if (!url) return fallback;
+  if (/^https:\/\/(www\.)?25maths\.com\//i.test(url)) return url;
+  return fallback;
+}
+
+function safeCell_(value) {
+  var text = String(value || '');
+  if (/^[=+\-@]/.test(text)) {
+    return "'" + text;
+  }
+  return text;
 }
 
 function isValidEmail(email) {

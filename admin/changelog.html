@@ -26,6 +26,44 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-02-15 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-15</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full font-semibold">KAHOOT HUB</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Kahoot companion hub launch + waitlist funnel closure</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>New hub page</strong>: Added `/kahoot/` as an English landing page for topic discovery, free printable worksheet capture, and conversion routing.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Navigation integration</strong>: Added Kahoot entry in global nav and footer; added `/kahoot/` to sitemap for indexing.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Membership CTA closure</strong>: Replaced `{SUBSCRIPTION_ID}` placeholders on `/subscription.html`, `/en/subscription.html`, and `/zh-cn/subscription.html` with waitlist forms.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Blog form unification</strong>: Replaced post contact Formspree placeholder with the shared GAS endpoint and metadata tagging (`blog_question_form`).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Collector hardening</strong>: Added redirect whitelist and sheet formula-injection guard in `WAITLIST-GSHEETS.gs` template.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Ops docs</strong>: Added `plan/MARKETING-CLOSED-LOOP.md` to standardize acquisition → capture → segment → conversion workflow.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: kahoot/index.html, _includes/global-nav.html, _includes/footer.html, sitemap.xml, subscription.html, en/subscription.html, zh-cn/subscription.html, _layouts/post.html, plan/WAITLIST-GSHEETS.gs, plan/MARKETING-CLOSED-LOOP.md
+            </div>
+        </div>
+
         <!-- 2026-02-13 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">

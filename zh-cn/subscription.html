@@ -71,14 +71,26 @@ lang_links:
 <section class="py-16 bg-white" id="pricing">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">会员价格</h2>
-        <p class="text-gray-600 mb-8">简单月付，随时取消。</p>
+        <p class="text-gray-600 mb-8">会员支付页即将开放。先加入优先通知名单，开放时第一时间收到链接。</p>
         <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border">
             <div class="text-5xl font-bold text-primary mb-2">$9.99</div>
             <div class="text-gray-600 mb-6">每月</div>
-            <a href="https://payhip.com/b/{SUBSCRIPTION_ID}" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition inline-block">
-                立即订阅
-            </a>
-            <p class="text-sm text-gray-500 mt-4">订阅成功后将收到访问说明邮件。</p>
+            <form action="{{ site.waitlist.endpoint }}" method="POST" class="max-w-md mx-auto space-y-4 text-left">
+                <input type="hidden" name="topic" value="Weekly Membership">
+                <input type="hidden" name="module" value="CIE 0580">
+                <input type="hidden" name="lang" value="zh-CN">
+                <input type="hidden" name="source_page" value="{{ page.url }}">
+                <input type="hidden" name="entry_point" value="membership_waitlist">
+                <input type="hidden" name="product" value="Weekly Membership">
+                <input type="hidden" name="_subject" value="Weekly Membership Waitlist">
+                <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
+                <input type="text" name="name" placeholder="姓名（选填）" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                <input type="email" name="email" required placeholder="邮箱地址" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    加入优先通知名单
+                </button>
+            </form>
+            <p class="text-sm text-gray-500 mt-4">我们会通过邮件发送上线通知、早鸟入口和使用说明。</p>
         </div>
     </div>
 </section>

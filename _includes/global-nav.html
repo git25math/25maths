@@ -1,10 +1,12 @@
 <!-- Global Navigation -->
 {% assign blog_path = "/blog/" %}
 {% assign membership_path = "/subscription.html" %}
+{% assign kahoot_path = "/kahoot/" %}
 {% assign blog_label = "Blog" %}
 {% assign about_label = "About" %}
 {% assign support_label = "Support" %}
 {% assign membership_label = "Membership" %}
+{% assign kahoot_label = "Kahoot" %}
 {% assign about_path = "/about.html" %}
 {% assign support_path = "/support.html" %}
 {% if page.lang == 'en' %}
@@ -38,6 +40,7 @@
                 {% endfor %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
                 <a href="{{ blog_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'blog' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ blog_label }}</a>
+                <a href="{{ kahoot_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'kahoot' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ kahoot_label }}</a>
                 <a href="{{ about_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'about' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ about_label }}</a>
                 <a href="{{ support_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'support' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ support_label }}</a>
                 <a href="{{ membership_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ membership_label }}</a>
@@ -72,6 +75,7 @@
             {% endfor %}
             <div class="border-t border-gray-700 mt-2 pt-2">
                 <a href="{{ blog_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ blog_label }}</a>
+                <a href="{{ kahoot_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ kahoot_label }}</a>
                 <a href="{{ about_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ about_label }}</a>
                 <a href="{{ support_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ support_label }}</a>
                 <a href="{{ membership_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ membership_label }}</a>
