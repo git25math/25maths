@@ -93,3 +93,21 @@ Generated report:
 
 - `payhip/presale/kahoot-funnel-health.md`
 - Optional machine summary: `python3 scripts/health/report_kahoot_funnel.py --json-out payhip/presale/kahoot-funnel-health.json`
+
+## 8) Generate Payhip upload matrix (L1-L4)
+
+```bash
+python3 scripts/payhip/generate_kahoot_payhip_listing_matrix.py
+```
+
+Outputs:
+
+- `payhip/presale/kahoot-payhip-listings-master.csv`
+- `payhip/presale/kahoot-payhip-listings-l1.csv`
+- `payhip/presale/kahoot-payhip-listings-l2.csv`
+- `payhip/presale/kahoot-payhip-listings-l3.csv`
+- `payhip/presale/kahoot-payhip-listings-l4.csv`
+
+Execution plan:
+
+- `payhip/presale/kahoot-payhip-listing-upload-plan.md`
