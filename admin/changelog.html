@@ -26,6 +26,48 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-02-16 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-16</span>
+                <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full font-semibold">KAHOOT OPS</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Kahoot presale matrix finalized + health pipeline hardened</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>SubTopic presale coverage complete</strong>: Finalized active CIE 0580 + Edexcel 4MA1 SubTopic mapping with L1/L2/L3 links, presale dates, and status fields for all active items.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">x</span>
+                    <span><strong>Legacy cleanup</strong>: Removed the archived `Number (Extended) - Legacy Pre Official` link records to prevent stale entries in health checks and exports.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>CSV operations tooling</strong>: Added SubTopic link export/import scripts and an operator guide for safe batch updates (`fill-empty`, `overwrite`, `strict`, dry-run flow).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Funnel health reporting</strong>: Added board/tier/unit/section report generation (`.md` + `.json`) so launch readiness can be checked in one command.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>CI health workflow</strong>: Updated scheduled site health workflow to run Kahoot data integrity and funnel report checks before site-level checks.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Security baseline</strong>: Strengthened CSP with `frame-ancestors 'self'` and updated health checks to detect GitHub Pages origin (header gaps reported as info, not false warning).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Current health status</strong>: After deployment, site checks report `Failures: 0` and `Warnings: 0`.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: _data/kahoot_subtopic_links.json, scripts/kahoot/export_subtopic_links_csv.py, scripts/kahoot/import_subtopic_links_csv.py, scripts/health/check_kahoot_data.py, scripts/health/report_kahoot_funnel.py, scripts/health/check_site.sh, payhip/presale/kahoot-subtopic-links-working.csv, payhip/presale/kahoot-subtopic-link-import-guide.md, payhip/presale/kahoot-funnel-health.md, payhip/presale/kahoot-funnel-health.json, .github/workflows/site-health-check.yml, _config.yml, admin/changelog.html
+            </div>
+        </div>
+
         <!-- 2026-02-15 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
