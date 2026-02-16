@@ -30,6 +30,10 @@ EDX_DOMAIN_LABELS = {
     'statistics': 'Statistics and Probability',
 }
 
+EXCLUDED_SECTIONS_BY_BOARD = {
+    'cie0580': {'number-e1-legacy-pre-official'},
+}
+
 
 def title_from_slug(slug: str) -> str:
     parts = slug.split('-')
@@ -66,9 +70,12 @@ def build_board_data(board_slug: str, tier_map: dict[str, str], domain_labels: d
     sections = []
     all_ids: list[str] = []
     missing_covers: list[str] = []
+    excluded_sections = EXCLUDED_SECTIONS_BY_BOARD.get(board_slug, set())
 
     for section_dir in sorted([p for p in micro_root.iterdir() if p.is_dir()]):
         section_name = section_dir.name
+        if section_name in excluded_sections:
+            continue
         subdirs = sorted([p for p in section_dir.iterdir() if p.is_dir()])
         if not subdirs:
             continue
