@@ -5,16 +5,14 @@ description: "Syllabus-aligned Kahoot project hubs for CIE 0580 and Edexcel 4MA1
 active_global: kahoot
 lang: en
 ---
-{% assign cie_cover_count = site.static_files | where_exp: "file", "file.path contains '/projects/kahoot-channel/cie0580/micro-topics/' and file.path contains '/cover-2320x1520-kahoot-minimal.png'" | size %}
-{% assign edexcel_cover_count = site.static_files | where_exp: "file", "file.path contains '/projects/kahoot-channel/edexcel-4ma1/micro-topics/' and file.path contains '/cover-2320x1520-kahoot-minimal.png'" | size %}
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">25Maths Kahoot Projects</p>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Syllabus Project Hub</h1>
         <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto">
-            Browse syllabus-aligned micro-topic channels for CIE 0580 and Edexcel 4MA1.
-            Each project page includes Kahoot links, small cover previews, and worksheet download links via Payhip.
+            Browse syllabus-aligned project pages for CIE 0580 and Edexcel 4MA1.
+            Each page includes compact cover previews, Kahoot links, and worksheet download links.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kahoot/cie0580/" class="bg-white text-primary px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 Project</a>
@@ -27,9 +25,7 @@ lang: en
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10">
             <h2 class="text-3xl font-bold text-gray-900 mb-3">Syllabus Project Columns</h2>
-            <p class="text-gray-600">
-                Choose an exam board project page to view syllabus micro-topics with compact cover previews and linked resources.
-            </p>
+            <p class="text-gray-600">Choose your exam board and open the corresponding Kahoot project page.</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
@@ -37,10 +33,7 @@ lang: en
                 <img src="/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-01-units-of-measure/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 Kahoot project preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 <p class="text-xs font-bold tracking-wider text-primary mb-2">PROJECT COLUMN</p>
                 <h3 class="text-xl font-bold text-gray-900">CIE 0580 Kahoot Project Page</h3>
-                <p class="text-gray-600 mt-2 mb-4">
-                    Cambridge syllabus micro-topics with cover previews, Kahoot channel access, and worksheet downloads.
-                </p>
-                <p class="text-sm text-gray-500 mb-5">{{ cie_cover_count }} micro-topic cover previews currently generated.</p>
+                <p class="text-gray-600 mt-2 mb-4">Topic E1 to E9 structure with compact cover previews and worksheet links.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="/kahoot/cie0580/" class="text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Project Page</a>
                     <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
@@ -52,40 +45,13 @@ lang: en
                 <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-03-graphs/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 Kahoot project preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 <p class="text-xs font-bold tracking-wider text-secondary mb-2">PROJECT COLUMN</p>
                 <h3 class="text-xl font-bold text-gray-900">Edexcel 4MA1 Project Page</h3>
-                <p class="text-gray-600 mt-2 mb-4">Foundation/Higher micro-topic coverage with linked Kahoot and worksheet resources.</p>
-                <p class="text-sm text-gray-500 mb-5">{{ edexcel_cover_count }} micro-topic cover previews currently generated.</p>
+                <p class="text-gray-600 mt-2 mb-4">Topic 1 to Topic 6 structure with Foundation/Higher worksheet companions.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="/kahoot/edexcel-4ma1/" class="text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Project Page</a>
                     <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
                     <a href="https://payhip.com/b/JzU7h" target="_blank" rel="noopener" class="text-center border border-gray-300 px-5 py-2.5 rounded-lg font-semibold text-sm text-gray-800 hover:bg-gray-100 transition">Worksheet Bundle</a>
                 </div>
             </article>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-gray-50 border-y">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-2xl border border-gray-200 p-8 md:p-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Course-Pack Ready Structure</h2>
-            <p class="text-gray-600 mb-6">
-                Both project pages are structured around syllabus micro-topics so you can add paid single packs, bundles, and
-                future course packages without rebuilding page architecture.
-            </p>
-            <div class="grid md:grid-cols-3 gap-4 text-sm">
-                <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                    <p class="font-semibold text-gray-900 mb-1">Step 1</p>
-                    <p class="text-gray-600">Upload/update Kahoot by micro-topic.</p>
-                </div>
-                <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                    <p class="font-semibold text-gray-900 mb-1">Step 2</p>
-                    <p class="text-gray-600">Attach Payhip worksheet links to each micro-topic card.</p>
-                </div>
-                <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                    <p class="font-semibold text-gray-900 mb-1">Step 3</p>
-                    <p class="text-gray-600">Promote bundles/membership from board-level project pages.</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>

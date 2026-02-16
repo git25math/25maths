@@ -1,26 +1,22 @@
 ---
 layout: global
 title: Edexcel 4MA1 Kahoot Syllabus Project
-description: "Edexcel 4MA1 syllabus-aligned Kahoot micro-topic list with compact cover previews and worksheet download links."
+description: "Edexcel 4MA1 syllabus-aligned Kahoot topic list with compact cover previews and worksheet download links."
 active_global: kahoot
 lang: en
 ---
-{% assign kahoot_channel_url = "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" %}
-{% assign payhip_url = "https://payhip.com/b/JzU7h" %}
-{% assign edexcel_covers = site.static_files | where_exp: "file", "file.path contains '/projects/kahoot-channel/edexcel-4ma1/micro-topics/' and file.path contains '/cover-2320x1520-kahoot-minimal.png'" | sort: "path" %}
-{% assign edexcel_domain_order = "number,equations,sequences,geometry,vectors,statistics" | split: "," %}
 
 <section class="bg-gradient-to-br from-secondary to-blue-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">Edexcel 4MA1</p>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Syllabus Project Page</h1>
         <p class="text-lg text-gray-100 max-w-3xl">
-            Foundation and Higher micro-topics are organized in one working list so you can ship Kahoot activities,
-            worksheet companions, and later course packs from the same structure.
+            Topic-based directory for Edexcel 4MA1 syllabus planning.
+            Each topic card links to Kahoot channel practice and worksheet companion download.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-center bg-white text-secondary px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open Edexcel 4MA1 Kahoot Channel</a>
-            <a href="{{ payhip_url }}" target="_blank" rel="noopener" class="text-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-secondary transition">Download Worksheet Bundle</a>
+            <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-center bg-white text-secondary px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open Edexcel 4MA1 Kahoot Channel</a>
+            <a href="https://payhip.com/b/JzU7h" target="_blank" rel="noopener" class="text-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-secondary transition">Download Worksheet Bundle</a>
         </div>
     </div>
 </section>
@@ -31,61 +27,76 @@ lang: en
         <a href="/kahoot/" class="text-sm px-3 py-1.5 rounded-full border border-gray-300 hover:bg-gray-100 transition">Back to Kahoot Hub</a>
         <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-gray-900 text-white">Kahoot Channel</a>
         <a href="https://payhip.com/b/JzU7h" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-secondary text-white">Payhip Worksheet</a>
-        <span class="text-sm text-gray-500">{{ edexcel_covers.size }} cards currently available</span>
     </div>
 </section>
 
 <section class="py-12 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">Syllabus Micro-Topic List</h2>
-            <p class="text-gray-600">Covers are shown in compact thumbnails for page speed and easier scanning.</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Edexcel 4MA1 Topic Columns (Topic 1-6)</h2>
+            <p class="text-gray-600">Covers are displayed as compact thumbnails for quick scanning.</p>
         </div>
 
-        {% for domain_name in edexcel_domain_order %}
-            {% case domain_name %}
-                {% when 'number' %}{% assign domain_label = 'Topic 1 Number and Arithmetic' %}
-                {% when 'equations' %}{% assign domain_label = 'Topic 2 Equations, Formulae and Identities' %}
-                {% when 'sequences' %}{% assign domain_label = 'Topic 3 Functions, Sequences and Graphs' %}
-                {% when 'geometry' %}{% assign domain_label = 'Topic 4 Geometry and Mensuration' %}
-                {% when 'vectors' %}{% assign domain_label = 'Topic 5 Vectors and Transformations' %}
-                {% when 'statistics' %}{% assign domain_label = 'Topic 6 Statistics and Probability' %}
-                {% else %}{% assign domain_label = domain_name | replace: '-', ' ' %}
-            {% endcase %}
-
-            {% assign domain_fragment = '/micro-topics/' | append: domain_name | append: '-' %}
-            <div class="mb-10">
-                <h3 class="text-xl font-bold text-gray-900 mb-4">{{ domain_label }}</h3>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-                    {% for file in edexcel_covers %}
-                        {% unless file.path contains domain_fragment %}{% continue %}{% endunless %}
-                        {% assign reverse_parts = file.path | split: '/' | reverse %}
-                        {% assign topic_slug = reverse_parts | slice: 1, 1 | first %}
-                        {% assign domain_slug = reverse_parts | slice: 2, 1 | first %}
-                        {% assign topic_parts = topic_slug | split: '-' %}
-                        {% assign topic_code = topic_parts | slice: 0, 2 | join: '-' | upcase %}
-                        {% assign topic_title = topic_parts | slice: 2, 20 | join: ' ' | replace: '2d', '2D' | replace: '3d', '3D' %}
-                        {% assign tier_key = domain_slug | split: '-' | last | slice: 0, 1 | upcase %}
-
-                        {% case tier_key %}
-                            {% when 'F' %}{% assign tier_label = 'Foundation' %}
-                            {% when 'H' %}{% assign tier_label = 'Higher' %}
-                            {% else %}{% assign tier_label = 'Foundation or Higher' %}
-                        {% endcase %}
-
-                        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition">
-                            <img src="{{ file.path }}" alt="{{ topic_code }} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                            <p class="text-xs font-semibold tracking-wide text-secondary mb-1">{{ topic_code }}</p>
-                            <h3 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ topic_title }}</h3>
-                            <p class="text-xs text-gray-600 mb-3">{{ tier_label }}</p>
-                            <div class="grid grid-cols-1 gap-2">
-                                <a href="{{ kahoot_channel_url }}?src=kahoot_edexcel_page&asset={{ topic_code | downcase }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                                <a href="{{ payhip_url }}?src=kahoot_edexcel_page&asset={{ topic_code | downcase }}" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                            </div>
-                        </article>
-                    {% endfor %}
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Topic 1 Number preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                <p class="text-xs font-semibold tracking-wide text-secondary mb-1">Topic 1</p>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Number and Arithmetic</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_page&asset=t1" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                    <a href="https://payhip.com/b/JzU7h?src=kahoot_edexcel_page&asset=t1" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
                 </div>
-            </div>
-        {% endfor %}
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-01-use-of-symbols/cover-2320x1520-kahoot-minimal.png" alt="Topic 2 Equations preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                <p class="text-xs font-semibold tracking-wide text-secondary mb-1">Topic 2</p>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Equations, Formulae and Identities</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_page&asset=t2" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                    <a href="https://payhip.com/b/JzU7h?src=kahoot_edexcel_page&asset=t2" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-01-sequences/cover-2320x1520-kahoot-minimal.png" alt="Topic 3 Functions preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                <p class="text-xs font-semibold tracking-wide text-secondary mb-1">Topic 3</p>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Functions, Sequences and Graphs</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_page&asset=t3" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                    <a href="https://payhip.com/b/JzU7h?src=kahoot_edexcel_page&asset=t3" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-05-construction/cover-2320x1520-kahoot-minimal.png" alt="Topic 4 Geometry preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                <p class="text-xs font-semibold tracking-wide text-secondary mb-1">Topic 4</p>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Geometry and Mensuration</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_page&asset=t4" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                    <a href="https://payhip.com/b/JzU7h?src=kahoot_edexcel_page&asset=t4" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-f5/f5-02-transformation-geometry/cover-2320x1520-kahoot-minimal.png" alt="Topic 5 Vectors preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                <p class="text-xs font-semibold tracking-wide text-secondary mb-1">Topic 5</p>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Vectors and Transformations</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_page&asset=t5" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                    <a href="https://payhip.com/b/JzU7h?src=kahoot_edexcel_page&asset=t5" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-02-statistical-measures/cover-2320x1520-kahoot-minimal.png" alt="Topic 6 Statistics preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                <p class="text-xs font-semibold tracking-wide text-secondary mb-1">Topic 6</p>
+                <h3 class="text-sm font-bold text-gray-900 mb-2">Statistics and Probability</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_page&asset=t6" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                    <a href="https://payhip.com/b/JzU7h?src=kahoot_edexcel_page&asset=t6" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                </div>
+            </article>
+        </div>
     </div>
 </section>
