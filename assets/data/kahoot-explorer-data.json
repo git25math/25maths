@@ -28,7 +28,6 @@ layout: null
     {
       "id": {{ item.id | jsonify }},
       "board": "cie0580",
-      "boardLabel": "CIE 0580",
       "tier": {{ section.tier | jsonify }},
       "code": {{ item.code | jsonify }},
       "title": {{ item.title | jsonify }},
@@ -47,7 +46,6 @@ layout: null
     {
       "id": {{ item.id | jsonify }},
       "board": "edexcel-4ma1",
-      "boardLabel": "Edexcel 4MA1",
       "tier": {{ section.tier | jsonify }},
       "code": {{ item.code | jsonify }},
       "title": {{ item.title | jsonify }},

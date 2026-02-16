@@ -73,7 +73,7 @@ lang: en
         </div>
 
         <div class="bg-white rounded-2xl border border-gray-200 p-5 mb-6">
-            <div class="grid md:grid-cols-3 gap-4">
+            <div class="grid md:grid-cols-4 gap-4">
                 <label class="block">
                     <span class="text-sm font-semibold text-gray-700">Exam Board</span>
                     <select id="explorer-board" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
@@ -94,6 +94,10 @@ lang: en
                         <option value="all">All SubTopics</option>
                     </select>
                 </label>
+                <label class="block">
+                    <span class="text-sm font-semibold text-gray-700">Search</span>
+                    <input id="explorer-search" type="text" placeholder="e.g. percentages, C1-13" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm" disabled>
+                </label>
             </div>
         </div>
 
@@ -107,14 +111,16 @@ lang: en
   const boardSelect = document.getElementById('explorer-board');
   const tierSelect = document.getElementById('explorer-tier');
   const subtopicSelect = document.getElementById('explorer-subtopic');
+  const searchInput = document.getElementById('explorer-search');
   const summary = document.getElementById('explorer-summary');
   const results = document.getElementById('explorer-results');
-  if (!boardSelect || !tierSelect || !subtopicSelect || !summary || !results) return;
+  if (!boardSelect || !tierSelect || !subtopicSelect || !searchInput || !summary || !results) return;
 
   const dataUrl = '/assets/data/kahoot-explorer-data.json';
   let boardConfigs = {};
   let allItems = [];
   let dataReady = false;
+  let searchDebounceTimer = null;
 
   const titleCase = (text) => text
     .split(' ')
@@ -133,6 +139,24 @@ lang: en
     summary.textContent = message;
   };
 
+  const syncUrlState = () => {
+    const params = new URLSearchParams();
+    const board = boardSelect.value;
+    const tier = tierSelect.value;
+    const subtopic = subtopicSelect.value;
+    const query = (searchInput.value || '').trim();
+
+    if (board) params.set('board', board);
+    if (board && tier && tier !== 'all') params.set('tier', tier);
+    if (board && subtopic && subtopic !== 'all') params.set('subtopic', subtopic);
+    if (query) params.set('q', query);
+
+    const nextUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+    window.history.replaceState(null, '', nextUrl);
+  };
+
   const ensureData = async () => {
     if (dataReady) return true;
     try {
@@ -144,6 +168,7 @@ lang: en
       boardConfigs = payload.boards || {};
       allItems = Array.isArray(payload.items) ? payload.items : [];
       dataReady = true;
+      searchInput.disabled = false;
       return true;
     } catch (error) {
       setMessage('Unable to load SubTopic data right now. Please refresh and try again.');
@@ -156,12 +181,17 @@ lang: en
     const board = boardSelect.value;
     const tier = tierSelect.value;
     const subtopicId = subtopicSelect.value;
+    const query = (searchInput.value || '').trim().toLowerCase();
     if (!board) return [];
 
     return allItems.filter((item) => {
       if (item.board !== board) return false;
       if (tier !== 'all' && item.tier !== tier) return false;
       if (subtopicId !== 'all' && item.id !== subtopicId) return false;
+      if (query) {
+        const haystack = `${item.code} ${item.title}`.toLowerCase();
+        if (!haystack.includes(query)) return false;
+      }
       return true;
     });
   };
@@ -212,6 +242,7 @@ lang: en
     if (!board) {
       summary.textContent = 'Choose an exam board to begin filtering.';
       results.innerHTML = '';
+      syncUrlState();
       return;
     }
 
@@ -222,10 +253,16 @@ lang: en
       return;
     }
     const filtered = getFilteredItems();
-    summary.textContent = `Found ${filtered.length} SubTopics in ${config.label}.`;
+    const query = (searchInput.value || '').trim();
+    if (query) {
+      summary.textContent = `Found ${filtered.length} SubTopics in ${config.label} for "${query}".`;
+    } else {
+      summary.textContent = `Found ${filtered.length} SubTopics in ${config.label}.`;
+    }
 
     if (!filtered.length) {
       results.innerHTML = '<div class="col-span-full bg-white rounded-xl border border-gray-200 p-4 text-sm text-gray-600">No SubTopics match this filter.</div>';
+      syncUrlState();
       return;
     }
 
@@ -252,10 +289,10 @@ lang: en
         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
           <picture>
             <source srcset="${escapeHtml(coverWebp)}" type="image/webp">
-            <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+          <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
           </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(item.boardLabel)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>
             <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>
             <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.sectionCode)}</span>
           </div>
@@ -269,6 +306,7 @@ lang: en
         </article>
       `;
     }).join('');
+    syncUrlState();
   };
 
   boardSelect.addEventListener('change', async () => {
@@ -277,13 +315,17 @@ lang: en
       subtopicSelect.innerHTML = '<option value="all">All SubTopics</option>';
       tierSelect.disabled = true;
       subtopicSelect.disabled = true;
+      searchInput.disabled = true;
+      searchInput.value = '';
       setMessage('Choose an exam board to begin filtering.');
       results.innerHTML = '';
+      syncUrlState();
       return;
     }
 
     const ok = await ensureData();
     if (!ok) return;
+    searchInput.disabled = false;
     rebuildTierOptions();
     rebuildSubtopicOptions();
     renderResults();
@@ -299,5 +341,47 @@ lang: en
     if (!dataReady) return;
     renderResults();
   });
+
+  searchInput.addEventListener('input', () => {
+    if (!dataReady || !boardSelect.value) return;
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = window.setTimeout(() => {
+      renderResults();
+    }, 120);
+  });
+
+  const initFromUrl = async () => {
+    const params = new URLSearchParams(window.location.search);
+    const boardFromUrl = params.get('board') || '';
+    const tierFromUrl = params.get('tier') || 'all';
+    const subtopicFromUrl = params.get('subtopic') || 'all';
+    const queryFromUrl = params.get('q') || '';
+    if (queryFromUrl) searchInput.value = queryFromUrl;
+
+    if (!boardFromUrl) {
+      syncUrlState();
+      return;
+    }
+    if (!['cie0580', 'edexcel-4ma1'].includes(boardFromUrl)) {
+      syncUrlState();
+      return;
+    }
+
+    boardSelect.value = boardFromUrl;
+    const ok = await ensureData();
+    if (!ok) return;
+
+    rebuildTierOptions();
+    if (tierFromUrl !== 'all' && Array.from(tierSelect.options).some((opt) => opt.value === tierFromUrl)) {
+      tierSelect.value = tierFromUrl;
+    }
+    rebuildSubtopicOptions();
+    if (subtopicFromUrl !== 'all' && Array.from(subtopicSelect.options).some((opt) => opt.value === subtopicFromUrl)) {
+      subtopicSelect.value = subtopicFromUrl;
+    }
+    renderResults();
+  };
+
+  initFromUrl();
 })();
 </script>
