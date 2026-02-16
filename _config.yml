@@ -17,7 +17,7 @@ analytics:
 # Security baseline (applied via meta tags in templates)
 security:
   referrer_policy: "strict-origin-when-cross-origin"
-  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://payhip.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.countapi.xyz https://script.google.com https://script.googleusercontent.com; frame-src https://payhip.com; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.countapi.xyz https://script.google.com https://script.googleusercontent.com; frame-src https://payhip.com; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
 
 # Build settings
 plugins:

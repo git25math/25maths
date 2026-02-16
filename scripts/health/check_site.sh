@@ -121,6 +121,16 @@ if printf '%s' "$homepage_html" | grep -qi 'name="referrer"'; then
 else
   warn "meta referrer policy missing on homepage"
 fi
+if printf '%s' "$homepage_html" | grep -qi '/assets/css/site.css'; then
+  pass "local site stylesheet is linked on homepage"
+else
+  fail "local site stylesheet missing on homepage"
+fi
+if printf '%s' "$homepage_html" | grep -qi 'cdn.tailwindcss.com'; then
+  warn "Tailwind CDN still referenced on homepage"
+else
+  pass "Tailwind CDN is not referenced on homepage"
+fi
 echo
 
 echo "== Summary =="
