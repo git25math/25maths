@@ -90,3 +90,18 @@ Expected status before publish:
 5. Spot-check 5 random listing links from each updated level
 
 This keeps the catalog coherent while scaling up to the full 249-SKU matrix.
+
+## 8) L3 Copy Template Generation
+
+Generate unit-bundle (L3) listing copy templates:
+
+```bash
+python3 scripts/payhip/generate_l3_payhip_copy_templates.py
+```
+
+Outputs:
+
+- `payhip/presale/kahoot-payhip-l3-copy-template.csv`
+- `payhip/presale/kahoot-payhip-l3-copy-template.md`
+
+Use CSV for structured paste/import workflows, and Markdown for manual copy into Payhip editor.
