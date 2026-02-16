@@ -30,6 +30,36 @@ title: 25Maths Changelog
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
                 <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-16</span>
+                <span class="bg-sky-100 text-sky-800 text-xs px-2 py-1 rounded-full font-semibold">PAYHIP OPS</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Payhip presale copy pipeline completed (L1-L4)</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>L1/L2/L3/L4 template generators</strong>: Finalized script pipeline to generate Payhip listing copy from the listing matrix for all pricing levels.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>249 SKU copy outputs</strong>: Generated ready-to-use CSV + Markdown listing copy for 202 SubTopics (L1), 30 section bundles (L2), 15 unit bundles (L3), and 2 all-units bundles (L4).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Upload SOP completion</strong>: Extended upload plan with explicit generation commands and output paths for all four levels, so batch publishing can follow one consistent runbook.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Health verification</strong>: Confirmed `check_kahoot_data`, funnel strict report, and Jekyll build all pass after template generation.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: scripts/payhip/generate_kahoot_payhip_listing_matrix.py, scripts/payhip/generate_l1_payhip_copy_templates.py, scripts/payhip/generate_l2_payhip_copy_templates.py, scripts/payhip/generate_l3_payhip_copy_templates.py, scripts/payhip/generate_l4_payhip_copy_templates.py, payhip/presale/kahoot-payhip-listings-*.csv, payhip/presale/kahoot-payhip-l1-copy-template.csv, payhip/presale/kahoot-payhip-l1-copy-template.md, payhip/presale/kahoot-payhip-l2-copy-template.csv, payhip/presale/kahoot-payhip-l2-copy-template.md, payhip/presale/kahoot-payhip-l3-copy-template.csv, payhip/presale/kahoot-payhip-l3-copy-template.md, payhip/presale/kahoot-payhip-l4-copy-template.csv, payhip/presale/kahoot-payhip-l4-copy-template.md, payhip/presale/kahoot-payhip-listing-upload-plan.md
+            </div>
+        </div>
+
+        <!-- 2026-02-16 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-16</span>
                 <span class="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full font-semibold">KAHOOT OPS</span>
             </div>
             <h2 class="text-xl font-bold text-gray-900 mb-3">Kahoot presale matrix finalized + health pipeline hardened</h2>
