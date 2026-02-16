@@ -65,6 +65,7 @@ def build_board_data(board_slug: str, tier_map: dict[str, str], domain_labels: d
     micro_root = ROOT / 'projects' / 'kahoot-channel' / board_slug / 'micro-topics'
     sections = []
     all_ids: list[str] = []
+    missing_covers: list[str] = []
 
     for section_dir in sorted([p for p in micro_root.iterdir() if p.is_dir()]):
         section_name = section_dir.name
@@ -89,6 +90,8 @@ def build_board_data(board_slug: str, tier_map: dict[str, str], domain_labels: d
         items = []
         for sub in subdirs:
             cover_path = sub / 'cover-2320x1520-kahoot-minimal.png'
+            if not cover_path.exists():
+                missing_covers.append(str(sub))
             rel_cover = '/' + str(cover_path.relative_to(ROOT)).replace('\\\\', '/')
             subtopic_id = f"{board_slug}:{section_name}:{sub.name}"
             all_ids.append(subtopic_id)
@@ -122,6 +125,12 @@ def build_board_data(board_slug: str, tier_map: dict[str, str], domain_labels: d
     sections.sort(key=lambda s: tuple(s['_sort']))
     for s in sections:
         s.pop('_sort', None)
+
+    if missing_covers:
+        missing_list = '\n'.join(missing_covers)
+        raise SystemExit(
+            f'Missing cover-2320x1520-kahoot-minimal.png in these subtopic folders:\n{missing_list}'
+        )
 
     total = sum(s['count'] for s in sections)
     return {'total_subtopics': total, 'sections': sections}, all_ids
