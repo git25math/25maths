@@ -29,17 +29,10 @@ lang: en
             <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Directories</h2>
             <p class="text-gray-600">Both pages are generated from the current `micro-topics` folder structures in your project workspace.</p>
             <p class="text-sm text-gray-500 mt-2">Per-SubTopic links are managed in `_data/kahoot_subtopic_links.json` (Kahoot, Worksheet, Bundle, Past Paper Analysis, Variant Practice).</p>
-            <div class="mt-5 flex flex-wrap items-center gap-2">
-                <span class="text-sm font-semibold text-gray-700">Filter:</span>
-                <button type="button" class="js-board-filter px-3 py-1.5 rounded-full text-sm font-semibold bg-gray-900 text-white" data-filter="all" aria-pressed="true">All</button>
-                <button type="button" class="js-board-filter px-3 py-1.5 rounded-full text-sm font-semibold border border-gray-300 text-gray-700 hover:bg-gray-100" data-filter="cie0580" aria-pressed="false">CIE 0580</button>
-                <button type="button" class="js-board-filter px-3 py-1.5 rounded-full text-sm font-semibold border border-gray-300 text-gray-700 hover:bg-gray-100" data-filter="edexcel-4ma1" aria-pressed="false">Edexcel 4MA1</button>
-                <span id="board-filter-summary" class="text-sm text-gray-500 ml-1">Showing 2 of 2 boards</span>
-            </div>
         </div>
 
-        <div id="board-directory-grid" class="grid md:grid-cols-2 gap-6">
-            <article class="js-board-card bg-gray-50 rounded-2xl border border-gray-200 p-6" data-board="cie0580">
+        <div class="grid md:grid-cols-2 gap-6">
+            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
                 <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 <p class="text-xs font-bold tracking-wider text-primary mb-2">CIE 0580</p>
                 <h3 class="text-xl font-bold text-gray-900">Core + Extended SubTopics</h3>
@@ -51,7 +44,7 @@ lang: en
                 </div>
             </article>
 
-            <article class="js-board-card bg-gray-50 rounded-2xl border border-gray-200 p-6" data-board="edexcel-4ma1">
+            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
                 <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 <p class="text-xs font-bold tracking-wider text-secondary mb-2">Edexcel 4MA1</p>
                 <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
@@ -66,42 +59,229 @@ lang: en
     </div>
 </section>
 
+<section class="py-16 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
+            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-200 p-5 mb-6">
+            <div class="grid md:grid-cols-3 gap-4">
+                <label class="block">
+                    <span class="text-sm font-semibold text-gray-700">Exam Board</span>
+                    <select id="explorer-board" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
+                        <option value="">Select Board</option>
+                        <option value="cie0580">CIE 0580</option>
+                        <option value="edexcel-4ma1">Edexcel 4MA1</option>
+                    </select>
+                </label>
+                <label class="block">
+                    <span class="text-sm font-semibold text-gray-700">Tier</span>
+                    <select id="explorer-tier" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm" disabled>
+                        <option value="all">All Tiers</option>
+                    </select>
+                </label>
+                <label class="block">
+                    <span class="text-sm font-semibold text-gray-700">SubTopic</span>
+                    <select id="explorer-subtopic" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm" disabled>
+                        <option value="all">All SubTopics</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <p id="explorer-summary" class="text-sm text-gray-600 mb-4">Choose an exam board to begin filtering.</p>
+        <div id="explorer-results" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+    </div>
+</section>
+
 <script>
 (() => {
-  const buttons = Array.from(document.querySelectorAll('.js-board-filter'));
-  const cards = Array.from(document.querySelectorAll('.js-board-card'));
-  const summary = document.getElementById('board-filter-summary');
-  if (!buttons.length || !cards.length || !summary) return;
+  const boardSelect = document.getElementById('explorer-board');
+  const tierSelect = document.getElementById('explorer-tier');
+  const subtopicSelect = document.getElementById('explorer-subtopic');
+  const summary = document.getElementById('explorer-summary');
+  const results = document.getElementById('explorer-results');
+  if (!boardSelect || !tierSelect || !subtopicSelect || !summary || !results) return;
 
-  const total = cards.length;
+  const cieData = {{ cie_data | jsonify }};
+  const edxData = {{ edx_data | jsonify }};
+  const linkMap = {{ site.data.kahoot_subtopic_links | jsonify }};
 
-  const setActive = (activeFilter) => {
-    let visible = 0;
-    cards.forEach((card) => {
-      const board = card.getAttribute('data-board');
-      const show = activeFilter === 'all' || board === activeFilter;
-      card.classList.toggle('hidden', !show);
-      if (show) visible += 1;
-    });
-
-    buttons.forEach((btn) => {
-      const isActive = btn.getAttribute('data-filter') === activeFilter;
-      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-      btn.classList.toggle('bg-gray-900', isActive);
-      btn.classList.toggle('text-white', isActive);
-      btn.classList.toggle('border', !isActive);
-      btn.classList.toggle('border-gray-300', !isActive);
-      btn.classList.toggle('text-gray-700', !isActive);
-      btn.classList.toggle('hover:bg-gray-100', !isActive);
-    });
-
-    summary.textContent = `Showing ${visible} of ${total} boards`;
+  const boardConfigs = {
+    'cie0580': {
+      label: 'CIE 0580',
+      tiers: ['Core', 'Extended'],
+      directoryUrl: '/kahoot/cie0580/',
+      fallbackKahootUrl: 'https://create.kahoot.it/channels/25maths/igcse-maths',
+      fallbackWorksheetUrl: 'https://payhip.com/b/5j2Sz'
+    },
+    'edexcel-4ma1': {
+      label: 'Edexcel 4MA1',
+      tiers: ['Foundation', 'Higher'],
+      directoryUrl: '/kahoot/edexcel-4ma1/',
+      fallbackKahootUrl: 'https://create.kahoot.it/channels/25maths/edx-4ma1-igcse',
+      fallbackWorksheetUrl: 'https://payhip.com/b/JzU7h'
+    }
   };
 
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => setActive(btn.getAttribute('data-filter') || 'all'));
+  const titleCase = (text) => text
+    .split(' ')
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
+  const escapeHtml = (text) => String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+  const flatten = (boardKey, boardData) => {
+    const items = [];
+    boardData.sections.forEach((section) => {
+      section.items.forEach((item) => {
+        items.push({
+          id: item.id,
+          board: boardKey,
+          boardLabel: boardConfigs[boardKey].label,
+          tier: section.tier,
+          code: item.code,
+          title: item.title,
+          cover: item.cover,
+          sectionCode: section.section_code
+        });
+      });
+    });
+    return items;
+  };
+
+  const allItems = [
+    ...flatten('cie0580', cieData),
+    ...flatten('edexcel-4ma1', edxData)
+  ];
+
+  const getFilteredItems = () => {
+    const board = boardSelect.value;
+    const tier = tierSelect.value;
+    const subtopicId = subtopicSelect.value;
+    if (!board) return [];
+
+    return allItems.filter((item) => {
+      if (item.board !== board) return false;
+      if (tier !== 'all' && item.tier !== tier) return false;
+      if (subtopicId !== 'all' && item.id !== subtopicId) return false;
+      return true;
+    });
+  };
+
+  const rebuildTierOptions = () => {
+    const board = boardSelect.value;
+    tierSelect.innerHTML = '<option value="all">All Tiers</option>';
+    if (!board || !boardConfigs[board]) {
+      tierSelect.disabled = true;
+      return;
+    }
+
+    boardConfigs[board].tiers.forEach((tier) => {
+      const option = document.createElement('option');
+      option.value = tier;
+      option.textContent = tier;
+      tierSelect.appendChild(option);
+    });
+    tierSelect.disabled = false;
+    tierSelect.value = 'all';
+  };
+
+  const rebuildSubtopicOptions = () => {
+    const board = boardSelect.value;
+    const tier = tierSelect.value;
+    subtopicSelect.innerHTML = '<option value="all">All SubTopics</option>';
+    if (!board) {
+      subtopicSelect.disabled = true;
+      return;
+    }
+
+    allItems
+      .filter((item) => item.board === board && (tier === 'all' || item.tier === tier))
+      .forEach((item) => {
+        const option = document.createElement('option');
+        option.value = item.id;
+        option.textContent = `${item.code} - ${titleCase(item.title)}`;
+        subtopicSelect.appendChild(option);
+      });
+
+    subtopicSelect.disabled = false;
+    subtopicSelect.value = 'all';
+  };
+
+  const renderResults = () => {
+    const board = boardSelect.value;
+    if (!board) {
+      summary.textContent = 'Choose an exam board to begin filtering.';
+      results.innerHTML = '';
+      return;
+    }
+
+    const config = boardConfigs[board];
+    const filtered = getFilteredItems();
+    summary.textContent = `Found ${filtered.length} SubTopics in ${config.label}.`;
+
+    if (!filtered.length) {
+      results.innerHTML = '<div class="col-span-full bg-white rounded-xl border border-gray-200 p-4 text-sm text-gray-600">No SubTopics match this filter.</div>';
+      return;
+    }
+
+    results.innerHTML = filtered.map((item) => {
+      const link = linkMap[item.id] || {};
+      const hasCustomKahoot = Boolean((link.kahoot_url || '').trim());
+      const hasCustomWorksheet = Boolean((link.worksheet_payhip_url || '').trim());
+      const kahootUrl = hasCustomKahoot
+        ? link.kahoot_url
+        : `${config.fallbackKahootUrl}?src=kahoot_hub_filter&asset=${encodeURIComponent(item.code.toLowerCase())}`;
+      const worksheetUrl = hasCustomWorksheet
+        ? link.worksheet_payhip_url
+        : `${config.fallbackWorksheetUrl}?src=kahoot_hub_filter&asset=${encodeURIComponent(item.code.toLowerCase())}`;
+      const boardBadge = item.board === 'cie0580'
+        ? 'bg-emerald-100 text-emerald-700'
+        : 'bg-amber-100 text-amber-700';
+      const worksheetButtonClass = item.board === 'cie0580'
+        ? 'bg-primary text-white'
+        : 'bg-secondary text-white';
+
+      return `
+        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+          <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(item.boardLabel)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.sectionCode)}</span>
+          </div>
+          <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
+          <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
+          <div class="grid grid-cols-1 gap-2">
+            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+            <a href="${escapeHtml(config.directoryUrl)}" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">Open Board Directory</a>
+          </div>
+        </article>
+      `;
+    }).join('');
+  };
+
+  boardSelect.addEventListener('change', () => {
+    rebuildTierOptions();
+    rebuildSubtopicOptions();
+    renderResults();
   });
 
-  setActive('all');
+  tierSelect.addEventListener('change', () => {
+    rebuildSubtopicOptions();
+    renderResults();
+  });
+
+  subtopicSelect.addEventListener('change', renderResults);
 })();
 </script>
