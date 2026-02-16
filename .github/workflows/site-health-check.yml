@@ -9,9 +9,17 @@ jobs:
   health-check:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Validate Kahoot data integrity
+        run: python3 scripts/health/check_kahoot_data.py
+
+      - name: Generate Kahoot funnel health report
+        run: python3 scripts/health/report_kahoot_funnel.py
 
       - name: Run site health checks
         run: bash scripts/health/check_site.sh

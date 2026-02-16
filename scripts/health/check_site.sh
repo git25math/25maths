@@ -12,6 +12,10 @@ pass() {
   printf 'PASS: %s\n' "$1"
 }
 
+info() {
+  printf 'INFO: %s\n' "$1"
+}
+
 warn() {
   warnings=$((warnings + 1))
   printf 'WARN: %s\n' "$1"
@@ -97,6 +101,18 @@ echo
 
 echo "-- security header visibility (warning-only on GitHub Pages) --"
 headers="$(curl -s -I --connect-timeout 8 --max-time 20 "$BASE_URL/")"
+is_github_pages=0
+if printf '%s' "$headers" | grep -qi '^server: GitHub.com'; then
+  is_github_pages=1
+fi
+if printf '%s' "$headers" | grep -qi '^x-github-request-id:'; then
+  is_github_pages=1
+fi
+
+if [[ "$is_github_pages" -eq 1 ]]; then
+  info "GitHub Pages origin detected. Response security headers may need CDN/proxy layer to enforce."
+fi
+
 for header in \
   "strict-transport-security" \
   "content-security-policy" \
@@ -106,7 +122,11 @@ for header in \
   if printf '%s' "$headers" | grep -qi "^${header}:"; then
     pass "header present: $header"
   else
-    warn "header missing: $header"
+    if [[ "$is_github_pages" -eq 1 ]]; then
+      info "header missing at origin: $header"
+    else
+      warn "header missing: $header"
+    fi
   fi
 done
 echo
@@ -122,6 +142,11 @@ if printf '%s' "$homepage_html" | grep -qi 'name="referrer"'; then
   pass "meta referrer policy present on homepage"
 else
   warn "meta referrer policy missing on homepage"
+fi
+if printf '%s' "$homepage_html" | grep -qi "frame-ancestors 'self'"; then
+  pass "meta CSP includes frame-ancestors self"
+else
+  warn "meta CSP missing frame-ancestors self"
 fi
 if printf '%s' "$homepage_html" | grep -qi '/assets/css/site.css'; then
   pass "local site stylesheet is linked on homepage"

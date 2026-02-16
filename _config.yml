@@ -17,7 +17,7 @@ analytics:
 # Security baseline (applied via meta tags in templates)
 security:
   referrer_policy: "strict-origin-when-cross-origin"
-  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.countapi.xyz https://script.google.com https://script.googleusercontent.com; frame-src https://payhip.com; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.countapi.xyz https://script.google.com https://script.googleusercontent.com; frame-src https://payhip.com; frame-ancestors 'self'; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
 
 # Build settings
 plugins:
@@ -33,7 +33,7 @@ modules:
     color: primary
     description: "Premium exam-aligned resources for Cambridge IGCSE 0580"
     free_count: 8
-    product_count: 3
+    product_count: 9
   - key: edx4ma1
     name: Edexcel 4MA1
     full_name: Pearson Edexcel IGCSE Mathematics 4MA1
@@ -42,7 +42,7 @@ modules:
     color: secondary
     description: "Exam-aligned resources for Edexcel IGCSE 4MA1"
     free_count: 6
-    product_count: 0
+    product_count: 6
 
 # Exclude from build
 exclude:
