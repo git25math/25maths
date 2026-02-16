@@ -205,7 +205,19 @@
     </url>
     <url>
         <loc>https://www.25maths.com/kahoot/</loc>
-        <lastmod>2026-02-15</lastmod>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/kahoot/cie0580/</loc>
+        <lastmod>2026-02-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.25maths.com/kahoot/edexcel-4ma1/</loc>
+        <lastmod>2026-02-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>

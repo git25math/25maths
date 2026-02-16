@@ -1,201 +1,91 @@
 ---
 layout: global
-title: Kahoot Companion Hub
-description: "Free printable worksheet companions for popular Kahoot math topics, plus premium packs and membership resources."
+title: Kahoot Syllabus Project Hub
+description: "Syllabus-aligned Kahoot project hubs for CIE 0580 and Edexcel 4MA1, with cover previews and worksheet download links."
 active_global: kahoot
 lang: en
 ---
+{% assign cie_cover_count = site.static_files | where_exp: "file", "file.path contains '/projects/kahoot-channel/cie0580/micro-topics/' and file.path contains '/cover-2320x1520-kahoot-minimal.png'" | size %}
+{% assign edexcel_cover_count = site.static_files | where_exp: "file", "file.path contains '/projects/kahoot-channel/edexcel-4ma1/micro-topics/' and file.path contains '/cover-2320x1520-kahoot-minimal.png'" | size %}
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">25Maths Companion Resources</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Companion Hub</h1>
+        <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">25Maths Kahoot Projects</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Syllabus Project Hub</h1>
         <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto">
-            Use Kahoot online, then continue with printable worksheet practice, answer keys, and step-by-step support.
+            Browse syllabus-aligned micro-topic channels for CIE 0580 and Edexcel 4MA1.
+            Each project page includes Kahoot links, small cover previews, and worksheet download links via Payhip.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#get-pack" class="bg-white text-primary px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Get Free Worksheet Pack</a>
-            <a href="/subscription.html?src=kahoot_hub&asset=hero_membership" class="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">View Membership</a>
+            <a href="/kahoot/cie0580/" class="bg-white text-primary px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 Project</a>
+            <a href="/kahoot/edexcel-4ma1/" class="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Open Edexcel 4MA1 Project</a>
         </div>
     </div>
 </section>
 
 <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Channels</h2>
-            <p class="text-gray-600 mb-6">Start from your exam board channel, then continue with printable worksheet practice.</p>
-            <div class="grid md:grid-cols-2 gap-6">
-                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                    <p class="text-xs font-bold tracking-wider text-primary mb-2">LIVE CHANNEL</p>
-                    <h3 class="text-xl font-bold text-gray-900">CIE 0580 (IGCSE Maths)</h3>
-                    <p class="text-gray-600 mt-2 mb-5">Cambridge IGCSE-focused quiz collections for topical revision.</p>
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="inline-block bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open CIE 0580 Channel</a>
-                </article>
-                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                    <p class="text-xs font-bold tracking-wider text-secondary mb-2">LIVE CHANNEL</p>
-                    <h3 class="text-xl font-bold text-gray-900">Edexcel 4MA1 (IGCSE)</h3>
-                    <p class="text-gray-600 mt-2 mb-5">Edexcel 4MA1 quiz collections for classroom and home revision.</p>
-                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="inline-block bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Edexcel 4MA1 Channel</a>
-                </article>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Syllabus Project Columns</h2>
+            <p class="text-gray-600">
+                Choose an exam board project page to view syllabus micro-topics with compact cover previews and linked resources.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+                <img src="/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-01-units-of-measure/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 Kahoot project preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                <p class="text-xs font-bold tracking-wider text-primary mb-2">PROJECT COLUMN</p>
+                <h3 class="text-xl font-bold text-gray-900">CIE 0580 Kahoot Project Page</h3>
+                <p class="text-gray-600 mt-2 mb-4">
+                    Cambridge syllabus micro-topics with cover previews, Kahoot channel access, and worksheet downloads.
+                </p>
+                <p class="text-sm text-gray-500 mb-5">{{ cie_cover_count }} micro-topic cover previews currently generated.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/kahoot/cie0580/" class="text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Project Page</a>
+                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
+                    <a href="https://payhip.com/b/5j2Sz" target="_blank" rel="noopener" class="text-center border border-gray-300 px-5 py-2.5 rounded-lg font-semibold text-sm text-gray-800 hover:bg-gray-100 transition">Worksheet Bundle</a>
+                </div>
+            </article>
+
+            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-03-graphs/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 Kahoot project preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                <p class="text-xs font-bold tracking-wider text-secondary mb-2">PROJECT COLUMN</p>
+                <h3 class="text-xl font-bold text-gray-900">Edexcel 4MA1 Project Page</h3>
+                <p class="text-gray-600 mt-2 mb-4">Foundation/Higher micro-topic coverage with linked Kahoot and worksheet resources.</p>
+                <p class="text-sm text-gray-500 mb-5">{{ edexcel_cover_count }} micro-topic cover previews currently generated.</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/kahoot/edexcel-4ma1/" class="text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Project Page</a>
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
+                    <a href="https://payhip.com/b/JzU7h" target="_blank" rel="noopener" class="text-center border border-gray-300 px-5 py-2.5 rounded-lg font-semibold text-sm text-gray-800 hover:bg-gray-100 transition">Worksheet Bundle</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50 border-y">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl border border-gray-200 p-8 md:p-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Course-Pack Ready Structure</h2>
+            <p class="text-gray-600 mb-6">
+                Both project pages are structured around syllabus micro-topics so you can add paid single packs, bundles, and
+                future course packages without rebuilding page architecture.
+            </p>
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                    <p class="font-semibold text-gray-900 mb-1">Step 1</p>
+                    <p class="text-gray-600">Upload/update Kahoot by micro-topic.</p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                    <p class="font-semibold text-gray-900 mb-1">Step 2</p>
+                    <p class="text-gray-600">Attach Payhip worksheet links to each micro-topic card.</p>
+                </div>
+                <div class="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                    <p class="font-semibold text-gray-900 mb-1">Step 3</p>
+                    <p class="text-gray-600">Promote bundles/membership from board-level project pages.</p>
+                </div>
             </div>
         </div>
-
-        <div class="flex items-end justify-between gap-6 mb-8">
-            <div>
-                <h2 class="text-3xl font-bold text-gray-900">Popular Kahoot Channels</h2>
-                <p class="text-gray-600 mt-2">Pick a channel, practice online, then download matching printable worksheets.</p>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <p class="text-xs font-bold tracking-wider text-primary mb-2">MOST POPULAR</p>
-                <h3 class="text-xl font-bold text-gray-900">Numbers</h3>
-                <p class="text-gray-600 mt-2 mb-5">Place value, fractions, percentages, and arithmetic fluency.</p>
-                <div class="flex gap-3">
-                    <a href="https://create.kahoot.it/channels/25maths/number" target="_blank" rel="noopener" class="flex-1 text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-sm">Open Kahoot</a>
-                    <a href="#get-pack" data-topic="Numbers" class="js-topic-fill flex-1 text-center bg-primary text-white py-2 rounded-lg font-semibold text-sm">Get Worksheet</a>
-                </div>
-            </article>
-
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <p class="text-xs font-bold tracking-wider text-secondary mb-2">HIGH DEMAND</p>
-                <h3 class="text-xl font-bold text-gray-900">Algebra</h3>
-                <p class="text-gray-600 mt-2 mb-5">Expressions, equations, substitutions, and simplification drills.</p>
-                <div class="flex gap-3">
-                    <a href="https://create.kahoot.it/channels/25maths/algebra" target="_blank" rel="noopener" class="flex-1 text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-sm">Open Kahoot</a>
-                    <a href="#get-pack" data-topic="Algebra" class="js-topic-fill flex-1 text-center bg-primary text-white py-2 rounded-lg font-semibold text-sm">Get Worksheet</a>
-                </div>
-            </article>
-
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <p class="text-xs font-bold tracking-wider text-success mb-2">CLASSROOM READY</p>
-                <h3 class="text-xl font-bold text-gray-900">Geometry</h3>
-                <p class="text-gray-600 mt-2 mb-5">Angles, triangles, area, and geometry reasoning practice.</p>
-                <div class="flex gap-3">
-                    <a href="https://create.kahoot.it/channels/25maths/geometry" target="_blank" rel="noopener" class="flex-1 text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-sm">Open Kahoot</a>
-                    <a href="#get-pack" data-topic="Geometry" class="js-topic-fill flex-1 text-center bg-primary text-white py-2 rounded-lg font-semibold text-sm">Get Worksheet</a>
-                </div>
-            </article>
-
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <h3 class="text-xl font-bold text-gray-900">Probability & Statistics</h3>
-                <p class="text-gray-600 mt-2 mb-5">Probability models, data interpretation, and exam-style questions.</p>
-                <div class="flex gap-3">
-                    <a href="https://create.kahoot.it/channels/25maths/statistics" target="_blank" rel="noopener" class="flex-1 text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-sm">Open Kahoot</a>
-                    <a href="#get-pack" data-topic="Probability and Statistics" class="js-topic-fill flex-1 text-center bg-primary text-white py-2 rounded-lg font-semibold text-sm">Get Worksheet</a>
-                </div>
-            </article>
-
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <h3 class="text-xl font-bold text-gray-900">Functions</h3>
-                <p class="text-gray-600 mt-2 mb-5">Function notation, graphs, and interpretation drills.</p>
-                <p class="text-xs font-semibold tracking-wider text-amber-700 mb-3">KAHOOT CHANNEL COMING SOON</p>
-                <div class="flex gap-3">
-                    <a href="#get-pack" data-topic="Functions" class="js-topic-fill w-full text-center bg-primary text-white py-2 rounded-lg font-semibold text-sm">Get Worksheet</a>
-                </div>
-            </article>
-
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <h3 class="text-xl font-bold text-gray-900">Trigonometry</h3>
-                <p class="text-gray-600 mt-2 mb-5">Core trig skills and mixed review questions for exam prep.</p>
-                <p class="text-xs font-semibold tracking-wider text-amber-700 mb-3">KAHOOT CHANNEL COMING SOON</p>
-                <div class="flex gap-3">
-                    <a href="#get-pack" data-topic="Trigonometry" class="js-topic-fill w-full text-center bg-primary text-white py-2 rounded-lg font-semibold text-sm">Get Worksheet</a>
-                </div>
-            </article>
-        </div>
     </div>
 </section>
-
-<section id="get-pack" class="py-16 bg-gray-50 border-y">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-2xl border border-gray-200 p-8 md:p-10 shadow-sm">
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">Get a Free Printable Worksheet Pack</h2>
-            <p class="text-gray-600 mb-8">Tell us your topic and we will send matching worksheet practice with answers.</p>
-
-            <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-5">
-                <input type="hidden" name="module" value="Kahoot">
-                <input type="hidden" name="lang" value="en">
-                <input type="hidden" name="source_page" value="{{ page.url }}">
-                <input type="hidden" name="entry_point" value="kahoot_hub_free_pack">
-                <input type="hidden" name="product" value="Kahoot Companion Worksheet Pack">
-                <input type="hidden" name="_subject" value="Kahoot Hub Free Pack Request">
-                <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
-
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-semibold mb-2" for="kahoot-name">Name</label>
-                        <input id="kahoot-name" type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="Optional">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold mb-2" for="kahoot-email">Email</label>
-                        <input id="kahoot-email" type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="you@example.com">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-sm font-semibold mb-2" for="kahoot-topic">Topic you want first</label>
-                    <select id="kahoot-topic" name="topic" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                        <option value="">Select one</option>
-                        <option value="Numbers">Numbers</option>
-                        <option value="Algebra">Algebra</option>
-                        <option value="Geometry">Geometry</option>
-                        <option value="Probability and Statistics">Probability and Statistics</option>
-                        <option value="Functions">Functions</option>
-                        <option value="Trigonometry">Trigonometry</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="inline-flex items-start gap-2 text-sm text-gray-700">
-                        <input type="checkbox" name="consent_updates" value="yes" required class="mt-1">
-                        <span>I agree to receive worksheet updates and product emails from 25Maths.</span>
-                    </label>
-                </div>
-
-                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Send My Free Pack</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">More Ways to Learn with 25Maths</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Printable PDF Single Packs</h3>
-                <p class="text-gray-600 mb-5">Topic-specific worksheet sets with layered practice and complete answer keys.</p>
-                <a href="/cie0580/products.html?src=kahoot_hub&asset=single_pack_card" class="inline-block bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition">Browse Single Packs</a>
-            </article>
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Teacher PDF Resource Packs</h3>
-                <p class="text-gray-600 mb-5">Ready-to-print class resources for blended teaching and offline sessions.</p>
-                <a href="/support.html?src=kahoot_hub&asset=teacher_pack_card" class="inline-block bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition">Request Teacher Pack Info</a>
-            </article>
-            <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Weekly Membership</h3>
-                <p class="text-gray-600 mb-5">Get a new topical worksheet pack every week with solutions and progression path.</p>
-                <a href="/subscription.html?src=kahoot_hub&asset=membership_card" class="inline-block bg-primary text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition">Join Membership Waitlist</a>
-            </article>
-        </div>
-
-        <p class="text-xs text-gray-500 mt-8 text-center">
-            25Maths is an independent resource provider. This page offers companion practice materials for learners who use quiz-based math activities.
-        </p>
-    </div>
-</section>
-
-<script>
-    document.querySelectorAll('.js-topic-fill').forEach(function(link) {
-        link.addEventListener('click', function() {
-            var topic = this.getAttribute('data-topic');
-            var select = document.getElementById('kahoot-topic');
-            if (topic && select) {
-                select.value = topic;
-            }
-        });
-    });
-</script>
