@@ -153,9 +153,14 @@ def default_link_entry() -> dict[str, str]:
     return {
         'kahoot_url': '',
         'worksheet_payhip_url': '',
+        'section_bundle_payhip_url': '',
+        'unit_bundle_payhip_url': '',
         'bundle_url': '',
         'past_paper_analysis_url': '',
         'variant_practice_url': '',
+        'presale_release_date': '',
+        'presale_early_bird_end_date': '',
+        'presale_notes': '',
         'status': 'planned',
         'notes': '',
     }

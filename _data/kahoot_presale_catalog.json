@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "seller_url": "https://payhip.com/25maths",
+    "presale_terms_pdf_url": "/payhip/presale/kahoot-presale-info-template.pdf",
+    "last_updated": "2026-02-16",
+    "retention": {
+      "gift_for_bilingual_users": "Free bilingual vocabulary cards are included for learners needing Chinese-English support.",
+      "post_purchase_upgrade": "Returning buyers get bilingual support upgrade coupons and bundle upgrade discounts."
+    }
+  },
+  "boards": {
+    "cie0580": {
+      "label": "CIE 0580",
+      "default_worksheet_payhip_url": "https://payhip.com/25maths",
+      "default_section_bundle_payhip_url": "https://payhip.com/25maths",
+      "default_unit_bundle_payhip_url": "https://payhip.com/25maths",
+      "terms_pdf_url": "/payhip/presale/kahoot-presale-info-template.pdf",
+      "default_release_date": "2026-04-30",
+      "default_early_bird_deadline": "2026-03-31",
+      "pricing": {
+        "l1_early_bird": "US$4",
+        "l1_regular": "US$6",
+        "l2_early_bird": "US$12",
+        "l2_regular": "US$16",
+        "l3_early_bird": "US$39",
+        "l3_regular": "US$49"
+      },
+      "all_units_bundle": {
+        "title": "CIE 0580 All-Units Mega Bundle",
+        "presale_url": "https://payhip.com/25maths?src=cie0580-all-units",
+        "status": "presale",
+        "release_date": "2026-05-31",
+        "early_bird_deadline": "2026-04-30",
+        "early_bird_price": "US$89",
+        "regular_price": "US$119",
+        "bonus": "Includes themed past-paper analysis, free bilingual vocabulary cards, and returning-buyer upgrade coupons."
+      },
+      "units": [
+        {
+          "key": "number",
+          "code": "U1",
+          "title": "Number",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-number",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "algebra",
+          "code": "U2",
+          "title": "Algebra and Graphs",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-algebra",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "coordinate",
+          "code": "U3",
+          "title": "Coordinate Geometry",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-coordinate",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "geometry",
+          "code": "U4",
+          "title": "Geometry",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-geometry",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "mensuration",
+          "code": "U5",
+          "title": "Mensuration",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-mensuration",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "trigonometry",
+          "code": "U6",
+          "title": "Trigonometry",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-trigonometry",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "transformations",
+          "code": "U7",
+          "title": "Transformations and Vectors",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-transformations",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "probability",
+          "code": "U8",
+          "title": "Probability",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-probability",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "statistics",
+          "code": "U9",
+          "title": "Statistics",
+          "tier_scope": "Core + Extended",
+          "presale_url": "https://payhip.com/25maths?src=cie0580-unit-statistics",
+          "status": "presale",
+          "release_date": "2026-04-30",
+          "early_bird_deadline": "2026-03-31",
+          "early_bird_price": "US$12",
+          "regular_price": "US$16",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        }
+      ]
+    },
+    "edexcel-4ma1": {
+      "label": "Edexcel 4MA1",
+      "default_worksheet_payhip_url": "https://payhip.com/25maths",
+      "default_section_bundle_payhip_url": "https://payhip.com/25maths",
+      "default_unit_bundle_payhip_url": "https://payhip.com/25maths",
+      "terms_pdf_url": "/payhip/presale/kahoot-presale-info-template.pdf",
+      "default_release_date": "2026-05-31",
+      "default_early_bird_deadline": "2026-04-30",
+      "pricing": {
+        "l1_early_bird": "US$4",
+        "l1_regular": "US$6",
+        "l2_early_bird": "US$11",
+        "l2_regular": "US$15",
+        "l3_early_bird": "US$34",
+        "l3_regular": "US$45"
+      },
+      "all_units_bundle": {
+        "title": "Edexcel 4MA1 All-Units Mega Bundle",
+        "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-all-units",
+        "status": "presale",
+        "release_date": "2026-06-15",
+        "early_bird_deadline": "2026-05-15",
+        "early_bird_price": "US$79",
+        "regular_price": "US$99",
+        "bonus": "Includes themed past-paper analysis, free bilingual vocabulary cards, and returning-buyer upgrade coupons."
+      },
+      "units": [
+        {
+          "key": "number",
+          "code": "U1",
+          "title": "Number and Arithmetic",
+          "tier_scope": "Foundation + Higher",
+          "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-unit-number",
+          "status": "presale",
+          "release_date": "2026-05-31",
+          "early_bird_deadline": "2026-04-30",
+          "early_bird_price": "US$11",
+          "regular_price": "US$15",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "equations",
+          "code": "U2",
+          "title": "Equations, Formulae and Identities",
+          "tier_scope": "Foundation + Higher",
+          "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-unit-equations",
+          "status": "presale",
+          "release_date": "2026-05-31",
+          "early_bird_deadline": "2026-04-30",
+          "early_bird_price": "US$11",
+          "regular_price": "US$15",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "sequences",
+          "code": "U3",
+          "title": "Functions, Sequences and Graphs",
+          "tier_scope": "Foundation + Higher",
+          "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-unit-sequences",
+          "status": "presale",
+          "release_date": "2026-05-31",
+          "early_bird_deadline": "2026-04-30",
+          "early_bird_price": "US$11",
+          "regular_price": "US$15",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "geometry",
+          "code": "U4",
+          "title": "Geometry and Mensuration",
+          "tier_scope": "Foundation + Higher",
+          "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-unit-geometry",
+          "status": "presale",
+          "release_date": "2026-05-31",
+          "early_bird_deadline": "2026-04-30",
+          "early_bird_price": "US$11",
+          "regular_price": "US$15",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "vectors",
+          "code": "U5",
+          "title": "Vectors and Transformations",
+          "tier_scope": "Foundation + Higher",
+          "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-unit-vectors",
+          "status": "presale",
+          "release_date": "2026-05-31",
+          "early_bird_deadline": "2026-04-30",
+          "early_bird_price": "US$11",
+          "regular_price": "US$15",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        },
+        {
+          "key": "statistics",
+          "code": "U6",
+          "title": "Statistics and Probability",
+          "tier_scope": "Foundation + Higher",
+          "presale_url": "https://payhip.com/25maths?src=edexcel4ma1-unit-statistics",
+          "status": "presale",
+          "release_date": "2026-05-31",
+          "early_bird_deadline": "2026-04-30",
+          "early_bird_price": "US$11",
+          "regular_price": "US$15",
+          "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
+        }
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Pricing
-description: "Choose your CIE 0580 bundle — individual packs from $12, 2-bundle deals, or the complete package. Instant download and exam‑aligned content."
+description: "CIE 0580 presale pricing framework with L1/L2/L3 closed-loop structure."
 module: cie0580
 active_page: pricing
 lang: en
@@ -13,67 +13,76 @@ lang_links:
     label: ZH-CN
     url: /zh-cn/cie0580/pricing.html
 ---
+{% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
+{% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
 <section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-5xl font-bold mb-4">CIE 0580 Pricing</h1>
-        <p class="text-xl opacity-90">Premium exam-aligned resources with clear terminology</p>
+        <h1 class="text-5xl font-bold mb-4">CIE 0580 Pricing Framework</h1>
+        <p class="text-xl opacity-90">Recommendation ranges for presale. Final public prices are TBD before launch.</p>
     </div>
 </section>
 
-<section class="py-20">
+<section class="py-10 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+            <p class="font-semibold mb-1">Important</p>
+            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-                <h3 class="text-2xl font-bold mb-4">Individual Bundle</h3>
-                <div class="text-4xl font-bold text-primary mb-6">$12-17</div>
-                <p class="text-gray-600 mb-6">Perfect for focused practice</p>
-                <ul class="text-left space-y-3 mb-8">
-                    <li>✓ Choose any single topic</li>
-                    <li>✓ 40-50 practice questions</li>
-                    <li>✓ Complete answer keys</li>
-                    <li>✓ Key Terms</li>
-                    <li>✓ Instant download</li>
-                </ul>
-                <a href="/cie0580/products.html" class="block bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90">Browse Products</a>
-            </div>
+        <div class="grid md:grid-cols-4 gap-6">
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L1 Single Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One SubTopic MVP</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l1_early_bird }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l1_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L2 Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">A full section's SubTopics</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l2_early_bird }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l2_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L3 Unit Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">Core + Extended unit package</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l3_early_bird }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l3_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">Mega Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">All 9 units</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.all_units_bundle.early_bird_price }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.all_units_bundle.regular_price }}</p>
+            </article>
+        </div>
+    </div>
+</section>
 
-            <div class="bg-white rounded-xl shadow-lg p-8 text-center border-4 border-primary relative">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">BEST FOR 2 TOPICS</div>
-                <h3 class="text-2xl font-bold mb-4">2-Bundle Deal</h3>
-                <div class="text-4xl font-bold text-primary mb-2">$29</div>
-                <p class="text-success font-semibold mb-4">Save $5 (any 2 bundles)</p>
-                <p class="text-gray-600 mb-6">Pick any two bundles at checkout</p>
-                <ul class="text-left space-y-3 mb-8">
-                    <li>✓ Choose any 2 bundles</li>
-                    <li>✓ 90+ questions total</li>
-                    <li>✓ All materials included</li>
-                    <li>✓ Key Terms</li>
-                    <li>✓ Instant download</li>
-                </ul>
-                <a href="mailto:support@25maths.com?subject=2-Bundle%20Deal%20Inquiry" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    Contact to Purchase
-                </a>
+<section class="py-16 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Retention Loop</h2>
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">Step 1: Entry</h3>
+                <p class="text-sm text-gray-600">Customer buys L1 SubTopic worksheet and gets immediate value.</p>
             </div>
-
-            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-                <div class="text-warning text-sm font-bold mb-2">🏆 BEST VALUE</div>
-                <h3 class="text-2xl font-bold mb-4">Complete Package</h3>
-                <div class="text-4xl font-bold text-primary mb-2">$39</div>
-                <p class="text-success font-semibold mb-4">Save $7 (from $46)</p>
-                <p class="text-gray-600 mb-6">All 3 bundles in one purchase</p>
-                <ul class="text-left space-y-3 mb-8">
-                    <li>✓ All 3 topic bundles</li>
-                    <li>✓ 140+ questions</li>
-                    <li>✓ Complete solutions</li>
-                    <li>✓ Priority support</li>
-                    <li>✓ Instant download</li>
-                </ul>
-                <a href="mailto:support@25maths.com?subject=Complete%20Package%20Inquiry" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    Contact to Purchase
-                </a>
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">Step 2: Upgrade</h3>
+                <p class="text-sm text-gray-600">Offer L2 section bundle coupon to convert single-item buyers.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">Step 3: Loyalty</h3>
+                <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
             </div>
         </div>
-
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="/cie0580/products.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center">Open Product Architecture</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">Open Presale Terms PDF</a>
+        </div>
     </div>
 </section>

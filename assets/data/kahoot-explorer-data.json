@@ -2,6 +2,7 @@
 layout: null
 ---
 {% assign link_map = site.data.kahoot_subtopic_links %}
+{% assign presale = site.data.kahoot_presale_catalog.boards %}
 {
   "boards": {
     "cie0580": {
@@ -9,22 +10,65 @@ layout: null
       "tiers": ["Core", "Extended"],
       "directoryUrl": "/kahoot/cie0580/",
       "fallbackKahootUrl": "https://create.kahoot.it/channels/25maths/igcse-maths",
-      "fallbackWorksheetUrl": "https://payhip.com/b/5j2Sz"
+      "fallbackWorksheetUrl": {{ presale.cie0580.default_worksheet_payhip_url | jsonify }},
+      "defaultSectionBundleUrl": {{ presale.cie0580.default_section_bundle_payhip_url | jsonify }},
+      "defaultUnitBundleUrl": {{ presale.cie0580.default_unit_bundle_payhip_url | jsonify }},
+      "termsPdfUrl": {{ presale.cie0580.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url | jsonify }},
+      "unitBundleCount": {{ presale.cie0580.units | size }}
     },
     "edexcel-4ma1": {
       "label": "Edexcel 4MA1",
       "tiers": ["Foundation", "Higher"],
       "directoryUrl": "/kahoot/edexcel-4ma1/",
       "fallbackKahootUrl": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse",
-      "fallbackWorksheetUrl": "https://payhip.com/b/JzU7h"
+      "fallbackWorksheetUrl": {{ presale["edexcel-4ma1"].default_worksheet_payhip_url | jsonify }},
+      "defaultSectionBundleUrl": {{ presale["edexcel-4ma1"].default_section_bundle_payhip_url | jsonify }},
+      "defaultUnitBundleUrl": {{ presale["edexcel-4ma1"].default_unit_bundle_payhip_url | jsonify }},
+      "termsPdfUrl": {{ presale["edexcel-4ma1"].terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url | jsonify }},
+      "unitBundleCount": {{ presale["edexcel-4ma1"].units | size }}
     }
   },
   "items": [
 {% assign first = true %}
 {% for section in site.data.kahoot_cie0580_subtopics.sections %}
+  {% assign unit = presale.cie0580.units | where: "key", section.domain | first %}
   {% for item in section.items %}
     {% unless first %},{% endunless %}
     {% assign link = link_map[item.id] %}
+    {% assign section_bundle_url = "" %}
+    {% if link and link.section_bundle_payhip_url and link.section_bundle_payhip_url != "" %}
+      {% assign section_bundle_url = link.section_bundle_payhip_url %}
+    {% elsif link and link.bundle_url and link.bundle_url != "" %}
+      {% assign section_bundle_url = link.bundle_url %}
+    {% endif %}
+    {% assign unit_bundle_url = presale.cie0580.default_unit_bundle_payhip_url %}
+    {% if unit and unit.presale_url and unit.presale_url != "" %}
+      {% assign unit_bundle_url = unit.presale_url %}
+    {% endif %}
+    {% if link and link.unit_bundle_payhip_url and link.unit_bundle_payhip_url != "" %}
+      {% assign unit_bundle_url = link.unit_bundle_payhip_url %}
+    {% endif %}
+    {% assign release_date = presale.cie0580.default_release_date %}
+    {% if unit and unit.release_date and unit.release_date != "" %}
+      {% assign release_date = unit.release_date %}
+    {% endif %}
+    {% if link and link.presale_release_date and link.presale_release_date != "" %}
+      {% assign release_date = link.presale_release_date %}
+    {% endif %}
+    {% assign early_bird_deadline = presale.cie0580.default_early_bird_deadline %}
+    {% if unit and unit.early_bird_deadline and unit.early_bird_deadline != "" %}
+      {% assign early_bird_deadline = unit.early_bird_deadline %}
+    {% endif %}
+    {% if link and link.presale_early_bird_end_date and link.presale_early_bird_end_date != "" %}
+      {% assign early_bird_deadline = link.presale_early_bird_end_date %}
+    {% endif %}
+    {% assign presale_note = "" %}
+    {% if unit and unit.bonus and unit.bonus != "" %}
+      {% assign presale_note = unit.bonus %}
+    {% endif %}
+    {% if link and link.presale_notes and link.presale_notes != "" %}
+      {% assign presale_note = link.presale_notes %}
+    {% endif %}
     {
       "id": {{ item.id | jsonify }},
       "board": "cie0580",
@@ -33,16 +77,60 @@ layout: null
       "title": {{ item.title | jsonify }},
       "cover": {{ item.cover | jsonify }},
       "sectionCode": {{ section.section_code | jsonify }},
+      "sectionKey": {{ section.section_key | jsonify }},
+      "unitKey": {{ section.domain | jsonify }},
+      "unitTitle": {{ unit.title | default: section.domain | jsonify }},
       "kahootUrl": {{ link.kahoot_url | default: "" | jsonify }},
-      "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }}
+      "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }},
+      "sectionBundleUrl": {{ section_bundle_url | jsonify }},
+      "unitBundleUrl": {{ unit_bundle_url | default: "" | jsonify }},
+      "status": {{ link.status | default: "planned" | jsonify }},
+      "releaseDate": {{ release_date | default: "" | jsonify }},
+      "earlyBirdDeadline": {{ early_bird_deadline | default: "" | jsonify }},
+      "presaleNote": {{ presale_note | default: "" | jsonify }}
     }
     {% assign first = false %}
   {% endfor %}
 {% endfor %}
 {% for section in site.data.kahoot_edexcel4ma1_subtopics.sections %}
+  {% assign unit = presale["edexcel-4ma1"].units | where: "key", section.domain | first %}
   {% for item in section.items %}
     {% unless first %},{% endunless %}
     {% assign link = link_map[item.id] %}
+    {% assign section_bundle_url = "" %}
+    {% if link and link.section_bundle_payhip_url and link.section_bundle_payhip_url != "" %}
+      {% assign section_bundle_url = link.section_bundle_payhip_url %}
+    {% elsif link and link.bundle_url and link.bundle_url != "" %}
+      {% assign section_bundle_url = link.bundle_url %}
+    {% endif %}
+    {% assign unit_bundle_url = presale["edexcel-4ma1"].default_unit_bundle_payhip_url %}
+    {% if unit and unit.presale_url and unit.presale_url != "" %}
+      {% assign unit_bundle_url = unit.presale_url %}
+    {% endif %}
+    {% if link and link.unit_bundle_payhip_url and link.unit_bundle_payhip_url != "" %}
+      {% assign unit_bundle_url = link.unit_bundle_payhip_url %}
+    {% endif %}
+    {% assign release_date = presale["edexcel-4ma1"].default_release_date %}
+    {% if unit and unit.release_date and unit.release_date != "" %}
+      {% assign release_date = unit.release_date %}
+    {% endif %}
+    {% if link and link.presale_release_date and link.presale_release_date != "" %}
+      {% assign release_date = link.presale_release_date %}
+    {% endif %}
+    {% assign early_bird_deadline = presale["edexcel-4ma1"].default_early_bird_deadline %}
+    {% if unit and unit.early_bird_deadline and unit.early_bird_deadline != "" %}
+      {% assign early_bird_deadline = unit.early_bird_deadline %}
+    {% endif %}
+    {% if link and link.presale_early_bird_end_date and link.presale_early_bird_end_date != "" %}
+      {% assign early_bird_deadline = link.presale_early_bird_end_date %}
+    {% endif %}
+    {% assign presale_note = "" %}
+    {% if unit and unit.bonus and unit.bonus != "" %}
+      {% assign presale_note = unit.bonus %}
+    {% endif %}
+    {% if link and link.presale_notes and link.presale_notes != "" %}
+      {% assign presale_note = link.presale_notes %}
+    {% endif %}
     {
       "id": {{ item.id | jsonify }},
       "board": "edexcel-4ma1",
@@ -51,8 +139,17 @@ layout: null
       "title": {{ item.title | jsonify }},
       "cover": {{ item.cover | jsonify }},
       "sectionCode": {{ section.section_code | jsonify }},
+      "sectionKey": {{ section.section_key | jsonify }},
+      "unitKey": {{ section.domain | jsonify }},
+      "unitTitle": {{ unit.title | default: section.domain | jsonify }},
       "kahootUrl": {{ link.kahoot_url | default: "" | jsonify }},
-      "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }}
+      "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }},
+      "sectionBundleUrl": {{ section_bundle_url | jsonify }},
+      "unitBundleUrl": {{ unit_bundle_url | default: "" | jsonify }},
+      "status": {{ link.status | default: "planned" | jsonify }},
+      "releaseDate": {{ release_date | default: "" | jsonify }},
+      "earlyBirdDeadline": {{ early_bird_deadline | default: "" | jsonify }},
+      "presaleNote": {{ presale_note | default: "" | jsonify }}
     }
     {% assign first = false %}
   {% endfor %}

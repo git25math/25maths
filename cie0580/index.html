@@ -14,6 +14,9 @@ lang_links:
     url: /zh-cn/cie0580/
 ---
 
+{% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
+{% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+
 <!-- Hero Section -->
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -110,129 +113,45 @@ lang_links:
 <section id="products" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Premium Bundles</h2>
-            <p class="text-xl text-gray-600">Complete practice packages designed by experienced IGCSE educators</p>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">New Closed-Loop Product Model</h2>
+            <p class="text-xl text-gray-600">Legacy 3 products removed. Now using L1 single product -> L2 section bundle -> L3 unit bundle.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Product 1 - Algebra -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                <div class="bg-primary h-48 flex items-center justify-center text-white text-6xl font-bold">
-                    A
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold mb-2">Algebra Complete Bundle</h3>
-                    <div class="flex items-center mb-3">
-                        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
-                        <span class="ml-2 text-gray-600">9.5/10</span>
-                    </div>
-                    <div class="text-3xl font-bold text-primary mb-4">$17.00</div>
-                    <ul class="space-y-2 mb-6 text-gray-600">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            45+ Practice Questions
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            20 Key Vocabulary Terms
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Complete Answer Key
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Foundation to Challenge Levels
-                        </li>
-                    </ul>
-                    <a href="/cie0580/products/algebra.html" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                        Learn More
-                    </a>
-                </div>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-xs font-bold tracking-wider text-primary mb-3">L1 ENTRY</div>
+                <h3 class="text-2xl font-bold mb-2">Single Worksheet MVP</h3>
+                <p class="text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download.</p>
+                <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l1_early_bird }}</p>
+                <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l1_regular }}</p>
+                <a href="/kahoot/cie0580/" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Open L1 Listings</a>
             </div>
 
-            <!-- Product 2 - Functions -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                <div class="bg-secondary h-48 flex items-center justify-center text-white text-6xl font-bold relative">
-                    F
-                    <div class="absolute top-4 right-4 bg-success text-white text-xs px-3 py-1 rounded-full font-bold">
-                        COMING SOON
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold mb-2">Functions & Graphs Bundle</h3>
-                    <div class="flex items-center mb-3">
-                        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
-                        <span class="ml-2 text-gray-600">9.8/10</span>
-                    </div>
-                    <div class="text-3xl font-bold text-primary mb-4">$17.00</div>
-                    <ul class="space-y-2 mb-6 text-gray-600">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            50+ Practice Questions
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            20 Key Vocabulary Terms
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Complete Answer Key
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Foundation to Challenge Levels
-                        </li>
-                    </ul>
-                    <a href="/cie0580/products/functions.html" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                        Learn More
-                    </a>
-                </div>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-xs font-bold tracking-wider text-primary mb-3">L2 UPGRADE</div>
+                <h3 class="text-2xl font-bold mb-2">Section Bundles</h3>
+                <p class="text-gray-600 mb-4">Multi-SubTopic bundle inside one syllabus section.</p>
+                <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l2_early_bird }}</p>
+                <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l2_regular }}</p>
+                <a href="/kahoot/cie0580/" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Open L2 Listings</a>
             </div>
 
-            <!-- Product 3 - Number -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                <div class="bg-success h-48 flex items-center justify-center text-white text-6xl font-bold relative">
-                    N
-                    <div class="absolute top-4 right-4 bg-success text-white text-xs px-3 py-1 rounded-full font-bold">
-                        COMING SOON
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold mb-2">Number System Starter Pack</h3>
-                    <div class="flex items-center mb-3">
-                        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
-                        <span class="ml-2 text-gray-600">9.7/10</span>
-                    </div>
-                    <div class="text-3xl font-bold text-primary mb-4">$12.00</div>
-                    <ul class="space-y-2 mb-6 text-gray-600">
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            45+ Practice Questions
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            40+ Key Terms
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Complete Answer Key
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-5 h-5 text-success mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            Perfect for Foundation Level
-                        </li>
-                    </ul>
-                    <a href="/cie0580/products/number.html" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                        Learn More
-                    </a>
-                </div>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-xs font-bold tracking-wider text-primary mb-3">L3 RETENTION</div>
+                <h3 class="text-2xl font-bold mb-2">Unit Bundles (9 Units)</h3>
+                <p class="text-gray-600 mb-4">Core + Extended unit bundle with bilingual support gifts and upgrade coupons.</p>
+                <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l3_early_bird }}</p>
+                <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l3_regular }}</p>
+                <a href="/cie0580/products.html" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Open New Product Page</a>
             </div>
+        </div>
+
+        <div class="mt-8 text-center">
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="inline-block border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-white transition">Read Presale Terms PDF</a>
         </div>
     </div>
 </section>
 
-<!-- Free Resources Preview -->
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Free Vocabulary Cards</h2>

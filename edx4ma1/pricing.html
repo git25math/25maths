@@ -1,37 +1,80 @@
 ---
 layout: module
 title: Pricing
-description: "Edexcel 4MA1 pricing — premium mathematics resources coming soon."
+description: "Edexcel 4MA1 presale pricing framework with L1/L2/L3 closed-loop structure."
 module: edx4ma1
 active_page: pricing
 ---
+{% assign catalog = site.data.kahoot_presale_catalog.boards["edexcel-4ma1"] %}
+{% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
 <section class="bg-gradient-to-r from-secondary to-blue-900 text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl font-bold mb-4">4MA1 Pricing</h1>
-        <p class="text-xl opacity-90">Premium bundles coming soon</p>
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold mb-4">Edexcel 4MA1 Pricing Framework</h1>
+        <p class="text-xl opacity-90">Recommendation ranges for presale. Final public prices are TBD before launch.</p>
     </div>
 </section>
 
-<section class="py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="bg-blue-50 rounded-2xl p-12">
-            <div class="text-6xl mb-6">🚀</div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Pricing Coming Soon</h2>
-            <p class="text-lg text-gray-700 mb-6">
-                We're finalizing pricing for our Edexcel 4MA1 premium bundles. Pricing will follow a similar structure to our CIE 0580 resources.
-            </p>
-            <p class="text-gray-600 mb-8">
-                Subscribe to be notified when 4MA1 bundles are available for purchase.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/edx4ma1/free/" class="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    Download Free Resources
-                </a>
-                <a href="/cie0580/pricing.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    View CIE 0580 Pricing
-                </a>
+<section class="py-10 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+            <p class="font-semibold mb-1">Important</p>
+            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-6">
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L1 Single Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One SubTopic MVP</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l1_early_bird }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l1_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L2 Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">A full section's SubTopics</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l2_early_bird }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l2_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L3 Unit Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">Foundation + Higher unit package</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l3_early_bird }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l3_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">Mega Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">All 6 units</p>
+                <p class="text-sm text-gray-700">Early-bird: {{ catalog.all_units_bundle.early_bird_price }}</p>
+                <p class="text-sm text-gray-700">Regular: {{ catalog.all_units_bundle.regular_price }}</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Retention Loop</h2>
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">Step 1: Entry</h3>
+                <p class="text-sm text-gray-600">Customer buys L1 SubTopic worksheet and gets immediate value.</p>
             </div>
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">Step 2: Upgrade</h3>
+                <p class="text-sm text-gray-600">Offer L2 section bundle coupon to convert single-item buyers.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">Step 3: Loyalty</h3>
+                <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
+            </div>
+        </div>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="/edx4ma1/products.html" class="bg-secondary text-white px-6 py-3 rounded-lg font-semibold text-center">Open Product Architecture</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">Open Presale Terms PDF</a>
         </div>
     </div>
 </section>
