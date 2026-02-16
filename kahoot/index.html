@@ -103,6 +103,9 @@ lang: en
 
         <p id="explorer-summary" class="text-sm text-gray-600 mb-4">Choose an exam board to begin filtering.</p>
         <div id="explorer-results" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+        <div class="mt-5 text-center">
+            <button id="explorer-load-more" type="button" class="hidden bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black transition">Load More</button>
+        </div>
     </div>
 </section>
 
@@ -114,12 +117,15 @@ lang: en
   const searchInput = document.getElementById('explorer-search');
   const summary = document.getElementById('explorer-summary');
   const results = document.getElementById('explorer-results');
-  if (!boardSelect || !tierSelect || !subtopicSelect || !searchInput || !summary || !results) return;
+  const loadMoreButton = document.getElementById('explorer-load-more');
+  if (!boardSelect || !tierSelect || !subtopicSelect || !searchInput || !summary || !results || !loadMoreButton) return;
 
   const dataUrl = '/assets/data/kahoot-explorer-data.json';
+  const pageSize = 24;
   let boardConfigs = {};
   let allItems = [];
   let dataReady = false;
+  let maxVisible = pageSize;
   let searchDebounceTimer = null;
 
   const titleCase = (text) => text
@@ -237,36 +243,45 @@ lang: en
     subtopicSelect.value = 'all';
   };
 
-  const renderResults = () => {
+  const renderResults = ({ resetPagination = false } = {}) => {
     const board = boardSelect.value;
     if (!board) {
       summary.textContent = 'Choose an exam board to begin filtering.';
       results.innerHTML = '';
+      loadMoreButton.classList.add('hidden');
       syncUrlState();
       return;
+    }
+
+    if (resetPagination) {
+      maxVisible = pageSize;
     }
 
     const config = boardConfigs[board];
     if (!config) {
       summary.textContent = 'Configuration for this board is unavailable.';
       results.innerHTML = '<div class="col-span-full bg-white rounded-xl border border-red-200 p-4 text-sm text-red-700">Board configuration missing.</div>';
+      loadMoreButton.classList.add('hidden');
       return;
     }
     const filtered = getFilteredItems();
+    const visibleCount = Math.min(maxVisible, filtered.length);
+    const visibleItems = filtered.slice(0, visibleCount);
     const query = (searchInput.value || '').trim();
     if (query) {
-      summary.textContent = `Found ${filtered.length} SubTopics in ${config.label} for "${query}".`;
+      summary.textContent = `Found ${filtered.length} SubTopics in ${config.label} for "${query}". Showing ${visibleCount}.`;
     } else {
-      summary.textContent = `Found ${filtered.length} SubTopics in ${config.label}.`;
+      summary.textContent = `Found ${filtered.length} SubTopics in ${config.label}. Showing ${visibleCount}.`;
     }
 
     if (!filtered.length) {
       results.innerHTML = '<div class="col-span-full bg-white rounded-xl border border-gray-200 p-4 text-sm text-gray-600">No SubTopics match this filter.</div>';
+      loadMoreButton.classList.add('hidden');
       syncUrlState();
       return;
     }
 
-    results.innerHTML = filtered.map((item) => {
+    results.innerHTML = visibleItems.map((item) => {
       const hasCustomKahoot = Boolean((item.kahootUrl || '').trim());
       const hasCustomWorksheet = Boolean((item.worksheetUrl || '').trim());
       const kahootUrl = hasCustomKahoot
@@ -306,6 +321,15 @@ lang: en
         </article>
       `;
     }).join('');
+
+    if (filtered.length > visibleCount) {
+      const remaining = filtered.length - visibleCount;
+      loadMoreButton.textContent = `Load More (${remaining} left)`;
+      loadMoreButton.classList.remove('hidden');
+    } else {
+      loadMoreButton.classList.add('hidden');
+    }
+
     syncUrlState();
   };
 
@@ -328,26 +352,32 @@ lang: en
     searchInput.disabled = false;
     rebuildTierOptions();
     rebuildSubtopicOptions();
-    renderResults();
+    renderResults({ resetPagination: true });
   });
 
   tierSelect.addEventListener('change', () => {
     if (!dataReady) return;
     rebuildSubtopicOptions();
-    renderResults();
+    renderResults({ resetPagination: true });
   });
 
   subtopicSelect.addEventListener('change', () => {
     if (!dataReady) return;
-    renderResults();
+    renderResults({ resetPagination: true });
   });
 
   searchInput.addEventListener('input', () => {
     if (!dataReady || !boardSelect.value) return;
     clearTimeout(searchDebounceTimer);
     searchDebounceTimer = window.setTimeout(() => {
-      renderResults();
+      renderResults({ resetPagination: true });
     }, 120);
+  });
+
+  loadMoreButton.addEventListener('click', () => {
+    if (!dataReady || !boardSelect.value) return;
+    maxVisible += pageSize;
+    renderResults();
   });
 
   const initFromUrl = async () => {
@@ -379,7 +409,7 @@ lang: en
     if (subtopicFromUrl !== 'all' && Array.from(subtopicSelect.options).some((opt) => opt.value === subtopicFromUrl)) {
       subtopicSelect.value = subtopicFromUrl;
     }
-    renderResults();
+    renderResults({ resetPagination: true });
   };
 
   initFromUrl();
