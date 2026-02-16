@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% assign canonical_url = site.url | append: page.url | replace: 'index.html', '' %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="referrer" content="{{ site.security.referrer_policy | default: 'strict-origin-when-cross-origin' }}">
+    {% if site.security and site.security.csp %}
+    <meta http-equiv="Content-Security-Policy" content="{{ site.security.csp }}">
+    {% endif %}
     <meta name="robots" content="noindex, nofollow">
     <title>{{ page.title }}</title>
     <script src="https://cdn.tailwindcss.com"></script>

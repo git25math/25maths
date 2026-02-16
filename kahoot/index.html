@@ -105,26 +105,10 @@ lang: en
   const results = document.getElementById('explorer-results');
   if (!boardSelect || !tierSelect || !subtopicSelect || !summary || !results) return;
 
-  const cieData = {{ cie_data | jsonify }};
-  const edxData = {{ edx_data | jsonify }};
-  const linkMap = {{ site.data.kahoot_subtopic_links | jsonify }};
-
-  const boardConfigs = {
-    'cie0580': {
-      label: 'CIE 0580',
-      tiers: ['Core', 'Extended'],
-      directoryUrl: '/kahoot/cie0580/',
-      fallbackKahootUrl: 'https://create.kahoot.it/channels/25maths/igcse-maths',
-      fallbackWorksheetUrl: 'https://payhip.com/b/5j2Sz'
-    },
-    'edexcel-4ma1': {
-      label: 'Edexcel 4MA1',
-      tiers: ['Foundation', 'Higher'],
-      directoryUrl: '/kahoot/edexcel-4ma1/',
-      fallbackKahootUrl: 'https://create.kahoot.it/channels/25maths/edx-4ma1-igcse',
-      fallbackWorksheetUrl: 'https://payhip.com/b/JzU7h'
-    }
-  };
+  const dataUrl = '/assets/data/kahoot-explorer-data.json';
+  let boardConfigs = {};
+  let allItems = [];
+  let dataReady = false;
 
   const titleCase = (text) => text
     .split(' ')
@@ -139,29 +123,28 @@ lang: en
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 
-  const flatten = (boardKey, boardData) => {
-    const items = [];
-    boardData.sections.forEach((section) => {
-      section.items.forEach((item) => {
-        items.push({
-          id: item.id,
-          board: boardKey,
-          boardLabel: boardConfigs[boardKey].label,
-          tier: section.tier,
-          code: item.code,
-          title: item.title,
-          cover: item.cover,
-          sectionCode: section.section_code
-        });
-      });
-    });
-    return items;
+  const setMessage = (message) => {
+    summary.textContent = message;
   };
 
-  const allItems = [
-    ...flatten('cie0580', cieData),
-    ...flatten('edexcel-4ma1', edxData)
-  ];
+  const ensureData = async () => {
+    if (dataReady) return true;
+    try {
+      const response = await fetch(dataUrl, { cache: 'force-cache' });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      const payload = await response.json();
+      boardConfigs = payload.boards || {};
+      allItems = Array.isArray(payload.items) ? payload.items : [];
+      dataReady = true;
+      return true;
+    } catch (error) {
+      setMessage('Unable to load SubTopic data right now. Please refresh and try again.');
+      results.innerHTML = '<div class="col-span-full bg-white rounded-xl border border-red-200 p-4 text-sm text-red-700">Data load failed for the explorer.</div>';
+      return false;
+    }
+  };
 
   const getFilteredItems = () => {
     const board = boardSelect.value;
@@ -180,12 +163,13 @@ lang: en
   const rebuildTierOptions = () => {
     const board = boardSelect.value;
     tierSelect.innerHTML = '<option value="all">All Tiers</option>';
-    if (!board || !boardConfigs[board]) {
+    const config = boardConfigs[board];
+    if (!board || !config) {
       tierSelect.disabled = true;
       return;
     }
 
-    boardConfigs[board].tiers.forEach((tier) => {
+    config.tiers.forEach((tier) => {
       const option = document.createElement('option');
       option.value = tier;
       option.textContent = tier;
@@ -226,6 +210,11 @@ lang: en
     }
 
     const config = boardConfigs[board];
+    if (!config) {
+      summary.textContent = 'Configuration for this board is unavailable.';
+      results.innerHTML = '<div class="col-span-full bg-white rounded-xl border border-red-200 p-4 text-sm text-red-700">Board configuration missing.</div>';
+      return;
+    }
     const filtered = getFilteredItems();
     summary.textContent = `Found ${filtered.length} SubTopics in ${config.label}.`;
 
@@ -235,14 +224,13 @@ lang: en
     }
 
     results.innerHTML = filtered.map((item) => {
-      const link = linkMap[item.id] || {};
-      const hasCustomKahoot = Boolean((link.kahoot_url || '').trim());
-      const hasCustomWorksheet = Boolean((link.worksheet_payhip_url || '').trim());
+      const hasCustomKahoot = Boolean((item.kahootUrl || '').trim());
+      const hasCustomWorksheet = Boolean((item.worksheetUrl || '').trim());
       const kahootUrl = hasCustomKahoot
-        ? link.kahoot_url
+        ? item.kahootUrl
         : `${config.fallbackKahootUrl}?src=kahoot_hub_filter&asset=${encodeURIComponent(item.code.toLowerCase())}`;
       const worksheetUrl = hasCustomWorksheet
-        ? link.worksheet_payhip_url
+        ? item.worksheetUrl
         : `${config.fallbackWorksheetUrl}?src=kahoot_hub_filter&asset=${encodeURIComponent(item.code.toLowerCase())}`;
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
@@ -271,17 +259,33 @@ lang: en
     }).join('');
   };
 
-  boardSelect.addEventListener('change', () => {
+  boardSelect.addEventListener('change', async () => {
+    if (!boardSelect.value) {
+      tierSelect.innerHTML = '<option value="all">All Tiers</option>';
+      subtopicSelect.innerHTML = '<option value="all">All SubTopics</option>';
+      tierSelect.disabled = true;
+      subtopicSelect.disabled = true;
+      setMessage('Choose an exam board to begin filtering.');
+      results.innerHTML = '';
+      return;
+    }
+
+    const ok = await ensureData();
+    if (!ok) return;
     rebuildTierOptions();
     rebuildSubtopicOptions();
     renderResults();
   });
 
   tierSelect.addEventListener('change', () => {
+    if (!dataReady) return;
     rebuildSubtopicOptions();
     renderResults();
   });
 
-  subtopicSelect.addEventListener('change', renderResults);
+  subtopicSelect.addEventListener('change', () => {
+    if (!dataReady) return;
+    renderResults();
+  });
 })();
 </script>

@@ -1,0 +1,63 @@
+---
+layout: null
+---
+{% assign link_map = site.data.kahoot_subtopic_links %}
+{
+  "boards": {
+    "cie0580": {
+      "label": "CIE 0580",
+      "tiers": ["Core", "Extended"],
+      "directoryUrl": "/kahoot/cie0580/",
+      "fallbackKahootUrl": "https://create.kahoot.it/channels/25maths/igcse-maths",
+      "fallbackWorksheetUrl": "https://payhip.com/b/5j2Sz"
+    },
+    "edexcel-4ma1": {
+      "label": "Edexcel 4MA1",
+      "tiers": ["Foundation", "Higher"],
+      "directoryUrl": "/kahoot/edexcel-4ma1/",
+      "fallbackKahootUrl": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse",
+      "fallbackWorksheetUrl": "https://payhip.com/b/JzU7h"
+    }
+  },
+  "items": [
+{% assign first = true %}
+{% for section in site.data.kahoot_cie0580_subtopics.sections %}
+  {% for item in section.items %}
+    {% unless first %},{% endunless %}
+    {% assign link = link_map[item.id] %}
+    {
+      "id": {{ item.id | jsonify }},
+      "board": "cie0580",
+      "boardLabel": "CIE 0580",
+      "tier": {{ section.tier | jsonify }},
+      "code": {{ item.code | jsonify }},
+      "title": {{ item.title | jsonify }},
+      "cover": {{ item.cover | jsonify }},
+      "sectionCode": {{ section.section_code | jsonify }},
+      "kahootUrl": {{ link.kahoot_url | default: "" | jsonify }},
+      "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }}
+    }
+    {% assign first = false %}
+  {% endfor %}
+{% endfor %}
+{% for section in site.data.kahoot_edexcel4ma1_subtopics.sections %}
+  {% for item in section.items %}
+    {% unless first %},{% endunless %}
+    {% assign link = link_map[item.id] %}
+    {
+      "id": {{ item.id | jsonify }},
+      "board": "edexcel-4ma1",
+      "boardLabel": "Edexcel 4MA1",
+      "tier": {{ section.tier | jsonify }},
+      "code": {{ item.code | jsonify }},
+      "title": {{ item.title | jsonify }},
+      "cover": {{ item.cover | jsonify }},
+      "sectionCode": {{ section.section_code | jsonify }},
+      "kahootUrl": {{ link.kahoot_url | default: "" | jsonify }},
+      "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }}
+    }
+    {% assign first = false %}
+  {% endfor %}
+{% endfor %}
+  ]
+}
