@@ -120,3 +120,18 @@ Outputs:
 - `payhip/presale/kahoot-payhip-l3-copy-template.md`
 
 Use CSV for structured paste/import workflows, and Markdown for manual copy into Payhip editor.
+
+## 10) L4 Copy Template Generation
+
+Generate all-units mega-bundle (L4) listing copy templates:
+
+```bash
+python3 scripts/payhip/generate_l4_payhip_copy_templates.py
+```
+
+Outputs:
+
+- `payhip/presale/kahoot-payhip-l4-copy-template.csv`
+- `payhip/presale/kahoot-payhip-l4-copy-template.md`
+
+Use CSV for structured paste/import workflows, and Markdown for manual copy into Payhip editor.
