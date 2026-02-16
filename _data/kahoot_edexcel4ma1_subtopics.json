@@ -1,0 +1,1019 @@
+{
+  "total_subtopics": 78,
+  "sections": [
+    {
+      "section_key": "number-f1",
+      "section_code": "F1",
+      "section_title": "Number and Arithmetic (Foundation)",
+      "domain": "number",
+      "tier": "Foundation",
+      "tier_letter": "F",
+      "syllabus_number": 1,
+      "suffix": "",
+      "count": 11,
+      "items": [
+        {
+          "id": "edexcel-4ma1:number-f1:f1-01-integers",
+          "slug": "f1-01-integers",
+          "code": "F1-01",
+          "title": "integers",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-01-integers/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-01-integers"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-02-fractions",
+          "slug": "f1-02-fractions",
+          "code": "F1-02",
+          "title": "fractions",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-02-fractions/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-02-fractions"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-03-decimals",
+          "slug": "f1-03-decimals",
+          "code": "F1-03",
+          "title": "decimals",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-04-powers-and-roots",
+          "slug": "f1-04-powers-and-roots",
+          "code": "F1-04",
+          "title": "powers and roots",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-04-powers-and-roots/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-04-powers-and-roots"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-05-set-language-and-notation",
+          "slug": "f1-05-set-language-and-notation",
+          "code": "F1-05",
+          "title": "set language and notation",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-05-set-language-and-notation/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-05-set-language-and-notation"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-06-percentages",
+          "slug": "f1-06-percentages",
+          "code": "F1-06",
+          "title": "percentages",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-06-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-06-percentages"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-07-ratio-and-proportion",
+          "slug": "f1-07-ratio-and-proportion",
+          "code": "F1-07",
+          "title": "ratio and proportion",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-07-ratio-and-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-07-ratio-and-proportion"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-08-degree-of-accuracy",
+          "slug": "f1-08-degree-of-accuracy",
+          "code": "F1-08",
+          "title": "degree of accuracy",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-08-degree-of-accuracy/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-08-degree-of-accuracy"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-09-standard-form",
+          "slug": "f1-09-standard-form",
+          "code": "F1-09",
+          "title": "standard form",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-09-standard-form/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-09-standard-form"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-10-applying-number",
+          "slug": "f1-10-applying-number",
+          "code": "F1-10",
+          "title": "applying number",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-10-applying-number/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-10-applying-number"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-11-electronic-calculators",
+          "slug": "f1-11-electronic-calculators",
+          "code": "F1-11",
+          "title": "electronic calculators",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-11-electronic-calculators/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-f1",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-11-electronic-calculators"
+        }
+      ]
+    },
+    {
+      "section_key": "number-h1",
+      "section_code": "H1",
+      "section_title": "Number and Arithmetic (Higher)",
+      "domain": "number",
+      "tier": "Higher",
+      "tier_letter": "H",
+      "syllabus_number": 1,
+      "suffix": "",
+      "count": 11,
+      "items": [
+        {
+          "id": "edexcel-4ma1:number-h1:h1-01-integers",
+          "slug": "h1-01-integers",
+          "code": "H1-01",
+          "title": "integers",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-01-integers/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-01-integers"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-02-fractions",
+          "slug": "h1-02-fractions",
+          "code": "H1-02",
+          "title": "fractions",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-02-fractions/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-02-fractions"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-03-decimals",
+          "slug": "h1-03-decimals",
+          "code": "H1-03",
+          "title": "decimals",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-03-decimals/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-03-decimals"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-04-powers-and-roots",
+          "slug": "h1-04-powers-and-roots",
+          "code": "H1-04",
+          "title": "powers and roots",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-04-powers-and-roots/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-04-powers-and-roots"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-05-set-language-and-notation",
+          "slug": "h1-05-set-language-and-notation",
+          "code": "H1-05",
+          "title": "set language and notation",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-05-set-language-and-notation/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-05-set-language-and-notation"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-06-percentages",
+          "slug": "h1-06-percentages",
+          "code": "H1-06",
+          "title": "percentages",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-06-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-06-percentages"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-07-ratio-and-proportion",
+          "slug": "h1-07-ratio-and-proportion",
+          "code": "H1-07",
+          "title": "ratio and proportion",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-07-ratio-and-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-07-ratio-and-proportion"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-08-degree-of-accuracy",
+          "slug": "h1-08-degree-of-accuracy",
+          "code": "H1-08",
+          "title": "degree of accuracy",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-08-degree-of-accuracy/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-08-degree-of-accuracy"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-09-standard-form",
+          "slug": "h1-09-standard-form",
+          "code": "H1-09",
+          "title": "standard form",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-09-standard-form/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-09-standard-form"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-10-applying-number",
+          "slug": "h1-10-applying-number",
+          "code": "H1-10",
+          "title": "applying number",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-10-applying-number/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-10-applying-number"
+        },
+        {
+          "id": "edexcel-4ma1:number-h1:h1-11-electronic-calculators",
+          "slug": "h1-11-electronic-calculators",
+          "code": "H1-11",
+          "title": "electronic calculators",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-11-electronic-calculators/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-h1",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-h1/h1-11-electronic-calculators"
+        }
+      ]
+    },
+    {
+      "section_key": "equations-f2",
+      "section_code": "F2",
+      "section_title": "Equations, Formulae and Identities (Foundation)",
+      "domain": "equations",
+      "tier": "Foundation",
+      "tier_letter": "F",
+      "syllabus_number": 2,
+      "suffix": "",
+      "count": 8,
+      "items": [
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-01-use-of-symbols",
+          "slug": "f2-01-use-of-symbols",
+          "code": "F2-01",
+          "title": "use of symbols",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-01-use-of-symbols/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-01-use-of-symbols"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-02-algebraic-manipulation",
+          "slug": "f2-02-algebraic-manipulation",
+          "code": "F2-02",
+          "title": "algebraic manipulation",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-02-algebraic-manipulation/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-02-algebraic-manipulation"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-03-expressions-and-formulae",
+          "slug": "f2-03-expressions-and-formulae",
+          "code": "F2-03",
+          "title": "expressions and formulae",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-03-expressions-and-formulae/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-03-expressions-and-formulae"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-04-linear-equations",
+          "slug": "f2-04-linear-equations",
+          "code": "F2-04",
+          "title": "linear equations",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-04-linear-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-04-linear-equations"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-05-proportion",
+          "slug": "f2-05-proportion",
+          "code": "F2-05",
+          "title": "proportion",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-05-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-05-proportion"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-06-simultaneous-linear-equations",
+          "slug": "f2-06-simultaneous-linear-equations",
+          "code": "F2-06",
+          "title": "simultaneous linear equations",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-06-simultaneous-linear-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-06-simultaneous-linear-equations"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-07-quadratic-equations",
+          "slug": "f2-07-quadratic-equations",
+          "code": "F2-07",
+          "title": "quadratic equations",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-07-quadratic-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-07-quadratic-equations"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-08-inequalities",
+          "slug": "f2-08-inequalities",
+          "code": "F2-08",
+          "title": "inequalities",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-08-inequalities/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-f2",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-f2/f2-08-inequalities"
+        }
+      ]
+    },
+    {
+      "section_key": "equations-h2",
+      "section_code": "H2",
+      "section_title": "Equations, Formulae and Identities (Higher)",
+      "domain": "equations",
+      "tier": "Higher",
+      "tier_letter": "H",
+      "syllabus_number": 2,
+      "suffix": "",
+      "count": 8,
+      "items": [
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-01-use-of-symbols",
+          "slug": "h2-01-use-of-symbols",
+          "code": "H2-01",
+          "title": "use of symbols",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-01-use-of-symbols/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-01-use-of-symbols"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-02-algebraic-manipulation",
+          "slug": "h2-02-algebraic-manipulation",
+          "code": "H2-02",
+          "title": "algebraic manipulation",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-02-algebraic-manipulation/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-02-algebraic-manipulation"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-03-expressions-and-formulae",
+          "slug": "h2-03-expressions-and-formulae",
+          "code": "H2-03",
+          "title": "expressions and formulae",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-03-expressions-and-formulae/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-03-expressions-and-formulae"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-04-linear-equations",
+          "slug": "h2-04-linear-equations",
+          "code": "H2-04",
+          "title": "linear equations",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-04-linear-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-04-linear-equations"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-05-proportion",
+          "slug": "h2-05-proportion",
+          "code": "H2-05",
+          "title": "proportion",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-05-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-05-proportion"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-06-simultaneous-linear-equations",
+          "slug": "h2-06-simultaneous-linear-equations",
+          "code": "H2-06",
+          "title": "simultaneous linear equations",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-06-simultaneous-linear-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-06-simultaneous-linear-equations"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-07-quadratic-equations",
+          "slug": "h2-07-quadratic-equations",
+          "code": "H2-07",
+          "title": "quadratic equations",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-07-quadratic-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-07-quadratic-equations"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-08-inequalities",
+          "slug": "h2-08-inequalities",
+          "code": "H2-08",
+          "title": "inequalities",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-08-inequalities/cover-2320x1520-kahoot-minimal.png",
+          "section": "equations-h2",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/equations-h2/h2-08-inequalities"
+        }
+      ]
+    },
+    {
+      "section_key": "sequences-f3",
+      "section_code": "F3",
+      "section_title": "Functions, Sequences and Graphs (Foundation)",
+      "domain": "sequences",
+      "tier": "Foundation",
+      "tier_letter": "F",
+      "syllabus_number": 3,
+      "suffix": "",
+      "count": 4,
+      "items": [
+        {
+          "id": "edexcel-4ma1:sequences-f3:f3-01-sequences",
+          "slug": "f3-01-sequences",
+          "code": "F3-01",
+          "title": "sequences",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-01-sequences/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-f3",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-01-sequences"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-f3:f3-02-function-notation",
+          "slug": "f3-02-function-notation",
+          "code": "F3-02",
+          "title": "function notation",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-02-function-notation/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-f3",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-02-function-notation"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-f3:f3-03-graphs",
+          "slug": "f3-03-graphs",
+          "code": "F3-03",
+          "title": "graphs",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-03-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-f3",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-03-graphs"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-f3:f3-04-calculus",
+          "slug": "f3-04-calculus",
+          "code": "F3-04",
+          "title": "calculus",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-04-calculus/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-f3",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-04-calculus"
+        }
+      ]
+    },
+    {
+      "section_key": "sequences-h3",
+      "section_code": "H3",
+      "section_title": "Functions, Sequences and Graphs (Higher)",
+      "domain": "sequences",
+      "tier": "Higher",
+      "tier_letter": "H",
+      "syllabus_number": 3,
+      "suffix": "",
+      "count": 4,
+      "items": [
+        {
+          "id": "edexcel-4ma1:sequences-h3:h3-01-sequences",
+          "slug": "h3-01-sequences",
+          "code": "H3-01",
+          "title": "sequences",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-01-sequences/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-h3",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-01-sequences"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-h3:h3-02-function-notation",
+          "slug": "h3-02-function-notation",
+          "code": "H3-02",
+          "title": "function notation",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-02-function-notation/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-h3",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-02-function-notation"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-h3:h3-03-graphs",
+          "slug": "h3-03-graphs",
+          "code": "H3-03",
+          "title": "graphs",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-03-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-h3",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-03-graphs"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-h3:h3-04-calculus",
+          "slug": "h3-04-calculus",
+          "code": "H3-04",
+          "title": "calculus",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-04-calculus/cover-2320x1520-kahoot-minimal.png",
+          "section": "sequences-h3",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-h3/h3-04-calculus"
+        }
+      ]
+    },
+    {
+      "section_key": "geometry-f4",
+      "section_code": "F4",
+      "section_title": "Geometry and Mensuration (Foundation)",
+      "domain": "geometry",
+      "tier": "Foundation",
+      "tier_letter": "F",
+      "syllabus_number": 4,
+      "suffix": "",
+      "count": 11,
+      "items": [
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-01-angles-lines-and-triangles",
+          "slug": "f4-01-angles-lines-and-triangles",
+          "code": "F4-01",
+          "title": "angles lines and triangles",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-01-angles-lines-and-triangles/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-01-angles-lines-and-triangles"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-02-polygons",
+          "slug": "f4-02-polygons",
+          "code": "F4-02",
+          "title": "polygons",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-02-polygons/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-02-polygons"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-03-symmetry",
+          "slug": "f4-03-symmetry",
+          "code": "F4-03",
+          "title": "symmetry",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-03-symmetry/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-03-symmetry"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-04-measures",
+          "slug": "f4-04-measures",
+          "code": "F4-04",
+          "title": "measures",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-04-measures/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-04-measures"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-05-construction",
+          "slug": "f4-05-construction",
+          "code": "F4-05",
+          "title": "construction",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-05-construction/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-05-construction"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-06-circle-properties",
+          "slug": "f4-06-circle-properties",
+          "code": "F4-06",
+          "title": "circle properties",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-06-circle-properties/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-06-circle-properties"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-07-geometrical-reasoning",
+          "slug": "f4-07-geometrical-reasoning",
+          "code": "F4-07",
+          "title": "geometrical reasoning",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-07-geometrical-reasoning/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-07-geometrical-reasoning"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-08-trigonometry-and-pythagoras-theorem",
+          "slug": "f4-08-trigonometry-and-pythagoras-theorem",
+          "code": "F4-08",
+          "title": "trigonometry and pythagoras theorem",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-08-trigonometry-and-pythagoras-theorem/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-08-trigonometry-and-pythagoras-theorem"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-09-mensuration-of-2d-shapes",
+          "slug": "f4-09-mensuration-of-2d-shapes",
+          "code": "F4-09",
+          "title": "mensuration of 2D shapes",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-09-mensuration-of-2d-shapes/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-09-mensuration-of-2d-shapes"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-10-3d-shapes-and-volume",
+          "slug": "f4-10-3d-shapes-and-volume",
+          "code": "F4-10",
+          "title": "3D shapes and volume",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-10-3d-shapes-and-volume/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-10-3d-shapes-and-volume"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-11-similarity",
+          "slug": "f4-11-similarity",
+          "code": "F4-11",
+          "title": "similarity",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-11-similarity/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-f4",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-f4/f4-11-similarity"
+        }
+      ]
+    },
+    {
+      "section_key": "geometry-h4",
+      "section_code": "H4",
+      "section_title": "Geometry and Mensuration (Higher)",
+      "domain": "geometry",
+      "tier": "Higher",
+      "tier_letter": "H",
+      "syllabus_number": 4,
+      "suffix": "",
+      "count": 11,
+      "items": [
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-01-angles-lines-and-triangles",
+          "slug": "h4-01-angles-lines-and-triangles",
+          "code": "H4-01",
+          "title": "angles lines and triangles",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-01-angles-lines-and-triangles/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-01-angles-lines-and-triangles"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-02-polygons",
+          "slug": "h4-02-polygons",
+          "code": "H4-02",
+          "title": "polygons",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-02-polygons/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-02-polygons"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-03-symmetry",
+          "slug": "h4-03-symmetry",
+          "code": "H4-03",
+          "title": "symmetry",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-03-symmetry/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-03-symmetry"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-04-measures",
+          "slug": "h4-04-measures",
+          "code": "H4-04",
+          "title": "measures",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-04-measures/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-04-measures"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-05-construction",
+          "slug": "h4-05-construction",
+          "code": "H4-05",
+          "title": "construction",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-05-construction/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-05-construction"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-06-circle-properties",
+          "slug": "h4-06-circle-properties",
+          "code": "H4-06",
+          "title": "circle properties",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-06-circle-properties/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-06-circle-properties"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-07-geometrical-reasoning",
+          "slug": "h4-07-geometrical-reasoning",
+          "code": "H4-07",
+          "title": "geometrical reasoning",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-07-geometrical-reasoning/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-07-geometrical-reasoning"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-08-trigonometry-and-pythagoras-theorem",
+          "slug": "h4-08-trigonometry-and-pythagoras-theorem",
+          "code": "H4-08",
+          "title": "trigonometry and pythagoras theorem",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-08-trigonometry-and-pythagoras-theorem/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-08-trigonometry-and-pythagoras-theorem"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-09-mensuration",
+          "slug": "h4-09-mensuration",
+          "code": "H4-09",
+          "title": "mensuration",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-09-mensuration/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-09-mensuration"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-10-3d-shapes-and-volume",
+          "slug": "h4-10-3d-shapes-and-volume",
+          "code": "H4-10",
+          "title": "3D shapes and volume",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-10-3d-shapes-and-volume/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-10-3d-shapes-and-volume"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-h4:h4-11-similarity",
+          "slug": "h4-11-similarity",
+          "code": "H4-11",
+          "title": "similarity",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-11-similarity/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-h4",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/geometry-h4/h4-11-similarity"
+        }
+      ]
+    },
+    {
+      "section_key": "vectors-f5",
+      "section_code": "F5",
+      "section_title": "Vectors and Transformations (Foundation)",
+      "domain": "vectors",
+      "tier": "Foundation",
+      "tier_letter": "F",
+      "syllabus_number": 5,
+      "suffix": "",
+      "count": 2,
+      "items": [
+        {
+          "id": "edexcel-4ma1:vectors-f5:f5-01-vectors",
+          "slug": "f5-01-vectors",
+          "code": "F5-01",
+          "title": "vectors",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-f5/f5-01-vectors/cover-2320x1520-kahoot-minimal.png",
+          "section": "vectors-f5",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-f5/f5-01-vectors"
+        },
+        {
+          "id": "edexcel-4ma1:vectors-f5:f5-02-transformation-geometry",
+          "slug": "f5-02-transformation-geometry",
+          "code": "F5-02",
+          "title": "transformation geometry",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-f5/f5-02-transformation-geometry/cover-2320x1520-kahoot-minimal.png",
+          "section": "vectors-f5",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-f5/f5-02-transformation-geometry"
+        }
+      ]
+    },
+    {
+      "section_key": "vectors-h5",
+      "section_code": "H5",
+      "section_title": "Vectors and Transformations (Higher)",
+      "domain": "vectors",
+      "tier": "Higher",
+      "tier_letter": "H",
+      "syllabus_number": 5,
+      "suffix": "",
+      "count": 2,
+      "items": [
+        {
+          "id": "edexcel-4ma1:vectors-h5:h5-01-vectors",
+          "slug": "h5-01-vectors",
+          "code": "H5-01",
+          "title": "vectors",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-h5/h5-01-vectors/cover-2320x1520-kahoot-minimal.png",
+          "section": "vectors-h5",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-h5/h5-01-vectors"
+        },
+        {
+          "id": "edexcel-4ma1:vectors-h5:h5-02-transformation-geometry",
+          "slug": "h5-02-transformation-geometry",
+          "code": "H5-02",
+          "title": "transformation geometry",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-h5/h5-02-transformation-geometry/cover-2320x1520-kahoot-minimal.png",
+          "section": "vectors-h5",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/vectors-h5/h5-02-transformation-geometry"
+        }
+      ]
+    },
+    {
+      "section_key": "statistics-f6",
+      "section_code": "F6",
+      "section_title": "Statistics and Probability (Foundation)",
+      "domain": "statistics",
+      "tier": "Foundation",
+      "tier_letter": "F",
+      "syllabus_number": 6,
+      "suffix": "",
+      "count": 3,
+      "items": [
+        {
+          "id": "edexcel-4ma1:statistics-f6:f6-01-graphical-representation-of-data",
+          "slug": "f6-01-graphical-representation-of-data",
+          "code": "F6-01",
+          "title": "graphical representation of data",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-f6/f6-01-graphical-representation-of-data/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-f6",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-f6/f6-01-graphical-representation-of-data"
+        },
+        {
+          "id": "edexcel-4ma1:statistics-f6:f6-02-statistical-measures",
+          "slug": "f6-02-statistical-measures",
+          "code": "F6-02",
+          "title": "statistical measures",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-f6/f6-02-statistical-measures/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-f6",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-f6/f6-02-statistical-measures"
+        },
+        {
+          "id": "edexcel-4ma1:statistics-f6:f6-03-probability",
+          "slug": "f6-03-probability",
+          "code": "F6-03",
+          "title": "probability",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-f6/f6-03-probability/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-f6",
+          "tier": "Foundation",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-f6/f6-03-probability"
+        }
+      ]
+    },
+    {
+      "section_key": "statistics-h6",
+      "section_code": "H6",
+      "section_title": "Statistics and Probability (Higher)",
+      "domain": "statistics",
+      "tier": "Higher",
+      "tier_letter": "H",
+      "syllabus_number": 6,
+      "suffix": "",
+      "count": 3,
+      "items": [
+        {
+          "id": "edexcel-4ma1:statistics-h6:h6-01-graphical-representation-of-data",
+          "slug": "h6-01-graphical-representation-of-data",
+          "code": "H6-01",
+          "title": "graphical representation of data",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-01-graphical-representation-of-data/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-h6",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-01-graphical-representation-of-data"
+        },
+        {
+          "id": "edexcel-4ma1:statistics-h6:h6-02-statistical-measures",
+          "slug": "h6-02-statistical-measures",
+          "code": "H6-02",
+          "title": "statistical measures",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-02-statistical-measures/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-h6",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-02-statistical-measures"
+        },
+        {
+          "id": "edexcel-4ma1:statistics-h6:h6-03-probability",
+          "slug": "h6-03-probability",
+          "code": "H6-03",
+          "title": "probability",
+          "cover": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-03-probability/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-h6",
+          "tier": "Higher",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/edexcel-4ma1/micro-topics/statistics-h6/h6-03-probability"
+        }
+      ]
+    }
+  ]
+}

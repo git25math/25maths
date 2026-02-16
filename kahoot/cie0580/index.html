@@ -1,22 +1,26 @@
 ---
 layout: global
-title: CIE 0580 Kahoot Syllabus Project
-description: "CIE 0580 syllabus-aligned Kahoot topic list with compact cover previews and worksheet download links."
+title: CIE 0580 Kahoot SubTopic Directory
+description: "CIE 0580 Kahoot SubTopic list with Core and Extended sections, cover previews, and worksheet download links."
 active_global: kahoot
 lang: en
 ---
+{% assign kahoot_channel_url = "https://create.kahoot.it/channels/25maths/igcse-maths" %}
+{% assign payhip_url = "https://payhip.com/b/5j2Sz" %}
+{% assign data = site.data.kahoot_cie0580_subtopics %}
+{% assign link_map = site.data.kahoot_subtopic_links %}
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">CIE 0580</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Syllabus Project Page</h1>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot SubTopic Directory</h1>
         <p class="text-lg text-gray-100 max-w-3xl">
-            Topic-based directory for CIE 0580 syllabus planning.
-            Each topic card links to Kahoot channel practice and worksheet companion download.
+            Full SubTopic directory based on the current `micro-topics` folder structure.
+            Includes both <strong>Core</strong> and <strong>Extended</strong> tracks.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 Kahoot Channel</a>
-            <a href="https://payhip.com/b/5j2Sz" target="_blank" rel="noopener" class="text-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Download Worksheet Bundle</a>
+            <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-center bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 Kahoot Channel</a>
+            <a href="{{ payhip_url }}" target="_blank" rel="noopener" class="text-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Worksheet Download (Payhip)</a>
         </div>
     </div>
 </section>
@@ -25,108 +29,76 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3 items-center">
         <span class="text-sm font-semibold text-gray-700">Quick links:</span>
         <a href="/kahoot/" class="text-sm px-3 py-1.5 rounded-full border border-gray-300 hover:bg-gray-100 transition">Back to Kahoot Hub</a>
-        <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-gray-900 text-white">Kahoot Channel</a>
-        <a href="https://payhip.com/b/5j2Sz" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-primary text-white">Payhip Worksheet</a>
+        <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-gray-900 text-white">Kahoot Channel</a>
+        <a href="{{ payhip_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-primary text-white">Payhip Worksheet</a>
+        <span class="text-sm text-gray-500">{{ data.total_subtopics }} SubTopics</span>
     </div>
 </section>
 
 <section class="py-12 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">CIE 0580 Topic Columns (E1-E9)</h2>
-            <p class="text-gray-600">Covers are displayed as compact thumbnails for quick scanning.</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">SubTopic Listing (Core + Extended)</h2>
+            <p class="text-gray-600">Each card is mapped from one SubTopic folder under `projects/kahoot-channel/cie0580/micro-topics`.</p>
+            <p class="text-sm text-gray-500 mt-2">Architecture fields per SubTopic: `kahoot_url`, `worksheet_payhip_url`, `bundle_url`, `past_paper_analysis_url`, `variant_practice_url`.</p>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="E1 Number preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E1</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Number</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e1" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e1" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+        {% for section in data.sections %}
+            <div class="mb-10">
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                    <h3 class="text-xl font-bold text-gray-900">{{ section.section_title }}</h3>
+                    <span class="text-xs px-2 py-1 rounded-full bg-gray-200 text-gray-700 font-semibold">{{ section.section_code }}</span>
+                    <span class="text-xs px-2 py-1 rounded-full {% if section.tier == 'Core' %}bg-emerald-100 text-emerald-700{% else %}bg-blue-100 text-blue-700{% endif %} font-semibold">{{ section.tier }}</span>
+                    <span class="text-xs text-gray-500">{{ section.count }} SubTopics</span>
                 </div>
-            </article>
 
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-09-graphs-in-practical-situations/cover-2320x1520-kahoot-minimal.png" alt="E2 Algebra preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E2</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Algebra and Graphs</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e2" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e2" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    {% for item in section.items %}
+                        {% assign link = link_map[item.id] %}
+                        {% assign card_kahoot_url = kahoot_channel_url %}
+                        {% assign card_worksheet_url = payhip_url %}
+                        {% assign has_custom_kahoot = false %}
+                        {% assign has_custom_worksheet = false %}
+                        {% assign has_future_content = false %}
+                        {% if link %}
+                            {% if link.kahoot_url and link.kahoot_url != '' %}
+                                {% assign card_kahoot_url = link.kahoot_url %}
+                                {% assign has_custom_kahoot = true %}
+                            {% endif %}
+                            {% if link.worksheet_payhip_url and link.worksheet_payhip_url != '' %}
+                                {% assign card_worksheet_url = link.worksheet_payhip_url %}
+                                {% assign has_custom_worksheet = true %}
+                            {% endif %}
+                            {% if link.bundle_url and link.bundle_url != '' %}
+                                {% assign has_future_content = true %}
+                            {% endif %}
+                            {% if link.past_paper_analysis_url and link.past_paper_analysis_url != '' %}
+                                {% assign has_future_content = true %}
+                            {% endif %}
+                            {% if link.variant_practice_url and link.variant_practice_url != '' %}
+                                {% assign has_future_content = true %}
+                            {% endif %}
+                        {% endif %}
+                        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition">
+                            <img src="{{ item.cover }}" alt="{{ item.code }} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                            <p class="text-xs font-semibold tracking-wide text-primary mb-1">{{ item.code }}</p>
+                            <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ item.title }}</h4>
+                            <p class="text-[11px] text-gray-500 mb-2">
+                                {% if has_custom_kahoot %}Kahoot: SubTopic link{% else %}Kahoot: board-channel fallback{% endif %}
+                                |
+                                {% if has_custom_worksheet %}Worksheet: ready{% else %}Worksheet: pending custom link{% endif %}
+                            </p>
+                            <p class="text-[11px] text-gray-500 mb-3">
+                                {% if has_future_content %}Future content configured{% else %}Future content pending: past paper analysis / variant practice / bundle{% endif %}
+                            </p>
+                            <div class="grid grid-cols-1 gap-2">
+                                <a href="{{ card_kahoot_url }}{% unless has_custom_kahoot %}?src=kahoot_cie0580_subtopic&asset={{ item.code | downcase }}{% endunless %}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
+                                <a href="{{ card_worksheet_url }}{% unless has_custom_worksheet %}?src=kahoot_cie0580_subtopic&asset={{ item.code | downcase }}{% endunless %}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
+                            </div>
+                        </article>
+                    {% endfor %}
                 </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-01-coordinates/cover-2320x1520-kahoot-minimal.png" alt="E3 Coordinate Geometry preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E3</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Coordinate Geometry</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e3" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e3" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-01-geometrical-terms/cover-2320x1520-kahoot-minimal.png" alt="E4 Geometry preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E4</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Geometry</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e4" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e4" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-05-compound-shapes-and-parts-of-shapes/cover-2320x1520-kahoot-minimal.png" alt="E5 Mensuration preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E5</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Mensuration</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e5" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e5" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-01-pythagoras-theorem/cover-2320x1520-kahoot-minimal.png" alt="E6 Trigonometry preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E6</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Trigonometry</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e6" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e6" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/transformations-c7/c7-01-transformations/cover-2320x1520-kahoot-minimal.png" alt="E7 Transformations and Vectors preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E7</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Transformations and Vectors</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e7" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e7" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-04-conditional-probability/cover-2320x1520-kahoot-minimal.png" alt="E8 Probability preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E8</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Probability</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e8" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e8" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-01-classifying-statistical-data/cover-2320x1520-kahoot-minimal.png" alt="E9 Statistics preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                <p class="text-xs font-semibold tracking-wide text-primary mb-1">E9</p>
-                <h3 class="text-sm font-bold text-gray-900 mb-2">Statistics</h3>
-                <div class="grid grid-cols-1 gap-2">
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_page&asset=e9" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                    <a href="https://payhip.com/b/5j2Sz?src=kahoot_cie0580_page&asset=e9" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Worksheet (Payhip)</a>
-                </div>
-            </article>
-        </div>
+            </div>
+        {% endfor %}
     </div>
 </section>

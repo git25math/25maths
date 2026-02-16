@@ -1,22 +1,24 @@
 ---
 layout: global
 title: Kahoot Syllabus Project Hub
-description: "Syllabus-aligned Kahoot project hubs for CIE 0580 and Edexcel 4MA1, with cover previews and worksheet download links."
+description: "Syllabus-aligned Kahoot project hubs for CIE 0580 and Edexcel 4MA1 with SubTopic directories."
 active_global: kahoot
 lang: en
 ---
+{% assign cie_data = site.data.kahoot_cie0580_subtopics %}
+{% assign edx_data = site.data.kahoot_edexcel4ma1_subtopics %}
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">25Maths Kahoot Projects</p>
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Syllabus Project Hub</h1>
         <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto">
-            Browse syllabus-aligned project pages for CIE 0580 and Edexcel 4MA1.
-            Each page includes compact cover previews, Kahoot links, and worksheet download links.
+            Browse SubTopic directories for CIE 0580 and Edexcel 4MA1.
+            CIE is grouped by <strong>Core / Extended</strong>; Edexcel is grouped by <strong>Foundation / Higher</strong>.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="bg-white text-primary px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 Project</a>
-            <a href="/kahoot/edexcel-4ma1/" class="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Open Edexcel 4MA1 Project</a>
+            <a href="/kahoot/cie0580/" class="bg-white text-primary px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 SubTopics</a>
+            <a href="/kahoot/edexcel-4ma1/" class="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Open Edexcel 4MA1 SubTopics</a>
         </div>
     </div>
 </section>
@@ -24,32 +26,33 @@ lang: en
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Syllabus Project Columns</h2>
-            <p class="text-gray-600">Choose your exam board and open the corresponding Kahoot project page.</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Directories</h2>
+            <p class="text-gray-600">Both pages are generated from the current `micro-topics` folder structures in your project workspace.</p>
+            <p class="text-sm text-gray-500 mt-2">Per-SubTopic links are managed in `_data/kahoot_subtopic_links.json` (Kahoot, Worksheet, Bundle, Past Paper Analysis, Variant Practice).</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
             <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-01-units-of-measure/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 Kahoot project preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
-                <p class="text-xs font-bold tracking-wider text-primary mb-2">PROJECT COLUMN</p>
-                <h3 class="text-xl font-bold text-gray-900">CIE 0580 Kahoot Project Page</h3>
-                <p class="text-gray-600 mt-2 mb-4">Topic E1 to E9 structure with compact cover previews and worksheet links.</p>
+                <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                <p class="text-xs font-bold tracking-wider text-primary mb-2">CIE 0580</p>
+                <h3 class="text-xl font-bold text-gray-900">Core + Extended SubTopics</h3>
+                <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
+                <p class="text-sm text-gray-500 mb-5">{{ cie_data.total_subtopics }} SubTopics across {{ cie_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/cie0580/" class="text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Project Page</a>
+                    <a href="/kahoot/cie0580/" class="text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Directory</a>
                     <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
-                    <a href="https://payhip.com/b/5j2Sz" target="_blank" rel="noopener" class="text-center border border-gray-300 px-5 py-2.5 rounded-lg font-semibold text-sm text-gray-800 hover:bg-gray-100 transition">Worksheet Bundle</a>
                 </div>
             </article>
 
             <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/sequences-f3/f3-03-graphs/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 Kahoot project preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
-                <p class="text-xs font-bold tracking-wider text-secondary mb-2">PROJECT COLUMN</p>
-                <h3 class="text-xl font-bold text-gray-900">Edexcel 4MA1 Project Page</h3>
-                <p class="text-gray-600 mt-2 mb-4">Topic 1 to Topic 6 structure with Foundation/Higher worksheet companions.</p>
+                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                <p class="text-xs font-bold tracking-wider text-secondary mb-2">Edexcel 4MA1</p>
+                <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
+                <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
+                <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/edexcel-4ma1/" class="text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Project Page</a>
+                    <a href="/kahoot/edexcel-4ma1/" class="text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Directory</a>
                     <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
-                    <a href="https://payhip.com/b/JzU7h" target="_blank" rel="noopener" class="text-center border border-gray-300 px-5 py-2.5 rounded-lg font-semibold text-sm text-gray-800 hover:bg-gray-100 transition">Worksheet Bundle</a>
                 </div>
             </article>
         </div>

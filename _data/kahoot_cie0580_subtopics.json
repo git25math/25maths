@@ -1,0 +1,1814 @@
+{
+  "total_subtopics": 142,
+  "sections": [
+    {
+      "section_key": "number-c1",
+      "section_code": "C1",
+      "section_title": "Number (Core)",
+      "domain": "number",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 1,
+      "suffix": "",
+      "count": 16,
+      "items": [
+        {
+          "id": "cie0580:number-c1:c1-01-types-of-number",
+          "slug": "c1-01-types-of-number",
+          "code": "C1-01",
+          "title": "types of number",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-01-types-of-number/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-01-types-of-number"
+        },
+        {
+          "id": "cie0580:number-c1:c1-02-sets",
+          "slug": "c1-02-sets",
+          "code": "C1-02",
+          "title": "sets",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-02-sets/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-02-sets"
+        },
+        {
+          "id": "cie0580:number-c1:c1-03-powers-and-roots",
+          "slug": "c1-03-powers-and-roots",
+          "code": "C1-03",
+          "title": "powers and roots",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-03-powers-and-roots/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-03-powers-and-roots"
+        },
+        {
+          "id": "cie0580:number-c1:c1-04-fractions-decimals-percentages",
+          "slug": "c1-04-fractions-decimals-percentages",
+          "code": "C1-04",
+          "title": "fractions decimals percentages",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages"
+        },
+        {
+          "id": "cie0580:number-c1:c1-05-ordering",
+          "slug": "c1-05-ordering",
+          "code": "C1-05",
+          "title": "ordering",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-05-ordering/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-05-ordering"
+        },
+        {
+          "id": "cie0580:number-c1:c1-06-four-operations",
+          "slug": "c1-06-four-operations",
+          "code": "C1-06",
+          "title": "four operations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-06-four-operations/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-06-four-operations"
+        },
+        {
+          "id": "cie0580:number-c1:c1-07-indices-i",
+          "slug": "c1-07-indices-i",
+          "code": "C1-07",
+          "title": "indices i",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-07-indices-i/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-07-indices-i"
+        },
+        {
+          "id": "cie0580:number-c1:c1-08-standard-form",
+          "slug": "c1-08-standard-form",
+          "code": "C1-08",
+          "title": "standard form",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-08-standard-form/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-08-standard-form"
+        },
+        {
+          "id": "cie0580:number-c1:c1-09-estimation-and-approximation",
+          "slug": "c1-09-estimation-and-approximation",
+          "code": "C1-09",
+          "title": "estimation and approximation",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-09-estimation-and-approximation/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-09-estimation-and-approximation"
+        },
+        {
+          "id": "cie0580:number-c1:c1-10-limits-of-accuracy",
+          "slug": "c1-10-limits-of-accuracy",
+          "code": "C1-10",
+          "title": "limits of accuracy",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-10-limits-of-accuracy/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-10-limits-of-accuracy"
+        },
+        {
+          "id": "cie0580:number-c1:c1-11-ratio-and-proportion",
+          "slug": "c1-11-ratio-and-proportion",
+          "code": "C1-11",
+          "title": "ratio and proportion",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-11-ratio-and-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-11-ratio-and-proportion"
+        },
+        {
+          "id": "cie0580:number-c1:c1-12-rates",
+          "slug": "c1-12-rates",
+          "code": "C1-12",
+          "title": "rates",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-12-rates/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-12-rates"
+        },
+        {
+          "id": "cie0580:number-c1:c1-13-percentages",
+          "slug": "c1-13-percentages",
+          "code": "C1-13",
+          "title": "percentages",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-13-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-13-percentages"
+        },
+        {
+          "id": "cie0580:number-c1:c1-14-using-a-calculator",
+          "slug": "c1-14-using-a-calculator",
+          "code": "C1-14",
+          "title": "using a calculator",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-14-using-a-calculator/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-14-using-a-calculator"
+        },
+        {
+          "id": "cie0580:number-c1:c1-15-time",
+          "slug": "c1-15-time",
+          "code": "C1-15",
+          "title": "time",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-15-time/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-15-time"
+        },
+        {
+          "id": "cie0580:number-c1:c1-16-money",
+          "slug": "c1-16-money",
+          "code": "C1-16",
+          "title": "money",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-16-money/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-c1",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-16-money"
+        }
+      ]
+    },
+    {
+      "section_key": "number-e1",
+      "section_code": "E1",
+      "section_title": "Number (Extended)",
+      "domain": "number",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 1,
+      "suffix": "",
+      "count": 18,
+      "items": [
+        {
+          "id": "cie0580:number-e1:e1-01-types-of-number",
+          "slug": "e1-01-types-of-number",
+          "code": "E1-01",
+          "title": "types of number",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-01-types-of-number/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-01-types-of-number"
+        },
+        {
+          "id": "cie0580:number-e1:e1-02-sets",
+          "slug": "e1-02-sets",
+          "code": "E1-02",
+          "title": "sets",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-02-sets/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-02-sets"
+        },
+        {
+          "id": "cie0580:number-e1:e1-03-powers-and-roots",
+          "slug": "e1-03-powers-and-roots",
+          "code": "E1-03",
+          "title": "powers and roots",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-03-powers-and-roots/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-03-powers-and-roots"
+        },
+        {
+          "id": "cie0580:number-e1:e1-04-fractions-decimals-percentages",
+          "slug": "e1-04-fractions-decimals-percentages",
+          "code": "E1-04",
+          "title": "fractions decimals percentages",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-04-fractions-decimals-percentages"
+        },
+        {
+          "id": "cie0580:number-e1:e1-05-ordering",
+          "slug": "e1-05-ordering",
+          "code": "E1-05",
+          "title": "ordering",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-05-ordering/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-05-ordering"
+        },
+        {
+          "id": "cie0580:number-e1:e1-06-four-operations",
+          "slug": "e1-06-four-operations",
+          "code": "E1-06",
+          "title": "four operations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-06-four-operations/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-06-four-operations"
+        },
+        {
+          "id": "cie0580:number-e1:e1-07-indices-i",
+          "slug": "e1-07-indices-i",
+          "code": "E1-07",
+          "title": "indices i",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-07-indices-i/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-07-indices-i"
+        },
+        {
+          "id": "cie0580:number-e1:e1-08-standard-form",
+          "slug": "e1-08-standard-form",
+          "code": "E1-08",
+          "title": "standard form",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-08-standard-form/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-08-standard-form"
+        },
+        {
+          "id": "cie0580:number-e1:e1-09-estimation-and-approximation",
+          "slug": "e1-09-estimation-and-approximation",
+          "code": "E1-09",
+          "title": "estimation and approximation",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-09-estimation-and-approximation/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-09-estimation-and-approximation"
+        },
+        {
+          "id": "cie0580:number-e1:e1-10-limits-of-accuracy",
+          "slug": "e1-10-limits-of-accuracy",
+          "code": "E1-10",
+          "title": "limits of accuracy",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-10-limits-of-accuracy/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-10-limits-of-accuracy"
+        },
+        {
+          "id": "cie0580:number-e1:e1-11-ratio-and-proportion",
+          "slug": "e1-11-ratio-and-proportion",
+          "code": "E1-11",
+          "title": "ratio and proportion",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-11-ratio-and-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-11-ratio-and-proportion"
+        },
+        {
+          "id": "cie0580:number-e1:e1-12-rates",
+          "slug": "e1-12-rates",
+          "code": "E1-12",
+          "title": "rates",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-12-rates/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-12-rates"
+        },
+        {
+          "id": "cie0580:number-e1:e1-13-percentages",
+          "slug": "e1-13-percentages",
+          "code": "E1-13",
+          "title": "percentages",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-13-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-13-percentages"
+        },
+        {
+          "id": "cie0580:number-e1:e1-14-using-a-calculator",
+          "slug": "e1-14-using-a-calculator",
+          "code": "E1-14",
+          "title": "using a calculator",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-14-using-a-calculator/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-14-using-a-calculator"
+        },
+        {
+          "id": "cie0580:number-e1:e1-15-time",
+          "slug": "e1-15-time",
+          "code": "E1-15",
+          "title": "time",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-15-time/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-15-time"
+        },
+        {
+          "id": "cie0580:number-e1:e1-16-money",
+          "slug": "e1-16-money",
+          "code": "E1-16",
+          "title": "money",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-16-money/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-16-money"
+        },
+        {
+          "id": "cie0580:number-e1:e1-17-exponential-growth-decay",
+          "slug": "e1-17-exponential-growth-decay",
+          "code": "E1-17",
+          "title": "exponential growth decay",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-17-exponential-growth-decay/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-17-exponential-growth-decay"
+        },
+        {
+          "id": "cie0580:number-e1:e1-18-surds",
+          "slug": "e1-18-surds",
+          "code": "E1-18",
+          "title": "surds",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-18-surds/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1/e1-18-surds"
+        }
+      ]
+    },
+    {
+      "section_key": "number-e1-legacy-pre-official",
+      "section_code": "E1",
+      "section_title": "Number (Extended) - Legacy Pre Official",
+      "domain": "number",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 1,
+      "suffix": "legacy-pre-official",
+      "count": 18,
+      "items": [
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-01-write-numbers",
+          "slug": "e1-01-write-numbers",
+          "code": "E1-01",
+          "title": "write numbers",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-01-write-numbers/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-01-write-numbers"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-02-place-value-order",
+          "slug": "e1-02-place-value-order",
+          "code": "E1-02",
+          "title": "place value order",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-02-place-value-order/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-02-place-value-order"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-03-rounding-sf",
+          "slug": "e1-03-rounding-sf",
+          "code": "E1-03",
+          "title": "rounding sf",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-03-rounding-sf/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-03-rounding-sf"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-04-estimation-approximation",
+          "slug": "e1-04-estimation-approximation",
+          "code": "E1-04",
+          "title": "estimation approximation",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-04-estimation-approximation/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-04-estimation-approximation"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-05-directed-numbers",
+          "slug": "e1-05-directed-numbers",
+          "code": "E1-05",
+          "title": "directed numbers",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-05-directed-numbers/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-05-directed-numbers"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-06-powers-roots-indices",
+          "slug": "e1-06-powers-roots-indices",
+          "code": "E1-06",
+          "title": "powers roots indices",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-06-powers-roots-indices/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-06-powers-roots-indices"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-07-factors-multiples-primes",
+          "slug": "e1-07-factors-multiples-primes",
+          "code": "E1-07",
+          "title": "factors multiples primes",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-07-factors-multiples-primes/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-07-factors-multiples-primes"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-08-hcf-lcm",
+          "slug": "e1-08-hcf-lcm",
+          "code": "E1-08",
+          "title": "hcf lcm",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-08-hcf-lcm/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-08-hcf-lcm"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-09-fractions-mixed-numbers",
+          "slug": "e1-09-fractions-mixed-numbers",
+          "code": "E1-09",
+          "title": "fractions mixed numbers",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-09-fractions-mixed-numbers/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-09-fractions-mixed-numbers"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-10-decimals-percentages",
+          "slug": "e1-10-decimals-percentages",
+          "code": "E1-10",
+          "title": "decimals percentages",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-10-decimals-percentages/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-10-decimals-percentages"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-11-ratio-proportion-number",
+          "slug": "e1-11-ratio-proportion-number",
+          "code": "E1-11",
+          "title": "ratio proportion number",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-11-ratio-proportion-number/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-11-ratio-proportion-number"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-12-standard-form-order-of-magnitude",
+          "slug": "e1-12-standard-form-order-of-magnitude",
+          "code": "E1-12",
+          "title": "standard form order of magnitude",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-12-standard-form-order-of-magnitude/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-12-standard-form-order-of-magnitude"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-13-bounds-error-intervals",
+          "slug": "e1-13-bounds-error-intervals",
+          "code": "E1-13",
+          "title": "bounds error intervals",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-13-bounds-error-intervals/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-13-bounds-error-intervals"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-14-calculator-checking",
+          "slug": "e1-14-calculator-checking",
+          "code": "E1-14",
+          "title": "calculator checking",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-14-calculator-checking/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-14-calculator-checking"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-15-time-units",
+          "slug": "e1-15-time-units",
+          "code": "E1-15",
+          "title": "time units",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-15-time-units/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-15-time-units"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-16-money-exchange-rates",
+          "slug": "e1-16-money-exchange-rates",
+          "code": "E1-16",
+          "title": "money exchange rates",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-16-money-exchange-rates/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-16-money-exchange-rates"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-17-exponential-growth-decay",
+          "slug": "e1-17-exponential-growth-decay",
+          "code": "E1-17",
+          "title": "exponential growth decay",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-17-exponential-growth-decay/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-17-exponential-growth-decay"
+        },
+        {
+          "id": "cie0580:number-e1-legacy-pre-official:e1-18-surds-irrational",
+          "slug": "e1-18-surds-irrational",
+          "code": "E1-18",
+          "title": "surds irrational",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-18-surds-irrational/cover-2320x1520-kahoot-minimal.png",
+          "section": "number-e1-legacy-pre-official",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/number-e1-legacy-pre-official/e1-18-surds-irrational"
+        }
+      ]
+    },
+    {
+      "section_key": "algebra-c2",
+      "section_code": "C2",
+      "section_title": "Algebra and Graphs (Core)",
+      "domain": "algebra",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 2,
+      "suffix": "",
+      "count": 9,
+      "items": [
+        {
+          "id": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+          "slug": "c2-01-introduction-to-algebra",
+          "code": "C2-01",
+          "title": "introduction to algebra",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-01-introduction-to-algebra/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-01-introduction-to-algebra"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-02-algebraic-manipulation",
+          "slug": "c2-02-algebraic-manipulation",
+          "code": "C2-02",
+          "title": "algebraic manipulation",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-02-algebraic-manipulation/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-02-algebraic-manipulation"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-04-indices-ii",
+          "slug": "c2-04-indices-ii",
+          "code": "C2-04",
+          "title": "indices ii",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-04-indices-ii/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-04-indices-ii"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-05-equations",
+          "slug": "c2-05-equations",
+          "code": "C2-05",
+          "title": "equations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-05-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-05-equations"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-06-inequalities",
+          "slug": "c2-06-inequalities",
+          "code": "C2-06",
+          "title": "inequalities",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-06-inequalities/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-06-inequalities"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-07-sequences",
+          "slug": "c2-07-sequences",
+          "code": "C2-07",
+          "title": "sequences",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-07-sequences/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-07-sequences"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-09-graphs-in-practical-situations",
+          "slug": "c2-09-graphs-in-practical-situations",
+          "code": "C2-09",
+          "title": "graphs in practical situations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-09-graphs-in-practical-situations/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-09-graphs-in-practical-situations"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-10-graphs-of-functions",
+          "slug": "c2-10-graphs-of-functions",
+          "code": "C2-10",
+          "title": "graphs of functions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-10-graphs-of-functions/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-10-graphs-of-functions"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-11-sketching-curves",
+          "slug": "c2-11-sketching-curves",
+          "code": "C2-11",
+          "title": "sketching curves",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-11-sketching-curves/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-c2",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-c2/c2-11-sketching-curves"
+        }
+      ]
+    },
+    {
+      "section_key": "algebra-e2",
+      "section_code": "E2",
+      "section_title": "Algebra and Graphs (Extended)",
+      "domain": "algebra",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 2,
+      "suffix": "",
+      "count": 13,
+      "items": [
+        {
+          "id": "cie0580:algebra-e2:e2-01-introduction-to-algebra",
+          "slug": "e2-01-introduction-to-algebra",
+          "code": "E2-01",
+          "title": "introduction to algebra",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-01-introduction-to-algebra/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-01-introduction-to-algebra"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-02-algebraic-manipulation",
+          "slug": "e2-02-algebraic-manipulation",
+          "code": "E2-02",
+          "title": "algebraic manipulation",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-02-algebraic-manipulation/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-02-algebraic-manipulation"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-03-algebraic-fractions",
+          "slug": "e2-03-algebraic-fractions",
+          "code": "E2-03",
+          "title": "algebraic fractions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-03-algebraic-fractions/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-03-algebraic-fractions"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-04-indices-ii",
+          "slug": "e2-04-indices-ii",
+          "code": "E2-04",
+          "title": "indices ii",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-04-indices-ii/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-04-indices-ii"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-05-equations",
+          "slug": "e2-05-equations",
+          "code": "E2-05",
+          "title": "equations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-05-equations/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-05-equations"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-06-inequalities",
+          "slug": "e2-06-inequalities",
+          "code": "E2-06",
+          "title": "inequalities",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-06-inequalities/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-06-inequalities"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-07-sequences",
+          "slug": "e2-07-sequences",
+          "code": "E2-07",
+          "title": "sequences",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-07-sequences/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-07-sequences"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-08-proportion",
+          "slug": "e2-08-proportion",
+          "code": "E2-08",
+          "title": "proportion",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-08-proportion/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-08-proportion"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-09-graphs-in-practical-situations",
+          "slug": "e2-09-graphs-in-practical-situations",
+          "code": "E2-09",
+          "title": "graphs in practical situations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-09-graphs-in-practical-situations/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-09-graphs-in-practical-situations"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-10-graphs-of-functions",
+          "slug": "e2-10-graphs-of-functions",
+          "code": "E2-10",
+          "title": "graphs of functions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-10-graphs-of-functions/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-10-graphs-of-functions"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-11-sketching-curves",
+          "slug": "e2-11-sketching-curves",
+          "code": "E2-11",
+          "title": "sketching curves",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-11-sketching-curves/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-11-sketching-curves"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-12-differentiation",
+          "slug": "e2-12-differentiation",
+          "code": "E2-12",
+          "title": "differentiation",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-12-differentiation/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-12-differentiation"
+        },
+        {
+          "id": "cie0580:algebra-e2:e2-13-functions",
+          "slug": "e2-13-functions",
+          "code": "E2-13",
+          "title": "functions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-13-functions/cover-2320x1520-kahoot-minimal.png",
+          "section": "algebra-e2",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/algebra-e2/e2-13-functions"
+        }
+      ]
+    },
+    {
+      "section_key": "coordinate-c3",
+      "section_code": "C3",
+      "section_title": "Coordinate Geometry (Core)",
+      "domain": "coordinate",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 3,
+      "suffix": "",
+      "count": 5,
+      "items": [
+        {
+          "id": "cie0580:coordinate-c3:c3-01-coordinates",
+          "slug": "c3-01-coordinates",
+          "code": "C3-01",
+          "title": "coordinates",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-01-coordinates/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-c3",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-01-coordinates"
+        },
+        {
+          "id": "cie0580:coordinate-c3:c3-02-drawing-linear-graphs",
+          "slug": "c3-02-drawing-linear-graphs",
+          "code": "C3-02",
+          "title": "drawing linear graphs",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-02-drawing-linear-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-c3",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-02-drawing-linear-graphs"
+        },
+        {
+          "id": "cie0580:coordinate-c3:c3-03-gradient-of-linear-graphs",
+          "slug": "c3-03-gradient-of-linear-graphs",
+          "code": "C3-03",
+          "title": "gradient of linear graphs",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-03-gradient-of-linear-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-c3",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-03-gradient-of-linear-graphs"
+        },
+        {
+          "id": "cie0580:coordinate-c3:c3-05-equations-of-linear-graphs",
+          "slug": "c3-05-equations-of-linear-graphs",
+          "code": "C3-05",
+          "title": "equations of linear graphs",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-05-equations-of-linear-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-c3",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-05-equations-of-linear-graphs"
+        },
+        {
+          "id": "cie0580:coordinate-c3:c3-06-parallel-lines",
+          "slug": "c3-06-parallel-lines",
+          "code": "C3-06",
+          "title": "parallel lines",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-06-parallel-lines/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-c3",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-c3/c3-06-parallel-lines"
+        }
+      ]
+    },
+    {
+      "section_key": "coordinate-e3",
+      "section_code": "E3",
+      "section_title": "Coordinate Geometry (Extended)",
+      "domain": "coordinate",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 3,
+      "suffix": "",
+      "count": 7,
+      "items": [
+        {
+          "id": "cie0580:coordinate-e3:e3-01-coordinates",
+          "slug": "e3-01-coordinates",
+          "code": "E3-01",
+          "title": "coordinates",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-01-coordinates/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-01-coordinates"
+        },
+        {
+          "id": "cie0580:coordinate-e3:e3-02-drawing-linear-graphs",
+          "slug": "e3-02-drawing-linear-graphs",
+          "code": "E3-02",
+          "title": "drawing linear graphs",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-02-drawing-linear-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-02-drawing-linear-graphs"
+        },
+        {
+          "id": "cie0580:coordinate-e3:e3-03-gradient-of-linear-graphs",
+          "slug": "e3-03-gradient-of-linear-graphs",
+          "code": "E3-03",
+          "title": "gradient of linear graphs",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-03-gradient-of-linear-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-03-gradient-of-linear-graphs"
+        },
+        {
+          "id": "cie0580:coordinate-e3:e3-04-length-and-midpoint",
+          "slug": "e3-04-length-and-midpoint",
+          "code": "E3-04",
+          "title": "length and midpoint",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-04-length-and-midpoint/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-04-length-and-midpoint"
+        },
+        {
+          "id": "cie0580:coordinate-e3:e3-05-equations-of-linear-graphs",
+          "slug": "e3-05-equations-of-linear-graphs",
+          "code": "E3-05",
+          "title": "equations of linear graphs",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-05-equations-of-linear-graphs/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-05-equations-of-linear-graphs"
+        },
+        {
+          "id": "cie0580:coordinate-e3:e3-06-parallel-lines",
+          "slug": "e3-06-parallel-lines",
+          "code": "E3-06",
+          "title": "parallel lines",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-06-parallel-lines/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-06-parallel-lines"
+        },
+        {
+          "id": "cie0580:coordinate-e3:e3-07-perpendicular-lines",
+          "slug": "e3-07-perpendicular-lines",
+          "code": "E3-07",
+          "title": "perpendicular lines",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-07-perpendicular-lines/cover-2320x1520-kahoot-minimal.png",
+          "section": "coordinate-e3",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/coordinate-e3/e3-07-perpendicular-lines"
+        }
+      ]
+    },
+    {
+      "section_key": "geometry-c4",
+      "section_code": "C4",
+      "section_title": "Geometry (Core)",
+      "domain": "geometry",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 4,
+      "suffix": "",
+      "count": 7,
+      "items": [
+        {
+          "id": "cie0580:geometry-c4:c4-01-geometrical-terms",
+          "slug": "c4-01-geometrical-terms",
+          "code": "C4-01",
+          "title": "geometrical terms",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-01-geometrical-terms/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-01-geometrical-terms"
+        },
+        {
+          "id": "cie0580:geometry-c4:c4-02-geometrical-constructions",
+          "slug": "c4-02-geometrical-constructions",
+          "code": "C4-02",
+          "title": "geometrical constructions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-02-geometrical-constructions/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-02-geometrical-constructions"
+        },
+        {
+          "id": "cie0580:geometry-c4:c4-03-scale-drawings",
+          "slug": "c4-03-scale-drawings",
+          "code": "C4-03",
+          "title": "scale drawings",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-03-scale-drawings/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-03-scale-drawings"
+        },
+        {
+          "id": "cie0580:geometry-c4:c4-04-similarity",
+          "slug": "c4-04-similarity",
+          "code": "C4-04",
+          "title": "similarity",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-04-similarity/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-04-similarity"
+        },
+        {
+          "id": "cie0580:geometry-c4:c4-05-symmetry",
+          "slug": "c4-05-symmetry",
+          "code": "C4-05",
+          "title": "symmetry",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-05-symmetry/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-05-symmetry"
+        },
+        {
+          "id": "cie0580:geometry-c4:c4-06-angles",
+          "slug": "c4-06-angles",
+          "code": "C4-06",
+          "title": "angles",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-06-angles/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-06-angles"
+        },
+        {
+          "id": "cie0580:geometry-c4:c4-07-circle-theorems",
+          "slug": "c4-07-circle-theorems",
+          "code": "C4-07",
+          "title": "circle theorems",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-07-circle-theorems/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-c4",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-c4/c4-07-circle-theorems"
+        }
+      ]
+    },
+    {
+      "section_key": "geometry-e4",
+      "section_code": "E4",
+      "section_title": "Geometry (Extended)",
+      "domain": "geometry",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 4,
+      "suffix": "",
+      "count": 8,
+      "items": [
+        {
+          "id": "cie0580:geometry-e4:e4-01-geometrical-terms",
+          "slug": "e4-01-geometrical-terms",
+          "code": "E4-01",
+          "title": "geometrical terms",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-01-geometrical-terms/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-01-geometrical-terms"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-02-geometrical-constructions",
+          "slug": "e4-02-geometrical-constructions",
+          "code": "E4-02",
+          "title": "geometrical constructions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-02-geometrical-constructions/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-02-geometrical-constructions"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-03-scale-drawings",
+          "slug": "e4-03-scale-drawings",
+          "code": "E4-03",
+          "title": "scale drawings",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-03-scale-drawings/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-03-scale-drawings"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-04-similarity",
+          "slug": "e4-04-similarity",
+          "code": "E4-04",
+          "title": "similarity",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-04-similarity/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-04-similarity"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-05-symmetry",
+          "slug": "e4-05-symmetry",
+          "code": "E4-05",
+          "title": "symmetry",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-05-symmetry/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-05-symmetry"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-06-angles",
+          "slug": "e4-06-angles",
+          "code": "E4-06",
+          "title": "angles",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-06-angles/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-06-angles"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-07-circle-theorems-i",
+          "slug": "e4-07-circle-theorems-i",
+          "code": "E4-07",
+          "title": "circle theorems i",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-07-circle-theorems-i/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-07-circle-theorems-i"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-08-circle-theorems-ii",
+          "slug": "e4-08-circle-theorems-ii",
+          "code": "E4-08",
+          "title": "circle theorems ii",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-08-circle-theorems-ii/cover-2320x1520-kahoot-minimal.png",
+          "section": "geometry-e4",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/geometry-e4/e4-08-circle-theorems-ii"
+        }
+      ]
+    },
+    {
+      "section_key": "mensuration-c5",
+      "section_code": "C5",
+      "section_title": "Mensuration (Core)",
+      "domain": "mensuration",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 5,
+      "suffix": "",
+      "count": 5,
+      "items": [
+        {
+          "id": "cie0580:mensuration-c5:c5-01-units-of-measure",
+          "slug": "c5-01-units-of-measure",
+          "code": "C5-01",
+          "title": "units of measure",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-01-units-of-measure/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-c5",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-01-units-of-measure"
+        },
+        {
+          "id": "cie0580:mensuration-c5:c5-02-area-and-perimeter",
+          "slug": "c5-02-area-and-perimeter",
+          "code": "C5-02",
+          "title": "area and perimeter",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-02-area-and-perimeter/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-c5",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-02-area-and-perimeter"
+        },
+        {
+          "id": "cie0580:mensuration-c5:c5-03-circles-arcs-and-sectors",
+          "slug": "c5-03-circles-arcs-and-sectors",
+          "code": "C5-03",
+          "title": "circles arcs and sectors",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-03-circles-arcs-and-sectors/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-c5",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-03-circles-arcs-and-sectors"
+        },
+        {
+          "id": "cie0580:mensuration-c5:c5-04-surface-area-and-volume",
+          "slug": "c5-04-surface-area-and-volume",
+          "code": "C5-04",
+          "title": "surface area and volume",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-04-surface-area-and-volume/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-c5",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-04-surface-area-and-volume"
+        },
+        {
+          "id": "cie0580:mensuration-c5:c5-05-compound-shapes-and-parts-of-shapes",
+          "slug": "c5-05-compound-shapes-and-parts-of-shapes",
+          "code": "C5-05",
+          "title": "compound shapes and parts of shapes",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-05-compound-shapes-and-parts-of-shapes/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-c5",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-c5/c5-05-compound-shapes-and-parts-of-shapes"
+        }
+      ]
+    },
+    {
+      "section_key": "mensuration-e5",
+      "section_code": "E5",
+      "section_title": "Mensuration (Extended)",
+      "domain": "mensuration",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 5,
+      "suffix": "",
+      "count": 5,
+      "items": [
+        {
+          "id": "cie0580:mensuration-e5:e5-01-units-of-measure",
+          "slug": "e5-01-units-of-measure",
+          "code": "E5-01",
+          "title": "units of measure",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-01-units-of-measure/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-e5",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-01-units-of-measure"
+        },
+        {
+          "id": "cie0580:mensuration-e5:e5-02-area-and-perimeter",
+          "slug": "e5-02-area-and-perimeter",
+          "code": "E5-02",
+          "title": "area and perimeter",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-02-area-and-perimeter/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-e5",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-02-area-and-perimeter"
+        },
+        {
+          "id": "cie0580:mensuration-e5:e5-03-circles-arcs-and-sectors",
+          "slug": "e5-03-circles-arcs-and-sectors",
+          "code": "E5-03",
+          "title": "circles arcs and sectors",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-03-circles-arcs-and-sectors/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-e5",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-03-circles-arcs-and-sectors"
+        },
+        {
+          "id": "cie0580:mensuration-e5:e5-04-surface-area-and-volume",
+          "slug": "e5-04-surface-area-and-volume",
+          "code": "E5-04",
+          "title": "surface area and volume",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-04-surface-area-and-volume/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-e5",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-04-surface-area-and-volume"
+        },
+        {
+          "id": "cie0580:mensuration-e5:e5-05-compound-shapes-and-parts-of-shapes",
+          "slug": "e5-05-compound-shapes-and-parts-of-shapes",
+          "code": "E5-05",
+          "title": "compound shapes and parts of shapes",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-05-compound-shapes-and-parts-of-shapes/cover-2320x1520-kahoot-minimal.png",
+          "section": "mensuration-e5",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/mensuration-e5/e5-05-compound-shapes-and-parts-of-shapes"
+        }
+      ]
+    },
+    {
+      "section_key": "trigonometry-c6",
+      "section_code": "C6",
+      "section_title": "Trigonometry (Core)",
+      "domain": "trigonometry",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 6,
+      "suffix": "",
+      "count": 2,
+      "items": [
+        {
+          "id": "cie0580:trigonometry-c6:c6-01-pythagoras-theorem",
+          "slug": "c6-01-pythagoras-theorem",
+          "code": "C6-01",
+          "title": "pythagoras theorem",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-c6/c6-01-pythagoras-theorem/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-c6",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-c6/c6-01-pythagoras-theorem"
+        },
+        {
+          "id": "cie0580:trigonometry-c6:c6-02-right-angled-triangles",
+          "slug": "c6-02-right-angled-triangles",
+          "code": "C6-02",
+          "title": "right angled triangles",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-c6/c6-02-right-angled-triangles/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-c6",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-c6/c6-02-right-angled-triangles"
+        }
+      ]
+    },
+    {
+      "section_key": "trigonometry-e6",
+      "section_code": "E6",
+      "section_title": "Trigonometry (Extended)",
+      "domain": "trigonometry",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 6,
+      "suffix": "",
+      "count": 6,
+      "items": [
+        {
+          "id": "cie0580:trigonometry-e6:e6-01-pythagoras-theorem",
+          "slug": "e6-01-pythagoras-theorem",
+          "code": "E6-01",
+          "title": "pythagoras theorem",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-01-pythagoras-theorem/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-e6",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-01-pythagoras-theorem"
+        },
+        {
+          "id": "cie0580:trigonometry-e6:e6-02-right-angled-triangles",
+          "slug": "e6-02-right-angled-triangles",
+          "code": "E6-02",
+          "title": "right angled triangles",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-02-right-angled-triangles/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-e6",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-02-right-angled-triangles"
+        },
+        {
+          "id": "cie0580:trigonometry-e6:e6-03-exact-trigonometric-values",
+          "slug": "e6-03-exact-trigonometric-values",
+          "code": "E6-03",
+          "title": "exact trigonometric values",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-03-exact-trigonometric-values/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-e6",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-03-exact-trigonometric-values"
+        },
+        {
+          "id": "cie0580:trigonometry-e6:e6-04-trigonometric-functions",
+          "slug": "e6-04-trigonometric-functions",
+          "code": "E6-04",
+          "title": "trigonometric functions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-04-trigonometric-functions/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-e6",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-04-trigonometric-functions"
+        },
+        {
+          "id": "cie0580:trigonometry-e6:e6-05-non-right-angled-triangles",
+          "slug": "e6-05-non-right-angled-triangles",
+          "code": "E6-05",
+          "title": "non right angled triangles",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-05-non-right-angled-triangles/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-e6",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-05-non-right-angled-triangles"
+        },
+        {
+          "id": "cie0580:trigonometry-e6:e6-06-pythagoras-and-trigonometry-in-3d",
+          "slug": "e6-06-pythagoras-and-trigonometry-in-3d",
+          "code": "E6-06",
+          "title": "pythagoras and trigonometry in 3D",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-06-pythagoras-and-trigonometry-in-3d/cover-2320x1520-kahoot-minimal.png",
+          "section": "trigonometry-e6",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/trigonometry-e6/e6-06-pythagoras-and-trigonometry-in-3d"
+        }
+      ]
+    },
+    {
+      "section_key": "transformations-c7",
+      "section_code": "C7",
+      "section_title": "Transformations and Vectors (Core)",
+      "domain": "transformations",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 7,
+      "suffix": "",
+      "count": 1,
+      "items": [
+        {
+          "id": "cie0580:transformations-c7:c7-01-transformations",
+          "slug": "c7-01-transformations",
+          "code": "C7-01",
+          "title": "transformations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/transformations-c7/c7-01-transformations/cover-2320x1520-kahoot-minimal.png",
+          "section": "transformations-c7",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/transformations-c7/c7-01-transformations"
+        }
+      ]
+    },
+    {
+      "section_key": "transformations-e7",
+      "section_code": "E7",
+      "section_title": "Transformations and Vectors (Extended)",
+      "domain": "transformations",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 7,
+      "suffix": "",
+      "count": 4,
+      "items": [
+        {
+          "id": "cie0580:transformations-e7:e7-01-transformations",
+          "slug": "e7-01-transformations",
+          "code": "E7-01",
+          "title": "transformations",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-01-transformations/cover-2320x1520-kahoot-minimal.png",
+          "section": "transformations-e7",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-01-transformations"
+        },
+        {
+          "id": "cie0580:transformations-e7:e7-02-vectors-in-two-dimensions",
+          "slug": "e7-02-vectors-in-two-dimensions",
+          "code": "E7-02",
+          "title": "vectors in two dimensions",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-02-vectors-in-two-dimensions/cover-2320x1520-kahoot-minimal.png",
+          "section": "transformations-e7",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-02-vectors-in-two-dimensions"
+        },
+        {
+          "id": "cie0580:transformations-e7:e7-03-magnitude-of-a-vector",
+          "slug": "e7-03-magnitude-of-a-vector",
+          "code": "E7-03",
+          "title": "magnitude of a vector",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-03-magnitude-of-a-vector/cover-2320x1520-kahoot-minimal.png",
+          "section": "transformations-e7",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-03-magnitude-of-a-vector"
+        },
+        {
+          "id": "cie0580:transformations-e7:e7-04-vector-geometry",
+          "slug": "e7-04-vector-geometry",
+          "code": "E7-04",
+          "title": "vector geometry",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-04-vector-geometry/cover-2320x1520-kahoot-minimal.png",
+          "section": "transformations-e7",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/transformations-e7/e7-04-vector-geometry"
+        }
+      ]
+    },
+    {
+      "section_key": "probability-c8",
+      "section_code": "C8",
+      "section_title": "Probability (Core)",
+      "domain": "probability",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 8,
+      "suffix": "",
+      "count": 3,
+      "items": [
+        {
+          "id": "cie0580:probability-c8:c8-01-introduction-to-probability",
+          "slug": "c8-01-introduction-to-probability",
+          "code": "C8-01",
+          "title": "introduction to probability",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-c8/c8-01-introduction-to-probability/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-c8",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-c8/c8-01-introduction-to-probability"
+        },
+        {
+          "id": "cie0580:probability-c8:c8-02-relative-and-expected-frequencies",
+          "slug": "c8-02-relative-and-expected-frequencies",
+          "code": "C8-02",
+          "title": "relative and expected frequencies",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-c8/c8-02-relative-and-expected-frequencies/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-c8",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-c8/c8-02-relative-and-expected-frequencies"
+        },
+        {
+          "id": "cie0580:probability-c8:c8-03-probability-of-combined-events",
+          "slug": "c8-03-probability-of-combined-events",
+          "code": "C8-03",
+          "title": "probability of combined events",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-c8/c8-03-probability-of-combined-events/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-c8",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-c8/c8-03-probability-of-combined-events"
+        }
+      ]
+    },
+    {
+      "section_key": "probability-e8",
+      "section_code": "E8",
+      "section_title": "Probability (Extended)",
+      "domain": "probability",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 8,
+      "suffix": "",
+      "count": 4,
+      "items": [
+        {
+          "id": "cie0580:probability-e8:e8-01-introduction-to-probability",
+          "slug": "e8-01-introduction-to-probability",
+          "code": "E8-01",
+          "title": "introduction to probability",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-01-introduction-to-probability/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-e8",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-01-introduction-to-probability"
+        },
+        {
+          "id": "cie0580:probability-e8:e8-02-relative-and-expected-frequencies",
+          "slug": "e8-02-relative-and-expected-frequencies",
+          "code": "E8-02",
+          "title": "relative and expected frequencies",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-02-relative-and-expected-frequencies/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-e8",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-02-relative-and-expected-frequencies"
+        },
+        {
+          "id": "cie0580:probability-e8:e8-03-probability-of-combined-events",
+          "slug": "e8-03-probability-of-combined-events",
+          "code": "E8-03",
+          "title": "probability of combined events",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-03-probability-of-combined-events/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-e8",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-03-probability-of-combined-events"
+        },
+        {
+          "id": "cie0580:probability-e8:e8-04-conditional-probability",
+          "slug": "e8-04-conditional-probability",
+          "code": "E8-04",
+          "title": "conditional probability",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-04-conditional-probability/cover-2320x1520-kahoot-minimal.png",
+          "section": "probability-e8",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/probability-e8/e8-04-conditional-probability"
+        }
+      ]
+    },
+    {
+      "section_key": "statistics-c9",
+      "section_code": "C9",
+      "section_title": "Statistics (Core)",
+      "domain": "statistics",
+      "tier": "Core",
+      "tier_letter": "C",
+      "syllabus_number": 9,
+      "suffix": "",
+      "count": 4,
+      "items": [
+        {
+          "id": "cie0580:statistics-c9:c9-01-classifying-statistical-data",
+          "slug": "c9-01-classifying-statistical-data",
+          "code": "C9-01",
+          "title": "classifying statistical data",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-01-classifying-statistical-data/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-c9",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-01-classifying-statistical-data"
+        },
+        {
+          "id": "cie0580:statistics-c9:c9-02-interpreting-statistical-data",
+          "slug": "c9-02-interpreting-statistical-data",
+          "code": "C9-02",
+          "title": "interpreting statistical data",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-02-interpreting-statistical-data/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-c9",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-02-interpreting-statistical-data"
+        },
+        {
+          "id": "cie0580:statistics-c9:c9-03-averages-and-range",
+          "slug": "c9-03-averages-and-range",
+          "code": "C9-03",
+          "title": "averages and range",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-03-averages-and-range/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-c9",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-03-averages-and-range"
+        },
+        {
+          "id": "cie0580:statistics-c9:c9-04-statistical-charts-and-diagrams",
+          "slug": "c9-04-statistical-charts-and-diagrams",
+          "code": "C9-04",
+          "title": "statistical charts and diagrams",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-04-statistical-charts-and-diagrams/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-c9",
+          "tier": "Core",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-c9/c9-04-statistical-charts-and-diagrams"
+        }
+      ]
+    },
+    {
+      "section_key": "statistics-e9",
+      "section_code": "E9",
+      "section_title": "Statistics (Extended)",
+      "domain": "statistics",
+      "tier": "Extended",
+      "tier_letter": "E",
+      "syllabus_number": 9,
+      "suffix": "",
+      "count": 7,
+      "items": [
+        {
+          "id": "cie0580:statistics-e9:e9-01-classifying-statistical-data",
+          "slug": "e9-01-classifying-statistical-data",
+          "code": "E9-01",
+          "title": "classifying statistical data",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-01-classifying-statistical-data/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-01-classifying-statistical-data"
+        },
+        {
+          "id": "cie0580:statistics-e9:e9-02-interpreting-statistical-data",
+          "slug": "e9-02-interpreting-statistical-data",
+          "code": "E9-02",
+          "title": "interpreting statistical data",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-02-interpreting-statistical-data/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-02-interpreting-statistical-data"
+        },
+        {
+          "id": "cie0580:statistics-e9:e9-03-averages-and-range",
+          "slug": "e9-03-averages-and-range",
+          "code": "E9-03",
+          "title": "averages and range",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-03-averages-and-range/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-03-averages-and-range"
+        },
+        {
+          "id": "cie0580:statistics-e9:e9-04-statistical-charts-and-diagrams",
+          "slug": "e9-04-statistical-charts-and-diagrams",
+          "code": "E9-04",
+          "title": "statistical charts and diagrams",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-04-statistical-charts-and-diagrams/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-04-statistical-charts-and-diagrams"
+        },
+        {
+          "id": "cie0580:statistics-e9:e9-05-scatter-diagrams",
+          "slug": "e9-05-scatter-diagrams",
+          "code": "E9-05",
+          "title": "scatter diagrams",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-05-scatter-diagrams/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-05-scatter-diagrams"
+        },
+        {
+          "id": "cie0580:statistics-e9:e9-06-cumulative-frequency-diagrams",
+          "slug": "e9-06-cumulative-frequency-diagrams",
+          "code": "E9-06",
+          "title": "cumulative frequency diagrams",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-06-cumulative-frequency-diagrams/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-06-cumulative-frequency-diagrams"
+        },
+        {
+          "id": "cie0580:statistics-e9:e9-07-histograms",
+          "slug": "e9-07-histograms",
+          "code": "E9-07",
+          "title": "histograms",
+          "cover": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-07-histograms/cover-2320x1520-kahoot-minimal.png",
+          "section": "statistics-e9",
+          "tier": "Extended",
+          "has_cover": true,
+          "folder_path": "/projects/kahoot-channel/cie0580/micro-topics/statistics-e9/e9-07-histograms"
+        }
+      ]
+    }
+  ]
+}
