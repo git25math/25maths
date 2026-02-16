@@ -33,7 +33,10 @@ lang: en
 
         <div class="grid md:grid-cols-2 gap-6">
             <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                <picture>
+                    <source srcset="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.webp" type="image/webp">
+                    <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                </picture>
                 <p class="text-xs font-bold tracking-wider text-primary mb-2">CIE 0580</p>
                 <h3 class="text-xl font-bold text-gray-900">Core + Extended SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
@@ -45,7 +48,10 @@ lang: en
             </article>
 
             <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
-                <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                <picture>
+                    <source srcset="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.webp" type="image/webp">
+                    <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                </picture>
                 <p class="text-xs font-bold tracking-wider text-secondary mb-2">Edexcel 4MA1</p>
                 <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
@@ -238,10 +244,16 @@ lang: en
       const worksheetButtonClass = item.board === 'cie0580'
         ? 'bg-primary text-white'
         : 'bg-secondary text-white';
+      const coverWebp = item.cover.endsWith('.png')
+        ? item.cover.replace(/\.png$/i, '.webp')
+        : item.cover;
 
       return `
         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
-          <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+          <picture>
+            <source srcset="${escapeHtml(coverWebp)}" type="image/webp">
+            <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+          </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
             <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(item.boardLabel)}</span>
             <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>

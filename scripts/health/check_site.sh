@@ -43,7 +43,9 @@ required_urls=(
   "$BASE_URL/kahoot/cie0580/"
   "$BASE_URL/kahoot/edexcel-4ma1/"
   "$BASE_URL/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-01-types-of-number/cover-2320x1520-kahoot-minimal.png"
+  "$BASE_URL/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-01-types-of-number/cover-2320x1520-kahoot-minimal.webp"
   "$BASE_URL/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-01-integers/cover-2320x1520-kahoot-minimal.png"
+  "$BASE_URL/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-01-integers/cover-2320x1520-kahoot-minimal.webp"
   "$BASE_URL/sitemap.xml"
   "$BASE_URL/robots.txt"
 )
