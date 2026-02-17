@@ -1,0 +1,154 @@
+{
+  "topic": "Compound shapes and parts of shapes",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:mensuration-e5:e5-05-compound-shapes-and-parts-of-shapes",
+  "syllabusCode": "E5-05",
+  "tier": "Extended",
+  "domain": "mensuration",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "An L-shaped figure is formed by removing a 4 cm by 5 cm rectangle from the corner of a 10 cm by 12 cm rectangle. What is the area of the L-shaped figure?",
+      "options": [
+        "100 cm²",
+        "140 cm²",
+        "120 cm²",
+        "20 cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The area is found by subtracting the area of the small removed rectangle from the area of the large rectangle. Area = (10 cm × 12 cm) - (4 cm × 5 cm) = 120 cm² - 20 cm² = 100 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shape is made from a 15 cm by 8 cm rectangle with a semicircle attached to one of the 8 cm sides. What is the total area of the shape?",
+      "options": [
+        "120 + 16π cm²",
+        "120 + 32π cm²",
+        "120 + 8π cm²",
+        "120 + 64π cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The area is the sum of the rectangle's area and the semicircle's area. The semicircle's diameter is 8 cm, so its radius is 4 cm. Area = (15 × 8) + (1/2)π(4)² = 120 + 8π cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "For the same shape (a 15 cm by 8 cm rectangle with a semicircle of diameter 8 cm attached), what is its perimeter?",
+      "options": [
+        "38 + 8π cm",
+        "46 + 4π cm",
+        "38 + 4π cm",
+        "23 + 4π cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The perimeter consists of two 15 cm sides, one 8 cm side of the rectangle, and the arc of the semicircle. Arc length = (1/2)πd = (1/2)π(8) = 4π cm. Total perimeter = 15 + 8 + 15 + 4π = 38 + 4π cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the area of an annulus (a ring) with an outer radius of 10 cm and an inner radius of 6 cm.",
+      "options": [
+        "64π cm²",
+        "16π cm²",
+        "136π cm²",
+        "4π cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The area of an annulus is the area of the outer circle minus the area of the inner circle. Area = πR² - πr² = π(10²) - π(6²) = 100π - 36π = 64π cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A solid consists of a cylinder of radius 3 cm and height 10 cm, with a hemisphere of radius 3 cm on top. Find the total volume of the solid.",
+      "options": [
+        "90π + 54π cm³",
+        "90π + 36π cm³",
+        "90π + 18π cm³",
+        "90π + 9π cm³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Total volume is the volume of the cylinder plus the volume of the hemisphere. Volume = (πr²h) + (2/3)πr³ = (π × 3² × 10) + ((2/3)π × 3³) = 90π + 18π cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two identical cubes with side length 5 cm are joined together face-to-face to form a cuboid. What is the surface area of this new cuboid?",
+      "options": [
+        "300 cm²",
+        "250 cm²",
+        "275 cm²",
+        "150 cm²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The total surface area is the sum of the surface areas of the two cubes minus twice the area of the face where they are joined. SA = 2 × (6 × 5²) - 2 × (5²) = 2 × 150 - 2 × 25 = 300 - 50 = 250 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangular garden measuring 20 m by 10 m is surrounded by a path of uniform width 2 m. What is the area of the path?",
+      "options": [
+        "336 m²",
+        "200 m²",
+        "60 m²",
+        "136 m²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The outer dimensions are (20+2+2) m by (10+2+2) m, which is 24 m by 14 m. Area of path = (Area of outer rectangle) - (Area of inner rectangle) = (24 × 14) - (20 × 10) = 336 - 200 = 136 m²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the volume of a cylindrical pipe of length 10 cm, with an outer radius of 5 cm and an inner radius of 4 cm. Leave your answer in terms of π.",
+      "options": [
+        "10π cm³",
+        "90π cm³",
+        "410π cm³",
+        "160π cm³"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The volume is the area of the cross-sectional ring multiplied by the length. Cross-sectional area = π(R² - r²) = π(5² - 4²) = 9π cm². Volume = 9π cm² × 10 cm = 90π cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the perimeter of a sector of a circle with radius 10 cm and an angle of 60°.",
+      "options": [
+        "20 + (10π/3) cm",
+        "10 + (10π/3) cm",
+        "(10π/3) cm",
+        "20 + (20π/3) cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The perimeter consists of two radii and the arc length. Arc length = (60/360) × 2πr = (1/6) × 2π(10) = 10π/3 cm. Perimeter = 10 + 10 + 10π/3 = 20 + (10π/3) cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A solid is formed by placing a 6m x 4m x 2m cuboid on top of a 10m x 8m x 3m cuboid. The smaller cuboid is centered on the larger one. Find the total surface area of the solid.",
+      "options": [
+        "356 m²",
+        "308 m²",
+        "332 m²",
+        "268 m²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SA = (SA of bottom cuboid) + (SA of top cuboid) - 2×(contact area). SA_bottom = 2(10×8 + 8×3 + 10×3) = 2(80 + 24 + 30) = 268 m². SA_top = 2(6×4 + 4×2 + 6×2) = 2(24 + 8 + 12) = 88 m². Contact area = 6×4 = 24 m². Total SA = 268 + 88 - 2(24) = 356 - 48 = 308 m²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the area of the minor segment of a circle with radius 8 cm, cut off by a chord that subtends a right angle at the centre.",
+      "options": [
+        "64π - 32 cm²",
+        "16π cm²",
+        "16π - 32 cm²",
+        "16π - 64 cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The area of the segment is the area of the sector minus the area of the triangle. Sector area = (90/360) × πr² = (1/4)π(8²) = 16π. Triangle area = (1/2) × base × height = (1/2) × 8 × 8 = 32. Segment area = 16π - 32 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The shape of a swimming pool is a prism. The cross-section is a trapezium with parallel sides of 1.2 m and 2.0 m, and the distance between them is 25 m. The width of the pool is 10 m. What is the volume of the pool?",
+      "options": [
+        "320 m³",
+        "800 m³",
+        "400 m³",
+        "500 m³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, find the area of the trapezium cross-section: Area = 1/2 × (sum of parallel sides) × height = 1/2 × (1.2 + 2.0) × 25 = 1/2 × 3.2 × 25 = 40 m². The volume of the prism is the cross-sectional area times the width: Volume = 40 m² × 10 m = 400 m³."
+    }
+  ]
+}

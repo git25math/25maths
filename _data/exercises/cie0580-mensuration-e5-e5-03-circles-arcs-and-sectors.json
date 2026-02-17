@@ -1,0 +1,154 @@
+{
+  "topic": "circles arcs and sectors",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:mensuration-e5:e5-03-circles-arcs-and-sectors",
+  "syllabusCode": "E5-03",
+  "tier": "Extended",
+  "domain": "mensuration",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A circle has a diameter of 14 cm. What is its circumference, in terms of π?",
+      "options": [
+        "7π cm",
+        "14π cm",
+        "49π cm²",
+        "28π cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The formula for the circumference of a circle is C = πd, where d is the diameter. Given d = 14 cm, the circumference is 14π cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the area of a circle with a radius of 9 cm, in terms of π?",
+      "options": [
+        "18π cm²",
+        "9π cm²",
+        "81π cm²",
+        "324π cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The formula for the area of a circle is A = πr². Given r = 9 cm, the area is π * 9² = 81π cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sector of a circle has a radius of 15 cm and a central angle of 60°. What is the arc length of the sector, in terms of π?",
+      "options": [
+        "10π cm",
+        "30π cm",
+        "37.5π cm²",
+        "5π cm"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The formula for arc length is (θ/360) * 2πr. Substituting the values: (60/360) * 2 * π * 15 = (1/6) * 30π = 5π cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the area of a sector with a radius of 12 cm and a central angle of 90°, in terms of π.",
+      "options": [
+        "36π cm²",
+        "144π cm²",
+        "6π cm",
+        "24π cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The formula for the area of a sector is (θ/360) * πr². Substituting the values: (90/360) * π * 12² = (1/4) * 144π = 36π cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The circumference of a circle is 20π cm. What is the radius of the circle?",
+      "options": [
+        "20 cm",
+        "10 cm",
+        "5 cm",
+        "40 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The formula for circumference is C = 2πr. Given C = 20π cm, we have 20π = 2πr. Dividing both sides by 2π gives r = 10 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The area of a circle is 64π cm². What is its diameter?",
+      "options": [
+        "8 cm",
+        "32 cm",
+        "16π cm",
+        "16 cm"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The formula for area is A = πr². Given A = 64π cm², we have 64π = πr², so r² = 64, which means r = 8 cm. The diameter is twice the radius, so d = 2 * 8 = 16 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sector in a circle of radius 10 cm has an arc length of 5π cm. What is the angle of the sector?",
+      "options": [
+        "45°",
+        "180°",
+        "90°",
+        "60°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Using the arc length formula, 5π = (θ/360) * 2π * 10. Simplifying gives 5π = (θ/360) * 20π. This leads to θ/360 = 5/20 = 1/4. Therefore, θ = 360/4 = 90°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sector has an area of 12π cm² and is part of a circle with radius 6 cm. What is the central angle of the sector?",
+      "options": [
+        "60°",
+        "90°",
+        "180°",
+        "120°"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Using the sector area formula, 12π = (θ/360) * π * 6². Simplifying gives 12π = (θ/360) * 36π. This leads to θ/360 = 12/36 = 1/3. Therefore, θ = 360/3 = 120°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sector of a circle has a radius of 7 cm and an angle of 180°. What is the perimeter of the sector?",
+      "options": [
+        "7π cm",
+        "14π cm",
+        "7π + 14 cm",
+        "14π + 14 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The perimeter of a sector is the arc length plus two radii. Arc length = (180/360) * 2π * 7 = 7π cm. The perimeter is 7π + 7 + 7 = 7π + 14 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The area of a sector is 20π cm² and its central angle is 45°. What is the radius of the circle?",
+      "options": [
+        "4√10 cm",
+        "10 cm",
+        "8√5 cm",
+        "4√5 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Using the sector area formula, 20π = (45/360) * πr². This simplifies to 20 = (1/8)r², so r² = 160. The radius is r = √160 = √(16 * 10) = 4√10 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The arc length of a sector with a central angle of 40° is 2π cm. What is the radius of the circle?",
+      "options": [
+        "9 cm",
+        "18 cm",
+        "4.5 cm",
+        "36 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Using the arc length formula, 2π = (40/360) * 2πr. This simplifies to 1 = (1/9)r. Therefore, the radius r = 9 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the area of the minor segment bounded by a chord and a 90° arc in a circle of radius 10 cm.",
+      "options": [
+        "25π cm²",
+        "100π - 50 cm²",
+        "50 cm²",
+        "25π - 50 cm²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The area of a segment is the area of the sector minus the area of the triangle. Sector area = (90/360) * π * 10² = 25π. Triangle area = (1/2) * 10 * 10 * sin(90°) = 50. Segment area = 25π - 50 cm²."
+    }
+  ]
+}

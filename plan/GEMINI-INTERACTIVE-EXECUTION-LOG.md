@@ -189,23 +189,60 @@
 
 ---
 
+## Batch 013-021（Extended 分段批处理）
+
+### 范围
+- `number-e1`（18）
+- `algebra-e2`（13）
+- `coordinate-e3`（7）
+- `geometry-e4`（8）
+- `mensuration-e5`（5）
+- `trigonometry-e6`（6）
+- `transformations-e7`（4）
+- `probability-e8`（4）
+- `statistics-e9`（7）
+
+### 报告
+- `plan/gemini-batch-reports/batch-cie0580-20260217T050427Z.json`（E1）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T052446Z.json`（E2）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T054243Z.json`（E3）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T055033Z.json`（E4）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T055939Z.json`（E5）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T060723Z.json`（E6）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T061643Z.json`（E7）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T062205Z.json`（E8）
+- `plan/gemini-batch-reports/batch-cie0580-20260217T062725Z.json`（E9）
+
+### 结果
+- Extended 合计 requested=72, success=71, failed=1, corrected=21, warnings=0
+- 唯一失败点：`E1-04`（模型输出 13 题，校验要求 12 题）
+
+---
+
+## Batch 022（Extended 失败点回补）
+
+### 范围
+- `number-e1 / E1-04 fractions decimals percentages`（仅 1 个）
+
+### 报告
+- `plan/gemini-batch-reports/batch-cie0580-20260217T063548Z.json`
+
+### 结果
+- requested=1, success=1, failed=0, corrected=0, warnings=0
+- 回补后结论：Extended 全部分段已补齐
+
+---
+
 ## 累计进度（截至 2026-02-17）
 
-- 已生成并落地互动练习微考点：`52`（CIE 0580 Core 全覆盖）
-  - C1 Number Core：`16`
-  - C2 Algebra Core：`9`
-  - C3 Coordinate Core：`5`
-  - C4 Geometry Core：`7`
-  - C5 Mensuration Core：`5`
-  - C6 Trigonometry Core：`2`
-  - C7 Transformations Core：`1`
-  - C8 Probability Core：`3`
-  - C9 Statistics Core：`4`
-- 累计批处理成功：`49/49`（Batch 002-011）
-- 累计自动修正：`9`（Batch 003-008, 011）
+- 已生成并落地互动练习微考点：`124`（CIE 0580 Core+Extended 全覆盖）
+  - Core：`52`
+  - Extended：`72`
+- 累计自动修正（批处理）：`30`
 - 额外人工修正：`1`（Batch 001 的 C1-02）
 - 结构验收：通过（每页 12 题、4 选 1、答案索引合法、无重复选项）
-- 闭环链接验收：通过（C1-C9 已生成项在 `_data/kahoot_subtopic_links.json` 均可匹配）
+- 覆盖验收：通过（`_data/kahoot_cie0580_subtopics.json` 的 124 个 subtopic 全部对应生成产物）
+- 闭环链接验收：通过（active subtopic 在 `_data/kahoot_subtopic_links.json` 可匹配）
 
 ---
 
@@ -218,5 +255,5 @@
   - `bash scripts/health/check_site.sh` -> Failures: 0, Warnings: 0
   - `python3 scripts/health/check_kahoot_data.py` -> Failures: 0, Warnings: 0
 - 本地构建后已验证：
-  - `/exercises/` 列表包含新增 C4-C9 条目
-  - `_site/exercises/` 下 CIE 0580 Core 共 `52` 个目录页
+  - `/exercises/` 列表包含 Core + Extended 新增条目
+  - `_site/exercises/` 下 CIE 0580 共 `124` 个目录页

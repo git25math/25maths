@@ -1,0 +1,154 @@
+{
+  "topic": "proportion",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-e2:e2-08-proportion",
+  "syllabusCode": "E2-08",
+  "tier": "Extended",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "y is directly proportional to x. Given y = 20 when x = 4. Find y when x = 7.",
+      "options": [
+        "35",
+        "23",
+        "28",
+        "1.4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Since y is directly proportional to x, we have y = kx. From the given values, 20 = k * 4, so k = 5. The relationship is y = 5x. When x = 7, y = 5 * 7 = 35."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "y is inversely proportional to x. Given y = 6 when x = 5. Find y when x = 10.",
+      "options": [
+        "12",
+        "3",
+        "7",
+        "1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Since y is inversely proportional to x, y = k/x. From the given values, 6 = k/5, so k = 30. The relationship is y = 30/x. When x = 10, y = 30/10 = 3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "y is directly proportional to the square of x. Given y = 72 when x = 3. Find the value of y when x = 5.",
+      "options": [
+        "120",
+        "40",
+        "200",
+        "12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "y is proportional to x², so y = kx². Substitute the given values: 72 = k * (3²), which means 72 = 9k. Solving for k gives k = 8. So the formula is y = 8x². When x = 5, y = 8 * (5²) = 8 * 25 = 200."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Divide $132 in the ratio 3:8.",
+      "options": [
+        "$36 and $96",
+        "$33 and $99",
+        "$44 and $88",
+        "$30 and $102"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The total number of parts is 3 + 8 = 11. The value of one part is $132 / 11 = $12. The shares are 3 * $12 = $36 and 8 * $12 = $96."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The scale of a map is 1:25000. The distance between two points on the map is 6 cm. What is the actual distance in km?",
+      "options": [
+        "1.5 km",
+        "15 km",
+        "0.15 km",
+        "150000 km"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The map distance is 6 cm. The actual distance in cm is 6 * 25000 = 150000 cm. To convert cm to km, divide by 100 (for meters) and then by 1000 (for kilometers). 150000 / 100 / 1000 = 1.5 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "It takes 10 builders 21 days to complete a house. How long would it take 14 builders, assuming they work at the same rate?",
+      "options": [
+        "29.4 days",
+        "15 days",
+        "17 days",
+        "25 days"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This is an inverse proportion problem. The total work is 10 builders * 21 days = 210 builder-days. With 14 builders, the time taken is 210 / 14 = 15 days."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given y is directly proportional to x, and y = 18 when x = 12. Which equation represents the relationship between x and y?",
+      "options": [
+        "y = x + 6",
+        "xy = 216",
+        "y = (2/3)x",
+        "y = 1.5x"
+      ],
+      "correctAnswer": 3,
+      "explanation": "For direct proportion, y = kx. Using the given values, 18 = k * 12. Solving for k gives k = 18/12 = 1.5. Therefore, the equation is y = 1.5x."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "T is proportional to the square root of L. Given T = 4.8 when L = 36. Find T when L = 25.",
+      "options": [
+        "4.0",
+        "3.3",
+        "20",
+        "6.25"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The relationship is T = k√L. Substitute the given values: 4.8 = k√36, so 4.8 = 6k, which gives k = 0.8. The formula is T = 0.8√L. When L = 25, T = 0.8√25 = 0.8 * 5 = 4.0."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that a:b = 5:6 and b:c = 9:4, find the ratio a:c in its simplest form.",
+      "options": [
+        "5:4",
+        "2:3",
+        "15:8",
+        "7:5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To combine the ratios, make the value for 'b' the same in both. The LCM of 6 and 9 is 18. Convert the ratios: a:b = 5:6 = 15:18 and b:c = 9:4 = 18:8. Now, a:b:c = 15:18:8, so a:c = 15:8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The cost C of a taxi journey is directly proportional to the distance d travelled. A journey of 8 km costs $18. How far can you travel for $45?",
+      "options": [
+        "20 km",
+        "101.25 km",
+        "3.2 km",
+        "25 km"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The relationship is C = kd. From the data, k = 18/8 = 2.25 $/km. To find the distance for $45, calculate d = C/k = 45 / 2.25 = 20 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "M is directly proportional to the cube of r. If M = 135 when r = 3, find M when r = 4.",
+      "options": [
+        "320",
+        "180",
+        "240",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The relationship is M = kr³. Substitute the known values: 135 = k * 3³ = 27k. This gives k = 5. The formula is M = 5r³. For r = 4, M = 5 * 4³ = 5 * 64 = 320."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The intensity of light, I, is inversely proportional to the square of the distance, d. If I = 40 at a distance of 3 m, what is the intensity at 6 m?",
+      "options": [
+        "20",
+        "80",
+        "160",
+        "10"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The relationship is I = k/d². Using the given data, 40 = k / 3², so k = 40 * 9 = 360. The formula is I = 360/d². At a distance of 6m, the intensity is I = 360 / 6² = 360 / 36 = 10."
+    }
+  ]
+}

@@ -164,11 +164,11 @@ python3 scripts/exercises/batch_generate_and_audit.py \
 - 执行日志：`plan/GEMINI-INTERACTIVE-EXECUTION-LOG.md`
 
 ### Phase B（扩到 20 个微考点）
-- [x] 按 domain 批量生成并分批验收（已完成 C1-C9 Core 共 52 个微考点）
+- [x] 按 domain 批量生成并分批验收（已完成 C1-C9 Core+Extended 共 124 个微考点）
 - [ ] 每 5 个 subtopic 做一次质量回顾
-- [x] 固化失败案例与 prompt 修订规则（已记录 C9-03 重复选项与重跑策略）
+- [x] 固化失败案例与 prompt 修订规则（已记录 C9-03 与 E1-04 重跑策略）
 
 ### Phase C（规模化）
-- [ ] 进入批量流水线（按 backlog 批次）
+- [x] 进入批量流水线（按 backlog 批次）
 - [ ] 增加质量看板（生成成功率、返工率、闭环点击率）
 - [ ] 评估是否进入下一阶段（含 TikZ/TikzVault 链路）

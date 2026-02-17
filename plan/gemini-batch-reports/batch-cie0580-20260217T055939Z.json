@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "20260217T055939Z",
+  "board": "cie0580",
+  "section_key": "mensuration-e5",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 5,
+    "success": 5,
+    "failed": 0,
+    "corrected": 2,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:mensuration-e5:e5-01-units-of-measure",
+      "syllabusCode": "E5-01",
+      "topicSlug": "cie0580-mensuration-e5-e5-01-units-of-measure",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-e5:e5-02-area-and-perimeter",
+      "syllabusCode": "E5-02",
+      "topicSlug": "cie0580-mensuration-e5-e5-02-area-and-perimeter",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-e5:e5-03-circles-arcs-and-sectors",
+      "syllabusCode": "E5-03",
+      "topicSlug": "cie0580-mensuration-e5-e5-03-circles-arcs-and-sectors",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-e5:e5-04-surface-area-and-volume",
+      "syllabusCode": "E5-04",
+      "topicSlug": "cie0580-mensuration-e5-e5-04-surface-area-and-volume",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-e5:e5-05-compound-shapes-and-parts-of-shapes",
+      "syllabusCode": "E5-05",
+      "topicSlug": "cie0580-mensuration-e5-e5-05-compound-shapes-and-parts-of-shapes",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

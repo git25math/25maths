@@ -1,0 +1,154 @@
+{
+  "topic": "Relative and Expected Frequencies",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:probability-e8:e8-02-relative-and-expected-frequencies",
+  "syllabusCode": "E8-02",
+  "tier": "Extended",
+  "domain": "probability",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A biased dice is rolled 400 times, and it lands on the number '6' a total of 70 times. What is the relative frequency of rolling a '6'?",
+      "options": [
+        "0.175",
+        "0.2",
+        "5.71",
+        "0.15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Relative frequency is calculated by dividing the number of successful outcomes (70) by the total number of trials (400). So, 70 ÷ 400 = 0.175."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The probability of winning a game is 0.22. If the game is played 350 times, what is the expected number of wins?",
+      "options": [
+        "70",
+        "80",
+        "77",
+        "15.9"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The expected number of successes is found by multiplying the probability of success (0.22) by the total number of trials (350). So, 0.22 × 350 = 77."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a survey of 750 cars, 90 were found to be red. Based on this data, what is the estimated probability that a randomly chosen car is red?",
+      "options": [
+        "0.1",
+        "0.12",
+        "0.15",
+        "8.33"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The estimated probability (relative frequency) is the number of red cars (90) divided by the total number of cars surveyed (750). So, 90 ÷ 750 = 0.12."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The relative frequency of a machine producing a defective item is 0.03. In a production run of 2500 items, how many would you expect to be defective?",
+      "options": [
+        "75",
+        "83",
+        "750",
+        "30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The expected number of defects is the relative frequency (0.03) multiplied by the total number of items produced (2500). So, 0.03 × 2500 = 75."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A spinner is spun a number of times. The relative frequency of it landing on blue is 0.45, and it landed on blue 180 times. What was the total number of spins?",
+      "options": [
+        "81",
+        "275",
+        "400",
+        "360"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To find the total number of trials, divide the number of successful outcomes (180) by the relative frequency (0.45). So, 180 ÷ 0.45 = 400 spins."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "As the number of experimental trials increases, the relative frequency of an event gets closer to...",
+      "options": [
+        "...zero.",
+        "...the theoretical probability.",
+        "...one.",
+        "...the number of trials."
+      ],
+      "correctAnswer": 1,
+      "explanation": "The fundamental concept of relative frequency is that as an experiment is repeated more and more times, the calculated relative frequency will converge towards the theoretical probability of the event."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A drawing pin is dropped 120 times. It lands 'point up' 84 times. What is the estimated probability of it landing 'point up'?",
+      "options": [
+        "0.84",
+        "0.6",
+        "0.7",
+        "1.43"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The estimated probability is the relative frequency, calculated by dividing the number of 'point up' outcomes (84) by the total number of drops (120). So, 84 ÷ 120 = 0.7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The probability of a seed germinating is 0.85. If 1200 seeds are planted, what is the expected number of seeds that will germinate?",
+      "options": [
+        "1000",
+        "1020",
+        "1050",
+        "1411"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The expected number is the probability of germination (0.85) multiplied by the number of seeds planted (1200). So, 0.85 × 1200 = 1020."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The expected number of sunny days in a 30-day period is 18. Based on this, what is the relative frequency (estimated probability) of a day being sunny?",
+      "options": [
+        "0.18",
+        "1.67",
+        "0.6",
+        "0.3"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The estimated probability is the expected number of sunny days (18) divided by the total number of days (30). So, 18 ÷ 30 = 0.6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bag contains coloured beads. The probability of picking a blue bead is 1/5. If the experiment is repeated 70 times, what is the expected frequency of picking a blue bead?",
+      "options": [
+        "10",
+        "14",
+        "20",
+        "35"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Expected frequency is the probability of the event (1/5) multiplied by the number of trials (70). (1/5) × 70 = 14."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A spinner has sections labelled Red, Blue, and Green. The spinner is spun 250 times. The results are: Red 110, Blue 85. What is the relative frequency of landing on Green?",
+      "options": [
+        "0.2",
+        "0.25",
+        "0.22",
+        "0.34"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, find the number of times it landed on Green: 250 - 110 - 85 = 55. Then, calculate the relative frequency by dividing this by the total spins: 55 ÷ 250 = 0.22."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The relative frequency of a train being late is 0.15. Over a period of 60 days, how many days would you expect the train to be on time?",
+      "options": [
+        "9",
+        "51",
+        "50",
+        "45"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The probability of the train being on time is 1 - P(late) = 1 - 0.15 = 0.85. The expected number of on-time days is this probability multiplied by the total days: 0.85 × 60 = 51."
+    }
+  ]
+}

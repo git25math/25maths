@@ -1,0 +1,154 @@
+{
+  "topic": "Vector geometry",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:transformations-e7:e7-04-vector-geometry",
+  "syllabusCode": "E7-04",
+  "tier": "Extended",
+  "domain": "transformations",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Given the position vectors O$\\vec{A}$ = a and O$\\vec{B}$ = b, what is the vector $\\vec{AB}$?",
+      "options": [
+        "a + b",
+        "a - b",
+        "b - a",
+        "½(a + b)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To get from point A to point B, we can go from A to the origin O (which is -a) and then from the origin O to B (which is b). So, $\\vec{AB}$ = $\\vec{AO}$ + $\\vec{OB}$ = -a + b = b - a."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In parallelogram OABC, O$\\vec{A}$ = a and O$\\vec{C}$ = c. D is the midpoint of OC. Find the vector $\\vec{AD}$ in terms of a and c.",
+      "options": [
+        "½c - a",
+        "a - ½c",
+        "c - ½a",
+        "½a - c"
+      ],
+      "correctAnswer": 0,
+      "explanation": "$\\vec{AD}$ = $\\vec{AO}$ + $\\vec{OD}$. We have $\\vec{AO}$ = -a. Since D is the midpoint of OC, $\\vec{OD}$ = ½O$\\vec{C}$ = ½c. Therefore, $\\vec{AD}$ = -a + ½c = ½c - a."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given points A(1, 5) and B(7, -3), what is the position vector of the midpoint of the line segment AB?",
+      "options": [
+        "$\\begin{pmatrix} 6 \\\\ -8 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 8 \\\\ 2 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 4 \\\\ 1 \\end{pmatrix}$"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The position vector of the midpoint is the average of the position vectors of the endpoints. Midpoint = (½(x₁+x₂), ½(y₁+y₂)) = (½(1+7), ½(5-3)) = (½(8), ½(2)) = (4, 1)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "O, P, and Q are points such that O$\\vec{P}$ = p and O$\\vec{Q}$ = q. R is a point on PQ such that PR:RQ = 1:3. Find O$\\vec{R}$ in terms of p and q.",
+      "options": [
+        "¼p + ¾q",
+        "¾p + ¼q",
+        "p + ¼(q-p)",
+        "p + ¾(q-p)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "O$\\vec{R}$ = O$\\vec{P}$ + $\\vec{PR}$. First find $\\vec{PQ}$ = q - p. Since PR:RQ = 1:3, the total ratio is 4, so $\\vec{PR}$ = ¼$\\vec{PQ}$ = ¼(q - p). Thus, O$\\vec{R}$ = p + ¼(q - p) = p + ¼q - ¼p = ¾p + ¼q."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In triangle OAB, O$\\vec{A}$ = a and O$\\vec{B}$ = b. M is the midpoint of AB. Which expression represents O$\\vec{M}$?",
+      "options": [
+        "b - a",
+        "a + ½b",
+        "½(a + b)",
+        "½(b - a)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "O$\\vec{M}$ = O$\\vec{A}$ + $\\vec{AM}$. The vector $\\vec{AB}$ = b - a. Since M is the midpoint of AB, $\\vec{AM}$ = ½$\\vec{AB}$ = ½(b - a). So, O$\\vec{M}$ = a + ½(b - a) = a + ½b - ½a = ½a + ½b = ½(a + b)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given vectors p = $\\begin{pmatrix} 4 \\\\ -2 \\end{pmatrix}$ and q = $\\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}$, find the vector 2p - q.",
+      "options": [
+        "$\\begin{pmatrix} 9 \\\\ -9 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 7 \\\\ -7 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 9 \\\\ -7 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix}$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "2p = 2 * $\\begin{pmatrix} 4 \\\\ -2 \\end{pmatrix}$ = $\\begin{pmatrix} 8 \\\\ -4 \\end{pmatrix}$. Then, 2p - q = $\\begin{pmatrix} 8 \\\\ -4 \\end{pmatrix}$ - $\\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}$ = $\\begin{pmatrix} 8 - (-1) \\\\ -4 - 5 \\end{pmatrix}$ = $\\begin{pmatrix} 9 \\\\ -9 \\end{pmatrix}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Vectors a and b are the adjacent sides of a parallelogram. What do the vectors a + b and a - b represent?",
+      "options": [
+        "The two diagonals",
+        "Two adjacent sides",
+        "A side and a diagonal",
+        "The area and perimeter"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In a parallelogram with adjacent sides represented by vectors a and b, the vector sum a + b represents the main diagonal, and the vector difference a - b (or b - a) represents the other diagonal."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The points A, B and C are collinear. Given $\\vec{AB}$ = u and $\\vec{BC}$ = 3u, what is the ratio of the lengths AB:BC?",
+      "options": [
+        "3:1",
+        "1:3",
+        "1:4",
+        "4:1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The vectors $\\vec{AB}$ and $\\vec{BC}$ are parallel and share a common point B, so A, B, and C are collinear. The length of a vector k*v is |k| times the length of v. Therefore, the length of $\\vec{BC}$ is 3 times the length of $\\vec{AB}$. The ratio AB:BC is 1:3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the hexagon ABCDEF, O$\\vec{A}$ = a and O$\\vec{B}$ = b. Given that $\\vec{BC}$ is parallel to O$\\vec{A}$ and twice its length, find O$\\vec{C}$.",
+      "options": [
+        "b + 2a",
+        "a + 2b",
+        "2a - b",
+        "2(a + b)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "O$\\vec{C}$ = O$\\vec{B}$ + $\\vec{BC}$. We are given O$\\vec{B}$ = b. Since $\\vec{BC}$ is parallel to O$\\vec{A}$ and twice its length, $\\vec{BC}$ = 2 * O$\\vec{A}$ = 2a. Therefore, O$\\vec{C}$ = b + 2a."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given O$\\vec{A}$ = $\\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$ and $\\vec{AB}$ = $\\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix}$, find the position vector O$\\vec{B}$.",
+      "options": [
+        "$\\begin{pmatrix} 10 \\\\ -5 \\end{pmatrix}$",
+        "$\\begin{pmatrix} -10 \\\\ 5 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 4 \\\\ 5 \\end{pmatrix}$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The position vector O$\\vec{B}$ can be found by the path O to A, then A to B. So, O$\\vec{B}$ = O$\\vec{A}$ + $\\vec{AB}$. O$\\vec{B}$ = $\\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$ + $\\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix}$ = $\\begin{pmatrix} -3+7 \\\\ 4-1 \\end{pmatrix}$ = $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In triangle OAB, O$\\vec{A}$ = a, O$\\vec{B}$ = b. P is the point on AB such that AP = 2/5 AB. Find O$\\vec{P}$ in terms of a and b.",
+      "options": [
+        "a + 2/5 b",
+        "3/5 a + 2/5 b",
+        "2/5 a + 3/5 b",
+        "a - 3/5 b"
+      ],
+      "correctAnswer": 1,
+      "explanation": "O$\\vec{P}$ = O$\\vec{A}$ + $\\vec{AP}$. We know $\\vec{AP}$ = 2/5 $\\vec{AB}$ and $\\vec{AB}$ = b - a. So, $\\vec{AP}$ = 2/5 (b - a). Therefore, O$\\vec{P}$ = a + 2/5 (b - a) = a + 2/5 b - 2/5 a = 3/5 a + 2/5 b."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "OABC is a parallelogram with O$\\vec{A}$ = a and O$\\vec{C}$ = c. M is the midpoint of AB. Find $\\vec{CM}$ in terms of a and c.",
+      "options": [
+        "a - ½c",
+        "-½a - ½c",
+        "½a - c",
+        "3a + ½c"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In parallelogram OABC, $\\vec{OB}$ = O$\\vec{A}$ + $\\vec{AB}$. Since OABC is a parallelogram, $\\vec{AB}$ = O$\\vec{C}$ = c. So, $\\vec{OB}$ = a + c. M is the midpoint of AB, thus O$\\vec{M}$ = ½(O$\\vec{A}$ + O$\\vec{B}$) = ½(a + (a + c)) = ½(2a + c) = a + ½c. Finally, $\\vec{CM}$ = O$\\vec{M}$ - O$\\vec{C}$ = (a + ½c) - c = a - ½c."
+    }
+  ]
+}

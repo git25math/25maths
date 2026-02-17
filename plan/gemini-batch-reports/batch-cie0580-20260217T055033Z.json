@@ -1,0 +1,116 @@
+{
+  "timestamp_utc": "20260217T055033Z",
+  "board": "cie0580",
+  "section_key": "geometry-e4",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 8,
+    "success": 8,
+    "failed": 0,
+    "corrected": 3,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-01-geometrical-terms",
+      "syllabusCode": "E4-01",
+      "topicSlug": "cie0580-geometry-e4-e4-01-geometrical-terms",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-02-geometrical-constructions",
+      "syllabusCode": "E4-02",
+      "topicSlug": "cie0580-geometry-e4-e4-02-geometrical-constructions",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-03-scale-drawings",
+      "syllabusCode": "E4-03",
+      "topicSlug": "cie0580-geometry-e4-e4-03-scale-drawings",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-04-similarity",
+      "syllabusCode": "E4-04",
+      "topicSlug": "cie0580-geometry-e4-e4-04-similarity",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-05-symmetry",
+      "syllabusCode": "E4-05",
+      "topicSlug": "cie0580-geometry-e4-e4-05-symmetry",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-06-angles",
+      "syllabusCode": "E4-06",
+      "topicSlug": "cie0580-geometry-e4-e4-06-angles",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-07-circle-theorems-i",
+      "syllabusCode": "E4-07",
+      "topicSlug": "cie0580-geometry-e4-e4-07-circle-theorems-i",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:geometry-e4:e4-08-circle-theorems-ii",
+      "syllabusCode": "E4-08",
+      "topicSlug": "cie0580-geometry-e4-e4-08-circle-theorems-ii",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}
