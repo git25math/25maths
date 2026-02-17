@@ -22,6 +22,10 @@
         {% assign board_directory_url = "/kahoot/edexcel-4ma1/" %}
         {% assign board_directory_label = "Edexcel 4MA1 SubTopics" %}
     {% endif %}
+    {% assign exercises_hub_url = "/exercises/" | relative_url %}
+    {% if board_slug != "" %}
+        {% capture exercises_hub_url %}{{ '/exercises/' | relative_url }}?board={{ board_slug }}{% if page.tier %}&tier={{ page.tier | downcase | url_encode }}{% endif %}{% endcapture %}
+    {% endif %}
 
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header class="mb-8">
@@ -30,6 +34,15 @@
         </header>
 
         <div id="exercise-engine" data-topic="{{ page.topic | slugify }}">
+            <div id="progress-container" class="mb-6 rounded-lg border border-gray-200 bg-white p-4">
+                <div class="flex items-center justify-between text-sm text-gray-600">
+                    <span id="progress-label">Question 1</span>
+                    <span id="score-label">Score: 0</span>
+                </div>
+                <div class="mt-2 h-2 overflow-hidden rounded-full bg-gray-200">
+                    <div id="progress-bar" class="h-2 rounded-full bg-primary transition-all duration-200" style="width: 0%;"></div>
+                </div>
+            </div>
             <div id="question-container" class="prose max-w-none">
                 <!-- Question text and options will be rendered here -->
             </div>
@@ -49,7 +62,7 @@
             <h2 class="text-xl font-bold text-gray-900">Continue This Topic Loop</h2>
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
             <div class="mt-4 flex flex-wrap gap-3">
-                <a href="{{ '/exercises/' | relative_url }}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Try Another Interactive Exercise</a>
+                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Try Another Interactive Exercise</a>
                 {% if board_slug != '' %}
                 <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Back to {{ board_directory_label }}</a>
                 {% endif %}

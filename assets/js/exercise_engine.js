@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackContainer = document.getElementById('feedback-container');
     const submitBtn = document.getElementById('submit-answer-btn');
     const nextBtn = document.getElementById('next-question-btn');
+    const progressContainer = document.getElementById('progress-container');
+    const progressLabel = document.getElementById('progress-label');
+    const scoreLabel = document.getElementById('score-label');
+    const progressBar = document.getElementById('progress-bar');
 
     // --- State ---
     const questions = exerciseData.questions || [];
@@ -57,31 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function buildCompletionActionsHtml() {
-        if (!links || typeof links !== 'object') {
-            return '';
-        }
+        const actionButtons = [
+            `<a href="${window.location.pathname}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Retry This Exercise</a>`,
+        ];
 
-        const actionButtons = [];
-        if (links.kahoot_url) {
+        if (links && typeof links === 'object' && links.kahoot_url) {
             actionButtons.push(
                 `<a href="${withTrackingUrl(links.kahoot_url, 'kahoot_complete')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>`
             );
         }
-        if (links.worksheet_payhip_url) {
+        if (links && typeof links === 'object' && links.worksheet_payhip_url) {
             actionButtons.push(
                 `<a href="${withTrackingUrl(links.worksheet_payhip_url, 'worksheet_complete')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>`
             );
         }
 
-        const bundleUrl = links.bundle_url || links.section_bundle_payhip_url || links.unit_bundle_payhip_url || '';
+        const bundleUrl = (links && typeof links === 'object')
+            ? (links.bundle_url || links.section_bundle_payhip_url || links.unit_bundle_payhip_url || '')
+            : '';
         if (bundleUrl) {
             actionButtons.push(
                 `<a href="${withTrackingUrl(bundleUrl, 'bundle_complete')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>`
             );
-        }
-
-        if (actionButtons.length === 0) {
-            return '';
         }
 
         return `
@@ -92,6 +93,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+    }
+
+    function updateProgressUi() {
+        if (!progressLabel || !scoreLabel || !progressBar) {
+            return;
+        }
+        const total = questions.length || 1;
+        const current = Math.min(currentQuestionIndex + 1, total);
+        const completed = Math.min(currentQuestionIndex, total);
+        const ratio = Math.max(0, Math.min(1, completed / total));
+
+        progressLabel.textContent = `Question ${current} / ${total}`;
+        scoreLabel.textContent = `Score: ${score}`;
+        progressBar.style.width = `${Math.round(ratio * 100)}%`;
     }
 
     /**
@@ -123,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="text-lg font-semibold">${index + 1}. ${question.questionText}</p>
             <div class="mt-4">${optionsHtml}</div>
         `;
+        updateProgressUi();
 
         // Reset state for the new question
         selectedAnswer = null;
@@ -169,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         }
+        updateProgressUi();
 
         // Disable radio buttons after submission
         document.querySelectorAll('input[name="answer"]').forEach((radio) => {
@@ -192,6 +209,9 @@ document.addEventListener('DOMContentLoaded', () => {
             renderQuestion(currentQuestionIndex);
         } else {
             // End of exercise
+            if (progressContainer) {
+                progressContainer.style.display = 'none';
+            }
             questionContainer.innerHTML = '';
             feedbackContainer.innerHTML = `
                 <div class="text-center p-6 bg-blue-50 rounded-lg">
@@ -213,7 +233,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (questions.length === 0) {
             questionContainer.innerHTML = '<p class="text-gray-600">No questions found for this topic.</p>';
             submitBtn.style.display = 'none';
+            if (progressContainer) {
+                progressContainer.style.display = 'none';
+            }
             return;
+        }
+        if (progressContainer) {
+            progressContainer.style.display = '';
         }
         renderQuestion(currentQuestionIndex);
     }
