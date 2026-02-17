@@ -1,0 +1,26 @@
+<svg width="2320" height="1520" viewBox="0 0 580 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="F4.5 Kahoot cover" text-rendering="geometricPrecision" shape-rendering="geometricPrecision">
+  <rect width="580" height="380" fill="#F8FCFB"/>
+
+  <rect x="0" y="0" width="580" height="56" fill="#E4F2EF"/>
+  <rect x="20" y="14" width="152" height="28" rx="14" fill="#B2DDD6"/>
+  <text x="96" y="33" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#164E4A">TOPIC PRACTICE</text>
+
+  <rect x="194" y="14" width="140" height="28" rx="14" fill="#C8E8E2"/>
+  <text x="264" y="33" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#1D5D58">EDEXCEL 4MA1</text>
+
+  <rect x="394" y="14" width="172" height="28" rx="14" fill="#DEF0EC"/>
+  <text x="480" y="33" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#245B57">FOUNDATION TIER</text>
+
+  <rect x="20" y="76" width="540" height="234" rx="20" fill="#FFFFFF"/>
+  <rect x="20" y="76" width="8" height="234" fill="#77BDAF"/>
+
+  <text x="44" y="134" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#2F6D67">F4.5</text>
+  <text x="44" y="188" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="49" font-weight="800" fill="#1A5550">Construction</text>
+  <rect x="44" y="260" width="212" height="6" rx="3" fill="#77BDAF"/>
+
+  <text x="44" y="292" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#2F6D67">IGCSE Maths Objective Practice</text>
+
+  <rect x="0" y="332" width="580" height="48" fill="#2F7D74"/>
+  <text x="20" y="361" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">25Maths Kahoot Companion</text>
+  <text x="560" y="361" text-anchor="end" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Real Exam Style • Revision • Self Study</text>
+</svg>
