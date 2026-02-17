@@ -1,7 +1,7 @@
 ---
 layout: module
-title: 价格
-description: "选择 CIE 0580 套装：单套 $12-17、任意两套 $29、完整套装 $39。"
+title: 定价框架
+description: "CIE 0580 预售定价框架：围绕 L1/L2/L3 闭环的建议价区间。"
 module: cie0580
 active_page: pricing
 lang: zh-CN
@@ -14,51 +14,76 @@ lang_links:
     label: 简体
     url: /zh-cn/cie0580/pricing.html
 ---
+{% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
+{% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
 <section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-5xl font-bold mb-4">CIE 0580 价格</h1>
-        <p class="text-xl opacity-90">高质量英语练习，关键术语对照，对标考纲</p>
+        <h1 class="text-5xl font-bold mb-4">CIE 0580 定价框架</h1>
+        <p class="text-xl opacity-90">用于预售阶段的建议区间，最终公开价格上线前可调整。</p>
     </div>
 </section>
 
-<section class="py-20">
+<section class="py-10 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+            <p class="font-semibold mb-1">说明</p>
+            <p>当前价格用于建立阶梯与锚点。只要闭环结构不变，后续可以单独调整数字而不需要改整站结构。</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-                <h3 class="text-2xl font-bold mb-4">单套装</h3>
-                <div class="text-4xl font-bold text-primary mb-6">$12‑17</div>
-                <p class="text-gray-600 mb-6">适合专项突破</p>
-                <ul class="text-left space-y-3 mb-8">
-                    <li>✓ 任意单个专题</li>
-                    <li>✓ 40‑50 道练习</li>
-                    <li>✓ 完整解析</li>
-                    <li>✓ 即时下载</li>
-                </ul>
-                <a href="/zh-cn/cie0580/products.html" class="block bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90">查看产品</a>
-            </div>
+        <div class="grid md:grid-cols-4 gap-6">
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L1 Worksheet 单品</h3>
+                <p class="text-sm text-gray-600 mb-2">一个 SubTopic 的 MVP</p>
+                <p class="text-sm text-gray-700">早鸟：{{ catalog.pricing.l1_early_bird }}</p>
+                <p class="text-sm text-gray-700">常规：{{ catalog.pricing.l1_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L2 小章节合集</h3>
+                <p class="text-sm text-gray-600 mb-2">同一 section 的 SubTopic 组合</p>
+                <p class="text-sm text-gray-700">早鸟：{{ catalog.pricing.l2_early_bird }}</p>
+                <p class="text-sm text-gray-700">常规：{{ catalog.pricing.l2_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">L3 单元合集</h3>
+                <p class="text-sm text-gray-600 mb-2">Core + Extended 单元包</p>
+                <p class="text-sm text-gray-700">早鸟：{{ catalog.pricing.l3_early_bird }}</p>
+                <p class="text-sm text-gray-700">常规：{{ catalog.pricing.l3_regular }}</p>
+            </article>
+            <article class="bg-white rounded-xl border border-gray-200 p-6">
+                <h3 class="text-lg font-bold mb-2">Mega Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">全部 9 个单元</p>
+                <p class="text-sm text-gray-700">早鸟：{{ catalog.all_units_bundle.early_bird_price }}</p>
+                <p class="text-sm text-gray-700">常规：{{ catalog.all_units_bundle.regular_price }}</p>
+            </article>
+        </div>
+    </div>
+</section>
 
-            <div class="bg-white rounded-xl shadow-lg p-8 text-center border-4 border-primary relative">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">两套更划算</div>
-                <h3 class="text-2xl font-bold mb-4">任意两套</h3>
-                <div class="text-4xl font-bold text-primary mb-2">$29</div>
-                <p class="text-success font-semibold mb-4">立省 $5（任意两套）</p>
-                <p class="text-gray-600 mb-6">结账时任选两套</p>
-                <a href="mailto:support@25maths.com?subject=2-Bundle%20Deal%20Inquiry" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    联系购买
-                </a>
+<section class="py-16 bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">复购闭环</h2>
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">第 1 步：入口</h3>
+                <p class="text-sm text-gray-600">先购买 L1 单个 SubTopic，快速验证产品价值。</p>
             </div>
-
-            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-                <div class="text-warning text-sm font-bold mb-2">🏆 最划算</div>
-                <h3 class="text-2xl font-bold mb-4">完整套装</h3>
-                <div class="text-4xl font-bold text-primary mb-2">$39</div>
-                <p class="text-success font-semibold mb-4">立省 $7（原价 $46）</p>
-                <p class="text-gray-600 mb-6">三套一次带走</p>
-                <a href="mailto:support@25maths.com?subject=Complete%20Package%20Inquiry" class="block w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    联系购买
-                </a>
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">第 2 步：升级</h3>
+                <p class="text-sm text-gray-600">通过 L2 小章节优惠券，把单品客户升级为合集客户。</p>
             </div>
+            <div class="bg-white border border-gray-200 rounded-xl p-5">
+                <h3 class="font-bold text-gray-900 mb-2">第 3 步：留存</h3>
+                <p class="text-sm text-gray-600">对有需求的客户发放双语词卡与双语增强升级券，促成 L3 与复购。</p>
+            </div>
+        </div>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="/zh-cn/cie0580/products.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center">打开产品架构</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">打开预售说明 PDF</a>
         </div>
     </div>
 </section>
