@@ -19,6 +19,13 @@ CIE_SUBTOPIC_FILE = ROOT / "_data" / "kahoot_cie0580_subtopics.json"
 EDEXCEL_SUBTOPIC_FILE = ROOT / "_data" / "kahoot_edexcel4ma1_subtopics.json"
 EXERCISE_HUB_EN_FILE = ROOT / "exercises" / "index.html"
 EXERCISE_HUB_ZH_FILE = ROOT / "zh-cn" / "exercises" / "index.html"
+SITE_INDEX_FILE = ROOT / "index.html"
+SITE_EN_INDEX_FILE = ROOT / "en" / "index.html"
+SITE_ZH_INDEX_FILE = ROOT / "zh-cn" / "index.html"
+KAHOOT_HUB_FILE = ROOT / "kahoot" / "index.html"
+KAHOOT_HUB_ZH_FILE = ROOT / "zh-cn" / "kahoot" / "index.html"
+KAHOOT_CIE_FILE = ROOT / "kahoot" / "cie0580" / "index.html"
+KAHOOT_EDEXCEL_FILE = ROOT / "kahoot" / "edexcel-4ma1" / "index.html"
 
 FRONT_MATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", re.S)
 SYLLABUS_CODE_RE = re.compile(r"^[A-Za-z]\d{1,2}-\d{2}$")
@@ -195,6 +202,35 @@ def check_hub_page_structure() -> None:
 
         if legacy_marker in text:
             fail(f"{label}: legacy inline filter logic detected; should use shared script")
+
+
+def check_entry_point_coverage() -> None:
+    required_entry_markers = [
+        (SITE_INDEX_FILE, "Site index", ["/exercises/"]),
+        (SITE_EN_INDEX_FILE, "Site index (EN)", ["/exercises/"]),
+        (SITE_ZH_INDEX_FILE, "Site index (ZH)", ["/zh-cn/exercises/"]),
+        (KAHOOT_HUB_FILE, "Kahoot hub", ["/exercises/"]),
+        (KAHOOT_HUB_ZH_FILE, "Kahoot hub (ZH)", ["/zh-cn/exercises/"]),
+        (KAHOOT_CIE_FILE, "Kahoot CIE directory", ["/exercises/?board=cie0580"]),
+        (
+            KAHOOT_EDEXCEL_FILE,
+            "Kahoot Edexcel directory",
+            ["/exercises/?board=edexcel-4ma1"],
+        ),
+    ]
+
+    for path, label, markers in required_entry_markers:
+        try:
+            text = path.read_text(encoding="utf-8")
+        except FileNotFoundError:
+            fail(f"{label}: missing file {path}")
+            continue
+
+        missing_markers = [marker for marker in markers if marker not in text]
+        if missing_markers:
+            fail(f"{label}: missing exercise entry markers {missing_markers}")
+        else:
+            pass_msg(f"{label}: exercise entry markers present")
 
 
 def main() -> int:
@@ -419,6 +455,7 @@ def main() -> int:
                 print(f"  - {key}")
 
     check_hub_page_structure()
+    check_entry_point_coverage()
 
     print("== Summary ==")
     print(f"Failures: {FAILURES}")
