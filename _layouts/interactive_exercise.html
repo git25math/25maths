@@ -26,6 +26,22 @@
     {% if board_slug != "" %}
         {% capture exercises_hub_url %}{{ '/exercises/' | relative_url }}?board={{ board_slug }}{% if page.tier %}&tier={{ page.tier | downcase | url_encode }}{% endif %}{% endcapture %}
     {% endif %}
+    {% assign current_tier = page.tier | default: "" | downcase %}
+    {% capture exercise_lane_json %}
+[
+{% assign lane_separator = "" %}
+{% if board_slug != "" %}
+    {% for exercise_item in site.exercises %}
+        {% assign item_board_slug = exercise_item.subtopic_id | split: ":" | first %}
+        {% assign item_tier = exercise_item.tier | default: "" | downcase %}
+        {% if item_board_slug == board_slug and item_tier == current_tier %}
+            {{ lane_separator }}{"url": {{ exercise_item.url | relative_url | jsonify }}, "title": {{ exercise_item.title | jsonify }}, "code": {{ exercise_item.syllabus_code | default: "" | jsonify }}, "subtopic_id": {{ exercise_item.subtopic_id | jsonify }}}
+            {% assign lane_separator = "," %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+]
+    {% endcapture %}
 
     <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header class="mb-8">
@@ -63,6 +79,7 @@
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
             <div class="mt-4 flex flex-wrap gap-3">
                 <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Try Another Interactive Exercise</a>
+                <span id="next-exercise-link-slot"></span>
                 {% if board_slug != '' %}
                 <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Back to {{ board_directory_label }}</a>
                 {% endif %}
@@ -91,6 +108,8 @@
         const exerciseData = {{ site.data.exercises[page.topic] | jsonify }};
         const exerciseLinks = {{ exercise_links | jsonify }};
         const exerciseTopicSlug = {{ page.topic | jsonify }};
+        const exerciseLane = {{ exercise_lane_json | strip }};
+        const exerciseCurrentSubtopicId = {{ page.subtopic_id | jsonify }};
     </script>
     <script src="{{ '/assets/js/exercise_engine.js' | relative_url }}"></script>
 </body>

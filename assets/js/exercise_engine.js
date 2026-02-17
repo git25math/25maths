@@ -20,15 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressLabel = document.getElementById('progress-label');
     const scoreLabel = document.getElementById('score-label');
     const progressBar = document.getElementById('progress-bar');
+    const nextExerciseLinkSlot = document.getElementById('next-exercise-link-slot');
 
     // --- State ---
     const questions = exerciseData.questions || [];
     const links = (typeof exerciseLinks !== 'undefined' && exerciseLinks) ? exerciseLinks : null;
     const topicSlugFromPage = (typeof exerciseTopicSlug === 'string' && exerciseTopicSlug) ? exerciseTopicSlug : '';
+    const laneItems = Array.isArray(exerciseLane) ? exerciseLane : [];
+    const currentSubtopicId = (typeof exerciseCurrentSubtopicId === 'string' && exerciseCurrentSubtopicId)
+        ? exerciseCurrentSubtopicId
+        : '';
     const topicSlug = exerciseEngine.dataset.topic || topicSlugFromPage;
     let currentQuestionIndex = 0;
     let score = 0;
     let selectedAnswer = null;
+    let nextExercise = null;
 
     function withTrackingUrl(rawUrl, actionKey) {
         if (!rawUrl) {
@@ -60,10 +66,80 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function parseSyllabusCode(code) {
+        const normalized = String(code || '').trim();
+        const match = /^([A-Za-z])(\d+)-(\d+)$/.exec(normalized);
+        if (!match) {
+            return null;
+        }
+        return {
+            tierLetter: match[1].toUpperCase(),
+            sectionNo: Number(match[2]),
+            itemNo: Number(match[3]),
+        };
+    }
+
+    function compareLaneItems(a, b) {
+        const aParsed = parseSyllabusCode(a.code);
+        const bParsed = parseSyllabusCode(b.code);
+        if (aParsed && bParsed) {
+            if (aParsed.tierLetter !== bParsed.tierLetter) {
+                return aParsed.tierLetter.localeCompare(bParsed.tierLetter);
+            }
+            if (aParsed.sectionNo !== bParsed.sectionNo) {
+                return aParsed.sectionNo - bParsed.sectionNo;
+            }
+            if (aParsed.itemNo !== bParsed.itemNo) {
+                return aParsed.itemNo - bParsed.itemNo;
+            }
+        } else if (aParsed && !bParsed) {
+            return -1;
+        } else if (!aParsed && bParsed) {
+            return 1;
+        }
+        const codeCompare = String(a.code || '').localeCompare(String(b.code || ''));
+        if (codeCompare !== 0) {
+            return codeCompare;
+        }
+        return String(a.subtopic_id || '').localeCompare(String(b.subtopic_id || ''));
+    }
+
+    function resolveNextExercise() {
+        if (!laneItems.length || !currentSubtopicId) {
+            return null;
+        }
+        const sortedLane = laneItems.slice().sort(compareLaneItems);
+        const currentIndex = sortedLane.findIndex((item) => item.subtopic_id === currentSubtopicId);
+        if (currentIndex < 0 || currentIndex + 1 >= sortedLane.length) {
+            return null;
+        }
+        return sortedLane[currentIndex + 1];
+    }
+
+    function injectNextExerciseLink() {
+        if (!nextExerciseLinkSlot || !nextExercise || !nextExercise.url) {
+            return;
+        }
+        const nextLabel = nextExercise.code
+            ? `Next in Syllabus (${nextExercise.code})`
+            : 'Next in Syllabus';
+        nextExerciseLinkSlot.innerHTML = `
+            <a href="${withTrackingUrl(nextExercise.url, 'next_exercise')}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabel}</a>
+        `;
+    }
+
     function buildCompletionActionsHtml() {
         const actionButtons = [
             `<a href="${window.location.pathname}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Retry This Exercise</a>`,
         ];
+        if (nextExercise && nextExercise.url) {
+            const nextLabel = nextExercise.code
+                ? `Next in Syllabus (${nextExercise.code})`
+                : 'Next in Syllabus';
+            actionButtons.push(
+                `<a href="${withTrackingUrl(nextExercise.url, 'next_exercise')}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabel}</a>`
+            );
+        }
 
         if (links && typeof links === 'object' && links.kahoot_url) {
             actionButtons.push(
@@ -229,6 +305,8 @@ document.addEventListener('DOMContentLoaded', () => {
      * Initializes the exercise.
      */
     function initializeExercise() {
+        nextExercise = resolveNextExercise();
+        injectNextExerciseLink();
         attachTrackingToVisibleLinks();
         if (questions.length === 0) {
             questionContainer.innerHTML = '<p class="text-gray-600">No questions found for this topic.</p>';
