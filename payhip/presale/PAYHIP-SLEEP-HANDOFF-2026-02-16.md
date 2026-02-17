@@ -77,6 +77,9 @@ bundle exec jekyll build --trace
 
 - [x] L1/L2/L3/L4 Payhip 文案模板脚本已就位
 - [x] L1/L2/L3/L4 CSV + MD 文案产物已生成
+- [x] L1/L2/L3/L4 主封面（Image #1）已批量生成（249个 SKU）
+  - 路径：`payhip/presale/listing-assets/`
+  - 清单：`payhip/presale/listing-assets/payhip-cover-manifest.csv`
 - [x] 数据健康检查已通过（Failures: 0）
 - [x] 站点构建已通过
 
@@ -88,4 +91,3 @@ bundle exec jekyll build --trace
 - [ ] 用样板复制到全部 L3（15 个）
 - [ ] 完成 L3 上架 + 回填 + 检查
 - [ ] 再开始 L4（2 个）同流程
-

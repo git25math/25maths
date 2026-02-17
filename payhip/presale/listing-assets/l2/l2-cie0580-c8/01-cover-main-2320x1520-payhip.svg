@@ -1,0 +1,47 @@
+<svg width="2320" height="1520" viewBox="0 0 580 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="L2-CIE0580-C8 cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF4E8"/>
+      <stop offset="100%" stop-color="#FFFDF8"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#8B1538"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="580" height="380" fill="url(#bg)"/>
+  <rect x="0" y="0" width="580" height="12" fill="#8B1538"/>
+  <rect x="0" y="12" width="580" height="48" fill="#F8EAF0"/>
+
+  <rect x="18" y="22" width="128" height="28" rx="14" fill="#B45309"/>
+  <text x="82" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">L2 Section Bundle</text>
+
+  <rect x="154" y="22" width="150" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="229" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#5E1025">CIE 0580</text>
+
+  <rect x="312" y="22" width="250" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="437" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#425466">Core</text>
+
+  <rect x="18" y="76" width="544" height="248" rx="20" fill="#FFFFFF"/>
+  <rect x="18" y="76" width="9" height="248" fill="url(#stripe)"/>
+
+  <text x="52" y="120" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#5A6D84">L2-CIE0580-C8</text>
+  <text x="52" y="180" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="45" font-weight="800" fill="#10233A">C8 Probability (Core)</text>
+  <text x="52" y="290" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#27445E">Section Bundle</text>
+  <text x="52" y="313" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#4A617B">U8 Probability</text>
+
+  <rect x="350" y="125" width="195" height="92" rx="14" fill="#F7FAFD" stroke="#D9E3EF"/>
+  <text x="366" y="151" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="14" font-weight="800" fill="#2A3E56">Coverage</text>
+  <text x="366" y="175" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4C6078">3 SubTopics</text>
+  <text x="366" y="197" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6B7E95">Worksheet-aligned</text>
+
+  <rect x="350" y="228" width="195" height="82" rx="14" fill="#F7FAFD" stroke="#D9E3EF"/>
+  <text x="366" y="251" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#2A3E56">Early Bird US$12   |   Regular US$16</text>
+  <text x="366" y="273" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#5F7389">Early Bird Ends 2026-03-31   |   Release 2026-04-30</text>
+  <text x="366" y="294" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#7A8EA6">Presale Product Cover</text>
+
+  <rect x="0" y="334" width="580" height="46" fill="#8B1538"/>
+  <text x="18" y="362" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">25Maths Payhip Presale</text>
+  <text x="562" y="362" text-anchor="end" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Kahoot + Worksheet + Exam Support</text>
+</svg>

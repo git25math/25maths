@@ -150,3 +150,25 @@ Outputs:
 - `payhip/presale/kahoot-payhip-l1-copy-template.md`
 
 Use CSV for structured paste/import workflows, and Markdown for manual copy into Payhip editor.
+
+## 12) L1-L4 Main Cover Image Generation
+
+Generate Payhip main cover image (#1 in your 9-image set) for all listings:
+
+```bash
+python3 scripts/payhip/generate_payhip_listing_cover_images.py --levels l1,l2,l3,l4 --skip-existing
+```
+
+Outputs:
+
+- `payhip/presale/listing-assets/l1/<sku>/01-cover-main-2320x1520-payhip.svg`
+- `payhip/presale/listing-assets/l1/<sku>/01-cover-main-2320x1520-payhip.png`
+- `payhip/presale/listing-assets/l2/<sku>/01-cover-main-2320x1520-payhip.svg`
+- `payhip/presale/listing-assets/l2/<sku>/01-cover-main-2320x1520-payhip.png`
+- `payhip/presale/listing-assets/l3/<sku>/01-cover-main-2320x1520-payhip.svg`
+- `payhip/presale/listing-assets/l3/<sku>/01-cover-main-2320x1520-payhip.png`
+- `payhip/presale/listing-assets/l4/<sku>/01-cover-main-2320x1520-payhip.svg`
+- `payhip/presale/listing-assets/l4/<sku>/01-cover-main-2320x1520-payhip.png`
+- `payhip/presale/listing-assets/payhip-cover-manifest.csv`
+
+`payhip-cover-manifest.csv` can be used as the upload checklist and source of exact image paths.
