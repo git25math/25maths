@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "20260217T042539Z",
+  "board": "cie0580",
+  "section_key": "trigonometry-c6",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 2,
+    "success": 2,
+    "failed": 0,
+    "corrected": 1,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:trigonometry-c6:c6-01-pythagoras-theorem",
+      "syllabusCode": "C6-01",
+      "topicSlug": "cie0580-trigonometry-c6-c6-01-pythagoras-theorem",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:trigonometry-c6:c6-02-right-angled-triangles",
+      "syllabusCode": "C6-02",
+      "topicSlug": "cie0580-trigonometry-c6-c6-02-right-angled-triangles",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

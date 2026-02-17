@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "20260217T043233Z",
+  "board": "cie0580",
+  "section_key": "statistics-c9",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 4,
+    "success": 4,
+    "failed": 0,
+    "corrected": 1,
+    "warnings": 1
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:statistics-c9:c9-01-classifying-statistical-data",
+      "syllabusCode": "C9-01",
+      "topicSlug": "cie0580-statistics-c9-c9-01-classifying-statistical-data",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-c9:c9-02-interpreting-statistical-data",
+      "syllabusCode": "C9-02",
+      "topicSlug": "cie0580-statistics-c9-c9-02-interpreting-statistical-data",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-c9:c9-03-averages-and-range",
+      "syllabusCode": "C9-03",
+      "topicSlug": "cie0580-statistics-c9-c9-03-averages-and-range",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [
+        "Q6: duplicate options detected"
+      ],
+      "issues_after": [
+        "Q6: duplicate options detected"
+      ],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-c9:c9-04-statistical-charts-and-diagrams",
+      "syllabusCode": "C9-04",
+      "topicSlug": "cie0580-statistics-c9-c9-04-statistical-charts-and-diagrams",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

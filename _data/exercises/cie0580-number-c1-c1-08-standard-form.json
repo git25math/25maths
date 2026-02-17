@@ -1,0 +1,154 @@
+{
+  "topic": "standard form",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-c1:c1-08-standard-form",
+  "syllabusCode": "C1-08",
+  "tier": "Core",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Write 5,400,000 in standard form.",
+      "options": [
+        "5.4 x 10^6",
+        "54 x 10^5",
+        "5.4 x 10^5",
+        "5.4 x 10^-6"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Standard form requires the first number to be between 1 and 10. The decimal point moves 6 places to the left from the end of the number to after the first digit, so the power of 10 is 6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express 0.00071 in standard form.",
+      "options": [
+        "7.1 x 10^4",
+        "7.1 x 10^-3",
+        "7.1 x 10^-4",
+        "71 x 10^-5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To get a number between 1 and 10, the decimal point moves 4 places to the right. A move to the right results in a negative power, so it is 7.1 x 10^-4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Write 3.9 x 10^5 as an ordinary number.",
+      "options": [
+        "39,000",
+        "390,000",
+        "3,900,000",
+        "0.000039"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The power of 10 is positive 5, so move the decimal point 5 places to the right, adding zeros as placeholders. 3.9 becomes 390,000."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Write 8.2 x 10^-3 as an ordinary number.",
+      "options": [
+        "0.082",
+        "0.0082",
+        "8200",
+        "0.00082"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The power of 10 is negative 3, so move the decimal point 3 places to the left, adding zeros as placeholders. 8.2 becomes 0.0082."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate (2 x 10^5) x (4 x 10^3), giving your answer in standard form.",
+      "options": [
+        "8 x 10^15",
+        "6 x 10^8",
+        "8 x 10^8",
+        "8 x 10^2"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Multiply the numbers: 2 x 4 = 8. Add the powers of 10: 5 + 3 = 8. Combine them to get 8 x 10^8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate (9 x 10^7) ÷ (3 x 10^2), giving your answer in standard form.",
+      "options": [
+        "3 x 10^5",
+        "3 x 10^9",
+        "6 x 10^5",
+        "3 x 10^3.5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Divide the numbers: 9 ÷ 3 = 3. Subtract the powers of 10: 7 - 2 = 5. Combine them to get 3 x 10^5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate (4.1 x 10^4) + (2.5 x 10^4).",
+      "options": [
+        "6.6 x 10^8",
+        "6.6 x 10^4",
+        "6.6 x 10^0",
+        "1.6 x 10^4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Since the powers of 10 are the same, add the numbers: 4.1 + 2.5 = 6.6. The power of 10 remains the same, giving 6.6 x 10^4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Write 478 x 10^3 in standard form.",
+      "options": [
+        "4.78 x 10^3",
+        "4.78 x 10^5",
+        "4.78 x 10^1",
+        "47.8 x 10^4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, write 478 as 4.78 x 10^2. Then, multiply by 10^3: (4.78 x 10^2) x 10^3 = 4.78 x 10^(2+3) = 4.78 x 10^5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these numbers is the largest?",
+      "options": [
+        "3.5 x 10^4",
+        "3.4 x 10^5",
+        "3.5 x 10^-4",
+        "3.4 x 10^-5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "When comparing numbers in standard form, the one with the highest power of 10 is usually the largest. 3.4 x 10^5 is the largest as its power of 10 is 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A country has a population of 52 million. Write this number in standard form.",
+      "options": [
+        "5.2 x 10^6",
+        "52 x 10^6",
+        "5.2 x 10^7",
+        "5.2 x 10^8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "52 million is written as 52,000,000. To express this in standard form, the decimal point moves 7 places to the left, resulting in 5.2 x 10^7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The diameter of a red blood cell is approximately 0.000007 metres. How is this written in standard form?",
+      "options": [
+        "7 x 10^6",
+        "7 x 10^-5",
+        "0.7 x 10^-5",
+        "7 x 10^-6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The decimal point must move 6 places to the right to get the number 7. A move to the right gives a negative power. Therefore, the answer is 7 x 10^-6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (5 x 10^-2) x (6 x 10^8). Give your answer in standard form.",
+      "options": [
+        "30 x 10^6",
+        "3 x 10^7",
+        "3 x 10^6",
+        "11 x 10^6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Multiply the numbers: 5 x 6 = 30. Add the powers: -2 + 8 = 6. This gives 30 x 10^6. To write this in standard form, change 30 to 3 x 10^1. So, (3 x 10^1) x 10^6 = 3 x 10^7."
+    }
+  ]
+}

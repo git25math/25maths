@@ -13,134 +13,110 @@
         "$10",
         "$12",
         "$15",
-        "$20"
+        "$68"
       ],
       "correctAnswer": 1,
-      "explanation": "To find 15% of $80, calculate (15/100) * 80. This simplifies to 0.15 * 80 = $12."
+      "explanation": "To find 15% of a number, multiply the number by 0.15. So, $80 * 0.15 = $12."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A price of $120 is increased by 10%. What is the new price?",
+      "questionText": "Increase $120 by 10%.",
       "options": [
         "$12",
         "$130",
         "$132",
-        "$140"
+        "$108"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find 10% of $120, which is 0.10 * 120 = $12. Then, add this to the original price: $120 + $12 = $132."
+      "explanation": "First, find 10% of $120, which is $12. Then, add this to the original amount: $120 + $12 = $132. Alternatively, multiply $120 by 1.10."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A bill of $250 is decreased by 12%. What is the final amount?",
+      "questionText": "A shirt costing $40 is reduced by 25% in a sale. What is the sale price?",
       "options": [
-        "$220",
+        "$10",
         "$30",
-        "$210",
-        "$238"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Calculate the decrease amount: 12% of $250 is 0.12 * 250 = $30. Subtract this from the original amount: $250 - $30 = $220."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "An item costing $64 is sold with a 25% discount. What is the sale price?",
-      "options": [
-        "$16",
-        "$48",
-        "$52",
-        "$39"
+        "$50",
+        "$37.50"
       ],
       "correctAnswer": 1,
-      "explanation": "The discount is 25% of $64, which is (25/100) * 64 = $16. The sale price is the original price minus the discount: $64 - $16 = $48."
+      "explanation": "The discount is 25% of $40, which is 0.25 * $40 = $10. The sale price is the original price minus the discount: $40 - $10 = $30."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sales tax of 8% is added to a bill of $200. What is the total amount to pay?",
+      "questionText": "A shopkeeper buys a book for $15 and sells it for $20. What is the profit?",
       "options": [
-        "$208",
-        "$216",
-        "$184",
-        "$224"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Calculate the sales tax: 8% of $200 is 0.08 * 200 = $16. Add this to the original bill: $200 + $16 = $216."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The exchange rate is 1 US Dollar (USD) = 0.8 British Pounds (GBP). How much is 50 USD in GBP?",
-      "options": [
-        "40 GBP",
-        "62.50 GBP",
-        "50.80 GBP",
-        "45 GBP"
-      ],
-      "correctAnswer": 0,
-      "explanation": "To convert USD to GBP, multiply the amount in USD by the exchange rate: 50 * 0.8 = 40 GBP."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Using the exchange rate 1 US Dollar (USD) = 0.8 British Pounds (GBP), convert 96 GBP to USD.",
-      "options": [
-        "76.80 USD",
-        "120 USD",
-        "108 USD",
-        "96.80 USD"
-      ],
-      "correctAnswer": 1,
-      "explanation": "To convert GBP to USD, divide the amount in GBP by the exchange rate: 96 / 0.8 = 120 USD."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A trader buys an item for $45 and sells it for $60. How much profit is made?",
-      "options": [
-        "$105",
-        "$25",
+        "$5",
         "$15",
-        "$1.33"
+        "$20",
+        "$35"
       ],
-      "correctAnswer": 2,
-      "explanation": "Profit is the selling price minus the cost price. Profit = $60 - $45 = $15."
+      "correctAnswer": 0,
+      "explanation": "Profit is the selling price minus the cost price. So, $20 - $15 = $5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "An item is bought for $45 and sold for $60. What is the profit as a percentage of the cost price?",
+      "questionText": "Using the previous question's figures (cost $15, selling price $20), what is the profit percentage on the cost price?",
       "options": [
         "25%",
-        "75%",
         "33.3%",
-        "40%"
+        "75%",
+        "5%"
       ],
-      "correctAnswer": 2,
-      "explanation": "The profit is $60 - $45 = $15. To find the percentage profit, calculate (Profit / Cost Price) * 100. This is (15 / 45) * 100 = 33.3...%, which is 33.3% to one decimal place."
+      "correctAnswer": 1,
+      "explanation": "The profit is $5 and the cost price is $15. The profit percentage is (Profit / Cost Price) * 100 = ($5 / $15) * 100 = 33.3...%."
     },
     {
       "type": "multiple-choice",
-      "questionText": "After a 20% discount, the sale price of a coat is $72. What was the original price?",
+      "questionText": "The exchange rate is 1 USD = 0.8 GBP. How many GBP would you get for 50 USD?",
       "options": [
-        "$86.40",
-        "$57.60",
-        "$90",
-        "$96"
+        "40 GBP",
+        "50.8 GBP",
+        "62.50 GBP",
+        "50 GBP"
       ],
-      "correctAnswer": 2,
-      "explanation": "The sale price of $72 represents 100% - 20% = 80% of the original price. To find the original price (100%), calculate (72 / 80) * 100 = $90."
+      "correctAnswer": 0,
+      "explanation": "To convert USD to GBP at this rate, you multiply by the exchange rate: 50 USD * 0.8 = 40 GBP."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A shop sells 750g of cheese for $4.50. What is the price per kilogram (kg)?",
+      "questionText": "The exchange rate is 1 EUR = 1.10 USD. How many USD would you get for 200 EUR?",
       "options": [
-        "$4.50/kg",
-        "$5.00/kg",
-        "$6.00/kg",
-        "$3.38/kg"
+        "181.82 USD",
+        "201.10 USD",
+        "220 USD",
+        "200 USD"
       ],
       "correctAnswer": 2,
-      "explanation": "First, convert 750g to kg: 750g = 0.75kg. The price per kg is the total cost divided by the weight in kg: $4.50 / 0.75 = $6.00/kg."
+      "explanation": "To convert EUR to USD at this rate, you multiply by the exchange rate: 200 EUR * 1.10 = 220 USD."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which is the better value for money: a 2-litre bottle of juice for $3.20 or a 3-litre bottle for $4.50?",
+      "questionText": "After a 20% discount, a television is sold for $720. What was the original price?",
+      "options": [
+        "$576",
+        "$864",
+        "$900",
+        "$800"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A 20% discount means the sale price is 80% of the original price. So, $720 = 80% of Original Price. To find the original price, calculate $720 / 0.80 = $900."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bill for a meal is $60. A 8% service charge is added. What is the total bill?",
+      "options": [
+        "$4.80",
+        "$55.20",
+        "$68.00",
+        "$64.80"
+      ],
+      "correctAnswer": 3,
+      "explanation": "First, calculate the service charge: 8% of $60 is 0.08 * $60 = $4.80. Add this to the original bill: $60 + $4.80 = $64.80."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which is the better value for money: a 2-litre bottle of water for $3.20 or a 3-litre bottle for $4.50?",
       "options": [
         "The 2-litre bottle",
         "The 3-litre bottle",
@@ -148,7 +124,31 @@
         "It cannot be determined"
       ],
       "correctAnswer": 1,
-      "explanation": "To compare, find the unit price for each. 2L bottle: $3.20 / 2L = $1.60 per litre. 3L bottle: $4.50 / 3L = $1.50 per litre. The 3-litre bottle is cheaper per litre, so it is better value."
+      "explanation": "To compare, find the price per litre for each. 2L bottle: $3.20 / 2 = $1.60 per litre. 3L bottle: $4.50 / 3 = $1.50 per litre. The 3-litre bottle is cheaper per litre, so it is better value."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Anna buys 3 pens at $1.99 each. Which is the best estimate for the total cost?",
+      "options": [
+        "$3",
+        "$5",
+        "$6",
+        "$7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To estimate, we can round $1.99 up to $2. The estimated cost is then 3 * $2 = $6. The exact cost is $5.97, so $6 is the closest estimate."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A phone costs $320. Its price is increased by 5%. What is the new price?",
+      "options": [
+        "$16",
+        "$304",
+        "$336",
+        "$325"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The price increase is 5% of $320, which is 0.05 * $320 = $16. The new price is the original price plus the increase: $320 + $16 = $336."
     }
   ]
 }

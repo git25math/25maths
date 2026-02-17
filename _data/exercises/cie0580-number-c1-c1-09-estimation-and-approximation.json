@@ -1,0 +1,154 @@
+{
+  "topic": "Estimation and Approximation",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-c1:c1-09-estimation-and-approximation",
+  "syllabusCode": "C1-09",
+  "tier": "Core",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "By rounding each number to 1 significant figure, estimate the value of 49.2 x 20.7.",
+      "options": [
+        "800",
+        "1000",
+        "1200",
+        "900"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Round 49.2 to 50 and 20.7 to 20. The estimated calculation is 50 x 20 = 1000."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Estimate the value of 198.5 / 9.9.",
+      "options": [
+        "2",
+        "20",
+        "200",
+        "18"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Round 198.5 to 200 and 9.9 to 10. The estimated calculation is 200 / 10 = 20."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Estimate the value of √63.5.",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "correctAnswer": 2,
+      "explanation": "63.5 is close to the perfect square 64. The square root of 64 is 8, so √63.5 is approximately 8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A ticket for a concert costs $49.95. If 302 people attend, estimate the total money collected.",
+      "options": [
+        "$12000",
+        "$15000",
+        "$18000",
+        "$14000"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Round the ticket price to $50 and the number of people to 300. The estimated total is 50 x 300 = $15000."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Estimate the value of (3.98 x 24.9) / 4.9.",
+      "options": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Round the numbers to 1 significant figure: (4 x 25) / 5. This simplifies to 100 / 5 = 20."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A calculator shows the answer to 48.7 / 9.8 is 0.4969. Is this answer reasonable?",
+      "options": [
+        "Yes, because the numbers are similar.",
+        "No, the answer should be around 5.",
+        "No, the answer should be around 50.",
+        "Yes, because division makes numbers smaller."
+      ],
+      "correctAnswer": 1,
+      "explanation": "To check for reasonableness, estimate 48.7 / 9.8 as 50 / 10 = 5. The calculator's answer of 0.4969 is not close to 5, so it is not reasonable. The decimal point is likely in the wrong place."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "By rounding to 1 significant figure, estimate the value of 0.48 x 201.",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "120"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Round 0.48 to 0.5 and 201 to 200. The calculation becomes 0.5 x 200, which is 100."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A journey of 39.6 km is charged at $2.05 per km. Which of these is the best estimate for the total cost?",
+      "options": [
+        "$60",
+        "$70",
+        "$80",
+        "$90"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Round the distance to 40 km and the cost per km to $2. The estimated total cost is 40 x $2 = $80."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Estimate the value of 20.3 / 0.49.",
+      "options": [
+        "10",
+        "20",
+        "40",
+        "50"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Round 20.3 to 20 and 0.49 to 0.5. The estimated calculation is 20 / 0.5. Dividing by 0.5 is the same as multiplying by 2, so 20 x 2 = 40."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "There are 52 weeks in a year and 7 days in a week. Estimate the number of days in 1.95 years.",
+      "options": [
+        "700",
+        "730",
+        "350",
+        "1000"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First estimate the number of days in a year as 50 x 7 = 350. Then estimate the number of years as 2. The total estimated days are 350 x 2 = 700."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which is a sensible estimate for 51.7 x 0.21?",
+      "options": [
+        "1",
+        "10",
+        "100",
+        "0.1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Round 51.7 to 50 and 0.21 to 0.2. The calculation is 50 x 0.2. This is one-fifth of 50, which is 10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bag of flour weighs 2.48 kg. A baker has 41 bags. Estimate the total mass of the flour.",
+      "options": [
+        "80 kg",
+        "90 kg",
+        "100 kg",
+        "120 kg"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Round the weight of one bag to 2.5 kg and the number of bags to 40. The estimated total mass is 2.5 x 40 = 100 kg."
+    }
+  ]
+}

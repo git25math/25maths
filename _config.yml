@@ -23,6 +23,12 @@ security:
 plugins:
   - jekyll-redirect-from
 
+# Collections
+collections:
+  exercises:
+    output: true
+    permalink: /exercises/:path/
+
 # Module definitions
 modules:
   - key: cie0580
@@ -51,3 +57,4 @@ exclude:
   - tasks/
   - Gemfile
   - Gemfile.lock
+  - projects/kahoot-channel/WORKSHEET-GENERATION-ANALYSIS.md

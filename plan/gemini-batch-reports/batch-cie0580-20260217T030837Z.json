@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "20260217T030837Z",
+  "board": "cie0580",
+  "section_key": "number-c1",
+  "start_code": "C1-04",
+  "end_code": "C1-05",
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 2,
+    "success": 2,
+    "failed": 0,
+    "corrected": 0,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:number-c1:c1-04-fractions-decimals-percentages",
+      "syllabusCode": "C1-04",
+      "topicSlug": "cie0580-number-c1-c1-04-fractions-decimals-percentages",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-05-ordering",
+      "syllabusCode": "C1-05",
+      "topicSlug": "cie0580-number-c1-c1-05-ordering",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

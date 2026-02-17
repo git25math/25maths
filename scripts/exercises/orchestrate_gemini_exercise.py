@@ -137,6 +137,8 @@ def build_prompt(
         - All questions must be strictly aligned to the target micro-topic scope.
         - Use exam-style wording and realistic distractors based on common mistakes.
         - Keep explanations concise and method-focused.
+        - Each question must have exactly one mathematically correct option.
+        - Internally solve/check every question before output and ensure correctAnswer points to that only correct option.
         - Do not include out-of-syllabus skills.
         - {language_note}
 

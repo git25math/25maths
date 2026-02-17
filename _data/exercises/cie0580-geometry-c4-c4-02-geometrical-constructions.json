@@ -1,0 +1,154 @@
+{
+  "topic": "Geometrical Constructions",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:geometry-c4:c4-02-geometrical-constructions",
+  "syllabusCode": "C4-02",
+  "tier": "Core",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Which instrument is primarily used for drawing arcs and circles in geometrical constructions?",
+      "options": [
+        "A compass",
+        "A protractor",
+        "A set square",
+        "A ruler"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A compass is the instrument used to draw arcs and circles of a set radius. A protractor measures angles, and a ruler measures or draws straight lines."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The perpendicular bisector of a line segment AB forms what angle with the segment AB?",
+      "options": [
+        "90°",
+        "45°",
+        "180°",
+        "60°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "By definition, a perpendicular bisector is 'perpendicular' to the line segment, meaning it intersects it at a right angle (90°)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The locus of points that are equidistant from two fixed points, P and Q, is the...",
+      "options": [
+        "Perpendicular bisector of the line segment PQ",
+        "Circle with diameter PQ",
+        "Angle bisector of a triangle involving P and Q",
+        "Line parallel to PQ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The set of all points equally distant from two other points (P and Q) forms the perpendicular bisector of the line segment connecting them (PQ)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If an angle of 70° is accurately bisected, what are the sizes of the two resulting angles?",
+      "options": [
+        "35° and 35°",
+        "40° and 30°",
+        "70° and 70°",
+        "110° and 70°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To bisect an angle means to divide it into two equal angles. Therefore, 70° / 2 = 35°. The two resulting angles are both 35°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the name for the locus of points at a fixed distance from a single fixed point?",
+      "options": [
+        "A circle",
+        "A straight line",
+        "A perpendicular bisector",
+        "A square"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The definition of a circle is the set of all points in a plane that are at a fixed distance (the radius) from a fixed point (the centre)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "To construct an angle of 60° using only a ruler and compasses, the first step is typically to construct...",
+      "options": [
+        "An equilateral triangle",
+        "A perpendicular bisector",
+        "A square",
+        "An angle bisector"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The standard method for constructing a 60° angle is based on constructing an equilateral triangle, as all interior angles of an equilateral triangle are 60°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A perpendicular is constructed from a point P to a line L. This construction creates a line that...",
+      "options": [
+        "Meets line L at 90°",
+        "Is parallel to line L",
+        "Bisects line L",
+        "Is the same length as line L"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A line that is 'perpendicular' to another line meets it at a right angle, which is 90°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The perpendicular bisector of a line segment must pass through which point on the segment?",
+      "options": [
+        "The midpoint",
+        "Endpoint A",
+        "Endpoint B",
+        "Any point"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A bisector is a line that cuts something into two equal halves. For a line segment, this means it must pass through the midpoint."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these describes an angle bisector?",
+      "options": [
+        "A line that divides an angle into two equal parts",
+        "A line that divides an angle into a 30° and a 60° part",
+        "A line that is perpendicular to one arm of the angle",
+        "A line that creates a 90° angle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The definition of an angle bisector is a line or ray that divides a given angle into two angles of equal measure."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "You are asked to find a point that is 5cm from a point X. The set of all possible locations for this point forms a...",
+      "options": [
+        "Circle with centre X and radius 5cm",
+        "Line 5cm away from X",
+        "Circle with centre X and diameter 5cm",
+        "Square with side length 5cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The locus of points a fixed distance (5cm) from a single point (X) is a circle where X is the centre and the fixed distance is the radius."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "To construct a line parallel to a given line 'm', what must be true about the distance between the two lines?",
+      "options": [
+        "It must be constant",
+        "It must be zero",
+        "It must increase steadily",
+        "It must decrease steadily"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Parallel lines are two lines in a plane that never intersect. This means the perpendicular distance between them is always constant."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "To find a point that is equidistant from points A and B, AND is 4 cm from point C, you would need to construct:",
+      "options": [
+        "A perpendicular bisector and a circle",
+        "Two angle bisectors",
+        "Two circles",
+        "Two perpendicular bisectors"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The locus of points equidistant from A and B is the perpendicular bisector of AB. The locus of points 4 cm from C is a circle with centre C, radius 4 cm. The intersection of these two constructions gives the required point."
+    }
+  ]
+}
