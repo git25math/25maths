@@ -17,6 +17,21 @@ _site/
 # Logs
 *.log
 
+# Python bytecode cache
+__pycache__/
+
 # Local env files
 .env
 .env.*
+
+# Kahoot generated artifacts
+projects/kahoot-channel/**/.build/
+projects/kahoot-channel/**/pdf/
+projects/kahoot-channel/**/__pycache__/
+projects/kahoot-channel/agent/queues/
+projects/kahoot-channel/agent/reports/
+
+# Kahoot template compile byproducts
+projects/kahoot-channel/_templates/worksheet-pdf-template.aux
+projects/kahoot-channel/_templates/worksheet-pdf-template.out
+projects/kahoot-channel/_templates/worksheet-pdf-template.pdf
