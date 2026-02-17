@@ -26,6 +26,56 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-02-17 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-17</span>
+                <span class="bg-cyan-100 text-cyan-800 text-xs px-2 py-1 rounded-full font-semibold">EXERCISE QUALITY</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Interactive exercise coherence hardening + CI quality gates</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">x</span>
+                    <span><strong>Orphan cleanup</strong>: Removed isolated `quadratic-equations` exercise markdown/data pair to keep active set strictly aligned.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Exercise navigation continuity</strong>: Added exercise defaults in config, exercise-detail language fallback routing, and alternate `hreflang` fallback for detail pages.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Sitemap coverage</strong>: Switched sitemap to template mode and included exercise hubs plus all exercise detail URLs.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Frontend safety + maintainability</strong>: Escaped dynamic exercise HTML render paths and extracted EN/ZH exercise-hub filtering logic into shared `assets/js/exercise_hub.js` with i18n config + URL guardrails.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Data integrity checks</strong>: Added `scripts/health/check_exercise_data.py` to validate front matter/data parity, question schema, link map coverage, catalog sync, and hub page script structure.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Pipeline upgrades</strong>: Added exercise checks to scheduled health workflow and introduced PR/push CI workflow with build + integrity gates.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Title normalization</strong>: Standardized interactive exercise title casing across 114 exercise pages for consistent list/search presentation.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Validation status</strong>: `check_exercise_data`, `check_kahoot_data`, and `jekyll build` all pass with zero reported failures.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Sitewide entry reinforcement</strong>: Added direct exercise-hub entry points on Kahoot EN/ZH landing pages and board directory quick links so users can always return to interactive practice.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: _config.yml, _includes/global-nav.html, _includes/head.html, sitemap.xml, assets/js/exercise_engine.js, assets/js/exercise_hub.js, exercises/index.html, zh-cn/exercises/index.html, kahoot/index.html, zh-cn/kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, scripts/health/check_exercise_data.py, scripts/health/check_site.sh, .github/workflows/site-health-check.yml, .github/workflows/ci.yml, README.md, _exercises/*.md, _data/exercises/quadratic-equations.json (removed), _exercises/quadratic-equations.md (removed)
+            </div>
+        </div>
+
         <!-- 2026-02-16 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">

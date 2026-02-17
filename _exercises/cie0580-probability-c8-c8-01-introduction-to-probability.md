@@ -1,5 +1,5 @@
 ---
-title: "Practice: Introduction to probability"
+title: "Practice: Introduction to Probability"
 subtitle: "CIE 0580 C8-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-probability-c8-c8-01-introduction-to-probability"

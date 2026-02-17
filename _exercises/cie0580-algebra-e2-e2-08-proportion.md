@@ -1,5 +1,5 @@
 ---
-title: "Practice: proportion"
+title: "Practice: Proportion"
 subtitle: "CIE 0580 E2-08 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-algebra-e2-e2-08-proportion"

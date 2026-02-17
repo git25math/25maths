@@ -1,5 +1,5 @@
 ---
-title: "Practice: compound shapes and parts of shapes"
+title: "Practice: Compound Shapes and Parts of Shapes"
 subtitle: "CIE 0580 C5-05 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-mensuration-c5-c5-05-compound-shapes-and-parts-of-shapes"

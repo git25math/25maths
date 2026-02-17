@@ -67,4 +67,21 @@ git push -u origin main
 
 ---
 
+## Health Checks
+
+Run data consistency checks before publishing:
+
+```bash
+python3 scripts/health/check_kahoot_data.py
+python3 scripts/health/check_exercise_data.py
+```
+
+Run deployment checks against production:
+
+```bash
+scripts/health/check_site.sh
+```
+
+---
+
 © 2026 25Maths

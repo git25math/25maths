@@ -1,0 +1,154 @@
+{
+  "topic": "ratio and proportion",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-h1:h1-07-ratio-and-proportion",
+  "syllabusCode": "H1-07",
+  "tier": "Higher",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify the ratio 48 : 80.",
+      "options": [
+        "3 : 5",
+        "4 : 7",
+        "6 : 10",
+        "2 : 3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To simplify the ratio 48 : 80, find the highest common factor (HCF) of 48 and 80. The factors of 48 are 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The factors of 80 are 1, 2, 4, 5, 8, 10, 16, 20, 40, 80. The HCF is 16. Divide both parts of the ratio by 16: 48 ÷ 16 = 3 and 80 ÷ 16 = 5. So the simplest form is 3 : 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sum of £180 is shared between two people in the ratio 2 : 7. What is the value of the larger share?",
+      "options": [
+        "£40",
+        "£140",
+        "£90",
+        "£120"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The ratio is 2 : 7. The total number of parts is 2 + 7 = 9. Divide the total amount by the number of parts: £180 ÷ 9 = £20 per part. The larger share corresponds to 7 parts, so its value is 7 × £20 = £140."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "It takes 6 workers 8 days to complete a job. How long would it take 4 workers, assuming they all work at the same rate?",
+      "options": [
+        "12 days",
+        "10 days",
+        "5.33 days",
+        "14 days"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is an inverse proportion problem. The total work is 6 workers × 8 days = 48 worker-days. To find the time for 4 workers, divide the total work by the new number of workers: 48 ÷ 4 = 12 days."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that y is directly proportional to x, and y = 24 when x = 6. What is the value of y when x = 10?",
+      "options": [
+        "60",
+        "30",
+        "4",
+        "40"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Direct proportion means y = kx for some constant k. Using the given values, 24 = k × 6, so the constant of proportionality is k = 24 ÷ 6 = 4. The formula is y = 4x. When x = 10, y = 4 × 10 = 40."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The ratio a : b is 2 : 3 and the ratio b : c is 4 : 5. Find the ratio a : c in its simplest form.",
+      "options": [
+        "2 : 5",
+        "8 : 15",
+        "6 : 20",
+        "1 : 2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To combine the ratios, make the 'b' term the same in both. The LCM of 3 and 4 is 12. For a : b, multiply by 4: (2 × 4) : (3 × 4) = 8 : 12. For b : c, multiply by 3: (4 × 3) : (5 × 3) = 12 : 15. Now a : b : c = 8 : 12 : 15. The ratio a : c is 8 : 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A map scale is 1 : 25000. A distance on the map measures 6 cm. What is the actual distance in kilometres?",
+      "options": [
+        "1.5 km",
+        "15 km",
+        "0.15 km",
+        "150 km"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The actual distance is 6 cm × 25000 = 150000 cm. To convert cm to km, divide by 100 (for metres) and then by 1000 (for kilometres). 150000 cm = 1500 m = 1.5 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a school, the ratio of boys to girls is 5 : 7. There are 180 boys. How many students are there in total?",
+      "options": [
+        "252",
+        "432",
+        "36",
+        "300"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The ratio of boys is 5 parts, which equals 180. So, 1 part = 180 ÷ 5 = 36 students. The total number of parts is 5 + 7 = 12. The total number of students is 12 parts × 36 students/part = 432 students."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A recipe for a fruit smoothie for 4 people requires 200g of strawberries. How many grams of strawberries are needed for 7 people?",
+      "options": [
+        "300g",
+        "400g",
+        "350g",
+        "250g"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, find the amount of strawberries needed per person: 200g ÷ 4 people = 50g per person. Then, multiply by the new number of people: 50g × 7 people = 350g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The price of a phone is increased by 20%. The new price is £360. What was the original price?",
+      "options": [
+        "£288",
+        "£300",
+        "£340",
+        "£432"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An increase of 20% means the new price is 120% of the original price. So, 120% = £360. To find 100% (the original price), first find 1%: £360 ÷ 120 = £3. Then multiply by 100: £3 × 100 = £300."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express the ratio of 750 metres to 3 kilometres in its simplest form.",
+      "options": [
+        "1 : 4",
+        "75 : 3",
+        "1 : 40",
+        "250 : 1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, convert both quantities to the same unit. 3 kilometres = 3 × 1000 = 3000 metres. The ratio is 750 : 3000. To simplify, divide both numbers by their highest common factor, which is 750. 750 ÷ 750 = 1. 3000 ÷ 750 = 4. The simplest form is 1 : 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that p is inversely proportional to the square of q, and p = 5 when q = 2. Find the value of p when q = 10.",
+      "options": [
+        "1",
+        "0.5",
+        "0.2",
+        "20"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The relationship is p = k / q². Substitute the given values: 5 = k / 2², so 5 = k / 4. The constant of proportionality is k = 5 × 4 = 20. The formula is p = 20 / q². When q = 10, p = 20 / 10² = 20 / 100 = 0.2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bag contains red, blue and green counters. The ratio of red to blue is 3:4. The ratio of blue to green is 2:5. There are 18 red counters. How many green counters are there?",
+      "options": [
+        "60",
+        "30",
+        "24",
+        "90"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, let's find a common ratio for red:blue:green. R:B = 3:4 and B:G = 2:5. Make the 'B' term equal. The LCM of 4 and 2 is 4. So R:B is already 3:4. Multiply B:G by 2: (2×2):(5×2) = 4:10. So the combined ratio R:B:G is 3:4:10. We are given there are 18 red counters, which corresponds to 3 parts. So 1 part = 18 ÷ 3 = 6 counters. The number of green counters is 10 parts, so 10 × 6 = 60."
+    }
+  ]
+}

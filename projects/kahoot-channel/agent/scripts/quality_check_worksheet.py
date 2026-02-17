@@ -1,0 +1,163 @@
+#!/usr/bin/env python3
+"""Content-level quality checks for worksheet files.
+
+This checker is stricter than the structural validator and is focused on
+practical worksheet quality:
+- avoid unresolved dependencies on missing diagrams/tables
+- avoid placeholder or non-answers
+- avoid duplicate questions
+- flag suspicious repetition patterns
+"""
+
+from __future__ import annotations
+
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+
+NUMBERED_LINE_RE = re.compile(r"^\s*(\d+)\.\s+(.+?)\s*$")
+REF_RE = re.compile(r"\b(?:Question|Q)\s*([0-9]{1,2})\b", re.IGNORECASE)
+
+FORBIDDEN_DEPENDENCY_PATTERNS = [
+    r"\bas shown\b",
+    r"\bfrom the diagram\b",
+    r"\bfrom the figure\b",
+    r"\bin the diagram\b",
+    r"\bin the figure\b",
+    r"\buse the diagram\b",
+    r"\buse the figure\b",
+    r"\bshown below\b",
+    r"\bgraph below\b",
+    r"\btable below\b",
+    r"\bsee below\b",
+]
+
+FORBIDDEN_PLACEHOLDER_PATTERNS = [
+    r"\btbd\b",
+    r"\bplaceholder\b",
+    r"\bto be filled\b",
+    r"\?\?\?",
+    r"\bdepends\b",
+    r"\bvaries\b",
+]
+
+
+def _norm(text: str) -> str:
+    text = text.lower().replace("`", "")
+    text = re.sub(r"[^a-z0-9]+", " ", text).strip()
+    return text
+
+
+def _dup_key(text: str) -> str:
+    text = text.lower().replace("`", "").strip()
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+
+def _extract_numbered(path: Path) -> list[tuple[int, str]]:
+    rows: list[tuple[int, str]] = []
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        m = NUMBERED_LINE_RE.match(raw)
+        if not m:
+            continue
+        rows.append((int(m.group(1)), m.group(2).strip()))
+    return rows
+
+
+def main() -> int:
+    if len(sys.argv) != 2:
+        print("Usage: quality_check_worksheet.py <topic-dir>")
+        return 2
+
+    topic_dir = Path(sys.argv[1]).resolve()
+    student = topic_dir / "worksheet-student.md"
+    answers = topic_dir / "worksheet-answers.md"
+
+    if not student.exists() or not answers.exists():
+        print(f"FAIL: {topic_dir}")
+        print("- Missing worksheet-student.md or worksheet-answers.md.")
+        return 1
+
+    questions = _extract_numbered(student)
+    answer_rows = _extract_numbered(answers)
+
+    errors: list[str] = []
+    warnings: list[str] = []
+
+    if len(questions) != 10:
+        errors.append(f"Expected 10 questions, found {len(questions)}.")
+    if len(answer_rows) != 10:
+        errors.append(f"Expected 10 answers, found {len(answer_rows)}.")
+
+    q_nums = [n for n, _ in questions]
+    a_nums = [n for n, _ in answer_rows]
+    if q_nums and q_nums != list(range(1, 11)):
+        errors.append("Question numbering is not exactly 1..10.")
+    if a_nums and a_nums != list(range(1, 11)):
+        errors.append("Answer numbering is not exactly 1..10.")
+
+    q_keys = [_dup_key(text) for _, text in questions]
+    duplicates = [k for k, v in Counter(q_keys).items() if v > 1 and k]
+    if duplicates:
+        errors.append("Duplicate question text detected.")
+
+    for idx, text in questions:
+        low = text.lower()
+        for pat in FORBIDDEN_DEPENDENCY_PATTERNS:
+            if re.search(pat, low):
+                errors.append(
+                    f"Question {idx} depends on missing external visual context ('{pat}')."
+                )
+                break
+
+        refs = [int(x) for x in REF_RE.findall(text)]
+        for ref in refs:
+            if ref < 1 or ref > 10:
+                errors.append(f"Question {idx} references invalid question number {ref}.")
+            elif ref >= idx:
+                errors.append(
+                    f"Question {idx} has forward/self reference to Question {ref}."
+                )
+
+    ans_norm = [_norm(text) for _, text in answer_rows]
+    for idx, text in answer_rows:
+        low = text.lower()
+        if not text.strip():
+            errors.append(f"Answer {idx} is empty.")
+        for pat in FORBIDDEN_PLACEHOLDER_PATTERNS:
+            if re.search(pat, low):
+                errors.append(f"Answer {idx} contains placeholder language ('{pat}').")
+                break
+        if _norm(text) in {"answer", "solution", "to do"}:
+            errors.append(f"Answer {idx} is non-specific.")
+
+    yes_no_count = sum(1 for t in ans_norm if t in {"yes", "no", "true", "false"})
+    if yes_no_count > 4:
+        warnings.append("Many answers are yes/no style; check discriminative quality.")
+
+    repeated_answer_counts = [
+        count for ans, count in Counter(ans_norm).items() if ans and count > 4
+    ]
+    if repeated_answer_counts:
+        warnings.append("High repetition in answers detected; verify variety.")
+
+    if errors:
+        print(f"FAIL: {topic_dir}")
+        for err in errors:
+            print(f"- {err}")
+        if warnings:
+            print("Warnings:")
+            for warn in warnings:
+                print(f"- {warn}")
+        return 1
+
+    print(f"PASS: {topic_dir}")
+    for warn in warnings:
+        print(f"WARN: {warn}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

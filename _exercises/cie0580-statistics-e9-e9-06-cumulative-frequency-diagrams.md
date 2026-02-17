@@ -1,5 +1,5 @@
 ---
-title: "Practice: Cumulative frequency diagrams"
+title: "Practice: Cumulative Frequency Diagrams"
 subtitle: "CIE 0580 E9-06 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-statistics-e9-e9-06-cumulative-frequency-diagrams"

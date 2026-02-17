@@ -1,0 +1,154 @@
+{
+  "topic": "Set language and notation",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-h1:h1-05-set-language-and-notation",
+  "syllabusCode": "H1-05",
+  "tier": "Higher",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Given the universal set ε = {integers from 1 to 10}, and the set A = {prime numbers}, what is the set A'?",
+      "options": [
+        "{1, 4, 6, 8, 9, 10}",
+        "{2, 3, 5, 7}",
+        "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}",
+        "{4, 6, 8, 9, 10}"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The set of prime numbers in ε is A = {2, 3, 5, 7}. The complement, A', contains all elements of ε that are not in A. Therefore, A' = {1, 4, 6, 8, 9, 10}."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If P = {multiples of 3 less than 20} and Q = {factors of 18}, what is the set P ∩ Q?",
+      "options": [
+        "{3, 6, 9, 18}",
+        "{1, 2, 3, 6, 9, 12, 15, 18}",
+        "{3, 6, 9, 12, 15}",
+        "{1, 2}"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, list the elements of each set: P = {3, 6, 9, 12, 15, 18} and Q = {1, 2, 3, 6, 9, 18}. The intersection P ∩ Q contains elements that are in both sets, which are {3, 6, 9, 18}."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Let A = {a, b, c, d} and B = {c, d, e, f}. What is the set A ∪ B?",
+      "options": [
+        "{c, d}",
+        "{a, b, e, f}",
+        "{a, b, c, d, e, f}",
+        "{a, b, c, c, d, d, e, f}"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The union A ∪ B contains all unique elements that are in set A, or set B, or both. Combining the elements gives {a, b, c, d, e, f}."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following describes the set {x : x is an integer and -3 < x ≤ 1}?",
+      "options": [
+        "{-3, -2, -1, 0, 1}",
+        "{-2, -1, 0}",
+        "{-2, -1, 0, 1}",
+        "{-3, -2, -1, 0}"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The notation specifies integers 'x' that are strictly greater than -3 and less than or equal to 1. The integers satisfying this are -2, -1, 0, and 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a school, 40 students are in a music class. 25 students play the piano (P), and 18 students play the guitar (G). If 10 students play both, how many students play only the guitar?",
+      "options": [
+        "8",
+        "15",
+        "7",
+        "18"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The number of students who play only the guitar is the total number of guitar players minus the number who play both instruments. So, n(G only) = n(G) - n(P ∩ G) = 18 - 10 = 8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The Venn diagram shows two sets, A and B. Which expression represents the shaded region?",
+      "options": [
+        "A ∪ B",
+        "A ∩ B",
+        "A'",
+        "(A ∪ B)'"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The shaded region is outside of both circles A and B. This represents the elements that are not in the union of A and B, which is denoted by (A ∪ B)'."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If n(ε) = 50, n(A) = 22, n(B) = 30, and n(A ∪ B) = 45, what is n(A ∩ B)?",
+      "options": [
+        "5",
+        "7",
+        "12",
+        "52"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Using the formula n(A ∪ B) = n(A) + n(B) - n(A ∩ B), we can rearrange to find n(A ∩ B) = n(A) + n(B) - n(A ∪ B). So, n(A ∩ B) = 22 + 30 - 45 = 7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that C = {square numbers} and D = {odd numbers}, which statement is correct?",
+      "options": [
+        "C ∩ D = ∅",
+        "9 ∈ (C ∩ D)",
+        "25 ∉ (C ∩ D)",
+        "C is a subset of D"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The intersection C ∩ D contains numbers that are both square numbers and odd. For example, 9 is a square number (3²) and is also odd. Therefore, 9 is an element of the intersection, and the statement '9 ∈ (C ∩ D)' is correct."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Let ε = {letters of the alphabet}, V = {vowels}. What is n(V')?",
+      "options": [
+        "5",
+        "21",
+        "26",
+        "0"
+      ],
+      "correctAnswer": 1,
+      "explanation": "There are 26 letters in the alphabet, so n(ε)=26. The set of vowels is V = {a, e, i, o, u}, so n(V)=5. The complement V' contains all letters that are not vowels. The number of elements in V' is n(V') = n(ε) - n(V) = 26 - 5 = 21."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a group of 60 people, everyone speaks at least one of French (F) or Spanish (S). If 35 speak French and 40 speak Spanish, how many people speak both languages?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "25"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Since everyone speaks at least one language, n(F ∪ S) = 60. Using the formula n(F ∪ S) = n(F) + n(S) - n(F ∩ S), we get 60 = 35 + 40 - n(F ∩ S). This simplifies to 60 = 75 - n(F ∩ S), so n(F ∩ S) = 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given ε = {1, 2, 3, 4, 5, 6}, A = {1, 2, 3}, and B = {2, 4}. Find the set (A ∩ B)'.",
+      "options": [
+        "{2}",
+        "{1, 3, 4, 5, 6}",
+        "{1, 3}",
+        "{4, 5, 6}"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, find the intersection: A ∩ B = {2}. Then, find the complement of this set with respect to the universal set ε. (A ∩ B)' contains all elements in ε except for 2. So, (A ∩ B)' = {1, 3, 4, 5, 6}."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "How many proper subsets does the set {p, q, r} have?",
+      "options": [
+        "3",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A set with n elements has 2^n subsets. For {p, q, r}, n=3, so there are 2³ = 8 subsets. A proper subset is any subset except the set itself. Therefore, there are 8 - 1 = 7 proper subsets."
+    }
+  ]
+}

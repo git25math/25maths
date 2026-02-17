@@ -13,8 +13,13 @@
 {% endif %}
 {% if page.lang_links %}
 {% for item in page.lang_links %}
-<link rel="alternate" hreflang="{{ item.code }}" href="{{ item.url }}">
+<link rel="alternate" hreflang="{{ item.code }}" href="{{ item.url | absolute_url }}">
 {% endfor %}
+{% elsif page.collection == 'exercises' and page.subtopic_id %}
+{% assign exercise_alt_board = page.subtopic_id | split: ":" | first %}
+{% capture exercise_alt_zh_url %}{{ '/zh-cn/exercises/' | relative_url }}?board={{ exercise_alt_board }}{% if page.tier %}&tier={{ page.tier | downcase | url_encode }}{% endif %}{% if page.syllabus_code %}&q={{ page.syllabus_code | url_encode }}{% endif %}{% endcapture %}
+<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ exercise_alt_zh_url | absolute_url }}">
 {% endif %}
 
 <!-- Favicon -->

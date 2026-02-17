@@ -43,6 +43,8 @@ echo
 
 required_urls=(
   "$BASE_URL/"
+  "$BASE_URL/exercises/"
+  "$BASE_URL/zh-cn/exercises/"
   "$BASE_URL/kahoot/"
   "$BASE_URL/kahoot/cie0580/"
   "$BASE_URL/kahoot/edexcel-4ma1/"
@@ -88,6 +90,8 @@ echo
 echo "-- sitemap coverage checks --"
 sitemap="$(curl -L -s --connect-timeout 8 --max-time 20 "$BASE_URL/sitemap.xml")"
 for required_loc in \
+  "$BASE_URL/exercises/" \
+  "$BASE_URL/zh-cn/exercises/" \
   "$BASE_URL/kahoot/" \
   "$BASE_URL/kahoot/cie0580/" \
   "$BASE_URL/kahoot/edexcel-4ma1/"; do
@@ -97,6 +101,20 @@ for required_loc in \
     fail "sitemap missing $required_loc"
   fi
 done
+
+exercise_detail_count="$(printf '%s\n' "$sitemap" | awk -v base="$BASE_URL/exercises/" '
+  /<loc>/ {
+    if (index($0, base) > 0 && $0 !~ ("<loc>" base "</loc>")) {
+      count += 1
+    }
+  }
+  END { print count + 0 }
+')"
+if [[ "$exercise_detail_count" -ge 200 ]]; then
+  pass "sitemap contains at least 200 exercise detail URLs ($exercise_detail_count)"
+else
+  fail "sitemap exercise detail URL count too low ($exercise_detail_count, expected >= 200)"
+fi
 echo
 
 echo "-- security header visibility (warning-only on GitHub Pages) --"

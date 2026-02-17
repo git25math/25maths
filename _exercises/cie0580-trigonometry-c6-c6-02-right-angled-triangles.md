@@ -1,5 +1,5 @@
 ---
-title: "Practice: right angled triangles"
+title: "Practice: Right Angled Triangles"
 subtitle: "CIE 0580 C6-02 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-trigonometry-c6-c6-02-right-angled-triangles"

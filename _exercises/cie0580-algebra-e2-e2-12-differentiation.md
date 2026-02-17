@@ -1,5 +1,5 @@
 ---
-title: "Practice: differentiation"
+title: "Practice: Differentiation"
 subtitle: "CIE 0580 E2-12 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-algebra-e2-e2-12-differentiation"

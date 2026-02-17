@@ -1,5 +1,5 @@
 ---
-title: "Practice: standard form"
+title: "Practice: Standard Form"
 subtitle: "CIE 0580 C1-08 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-number-c1-c1-08-standard-form"

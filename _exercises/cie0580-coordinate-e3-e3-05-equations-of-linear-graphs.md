@@ -1,5 +1,5 @@
 ---
-title: "Practice: Equations of linear graphs"
+title: "Practice: Equations of Linear Graphs"
 subtitle: "CIE 0580 E3-05 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-coordinate-e3-e3-05-equations-of-linear-graphs"

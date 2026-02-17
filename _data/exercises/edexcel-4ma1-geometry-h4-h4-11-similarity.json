@@ -1,0 +1,154 @@
+{
+  "topic": "Geometry",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-h4:h4-11-similarity",
+  "syllabusCode": "H4-11",
+  "tier": "Higher",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Two triangles are similar. The sides of the first triangle are 3 cm, 4 cm, and 5 cm. The longest side of the second triangle is 10 cm. What is the perimeter of the second triangle?",
+      "options": [
+        "12 cm",
+        "20 cm",
+        "24 cm",
+        "30 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of corresponding lengths (scale factor) is 10/5 = 2. The perimeter of the first triangle is 3 + 4 + 5 = 12 cm. For similar shapes, perimeters are scaled by the same linear scale factor. So, the perimeter of the second triangle is 12 × 2 = 24 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar rectangles have corresponding sides in the ratio 2:5. If the area of the smaller rectangle is 12 cm², what is the area of the larger rectangle?",
+      "options": [
+        "30 cm²",
+        "48 cm²",
+        "75 cm²",
+        "150 cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of corresponding lengths is 2:5. Therefore, the ratio of their areas is (2)²:(5)² = 4:25. If the area of the smaller rectangle is 12 cm², let the area of the larger be A. Then 4/25 = 12/A. So A = 12 × (25/4) = 3 × 25 = 75 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar cones have heights in the ratio 3:4. If the volume of the smaller cone is 54 cm³, what is the volume of the larger cone?",
+      "options": [
+        "72 cm³",
+        "96 cm³",
+        "128 cm³",
+        "144 cm³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of corresponding lengths (heights) is 3:4. Therefore, the ratio of their volumes is (3)³:(4)³ = 27:64. If the volume of the smaller cone is 54 cm³, let the volume of the larger be V. Then 27/64 = 54/V. So V = 54 × (64/27) = 2 × 64 = 128 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Triangle ABC is similar to Triangle XYZ. AB = 6 cm, BC = 8 cm, AC = 10 cm. If XY = 9 cm, find the length of YZ.",
+      "options": [
+        "10 cm",
+        "12 cm",
+        "13.5 cm",
+        "15 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Since Triangle ABC is similar to Triangle XYZ, corresponding sides are in proportion. The corresponding sides are AB and XY. The scale factor for lengths is XY/AB = 9/6 = 1.5. YZ corresponds to BC. So, YZ = BC × 1.5 = 8 × 1.5 = 12 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In triangle PQR, ST is parallel to QR. PS = 4 cm, SQ = 6 cm, ST = 5 cm. Find the length of QR.",
+      "options": [
+        "7.5 cm",
+        "10 cm",
+        "12.5 cm",
+        "15 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Because ST is parallel to QR, Triangle PST is similar to Triangle PQR. The length of PQ = PS + SQ = 4 + 6 = 10 cm. The scale factor for lengths from Triangle PST to Triangle PQR is PQ/PS = 10/4 = 2.5. Since ST corresponds to QR, QR = ST × 2.5 = 5 × 2.5 = 12.5 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar cylinders have surface areas in the ratio 9:16. If the radius of the smaller cylinder is 6 cm, what is the radius of the larger cylinder?",
+      "options": [
+        "7.5 cm",
+        "8 cm",
+        "9 cm",
+        "10.67 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The ratio of surface areas is 9:16. The ratio of corresponding lengths (radii) is the square root of the area ratio, which is √9 : √16 = 3:4. Let the radius of the larger cylinder be R. Then 3/4 = 6/R. So R = 6 × (4/3) = 2 × 4 = 8 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two spheres are similar. The radius of the smaller sphere is 3 cm and the radius of the larger sphere is 5 cm. If the volume of the smaller sphere is 36π cm³, find the volume of the larger sphere.",
+      "options": [
+        "60π cm³",
+        "100π cm³",
+        "500π/3 cm³",
+        "180π cm³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of corresponding lengths (radii) is 3:5. The ratio of their volumes is (3)³:(5)³ = 27:125. Let the volume of the larger sphere be V. Then 27/125 = 36π/V. So V = 36π × (125/27) = (4π/3) × 125 = 500π/3 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The areas of two similar shapes are 20 cm² and 45 cm². What is the ratio of their corresponding lengths?",
+      "options": [
+        "4:9",
+        "2:3",
+        "√20:√45",
+        "16:81"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, simplify the ratio of areas: 20:45 simplifies to 4:9. For similar shapes, the ratio of areas is the square of the ratio of corresponding lengths. Therefore, the ratio of lengths is √(4):√(9) = 2:3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar cuboids have corresponding side lengths in the ratio 1:3. What is the ratio of their volumes?",
+      "options": [
+        "1:3",
+        "1:9",
+        "1:27",
+        "3:1"
+      ],
+      "correctAnswer": 2,
+      "explanation": "If the ratio of corresponding lengths is 1:3, then the ratio of their volumes is the cube of this ratio: (1)³:(3)³ = 1:27."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In triangle ABC, D is a point on AB and E is a point on AC such that DE is parallel to BC. If AD = 4 cm, DB = 6 cm, and DE = 5 cm, find the length of BC.",
+      "options": [
+        "7.5 cm",
+        "10 cm",
+        "12.5 cm",
+        "15 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Since DE is parallel to BC, triangle ADE is similar to triangle ABC. The length of AB = AD + DB = 4 + 6 = 10 cm. The scale factor for lengths from triangle ADE to triangle ABC is AB/AD = 10/4 = 2.5. Since DE corresponds to BC, BC = DE × 2.5 = 5 × 2.5 = 12.5 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar pentagons have corresponding sides of length 7 cm and 14 cm. If the area of the smaller pentagon is 30 cm², what is the area of the larger pentagon?",
+      "options": [
+        "60 cm²",
+        "90 cm²",
+        "120 cm²",
+        "150 cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of corresponding lengths is 7:14, which simplifies to 1:2. The ratio of their areas is the square of this ratio: (1)²:(2)² = 1:4. Let the area of the larger pentagon be A. Then 1/4 = 30/A. So A = 30 × 4 = 120 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar jugs have heights of 10 cm and 15 cm. If the larger jug can hold 1350 ml of water, how much water can the smaller jug hold?",
+      "options": [
+        "400 ml",
+        "600 ml",
+        "900 ml",
+        "1012.5 ml"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ratio of corresponding lengths (heights) from the smaller jug to the larger jug is 10:15, which simplifies to 2:3. The ratio of their volumes is the cube of this ratio: (2)³:(3)³ = 8:27. Let the volume of the smaller jug be V. Then V/1350 = 8/27. So V = 1350 × (8/27) = 50 × 8 = 400 ml."
+    }
+  ]
+}

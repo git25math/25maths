@@ -1,5 +1,5 @@
 ---
-title: "Practice: time"
+title: "Practice: Time"
 subtitle: "CIE 0580 E1-15 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-number-e1-e1-15-time"

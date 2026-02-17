@@ -1,0 +1,154 @@
+{
+  "topic": "Integers",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-h1:h1-01-integers",
+  "syllabusCode": "H1-01",
+  "tier": "Higher",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the Highest Common Factor (HCF) of 84 and 140.",
+      "options": [
+        "14",
+        "28",
+        "420",
+        "11760"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, find the prime factorisation of each number. 84 = 2² × 3 × 7. 140 = 2² × 5 × 7. The HCF is the product of the lowest powers of common prime factors. HCF = 2² × 7 = 28."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the Lowest Common Multiple (LCM) of 12, 18 and 30.",
+      "options": [
+        "6",
+        "90",
+        "180",
+        "540"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Find the prime factorisation of each number: 12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5. The LCM is the product of the highest powers of all prime factors present. LCM = 2² × 3² × 5 = 4 × 9 × 5 = 180."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these is the correct prime factorisation of 504?",
+      "options": [
+        "2² × 3³ × 7",
+        "2³ × 3² × 7",
+        "2³ × 9 × 7",
+        "2 × 3 × 7 × 12"
+      ],
+      "correctAnswer": 1,
+      "explanation": "504 can be broken down into its prime factors: 504 = 2 × 252 = 2 × 2 × 126 = 2 × 2 × 2 × 63 = 2 × 2 × 2 × 3 × 21 = 2 × 2 × 2 × 3 × 3 × 7. This is written in index form as 2³ × 3² × 7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangular room measures 48 cm by 72 cm. It is to be tiled with the largest possible identical square tiles. What is the side length of each tile?",
+      "options": [
+        "12 cm",
+        "16 cm",
+        "24 cm",
+        "48 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The side length of the largest possible square tile is the Highest Common Factor (HCF) of the room's dimensions. Prime factors of 48 are 2⁴ × 3. Prime factors of 72 are 2³ × 3². The HCF is 2³ × 3 = 8 × 3 = 24 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two lighthouses flash their lights at the same time. The first lighthouse flashes every 15 seconds. The second flashes every 25 seconds. After how many seconds will they next flash together?",
+      "options": [
+        "5 seconds",
+        "50 seconds",
+        "75 seconds",
+        "375 seconds"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is a problem about finding the Lowest Common Multiple (LCM) of 15 and 25. Multiples of 15: 15, 30, 45, 60, 75... Multiples of 25: 25, 50, 75... The first common multiple is 75."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate the value of -8 × (5 - 9) + (-4)².",
+      "options": [
+        "-48",
+        "-16",
+        "16",
+        "48"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Following the order of operations (BIDMAS/PEMDAS): First, calculate the bracket: 5 - 9 = -4. Then the index: (-4)² = 16. Then the multiplication: -8 × -4 = 32. Finally, the addition: 32 + 16 = 48."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following statements about the number 64 is false?",
+      "options": [
+        "It is a square number.",
+        "It is a cube number.",
+        "It is a prime number.",
+        "It has an odd number of factors."
+      ],
+      "correctAnswer": 2,
+      "explanation": "A prime number has exactly two factors, 1 and itself. 64 is divisible by 1, 2, 4, 8, 16, 32, and 64, so it is not prime. It is a square number (8²) and a cube number (4³). Square numbers always have an odd number of factors."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two integers have a Highest Common Factor of 6 and a Lowest Common Multiple of 90. If one of the integers is 18, what is the other integer?",
+      "options": [
+        "15",
+        "30",
+        "45",
+        "60"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The product of two numbers is equal to the product of their HCF and LCM. Let the other number be n. So, 18 × n = 6 × 90. 18n = 540. n = 540 ÷ 18 = 30."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the smallest integer value of k such that 180k is a perfect square.",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "10"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, find the prime factorisation of 180: 180 = 18 × 10 = (2 × 3²) × (2 × 5) = 2² × 3² × 5. For a number to be a perfect square, all the powers in its prime factorisation must be even. The power of 5 is 1, so we need to multiply by 5 to make it 5². Therefore, k = 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An integer N has the following properties: it is a factor of 120, it is a multiple of 5, it is between 10 and 25, and the sum of its digits is 6. What is the integer N?",
+      "options": [
+        "12",
+        "15",
+        "20",
+        "24"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Factors of 120 between 10 and 25 are 12, 15, 20, 24. Of these, the multiples of 5 are 15 and 20. Checking the sum of digits: for 15, the sum is 1+5=6; for 20, the sum is 2+0=2. The only integer that satisfies all conditions is 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The sum of three consecutive odd integers is -27. What is the largest of these integers?",
+      "options": [
+        "-11",
+        "-9",
+        "-7",
+        "-5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Let the three consecutive odd integers be n, n+2, and n+4. Their sum is n + (n+2) + (n+4) = 3n + 6. We are given 3n + 6 = -27. Subtracting 6 from both sides gives 3n = -33. Dividing by 3 gives n = -11. The integers are -11, -9, and -7. The largest is -7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangular field measures 168m by 196m. It is divided into identical square plots of the largest possible size. What is the area of one of these plots?",
+      "options": [
+        "28 m²",
+        "56 m²",
+        "196 m²",
+        "784 m²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The side length of the largest possible square plot is the HCF of 168 and 196. Prime factors: 168 = 2³ × 3 × 7 and 196 = 2² × 7². The HCF is 2² × 7 = 28 m. The area of one square plot is side × side = 28 × 28 = 784 m²."
+    }
+  ]
+}

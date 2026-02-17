@@ -1,5 +1,5 @@
 ---
-title: "Practice: classifying statistical data"
+title: "Practice: Classifying Statistical Data"
 subtitle: "CIE 0580 E9-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-statistics-e9-e9-01-classifying-statistical-data"

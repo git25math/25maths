@@ -1,5 +1,5 @@
 ---
-title: "Practice: graphs in practical situations"
+title: "Practice: Graphs in Practical Situations"
 subtitle: "CIE 0580 C2-09 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-algebra-c2-c2-09-graphs-in-practical-situations"

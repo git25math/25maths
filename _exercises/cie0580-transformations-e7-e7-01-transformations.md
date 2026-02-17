@@ -1,5 +1,5 @@
 ---
-title: "Practice: Transformations and vectors"
+title: "Practice: Transformations and Vectors"
 subtitle: "CIE 0580 E7-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-transformations-e7-e7-01-transformations"

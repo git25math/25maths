@@ -1,5 +1,5 @@
 ---
-title: "Practice: circles arcs and sectors"
+title: "Practice: Circles Arcs and Sectors"
 subtitle: "CIE 0580 C5-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-mensuration-c5-c5-03-circles-arcs-and-sectors"

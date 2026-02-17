@@ -1,5 +1,5 @@
 ---
-title: "Practice: Gradient of linear graphs"
+title: "Practice: Gradient of Linear Graphs"
 subtitle: "CIE 0580 C3-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-coordinate-c3-c3-03-gradient-of-linear-graphs"

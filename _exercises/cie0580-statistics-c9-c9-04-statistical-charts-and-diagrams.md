@@ -1,5 +1,5 @@
 ---
-title: "Practice: Statistical charts and diagrams"
+title: "Practice: Statistical Charts and Diagrams"
 subtitle: "CIE 0580 C9-04 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-statistics-c9-c9-04-statistical-charts-and-diagrams"

@@ -1,5 +1,5 @@
 ---
-title: "Practice: Probability of combined events"
+title: "Practice: Probability of Combined Events"
 subtitle: "CIE 0580 E8-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-probability-e8-e8-03-probability-of-combined-events"

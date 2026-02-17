@@ -1,5 +1,5 @@
 ---
-title: "Practice: scatter diagrams"
+title: "Practice: Scatter Diagrams"
 subtitle: "CIE 0580 E9-05 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-statistics-e9-e9-05-scatter-diagrams"

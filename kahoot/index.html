@@ -7,6 +7,7 @@ lang: en
 ---
 {% assign cie_data = site.data.kahoot_cie0580_subtopics %}
 {% assign edx_data = site.data.kahoot_edexcel4ma1_subtopics %}
+{% assign free_samples = site.data.kahoot_free_samples %}
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -19,9 +20,125 @@ lang: en
         <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kahoot/cie0580/" class="bg-white text-primary px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open CIE 0580 SubTopics</a>
             <a href="/kahoot/edexcel-4ma1/" class="border-2 border-white text-white px-7 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Open Edexcel 4MA1 SubTopics</a>
+            <a href="/exercises/" class="border-2 border-sky-200 bg-sky-200 text-gray-900 px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="border-2 border-yellow-200 bg-yellow-200 text-gray-900 px-7 py-3 rounded-lg font-semibold hover:shadow-lg transition">Free Samples Live Now</a>
         </div>
     </div>
 </section>
+
+<section id="free-sample-live" class="py-16 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Free Sample Sets (Live Now)</h2>
+            <p class="text-gray-600">These sample sets are published first so visitors can try the real question quality before moving into the full worksheet and bundle path.</p>
+            <p class="text-sm text-gray-500 mt-2">Published set: 16 topics total (updated {{ free_samples.updated_at }}).</p>
+        </div>
+
+        <div id="free-sample-filters" class="mb-6 flex flex-wrap items-center gap-2">
+            <button type="button" data-filter-batch="batch_1" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white" aria-pressed="true">Batch 1 (Default)</button>
+            <button type="button" data-filter-batch="batch_2" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Batch 2</button>
+            <button type="button" data-filter-batch="batch_3" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Batch 3</button>
+            <button type="button" data-filter-batch="all" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Show All</button>
+        </div>
+        <p id="free-sample-filter-summary" class="text-sm text-gray-600 mb-6">Default view: Batch 1 only.</p>
+
+        <div class="grid lg:grid-cols-2 gap-6">
+            {% for board in free_samples.sections %}
+                {% if board.board == "cie0580" %}
+                    {% assign directory_url = "/kahoot/cie0580/" %}
+                {% else %}
+                    {% assign directory_url = "/kahoot/edexcel-4ma1/" %}
+                {% endif %}
+                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                        <div>
+                            <p class="text-xs font-bold tracking-wider mb-2 {{ board.card_badge_class }}">{{ board.board_label }}</p>
+                            <h3 class="text-xl font-bold text-gray-900">{{ board.tier_scope }} Free Sample Collection</h3>
+                        </div>
+                        <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">{{ board.items | size }} LIVE</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 mb-5">
+                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
+                        <a href="{{ directory_url }}" class="text-center {{ board.button_class }} px-4 py-2 rounded-lg font-semibold text-sm">Open Full Directory</a>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        {% for item in board.items %}
+                            {% assign item_batch_key = item.batch | downcase | replace: ' ', '_' %}
+                            <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm" data-free-sample-card data-batch="{{ item_batch_key }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
+                                <img src="{{ item.cover }}" alt="{{ item.code }} free sample cover" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                                <div class="flex flex-wrap items-center gap-2 mb-2">
+                                    <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
+                                    <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
+                                    <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
+                                </div>
+                                <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
+                                <p class="text-[11px] text-gray-500 mb-3">{{ item.tier }} tier</p>
+                                <div class="grid grid-cols-1 gap-2">
+                                    <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Play Free Sample</a>
+                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">Open In Explorer</a>
+                                </div>
+                            </article>
+                        {% endfor %}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script>
+(() => {
+  const filterRoot = document.getElementById('free-sample-filters');
+  if (!filterRoot) return;
+
+  const buttons = Array.from(filterRoot.querySelectorAll('[data-filter-batch]'));
+  const cards = Array.from(document.querySelectorAll('[data-free-sample-card]'));
+  const summary = document.getElementById('free-sample-filter-summary');
+  const filterLabels = {
+    batch_1: 'Batch 1',
+    batch_2: 'Batch 2',
+    batch_3: 'Batch 3',
+    all: 'all batches'
+  };
+
+  const setButtonState = (button, isActive) => {
+    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    button.classList.toggle('bg-gray-900', isActive);
+    button.classList.toggle('text-white', isActive);
+    button.classList.toggle('bg-white', !isActive);
+    button.classList.toggle('text-gray-700', !isActive);
+  };
+
+  const applyFilter = (batchKey) => {
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const show = batchKey === 'all' || card.getAttribute('data-batch') === batchKey;
+      card.hidden = !show;
+      if (show) visibleCount += 1;
+    });
+
+    buttons.forEach((button) => {
+      setButtonState(button, button.getAttribute('data-filter-batch') === batchKey);
+    });
+
+    if (summary) {
+      if (batchKey === 'batch_1') {
+        summary.textContent = `Default view: Batch 1 (${visibleCount} sets).`;
+      } else {
+        summary.textContent = `Now showing ${filterLabels[batchKey] || batchKey} (${visibleCount} sets).`;
+      }
+    }
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      applyFilter(button.getAttribute('data-filter-batch'));
+    });
+  });
+
+  applyFilter('batch_1');
+})();
+</script>
 
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,7 +186,7 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
-            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L1 -> L2 -> L3 with presale terms.</p>
+            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 interactive practice -> L1 -> L2 -> L3 with presale terms.</p>
         </div>
 
         <div class="bg-white rounded-2xl border border-gray-200 p-5 mb-6">
@@ -299,36 +416,50 @@ lang: en
         ? item.unitBundleUrl
         : `${config.defaultUnitBundleUrl}?src=kahoot_hub_filter&level=unit&asset=${encodeURIComponent((item.unitKey || '').toLowerCase())}`;
       const termsPdfUrl = config.termsPdfUrl || '/payhip/presale/kahoot-presale-info-template.pdf';
+      const hasInteractiveExercise = Boolean((item.exerciseUrl || '').trim());
+      const interactiveExerciseUrl = hasInteractiveExercise ? item.exerciseUrl : '';
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
         : 'bg-amber-100 text-amber-700';
       const worksheetButtonClass = item.board === 'cie0580'
         ? 'bg-primary text-white'
         : 'bg-secondary text-white';
-      const status = (item.status || 'planned').toLowerCase();
+      const rawStatus = (item.status || 'planned').toLowerCase();
+      const status = rawStatus.startsWith('free_sample')
+        ? 'free_sample'
+        : rawStatus;
       const statusClassMap = {
+        free_sample: 'bg-emerald-100 text-emerald-700',
         live: 'bg-emerald-100 text-emerald-700',
+        published: 'bg-emerald-100 text-emerald-700',
         presale: 'bg-orange-100 text-orange-700',
+        ready_for_build: 'bg-blue-100 text-blue-700',
         planned: 'bg-slate-100 text-slate-700',
         archived: 'bg-gray-200 text-gray-600'
       };
       const statusLabelMap = {
+        free_sample: 'Free Sample',
         live: 'Live',
+        published: 'Published',
         presale: 'Pre-sale',
+        ready_for_build: 'Ready for Build',
         planned: 'Planned',
         archived: 'Archived'
       };
       const statusClass = statusClassMap[status] || statusClassMap.planned;
       const statusLabel = statusLabelMap[status] || statusLabelMap.planned;
-      const releaseLabel = item.releaseDate
-        ? `Launch: ${item.releaseDate}`
-        : 'Launch: TBD';
-      const earlyBirdLabel = item.earlyBirdDeadline
-        ? `Early-bird: ${item.earlyBirdDeadline}`
-        : 'Early-bird: TBD';
+      const releaseLabel = status === 'free_sample'
+        ? 'Launch: Live now (Free Sample)'
+        : (item.releaseDate ? `Launch: ${item.releaseDate}` : 'Launch: TBD');
+      const earlyBirdLabel = status === 'free_sample'
+        ? 'Upgrade: Full pack available'
+        : (item.earlyBirdDeadline ? `Early-bird: ${item.earlyBirdDeadline}` : 'Early-bird: TBD');
       const coverWebp = item.cover.endsWith('.png')
         ? item.cover.replace(/\.png$/i, '.webp')
         : item.cover;
+      const interactiveButton = hasInteractiveExercise
+        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center bg-blue-600 text-white py-2 rounded-lg font-semibold text-xs">L0: Interactive Exercise</a>`
+        : '';
 
       return `
         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
@@ -345,8 +476,9 @@ lang: en
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
           <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
-          <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
+          <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
           <div class="grid grid-cols-1 gap-2">
+            ${interactiveButton}
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-2 rounded-lg font-semibold text-xs">L1: Worksheet</a>
             <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">L2: Section Bundle</a>

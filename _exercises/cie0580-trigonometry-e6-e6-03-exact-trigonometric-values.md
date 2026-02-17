@@ -1,5 +1,5 @@
 ---
-title: "Practice: Exact trigonometric values"
+title: "Practice: Exact Trigonometric Values"
 subtitle: "CIE 0580 E6-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-trigonometry-e6-e6-03-exact-trigonometric-values"

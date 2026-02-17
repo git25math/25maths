@@ -23,6 +23,7 @@ lang: en
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
             <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-center bg-white text-secondary px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Open Edexcel 4MA1 Kahoot Channel</a>
             <a href="#unit-bundles" class="text-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-secondary transition">View 6 Unit Bundle Presales</a>
+            <a href="/kahoot/#free-sample-live" class="text-center border-2 border-yellow-200 bg-yellow-200 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Free Samples Live</a>
             <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border-2 border-dashed border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-secondary transition">Presale Terms PDF</a>
         </div>
     </div>
@@ -32,6 +33,7 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3 items-center">
         <span class="text-sm font-semibold text-gray-700">Quick links:</span>
         <a href="/kahoot/" class="text-sm px-3 py-1.5 rounded-full border border-gray-300 hover:bg-gray-100 transition">Back to Kahoot Hub</a>
+        <a href="/exercises/?board=edexcel-4ma1" class="text-sm px-3 py-1.5 rounded-full border border-blue-300 text-blue-700 hover:bg-blue-50 transition">Open Interactive Exercises</a>
         <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-gray-900 text-white">Kahoot Channel</a>
         <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full bg-secondary text-white">Payhip Storefront</a>
         <span class="text-sm text-gray-500">{{ data.total_subtopics }} SubTopics</span>
@@ -72,7 +74,7 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-2">SubTopic Listing (Foundation + Higher)</h2>
-            <p class="text-gray-600">Each SubTopic card has a complete offer ladder: L1 single worksheet, L2 section bundle, L3 unit bundle.</p>
+            <p class="text-gray-600">Each SubTopic card has a complete loop: L0 interactive practice, L1 worksheet, L2 section bundle, L3 unit bundle.</p>
         </div>
 
         {% for section in data.sections %}
@@ -91,6 +93,13 @@ lang: en
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                     {% for item in section.items %}
                         {% assign link = link_map[item.id] %}
+                        {% assign exercise_page = site.exercises | where: "subtopic_id", item.id | first %}
+                        {% assign card_exercise_url = "" %}
+                        {% if link and link.exercise_path and link.exercise_path != '' %}
+                            {% assign card_exercise_url = link.exercise_path %}
+                        {% elsif exercise_page %}
+                            {% assign card_exercise_url = exercise_page.url %}
+                        {% endif %}
 
                         {% capture kahoot_fallback_url %}{{ kahoot_channel_url }}?src=kahoot_edexcel_subtopic&asset={{ item.code | downcase }}{% endcapture %}
                         {% assign card_kahoot_url = kahoot_fallback_url %}
@@ -122,6 +131,22 @@ lang: en
                         {% endif %}
 
                         {% assign card_status = link.status | default: 'planned' %}
+                        {% assign card_status_key = card_status | downcase %}
+                        {% assign status_chip_class = 'bg-gray-100 text-gray-700' %}
+                        {% assign status_label = card_status_key | replace: '_', ' ' | upcase %}
+                        {% if card_status_key == 'free_sample_live' or card_status_key == 'free_sample' %}
+                            {% assign status_chip_class = 'bg-emerald-100 text-emerald-700' %}
+                            {% assign status_label = 'FREE SAMPLE' %}
+                        {% elsif card_status_key == 'live' or card_status_key == 'published' %}
+                            {% assign status_chip_class = 'bg-emerald-100 text-emerald-700' %}
+                            {% assign status_label = 'LIVE' %}
+                        {% elsif card_status_key == 'presale' %}
+                            {% assign status_chip_class = 'bg-orange-100 text-orange-700' %}
+                            {% assign status_label = 'PRE-SALE' %}
+                        {% elsif card_status_key == 'ready_for_build' %}
+                            {% assign status_chip_class = 'bg-blue-100 text-blue-700' %}
+                            {% assign status_label = 'READY FOR BUILD' %}
+                        {% endif %}
                         {% assign release_date = catalog.default_release_date %}
                         {% assign early_bird_deadline = catalog.default_early_bird_deadline %}
                         {% assign presale_note = 'Upgrade path: L1 worksheet -> L2 section bundle -> L3 unit bundle.' %}
@@ -143,6 +168,10 @@ lang: en
                         {% if link and link.presale_notes and link.presale_notes != '' %}
                             {% assign presale_note = link.presale_notes %}
                         {% endif %}
+                        {% assign release_line = 'Launch: ' | append: release_date | append: ' | Early-bird: ' | append: early_bird_deadline %}
+                        {% if card_status_key == 'free_sample_live' or card_status_key == 'free_sample' %}
+                            {% assign release_line = 'Launch: Live now (Free Sample) | Upgrade: Full pack available' %}
+                        {% endif %}
 
                         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition">
                             <picture>
@@ -151,12 +180,15 @@ lang: en
                             </picture>
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="text-[11px] px-2 py-1 rounded-full bg-secondary/10 text-secondary font-semibold">{{ item.code }}</span>
-                                <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ card_status | upcase }}</span>
+                                <span class="text-[11px] px-2 py-1 rounded-full {{ status_chip_class }} font-semibold">{{ status_label }}</span>
                             </div>
                             <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ item.title }}</h4>
-                            <p class="text-[11px] text-gray-500 mb-1">Launch: {{ release_date }} | Early-bird: {{ early_bird_deadline }}</p>
+                            <p class="text-[11px] text-gray-500 mb-1">{{ release_line }}</p>
                             <p class="text-[11px] text-gray-500 mb-3">{{ presale_note }}</p>
                             <div class="grid grid-cols-1 gap-2">
+                                {% if card_exercise_url != '' %}
+                                <a href="{{ card_exercise_url | relative_url }}" class="text-center bg-blue-600 text-white py-2 rounded-lg font-semibold text-xs">L0: Interactive Exercise</a>
+                                {% endif %}
                                 <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
                                 <a href="{{ card_worksheet_url }}" target="_blank" rel="noopener" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs">L1: Worksheet</a>
                                 <a href="{{ card_section_bundle_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">L2: Section Bundle</a>

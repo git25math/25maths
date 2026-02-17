@@ -1,5 +1,5 @@
 ---
-title: "Practice: Non-right-angled triangles"
+title: "Practice: Non-Right-Angled Triangles"
 subtitle: "CIE 0580 E6-05 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-trigonometry-e6-e6-05-non-right-angled-triangles"

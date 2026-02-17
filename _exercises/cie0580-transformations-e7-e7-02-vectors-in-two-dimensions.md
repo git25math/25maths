@@ -1,5 +1,5 @@
 ---
-title: "Practice: Vectors in two dimensions"
+title: "Practice: Vectors in Two Dimensions"
 subtitle: "CIE 0580 E7-02 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-transformations-e7-e7-02-vectors-in-two-dimensions"
