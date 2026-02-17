@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+    {% include head.html %}
+</head>
+<body class="bg-gray-50">
+    {% include global-nav.html %}
+    {% assign exercise_links = nil %}
+    {% if page.subtopic_id %}
+        {% assign exercise_links = site.data.kahoot_subtopic_links[page.subtopic_id] %}
+    {% endif %}
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-900">{{ page.title }}</h1>
+            {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
+        </header>
+
+        <div id="exercise-engine" data-topic="{{ page.topic | slugify }}">
+            <div id="question-container" class="prose max-w-none">
+                <!-- Question text and options will be rendered here -->
+            </div>
+
+            <div id="feedback-container" class="mt-4">
+                <!-- Feedback (correct/incorrect) will be shown here -->
+            </div>
+
+            <div id="controls-container" class="mt-6 border-t pt-6">
+                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Check Answer</button>
+                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition" style="display: none;" disabled>Next</button>
+            </div>
+        </div>
+
+        {% if exercise_links %}
+        <section id="resource-loop" class="mt-8 rounded-xl border border-gray-200 bg-white p-5">
+            <h2 class="text-xl font-bold text-gray-900">Continue This Topic</h2>
+            <p class="mt-1 text-sm text-gray-600">Closed loop: Kahoot warm-up -> worksheet consolidation -> bundle revision.</p>
+            <div class="mt-4 flex flex-wrap gap-3">
+                {% if exercise_links.kahoot_url != '' %}
+                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>
+                {% endif %}
+                {% if exercise_links.worksheet_payhip_url != '' %}
+                <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>
+                {% endif %}
+                {% if exercise_links.bundle_url != '' %}
+                <a href="{{ exercise_links.bundle_url }}" data-track-action="bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>
+                {% elsif exercise_links.section_bundle_payhip_url != '' %}
+                <a href="{{ exercise_links.section_bundle_payhip_url }}" data-track-action="section_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Section Bundle</a>
+                {% elsif exercise_links.unit_bundle_payhip_url != '' %}
+                <a href="{{ exercise_links.unit_bundle_payhip_url }}" data-track-action="unit_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Unit Bundle</a>
+                {% endif %}
+            </div>
+        </section>
+        {% endif %}
+    </main>
+
+    {% include footer.html %}
+    {% include mobile-menu-js.html %}
+
+    <script>
+        const exerciseData = {{ site.data.exercises[page.topic] | jsonify }};
+        const exerciseLinks = {{ exercise_links | jsonify }};
+        const exerciseTopicSlug = {{ page.topic | jsonify }};
+    </script>
+    <script src="{{ '/assets/js/exercise_engine.js' | relative_url }}"></script>
+</body>
+</html>
