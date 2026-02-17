@@ -25,6 +25,14 @@
   const i18n = (typeof window.exerciseHubI18n === 'object' && window.exerciseHubI18n)
     ? { ...fallbackI18n, ...window.exerciseHubI18n }
     : fallbackI18n;
+  const boardTierMap = {
+    cie0580: ['core', 'extended'],
+    'edexcel-4ma1': ['foundation', 'higher'],
+  };
+  const baseTierOptions = Array.from(tierSelect.options).map((option) => ({
+    value: option.value,
+    label: option.textContent || option.value,
+  }));
 
   const hasOptionValue = (selectElement, value) => {
     if (!selectElement || !value) return false;
@@ -50,6 +58,31 @@
     }
   };
 
+  const syncTierOptionsForBoard = () => {
+    const board = boardSelect.value;
+    const allowedTiers = boardTierMap[board] || null;
+    const currentTier = tierSelect.value;
+    const nextOptions = baseTierOptions.filter((option) => {
+      if (option.value === 'all') return true;
+      if (!allowedTiers) return true;
+      return allowedTiers.includes(option.value);
+    });
+
+    tierSelect.innerHTML = '';
+    nextOptions.forEach((option) => {
+      const optionElement = document.createElement('option');
+      optionElement.value = option.value;
+      optionElement.textContent = option.label;
+      tierSelect.appendChild(optionElement);
+    });
+
+    if (nextOptions.some((option) => option.value === currentTier)) {
+      tierSelect.value = currentTier;
+      return;
+    }
+    tierSelect.value = 'all';
+  };
+
   const params = new URLSearchParams(window.location.search);
   const boardFromUrl = params.get('board');
   const tierFromUrl = params.get('tier');
@@ -58,6 +91,7 @@
   if (boardFromUrl && hasOptionValue(boardSelect, boardFromUrl)) {
     boardSelect.value = boardFromUrl;
   }
+  syncTierOptionsForBoard();
 
   const normalizedTier = String(tierFromUrl || '').toLowerCase();
   if (normalizedTier && hasOptionValue(tierSelect, normalizedTier)) {
@@ -141,13 +175,17 @@
     syncUrl();
   };
 
-  boardSelect.addEventListener('change', applyFilters);
+  boardSelect.addEventListener('change', () => {
+    syncTierOptionsForBoard();
+    applyFilters();
+  });
   tierSelect.addEventListener('change', applyFilters);
   queryInput.addEventListener('input', applyFilters);
 
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
       boardSelect.value = 'all';
+      syncTierOptionsForBoard();
       tierSelect.value = 'all';
       queryInput.value = '';
       applyFilters();
@@ -158,6 +196,7 @@
   if (emptyResetBtn) {
     emptyResetBtn.addEventListener('click', () => {
       boardSelect.value = 'all';
+      syncTierOptionsForBoard();
       tierSelect.value = 'all';
       queryInput.value = '';
       applyFilters();
