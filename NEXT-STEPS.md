@@ -33,7 +33,7 @@
 - [ ] 上传到 Payhip（替换旧版本）
 - [ ] Functions Bundle 质量审查（是否需要重构？）
 - [ ] Number Bundle 质量审查（是否需要重构？）
-- [ ] **结合 Edexcel 4MA1 考纲更新 Kahoot 主题，并创建对应 worksheet 配套资源**（含答案与分层练习）
+- [ ] **结合 Edexcel 4MA1 考纲按“每个小考点”更新 Kahoot 题组，并创建对应 worksheet + 下一页答案解析**
 - [ ] 网站付费链接 Gumroad → Payhip
 - [ ] Google Search Console 提交
 - [ ] 第一篇社交媒体内容（小红书/Reddit）
@@ -53,6 +53,9 @@
 - [ ] **移除站内直链免费 PDF/ZIP**（避免绕过邮箱墙）
 
 ### P1 转化与一致性
+- [ ] **Gemini CLI 互动练习生成模块（当前优先开发）**
+  - 基于已提取考纲按“小考点”生成网页互动练习页，形成 `Kahoot + Worksheet + Online Interactive` 练习闭环
+  - 执行清单：`plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md`
 - [ ] **Algebra Bundle v2.0 完成重构与 QA**
 - [ ] **Functions/Number Bundle 质量审查**
 - [ ] **定价页“School & Bulk Licensing”是否保留**（若暂不做则下线）
@@ -110,6 +113,7 @@
 - 托管迁移（GitHub Pages 够用）
 - 数据分析工具（流量太少没意义）
 - TPT/TES 平台上传（先验证独立销售）
+- TikzVault 与 25maths-website 联动（作为后备资源，当前阶段不开发）
 
 ---
 

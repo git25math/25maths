@@ -1,6 +1,6 @@
 # 25Maths Website - Project Plan
 
-> **Last Updated**: 2026-02-13
+> **Last Updated**: 2026-02-17
 > **Status**: DEPLOYED (Modular Restructure Complete)
 > **Website**: https://www.25maths.com (GitHub Pages + Jekyll)
 > **Tech Stack**: Jekyll + Tailwind CSS CDN + Google Fonts (Inter)
@@ -166,6 +166,8 @@ active_global: about   # highlights in global-nav
 1. **Complete Payhip integration** — Upload 3 paid products, replace remaining Gumroad purchase links
 2. **Google Search Console** — Submit sitemap.xml, verify site ownership
 3. **Edexcel 4MA1 products** — Create premium bundles when content is ready, update products.html and pricing.html
+4. **Gemini interactive exercise generator (current development focus)** — Build a Gemini CLI pipeline to generate syllabus-aligned interactive web practice pages by micro-topic, closing the loop across Kahoot + worksheet + website practice
+   - Execution checklist: `plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md`
 
 ### Medium-term
 5. **Tailwind build pipeline** — Replace CDN with CLI-built CSS for production (< 10KB vs ~300KB)
@@ -177,6 +179,7 @@ active_global: about   # highlights in global-nav
 9. **Subscription model** — Add subscription_price to module config, implement on pricing pages
 10. **Migrate hosting** — Consider Cloudflare Pages/Netlify for true 301 redirects
 11. **Analytics** — Add privacy-friendly analytics (Plausible/Umami)
+12. **TikzVault integration (deferred)** — Use TikzVault as a backup/local diagram resource for generated exercises, after the Gemini interactive module is stable
 
 ## How to Add a New Module
 
