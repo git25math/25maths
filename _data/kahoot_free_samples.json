@@ -1,0 +1,169 @@
+{
+  "updated_at": "2026-02-17",
+  "sections": [
+    {
+      "board": "cie0580",
+      "board_label": "CIE 0580",
+      "tier_scope": "Core + Extended",
+      "channel_url": "https://create.kahoot.it/channels/25maths/igcse-maths",
+      "card_badge_class": "bg-primary/10 text-primary",
+      "button_class": "bg-primary text-white",
+      "items": [
+        {
+          "id": "cie0580:number-c1:c1-04-fractions-decimals-percentages",
+          "code": "C1-04",
+          "title": "Fractions, Decimals and Percentages",
+          "tier": "Core",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/c1-4-fractions-decimals-and-percentages/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=c1-04"
+        },
+        {
+          "id": "cie0580:number-c1:c1-13-percentages",
+          "code": "C1-13",
+          "title": "Percentages",
+          "tier": "Core",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/c1-13-percentages/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=c1-13"
+        },
+        {
+          "id": "cie0580:algebra-c2:c2-05-equations",
+          "code": "C2-05",
+          "title": "Equations",
+          "tier": "Core",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/c2-5-equations/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=c2-05"
+        },
+        {
+          "id": "cie0580:probability-c8:c8-01-introduction-to-probability",
+          "code": "C8-01",
+          "title": "Introduction to Probability",
+          "tier": "Core",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/c8-1-introduction-to-probability/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=c8-01"
+        },
+        {
+          "id": "cie0580:coordinate-c3:c3-03-gradient-of-linear-graphs",
+          "code": "C3-03",
+          "title": "Gradient of Linear Graphs",
+          "tier": "Core",
+          "batch": "Batch 2",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/c3-3-gradient-of-linear-graphs/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=c3-03"
+        },
+        {
+          "id": "cie0580:mensuration-c5:c5-02-area-and-perimeter",
+          "code": "C5-02",
+          "title": "Area and Perimeter",
+          "tier": "Core",
+          "batch": "Batch 2",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/c5-2-area-and-perimeter/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=c5-02"
+        },
+        {
+          "id": "cie0580:geometry-e4:e4-07-circle-theorems-i",
+          "code": "E4-07",
+          "title": "Circle Theorems I",
+          "tier": "Extended",
+          "batch": "Batch 3",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/e4-7-circle-theorems-i/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=e4-07"
+        },
+        {
+          "id": "cie0580:trigonometry-e6:e6-02-right-angled-triangles",
+          "code": "E6-02",
+          "title": "Right-Angled Triangles",
+          "tier": "Extended",
+          "batch": "Batch 3",
+          "cover": "/projects/kahoot-channel/free-showcase/cie0580/e6-2-right-angled-triangles/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/igcse-maths?src=kahoot_cie0580_subtopic&asset=e6-02"
+        }
+      ]
+    },
+    {
+      "board": "edexcel-4ma1",
+      "board_label": "Edexcel 4MA1",
+      "tier_scope": "Foundation + Higher",
+      "channel_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse",
+      "card_badge_class": "bg-secondary/10 text-secondary",
+      "button_class": "bg-secondary text-white",
+      "items": [
+        {
+          "id": "edexcel-4ma1:number-f1:f1-02-fractions",
+          "code": "F1-02",
+          "title": "Fractions",
+          "tier": "Foundation",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/f1-2-fractions/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=f1-02"
+        },
+        {
+          "id": "edexcel-4ma1:number-f1:f1-06-percentages",
+          "code": "F1-06",
+          "title": "Percentages",
+          "tier": "Foundation",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/f1-6-percentages/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=f1-06"
+        },
+        {
+          "id": "edexcel-4ma1:equations-f2:f2-04-linear-equations",
+          "code": "F2-04",
+          "title": "Linear Equations",
+          "tier": "Foundation",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/f2-4-linear-equations/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=f2-04"
+        },
+        {
+          "id": "edexcel-4ma1:statistics-f6:f6-03-probability",
+          "code": "F6-03",
+          "title": "Probability",
+          "tier": "Foundation",
+          "batch": "Batch 1",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/f6-3-probability/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=f6-03"
+        },
+        {
+          "id": "edexcel-4ma1:geometry-f4:f4-01-angles-lines-and-triangles",
+          "code": "F4-01",
+          "title": "Angles, Lines and Triangles",
+          "tier": "Foundation",
+          "batch": "Batch 2",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/f4-1-angles-lines-and-triangles/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=f4-01"
+        },
+        {
+          "id": "edexcel-4ma1:sequences-h3:h3-03-graphs",
+          "code": "H3-03",
+          "title": "Graphs",
+          "tier": "Higher",
+          "batch": "Batch 2",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/h3-3-graphs/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=h3-03"
+        },
+        {
+          "id": "edexcel-4ma1:equations-h2:h2-07-quadratic-equations",
+          "code": "H2-07",
+          "title": "Quadratic Equations",
+          "tier": "Higher",
+          "batch": "Batch 3",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/h2-7-quadratic-equations/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=h2-07"
+        },
+        {
+          "id": "edexcel-4ma1:vectors-h5:h5-01-vectors",
+          "code": "H5-01",
+          "title": "Vectors",
+          "tier": "Higher",
+          "batch": "Batch 3",
+          "cover": "/projects/kahoot-channel/free-showcase/edexcel-4ma1/h5-1-vectors/cover-2320x1520-kahoot-free-sample.png",
+          "kahoot_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse?src=kahoot_edexcel_subtopic&asset=h5-01"
+        }
+      ]
+    }
+  ]
+}
