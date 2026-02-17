@@ -1,0 +1,128 @@
+{
+  "timestamp_utc": "20260217T032632Z",
+  "board": "cie0580",
+  "section_key": "algebra-c2",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 9,
+    "success": 9,
+    "failed": 0,
+    "corrected": 1,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+      "syllabusCode": "C2-01",
+      "topicSlug": "cie0580-algebra-c2-c2-01-introduction-to-algebra",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-02-algebraic-manipulation",
+      "syllabusCode": "C2-02",
+      "topicSlug": "cie0580-algebra-c2-c2-02-algebraic-manipulation",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-04-indices-ii",
+      "syllabusCode": "C2-04",
+      "topicSlug": "cie0580-algebra-c2-c2-04-indices-ii",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-05-equations",
+      "syllabusCode": "C2-05",
+      "topicSlug": "cie0580-algebra-c2-c2-05-equations",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-06-inequalities",
+      "syllabusCode": "C2-06",
+      "topicSlug": "cie0580-algebra-c2-c2-06-inequalities",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-07-sequences",
+      "syllabusCode": "C2-07",
+      "topicSlug": "cie0580-algebra-c2-c2-07-sequences",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-09-graphs-in-practical-situations",
+      "syllabusCode": "C2-09",
+      "topicSlug": "cie0580-algebra-c2-c2-09-graphs-in-practical-situations",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-10-graphs-of-functions",
+      "syllabusCode": "C2-10",
+      "topicSlug": "cie0580-algebra-c2-c2-10-graphs-of-functions",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:algebra-c2:c2-11-sketching-curves",
+      "syllabusCode": "C2-11",
+      "topicSlug": "cie0580-algebra-c2-c2-11-sketching-curves",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

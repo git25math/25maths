@@ -1,0 +1,152 @@
+{
+  "timestamp_utc": "20260217T031115Z",
+  "board": "cie0580",
+  "section_key": "number-c1",
+  "start_code": "C1-06",
+  "end_code": "C1-16",
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 11,
+    "success": 11,
+    "failed": 0,
+    "corrected": 3,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:number-c1:c1-06-four-operations",
+      "syllabusCode": "C1-06",
+      "topicSlug": "cie0580-number-c1-c1-06-four-operations",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-07-indices-i",
+      "syllabusCode": "C1-07",
+      "topicSlug": "cie0580-number-c1-c1-07-indices-i",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-08-standard-form",
+      "syllabusCode": "C1-08",
+      "topicSlug": "cie0580-number-c1-c1-08-standard-form",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-09-estimation-and-approximation",
+      "syllabusCode": "C1-09",
+      "topicSlug": "cie0580-number-c1-c1-09-estimation-and-approximation",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-10-limits-of-accuracy",
+      "syllabusCode": "C1-10",
+      "topicSlug": "cie0580-number-c1-c1-10-limits-of-accuracy",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-11-ratio-and-proportion",
+      "syllabusCode": "C1-11",
+      "topicSlug": "cie0580-number-c1-c1-11-ratio-and-proportion",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-12-rates",
+      "syllabusCode": "C1-12",
+      "topicSlug": "cie0580-number-c1-c1-12-rates",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-13-percentages",
+      "syllabusCode": "C1-13",
+      "topicSlug": "cie0580-number-c1-c1-13-percentages",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-14-using-a-calculator",
+      "syllabusCode": "C1-14",
+      "topicSlug": "cie0580-number-c1-c1-14-using-a-calculator",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-15-time",
+      "syllabusCode": "C1-15",
+      "topicSlug": "cie0580-number-c1-c1-15-time",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:number-c1:c1-16-money",
+      "syllabusCode": "C1-16",
+      "topicSlug": "cie0580-number-c1-c1-16-money",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

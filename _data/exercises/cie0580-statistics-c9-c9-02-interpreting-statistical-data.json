@@ -1,0 +1,154 @@
+{
+  "topic": "interpreting statistical data",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:statistics-c9:c9-02-interpreting-statistical-data",
+  "syllabusCode": "C9-02",
+  "tier": "Core",
+  "domain": "statistics",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A survey recorded the favourite colours of a group of students. The results were: Red (15), Blue (25), Green (10), Yellow (5). Which colour is the mode?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The mode is the most frequently occurring category. 'Blue' has the highest frequency with 25 students."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Using the colour survey data (Red 15, Blue 25, Green 10, Yellow 5), how many more students chose Blue than Green?",
+      "options": [
+        "10",
+        "15",
+        "25",
+        "35"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The difference is found by subtracting the number of students who chose Green from the number who chose Blue: 25 - 10 = 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the total number of students surveyed in the colour survey (Red 15, Blue 25, Green 10, Yellow 5)?",
+      "options": [
+        "40",
+        "50",
+        "55",
+        "60"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The total is the sum of all frequencies: 15 + 25 + 10 + 5 = 55."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a pie chart representing 180 people, what angle would represent a category with 45 people?",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "180°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The proportion of people is (45 / 180) = 1/4. The angle is this proportion of the full circle: (1/4) * 360° = 90°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The value on a line graph increases from 50 to 75. What is the percentage increase?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "125%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The increase is 75 - 50 = 25. The percentage increase is (increase / original value) * 100 = (25 / 50) * 100 = 50%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a school of 300 students, a survey finds that 40% walk to school. How many students walk to school?",
+      "options": [
+        "40",
+        "80",
+        "120",
+        "160"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To find the number of students, calculate 40% of 300: (40 / 100) * 300 = 0.4 * 300 = 120."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Out of 80 shots taken in a basketball game, 24 were successful. What percentage of shots were successful?",
+      "options": [
+        "24%",
+        "30%",
+        "40%",
+        "56%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To find the percentage, divide the part by the whole and multiply by 100: (24 / 80) * 100 = 0.3 * 100 = 30%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The mean score for Class A in a test was 78%. The mean score for Class B was 72%. Which statement is a correct interpretation?",
+      "options": [
+        "Every student in Class A scored higher than every student in Class B.",
+        "Class B performed better on average.",
+        "The total score of Class A was higher than Class B.",
+        "Class A performed better on average."
+      ],
+      "correctAnswer": 3,
+      "explanation": "The mean represents the average performance. A higher mean (78%) indicates that, on average, Class A's performance was better than Class B's (72%)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A report states that a sample of 10 people was used for a survey. Why might this result be considered less reliable?",
+      "options": [
+        "The sample size is too large.",
+        "The sample size is very small and may not represent the whole population.",
+        "The calculations must be wrong.",
+        "People are not reliable."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Small sample sizes are generally less reliable because they are more susceptible to random variation and may not accurately reflect the views or characteristics of the entire population."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A pie chart shows that the 'Bus' category is 120°. If 30 students travel by bus, how many students were surveyed in total?",
+      "options": [
+        "60",
+        "90",
+        "100",
+        "120"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The 120° sector represents 30 students. The full circle is 360°, which is 3 times 120°. So, the total number of students is 3 * 30 = 90."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bar chart shows the number of cars sold by a dealer: Monday (5), Tuesday (8), Wednesday (5). What is the mean number of cars sold per day?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To find the mean, sum the values and divide by the number of values. Total cars = 5 + 8 + 5 = 18. Number of days = 3. Mean = 18 / 3 = 6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A line graph shows the temperature at noon. On Monday it was 12°C and on Friday it was 18°C. What was the absolute increase in temperature between Monday and Friday?",
+      "options": [
+        "6°C",
+        "12°C",
+        "18°C",
+        "30°C"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The increase is the difference between the final value and the initial value: 18°C - 12°C = 6°C."
+    }
+  ]
+}

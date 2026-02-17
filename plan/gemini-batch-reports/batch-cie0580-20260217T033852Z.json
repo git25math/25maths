@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "20260217T033852Z",
+  "board": "cie0580",
+  "section_key": "coordinate-c3",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 5,
+    "success": 5,
+    "failed": 0,
+    "corrected": 0,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:coordinate-c3:c3-01-coordinates",
+      "syllabusCode": "C3-01",
+      "topicSlug": "cie0580-coordinate-c3-c3-01-coordinates",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-c3:c3-02-drawing-linear-graphs",
+      "syllabusCode": "C3-02",
+      "topicSlug": "cie0580-coordinate-c3-c3-02-drawing-linear-graphs",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-c3:c3-03-gradient-of-linear-graphs",
+      "syllabusCode": "C3-03",
+      "topicSlug": "cie0580-coordinate-c3-c3-03-gradient-of-linear-graphs",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-c3:c3-05-equations-of-linear-graphs",
+      "syllabusCode": "C3-05",
+      "topicSlug": "cie0580-coordinate-c3-c3-05-equations-of-linear-graphs",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-c3:c3-06-parallel-lines",
+      "syllabusCode": "C3-06",
+      "topicSlug": "cie0580-coordinate-c3-c3-06-parallel-lines",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "topic": "indices ii",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-c2:c2-04-indices-ii",
+  "syllabusCode": "C2-04",
+  "tier": "Core",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify x⁵ × x².",
+      "options": [
+        "x⁷",
+        "x¹⁰",
+        "x³",
+        "2x⁷"
+      ],
+      "correctAnswer": 0,
+      "explanation": "When multiplying powers with the same base, you add the exponents. So, 5 + 2 = 7. The answer is x⁷."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify y⁹ ÷ y³.",
+      "options": [
+        "y³",
+        "y¹²",
+        "y⁶",
+        "y²⁷"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When dividing powers with the same base, you subtract the exponents. So, 9 - 3 = 6. The answer is y⁶."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (p⁴)³.",
+      "options": [
+        "p⁷",
+        "p⁶⁴",
+        "p",
+        "p¹²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "When raising a power to another power, you multiply the exponents. So, 4 × 3 = 12. The answer is p¹²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of 7⁰?",
+      "options": [
+        "0",
+        "1",
+        "7",
+        "Cannot be determined"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Any non-zero number raised to the power of zero is equal to 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify 3m⁵ × 4m².",
+      "options": [
+        "12m⁷",
+        "7m⁷",
+        "12m¹⁰",
+        "7m¹⁰"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiply the coefficients (3 × 4 = 12) and add the exponents of the variable (5 + 2 = 7). The result is 12m⁷."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (2a³)⁴.",
+      "options": [
+        "8a¹²",
+        "16a⁷",
+        "8a⁷",
+        "16a¹²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Raise the coefficient to the power (2⁴ = 16) and multiply the exponents of the variable (3 × 4 = 12). The answer is 16a¹²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify 10k⁸ / (2k³).",
+      "options": [
+        "5k⁵",
+        "8k⁵",
+        "5k¹¹",
+        "5k²⁴"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Divide the coefficients (10 ÷ 2 = 5) and subtract the exponents of the variable (8 - 3 = 5). The answer is 5k⁵."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express x⁻⁵ as a fraction.",
+      "options": [
+        "-x⁵",
+        "1/x⁵",
+        "x/5",
+        "1/x⁻⁵"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, x⁻⁵ = 1/x⁵."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 3⁻².",
+      "options": [
+        "1/9",
+        "-6",
+        "9",
+        "-9"
+      ],
+      "correctAnswer": 0,
+      "explanation": "3⁻² is the reciprocal of 3², which is 1/9."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (x²y³)².",
+      "options": [
+        "x⁴y⁵",
+        "x⁴y⁶",
+        "x²y⁵",
+        "2x²y³"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Apply the power to each factor inside the brackets. (x²)² = x⁴ and (y³)² = y⁶. So the answer is x⁴y⁶."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (4c⁵ × 3c²) / 6c³.",
+      "options": [
+        "2c⁴",
+        "2c⁹",
+        "12c⁴",
+        "c⁴"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, simplify the numerator: 4c⁵ × 3c² = 12c⁷. Then, divide by the denominator: 12c⁷ / 6c³ = 2c⁴."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify 8n⁰ + (3n)⁰.",
+      "options": [
+        "8",
+        "9",
+        "11",
+        "8n"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, 8n⁰ = 8 × 1 = 8. Second, (3n)⁰ = 1, as the whole bracket is raised to the power of 0. Finally, 8 + 1 = 9."
+    }
+  ]
+}

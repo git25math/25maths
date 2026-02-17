@@ -1,0 +1,154 @@
+{
+  "topic": "graphs of functions",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-c2:c2-10-graphs-of-functions",
+  "syllabusCode": "C2-10",
+  "tier": "Core",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "For the equation y = 2x + 3, find the value of y when x = 4.",
+      "options": [
+        "11",
+        "8",
+        "10",
+        "14"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute x = 4 into the equation: y = 2(4) + 3 = 8 + 3 = 11."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "For the equation y = 2x + 3, find the value of x when y = 11.",
+      "options": [
+        "4",
+        "7",
+        "8",
+        "14"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute y = 11 into the equation: 11 = 2x + 3. Subtract 3 from both sides to get 8 = 2x. Divide by 2 to find x = 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A line has the equation y = 3x - 2. Which of these is the correct value for y when x = 2?",
+      "options": [
+        "4",
+        "1",
+        "6",
+        "-2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To find y, substitute x = 2 into the equation: y = 3(2) - 2 = 6 - 2 = 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these points lies on the line with equation y = 2x + 1?",
+      "options": [
+        "(3, 7)",
+        "(1, 2)",
+        "(2, 3)",
+        "(0, 0)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Check each point by substituting the x-coordinate into the equation. For (3, 7): y = 2(3) + 1 = 6 + 1 = 7. The point lies on the line."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the y-intercept of the line y = -x + 5?",
+      "options": [
+        "5",
+        "-1",
+        "0",
+        "4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The y-intercept is the value of y when x = 0. In the form y = mx + c, the y-intercept is 'c'. Here, c = 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the x-intercept of the line y = 4x - 8?",
+      "options": [
+        "2",
+        "-8",
+        "8",
+        "-2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The x-intercept occurs when y = 0. Set the equation to 0: 0 = 4x - 8. Add 8 to both sides: 8 = 4x. Divide by 4: x = 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "For the function y = x², what is the value of y when x = -2?",
+      "options": [
+        "4",
+        "-4",
+        "-2",
+        "2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute x = -2 into the function: y = (-2)² = (-2) * (-2) = 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The graph of y = x² - 4 crosses the x-axis at two points. What are the x-coordinates of these points?",
+      "options": [
+        "x = 2 and x = -2",
+        "x = 4 and x = -4",
+        "x = 2 only",
+        "x = 0 and x = 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The graph crosses the x-axis when y = 0. Solve the equation x² - 4 = 0. This gives x² = 4, so x = √4, which means x = 2 and x = -2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these linear graphs is the steepest?",
+      "options": [
+        "y = 5x + 1",
+        "y = 2x + 10",
+        "y = -3x + 4",
+        "y = x"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The steepness of a line is determined by the absolute value of its gradient (the 'm' in y = mx + c). The gradients are 5, 2, -3, and 1. The largest absolute value is |5| = 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given the function f(x) = 3x - 4, find the value of f(2).",
+      "options": [
+        "2",
+        "1",
+        "6",
+        "5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To find f(2), substitute x = 2 into the function definition: f(2) = 3(2) - 4 = 6 - 4 = 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given the function f(x) = 3x - 4, solve for x when f(x) = 11.",
+      "options": [
+        "5",
+        "15",
+        "29",
+        "7/3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Set the function equal to 11: 3x - 4 = 11. Add 4 to both sides to get 3x = 15. Divide by 3 to find x = 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The points (0, 5), (1, 7), and (2, 9) lie on a straight line. What is the equation of the line?",
+      "options": [
+        "y = 2x + 5",
+        "y = 5x + 2",
+        "y = x + 5",
+        "y = 2x - 5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The y-intercept is where x=0, which is 5 from the point (0, 5). The gradient is the change in y / change in x. Using (0, 5) and (1, 7), the gradient is (7-5)/(1-0) = 2. So the equation is y = 2x + 5."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "20260217T042012Z",
+  "board": "cie0580",
+  "section_key": "mensuration-c5",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 5,
+    "success": 5,
+    "failed": 0,
+    "corrected": 1,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:mensuration-c5:c5-01-units-of-measure",
+      "syllabusCode": "C5-01",
+      "topicSlug": "cie0580-mensuration-c5-c5-01-units-of-measure",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-c5:c5-02-area-and-perimeter",
+      "syllabusCode": "C5-02",
+      "topicSlug": "cie0580-mensuration-c5-c5-02-area-and-perimeter",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-c5:c5-03-circles-arcs-and-sectors",
+      "syllabusCode": "C5-03",
+      "topicSlug": "cie0580-mensuration-c5-c5-03-circles-arcs-and-sectors",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-c5:c5-04-surface-area-and-volume",
+      "syllabusCode": "C5-04",
+      "topicSlug": "cie0580-mensuration-c5-c5-04-surface-area-and-volume",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:mensuration-c5:c5-05-compound-shapes-and-parts-of-shapes",
+      "syllabusCode": "C5-05",
+      "topicSlug": "cie0580-mensuration-c5-c5-05-compound-shapes-and-parts-of-shapes",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

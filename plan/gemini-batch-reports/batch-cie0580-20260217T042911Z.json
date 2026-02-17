@@ -1,0 +1,56 @@
+{
+  "timestamp_utc": "20260217T042911Z",
+  "board": "cie0580",
+  "section_key": "probability-c8",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 3,
+    "success": 3,
+    "failed": 0,
+    "corrected": 0,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:probability-c8:c8-01-introduction-to-probability",
+      "syllabusCode": "C8-01",
+      "topicSlug": "cie0580-probability-c8-c8-01-introduction-to-probability",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:probability-c8:c8-02-relative-and-expected-frequencies",
+      "syllabusCode": "C8-02",
+      "topicSlug": "cie0580-probability-c8-c8-02-relative-and-expected-frequencies",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:probability-c8:c8-03-probability-of-combined-events",
+      "syllabusCode": "C8-03",
+      "topicSlug": "cie0580-probability-c8-c8-03-probability-of-combined-events",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

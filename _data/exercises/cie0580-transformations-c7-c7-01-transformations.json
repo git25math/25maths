@@ -1,0 +1,154 @@
+{
+  "topic": "Transformations",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:transformations-c7:c7-01-transformations",
+  "syllabusCode": "C7-01",
+  "tier": "Core",
+  "domain": "transformations",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (3, -2) is translated by the vector (-4, 5). What are the coordinates of the new point?",
+      "options": [
+        "(7, 3)",
+        "(-1, 3)",
+        "(-1, -7)",
+        "(1, 3)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To translate a point by a vector, add the vector's components to the point's coordinates. New x = 3 + (-4) = -1. New y = -2 + 5 = 3. The new point is (-1, 3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the reflection of the point (5, -1) in the x-axis?",
+      "options": [
+        "(-5, -1)",
+        "(5, 1)",
+        "(-5, 1)",
+        "(-1, 5)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reflection in the x-axis changes the sign of the y-coordinate. The x-coordinate remains the same. So, (5, -1) becomes (5, 1)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (2, 4) is rotated 90° anticlockwise about the origin (0, 0). What is the new position?",
+      "options": [
+        "(-4, 2)",
+        "(4, -2)",
+        "(-2, -4)",
+        "(2, -4)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A 90° anticlockwise rotation about the origin maps the point (x, y) to (-y, x). So, (2, 4) becomes (-4, 2)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shape is enlarged by a scale factor of 3 with the origin as the centre of enlargement. If a point on the shape is (2, -1), what is its new position after enlargement?",
+      "options": [
+        "(5, 2)",
+        "(6, -3)",
+        "(-1, 2)",
+        "(2/3, -1/3)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To enlarge a point from the origin, multiply both coordinates by the scale factor. New x = 2 * 3 = 6. New y = -1 * 3 = -3. The new point is (6, -3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the reflection of the point (-3, 4) in the y-axis?",
+      "options": [
+        "(-3, -4)",
+        "(3, 4)",
+        "(3, -4)",
+        "(4, -3)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reflection in the y-axis changes the sign of the x-coordinate. The y-coordinate remains the same. So, (-3, 4) becomes (3, 4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (-1, -5) is rotated 180° about the origin. What are the coordinates of the image?",
+      "options": [
+        "(-5, 1)",
+        "(1, 5)",
+        "(-1, 5)",
+        "(5, -1)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A 180° rotation about the origin changes the sign of both the x and y coordinates. The point (x, y) becomes (-x, -y). So, (-1, -5) becomes (1, 5)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Point P moves from (1, 2) to (5, 0). What is the translation vector?",
+      "options": [
+        "(6, 2)",
+        "(4, -2)",
+        "(-4, 2)",
+        "(4, 2)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The translation vector is found by subtracting the original coordinates from the new coordinates. Vector = (5 - 1, 0 - 2) = (4, -2)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shape is enlarged with the origin as the centre. Point A (10, -5) on the shape moves to point A' (2, -1). What is the scale factor of the enlargement?",
+      "options": [
+        "5",
+        "2",
+        "0.2",
+        "0.5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The scale factor is the ratio of a new coordinate to an old coordinate. Scale factor = New x / Old x = 2 / 10 = 0.2. It can also be found using the y-coordinates: -1 / -5 = 0.2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which transformation moves a shape without changing its size or orientation?",
+      "options": [
+        "Rotation",
+        "Reflection",
+        "Enlargement",
+        "Translation"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A translation is a slide from one position to another. The shape's size (area) and orientation (the way it is pointing) do not change."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The point (4, 1) is reflected in the line y=x. What are the new coordinates?",
+      "options": [
+        "(-4, 1)",
+        "(4, -1)",
+        "(1, 4)",
+        "(-1, -4)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When reflecting a point in the line y=x, the x and y coordinates are swapped. So, (4, 1) becomes (1, 4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (6, 0) is rotated 90° clockwise about the origin. What is its new position?",
+      "options": [
+        "(0, -6)",
+        "(0, 6)",
+        "(-6, 0)",
+        "(6, 0)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A 90° clockwise rotation about the origin maps the point (x, y) to (y, -x). So, (6, 0) becomes (0, -6)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which transformation changes the size of a shape?",
+      "options": [
+        "Rotation",
+        "Reflection",
+        "Translation",
+        "Enlargement"
+      ],
+      "correctAnswer": 3,
+      "explanation": "An enlargement changes the size of a shape by a scale factor. If the scale factor is not 1 or -1, the size will change. Rotation, reflection, and translation are isometries, which preserve size and shape."
+    }
+  ]
+}
