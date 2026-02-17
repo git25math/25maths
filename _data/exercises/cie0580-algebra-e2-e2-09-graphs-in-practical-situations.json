@@ -1,0 +1,154 @@
+{
+  "topic": "Graphs in practical situations",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-e2:e2-09-graphs-in-practical-situations",
+  "syllabusCode": "E2-09",
+  "tier": "Extended",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "The cost, $C, for a taxi journey of distance 'd' km is given by the formula C = 2.50 + 1.80d. What is the cost of a 10 km journey?",
+      "options": [
+        "$18.00",
+        "$20.50",
+        "$25.00",
+        "$4.30"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Substitute d = 10 into the formula: C = 2.50 + 1.80 * 10. This simplifies to C = 2.50 + 18.00, which equals $20.50."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Using the taxi cost formula C = 2.50 + 1.80d, what is the distance 'd' of a journey that costs $29.50?",
+      "options": [
+        "17.8 km",
+        "15 km",
+        "16.4 km",
+        "12 km"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Set C = 29.50: 29.50 = 2.50 + 1.80d. Subtract 2.50 from both sides: 27.00 = 1.80d. Divide by 1.80: d = 27 / 1.8 = 15 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The volume of water, V litres, in a tank after 't' minutes is V = 500 - 8t. How much water is in the tank after 15 minutes?",
+      "options": [
+        "380 litres",
+        "492 litres",
+        "120 litres",
+        "620 litres"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute t = 15 into the formula: V = 500 - 8 * 15. This simplifies to V = 500 - 120, which equals 380 litres."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Using the formula V = 500 - 8t, how long will it take for the tank to be empty (V=0)?",
+      "options": [
+        "4000 minutes",
+        "500 minutes",
+        "62.5 minutes",
+        "50 minutes"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Set V = 0: 0 = 500 - 8t. Add 8t to both sides: 8t = 500. Divide by 8: t = 500 / 8 = 62.5 minutes."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A graph of distance against time for a cyclist is a straight line passing through (0, 0) and (3, 75), where time is in hours and distance is in km. What is the cyclist's speed?",
+      "options": [
+        "75 km/h",
+        "225 km/h",
+        "0.04 km/h",
+        "25 km/h"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The speed is the gradient of the distance-time graph. Gradient = (change in distance) / (change in time) = (75 - 0) / (3 - 0) = 75 / 3 = 25 km/h."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The value of a machine, $V, depreciates linearly over time, 't' years. The graph of V against t is a straight line passing through (0, 25000) and (10, 5000). What does the gradient of the graph represent?",
+      "options": [
+        "The initial value of the machine",
+        "The scrap value of the machine after 10 years",
+        "The rate of depreciation per year",
+        "The total depreciation over 10 years"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The gradient of a value-time graph represents the rate of change of value per unit of time. In this context, it's the rate at which the machine's value decreases each year."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "For the machine in the previous question, with the value graph passing through (0, 25000) and (10, 5000), what is the annual rate of depreciation?",
+      "options": [
+        "-$2000 per year",
+        "-$2500 per year",
+        "-$500 per year",
+        "-$20000 per year"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Rate of depreciation is the gradient. Gradient = (5000 - 25000) / (10 - 0) = -20000 / 10 = -2000. So the value decreases by $2000 per year."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A phone battery is at 90%. After 4 hours of use, it is at 50%. Assuming a constant rate of discharge, what will the percentage be after a total of 6 hours of use?",
+      "options": [
+        "30%",
+        "20%",
+        "40%",
+        "10%"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The battery drops by 90% - 50% = 40% in 4 hours. The rate of discharge is 40% / 4 hours = 10% per hour. After 6 hours, it will have dropped by 6 * 10% = 60%. The remaining charge is 90% - 60% = 30%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The cost, $P, of printing 'n' leaflets is given by P = 20 + 0.05n. What is the cost of printing 800 leaflets?",
+      "options": [
+        "$40",
+        "$60",
+        "$820",
+        "$20.40"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Substitute n = 800 into the formula: P = 20 + 0.05 * 800. This simplifies to P = 20 + 40, which equals $60."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Using the printing cost formula P = 20 + 0.05n, how many leaflets can be printed for a budget of $100?",
+      "options": [
+        "2400",
+        "2000",
+        "400",
+        "1600"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Set P = 100: 100 = 20 + 0.05n. Subtract 20: 80 = 0.05n. Divide by 0.05: n = 80 / 0.05 = 1600 leaflets."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The formula to convert temperature from Celsius (C) to Fahrenheit (F) is F = 1.8C + 32. Convert 15°C to Fahrenheit.",
+      "options": [
+        "59°F",
+        "47°F",
+        "27°F",
+        "8.3°F"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute C = 15 into the formula: F = 1.8 * 15 + 32. This simplifies to F = 27 + 32, which equals 59°F."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Using the formula F = 1.8C + 32, convert 14°F to Celsius. Give your answer to the nearest integer.",
+      "options": [
+        "-10°C",
+        "25°C",
+        "-18°C",
+        "-4°C"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Set F = 14: 14 = 1.8C + 32. Subtract 32: -18 = 1.8C. Divide by 1.8: C = -18 / 1.8 = -10°C."
+    }
+  ]
+}

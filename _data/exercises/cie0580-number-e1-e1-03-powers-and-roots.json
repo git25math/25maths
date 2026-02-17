@@ -1,0 +1,154 @@
+{
+  "topic": "Powers and Roots",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-e1:e1-03-powers-and-roots",
+  "syllabusCode": "E1-03",
+  "tier": "Extended",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 2⁵.",
+      "options": [
+        "10",
+        "25",
+        "32",
+        "16"
+      ],
+      "correctAnswer": 2,
+      "explanation": "2⁵ means 2 × 2 × 2 × 2 × 2, which equals 32. It is not 2 × 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify 3² × 3⁴.",
+      "options": [
+        "3⁸",
+        "9⁶",
+        "3⁶",
+        "9⁸"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When multiplying powers with the same base, you add the indices. So, 3² × 3⁴ = 3²⁺⁴ = 3⁶."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify 10⁶ ÷ 10².",
+      "options": [
+        "10⁸",
+        "10³",
+        "10⁻⁴",
+        "10⁴"
+      ],
+      "correctAnswer": 3,
+      "explanation": "When dividing powers with the same base, you subtract the indices. So, 10⁶ ÷ 10² = 10⁶⁻² = 10⁴."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate (2³)⁴.",
+      "options": [
+        "2⁷",
+        "2¹²",
+        "2⁶⁴",
+        "8⁴"
+      ],
+      "correctAnswer": 1,
+      "explanation": "When raising a power to another power, you multiply the indices. So, (2³)⁴ = 2³ˣ⁴ = 2¹²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of 5⁰?",
+      "options": [
+        "0",
+        "1",
+        "5",
+        "It is undefined."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Any non-zero number raised to the power of 0 is equal to 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 4⁻².",
+      "options": [
+        "-8",
+        "-16",
+        "1/8",
+        "1/16"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A negative index indicates the reciprocal. So, 4⁻² = 1/4² = 1/16."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 9¹/².",
+      "options": [
+        "4.5",
+        "18",
+        "3",
+        "81"
+      ],
+      "correctAnswer": 2,
+      "explanation": "An index of 1/2 means the square root. So, 9¹/² = √9 = 3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 27¹/³.",
+      "options": [
+        "9",
+        "3",
+        "81",
+        "2.7"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An index of 1/3 means the cube root. So, 27¹/³ = ³√27 = 3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify a⁶ × a⁻².",
+      "options": [
+        "a⁻¹²",
+        "a⁴",
+        "a⁸",
+        "a⁻³"
+      ],
+      "correctAnswer": 1,
+      "explanation": "When multiplying powers with the same base, add the indices. So, a⁶ × a⁻² = a⁶⁺⁽⁻²⁾ = a⁴."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Write 10⁻³ as a decimal.",
+      "options": [
+        "0.001",
+        "-1000",
+        "0.01",
+        "0.0001"
+      ],
+      "correctAnswer": 0,
+      "explanation": "10⁻³ is equivalent to 1/10³ = 1/1000, which is 0.001 as a decimal."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 16³/⁴.",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "32"
+      ],
+      "correctAnswer": 2,
+      "explanation": "16³/⁴ means (⁴√16)³. The 4th root of 16 is 2. Then, 2³ = 8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The area of a square is 49 cm². What is the length of one side?",
+      "options": [
+        "24.5 cm",
+        "7 cm",
+        "12.25 cm",
+        "9.8 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The area of a square is side length squared. To find the side length, you need to find the square root of the area. √49 = 7 cm."
+    }
+  ]
+}

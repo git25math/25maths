@@ -1,0 +1,104 @@
+{
+  "timestamp_utc": "20260217T062725Z",
+  "board": "cie0580",
+  "section_key": "statistics-e9",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 7,
+    "success": 7,
+    "failed": 0,
+    "corrected": 1,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-01-classifying-statistical-data",
+      "syllabusCode": "E9-01",
+      "topicSlug": "cie0580-statistics-e9-e9-01-classifying-statistical-data",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-02-interpreting-statistical-data",
+      "syllabusCode": "E9-02",
+      "topicSlug": "cie0580-statistics-e9-e9-02-interpreting-statistical-data",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-03-averages-and-range",
+      "syllabusCode": "E9-03",
+      "topicSlug": "cie0580-statistics-e9-e9-03-averages-and-range",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-04-statistical-charts-and-diagrams",
+      "syllabusCode": "E9-04",
+      "topicSlug": "cie0580-statistics-e9-e9-04-statistical-charts-and-diagrams",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-05-scatter-diagrams",
+      "syllabusCode": "E9-05",
+      "topicSlug": "cie0580-statistics-e9-e9-05-scatter-diagrams",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-06-cumulative-frequency-diagrams",
+      "syllabusCode": "E9-06",
+      "topicSlug": "cie0580-statistics-e9-e9-06-cumulative-frequency-diagrams",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:statistics-e9:e9-07-histograms",
+      "syllabusCode": "E9-07",
+      "topicSlug": "cie0580-statistics-e9-e9-07-histograms",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

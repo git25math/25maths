@@ -1,0 +1,104 @@
+{
+  "timestamp_utc": "20260217T054243Z",
+  "board": "cie0580",
+  "section_key": "coordinate-e3",
+  "start_code": null,
+  "end_code": null,
+  "lang": "en",
+  "question_count": 12,
+  "gen_model": "gemini-2.5-pro",
+  "audit_model": "gemini-2.5-flash",
+  "totals": {
+    "requested": 7,
+    "success": 7,
+    "failed": 0,
+    "corrected": 1,
+    "warnings": 0
+  },
+  "results": [
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-01-coordinates",
+      "syllabusCode": "E3-01",
+      "topicSlug": "cie0580-coordinate-e3-e3-01-coordinates",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-02-drawing-linear-graphs",
+      "syllabusCode": "E3-02",
+      "topicSlug": "cie0580-coordinate-e3-e3-02-drawing-linear-graphs",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-03-gradient-of-linear-graphs",
+      "syllabusCode": "E3-03",
+      "topicSlug": "cie0580-coordinate-e3-e3-03-gradient-of-linear-graphs",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-04-length-and-midpoint",
+      "syllabusCode": "E3-04",
+      "topicSlug": "cie0580-coordinate-e3-e3-04-length-and-midpoint",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": true,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-05-equations-of-linear-graphs",
+      "syllabusCode": "E3-05",
+      "topicSlug": "cie0580-coordinate-e3-e3-05-equations-of-linear-graphs",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-06-parallel-lines",
+      "syllabusCode": "E3-06",
+      "topicSlug": "cie0580-coordinate-e3-e3-06-parallel-lines",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    },
+    {
+      "subtopicId": "cie0580:coordinate-e3:e3-07-perpendicular-lines",
+      "syllabusCode": "E3-07",
+      "topicSlug": "cie0580-coordinate-e3-e3-07-perpendicular-lines",
+      "status": "ok",
+      "generated": true,
+      "audited": true,
+      "corrected": false,
+      "issues_before": [],
+      "issues_after": [],
+      "notes": ""
+    }
+  ]
+}

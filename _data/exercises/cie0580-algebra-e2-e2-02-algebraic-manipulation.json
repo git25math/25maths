@@ -1,0 +1,154 @@
+{
+  "topic": "Algebraic Manipulation",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-e2:e2-02-algebraic-manipulation",
+  "syllabusCode": "E2-02",
+  "tier": "Extended",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Expand and simplify 5(3x - 2) - 2(x + 3).",
+      "options": [
+        "13x - 16",
+        "13x - 4",
+        "17x - 16",
+        "13x + 1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Expand the brackets first: 15x - 10 - 2x - 6. Then collect like terms: (15x - 2x) + (-10 - 6) = 13x - 16."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise completely 18x²y - 24xy³.",
+      "options": [
+        "6xy(3x - 4y²)",
+        "6y(3x² - 4xy²)",
+        "xy(18x - 24y²)",
+        "6x(3xy - 4y³)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Find the highest common factor of the terms. For the numbers, it's 6. For x, it's x. For y, it's y. So the HCF is 6xy. Factoring this out gives 6xy(3x - 4y²)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Expand and simplify (2x - 3)(x + 5).",
+      "options": [
+        "2x² + 7x - 15",
+        "2x² - 7x - 15",
+        "2x² + 13x - 15",
+        "2x² - 15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use the FOIL method: (2x * x) + (2x * 5) + (-3 * x) + (-3 * 5) = 2x² + 10x - 3x - 15. Combine the middle terms to get 2x² + 7x - 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise x² - 9x + 20.",
+      "options": [
+        "(x - 4)(x - 5)",
+        "(x + 4)(x + 5)",
+        "(x - 10)(x + 1)",
+        "(x - 20)(x - 1)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Look for two numbers that multiply to +20 and add to -9. These numbers are -4 and -5. So the factors are (x - 4)(x - 5)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make 'a' the subject of the formula s = ut + (1/2)at².",
+      "options": [
+        "a = 2(s - ut) / t²",
+        "a = (s - ut) / (2t²)",
+        "a = 2s - ut / t²",
+        "a = 2(s + ut) / t²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, subtract 'ut' from both sides: s - ut = (1/2)at². Then multiply by 2: 2(s - ut) = at². Finally, divide by t² to isolate 'a': a = 2(s - ut) / t²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (9x⁶y⁴) / (3x²y).",
+      "options": [
+        "3x⁴y³",
+        "6x⁴y³",
+        "3x³y⁴",
+        "3x⁸y⁵"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Divide the coefficients: 9 / 3 = 3. Subtract the powers of x: 6 - 2 = 4. Subtract the powers of y: 4 - 1 = 3. This gives 3x⁴y³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise 9a² - 16.",
+      "options": [
+        "(3a - 4)(3a + 4)",
+        "(3a - 4)²",
+        "(9a - 4)(a + 4)",
+        "(3a + 4)²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is a difference of two squares, a² - b², which factorises to (a - b)(a + b). Here, a is 3a and b is 4. So the factors are (3a - 4)(3a + 4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Expand and simplify (3x - 2)².",
+      "options": [
+        "9x² - 12x + 4",
+        "9x² - 4",
+        "9x² + 4",
+        "6x - 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "(3x - 2)² is (3x - 2)(3x - 2). Using FOIL: (3x * 3x) + (3x * -2) + (-2 * 3x) + (-2 * -2) = 9x² - 6x - 6x + 4. Combine the middle terms to get 9x² - 12x + 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise x² + 5x - 14.",
+      "options": [
+        "(x + 7)(x - 2)",
+        "(x - 7)(x + 2)",
+        "(x + 14)(x - 1)",
+        "(x - 14)(x + 1)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Look for two numbers that multiply to -14 and add to +5. These numbers are +7 and -2. So the factors are (x + 7)(x - 2)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make 'x' the subject of the formula y = a / (x + b).",
+      "options": [
+        "x = (a / y) - b",
+        "x = (a / y) + b",
+        "x = ay - b",
+        "x = a / (y - b)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiply both sides by (x + b): y(x + b) = a. Divide by y: x + b = a / y. Finally, subtract b: x = (a / y) - b."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify (x² - 9) / (x² + 2x - 15).",
+      "options": [
+        "(x - 3) / (x + 5)",
+        "(x + 3) / (x + 5)",
+        "(x - 3) / (x - 5)",
+        "(x + 3) / (x - 5)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Factorise the numerator (difference of squares): (x - 3)(x + 3). Factorise the denominator: (x + 5)(x - 3). The expression becomes [(x - 3)(x + 3)] / [(x + 5)(x - 3)]. Cancel the common factor (x - 3) to get (x + 3) / (x + 5)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise by grouping: xy + 3y + 2x + 6.",
+      "options": [
+        "(x + 3)(y + 2)",
+        "(x + 2)(y + 3)",
+        "(x + 6)(y + 1)",
+        "Cannot be factorised"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Group the terms: (xy + 3y) + (2x + 6). Factorise each group: y(x + 3) + 2(x + 3). Now, factor out the common bracket (x + 3) to get (x + 3)(y + 2)."
+    }
+  ]
+}

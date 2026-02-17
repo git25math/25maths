@@ -1,0 +1,154 @@
+{
+  "topic": "ordering",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-e1:e1-05-ordering",
+  "syllabusCode": "E1-05",
+  "tier": "Extended",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "In the number 34.567, what is the place value of the digit 6?",
+      "options": [
+        "tenths",
+        "hundredths",
+        "thousandths",
+        "units"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The first digit after the decimal point is in the tenths place, the second is in the hundredths place, and the third is in the thousandths place."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following lists of decimal numbers is in ascending order?",
+      "options": [
+        "0.405, 0.5, 0.45",
+        "0.5, 0.45, 0.405",
+        "0.405, 0.45, 0.5",
+        "0.45, 0.405, 0.5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ascending order means from smallest to largest. Comparing the digits from left to right: 0.405 is the smallest, followed by 0.45 (which is 0.450), and finally 0.5 (which is 0.500)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these numbers is the largest?",
+      "options": [
+        "-5.1",
+        "-5.01",
+        "-5.11",
+        "-5.001"
+      ],
+      "correctAnswer": 3,
+      "explanation": "For negative numbers, the number with the smallest absolute value (the one closest to zero) is the largest. -5.001 is the closest to zero."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following values for `y` satisfies the inequality `y < -2.55`?",
+      "options": [
+        "-2.5",
+        "-2.55",
+        "-2.54",
+        "-2.56"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A number `y` is less than -2.55 if it is further from zero on the negative number line. -2.56 is more negative than -2.55."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What number lies exactly halfway between 1.3 and 1.4?",
+      "options": [
+        "1.31",
+        "1.41",
+        "1.35",
+        "1.5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To find the midpoint, add the two numbers and divide by 2. (1.3 + 1.4) / 2 = 2.7 / 2 = 1.35."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Four athletes run a 100m race. Their times are 10.3s, 10.03s, 10.13s, and 10.31s. Which represents the fastest time?",
+      "options": [
+        "10.3s",
+        "10.03s",
+        "10.13s",
+        "10.31s"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The fastest time is the smallest number. By comparing the decimal parts, 10.03 is the smallest value."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of the digit 8 in the number 12,845.9?",
+      "options": [
+        "80",
+        "800",
+        "8",
+        "8000"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The digit 8 is in the hundreds place, so its value is 8 multiplied by 100, which is 800."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Arrange the following numbers in descending order: -0.8, 0, -1.2, 0.4",
+      "options": [
+        "-1.2, -0.8, 0, 0.4",
+        "0.4, 0, -1.2, -0.8",
+        "0.4, 0, -0.8, -1.2",
+        "0.4, -0.8, -1.2, 0"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Descending order means from largest to smallest. Positive numbers are always greater than negative numbers. For negative numbers, the one closer to zero is larger."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following numbers is the smallest?",
+      "options": [
+        "0.7",
+        "3/4",
+        "0.705",
+        "2/3"
+      ],
+      "correctAnswer": 3,
+      "explanation": "To compare, convert all numbers to decimals: 3/4 = 0.75, and 2/3 is approximately 0.667. Comparing 0.7, 0.75, 0.705, and 0.667, the smallest is 0.667, which corresponds to 2/3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The temperatures recorded in a city over four days were -1.5°C, 0°C, -2.1°C, and 1.2°C. Which was the coldest temperature?",
+      "options": [
+        "-1.5°C",
+        "0°C",
+        "-2.1°C",
+        "1.2°C"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The coldest temperature is the most negative number, which is the number furthest from zero on the negative side of the number line. -2.1 is colder than -1.5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following inequality statements is correct?",
+      "options": [
+        "4.101 > 4.11",
+        "-6.2 > -6.19",
+        "0.099 > 0.1",
+        "-3.45 < -3.44"
+      ],
+      "correctAnswer": 3,
+      "explanation": "For negative numbers, the number with the larger absolute value is smaller. Since 3.45 > 3.44, it follows that -3.45 < -3.44. The other options are incorrect."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the number 9.876, what is the value of the digit 7?",
+      "options": [
+        "70",
+        "7",
+        "0.7",
+        "0.07"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The digit 7 is in the hundredths position (two places to the right of the decimal point), which means its value is 7/100 or 0.07."
+    }
+  ]
+}
