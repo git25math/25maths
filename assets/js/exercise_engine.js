@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentSubtopicId = (typeof exerciseCurrentSubtopicId === 'string' && exerciseCurrentSubtopicId)
         ? exerciseCurrentSubtopicId
         : '';
+    const exerciseMeta = (typeof exerciseMetaData === 'object' && exerciseMetaData)
+        ? exerciseMetaData
+        : null;
     const topicSlug = exerciseEngine.dataset.topic || topicSlugFromPage;
     let currentQuestionIndex = 0;
     let score = 0;
@@ -126,6 +129,26 @@ document.addEventListener('DOMContentLoaded', () => {
         nextExerciseLinkSlot.innerHTML = `
             <a href="${withTrackingUrl(nextExercise.url, 'next_exercise')}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabel}</a>
         `;
+    }
+
+    function persistLastExercise() {
+        if (!exerciseMeta || typeof window === 'undefined' || !window.localStorage) {
+            return;
+        }
+        const payload = {
+            url: `${window.location.pathname}${window.location.search || ''}`,
+            title: exerciseMeta.title || document.title || '',
+            subtitle: exerciseMeta.subtitle || '',
+            board: exerciseMeta.board || '',
+            tier: exerciseMeta.tier || '',
+            syllabusCode: exerciseMeta.syllabusCode || '',
+            updatedAt: new Date().toISOString(),
+        };
+        try {
+            window.localStorage.setItem('lastInteractiveExerciseV1', JSON.stringify(payload));
+        } catch (error) {
+            // Ignore localStorage write errors.
+        }
     }
 
     function buildCompletionActionsHtml() {
@@ -305,6 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * Initializes the exercise.
      */
     function initializeExercise() {
+        persistLastExercise();
         nextExercise = resolveNextExercise();
         injectNextExerciseLink();
         attachTrackingToVisibleLinks();

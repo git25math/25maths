@@ -110,6 +110,13 @@
         const exerciseTopicSlug = {{ page.topic | jsonify }};
         const exerciseLane = {{ exercise_lane_json | strip }};
         const exerciseCurrentSubtopicId = {{ page.subtopic_id | jsonify }};
+        const exerciseMetaData = {
+            title: {{ page.title | jsonify }},
+            subtitle: {{ page.subtitle | default: "" | jsonify }},
+            board: {{ page.board | default: "" | jsonify }},
+            tier: {{ page.tier | default: "" | jsonify }},
+            syllabusCode: {{ page.syllabus_code | default: "" | jsonify }}
+        };
     </script>
     <script src="{{ '/assets/js/exercise_engine.js' | relative_url }}"></script>
 </body>
