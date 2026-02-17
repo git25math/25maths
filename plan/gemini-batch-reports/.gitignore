@@ -1,0 +1,6 @@
+# Generated batch reports from iterative local runs.
+# Existing tracked snapshots stay tracked; new runs stay local unless force-added.
+batch-*.json
+
+# Local archival buckets for run outputs.
+archive/
