@@ -1,0 +1,154 @@
+{
+  "topic": "Polygons",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-f4:f4-02-polygons",
+  "syllabusCode": "F4-02",
+  "tier": "Foundation",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "How many sides does a pentagon have?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A pentagon is a polygon with five sides."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A polygon with all sides equal in length and all interior angles equal in measure is called what?",
+      "options": [
+        "An irregular polygon",
+        "A convex polygon",
+        "A regular polygon",
+        "A concave polygon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A regular polygon has all sides of equal length and all interior angles of equal measure."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the sum of the interior angles of a triangle?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sum of the interior angles of any triangle is 180°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these shapes is a quadrilateral?",
+      "options": [
+        "Pentagon",
+        "Hexagon",
+        "Octagon",
+        "Trapezium"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A quadrilateral is a polygon with four sides. A trapezium has four sides."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the name of a polygon with eight sides?",
+      "options": [
+        "Heptagon",
+        "Nonagon",
+        "Decagon",
+        "Octagon"
+      ],
+      "correctAnswer": 3,
+      "explanation": "An octagon is a polygon with eight sides."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A regular hexagon has how many lines of symmetry?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A regular hexagon has 6 sides, and a regular polygon has a number of lines of symmetry equal to its number of sides."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the exterior angle of a regular octagon?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sum of the exterior angles of any convex polygon is 360°. For a regular octagon (8 sides), each exterior angle is 360° / 8 = 45°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The sum of the interior angles of a polygon can be found using the formula (n-2) × 180°, where 'n' is the number of sides. What is the sum of the interior angles of a quadrilateral?",
+      "options": [
+        "180°",
+        "360°",
+        "540°",
+        "720°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For a quadrilateral, n=4. So, (4-2) × 180° = 2 × 180° = 360°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If a regular polygon has an exterior angle of 60°, how many sides does it have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The sum of exterior angles is 360°. If each exterior angle is 60°, then the number of sides is 360° / 60° = 6. So it's a hexagon."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the interior angle of a regular hexagon?",
+      "options": [
+        "60°",
+        "90°",
+        "120°",
+        "150°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A regular hexagon has 6 sides. Each exterior angle is 360° / 6 = 60°. Each interior angle is 180° - exterior angle = 180° - 60° = 120°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which polygon has a sum of interior angles equal to 540°?",
+      "options": [
+        "Quadrilateral",
+        "Pentagon",
+        "Hexagon",
+        "Heptagon"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Using the formula (n-2) × 180° = 540°. Dividing by 180° gives (n-2) = 3, so n = 5. A polygon with 5 sides is a pentagon."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If one interior angle of a regular polygon is 90°, what type of polygon is it?",
+      "options": [
+        "Triangle",
+        "Pentagon",
+        "Square",
+        "Hexagon"
+      ],
+      "correctAnswer": 2,
+      "explanation": "If the interior angle is 90°, the exterior angle is 180° - 90° = 90°. The number of sides is 360° / 90° = 4. A regular 4-sided polygon is a square."
+    }
+  ]
+}

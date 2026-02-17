@@ -1,0 +1,154 @@
+{
+  "topic": "Sequences",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:sequences-h3:h3-03-graphs",
+  "syllabusCode": "H3-03",
+  "tier": "Higher",
+  "domain": "sequences",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A sequence is defined by the nth term $U_n = 2n + 3$. Which graph represents this sequence?",
+      "options": [
+        "A graph with points (1, 5), (2, 7), (3, 9), ...",
+        "A graph with points (1, 2), (2, 4), (3, 6), ...",
+        "A graph with points (0, 3), (1, 5), (2, 7), ...",
+        "A graph with points (1, 3), (2, 5), (3, 7), ..."
+      ],
+      "correctAnswer": 0,
+      "explanation": "For the sequence $U_n = 2n + 3$: when n=1, $U_1 = 2(1)+3 = 5$; when n=2, $U_2 = 2(2)+3 = 7$; when n=3, $U_3 = 2(3)+3 = 9$. The graph should plot (n, $U_n$) points, so (1, 5), (2, 7), (3, 9), ..."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The graph shows the first four terms of an arithmetic sequence. What is the nth term of this sequence?\n\n[Imagine a graph with points (1, 7), (2, 10), (3, 13), (4, 16)]",
+      "options": [
+        "$U_n = 3n + 4$",
+        "$U_n = 3n + 7$",
+        "$U_n = 4n + 3$",
+        "$U_n = 7n$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "From the points (1, 7), (2, 10), (3, 13), (4, 16), the first term is 7 and the common difference is 3. The nth term of an arithmetic sequence is $U_n = a + (n-1)d$. So, $U_n = 7 + (n-1)3 = 7 + 3n - 3 = 3n + 4$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A quadratic sequence has terms represented by points on a parabolic curve. Which of the following describes the first differences of a quadratic sequence?\n\n[Imagine a graph with points that follow a parabolic shape, e.g., (1, 2), (2, 5), (3, 10), (4, 17)]",
+      "options": [
+        "They form a linear sequence.",
+        "They form a quadratic sequence.",
+        "They are constant.",
+        "They are random."
+      ],
+      "correctAnswer": 0,
+      "explanation": "For a quadratic sequence, the first differences form an arithmetic (linear) sequence, and the second differences are constant. For example, for $U_n = n^2 + 1$, terms are 2, 5, 10, 17... First differences are 3, 5, 7..., which is a linear sequence."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The graph of a sequence has points (1, 10), (2, 8), (3, 6), (4, 4). What type of sequence is this?",
+      "options": [
+        "Arithmetic sequence",
+        "Geometric sequence",
+        "Quadratic sequence",
+        "Fibonacci sequence"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The terms are 10, 8, 6, 4. The common difference between consecutive terms is -2 (8-10=-2, 6-8=-2, 4-6=-2). A constant difference indicates an arithmetic sequence."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which statement is true for the graph of a linear sequence?",
+      "options": [
+        "The points lie on a straight line.",
+        "The points lie on a curve.",
+        "The points form a horizontal line.",
+        "The points form a vertical line."
+      ],
+      "correctAnswer": 0,
+      "explanation": "A linear sequence (arithmetic sequence) has a constant common difference, meaning the terms increase or decrease by a fixed amount each time. When plotted, these points will always fall on a straight line."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sequence is defined by $U_n = n^2 + 2$. When this sequence is plotted on a graph, what shape will the points generally follow?",
+      "options": [
+        "A parabola",
+        "A straight line",
+        "An exponential curve",
+        "A circle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The nth term $U_n = n^2 + 2$ is a quadratic expression in terms of n. Graphs of quadratic functions are parabolas. Since n takes integer values (1, 2, 3, ...), the points will lie on the curve of a parabola."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The graph of a geometric sequence has points (1, 2), (2, 6), (3, 18), (4, 54). What is the common ratio?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The terms are 2, 6, 18, 54. The common ratio is found by dividing a term by its preceding term: 6/2 = 3, 18/6 = 3, 54/18 = 3. The common ratio is 3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sequence of square numbers is plotted on a graph. What would you observe about the spacing between consecutive points as n increases?",
+      "options": [
+        "The vertical distance between points increases.",
+        "The vertical distance between points remains constant.",
+        "The vertical distance between points decreases.",
+        "The points form a straight horizontal line."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Square numbers are 1, 4, 9, 16, 25, ... The differences between consecutive terms are 3, 5, 7, 9, ... These are the first differences. As n increases, the first differences increase, meaning the vertical distance between consecutive points on the graph increases."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these graphs could represent the sequence $U_n = 2^n$?\n\n[Assume graphs show discrete points for n=1, 2, 3, ...]",
+      "options": [
+        "A graph with points (1, 2), (2, 4), (3, 8), (4, 16)",
+        "A graph with points (1, 1), (2, 4), (3, 9), (4, 16)",
+        "A graph with points (1, 2), (2, 3), (3, 4), (4, 5)",
+        "A graph with points (1, 1/2), (2, 1/4), (3, 1/8), (4, 1/16)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "For $U_n = 2^n$: $U_1 = 2^1 = 2$; $U_2 = 2^2 = 4$; $U_3 = 2^3 = 8$; $U_4 = 2^4 = 16$. The points on the graph should be (1, 2), (2, 4), (3, 8), (4, 16)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The points on a graph represent the terms of an arithmetic sequence. If the graph passes through (1, 5) and (3, 11), what is the common difference of the sequence?",
+      "options": [
+        "3",
+        "2",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The first term $U_1 = 5$ and the third term $U_3 = 11$. For an arithmetic sequence, $U_3 = U_1 + 2d$. So, $11 = 5 + 2d$. Subtracting 5 from both sides gives $6 = 2d$, so $d = 3$. The common difference is 3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What kind of graph would you expect for a sequence where the nth term is $U_n = \\frac{1}{n}$?",
+      "options": [
+        "A curve approaching the x-axis",
+        "A straight line with positive gradient",
+        "A straight line with negative gradient",
+        "A curve approaching a constant non-zero value"
+      ],
+      "correctAnswer": 0,
+      "explanation": "For $U_n = \\frac{1}{n}$, the terms are 1, 1/2, 1/3, 1/4, ... As n increases, $U_n$ decreases but never reaches zero. This forms a curve that approaches the x-axis (n-axis) but never touches it. This is a reciprocal function."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sequence has its terms plotted on a graph. The points are (1, 3), (2, 6), (3, 12), (4, 24). What is the nth term rule for this sequence?",
+      "options": [
+        "$U_n = 3 \\times 2^{n-1}$",
+        "$U_n = 3n$",
+        "$U_n = 2n + 1$",
+        "$U_n = 3 \\times 2^n$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The terms are 3, 6, 12, 24. This is a geometric sequence with first term $a = 3$ and common ratio $r = 6/3 = 2$. The formula for the nth term of a geometric sequence is $U_n = a r^{n-1}$. So, $U_n = 3 \\times 2^{n-1}$."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "topic": "Trigonometry and Pythagoras' theorem",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-f4:f4-08-trigonometry-and-pythagoras-theorem",
+  "syllabusCode": "F4-08",
+  "tier": "Foundation",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A right-angled triangle has two shorter sides of length 6 cm and 8 cm. What is the length of the hypotenuse?",
+      "options": [
+        "10 cm",
+        "14 cm",
+        "28 cm",
+        "100 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Using Pythagoras' theorem, a² + b² = c², where c is the hypotenuse. So, 6² + 8² = 36 + 64 = 100. The hypotenuse length is √100 = 10 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A ladder is 5 metres long. It leans against a vertical wall with its base 3 metres from the wall. How high up the wall does the ladder reach?",
+      "options": [
+        "2 metres",
+        "4 metres",
+        "8 metres",
+        "16 metres"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This forms a right-angled triangle. Let the height be h. By Pythagoras' theorem, h² + 3² = 5². So, h² + 9 = 25. Subtracting 9 from both sides gives h² = 16. Therefore, h = √16 = 4 metres."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these sets of lengths could form the sides of a right-angled triangle?",
+      "options": [
+        "3, 4, 6",
+        "5, 12, 13",
+        "2, 3, 4",
+        "6, 7, 8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For a right-angled triangle, a² + b² = c². Check each option:\n- 3² + 4² = 9 + 16 = 25 ≠ 6² (36)\n- 5² + 12² = 25 + 144 = 169 = 13²\n- 2² + 3² = 4 + 9 = 13 ≠ 4² (16)\n- 6² + 7² = 36 + 49 = 85 ≠ 8² (64)\nOnly 5, 12, 13 satisfies the theorem."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a right-angled triangle, one angle is 30°. The side opposite the 30° angle is 5 cm. What is the length of the hypotenuse?",
+      "options": [
+        "5 cm",
+        "10 cm",
+        "2.5 cm",
+        "5√3 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For a right-angled triangle, sin(angle) = opposite/hypotenuse. So, sin(30°) = 5 / hypotenuse. Since sin(30°) = 0.5, we have 0.5 = 5 / hypotenuse. Therefore, hypotenuse = 5 / 0.5 = 10 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A ramp is 10 metres long and rises to a height of 6 metres. What is the angle of elevation of the ramp to the nearest degree?",
+      "options": [
+        "31°",
+        "37°",
+        "53°",
+        "59°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Let the angle of elevation be θ. We have the opposite side (height = 6m) and the hypotenuse (ramp length = 10m). So, sin(θ) = opposite/hypotenuse = 6/10 = 0.6. Using a calculator, θ = arcsin(0.6) ≈ 36.86°, which is 37° to the nearest degree."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate the value of x in the right-angled triangle where the adjacent side is 7 cm and the hypotenuse is 14 cm.",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Let the angle be x. We have the adjacent side (7 cm) and the hypotenuse (14 cm). So, cos(x) = adjacent/hypotenuse = 7/14 = 0.5. Using a calculator, x = arccos(0.5) = 60°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a right-angled triangle, the angle is 45°. The adjacent side is 8 cm. What is the length of the opposite side?",
+      "options": [
+        "4 cm",
+        "8 cm",
+        "8√2 cm",
+        "16 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For a right-angled triangle, tan(angle) = opposite/adjacent. So, tan(45°) = opposite / 8. Since tan(45°) = 1, we have 1 = opposite / 8. Therefore, the opposite side = 8 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A tree casts a shadow 12 metres long when the angle of elevation of the sun is 35°. What is the height of the tree to one decimal place?",
+      "options": [
+        "7.0 m",
+        "8.4 m",
+        "9.8 m",
+        "17.1 m"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Let the height of the tree be h. We have the opposite side (h) and the adjacent side (shadow = 12m). So, tan(35°) = h / 12. Therefore, h = 12 × tan(35°). Using a calculator, h ≈ 12 × 0.7002 ≈ 8.4024, which is 8.4 m to one decimal place."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the missing side 'x' in a right-angled triangle where one leg is 5 cm and the hypotenuse is 13 cm.",
+      "options": [
+        "8 cm",
+        "12 cm",
+        "144 cm",
+        "18 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Using Pythagoras' theorem, a² + b² = c². So, 5² + x² = 13². This gives 25 + x² = 169. Subtracting 25 from both sides, x² = 144. Therefore, x = √144 = 12 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the approximate value of cos(60°)?",
+      "options": [
+        "0.5",
+        "0.866",
+        "1",
+        "0"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The exact value of cos(60°) is 1/2, which is 0.5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A square has a diagonal of length 10 cm. What is the length of one side of the square to one decimal place?",
+      "options": [
+        "5.0 cm",
+        "7.1 cm",
+        "8.7 cm",
+        "10.0 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Let the side length of the square be 's'. The diagonal forms the hypotenuse of a right-angled triangle with two sides 's'. By Pythagoras' theorem, s² + s² = 10². So, 2s² = 100. This means s² = 50. Therefore, s = √50 ≈ 7.071, which is 7.1 cm to one decimal place."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a right-angled triangle, the angle is θ. If sin(θ) = 0.8, what is cos(θ)?",
+      "options": [
+        "0.2",
+        "0.6",
+        "0.8",
+        "1.0"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Using the identity sin²(θ) + cos²(θ) = 1. We have (0.8)² + cos²(θ) = 1. So, 0.64 + cos²(θ) = 1. This means cos²(θ) = 1 - 0.64 = 0.36. Therefore, cos(θ) = √0.36 = 0.6 (since θ is an angle in a triangle, cos(θ) must be positive)."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "topic": "3D shapes and volume",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-f4:f4-10-3d-shapes-and-volume",
+  "syllabusCode": "F4-10",
+  "tier": "Foundation",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangular prism has a length of 5 cm, a width of 3 cm, and a height of 4 cm. What is its volume?",
+      "options": [
+        "12 cm³",
+        "15 cm³",
+        "20 cm³",
+        "60 cm³"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Volume of a rectangular prism = length × width × height. So, Volume = 5 cm × 3 cm × 4 cm = 60 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A cube has a side length of 6 cm. Calculate its volume.",
+      "options": [
+        "18 cm³",
+        "36 cm³",
+        "216 cm³",
+        "108 cm³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Volume of a cube = side³ . So, Volume = 6 cm × 6 cm × 6 cm = 216 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A cylinder has a radius of 3 cm and a height of 10 cm. Using π = 3.14, calculate its volume to one decimal place.",
+      "options": [
+        "94.2 cm³",
+        "282.6 cm³",
+        "300.0 cm³",
+        "90.0 cm³"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Volume of a cylinder = πr²h. So, Volume = 3.14 × (3 cm)² × 10 cm = 3.14 × 9 cm² × 10 cm = 282.6 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A triangular prism has a cross-sectional area of 20 cm² and a length of 8 cm. What is its volume?",
+      "options": [
+        "28 cm³",
+        "160 cm³",
+        "80 cm³",
+        "40 cm³"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Volume of a prism = cross-sectional area × length. So, Volume = 20 cm² × 8 cm = 160 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A cuboid has a volume of 100 cm³. If its length is 5 cm and its width is 4 cm, what is its height?",
+      "options": [
+        "20 cm",
+        "5 cm",
+        "10 cm",
+        "4 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Volume = length × width × height. So, 100 = 5 × 4 × height. 100 = 20 × height. Height = 100 / 20 = 5 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A square-based pyramid has a base area of 25 cm² and a vertical height of 9 cm. What is its volume?",
+      "options": [
+        "75 cm³",
+        "225 cm³",
+        "150 cm³",
+        "45 cm³"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Volume of a pyramid = (1/3) × base area × height. So, Volume = (1/3) × 25 cm² × 9 cm = (1/3) × 225 cm³ = 75 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The volume of a metal block is 300 cm³. If its density is 5 g/cm³, what is its mass?",
+      "options": [
+        "60 g",
+        "1500 g",
+        "305 g",
+        "295 g"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mass = Density × Volume. So, Mass = 5 g/cm³ × 300 cm³ = 1500 g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A cylindrical can has a radius of 4 cm and a volume of 400π cm³. What is the height of the can?",
+      "options": [
+        "100 cm",
+        "25 cm",
+        "50 cm",
+        "20 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Volume = πr²h. So, 400π = π × (4)² × h. 400π = 16πh. h = 400π / 16π = 25 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A swimming pool is 10 m long, 5 m wide, and 2 m deep. How many litres of water are needed to fill it? (1 m³ = 1000 litres)",
+      "options": [
+        "1000 litres",
+        "10000 litres",
+        "100000 litres",
+        "1000000 litres"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Volume of pool = 10 m × 5 m × 2 m = 100 m³. Litres = 100 m³ × 1000 litres/m³ = 100,000 litres."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these 3D shapes has a uniform cross-section?",
+      "options": [
+        "Cone",
+        "Pyramid",
+        "Sphere",
+        "Cylinder"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A cylinder has a circular cross-section that is uniform throughout its length. Cones, pyramids, and spheres do not."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangular tank has dimensions 30 cm by 20 cm by 15 cm. What is its capacity in millilitres? (1 cm³ = 1 ml)",
+      "options": [
+        "90 ml",
+        "900 ml",
+        "9000 ml",
+        "90000 ml"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Volume = 30 cm × 20 cm × 15 cm = 9000 cm³. Since 1 cm³ = 1 ml, the capacity is 9000 ml."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A prism has a base area of 45 cm² and a height of 12 cm. Find its volume.",
+      "options": [
+        "540 cm³",
+        "1080 cm³",
+        "135 cm³",
+        "57 cm³"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Volume of a prism = base area × height. So, Volume = 45 cm² × 12 cm = 540 cm³."
+    }
+  ]
+}

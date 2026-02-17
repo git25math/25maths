@@ -1,0 +1,154 @@
+{
+  "topic": "Transformation geometry",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:vectors-h5:h5-02-transformation-geometry",
+  "syllabusCode": "H5-02",
+  "tier": "Higher",
+  "domain": "vectors",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A point P(2, 3) is rotated 90° clockwise about the origin (0,0). What are the coordinates of the image P'?",
+      "options": [
+        "(-2, 3)",
+        "(3, -2)",
+        "(-3, 2)",
+        "(2, -3)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A 90° clockwise rotation about the origin maps a point (x, y) to (y, -x). So, P(2, 3) becomes P'(3, -2)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A triangle with vertices A(1,1), B(3,1), and C(1,4) is reflected in the line y = x. What are the coordinates of the image A'B'C'?",
+      "options": [
+        "A'(1,1), B'(1,3), C'(4,1)",
+        "A'(-1,-1), B'(-3,-1), C'(-1,-4)",
+        "A'(1,-1), B'(3,-1), C'(1,-4)",
+        "A'(-1,1), B'(-1,3), C'(-4,1)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Reflection in the line y=x swaps the x and y coordinates. So, A(1,1) -> A'(1,1), B(3,1) -> B'(1,3), C(1,4) -> C'(4,1)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shape is translated by the vector $\\begin{pmatrix} -3 \\ 5 \\end{pmatrix}$. If one of its vertices is at (4, -2), what are the coordinates of the corresponding vertex in the image?",
+      "options": [
+        "(7, -7)",
+        "(1, 3)",
+        "(-7, 7)",
+        "(-1, -3)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To translate a point (x, y) by vector $\\begin{pmatrix} a \\ b \\end{pmatrix}$, the new coordinates are (x+a, y+b). So, (4, -2) translated by $\\begin{pmatrix} -3 \\ 5 \\end{pmatrix}$ becomes (4-3, -2+5) = (1, 3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangle has vertices at (1,1), (4,1), (4,3), and (1,3). It is enlarged by a scale factor of 2 about the origin (0,0). What are the new coordinates of its vertices?",
+      "options": [
+        "(1,1), (4,1), (4,3), (1,3)",
+        "(2,2), (8,2), (8,6), (2,6)",
+        "(0.5,0.5), (2,0.5), (2,1.5), (0.5,1.5)",
+        "(3,3), (6,3), (6,5), (3,5)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For an enlargement about the origin with scale factor k, each point (x, y) maps to (kx, ky). So, for k=2, (1,1) -> (2,2), (4,1) -> (8,2), (4,3) -> (8,6), (1,3) -> (2,6)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (1, 0) is rotated 180° about the origin, then translated by the vector $\\begin{pmatrix} 2 \\ -1 \\end{pmatrix}$. What are the final coordinates of the point?",
+      "options": [
+        "(3, -1)",
+        "(-1, 1)",
+        "(1, -1)",
+        "(0, -1)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, a 180° rotation about the origin maps (x, y) to (-x, -y). So, (1, 0) becomes (-1, 0). Then, translating by $\\begin{pmatrix} 2 \\ -1 \\end{pmatrix}$ gives (-1+2, 0-1) = (1, -1)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (-1, 2) is reflected in the x-axis, then enlarged by a scale factor of 3 about the origin. What are the final coordinates of the point?",
+      "options": [
+        "(-3, 6)",
+        "(3, -6)",
+        "(-3, -6)",
+        "(3, 6)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, reflection in the x-axis maps (x, y) to (x, -y). So, (-1, 2) becomes (-1, -2). Then, an enlargement by scale factor 3 about the origin maps (x, y) to (3x, 3y). So, (-1, -2) becomes (3*-1, 3*-2) = (-3, -6)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A triangle ABC has vertices A(1,1), B(3,1), C(1,3). Its image A'B'C' has vertices A'(-1,1), B'(-1,3), C'(-3,1). What single transformation maps triangle ABC to A'B'C'?",
+      "options": [
+        "Reflection in the y-axis",
+        "Rotation 90° clockwise about the origin",
+        "Rotation 90° anti-clockwise about the origin",
+        "Translation by vector $\\begin{pmatrix} -2 \\ 0 \\end{pmatrix}$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Comparing the coordinates: A(1,1) maps to A'(-1,1), B(3,1) maps to B'(-1,3), C(1,3) maps to C'(-3,1). This pattern (x,y) -> (-y,x) corresponds to a 90° anti-clockwise rotation about the origin."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A square with vertices at (1,1), (3,1), (3,3), (1,3) is transformed to a square with vertices at (-1,1), (-3,1), (-3,3), (-1,3). What single transformation maps the first square to the second?",
+      "options": [
+        "Reflection in the x-axis",
+        "Reflection in the y-axis",
+        "Rotation 180° about the origin",
+        "Translation by vector $\\begin{pmatrix} -2 \\ 0 \\end{pmatrix}$"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Each point (x,y) from the first square is mapped to (-x,y) in the second square. For example, (1,1) maps to (-1,1) and (3,1) maps to (-3,1). This is the rule for reflection in the y-axis."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point (1,2) is enlarged by a scale factor of 2 about the center (2,1). What are the coordinates of the image?",
+      "options": [
+        "(0, 3)",
+        "(4, 3)",
+        "(1, 3)",
+        "(-1, 4)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To find the image P' of a point P under enlargement with scale factor k and center C: P' = C + k(P - C). Here, P=(1,2), C=(2,1), k=2. P - C = (1-2, 2-1) = (-1, 1). k(P - C) = 2(-1, 1) = (-2, 2). P' = (2,1) + (-2, 2) = (0, 3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point P is translated by the vector $\\begin{pmatrix} 2 \\ -3 \\end{pmatrix}$ to become P'(5, -1). What were the original coordinates of P?",
+      "options": [
+        "(7, -4)",
+        "(3, 2)",
+        "(3, -4)",
+        "(7, 2)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If P(x, y) is translated by $\\begin{pmatrix} 2 \\ -3 \\end{pmatrix}$ to P'(5, -1), then x+2=5 and y-3=-1. Solving these gives x=3 and y=2. So, the original coordinates of P were (3, 2)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A point P'(-3, 2) is the image of point P after a 90° anti-clockwise rotation about the origin. What were the original coordinates of P?",
+      "options": [
+        "(3, 2)",
+        "(2, 3)",
+        "(-2, -3)",
+        "(-3, -2)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A 90° anti-clockwise rotation about the origin maps (x, y) to (-y, x). If the image is P'(-3, 2), then -y = -3 (so y=3) and x = 2. Thus, the original point P was (2, 3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A square with vertices (0,0), (1,0), (1,1), (0,1) is transformed by a shear with shear factor 2, invariant line x-axis. What are the coordinates of the image vertices?",
+      "options": [
+        "(0,0), (1,0), (1,3), (0,3)",
+        "(0,0), (1,0), (3,1), (2,1)",
+        "(0,0), (1,0), (2,1), (0,1)",
+        "(0,0), (2,0), (2,1), (0,1)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For a shear transformation with the x-axis as the invariant line and shear factor k, a point (x, y) maps to (x + ky, y). Given k=2: (0,0) -> (0 + 2*0, 0) = (0,0); (1,0) -> (1 + 2*0, 0) = (1,0); (1,1) -> (1 + 2*1, 1) = (3,1); (0,1) -> (0 + 2*1, 1) = (2,1)."
+    }
+  ]
+}

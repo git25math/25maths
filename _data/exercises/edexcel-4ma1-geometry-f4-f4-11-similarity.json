@@ -1,0 +1,154 @@
+{
+  "topic": "Geometry",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-f4:f4-11-similarity",
+  "syllabusCode": "F4-11",
+  "tier": "Foundation",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Two triangles are similar if their corresponding angles are equal. Which statement is true for two similar triangles?",
+      "options": [
+        "Their corresponding sides are equal in length.",
+        "Their areas are equal.",
+        "Their corresponding sides are in the same ratio.",
+        "They must be congruent."
+      ],
+      "correctAnswer": 2,
+      "explanation": "For similar triangles, corresponding angles are equal, and corresponding sides are in the same ratio. They are not necessarily equal in length or area, and are only congruent if the ratio is 1:1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Triangle ABC has sides 3 cm, 4 cm, and 5 cm. Triangle PQR is similar to ABC. If the shortest side of PQR is 6 cm, what is the length of its longest side?",
+      "options": [
+        "8 cm",
+        "10 cm",
+        "12 cm",
+        "15 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The shortest side of ABC is 3 cm. The shortest side of PQR is 6 cm. The scale factor for sides is 6/3 = 2. The longest side of ABC is 5 cm, so the longest side of PQR is 5 * 2 = 10 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two rectangles are similar. The first rectangle has length 10 cm and width 5 cm. The second rectangle has a length of 15 cm. What is the width of the second rectangle?",
+      "options": [
+        "7.5 cm",
+        "10 cm",
+        "2.5 cm",
+        "5 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ratio of lengths is 15/10 = 1.5. So the width of the second rectangle is 5 cm * 1.5 = 7.5 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A large photo has dimensions 20 cm by 30 cm. It is reduced to a smaller similar photo where the new width is 10 cm. What is the new length?",
+      "options": [
+        "5 cm",
+        "15 cm",
+        "20 cm",
+        "30 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The original dimensions are 20 cm (width) and 30 cm (length). The new width is 10 cm. The scale factor for reduction is 10/20 = 0.5. So the new length is 30 cm * 0.5 = 15 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two triangles are similar. The sides of the first triangle are 6 cm, 9 cm, and 12 cm. The smallest side of the second triangle is 4 cm. What is the perimeter of the second triangle?",
+      "options": [
+        "18 cm",
+        "27 cm",
+        "20 cm",
+        "36 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The smallest side of the first triangle is 6 cm. The smallest side of the second triangle is 4 cm. The scale factor is 4/6 = 2/3. The perimeter of the first triangle is 6 + 9 + 12 = 27 cm. The perimeter of the second triangle is 27 * (2/3) = 18 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these pairs of shapes are always similar?",
+      "options": [
+        "Two rectangles",
+        "Two isosceles triangles",
+        "Two squares",
+        "Two rhombuses"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Two squares are always similar because all their angles are 90 degrees and all sides are in proportion (ratio of side lengths). Rectangles, isosceles triangles, and rhombuses are not always similar unless specific conditions are met."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Triangle ABC has angles 50°, 60°, 70°. Triangle DEF has angles 50°, 70°, 60°. Are these triangles similar?",
+      "options": [
+        "No, because the angles are in a different order.",
+        "Yes, because their corresponding angles are equal.",
+        "Only if their sides are also in ratio.",
+        "Not enough information to determine."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Two triangles are similar if all their corresponding angles are equal. The order of angles does not matter, only that the set of angles is the same. Both triangles have angles 50°, 60°, and 70°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A model car is built to a scale of 1:20. If the actual car is 4 meters long, how long is the model car in cm?",
+      "options": [
+        "20 cm",
+        "40 cm",
+        "80 cm",
+        "2 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The actual car is 4 meters = 400 cm. The scale is 1:20, meaning the model is 1/20th the size of the actual car. So the model car is 400 cm / 20 = 20 cm long."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two similar pentagons have corresponding sides in the ratio 2:3. If the perimeter of the smaller pentagon is 10 cm, what is the perimeter of the larger pentagon?",
+      "options": [
+        "15 cm",
+        "20 cm",
+        "6.67 cm",
+        "13 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "For similar shapes, the ratio of their perimeters is the same as the ratio of their corresponding sides. So, (Perimeter of larger) / 10 = 3/2. Perimeter of larger = 10 * (3/2) = 15 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If two shapes are congruent, are they also similar?",
+      "options": [
+        "No, they are different concepts.",
+        "Yes, with a scale factor of 1.",
+        "Only if they are triangles.",
+        "Only if they have the same area."
+      ],
+      "correctAnswer": 1,
+      "explanation": "Congruent shapes are identical in size and shape. This means their corresponding angles are equal and their corresponding sides are in a ratio of 1:1, which perfectly fits the definition of similar shapes with a scale factor of 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Triangle ABC has sides 8 cm and 12 cm, with an angle of 40° between them. Triangle DEF has sides 12 cm and 18 cm, with an angle of 40° between them. Are these triangles similar?",
+      "options": [
+        "No, the sides are not in the same ratio for both pairs.",
+        "Yes, by SAS similarity criterion.",
+        "Not enough information, need all angles.",
+        "Only if they are right-angled triangles."
+      ],
+      "correctAnswer": 1,
+      "explanation": "We can check for SAS (Side-Angle-Side) similarity. The ratio of the first pair of sides is 12/8 = 1.5. The ratio of the second pair of sides is 18/12 = 1.5. The included angle is 40° for both. Since two pairs of corresponding sides are in the same ratio and their included angles are equal, the triangles are similar."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangle has sides 4 cm and 6 cm. Another rectangle has sides 6 cm and 9 cm. Are these two rectangles similar?",
+      "options": [
+        "No, because the aspect ratios are different.",
+        "Yes, the ratio of corresponding sides is 1.5.",
+        "Only if their areas are the same.",
+        "Only if their perimeters are the same."
+      ],
+      "correctAnswer": 1,
+      "explanation": "For rectangles to be similar, the ratio of their corresponding sides must be equal. Comparing short sides: 6/4 = 1.5. Comparing long sides: 9/6 = 1.5. Since both ratios are equal, the rectangles are similar."
+    }
+  ]
+}

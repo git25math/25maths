@@ -1,0 +1,154 @@
+{
+  "topic": "Algebraic manipulation",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:equations-h2:h2-02-algebraic-manipulation",
+  "syllabusCode": "H2-02",
+  "tier": "Higher",
+  "domain": "equations",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise fully the expression x² + 6x + 8.",
+      "options": [
+        "(x + 2)(x + 4)",
+        "(x + 1)(x + 8)",
+        "(x - 2)(x - 4)",
+        "(x + 6)(x + 8)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To factorise the quadratic, we need to find two numbers that multiply to give 8 and add to give 6. These two numbers are 2 and 4. Therefore, the factorised form is (x + 2)(x + 4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Expand and simplify (2y - 3)(y + 5).",
+      "options": [
+        "2y² - 15",
+        "2y² + 7y - 15",
+        "2y² - 7y - 15",
+        "3y + 2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Use the FOIL method: (First) 2y * y = 2y²; (Outer) 2y * 5 = 10y; (Inner) -3 * y = -3y; (Last) -3 * 5 = -15. Combine the middle terms: 10y - 3y = 7y. The result is 2y² + 7y - 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise completely 9a² - 1.",
+      "options": [
+        "(9a - 1)(a + 1)",
+        "(3a - 1)²",
+        "(3a - 1)(3a + 1)",
+        "9(a² - 1)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is a difference of two squares, a² - b², which factorises to (a - b)(a + b). Here, a = 3a and b = 1. So, 9a² - 1 = (3a - 1)(3a + 1)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make 'p' the subject of the formula w = 3p + q.",
+      "options": [
+        "p = (w - q) / 3",
+        "p = w - q / 3",
+        "p = 3(w - q)",
+        "p = w/3 - q"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, subtract 'q' from both sides: w - q = 3p. Then, divide both sides by 3 to isolate 'p': p = (w - q) / 3."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify fully the algebraic fraction (x² + x - 6) / (x² - 4).",
+      "options": [
+        "(x + 3) / (x + 2)",
+        "(x - 3) / (x - 2)",
+        "(x + 3) / (x - 2)",
+        "x - 3/2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Factorise the numerator: x² + x - 6 = (x + 3)(x - 2). Factorise the denominator (difference of two squares): x² - 4 = (x - 2)(x + 2). The fraction is ((x + 3)(x - 2)) / ((x - 2)(x + 2)). Cancel the common factor (x - 2) to get (x + 3) / (x + 2)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise the expression 3x² - 11x + 6.",
+      "options": [
+        "(3x - 2)(x - 3)",
+        "(3x - 1)(x - 6)",
+        "(3x + 2)(x + 3)",
+        "(3x - 6)(x - 1)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "We need two numbers that multiply to 3*6=18 and add to -11. These are -2 and -9. Rewrite the expression as 3x² - 9x - 2x + 6. Factor by grouping: 3x(x - 3) - 2(x - 3). This gives (3x - 2)(x - 3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make 'r' the subject of the formula V = (4/3)πr³.",
+      "options": [
+        "r = ³√(3V / 4π)",
+        "r = ³√(4V / 3π)",
+        "r = (3V / 4π)³",
+        "r = 3V / 4π"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiply by 3: 3V = 4πr³. Divide by 4π: 3V / 4π = r³. Take the cube root of both sides: r = ³√(3V / 4π)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Expand and simplify (2x - 5y)².",
+      "options": [
+        "4x² - 25y²",
+        "4x² + 25y²",
+        "4x² - 10xy + 25y²",
+        "4x² - 20xy + 25y²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "(2x - 5y)² = (2x - 5y)(2x - 5y). Using FOIL: (2x)(2x) + (2x)(-5y) + (-5y)(2x) + (-5y)(-5y) = 4x² - 10xy - 10xy + 25y² = 4x² - 20xy + 25y²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise completely 50 - 2m².",
+      "options": [
+        "2(25 - m²)",
+        "2(5 - m)(5 + m)",
+        "(10 - 2m)(5 + m)",
+        "2(m - 5)(m + 5)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, take out the common factor of 2: 2(25 - m²). Then, factorise the difference of two squares inside the bracket: 2(5 - m)(5 + m)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express as a single fraction in its simplest form: 4/(x-1) - 3/(x+2).",
+      "options": [
+        "1 / ((x-1)(x+2))",
+        "(x + 5) / ((x-1)(x+2))",
+        "(x + 11) / ((x-1)(x+2))",
+        "1"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The common denominator is (x-1)(x+2). The expression becomes [4(x+2) - 3(x-1)] / [(x-1)(x+2)]. Expand the numerator: (4x + 8 - 3x + 3) / [(x-1)(x+2)]. Simplify the numerator to get (x + 11) / ((x-1)(x+2))."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Rearrange the formula y = (x + 1) / (x - 2) to make x the subject.",
+      "options": [
+        "x = (2y + 1) / (y - 1)",
+        "x = (2y - 1) / (y + 1)",
+        "x = (y - 2) / (y + 1)",
+        "x = 3 / (y-1)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiply both sides by (x - 2): y(x - 2) = x + 1. Expand the bracket: xy - 2y = x + 1. Get all x terms on one side: xy - x = 2y + 1. Factor out x: x(y - 1) = 2y + 1. Divide by (y - 1): x = (2y + 1) / (y - 1)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Factorise the expression 12 + 5x - 2x².",
+      "options": [
+        "(6 - x)(2 + 2x)",
+        "(4 - x)(3 + 2x)",
+        "(4 + x)(3 - 2x)",
+        "(2x + 3)(x - 4)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "We need to find two factors of 12 and -2 that multiply to give the expression. By inspection, (4 - x)(3 + 2x) = 12 + 8x - 3x - 2x² = 12 + 5x - 2x². Thus, option 1 is the correct factorization."
+    }
+  ]
+}
