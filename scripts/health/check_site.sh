@@ -29,7 +29,10 @@ fail() {
 check_status_200() {
   local url="$1"
   local code
-  code="$(curl -L -s --connect-timeout 8 --max-time 20 -o /dev/null -w '%{http_code}' "$url")"
+  code="$(curl -L -s --retry 2 --retry-all-errors --connect-timeout 8 --max-time 20 -o /dev/null -w '%{http_code}' "$url" || true)"
+  if [[ ! "$code" =~ ^[0-9]{3}$ ]]; then
+    code="000"
+  fi
   if [[ "$code" == "200" ]]; then
     pass "HTTP 200 $url"
   else
@@ -95,7 +98,7 @@ for required_loc in \
   "$BASE_URL/kahoot/" \
   "$BASE_URL/kahoot/cie0580/" \
   "$BASE_URL/kahoot/edexcel-4ma1/"; do
-  if printf '%s' "$sitemap" | grep -Fq "$required_loc"; then
+  if grep -Fq "$required_loc" <<< "$sitemap"; then
     pass "sitemap contains $required_loc"
   else
     fail "sitemap missing $required_loc"
@@ -120,10 +123,10 @@ echo
 echo "-- security header visibility (warning-only on GitHub Pages) --"
 headers="$(curl -s -I --connect-timeout 8 --max-time 20 "$BASE_URL/")"
 is_github_pages=0
-if printf '%s' "$headers" | grep -qi '^server: GitHub.com'; then
+if grep -qi '^server: GitHub.com' <<< "$headers"; then
   is_github_pages=1
 fi
-if printf '%s' "$headers" | grep -qi '^x-github-request-id:'; then
+if grep -qi '^x-github-request-id:' <<< "$headers"; then
   is_github_pages=1
 fi
 
@@ -137,7 +140,7 @@ for header in \
   "x-frame-options" \
   "x-content-type-options" \
   "referrer-policy"; do
-  if printf '%s' "$headers" | grep -qi "^${header}:"; then
+  if grep -qi "^${header}:" <<< "$headers"; then
     pass "header present: $header"
   else
     if [[ "$is_github_pages" -eq 1 ]]; then
@@ -151,27 +154,27 @@ echo
 
 echo "-- security meta baseline checks --"
 homepage_html="$(curl -L -s --connect-timeout 8 --max-time 20 "$BASE_URL/")"
-if printf '%s' "$homepage_html" | grep -qi 'http-equiv="Content-Security-Policy"'; then
+if grep -qi 'http-equiv="Content-Security-Policy"' <<< "$homepage_html"; then
   pass "meta CSP present on homepage"
 else
   warn "meta CSP missing on homepage"
 fi
-if printf '%s' "$homepage_html" | grep -qi 'name="referrer"'; then
+if grep -qi 'name="referrer"' <<< "$homepage_html"; then
   pass "meta referrer policy present on homepage"
 else
   warn "meta referrer policy missing on homepage"
 fi
-if printf '%s' "$homepage_html" | grep -qi "frame-ancestors 'self'"; then
+if grep -qi "frame-ancestors 'self'" <<< "$homepage_html"; then
   pass "meta CSP includes frame-ancestors self"
 else
   warn "meta CSP missing frame-ancestors self"
 fi
-if printf '%s' "$homepage_html" | grep -qi '/assets/css/site.css'; then
+if grep -qi '/assets/css/site.css' <<< "$homepage_html"; then
   pass "local site stylesheet is linked on homepage"
 else
   fail "local site stylesheet missing on homepage"
 fi
-if printf '%s' "$homepage_html" | grep -qi 'cdn.tailwindcss.com'; then
+if grep -qi 'cdn.tailwindcss.com' <<< "$homepage_html"; then
   warn "Tailwind CDN still referenced on homepage"
 else
   pass "Tailwind CDN is not referenced on homepage"
