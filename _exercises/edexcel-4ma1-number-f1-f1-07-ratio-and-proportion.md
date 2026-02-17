@@ -1,5 +1,5 @@
 ---
-title: "Practice: ratio and proportion"
+title: "Practice: Ratio and Proportion"
 subtitle: "Edexcel 4MA1 F1-07 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-number-f1-f1-07-ratio-and-proportion"

@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedAnswer = null;
     let nextExercise = null;
 
+    function escapeHtml(rawValue) {
+        return String(rawValue ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
     function withTrackingUrl(rawUrl, actionKey) {
         if (!rawUrl) {
             return '';
@@ -126,8 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextLabel = nextExercise.code
             ? `Next in Syllabus (${nextExercise.code})`
             : 'Next in Syllabus';
+        const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
+        const nextLabelSafe = escapeHtml(nextLabel);
         nextExerciseLinkSlot.innerHTML = `
-            <a href="${withTrackingUrl(nextExercise.url, 'next_exercise')}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabel}</a>
+            <a href="${nextHref}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabelSafe}</a>
         `;
     }
 
@@ -152,26 +163,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function buildCompletionActionsHtml() {
+        const retryHref = escapeHtml(window.location.pathname);
         const actionButtons = [
-            `<a href="${window.location.pathname}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Retry This Exercise</a>`,
+            `<a href="${retryHref}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Retry This Exercise</a>`,
         ];
         if (nextExercise && nextExercise.url) {
             const nextLabel = nextExercise.code
                 ? `Next in Syllabus (${nextExercise.code})`
                 : 'Next in Syllabus';
+            const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
+            const nextLabelSafe = escapeHtml(nextLabel);
             actionButtons.push(
-                `<a href="${withTrackingUrl(nextExercise.url, 'next_exercise')}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabel}</a>`
+                `<a href="${nextHref}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabelSafe}</a>`
             );
         }
 
         if (links && typeof links === 'object' && links.kahoot_url) {
+            const kahootHref = escapeHtml(withTrackingUrl(links.kahoot_url, 'kahoot_complete'));
             actionButtons.push(
-                `<a href="${withTrackingUrl(links.kahoot_url, 'kahoot_complete')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>`
+                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>`
             );
         }
         if (links && typeof links === 'object' && links.worksheet_payhip_url) {
+            const worksheetHref = escapeHtml(withTrackingUrl(links.worksheet_payhip_url, 'worksheet_complete'));
             actionButtons.push(
-                `<a href="${withTrackingUrl(links.worksheet_payhip_url, 'worksheet_complete')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>`
+                `<a href="${worksheetHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>`
             );
         }
 
@@ -179,8 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ? (links.bundle_url || links.section_bundle_payhip_url || links.unit_bundle_payhip_url || '')
             : '';
         if (bundleUrl) {
+            const bundleHref = escapeHtml(withTrackingUrl(bundleUrl, 'bundle_complete'));
             actionButtons.push(
-                `<a href="${withTrackingUrl(bundleUrl, 'bundle_complete')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>`
+                `<a href="${bundleHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>`
             );
         }
 
@@ -214,17 +231,19 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function renderQuestion(index) {
         const question = questions[index];
+        const questionText = escapeHtml(question.questionText || '');
         let optionsHtml = '';
 
         if (question.type === 'multiple-choice') {
             optionsHtml = '<div class="space-y-3">';
             question.options.forEach((option, i) => {
+                const optionLabel = escapeHtml(option);
                 optionsHtml += `
                     <div>
                         <label class="block border border-gray-300 rounded-lg px-4 py-3 cursor-pointer hover:bg-gray-100 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
                             <input type="radio" name="answer" value="${i}" class="sr-only">
                             <span class="font-mono text-sm mr-4 text-gray-500">${String.fromCharCode(65 + i)}</span>
-                            <span>${option}</span>
+                            <span>${optionLabel}</span>
                         </label>
                     </div>
                 `;
@@ -234,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // TODO: Add rendering for other question types like 'fill-in-the-blank'.
 
         questionContainer.innerHTML = `
-            <p class="text-lg font-semibold">${index + 1}. ${question.questionText}</p>
+            <p class="text-lg font-semibold">${index + 1}. ${questionText}</p>
             <div class="mt-4">${optionsHtml}</div>
         `;
         updateProgressUi();
@@ -267,20 +286,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
+        const explanationHtml = escapeHtml(question.explanation || '');
 
         if (isCorrect) {
             score++;
             feedbackContainer.innerHTML = `
                 <div class="p-4 bg-green-100 border border-green-400 text-green-800 rounded-lg">
                     <p class="font-bold">Correct!</p>
-                    <p class="mt-2">${question.explanation}</p>
+                    <p class="mt-2">${explanationHtml}</p>
                 </div>
             `;
         } else {
             feedbackContainer.innerHTML = `
                 <div class="p-4 bg-red-100 border border-red-400 text-red-800 rounded-lg">
                     <p class="font-bold">Incorrect.</p>
-                    <p class="mt-2">${question.explanation}</p>
+                    <p class="mt-2">${explanationHtml}</p>
                 </div>
             `;
         }

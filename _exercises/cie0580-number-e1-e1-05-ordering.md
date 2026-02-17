@@ -1,5 +1,5 @@
 ---
-title: "Practice: ordering"
+title: "Practice: Ordering"
 subtitle: "CIE 0580 E1-05 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-number-e1-e1-05-ordering"

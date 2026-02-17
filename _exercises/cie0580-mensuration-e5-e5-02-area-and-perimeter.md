@@ -1,5 +1,5 @@
 ---
-title: "Practice: area and perimeter"
+title: "Practice: Area and Perimeter"
 subtitle: "CIE 0580 E5-02 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-mensuration-e5-e5-02-area-and-perimeter"

@@ -1,5 +1,5 @@
 ---
-title: "Practice: Simultaneous linear equations"
+title: "Practice: Simultaneous Linear Equations"
 subtitle: "Edexcel 4MA1 F2-06 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-equations-f2-f2-06-simultaneous-linear-equations"

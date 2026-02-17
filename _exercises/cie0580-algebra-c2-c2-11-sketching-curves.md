@@ -1,5 +1,5 @@
 ---
-title: "Practice: sketching curves"
+title: "Practice: Sketching Curves"
 subtitle: "CIE 0580 C2-11 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-algebra-c2-c2-11-sketching-curves"

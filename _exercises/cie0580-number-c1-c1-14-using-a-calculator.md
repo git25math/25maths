@@ -1,5 +1,5 @@
 ---
-title: "Practice: using a calculator"
+title: "Practice: Using a Calculator"
 subtitle: "CIE 0580 C1-14 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-number-c1-c1-14-using-a-calculator"

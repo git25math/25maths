@@ -1,5 +1,5 @@
 ---
-title: "Practice: probability"
+title: "Practice: Probability"
 subtitle: "Edexcel 4MA1 F6-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-statistics-f6-f6-03-probability"

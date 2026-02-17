@@ -1,5 +1,5 @@
 ---
-title: "Practice: introduction to algebra"
+title: "Practice: Introduction to Algebra"
 subtitle: "CIE 0580 C2-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-algebra-c2-c2-01-introduction-to-algebra"

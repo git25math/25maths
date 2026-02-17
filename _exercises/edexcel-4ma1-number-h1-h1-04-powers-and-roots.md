@@ -1,5 +1,5 @@
 ---
-title: "Practice: powers and roots"
+title: "Practice: Powers and Roots"
 subtitle: "Edexcel 4MA1 H1-04 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-number-h1-h1-04-powers-and-roots"

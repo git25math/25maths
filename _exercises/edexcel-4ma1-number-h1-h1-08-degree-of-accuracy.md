@@ -1,5 +1,5 @@
 ---
-title: "Practice: Degree of accuracy"
+title: "Practice: Degree of Accuracy"
 subtitle: "Edexcel 4MA1 H1-08 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-number-h1-h1-08-degree-of-accuracy"

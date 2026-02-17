@@ -1,5 +1,5 @@
 ---
-title: "Practice: 3D shapes and volume"
+title: "Practice: 3D Shapes and Volume"
 subtitle: "Edexcel 4MA1 F4-10 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-geometry-f4-f4-10-3d-shapes-and-volume"

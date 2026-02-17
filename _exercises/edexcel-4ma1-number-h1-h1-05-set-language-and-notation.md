@@ -1,5 +1,5 @@
 ---
-title: "Practice: Set language and notation"
+title: "Practice: Set Language and Notation"
 subtitle: "Edexcel 4MA1 H1-05 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-number-h1-h1-05-set-language-and-notation"

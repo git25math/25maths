@@ -1,5 +1,5 @@
 ---
-title: "Practice: Electronic calculators"
+title: "Practice: Electronic Calculators"
 subtitle: "Edexcel 4MA1 F1-11 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-number-f1-f1-11-electronic-calculators"

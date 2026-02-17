@@ -1,5 +1,5 @@
 ---
-title: "Practice: vectors"
+title: "Practice: Vectors"
 subtitle: "Edexcel 4MA1 F5-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-vectors-f5-f5-01-vectors"

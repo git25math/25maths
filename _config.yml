@@ -29,6 +29,14 @@ collections:
     output: true
     permalink: /exercises/:path/
 
+defaults:
+  - scope:
+      path: ""
+      type: exercises
+    values:
+      active_global: exercises
+      lang: en
+
 # Module definitions
 modules:
   - key: cie0580

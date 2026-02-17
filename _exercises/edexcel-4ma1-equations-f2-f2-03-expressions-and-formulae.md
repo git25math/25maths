@@ -1,5 +1,5 @@
 ---
-title: "Practice: Expressions and formulae"
+title: "Practice: Expressions and Formulae"
 subtitle: "Edexcel 4MA1 F2-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-equations-f2-f2-03-expressions-and-formulae"

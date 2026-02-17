@@ -1,5 +1,5 @@
 ---
-title: "Practice: Transformation geometry"
+title: "Practice: Transformation Geometry"
 subtitle: "Edexcel 4MA1 H5-02 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-vectors-h5-h5-02-transformation-geometry"

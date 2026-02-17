@@ -1,5 +1,5 @@
 ---
-title: "Practice: integers"
+title: "Practice: Integers"
 subtitle: "Edexcel 4MA1 F1-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-number-f1-f1-01-integers"

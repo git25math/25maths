@@ -1,5 +1,5 @@
 ---
-title: "Practice: averages and range"
+title: "Practice: Averages and Range"
 subtitle: "CIE 0580 E9-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-statistics-e9-e9-03-averages-and-range"

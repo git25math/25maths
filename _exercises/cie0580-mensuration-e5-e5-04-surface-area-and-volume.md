@@ -1,5 +1,5 @@
 ---
-title: "Practice: surface area and volume"
+title: "Practice: Surface Area and Volume"
 subtitle: "CIE 0580 E5-04 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-mensuration-e5-e5-04-surface-area-and-volume"

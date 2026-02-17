@@ -1,5 +1,5 @@
 ---
-title: "Practice: Vector geometry"
+title: "Practice: Vector Geometry"
 subtitle: "CIE 0580 E7-04 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-transformations-e7-e7-04-vector-geometry"

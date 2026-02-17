@@ -1,5 +1,5 @@
 ---
-title: "Practice: Parallel lines"
+title: "Practice: Parallel Lines"
 subtitle: "CIE 0580 E3-06 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-coordinate-e3-e3-06-parallel-lines"

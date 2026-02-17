@@ -1,5 +1,5 @@
 ---
-title: "Practice: Linear equations"
+title: "Practice: Linear Equations"
 subtitle: "Edexcel 4MA1 F2-04 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-equations-f2-f2-04-linear-equations"

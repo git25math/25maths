@@ -1,5 +1,5 @@
 ---
-title: "Practice: Scale drawings"
+title: "Practice: Scale Drawings"
 subtitle: "CIE 0580 C4-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-geometry-c4-c4-03-scale-drawings"

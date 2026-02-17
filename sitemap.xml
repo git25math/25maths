@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Portal -->
@@ -221,6 +225,27 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>{{ "/exercises/" | absolute_url }}</loc>
+        <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>{{ "/zh-cn/exercises/" | absolute_url }}</loc>
+        <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    {% assign exercise_pages = site.exercises | sort: "url" %}
+    {% for exercise in exercise_pages %}
+    <url>
+        <loc>{{ exercise.url | absolute_url }}</loc>
+        <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    {% endfor %}
     <url>
         <loc>https://www.25maths.com/2026/02/11/cie0580-algebra-mistakes.html</loc>
         <lastmod>2026-02-11</lastmod>

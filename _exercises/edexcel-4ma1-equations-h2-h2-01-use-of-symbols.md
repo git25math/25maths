@@ -1,5 +1,5 @@
 ---
-title: "Practice: Use of symbols"
+title: "Practice: Use of Symbols"
 subtitle: "Edexcel 4MA1 H2-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "edexcel-4ma1-equations-h2-h2-01-use-of-symbols"

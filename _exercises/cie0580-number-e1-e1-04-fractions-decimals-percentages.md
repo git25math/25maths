@@ -1,5 +1,5 @@
 ---
-title: "Practice: fractions decimals percentages"
+title: "Practice: Fractions Decimals Percentages"
 subtitle: "CIE 0580 E1-04 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-number-e1-e1-04-fractions-decimals-percentages"

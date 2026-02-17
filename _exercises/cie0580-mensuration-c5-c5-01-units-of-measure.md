@@ -1,5 +1,5 @@
 ---
-title: "Practice: units of measure"
+title: "Practice: Units of Measure"
 subtitle: "CIE 0580 C5-01 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-mensuration-c5-c5-01-units-of-measure"

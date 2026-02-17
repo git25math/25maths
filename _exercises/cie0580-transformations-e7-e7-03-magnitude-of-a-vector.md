@@ -1,5 +1,5 @@
 ---
-title: "Practice: Magnitude of a vector"
+title: "Practice: Magnitude of a Vector"
 subtitle: "CIE 0580 E7-03 interactive exam-style practice."
 layout: "interactive_exercise"
 topic: "cie0580-transformations-e7-e7-03-magnitude-of-a-vector"
