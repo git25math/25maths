@@ -34,13 +34,30 @@ lang: en
             <p class="text-sm text-gray-500 mt-2">Published set: 16 topics total (updated {{ free_samples.updated_at }}).</p>
         </div>
 
-        <div id="free-sample-filters" class="mb-6 flex flex-wrap items-center gap-2">
-            <button type="button" data-filter-batch="batch_1" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white" aria-pressed="true">Batch 1 (Default)</button>
-            <button type="button" data-filter-batch="batch_2" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Batch 2</button>
-            <button type="button" data-filter-batch="batch_3" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Batch 3</button>
-            <button type="button" data-filter-batch="all" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Show All</button>
+        <div class="mb-4 grid lg:grid-cols-[1fr_auto] gap-3">
+            <div id="free-sample-filters" class="flex flex-wrap items-center gap-2">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Batch</span>
+                <button type="button" data-filter-batch="batch_1" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white" aria-pressed="true">Batch 1 (Default)</button>
+                <button type="button" data-filter-batch="batch_2" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Batch 2</button>
+                <button type="button" data-filter-batch="batch_3" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Batch 3</button>
+                <button type="button" data-filter-batch="all" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">All Batches</button>
+            </div>
+            <div id="free-sample-board-filters" class="flex flex-wrap items-center gap-2 lg:justify-end">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Board</span>
+                <button type="button" data-filter-board="all" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white" aria-pressed="true">All Boards</button>
+                <button type="button" data-filter-board="cie0580" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">CIE 0580</button>
+                <button type="button" data-filter-board="edexcel-4ma1" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700" aria-pressed="false">Edexcel 4MA1</button>
+            </div>
         </div>
-        <p id="free-sample-filter-summary" class="text-sm text-gray-600 mb-6">Default view: Batch 1 only.</p>
+        <div class="mb-6 grid sm:grid-cols-[1fr_auto] gap-3">
+            <label for="free-sample-search" class="block">
+                <span class="sr-only">Search free sample set by code or title</span>
+                <input id="free-sample-search" type="text" placeholder="Search code or title (e.g. C1-13, percentages)" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
+            </label>
+            <button id="free-sample-reset" type="button" class="px-4 py-2 rounded-lg border border-gray-300 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 transition">Reset Filters</button>
+        </div>
+        <p id="free-sample-filter-summary" class="text-sm text-gray-600 mb-4" aria-live="polite">Default view: Batch 1 only.</p>
+        <div id="free-sample-empty-state" class="hidden mb-6 bg-amber-50 border border-amber-200 text-amber-800 text-sm rounded-xl px-4 py-3">No free sample sets match this filter. Try another batch, board, or keyword.</div>
 
         <div class="grid lg:grid-cols-2 gap-6">
             {% for board in free_samples.sections %}
@@ -49,13 +66,13 @@ lang: en
                 {% else %}
                     {% assign directory_url = "/kahoot/edexcel-4ma1/" %}
                 {% endif %}
-                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6">
+                <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6" data-free-sample-board="{{ board.board }}">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
                         <div>
                             <p class="text-xs font-bold tracking-wider mb-2 {{ board.card_badge_class }}">{{ board.board_label }}</p>
                             <h3 class="text-xl font-bold text-gray-900">{{ board.tier_scope }} Free Sample Collection</h3>
                         </div>
-                        <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">{{ board.items | size }} LIVE</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3 mb-5">
                         <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
@@ -64,16 +81,22 @@ lang: en
                     <div class="grid sm:grid-cols-2 gap-4">
                         {% for item in board.items %}
                             {% assign item_batch_key = item.batch | downcase | replace: ' ', '_' %}
-                            <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm" data-free-sample-card data-batch="{{ item_batch_key }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
-                                <img src="{{ item.cover }}" alt="{{ item.code }} free sample cover" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
-                                <div class="flex flex-wrap items-center gap-2 mb-2">
-                                    <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
-                                    <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
-                                    <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
+                            <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm" data-free-sample-card data-board="{{ board.board }}" data-batch="{{ item_batch_key }}" data-code="{{ item.code | downcase }}" data-title="{{ item.title | downcase }}" data-tier="{{ item.tier | downcase }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
+                                <div class="flex flex-col sm:flex-row gap-3 mb-3">
+                                    <div class="h-20 w-full sm:w-32 sm:flex-shrink-0 bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center p-2">
+                                        <img src="{{ item.cover }}" alt="{{ item.code }} free sample cover" class="h-full w-full object-contain" loading="lazy">
+                                    </div>
+                                    <div class="min-w-0 flex-1">
+                                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
+                                        </div>
+                                        <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
+                                        <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
+                                    </div>
                                 </div>
-                                <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
-                                <p class="text-[11px] text-gray-500 mb-3">{{ item.tier }} tier</p>
-                                <div class="grid grid-cols-1 gap-2">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                     <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Play Free Sample</a>
                                     <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">Open In Explorer</a>
                                 </div>
@@ -88,18 +111,37 @@ lang: en
 
 <script>
 (() => {
-  const filterRoot = document.getElementById('free-sample-filters');
-  if (!filterRoot) return;
+  const batchFilterRoot = document.getElementById('free-sample-filters');
+  if (!batchFilterRoot) return;
 
-  const buttons = Array.from(filterRoot.querySelectorAll('[data-filter-batch]'));
+  const boardFilterRoot = document.getElementById('free-sample-board-filters');
+  const batchButtons = Array.from(batchFilterRoot.querySelectorAll('[data-filter-batch]'));
+  const boardButtons = boardFilterRoot
+    ? Array.from(boardFilterRoot.querySelectorAll('[data-filter-board]'))
+    : [];
   const cards = Array.from(document.querySelectorAll('[data-free-sample-card]'));
+  const boardPanels = Array.from(document.querySelectorAll('[data-free-sample-board]'));
+  const searchInput = document.getElementById('free-sample-search');
+  const resetButton = document.getElementById('free-sample-reset');
+  const emptyState = document.getElementById('free-sample-empty-state');
   const summary = document.getElementById('free-sample-filter-summary');
-  const filterLabels = {
+  const batchLabels = {
     batch_1: 'Batch 1',
     batch_2: 'Batch 2',
     batch_3: 'Batch 3',
     all: 'all batches'
   };
+  const boardLabels = {
+    all: 'all boards',
+    cie0580: 'CIE 0580',
+    'edexcel-4ma1': 'Edexcel 4MA1'
+  };
+  const state = {
+    batchKey: 'batch_1',
+    boardKey: 'all',
+    query: ''
+  };
+  let searchDebounceTimer = null;
 
   const setButtonState = (button, isActive) => {
     button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
@@ -109,34 +151,103 @@ lang: en
     button.classList.toggle('text-gray-700', !isActive);
   };
 
-  const applyFilter = (batchKey) => {
+  const getBoardTotals = () => {
+    return cards.reduce((acc, card) => {
+      const board = card.getAttribute('data-board');
+      if (!board) return acc;
+      acc[board] = (acc[board] || 0) + 1;
+      return acc;
+    }, {});
+  };
+
+  const boardTotals = getBoardTotals();
+
+  const applyFilter = () => {
+    const query = state.query.trim().toLowerCase();
     let visibleCount = 0;
+    const visibleByBoard = {};
     cards.forEach((card) => {
-      const show = batchKey === 'all' || card.getAttribute('data-batch') === batchKey;
+      const batch = card.getAttribute('data-batch') || '';
+      const board = card.getAttribute('data-board') || '';
+      const code = card.getAttribute('data-code') || '';
+      const title = card.getAttribute('data-title') || '';
+      const tier = card.getAttribute('data-tier') || '';
+      const matchesBatch = state.batchKey === 'all' || batch === state.batchKey;
+      const matchesBoard = state.boardKey === 'all' || board === state.boardKey;
+      const matchesQuery = !query || `${code} ${title} ${tier}`.includes(query);
+      const show = matchesBatch && matchesBoard && matchesQuery;
       card.hidden = !show;
-      if (show) visibleCount += 1;
+      if (!show) return;
+      visibleCount += 1;
+      visibleByBoard[board] = (visibleByBoard[board] || 0) + 1;
     });
 
-    buttons.forEach((button) => {
-      setButtonState(button, button.getAttribute('data-filter-batch') === batchKey);
+    batchButtons.forEach((button) => {
+      setButtonState(button, button.getAttribute('data-filter-batch') === state.batchKey);
+    });
+    boardButtons.forEach((button) => {
+      setButtonState(button, button.getAttribute('data-filter-board') === state.boardKey);
+    });
+
+    boardPanels.forEach((panel) => {
+      const boardKey = panel.getAttribute('data-free-sample-board') || '';
+      const boardVisibleCount = visibleByBoard[boardKey] || 0;
+      panel.hidden = boardVisibleCount === 0;
+      const countBadge = panel.querySelector('[data-free-sample-board-count]');
+      if (!countBadge) return;
+      const boardTotal = boardTotals[boardKey] || 0;
+      countBadge.textContent = `${boardVisibleCount}/${boardTotal} LIVE`;
     });
 
     if (summary) {
-      if (batchKey === 'batch_1') {
+      if (state.batchKey === 'batch_1' && state.boardKey === 'all' && !query) {
         summary.textContent = `Default view: Batch 1 (${visibleCount} sets).`;
       } else {
-        summary.textContent = `Now showing ${filterLabels[batchKey] || batchKey} (${visibleCount} sets).`;
+        const queryLabel = query ? ` with "${state.query}"` : '';
+        summary.textContent = `Now showing ${batchLabels[state.batchKey] || state.batchKey} in ${boardLabels[state.boardKey] || state.boardKey}${queryLabel} (${visibleCount} sets).`;
       }
+    }
+
+    if (emptyState) {
+      emptyState.classList.toggle('hidden', visibleCount > 0);
     }
   };
 
-  buttons.forEach((button) => {
+  batchButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      applyFilter(button.getAttribute('data-filter-batch'));
+      state.batchKey = button.getAttribute('data-filter-batch') || 'batch_1';
+      applyFilter();
     });
   });
 
-  applyFilter('batch_1');
+  boardButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      state.boardKey = button.getAttribute('data-filter-board') || 'all';
+      applyFilter();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      window.clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = window.setTimeout(() => {
+        state.query = searchInput.value.trim();
+        applyFilter();
+      }, 120);
+    });
+  }
+
+  if (resetButton) {
+    resetButton.addEventListener('click', () => {
+      state.batchKey = 'batch_1';
+      state.boardKey = 'all';
+      state.query = '';
+      if (searchInput) searchInput.value = '';
+      applyFilter();
+    });
+  }
+
+  applyFilter();
 })();
 </script>
 
