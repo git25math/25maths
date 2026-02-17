@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
         const nextLabelSafe = escapeHtml(nextLabel);
         nextExerciseLinkSlot.innerHTML = `
-            <a href="${nextHref}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabelSafe}</a>
+            <a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>
         `;
     }
 
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function buildCompletionActionsHtml() {
         const retryHref = escapeHtml(window.location.pathname);
         const actionButtons = [
-            `<a href="${retryHref}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Retry This Exercise</a>`,
+            `<a href="${retryHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Retry This Exercise</a>`,
         ];
         if (nextExercise && nextExercise.url) {
             const nextLabel = nextExercise.code
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
             const nextLabelSafe = escapeHtml(nextLabel);
             actionButtons.push(
-                `<a href="${nextHref}" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">${nextLabelSafe}</a>`
+                `<a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>`
             );
         }
 

@@ -74,9 +74,13 @@ title: 25Maths Changelog
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Anti-regression guard</strong>: Extended `check_exercise_data.py` with entry-point coverage checks (home EN/ZH + Kahoot EN/ZH + board directories) so missing exercise entrances now fail CI immediately.</span>
                 </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">x</span>
+                    <span><strong>Exercise CTA visibility fix</strong>: Replaced unavailable `bg-blue-600/700/800` utility usage with shipped `bg-secondary` styles for exercise-hub start actions and interactive exercise retry/next CTAs, fixing the “missing top button” display issue.</span>
+                </li>
             </ul>
             <div class="mt-4 text-xs text-gray-400">
-                Files: _config.yml, _includes/global-nav.html, _includes/head.html, sitemap.xml, assets/js/exercise_engine.js, assets/js/exercise_hub.js, exercises/index.html, zh-cn/exercises/index.html, kahoot/index.html, zh-cn/kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, scripts/health/check_exercise_data.py, scripts/health/check_site.sh, .github/workflows/site-health-check.yml, .github/workflows/ci.yml, README.md, _exercises/*.md, _data/exercises/quadratic-equations.json (removed), _exercises/quadratic-equations.md (removed)
+                Files: _config.yml, _includes/global-nav.html, _includes/head.html, sitemap.xml, _layouts/interactive_exercise.html, assets/js/exercise_engine.js, assets/js/exercise_hub.js, exercises/index.html, zh-cn/exercises/index.html, kahoot/index.html, zh-cn/kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, scripts/health/check_exercise_data.py, scripts/health/check_site.sh, .github/workflows/site-health-check.yml, .github/workflows/ci.yml, README.md, _exercises/*.md, _data/exercises/quadratic-equations.json (removed), _exercises/quadratic-equations.md (removed)
             </div>
         </div>
 

@@ -78,7 +78,7 @@
             <h2 class="text-xl font-bold text-gray-900">Continue This Topic Loop</h2>
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
             <div class="mt-4 flex flex-wrap gap-3">
-                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">Try Another Interactive Exercise</a>
+                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Try Another Interactive Exercise</a>
                 <span id="next-exercise-link-slot"></span>
                 {% if board_slug != '' %}
                 <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Back to {{ board_directory_label }}</a>

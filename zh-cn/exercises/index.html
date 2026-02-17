@@ -49,7 +49,7 @@ lang_links:
                 <p id="exercise-resume-meta" class="text-sm text-blue-700"></p>
             </div>
             <div class="flex flex-wrap gap-2">
-                <a id="exercise-resume-link" href="#" class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800 transition">继续练习</a>
+                <a id="exercise-resume-link" href="#" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">继续练习</a>
                 <button id="exercise-resume-clear" type="button" class="inline-flex items-center rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition">清除记录</button>
             </div>
         </div>
@@ -133,7 +133,7 @@ lang_links:
                 {% if exercise.subtitle %}<p class="mt-1 text-sm text-gray-600">{{ exercise.subtitle }}</p>{% endif %}
                 <p class="mt-2 text-xs text-gray-500">{{ exercise.subtopic_id }}</p>
                 <div class="mt-4 grid grid-cols-1 gap-2">
-                    <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">开始互动练习</a>
+                    <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">开始互动练习</a>
                     <a href="{{ board_directory_url | relative_url }}" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">返回考试局目录</a>
                     {% if card_kahoot_url != "" %}
                     <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">打开配套 Kahoot</a>
@@ -145,7 +145,7 @@ lang_links:
 
     <div id="exercise-empty" class="mt-6 hidden rounded-xl border border-gray-200 bg-white p-6 text-sm text-gray-600">
         <p>当前筛选条件下没有匹配练习。</p>
-        <button id="exercise-empty-reset" type="button" class="mt-4 inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition">显示全部练习</button>
+        <button id="exercise-empty-reset" type="button" class="mt-4 inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">显示全部练习</button>
     </div>
 </div>
 
