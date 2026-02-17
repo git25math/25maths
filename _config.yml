@@ -55,6 +55,12 @@ exclude:
   - PROJECT-PLAN.md
   - README.md
   - tasks/
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .bundle/
   - Gemfile
   - Gemfile.lock
   - projects/kahoot-channel/WORKSHEET-GENERATION-ANALYSIS.md
