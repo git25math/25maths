@@ -5,6 +5,7 @@
   const resetBtn = document.getElementById('exercise-filter-reset');
   const summary = document.getElementById('exercise-filter-summary');
   const empty = document.getElementById('exercise-empty');
+  const emptyResetBtn = document.getElementById('exercise-empty-reset');
   const resumePanel = document.getElementById('exercise-resume');
   const resumeLink = document.getElementById('exercise-resume-link');
   const resumeTitle = document.getElementById('exercise-resume-title');
@@ -146,6 +147,16 @@
 
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
+      boardSelect.value = 'all';
+      tierSelect.value = 'all';
+      queryInput.value = '';
+      applyFilters();
+      queryInput.focus();
+    });
+  }
+
+  if (emptyResetBtn) {
+    emptyResetBtn.addEventListener('click', () => {
       boardSelect.value = 'all';
       tierSelect.value = 'all';
       queryInput.value = '';
