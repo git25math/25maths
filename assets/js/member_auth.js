@@ -5,6 +5,21 @@
     enabled: false,
   };
 
+  function eachNode(selector, callback) {
+    const nodes = document.querySelectorAll(selector);
+    for (let i = 0; i < nodes.length; i += 1) {
+      callback(nodes[i]);
+    }
+  }
+
+  function setHidden(node, hidden) {
+    if (hidden) {
+      node.classList.add('hidden');
+    } else {
+      node.classList.remove('hidden');
+    }
+  }
+
   function isZh() {
     return String(document.documentElement.lang || '').toLowerCase() === 'zh-cn';
   }
@@ -15,15 +30,15 @@
 
   function updateUi() {
     const isAuthed = Boolean(state.user);
-    const email = state.user?.email || '';
+    const email = state.user && state.user.email ? String(state.user.email) : '';
 
-    document.querySelectorAll('[data-member-status]').forEach((node) => {
+    eachNode('[data-member-status]', (node) => {
       node.textContent = isAuthed
         ? t('Member', '会员')
         : t('Guest', '访客');
     });
 
-    document.querySelectorAll('[data-member-email]').forEach((node) => {
+    eachNode('[data-member-email]', (node) => {
       if (isAuthed && email) {
         node.textContent = email;
         node.classList.remove('hidden');
@@ -33,13 +48,13 @@
       }
     });
 
-    document.querySelectorAll('[data-member-login]').forEach((button) => {
-      button.classList.toggle('hidden', isAuthed);
+    eachNode('[data-member-login]', (button) => {
+      setHidden(button, isAuthed);
       button.disabled = !state.enabled;
     });
 
-    document.querySelectorAll('[data-member-logout]').forEach((button) => {
-      button.classList.toggle('hidden', !isAuthed);
+    eachNode('[data-member-logout]', (button) => {
+      setHidden(button, !isAuthed);
       button.disabled = !state.enabled;
     });
   }
@@ -67,7 +82,7 @@
     if (error) {
       state.user = null;
     } else {
-      state.user = data?.session?.user || null;
+      state.user = data && data.session && data.session.user ? data.session.user : null;
     }
     updateUi();
     emitAuthChange();
@@ -107,7 +122,7 @@
   }
 
   function bindButtons() {
-    document.querySelectorAll('[data-member-login]').forEach((button) => {
+    eachNode('[data-member-login]', (button) => {
       button.addEventListener('click', () => {
         handleLoginClick().catch(() => {
           alert(t('Login failed. Please retry.', '登录失败，请重试。'));
@@ -115,7 +130,7 @@
       });
     });
 
-    document.querySelectorAll('[data-member-logout]').forEach((button) => {
+    eachNode('[data-member-logout]', (button) => {
       button.addEventListener('click', () => {
         handleLogoutClick().catch(() => {
           alert(t('Logout failed. Please retry.', '退出失败，请重试。'));
@@ -141,7 +156,7 @@
       window.memberSupabase = state.client;
 
       state.client.auth.onAuthStateChange((_event, session) => {
-        state.user = session?.user || null;
+        state.user = session && session.user ? session.user : null;
         updateUi();
         emitAuthChange();
       });
