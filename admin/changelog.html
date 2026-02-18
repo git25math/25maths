@@ -95,6 +95,10 @@ title: 25Maths Changelog
                     <span><strong>Kahoot button color completion</strong>: Extended the same Kahoot-purple scheme to remaining Kahoot-related CTAs across board landing pages, exercise hubs/cards, product execution links, Chinese Kahoot entry page, and interactive-exercise loop actions so all Kahoot-labeled actions now use one visual color system.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Production class-stability fix</strong>: Replaced Tailwind arbitrary color classes (`[#hex]`) used by Kahoot CTAs with global `kahoot-*` semantic helpers in head styles, preventing missing background renders on deployed pages (including `Open Kahoot` buttons in `kahoot/edexcel-4ma1`).</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

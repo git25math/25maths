@@ -48,9 +48,30 @@
 
 <style>
     body { font-family: 'Inter', sans-serif; }
+
+    /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */
+    .kahoot-solid-bg { background-color: #46178f; }
+    .kahoot-solid-border { border-color: #b497ff; }
+    .kahoot-solid-hover:hover { background-color: #3d137a; }
+
+    .kahoot-soft-border { border-color: #7f5ab6; }
+    .kahoot-soft-bg { background-color: #efe9fb; }
+    .kahoot-soft-text { color: #46178f; }
+    .kahoot-soft-hover:hover { background-color: #e5dbf8; }
 </style>
 
 {% if page.payhip %}
 <!-- Payhip Embed Script -->
 <script src="https://payhip.com/payhip.js"></script>
+{% endif %}
+
+{% if site.supabase and site.supabase.enabled %}
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    window.__SUPABASE_CONFIG__ = {
+        url: {{ site.supabase.url | jsonify }},
+        anonKey: {{ site.supabase.anon_key | jsonify }}
+    };
+</script>
+<script src="{{ '/assets/js/member_auth.js' | relative_url }}"></script>
 {% endif %}
