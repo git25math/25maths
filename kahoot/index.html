@@ -54,7 +54,7 @@ lang: en
                 <span class="sr-only">Search free sample set by code or title</span>
                 <input id="free-sample-search" type="text" placeholder="Search code or title (e.g. C1-13, percentages)" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
             </label>
-            <button id="free-sample-reset" type="button" class="px-4 py-2 rounded-lg border border-gray-300 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 transition">Reset Filters</button>
+            <button id="free-sample-reset" type="button" class="px-4 py-2 rounded-lg border border-gray-300 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 hover:shadow-md transition">Reset Filters</button>
         </div>
         <p id="free-sample-filter-summary" class="text-sm text-gray-600 mb-4" aria-live="polite">Default view: Batch 1 only.</p>
         <div id="free-sample-empty-state" class="hidden mb-6 bg-amber-50 border border-amber-200 text-amber-800 text-sm rounded-xl px-4 py-3">No free sample sets match this filter. Try another batch, board, or keyword.</div>
@@ -81,8 +81,8 @@ lang: en
                         <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3 mb-5">
-                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
-                        <a href="{{ directory_url }}" class="text-center {{ board_button_class }} px-4 py-2 rounded-lg font-semibold text-sm">Open Full Directory</a>
+                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-4 py-2 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition">Open {{ board.board_label }} Kahoot Channel</a>
+                        <a href="{{ directory_url }}" class="text-center {{ board_button_class }} px-4 py-2 rounded-lg font-semibold text-sm hover:shadow-md transition">Open Full Directory</a>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-4">
                         {% for item in board.items %}
@@ -276,8 +276,8 @@ lang: en
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ cie_data.total_subtopics }} SubTopics across {{ cie_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/cie0580/" class="text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
+                    <a href="/kahoot/cie0580/" class="text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition">Open CIE 0580 Kahoot Channel</a>
                 </div>
             </article>
 
@@ -291,8 +291,8 @@ lang: en
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/edexcel-4ma1/" class="text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm">Open Kahoot Channel</a>
+                    <a href="/kahoot/edexcel-4ma1/" class="text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
         </div>
@@ -575,7 +575,7 @@ lang: en
         ? item.cover.replace(/\.png$/i, '.webp')
         : item.cover;
       const interactiveButton = hasInteractiveExercise
-        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs hover:bg-gray-800 transition">L0: Interactive Exercise</a>`
+        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center bg-secondary text-white py-2 rounded-lg font-semibold text-xs hover:shadow-md transition">L0: Interactive Exercise</a>`
         : '';
 
       return `
@@ -596,11 +596,11 @@ lang: en
           <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
           <div class="grid grid-cols-1 gap-2">
             ${interactiveButton}
-            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-2 rounded-lg font-semibold text-xs">L1: Worksheet</a>
-            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">L2: Section Bundle</a>
-            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">L3: Unit Bundle</a>
-            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="text-center border border-dashed border-gray-300 text-gray-600 py-2 rounded-lg font-semibold text-xs">Presale Terms (PDF)</a>
+            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs hover:bg-black hover:shadow-md transition">Open Kahoot</a>
+            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-2 rounded-lg font-semibold text-xs hover:shadow-md transition">L1: Worksheet</a>
+            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">L2: Section Bundle</a>
+            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">L3: Unit Bundle</a>
+            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="text-center border border-dashed border-gray-300 text-gray-600 py-2 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">Read Presale Terms PDF</a>
           </div>
         </article>
       `;

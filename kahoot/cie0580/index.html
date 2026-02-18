@@ -61,8 +61,8 @@ lang: en
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
                     <div class="grid grid-cols-1 gap-2">
-                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Open Unit Presale</a>
-                        <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">Read Presale Terms</a>
+                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs hover:shadow-md transition">Open Unit Presale</a>
+                        <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">Read Presale Terms PDF</a>
                     </div>
                 </article>
             {% endfor %}
