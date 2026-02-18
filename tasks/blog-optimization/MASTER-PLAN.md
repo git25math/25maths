@@ -2,7 +2,7 @@
 
 ## Goal
 
-Make navigation cleaner by removing top-nav Blog site-wide while preserving Blog access through homepage lower-page sections.
+Make navigation cleaner by removing top-nav Blog and Support site-wide while preserving lower-page Blog entry points and footer Support entry points.
 
 ## Work Breakdown
 
@@ -16,9 +16,13 @@ Make navigation cleaner by removing top-nav Blog site-wide while preserving Blog
 | 3 | P3-A1 | Remove Blog link from desktop top navigation on all routes | Completed | Codex |
 | 3 | P3-A2 | Remove Blog link from mobile menu on all routes | Completed | Codex |
 | 3 | P3-A3 | Verify non-home pages no longer render Blog in top navigation | Completed | Codex |
+| 4 | P4-A1 | Remove Support link from desktop top navigation on all routes | Completed | Codex |
+| 4 | P4-A2 | Remove Support link from mobile menu on all routes | Completed | Codex |
+| 4 | P4-A3 | Verify footer Support entry remains available across language routes | Completed | Codex |
 
 ## Acceptance Criteria
 
 1. On all pages, top navigation has no Blog link (desktop + mobile).
-2. Homepage Latest Articles section still provides Blog access links.
-3. Blog routes remain reachable directly (`/blog/`, `/en/blog/`, `/zh-cn/blog/`).
+2. On all pages, top navigation has no Support link (desktop + mobile).
+3. Homepage Latest Articles section still provides Blog access links.
+4. Footer Support links remain available (`/support.html`, `/en/support.html`, `/zh-cn/support.html`).

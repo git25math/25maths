@@ -9,6 +9,7 @@ Run Blog optimization work in an isolated task tree, with explicit scope and tra
 1. Remove Blog from top navigation on all routes (desktop and mobile menus).
 2. Keep homepage lower-page Blog entry points in the Latest Articles section.
 3. Keep Blog pages reachable by direct URL and homepage lower entry points.
+4. Remove Support from top navigation on all routes (desktop and mobile menus), while keeping footer Support entry points.
 
 ## Rules Of Execution
 
@@ -30,3 +31,4 @@ Run Blog optimization work in an isolated task tree, with explicit scope and tra
 - Phase 1: Homepage top-nav Blog removal - Completed
 - Phase 2: Regression check for homepage Blog lower entry - Completed
 - Phase 3: Site-wide top-nav Blog removal - Completed
+- Phase 4: Site-wide top-nav Support removal - Completed
