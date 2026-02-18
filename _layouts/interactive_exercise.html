@@ -81,10 +81,10 @@
                 <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Try Another Interactive Exercise</a>
                 <span id="next-exercise-link-slot"></span>
                 {% if board_slug != '' %}
-                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Back to {{ board_directory_label }}</a>
+                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border border-[#7f5ab6] bg-[#efe9fb] px-4 py-2 text-sm font-semibold text-[#46178f] hover:bg-[#e5dbf8] transition">Back to {{ board_directory_label }}</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.kahoot_url and exercise_links.kahoot_url != '' %}
-                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>
+                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg bg-[#46178f] px-4 py-2 text-sm font-semibold text-white hover:bg-[#3d137a] transition">Play Matching Kahoot</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.worksheet_payhip_url and exercise_links.worksheet_payhip_url != '' %}
                 <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>

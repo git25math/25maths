@@ -36,8 +36,8 @@ lang_links:
             <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 font-semibold text-blue-700">总计：{{ sorted_exercises | size }}</span>
         </div>
         <div class="mt-4 flex flex-wrap gap-3">
-            <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">打开 CIE Kahoot 目录</a>
-            <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">打开 Edexcel Kahoot 目录</a>
+            <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border border-[#7f5ab6] bg-[#efe9fb] px-4 py-2 text-sm font-semibold text-[#46178f] hover:bg-[#e5dbf8] transition">打开 CIE Kahoot 目录</a>
+            <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border border-[#7f5ab6] bg-[#efe9fb] px-4 py-2 text-sm font-semibold text-[#46178f] hover:bg-[#e5dbf8] transition">打开 Edexcel Kahoot 目录</a>
         </div>
     </header>
 
@@ -136,7 +136,7 @@ lang_links:
                     <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">开始互动练习</a>
                     <a href="{{ board_directory_url | relative_url }}" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">返回考试局目录</a>
                     {% if card_kahoot_url != "" %}
-                    <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">打开配套 Kahoot</a>
+                    <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg bg-[#46178f] px-4 py-2 text-sm font-semibold text-white hover:bg-[#3d137a] transition">打开配套 Kahoot</a>
                     {% endif %}
                 </div>
             </article>
