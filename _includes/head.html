@@ -49,6 +49,35 @@
 <style>
     body { font-family: 'Inter', sans-serif; }
 
+    /* Stable CIE IGCSE helpers for cross-page color consistency. */
+    :root {
+        --cie-igcse-100: #fde9e2;
+        --cie-igcse-200: #f4c4b3;
+        --cie-igcse-600: #c94924;
+        --cie-igcse-700: #aa3c1d;
+        --cie-igcse-800: #8f2f17;
+    }
+
+    .cie-hero-gradient {
+        background-image: linear-gradient(135deg, #e5532f 0%, var(--cie-igcse-800) 100%);
+    }
+
+    .cie-solid-bg { background-color: var(--cie-igcse-600); }
+    .cie-solid-text { color: var(--cie-igcse-700); }
+    .cie-solid-border { border-color: var(--cie-igcse-700); }
+    .cie-solid-hover:hover { background-color: var(--cie-igcse-700); }
+
+    .cie-soft-border { border-color: var(--cie-igcse-200); }
+    .cie-soft-bg { background-color: var(--cie-igcse-100); }
+    .cie-soft-text { color: var(--cie-igcse-700); }
+    .cie-soft-hover:hover { background-color: #fbded2; }
+    .cie-text-hover:hover { color: var(--cie-igcse-700); }
+
+    .cie-hero-outline-hover:hover {
+        background-color: #fff;
+        color: var(--cie-igcse-700);
+    }
+
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */
     .kahoot-solid-bg { background-color: #46178f; }
     .kahoot-solid-border { border-color: #b497ff; }

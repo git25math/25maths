@@ -15,6 +15,14 @@
 {% assign nav_label_products = "Products" %}
 {% assign nav_label_pricing = "Pricing" %}
 {% assign nav_label_free = "Free Resources" %}
+{% assign nav_brand_text_class = "text-primary" %}
+{% assign nav_active_color_class = "text-primary border-primary" %}
+{% assign nav_inactive_hover_class = "hover:text-primary" %}
+{% if page.module == "cie0580" %}
+    {% assign nav_brand_text_class = "cie-solid-text" %}
+    {% assign nav_active_color_class = "cie-solid-text cie-solid-border" %}
+    {% assign nav_inactive_hover_class = "cie-text-hover" %}
+{% endif %}
 {% if page.lang == "zh-CN" %}
     {% assign nav_label_overview = "概览" %}
     {% assign nav_label_products = "产品" %}
@@ -24,22 +32,22 @@
 <nav class="bg-white shadow-sm border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-12 space-x-6 overflow-x-auto">
-            <span class="text-sm font-bold text-primary whitespace-nowrap">{{ current_module.name }}</span>
+            <span class="text-sm font-bold {{ nav_brand_text_class }} whitespace-nowrap">{{ current_module.name }}</span>
             <a href="{{ module_base }}"
-               class="text-sm whitespace-nowrap {% if page.active_page == 'overview' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+               class="text-sm whitespace-nowrap {% if page.active_page == 'overview' %}{{ nav_active_color_class }} font-semibold border-b-2{% else %}text-gray-600 {{ nav_inactive_hover_class }}{% endif %} pb-px transition">
                 {{ nav_label_overview }}
             </a>
             {% if current_module.status == 'active' %}
             <a href="{{ module_base }}products.html"
-               class="text-sm whitespace-nowrap {% if page.active_page == 'products' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+               class="text-sm whitespace-nowrap {% if page.active_page == 'products' %}{{ nav_active_color_class }} font-semibold border-b-2{% else %}text-gray-600 {{ nav_inactive_hover_class }}{% endif %} pb-px transition">
                 {{ nav_label_products }}
             </a>
             <a href="{{ module_base }}pricing.html"
-               class="text-sm whitespace-nowrap {% if page.active_page == 'pricing' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+               class="text-sm whitespace-nowrap {% if page.active_page == 'pricing' %}{{ nav_active_color_class }} font-semibold border-b-2{% else %}text-gray-600 {{ nav_inactive_hover_class }}{% endif %} pb-px transition">
                 {{ nav_label_pricing }}
             </a>
             <a href="{{ module_base }}free/"
-               class="text-sm whitespace-nowrap {% if page.active_page == 'free' %}text-primary font-semibold border-b-2 border-primary{% else %}text-gray-600 hover:text-primary{% endif %} pb-px transition">
+               class="text-sm whitespace-nowrap {% if page.active_page == 'free' %}{{ nav_active_color_class }} font-semibold border-b-2{% else %}text-gray-600 {{ nav_inactive_hover_class }}{% endif %} pb-px transition">
                 {{ nav_label_free }}
             </a>
             {% endif %}

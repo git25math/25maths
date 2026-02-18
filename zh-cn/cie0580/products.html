@@ -17,7 +17,7 @@ lang_links:
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
-<section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
+<section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">CIE 0580 产品系统</h1>
         <p class="text-xl opacity-90">旧三产品模式已下线。当前闭环为：L1 单品 -> L2 小章节合集 -> L3 单元合集。</p>
@@ -38,19 +38,19 @@ lang_links:
         <h2 class="text-3xl font-bold text-gray-900 mb-8">闭环产品阶梯</h2>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <p class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">L1</p>
+                <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Worksheet 单品 MVP</h3>
                 <p class="text-sm text-gray-600 mb-4">单个 SubTopic：Kahoot + Worksheet 下载，作为最低门槛入口。</p>
                 <p class="text-sm text-gray-700">建议早鸟价：{{ catalog.pricing.l1_early_bird }} · 建议常规价：{{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <p class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">L2</p>
+                <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">小章节合集</h3>
                 <p class="text-sm text-gray-600 mb-4">同一 syllabus section 的多个 SubTopic，作为 L1 主要升级路径。</p>
                 <p class="text-sm text-gray-700">建议早鸟价：{{ catalog.pricing.l2_early_bird }} · 建议常规价：{{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <p class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">L3</p>
+                <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">单元合集</h3>
                 <p class="text-sm text-gray-600 mb-4">覆盖同一单元的 Core + Extended，并承接后续增值内容。</p>
                 <p class="text-sm text-gray-700">建议早鸟价：{{ catalog.pricing.l3_early_bird }} · 建议常规价：{{ catalog.pricing.l3_regular }}</p>
@@ -76,7 +76,7 @@ lang_links:
                     <p class="text-sm text-gray-600 mb-1">上线：{{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">早鸟截止：{{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">打开预售占位商品</a>
+                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center cie-solid-bg text-white py-2 rounded-lg font-semibold text-xs">打开预售占位商品</a>
                 </article>
             {% endfor %}
         </div>

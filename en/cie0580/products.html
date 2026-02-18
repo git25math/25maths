@@ -17,7 +17,7 @@ lang_links:
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
-<section class="bg-gradient-to-r from-primary to-purple-900 text-white py-20">
+<section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">CIE 0580 Product System</h1>
         <p class="text-xl opacity-90">Legacy 3-product setup retired. New closed loop: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
@@ -38,19 +38,19 @@ lang_links:
         <h2 class="text-3xl font-bold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <p class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">L1</p>
+                <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Single Worksheet MVP</h3>
                 <p class="text-sm text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download. Lowest friction entry point.</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l1_early_bird }} · suggested regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <p class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">L2</p>
+                <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Section Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">Multiple SubTopics inside one syllabus section. Best upgrade from L1.</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l2_early_bird }} · suggested regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <p class="text-xs uppercase tracking-wider text-primary font-semibold mb-2">L3</p>
+                <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">One full unit including Core + Extended tracks, plus bonus add-ons after release.</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l3_early_bird }} · suggested regular: {{ catalog.pricing.l3_regular }}</p>
@@ -76,7 +76,7 @@ lang_links:
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">Open Presale Placeholder</a>
+                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center cie-solid-bg text-white py-2 rounded-lg font-semibold text-xs">Open Presale Placeholder</a>
                 </article>
             {% endfor %}
         </div>
