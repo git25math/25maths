@@ -141,6 +141,13 @@ lang: en
     boardKey: 'all',
     query: ''
   };
+  const urlKeys = {
+    batch: 'fs_batch',
+    board: 'fs_board',
+    query: 'fs_q'
+  };
+  const validBatchKeys = new Set(Object.keys(batchLabels));
+  const validBoardKeys = new Set(Object.keys(boardLabels));
   let searchDebounceTimer = null;
 
   const setButtonState = (button, isActive) => {
@@ -161,6 +168,51 @@ lang: en
   };
 
   const boardTotals = getBoardTotals();
+
+  const syncUrlState = () => {
+    const params = new URLSearchParams(window.location.search);
+    const query = state.query.trim();
+
+    if (state.batchKey === 'batch_1') {
+      params.delete(urlKeys.batch);
+    } else {
+      params.set(urlKeys.batch, state.batchKey);
+    }
+
+    if (state.boardKey === 'all') {
+      params.delete(urlKeys.board);
+    } else {
+      params.set(urlKeys.board, state.boardKey);
+    }
+
+    if (!query) {
+      params.delete(urlKeys.query);
+    } else {
+      params.set(urlKeys.query, query);
+    }
+
+    const nextQuery = params.toString();
+    const nextUrl = `${window.location.pathname}${nextQuery ? `?${nextQuery}` : ''}${window.location.hash}`;
+    window.history.replaceState(null, '', nextUrl);
+  };
+
+  const applyStateFromUrl = () => {
+    const params = new URLSearchParams(window.location.search);
+    const batchFromUrl = params.get(urlKeys.batch) || '';
+    const boardFromUrl = params.get(urlKeys.board) || '';
+    const queryFromUrl = (params.get(urlKeys.query) || '').trim();
+
+    if (validBatchKeys.has(batchFromUrl)) {
+      state.batchKey = batchFromUrl;
+    }
+    if (validBoardKeys.has(boardFromUrl)) {
+      state.boardKey = boardFromUrl;
+    }
+    state.query = queryFromUrl;
+    if (searchInput) {
+      searchInput.value = state.query;
+    }
+  };
 
   const applyFilter = () => {
     const query = state.query.trim().toLowerCase();
@@ -211,6 +263,8 @@ lang: en
     if (emptyState) {
       emptyState.classList.toggle('hidden', visibleCount > 0);
     }
+
+    syncUrlState();
   };
 
   batchButtons.forEach((button) => {
@@ -247,6 +301,7 @@ lang: en
     });
   }
 
+  applyStateFromUrl();
   applyFilter();
 })();
 </script>
@@ -374,7 +429,11 @@ lang: en
   };
 
   const syncUrlState = () => {
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(window.location.search);
+    params.delete('board');
+    params.delete('tier');
+    params.delete('subtopic');
+    params.delete('q');
     const board = boardSelect.value;
     const tier = tierSelect.value;
     const subtopic = subtopicSelect.value;
@@ -386,8 +445,8 @@ lang: en
     if (query) params.set('q', query);
 
     const nextUrl = params.toString()
-      ? `${window.location.pathname}?${params.toString()}`
-      : window.location.pathname;
+      ? `${window.location.pathname}?${params.toString()}${window.location.hash}`
+      : `${window.location.pathname}${window.location.hash}`;
     window.history.replaceState(null, '', nextUrl);
   };
 
