@@ -33,6 +33,10 @@
 {% assign exercise_lang_fallback_enabled = false %}
 {% assign exercise_lang_fallback_en_url = "" %}
 {% assign exercise_lang_fallback_zh_url = "" %}
+{% assign language_label = "Language" %}
+{% if page.lang == 'zh-CN' %}
+    {% assign language_label = "语言" %}
+{% endif %}
 {% if page.collection == 'exercises' and page.lang_links == nil %}
     {% assign exercise_lang_fallback_enabled = true %}
     {% assign exercise_lang_fallback_en_url = page.url | relative_url %}
@@ -65,7 +69,17 @@
                 <div class="flex items-center space-x-1">
                     {% if page.lang_links %}
                     {% for item in page.lang_links %}
-                    <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs {% if page.lang == item.code %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ item.label }}</a>
+                    {% assign lang_switch_label = item.label %}
+                    {% if item.code == 'en' %}
+                        {% assign lang_switch_label = 'EN' %}
+                    {% elsif item.code == 'zh-CN' %}
+                        {% if page.lang == 'zh-CN' %}
+                            {% assign lang_switch_label = '简体' %}
+                        {% else %}
+                            {% assign lang_switch_label = 'ZH-CN' %}
+                        {% endif %}
+                    {% endif %}
+                    <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs {% if page.lang == item.code %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ lang_switch_label }}</a>
                     {% endfor %}
                     {% else %}
                     <a href="{{ exercise_lang_fallback_en_url }}" class="px-2 py-1 rounded text-xs {% if page.lang == 'en' %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">EN</a>
@@ -103,11 +117,21 @@
                 <a href="{{ membership_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ membership_label }}</a>
                 {% if page.lang_links or exercise_lang_fallback_enabled %}
                 <div class="border-t border-gray-700 mt-2 pt-2">
-                    <div class="px-3 text-xs text-gray-500 mb-2">Language</div>
+                    <div class="px-3 text-xs text-gray-500 mb-2">{{ language_label }}</div>
                     <div class="flex flex-wrap gap-2 px-3">
                         {% if page.lang_links %}
                         {% for item in page.lang_links %}
-                        <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">{{ item.label }}</a>
+                        {% assign lang_switch_label = item.label %}
+                        {% if item.code == 'en' %}
+                            {% assign lang_switch_label = 'EN' %}
+                        {% elsif item.code == 'zh-CN' %}
+                            {% if page.lang == 'zh-CN' %}
+                                {% assign lang_switch_label = '简体' %}
+                            {% else %}
+                                {% assign lang_switch_label = 'ZH-CN' %}
+                            {% endif %}
+                        {% endif %}
+                        <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">{{ lang_switch_label }}</a>
                         {% endfor %}
                         {% else %}
                         <a href="{{ exercise_lang_fallback_en_url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">EN</a>

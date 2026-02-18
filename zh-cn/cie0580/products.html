@@ -69,7 +69,7 @@ lang_links:
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="text-[11px] px-2 py-1 rounded-full bg-orange-100 text-orange-700 font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
+                        <span class="text-[11px] px-2 py-1 rounded-full bg-amber-100 text-amber-700 font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">早鸟：{{ unit.early_bird_price }} · 常规：{{ unit.regular_price }}</p>

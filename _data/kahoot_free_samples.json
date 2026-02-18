@@ -6,8 +6,6 @@
       "board_label": "CIE 0580",
       "tier_scope": "Core + Extended",
       "channel_url": "https://create.kahoot.it/channels/25maths/igcse-maths",
-      "card_badge_class": "bg-primary/10 text-primary",
-      "button_class": "bg-primary text-white",
       "items": [
         {
           "id": "cie0580:number-c1:c1-04-fractions-decimals-percentages",
@@ -88,8 +86,6 @@
       "board_label": "Edexcel 4MA1",
       "tier_scope": "Foundation + Higher",
       "channel_url": "https://create.kahoot.it/channels/25maths/edx-4ma1-igcse",
-      "card_badge_class": "bg-secondary/10 text-secondary",
-      "button_class": "bg-secondary text-white",
       "items": [
         {
           "id": "edexcel-4ma1:number-f1:f1-02-fractions",
