@@ -538,9 +538,12 @@ lang: en
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
         : 'bg-amber-100 text-amber-700';
+      const interactiveButtonClass = item.board === 'cie0580'
+        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
+        : 'bg-secondary text-white hover:bg-secondary/90 hover:shadow-md';
       const worksheetButtonClass = item.board === 'cie0580'
-        ? 'bg-primary text-white'
-        : 'bg-secondary text-white';
+        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
+        : 'border border-secondary/30 bg-secondary/10 text-secondary hover:bg-secondary/15 hover:shadow-sm';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'
@@ -575,7 +578,7 @@ lang: en
         ? item.cover.replace(/\.png$/i, '.webp')
         : item.cover;
       const interactiveButton = hasInteractiveExercise
-        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center bg-secondary text-white py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L0: Interactive Exercise</a>`
+        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center ${interactiveButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L0: Interactive Exercise</a>`
         : '';
 
       return `
@@ -594,13 +597,13 @@ lang: en
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
           <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
           <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
-          <div class="grid grid-cols-1 gap-2.5">
+          <div class="mt-1 grid grid-cols-1 gap-3">
             ${interactiveButton}
-            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2.5 rounded-lg font-semibold text-xs hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>
-            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L1: Worksheet</a>
-            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L2: Section Bundle</a>
-            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L3: Unit Bundle</a>
-            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="text-center border border-dashed border-gray-300 text-gray-600 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
+            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-3 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>
+            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L1: Worksheet</a>
+            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L2: Section Bundle</a>
+            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L3: Unit Bundle</a>
+            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="text-center border border-dashed border-gray-300 bg-white text-gray-600 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
           </div>
         </article>
       `;
