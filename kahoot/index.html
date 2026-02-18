@@ -69,10 +69,12 @@ lang: en
                 {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
                 {% assign board_explorer_button_class = "border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover" %}
+                {% assign board_meta_chip_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% if board.board == "cie0580" %}
                     {% assign board_badge_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
                     {% assign board_button_class = "cie-solid-bg cie-solid-hover" %}
                     {% assign board_explorer_button_class = "border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover" %}
+                    {% assign board_meta_chip_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
                 {% endif %}
                 <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6" data-free-sample-board="{{ board.board }}">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
@@ -96,9 +98,9 @@ lang: en
                                     </div>
                                     <div class="min-w-0 flex-1">
                                         <div class="flex flex-wrap items-center gap-2 mb-2">
-                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full {{ board_meta_chip_class }} font-semibold">{{ item.code }}</span>
                                             <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
-                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full {{ board_meta_chip_class }} font-semibold">{{ item.batch }}</span>
                                         </div>
                                         <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
                                         <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
@@ -540,6 +542,17 @@ lang: en
       const boardBadge = item.board === 'cie0580'
         ? 'border cie-soft-border cie-soft-bg cie-soft-text'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
+      const boardMetaChipClass = item.board === 'cie0580'
+        ? 'border cie-soft-border cie-soft-bg cie-soft-text'
+        : 'border edx-soft-border edx-soft-bg edx-soft-text';
+      const itemTier = (item.tier || '').toLowerCase();
+      const tierBadgeClass = item.board === 'cie0580'
+        ? (itemTier === 'core'
+          ? 'border cie-soft-border cie-soft-bg cie-soft-text'
+          : 'border border-dashed cie-soft-border bg-white cie-soft-text')
+        : (itemTier === 'foundation'
+          ? 'border edx-soft-border edx-soft-bg edx-soft-text'
+          : 'border border-dashed edx-soft-border bg-white edx-soft-text');
       const interactiveButtonClass = item.board === 'cie0580'
         ? 'cie-solid-bg cie-solid-hover hover:shadow-md'
         : 'edx-solid-bg edx-solid-hover hover:shadow-md';
@@ -603,8 +616,8 @@ lang: en
           </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
             <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.sectionCode)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full ${tierBadgeClass} font-semibold">${escapeHtml(item.tier)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full ${boardMetaChipClass} font-semibold">${escapeHtml(item.sectionCode)}</span>
             <span class="text-[11px] px-2 py-1 rounded-full ${statusClass} font-semibold">${escapeHtml(statusLabel)}</span>
           </div>
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>

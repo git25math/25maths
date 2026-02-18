@@ -82,7 +82,7 @@ lang: en
             <div class="mb-10">
                 <div class="flex flex-wrap items-center gap-3 mb-4">
                     <h3 class="text-xl font-bold text-gray-900">{{ section.section_title }}</h3>
-                    <span class="text-xs px-2 py-1 rounded-full bg-gray-200 text-gray-700 font-semibold">{{ section.section_code }}</span>
+                    <span class="text-xs px-2 py-1 rounded-full border edx-soft-border edx-soft-bg edx-soft-text font-semibold">{{ section.section_code }}</span>
                     <span class="text-xs px-2 py-1 rounded-full {% if section.tier == 'Foundation' %}border edx-soft-border edx-soft-bg edx-soft-text{% else %}border border-dashed edx-soft-border bg-white edx-soft-text{% endif %} font-semibold">{{ section.tier }}</span>
                     {% if unit %}
                         <span class="text-xs px-2 py-1 rounded-full border edx-soft-border edx-soft-bg edx-soft-text font-semibold">L3: {{ unit.code }}</span>
