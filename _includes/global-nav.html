@@ -2,26 +2,21 @@
 {% assign membership_path = "/subscription.html" %}
 {% assign kahoot_path = "/kahoot/" %}
 {% assign exercises_path = "/exercises/" %}
-{% assign about_label = "About" %}
 {% assign membership_label = "Membership" %}
 {% assign kahoot_label = "Kahoot" %}
 {% assign exercises_label = "Interactive Exercises" %}
 {% assign member_login_label = "Log in" %}
 {% assign member_logout_label = "Log out" %}
 {% assign member_guest_label = "Guest" %}
-{% assign about_path = "/about.html" %}
 {% if page.lang == 'en' %}
     {% assign membership_path = "/en/subscription.html" %}
-    {% assign about_path = "/en/about.html" %}
 {% elsif page.lang == 'zh-CN' %}
     {% assign membership_path = "/zh-cn/subscription.html" %}
     {% assign kahoot_path = "/zh-cn/kahoot/" %}
     {% assign exercises_path = "/zh-cn/exercises/" %}
-    {% assign about_label = "关于" %}
     {% assign membership_label = "会员" %}
     {% assign kahoot_label = "Kahoot题组" %}
     {% assign exercises_label = "互动练习" %}
-    {% assign about_path = "/zh-cn/about.html" %}
     {% assign member_login_label = "登录" %}
     {% assign member_logout_label = "退出" %}
     {% assign member_guest_label = "访客" %}
@@ -56,7 +51,6 @@
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
                 <a href="{{ kahoot_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'kahoot' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ kahoot_label }}</a>
                 <a href="{{ exercises_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'exercises' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ exercises_label }}</a>
-                <a href="{{ about_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'about' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ about_label }}</a>
                 <a href="{{ membership_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ membership_label }}</a>
                 {% if site.supabase and site.supabase.enabled %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
@@ -114,7 +108,6 @@
             <div class="border-t border-gray-700 mt-2 pt-2">
                 <a href="{{ kahoot_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ kahoot_label }}</a>
                 <a href="{{ exercises_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ exercises_label }}</a>
-                <a href="{{ about_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ about_label }}</a>
                 <a href="{{ membership_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ membership_label }}</a>
                 {% if site.supabase and site.supabase.enabled %}
                 <div class="border-t border-gray-700 mt-2 pt-2 px-3 space-y-2">
