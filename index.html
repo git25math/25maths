@@ -24,17 +24,17 @@ lang_links:
         <p class="text-lg mb-8 text-gray-200">
             Trusted by students and teachers worldwide
         </p>
-        <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="#modules" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+        <div class="flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
+            <a href="#modules" class="sm:flex-1 cta-btn-equal bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 Choose Your Exam Board
             </a>
-            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="/exercises/" class="sm:flex-1 cta-btn-equal bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 Start Interactive Exercises
             </a>
-            <a href="/kahoot/" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg border kahoot-solid-border text-white px-8 py-4 rounded-lg font-semibold text-lg kahoot-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="/kahoot/" class="sm:flex-1 cta-btn-equal kahoot-solid-bg border kahoot-solid-border text-white px-8 py-4 rounded-lg font-semibold text-lg kahoot-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 Explore Kahoot Hub
             </a>
-            <a href="/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="/free-gift.html" class="sm:flex-1 cta-btn-equal bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 Get Free Gift Pack
             </a>
         </div>
@@ -62,13 +62,13 @@ lang_links:
                 <h3 class="mt-1 text-lg font-bold text-gray-900">Extended Track</h3>
                 <p class="mt-1 text-sm text-gray-600">Practice high-demand Extended exam objectives.</p>
             </a>
-            <a href="/exercises/?board=edexcel-4ma1&tier=foundation" class="rounded-xl border border-amber-200 bg-white p-4 shadow-sm hover:shadow-md transition">
-                <p class="text-xs font-semibold uppercase tracking-wide text-amber-700">Edexcel 4MA1</p>
+            <a href="/exercises/?board=edexcel-4ma1&tier=foundation" class="rounded-xl border edx-soft-border bg-white p-4 shadow-sm hover:shadow-md transition">
+                <p class="text-xs font-semibold uppercase tracking-wide edx-solid-text">Edexcel 4MA1</p>
                 <h3 class="mt-1 text-lg font-bold text-gray-900">Foundation Track</h3>
                 <p class="mt-1 text-sm text-gray-600">Focus on secure Foundation-tier exam fluency.</p>
             </a>
-            <a href="/exercises/?board=edexcel-4ma1&tier=higher" class="rounded-xl border border-amber-200 bg-white p-4 shadow-sm hover:shadow-md transition">
-                <p class="text-xs font-semibold uppercase tracking-wide text-amber-700">Edexcel 4MA1</p>
+            <a href="/exercises/?board=edexcel-4ma1&tier=higher" class="rounded-xl border edx-soft-border bg-white p-4 shadow-sm hover:shadow-md transition">
+                <p class="text-xs font-semibold uppercase tracking-wide edx-solid-text">Edexcel 4MA1</p>
                 <h3 class="mt-1 text-lg font-bold text-gray-900">Higher Track</h3>
                 <p class="mt-1 text-sm text-gray-600">Work through mixed Higher-tier challenge drills.</p>
             </a>
@@ -87,7 +87,7 @@ lang_links:
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for mod in site.modules %}
             <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
-                <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}bg-secondary{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
+                <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}edx-soft-bg edx-soft-border border-b{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
                     <span class="text-3xl font-bold">{{ mod.name }}</span>
                     {% if mod.status == 'coming_soon' %}
                     <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
@@ -180,9 +180,9 @@ lang_links:
                 <h2 class="text-3xl font-bold text-gray-900 mb-2">Weekly Topic Membership</h2>
                 <p class="text-gray-600">One topical practice pack every week with full solutions. Built for CIE 0580.</p>
             </div>
-            <div class="flex items-center gap-4">
-                <div class="text-2xl font-bold text-primary">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
-                <a href="/subscription.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <div class="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-4">
+                <div class="text-2xl font-bold text-primary whitespace-nowrap">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
+                <a href="/subscription.html" class="w-full sm:w-auto cta-btn-equal bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                     View Membership
                 </a>
             </div>
