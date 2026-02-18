@@ -36,8 +36,8 @@
                 </a>
                 {% endfor %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
-                <a href="{{ kahoot_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'kahoot' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ kahoot_label }}</a>
                 <a href="{{ exercises_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'exercises' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ exercises_label }}</a>
+                <a href="{{ kahoot_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'kahoot' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ kahoot_label }}</a>
                 <a href="{{ membership_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ membership_label }}</a>
                 {% if site.supabase and site.supabase.enabled %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
@@ -70,8 +70,8 @@
             </a>
             {% endfor %}
             <div class="border-t border-gray-700 mt-2 pt-2">
-                <a href="{{ kahoot_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ kahoot_label }}</a>
                 <a href="{{ exercises_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ exercises_label }}</a>
+                <a href="{{ kahoot_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ kahoot_label }}</a>
                 <a href="{{ membership_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ membership_label }}</a>
                 {% if site.supabase and site.supabase.enabled %}
                 <div class="border-t border-gray-700 mt-2 pt-2 px-3 space-y-2">
