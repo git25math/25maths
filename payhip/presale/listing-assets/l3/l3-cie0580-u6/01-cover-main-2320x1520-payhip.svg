@@ -1,47 +1,36 @@
 <svg width="2320" height="1520" viewBox="0 0 580 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="L3-CIE0580-U6 cover">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#EDF4FF"/>
-      <stop offset="100%" stop-color="#F8FBFF"/>
-    </linearGradient>
-    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1D4ED8"/>
-      <stop offset="100%" stop-color="#8B1538"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="580" height="380" fill="url(#bg)"/>
+  <rect width="580" height="380" fill="#F8FBFF"/>
+  <rect width="580" height="184" fill="#EDF4FF" opacity="0.75"/>
   <rect x="0" y="0" width="580" height="12" fill="#8B1538"/>
   <rect x="0" y="12" width="580" height="48" fill="#F8EAF0"/>
 
-  <rect x="18" y="22" width="128" height="28" rx="14" fill="#1D4ED8"/>
-  <text x="82" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">L3 Unit Bundle</text>
+  <rect x="30" y="22" width="188" height="28" rx="14" fill="#1D4ED8"/>
+  <text x="124" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">L3 Unit Bundle</text>
 
-  <rect x="154" y="22" width="150" height="28" rx="14" fill="#FFFFFF"/>
-  <text x="229" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#5E1025">CIE 0580</text>
+  <rect x="226" y="22" width="136" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="294" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#5E1025">CIE 0580</text>
 
-  <rect x="312" y="22" width="250" height="28" rx="14" fill="#FFFFFF"/>
-  <text x="437" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#425466">Core + Extended</text>
+  <rect x="370" y="22" width="180" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="460" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#425466">Core + Extended</text>
 
-  <rect x="18" y="76" width="544" height="248" rx="20" fill="#FFFFFF"/>
-  <rect x="18" y="76" width="9" height="248" fill="url(#stripe)"/>
+  <rect x="30" y="76" width="520" height="248" rx="20" fill="#FFFFFF"/>
+  <rect x="30" y="76" width="9" height="248" fill="#1D4ED8"/>
+  <rect x="37" y="76" width="2" height="248" fill="#8B1538" opacity="0.75"/>
 
-  <text x="52" y="120" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#5A6D84">L3-CIE0580-U6</text>
-  <text x="52" y="180" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="45" font-weight="800" fill="#10233A">U6 Trigonometry</text>
-  <text x="52" y="290" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#27445E">Unit Bundle</text>
-  <text x="52" y="313" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#4A617B">CIE 0580</text>
+  <text x="60" y="120" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#5A6D84">L3-CIE0580-U6</text>
+  <text x="60" y="164" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#10233A">U6 Trigonometry</text>
+  <text x="60" y="244" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#27445E">Unit Bundle</text>
+  <text x="60" y="266" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#4A617B">CIE 0580</text>
 
-  <rect x="350" y="125" width="195" height="92" rx="14" fill="#F7FAFD" stroke="#D9E3EF"/>
-  <text x="366" y="151" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="14" font-weight="800" fill="#2A3E56">Coverage</text>
-  <text x="366" y="175" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4C6078">2 Sections | 8 SubTopics</text>
-  <text x="366" y="197" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6B7E95">Worksheet-aligned</text>
+  <rect x="60" y="276" width="214" height="30" rx="9" fill="#F7FAFD" stroke="#D9E3EF"/>
+  <text x="72" y="296" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#2A3E56">2 Sections | 8 SubTopics</text>
 
-  <rect x="350" y="228" width="195" height="82" rx="14" fill="#F7FAFD" stroke="#D9E3EF"/>
-  <text x="366" y="251" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#2A3E56">Early Bird US$12   |   Regular US$16</text>
-  <text x="366" y="273" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#5F7389">Early Bird Ends 2026-03-31   |   Release 2026-04-30</text>
-  <text x="366" y="294" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#7A8EA6">Presale Product Cover</text>
+  <rect x="286" y="276" width="244" height="30" rx="9" fill="#F7FAFD" stroke="#D9E3EF"/>
+  <text x="298" y="296" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#2A3E56">EB US$20 | REG US$25</text>
+
+  <text x="60" y="319" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#5F7389">EB End 2026-03-31 | Release 2026-04-30</text>
 
   <rect x="0" y="334" width="580" height="46" fill="#8B1538"/>
-  <text x="18" y="362" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">25Maths Payhip Presale</text>
-  <text x="562" y="362" text-anchor="end" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Kahoot + Worksheet + Exam Support</text>
+  <text x="30" y="362" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">25Maths Payhip Presale</text>
+  <text x="550" y="362" text-anchor="end" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Kahoot + Worksheet + Exam Support</text>
 </svg>

@@ -94,6 +94,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Skip render when target PNG already exists.",
     )
+    parser.add_argument(
+        "--max-per-level",
+        type=int,
+        default=0,
+        help="Generate at most N listings per level. 0 means no limit.",
+    )
     return parser.parse_args()
 
 
@@ -144,6 +150,80 @@ def wrap_lines(text: str, max_chars: int, max_lines: int) -> List[str]:
         tail = tail[: max_chars - 3].rstrip() + "..."
     merged.append(tail)
     return merged
+
+
+def estimate_char_factor(ch: str) -> float:
+    if ch == " ":
+        return 0.32
+    if ch.isupper():
+        return 0.72
+    if ch.islower():
+        return 0.56
+    if ch.isdigit():
+        return 0.56
+    if ch in "-_/|+()[]":
+        return 0.40
+    return 0.52
+
+
+def estimate_text_width(text: str, font_size: int) -> float:
+    return sum(estimate_char_factor(ch) for ch in text) * float(font_size)
+
+
+def wrap_lines_by_width(text: str, font_size: int, max_width: int, max_lines: int) -> List[str]:
+    words = normalize_whitespace(text).split()
+    if not words:
+        return []
+
+    lines: List[str] = []
+    current = words[0]
+    for w in words[1:]:
+        candidate = f"{current} {w}"
+        if estimate_text_width(candidate, font_size) <= max_width:
+            current = candidate
+        else:
+            lines.append(current)
+            current = w
+    lines.append(current)
+
+    if len(lines) <= max_lines:
+        return lines
+
+    head = lines[: max_lines - 1]
+    tail = " ".join(lines[max_lines - 1 :]).strip()
+    ellipsis = "..."
+    while tail and estimate_text_width(f"{tail}{ellipsis}", font_size) > max_width:
+        tail = tail[:-1].rstrip()
+    head.append(f"{tail}{ellipsis}" if tail else ellipsis)
+    return head
+
+
+def fit_text_block(
+    text: str,
+    max_width: int,
+    max_lines: int,
+    max_size: int,
+    min_size: int,
+) -> Tuple[int, List[str]]:
+    raw = normalize_whitespace(text)
+    if not raw:
+        return min_size, []
+
+    for size in range(max_size, min_size - 1, -1):
+        lines = wrap_lines_by_width(raw, size, max_width, max_lines)
+        if lines and all(estimate_text_width(line, size) <= max_width for line in lines):
+            return size, lines
+    return min_size, wrap_lines_by_width(raw, min_size, max_width, max_lines)
+
+
+def fit_single_line_font(text: str, max_width: int, max_size: int, min_size: int) -> int:
+    raw = normalize_whitespace(text)
+    if not raw:
+        return min_size
+    for size in range(max_size, min_size - 1, -1):
+        if estimate_text_width(raw, size) <= max_width:
+            return size
+    return min_size
 
 
 def content_for_row(level: str, row: dict) -> Dict[str, str]:
@@ -201,6 +281,8 @@ def content_for_row(level: str, row: dict) -> Dict[str, str]:
         "counts": counts,
         "price_line": f"Early Bird {early}   |   Regular {regular}",
         "date_line": f"Early Bird Ends {early_end}   |   Release {release}",
+        "price_short": f"EB {early} | REG {regular}",
+        "date_short": f"EB End {early_end} | Release {release}",
     }
 
 
@@ -212,21 +294,53 @@ def svg_for_cover(level: str, row: dict) -> str:
 
     sku = html.escape(normalize_whitespace(row.get("sku", "")))
     board = html.escape(content["board_label"])
-    tier = html.escape(content["tier_scope"] or "All tiers")
-    level_label = html.escape(level_style["name"])
-    main_lines = [html.escape(x) for x in wrap_lines(content["main"], max_chars=28, max_lines=2)]
-    sub_lines = [html.escape(x) for x in wrap_lines(content["sub"], max_chars=34, max_lines=1)]
-    scope_lines = [html.escape(x) for x in wrap_lines(content["scope"], max_chars=42, max_lines=1)]
-    counts = html.escape(content["counts"])
-    price_line = html.escape(content["price_line"])
-    date_line = html.escape(content["date_line"])
+    level_raw = level_style["name"]
+    board_raw = content["board_label"]
+    tier_raw = content["tier_scope"] or "All tiers"
+    tier = html.escape(tier_raw)
+    level_label = html.escape(level_raw)
 
-    y_main = 180
+    main_size, main_raw = fit_text_block(
+        content["main"],
+        max_width=470,
+        max_lines=2,
+        max_size=46,
+        min_size=28,
+    )
+    main_lines = [html.escape(x) for x in main_raw]
+    sub_size, sub_raw = fit_text_block(
+        content["sub"],
+        max_width=470,
+        max_lines=1,
+        max_size=19,
+        min_size=15,
+    )
+    scope_size, scope_raw = fit_text_block(
+        content["scope"],
+        max_width=470,
+        max_lines=1,
+        max_size=16,
+        min_size=13,
+    )
+    sub_lines = [html.escape(x) for x in sub_raw]
+    scope_lines = [html.escape(x) for x in scope_raw]
+    counts = html.escape(content["counts"])
+    price_short = html.escape(content["price_short"])
+    date_short = html.escape(content["date_short"])
+    counts_size = fit_single_line_font(content["counts"], max_width=196, max_size=12, min_size=8)
+    price_size = fit_single_line_font(content["price_short"], max_width=226, max_size=12, min_size=9)
+    date_size = fit_single_line_font(content["date_short"], max_width=470, max_size=11, min_size=9)
+    level_size = fit_single_line_font(level_raw, max_width=172, max_size=12, min_size=9)
+    board_size = fit_single_line_font(board_raw, max_width=122, max_size=12, min_size=9)
+    tier_size = fit_single_line_font(tier_raw, max_width=164, max_size=12, min_size=9)
+
+    y_main = 164 if len(main_lines) <= 1 else 158
+    line_gap = int(main_size * 1.08)
     main_block = []
     for i, line in enumerate(main_lines):
         main_block.append(
-            f'<text x="52" y="{y_main + i * 52}" font-family="Avenir Next, Inter, Arial, sans-serif" '
-            f'font-size="45" font-weight="800" fill="#10233A">{line}</text>'
+            f'<text x="60" y="{y_main + i * line_gap}" font-family="Avenir Next, Inter, Arial, sans-serif" '
+            f'font-size="{main_size}" font-weight="800" fill="#10233A">{line}</text>'
         )
     main_svg = "\n  ".join(main_block)
 
@@ -234,56 +348,64 @@ def svg_for_cover(level: str, row: dict) -> str:
     scope_text = scope_lines[0] if scope_lines else ""
 
     return f"""<svg width="{W}" height="{H}" viewBox="0 0 580 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{sku} cover">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="{level_style['bg_top']}"/>
-      <stop offset="100%" stop-color="{level_style['bg_bottom']}"/>
-    </linearGradient>
-    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="{level_style['accent']}"/>
-      <stop offset="100%" stop-color="{b_style['brand']}"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="580" height="380" fill="url(#bg)"/>
+  <rect width="580" height="380" fill="{level_style['bg_bottom']}"/>
+  <rect width="580" height="184" fill="{level_style['bg_top']}" opacity="0.75"/>
   <rect x="0" y="0" width="580" height="12" fill="{b_style['brand']}"/>
   <rect x="0" y="12" width="580" height="48" fill="{b_style['soft']}"/>
 
-  <rect x="18" y="22" width="128" height="28" rx="14" fill="{level_style['chip']}"/>
-  <text x="82" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">{level_label}</text>
+  <rect x="30" y="22" width="188" height="28" rx="14" fill="{level_style['chip']}"/>
+  <text x="124" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{level_size}" font-weight="800" fill="#FFFFFF">{level_label}</text>
 
-  <rect x="154" y="22" width="150" height="28" rx="14" fill="#FFFFFF"/>
-  <text x="229" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="{b_style['text']}">{board}</text>
+  <rect x="226" y="22" width="136" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="294" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{board_size}" font-weight="800" fill="{b_style['text']}">{board}</text>
 
-  <rect x="312" y="22" width="250" height="28" rx="14" fill="#FFFFFF"/>
-  <text x="437" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#425466">{tier}</text>
+  <rect x="370" y="22" width="180" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="460" y="40" text-anchor="middle" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{tier_size}" font-weight="800" fill="#425466">{tier}</text>
 
-  <rect x="18" y="76" width="544" height="248" rx="20" fill="#FFFFFF"/>
-  <rect x="18" y="76" width="9" height="248" fill="url(#stripe)"/>
+  <rect x="30" y="76" width="520" height="248" rx="20" fill="#FFFFFF"/>
+  <rect x="30" y="76" width="9" height="248" fill="{level_style['accent']}"/>
+  <rect x="37" y="76" width="2" height="248" fill="{b_style['brand']}" opacity="0.75"/>
 
-  <text x="52" y="120" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#5A6D84">{html.escape(sku)}</text>
+  <text x="60" y="120" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#5A6D84">{html.escape(sku)}</text>
   {main_svg}
-  <text x="52" y="290" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#27445E">{sub_text}</text>
-  <text x="52" y="313" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#4A617B">{scope_text}</text>
+  <text x="60" y="244" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{sub_size}" font-weight="700" fill="#27445E">{sub_text}</text>
+  <text x="60" y="266" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{scope_size}" font-weight="700" fill="#4A617B">{scope_text}</text>
 
-  <rect x="350" y="125" width="195" height="92" rx="14" fill="#F7FAFD" stroke="#D9E3EF"/>
-  <text x="366" y="151" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="14" font-weight="800" fill="#2A3E56">Coverage</text>
-  <text x="366" y="175" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#4C6078">{counts}</text>
-  <text x="366" y="197" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#6B7E95">Worksheet-aligned</text>
+  <rect x="60" y="276" width="214" height="30" rx="9" fill="#F7FAFD" stroke="#D9E3EF"/>
+  <text x="72" y="296" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{counts_size}" font-weight="800" fill="#2A3E56">{counts}</text>
 
-  <rect x="350" y="228" width="195" height="82" rx="14" fill="#F7FAFD" stroke="#D9E3EF"/>
-  <text x="366" y="251" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#2A3E56">{price_line}</text>
-  <text x="366" y="273" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#5F7389">{date_line}</text>
-  <text x="366" y="294" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#7A8EA6">Presale Product Cover</text>
+  <rect x="286" y="276" width="244" height="30" rx="9" fill="#F7FAFD" stroke="#D9E3EF"/>
+  <text x="298" y="296" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{price_size}" font-weight="800" fill="#2A3E56">{price_short}</text>
+
+  <text x="60" y="319" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="{date_size}" font-weight="700" fill="#5F7389">{date_short}</text>
 
   <rect x="0" y="334" width="580" height="46" fill="{b_style['brand']}"/>
-  <text x="18" y="362" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">25Maths Payhip Presale</text>
-  <text x="562" y="362" text-anchor="end" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Kahoot + Worksheet + Exam Support</text>
+  <text x="30" y="362" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">25Maths Payhip Presale</text>
+  <text x="550" y="362" text-anchor="end" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Kahoot + Worksheet + Exam Support</text>
 </svg>
 """
 
 
 def render_png(svg_path: Path, png_path: Path) -> None:
+    magick = shutil.which("magick")
+    if magick:
+        subprocess.run(
+            [
+                magick,
+                "-background",
+                "none",
+                "-density",
+                "192",
+                str(svg_path),
+                "-resize",
+                f"{W}x{H}!",
+                str(png_path),
+            ],
+            check=True,
+            timeout=45,
+        )
+        return
+
     qlmanage = shutil.which("qlmanage")
     if qlmanage:
         with tempfile.TemporaryDirectory(prefix="payhip-cover-") as tmp:
@@ -323,19 +445,7 @@ def render_png(svg_path: Path, png_path: Path) -> None:
             )
             return
 
-    subprocess.run(
-        [
-            "magick",
-            "-density",
-            "192",
-            str(svg_path),
-            "-resize",
-            f"{W}x{H}!",
-            str(png_path),
-        ],
-        check=True,
-        timeout=45,
-    )
+    raise RuntimeError("No PNG renderer found. Install ImageMagick (`magick`) to render covers.")
 
 
 def read_rows(csv_path: Path) -> List[dict]:
@@ -343,12 +453,16 @@ def read_rows(csv_path: Path) -> List[dict]:
         return list(csv.DictReader(fh))
 
 
-def iter_level_rows(levels: Iterable[str]) -> Iterable[Tuple[str, dict]]:
+def iter_level_rows(levels: Iterable[str], max_per_level: int = 0) -> Iterable[Tuple[str, dict]]:
     for level in levels:
         rows = read_rows(INPUT_CSVS[level])
         rows_sorted = sorted(rows, key=lambda r: r.get("sku", ""))
+        emitted = 0
         for row in rows_sorted:
             yield level, row
+            emitted += 1
+            if max_per_level > 0 and emitted >= max_per_level:
+                break
 
 
 def write_readme(generated_counts: Dict[str, int]) -> None:
@@ -390,7 +504,7 @@ def main() -> int:
     generated_counts: Dict[str, int] = {k: 0 for k in levels}
     total_done = 0
 
-    for level, row in iter_level_rows(levels):
+    for level, row in iter_level_rows(levels, max_per_level=args.max_per_level):
         sku = normalize_whitespace(row.get("sku", ""))
         if not sku:
             continue
