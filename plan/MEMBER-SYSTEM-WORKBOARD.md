@@ -39,6 +39,7 @@
 9. 已将会员权益读取升级为 DB 优先：`member_benefit_offers` 可配置优惠策略，env 仅作兜底。
 10. 已修复 Supabase 迁移历史冲突（`20260218` -> `20260218000000`），当前 `supabase db push --include-all` 可稳定通过。
 11. 已补齐练习数据写入 API（session/start、attempt、complete），前端练习引擎已切换为 API 优先 + 直连 Supabase fallback。
+12. 已新增会员权益 SQL 模板 `supabase/seed.member_benefit_offers.sql`，便于快速启用数据库化优惠策略。
 
 ## Stop-The-Line Triggers
 

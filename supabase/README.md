@@ -20,6 +20,14 @@
 supabase db push
 ```
 
+## Seed Member Offers (Optional)
+
+Template file:
+
+- `supabase/seed.member_benefit_offers.sql`
+
+Run in SQL Editor after migrations if you want DB-managed coupons/offers immediately.
+
 ## Post-Apply Verification (SQL)
 
 ```sql
