@@ -15,7 +15,7 @@
 {% assign about_path = "/about.html" %}
 {% assign support_path = "/support.html" %}
 {% assign is_homepage = false %}
-{% if page.url == "/" or page.url == "/en/" or page.url == "/zh-cn/" %}
+{% if page.url == "/" or page.url == "/index.html" or page.url == "/en/" or page.url == "/en/index.html" or page.url == "/zh-cn/" or page.url == "/zh-cn/index.html" %}
     {% assign is_homepage = true %}
 {% endif %}
 {% if page.lang == 'en' %}
