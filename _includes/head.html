@@ -225,6 +225,40 @@
     .kahoot-soft-bg { background-color: #efe9fb; }
     .kahoot-soft-text { color: #46178f; }
     .kahoot-soft-hover:hover { background-color: #e5dbf8; }
+
+    /* Shared CTA spacing/size rhythm for board pages and card actions. */
+    .cta-row-equal { align-items: stretch; }
+    .cta-btn-equal {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 3.25rem;
+        line-height: 1.2;
+    }
+    .cta-card-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+    @media (min-width: 640px) {
+        .cta-card-grid--split {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    .cta-stack {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.875rem;
+    }
+    .cta-card-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 2.75rem;
+        line-height: 1.25;
+    }
 </style>
 
 {% if page.payhip %}
