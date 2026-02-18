@@ -36,6 +36,7 @@
 6. 已新增 `membership/reconcile` 与 `membership/benefits` API，开始打通登录后自动补偿与权益动态读取。
 7. 已修复登录回跳路径到 `/membership/`，并在补偿完成后自动刷新会员学习面板。
 8. 已增强 Supabase 登录回跳兼容：支持 `access_token`、`code`、`token_hash` 三类回跳参数，并在失败时提供页面内提示。
+9. 已将会员权益读取升级为 DB 优先：`member_benefit_offers` 可配置优惠策略，env 仅作兜底。
 
 ## Stop-The-Line Triggers
 
