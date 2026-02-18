@@ -56,6 +56,11 @@
         --cie-igcse-600: #c94924;
         --cie-igcse-700: #aa3c1d;
         --cie-igcse-800: #8f2f17;
+        --edx-igcse-100: #cfe1de;
+        --edx-igcse-200: #b8d2cd;
+        --edx-igcse-600: #0e6f84;
+        --edx-igcse-700: #005f78;
+        --edx-igcse-800: #004f63;
     }
 
     .cie-hero-gradient {
@@ -137,6 +142,78 @@
         background-color: var(--cie-igcse-100);
         color: var(--cie-igcse-700);
         border-color: var(--cie-igcse-700);
+    }
+
+    /* Stable Edexcel IGCSE helpers for cross-page color consistency. */
+    .edx-hero-gradient {
+        background-color: var(--edx-igcse-100);
+        background-image: none;
+        color: var(--edx-igcse-700);
+    }
+    .edx-hero-gradient .text-white,
+    .edx-hero-gradient .text-gray-100,
+    .edx-hero-gradient .text-gray-200,
+    .edx-hero-gradient .text-blue-100,
+    .edx-hero-gradient .text-blue-200 {
+        color: var(--edx-igcse-700);
+    }
+    .edx-hero-gradient .border-white {
+        border-color: var(--edx-igcse-700);
+    }
+    .edx-hero-gradient .edx-hero-outline-hover {
+        background-color: var(--edx-igcse-100);
+        color: var(--edx-igcse-700);
+        border-color: var(--edx-igcse-700);
+        border-width: 1px;
+    }
+    .edx-hero-gradient .edx-hero-outline-hover:hover {
+        background-color: #c3dbd7;
+        color: var(--edx-igcse-700);
+        border-color: var(--edx-igcse-700);
+    }
+    .edx-hero-soft {
+        background-color: var(--edx-igcse-100);
+        color: var(--edx-igcse-700);
+    }
+    .edx-hero-soft .text-white,
+    .edx-hero-soft .text-gray-100,
+    .edx-hero-soft .text-gray-200 {
+        color: var(--edx-igcse-700);
+    }
+    .edx-hero-soft .border-white {
+        border-color: var(--edx-igcse-700);
+    }
+
+    .edx-solid-bg {
+        background-color: var(--edx-igcse-100);
+        color: var(--edx-igcse-700);
+        border: 1px solid var(--edx-igcse-700);
+    }
+    .edx-solid-text { color: var(--edx-igcse-700); }
+    .edx-solid-border { border-color: var(--edx-igcse-700); }
+    .edx-solid-hover:hover {
+        background-color: #c3dbd7;
+        color: var(--edx-igcse-700);
+        border-color: var(--edx-igcse-700);
+    }
+
+    .edx-soft-border { border-color: var(--edx-igcse-700); }
+    .edx-soft-bg {
+        background-color: var(--edx-igcse-100);
+        color: var(--edx-igcse-700);
+    }
+    .edx-soft-text { color: var(--edx-igcse-700); }
+    .edx-soft-hover:hover {
+        background-color: #c3dbd7;
+        color: var(--edx-igcse-700);
+        border-color: var(--edx-igcse-700);
+    }
+    .edx-text-hover:hover { color: var(--edx-igcse-700); }
+
+    .edx-hero-outline-hover:hover {
+        background-color: var(--edx-igcse-100);
+        color: var(--edx-igcse-700);
+        border-color: var(--edx-igcse-700);
     }
 
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */

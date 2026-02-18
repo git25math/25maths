@@ -23,6 +23,11 @@
     {% assign nav_active_color_class = "cie-solid-text cie-solid-border" %}
     {% assign nav_inactive_hover_class = "cie-text-hover" %}
 {% endif %}
+{% if page.module == "edx4ma1" %}
+    {% assign nav_brand_text_class = "edx-solid-text" %}
+    {% assign nav_active_color_class = "edx-solid-text edx-solid-border" %}
+    {% assign nav_inactive_hover_class = "edx-text-hover" %}
+{% endif %}
 {% if page.lang == "zh-CN" %}
     {% assign nav_label_overview = "概览" %}
     {% assign nav_label_products = "产品" %}
