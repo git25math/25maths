@@ -163,6 +163,10 @@ title: 25Maths Changelog
                     <span><strong>Home module header contrast fix</strong>: Updated root homepage module-card header text logic so the Edexcel `edx-soft-bg` header now uses deep `edx` text color instead of inherited white, preserving readable contrast while keeping CIE/other module headers unchanged.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot board-token normalization</strong>: Replaced residual neutral/legacy button styles in `/kahoot/`, `/kahoot/cie0580/`, and `/kahoot/edexcel-4ma1/` so Explorer, Terms, and L2/L3 actions now use board-specific `cie-*` / `edx-*` token classes; also aligned CIE quick-link chip/button styling and removed duplicate `cie-hero-soft` CSS block in shared head include.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

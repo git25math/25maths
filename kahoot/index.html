@@ -67,10 +67,12 @@ lang: en
                     {% assign directory_url = "/kahoot/edexcel-4ma1/" %}
                 {% endif %}
                 {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
-                {% assign board_button_class = "edx-solid-bg text-white edx-solid-hover" %}
+                {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
+                {% assign board_explorer_button_class = "border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover" %}
                 {% if board.board == "cie0580" %}
-                    {% assign board_badge_class = "bg-primary/10 text-primary" %}
-                    {% assign board_button_class = "bg-primary text-white" %}
+                    {% assign board_badge_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
+                    {% assign board_button_class = "cie-solid-bg cie-solid-hover" %}
+                    {% assign board_explorer_button_class = "border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover" %}
                 {% endif %}
                 <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6" data-free-sample-board="{{ board.board }}">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
@@ -104,7 +106,7 @@ lang: en
                                 </div>
                                 <div class="cta-card-grid cta-card-grid--split">
                                     <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Play Free Sample</a>
-                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="cta-card-btn border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open In Explorer</a>
+                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="cta-card-btn {{ board_explorer_button_class }} py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open In Explorer</a>
                                 </div>
                             </article>
                         {% endfor %}
@@ -536,14 +538,20 @@ lang: en
       const hasInteractiveExercise = Boolean((item.exerciseUrl || '').trim());
       const interactiveExerciseUrl = hasInteractiveExercise ? item.exerciseUrl : '';
       const boardBadge = item.board === 'cie0580'
-        ? 'bg-emerald-100 text-emerald-700'
+        ? 'border cie-soft-border cie-soft-bg cie-soft-text'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
       const interactiveButtonClass = item.board === 'cie0580'
-        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
-        : 'edx-solid-bg text-white edx-solid-hover hover:shadow-md';
+        ? 'cie-solid-bg cie-solid-hover hover:shadow-md'
+        : 'edx-solid-bg edx-solid-hover hover:shadow-md';
       const worksheetButtonClass = item.board === 'cie0580'
-        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
+        ? 'border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover hover:shadow-sm'
         : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm';
+      const secondaryButtonClass = item.board === 'cie0580'
+        ? 'border cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
+        : 'border edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
+      const termsButtonClass = item.board === 'cie0580'
+        ? 'border border-dashed cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
+        : 'border border-dashed edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'
@@ -601,9 +609,9 @@ lang: en
             ${interactiveButton}
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L1: Worksheet</a>
-            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="cta-card-btn border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L2: Section Bundle</a>
-            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="cta-card-btn border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L3: Unit Bundle</a>
-            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="cta-card-btn border border-dashed border-gray-300 bg-white text-gray-600 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
+            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${secondaryButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L2: Section Bundle</a>
+            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${secondaryButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L3: Unit Bundle</a>
+            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${termsButtonClass} py-2.5 rounded-lg font-semibold text-xs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
           </div>
         </article>
       `;
