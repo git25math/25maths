@@ -167,6 +167,10 @@ title: 25Maths Changelog
                     <span><strong>Kahoot board-token normalization</strong>: Replaced residual neutral/legacy button styles in `/kahoot/`, `/kahoot/cie0580/`, and `/kahoot/edexcel-4ma1/` so Explorer, Terms, and L2/L3 actions now use board-specific `cie-*` / `edx-*` token classes; also aligned CIE quick-link chip/button styling and removed duplicate `cie-hero-soft` CSS block in shared head include.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Status chip token parity + spacing rhythm</strong>: Unified `PRE-SALE` and `READY FOR BUILD` badge styles to board-specific token classes across Kahoot CIE/Edexcel directories and hub renderer, switched Edexcel Foundation/Higher tier chips to `edx-*` token variants, and increased shared `cta-stack` gap to `1rem` for stronger mobile breathing space between stacked card actions.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

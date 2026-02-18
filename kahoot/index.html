@@ -552,6 +552,12 @@ lang: en
       const termsButtonClass = item.board === 'cie0580'
         ? 'border border-dashed cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
         : 'border border-dashed edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
+      const presaleStatusClass = item.board === 'cie0580'
+        ? 'border cie-soft-border cie-soft-bg cie-soft-text'
+        : 'border edx-soft-border edx-soft-bg edx-soft-text';
+      const readyForBuildStatusClass = item.board === 'cie0580'
+        ? 'border border-dashed cie-soft-border bg-white cie-soft-text'
+        : 'border border-dashed edx-soft-border bg-white edx-soft-text';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'
@@ -560,8 +566,8 @@ lang: en
         free_sample: 'bg-emerald-100 text-emerald-700',
         live: 'bg-emerald-100 text-emerald-700',
         published: 'bg-emerald-100 text-emerald-700',
-        presale: 'bg-amber-100 text-amber-700',
-        ready_for_build: 'bg-blue-100 text-blue-700',
+        presale: presaleStatusClass,
+        ready_for_build: readyForBuildStatusClass,
         planned: 'bg-gray-100 text-gray-700',
         archived: 'bg-gray-200 text-gray-600'
       };
