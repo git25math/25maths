@@ -11,6 +11,7 @@ Run Blog optimization work in an isolated task tree, with explicit scope and tra
 3. Keep Blog pages reachable by direct URL and homepage lower entry points.
 4. Remove Support from top navigation on all routes (desktop and mobile menus), while keeping footer Support entry points.
 5. Remove About from top navigation on all routes (desktop and mobile menus), while keeping footer About entry points.
+6. Remove EN/ZH-CN language switch entries from top navigation on all routes (desktop and mobile menus).
 
 ## Rules Of Execution
 
@@ -34,3 +35,4 @@ Run Blog optimization work in an isolated task tree, with explicit scope and tra
 - Phase 3: Site-wide top-nav Blog removal - Completed
 - Phase 4: Site-wide top-nav Support removal - Completed
 - Phase 5: Site-wide top-nav About removal - Completed
+- Phase 6: Site-wide top-nav EN/ZH-CN removal - Completed

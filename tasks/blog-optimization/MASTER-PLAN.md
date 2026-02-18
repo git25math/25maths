@@ -2,7 +2,7 @@
 
 ## Goal
 
-Make navigation cleaner by removing top-nav Blog, Support, and About site-wide while preserving lower-page Blog entry points and footer company-entry points.
+Make navigation cleaner by removing top-nav Blog, Support, About, and EN/ZH-CN language switch entries site-wide while preserving lower-page Blog entry points and footer company-entry points.
 
 ## Work Breakdown
 
@@ -22,11 +22,15 @@ Make navigation cleaner by removing top-nav Blog, Support, and About site-wide w
 | 5 | P5-A1 | Remove About link from desktop top navigation on all routes | Completed | Codex |
 | 5 | P5-A2 | Remove About link from mobile menu on all routes | Completed | Codex |
 | 5 | P5-A3 | Verify footer About entry remains available across language routes | Completed | Codex |
+| 6 | P6-A1 | Remove EN/ZH-CN language switch entries from desktop top navigation on all routes | Completed | Codex |
+| 6 | P6-A2 | Remove EN/ZH-CN language switch entries from mobile menu on all routes | Completed | Codex |
+| 6 | P6-A3 | Verify localized routes are still reachable through direct URLs and existing page-level links | Completed | Codex |
 
 ## Acceptance Criteria
 
 1. On all pages, top navigation has no Blog link (desktop + mobile).
 2. On all pages, top navigation has no Support link (desktop + mobile).
 3. On all pages, top navigation has no About link (desktop + mobile).
-4. Homepage Latest Articles section still provides Blog access links.
-5. Footer Support and About links remain available (`/support.html`, `/en/support.html`, `/zh-cn/support.html`; `/about.html`, `/en/about.html`, `/zh-cn/about.html`).
+4. On all pages, top navigation has no EN/ZH-CN language switch entries (desktop + mobile).
+5. Homepage Latest Articles section still provides Blog access links.
+6. Footer Support and About links remain available (`/support.html`, `/en/support.html`, `/zh-cn/support.html`; `/about.html`, `/en/about.html`, `/zh-cn/about.html`).

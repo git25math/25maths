@@ -6,3 +6,4 @@
 | 2026-02-19 | Scope expansion: remove Blog from top nav across all pages, not only homepage | User reported non-home pages still showing Blog in top nav | User request |
 | 2026-02-19 | Scope expansion: remove Support from top nav across all pages and keep footer-only Support entry | User requested Support to be removed from top nav and kept in footer | User request |
 | 2026-02-19 | Scope expansion: remove About from top nav across all pages and keep footer-only About entry | User requested About to be removed from top nav and kept in footer | User request |
+| 2026-02-19 | Scope expansion: remove EN/ZH-CN language switch from top nav across all pages | User requested EN/ZH-CN to be removed from navigation bar | User request |
