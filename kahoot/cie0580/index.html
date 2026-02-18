@@ -60,9 +60,9 @@ lang: en
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <div class="grid grid-cols-1 gap-2">
-                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs hover:shadow-md transition">Open Unit Presale</a>
-                        <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">Read Presale Terms PDF</a>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition">Open Unit Presale</a>
+                        <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">Read Presale Terms PDF</a>
                     </div>
                 </article>
             {% endfor %}
@@ -185,14 +185,14 @@ lang: en
                             <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ item.title }}</h4>
                             <p class="text-[11px] text-gray-500 mb-1">{{ release_line }}</p>
                             <p class="text-[11px] text-gray-500 mb-3">{{ presale_note }}</p>
-                            <div class="grid grid-cols-1 gap-2">
+                            <div class="grid grid-cols-1 gap-2.5">
                                 {% if card_exercise_url != '' %}
-                                <a href="{{ card_exercise_url | relative_url }}" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">L0: Interactive Exercise</a>
+                                <a href="{{ card_exercise_url | relative_url }}" class="text-center bg-primary text-white py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition">L0: Interactive Exercise</a>
                                 {% endif %}
-                                <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2 rounded-lg font-semibold text-xs">Open Kahoot</a>
-                                <a href="{{ card_worksheet_url }}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2 rounded-lg font-semibold text-xs">L1: Worksheet</a>
-                                <a href="{{ card_section_bundle_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">L2: Section Bundle</a>
-                                <a href="{{ card_unit_bundle_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2 rounded-lg font-semibold text-xs">L3: Unit Bundle</a>
+                                <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center bg-gray-900 text-white py-2.5 rounded-lg font-semibold text-xs hover:bg-black hover:shadow-md transition">Open Kahoot</a>
+                                <a href="{{ card_worksheet_url }}" target="_blank" rel="noopener" class="text-center bg-primary text-white py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition">L1: Worksheet</a>
+                                <a href="{{ card_section_bundle_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">L2: Section Bundle</a>
+                                <a href="{{ card_unit_bundle_url }}" target="_blank" rel="noopener" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition">L3: Unit Bundle</a>
                             </div>
                         </article>
                     {% endfor %}
