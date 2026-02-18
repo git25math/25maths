@@ -38,6 +38,195 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0;
     let selectedAnswer = null;
     let nextExercise = null;
+    const exerciseStartedAtMs = Date.now();
+    let cloudSupabaseClient = null;
+    let cloudUserId = '';
+    let cloudSessionId = '';
+    let cloudSessionCompleted = false;
+
+    function resolveBoardSlug() {
+        if (currentSubtopicId && currentSubtopicId.includes(':')) {
+            return String(currentSubtopicId).split(':')[0];
+        }
+        if (exerciseMeta && exerciseMeta.board) {
+            return String(exerciseMeta.board).trim().toLowerCase().replace(/\s+/g, '-');
+        }
+        return '';
+    }
+
+    function resolveTierSlug() {
+        if (exerciseMeta && exerciseMeta.tier) {
+            return String(exerciseMeta.tier).trim().toLowerCase();
+        }
+        return '';
+    }
+
+    function resolveExerciseSlug() {
+        if (topicSlug) return String(topicSlug);
+        if (currentSubtopicId) return String(currentSubtopicId).replace(/:/g, '-');
+        return String(window.location.pathname || '').replace(/^\//, '').replace(/\/$/, '');
+    }
+
+    function resolveSkillTag(question, questionIndex) {
+        if (question && typeof question.skillTag === 'string' && question.skillTag.trim()) {
+            return question.skillTag.trim();
+        }
+        if (exerciseMeta && exerciseMeta.syllabusCode) {
+            return String(exerciseMeta.syllabusCode).trim().toLowerCase();
+        }
+        if (topicSlug) {
+            return String(topicSlug).trim().toLowerCase();
+        }
+        return `q-${questionIndex + 1}`;
+    }
+
+    function getCloudDurationSeconds() {
+        return Math.max(0, Math.round((Date.now() - exerciseStartedAtMs) / 1000));
+    }
+
+    async function getCloudAccessToken() {
+        if (!cloudSupabaseClient) {
+            return '';
+        }
+        const { data, error } = await cloudSupabaseClient.auth.getSession();
+        if (error || !data || !data.session || !data.session.access_token) {
+            return '';
+        }
+        return String(data.session.access_token).trim();
+    }
+
+    async function postExerciseApi(path, payload) {
+        const accessToken = await getCloudAccessToken();
+        if (!accessToken) {
+            return { ok: false, status: 401, data: null };
+        }
+        try {
+            const response = await fetch(path, {
+                method: 'POST',
+                headers: {
+                    authorization: `Bearer ${accessToken}`,
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify(payload),
+            });
+            let data = null;
+            try {
+                data = await response.json();
+            } catch (error) {
+                data = null;
+            }
+            return { ok: response.ok, status: response.status, data };
+        } catch (error) {
+            return { ok: false, status: 0, data: null };
+        }
+    }
+
+    async function initializeCloudSession() {
+        if (cloudSessionId || cloudSessionCompleted) {
+            return;
+        }
+
+        const client = window.memberSupabase;
+        if (!client) {
+            return;
+        }
+
+        cloudSupabaseClient = client;
+        const { data: userData, error: userError } = await cloudSupabaseClient.auth.getUser();
+        if (userError || !userData || !userData.user) {
+            return;
+        }
+
+        cloudUserId = userData.user.id;
+        const insertPayload = {
+            exercise_slug: resolveExerciseSlug(),
+            board: resolveBoardSlug(),
+            tier: resolveTierSlug(),
+            syllabus_code: (exerciseMeta && exerciseMeta.syllabusCode) ? exerciseMeta.syllabusCode : '',
+            started_at: new Date(exerciseStartedAtMs).toISOString(),
+        };
+
+        const apiResult = await postExerciseApi('/api/v1/exercise/session/start', insertPayload);
+        if (apiResult.ok && apiResult.data && apiResult.data.session_id) {
+            cloudSessionId = String(apiResult.data.session_id);
+            return;
+        }
+
+        const { data: sessionData, error: sessionError } = await cloudSupabaseClient
+            .from('exercise_sessions')
+            .insert({
+                user_id: cloudUserId,
+                ...insertPayload,
+            })
+            .select('id')
+            .single();
+
+        if (sessionError || !sessionData || !sessionData.id) {
+            cloudSessionId = '';
+            return;
+        }
+        cloudSessionId = sessionData.id;
+    }
+
+    async function persistCloudAttempt(question, answerIndex, isCorrect) {
+        if (!cloudSupabaseClient || !cloudUserId || !cloudSessionId || cloudSessionCompleted) {
+            return;
+        }
+
+        const attemptPayload = {
+            question_index: currentQuestionIndex,
+            is_correct: Boolean(isCorrect),
+            selected_answer: Number.isInteger(answerIndex) ? answerIndex : null,
+            correct_answer: Number.isInteger(question.correctAnswer) ? question.correctAnswer : null,
+            skill_tag: resolveSkillTag(question, currentQuestionIndex),
+        };
+
+        const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/attempt`, attemptPayload);
+        if (apiResult.ok) {
+            return;
+        }
+
+        const { error } = await cloudSupabaseClient
+            .from('question_attempts')
+            .insert({
+                session_id: cloudSessionId,
+                user_id: cloudUserId,
+                ...attemptPayload,
+            });
+        if (error) {
+            // Keep exercise flow running even if cloud logging fails.
+        }
+    }
+
+    async function completeCloudSession() {
+        if (!cloudSupabaseClient || !cloudSessionId || cloudSessionCompleted) {
+            return;
+        }
+
+        cloudSessionCompleted = true;
+        const updatePayload = {
+            score,
+            question_count: questions.length,
+            duration_seconds: getCloudDurationSeconds(),
+        };
+
+        const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/complete`, updatePayload);
+        if (apiResult.ok) {
+            return;
+        }
+
+        const { error } = await cloudSupabaseClient
+            .from('exercise_sessions')
+            .update({
+                completed_at: new Date().toISOString(),
+                ...updatePayload,
+            })
+            .eq('id', cloudSessionId)
+            .eq('user_id', cloudUserId);
+        if (error) {
+            cloudSessionCompleted = false;
+        }
+    }
 
     function escapeHtml(rawValue) {
         return String(rawValue ?? '')
@@ -287,6 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
         const explanationHtml = escapeHtml(question.explanation || '');
+        const submittedAnswer = selectedAnswer;
 
         if (isCorrect) {
             score++;
@@ -304,6 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         }
+        void persistCloudAttempt(question, submittedAnswer, isCorrect);
         updateProgressUi();
 
         // Disable radio buttons after submission
@@ -327,6 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentQuestionIndex < questions.length) {
             renderQuestion(currentQuestionIndex);
         } else {
+            void completeCloudSession();
             // End of exercise
             if (progressContainer) {
                 progressContainer.style.display = 'none';
@@ -349,6 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function initializeExercise() {
         persistLastExercise();
+        void initializeCloudSession();
         nextExercise = resolveNextExercise();
         injectNextExerciseLink();
         attachTrackingToVisibleLinks();
@@ -369,6 +562,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Event Listeners ---
     submitBtn.addEventListener('click', handleSubmit);
     nextBtn.addEventListener('click', handleNext);
+    window.addEventListener('member-auth-change', (event) => {
+        const isAuthenticated = Boolean(event && event.detail && event.detail.isAuthenticated);
+        if (isAuthenticated) {
+            void initializeCloudSession();
+            return;
+        }
+        cloudUserId = '';
+        cloudSessionId = '';
+        cloudSessionCompleted = false;
+    });
 
     // --- Initial Load ---
     initializeExercise();

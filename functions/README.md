@@ -2,6 +2,12 @@
 
 ## Routes
 
+- `POST /api/v1/exercise/session/start`
+  - File: `functions/api/v1/exercise/session/start.js`
+- `POST /api/v1/exercise/session/:id/attempt`
+  - File: `functions/api/v1/exercise/session/[id]/attempt.js`
+- `POST /api/v1/exercise/session/:id/complete`
+  - File: `functions/api/v1/exercise/session/[id]/complete.js`
 - `POST /api/v1/membership/webhook/payhip`
   - File: `functions/api/v1/membership/webhook/payhip.js`
 - `POST /api/v1/membership/reconcile`
@@ -60,13 +66,19 @@ node scripts/member/sync_release_registry.js
 ## Quick Local Verification
 
 1. Start local preview (if you use Cloudflare Pages tooling).
-2. Hit a payhip release:
+2. Start an exercise session (member token required):
+   - `POST /api/v1/exercise/session/start`
+3. Record one question attempt:
+   - `POST /api/v1/exercise/session/<session_id>/attempt`
+4. Complete exercise session:
+   - `POST /api/v1/exercise/session/<session_id>/complete`
+5. Hit a payhip release:
    - `GET /api/v1/download/cie0580-free-vocab-bundle-2026w07`
-3. Test member route (after member release is active and asset uploaded):
+6. Test member route (after member release is active and asset uploaded):
    - `GET /api/v1/download/<release_id>?channel=member` with bearer token.
-4. Reconcile pending member events:
+7. Reconcile pending member events:
    - `POST /api/v1/membership/reconcile` with bearer token.
-5. Fetch paid-member benefits:
+8. Fetch paid-member benefits:
    - `GET /api/v1/membership/benefits` with bearer token.
 
 ## Member Benefit Offers Table (Optional but Recommended)

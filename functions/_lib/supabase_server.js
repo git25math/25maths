@@ -286,6 +286,96 @@ export async function listMemberBenefitOffers(env, options = {}) {
   });
 }
 
+export async function insertExerciseSession(env, row) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const url = `${env.SUPABASE_URL}/rest/v1/exercise_sessions`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'return=representation',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`exercise_sessions insert failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
+export async function fetchExerciseSession(env, sessionId) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const query = new URLSearchParams({
+    select: 'id,user_id,started_at,completed_at,score,question_count,duration_seconds',
+    id: `eq.${sessionId}`,
+    limit: '1',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/exercise_sessions?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`exercise_sessions fetch failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : null;
+}
+
+export async function insertQuestionAttempt(env, row) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const url = `${env.SUPABASE_URL}/rest/v1/question_attempts`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'return=representation',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`question_attempts insert failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
+export async function completeExerciseSession(env, sessionId, userId, patch) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+
+  const nextPatch = {};
+  Object.entries(patch || {}).forEach(([key, value]) => {
+    if (value !== undefined) {
+      nextPatch[key] = value;
+    }
+  });
+
+  const query = new URLSearchParams({
+    id: `eq.${sessionId}`,
+    user_id: `eq.${userId}`,
+    select: 'id,user_id,started_at,completed_at,score,question_count,duration_seconds',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/exercise_sessions?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'PATCH',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'return=representation',
+    },
+    body: JSON.stringify(nextPatch),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`exercise_sessions update failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
 export async function fetchEntitlement(env, userId, releaseId) {
   ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
   const query = new URLSearchParams({

@@ -38,6 +38,7 @@
 8. 已增强 Supabase 登录回跳兼容：支持 `access_token`、`code`、`token_hash` 三类回跳参数，并在失败时提供页面内提示。
 9. 已将会员权益读取升级为 DB 优先：`member_benefit_offers` 可配置优惠策略，env 仅作兜底。
 10. 已修复 Supabase 迁移历史冲突（`20260218` -> `20260218000000`），当前 `supabase db push --include-all` 可稳定通过。
+11. 已补齐练习数据写入 API（session/start、attempt、complete），前端练习引擎已切换为 API 优先 + 直连 Supabase fallback。
 
 ## Stop-The-Line Triggers
 
