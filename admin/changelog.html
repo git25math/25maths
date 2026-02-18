@@ -11,7 +11,7 @@ title: 25Maths Changelog
         <input id="pw" type="password" placeholder="Password" autofocus
             class="w-full border border-gray-300 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-primary"
             onkeydown="if(event.key==='Enter')unlock()">
-        <button onclick="unlock()" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Enter</button>
+        <button onclick="unlock()" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:shadow-lg transition">Enter</button>
         <p id="err" class="text-red-500 text-sm mt-2 hidden">Incorrect password</p>
     </div>
 </div>
@@ -24,6 +24,36 @@ title: 25Maths Changelog
                 <p class="text-gray-500 mt-1">25Maths.com site updates — internal use only</p>
             </div>
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
+        </div>
+
+        <!-- 2026-02-18 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-18</span>
+                <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-full font-semibold">FRONTEND CONSISTENCY</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Entry-page CTA consistency sweep (CIE 0580 + Edexcel 4MA1 + EN/ZH home)</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Hover interaction normalization</strong>: Replaced remaining `hover:bg-opacity-90` CTA behavior on main entry pages with shadow-based hover feedback for a unified motion style.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Product CTA naming alignment</strong>: Standardized board-specific product and directory CTA labels to explicit names (`CIE 0580` / `Edexcel 4MA1`) to remove ambiguous wording.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Presale terms button coherence</strong>: Unified terms button wording (`Read Presale Terms PDF`) and border-button hover treatment across CIE/4MA1 entry sections.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: index.html, en/index.html, zh-cn/index.html, cie0580/index.html, en/cie0580/index.html, zh-cn/cie0580/index.html, edx4ma1/index.html, admin/changelog.html
+            </div>
         </div>
 
         <!-- 2026-02-17 -->
