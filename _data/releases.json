@@ -1,0 +1,24 @@
+[
+  {
+    "release_id": "cie0580-free-vocab-bundle-2026w07",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-01-types-of-number",
+    "channels": ["payhip"],
+    "payhip_product_id": "5j2Sz",
+    "payhip_url": "https://payhip.com/b/5j2Sz",
+    "membership_tier": "",
+    "asset_key": "",
+    "status": "active"
+  },
+  {
+    "release_id": "member-demo-algebra-c2-01-2026w07",
+    "version": "v1",
+    "subtopic_id": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "active",
+    "asset_key": "member-files/demo/algebra-c2-01-pack.pdf",
+    "status": "draft"
+  }
+]

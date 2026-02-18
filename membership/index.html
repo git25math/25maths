@@ -25,6 +25,60 @@ noindex: true
     </div>
 </section>
 
+<section class="py-14 bg-blue-50 border-y border-blue-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Your Learning Snapshot</h2>
+                <p class="text-gray-600 mt-2" data-member-center-helper>Sign in to see your latest progress and weak-point summary.</p>
+            </div>
+            <span data-member-center-state class="inline-flex mt-4 sm:mt-0 items-center rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-700">
+                NOT SIGNED IN
+            </span>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-4 mt-8">
+            <article class="bg-white border border-gray-200 rounded-2xl p-5">
+                <p class="text-xs tracking-wider text-gray-500 uppercase">Membership</p>
+                <p class="text-2xl font-bold text-gray-900 mt-2" data-membership-status>—</p>
+                <p class="text-xs text-gray-500 mt-2" data-membership-meta>Waiting for login</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-5">
+                <p class="text-xs tracking-wider text-gray-500 uppercase">Sessions Completed</p>
+                <p class="text-2xl font-bold text-gray-900 mt-2" data-sessions-count>0</p>
+                <p class="text-xs text-gray-500 mt-2">Recent interactive practice count</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-5">
+                <p class="text-xs tracking-wider text-gray-500 uppercase">Average Score</p>
+                <p class="text-2xl font-bold text-gray-900 mt-2" data-average-score>—</p>
+                <p class="text-xs text-gray-500 mt-2">Based on completed sessions</p>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-5">
+                <p class="text-xs tracking-wider text-gray-500 uppercase">Weak Points</p>
+                <p class="text-2xl font-bold text-gray-900 mt-2" data-weak-skill-count>0</p>
+                <p class="text-xs text-gray-500 mt-2">Distinct skill tags with recent mistakes</p>
+            </article>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-6 mt-6">
+            <article class="bg-white border border-gray-200 rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-gray-900">Top Mistake Clusters</h3>
+                <p class="text-sm text-gray-600 mt-2">Most frequent wrong tags in recent attempts.</p>
+                <ul data-weak-skill-list class="mt-4 space-y-2 text-sm text-gray-700">
+                    <li class="text-gray-500">No mistake data yet.</li>
+                </ul>
+            </article>
+            <article class="bg-white border border-gray-200 rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-gray-900">Recent Practice</h3>
+                <p class="text-sm text-gray-600 mt-2">Latest interactive sessions and scores.</p>
+                <ul data-recent-sessions class="mt-4 space-y-2 text-sm text-gray-700">
+                    <li class="text-gray-500">No sessions yet.</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</section>
+
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
@@ -57,6 +111,8 @@ noindex: true
         </div>
     </div>
 </section>
+
+<script src="{{ '/assets/js/member_center.js' | relative_url }}"></script>
 
 <section class="py-16 bg-gray-50 border-y">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
