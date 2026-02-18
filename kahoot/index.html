@@ -19,7 +19,7 @@ lang: en
         </p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
             <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
             <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
             <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
         </div>
@@ -66,8 +66,8 @@ lang: en
                 {% else %}
                     {% assign directory_url = "/kahoot/edexcel-4ma1/" %}
                 {% endif %}
-                {% assign board_badge_class = "bg-secondary/10 text-secondary" %}
-                {% assign board_button_class = "bg-secondary text-white" %}
+                {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
+                {% assign board_button_class = "edx-solid-bg text-white edx-solid-hover" %}
                 {% if board.board == "cie0580" %}
                     {% assign board_badge_class = "bg-primary/10 text-primary" %}
                     {% assign board_button_class = "bg-primary text-white" %}
@@ -286,12 +286,12 @@ lang: en
                     <source srcset="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.webp" type="image/webp">
                     <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 </picture>
-                <p class="text-xs font-bold tracking-wider text-secondary mb-2">Edexcel 4MA1</p>
+                <p class="text-xs font-bold tracking-wider edx-solid-text mb-2">Edexcel 4MA1</p>
                 <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
+                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
                     <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
@@ -537,13 +537,13 @@ lang: en
       const interactiveExerciseUrl = hasInteractiveExercise ? item.exerciseUrl : '';
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
-        : 'bg-amber-100 text-amber-700';
+        : 'border edx-soft-border edx-soft-bg edx-soft-text';
       const interactiveButtonClass = item.board === 'cie0580'
         ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
-        : 'bg-secondary text-white hover:bg-secondary/90 hover:shadow-md';
+        : 'edx-solid-bg text-white edx-solid-hover hover:shadow-md';
       const worksheetButtonClass = item.board === 'cie0580'
         ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
-        : 'border border-secondary/30 bg-secondary/10 text-secondary hover:bg-secondary/15 hover:shadow-sm';
+        : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'

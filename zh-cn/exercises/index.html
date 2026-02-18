@@ -32,7 +32,7 @@ lang_links:
         {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
         <div class="mt-4 flex flex-wrap gap-2 text-sm">
             <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 font-semibold text-emerald-700">CIE 0580：{{ cie_count }}</span>
-            <span class="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 font-semibold text-amber-700">Edexcel 4MA1：{{ edexcel_count }}</span>
+            <span class="inline-flex items-center rounded-full border edx-soft-border edx-soft-bg px-3 py-1 font-semibold edx-soft-text">Edexcel 4MA1：{{ edexcel_count }}</span>
             <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 font-semibold text-blue-700">总计：{{ sorted_exercises | size }}</span>
         </div>
         <div class="mt-4 flex flex-wrap gap-3">
@@ -101,7 +101,7 @@ lang_links:
                 {% assign board_chip_class = "bg-emerald-100 text-emerald-700" %}
                 {% assign board_directory_url = "/kahoot/cie0580/" %}
             {% elsif board_key == "edexcel-4ma1" %}
-                {% assign board_chip_class = "bg-amber-100 text-amber-700" %}
+                {% assign board_chip_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% assign board_directory_url = "/kahoot/edexcel-4ma1/" %}
             {% endif %}
             {% assign link = site.data.kahoot_subtopic_links[exercise.subtopic_id] %}

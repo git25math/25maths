@@ -8,7 +8,7 @@ active_page: pricing
 {% assign catalog = site.data.kahoot_presale_catalog.boards["edexcel-4ma1"] %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
-<section class="bg-gradient-to-r from-secondary to-blue-900 text-white py-20">
+<section class="edx-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
         <h1 class="text-5xl font-bold mb-4">Edexcel 4MA1 Pricing Framework</h1>
         <p class="text-xl opacity-90">Recommendation ranges for presale. Final public prices are TBD before launch.</p>
@@ -73,8 +73,8 @@ active_page: pricing
             </div>
         </div>
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/edx4ma1/products.html" class="bg-secondary text-white px-6 py-3 rounded-lg font-semibold text-center">Open Product Architecture</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">Open Presale Terms PDF</a>
+            <a href="/edx4ma1/products.html" class="edx-solid-bg text-white px-6 py-3 rounded-lg font-semibold text-center edx-solid-hover">Open Product Architecture</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border edx-soft-border edx-soft-bg edx-soft-text px-6 py-3 rounded-lg font-semibold text-center edx-soft-hover">Open Presale Terms PDF</a>
         </div>
     </div>
 </section>
