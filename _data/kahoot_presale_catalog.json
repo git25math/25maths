@@ -2,7 +2,7 @@
   "meta": {
     "seller_url": "https://payhip.com/25maths",
     "presale_terms_pdf_url": "/payhip/presale/kahoot-presale-info-template.pdf",
-    "last_updated": "2026-02-16",
+    "last_updated": "2026-02-18",
     "retention": {
       "gift_for_bilingual_users": "Free bilingual vocabulary cards are included for learners needing Chinese-English support.",
       "post_purchase_upgrade": "Returning buyers get bilingual support upgrade coupons and bundle upgrade discounts."
@@ -18,12 +18,12 @@
       "default_release_date": "2026-04-30",
       "default_early_bird_deadline": "2026-03-31",
       "pricing": {
-        "l1_early_bird": "US$4",
-        "l1_regular": "US$6",
+        "l1_early_bird": "US$3",
+        "l1_regular": "US$4",
         "l2_early_bird": "US$12",
-        "l2_regular": "US$16",
-        "l3_early_bird": "US$39",
-        "l3_regular": "US$49"
+        "l2_regular": "US$15",
+        "l3_early_bird": "US$20",
+        "l3_regular": "US$25"
       },
       "all_units_bundle": {
         "title": "CIE 0580 All-Units Mega Bundle",
@@ -45,8 +45,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -58,8 +58,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -71,8 +71,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -84,8 +84,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -97,8 +97,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -110,8 +110,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -123,8 +123,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -136,8 +136,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -149,8 +149,8 @@
           "status": "presale",
           "release_date": "2026-04-30",
           "early_bird_deadline": "2026-03-31",
-          "early_bird_price": "US$12",
-          "regular_price": "US$16",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         }
       ]
@@ -164,12 +164,12 @@
       "default_release_date": "2026-05-31",
       "default_early_bird_deadline": "2026-04-30",
       "pricing": {
-        "l1_early_bird": "US$4",
-        "l1_regular": "US$6",
-        "l2_early_bird": "US$11",
+        "l1_early_bird": "US$3",
+        "l1_regular": "US$4",
+        "l2_early_bird": "US$12",
         "l2_regular": "US$15",
-        "l3_early_bird": "US$34",
-        "l3_regular": "US$45"
+        "l3_early_bird": "US$20",
+        "l3_regular": "US$25"
       },
       "all_units_bundle": {
         "title": "Edexcel 4MA1 All-Units Mega Bundle",
@@ -191,8 +191,8 @@
           "status": "presale",
           "release_date": "2026-05-31",
           "early_bird_deadline": "2026-04-30",
-          "early_bird_price": "US$11",
-          "regular_price": "US$15",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -204,8 +204,8 @@
           "status": "presale",
           "release_date": "2026-05-31",
           "early_bird_deadline": "2026-04-30",
-          "early_bird_price": "US$11",
-          "regular_price": "US$15",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -217,8 +217,8 @@
           "status": "presale",
           "release_date": "2026-05-31",
           "early_bird_deadline": "2026-04-30",
-          "early_bird_price": "US$11",
-          "regular_price": "US$15",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -230,8 +230,8 @@
           "status": "presale",
           "release_date": "2026-05-31",
           "early_bird_deadline": "2026-04-30",
-          "early_bird_price": "US$11",
-          "regular_price": "US$15",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -243,8 +243,8 @@
           "status": "presale",
           "release_date": "2026-05-31",
           "early_bird_deadline": "2026-04-30",
-          "early_bird_price": "US$11",
-          "regular_price": "US$15",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         },
         {
@@ -256,8 +256,8 @@
           "status": "presale",
           "release_date": "2026-05-31",
           "early_bird_deadline": "2026-04-30",
-          "early_bird_price": "US$11",
-          "regular_price": "US$15",
+          "early_bird_price": "US$20",
+          "regular_price": "US$25",
           "bonus": "Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons."
         }
       ]
