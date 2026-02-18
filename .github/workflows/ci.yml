@@ -36,5 +36,8 @@ jobs:
       - name: Validate Exercise data integrity
         run: python3 scripts/health/check_exercise_data.py
 
+      - name: Validate navigation consistency
+        run: python3 scripts/health/check_nav_consistency.py
+
       - name: Build site with Jekyll
         run: bundle exec jekyll build
