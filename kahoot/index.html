@@ -17,11 +17,11 @@ lang: en
             Browse SubTopic directories for CIE 0580 and Edexcel 4MA1.
             CIE is grouped by <strong>Core / Extended</strong>; Edexcel is grouped by <strong>Foundation / Higher</strong>.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="sm:flex-1 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
-            <a href="/kahoot/#free-sample-live" class="sm:flex-1 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
+        <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
+            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
         </div>
     </div>
 </section>
@@ -81,8 +81,8 @@ lang: en
                         <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3 mb-5">
-                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open {{ board.board_label }} Kahoot Channel</a>
-                        <a href="{{ directory_url }}" class="sm:flex-1 text-center {{ board_button_class }} px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Full Directory</a>
+                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open {{ board.board_label }} Kahoot Channel</a>
+                        <a href="{{ directory_url }}" class="sm:flex-1 inline-flex items-center justify-center text-center {{ board_button_class }} px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Full Directory</a>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-4">
                         {% for item in board.items %}
@@ -276,8 +276,8 @@ lang: en
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ cie_data.total_subtopics }} SubTopics across {{ cie_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/cie0580/" class="sm:flex-1 text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 Kahoot Channel</a>
+                    <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 Kahoot Channel</a>
                 </div>
             </article>
 
@@ -291,8 +291,8 @@ lang: en
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
+                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-secondary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
         </div>
