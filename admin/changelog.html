@@ -26,6 +26,36 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-02-19 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-19</span>
+                <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-full font-semibold">NAV SIMPLIFICATION</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Top navigation cleanup completed (Blog / Support / About / EN-ZH switch removed)</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">x</span>
+                    <span><strong>Global top-nav removals</strong>: Removed `Blog`, `Support`, `About`, and language-switch (`EN` / `ZH-CN`) entries from both desktop and mobile navigation menus site-wide.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Footer entry preservation</strong>: Kept footer-based company links, including `About` and `Support`, for all language routes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Homepage Blog entry preserved</strong>: Kept Blog access in lower-page `Latest Articles / 最新文章` sections (`/`, `/en/`, `/zh-cn/`).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Completeness verification</strong>: Verified on `origin/main` that top-nav patterns for removed entries are absent, while footer and homepage-lower entry paths remain present.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: _includes/global-nav.html, _includes/footer.html, index.html, en/index.html, zh-cn/index.html, tasks/blog-optimization/TASK-TREE.md, tasks/blog-optimization/MASTER-PLAN.md, tasks/blog-optimization/CHANGE-CONTROL.md, tasks/blog-optimization/EXECUTION-LOG.md, admin/changelog.html
+            </div>
+        </div>
+
         <!-- 2026-02-18 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
