@@ -224,6 +224,10 @@ title: 25Maths Changelog
                     <span class="text-blue-500 mt-0.5">~</span>
                     <span><strong>Tier dropdown coherence</strong>: Added board-aware tier option filtering on exercise hubs so selecting CIE 0580 shows only Core/Extended and selecting Edexcel 4MA1 shows only Foundation/Higher.</span>
                 </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>LaTeX formula rendering</strong>: Connected KaTeX on interactive exercise pages and added safe runtime rendering for question text, options, and explanations (with legacy `$...$` math normalization to avoid currency collisions).</span>
+                </li>
             </ul>
             <div class="mt-4 text-xs text-gray-400">
                 Files: _config.yml, _includes/global-nav.html, _includes/head.html, sitemap.xml, _layouts/interactive_exercise.html, assets/js/exercise_engine.js, assets/js/exercise_hub.js, exercises/index.html, zh-cn/exercises/index.html, kahoot/index.html, zh-cn/kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, scripts/health/check_exercise_data.py, scripts/health/check_site.sh, .github/workflows/site-health-check.yml, .github/workflows/ci.yml, README.md, _exercises/*.md, _data/exercises/quadratic-equations.json (removed), _exercises/quadratic-equations.md (removed)

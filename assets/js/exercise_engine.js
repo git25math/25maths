@@ -178,6 +178,36 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace(/'/g, '&#39;');
     }
 
+    function normalizeInlineMath(rawValue) {
+        const value = String(rawValue ?? '');
+        return value.replace(/\$([^$]+)\$/g, (match, content) => {
+            const trimmed = String(content || '').trim();
+            if (!trimmed) return match;
+            // Convert LaTeX-like $...$ to \( ... \) while ignoring currency-like values.
+            if (!/[\\^_{}]/.test(trimmed)) return match;
+            return `\\(${trimmed}\\)`;
+        });
+    }
+
+    function renderMath(container) {
+        if (!container || typeof window.renderMathInElement !== 'function') {
+            return;
+        }
+        try {
+            window.renderMathInElement(container, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },
+                    { left: '\\(', right: '\\)', display: false },
+                ],
+                throwOnError: false,
+                strict: 'ignore',
+            });
+        } catch (error) {
+            // Keep question flow running even if formula rendering fails.
+        }
+    }
+
     function withTrackingUrl(rawUrl, actionKey) {
         if (!rawUrl) {
             return '';
@@ -361,13 +391,13 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function renderQuestion(index) {
         const question = questions[index];
-        const questionText = escapeHtml(question.questionText || '');
+        const questionText = escapeHtml(normalizeInlineMath(question.questionText || ''));
         let optionsHtml = '';
 
         if (question.type === 'multiple-choice') {
             optionsHtml = '<div class="space-y-3">';
             question.options.forEach((option, i) => {
-                const optionLabel = escapeHtml(option);
+                const optionLabel = escapeHtml(normalizeInlineMath(option));
                 optionsHtml += `
                     <div>
                         <label class="block border border-gray-300 rounded-lg px-4 py-3 cursor-pointer hover:bg-gray-100 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
@@ -386,6 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="text-lg font-semibold">${index + 1}. ${questionText}</p>
             <div class="mt-4">${optionsHtml}</div>
         `;
+        renderMath(questionContainer);
         updateProgressUi();
 
         // Reset state for the new question
@@ -416,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
-        const explanationHtml = escapeHtml(question.explanation || '');
+        const explanationHtml = escapeHtml(normalizeInlineMath(question.explanation || ''));
         const submittedAnswer = selectedAnswer;
 
         if (isCorrect) {
@@ -435,6 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         }
+        renderMath(feedbackContainer);
         void persistCloudAttempt(question, submittedAnswer, isCorrect);
         updateProgressUi();
 
