@@ -99,6 +99,10 @@ title: 25Maths Changelog
                     <span><strong>Production class-stability fix</strong>: Replaced Tailwind arbitrary color classes (`[#hex]`) used by Kahoot CTAs with global `kahoot-*` semantic helpers in head styles, preventing missing background renders on deployed pages (including `Open Kahoot` buttons in `kahoot/edexcel-4ma1`).</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Free-sample button spacing fix</strong>: Increased the horizontal breathing space between `Play Free Sample` and `Open In Explorer` by replacing unstable `gap-2.5` usage with shipped spacing classes (`gap-3`) in free-sample and board directory card action rows.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

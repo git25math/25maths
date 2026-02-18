@@ -102,7 +102,7 @@ lang: en
                                         <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Play Free Sample</a>
                                     <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open In Explorer</a>
                                 </div>
