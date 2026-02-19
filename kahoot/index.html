@@ -91,6 +91,18 @@ lang: en
                     <div class="grid sm:grid-cols-2 gap-4">
                         {% for item in board.items %}
                             {% assign item_batch_key = item.batch | downcase | replace: ' ', '_' %}
+                            {% assign item_tier_key = item.tier | downcase %}
+                            {% assign board_tier_chip_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
+                            {% if board.board == "cie0580" %}
+                                {% assign board_tier_chip_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
+                                {% if item_tier_key == "extended" %}
+                                    {% assign board_tier_chip_class = "border border-dashed cie-soft-border bg-white cie-soft-text" %}
+                                {% endif %}
+                            {% else %}
+                                {% if item_tier_key == "higher" %}
+                                    {% assign board_tier_chip_class = "border border-dashed edx-soft-border bg-white edx-soft-text" %}
+                                {% endif %}
+                            {% endif %}
                             <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm" data-free-sample-card data-board="{{ board.board }}" data-batch="{{ item_batch_key }}" data-code="{{ item.code | downcase }}" data-title="{{ item.title | downcase }}" data-tier="{{ item.tier | downcase }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
                                 <div class="flex flex-col sm:flex-row gap-3 mb-3">
                                     <div class="h-20 w-full sm:w-32 sm:flex-shrink-0 bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center p-2">
@@ -103,7 +115,7 @@ lang: en
                                             <span class="text-[11px] px-2 py-1 rounded-full {{ board_meta_chip_class }} font-semibold">{{ item.batch }}</span>
                                         </div>
                                         <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
-                                        <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
+                                        <span class="inline-flex text-[11px] px-2 py-1 rounded-full {{ board_tier_chip_class }} font-semibold">{{ item.tier }} tier</span>
                                     </div>
                                 </div>
                                 <div class="cta-card-grid cta-card-grid--split">
@@ -624,7 +636,7 @@ lang: en
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
           <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
           <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
-          <div class="mt-1 cta-stack">
+          <div class="mt-2 cta-stack">
             ${interactiveButton}
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L1: Worksheet</a>
