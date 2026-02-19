@@ -411,13 +411,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${buildSyllabusButtonHtml(nextExercise, 'next')}
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        ${buildRowButtonHtml(tryAnotherHref, 'Try Another Interactive Exercise', 'loop-btn-soft', 'try_another', false)}
-                        ${buildRowButtonHtml(boardDirectoryUrl, backLabel, 'loop-btn-soft', 'board_directory', false)}
+                        ${buildRowButtonHtml(tryAnotherHref, 'Try Another Interactive Exercise', 'loop-btn-neutral-soft', 'try_another', false)}
+                        ${buildRowButtonHtml(boardDirectoryUrl, backLabel, 'loop-btn-neutral-soft', 'board_directory', false)}
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         ${buildRowButtonHtml(kahootUrl, 'Playing Matching Kahoot', 'loop-btn-kahoot', 'kahoot_complete', true)}
                         ${buildRowButtonHtml(worksheetUrl, 'Get Matching Worksheet', 'loop-btn-soft', 'worksheet_complete', true)}
-                        ${buildRowButtonHtml(bundleUrl, 'Explore Bundle', 'loop-btn-soft', 'bundle_complete', true)}
+                        ${buildRowButtonHtml(bundleUrl, 'Explore Bundle', 'loop-btn-neutral-soft', 'bundle_complete', true)}
                     </div>
                 </div>
             </div>
