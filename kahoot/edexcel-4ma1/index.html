@@ -54,9 +54,9 @@ lang: en
         </div>
         <div class="grid items-stretch sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {% for unit in catalog.units %}
-                <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
+                <article class="bg-gray-50 rounded-xl border border-gray-200 p-5 h-full flex flex-col">
                     <div class="flex items-center justify-between gap-3 mb-2">
-                        <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
+                        <h3 class="text-lg font-bold text-gray-900 kahoot-unit-title">{{ unit.code }} · {{ unit.title }}</h3>
                         {% assign unit_status_label = unit.status | default: 'presale' | upcase %}
                         {% include ui/token-chip.html label=unit_status_label classes='edx-soft-border edx-soft-bg edx-soft-text' %}
                     </div>
@@ -65,7 +65,7 @@ lang: en
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    {% include ui/kahoot-unit-actions.html board='edx' presale_url=unit.presale_url terms_url=terms_pdf_url %}
+                    {% include ui/kahoot-unit-actions.html board='edx' wrapper_class='mt-auto cta-stack' presale_url=unit.presale_url terms_url=terms_pdf_url %}
                 </article>
             {% endfor %}
         </div>
