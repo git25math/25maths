@@ -1,0 +1,15 @@
+{% assign board_key = include.board | default: 'cie' %}
+{% assign wrapper_class = include.wrapper_class | default: 'flex flex-col sm:flex-row gap-4 justify-center' %}
+
+{% if board_key == 'edx' %}
+  {% assign board_soft_classes = 'border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover transition' %}
+{% else %}
+  {% assign board_soft_classes = 'border cie-soft-border cie-soft-bg cie-soft-text px-7 py-3 rounded-lg font-semibold cie-soft-hover transition' %}
+{% endif %}
+{% assign kahoot_classes = 'kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition' %}
+
+<div class="{{ wrapper_class }}">
+  {% include ui/cta-link.html href=include.kahoot_href classes=kahoot_classes label=include.kahoot_label %}
+  {% include ui/cta-link.html href=include.terms_href target=include.terms_target rel=include.terms_rel classes=board_soft_classes label=include.terms_label %}
+  {% include ui/cta-link.html href=include.store_href target=include.store_target rel=include.store_rel classes=board_soft_classes label=include.store_label %}
+</div>

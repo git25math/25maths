@@ -16,7 +16,13 @@ mkdir -p "$OUTPUT_DIR"
 PAGES=(
   "home|/"
   "cie0580|/cie0580/"
+  "cie0580-products|/cie0580/products.html"
+  "cie0580-pricing|/cie0580/pricing.html"
+  "cie0580-free|/cie0580/free/"
   "edx4ma1|/edx4ma1/"
+  "edx4ma1-products|/edx4ma1/products.html"
+  "edx4ma1-pricing|/edx4ma1/pricing.html"
+  "edx4ma1-free|/edx4ma1/free/"
   "kahoot|/kahoot/"
 )
 
@@ -36,11 +42,16 @@ capture_with_profile() {
     key="${entry%%|*}"
     route="${entry##*|}"
     url="${BASE_URL%/}${route}"
+    if [[ "$url" == *\?* ]]; then
+      url="${url}&visual=1"
+    else
+      url="${url}?visual=1"
+    fi
     target="$OUTPUT_DIR/${key}.${profile_slug}.png"
     npx --yes "playwright@$PLAYWRIGHT_VERSION" screenshot -b chromium "${profile_args[@]}" --wait-for-timeout "$wait_ms" --timeout 45000 "$url" "$target"
     echo "Captured: $target"
   done
 }
 
-capture_with_profile "desktop" "1200"
-capture_with_profile "mobile" "1100"
+capture_with_profile "desktop" "1800"
+capture_with_profile "mobile" "1800"

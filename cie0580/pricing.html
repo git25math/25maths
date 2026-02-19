@@ -15,6 +15,7 @@ lang_links:
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_note_body %}These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.{% endcapture %}
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
@@ -25,10 +26,7 @@ lang_links:
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="cie-soft-bg border cie-soft-border rounded-xl p-5 text-sm cie-soft-text">
-            <p class="font-semibold mb-1">Important</p>
-            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
-        </div>
+        {% include ui/board-info-banner.html board='cie' title='Important' body=pricing_note_body %}
     </div>
 </section>
 
@@ -80,9 +78,6 @@ lang_links:
                 <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
             </div>
         </div>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/cie0580/products.html" class="cie-solid-bg cie-solid-text px-6 py-3 rounded-lg font-semibold text-center cie-solid-hover ui-focus-ring">Open Product Architecture</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border cie-soft-border cie-soft-bg cie-soft-text px-6 py-3 rounded-lg font-semibold text-center cie-soft-hover ui-focus-ring">Open Presale Terms PDF</a>
-        </div>
+        {% include ui/board-dual-actions.html board='cie' wrapper_class='mt-8 flex flex-col sm:flex-row gap-4' primary_href='/cie0580/products.html' primary_label='Open Product Architecture' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='Open Presale Terms PDF' %}
     </div>
 </section>

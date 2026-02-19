@@ -53,8 +53,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+<script>
+    (function() {
+        try {
+            var params = new URLSearchParams(window.location.search);
+            if (params.get('visual') === '1') {
+                document.documentElement.classList.add('visual-snapshot');
+            }
+        } catch (e) {
+            // no-op: keep normal rendering when URL parsing is unavailable
+        }
+    })();
+</script>
+
 <style>
     body { font-family: 'Inter', sans-serif; }
+    html.visual-snapshot,
+    html.visual-snapshot body,
+    html.visual-snapshot * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+    }
+    html.visual-snapshot *,
+    html.visual-snapshot *::before,
+    html.visual-snapshot *::after {
+        animation: none !important;
+        transition: none !important;
+        caret-color: transparent !important;
+    }
 
     /* Stable CIE IGCSE helpers for cross-page color consistency. */
     :root {

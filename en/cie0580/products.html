@@ -16,6 +16,7 @@ lang_links:
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_status_body %}Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.{% endcapture %}
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -26,10 +27,7 @@ lang_links:
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="cie-soft-bg border cie-soft-border rounded-xl p-5 text-sm cie-soft-text">
-            <p class="font-semibold mb-1">Pricing Status</p>
-            <p>Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.</p>
-        </div>
+        {% include ui/board-info-banner.html board='cie' title='Pricing Status' body=pricing_status_body %}
     </div>
 </section>
 
@@ -69,7 +67,8 @@ lang_links:
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="token-chip token-chip-sm cie-soft-bg cie-soft-border cie-soft-text">{{ unit.status | default: 'presale' | upcase }}</span>
+                        {% assign unit_status_label = unit.status | default: 'presale' | upcase %}
+                        {% include ui/board-status-chip.html board='cie' label=unit_status_label %}
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>
@@ -86,10 +85,7 @@ lang_links:
             <p class="text-sm cie-soft-text mb-1">{{ catalog.all_units_bundle.title }}</p>
             <p class="text-sm cie-soft-text mb-1">Early-bird: {{ catalog.all_units_bundle.early_bird_price }} · Regular: {{ catalog.all_units_bundle.regular_price }}</p>
             <p class="text-sm cie-soft-text mb-4">Launch: {{ catalog.all_units_bundle.release_date }} · Early-bird deadline: {{ catalog.all_units_bundle.early_bird_deadline }}</p>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="{{ catalog.all_units_bundle.presale_url }}" target="_blank" rel="noopener" class="text-center cie-solid-bg cie-solid-text px-5 py-2.5 rounded-lg font-semibold text-sm cie-solid-hover ui-focus-ring">Open Mega Bundle Placeholder</a>
-                <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border cie-soft-border cie-soft-bg cie-soft-text px-5 py-2.5 rounded-lg font-semibold text-sm cie-soft-hover ui-focus-ring">Read Presale Terms PDF</a>
-            </div>
+            {% include ui/board-dual-actions.html board='cie' size='sm' primary_href=catalog.all_units_bundle.presale_url primary_target='_blank' primary_rel='noopener' primary_label='Open Mega Bundle Placeholder' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='Read Presale Terms PDF' %}
         </div>
     </div>
 </section>
@@ -98,10 +94,6 @@ lang_links:
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Execution Links</h2>
         <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition ui-focus-ring">Open CIE Kahoot Directory</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border cie-soft-border cie-soft-bg cie-soft-text px-7 py-3 rounded-lg font-semibold cie-soft-hover transition ui-focus-ring">Open Presale Terms PDF</a>
-            <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="border cie-soft-border cie-soft-bg cie-soft-text px-7 py-3 rounded-lg font-semibold cie-soft-hover transition ui-focus-ring">Open Payhip Storefront</a>
-        </div>
+        {% include ui/board-triple-actions.html board='cie' kahoot_href='/kahoot/cie0580/' kahoot_label='Open CIE Kahoot Directory' terms_href=terms_pdf_url terms_target='_blank' terms_rel='noopener' terms_label='Open Presale Terms PDF' store_href=catalog.default_worksheet_payhip_url store_target='_blank' store_rel='noopener' store_label='Open Payhip Storefront' %}
     </div>
 </section>

@@ -58,6 +58,17 @@ if baseline.size != current.size:
     print("SIZE_MISMATCH")
     raise SystemExit(0)
 
+def premultiply_alpha(img):
+    r, g, b, a = img.split()
+    # Ignore RGB drift inside fully transparent pixels by premultiplying alpha.
+    r = ImageChops.multiply(r, a)
+    g = ImageChops.multiply(g, a)
+    b = ImageChops.multiply(b, a)
+    return Image.merge("RGBA", (r, g, b, a))
+
+baseline = premultiply_alpha(baseline)
+current = premultiply_alpha(current)
+
 diff = ImageChops.difference(baseline, current)
 means = ImageStat.Stat(diff).mean
 mean_square = sum(channel * channel for channel in means) / len(means)

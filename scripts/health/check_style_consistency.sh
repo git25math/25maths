@@ -155,10 +155,10 @@ check_board_presale_tokenization() {
   for file in "${BOARD_PRODUCT_PAGES[@]}"; do
     local name
     name="${file#"$ROOT/"}"
-    if rg -q 'token-chip token-chip-sm' "$file"; then
-      pass "Board product page $name: token-chip status badges present"
+    if rg -q 'token-chip token-chip-sm|include ui/board-status-chip.html' "$file"; then
+      pass "Board product page $name: status badges use token-chip semantics"
     else
-      fail "Board product page $name: missing token-chip status badges"
+      fail "Board product page $name: missing token-chip status badge semantics"
     fi
   done
 }

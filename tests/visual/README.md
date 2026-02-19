@@ -12,6 +12,22 @@ This folder stores Playwright screenshot baselines used by:
 bash scripts/health/update_visual_baseline.sh
 ```
 
+## Snapshot routes
+
+- `/`
+- `/cie0580/`
+- `/cie0580/products.html`
+- `/cie0580/pricing.html`
+- `/cie0580/free/`
+- `/edx4ma1/`
+- `/edx4ma1/products.html`
+- `/edx4ma1/pricing.html`
+- `/edx4ma1/free/`
+- `/kahoot/`
+
+Each route is captured in both desktop and mobile profiles.
+Snapshots are requested with `?visual=1`, which enables a deterministic rendering mode (animations off + fixed fallback font) for stable CI diffs.
+
 ## Run regression check locally
 
 ```bash

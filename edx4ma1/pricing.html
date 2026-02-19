@@ -7,6 +7,7 @@ active_page: pricing
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards["edexcel-4ma1"] %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_note_body %}These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.{% endcapture %}
 
 <section class="edx-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
@@ -17,10 +18,7 @@ active_page: pricing
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="edx-soft-bg border edx-soft-border rounded-xl p-5 text-sm edx-soft-text">
-            <p class="font-semibold mb-1">Important</p>
-            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
-        </div>
+        {% include ui/board-info-banner.html board='edx' title='Important' body=pricing_note_body %}
     </div>
 </section>
 
@@ -72,9 +70,6 @@ active_page: pricing
                 <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
             </div>
         </div>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/edx4ma1/products.html" class="edx-solid-bg edx-solid-text px-6 py-3 rounded-lg font-semibold text-center edx-solid-hover ui-focus-ring">Open Product Architecture</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border edx-soft-border edx-soft-bg edx-soft-text px-6 py-3 rounded-lg font-semibold text-center edx-soft-hover ui-focus-ring">Open Presale Terms PDF</a>
-        </div>
+        {% include ui/board-dual-actions.html board='edx' wrapper_class='mt-8 flex flex-col sm:flex-row gap-4' primary_href='/edx4ma1/products.html' primary_label='Open Product Architecture' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='Open Presale Terms PDF' %}
     </div>
 </section>
