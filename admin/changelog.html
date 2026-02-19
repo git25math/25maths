@@ -245,6 +245,10 @@ title: 25Maths Changelog
                     <span><strong>Hero CTA token lock (CIE/Edexcel)</strong>: Unified Edexcel module hero primary CTAs to the same `soft-bg + text + border` token semantics used on CIE, and extended `check_style_consistency.sh` with explicit hero-button token checks (including legacy outline-class detection) to block regressions.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Board copy isolation hardening</strong>: Corrected residual CIE marketing copy/link in `/edx4ma1/free/` to Edexcel 4MA1 premium messaging and added a style-health guard to fail when CIE/Edexcel board copy is cross-mixed on free pages.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

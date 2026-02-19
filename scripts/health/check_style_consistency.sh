@@ -178,6 +178,26 @@ check_hero_cta_tokenization() {
   done
 }
 
+check_cross_board_copy_isolation() {
+  local edx_free="$ROOT/edx4ma1/free/index.html"
+  local cie_free="$ROOT/cie0580/free/index.html"
+
+  require_file "$edx_free" "Edexcel free page" || return
+  require_file "$cie_free" "CIE free page" || return
+
+  if rg -q 'CIE 0580|Cambridge IGCSE' "$edx_free"; then
+    fail "Edexcel free page: found CIE/Cambridge copy contamination"
+  else
+    pass "Edexcel free page: no CIE/Cambridge copy contamination"
+  fi
+
+  if rg -q '4MA1|Edexcel' "$cie_free"; then
+    fail "CIE free page: found Edexcel/4MA1 copy contamination"
+  else
+    pass "CIE free page: no Edexcel/4MA1 copy contamination"
+  fi
+}
+
 check_board_presale_tokenization() {
   local file
   for file in "${BOARD_PRESALE_PAGES[@]}"; do
@@ -221,6 +241,7 @@ check_no_solid_text_conflicts
 check_legacy_focus_chain_absent
 check_ui_focus_adoption
 check_hero_cta_tokenization
+check_cross_board_copy_isolation
 check_board_presale_tokenization
 
 echo "== Summary =="
