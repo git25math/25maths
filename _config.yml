@@ -4,6 +4,7 @@ description: "Premium exam-aligned mathematics resources for international exam 
 url: "https://www.25maths.com"
 baseurl: ""
 repository: "git25math/25maths"
+assets_version: "20260219-bilingual-shutter-v2"
 
 # Waitlist collection (single endpoint for all topics)
 waitlist:

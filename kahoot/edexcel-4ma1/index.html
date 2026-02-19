@@ -20,6 +20,9 @@ lang: en
             <strong>L1 Worksheet</strong> -> <strong>L2 Section Bundle</strong> -> <strong>L3 Unit Bundle</strong>.
             Includes both <strong>Foundation</strong> and <strong>Higher</strong> tracks.
         </p>
+        <p class="bilingual-support-only text-base text-gray-100 mt-3 max-w-3xl">
+            每个小考点统一采用 L1 单讲义 -> L2 章节包 -> L3 单元包路径，覆盖 Foundation 与 Higher 两条学习线。
+        </p>
         <div class="mt-8 flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
             <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-8 py-4 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
             <a href="#unit-bundles" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold edx-hero-outline-hover hover:shadow-lg transition ui-focus-ring">View 6 Unit Bundle Presales</a>
@@ -47,6 +50,7 @@ lang: en
             <h2 class="text-3xl font-bold text-gray-900 mb-2">Edexcel 4MA1 Unit Bundle Presales (6)</h2>
             <p class="text-gray-600">These are your main L3 offers. Each unit covers Foundation + Higher and can include themed past-paper bonus after release.</p>
             <p class="text-sm text-gray-500 mt-2">Bilingual gift logic: after checkout, users opt into bilingual support via a 30-second learning preference form. Review bonus is optional and separate.</p>
+            <p class="bilingual-support-only text-sm text-gray-500 mt-2">双语赠送规则一致：支付后填写偏好表单触发基础双语赠送，评价仅作为可选加成条件。</p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {% for unit in catalog.units %}
@@ -73,6 +77,7 @@ lang: en
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-2">SubTopic Listing (Foundation + Higher)</h2>
             <p class="text-gray-600">Each SubTopic card has a complete loop: L0 interactive practice, L1 worksheet, L2 section bundle, L3 unit bundle.</p>
+            <p class="bilingual-support-only text-sm text-gray-600 mt-2">每个小考点卡都连接完整升级链路，便于从练习到购买的连续转化。</p>
         </div>
 
         {% for section in data.sections %}
