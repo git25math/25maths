@@ -237,12 +237,20 @@ title: 25Maths Changelog
                     <span><strong>Presale UI component extraction + visual coverage expansion</strong>: Added reusable board UI includes for info banners, status chips, dual-action button rows, and execution-link triplets, then migrated CIE/Edexcel `products/pricing` pages (EN/ZH variants included) to these shared components; expanded Playwright snapshot routes to include `products/pricing/free` for both boards to strengthen visual regression protection on the full presale funnel.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Free-page card/CTA parity pass</strong>: Added shared `ui/free-topic-card` rendering for CIE/Edexcel free vocabulary grids, standardized board token badges (`0580` / `4MA1`) across free cards, normalized free-page CTA motion to the same non-translate hover pattern with `ui-focus-ring`, and extended consistency/visual checks to include EN/ZH CIE free routes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Hero CTA token lock (CIE/Edexcel)</strong>: Unified Edexcel module hero primary CTAs to the same `soft-bg + text + border` token semantics used on CIE, and extended `check_style_consistency.sh` with explicit hero-button token checks (including legacy outline-class detection) to block regressions.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>
             </ul>
             <div class="mt-4 text-xs text-gray-400">
-                Files: index.html, en/index.html, zh-cn/index.html, cie0580/index.html, cie0580/products.html, cie0580/pricing.html, cie0580/free/index.html, en/cie0580/index.html, en/cie0580/products.html, en/cie0580/pricing.html, en/cie0580/free/index.html, zh-cn/cie0580/index.html, zh-cn/cie0580/products.html, zh-cn/cie0580/pricing.html, zh-cn/cie0580/free/index.html, edx4ma1/index.html, edx4ma1/products.html, edx4ma1/pricing.html, edx4ma1/free/index.html, exercises/index.html, zh-cn/exercises/index.html, _layouts/interactive_exercise.html, _includes/head.html, _includes/module-nav.html, _includes/ui/board-info-banner.html, _includes/ui/board-status-chip.html, _includes/ui/board-dual-actions.html, _includes/ui/board-triple-actions.html, kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, zh-cn/kahoot/index.html, en/gift-thanks.html, zh-cn/gift-thanks.html, scripts/health/check_style_consistency.sh, scripts/health/capture_visual_snapshots.sh, tests/visual/README.md, tests/visual/baseline/*.png, admin/changelog.html
+                Files: index.html, en/index.html, zh-cn/index.html, cie0580/index.html, cie0580/products.html, cie0580/pricing.html, cie0580/free/index.html, en/cie0580/index.html, en/cie0580/products.html, en/cie0580/pricing.html, en/cie0580/free/index.html, zh-cn/cie0580/index.html, zh-cn/cie0580/products.html, zh-cn/cie0580/pricing.html, zh-cn/cie0580/free/index.html, edx4ma1/index.html, edx4ma1/products.html, edx4ma1/pricing.html, edx4ma1/free/index.html, exercises/index.html, zh-cn/exercises/index.html, _layouts/interactive_exercise.html, _includes/head.html, _includes/module-nav.html, _includes/ui/board-info-banner.html, _includes/ui/board-status-chip.html, _includes/ui/board-dual-actions.html, _includes/ui/board-triple-actions.html, _includes/ui/free-topic-card.html, kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, zh-cn/kahoot/index.html, en/gift-thanks.html, zh-cn/gift-thanks.html, scripts/health/check_style_consistency.sh, scripts/health/capture_visual_snapshots.sh, scripts/health/check_visual_regression.sh, tests/visual/README.md, tests/visual/baseline/*.png, admin/changelog.html
             </div>
         </div>
 

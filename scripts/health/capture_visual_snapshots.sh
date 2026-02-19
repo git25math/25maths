@@ -19,6 +19,8 @@ PAGES=(
   "cie0580-products|/cie0580/products.html"
   "cie0580-pricing|/cie0580/pricing.html"
   "cie0580-free|/cie0580/free/"
+  "cie0580-free-en|/en/cie0580/free/"
+  "cie0580-free-zh|/zh-cn/cie0580/free/"
   "edx4ma1|/edx4ma1/"
   "edx4ma1-products|/edx4ma1/products.html"
   "edx4ma1-pricing|/edx4ma1/pricing.html"

@@ -9,13 +9,27 @@ KEY_PAGES=(
   "$ROOT/en/index.html"
   "$ROOT/zh-cn/index.html"
   "$ROOT/cie0580/index.html"
+  "$ROOT/cie0580/free/index.html"
   "$ROOT/en/cie0580/index.html"
+  "$ROOT/en/cie0580/free/index.html"
   "$ROOT/zh-cn/cie0580/index.html"
+  "$ROOT/zh-cn/cie0580/free/index.html"
   "$ROOT/edx4ma1/index.html"
+  "$ROOT/edx4ma1/free/index.html"
   "$ROOT/kahoot/index.html"
   "$ROOT/kahoot/cie0580/index.html"
   "$ROOT/kahoot/edexcel-4ma1/index.html"
   "$ROOT/zh-cn/kahoot/index.html"
+)
+
+HERO_CTA_CIE_PAGES=(
+  "$ROOT/cie0580/index.html"
+  "$ROOT/en/cie0580/index.html"
+  "$ROOT/zh-cn/cie0580/index.html"
+)
+
+HERO_CTA_EDX_PAGES=(
+  "$ROOT/edx4ma1/index.html"
 )
 
 BOARD_PRESALE_PAGES=(
@@ -117,11 +131,49 @@ check_ui_focus_adoption() {
     fi
 
     local count
-    count="$(rg -c 'ui-focus-ring' "$file" || true)"
+    count="$(rg -c 'ui-focus-ring|include ui/cta-link.html' "$file" || true)"
     if [[ "$count" -gt 0 ]]; then
-      pass "Key page $name: ui-focus-ring usage count=$count"
+      pass "Key page $name: focus-token semantics usage count=$count"
     else
-      fail "Key page $name: missing ui-focus-ring usage"
+      fail "Key page $name: missing focus-token semantics usage"
+    fi
+  done
+}
+
+check_hero_cta_tokenization() {
+  local file
+
+  for file in "${HERO_CTA_CIE_PAGES[@]}"; do
+    local name
+    name="${file#"$ROOT/"}"
+    require_file "$file" "CIE hero page $name" || continue
+
+    local count
+    count="$(rg -c 'cta-btn-equal[^"]*cie-soft-bg[^"]*border[^"]*cie-soft-border[^"]*cie-solid-text' "$file" || true)"
+    if [[ "$count" -ge 3 ]]; then
+      pass "CIE hero page $name: primary CTA buttons use cie-soft token semantics count=$count"
+    else
+      fail "CIE hero page $name: expected >=3 cie-soft hero CTA buttons, found $count"
+    fi
+  done
+
+  for file in "${HERO_CTA_EDX_PAGES[@]}"; do
+    local name
+    name="${file#"$ROOT/"}"
+    require_file "$file" "Edexcel hero page $name" || continue
+
+    local count
+    count="$(rg -c 'cta-btn-equal[^"]*edx-soft-bg[^"]*border[^"]*edx-soft-border[^"]*edx-soft-text' "$file" || true)"
+    if [[ "$count" -ge 3 ]]; then
+      pass "Edexcel hero page $name: primary CTA buttons use edx-soft token semantics count=$count"
+    else
+      fail "Edexcel hero page $name: expected >=3 edx-soft hero CTA buttons, found $count"
+    fi
+
+    if rg -q 'edx-hero-outline-hover|border-2 border-white' "$file"; then
+      fail "Edexcel hero page $name: found legacy hero outline CTA classes"
+    else
+      pass "Edexcel hero page $name: no legacy hero outline CTA classes"
     fi
   done
 }
@@ -168,6 +220,7 @@ check_head_tokens
 check_no_solid_text_conflicts
 check_legacy_focus_chain_absent
 check_ui_focus_adoption
+check_hero_cta_tokenization
 check_board_presale_tokenization
 
 echo "== Summary =="

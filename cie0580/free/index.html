@@ -19,9 +19,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">Free CIE 0580 Resources</h1>
         <p class="text-xl opacity-90 mb-6">88-page vocabulary card bundle — 8 complete sets covering the full syllabus</p>
-        <a href="/free-gift.html" class="cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition transform hover:-translate-y-1 inline-block">
-            Get Free Gift Pack
-        </a>
+        {% include ui/cta-link.html href='/free-gift.html' classes='cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-10 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition' label='Get Free Gift Pack' %}
         <p class="text-sm opacity-75 mt-3">Complete a short survey to unlock both free packs and get launch updates.</p>
     </div>
 </section>
@@ -35,68 +33,19 @@ lang_links:
         </div>
 
         <div class="grid md:grid-cols-4 gap-6">
-            <!-- 1. Algebra -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">📐</div>
-                <h3 class="text-lg font-bold mb-2">Algebra Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Essential algebra terms including expressions, equations, factorising, and quadratics.</p>
-            </div>
-
-            <!-- 2. Coordinate Geometry -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">📍</div>
-                <h3 class="text-lg font-bold mb-2">Coordinate Geometry Cards</h3>
-                <p class="text-gray-600 text-sm">Key terms for gradients, midpoints, distance between points, and equation of a line.</p>
-            </div>
-
-            <!-- 3. Geometry -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">📏</div>
-                <h3 class="text-lg font-bold mb-2">Geometry Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Core geometry vocabulary: angles, triangles, circles, similarity, and congruence.</p>
-            </div>
-
-            <!-- 4. Mensuration -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">📦</div>
-                <h3 class="text-lg font-bold mb-2">Mensuration Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Area, perimeter, volume, and surface area terms for 2D and 3D shapes.</p>
-            </div>
-
-            <!-- 5. Number -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">🔢</div>
-                <h3 class="text-lg font-bold mb-2">Number Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Number types, factors, multiples, fractions, decimals, percentages, and standard form.</p>
-            </div>
-
-            <!-- 6. Statistics -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">📊</div>
-                <h3 class="text-lg font-bold mb-2">Statistics Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Mean, median, mode, range, probability, histograms, and cumulative frequency.</p>
-            </div>
-
-            <!-- 7. Trigonometry -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">📐</div>
-                <h3 class="text-lg font-bold mb-2">Trigonometry Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Sine, cosine, tangent, bearings, Pythagoras, and trigonometric identities.</p>
-            </div>
-
-            <!-- 8. Vectors -->
-            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
-                <div class="text-4xl mb-4">➡️</div>
-                <h3 class="text-lg font-bold mb-2">Vectors Vocabulary Cards</h3>
-                <p class="text-gray-600 text-sm">Vector notation, magnitude, direction, addition, scalar multiples, and position vectors.</p>
-            </div>
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='📐' title='Algebra Vocabulary Cards' description='Essential algebra terms including expressions, equations, factorising, and quadratics.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='📍' title='Coordinate Geometry Cards' description='Key terms for gradients, midpoints, distance between points, and equation of a line.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='📏' title='Geometry Vocabulary Cards' description='Core geometry vocabulary: angles, triangles, circles, similarity, and congruence.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='📦' title='Mensuration Vocabulary Cards' description='Area, perimeter, volume, and surface area terms for 2D and 3D shapes.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='🔢' title='Number Vocabulary Cards' description='Number types, factors, multiples, fractions, decimals, percentages, and standard form.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='📊' title='Statistics Vocabulary Cards' description='Mean, median, mode, range, probability, histograms, and cumulative frequency.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='📐' title='Trigonometry Vocabulary Cards' description='Sine, cosine, tangent, bearings, Pythagoras, and trigonometric identities.' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' icon='➡️' title='Vectors Vocabulary Cards' description='Vector notation, magnitude, direction, addition, scalar multiples, and position vectors.' %}
         </div>
 
         <!-- Download CTA -->
         <div class="text-center mt-12">
-            <a href="/free-gift.html" class="inline-block cie-solid-bg cie-solid-text px-10 py-4 rounded-lg font-bold text-lg cie-solid-hover transition">
-                Get Free Gift Pack
-            </a>
+            {% include ui/cta-link.html href='/free-gift.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-10 py-4 rounded-lg font-bold text-lg cie-solid-hover transition' label='Get Free Gift Pack' %}
         </div>
     </div>
 </section>
@@ -125,9 +74,7 @@ lang_links:
             </div>
         </div>
         <div class="mt-8">
-            <a href="/cie0580/products.html" class="inline-block cie-solid-bg cie-solid-text px-8 py-3 rounded-lg font-semibold cie-solid-hover transition">
-                View Complete Bundles
-            </a>
+            {% include ui/cta-link.html href='/cie0580/products.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-8 py-3 rounded-lg font-semibold cie-solid-hover transition' label='View Complete Bundles' %}
         </div>
     </div>
 </section>
@@ -139,9 +86,7 @@ lang_links:
         <p class="text-xl mb-8 opacity-90">
             Our premium bundles include 40-50+ practice questions, detailed step-by-step solutions, and comprehensive vocabulary coverage.
         </p>
-        <a href="/cie0580/products.html" class="cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition transform hover:-translate-y-1 inline-block">
-            View Premium Bundles
-        </a>
+        {% include ui/cta-link.html href='/cie0580/products.html' classes='cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition' label='View Premium Bundles' %}
     </div>
 </section>
 
@@ -152,9 +97,7 @@ lang_links:
             <div class="text-xs font-bold cie-solid-text mb-2">NEW</div>
             <h2 class="text-3xl font-bold mb-3">Weekly Topic Membership</h2>
             <p class="text-gray-600 mb-6">One topical practice pack every week with full solutions — built for CIE 0580.</p>
-            <a href="/subscription.html" class="cie-solid-bg cie-solid-text px-8 py-3 rounded-lg font-semibold cie-solid-hover transition">
-                View Membership
-            </a>
+            {% include ui/cta-link.html href='/subscription.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-8 py-3 rounded-lg font-semibold cie-solid-hover transition' label='View Membership' %}
         </div>
     </div>
 </section>

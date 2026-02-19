@@ -19,6 +19,8 @@ bash scripts/health/update_visual_baseline.sh
 - `/cie0580/products.html`
 - `/cie0580/pricing.html`
 - `/cie0580/free/`
+- `/en/cie0580/free/`
+- `/zh-cn/cie0580/free/`
 - `/edx4ma1/`
 - `/edx4ma1/products.html`
 - `/edx4ma1/pricing.html`

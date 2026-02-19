@@ -1,0 +1,22 @@
+{% assign board_key = include.board | default: 'cie' %}
+{% assign card_classes = include.classes | default: 'bg-gray-50 rounded-xl p-6 hover:shadow-lg transition' %}
+{% assign badge_label = include.badge | default: '' %}
+
+{% if board_key == 'edx' %}
+  {% assign badge_classes = 'edx-soft-bg edx-soft-border edx-soft-text' %}
+{% else %}
+  {% assign badge_classes = 'cie-soft-bg cie-soft-border cie-soft-text' %}
+{% endif %}
+
+<div class="{{ card_classes }}">
+  {% if include.icon and include.icon != '' %}
+    <div class="text-4xl mb-4">{{ include.icon }}</div>
+  {% endif %}
+  <h3 class="text-lg font-bold mb-2">{{ include.title }}</h3>
+  {% if include.description and include.description != '' %}
+    <p class="text-gray-600 text-sm{% if badge_label != '' %} mb-3{% endif %}">{{ include.description }}</p>
+  {% endif %}
+  {% if badge_label != '' %}
+    {% include ui/token-chip.html label=badge_label size='sm' classes=badge_classes %}
+  {% endif %}
+</div>
