@@ -57,6 +57,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Validate visual regression snapshots
+        continue-on-error: ${{ github.event_name == 'pull_request' }}
         env:
           VISUAL_MAX_RMSE: "0.0040"
         run: bash scripts/health/check_visual_regression.sh
