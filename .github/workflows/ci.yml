@@ -53,6 +53,9 @@ jobs:
       - name: Validate style consistency
         run: bash scripts/health/check_style_consistency.sh
 
+      - name: Validate bilingual coverage guardrail
+        run: bash scripts/health/check_bilingual_coverage.sh
+
       - name: Build site with Jekyll
         run: bundle exec jekyll build
 

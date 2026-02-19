@@ -1,7 +1,7 @@
 # Full-Site Bilingual Block Coverage Report
 
-Date: 2026-02-19
-Execution Context: `/private/tmp/25maths-bilingual-coverage-report` (`codex/bilingual-coverage-report`)
+Date: 2026-02-20
+Execution Context: `/private/tmp/25maths-i18n-optimization` (`codex/i18n-optimization-hardening`)
 
 ## 1) Audit Method
 
@@ -12,7 +12,9 @@ Execution Context: `/private/tmp/25maths-bilingual-coverage-report` (`codex/bili
   - Canonical source HTML (excluding `/en/*`, `/zh-cn/*`, `_includes`, `_layouts`, assets, tests, scripts)
   - Targeted core-route checklist for user journeys
 - Validation commands:
+  - `node --check assets/js/bilingual_support.js`
   - `node --check assets/js/exercise_hub.js`
+  - `bash scripts/health/check_bilingual_coverage.sh`
   - `bash scripts/health/check_style_consistency.sh`
   - `bundle exec jekyll build`
 
@@ -48,8 +50,8 @@ Result: Core journey bilingual visibility is complete.
 ### B. Canonical source HTML (broad scope)
 
 - Total scanned: `39`
-- With markers: `21`
-- Zero markers: `18`
+- With markers: `28`
+- Zero markers: `11`
 
 Zero-marker pages are concentrated in non-core categories:
 
@@ -64,16 +66,7 @@ Zero-marker pages are concentrated in non-core categories:
 - `pricing.html`
 - `free/index.html`
 
-2. Utility/legal/transaction pages (optional bilingual uplift)
-- `terms.html`
-- `privacy.html`
-- `thanks.html`
-- `gift-thanks.html`
-- `support-thanks.html`
-- `membership/index.html`
-- `404.html`
-
-3. Internal/template pages (non-user-facing)
+2. Internal/template pages (non-user-facing)
 - `admin/changelog.html`
 - `projects/kahoot-channel/_templates/worksheet-pdf-template.html`
 
@@ -81,12 +74,15 @@ Zero-marker pages are concentrated in non-core categories:
 
 - `/exercises/index.html` marker count: `12` (was `0` in previous audit context).
 - Runtime bilingual sync added for dynamic exercise summary/resume fallback text in `assets/js/exercise_hub.js`.
+- Added compact bilingual helper copy to legal, thank-you, 404, and membership pages.
+- Added CI gate `scripts/health/check_bilingual_coverage.sh` to prevent core bilingual regression.
 - Guardrails remain healthy:
+  - Bilingual coverage gate: `Failures: 0`
   - Style consistency: `Failures: 0`
   - Jekyll build: success
 
 ## 4) Recommended Next Wave (Optional)
 
-1. Add compact bilingual helper copy to `terms.html`, `privacy.html`, and three thank-you pages.
-2. Add a small bilingual hint on `404.html` to preserve consistency in error flows.
-3. Keep redirect stubs marker-free and explicitly exclude them in future coverage KPI scripts to avoid false alarms.
+1. Keep redirect stubs/template pages in expected-zero whitelist and fail only on unexpected zero-marker canonical pages.
+2. Raise low-density pages (currently `blog/index.html`, `404.html`, and utility pages) from 1-2 markers to 3+ if richer bilingual guidance is desired.
+3. Consume `bilingual-support:change` event in analytics pipeline to correlate toggle usage with lead/subscription conversion.

@@ -74,6 +74,8 @@ Run data consistency checks before publishing:
 ```bash
 python3 scripts/health/check_kahoot_data.py
 python3 scripts/health/check_exercise_data.py
+bash scripts/health/check_style_consistency.sh
+bash scripts/health/check_bilingual_coverage.sh
 ```
 
 Run deployment checks against production:

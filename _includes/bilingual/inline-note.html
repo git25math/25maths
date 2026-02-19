@@ -1,0 +1,5 @@
+{% assign note_text = include.note | default: '' %}
+{% assign note_class = include.class | default: 'text-sm text-gray-600 mt-2' %}
+{% if note_text != '' %}
+<p class="bilingual-support-only {{ note_class }}">{{ note_text }}</p>
+{% endif %}
