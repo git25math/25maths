@@ -602,9 +602,9 @@ lang: en
             <span class="text-[11px] px-2 py-1 rounded-full ${statusClass} font-semibold">${escapeHtml(statusLabel)}</span>
           </div>
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
-          <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
-          <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
-          <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || fallbackPresaleNote)}</p>
+          <h3 class="text-sm font-bold text-gray-900 mb-3 kahoot-card-title">${escapeHtml(titleCase(item.title))}</h3>
+          <p class="text-[11px] text-gray-500 mb-1 kahoot-card-release">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
+          <p class="text-[11px] text-gray-500 mb-3 kahoot-card-note">${escapeHtml(item.presaleNote || fallbackPresaleNote)}</p>
           <div class="mt-auto pt-2 cta-stack">
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">${kahootLabel}</a>
             ${interactiveButton}

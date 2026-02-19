@@ -190,9 +190,9 @@ lang: en
                                 {% include ui/token-chip.html label=item.code classes='edx-soft-border edx-soft-bg edx-soft-text' %}
                                 {% include ui/token-chip.html label=status_label classes=status_chip_class %}
                             </div>
-                            <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ item.title }}</h4>
-                            <p class="text-[11px] text-gray-500 mb-1">{{ release_line }}</p>
-                            <p class="text-[11px] text-gray-500 mb-3">{{ presale_note }}</p>
+                            <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize kahoot-card-title">{{ item.title }}</h4>
+                            <p class="text-[11px] text-gray-500 mb-1 kahoot-card-release">{{ release_line }}</p>
+                            <p class="text-[11px] text-gray-500 mb-3 kahoot-card-note">{{ presale_note }}</p>
                             {% assign card_exercise_relative_url = '' %}
                             {% if card_exercise_url != '' %}
                                 {% assign card_exercise_relative_url = card_exercise_url | relative_url %}

@@ -453,11 +453,45 @@
     }
     .cta-btn-equal:active,
     .cta-card-btn:active { transform: translateY(0.5px); }
+    .kahoot-card-title {
+        min-height: 2.4rem;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+    .kahoot-card-release {
+        min-height: 1.9rem;
+        line-height: 1.35;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+    .kahoot-card-note {
+        min-height: 2rem;
+        line-height: 1.35;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
     @media (max-width: 639px) {
         .cta-card-btn {
             min-height: 3rem;
             padding-top: 0.8rem;
             padding-bottom: 0.8rem;
+        }
+        .kahoot-card-title {
+            min-height: 2.3rem;
+        }
+        .kahoot-card-release,
+        .kahoot-card-note {
+            min-height: 1.9rem;
         }
     }
 </style>
