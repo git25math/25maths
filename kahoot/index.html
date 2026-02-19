@@ -621,7 +621,7 @@ lang: en
         : '';
 
       return `
-        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm h-full flex flex-col">
           <picture>
             <source srcset="${escapeHtml(coverWebp)}" type="image/webp">
           <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
@@ -633,10 +633,10 @@ lang: en
             <span class="token-chip ${statusClass}">${escapeHtml(statusLabel)}</span>
           </div>
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
-          <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
-          <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
-          <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
-          <div class="mt-2 cta-stack">
+          <h3 class="text-sm font-bold text-gray-900 mb-3 kahoot-card-title">${escapeHtml(titleCase(item.title))}</h3>
+          <p class="text-[11px] text-gray-500 mb-1 kahoot-card-release">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
+          <p class="text-[11px] text-gray-500 mb-3 kahoot-card-note">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
+          <div class="mt-auto pt-2 cta-stack">
             ${interactiveButton}
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Kahoot</a>
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">L1: Worksheet</a>
