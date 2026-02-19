@@ -3,6 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 HEAD_FILE="$ROOT/_includes/head.html"
+HERO_CTA_INCLUDE_FILE="$ROOT/_includes/ui/module-hero-cta-row.html"
 
 KEY_PAGES=(
   "$ROOT/index.html"
@@ -142,18 +143,39 @@ check_ui_focus_adoption() {
 
 check_hero_cta_tokenization() {
   local file
+  require_file "$HERO_CTA_INCLUDE_FILE" "Hero CTA include" || return
+
+  if rg -q "cta-btn-equal[^\"']*cie-soft-bg[^\"']*cie-soft-border[^\"']*cie-solid-text" "$HERO_CTA_INCLUDE_FILE"; then
+    pass "Hero CTA include: contains CIE soft-token button classes"
+  else
+    fail "Hero CTA include: missing CIE soft-token button classes"
+  fi
+
+  if rg -q "cta-btn-equal[^\"']*edx-soft-bg[^\"']*edx-soft-border[^\"']*edx-soft-text" "$HERO_CTA_INCLUDE_FILE"; then
+    pass "Hero CTA include: contains Edexcel soft-token button classes"
+  else
+    fail "Hero CTA include: missing Edexcel soft-token button classes"
+  fi
 
   for file in "${HERO_CTA_CIE_PAGES[@]}"; do
     local name
     name="${file#"$ROOT/"}"
     require_file "$file" "CIE hero page $name" || continue
 
+    local include_count
+    if rg -q "include ui/module-hero-cta-row.html" "$file" && rg -q "board='cie'" "$file"; then
+      include_count=1
+    else
+      include_count=0
+    fi
+
     local count
     count="$(rg -c 'cta-btn-equal[^"]*cie-soft-bg[^"]*border[^"]*cie-soft-border[^"]*cie-solid-text' "$file" || true)"
-    if [[ "$count" -ge 3 ]]; then
-      pass "CIE hero page $name: primary CTA buttons use cie-soft token semantics count=$count"
+    count="${count:-0}"
+    if [[ "$count" -ge 3 || "$include_count" -gt 0 ]]; then
+      pass "CIE hero page $name: primary CTA buttons use cie-soft token semantics count=$count include=$include_count"
     else
-      fail "CIE hero page $name: expected >=3 cie-soft hero CTA buttons, found $count"
+      fail "CIE hero page $name: expected >=3 cie-soft hero CTA buttons or shared include, found count=$count include=$include_count"
     fi
   done
 
@@ -162,15 +184,23 @@ check_hero_cta_tokenization() {
     name="${file#"$ROOT/"}"
     require_file "$file" "Edexcel hero page $name" || continue
 
-    local count
-    count="$(rg -c 'cta-btn-equal[^"]*edx-soft-bg[^"]*border[^"]*edx-soft-border[^"]*edx-soft-text' "$file" || true)"
-    if [[ "$count" -ge 3 ]]; then
-      pass "Edexcel hero page $name: primary CTA buttons use edx-soft token semantics count=$count"
+    local include_count
+    if rg -q "include ui/module-hero-cta-row.html" "$file" && rg -q "board='edx'" "$file"; then
+      include_count=1
     else
-      fail "Edexcel hero page $name: expected >=3 edx-soft hero CTA buttons, found $count"
+      include_count=0
     fi
 
-    if rg -q 'edx-hero-outline-hover|border-2 border-white' "$file"; then
+    local count
+    count="$(rg -c 'cta-btn-equal[^"]*edx-soft-bg[^"]*border[^"]*edx-soft-border[^"]*edx-soft-text' "$file" || true)"
+    count="${count:-0}"
+    if [[ "$count" -ge 3 || "$include_count" -gt 0 ]]; then
+      pass "Edexcel hero page $name: primary CTA buttons use edx-soft token semantics count=$count include=$include_count"
+    else
+      fail "Edexcel hero page $name: expected >=3 edx-soft hero CTA buttons or shared include, found count=$count include=$include_count"
+    fi
+
+    if rg -q 'edx-hero-outline-hover|border-2 border-white' "$file" "$HERO_CTA_INCLUDE_FILE"; then
       fail "Edexcel hero page $name: found legacy hero outline CTA classes"
     else
       pass "Edexcel hero page $name: no legacy hero outline CTA classes"

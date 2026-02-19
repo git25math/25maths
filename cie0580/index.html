@@ -29,17 +29,14 @@ lang_links:
         <p class="text-lg mb-8 text-gray-200">
             Free vocabulary cards are live. L1/L2/L3 presale architecture is now active.
         </p>
-        <div class="flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
-            <a href="/free-gift.html" class="sm:flex-1 cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition ui-focus-ring">
-                Browse Free Resources
-            </a>
-            <a href="/exercises/?board=cie0580&tier=core" class="sm:flex-1 cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition ui-focus-ring">
-                Start Interactive Exercises
-            </a>
-            <a href="/subscription.html" class="sm:flex-1 cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition ui-focus-ring">
-                Weekly Membership
-            </a>
-        </div>
+        {% include ui/module-hero-cta-row.html
+            board='cie'
+            primary_href='/free-gift.html'
+            primary_label='Browse Free Resources'
+            secondary_href='/exercises/?board=cie0580&tier=core'
+            secondary_label='Start Interactive Exercises'
+            tertiary_href='/subscription.html'
+            tertiary_label='Weekly Membership' %}
     </div>
 </section>
 
