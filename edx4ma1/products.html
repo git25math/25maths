@@ -12,6 +12,7 @@ active_page: products
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">Edexcel 4MA1 Product System</h1>
         <p class="text-xl opacity-90">Closed-loop structure enabled: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
+        <p data-bilingual-block class="text-sm text-gray-200 mt-3">产品路径已经统一为 L1/L2/L3，便于持续升级。</p>
     </div>
 </section>
 
@@ -20,6 +21,7 @@ active_page: products
         <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
             <p class="font-semibold mb-1">Pricing Status</p>
             <p>Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.</p>
+            <p data-bilingual-block class="mt-2">价格先作为锚点，后续可在不改结构的前提下统一调整。</p>
         </div>
     </div>
 </section>
@@ -27,23 +29,27 @@ active_page: products
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">闭环重点：先让学生低成本尝试，再通过章节与单元包逐步升级。</p>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider edx-solid-text font-semibold mb-2">L1</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Single Worksheet MVP</h3>
                 <p class="text-sm text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download. Lowest friction entry point.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">单个知识点入口，快速建立首次购买信心。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l1_early_bird }} · suggested regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider edx-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Section Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">Multiple SubTopics inside one syllabus section. Best upgrade from L1.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">按章节打包，承接 L1 用户升级。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l2_early_bird }} · suggested regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider edx-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">One full unit including Foundation + Higher tracks, plus bonus add-ons after release.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">完整单元包，覆盖 Foundation 与 Higher 双层级。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l3_early_bird }} · suggested regular: {{ catalog.pricing.l3_regular }}</p>
             </article>
         </div>
@@ -54,6 +60,7 @@ active_page: products
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-2">Edexcel Unit Bundle Presales (6)</h2>
         <p class="text-gray-600 mb-8">Each unit bundle includes bilingual vocabulary card support and a post-purchase upgrade path for bilingual enhancement.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">购买后填写学习偏好表单即可进入双语赠送判断，不依赖评价。</p>
         <p class="text-sm text-gray-600 mb-8">Bilingual gift trigger: after checkout, customers complete a 30-second learning preference form. Review is optional and unlocks extra bonus, not the core bilingual gift.</p>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for unit in catalog.units %}
@@ -89,6 +96,7 @@ active_page: products
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Execution Links</h2>
         <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">SubTopic 链接、升级路径与活动信息统一在 Kahoot 目录维护。</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kahoot/edexcel-4ma1/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition">Open Edexcel Kahoot Directory</a>
             <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover transition">Open Presale Terms PDF</a>

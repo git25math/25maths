@@ -3,14 +3,6 @@ layout: global
 title: Weekly Topic Membership
 description: "Weekly topical practice packs for CIE 0580 — graded difficulty, full solutions, and a clear progress path."
 active_global: membership
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /en/subscription.html
-  - code: zh-CN
-    label: ZH-CN
-    url: /zh-cn/subscription.html
 ---
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
@@ -19,6 +11,7 @@ lang_links:
         <p class="text-lg md:text-2xl opacity-90 mb-8">
             Every week: one high‑quality topical practice pack with solutions — built to match the exam.
         </p>
+        <p data-bilingual-block class="text-base md:text-lg text-gray-200 mb-8">每周一套专题练习包（含完整解析），持续对齐 CIE 0580 考纲。</p>
         <a href="#pricing" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition">
             Start Membership
         </a>
@@ -33,16 +26,19 @@ lang_links:
                 <div class="text-4xl mb-4">📘</div>
                 <h3 class="text-xl font-bold mb-2">Weekly Topical Packs</h3>
                 <p class="text-gray-600">A fresh topic every week with graded questions and clear progression.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">每周更新一个专题，难度有梯度，便于持续提升。</p>
             </div>
             <div class="bg-gray-50 rounded-xl p-6 text-center">
                 <div class="text-4xl mb-4">✅</div>
                 <h3 class="text-xl font-bold mb-2">Full Solutions</h3>
                 <p class="text-gray-600">Step‑by‑step answers that show method and common pitfalls.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">逐步解题过程，强调方法与易错点。</p>
             </div>
             <div class="bg-gray-50 rounded-xl p-6 text-center">
                 <div class="text-4xl mb-4">🧭</div>
                 <h3 class="text-xl font-bold mb-2">Clear Progress Path</h3>
                 <p class="text-gray-600">Always know what to study next, with monthly recap packs.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">每月复盘，学习路径更清晰。</p>
             </div>
         </div>
     </div>
@@ -51,6 +47,7 @@ lang_links:
 <section class="py-16 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-10">How It Works</h2>
+        <p data-bilingual-block class="text-center text-sm text-gray-600 mb-8">订阅后按周领取练习包，完成练习并对照解析，形成稳定进步闭环。</p>
         <div class="grid md:grid-cols-3 gap-6 text-center">
             <div class="bg-white rounded-xl p-6 shadow-sm">
                 <div class="text-2xl font-bold text-primary mb-2">1</div>
@@ -72,6 +69,7 @@ lang_links:
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">Membership Pricing</h2>
         <p class="text-gray-600 mb-8">Membership checkout opens soon. Join the priority list now and get first access.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">会员正式支付入口即将开放，可先加入优先候补获取首发链接。</p>
         <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border">
             <div class="text-5xl font-bold text-primary mb-2">$9.99</div>
             <div class="text-gray-600 mb-6">per month</div>
@@ -86,6 +84,31 @@ lang_links:
                 <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                 <input type="text" name="name" placeholder="Name (optional)" class="w-full border border-gray-300 rounded-lg px-4 py-3">
                 <input type="email" name="email" required placeholder="Email address" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                <div>
+                    <label class="block text-sm font-semibold mb-2" for="membership_support_track_choice">Support track</label>
+                    <select id="membership_support_track_choice" name="support_track_choice" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                        <option value="">Select one</option>
+                        <option value="standard">Standard Track (English-first)</option>
+                        <option value="bilingual">Bilingual Support Track (Chinese-English terms)</option>
+                    </select>
+                    <p class="text-xs text-gray-500 mt-1">Choosing bilingual support enables bilingual gift eligibility without review gating.</p>
+                    <p data-bilingual-block class="text-xs text-gray-500 mt-1">选择双语支持即可触发双语词汇卡赠送资格，不需要评价解锁。</p>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="membership_order_tier">Current order tier</label>
+                        <select id="membership_order_tier" name="order_tier" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                            <option value="">Not set</option>
+                            <option value="L1">L1</option>
+                            <option value="L2">L2</option>
+                            <option value="L3">L3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="membership_order_ref">Order reference</label>
+                        <input id="membership_order_ref" type="text" name="order_ref" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="Optional">
+                    </div>
+                </div>
                 <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">
                     Join Priority Waitlist
                 </button>
@@ -93,6 +116,9 @@ lang_links:
             <p class="text-sm text-gray-500 mt-4">You will receive launch notice, early access link, and onboarding details by email.</p>
             <p class="text-sm mt-3">
                 <a href="/membership/" class="text-primary font-semibold hover:underline">Preview Member Resource Center →</a>
+            </p>
+            <p class="text-sm mt-2">
+                <a href="/support-track.html" class="text-amber-600 font-semibold hover:underline">Set support track now (optional) →</a>
             </p>
         </div>
     </div>
@@ -102,6 +128,7 @@ lang_links:
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">Prefer to start free?</h2>
         <p class="text-lg opacity-90 mb-8">Try the free vocabulary packs first and see the quality.</p>
+        <p data-bilingual-block class="text-sm text-gray-200 mb-8">可先从免费词汇卡开始，再按需要升级到完整练习包。</p>
         <a href="/cie0580/free/" class="bg-white text-primary px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition inline-block">
             Get Free Resources
         </a>
