@@ -181,7 +181,7 @@ lang: en
                             {% assign release_line = 'Launch: Live now (Free Sample) | Upgrade: Full pack available' %}
                         {% endif %}
 
-                        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition">
+                        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition h-full flex flex-col">
                             <picture>
                                 <source srcset="{{ item.cover | replace: '.png', '.webp' }}" type="image/webp">
                                 <img src="{{ item.cover }}" alt="{{ item.code }} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">

@@ -592,7 +592,7 @@ lang: en
         : '';
 
       return `
-        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm">
+        <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm h-full flex flex-col">
           <picture>
             <source srcset="${escapeHtml(coverWebp)}" type="image/webp">
           <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
@@ -607,7 +607,7 @@ lang: en
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
           <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
           <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || fallbackPresaleNote)}</p>
-          <div class="mt-1 grid grid-cols-1 gap-3">
+          <div class="mt-auto pt-2 grid grid-cols-1 gap-3">
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${kahootLabel}</a>
             ${interactiveButton}
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${worksheetLabel}</a>
