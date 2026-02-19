@@ -27,6 +27,9 @@ jobs:
       - name: Validate navigation consistency
         run: python3 scripts/health/check_nav_consistency.py
 
+      - name: Validate style consistency
+        run: bash scripts/health/check_style_consistency.sh
+
       - name: Generate Kahoot funnel health report
         run: python3 scripts/health/report_kahoot_funnel.py
 

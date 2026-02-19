@@ -221,6 +221,10 @@ title: 25Maths Changelog
                     <span><strong>Semantic token base + CTA interaction parity</strong>: Added shared `token-chip` base helpers (`default/sm/dashed/live`) and migrated Kahoot CIE/Edexcel/hub tier-status-code chips to these tokens, unified CTA motion rhythm with shared active/transition behavior, and removed conflicting `*-solid-bg + text-white` combinations on board-color buttons so text/border semantics stay consistent with the light-surface token system.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Global token hardening + style guardrails</strong>: Expanded `cie/edx` solid-token text normalization across EN/ZH and CIE/Edexcel main funnel pages (free, pricing, products, gift-thanks, and entry routes), replaced repeated long `focus-visible` utility chains with a shared `ui-focus-ring` token on key homepage/module/Kahoot actions, and added `scripts/health/check_style_consistency.sh` with CI + scheduled health-workflow integration to prevent style regression.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

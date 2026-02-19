@@ -67,7 +67,7 @@ active_page: products
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center edx-solid-bg text-white py-2 rounded-lg font-semibold text-xs edx-solid-hover">Open Presale Placeholder</a>
+                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center edx-solid-bg edx-solid-text py-2 rounded-lg font-semibold text-xs edx-solid-hover">Open Presale Placeholder</a>
                 </article>
             {% endfor %}
         </div>
@@ -78,7 +78,7 @@ active_page: products
             <p class="text-sm edx-soft-text mb-1">Early-bird: {{ catalog.all_units_bundle.early_bird_price }} · Regular: {{ catalog.all_units_bundle.regular_price }}</p>
             <p class="text-sm edx-soft-text mb-4">Launch: {{ catalog.all_units_bundle.release_date }} · Early-bird deadline: {{ catalog.all_units_bundle.early_bird_deadline }}</p>
             <div class="flex flex-col sm:flex-row gap-3">
-                <a href="{{ catalog.all_units_bundle.presale_url }}" target="_blank" rel="noopener" class="text-center edx-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover">Open Mega Bundle Placeholder</a>
+                <a href="{{ catalog.all_units_bundle.presale_url }}" target="_blank" rel="noopener" class="text-center edx-solid-bg edx-solid-text px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover">Open Mega Bundle Placeholder</a>
                 <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border edx-soft-border edx-soft-bg edx-soft-text px-5 py-2.5 rounded-lg font-semibold text-sm edx-soft-hover">Read Presale Terms PDF</a>
             </div>
         </div>
