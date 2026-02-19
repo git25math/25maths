@@ -29,6 +29,9 @@ jobs:
       - name: Install Python dependencies
         run: python3 -m pip install --upgrade pip pyyaml pillow
 
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
       - name: Install Playwright Chromium
         run: npx --yes playwright@1.52.0 install --with-deps chromium
 
@@ -48,6 +51,8 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Validate visual regression snapshots
+        env:
+          VISUAL_MAX_RMSE: "0.0040"
         run: bash scripts/health/check_visual_regression.sh
 
       - name: Generate Kahoot funnel health report

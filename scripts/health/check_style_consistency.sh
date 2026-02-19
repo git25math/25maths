@@ -54,6 +54,11 @@ BOARD_PRODUCT_PAGES=(
 failures=0
 warnings=0
 
+if ! command -v rg >/dev/null 2>&1; then
+  echo "FAIL: ripgrep (rg) is required for style checks. Install it first (e.g. 'brew install ripgrep')." >&2
+  exit 1
+fi
+
 pass() {
   printf 'PASS: %s\n' "$1"
 }
