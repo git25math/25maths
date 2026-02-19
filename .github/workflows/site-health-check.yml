@@ -51,6 +51,8 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Validate visual regression snapshots
+        env:
+          VISUAL_MAX_RMSE: "0.0040"
         run: bash scripts/health/check_visual_regression.sh
 
       - name: Generate Kahoot funnel health report
