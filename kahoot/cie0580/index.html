@@ -35,7 +35,7 @@ lang: en
         <a href="/kahoot/" class="text-sm px-3 py-1.5 rounded-full border kahoot-soft-border kahoot-soft-bg kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Back to Kahoot Hub</a>
         <a href="/exercises/?board=cie0580" class="text-sm px-3 py-1.5 rounded-full border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises</a>
         <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full kahoot-solid-bg text-white kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Kahoot Channel</a>
-        <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full cie-solid-bg text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Payhip Storefront</a>
+        <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full cie-solid-bg cie-solid-text cie-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Payhip Storefront</a>
         <span class="text-sm text-gray-500">{{ data.total_subtopics }} SubTopics</span>
         <span class="text-sm text-gray-500">{{ catalog.units | size }} Unit Presales</span>
     </div>
@@ -53,7 +53,7 @@ lang: en
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-3 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="text-[11px] px-2 py-1 rounded-full border cie-soft-border cie-soft-bg cie-soft-text font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
+                        <span class="token-chip cie-soft-border cie-soft-bg cie-soft-text">{{ unit.status | default: 'presale' | upcase }}</span>
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>
@@ -61,7 +61,7 @@ lang: en
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
                     <div class="cta-stack">
-                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="cta-card-btn cie-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Unit Presale</a>
+                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="cta-card-btn cie-solid-bg cie-solid-text py-2.5 rounded-lg font-semibold text-xs cie-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Unit Presale</a>
                         <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="cta-card-btn border cie-soft-border cie-soft-bg cie-soft-text py-2.5 rounded-lg font-semibold text-xs cie-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
                     </div>
                 </article>
@@ -82,10 +82,10 @@ lang: en
             <div class="mb-10">
                 <div class="flex flex-wrap items-center gap-3 mb-4">
                     <h3 class="text-xl font-bold text-gray-900">{{ section.section_title }}</h3>
-                    <span class="text-xs px-2 py-1 rounded-full border cie-soft-border cie-soft-bg cie-soft-text font-semibold">{{ section.section_code }}</span>
-                    <span class="text-xs px-2 py-1 rounded-full {% if section.tier == 'Core' %}border cie-soft-border cie-soft-bg cie-soft-text{% else %}border border-dashed cie-soft-border bg-white cie-soft-text{% endif %} font-semibold">{{ section.tier }}</span>
+                    <span class="token-chip token-chip-sm cie-soft-border cie-soft-bg cie-soft-text">{{ section.section_code }}</span>
+                    <span class="token-chip token-chip-sm {% if section.tier == 'Core' %}cie-soft-border cie-soft-bg cie-soft-text{% else %}token-chip-dashed cie-soft-border bg-white cie-soft-text{% endif %}">{{ section.tier }}</span>
                     {% if unit %}
-                        <span class="text-xs px-2 py-1 rounded-full border cie-soft-border cie-soft-bg cie-soft-text font-semibold">L3: {{ unit.code }}</span>
+                        <span class="token-chip token-chip-sm cie-soft-border cie-soft-bg cie-soft-text">L3: {{ unit.code }}</span>
                     {% endif %}
                     <span class="text-xs text-gray-500">{{ section.count }} SubTopics</span>
                 </div>
@@ -135,16 +135,16 @@ lang: en
                         {% assign status_chip_class = 'bg-gray-100 text-gray-700' %}
                         {% assign status_label = card_status_key | replace: '_', ' ' | upcase %}
                         {% if card_status_key == 'free_sample_live' or card_status_key == 'free_sample' %}
-                            {% assign status_chip_class = 'bg-emerald-100 text-emerald-700' %}
+                            {% assign status_chip_class = 'token-chip-live' %}
                             {% assign status_label = 'FREE SAMPLE' %}
                         {% elsif card_status_key == 'live' or card_status_key == 'published' %}
-                            {% assign status_chip_class = 'bg-emerald-100 text-emerald-700' %}
+                            {% assign status_chip_class = 'token-chip-live' %}
                             {% assign status_label = 'LIVE' %}
                         {% elsif card_status_key == 'presale' %}
-                            {% assign status_chip_class = 'border cie-soft-border cie-soft-bg cie-soft-text' %}
+                            {% assign status_chip_class = 'cie-soft-border cie-soft-bg cie-soft-text' %}
                             {% assign status_label = 'PRE-SALE' %}
                         {% elsif card_status_key == 'ready_for_build' %}
-                            {% assign status_chip_class = 'border border-dashed cie-soft-border bg-white cie-soft-text' %}
+                            {% assign status_chip_class = 'token-chip-dashed cie-soft-border bg-white cie-soft-text' %}
                             {% assign status_label = 'READY FOR BUILD' %}
                         {% endif %}
                         {% assign release_date = catalog.default_release_date %}
@@ -179,15 +179,15 @@ lang: en
                                 <img src="{{ item.cover }}" alt="{{ item.code }} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
                             </picture>
                             <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="text-[11px] px-2 py-1 rounded-full cie-soft-bg cie-solid-text font-semibold">{{ item.code }}</span>
-                                <span class="text-[11px] px-2 py-1 rounded-full {{ status_chip_class }} font-semibold">{{ status_label }}</span>
+                                <span class="token-chip cie-soft-border cie-soft-bg cie-soft-text">{{ item.code }}</span>
+                                <span class="token-chip {{ status_chip_class }}">{{ status_label }}</span>
                             </div>
                             <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ item.title }}</h4>
                             <p class="text-[11px] text-gray-500 mb-1">{{ release_line }}</p>
                             <p class="text-[11px] text-gray-500 mb-3">{{ presale_note }}</p>
                             <div class="mt-2 cta-stack">
                                 {% if card_exercise_url != '' %}
-                                <a href="{{ card_exercise_url | relative_url }}" class="cta-card-btn cie-solid-bg text-white py-3 rounded-lg font-semibold text-sm cie-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L0: Interactive Exercise</a>
+                                <a href="{{ card_exercise_url | relative_url }}" class="cta-card-btn cie-solid-bg cie-solid-text py-3 rounded-lg font-semibold text-sm cie-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L0: Interactive Exercise</a>
                                 {% endif %}
                                 <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>
                                 <a href="{{ card_worksheet_url }}" target="_blank" rel="noopener" class="cta-card-btn border cie-soft-border cie-soft-bg cie-solid-text py-3 rounded-lg font-semibold text-sm cie-soft-hover hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L1: Worksheet</a>

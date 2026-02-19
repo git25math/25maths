@@ -19,7 +19,7 @@ lang: en
         </p>
         <div class="mt-8 flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
             <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg edx-solid-text px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
             <a href="/exercises/" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
             <a href="/kahoot/#free-sample-live" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
         </div>
@@ -66,23 +66,23 @@ lang: en
                 {% else %}
                     {% assign directory_url = "/kahoot/edexcel-4ma1/" %}
                 {% endif %}
-                {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
+                {% assign board_badge_class = "edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
                 {% assign board_explorer_button_class = "border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover" %}
-                {% assign board_meta_chip_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
+                {% assign board_meta_chip_class = "edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% if board.board == "cie0580" %}
-                    {% assign board_badge_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
+                    {% assign board_badge_class = "cie-soft-border cie-soft-bg cie-soft-text" %}
                     {% assign board_button_class = "cie-solid-bg cie-solid-hover" %}
                     {% assign board_explorer_button_class = "border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover" %}
-                    {% assign board_meta_chip_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
+                    {% assign board_meta_chip_class = "cie-soft-border cie-soft-bg cie-soft-text" %}
                 {% endif %}
                 <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6" data-free-sample-board="{{ board.board }}">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
                         <div>
-                            <p class="text-xs font-bold tracking-wider mb-2 {{ board_badge_class }}">{{ board.board_label }}</p>
+                            <span class="token-chip token-chip-sm font-bold tracking-wider mb-2 {{ board_badge_class }}">{{ board.board_label }}</span>
                             <h3 class="text-xl font-bold text-gray-900">{{ board.tier_scope }} Free Sample Collection</h3>
                         </div>
-                        <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
+                        <span class="token-chip token-chip-sm token-chip-live" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
                     </div>
                     <div class="flex flex-col sm:flex-row cta-row-equal gap-4 mb-5">
                         <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open {{ board.board_label }} Kahoot Channel</a>
@@ -92,15 +92,15 @@ lang: en
                         {% for item in board.items %}
                             {% assign item_batch_key = item.batch | downcase | replace: ' ', '_' %}
                             {% assign item_tier_key = item.tier | downcase %}
-                            {% assign board_tier_chip_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
+                            {% assign board_tier_chip_class = "edx-soft-border edx-soft-bg edx-soft-text" %}
                             {% if board.board == "cie0580" %}
-                                {% assign board_tier_chip_class = "border cie-soft-border cie-soft-bg cie-soft-text" %}
+                                {% assign board_tier_chip_class = "cie-soft-border cie-soft-bg cie-soft-text" %}
                                 {% if item_tier_key == "extended" %}
-                                    {% assign board_tier_chip_class = "border border-dashed cie-soft-border bg-white cie-soft-text" %}
+                                    {% assign board_tier_chip_class = "token-chip-dashed cie-soft-border bg-white cie-soft-text" %}
                                 {% endif %}
                             {% else %}
                                 {% if item_tier_key == "higher" %}
-                                    {% assign board_tier_chip_class = "border border-dashed edx-soft-border bg-white edx-soft-text" %}
+                                    {% assign board_tier_chip_class = "token-chip-dashed edx-soft-border bg-white edx-soft-text" %}
                                 {% endif %}
                             {% endif %}
                             <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm" data-free-sample-card data-board="{{ board.board }}" data-batch="{{ item_batch_key }}" data-code="{{ item.code | downcase }}" data-title="{{ item.title | downcase }}" data-tier="{{ item.tier | downcase }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
@@ -110,12 +110,12 @@ lang: en
                                     </div>
                                     <div class="min-w-0 flex-1">
                                         <div class="flex flex-wrap items-center gap-2 mb-2">
-                                            <span class="text-[11px] px-2 py-1 rounded-full {{ board_meta_chip_class }} font-semibold">{{ item.code }}</span>
-                                            <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
-                                            <span class="text-[11px] px-2 py-1 rounded-full {{ board_meta_chip_class }} font-semibold">{{ item.batch }}</span>
+                                            <span class="token-chip {{ board_meta_chip_class }}">{{ item.code }}</span>
+                                            <span class="token-chip token-chip-live">FREE SAMPLE</span>
+                                            <span class="token-chip {{ board_meta_chip_class }}">{{ item.batch }}</span>
                                         </div>
                                         <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
-                                        <span class="inline-flex text-[11px] px-2 py-1 rounded-full {{ board_tier_chip_class }} font-semibold">{{ item.tier }} tier</span>
+                                        <span class="token-chip {{ board_tier_chip_class }}">{{ item.tier }} tier</span>
                                     </div>
                                 </div>
                                 <div class="cta-card-grid cta-card-grid--split">
@@ -307,7 +307,7 @@ lang: en
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
                 <div class="flex flex-col sm:flex-row cta-row-equal gap-4">
-                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
+                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg edx-solid-text px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
                     <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
@@ -552,19 +552,19 @@ lang: en
       const hasInteractiveExercise = Boolean((item.exerciseUrl || '').trim());
       const interactiveExerciseUrl = hasInteractiveExercise ? item.exerciseUrl : '';
       const boardBadge = item.board === 'cie0580'
-        ? 'border cie-soft-border cie-soft-bg cie-soft-text'
-        : 'border edx-soft-border edx-soft-bg edx-soft-text';
+        ? 'cie-soft-border cie-soft-bg cie-soft-text'
+        : 'edx-soft-border edx-soft-bg edx-soft-text';
       const boardMetaChipClass = item.board === 'cie0580'
-        ? 'border cie-soft-border cie-soft-bg cie-soft-text'
-        : 'border edx-soft-border edx-soft-bg edx-soft-text';
+        ? 'cie-soft-border cie-soft-bg cie-soft-text'
+        : 'edx-soft-border edx-soft-bg edx-soft-text';
       const itemTier = (item.tier || '').toLowerCase();
       const tierBadgeClass = item.board === 'cie0580'
         ? (itemTier === 'core'
-          ? 'border cie-soft-border cie-soft-bg cie-soft-text'
-          : 'border border-dashed cie-soft-border bg-white cie-soft-text')
+          ? 'cie-soft-border cie-soft-bg cie-soft-text'
+          : 'token-chip-dashed cie-soft-border bg-white cie-soft-text')
         : (itemTier === 'foundation'
-          ? 'border edx-soft-border edx-soft-bg edx-soft-text'
-          : 'border border-dashed edx-soft-border bg-white edx-soft-text');
+          ? 'edx-soft-border edx-soft-bg edx-soft-text'
+          : 'token-chip-dashed edx-soft-border bg-white edx-soft-text');
       const interactiveButtonClass = item.board === 'cie0580'
         ? 'cie-solid-bg cie-solid-hover hover:shadow-md'
         : 'edx-solid-bg edx-solid-hover hover:shadow-md';
@@ -575,26 +575,26 @@ lang: en
         ? 'border cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
         : 'border edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
       const termsButtonClass = item.board === 'cie0580'
-        ? 'border border-dashed cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
-        : 'border border-dashed edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
+        ? 'border token-chip-dashed cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
+        : 'border token-chip-dashed edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
       const presaleStatusClass = item.board === 'cie0580'
-        ? 'border cie-soft-border cie-soft-bg cie-soft-text'
-        : 'border edx-soft-border edx-soft-bg edx-soft-text';
+        ? 'cie-soft-border cie-soft-bg cie-soft-text'
+        : 'edx-soft-border edx-soft-bg edx-soft-text';
       const readyForBuildStatusClass = item.board === 'cie0580'
-        ? 'border border-dashed cie-soft-border bg-white cie-soft-text'
-        : 'border border-dashed edx-soft-border bg-white edx-soft-text';
+        ? 'token-chip-dashed cie-soft-border bg-white cie-soft-text'
+        : 'token-chip-dashed edx-soft-border bg-white edx-soft-text';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'
         : rawStatus;
       const statusClassMap = {
-        free_sample: 'bg-emerald-100 text-emerald-700',
-        live: 'bg-emerald-100 text-emerald-700',
-        published: 'bg-emerald-100 text-emerald-700',
+        free_sample: 'token-chip-live',
+        live: 'token-chip-live',
+        published: 'token-chip-live',
         presale: presaleStatusClass,
         ready_for_build: readyForBuildStatusClass,
-        planned: 'bg-gray-100 text-gray-700',
-        archived: 'bg-gray-200 text-gray-600'
+        planned: 'border-gray-300 bg-gray-100 text-gray-700',
+        archived: 'border-gray-300 bg-gray-200 text-gray-600'
       };
       const statusLabelMap = {
         free_sample: 'Free Sample',
@@ -627,10 +627,10 @@ lang: en
           <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
           </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full ${tierBadgeClass} font-semibold">${escapeHtml(item.tier)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full ${boardMetaChipClass} font-semibold">${escapeHtml(item.sectionCode)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full ${statusClass} font-semibold">${escapeHtml(statusLabel)}</span>
+            <span class="token-chip ${boardBadge}">${escapeHtml(config.label)}</span>
+            <span class="token-chip ${tierBadgeClass}">${escapeHtml(item.tier)}</span>
+            <span class="token-chip ${boardMetaChipClass}">${escapeHtml(item.sectionCode)}</span>
+            <span class="token-chip ${statusClass}">${escapeHtml(statusLabel)}</span>
           </div>
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>

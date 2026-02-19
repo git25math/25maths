@@ -211,14 +211,43 @@
     }
 
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */
-    .kahoot-solid-bg { background-color: #46178f; }
+    .kahoot-solid-bg {
+        background-color: #46178f;
+        color: #fff;
+        border: 1px solid #46178f;
+    }
     .kahoot-solid-border { border-color: #b497ff; }
-    .kahoot-solid-hover:hover { background-color: #3d137a; }
+    .kahoot-solid-hover:hover {
+        background-color: #3d137a;
+        color: #fff;
+        border-color: #3d137a;
+    }
 
     .kahoot-soft-border { border-color: #7f5ab6; }
     .kahoot-soft-bg { background-color: #efe9fb; }
     .kahoot-soft-text { color: #46178f; }
     .kahoot-soft-hover:hover { background-color: #e5dbf8; }
+
+    /* Shared chip tokens for board/status badges. */
+    .token-chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        border-width: 1px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.6875rem;
+        line-height: 1.1;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .token-chip-sm { font-size: 0.75rem; }
+    .token-chip-dashed { border-style: dashed; }
+    .token-chip-live {
+        border-color: #a7f3d0;
+        background-color: #d1fae5;
+        color: #047857;
+    }
 
     /* Shared CTA spacing/size rhythm for board pages and card actions. */
     .cta-row-equal { align-items: stretch; }
@@ -254,6 +283,17 @@
         line-height: 1.2;
         font-weight: 600;
     }
+    .cta-btn-equal,
+    .cta-card-btn {
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: 0.005em;
+        transition-property: background-color, color, border-color, box-shadow, transform;
+        transition-duration: 180ms;
+        transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .cta-btn-equal:active,
+    .cta-card-btn:active { transform: translateY(0.5px); }
     @media (max-width: 639px) {
         .cta-card-btn {
             min-height: 3rem;
