@@ -53,17 +53,15 @@ lang: en
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-3 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="token-chip edx-soft-border edx-soft-bg edx-soft-text">{{ unit.status | default: 'presale' | upcase }}</span>
+                        {% assign unit_status_label = unit.status | default: 'presale' | upcase %}
+                        {% include ui/token-chip.html label=unit_status_label classes='edx-soft-border edx-soft-bg edx-soft-text' %}
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <div class="cta-stack">
-                        <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="cta-card-btn edx-solid-bg edx-solid-text py-2.5 rounded-lg font-semibold text-xs edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Unit Presale</a>
-                        <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="cta-card-btn border edx-soft-border edx-soft-bg edx-soft-text py-2.5 rounded-lg font-semibold text-xs edx-soft-hover hover:shadow-md transition ui-focus-ring">Read Presale Terms PDF</a>
-                    </div>
+                    {% include ui/kahoot-unit-actions.html board='edx' presale_url=unit.presale_url terms_url=terms_pdf_url %}
                 </article>
             {% endfor %}
         </div>
@@ -82,10 +80,15 @@ lang: en
             <div class="mb-10">
                 <div class="flex flex-wrap items-center gap-3 mb-4">
                     <h3 class="text-xl font-bold text-gray-900">{{ section.section_title }}</h3>
-                    <span class="token-chip token-chip-sm edx-soft-border edx-soft-bg edx-soft-text">{{ section.section_code }}</span>
-                    <span class="token-chip token-chip-sm {% if section.tier == 'Foundation' %}edx-soft-border edx-soft-bg edx-soft-text{% else %}token-chip-dashed edx-soft-border bg-white edx-soft-text{% endif %}">{{ section.tier }}</span>
+                    {% include ui/token-chip.html label=section.section_code size='sm' classes='edx-soft-border edx-soft-bg edx-soft-text' %}
+                    {% if section.tier == 'Foundation' %}
+                        {% include ui/token-chip.html label=section.tier size='sm' classes='edx-soft-border edx-soft-bg edx-soft-text' %}
+                    {% else %}
+                        {% include ui/token-chip.html label=section.tier size='sm' dashed='true' classes='edx-soft-border bg-white edx-soft-text' %}
+                    {% endif %}
                     {% if unit %}
-                        <span class="token-chip token-chip-sm edx-soft-border edx-soft-bg edx-soft-text">L3: {{ unit.code }}</span>
+                        {% assign unit_chip_label = 'L3: ' | append: unit.code %}
+                        {% include ui/token-chip.html label=unit_chip_label size='sm' classes='edx-soft-border edx-soft-bg edx-soft-text' %}
                     {% endif %}
                     <span class="text-xs text-gray-500">{{ section.count }} SubTopics</span>
                 </div>
@@ -179,21 +182,17 @@ lang: en
                                 <img src="{{ item.cover }}" alt="{{ item.code }} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
                             </picture>
                             <div class="flex flex-wrap items-center gap-2 mb-2">
-                                <span class="token-chip edx-soft-border edx-soft-bg edx-soft-text">{{ item.code }}</span>
-                                <span class="token-chip {{ status_chip_class }}">{{ status_label }}</span>
+                                {% include ui/token-chip.html label=item.code classes='edx-soft-border edx-soft-bg edx-soft-text' %}
+                                {% include ui/token-chip.html label=status_label classes=status_chip_class %}
                             </div>
                             <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize">{{ item.title }}</h4>
                             <p class="text-[11px] text-gray-500 mb-1">{{ release_line }}</p>
                             <p class="text-[11px] text-gray-500 mb-3">{{ presale_note }}</p>
-                            <div class="mt-2 cta-stack">
-                                {% if card_exercise_url != '' %}
-                                <a href="{{ card_exercise_url | relative_url }}" class="cta-card-btn edx-solid-bg edx-solid-text py-3 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition ui-focus-ring">L0: Interactive Exercise</a>
-                                {% endif %}
-                                <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Kahoot</a>
-                                <a href="{{ card_worksheet_url }}" target="_blank" rel="noopener" class="cta-card-btn border edx-soft-border edx-soft-bg edx-soft-text py-3 rounded-lg font-semibold text-sm edx-soft-hover hover:shadow-sm transition ui-focus-ring">L1: Worksheet</a>
-                                <a href="{{ card_section_bundle_url }}" target="_blank" rel="noopener" class="cta-card-btn border edx-soft-border bg-white edx-soft-text py-3 rounded-lg font-semibold text-sm edx-soft-hover hover:shadow-sm transition ui-focus-ring">L2: Section Bundle</a>
-                                <a href="{{ card_unit_bundle_url }}" target="_blank" rel="noopener" class="cta-card-btn border edx-soft-border bg-white edx-soft-text py-3 rounded-lg font-semibold text-sm edx-soft-hover hover:shadow-sm transition ui-focus-ring">L3: Unit Bundle</a>
-                            </div>
+                            {% assign card_exercise_relative_url = '' %}
+                            {% if card_exercise_url != '' %}
+                                {% assign card_exercise_relative_url = card_exercise_url | relative_url %}
+                            {% endif %}
+                            {% include ui/kahoot-card-actions.html board='edx' exercise_url=card_exercise_relative_url kahoot_url=card_kahoot_url worksheet_url=card_worksheet_url section_bundle_url=card_section_bundle_url unit_bundle_url=card_unit_bundle_url %}
                         </article>
                     {% endfor %}
                 </div>

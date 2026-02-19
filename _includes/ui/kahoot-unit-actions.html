@@ -1,0 +1,17 @@
+{% assign board_key = include.board | default: 'cie' %}
+{% assign presale_label = include.presale_label | default: 'Open Unit Presale' %}
+{% assign terms_label = include.terms_label | default: 'Read Presale Terms PDF' %}
+{% assign wrapper_class = include.wrapper_class | default: 'cta-stack' %}
+
+{% if board_key == 'edx' %}
+  {% assign presale_classes = 'cta-card-btn edx-solid-bg edx-solid-text py-2.5 rounded-lg font-semibold text-xs edx-solid-hover hover:shadow-md transition' %}
+  {% assign terms_classes = 'cta-card-btn border edx-soft-border edx-soft-bg edx-soft-text py-2.5 rounded-lg font-semibold text-xs edx-soft-hover hover:shadow-md transition' %}
+{% else %}
+  {% assign presale_classes = 'cta-card-btn cie-solid-bg cie-solid-text py-2.5 rounded-lg font-semibold text-xs cie-solid-hover hover:shadow-md transition' %}
+  {% assign terms_classes = 'cta-card-btn border cie-soft-border cie-soft-bg cie-soft-text py-2.5 rounded-lg font-semibold text-xs cie-soft-hover hover:shadow-md transition' %}
+{% endif %}
+
+<div class="{{ wrapper_class }}">
+  {% include ui/cta-link.html href=include.presale_url target='_blank' rel='noopener' classes=presale_classes label=presale_label %}
+  {% include ui/cta-link.html href=include.terms_url target='_blank' rel='noopener' classes=terms_classes label=terms_label %}
+</div>

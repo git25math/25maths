@@ -27,8 +27,16 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Install Python dependencies
-        run: python3 -m pip install --upgrade pip pyyaml
+        run: python3 -m pip install --upgrade pip pyyaml pillow
+
+      - name: Install Playwright Chromium
+        run: npx --yes playwright@1.52.0 install --with-deps chromium
 
       - name: Validate Kahoot data integrity
         run: python3 scripts/health/check_kahoot_data.py
@@ -44,3 +52,6 @@ jobs:
 
       - name: Build site with Jekyll
         run: bundle exec jekyll build
+
+      - name: Validate visual regression snapshots
+        run: bash scripts/health/check_visual_regression.sh

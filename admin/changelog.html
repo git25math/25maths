@@ -225,6 +225,10 @@ title: 25Maths Changelog
                     <span><strong>Global token hardening + style guardrails</strong>: Expanded `cie/edx` solid-token text normalization across EN/ZH and CIE/Edexcel main funnel pages (free, pricing, products, gift-thanks, and entry routes), replaced repeated long `focus-visible` utility chains with a shared `ui-focus-ring` token on key homepage/module/Kahoot actions, and added `scripts/health/check_style_consistency.sh` with CI + scheduled health-workflow integration to prevent style regression.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot UI componentization + visual snapshot baseline</strong>: Added reusable UI includes (`ui/token-chip`, `ui/cta-link`, `ui/kahoot-unit-actions`, `ui/kahoot-card-actions`) and migrated CIE/Edexcel Kahoot directory chips and L0-L3 action stacks to these shared components; introduced Playwright-based screenshot tooling (`capture/update/check`) with committed baseline snapshots (desktop + mobile for `/`, `/cie0580/`, `/edx4ma1/`, `/kahoot/`) and wired visual regression checks into both CI and scheduled site-health workflows.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>
