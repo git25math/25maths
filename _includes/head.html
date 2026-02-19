@@ -91,6 +91,12 @@
         --cie-igcse-600: #c94924;
         --cie-igcse-700: #aa3c1d;
         --cie-igcse-800: #8f2f17;
+        --warm-action-100: #f6ece8;
+        --warm-action-200: #eedcd6;
+        --warm-action-300: #c7a49a;
+        --warm-action-600: #b4482a;
+        --warm-action-700: #9e3d23;
+        --warm-action-800: #8f2f17;
         --edx-igcse-100: #cfe1de;
         --edx-igcse-200: #b8d2cd;
         --edx-igcse-600: #0e6f84;
@@ -236,6 +242,35 @@
         background-color: var(--edx-igcse-100);
         color: var(--edx-igcse-700);
         border-color: var(--edx-igcse-700);
+    }
+
+    .exercise-warm-primary {
+        background-color: var(--warm-action-600);
+        color: #fff;
+        border: 1px solid var(--warm-action-600);
+    }
+    .exercise-warm-primary:hover {
+        background-color: var(--warm-action-700);
+        color: #fff;
+        border-color: var(--warm-action-700);
+    }
+
+    .exercise-warm-secondary {
+        background-color: var(--warm-action-100);
+        color: var(--warm-action-800);
+        border: 1px solid var(--warm-action-300);
+    }
+    .exercise-warm-secondary:hover {
+        background-color: var(--warm-action-200);
+        color: var(--warm-action-800);
+        border-color: var(--warm-action-300);
+    }
+
+    .exercise-kahoot-bridge {
+        box-shadow: 0 4px 10px rgba(143, 47, 23, 0.14);
+    }
+    .exercise-kahoot-bridge:hover {
+        box-shadow: 0 6px 14px rgba(143, 47, 23, 0.2);
     }
 
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */

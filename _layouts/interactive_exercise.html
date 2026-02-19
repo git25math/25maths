@@ -78,13 +78,13 @@
             <h2 class="text-xl font-bold text-gray-900">Continue This Topic Loop</h2>
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
             <div class="mt-4 flex flex-wrap gap-3">
-                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Try Another Interactive Exercise</a>
+                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">Try Another Interactive Exercise</a>
                 <span id="next-exercise-link-slot"></span>
                 {% if board_slug != '' %}
-                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">Back to {{ board_directory_label }}</a>
+                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-secondary">Back to {{ board_directory_label }}</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.kahoot_url and exercise_links.kahoot_url != '' %}
-                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition">Play Matching Kahoot</a>
+                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition ui-focus-ring exercise-kahoot-bridge">Play Matching Kahoot</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.worksheet_payhip_url and exercise_links.worksheet_payhip_url != '' %}
                 <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>

@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
         const nextLabelSafe = escapeHtml(nextLabel);
         nextExerciseLinkSlot.innerHTML = `
-            <a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>
+            <a href="${nextHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">${nextLabelSafe}</a>
         `;
     }
 
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function buildCompletionActionsHtml() {
         const retryHref = escapeHtml(window.location.pathname);
         const actionButtons = [
-            `<a href="${retryHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Retry This Exercise</a>`,
+            `<a href="${retryHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">Retry This Exercise</a>`,
         ];
         if (nextExercise && nextExercise.url) {
             const nextLabel = nextExercise.code
@@ -334,14 +334,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
             const nextLabelSafe = escapeHtml(nextLabel);
             actionButtons.push(
-                `<a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>`
+                `<a href="${nextHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">${nextLabelSafe}</a>`
             );
         }
 
         if (links && typeof links === 'object' && links.kahoot_url) {
             const kahootHref = escapeHtml(withTrackingUrl(links.kahoot_url, 'kahoot_complete'));
             actionButtons.push(
-                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>`
+                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition ui-focus-ring exercise-kahoot-bridge">Play Matching Kahoot</a>`
             );
         }
         if (links && typeof links === 'object' && links.worksheet_payhip_url) {
