@@ -542,12 +542,10 @@ lang: en
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
-      const interactiveButtonClass = item.board === 'cie0580'
-        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
-        : 'edx-solid-bg text-white edx-solid-hover hover:shadow-md';
-      const worksheetButtonClass = item.board === 'cie0580'
-        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
-        : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm';
+      const interactiveButtonClass = 'kahoot-ladder-l1 text-white hover:shadow-md';
+      const worksheetButtonClass = 'kahoot-ladder-l2 text-white hover:shadow-md';
+      const sectionBundleButtonClass = 'kahoot-ladder-l3 hover:shadow-sm';
+      const unitBundleButtonClass = 'kahoot-ladder-l4 hover:shadow-sm';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'
@@ -613,8 +611,8 @@ lang: en
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${kahootLabel}</a>
             ${interactiveButton}
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${worksheetLabel}</a>
-            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${sectionBundleLabel}</a>
-            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${unitBundleLabel}</a>
+            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center ${sectionBundleButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${sectionBundleLabel}</a>
+            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center ${unitBundleButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${unitBundleLabel}</a>
             <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="text-center border border-dashed border-gray-300 bg-white text-gray-600 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
           </div>
         </article>
