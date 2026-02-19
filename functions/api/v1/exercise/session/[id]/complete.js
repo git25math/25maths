@@ -1,9 +1,9 @@
-import { getBearerToken, jsonResponse } from '../../../../../../_lib/http.js';
+import { getBearerToken, jsonResponse } from '../../../../../_lib/http.js';
 import {
   completeExerciseSession,
   fetchExerciseSession,
   getUserFromAccessToken,
-} from '../../../../../../_lib/supabase_server.js';
+} from '../../../../../_lib/supabase_server.js';
 
 function parseInteger(value) {
   const num = Number(value);

@@ -1,9 +1,9 @@
-import { getBearerToken, jsonResponse } from '../../../../../../_lib/http.js';
+import { getBearerToken, jsonResponse } from '../../../../../_lib/http.js';
 import {
   fetchExerciseSession,
   getUserFromAccessToken,
   insertQuestionAttempt,
-} from '../../../../../../_lib/supabase_server.js';
+} from '../../../../../_lib/supabase_server.js';
 
 function parseIntegerOrNull(value) {
   if (value === null || value === undefined || value === '') return null;
