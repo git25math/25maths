@@ -17,11 +17,12 @@ lang: en
             Browse SubTopic directories for CIE 0580 and Edexcel 4MA1.
             CIE is grouped by <strong>Core / Extended</strong>; Edexcel is grouped by <strong>Foundation / Higher</strong>.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg edx-solid-text px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Open Interactive Exercises Hub</a>
-            <a href="/kahoot/#free-sample-live" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Free Samples Live Now</a>
+        <p data-bilingual-block class="text-sm text-gray-200 mt-3 max-w-3xl mx-auto">按考试局与层级浏览 SubTopic 目录，先练习再升级到 worksheet 与 bundle。</p>
+        <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
+            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
         </div>
     </div>
 </section>
@@ -31,22 +32,23 @@ lang: en
         <div class="mb-10">
             <h2 class="text-3xl font-bold text-gray-900 mb-3">Free Sample Sets (Live Now)</h2>
             <p class="text-gray-600">These sample sets are published first so visitors can try the real question quality before moving into the full worksheet and bundle path.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">先体验免费样题，再决定是否进入完整产品闭环。</p>
             <p class="text-sm text-gray-500 mt-2">Published set: 16 topics total (updated {{ free_samples.updated_at }}).</p>
         </div>
 
         <div class="mb-4 grid lg:grid-cols-[1fr_auto] gap-3">
             <div id="free-sample-filters" class="flex flex-wrap items-center gap-2">
                 <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Batch</span>
-                <button type="button" data-filter-batch="batch_1" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white ui-focus-ring" aria-pressed="true">Batch 1 (Default)</button>
-                <button type="button" data-filter-batch="batch_2" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 ui-focus-ring" aria-pressed="false">Batch 2</button>
-                <button type="button" data-filter-batch="batch_3" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 ui-focus-ring" aria-pressed="false">Batch 3</button>
-                <button type="button" data-filter-batch="all" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 ui-focus-ring" aria-pressed="false">All Batches</button>
+                <button type="button" data-filter-batch="batch_1" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="true">Batch 1 (Default)</button>
+                <button type="button" data-filter-batch="batch_2" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="false">Batch 2</button>
+                <button type="button" data-filter-batch="batch_3" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="false">Batch 3</button>
+                <button type="button" data-filter-batch="all" class="free-sample-filter-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="false">All Batches</button>
             </div>
             <div id="free-sample-board-filters" class="flex flex-wrap items-center gap-2 lg:justify-end">
                 <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Board</span>
-                <button type="button" data-filter-board="all" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white ui-focus-ring" aria-pressed="true">All Boards</button>
-                <button type="button" data-filter-board="cie0580" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 ui-focus-ring" aria-pressed="false">CIE 0580</button>
-                <button type="button" data-filter-board="edexcel-4ma1" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 ui-focus-ring" aria-pressed="false">Edexcel 4MA1</button>
+                <button type="button" data-filter-board="all" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-gray-900 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="true">All Boards</button>
+                <button type="button" data-filter-board="cie0580" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="false">CIE 0580</button>
+                <button type="button" data-filter-board="edexcel-4ma1" class="free-sample-board-btn text-xs px-3 py-2 rounded-full border border-gray-300 font-semibold bg-white text-gray-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" aria-pressed="false">Edexcel 4MA1</button>
             </div>
         </div>
         <div class="mb-6 grid sm:grid-cols-[1fr_auto] gap-3">
@@ -54,7 +56,7 @@ lang: en
                 <span class="sr-only">Search free sample set by code or title</span>
                 <input id="free-sample-search" type="text" placeholder="Search code or title (e.g. C1-13, percentages)" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
             </label>
-            <button id="free-sample-reset" type="button" class="px-4 py-2.5 rounded-lg border border-gray-300 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 hover:shadow-md transition ui-focus-ring">Reset Filters</button>
+            <button id="free-sample-reset" type="button" class="px-4 py-2.5 rounded-lg border border-gray-300 text-sm font-semibold text-gray-700 bg-white hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Reset Filters</button>
         </div>
         <p id="free-sample-filter-summary" class="text-sm text-gray-600 mb-4" aria-live="polite">Default view: Batch 1 only.</p>
         <div id="free-sample-empty-state" class="hidden mb-6 bg-amber-50 border border-amber-200 text-amber-800 text-sm rounded-xl px-4 py-3">No free sample sets match this filter. Try another batch, board, or keyword.</div>
@@ -66,43 +68,27 @@ lang: en
                 {% else %}
                     {% assign directory_url = "/kahoot/edexcel-4ma1/" %}
                 {% endif %}
-                {% assign board_badge_class = "edx-soft-border edx-soft-bg edx-soft-text" %}
-                {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
-                {% assign board_explorer_button_class = "border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover" %}
-                {% assign board_meta_chip_class = "edx-soft-border edx-soft-bg edx-soft-text" %}
+                {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
+                {% assign board_button_class = "edx-solid-bg text-white edx-solid-hover" %}
                 {% if board.board == "cie0580" %}
-                    {% assign board_badge_class = "cie-soft-border cie-soft-bg cie-soft-text" %}
-                    {% assign board_button_class = "cie-solid-bg cie-solid-hover" %}
-                    {% assign board_explorer_button_class = "border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover" %}
-                    {% assign board_meta_chip_class = "cie-soft-border cie-soft-bg cie-soft-text" %}
+                    {% assign board_badge_class = "bg-primary/10 text-primary" %}
+                    {% assign board_button_class = "bg-primary text-white" %}
                 {% endif %}
                 <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6" data-free-sample-board="{{ board.board }}">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
                         <div>
-                            <span class="token-chip token-chip-sm font-bold tracking-wider mb-2 {{ board_badge_class }}">{{ board.board_label }}</span>
+                            <p class="text-xs font-bold tracking-wider mb-2 {{ board_badge_class }}">{{ board.board_label }}</p>
                             <h3 class="text-xl font-bold text-gray-900">{{ board.tier_scope }} Free Sample Collection</h3>
                         </div>
-                        <span class="token-chip token-chip-sm token-chip-live" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
                     </div>
-                    <div class="flex flex-col sm:flex-row cta-row-equal gap-4 mb-5">
-                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open {{ board.board_label }} Kahoot Channel</a>
-                        <a href="{{ directory_url }}" class="sm:flex-1 cta-btn-equal {{ board_button_class }} px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Full Directory</a>
+                    <div class="flex flex-col sm:flex-row gap-3 mb-5">
+                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open {{ board.board_label }} Kahoot Channel</a>
+                        <a href="{{ directory_url }}" class="sm:flex-1 inline-flex items-center justify-center text-center {{ board_button_class }} px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Full Directory</a>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-4">
                         {% for item in board.items %}
                             {% assign item_batch_key = item.batch | downcase | replace: ' ', '_' %}
-                            {% assign item_tier_key = item.tier | downcase %}
-                            {% assign board_tier_chip_class = "edx-soft-border edx-soft-bg edx-soft-text" %}
-                            {% if board.board == "cie0580" %}
-                                {% assign board_tier_chip_class = "cie-soft-border cie-soft-bg cie-soft-text" %}
-                                {% if item_tier_key == "extended" %}
-                                    {% assign board_tier_chip_class = "token-chip-dashed cie-soft-border bg-white cie-soft-text" %}
-                                {% endif %}
-                            {% else %}
-                                {% if item_tier_key == "higher" %}
-                                    {% assign board_tier_chip_class = "token-chip-dashed edx-soft-border bg-white edx-soft-text" %}
-                                {% endif %}
-                            {% endif %}
                             <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm" data-free-sample-card data-board="{{ board.board }}" data-batch="{{ item_batch_key }}" data-code="{{ item.code | downcase }}" data-title="{{ item.title | downcase }}" data-tier="{{ item.tier | downcase }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
                                 <div class="flex flex-col sm:flex-row gap-3 mb-3">
                                     <div class="h-20 w-full sm:w-32 sm:flex-shrink-0 bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center p-2">
@@ -110,17 +96,17 @@ lang: en
                                     </div>
                                     <div class="min-w-0 flex-1">
                                         <div class="flex flex-wrap items-center gap-2 mb-2">
-                                            <span class="token-chip {{ board_meta_chip_class }}">{{ item.code }}</span>
-                                            <span class="token-chip token-chip-live">FREE SAMPLE</span>
-                                            <span class="token-chip {{ board_meta_chip_class }}">{{ item.batch }}</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
+                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
                                         </div>
                                         <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
-                                        <span class="token-chip {{ board_tier_chip_class }}">{{ item.tier }} tier</span>
+                                        <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
                                     </div>
                                 </div>
-                                <div class="cta-card-grid cta-card-grid--split">
-                                    <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Play Free Sample</a>
-                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="cta-card-btn {{ board_explorer_button_class }} py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition ui-focus-ring">Open In Explorer</a>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Play Free Sample</a>
+                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open In Explorer</a>
                                 </div>
                             </article>
                         {% endfor %}
@@ -278,6 +264,7 @@ lang: en
         <div class="mb-10">
             <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Directories</h2>
             <p class="text-gray-600">Both pages are generated from the current `micro-topics` folder structures in your project workspace.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">目录会随 `micro-topics` 自动同步更新，避免手工维护遗漏。</p>
             <p class="text-sm text-gray-500 mt-2">Per-SubTopic fields map to one closed-loop offer ladder: `Worksheet (L1)` -> `Section Bundle (L2)` -> `Unit Bundle (L3)` plus presale dates and notes.</p>
         </div>
 
@@ -291,9 +278,9 @@ lang: en
                 <h3 class="text-xl font-bold text-gray-900">Core + Extended SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ cie_data.total_subtopics }} SubTopics across {{ cie_data.sections | size }} sections.</p>
-                <div class="flex flex-col sm:flex-row cta-row-equal gap-4">
-                    <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open CIE 0580 Kahoot Channel</a>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 Kahoot Channel</a>
                 </div>
             </article>
 
@@ -306,9 +293,9 @@ lang: en
                 <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
-                <div class="flex flex-col sm:flex-row cta-row-equal gap-4">
-                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg edx-solid-text px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
         </div>
@@ -320,6 +307,7 @@ lang: en
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
             <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 interactive practice -> L1 -> L2 -> L3 with presale terms.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">建议筛选顺序：先选考试局，再选层级，最后按关键词定位题组。</p>
         </div>
 
         <div class="bg-white rounded-2xl border border-gray-200 p-5 mb-6">
@@ -354,7 +342,7 @@ lang: en
         <p id="explorer-summary" class="text-sm text-gray-600 mb-4">Choose an exam board to begin filtering.</p>
         <div id="explorer-results" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
         <div class="mt-5 text-center">
-            <button id="explorer-load-more" type="button" class="hidden bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition ui-focus-ring">Load More</button>
+            <button id="explorer-load-more" type="button" class="hidden bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Load More</button>
         </div>
     </div>
 </section>
@@ -552,49 +540,26 @@ lang: en
       const hasInteractiveExercise = Boolean((item.exerciseUrl || '').trim());
       const interactiveExerciseUrl = hasInteractiveExercise ? item.exerciseUrl : '';
       const boardBadge = item.board === 'cie0580'
-        ? 'cie-soft-border cie-soft-bg cie-soft-text'
-        : 'edx-soft-border edx-soft-bg edx-soft-text';
-      const boardMetaChipClass = item.board === 'cie0580'
-        ? 'cie-soft-border cie-soft-bg cie-soft-text'
-        : 'edx-soft-border edx-soft-bg edx-soft-text';
-      const itemTier = (item.tier || '').toLowerCase();
-      const tierBadgeClass = item.board === 'cie0580'
-        ? (itemTier === 'core'
-          ? 'cie-soft-border cie-soft-bg cie-soft-text'
-          : 'token-chip-dashed cie-soft-border bg-white cie-soft-text')
-        : (itemTier === 'foundation'
-          ? 'edx-soft-border edx-soft-bg edx-soft-text'
-          : 'token-chip-dashed edx-soft-border bg-white edx-soft-text');
+        ? 'bg-emerald-100 text-emerald-700'
+        : 'border edx-soft-border edx-soft-bg edx-soft-text';
       const interactiveButtonClass = item.board === 'cie0580'
-        ? 'cie-solid-bg cie-solid-hover hover:shadow-md'
-        : 'edx-solid-bg edx-solid-hover hover:shadow-md';
+        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
+        : 'edx-solid-bg text-white edx-solid-hover hover:shadow-md';
       const worksheetButtonClass = item.board === 'cie0580'
-        ? 'border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover hover:shadow-sm'
+        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
         : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm';
-      const secondaryButtonClass = item.board === 'cie0580'
-        ? 'border cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
-        : 'border edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
-      const termsButtonClass = item.board === 'cie0580'
-        ? 'border token-chip-dashed cie-soft-border bg-white cie-soft-text cie-soft-hover hover:shadow-sm'
-        : 'border token-chip-dashed edx-soft-border bg-white edx-soft-text edx-soft-hover hover:shadow-sm';
-      const presaleStatusClass = item.board === 'cie0580'
-        ? 'cie-soft-border cie-soft-bg cie-soft-text'
-        : 'edx-soft-border edx-soft-bg edx-soft-text';
-      const readyForBuildStatusClass = item.board === 'cie0580'
-        ? 'token-chip-dashed cie-soft-border bg-white cie-soft-text'
-        : 'token-chip-dashed edx-soft-border bg-white edx-soft-text';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'
         : rawStatus;
       const statusClassMap = {
-        free_sample: 'token-chip-live',
-        live: 'token-chip-live',
-        published: 'token-chip-live',
-        presale: presaleStatusClass,
-        ready_for_build: readyForBuildStatusClass,
-        planned: 'border-gray-300 bg-gray-100 text-gray-700',
-        archived: 'border-gray-300 bg-gray-200 text-gray-600'
+        free_sample: 'bg-emerald-100 text-emerald-700',
+        live: 'bg-emerald-100 text-emerald-700',
+        published: 'bg-emerald-100 text-emerald-700',
+        presale: 'bg-amber-100 text-amber-700',
+        ready_for_build: 'bg-blue-100 text-blue-700',
+        planned: 'bg-gray-100 text-gray-700',
+        archived: 'bg-gray-200 text-gray-600'
       };
       const statusLabelMap = {
         free_sample: 'Free Sample',
@@ -617,7 +582,7 @@ lang: en
         ? item.cover.replace(/\.png$/i, '.webp')
         : item.cover;
       const interactiveButton = hasInteractiveExercise
-        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="cta-card-btn ${interactiveButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">L0: Interactive Exercise</a>`
+        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center ${interactiveButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L0: Interactive Exercise</a>`
         : '';
 
       return `
@@ -627,22 +592,22 @@ lang: en
           <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
           </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="token-chip ${boardBadge}">${escapeHtml(config.label)}</span>
-            <span class="token-chip ${tierBadgeClass}">${escapeHtml(item.tier)}</span>
-            <span class="token-chip ${boardMetaChipClass}">${escapeHtml(item.sectionCode)}</span>
-            <span class="token-chip ${statusClass}">${escapeHtml(statusLabel)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.sectionCode)}</span>
+            <span class="text-[11px] px-2 py-1 rounded-full ${statusClass} font-semibold">${escapeHtml(statusLabel)}</span>
           </div>
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
           <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
           <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
-          <div class="mt-2 cta-stack">
+          <div class="mt-1 grid grid-cols-1 gap-3">
             ${interactiveButton}
-            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Kahoot</a>
-            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">L1: Worksheet</a>
-            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${secondaryButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">L2: Section Bundle</a>
-            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${secondaryButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">L3: Unit Bundle</a>
-            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="cta-card-btn ${termsButtonClass} py-2.5 rounded-lg font-semibold text-xs transition ui-focus-ring">Read Presale Terms PDF</a>
+            <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>
+            <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L1: Worksheet</a>
+            <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L2: Section Bundle</a>
+            <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center border border-gray-300 bg-gray-50 text-gray-700 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">L3: Unit Bundle</a>
+            <a href="${escapeHtml(termsPdfUrl)}" target="_blank" rel="noopener" class="text-center border border-dashed border-gray-300 bg-white text-gray-600 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
           </div>
         </article>
       `;

@@ -11,8 +11,12 @@ active_page: free
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">Free 4MA1 Resources</h1>
         <p class="text-xl opacity-90 mb-6">58-page vocabulary card bundle — 6 complete sets covering the full syllabus</p>
-        {% include ui/cta-link.html href='/free-gift.html' classes='cta-btn-equal edx-solid-bg edx-solid-text px-10 py-4 rounded-lg font-bold text-lg edx-solid-hover hover:shadow-lg transition' label='Get Free Gift Pack' %}
+        <p data-bilingual-block class="text-sm text-gray-200 mb-6">免费词汇卡覆盖 4MA1 高频术语，适合快速复习与课前预热。</p>
+        <a href="/free-gift.html" class="edx-solid-bg text-white px-10 py-4 rounded-lg font-bold text-lg edx-solid-hover hover:shadow-2xl transition transform hover:-translate-y-1 inline-block">
+            Get Free Gift Pack
+        </a>
         <p class="text-sm opacity-75 mt-3">Complete a short survey to unlock both free packs and get launch updates.</p>
+        <p data-bilingual-block class="text-xs text-gray-200 mt-2">完成简短表单即可解锁赠送与后续更新通知。</p>
     </div>
 </section>
 
@@ -22,20 +26,64 @@ active_page: free
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-900 mb-4">What's Included</h2>
             <p class="text-lg text-gray-600">6 vocabulary card sets aligned to the Pearson Edexcel IGCSE Mathematics (4MA1) syllabus. Each set contains key mathematical terms with clear definitions in English and Chinese.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">按主题分组，便于按章节逐步掌握关键术语。</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
-            {% include ui/free-topic-card.html board='edx' badge='4MA1' icon='🔢' title='Number Vocabulary Cards' description='Numbers, fractions, decimals, percentages, standard form, and set theory. 52 terms.' %}
-            {% include ui/free-topic-card.html board='edx' badge='4MA1' icon='📐' title='Algebra Vocabulary Cards' description='Equations, formulae, identities, completing the square, and algebraic proof. 27 terms.' %}
-            {% include ui/free-topic-card.html board='edx' badge='4MA1' icon='📈' title='Functions Vocabulary Cards' description='Functions, sequences, graphs, composite, inverse, and differentiation basics. 38 terms.' %}
-            {% include ui/free-topic-card.html board='edx' badge='4MA1' icon='📏' title='Geometry & Trig Vocab Cards' description='Angles, shapes, constructions, area, volume, Pythagoras, and trigonometry. 75 terms.' %}
-            {% include ui/free-topic-card.html board='edx' badge='4MA1' icon='➡️' title='Vectors Vocabulary Cards' description='Vectors, transformations, magnitude, direction, and scalar multiples. 30 terms.' %}
-            {% include ui/free-topic-card.html board='edx' badge='4MA1' icon='📊' title='Statistics Vocabulary Cards' description='Data, frequency, averages, diagrams, cumulative frequency, and probability. 44 terms.' %}
+            <!-- Number -->
+            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-4xl mb-4">🔢</div>
+                <h3 class="text-lg font-bold mb-2">Number Vocabulary Cards</h3>
+                <p class="text-gray-600 text-sm mb-3">Numbers, fractions, decimals, percentages, standard form, and set theory. 52 terms.</p>
+                <span class="inline-block edx-solid-bg text-white text-xs px-2 py-1 rounded-full font-bold">4MA1</span>
+            </div>
+
+            <!-- Algebra -->
+            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-4xl mb-4">📐</div>
+                <h3 class="text-lg font-bold mb-2">Algebra Vocabulary Cards</h3>
+                <p class="text-gray-600 text-sm mb-3">Equations, formulae, identities, completing the square, and algebraic proof. 27 terms.</p>
+                <span class="inline-block edx-solid-bg text-white text-xs px-2 py-1 rounded-full font-bold">4MA1</span>
+            </div>
+
+            <!-- Functions -->
+            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-4xl mb-4">📈</div>
+                <h3 class="text-lg font-bold mb-2">Functions Vocabulary Cards</h3>
+                <p class="text-gray-600 text-sm mb-3">Functions, sequences, graphs, composite, inverse, and differentiation basics. 38 terms.</p>
+                <span class="inline-block edx-solid-bg text-white text-xs px-2 py-1 rounded-full font-bold">4MA1</span>
+            </div>
+
+            <!-- Geometry & Trigonometry -->
+            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-4xl mb-4">📏</div>
+                <h3 class="text-lg font-bold mb-2">Geometry & Trig Vocab Cards</h3>
+                <p class="text-gray-600 text-sm mb-3">Angles, shapes, constructions, area, volume, Pythagoras, and trigonometry. 75 terms.</p>
+                <span class="inline-block edx-solid-bg text-white text-xs px-2 py-1 rounded-full font-bold">4MA1</span>
+            </div>
+
+            <!-- Vectors -->
+            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-4xl mb-4">➡️</div>
+                <h3 class="text-lg font-bold mb-2">Vectors Vocabulary Cards</h3>
+                <p class="text-gray-600 text-sm mb-3">Vectors, transformations, magnitude, direction, and scalar multiples. 30 terms.</p>
+                <span class="inline-block edx-solid-bg text-white text-xs px-2 py-1 rounded-full font-bold">4MA1</span>
+            </div>
+
+            <!-- Statistics -->
+            <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-4xl mb-4">📊</div>
+                <h3 class="text-lg font-bold mb-2">Statistics Vocabulary Cards</h3>
+                <p class="text-gray-600 text-sm mb-3">Data, frequency, averages, diagrams, cumulative frequency, and probability. 44 terms.</p>
+                <span class="inline-block edx-solid-bg text-white text-xs px-2 py-1 rounded-full font-bold">4MA1</span>
+            </div>
         </div>
 
         <!-- Download CTA -->
         <div class="text-center mt-12">
-            {% include ui/cta-link.html href='/free-gift.html' classes='cta-btn-equal edx-solid-bg edx-solid-text px-10 py-4 rounded-lg font-bold text-lg edx-solid-hover transition' label='Get Free Gift Pack' %}
+            <a href="/free-gift.html" class="inline-block edx-solid-bg text-white px-10 py-4 rounded-lg font-bold text-lg edx-solid-hover transition">
+                Get Free Gift Pack
+            </a>
         </div>
     </div>
 </section>
@@ -45,6 +93,7 @@ active_page: free
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">Free vs Complete Bundle</h2>
         <p class="text-gray-600 mb-8">Free helps you learn 4MA1 terms. Complete helps you master the full exam.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">免费包侧重术语理解，完整包侧重题型训练与解题方法。</p>
         <div class="grid md:grid-cols-2 gap-6 text-left">
             <div class="bg-white rounded-xl p-6 shadow-sm border">
                 <h3 class="text-lg font-bold mb-3">Free Pack</h3>
@@ -64,7 +113,9 @@ active_page: free
             </div>
         </div>
         <div class="mt-8">
-            {% include ui/cta-link.html href='/edx4ma1/products.html' classes='cta-btn-equal edx-solid-bg edx-solid-text px-8 py-3 rounded-lg font-semibold edx-solid-hover transition' label='View Complete Bundles' %}
+            <a href="/edx4ma1/products.html" class="inline-block edx-solid-bg text-white px-8 py-3 rounded-lg font-semibold edx-solid-hover transition">
+                View Complete Bundles
+            </a>
         </div>
     </div>
 </section>
@@ -72,10 +123,13 @@ active_page: free
 <!-- CTA -->
 <section class="py-16 edx-hero-gradient text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-4">Ready for Complete Exam Preparation?</h2>
+        <h2 class="text-3xl font-bold mb-4">Looking for CIE 0580 Resources?</h2>
         <p class="text-xl mb-8 opacity-90">
-            Our premium bundles include exam-style practice questions, detailed step-by-step solutions, and full Edexcel 4MA1 vocabulary coverage.
+            Our CIE 0580 module includes premium practice bundles with 140+ questions, detailed solutions, and comprehensive vocabulary coverage.
         </p>
-        {% include ui/cta-link.html href='/edx4ma1/products.html' classes='cta-btn-equal edx-soft-bg border edx-soft-border edx-soft-text px-8 py-4 rounded-lg font-bold text-lg edx-soft-hover hover:shadow-lg transition' label='View Premium Bundles' %}
+        <p data-bilingual-block class="text-sm text-gray-200 mb-8">如需 Cambridge 路线，可切换到 CIE 0580 模块继续学习。</p>
+        <a href="/cie0580/" class="edx-solid-bg text-white px-8 py-4 rounded-lg font-bold text-lg edx-solid-hover hover:shadow-2xl transition transform hover:-translate-y-1 inline-block">
+            Explore CIE 0580 Resources
+        </a>
     </div>
 </section>
