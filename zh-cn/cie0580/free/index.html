@@ -19,9 +19,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">免费 CIE 0580 资源</h1>
         <p class="text-xl opacity-90 mb-6">88 页中英对照词汇卡 — 8 套完整合集</p>
-        <a href="/zh-cn/free-gift.html" class="cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition transform hover:-translate-y-1 inline-block">
-            领取免费资料赠品
-        </a>
+        {% include ui/cta-link.html href='/zh-cn/free-gift.html' classes='cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-10 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition' label='领取免费资料赠品' %}
         <p class="text-sm opacity-75 mt-3">先填写简短问卷，即可领取免费资料并接收上新通知。</p>
     </div>
 </section>
@@ -33,19 +31,17 @@ lang_links:
             <p class="text-lg text-gray-600">覆盖 CIE 0580 全部考纲的 8 套词汇卡。</p>
         </div>
         <div class="grid md:grid-cols-4 gap-6">
-            <div class="bg-gray-50 rounded-xl p-6">代数</div>
-            <div class="bg-gray-50 rounded-xl p-6">坐标几何</div>
-            <div class="bg-gray-50 rounded-xl p-6">几何</div>
-            <div class="bg-gray-50 rounded-xl p-6">量度</div>
-            <div class="bg-gray-50 rounded-xl p-6">数与运算</div>
-            <div class="bg-gray-50 rounded-xl p-6">统计</div>
-            <div class="bg-gray-50 rounded-xl p-6">三角函数</div>
-            <div class="bg-gray-50 rounded-xl p-6">向量</div>
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='代数' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='坐标几何' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='几何' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='量度' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='数与运算' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='统计' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='三角函数' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='向量' %}
         </div>
         <div class="text-center mt-12">
-            <a href="/zh-cn/free-gift.html" class="inline-block cie-solid-bg text-white px-10 py-4 rounded-lg font-bold text-lg cie-solid-hover transition">
-                领取免费资料赠品
-            </a>
+            {% include ui/cta-link.html href='/zh-cn/free-gift.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-10 py-4 rounded-lg font-bold text-lg cie-solid-hover transition' label='领取免费资料赠品' %}
         </div>
     </div>
 </section>
@@ -73,9 +69,7 @@ lang_links:
             </div>
         </div>
         <div class="mt-8">
-            <a href="/zh-cn/cie0580/products.html" class="inline-block cie-solid-bg text-white px-8 py-3 rounded-lg font-semibold cie-solid-hover transition">
-                查看完整套装
-            </a>
+            {% include ui/cta-link.html href='/zh-cn/cie0580/products.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-8 py-3 rounded-lg font-semibold cie-solid-hover transition' label='查看完整套装' %}
         </div>
     </div>
 </section>

@@ -19,9 +19,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">Free CIE 0580 Resources</h1>
         <p class="text-xl opacity-90 mb-6">88‑page vocabulary card bundle — 8 complete sets</p>
-        <a href="/en/free-gift.html" class="cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition transform hover:-translate-y-1 inline-block">
-            Get Free Gift Pack
-        </a>
+        {% include ui/cta-link.html href='/en/free-gift.html' classes='cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-10 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition' label='Get Free Gift Pack' %}
         <p class="text-sm opacity-75 mt-3">Complete a short survey to unlock both free packs and get launch updates.</p>
     </div>
 </section>
@@ -33,19 +31,17 @@ lang_links:
             <p class="text-lg text-gray-600">8 vocabulary card sets covering the full CIE 0580 syllabus.</p>
         </div>
         <div class="grid md:grid-cols-4 gap-6">
-            <div class="bg-gray-50 rounded-xl p-6">Algebra</div>
-            <div class="bg-gray-50 rounded-xl p-6">Coordinate Geometry</div>
-            <div class="bg-gray-50 rounded-xl p-6">Geometry</div>
-            <div class="bg-gray-50 rounded-xl p-6">Mensuration</div>
-            <div class="bg-gray-50 rounded-xl p-6">Number</div>
-            <div class="bg-gray-50 rounded-xl p-6">Statistics</div>
-            <div class="bg-gray-50 rounded-xl p-6">Trigonometry</div>
-            <div class="bg-gray-50 rounded-xl p-6">Vectors</div>
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Algebra' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Coordinate Geometry' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Geometry' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Mensuration' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Number' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Statistics' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Trigonometry' %}
+            {% include ui/free-topic-card.html board='cie' badge='0580' title='Vectors' %}
         </div>
         <div class="text-center mt-12">
-            <a href="/en/free-gift.html" class="inline-block cie-solid-bg text-white px-10 py-4 rounded-lg font-bold text-lg cie-solid-hover transition">
-                Get Free Gift Pack
-            </a>
+            {% include ui/cta-link.html href='/en/free-gift.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-10 py-4 rounded-lg font-bold text-lg cie-solid-hover transition' label='Get Free Gift Pack' %}
         </div>
     </div>
 </section>
@@ -73,9 +69,7 @@ lang_links:
             </div>
         </div>
         <div class="mt-8">
-            <a href="/en/cie0580/products.html" class="inline-block cie-solid-bg text-white px-8 py-3 rounded-lg font-semibold cie-solid-hover transition">
-                View Complete Bundles
-            </a>
+            {% include ui/cta-link.html href='/en/cie0580/products.html' classes='cta-btn-equal cie-solid-bg cie-solid-text px-8 py-3 rounded-lg font-semibold cie-solid-hover transition' label='View Complete Bundles' %}
         </div>
     </div>
 </section>

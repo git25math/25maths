@@ -142,6 +142,10 @@ title: 25Maths Changelog
                 </li>
                 <li class="flex items-start gap-2">
                     <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>CTA rhythm tokenization</strong>: Added shared `cta-*` layout helpers (equal-height row CTAs, card action split-grid, and action-stack sizing) and applied them across Kahoot hub + CIE/Edexcel board directories + Edexcel module entry so button spacing, vertical centering, and visual hierarchy remain consistent across all key touchpoints.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
                     <span><strong>Terminology normalization</strong>: Updated remaining front-end wording from `International GCSE` to `IGCSE` on Edexcel pages to keep qualification naming consistent with the Cambridge pathway convention.</span>
                 </li>
                 <li class="flex items-start gap-2">
@@ -169,12 +173,124 @@ title: 25Maths Changelog
                     <span><strong>Edexcel entry-point parity pass</strong>: Extended the same `edx-*` palette to remaining Edexcel touchpoints on EN/ZH home cards, Kahoot hub board cards + explorer button logic, Chinese Kahoot bridge page, EN/ZH gift-thanks download CTAs, and EN/ZH exercise-hub Edexcel badges/chips to eliminate residual `secondary`/`amber` color drift.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Hero copy parity (CIE vs Edexcel)</strong>: Replaced CIE hero marketing-style copy with the same exam-resource/status structure used on Edexcel (`Board + Exam-Ready Resources`, exam-aligned descriptor, and live L1/L2/L3 status line) on both `/cie0580/` and `/en/cie0580/`.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Second-screen channel parity</strong>: Unified CIE `PRACTICE CHANNEL` copy and CTA row behavior with Edexcel by adopting the same descriptive sentence pattern and equal-height button alignment rhythm on `/cie0580/` and `/en/cie0580/`.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>CIE trilingual CTA rhythm alignment</strong>: Extended the same `cta-row-equal` + `cta-btn-equal` structure to CIE hero and channel CTA rows on `/cie0580/`, `/en/cie0580/`, and `/zh-cn/cie0580/`, and aligned the Chinese channel description to the same “Kahoot start -> worksheet/bundle upgrade” path expression.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Membership block parity pass</strong>: Normalized CIE membership highlight section spacing (`py-16`), synchronized EN/ZH copy phrasing with explicit CIE context, and refactored price+CTA rows to responsive stacked layout (`w-full md:w-auto`, `cta-btn-equal`) for stronger mobile breathing space and cross-language alignment.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>ZH hero copy parity</strong>: Reframed `/zh-cn/cie0580/` hero copy to match the same “exam-ready resource + live L1/L2/L3 status” messaging model used on CIE/Edexcel English pages.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Home tri-language CTA parity</strong>: Normalized hero CTA rows on `/`, `/en/`, `/zh-cn/` to shared `cta-*` classes, aligned root homepage Edexcel quick-access and module-card colors with `edx-*` tokens, and unified membership price+button rows to responsive stacked layout for better mobile spacing consistency.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Home module header contrast fix</strong>: Updated root homepage module-card header text logic so the Edexcel `edx-soft-bg` header now uses deep `edx` text color instead of inherited white, preserving readable contrast while keeping CIE/other module headers unchanged.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot board-token normalization</strong>: Replaced residual neutral/legacy button styles in `/kahoot/`, `/kahoot/cie0580/`, and `/kahoot/edexcel-4ma1/` so Explorer, Terms, and L2/L3 actions now use board-specific `cie-*` / `edx-*` token classes; also aligned CIE quick-link chip/button styling and removed duplicate `cie-hero-soft` CSS block in shared head include.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Status chip token parity + spacing rhythm</strong>: Unified `PRE-SALE` and `READY FOR BUILD` badge styles to board-specific token classes across Kahoot CIE/Edexcel directories and hub renderer, switched Edexcel Foundation/Higher tier chips to `edx-*` token variants, and increased shared `cta-stack` gap to `1rem` for stronger mobile breathing space between stacked card actions.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot tier/code chip parity pass</strong>: Converted CIE section/tier chips to `cie-*` token variants (including dashed alternate tier state), aligned Edexcel section code chips to `edx-*`, applied board token chips to free-sample code/batch badges and explorer-rendered tier/section badges in `/kahoot/`, and increased shared `cta-card-btn` min-height to `2.875rem` for more consistent mobile tap rhythm.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>CIE tier-token completion + mobile button micro-tuning</strong>: Completed `Core/Extended` tier-chip convergence on the CIE Kahoot page with `cie-*` token semantics, mirrored tokenized tier chips in Kahoot hub free-sample cards, increased mobile CTA tap balance via `cta-card-btn` line-height/weight/padding updates, and lifted card action stacks from `mt-1` to `mt-2` for cleaner vertical breathing rhythm.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Semantic token base + CTA interaction parity</strong>: Added shared `token-chip` base helpers (`default/sm/dashed/live`) and migrated Kahoot CIE/Edexcel/hub tier-status-code chips to these tokens, unified CTA motion rhythm with shared active/transition behavior, and removed conflicting `*-solid-bg + text-white` combinations on board-color buttons so text/border semantics stay consistent with the light-surface token system.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Global token hardening + style guardrails</strong>: Expanded `cie/edx` solid-token text normalization across EN/ZH and CIE/Edexcel main funnel pages (free, pricing, products, gift-thanks, and entry routes), replaced repeated long `focus-visible` utility chains with a shared `ui-focus-ring` token on key homepage/module/Kahoot actions, and added `scripts/health/check_style_consistency.sh` with CI + scheduled health-workflow integration to prevent style regression.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot UI componentization + visual snapshot baseline</strong>: Added reusable UI includes (`ui/token-chip`, `ui/cta-link`, `ui/kahoot-unit-actions`, `ui/kahoot-card-actions`) and migrated CIE/Edexcel Kahoot directory chips and L0-L3 action stacks to these shared components; introduced Playwright-based screenshot tooling (`capture/update/check`) with committed baseline snapshots (desktop + mobile for `/`, `/cie0580/`, `/edx4ma1/`, `/kahoot/`) and wired visual regression checks into both CI and scheduled site-health workflows.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Presale page token convergence (CIE + Edexcel)</strong>: Replaced residual amber/neutral warning and status surfaces on board `products/pricing` routes with board-semantic `cie-*` / `edx-*` tokens, converted CIE mega-bundle block to light-surface token styling, aligned CIE/Edexcel execution-link buttons to board tokens with `ui-focus-ring`, and extended style checks to fail on amber regressions in these presale pages.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Presale UI component extraction + visual coverage expansion</strong>: Added reusable board UI includes for info banners, status chips, dual-action button rows, and execution-link triplets, then migrated CIE/Edexcel `products/pricing` pages (EN/ZH variants included) to these shared components; expanded Playwright snapshot routes to include `products/pricing/free` for both boards to strengthen visual regression protection on the full presale funnel.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Free-page card/CTA parity pass</strong>: Added shared `ui/free-topic-card` rendering for CIE/Edexcel free vocabulary grids, standardized board token badges (`0580` / `4MA1`) across free cards, normalized free-page CTA motion to the same non-translate hover pattern with `ui-focus-ring`, and extended consistency/visual checks to include EN/ZH CIE free routes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Hero CTA token lock (CIE/Edexcel)</strong>: Unified Edexcel module hero primary CTAs to the same `soft-bg + text + border` token semantics used on CIE, and extended `check_style_consistency.sh` with explicit hero-button token checks (including legacy outline-class detection) to block regressions.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Board copy isolation hardening</strong>: Corrected residual CIE marketing copy/link in `/edx4ma1/free/` to Edexcel 4MA1 premium messaging and added a style-health guard to fail when CIE/Edexcel board copy is cross-mixed on free pages.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Hero CTA component convergence</strong>: Extracted board hero three-button rows to shared `ui/module-hero-cta-row` include and switched CIE (EN/ZH included) + Edexcel module entry heroes to consume the same component, then extended style checks so hero token verification supports componentized markup while still blocking legacy outline classes.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Exercise CTA warm-ladder pass</strong>: Reworked exercise-card action hierarchy (`Start Interactive Exercise` -> `Back to Board Directory` -> `Open Matching Kahoot`) to a warmer progression (warm solid primary, warm soft secondary, Kahoot purple with warm bridge shadow), synchronized EN/ZH exercise hubs plus interactive-exercise loop actions and dynamic completion CTAs, and added style-health checks for warm CTA ladder coverage.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Warm palette comfort tuning</strong>: Fine-tuned the first two exercise CTA layers to calmer terracotta/soft-rose values with explicit hover/active states, and softened Kahoot bridge-shadow warmth so the transition into official Kahoot purple reads more natural and less abrupt.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Warm ladder contrast boost</strong>: Increased warm CTA level separation on exercise pages by deepening the primary terracotta step and lightening the secondary soft-rose step, with a slightly stronger warm bridge-shadow on Kahoot buttons so hierarchy is more visible at a glance.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Warm ladder visibility reinforcement</strong>: Further widened first/second CTA contrast by pushing the warm token range toward a brighter terracotta primary and lighter peach secondary, and strengthened secondary border/text contrast for clearer hierarchy recognition on mobile and desktop.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot action-ladder reindex + order normalization</strong>: Standardized Kahoot card action hierarchy to `L0 Kahoot -> L1 Interactive Exercise -> L2 Worksheet -> L3 Section Bundle -> L4 Unit Bundle`, added numbered Kahoot labels to remove the previous unnumbered mismatch, and synchronized the same order/text across board directory cards, Kahoot hub explorer renderer, and EN/ZH supporting copy.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Warm gradient ladder for action buttons</strong>: Replaced board-split button fills on Kahoot action cards with one warm progression system (`L1` deep terracotta -> `L2` amber terracotta -> `L3` soft peach -> `L4` light cream-peach), while keeping `L0 Kahoot` in official purple to preserve brand anchor and improve visual depth consistency.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Kahoot 5-button baseline alignment</strong>: Anchored action stacks to card bottoms (`flex-col + mt-auto`) so `L0-L4` button blocks keep the same vertical baseline across mixed card title/description lengths, improving row-level alignment consistency.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Alignment hardening for missing-L1 cases</strong>: Added fixed `L1` disabled placeholders when exercise links are unavailable, switched hub action-stack spacing to shared `cta-stack` rhythm, and enabled explicit `items-stretch` on card grids so five-button ladders keep identical vertical slots and bottom alignment across all cards.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>
             </ul>
             <div class="mt-4 text-xs text-gray-400">
-                Files: index.html, en/index.html, zh-cn/index.html, cie0580/index.html, cie0580/products.html, cie0580/pricing.html, cie0580/free/index.html, en/cie0580/index.html, en/cie0580/products.html, en/cie0580/pricing.html, en/cie0580/free/index.html, zh-cn/cie0580/index.html, zh-cn/cie0580/products.html, zh-cn/cie0580/pricing.html, zh-cn/cie0580/free/index.html, edx4ma1/index.html, edx4ma1/products.html, edx4ma1/pricing.html, edx4ma1/free/index.html, exercises/index.html, zh-cn/exercises/index.html, _layouts/interactive_exercise.html, _includes/head.html, _includes/module-nav.html, kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, zh-cn/kahoot/index.html, en/gift-thanks.html, zh-cn/gift-thanks.html, admin/changelog.html
+                Files: index.html, en/index.html, zh-cn/index.html, cie0580/index.html, cie0580/products.html, cie0580/pricing.html, cie0580/free/index.html, en/cie0580/index.html, en/cie0580/products.html, en/cie0580/pricing.html, en/cie0580/free/index.html, zh-cn/cie0580/index.html, zh-cn/cie0580/products.html, zh-cn/cie0580/pricing.html, zh-cn/cie0580/free/index.html, edx4ma1/index.html, edx4ma1/products.html, edx4ma1/pricing.html, edx4ma1/free/index.html, exercises/index.html, zh-cn/exercises/index.html, _layouts/interactive_exercise.html, _includes/head.html, _includes/module-nav.html, _includes/ui/board-info-banner.html, _includes/ui/board-status-chip.html, _includes/ui/board-dual-actions.html, _includes/ui/board-triple-actions.html, _includes/ui/free-topic-card.html, _includes/ui/module-hero-cta-row.html, _includes/ui/kahoot-card-actions.html, kahoot/index.html, kahoot/cie0580/index.html, kahoot/edexcel-4ma1/index.html, zh-cn/kahoot/index.html, en/gift-thanks.html, zh-cn/gift-thanks.html, assets/js/exercise_engine.js, scripts/health/check_style_consistency.sh, scripts/health/capture_visual_snapshots.sh, scripts/health/check_visual_regression.sh, tests/visual/README.md, tests/visual/baseline/*.png, admin/changelog.html
             </div>
         </div>
 
@@ -233,6 +349,10 @@ title: 25Maths Changelog
                 <li class="flex items-start gap-2">
                     <span class="text-blue-500 mt-0.5">~</span>
                     <span><strong>Tier dropdown coherence</strong>: Added board-aware tier option filtering on exercise hubs so selecting CIE 0580 shows only Core/Extended and selecting Edexcel 4MA1 shows only Foundation/Higher.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>LaTeX formula rendering</strong>: Connected KaTeX on interactive exercise pages and added safe runtime rendering for question text, options, and explanations (with legacy `$...$` math normalization to avoid currency collisions).</span>
                 </li>
             </ul>
             <div class="mt-4 text-xs text-gray-400">

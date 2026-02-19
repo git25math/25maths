@@ -14,6 +14,7 @@ noindex: true
         <p class="text-lg text-gray-100 max-w-3xl">
             Access model: rolling subscription. Active members receive all resources released during their current billing period.
         </p>
+        {% include bilingual/inline-note.html note="会员资源中心：开启双语支持后可显示中文流程提示，资源名称仍保留英文。" class="text-sm text-gray-100 mt-3 opacity-90 max-w-3xl" %}
     </div>
 </section>
 
@@ -31,26 +32,11 @@ noindex: true
             <div>
                 <h2 class="text-3xl font-bold text-gray-900">Your Learning Snapshot</h2>
                 <p class="text-gray-600 mt-2" data-member-center-helper>Sign in to see your latest progress and weak-point summary.</p>
+                {% include bilingual/inline-note.html note="登录后可查看最近练习、错题标签与学习薄弱点摘要。" class="text-sm text-gray-600 mt-2" %}
             </div>
-            <div class="mt-4 sm:mt-0 flex items-center gap-2">
-                <span data-member-center-state class="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-700">
-                    NOT SIGNED IN
-                </span>
-                <button
-                    type="button"
-                    data-member-login
-                    class="inline-flex items-center rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition"
-                >
-                    Log in
-                </button>
-                <button
-                    type="button"
-                    data-member-logout
-                    class="hidden inline-flex items-center rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition"
-                >
-                    Log out
-                </button>
-            </div>
+            <span data-member-center-state class="inline-flex mt-4 sm:mt-0 items-center rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-700">
+                NOT SIGNED IN
+            </span>
         </div>
 
         <div class="grid md:grid-cols-4 gap-4 mt-8">
@@ -95,29 +81,6 @@ noindex: true
     </div>
 </section>
 
-<section class="py-14 bg-white border-y border-gray-100">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-6">
-            <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-                <h3 class="text-xl font-bold text-gray-900">Targeted Practice Plan</h3>
-                <p class="text-sm text-gray-600 mt-2">Recommendations adapt to your recent weak-point tags.</p>
-                <div data-reco-root class="mt-4 space-y-3">
-                    <p class="text-sm text-gray-500">Sign in to see your weak-point learning plan.</p>
-                </div>
-            </article>
-            <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
-                <h3 class="text-xl font-bold text-gray-900">Member Benefits</h3>
-                <p class="text-sm text-gray-600 mt-2">Paid members unlock coupon and subscription offers.</p>
-                <div data-benefits-root class="mt-4"></div>
-                <div data-visible="paid-only" class="hidden mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
-                    <p class="text-sm font-semibold text-amber-900">Paid-only unlocks enabled</p>
-                    <p class="mt-1 text-sm text-amber-800">Your account can access member-only discount paths.</p>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
@@ -152,8 +115,6 @@ noindex: true
 </section>
 
 <script src="{{ '/assets/js/member_center.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/member_recommendations.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/member_benefits.js' | relative_url }}"></script>
 
 <section class="py-16 bg-gray-50 border-y">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

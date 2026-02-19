@@ -15,11 +15,14 @@ active_page: overview
         <p data-bilingual-block class="text-base md:text-lg mb-4 text-blue-100">对标 Edexcel 4MA1 考纲，保留英文主线并补充中文术语提示。</p>
         <p class="text-lg mb-8 text-blue-200">Free vocabulary cards are live. L1/L2/L3 presale architecture is now active.</p>
         <p data-bilingual-block class="text-sm mb-8 text-blue-200">当前闭环：L1 单品 -> L2 章节包 -> L3 单元包。</p>
-        <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold text-lg edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Browse Free Resources</a>
-            <a href="/exercises/?board=edexcel-4ma1&tier=foundation" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg edx-hero-outline-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Start Interactive Exercises</a>
-            <a href="/subscription.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg edx-hero-outline-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Weekly Membership</a>
-        </div>
+        {% include ui/module-hero-cta-row.html
+            board='edx'
+            primary_href='/free-gift.html'
+            primary_label='Browse Free Resources'
+            secondary_href='/exercises/?board=edexcel-4ma1&tier=foundation'
+            secondary_label='Start Interactive Exercises'
+            tertiary_href='/subscription.html'
+            tertiary_label='Weekly Membership' %}
     </div>
 </section>
 
@@ -33,8 +36,8 @@ active_page: overview
                 <p data-bilingual-block class="text-sm text-gray-600 mt-2">先在 Kahoot 快速练习，再回到站内下载 worksheet 与升级包。</p>
             </div>
             <div class="flex flex-col sm:flex-row gap-3">
-                <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
-                <a href="/kahoot/?src=edx4ma1&asset=module_kahoot_card" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Kahoot Companion Hub</a>
+                <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
+                <a href="/kahoot/?src=edx4ma1&asset=module_kahoot_card" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-lg transition ui-focus-ring">Kahoot Companion Hub</a>
             </div>
         </div>
     </div>
@@ -53,7 +56,7 @@ active_page: overview
             <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200"><h3 class="font-bold">Vectors</h3><p class="text-sm text-gray-600">30 terms</p></div>
             <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200"><h3 class="font-bold">Statistics</h3><p class="text-sm text-gray-600">44 terms</p></div>
         </div>
-        <a href="/free-gift.html" class="inline-block edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold text-lg edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Browse Free Resources</a>
+        <a href="/free-gift.html" class="inline-block edx-solid-bg px-8 py-4 rounded-lg font-semibold text-lg edx-solid-hover hover:shadow-lg transition ui-focus-ring">Browse Free Resources</a>
     </div>
 </section>
 
@@ -82,9 +85,9 @@ active_page: overview
             </div>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/edx4ma1/products.html" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-7 py-3 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Products</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-7 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Directory</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
+            <a href="/edx4ma1/products.html" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-7 py-3 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 Products</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-7 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Directory</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover hover:shadow-md transition ui-focus-ring">Read Presale Terms PDF</a>
         </div>
     </div>
 </section>

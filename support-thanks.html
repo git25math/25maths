@@ -22,6 +22,7 @@ lang_links:
         <p class="text-lg md:text-xl opacity-90 mb-8">
             Thanks for contacting us. Our support team will review your message and reply as soon as possible.
         </p>
+        {% include bilingual/inline-note.html note="我们已收到你的消息，开启双语支持后会显示中文流程提示。" class="text-sm text-gray-100 mb-8 opacity-90" %}
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/support.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">
                 Back to Support
@@ -40,5 +41,6 @@ lang_links:
             We usually respond within 24 hours. Please check your inbox (and spam folder) for replies from
             <a href="mailto:support@25maths.com" class="text-primary font-semibold hover:underline">support@25maths.com</a>.
         </p>
+        {% include bilingual/inline-note.html note="通常 24 小时内回复；若未收到，请检查垃圾邮箱并提供提交邮箱给我们排查。" class="text-sm text-gray-600 mb-6" %}
     </div>
 </section>

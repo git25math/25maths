@@ -1,0 +1,2 @@
+{% assign link_classes = include.classes | default: '' %}
+<a href="{{ include.href }}"{% if include.target %} target="{{ include.target }}"{% endif %}{% if include.rel %} rel="{{ include.rel }}"{% elsif include.target == '_blank' %} rel="noopener"{% endif %} class="{{ link_classes }} ui-focus-ring"{% if include.attrs %} {{ include.attrs }}{% endif %}>{{ include.label }}</a>

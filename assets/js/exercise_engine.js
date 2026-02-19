@@ -84,43 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.max(0, Math.round((Date.now() - exerciseStartedAtMs) / 1000));
     }
 
-    async function getCloudAccessToken() {
-        if (!cloudSupabaseClient) {
-            return '';
-        }
-        const { data, error } = await cloudSupabaseClient.auth.getSession();
-        if (error || !data || !data.session || !data.session.access_token) {
-            return '';
-        }
-        return String(data.session.access_token).trim();
-    }
-
-    async function postExerciseApi(path, payload) {
-        const accessToken = await getCloudAccessToken();
-        if (!accessToken) {
-            return { ok: false, status: 401, data: null };
-        }
-        try {
-            const response = await fetch(path, {
-                method: 'POST',
-                headers: {
-                    authorization: `Bearer ${accessToken}`,
-                    'content-type': 'application/json',
-                },
-                body: JSON.stringify(payload),
-            });
-            let data = null;
-            try {
-                data = await response.json();
-            } catch (error) {
-                data = null;
-            }
-            return { ok: response.ok, status: response.status, data };
-        } catch (error) {
-            return { ok: false, status: 0, data: null };
-        }
-    }
-
     async function initializeCloudSession() {
         if (cloudSessionId || cloudSessionCompleted) {
             return;
@@ -139,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cloudUserId = userData.user.id;
         const insertPayload = {
+            user_id: cloudUserId,
             exercise_slug: resolveExerciseSlug(),
             board: resolveBoardSlug(),
             tier: resolveTierSlug(),
@@ -146,18 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
             started_at: new Date(exerciseStartedAtMs).toISOString(),
         };
 
-        const apiResult = await postExerciseApi('/api/v1/exercise/session/start', insertPayload);
-        if (apiResult.ok && apiResult.data && apiResult.data.session_id) {
-            cloudSessionId = String(apiResult.data.session_id);
-            return;
-        }
-
         const { data: sessionData, error: sessionError } = await cloudSupabaseClient
             .from('exercise_sessions')
-            .insert({
-                user_id: cloudUserId,
-                ...insertPayload,
-            })
+            .insert(insertPayload)
             .select('id')
             .single();
 
@@ -174,6 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const attemptPayload = {
+            session_id: cloudSessionId,
+            user_id: cloudUserId,
             question_index: currentQuestionIndex,
             is_correct: Boolean(isCorrect),
             selected_answer: Number.isInteger(answerIndex) ? answerIndex : null,
@@ -181,18 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
             skill_tag: resolveSkillTag(question, currentQuestionIndex),
         };
 
-        const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/attempt`, attemptPayload);
-        if (apiResult.ok) {
-            return;
-        }
-
         const { error } = await cloudSupabaseClient
             .from('question_attempts')
-            .insert({
-                session_id: cloudSessionId,
-                user_id: cloudUserId,
-                ...attemptPayload,
-            });
+            .insert(attemptPayload);
         if (error) {
             // Keep exercise flow running even if cloud logging fails.
         }
@@ -205,22 +153,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cloudSessionCompleted = true;
         const updatePayload = {
+            completed_at: new Date().toISOString(),
             score,
             question_count: questions.length,
             duration_seconds: getCloudDurationSeconds(),
         };
 
-        const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/complete`, updatePayload);
-        if (apiResult.ok) {
-            return;
-        }
-
         const { error } = await cloudSupabaseClient
             .from('exercise_sessions')
-            .update({
-                completed_at: new Date().toISOString(),
-                ...updatePayload,
-            })
+            .update(updatePayload)
             .eq('id', cloudSessionId)
             .eq('user_id', cloudUserId);
         if (error) {
@@ -235,6 +176,36 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
+    }
+
+    function normalizeInlineMath(rawValue) {
+        const value = String(rawValue ?? '');
+        return value.replace(/\$([^$]+)\$/g, (match, content) => {
+            const trimmed = String(content || '').trim();
+            if (!trimmed) return match;
+            // Convert LaTeX-like $...$ to \( ... \) while ignoring currency-like values.
+            if (!/[\\^_{}]/.test(trimmed)) return match;
+            return `\\(${trimmed}\\)`;
+        });
+    }
+
+    function renderMath(container) {
+        if (!container || typeof window.renderMathInElement !== 'function') {
+            return;
+        }
+        try {
+            window.renderMathInElement(container, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },
+                    { left: '\\(', right: '\\)', display: false },
+                ],
+                throwOnError: false,
+                strict: 'ignore',
+            });
+        } catch (error) {
+            // Keep question flow running even if formula rendering fails.
+        }
     }
 
     function withTrackingUrl(rawUrl, actionKey) {
@@ -327,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
         const nextLabelSafe = escapeHtml(nextLabel);
         nextExerciseLinkSlot.innerHTML = `
-            <a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>
+            <a href="${nextHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">${nextLabelSafe}</a>
         `;
     }
 
@@ -354,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function buildCompletionActionsHtml() {
         const retryHref = escapeHtml(window.location.pathname);
         const actionButtons = [
-            `<a href="${retryHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Retry This Exercise</a>`,
+            `<a href="${retryHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">Retry This Exercise</a>`,
         ];
         if (nextExercise && nextExercise.url) {
             const nextLabel = nextExercise.code
@@ -363,14 +334,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
             const nextLabelSafe = escapeHtml(nextLabel);
             actionButtons.push(
-                `<a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>`
+                `<a href="${nextHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">${nextLabelSafe}</a>`
             );
         }
 
         if (links && typeof links === 'object' && links.kahoot_url) {
             const kahootHref = escapeHtml(withTrackingUrl(links.kahoot_url, 'kahoot_complete'));
             actionButtons.push(
-                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>`
+                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition ui-focus-ring exercise-kahoot-bridge">Play Matching Kahoot</a>`
             );
         }
         if (links && typeof links === 'object' && links.worksheet_payhip_url) {
@@ -420,13 +391,13 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function renderQuestion(index) {
         const question = questions[index];
-        const questionText = escapeHtml(question.questionText || '');
+        const questionText = escapeHtml(normalizeInlineMath(question.questionText || ''));
         let optionsHtml = '';
 
         if (question.type === 'multiple-choice') {
             optionsHtml = '<div class="space-y-3">';
             question.options.forEach((option, i) => {
-                const optionLabel = escapeHtml(option);
+                const optionLabel = escapeHtml(normalizeInlineMath(option));
                 optionsHtml += `
                     <div>
                         <label class="block border border-gray-300 rounded-lg px-4 py-3 cursor-pointer hover:bg-gray-100 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
@@ -445,6 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="text-lg font-semibold">${index + 1}. ${questionText}</p>
             <div class="mt-4">${optionsHtml}</div>
         `;
+        renderMath(questionContainer);
         updateProgressUi();
 
         // Reset state for the new question
@@ -475,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
-        const explanationHtml = escapeHtml(question.explanation || '');
+        const explanationHtml = escapeHtml(normalizeInlineMath(question.explanation || ''));
         const submittedAnswer = selectedAnswer;
 
         if (isCorrect) {
@@ -494,6 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         }
+        renderMath(feedbackContainer);
         void persistCloudAttempt(question, submittedAnswer, isCorrect);
         updateProgressUi();
 

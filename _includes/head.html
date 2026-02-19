@@ -39,15 +39,50 @@
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 
 <!-- Site CSS (generated from Tailwind) -->
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/site.css?v={{ site.assets_version }}">
+
+{% if page.layout == 'interactive_exercise' %}
+<!-- KaTeX (interactive exercise formula rendering) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+{% endif %}
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+<script>
+    (function() {
+        try {
+            var params = new URLSearchParams(window.location.search);
+            if (params.get('visual') === '1') {
+                document.documentElement.classList.add('visual-snapshot');
+            }
+        } catch (e) {
+            // no-op: keep normal rendering when URL parsing is unavailable
+        }
+    })();
+</script>
+
 <style>
     body { font-family: 'Inter', sans-serif; }
+    html.visual-snapshot,
+    html.visual-snapshot body,
+    html.visual-snapshot * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+    }
+    html.visual-snapshot *,
+    html.visual-snapshot *::before,
+    html.visual-snapshot *::after {
+        animation: none !important;
+        transition: none !important;
+        caret-color: transparent !important;
+    }
+    html.visual-snapshot .bilingual-floating-panel {
+        display: none !important;
+    }
 
     /* Stable CIE IGCSE helpers for cross-page color consistency. */
     :root {
@@ -56,6 +91,14 @@
         --cie-igcse-600: #c94924;
         --cie-igcse-700: #aa3c1d;
         --cie-igcse-800: #8f2f17;
+        --warm-action-100: #fdf3ee;
+        --warm-action-200: #f7e2d8;
+        --warm-action-300: #dfab98;
+        --warm-action-400: #ca8d78;
+        --warm-action-600: #b75234;
+        --warm-action-700: #9d4128;
+        --warm-action-800: #7f2f1b;
+        --warm-action-900: #662214;
         --edx-igcse-100: #cfe1de;
         --edx-igcse-200: #b8d2cd;
         --edx-igcse-600: #0e6f84;
@@ -99,7 +142,6 @@
     .cie-hero-soft .border-white {
         border-color: var(--cie-igcse-700);
     }
-
     .cie-solid-bg {
         background-color: var(--cie-igcse-100);
         color: var(--cie-igcse-700);
@@ -204,15 +246,266 @@
         border-color: var(--edx-igcse-700);
     }
 
+    .exercise-warm-primary {
+        background-color: var(--warm-action-600);
+        color: #fff;
+        border: 1px solid var(--warm-action-600);
+    }
+    .exercise-warm-primary:hover {
+        background-color: var(--warm-action-700);
+        color: #fff;
+        border-color: var(--warm-action-700);
+    }
+    .exercise-warm-primary:active {
+        background-color: var(--warm-action-900);
+        color: #fff;
+        border-color: var(--warm-action-900);
+    }
+
+    .exercise-warm-secondary {
+        background-color: var(--warm-action-100);
+        color: var(--warm-action-900);
+        border: 1px solid var(--warm-action-400);
+    }
+    .exercise-warm-secondary:hover {
+        background-color: var(--warm-action-200);
+        color: var(--warm-action-900);
+        border-color: var(--warm-action-600);
+    }
+    .exercise-warm-secondary:active {
+        background-color: var(--warm-action-200);
+        color: var(--warm-action-900);
+        border-color: var(--warm-action-700);
+    }
+
+    .exercise-kahoot-bridge {
+        box-shadow: 0 5px 12px rgba(183, 82, 52, 0.22);
+    }
+    .exercise-kahoot-bridge:hover {
+        box-shadow: 0 8px 16px rgba(183, 82, 52, 0.28);
+    }
+
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */
-    .kahoot-solid-bg { background-color: #46178f; }
+    .kahoot-solid-bg {
+        background-color: #46178f;
+        color: #fff;
+        border: 1px solid #46178f;
+    }
+    .cie-hero-gradient .kahoot-solid-bg,
+    .cie-hero-soft .kahoot-solid-bg,
+    .edx-hero-gradient .kahoot-solid-bg,
+    .edx-hero-soft .kahoot-solid-bg {
+        color: #fff;
+    }
     .kahoot-solid-border { border-color: #b497ff; }
-    .kahoot-solid-hover:hover { background-color: #3d137a; }
+    .kahoot-solid-hover:hover {
+        background-color: #3f1480;
+        color: #fff;
+        border-color: #3f1480;
+    }
 
     .kahoot-soft-border { border-color: #7f5ab6; }
     .kahoot-soft-bg { background-color: #efe9fb; }
     .kahoot-soft-text { color: #46178f; }
     .kahoot-soft-hover:hover { background-color: #e5dbf8; }
+
+    /* Warm gradient ladder for L1-L4 Kahoot action hierarchy. */
+    .kahoot-ladder-l1 {
+        background-image: linear-gradient(135deg, #cd5a34 0%, #ad3f23 100%);
+        color: #fff;
+        border: 1px solid #b64a2a;
+    }
+    .kahoot-ladder-l1:hover {
+        background-image: linear-gradient(135deg, #bf532f 0%, #9f391f 100%);
+        color: #fff;
+        border-color: #a33d22;
+    }
+    .kahoot-ladder-l1:active {
+        background-image: linear-gradient(135deg, #a84626 0%, #892e18 100%);
+        color: #fff;
+        border-color: #8d3019;
+    }
+
+    .kahoot-ladder-l2 {
+        background-image: linear-gradient(135deg, #e28a5a 0%, #c9683d 100%);
+        color: #fff;
+        border: 1px solid #cf6f40;
+    }
+    .kahoot-ladder-l2:hover {
+        background-image: linear-gradient(135deg, #d97d4f 0%, #bc5d34 100%);
+        color: #fff;
+        border-color: #c16037;
+    }
+    .kahoot-ladder-l2:active {
+        background-image: linear-gradient(135deg, #c96e42 0%, #ac502c 100%);
+        color: #fff;
+        border-color: #b35630;
+    }
+
+    .kahoot-ladder-l3 {
+        background-image: linear-gradient(135deg, #f6dccb 0%, #efc3ac 100%);
+        color: #8a351f;
+        border: 1px solid #d89d80;
+    }
+    .kahoot-ladder-l3:hover {
+        background-image: linear-gradient(135deg, #f1d0bc 0%, #e7b79e 100%);
+        color: #812f1a;
+        border-color: #cc8c6d;
+    }
+    .kahoot-ladder-l3:active {
+        background-image: linear-gradient(135deg, #e9c3ad 0%, #dda98e 100%);
+        color: #742715;
+        border-color: #bf7f61;
+    }
+
+    .kahoot-ladder-l4 {
+        background-image: linear-gradient(135deg, #fcf0e8 0%, #f7dfd2 100%);
+        color: #8a351f;
+        border: 1px solid #e2b6a0;
+    }
+    .kahoot-ladder-l4:hover {
+        background-image: linear-gradient(135deg, #f8e7dc 0%, #f2d2c2 100%);
+        color: #7e2d19;
+        border-color: #d4a189;
+    }
+    .kahoot-ladder-l4:active {
+        background-image: linear-gradient(135deg, #f1dbcd 0%, #e8c3af 100%);
+        color: #702514;
+        border-color: #c79379;
+    }
+    .kahoot-ladder-disabled {
+        opacity: 0.58;
+        filter: saturate(0.72);
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    /* Shared chip tokens for board/status badges. */
+    .token-chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        border-width: 1px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.6875rem;
+        line-height: 1.1;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .token-chip-sm { font-size: 0.75rem; }
+    .token-chip-dashed { border-style: dashed; }
+    .token-chip-live {
+        border-color: #a7f3d0;
+        background-color: #d1fae5;
+        color: #047857;
+    }
+
+    /* Shared keyboard focus ring token for actionable controls. */
+    .ui-focus-ring { outline: none; }
+    .ui-focus-ring:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #111827;
+    }
+
+    /* Shared CTA spacing/size rhythm for board pages and card actions. */
+    .cta-row-equal { align-items: stretch; }
+    .cta-btn-equal {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 3.25rem;
+        line-height: 1.2;
+    }
+    .cta-card-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+    @media (min-width: 640px) {
+        .cta-card-grid--split {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+    .cta-stack {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+    .cta-card-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 2.875rem;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+    .cta-btn-equal,
+    .cta-card-btn {
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: 0.005em;
+        transition-property: background-color, color, border-color, box-shadow, transform;
+        transition-duration: 180ms;
+        transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .cta-btn-equal:active,
+    .cta-card-btn:active { transform: translateY(0.5px); }
+    .kahoot-card-title {
+        min-height: 2.4rem;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+    .kahoot-card-release {
+        min-height: 1.9rem;
+        line-height: 1.35;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+    .kahoot-card-note {
+        min-height: 2rem;
+        line-height: 1.35;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+    .kahoot-unit-title {
+        min-height: 3rem;
+        line-height: 1.25;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+    }
+    @media (max-width: 639px) {
+        .cta-card-btn {
+            min-height: 3rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+        }
+        .kahoot-card-title {
+            min-height: 2.3rem;
+        }
+        .kahoot-card-release,
+        .kahoot-card-note {
+            min-height: 1.9rem;
+        }
+        .kahoot-unit-title {
+            min-height: 2.7rem;
+        }
+    }
 </style>
 
 {% if page.payhip %}

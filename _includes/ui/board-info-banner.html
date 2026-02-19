@@ -1,0 +1,18 @@
+{% assign board_key = include.board | default: 'cie' %}
+{% assign wrapper_class = include.wrapper_class | default: '' %}
+{% if wrapper_class == '' %}
+  {% if board_key == 'edx' %}
+    {% assign wrapper_class = 'edx-soft-bg border edx-soft-border rounded-xl p-5 text-sm edx-soft-text' %}
+  {% else %}
+    {% assign wrapper_class = 'cie-soft-bg border cie-soft-border rounded-xl p-5 text-sm cie-soft-text' %}
+  {% endif %}
+{% endif %}
+
+<div class="{{ wrapper_class }}">
+  {% if include.title and include.title != '' %}
+    <p class="font-semibold mb-1">{{ include.title }}</p>
+  {% endif %}
+  {% if include.body and include.body != '' %}
+    <p>{{ include.body }}</p>
+  {% endif %}
+</div>

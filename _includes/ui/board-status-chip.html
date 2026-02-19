@@ -1,0 +1,8 @@
+{% assign board_key = include.board | default: 'cie' %}
+{% if board_key == 'edx' %}
+  {% assign chip_classes = 'edx-soft-bg edx-soft-border edx-soft-text' %}
+{% else %}
+  {% assign chip_classes = 'cie-soft-bg cie-soft-border cie-soft-text' %}
+{% endif %}
+
+{% include ui/token-chip.html label=include.label size='sm' classes=chip_classes %}

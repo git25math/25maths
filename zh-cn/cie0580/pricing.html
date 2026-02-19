@@ -16,6 +16,7 @@ lang_links:
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_note_body %}当前价格用于建立阶梯与锚点。只要闭环结构不变，后续可以单独调整数字而不需要改整站结构。{% endcapture %}
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
@@ -26,10 +27,7 @@ lang_links:
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
-            <p class="font-semibold mb-1">说明</p>
-            <p>当前价格用于建立阶梯与锚点。只要闭环结构不变，后续可以单独调整数字而不需要改整站结构。</p>
-        </div>
+        {% include ui/board-info-banner.html board='cie' title='说明' body=pricing_note_body %}
     </div>
 </section>
 
@@ -81,9 +79,6 @@ lang_links:
                 <p class="text-sm text-gray-600">对有需求的客户发放双语词卡与双语增强升级券，促成 L3 与复购。</p>
             </div>
         </div>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/zh-cn/cie0580/products.html" class="cie-solid-bg text-white px-6 py-3 rounded-lg font-semibold text-center">打开产品架构</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">打开预售说明 PDF</a>
-        </div>
+        {% include ui/board-dual-actions.html board='cie' wrapper_class='mt-8 flex flex-col sm:flex-row gap-4' primary_href='/zh-cn/cie0580/products.html' primary_label='打开产品架构' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='打开预售说明 PDF' %}
     </div>
 </section>
