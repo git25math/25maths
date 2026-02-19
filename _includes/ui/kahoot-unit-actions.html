@@ -1,7 +1,7 @@
 {% assign board_key = include.board | default: 'cie' %}
 {% assign presale_label = include.presale_label | default: 'Open Unit Presale' %}
 {% assign terms_label = include.terms_label | default: 'Read Presale Terms PDF' %}
-{% assign wrapper_class = include.wrapper_class | default: 'cta-stack' %}
+{% assign wrapper_class = include.wrapper_class | default: 'mt-auto pt-2 cta-stack' %}
 
 {% if board_key == 'edx' %}
   {% assign presale_classes = 'cta-card-btn edx-solid-bg edx-solid-text py-2.5 rounded-lg font-semibold text-xs edx-solid-hover hover:shadow-md transition' %}

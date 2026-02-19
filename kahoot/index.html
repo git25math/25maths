@@ -19,10 +19,10 @@ lang: en
         </p>
         <p data-bilingual-block class="text-sm text-gray-200 mt-3 max-w-3xl mx-auto">按考试局与层级浏览 SubTopic 目录，先练习再升级到 worksheet 与 bundle。</p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Open Interactive Exercises Hub</a>
-            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Free Samples Live Now</a>
+            <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/exercises/" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Free Samples Live Now</a>
         </div>
     </div>
 </section>
@@ -70,9 +70,11 @@ lang: en
                 {% endif %}
                 {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
+                {% assign board_explorer_button_class = "border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover" %}
                 {% if board.board == "cie0580" %}
                     {% assign board_badge_class = "bg-primary/10 text-primary" %}
                     {% assign board_button_class = "bg-primary text-white" %}
+                    {% assign board_explorer_button_class = "border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover" %}
                 {% endif %}
                 <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 h-full flex flex-col" data-free-sample-board="{{ board.board }}">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
@@ -82,9 +84,9 @@ lang: en
                         </div>
                         <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold" data-free-sample-board-count>{{ board.items | size }}/{{ board.items | size }} LIVE</span>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-3 mb-5">
-                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open {{ board.board_label }} Kahoot Channel</a>
-                        <a href="{{ directory_url }}" class="sm:flex-1 inline-flex items-center justify-center text-center {{ board_button_class }} px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Full Directory</a>
+                    <div class="flex flex-col sm:flex-row cta-row-equal gap-4 mb-5">
+                        <a href="{{ board.channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open {{ board.board_label }} Kahoot Channel</a>
+                        <a href="{{ directory_url }}" class="sm:flex-1 cta-btn-equal {{ board_button_class }} px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Full Directory</a>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-4 items-stretch">
                         {% for item in board.items %}
@@ -104,9 +106,9 @@ lang: en
                                         <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
                                     </div>
                                 </div>
-                                <div class="mt-auto pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                    <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Play Free Sample</a>
-                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="text-center border border-gray-300 text-gray-700 py-2.5 rounded-lg font-semibold text-xs hover:bg-gray-50 hover:shadow-md transition ui-focus-ring">Open In Explorer</a>
+                                <div class="mt-auto pt-2 cta-card-grid cta-card-grid--split">
+                                    <a href="{{ item.kahoot_url }}" target="_blank" rel="noopener" class="cta-card-btn kahoot-solid-bg text-white py-2.5 rounded-lg font-semibold text-xs kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Play Free Sample</a>
+                                    <a href="/kahoot/?board={{ board.board }}&subtopic={{ item.id | url_encode }}" class="cta-card-btn {{ board_explorer_button_class }} py-2.5 rounded-lg font-semibold text-xs hover:shadow-md transition ui-focus-ring">Open In Explorer</a>
                                 </div>
                             </article>
                         {% endfor %}
@@ -278,9 +280,9 @@ lang: en
                 <h3 class="text-xl font-bold text-gray-900 kahoot-unit-title">Core + Extended SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ cie_data.total_subtopics }} SubTopics across {{ cie_data.sections | size }} sections.</p>
-                <div class="mt-auto pt-2 flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open CIE 0580 Kahoot Channel</a>
+                <div class="mt-auto pt-2 flex flex-col sm:flex-row cta-row-equal gap-4">
+                    <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open CIE 0580 Kahoot Channel</a>
                 </div>
             </article>
 
@@ -293,9 +295,9 @@ lang: en
                 <h3 class="text-xl font-bold text-gray-900 kahoot-unit-title">Foundation + Higher SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
-                <div class="mt-auto pt-2 flex flex-col sm:flex-row gap-3">
-                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
+                <div class="mt-auto pt-2 flex flex-col sm:flex-row cta-row-equal gap-4">
+                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
         </div>
