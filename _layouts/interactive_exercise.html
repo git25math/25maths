@@ -103,8 +103,8 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <a href="{{ exercises_hub_url }}" data-track-action="try_another" class="loop-btn-base loop-btn-neutral-soft">Try Another Interactive Exercise</a>
-                    <a href="{{ board_directory_url | relative_url }}" data-track-action="board_directory" class="loop-btn-base loop-btn-neutral-soft">Back to {{ board_directory_label }}</a>
+                    <a href="{{ exercises_hub_url }}" data-track-action="try_another" class="loop-btn-base loop-btn-soft">Try Another Interactive Exercise</a>
+                    <a href="{{ board_directory_url | relative_url }}" data-track-action="board_directory" class="loop-btn-base loop-btn-soft">Back to {{ board_directory_label }}</a>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -121,9 +121,9 @@
                     {% endif %}
 
                     {% if bundle_href != '' %}
-                    <a href="{{ bundle_href }}" data-track-action="bundle" class="loop-btn-base loop-btn-neutral-soft">Explore Bundle</a>
+                    <a href="{{ bundle_href }}" data-track-action="bundle" class="loop-btn-base loop-btn-soft">Explore Bundle</a>
                     {% else %}
-                    <span class="loop-btn-base loop-btn-neutral-soft loop-btn-disabled">Explore Bundle</span>
+                    <span class="loop-btn-base loop-btn-soft loop-btn-disabled">Explore Bundle</span>
                     {% endif %}
                 </div>
             </div>
