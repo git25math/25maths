@@ -21,6 +21,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">CIE 0580 Product System</h1>
         <p class="text-xl opacity-90">Legacy 3-product setup retired. New closed loop: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
+        <p class="bilingual-support-only text-base opacity-90 mt-3">旧版 3 产品结构已退役。新闭环为：L1 单品 -> L2 章节包 -> L3 单元包。</p>
     </div>
 </section>
 
@@ -33,23 +34,27 @@ lang_links:
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
+        <p class="bilingual-support-only text-sm text-gray-600 mb-8">从低门槛单品到高价值单元包，形成可持续升级路径。</p>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Single Worksheet MVP</h3>
                 <p class="text-sm text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download. Lowest friction entry point.</p>
+                <p class="bilingual-support-only text-sm text-gray-600 mb-4">单一小考点：Kahoot + 讲义下载，作为最低决策成本的入口产品。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l1_early_bird }} · suggested regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Section Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">Multiple SubTopics inside one syllabus section. Best upgrade from L1.</p>
+                <p class="bilingual-support-only text-sm text-gray-600 mb-4">同一章节内多个小考点打包，是从 L1 向上升级的首选路径。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l2_early_bird }} · suggested regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">One full unit including Core + Extended tracks, plus bonus add-ons after release.</p>
+                <p class="bilingual-support-only text-sm text-gray-600 mb-4">覆盖完整单元（含 Core + Extended），并在正式发布后追加奖励内容。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l3_early_bird }} · suggested regular: {{ catalog.pricing.l3_regular }}</p>
             </article>
         </div>
@@ -60,7 +65,9 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-2">CIE Unit Bundle Presales (9)</h2>
         <p class="text-gray-600 mb-8">Each unit bundle includes bilingual vocabulary card support and a post-purchase upgrade path for bilingual enhancement.</p>
+        <p class="bilingual-support-only text-sm text-gray-600 mb-2">每个单元包都包含双语词汇卡支持，并预留购买后的双语增强升级路径。</p>
         <p class="text-sm text-gray-600 mb-8">Bilingual gift trigger: after checkout, customers complete a 30-second learning preference form. Review is optional and unlocks extra bonus, not the core bilingual gift.</p>
+        <p class="bilingual-support-only text-sm text-gray-600 mb-8">双语赠送触发逻辑：支付后填写 30 秒学习偏好表单即可领取基础双语赠送；评价是可选项，仅解锁额外奖励。</p>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for unit in catalog.units %}
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
@@ -93,6 +100,7 @@ lang_links:
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Execution Links</h2>
         <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
+        <p class="bilingual-support-only text-sm text-gray-600 mb-8">在 Kahoot 目录页集中管理小考点链接与升级逻辑，确保转化路径清晰可控。</p>
         {% include ui/board-triple-actions.html board='cie' kahoot_href='/kahoot/cie0580/' kahoot_label='Open CIE Kahoot Directory' terms_href=terms_pdf_url terms_target='_blank' terms_rel='noopener' terms_label='Open Presale Terms PDF' store_href=catalog.default_worksheet_payhip_url store_target='_blank' store_rel='noopener' store_label='Open Payhip Storefront' %}
     </div>
 </section>
