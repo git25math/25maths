@@ -340,7 +340,7 @@ lang: en
         </div>
 
         <p id="explorer-summary" class="text-sm text-gray-600 mb-4">Choose an exam board to begin filtering.</p>
-        <div id="explorer-results" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+        <div id="explorer-results" class="grid items-stretch sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
         <div class="mt-5 text-center">
             <button id="explorer-load-more" type="button" class="hidden bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-black hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Load More</button>
         </div>
@@ -580,16 +580,14 @@ lang: en
         ? item.cover.replace(/\.png$/i, '.webp')
         : item.cover;
       const kahootLabel = 'L0: Open Kahoot';
-      const interactiveLabel = hasInteractiveExercise ? 'L1: Interactive Exercise' : '';
-      const worksheetLabel = hasInteractiveExercise ? 'L2: Worksheet' : 'L1: Worksheet';
-      const sectionBundleLabel = hasInteractiveExercise ? 'L3: Section Bundle' : 'L2: Section Bundle';
-      const unitBundleLabel = hasInteractiveExercise ? 'L4: Unit Bundle' : 'L3: Unit Bundle';
-      const fallbackPresaleNote = hasInteractiveExercise
-        ? 'Upgrade path: L0 Kahoot -> L1 interactive exercise -> L2 single worksheet -> L3 section bundle -> L4 unit bundle.'
-        : 'Upgrade path: L0 Kahoot -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.';
+      const interactiveLabel = 'L1: Interactive Exercise';
+      const worksheetLabel = 'L2: Worksheet';
+      const sectionBundleLabel = 'L3: Section Bundle';
+      const unitBundleLabel = 'L4: Unit Bundle';
+      const fallbackPresaleNote = 'Upgrade path: L0 Kahoot -> L1 interactive exercise -> L2 single worksheet -> L3 section bundle -> L4 unit bundle.';
       const interactiveButton = hasInteractiveExercise
         ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center ${interactiveButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${interactiveLabel}</a>`
-        : '';
+        : `<span class="text-center ${interactiveButtonClass} kahoot-ladder-disabled py-3 rounded-lg font-semibold text-sm transition">${interactiveLabel}</span>`;
 
       return `
         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm h-full flex flex-col">
@@ -607,7 +605,7 @@ lang: en
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
           <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
           <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || fallbackPresaleNote)}</p>
-          <div class="mt-auto pt-2 grid grid-cols-1 gap-3">
+          <div class="mt-auto pt-2 cta-stack">
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${kahootLabel}</a>
             ${interactiveButton}
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">${worksheetLabel}</a>

@@ -281,6 +281,10 @@ title: 25Maths Changelog
                     <span><strong>Kahoot 5-button baseline alignment</strong>: Anchored action stacks to card bottoms (`flex-col + mt-auto`) so `L0-L4` button blocks keep the same vertical baseline across mixed card title/description lengths, improving row-level alignment consistency.</span>
                 </li>
                 <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Alignment hardening for missing-L1 cases</strong>: Added fixed `L1` disabled placeholders when exercise links are unavailable, switched hub action-stack spacing to shared `cta-stack` rhythm, and enabled explicit `items-stretch` on card grids so five-button ladders keep identical vertical slots and bottom alignment across all cards.</span>
+                </li>
+                <li class="flex items-start gap-2">
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Build verification</strong>: Confirmed `bundle exec jekyll build` completes successfully after the consistency updates.</span>
                 </li>

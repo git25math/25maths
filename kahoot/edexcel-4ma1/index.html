@@ -52,7 +52,7 @@ lang: en
             <p class="text-sm text-gray-500 mt-2">Bilingual gift logic: after checkout, users opt into bilingual support via a 30-second learning preference form. Review bonus is optional and separate.</p>
             <p class="bilingual-support-only text-sm text-gray-500 mt-2">双语赠送规则一致：支付后填写偏好表单触发基础双语赠送，评价仅作为可选加成条件。</p>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid items-stretch sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {% for unit in catalog.units %}
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-3 mb-2">
@@ -98,7 +98,7 @@ lang: en
                     <span class="text-xs text-gray-500">{{ section.count }} SubTopics</span>
                 </div>
 
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                <div class="grid items-stretch sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                     {% for item in section.items %}
                         {% assign link = link_map[item.id] %}
                         {% assign exercise_page = site.exercises | where: "subtopic_id", item.id | first %}
