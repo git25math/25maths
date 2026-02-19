@@ -1,10 +1,21 @@
 {% assign board_key = include.board | default: 'cie' %}
 {% assign wrapper_class = include.wrapper_class | default: 'mt-2 cta-stack' %}
-{% assign exercise_label = include.exercise_label | default: 'L0: Interactive Exercise' %}
-{% assign kahoot_label = include.kahoot_label | default: 'Open Kahoot' %}
-{% assign worksheet_label = include.worksheet_label | default: 'L1: Worksheet' %}
-{% assign section_label = include.section_label | default: 'L2: Section Bundle' %}
-{% assign unit_label = include.unit_label | default: 'L3: Unit Bundle' %}
+{% assign has_exercise = false %}
+{% if include.exercise_url and include.exercise_url != '' %}
+  {% assign has_exercise = true %}
+{% endif %}
+{% assign kahoot_label = include.kahoot_label | default: 'L0: Open Kahoot' %}
+{% if has_exercise %}
+  {% assign exercise_label = include.exercise_label | default: 'L1: Interactive Exercise' %}
+  {% assign worksheet_label = include.worksheet_label | default: 'L2: Worksheet' %}
+  {% assign section_label = include.section_label | default: 'L3: Section Bundle' %}
+  {% assign unit_label = include.unit_label | default: 'L4: Unit Bundle' %}
+{% else %}
+  {% assign exercise_label = include.exercise_label | default: 'Interactive Exercise' %}
+  {% assign worksheet_label = include.worksheet_label | default: 'L1: Worksheet' %}
+  {% assign section_label = include.section_label | default: 'L2: Section Bundle' %}
+  {% assign unit_label = include.unit_label | default: 'L3: Unit Bundle' %}
+{% endif %}
 
 {% if board_key == 'edx' %}
   {% assign interactive_classes = 'cta-card-btn edx-solid-bg edx-solid-text py-3 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition' %}
@@ -19,10 +30,10 @@
 {% assign kahoot_classes = 'cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition' %}
 
 <div class="{{ wrapper_class }}">
+  {% include ui/cta-link.html href=include.kahoot_url target='_blank' rel='noopener' classes=kahoot_classes label=kahoot_label %}
   {% if include.exercise_url and include.exercise_url != '' %}
     {% include ui/cta-link.html href=include.exercise_url classes=interactive_classes label=exercise_label %}
   {% endif %}
-  {% include ui/cta-link.html href=include.kahoot_url target='_blank' rel='noopener' classes=kahoot_classes label=kahoot_label %}
   {% include ui/cta-link.html href=include.worksheet_url target='_blank' rel='noopener' classes=worksheet_classes label=worksheet_label %}
   {% include ui/cta-link.html href=include.section_bundle_url target='_blank' rel='noopener' classes=secondary_classes label=section_label %}
   {% include ui/cta-link.html href=include.unit_bundle_url target='_blank' rel='noopener' classes=secondary_classes label=unit_label %}

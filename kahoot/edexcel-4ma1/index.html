@@ -1,7 +1,7 @@
 ---
 layout: global
 title: Edexcel 4MA1 Kahoot SubTopic Directory
-description: "Edexcel 4MA1 Kahoot SubTopic list with Foundation/Higher filters and a closed-loop presale ladder: L1 worksheet, L2 section bundle, L3 unit bundle."
+description: "Edexcel 4MA1 Kahoot SubTopic list with Foundation/Higher filters and a closed-loop presale ladder: L0 Kahoot, L1 interactive exercise, L2 worksheet, L3 section bundle, L4 unit bundle."
 active_global: kahoot
 lang: en
 ---
@@ -17,11 +17,11 @@ lang: en
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot + Worksheet Closed-Loop Directory</h1>
         <p class="text-lg text-gray-100 max-w-3xl">
             Every SubTopic follows one growth path:
-            <strong>L1 Worksheet</strong> -> <strong>L2 Section Bundle</strong> -> <strong>L3 Unit Bundle</strong>.
+            <strong>L0 Kahoot</strong> -> <strong>L1 Interactive Exercise</strong> -> <strong>L2 Worksheet</strong> -> <strong>L3 Section Bundle</strong> -> <strong>L4 Unit Bundle</strong>.
             Includes both <strong>Foundation</strong> and <strong>Higher</strong> tracks.
         </p>
         <p class="bilingual-support-only text-base text-gray-100 mt-3 max-w-3xl">
-            每个小考点统一采用 L1 单讲义 -> L2 章节包 -> L3 单元包路径，覆盖 Foundation 与 Higher 两条学习线。
+            每个小考点统一采用 L0 Kahoot -> L1 互动练习 -> L2 单讲义 -> L3 章节包 -> L4 单元包路径，覆盖 Foundation 与 Higher 两条学习线。
         </p>
         <div class="mt-8 flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
             <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-8 py-4 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
@@ -76,7 +76,7 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-2">SubTopic Listing (Foundation + Higher)</h2>
-            <p class="text-gray-600">Each SubTopic card has a complete loop: L0 interactive practice, L1 worksheet, L2 section bundle, L3 unit bundle.</p>
+            <p class="text-gray-600">Each SubTopic card has a complete loop: L0 Kahoot, L1 interactive practice, L2 worksheet, L3 section bundle, L4 unit bundle.</p>
             <p class="bilingual-support-only text-sm text-gray-600 mt-2">每个小考点卡都连接完整升级链路，便于从练习到购买的连续转化。</p>
         </div>
 
@@ -157,7 +157,7 @@ lang: en
                         {% endif %}
                         {% assign release_date = catalog.default_release_date %}
                         {% assign early_bird_deadline = catalog.default_early_bird_deadline %}
-                        {% assign presale_note = 'Upgrade path: L1 worksheet -> L2 section bundle -> L3 unit bundle.' %}
+                        {% assign presale_note = 'Upgrade path: L0 Kahoot -> L1 interactive exercise -> L2 worksheet -> L3 section bundle -> L4 unit bundle.' %}
                         {% if unit and unit.release_date and unit.release_date != '' %}
                             {% assign release_date = unit.release_date %}
                         {% endif %}
