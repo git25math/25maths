@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_L3_CSV = ROOT / "payhip/presale/kahoot-payhip-listings-l3.csv"
 DEFAULT_OUT_CSV = ROOT / "payhip/presale/kahoot-payhip-l3-copy-template.csv"
 DEFAULT_OUT_MD = ROOT / "payhip/presale/kahoot-payhip-l3-copy-template.md"
+L1_ANCHOR_USD = 3
 
 OUT_COLUMNS = [
     "sku",
@@ -60,6 +61,79 @@ def date_long(date_text: str) -> str:
             return date_text
 
 
+def parse_int(text: str) -> int:
+    value = str(text or "").strip()
+    if not value:
+        return 0
+    try:
+        return int(value)
+    except ValueError:
+        return 0
+
+
+def parse_price_usd(text: str) -> float:
+    value = "".join(ch for ch in str(text or "") if ch.isdigit() or ch == ".")
+    if not value:
+        return 0.0
+    try:
+        return float(value)
+    except ValueError:
+        return 0.0
+
+
+def usd(amount: float) -> str:
+    rounded = round(amount, 2)
+    if rounded.is_integer():
+        return f"US${int(rounded)}"
+    return f"US${rounded:.2f}"
+
+
+def unit_value_line(row: dict) -> str:
+    subtopic_count = parse_int(row.get("subtopic_count", ""))
+    singles_total = subtopic_count * L1_ANCHOR_USD
+    bundle_price = parse_price_usd(row.get("price_early_bird", ""))
+    if bundle_price <= 0:
+        return "Unit bundle value is positioned around full-unit structure and support."
+    if singles_total > bundle_price:
+        return (
+            f"Buying L1 separately would be {usd(singles_total)}. "
+            f"This L3 early-bird price is {usd(bundle_price)} (save {usd(singles_total - bundle_price)})."
+        )
+    if singles_total == bundle_price:
+        return (
+            f"Same entry price as buying L1 separately ({usd(bundle_price)}), "
+            "with full-unit structure and bundled exam support."
+        )
+    return (
+        "Designed as a complete unit roadmap with bundled support, "
+        f"not just a sum of L1 files (L1 subtotal {usd(singles_total)})."
+    )
+
+
+def unit_value_block(row: dict) -> str:
+    subtopic_count = parse_int(row.get("subtopic_count", ""))
+    singles_total = subtopic_count * L1_ANCHOR_USD
+    bundle_price = parse_price_usd(row.get("price_early_bird", ""))
+    if bundle_price <= 0:
+        decision_line = "- Pricing will be announced before release."
+    elif singles_total > bundle_price:
+        decision_line = f"- Savings at early-bird price: **{usd(singles_total - bundle_price)}**."
+    elif singles_total == bundle_price:
+        decision_line = "- Price break-even versus singles; added value comes from full-unit workflow and support."
+    else:
+        decision_line = (
+            "- This unit is priced for structured unit completion, answer workflow, and exam-support path "
+            "beyond standalone L1 files."
+        )
+
+    return (
+        "### Value positioning (L1 anchor: US$3 each)\n"
+        f"- L1 single-buy subtotal for this unit: **{usd(singles_total)}** ({subtopic_count} x US$3)\n"
+        f"- L3 early-bird price: **{usd(bundle_price)}**\n"
+        f"{decision_line}"
+    )
+
+
 def build_description(row: dict) -> str:
     unit_title = row.get("unit_title", "")
     board_label = row.get("board_label", "")
@@ -69,6 +143,7 @@ def build_description(row: dict) -> str:
     early_bird = date_long(row.get("early_bird_end_date", ""))
     release = date_long(row.get("release_date", ""))
     bonus = row.get("bonus", "")
+    value_block = unit_value_block(row)
 
     return (
         f"This is the early-bird presale for **{board_label} {unit_title}** ("
@@ -77,6 +152,7 @@ def build_description(row: dict) -> str:
         f"- Approx. **{subtopic_count} subtopics** across **{section_count} sections**\n"
         f"- Structured for exam-spec progression and revision sequencing\n"
         f"- Designed to align Kahoot usage with worksheet and answer support\n\n"
+        f"{value_block}\n\n"
         f"### What you receive now (presale stage)\n"
         f"- Presale entitlement confirmation\n"
         f"- Early-bird price lock\n"
@@ -103,9 +179,11 @@ def build_short_description(row: dict) -> str:
     unit_title = row.get("unit_title", "")
     subtopic_count = row.get("subtopic_count", "")
     tier_scope = row.get("tier_scope", "")
+    value_line = unit_value_line(row)
     return (
         f"Early-bird presale for {board_label} {unit_title}. "
-        f"Approx. {subtopic_count} subtopics ({tier_scope}) with unit-level worksheet + answer support on release."
+        f"Approx. {subtopic_count} subtopics ({tier_scope}) with unit-level worksheet + answer support on release. "
+        f"{value_line}"
     )
 
 

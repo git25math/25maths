@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_L2_CSV = ROOT / "payhip/presale/kahoot-payhip-listings-l2.csv"
 DEFAULT_OUT_CSV = ROOT / "payhip/presale/kahoot-payhip-l2-copy-template.csv"
 DEFAULT_OUT_MD = ROOT / "payhip/presale/kahoot-payhip-l2-copy-template.md"
+L1_ANCHOR_USD = 3
 
 OUT_COLUMNS = [
     "sku",
@@ -65,14 +66,89 @@ def date_long(date_text: str) -> str:
             return date_text
 
 
+def parse_int(text: str) -> int:
+    value = str(text or "").strip()
+    if not value:
+        return 0
+    try:
+        return int(value)
+    except ValueError:
+        return 0
+
+
+def parse_price_usd(text: str) -> float:
+    value = "".join(ch for ch in str(text or "") if ch.isdigit() or ch == ".")
+    if not value:
+        return 0.0
+    try:
+        return float(value)
+    except ValueError:
+        return 0.0
+
+
+def usd(amount: float) -> str:
+    rounded = round(amount, 2)
+    if rounded.is_integer():
+        return f"US${int(rounded)}"
+    return f"US${rounded:.2f}"
+
+
+def section_value_line(row: dict) -> str:
+    subtopic_count = parse_int(row.get("subtopic_count", ""))
+    singles_total = subtopic_count * L1_ANCHOR_USD
+    bundle_price = parse_price_usd(row.get("price_early_bird", ""))
+    if bundle_price <= 0:
+        return "Section bundle value is positioned around structured support and guided progression."
+    if singles_total > bundle_price:
+        return (
+            f"Buying L1 separately would be {usd(singles_total)}. "
+            f"This L2 early-bird price is {usd(bundle_price)} (save {usd(singles_total - bundle_price)})."
+        )
+    if singles_total == bundle_price:
+        return (
+            f"Same entry price as buying L1 separately ({usd(bundle_price)}), "
+            f"with section-level structure and exam-support workflow included."
+        )
+    return (
+        "Designed as a section-level training pack with bundled support beyond standalone L1 files "
+        f"(L1 subtotal {usd(singles_total)})."
+    )
+
+
+def section_value_block(row: dict) -> str:
+    subtopic_count = parse_int(row.get("subtopic_count", ""))
+    singles_total = subtopic_count * L1_ANCHOR_USD
+    bundle_price = parse_price_usd(row.get("price_early_bird", ""))
+    if bundle_price <= 0:
+        decision_line = "- Pricing will be announced before release."
+    elif singles_total > bundle_price:
+        decision_line = f"- Savings at early-bird price: **{usd(singles_total - bundle_price)}**."
+    elif singles_total == bundle_price:
+        decision_line = "- Price break-even versus singles; added value comes from bundled structure and support."
+    else:
+        decision_line = (
+            "- This section is priced for bundled progression, worksheet-answer workflow, and support path "
+            "beyond standalone files."
+        )
+
+    return (
+        "### Value positioning (L1 anchor: US$3 each)\n"
+        f"- L1 single-buy subtotal for this section: **{usd(singles_total)}** ({subtopic_count} x US$3)\n"
+        f"- L2 early-bird price: **{usd(bundle_price)}**\n"
+        f"{decision_line}"
+    )
+
+
 def build_short_description(row: dict) -> str:
     board_label = row.get("board_label", "")
     section_title = row.get("section_title", "")
     tier_scope = row.get("tier_scope", "")
     subtopic_count = row.get("subtopic_count", "")
+    value_line = section_value_line(row)
     return (
         f"Early-bird presale for {board_label} {section_title}. "
-        f"Includes approx. {subtopic_count} subtopics ({tier_scope}) with structured section-level worksheet and answer support."
+        f"Includes approx. {subtopic_count} subtopics ({tier_scope}) with structured section-level worksheet and answer support. "
+        f"{value_line}"
     )
 
 
@@ -86,6 +162,7 @@ def build_description(row: dict) -> str:
     early_bird = date_long(row.get("early_bird_end_date", ""))
     release = date_long(row.get("release_date", ""))
     bonus = row.get("presale_notes", "") or row.get("bonus", "")
+    value_block = section_value_block(row)
 
     return (
         f"This is the early-bird presale for **{board_label} {section_code} {section_title}** "
@@ -94,6 +171,7 @@ def build_description(row: dict) -> str:
         f"- Approx. **{subtopic_count} subtopics** focused on one syllabus section\n"
         f"- Designed for section-by-section exam preparation\n"
         f"- Aligned with Kahoot usage and worksheet progression\n\n"
+        f"{value_block}\n\n"
         f"### What you receive now (presale stage)\n"
         f"- Presale entitlement confirmation\n"
         f"- Early-bird price lock\n"
