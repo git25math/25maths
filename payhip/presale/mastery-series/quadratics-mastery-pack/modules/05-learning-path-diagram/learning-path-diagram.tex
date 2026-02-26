@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{../../../_templates/latex/mastery-style}
+
+\begin{document}
+
+\MasterySetBrand{25Maths}{Mastery Series}
+\MasterySetHeader{Quadratics Mastery Pack}{Module 5: Learning Path Diagram}
+\MasterySetFooter{Quadratics v1 | Module 5 | Learning Path}
+
+\MasteryModuleCover
+  {5}
+  {Learning Path Diagram}
+  {Map the exact order from diagnosis to reinforcement with correction loops}
+
+\section{Five-Stage Path}
+
+\begin{center}
+\begin{tikzpicture}[x=2.6cm,y=1.5cm]
+  \node[mastery-node] (a) at (0,0) {1};
+  \node[mastery-node] (b) at (1.4,0) {2};
+  \node[mastery-node] (c) at (2.8,0) {3};
+  \node[mastery-node] (d) at (4.2,0) {4};
+  \node[mastery-node] (e) at (5.6,0) {5};
+
+  \draw[mastery-link] (a) -- (b);
+  \draw[mastery-link] (b) -- (c);
+  \draw[mastery-link] (c) -- (d);
+  \draw[mastery-link] (d) -- (e);
+
+  \draw[mastery-link] (d.south) to[bend right=30] node[mastery-label,below] {loop back} (b.south);
+  \draw[mastery-link] (e.south) to[bend right=30] node[mastery-label,below] {retest} (c.south);
+
+  \node[mastery-label] at (0,-0.8) {Diagnose};
+  \node[mastery-label] at (1.4,-0.8) {Build};
+  \node[mastery-label] at (2.8,-0.8) {Apply};
+  \node[mastery-label] at (4.2,-0.8) {Correct};
+  \node[mastery-label] at (5.6,-0.8) {Reinforce};
+\end{tikzpicture}
+\end{center}
+
+\section{Stage Inputs and Outputs}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{l X X}
+\toprule
+\textbf{Stage} & \textbf{Input} & \textbf{Output} \\
+\midrule
+1 Diagnose & Baseline questions Q01-Q08 & Primary error tags \\
+2 Build & Core method drills + vocabulary frames & Stable procedure steps \\
+3 Apply & Mixed and transfer questions Q09-Q24 & Method-choice reliability \\
+4 Correct & Top-2 error-tag interventions & Reduced repeat mistakes \\
+5 Reinforce & Kahoot KQ-01 to KQ-06 & Retention before mock \\
+\bottomrule
+\end{tabularx}
+
+\end{document}

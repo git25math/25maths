@@ -45,5 +45,9 @@ plan/member-agent-runs/
 *.fdb_latexmk
 *.synctex.gz
 
+# Root-level LaTeX worksheet outputs (compiled elsewhere)
+/F*.pdf
+/F*.out
+
 # Claude Code worktrees
 .claude/worktrees/
