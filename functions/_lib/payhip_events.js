@@ -80,14 +80,15 @@ export function mapPayhipMembershipStatus(eventType, payload = null) {
   if (normalized.includes('pause')) return 'paused';
   if (normalized.includes('refund') || normalized.includes('cancel') || normalized.includes('deleted')) return 'cancelled';
 
-  // Membership status should be driven by subscription context only.
+  // One-time sale_completed also grants active membership
+  if (normalized === 'sale_completed' || normalized === 'paid') return 'active';
+
   if (!isPayhipSubscriptionEvent(eventType, payload)) return null;
 
   if (
     normalized === 'subscription_created'
     || normalized === 'subscription_payment_succeeded'
     || normalized === 'renewal_payment_succeeded'
-    || normalized === 'paid'
     || normalized.includes('renew')
     || normalized.includes('payment')
   ) {

@@ -23,9 +23,9 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "{PRODUCT_ID}",
-    "payhip_url": "https://payhip.com/b/{PRODUCT_ID}",
-    "membership_tier": "active",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
+    "membership_tier": "",
     "asset_key": "member-files/week01/algebra-foundations-pack.pdf",
     "status": "active"
   }

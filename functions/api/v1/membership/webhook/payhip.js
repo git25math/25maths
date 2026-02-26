@@ -8,6 +8,7 @@ import { jsonResponse } from '../../../../_lib/http.js';
 import {
   isPayhipActivationEvent,
   isPayhipRevocationEvent,
+  isPayhipSubscriptionEvent,
   mapPayhipMembershipStatus,
   parsePayhipEmail,
   parsePayhipEventId,
@@ -166,7 +167,17 @@ export async function onRequestPost(context) {
   }
 
   try {
-    const effectivePeriodEnd = status === 'cancelled' && !periodEnd ? now : periodEnd;
+    const isSubscription = isPayhipSubscriptionEvent(eventType, payload);
+    let effectivePeriodEnd;
+    if (status === 'cancelled' && !periodEnd) {
+      effectivePeriodEnd = now;
+    } else if (!isSubscription && !periodEnd) {
+      // One-time purchase: grant 12-week access window
+      const termEnd = new Date(Date.now() + 12 * 7 * 24 * 60 * 60 * 1000);
+      effectivePeriodEnd = termEnd.toISOString();
+    } else {
+      effectivePeriodEnd = periodEnd;
+    }
 
     if (status) {
       await upsertMembershipStatus(env, {
@@ -174,7 +185,7 @@ export async function onRequestPost(context) {
         status,
         provider: 'payhip',
         provider_customer_id: providerCustomerId || null,
-        period_start: periodStart,
+        period_start: periodStart || now,
         period_end: effectivePeriodEnd,
         updated_at: now,
       });
@@ -191,7 +202,8 @@ export async function onRequestPost(context) {
           release_id: release.release_id,
           source: 'payhip',
           granted_at: now,
-          expires_at: effectivePeriodEnd,
+          // One-time purchases get perpetual entitlements; subscriptions expire
+          expires_at: isSubscription ? effectivePeriodEnd : null,
         });
         grantedCount += 1;
       }
