@@ -1,6 +1,6 @@
 # Member Learning Platform Execution Plan
 
-> Updated: 2026-02-18
+> Updated: 2026-02-18 (UTC)
 > Scope: Free member foundation + paid member personalization + dual-channel content rights
 
 Supporting files:
@@ -107,6 +107,15 @@ DoD:
 2. 关键异常分支可复现可修复
 3. 生产监控指标完整
 
+## 3.1) Delivery Status Snapshot (2026-02-18 UTC)
+
+1. P0: done（调度与 stop-the-line、自愈记录已落盘）
+2. P1: done（登录回跳、免费会员学习面板、session/attempt 记录链路已打通）
+3. P2: in_progress（Webhook + reconcile + 下载网关已上线代码，待真实支付事件与下载 E2E）
+4. P3: in_progress（基于错题标签的推荐卡已上线，待推荐排序与解释性增强）
+5. P4: in_progress（权益由 DB 配置驱动，待优惠券发放策略自动化）
+6. P5: in_progress（Gate 脚本与验证证据已建立，待发布回滚演练）
+
 ## 4) Security & Reliability Standards
 
 1. `service_role` 仅用于服务器端，禁止前端暴露。
@@ -124,7 +133,10 @@ DoD:
 
 ## 6) Immediate Next Actions
 
-1. 已完成双引擎调度与两轮并行运行（见 `plan/member-agent-runs/`）。
-2. 正在推进 P2：Webhook 幂等追踪字段、验签与处理状态落库。
-3. 正在推进 P2：下载网关会员分层授权、TTL 限幅、Bucket allow-list。
-4. 下一步推进 P3/P4：会员中心推荐卡与付费权益展示逻辑。
+1. 已完成 Gate 验证并落盘：`plan/member-agent-runs/20260218T213543Z/`（build/node/supabase/QA 全绿）。
+2. 已将 Gate 流程写入调度脚本：`scripts/member/dispatch_member_agents.sh gate`（顺序执行，避免 Supabase 并发认证冲突）。
+3. 已完成 P2 一轮硬化：`refunded/cancel/subscription.deleted` 事件会回收（失效）对应 entitlement。
+4. 下一步执行 P2 闭环验证：用 Payhip sandbox/真实测试事件打通 `webhook -> membership_status -> entitlements -> /api/v1/download/:release_id`。
+5. 已完成 P3 第一轮：推荐逻辑已从“频次排序”升级为“错题频次 + 最近窗口”加权。
+6. 已完成 P4 第一轮：`member_benefit_offers.metadata.trigger` 已支持优惠触发规则（近期错题/活跃度/skill 前缀）。
+7. 已新增命令行验证脚本：`scripts/member/e2e_payhip_flow.sh`（可直接回放 Payhip 事件并检查 reconcile/download）。

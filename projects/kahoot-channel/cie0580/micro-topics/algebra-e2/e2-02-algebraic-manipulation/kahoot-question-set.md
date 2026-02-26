@@ -1,28 +1,28 @@
 # E2.2 Kahoot Question Set - Algebraic manipulation
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E2.2
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[9, 17, 19, 7, 15]`. | No solution | 0 | 13.4 | Cannot be determined | C | Fluency |
-| 2 | Find median of `[7, 9, 15, 17, 19]`. | 16 | 14 | 17 | 15 | D | Fluency |
-| 3 | Find range of `[9, 17, 19, 7, 15]`. | 14 | 12 | 11 | 13 | B | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 3)`. | 3/6 | 3/7 | 5/6 | 4/6 | A | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | No solution | 0 | 0.2 | Cannot be determined | C | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `51` trials. | 15 | 17 | 14 | 16 | A | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | Median | 0 | Cannot be determined | No solution | A | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | Cannot be determined | 0 | 18/30 = 3/5 | D | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | No solution | 0 | 14/50 = 7/25 | Cannot be determined | C | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0 | Cannot be determined | 0.28 | No solution | C | Method |
-| 11 | Context check: Find median of `[7, 9, 15, 17, 19]`. | 16 | 15 | 17 | 14 | B | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 3)`. | 5/6 | 4/6 | 3/6 | 3/7 | C | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `51` trials. | 14 | 16 | 17 | 15 | D | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | Cannot be determined | No solution | 0 | A | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0.28 | Cannot be determined | 0 | No solution | A | Context |
+| 1 | Simplify `6x + 3x - 7x`. | Cannot be determined | 0 | 2x | No solution | C | Fluency |
+| 2 | Expand and simplify `6(x + 3)`. | No solution | 6x + 18 | 0 | Cannot be determined | B | Fluency |
+| 3 | Factorise `6x + 18` fully. | 0 | 6(x + 3) | No solution | Cannot be determined | B | Fluency |
+| 4 | Solve `6x - 3 = 51`. | 11 | 9 | 8 | 10 | B | Fluency |
+| 5 | When `x = 9`, evaluate `6x^2 - 3x + 7`. | 466 | 465 | 468 | 467 | A | Fluency |
+| 6 | Solve the inequality `6x + 3 >= 27`. | No solution | 0 | x >= 4 | Cannot be determined | C | Method |
+| 7 | The nth term is `6n + 7`. Find term `3`. | 25 | 27 | 24 | 26 | A | Method |
+| 8 | Rearrange `y = 6x - 3` to make `x` the subject. | x = (y + 3)/6 | 0 | Cannot be determined | No solution | A | Method |
+| 9 | Solve `x^2 - 9x + 20 = 0`. | No solution | Cannot be determined | 0 | x = 4 or x = 5 | D | Method |
+| 10 | Given `f(x)=3x^2-2x+1`, find `f(4)`. | 40 | 43 | 41 | 42 | C | Method |
+| 11 | Context check: Expand and simplify `6(x + 3)`. | 0 | Cannot be determined | 6x + 18 | No solution | C | Method |
+| 12 | Context check: Solve `6x - 3 = 51`. | 10 | 9 | 11 | 8 | B | Context |
+| 13 | Context check: Solve the inequality `6x + 3 >= 27`. | 0 | Cannot be determined | x >= 4 | No solution | C | Context |
+| 14 | Context check: Rearrange `y = 6x - 3` to make `x` the subject. | No solution | Cannot be determined | 0 | x = (y + 3)/6 | D | Context |
+| 15 | Context check: Given `f(x)=3x^2-2x+1`, find `f(4)`. | 41 | 42 | 40 | 43 | A | Context |
 
 ## Timer
 - Q1-Q5: 20s

@@ -59,7 +59,7 @@ This is the early-bird presale for **CIE 0580 C1 Number (Core)** (Core), inside 
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -129,7 +129,7 @@ This is the early-bird presale for **CIE 0580 C2 Algebra and Graphs (Core)** (Co
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -199,7 +199,7 @@ This is the early-bird presale for **CIE 0580 C3 Coordinate Geometry (Core)** (C
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -269,7 +269,7 @@ This is the early-bird presale for **CIE 0580 C4 Geometry (Core)** (Core), insid
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -339,7 +339,7 @@ This is the early-bird presale for **CIE 0580 C5 Mensuration (Core)** (Core), in
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -373,7 +373,7 @@ Early-Bird Presale | Core | Section Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Trigonometry (Core). Includes approx. 2 subtopics (Core) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$6).
+Early-bird presale for CIE 0580 Trigonometry (Core). Includes approx. 2 subtopics (Core) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$6).
 
 ### Full Description (Markdown)
 
@@ -387,7 +387,7 @@ This is the early-bird presale for **CIE 0580 C6 Trigonometry (Core)** (Core), i
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$6** (2 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -409,7 +409,7 @@ This is the early-bird presale for **CIE 0580 C6 Trigonometry (Core)** (Core), i
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -418,7 +418,7 @@ This is the early-bird presale for **CIE 0580 C6 Trigonometry (Core)** (Core), i
 ### SEO
 
 - SEO title: CIE 0580 C6 Trigonometry (Core) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Trigonometry (Core). Includes approx. 2 subtopics (Core) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$6).
+- SEO description: Early-bird presale for CIE 0580 Trigonometry (Core). Includes approx. 2 subtopics (Core) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$6).
 
 ### Tags
 
@@ -443,21 +443,21 @@ Early-Bird Presale | Core | Section Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Transformations and Vectors (Core). Includes approx. 1 subtopics (Core) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$3).
+Early-bird presale for CIE 0580 Transformations and Vectors (Core). Includes approx. 1 subtopic (Core) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$3).
 
 ### Full Description (Markdown)
 
 This is the early-bird presale for **CIE 0580 C7 Transformations and Vectors (Core)** (Core), inside the Transformations and Vectors unit.
 
 ### What this section covers
-- Approx. **1 subtopics** focused on one syllabus section
+- Approx. **1 subtopic** focused on one syllabus section
 - Designed for section-by-section exam preparation
 - Aligned with Kahoot usage and worksheet progression
 
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$3** (1 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -479,7 +479,7 @@ This is the early-bird presale for **CIE 0580 C7 Transformations and Vectors (Co
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -488,7 +488,7 @@ This is the early-bird presale for **CIE 0580 C7 Transformations and Vectors (Co
 ### SEO
 
 - SEO title: CIE 0580 C7 Transformations and Vectors (Core) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Transformations and Vectors (Core). Includes approx. 1 subtopics (Core) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$3).
+- SEO description: Early-bird presale for CIE 0580 Transformations and Vectors (Core). Includes approx. 1 subtopic (Core) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$3).
 
 ### Tags
 
@@ -513,7 +513,7 @@ Early-Bird Presale | Core | Section Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Probability (Core). Includes approx. 3 subtopics (Core) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$9).
+Early-bird presale for CIE 0580 Probability (Core). Includes approx. 3 subtopics (Core) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$9).
 
 ### Full Description (Markdown)
 
@@ -527,7 +527,7 @@ This is the early-bird presale for **CIE 0580 C8 Probability (Core)** (Core), in
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$9** (3 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -549,7 +549,7 @@ This is the early-bird presale for **CIE 0580 C8 Probability (Core)** (Core), in
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -558,7 +558,7 @@ This is the early-bird presale for **CIE 0580 C8 Probability (Core)** (Core), in
 ### SEO
 
 - SEO title: CIE 0580 C8 Probability (Core) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Probability (Core). Includes approx. 3 subtopics (Core) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$9).
+- SEO description: Early-bird presale for CIE 0580 Probability (Core). Includes approx. 3 subtopics (Core) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$9).
 
 ### Tags
 
@@ -619,7 +619,7 @@ This is the early-bird presale for **CIE 0580 C9 Statistics (Core)** (Core), ins
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -689,7 +689,7 @@ This is the early-bird presale for **CIE 0580 E1 Number (Extended)** (Extended),
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -759,7 +759,7 @@ This is the early-bird presale for **CIE 0580 E2 Algebra and Graphs (Extended)**
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -829,7 +829,7 @@ This is the early-bird presale for **CIE 0580 E3 Coordinate Geometry (Extended)*
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -899,7 +899,7 @@ This is the early-bird presale for **CIE 0580 E4 Geometry (Extended)** (Extended
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -969,7 +969,7 @@ This is the early-bird presale for **CIE 0580 E5 Mensuration (Extended)** (Exten
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1039,7 +1039,7 @@ This is the early-bird presale for **CIE 0580 E6 Trigonometry (Extended)** (Exte
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1109,7 +1109,7 @@ This is the early-bird presale for **CIE 0580 E7 Transformations and Vectors (Ex
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1179,7 +1179,7 @@ This is the early-bird presale for **CIE 0580 E8 Probability (Extended)** (Exten
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1249,7 +1249,7 @@ This is the early-bird presale for **CIE 0580 E9 Statistics (Extended)** (Extend
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1319,7 +1319,7 @@ This is the early-bird presale for **Edexcel 4MA1 F1 Number and Arithmetic (Foun
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1389,7 +1389,7 @@ This is the early-bird presale for **Edexcel 4MA1 F2 Equations, Formulae and Ide
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1459,7 +1459,7 @@ This is the early-bird presale for **Edexcel 4MA1 F3 Functions, Sequences and Gr
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1529,7 +1529,7 @@ This is the early-bird presale for **Edexcel 4MA1 F4 Geometry and Mensuration (F
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1563,7 +1563,7 @@ Early-Bird Presale | Foundation | Section Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Foundation). Includes approx. 2 subtopics (Foundation) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$6).
+Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Foundation). Includes approx. 2 subtopics (Foundation) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$6).
 
 ### Full Description (Markdown)
 
@@ -1577,7 +1577,7 @@ This is the early-bird presale for **Edexcel 4MA1 F5 Vectors and Transformations
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$6** (2 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -1599,7 +1599,7 @@ This is the early-bird presale for **Edexcel 4MA1 F5 Vectors and Transformations
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1608,7 +1608,7 @@ This is the early-bird presale for **Edexcel 4MA1 F5 Vectors and Transformations
 ### SEO
 
 - SEO title: Edexcel 4MA1 F5 Vectors and Transformations (Foundation) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Foundation). Includes approx. 2 subtopics (Foundation) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$6).
+- SEO description: Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Foundation). Includes approx. 2 subtopics (Foundation) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$6).
 
 ### Tags
 
@@ -1633,7 +1633,7 @@ Early-Bird Presale | Foundation | Section Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Statistics and Probability (Foundation). Includes approx. 3 subtopics (Foundation) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$9).
+Early-bird presale for Edexcel 4MA1 Statistics and Probability (Foundation). Includes approx. 3 subtopics (Foundation) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$9).
 
 ### Full Description (Markdown)
 
@@ -1647,7 +1647,7 @@ This is the early-bird presale for **Edexcel 4MA1 F6 Statistics and Probability 
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$9** (3 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -1669,7 +1669,7 @@ This is the early-bird presale for **Edexcel 4MA1 F6 Statistics and Probability 
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1678,7 +1678,7 @@ This is the early-bird presale for **Edexcel 4MA1 F6 Statistics and Probability 
 ### SEO
 
 - SEO title: Edexcel 4MA1 F6 Statistics and Probability (Foundation) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Statistics and Probability (Foundation). Includes approx. 3 subtopics (Foundation) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$9).
+- SEO description: Early-bird presale for Edexcel 4MA1 Statistics and Probability (Foundation). Includes approx. 3 subtopics (Foundation) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$9).
 
 ### Tags
 
@@ -1739,7 +1739,7 @@ This is the early-bird presale for **Edexcel 4MA1 H1 Number and Arithmetic (High
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1809,7 +1809,7 @@ This is the early-bird presale for **Edexcel 4MA1 H2 Equations, Formulae and Ide
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1879,7 +1879,7 @@ This is the early-bird presale for **Edexcel 4MA1 H3 Functions, Sequences and Gr
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1949,7 +1949,7 @@ This is the early-bird presale for **Edexcel 4MA1 H4 Geometry and Mensuration (H
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -1983,7 +1983,7 @@ Early-Bird Presale | Higher | Section Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Higher). Includes approx. 2 subtopics (Higher) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$6).
+Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Higher). Includes approx. 2 subtopics (Higher) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$6).
 
 ### Full Description (Markdown)
 
@@ -1997,7 +1997,7 @@ This is the early-bird presale for **Edexcel 4MA1 H5 Vectors and Transformations
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$6** (2 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -2019,7 +2019,7 @@ This is the early-bird presale for **Edexcel 4MA1 H5 Vectors and Transformations
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -2028,7 +2028,7 @@ This is the early-bird presale for **Edexcel 4MA1 H5 Vectors and Transformations
 ### SEO
 
 - SEO title: Edexcel 4MA1 H5 Vectors and Transformations (Higher) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Higher). Includes approx. 2 subtopics (Higher) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$6).
+- SEO description: Early-bird presale for Edexcel 4MA1 Vectors and Transformations (Higher). Includes approx. 2 subtopics (Higher) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$6).
 
 ### Tags
 
@@ -2053,7 +2053,7 @@ Early-Bird Presale | Higher | Section Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Statistics and Probability (Higher). Includes approx. 3 subtopics (Higher) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$9).
+Early-bird presale for Edexcel 4MA1 Statistics and Probability (Higher). Includes approx. 3 subtopics (Higher) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$9).
 
 ### Full Description (Markdown)
 
@@ -2067,7 +2067,7 @@ This is the early-bird presale for **Edexcel 4MA1 H6 Statistics and Probability 
 ### Value positioning (L1 anchor: US$3 each)
 - L1 single-buy subtotal for this section: **US$9** (3 x US$3)
 - L2 early-bird price: **US$12**
-- This section is priced for bundled progression, worksheet-answer workflow, and support path beyond standalone files.
+- Value comes from structured progression, worksheet-answer workflow, and section-level release support.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -2089,7 +2089,7 @@ This is the early-bird presale for **Edexcel 4MA1 H6 Statistics and Probability 
 
 ### Bonus and retention
 - Includes themed past-paper bonus, free bilingual vocabulary cards, and bilingual support upgrade coupons.
-- Need-based bilingual support path is available after purchase (not review-gated).
+- Need-based bilingual support options are available after purchase (not review-gated).
 
 ### Policy notes
 - Presale terms are listed in the product page and project terms PDF.
@@ -2098,7 +2098,7 @@ This is the early-bird presale for **Edexcel 4MA1 H6 Statistics and Probability 
 ### SEO
 
 - SEO title: Edexcel 4MA1 H6 Statistics and Probability (Higher) Section Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Statistics and Probability (Higher). Includes approx. 3 subtopics (Higher) with structured section-level worksheet and answer support. Designed as a section-level training pack with bundled support beyond standalone L1 files (L1 subtotal US$9).
+- SEO description: Early-bird presale for Edexcel 4MA1 Statistics and Probability (Higher). Includes approx. 3 subtopics (Higher) with structured section-level worksheet and answer support. Built as a structured section bundle with worksheet-to-answer progression and release support (L1 subtotal US$9).
 
 ### Tags
 

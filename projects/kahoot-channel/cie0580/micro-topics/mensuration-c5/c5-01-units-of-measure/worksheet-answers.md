@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C5.1 Units of measure
 
-1. 17.2
-2. 17
-3. 5
-4. `5/6`
-5. 0.6
-6. 19
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. 48 cm
+2. 143 cm^2
+3. 58.5 cm^2
+4. `18pi cm`
+5. `81pi cm^2`
+6. 1287
+7. 486
+8. 1287
+9. 14300
+10. `9pi/2`

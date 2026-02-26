@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C3.5 Equations of linear graphs
 
-1. 12.2
-2. 13
-3. 10
-4. `1/6`
-5. 0.2
-6. 23
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. II
+2. `(1,3)`
+3. 0.6
+4. `y = 4x + 4`
+5. 20
+6. 4
+7. `y = 4x + 7`
+8. -0.25
+9. 6
+10. -1

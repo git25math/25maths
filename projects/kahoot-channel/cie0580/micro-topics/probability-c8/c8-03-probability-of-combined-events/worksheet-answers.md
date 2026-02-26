@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C8.3 Probability of combined events
 
-1. 10.6
-2. 10
-3. 6
-4. `2/6`
-5. 0.3
-6. 12
-7. Median
+1. `4/6`
+2. 0.65
+3. 14
+4. 0.28
+5. 0.82
+6. `4/7`
+7. `3/8`
 8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+9. 0.70
+10. `1/4`

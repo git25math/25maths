@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E2.1 Introduction to algebra
 
-1. 12.4
-2. 10
-3. 9
-4. `4/6`
-5. 0.2
-6. 20
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `6x`
+2. `4x + 20`
+3. `4(x + 5)`
+4. 4
+5. 47
+6. `x >= 2.25`
+7. 19
+8. `x = (y + 5)/4`
+9. `x = 6` or `x = 8`
+10. 41

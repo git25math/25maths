@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - E3.1 Coordinates
 
 ## Kahoot Name
-Edexcel 4MA1 E3.1 | Coordinates | HIGHER TRACK
+CIE 0580 E3.1 | Coordinates | Extended Track
 
 ## Kahoot Description
-E3.1 Coordinates exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+E3.1 Coordinates exam-style practice for CIE 0580 (Extended). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Coordinate #E31 #ExamStyleMaths
+#CIE0580 #ExtendedTrack #Coordinate #E31 #ExamStyleMaths

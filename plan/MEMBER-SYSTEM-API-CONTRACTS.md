@@ -105,8 +105,9 @@ Headers:
 Behavior:
 - Verify signature.
 - Parse event.
-- Upsert `membership_status`.
-- Upsert `entitlements` if applicable.
+- Upsert `membership_status` (subscription-context events only).
+- Upsert `entitlements` on payment/sale events when `product_id` maps to releases.
+- Revoke (expire) mapped `entitlements` on refund/cancel/delete events.
 
 Response:
 - `200`: processed
@@ -124,6 +125,7 @@ Headers:
 Behavior:
 - 查找当前登录用户邮箱对应的 `payhip_event_log` 中 `pending/failed` 事件。
 - 重放权益同步逻辑（`membership_status` + `entitlements`）。
+- 对退款/取消类事件执行 entitlement 失效（`expires_at = now()`）。
 - 成功事件标记 `handled`，失败事件标记 `failed` 并写入错误信息。
 
 Response:
@@ -141,10 +143,11 @@ Behavior:
 - 读取当前用户会员状态。
 - 仅当会员有效时返回优惠权益。
 - 优先读取 `public.member_benefit_offers` 中有效权益（按 `priority`）。
+- 当 `metadata.trigger` 存在时，按触发规则筛选权益（支持 `lookback_days`、`min_recent_wrong_attempts`、`min_recent_sessions`、`skill_tag_prefixes`、`min_matching_wrong_attempts`）。
 - 当 DB 无可用权益时，回退到 `MEMBER_BENEFITS_JSON` 或 fallback env。
 
 Response:
-- `200`: `{ membership_active, offers: [...], benefit_source: "database|env|none" }`
+- `200`: `{ membership_active, offers: [...], offer_count, benefit_source: "database|env|none" }`
 - `401`: 无效会话
 - `500`: 读取失败
 

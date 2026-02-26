@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C1.12 Rates
 
 1. 101
-2. `10/12`
-3. 2.76
-4. 16384
+2. `7/8`
+3. 4.50
+4. 4096
 5. 10
-6. 151.2
-7. 27
-8. Use place value; correct rounded value shown in working.
+6. 132
+7. 54
+8. 380
 9. `2 x 10^4`
 10. £9.90

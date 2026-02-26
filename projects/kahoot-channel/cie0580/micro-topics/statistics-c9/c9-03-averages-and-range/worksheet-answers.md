@@ -1,4 +1,4 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C9.3 Averages and range
 
 1. 14.4
@@ -10,4 +10,4 @@
 7. Median
 8. `18/30 = 3/5`
 9. `14/50 = 7/25`
-10. 0.28
+10. `3/8`

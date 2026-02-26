@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.1 Classifying statistical data
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply classifying statistical data methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply classifying statistical data methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[15, 6, 5, 5, 14]` is `45/5 = 9.0`.

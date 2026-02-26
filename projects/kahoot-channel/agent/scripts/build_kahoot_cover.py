@@ -228,13 +228,13 @@ def tier_badge_text(tier: str | None) -> str:
     if not tier:
         return "QUIZ + WORKSHEET"
     if tier == "core":
-        return "CORE TRACK"
+        return "Core Track"
     if tier == "extended":
-        return "EXTENDED TRACK"
+        return "Extended Track"
     if tier == "foundation":
         return "FOUNDATION TIER"
     if tier == "higher":
-        return "HIGHER TIER"
+        return "Higher Tier"
     return tier.upper()
 
 

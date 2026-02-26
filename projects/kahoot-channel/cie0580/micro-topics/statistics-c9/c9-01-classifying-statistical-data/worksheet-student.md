@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C9.1 Classifying statistical data
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply classifying statistical data methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply classifying statistical data methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
 Example: mean of `[9, 6, 8, 18, 11]` is `52/5 = 10.4`.
@@ -19,4 +19,4 @@ Example: mean of `[9, 6, 8, 18, 11]` is `52/5 = 10.4`.
 7. State which average is least affected by outliers: mean, median, or mode.
 8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
 9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+10. A spinner has 8 equal sections, 3 are blue. Find `P(blue)`.

@@ -2,12 +2,12 @@
 ## F1.7 Ratio and proportion
 
 1. 120
-2. `8/12`
-3. 3.93
-4. 729
-5. 7
-6. 147.6
-7. 45
-8. Use place value; correct rounded value shown in working.
-9. `3 x 10^4`
+2. `3/4`
+3. 3.98
+4. 81
+5. 10
+6. 141.6
+7. 36
+8. 240
+9. `5 x 10^4`
 10. £9.90

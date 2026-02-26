@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - C9.1 Classifying statistical data
 
 ## Kahoot Name
-Edexcel 4MA1 C9.1 | Classifying statistical data | HIGHER TRACK
+CIE 0580 C9.1 | Classifying statistical data | Core Track
 
 ## Kahoot Description
-C9.1 Classifying statistical data exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+C9.1 Classifying statistical data exam-style practice for CIE 0580 (Core). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Statistics #C91 #ExamStyleMaths
+#CIE0580 #CoreTrack #Statistics #C91 #ExamStyleMaths

@@ -1,8 +1,8 @@
 # E4.6 Kahoot Question Set - Angles
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E4.6
 - Questions: 15 MCQ
 

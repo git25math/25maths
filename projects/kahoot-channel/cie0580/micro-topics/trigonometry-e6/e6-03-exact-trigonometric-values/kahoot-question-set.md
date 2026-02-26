@@ -1,28 +1,28 @@
 # E6.3 Kahoot Question Set - Exact trigonometric values
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E6.3
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[18, 13, 8, 18, 15]`. | No solution | Cannot be determined | 14.4 | 0 | C | Fluency |
-| 2 | Find median of `[8, 13, 15, 18, 18]`. | 15 | 16 | 14 | 17 | A | Fluency |
-| 3 | Find range of `[18, 13, 8, 18, 15]`. | 11 | 10 | 12 | 9 | B | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 4)`. | 2/6 | 3/6 | 4/6 | 2/7 | A | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | 0 | Cannot be determined | 0.2 | No solution | C | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `50` trials. | 17 | 16 | 15 | 14 | C | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | No solution | Median | Cannot be determined | 0 | B | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 0 | Cannot be determined | 18/30 = 3/5 | D | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | No solution | Cannot be determined | 14/50 = 7/25 | 0 | C | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0 | No solution | Cannot be determined | 0.28 | D | Method |
-| 11 | Context check: Find median of `[8, 13, 15, 18, 18]`. | 15 | 16 | 17 | 14 | A | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 4)`. | 2/7 | 3/6 | 2/6 | 4/6 | C | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `50` trials. | 16 | 14 | 17 | 15 | D | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | No solution | Cannot be determined | 0 | A | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | Cannot be determined | No solution | 0.28 | 0 | C | Context |
+| 1 | Use Pythagoras to find hypotenuse when legs are `6` and `6`. | sqrt(72) | Cannot be determined | 0 | No solution | A | Fluency |
+| 2 | Find `sin 30°`. | 2/2 | 3/2 | 1/2 | 1/3 | C | Fluency |
+| 3 | Find `cos 60°`. | 3/2 | 2/2 | 1/3 | 1/2 | D | Fluency |
+| 4 | Find `tan 45°`. | 1 | 0 | 3 | 2 | A | Fluency |
+| 5 | In a right triangle, `sin(theta)=0.5`. Find `theta` (acute). | 30° | Cannot be determined | No solution | 0 | A | Fluency |
+| 6 | In a right triangle, `cos(theta)=0.5`. Find `theta` (acute). | 60° | No solution | 0 | Cannot be determined | A | Method |
+| 7 | Find one value of `theta` in `0°..90°` if `tan(theta)=1`. | 0 | Cannot be determined | 45° | No solution | C | Method |
+| 8 | State the sine rule formula. | 0 | Cannot be determined | a/sinA = b/sinB = c/sinC | No solution | C | Method |
+| 9 | State the cosine rule formula for side `a`. | No solution | a^2 = b^2 + c^2 - 2bc cosA | Cannot be determined | 0 | B | Method |
+| 10 | A ladder reaches 4 m up a wall and is 5 m long. Find angle with ground (nearest degree). | No solution | 0 | Cannot be determined | 53° | D | Method |
+| 11 | Context check: Find `sin 30°`. | 1/3 | 2/2 | 1/2 | 3/2 | C | Method |
+| 12 | Context check: Find `tan 45°`. | 3 | 0 | 2 | 1 | D | Context |
+| 13 | Context check: In a right triangle, `cos(theta)=0.5`. Find `theta` (acute). | 60° | Cannot be determined | 0 | No solution | A | Context |
+| 14 | Context check: State the sine rule formula. | No solution | Cannot be determined | a/sinA = b/sinB = c/sinC | 0 | C | Context |
+| 15 | Context check: A ladder reaches 4 m up a wall and is 5 m long. Find angle with ground (nearest degree). | Cannot be determined | No solution | 0 | 53° | D | Context |
 
 ## Timer
 - Q1-Q5: 20s

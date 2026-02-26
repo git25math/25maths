@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E4.7 Circle theorems I
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply circle theorems i methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply circle theorems i methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: area of a triangle with base `9` and height `7` is `1/2 x 9 x 7 = 31`.
+Example: area of a triangle with base `7` and height `7` is `1/2 x 7 x 7 = 24`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `54°` and `56°`.

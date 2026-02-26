@@ -1,28 +1,28 @@
 # E2.12 Kahoot Question Set - Differentiation
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E2.12
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[11, 12, 9, 10, 15]`. | 11.4 | No solution | Cannot be determined | 0 | A | Fluency |
-| 2 | Find median of `[9, 10, 11, 12, 15]`. | 10 | 13 | 11 | 12 | C | Fluency |
-| 3 | Find range of `[11, 12, 9, 10, 15]`. | 8 | 7 | 6 | 5 | C | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 4)`. | 4/6 | 2/6 | 2/7 | 3/6 | B | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | 0 | Cannot be determined | No solution | 0.2 | D | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `70` trials. | 23 | 22 | 21 | 20 | C | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | 0 | Median | Cannot be determined | No solution | B | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | 0 | No solution | Cannot be determined | A | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | No solution | Cannot be determined | 0 | 14/50 = 7/25 | D | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | Cannot be determined | 0.28 | 0 | No solution | B | Method |
-| 11 | Context check: Find median of `[9, 10, 11, 12, 15]`. | 12 | 13 | 11 | 10 | C | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 4)`. | 2/7 | 3/6 | 2/6 | 4/6 | C | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `70` trials. | 21 | 23 | 20 | 22 | A | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 0 | Cannot be determined | 18/30 = 3/5 | D | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | No solution | 0.28 | 0 | Cannot be determined | B | Context |
+| 1 | Simplify `3x + 3x - 3x`. | 0 | Cannot be determined | No solution | 3x | D | Fluency |
+| 2 | Expand and simplify `3(x + 3)`. | 3x + 9 | Cannot be determined | 0 | No solution | A | Fluency |
+| 3 | Factorise `3x + 9` fully. | No solution | 0 | 3(x + 3) | Cannot be determined | C | Fluency |
+| 4 | Solve `3x - 3 = 9`. | 6 | 5 | 4 | 3 | C | Fluency |
+| 5 | When `x = 4`, evaluate `3x^2 - 3x + 3`. | 41 | 39 | 38 | 40 | B | Fluency |
+| 6 | Solve the inequality `3x + 3 >= 22`. | 0 | Cannot be determined | No solution | x >= 6.3333333333 | D | Method |
+| 7 | The nth term is `3n + 3`. Find term `5`. | 20 | 19 | 18 | 17 | C | Method |
+| 8 | Rearrange `y = 3x - 3` to make `x` the subject. | 0 | x = (y + 3)/3 | Cannot be determined | No solution | B | Method |
+| 9 | Solve `x^2 - 10x + 24 = 0`. | x = 4 or x = 6 | 0 | No solution | Cannot be determined | A | Method |
+| 10 | Given `f(x)=3x^2-2x+1`, find `f(4)`. | 40 | 42 | 43 | 41 | D | Method |
+| 11 | Context check: Expand and simplify `3(x + 3)`. | Cannot be determined | 3x + 9 | 0 | No solution | B | Method |
+| 12 | Context check: Solve `3x - 3 = 9`. | 5 | 6 | 4 | 3 | C | Context |
+| 13 | Context check: Solve the inequality `3x + 3 >= 22`. | No solution | Cannot be determined | x >= 6.3333333333 | 0 | C | Context |
+| 14 | Context check: Rearrange `y = 3x - 3` to make `x` the subject. | x = (y + 3)/3 | 0 | No solution | Cannot be determined | A | Context |
+| 15 | Context check: Given `f(x)=3x^2-2x+1`, find `f(4)`. | 40 | 43 | 42 | 41 | D | Context |
 
 ## Timer
 - Q1-Q5: 20s

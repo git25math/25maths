@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E3.5 Equations of linear graphs
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply equations of linear graphs methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply equations of linear graphs methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[17, 6, 9, 7, 17]` is `56/5 = 11.2`.
+Example: for nth term `6n + 0`, term 5 is `6 x 5 + 0 = 30`.
 
 ## Practice (10)
-1. Find mean of `[17, 17, 15, 19, 5]`.
-2. Find median of `[5, 15, 17, 17, 19]`.
-3. Find range of `[17, 17, 15, 19, 5]`.
-4. A fair die is rolled. Find `P(score > 2)`.
-5. If `P(A)=0.8`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `58` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. State the quadrant of point `(-1,7)`.
+2. Find midpoint of `(-1,3)` and `(10,7)`.
+3. Find gradient of the line through `(-1,3)` and `(10,7)`.
+4. Write equation of line with gradient `5` and intercept `-5`.
+5. For `y = 5x + -5`, find `y` when `x = 3`.
+6. For `y = 5x + -5`, find `x` when `y = 10`.
+7. Find equation of line parallel to `y = 5x + -5` passing through `(0,-2)`.
+8. Find gradient of line perpendicular to `y = 5x + -5`.
+9. Find distance between points `(-1,3)` and `(-1,7)`.
+10. Find equation of line with gradient `5` through `(3,12)`.

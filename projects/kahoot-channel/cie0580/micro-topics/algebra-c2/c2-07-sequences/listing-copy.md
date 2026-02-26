@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - C2.7 Sequences
 
 ## Kahoot Name
-Edexcel 4MA1 C2.7 | Sequences | HIGHER TRACK
+CIE 0580 C2.7 | Sequences | Core Track
 
 ## Kahoot Description
-C2.7 Sequences exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+C2.7 Sequences exam-style practice for CIE 0580 (Core). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Algebra #C27 #ExamStyleMaths
+#CIE0580 #CoreTrack #Algebra #C27 #ExamStyleMaths

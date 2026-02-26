@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E7.2 Vectors in two dimensions
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply vectors in two dimensions methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply vectors in two dimensions methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[11, 14, 12, 17, 4]` is `58/5 = 11.6`.
+Example: vector `AB` from `A(0,0)` to `B(5,7)` is `(5,7)`.
 
 ## Practice (10)
-1. Find mean of `[15, 13, 6, 6, 11]`.
-2. Find median of `[6, 6, 11, 13, 15]`.
-3. Find range of `[15, 13, 6, 6, 11]`.
-4. A fair die is rolled. Find `P(score > 3)`.
-5. If `P(A)=0.5`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `67` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Translate point `(1,-1)` by vector `(4,0)`.
+2. State the coordinates of image of `(2,3)` after reflection in x-axis.
+3. State the coordinates of image of `(2,3)` after reflection in y-axis.
+4. Rotate point `(1,2)` by `90°` anticlockwise about origin.
+5. Enlargement scale factor `2` about origin maps `(3,-1)` to what point?
+6. Find vector from `A(1,-1)` to `B(2,0)`.
+7. State one invariant under translation.
+8. State one invariant under rotation.
+9. If two vectors are parallel, what is true about their components?
+10. If `a=(3,-2)` and `b=(4,1)`, find `2a-b`.

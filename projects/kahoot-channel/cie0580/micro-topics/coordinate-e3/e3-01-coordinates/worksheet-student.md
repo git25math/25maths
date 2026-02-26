@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E3.1 Coordinates
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply coordinates methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply coordinates methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[15, 18, 14, 13, 11]` is `71/5 = 14.2`.
+Example: for nth term `6n + 7`, term 5 is `6 x 5 + 7 = 37`.
 
 ## Practice (10)
-1. Find mean of `[11, 20, 6, 17, 13]`.
-2. Find median of `[6, 11, 13, 17, 20]`.
-3. Find range of `[11, 20, 6, 17, 13]`.
-4. A fair die is rolled. Find `P(score > 3)`.
-5. If `P(A)=0.9`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `79` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. State the quadrant of point `(-3,8)`.
+2. Find midpoint of `(-3,4)` and `(4,8)`.
+3. Find gradient of the line through `(-3,4)` and `(4,8)`.
+4. Write equation of line with gradient `4` and intercept `-1`.
+5. For `y = 4x + -1`, find `y` when `x = 6`.
+6. For `y = 4x + -1`, find `x` when `y = 23`.
+7. Find equation of line parallel to `y = 4x + -1` passing through `(0,2)`.
+8. Find gradient of line perpendicular to `y = 4x + -1`.
+9. Find distance between points `(-3,4)` and `(-3,8)`.
+10. Find equation of line with gradient `4` through `(6,25)`.

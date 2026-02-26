@@ -1,28 +1,28 @@
 # E3.7 Kahoot Question Set - Perpendicular lines
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E3.7
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[20, 15, 16, 9, 19]`. | No solution | 0 | 15.8 | Cannot be determined | C | Fluency |
-| 2 | Find median of `[9, 15, 16, 19, 20]`. | 17 | 18 | 16 | 15 | C | Fluency |
-| 3 | Find range of `[20, 15, 16, 9, 19]`. | 10 | 12 | 11 | 13 | C | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 3)`. | 4/6 | 5/6 | 3/7 | 3/6 | D | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | Cannot be determined | 0.2 | 0 | No solution | B | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `62` trials. | 18 | 17 | 19 | 20 | A | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | 0 | No solution | Median | Cannot be determined | C | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 0 | 18/30 = 3/5 | Cannot be determined | No solution | B | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | Cannot be determined | No solution | 0 | 14/50 = 7/25 | D | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | Cannot be determined | 0 | No solution | 0.28 | D | Method |
-| 11 | Context check: Find median of `[9, 15, 16, 19, 20]`. | 15 | 18 | 16 | 17 | C | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 3)`. | 3/7 | 5/6 | 3/6 | 4/6 | C | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `62` trials. | 17 | 19 | 20 | 18 | D | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 18/30 = 3/5 | 0 | Cannot be determined | B | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0 | 0.28 | Cannot be determined | No solution | B | Context |
+| 1 | State the quadrant of point `(-1,7)`. | Cannot be determined | 0 | II | No solution | C | Fluency |
+| 2 | Find midpoint of `(-1,2)` and `(9,7)`. | 0 | (4,4.5) | Cannot be determined | No solution | B | Fluency |
+| 3 | Find gradient of the line through `(-1,2)` and `(9,7)`. | 0.5 | 1.50 | 0.00 | 1.00 | A | Fluency |
+| 4 | Write equation of line with gradient `3` and intercept `2`. | No solution | y = 3x + 2 | 0 | Cannot be determined | B | Fluency |
+| 5 | For `y = 3x + 2`, find `y` when `x = 4`. | 14 | 16 | 13 | 15 | A | Fluency |
+| 6 | For `y = 3x + 2`, find `x` when `y = 14`. | 4 | 3 | 6 | 5 | A | Method |
+| 7 | Find equation of line parallel to `y = 3x + 2` passing through `(0,5)`. | Cannot be determined | y = 3x + 5 | 0 | No solution | B | Method |
+| 8 | Find gradient of line perpendicular to `y = 3x + 2`. | -0.83 | 0.67 | -0.3333333333 | 0.17 | C | Method |
+| 9 | Find distance between points `(-1,2)` and `(-1,7)`. | 6 | 7 | 5 | 4 | C | Method |
+| 10 | Find equation of line with gradient `3` through `(4,16)`. | 0 | No solution | y = 3x + 4 | Cannot be determined | C | Method |
+| 11 | Context check: Find midpoint of `(-1,2)` and `(9,7)`. | Cannot be determined | No solution | 0 | (4,4.5) | D | Method |
+| 12 | Context check: Write equation of line with gradient `3` and intercept `2`. | Cannot be determined | 0 | y = 3x + 2 | No solution | C | Context |
+| 13 | Context check: For `y = 3x + 2`, find `x` when `y = 14`. | 5 | 4 | 3 | 6 | B | Context |
+| 14 | Context check: Find gradient of line perpendicular to `y = 3x + 2`. | -0.83 | 0.67 | 0.17 | -0.3333333333 | D | Context |
+| 15 | Context check: Find equation of line with gradient `3` through `(4,16)`. | 0 | Cannot be determined | y = 3x + 4 | No solution | C | Context |
 
 ## Timer
 - Q1-Q5: 20s

@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - F2.7 Quadratic equations
 
 ## Kahoot Name
-Edexcel 4MA1 F2.7 | Quadratic equations | FOUNDATION TRACK
+Edexcel 4MA1 F2.7 | Quadratic equations | Foundation Tier
 
 ## Kahoot Description
 F2.7 Quadratic equations exam-style practice for Edexcel 4MA1 (Foundation). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

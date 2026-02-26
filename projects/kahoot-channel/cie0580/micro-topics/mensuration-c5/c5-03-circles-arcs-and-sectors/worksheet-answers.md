@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C5.3 Circles, arcs and sectors
 
-1. 10.4
-2. 12
-3. 8
-4. `4/6`
-5. 0.3
-6. 15
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. 36 cm
+2. 56 cm^2
+3. 42.0 cm^2
+4. `8pi cm`
+5. `16pi cm^2`
+6. 336
+7. 216
+8. 336
+9. 5600
+10. `4pi/2`

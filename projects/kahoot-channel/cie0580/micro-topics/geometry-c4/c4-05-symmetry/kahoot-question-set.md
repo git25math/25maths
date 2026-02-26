@@ -1,8 +1,8 @@
 # C4.5 Kahoot Question Set - Symmetry
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Core
 - Micro-topic: C4.5
 - Questions: 15 MCQ
 
@@ -17,12 +17,12 @@
 | 7 | In a right triangle, `sin(theta)=0.5`. Find `theta` (acute). | 30° | 0 | Cannot be determined | No solution | A | Method |
 | 8 | Find volume of cuboid `15 x 17 x 19`. | 4845 | 4847 | 4844 | 4846 | A | Method |
 | 9 | Two similar shapes have scale factor `3`. Area scale factor? | 11 | 10 | 9 | 8 | C | Method |
-| 10 | A cone has radius `6` and height `18`. Write volume in terms of `pi`. | 0 | Cannot be determined | No solution | 216.0pi | D | Method |
+| 10 | A cylinder has radius `6` and height `15`. Write volume in terms of `pi`. | 0 | Cannot be determined | No solution | 540pi | D | Method |
 | 11 | Context check: Find sum of interior angles of a `8`-sided polygon. | 1082 | 1081 | 1080 | 1079 | C | Method |
 | 12 | Context check: Find perimeter of rectangle `15 cm` by `19 cm`. | 68 cm | No solution | 0 | Cannot be determined | A | Context |
 | 13 | Context check: Use Pythagoras: legs `3` and `5`. | sqrt(34) | Cannot be determined | 0 | No solution | A | Context |
 | 14 | Context check: Find volume of cuboid `15 x 17 x 19`. | 4845 | 4846 | 4847 | 4844 | A | Context |
-| 15 | Context check: A cone has radius `6` and height `18`. Write volume in terms of `pi`. | Cannot be determined | 216.0pi | No solution | 0 | B | Context |
+| 15 | Context check: A cylinder has radius `6` and height `15`. Write volume in terms of `pi`. | Cannot be determined | 540pi | No solution | 0 | B | Context |
 
 ## Timer
 - Q1-Q5: 20s

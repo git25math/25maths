@@ -2,12 +2,12 @@
 ## F1.9 Standard form
 
 1. 116
-2. `9/12`
-3. 3.15
+2. `2/3`
+3. 4.37
 4. 27
 5. 10
-6. 150.0
+6. 140.4
 7. 36
-8. Use place value; correct rounded value shown in working.
-9. `3 x 10^4`
+8. 980
+9. `6 x 10^4`
 10. £9.90

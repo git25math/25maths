@@ -8,10 +8,10 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find third angle in a triangle with angles `53°` and `62°`. | 64 | 65 | 66 | 67 | B | Fluency |
-| 2 | Find sum of interior angles of a `5`-sided polygon. | 541 | 539 | 542 | 540 | D | Fluency |
-| 3 | State the order of rotational symmetry of a regular hexagon. | 5 | 6 | 7 | 8 | B | Fluency |
-| 4 | Find perimeter of rectangle `9 cm` by `13 cm`. | 44 cm | Cannot be determined | No solution | 0 | A | Fluency |
+| 1 | Find third angle in a triangle with angles `53°` and `62°`. | 67 | 64 | 66 | 65 | D | Fluency |
+| 2 | Find sum of interior angles of a `5`-sided polygon. | 542 | 539 | 540 | 541 | C | Fluency |
+| 3 | State the order of rotational symmetry of a regular hexagon. | 6 | 5 | 8 | 7 | A | Fluency |
+| 4 | Find perimeter of rectangle `9 cm` by `13 cm`. | 0 | No solution | Cannot be determined | 44 cm | D | Fluency |
 | 5 | Find area of circle radius `5 cm` in terms of `pi`. | 0 | No solution | 25pi cm^2 | Cannot be determined | C | Fluency |
 | 6 | Use Pythagoras: legs `7` and `7`. | Cannot be determined | No solution | 0 | sqrt(98) | D | Method |
 | 7 | In a right triangle, `sin(theta)=0.5`. Find `theta` (acute). | 0 | 30° | Cannot be determined | No solution | B | Method |

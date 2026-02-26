@@ -15,7 +15,7 @@ Example: solve `4x + 7 = 23` by inverse operations. Subtract `7` then divide by 
 3. Expand `2(x + 2)`.
 4. Solve `4x + 3 = 43`.
 5. Rearrange `y = 4x + 3` to make `x` the subject.
-6. Solve simultaneously: `x + y = 11`, `x - y = 6`.
+6. Solve simultaneously: `x + y = 13`, `x - y = 3`.
 7. Solve `x^2 - 3x + 2 = 0`.
 8. Solve the inequality `3x - 6 > 0`.
 9. A recipe uses sugar and flour in ratio `3:5`. If sugar is `24 g`, find flour.

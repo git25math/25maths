@@ -8,11 +8,11 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[20, 7, 18, 7, 18]`. | Cannot be determined | No solution | 0 | 14.0 | D | Fluency |
+| 1 | Find mean of `[20, 7, 18, 7, 18]`. | 14.50 | 13.50 | 15.00 | 14.0 | D | Fluency |
 | 2 | Find median of `[7, 7, 18, 18, 20]`. | 17 | 19 | 20 | 18 | D | Fluency |
 | 3 | Find range of `[20, 7, 18, 7, 18]`. | 14 | 13 | 15 | 12 | B | Fluency |
 | 4 | A fair die is rolled. Find `P(score > 1)`. | 6/6 | 7/6 | 5/6 | 5/7 | C | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | 0 | Cannot be determined | 0.2 | No solution | C | Fluency |
+| 5 | If `P(A)=0.8`, find `P(not A)`. | 1.20 | 0.70 | 0.2 | -0.30 | C | Fluency |
 | 6 | Expected frequency if probability is `0.3` in `80` trials. | 25 | 26 | 24 | 23 | C | Method |
 | 7 | State which average is least affected by outliers: mean, median, or mode. | No solution | Cannot be determined | Median | 0 | C | Method |
 | 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 18/30 = 3/5 | Cannot be determined | 0 | B | Method |

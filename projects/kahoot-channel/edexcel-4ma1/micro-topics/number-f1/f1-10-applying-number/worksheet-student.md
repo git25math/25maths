@@ -7,11 +7,11 @@ Name: ____________________   Date: ____________________
 - Apply applying number methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: increase `80` by `25%`: compute `80 x (1 + 25/100)` to get `100.0`.
+Example: increase `80` by `25%`: compute `80 x (1 + 25/100)` to get `100`.
 
 ## Practice (10)
 1. Evaluate `33 + 8 x 6`.
-2. Write `3/24 + 11/24` as a simplified fraction.
+2. Write `4/24 + 12/24` as a simplified fraction.
 3. Calculate `2.9 + 0.17`.
 4. Work out `4^3`.
 5. Find `sqrt(81)`.

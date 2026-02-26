@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E8.4 Conditional probability
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply conditional probability methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply conditional probability methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[10, 11, 18, 17, 6]` is `62/5 = 12.4`.
+Example: mean of `[9, 6, 8, 5, 16]` is `44/5 = 8.8`.
 
 ## Practice (10)
-1. Find mean of `[8, 16, 20, 15, 10]`.
-2. Find median of `[8, 10, 15, 16, 20]`.
-3. Find range of `[8, 16, 20, 15, 10]`.
-4. A fair die is rolled. Find `P(score > 3)`.
-5. If `P(A)=0.5`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `54` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. A fair die is rolled. Find `P(score > 1)`.
+2. If `P(A)=0.35`, find `P(not A)`.
+3. Expected frequency for probability `0.3` in `63` trials.
+4. If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A and B)`.
+5. If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A or B)`.
+6. A bag has 8 red and 5 blue counters. Find `P(red)`.
+7. A spinner has 8 equal sections, 3 are blue. Find `P(blue)`.
+8. In a class, 18 of 30 students are girls. Find `P(girl)`.
+9. If `P(A)=0.25` and `P(B)=0.45` are mutually exclusive, find `P(A or B)`.
+10. Given `P(A)=0.6`, `P(B)=0.5`, and `P(A and B)=0.3`, find `P(A|B)`.

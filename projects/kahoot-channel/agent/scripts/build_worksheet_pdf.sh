@@ -181,6 +181,13 @@ def render_math(s: str) -> str:
         seg = re.sub(r'(?<=\S)\s+[xX]\s+(?=\S)', lambda _m: ' ' + backslash + 'times ', seg)
         # Convert simple fractions to \frac{}{} in math mode.
         seg = frac_pattern.sub(lambda m: backslash + 'frac{' + m.group(1) + '}{' + m.group(2) + '}', seg)
+        # Tighten standalone "=" spacing in math mode to avoid visually loose equations.
+        # Keep comparison operators like ">=" and "<=" unchanged.
+        seg = re.sub(
+            r'(?<![<>!])=(?![=>])',
+            lambda _m: backslash + '!=' + backslash + '!',
+            seg,
+        )
         return seg
 
     out = []

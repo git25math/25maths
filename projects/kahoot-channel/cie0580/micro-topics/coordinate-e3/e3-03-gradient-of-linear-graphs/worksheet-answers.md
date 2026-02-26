@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E3.3 Gradient of linear graphs
 
-1. 14.4
-2. 15
-3. 14
-4. `4/6`
-5. 0.3
-6. 12
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. II
+2. `(2,6.5)`
+3. 0.625
+4. `y = 2x + 6`
+5. 12
+6. 3
+7. `y = 2x + 9`
+8. -0.5
+9. 5
+10. `y = 2x + 8`

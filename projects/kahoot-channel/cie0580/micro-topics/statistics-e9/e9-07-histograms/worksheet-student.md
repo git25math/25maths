@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.7 Histograms
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply histograms methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply histograms methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[15, 5, 15, 17, 18]` is `70/5 = 14.0`.

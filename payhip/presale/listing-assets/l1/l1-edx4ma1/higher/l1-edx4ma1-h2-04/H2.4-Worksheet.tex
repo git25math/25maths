@@ -1,0 +1,480 @@
+\documentclass[11pt,a4paper]{article}
+
+% =========================================================
+% BRAND CONFIG (edit here only)
+% =========================================================
+\newcommand{\BrandName}{25Maths}
+\newcommand{\SeriesName}{Take-away Series}
+\newcommand{\ExamName}{Edexcel 4MA1 Higher}
+\newcommand{\TopicName}{Linear Equations}
+
+\newcommand{\TopicCode}{h2-04-linear-equations}
+\newcommand{\WorksheetID}{4MA1H-\TopicCode-S} % S=Simplified, F=Full
+\newcommand{\DocVersion}{Simplified Entry-Level Version}
+\newcommand{\DocYear}{2026}
+
+\newcommand{\ClaimDeadline}{March 1, 2026}
+\newcommand{\FullReleaseDate}{April 30, 2026}
+\newcommand{\PriceFreeText}{FREE}
+\newcommand{\PriceEarlyBird}{\$3.00}
+\newcommand{\PriceRegular}{\$4.00}
+
+\newcommand{\SiteURL}{https://payhip.com/b/fk9YR}
+\newcommand{\KahootURL}{https://kahoot.it/challenge/0089313979}
+
+\newcommand{\DeliveryNote}{The Full Version will be emailed to everyone who claimed or purchased this bundle on \FullReleaseDate.}
+\newcommand{\UsageNote}{For classroom use and individual revision. Redistribution not permitted.}
+
+% =========================================================
+% GLOBAL SWITCHES
+% =========================================================
+\newif\ifShowAnswerLabel
+\ShowAnswerLabeltrue
+
+\newif\ifShowMarks
+\ShowMarkstrue
+
+\newcommand{\AnswerBoxHeight}{1.30cm}
+\newcommand{\AnswerBoxPadding}{6pt}
+
+% =========================================================
+% PAGE + TYPOGRAPHY
+% =========================================================
+\usepackage[a4paper,margin=1.8cm,headheight=26pt,headsep=12pt,footskip=18pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage[scaled=0.92]{helvet}
+
+% =========================================================
+% MATH / LAYOUT
+% =========================================================
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{array}
+
+% =========================================================
+% COLOR / BOX / ICON / LINKS
+% =========================================================
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% =========================================================
+% HARMONISED COLOR PALETTE (soft + bright blue)
+% =========================================================
+\definecolor{mainblue}{HTML}{4A7FA7}     % softer, gentle medium blue
+\definecolor{accentblue}{HTML}{7FB8DB}   % calm bright blue for links
+\definecolor{mist}{HTML}{F8FBFE}         % airy light blue
+\definecolor{mist2}{HTML}{EEF5FC}        % soft panel blue
+\definecolor{linegray}{HTML}{D6E3EE}     % gentle blue-gray line
+\definecolor{softgold}{HTML}{FFF3D6}     % warm pale gold
+\definecolor{goldline}{HTML}{E7C56A}     % warm gold line
+\definecolor{okgreen}{HTML}{1B5E20}
+\definecolor{textmuted}{HTML}{70859A}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=mainblue,
+  urlcolor=accentblue,
+  pdfnewwindow=true
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6.5pt}
+
+% =========================================================
+% HEADER / FOOTER STYLE
+% =========================================================
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{mainblue}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{linegray}\leaders\hrule height \footrulewidth\hfill}}
+
+\lhead{\sffamily\textcolor{mainblue}{\textbf{\ExamName}} \quad \textcolor{textmuted}{|} \quad \textbf{\TopicName}}
+\rhead{\sffamily\small \textbf{\BrandName} / \textit{\SeriesName}}
+
+\lfoot{\sffamily\scriptsize \textcolor{textmuted}{ID: \WorksheetID}}
+\cfoot{\sffamily\scriptsize \textcolor{textmuted}{\TopicCode \;\textbullet\; \DocVersion}}
+\rfoot{\sffamily\scriptsize \textcolor{textmuted}{Page \thepage \;\textbullet\; \copyright\ \DocYear\ \BrandName}}
+
+% =========================================================
+% TCOLORBOX STYLES (cover-first design system)
+% =========================================================
+\tcbset{
+  base/.style={
+    enhanced,
+    arc=5pt,
+    boxrule=0.85pt,
+    colframe=linegray,
+    left=11pt,right=11pt,top=9pt,bottom=9pt
+  },
+  card/.style={
+    base,
+    colback=white
+  },
+  soft/.style={
+    base,
+    colback=mist
+  },
+  soft2/.style={
+    base,
+    colback=mist2
+  },
+  gold/.style={
+    base,
+    colback=softgold,
+    colframe=goldline,
+    boxrule=0.95pt,
+    drop fuzzy shadow
+  },
+  bar/.style={
+    enhanced,
+    arc=5pt,
+    colback=mist2,
+    colframe=linegray,
+    boxrule=0.85pt,
+    left=11pt,right=11pt,top=8pt,bottom=8pt
+  }
+}
+
+% =========================================================
+% MACROS
+% =========================================================
+\newcommand{\qnum}[1]{%
+  \tcbox[
+    enhanced,
+    colback=mist2,
+    colframe=linegray,
+    boxrule=0.6pt,
+    arc=2pt,
+    top=1.2pt,bottom=1.2pt,left=5pt,right=5pt,
+    boxsep=0pt,
+    on line
+  ]{\sffamily\bfseries\textcolor{mainblue}{#1}}%
+}
+
+\newcommand{\MarkOne}{%
+  \ifShowMarks{\sffamily\footnotesize\textcolor{textmuted}{\,(1 mark)}}\fi
+}
+
+\newcommand{\AnswerBox}{%
+  \vspace{4pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=linegray,
+    boxrule=0.85pt,
+    arc=2pt,
+    left=\AnswerBoxPadding,
+    right=\AnswerBoxPadding,
+    top=4pt,
+    bottom=4pt,
+    height=\AnswerBoxHeight
+  ]
+  \ifShowAnswerLabel
+    {\sffamily\footnotesize\textcolor{textmuted}{\textbf{Answer:}}}\hspace{6pt}
+  \fi
+  \end{tcolorbox}
+}
+
+\newcommand{\StudentStrip}{%
+\begin{tcolorbox}[bar]
+\sffamily\small
+\textbf{Name:} \underline{\hspace{4.0cm}}
+\hfill
+\textbf{Class:} \underline{\hspace{2.4cm}}
+\hfill
+\textbf{Date:} \underline{\hspace{2.8cm}}
+\end{tcolorbox}
+}
+
+\newcommand{\tickbox}{\(\square\)}
+
+\newcommand{\SectionHeader}[3]{%
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+  \sffamily
+  \textbf{#1}\quad\textcolor{textmuted}{|}%
+  \quad{\small\textbf{Skills:} #2 \quad\textcolor{textmuted}{|}\quad\textbf{Time:} #3}
+\end{tcolorbox}
+}
+
+% Small capsule (cover metadata chips)
+\newcommand{\chip}[1]{%
+\tcbox[
+  enhanced,
+  colback=mist2,
+  colframe=linegray,
+  boxrule=0.6pt,
+  arc=10pt,
+  left=8pt,right=8pt,top=2.5pt,bottom=2.5pt,
+  on line
+]{\sffamily\scriptsize\textcolor{mainblue}{\textbf{#1}}}%
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+\begin{document}
+\thispagestyle{empty}% cover page: no header/footer
+
+% =========================================================
+% COVER (beautified layout: hero + grid, calmer colours)
+% =========================================================
+% Top accent bar (brand entry point, replaces missing header)
+\noindent\textcolor{mainblue}{\rule{\linewidth}{3pt}}\par\vspace{14pt}
+
+\begin{center}
+  {\sffamily\Large\textcolor{textmuted}{Interactive Practice Suite}}\\[6pt]
+  {\sffamily\Huge\bfseries\textcolor{mainblue}{\ExamName\ --- \TopicName\strut}}\\
+  \vspace{6pt}
+  {\sffamily\large\textcolor{textmuted}{Worksheet + Kahoot \;\textbullet\; Built from the official Edexcel 4MA1 Higher syllabus}}
+\end{center}
+
+\vspace{10pt}
+
+% Meta chips row (cleaner than a big strip)
+\begin{center}
+  \chip{Worksheet ID: \WorksheetID}\hspace{6pt}
+  \chip{Claim by: \ClaimDeadline}\hspace{6pt}
+  \chip{Full Upgrade: \FullReleaseDate}
+\end{center}
+
+\vspace{10pt}
+
+% Hero value proposition (single calm box)
+\begin{tcolorbox}[soft]
+\sffamily
+\textbf{Who this is for:} Higher-tier students securing equation-solving fluency and teachers targeting balancing errors.\\
+\textbf{What you train:} one-step and multi-step linear equations, equations with brackets/fractions, and contextual modelling.
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% Pre-sale spotlight (only warm colour on page)
+\begin{tcolorbox}[gold]
+\sffamily
+\textbf{\faFire\ URGENT PRE-SALE: Get it \PriceFreeText\ before \ClaimDeadline.}\par
+Claiming the Simplified Version today locks in your \textbf{FREE upgrade} to the \textbf{Full Version} on \textbf{\FullReleaseDate}.\par
+\textcolor{mainblue}{\textbf{Delivery:}} \DeliveryNote
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% Two-column feature grid (balanced, same style)
+\begin{multicols}{2}
+  \begin{tcolorbox}[card, title=\sffamily\bfseries\textcolor{white}{\faHandPointDown\ TODAY (Simplified Version)}, colbacktitle=mainblue, boxed title style={sharp corners, boxrule=0pt}]
+    \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+      \item \small \textbf{15 Core Questions} (solving multi-step linear equations accurately).
+      \item \small \textbf{Basic Answer Key} (final answers only).
+      \item \small \textbf{Bonus Kahoot Access} (premium quiz, free to play).
+    \end{itemize}
+  \end{tcolorbox}
+
+  \columnbreak
+
+  \begin{tcolorbox}[card, title=\sffamily\bfseries\textcolor{white}{\faRocket\ ON \FullReleaseDate\ (Full Upgrade)}, colbacktitle=mainblue, boxed title style={sharp corners, boxrule=0pt}]
+    \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+      \item \small \textbf{In-Depth Worked Solutions} (step-by-step).
+      \item \small \textbf{Exam Topic Analysis} (frequency by type).
+      \item \small \textbf{Common Mistakes Guide} (examiner traps).
+      \item \small \textbf{Extended Practice} variations.
+    \end{itemize}
+  \end{tcolorbox}
+\end{multicols}
+
+% Pricing + CTA in a single clean block
+\begin{tcolorbox}[soft2]
+\begin{minipage}[t]{0.62\linewidth}
+  \sffamily\bfseries\textcolor{mainblue}{\faChartLine\ Pricing Timeline}\par
+  \vspace{4pt}
+  \renewcommand{\arraystretch}{1.25}
+  \small
+  \begin{tabularx}{\linewidth}{X r}
+    \toprule
+    \textbf{Now -- \ClaimDeadline} & \textcolor{okgreen}{\faCheckCircle\ \textbf{\PriceFreeText}} \\
+    \textbf{March 2 -- March 31} & \PriceEarlyBird \\
+    \textbf{April 1 onwards} & \PriceRegular \\
+    \textbf{\FullReleaseDate} & \textbf{Full Version (Email)} \\
+    \bottomrule
+  \end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.34\linewidth}
+  \vspace{2pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback=mainblue,
+    colframe=mainblue,
+    coltext=white,
+    arc=16pt,
+    boxrule=0pt,
+    left=10pt,right=10pt,top=10pt,bottom=10pt,
+    halign=center
+  ]
+    \sffamily\Large\bfseries
+    \href{\SiteURL}{\textcolor{white}{Download for Free}}
+  \end{tcolorbox}
+  \vspace{6pt}
+  {\sffamily\scriptsize\textcolor{textmuted}{Claim before \ClaimDeadline\ to secure the free full upgrade.}}
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% Link bar + usage note (minimal, premium)
+\begin{tcolorbox}[bar]
+  \sffamily\small
+  \faLink\ \textbf{Download:}\ \href{\SiteURL}{\SiteURL}
+  \hfill
+  \faGamepad\ \textbf{Kahoot:}\ \href{\KahootURL}{Edexcel 4MA1 H2.4 | Linear Equations | Higher Tier}
+\end{tcolorbox}
+
+\vspace{6pt}
+{\sffamily\footnotesize\textcolor{textmuted}{\UsageNote}}
+
+\newpage
+
+% =========================================================
+% WORKSHEET
+% =========================================================
+\begin{center}
+  {\sffamily\huge\bfseries\textcolor{mainblue}{Worksheet: \TopicName\ (Higher Tier)}}\\
+  \vspace{4pt}
+  {\sffamily\small \textcolor{textmuted}{\textbf{Instructions:} Show inverse operations line-by-line and verify by substitution.}}\\
+\end{center}
+
+\StudentStrip
+
+\begin{tcolorbox}[soft]
+  \sffamily\footnotesize
+  \faCogs\ \textbf{Skills Covered:}
+  \textcolor{mainblue}{Equation Solving} $\bullet$
+  \textcolor{mainblue}{Brackets and Fractions} $\bullet$
+  \textcolor{mainblue}{Context Equations} $\bullet$
+  \textcolor{mainblue}{Checking Solutions}
+\end{tcolorbox}
+
+% ---- SECTION A
+\SectionHeader{Section A: Core Equations}{One-step and two-step solving}{7--9 mins}
+
+\begin{enumerate}[label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item Solve \(x+7=19\).\MarkOne \AnswerBox
+  \item Solve \(3x=27\).\MarkOne \AnswerBox
+  \item Solve \(\dfrac{x}{5}=4\).\MarkOne \AnswerBox
+  \item Solve \(2x-5=13\).\MarkOne \AnswerBox
+  \item Solve \(7-2x=1\).\MarkOne \AnswerBox
+\end{enumerate}
+
+% ---- SECTION B
+\SectionHeader{Section B: Structured Equations}{Brackets, fractions, and decimals}{8--10 mins}
+
+\begin{enumerate}[resume, label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item Solve \(3(x-2)=15\).\MarkOne \AnswerBox
+  \item Solve \(2x+5=3x-4\).\MarkOne \AnswerBox
+  \item Solve \(\dfrac{x+3}{4}=5\).\MarkOne \AnswerBox
+  \item Solve \(5-(2x-1)=12\).\MarkOne \AnswerBox
+  \item Solve \(0.4x+2=5.2\).\MarkOne \AnswerBox
+\end{enumerate}
+
+% ---- SECTION C
+\SectionHeader{Section C: Applied Equations}{Model and solve contextual equations}{8--10 mins}
+
+\begin{enumerate}[resume, label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item The sum of three consecutive integers is 48. Find the middle integer.\MarkOne \AnswerBox
+  \item A taxi fare model is \(4+2x=18\). Solve for \(x\).\MarkOne \AnswerBox
+  \item For a rectangle, \(2(l+3)=30\). Find \(l\).\MarkOne \AnswerBox
+  \item Solve \(3(2y-1)=4y+10\).\MarkOne \AnswerBox
+  \item Solve \(\dfrac{x-1}{3}+\dfrac{x+2}{6}=4\).\MarkOne \AnswerBox
+\end{enumerate}
+
+\vfill
+\begin{tcolorbox}[soft]
+  \sffamily\footnotesize\itshape
+  \faLightbulb\ \textbf{Teacher Tip:}
+  Require a final substitution check, especially on equations involving brackets or fractions.
+\end{tcolorbox}
+
+\newpage
+
+% =========================================================
+% ANSWER KEY (grouped by section)
+% =========================================================
+\begin{center}
+  {\sffamily\LARGE\bfseries\textcolor{mainblue}{Answer Key (Basic)}}\\
+\end{center}
+
+\begin{tcolorbox}[bar]
+\sffamily\small
+\textbf{Student:} \underline{\hspace{3.2cm}}
+\hfill
+\textbf{Score:} \underline{\hspace{1.1cm}} / 15
+\hfill
+\textbf{Checked by:} \underline{\hspace{2.2cm}}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section A Answers (Q1--Q5)}
+\end{tcolorbox}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+1 & \(12\) & \tickbox & \textcolor{textmuted}{---} \\
+2 & \(9\) & \tickbox & \textcolor{textmuted}{---} \\
+3 & \(20\) & \tickbox & \textcolor{textmuted}{---} \\
+4 & \(9\) & \tickbox & \textcolor{textmuted}{---} \\
+5 & \(3\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section B Answers (Q6--Q10)}
+\end{tcolorbox}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+6 & \(7\) & \tickbox & \textcolor{textmuted}{---} \\
+7 & \(9\) & \tickbox & \textcolor{textmuted}{---} \\
+8 & \(17\) & \tickbox & \textcolor{textmuted}{---} \\
+9 & \(-3\) & \tickbox & \textcolor{textmuted}{---} \\
+10 & \(8\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section C Answers (Q11--Q15)}
+\end{tcolorbox}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+11 & \(16\) & \tickbox & \textcolor{textmuted}{---} \\
+12 & \(7\) & \tickbox & \textcolor{textmuted}{---} \\
+13 & \(12\) & \tickbox & \textcolor{textmuted}{---} \\
+14 & \(6.5\) & \tickbox & \textcolor{textmuted}{---} \\
+15 & \(8\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{14pt}
+\begin{center}
+  \sffamily\scriptsize\textcolor{textmuted}{
+    Tags: Edexcel Math $\bullet$ 4MA1 Higher $\bullet$ Linear Equations $\bullet$ Algebraic Solving $\bullet$ Multi-step Equations $\bullet$ Math Worksheet $\bullet$ Kahoot Quiz $\bullet$ Edexcel IGCSE $\bullet$ Math Revision
+  }
+\end{center}
+
+\end{document}

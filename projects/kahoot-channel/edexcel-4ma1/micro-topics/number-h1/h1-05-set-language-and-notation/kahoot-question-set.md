@@ -8,21 +8,21 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Evaluate `23 + 14 x 6`. | 108 | 107 | 109 | 106 | B | Fluency |
-| 2 | Write `8/24 + 14/24` as a simplified fraction. | 13/12 | 11/12 | 12/12 | 11/13 | B | Fluency |
-| 3 | Calculate `1.9 + 0.21`. | Cannot be determined | No solution | 0 | 2.11 | D | Fluency |
-| 4 | Work out `2^6`. | 66 | 63 | 65 | 64 | D | Fluency |
+| 1 | Evaluate `23 + 14 x 6`. | 109 | 107 | 108 | 106 | B | Fluency |
+| 2 | Write `3/24 + 13/24` as a simplified fraction. | 3/3 | 2/4 | 4/3 | 2/3 | D | Fluency |
+| 3 | Calculate `2.9 + 0.12`. | 4.02 | 2.52 | 3.52 | 3.02 | D | Fluency |
+| 4 | Work out `4^5`. | 1024 | 1023 | 1026 | 1025 | A | Fluency |
 | 5 | Find `sqrt(121)`. | 11 | 10 | 13 | 12 | A | Fluency |
-| 6 | Increase `120` by `21%`. | 145.2 | No solution | 0 | Cannot be determined | A | Method |
-| 7 | Share `75` in the ratio `2:3` and give the larger share. | 45 | 44 | 46 | 47 | A | Method |
-| 8 | Round `428.8` to `2` significant figures. | Use place value; correct rounded value shown in working. | No solution | 0 | Cannot be determined | A | Method |
-| 9 | Write `60000` in standard form. | 6 x 10^4 | 0 | Cannot be determined | No solution | A | Method |
-| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | 0 | No solution | Cannot be determined | £9.90 | D | Method |
-| 11 | Context check: Write `8/24 + 14/24` as a simplified fraction. | 11/13 | 11/12 | 12/12 | 13/12 | B | Method |
-| 12 | Context check: Work out `2^6`. | 63 | 65 | 66 | 64 | D | Context |
-| 13 | Context check: Increase `120` by `21%`. | 145.2 | 0 | Cannot be determined | No solution | A | Context |
-| 14 | Context check: Round `428.8` to `2` significant figures. | Use place value; correct rounded value shown in working. | 0 | Cannot be determined | No solution | A | Context |
-| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | No solution | £9.90 | 0 | Cannot be determined | B | Context |
+| 6 | Increase `120` by `12%`. | 134.4 | 133.90 | 134.90 | 135.40 | A | Method |
+| 7 | Share `105` in the ratio `2:3` and give the larger share. | 63 | 62 | 65 | 64 | A | Method |
+| 8 | Round `170.5` to `3` significant figures. | 170 | 172 | 171 | 169 | A | Method |
+| 9 | Write `20000` in standard form. | 0 | No solution | Cannot be determined | 2 x 10^4 | D | Method |
+| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | No solution | £9.90 | Cannot be determined | 0 | B | Method |
+| 11 | Context check: Write `3/24 + 13/24` as a simplified fraction. | 2/4 | 3/3 | 4/3 | 2/3 | D | Method |
+| 12 | Context check: Work out `4^5`. | 1024 | 1026 | 1025 | 1023 | A | Context |
+| 13 | Context check: Increase `120` by `12%`. | 134.4 | 135.40 | 134.90 | 133.90 | A | Context |
+| 14 | Context check: Round `170.5` to `3` significant figures. | 169 | 170 | 172 | 171 | B | Context |
+| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | £9.90 | No solution | 0 | Cannot be determined | A | Context |
 
 ## Timer
 - Q1-Q5: 20s

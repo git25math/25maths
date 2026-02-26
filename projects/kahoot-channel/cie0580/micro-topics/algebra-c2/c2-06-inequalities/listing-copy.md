@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - C2.6 Inequalities
 
 ## Kahoot Name
-Edexcel 4MA1 C2.6 | Inequalities | HIGHER TRACK
+CIE 0580 C2.6 | Inequalities | Core Track
 
 ## Kahoot Description
-C2.6 Inequalities exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+C2.6 Inequalities exam-style practice for CIE 0580 (Core). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Algebra #C26 #ExamStyleMaths
+#CIE0580 #CoreTrack #Algebra #C26 #ExamStyleMaths

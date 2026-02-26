@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C1.7 Indices I
 
 1. 108
-2. `19/24`
-3. 1.54
-4. 15625
+2. `5/8`
+3. 2.29
+4. 3125
 5. 7
-6. 136.8
-7. 45
-8. Use place value; correct rounded value shown in working.
+6. 142.8
+7. 27
+8. 310
 9. `6 x 10^4`
 10. £9.90

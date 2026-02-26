@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E3.6 Parallel lines
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply parallel lines methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply parallel lines methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[9, 8, 14, 17, 18]` is `66/5 = 13.2`.
+Example: for nth term `5n + -4`, term 5 is `5 x 5 + -4 = 21`.
 
 ## Practice (10)
-1. Find mean of `[8, 15, 6, 17, 19]`.
-2. Find median of `[6, 8, 15, 17, 19]`.
-3. Find range of `[8, 15, 6, 17, 19]`.
-4. A fair die is rolled. Find `P(score > 1)`.
-5. If `P(A)=0.8`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `72` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. State the quadrant of point `(-4,2)`.
+2. Find midpoint of `(-4,2)` and `(8,2)`.
+3. Find gradient of the line through `(-4,2)` and `(8,2)`.
+4. Write equation of line with gradient `6` and intercept `1`.
+5. For `y = 6x + 1`, find `y` when `x = 6`.
+6. For `y = 6x + 1`, find `x` when `y = 37`.
+7. Find equation of line parallel to `y = 6x + 1` passing through `(0,4)`.
+8. Find gradient of line perpendicular to `y = 6x + 1`.
+9. Find distance between points `(-4,2)` and `(-4,2)`.
+10. Find equation of line with gradient `6` through `(6,39)`.

@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C4.2 Geometrical constructions
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply geometrical constructions methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply geometrical constructions methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
-Example: area of a triangle with base `8` and height `8` is `1/2 x 8 x 8 = 32`.
+Example: area of a triangle with base `6` and height `6` is `1/2 x 6 x 6 = 18`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `44°` and `47°`.
@@ -19,4 +19,4 @@ Example: area of a triangle with base `8` and height `8` is `1/2 x 8 x 8 = 32`.
 7. In a right triangle, `sin(theta)=0.5`. Find `theta` (acute).
 8. Find volume of cuboid `14 x 16 x 18`.
 9. Two similar shapes have scale factor `3`. Area scale factor?
-10. A cone has radius `7` and height `17`. Write volume in terms of `pi`.
+10. A cylinder has radius `7` and height `14`. Write volume in terms of `pi`.

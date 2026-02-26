@@ -172,3 +172,108 @@ Outputs:
 - `payhip/presale/listing-assets/payhip-cover-manifest.csv`
 
 `payhip-cover-manifest.csv` can be used as the upload checklist and source of exact image paths.
+
+## 13) Unified Merchant Copy Pack (All SKUs)
+
+Generate one all-in-one merchant copy file for all levels (`L1-L4`, total `249` SKUs):
+
+```bash
+python3 scripts/payhip/generate_payhip_merchant_copy_pack.py
+```
+
+Outputs:
+
+- `payhip/presale/kahoot-payhip-merchant-copy-pack.csv`
+- `payhip/presale/kahoot-payhip-merchant-copy-pack.md`
+
+The CSV includes:
+
+- EN + ZH subtitle
+- EN + ZH short description
+- EN + ZH full markdown description
+- SEO title/description
+- CTA labels
+- Pricing, dates, and all product links
+
+Use this unified CSV when you want one master source for Payhip listing copy, instead of working level-by-level.
+
+## 14) Upload Batch CSV Generation (Revenue-First)
+
+Generate upload-ready batch files (L3 -> L4 -> L2 -> L1), with copy + pricing + cover paths in one place:
+
+```bash
+ruby scripts/payhip/generate_payhip_upload_batches.rb
+```
+
+Outputs:
+
+- `payhip/presale/upload-batches/payhip-upload-batch-all.csv`
+- `payhip/presale/upload-batches/payhip-upload-batch-l3.csv`
+- `payhip/presale/upload-batches/payhip-upload-batch-l4.csv`
+- `payhip/presale/upload-batches/payhip-upload-batch-l2.csv`
+- `payhip/presale/upload-batches/payhip-upload-batch-l1.csv`
+- `payhip/presale/upload-batches/README.md`
+
+Each row contains:
+
+- Listing copy fields (EN + ZH)
+- Pricing and date fields
+- CTA and SEO fields
+- `main_cover_png`, `main_cover_svg`, and `image_folder` pointers
+- Key link fields (`kahoot_url`, worksheet URL, bundle URLs)
+
+## 15) Level Execution Pack (Checklist + Ops + Backfill)
+
+Generate a per-level execution pack with:
+
+- upload checklist (`*.md`)
+- operations tracker (`*-ops-sheet.csv`)
+- URL backfill template (`*-url-backfill-template.csv`)
+
+Single level example (`L3`):
+
+```bash
+ruby scripts/payhip/generate_payhip_level_execution_pack.rb --level l3
+```
+
+Generate all levels:
+
+```bash
+for lv in l3 l4 l2 l1; do
+  ruby scripts/payhip/generate_payhip_level_execution_pack.rb --level "$lv"
+done
+```
+
+Outputs (examples):
+
+- `payhip/presale/upload-batches/l3/l3-upload-execution-checklist.md`
+- `payhip/presale/upload-batches/l3/l3-ops-sheet.csv`
+- `payhip/presale/upload-batches/l3/l3-url-backfill-template.csv`
+
+Use these files during live Payhip operations to avoid skipped SKUs and missing URL backfill.
+
+## 16) Series Description Pack (L1-L4 + Board/Tier Segments)
+
+Generate reusable Payhip description packs for:
+
+- level-only series pages (`L1`, `L2`, `L3`, `L4`)
+- segmented board+tier pages (12 groups)
+
+```bash
+ruby scripts/payhip/generate_payhip_series_descriptions.rb
+```
+
+Outputs:
+
+- `payhip/presale/payhip-level-listing-descriptions.csv` (4 rows)
+- `payhip/presale/payhip-level-listing-descriptions.md`
+- `payhip/presale/payhip-series-listing-descriptions.csv` (12 rows)
+- `payhip/presale/payhip-series-listing-descriptions.md`
+
+Each row includes:
+
+- Payhip title (EN + ZH)
+- short description (EN + ZH)
+- full markdown description (EN + ZH)
+- CTA (EN + ZH)
+- price + early-bird end + release date

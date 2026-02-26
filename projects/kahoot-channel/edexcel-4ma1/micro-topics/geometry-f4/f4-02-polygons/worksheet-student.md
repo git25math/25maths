@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply polygons methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `12` and height `9` is `1/2 x 12 x 9 = 54`.
+Example: area of a triangle with base `7` and height `10` is `1/2 x 7 x 10 = 35`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `67°` and `41°`.

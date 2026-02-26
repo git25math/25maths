@@ -4,19 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Convert and calculate with time units, including 12/24-hour time and duration problems.
+- Apply time methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-From 14:35 to 17:10 is 2 h 35 min.
+Example: increase `80` by `20%`: compute `80 x (1 + 20/100)` to get `96`.
 
 ## Practice (10)
-1. Convert 3.25 hours to minutes.
-2. Convert 150 minutes to hours and minutes.
-3. Write 20:45 in 12-hour format.
-4. Write 6:15 am in 24-hour format.
-5. Find duration from 10:25 to 13:05.
-6. Add 1 h 55 min to 16:20.
-7. Subtract 2 h 15 min from 09:40.
-8. Convert 5400 seconds to hours.
-9. A train leaves 07:50 and takes 2 h 35 min. Arrival time?
-10. Speed 80 km/h for 1 h 45 min. Distance?
+1. Evaluate `25 + 16 x 5`.
+2. Write `9/24 + 8/24` as a simplified fraction.
+3. Calculate `3.4 + 0.14`.
+4. Work out `4^7`.
+5. Find `sqrt(49)`.
+6. Increase `120` by `14%`.
+7. Share `105` in the ratio `2:3` and give the larger share.
+8. Round `949.0` to `4` significant figures.
+9. Write `60000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

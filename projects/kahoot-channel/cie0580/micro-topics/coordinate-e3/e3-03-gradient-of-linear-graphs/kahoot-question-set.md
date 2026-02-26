@@ -1,28 +1,28 @@
 # E3.3 Kahoot Question Set - Gradient of linear graphs
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E3.3
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[15, 19, 14, 19, 5]`. | No solution | 0 | 14.4 | Cannot be determined | C | Fluency |
-| 2 | Find median of `[5, 14, 15, 19, 19]`. | 17 | 14 | 16 | 15 | D | Fluency |
-| 3 | Find range of `[15, 19, 14, 19, 5]`. | 13 | 15 | 14 | 16 | C | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 2)`. | 4/6 | 4/7 | 5/6 | 6/6 | A | Fluency |
-| 5 | If `P(A)=0.7`, find `P(not A)`. | No solution | 0.3 | Cannot be determined | 0 | B | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `40` trials. | 11 | 12 | 14 | 13 | B | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | 0 | Cannot be determined | Median | No solution | C | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | 0 | Cannot be determined | No solution | A | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | No solution | 0 | Cannot be determined | 14/50 = 7/25 | D | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | No solution | 0 | Cannot be determined | 0.28 | D | Method |
-| 11 | Context check: Find median of `[5, 14, 15, 19, 19]`. | 14 | 16 | 17 | 15 | D | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 2)`. | 5/6 | 4/7 | 6/6 | 4/6 | D | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `40` trials. | 13 | 14 | 12 | 11 | C | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | No solution | Cannot be determined | 0 | A | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0.28 | No solution | 0 | Cannot be determined | A | Context |
+| 1 | State the quadrant of point `(-2,9)`. | II | Cannot be determined | 0 | No solution | A | Fluency |
+| 2 | Find midpoint of `(-2,4)` and `(6,9)`. | Cannot be determined | 0 | (2,6.5) | No solution | C | Fluency |
+| 3 | Find gradient of the line through `(-2,4)` and `(6,9)`. | 0.625 | 1.62 | 0.12 | 1.12 | A | Fluency |
+| 4 | Write equation of line with gradient `2` and intercept `6`. | 0 | No solution | Cannot be determined | y = 2x + 6 | D | Fluency |
+| 5 | For `y = 2x + 6`, find `y` when `x = 3`. | 11 | 13 | 12 | 14 | C | Fluency |
+| 6 | For `y = 2x + 6`, find `x` when `y = 12`. | 3 | 2 | 4 | 5 | A | Method |
+| 7 | Find equation of line parallel to `y = 2x + 6` passing through `(0,9)`. | No solution | y = 2x + 9 | Cannot be determined | 0 | B | Method |
+| 8 | Find gradient of line perpendicular to `y = 2x + 6`. | -1.00 | -0.5 | 0.50 | 0.00 | B | Method |
+| 9 | Find distance between points `(-2,4)` and `(-2,9)`. | 7 | 6 | 5 | 4 | C | Method |
+| 10 | Find equation of line with gradient `2` through `(3,14)`. | y = 2x + 8 | 0 | Cannot be determined | No solution | A | Method |
+| 11 | Context check: Find midpoint of `(-2,4)` and `(6,9)`. | No solution | 0 | Cannot be determined | (2,6.5) | D | Method |
+| 12 | Context check: Write equation of line with gradient `2` and intercept `6`. | No solution | 0 | Cannot be determined | y = 2x + 6 | D | Context |
+| 13 | Context check: For `y = 2x + 6`, find `x` when `y = 12`. | 2 | 4 | 5 | 3 | D | Context |
+| 14 | Context check: Find gradient of line perpendicular to `y = 2x + 6`. | 0.00 | -1.00 | 0.50 | -0.5 | D | Context |
+| 15 | Context check: Find equation of line with gradient `2` through `(3,14)`. | Cannot be determined | 0 | y = 2x + 8 | No solution | C | Context |
 
 ## Timer
 - Q1-Q5: 20s

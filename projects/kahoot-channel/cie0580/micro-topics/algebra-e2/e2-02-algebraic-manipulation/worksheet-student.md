@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E2.2 Algebraic manipulation
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply algebraic manipulation methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply algebraic manipulation methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[10, 8, 17, 6, 16]` is `57/5 = 11.4`.
+Example: solve `5x + 4 = 30` by inverse operations. Subtract `4` then divide by `5` to get `x = 5.2`.
 
 ## Practice (10)
-1. Find mean of `[9, 17, 19, 7, 15]`.
-2. Find median of `[7, 9, 15, 17, 19]`.
-3. Find range of `[9, 17, 19, 7, 15]`.
-4. A fair die is rolled. Find `P(score > 3)`.
-5. If `P(A)=0.8`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `51` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Simplify `6x + 3x - 7x`.
+2. Expand and simplify `6(x + 3)`.
+3. Factorise `6x + 18` fully.
+4. Solve `6x - 3 = 51`.
+5. When `x = 9`, evaluate `6x^2 - 3x + 7`.
+6. Solve the inequality `6x + 3 >= 27`.
+7. The nth term is `6n + 7`. Find term `3`.
+8. Rearrange `y = 6x - 3` to make `x` the subject.
+9. Solve `x^2 - 9x + 20 = 0`.
+10. Given `f(x)=3x^2-2x+1`, find `f(4)`.

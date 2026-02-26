@@ -11,7 +11,7 @@ Example: increase `80` by `16%`: compute `80 x (1 + 16/100)` to get `92.8`.
 
 ## Practice (10)
 1. Evaluate `26 + 12 x 4`.
-2. Write `6/24 + 13/24` as a simplified fraction.
+2. Write `10/24 + 16/24` as a simplified fraction.
 3. Calculate `1.9 + 0.28`.
 4. Work out `2^7`.
 5. Find `sqrt(121)`.

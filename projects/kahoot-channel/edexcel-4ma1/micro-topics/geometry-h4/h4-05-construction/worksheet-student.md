@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply construction methods accurately in Edexcel 4MA1 Higher exam questions.
 
 ## Model example
-Example: area of a triangle with base `10` and height `7` is `1/2 x 10 x 7 = 35`.
+Example: area of a triangle with base `6` and height `8` is `1/2 x 6 x 8 = 24`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `52°` and `61°`.

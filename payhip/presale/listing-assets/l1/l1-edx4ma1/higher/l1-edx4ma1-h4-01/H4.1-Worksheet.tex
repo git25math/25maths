@@ -1,0 +1,480 @@
+\documentclass[11pt,a4paper]{article}
+
+% =========================================================
+% BRAND CONFIG (edit here only)
+% =========================================================
+\newcommand{\BrandName}{25Maths}
+\newcommand{\SeriesName}{Take-away Series}
+\newcommand{\ExamName}{Edexcel 4MA1 Higher}
+\newcommand{\TopicName}{Angles, Lines, and Triangles}
+
+\newcommand{\TopicCode}{h4-01-angles-lines-triangles}
+\newcommand{\WorksheetID}{4MA1H-\TopicCode-S} % S=Simplified, F=Full
+\newcommand{\DocVersion}{Simplified Entry-Level Version}
+\newcommand{\DocYear}{2026}
+
+\newcommand{\ClaimDeadline}{March 1, 2026}
+\newcommand{\FullReleaseDate}{April 30, 2026}
+\newcommand{\PriceFreeText}{FREE}
+\newcommand{\PriceEarlyBird}{\$3.00}
+\newcommand{\PriceRegular}{\$4.00}
+
+\newcommand{\SiteURL}{https://payhip.com/b/8jFHn}
+\newcommand{\KahootURL}{https://kahoot.it/challenge/007005412}
+
+\newcommand{\DeliveryNote}{The Full Version will be emailed to everyone who claimed or purchased this bundle on \FullReleaseDate.}
+\newcommand{\UsageNote}{For classroom use and individual revision. Redistribution not permitted.}
+
+% =========================================================
+% GLOBAL SWITCHES
+% =========================================================
+\newif\ifShowAnswerLabel
+\ShowAnswerLabeltrue
+
+\newif\ifShowMarks
+\ShowMarkstrue
+
+\newcommand{\AnswerBoxHeight}{1.30cm}
+\newcommand{\AnswerBoxPadding}{6pt}
+
+% =========================================================
+% PAGE + TYPOGRAPHY
+% =========================================================
+\usepackage[a4paper,margin=1.8cm,headheight=26pt,headsep=12pt,footskip=18pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage[scaled=0.92]{helvet}
+
+% =========================================================
+% MATH / LAYOUT
+% =========================================================
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{array}
+
+% =========================================================
+% COLOR / BOX / ICON / LINKS
+% =========================================================
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% =========================================================
+% HARMONISED COLOR PALETTE (soft + bright blue)
+% =========================================================
+\definecolor{mainblue}{HTML}{4A7FA7}     % softer, gentle medium blue
+\definecolor{accentblue}{HTML}{7FB8DB}   % calm bright blue for links
+\definecolor{mist}{HTML}{F8FBFE}         % airy light blue
+\definecolor{mist2}{HTML}{EEF5FC}        % soft panel blue
+\definecolor{linegray}{HTML}{D6E3EE}     % gentle blue-gray line
+\definecolor{softgold}{HTML}{FFF3D6}     % warm pale gold
+\definecolor{goldline}{HTML}{E7C56A}     % warm gold line
+\definecolor{okgreen}{HTML}{1B5E20}
+\definecolor{textmuted}{HTML}{70859A}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=mainblue,
+  urlcolor=accentblue,
+  pdfnewwindow=true
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6.5pt}
+
+% =========================================================
+% HEADER / FOOTER STYLE
+% =========================================================
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{mainblue}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{linegray}\leaders\hrule height \footrulewidth\hfill}}
+
+\lhead{\sffamily\textcolor{mainblue}{\textbf{\ExamName}} \quad \textcolor{textmuted}{|} \quad \textbf{\TopicName}}
+\rhead{\sffamily\small \textbf{\BrandName} / \textit{\SeriesName}}
+
+\lfoot{\sffamily\scriptsize \textcolor{textmuted}{ID: \WorksheetID}}
+\cfoot{\sffamily\scriptsize \textcolor{textmuted}{\TopicCode \;\textbullet\; \DocVersion}}
+\rfoot{\sffamily\scriptsize \textcolor{textmuted}{Page \thepage \;\textbullet\; \copyright\ \DocYear\ \BrandName}}
+
+% =========================================================
+% TCOLORBOX STYLES (cover-first design system)
+% =========================================================
+\tcbset{
+  base/.style={
+    enhanced,
+    arc=5pt,
+    boxrule=0.85pt,
+    colframe=linegray,
+    left=11pt,right=11pt,top=9pt,bottom=9pt
+  },
+  card/.style={
+    base,
+    colback=white
+  },
+  soft/.style={
+    base,
+    colback=mist
+  },
+  soft2/.style={
+    base,
+    colback=mist2
+  },
+  gold/.style={
+    base,
+    colback=softgold,
+    colframe=goldline,
+    boxrule=0.95pt,
+    drop fuzzy shadow
+  },
+  bar/.style={
+    enhanced,
+    arc=5pt,
+    colback=mist2,
+    colframe=linegray,
+    boxrule=0.85pt,
+    left=11pt,right=11pt,top=8pt,bottom=8pt
+  }
+}
+
+% =========================================================
+% MACROS
+% =========================================================
+\newcommand{\qnum}[1]{%
+  \tcbox[
+    enhanced,
+    colback=mist2,
+    colframe=linegray,
+    boxrule=0.6pt,
+    arc=2pt,
+    top=1.2pt,bottom=1.2pt,left=5pt,right=5pt,
+    boxsep=0pt,
+    on line
+  ]{\sffamily\bfseries\textcolor{mainblue}{#1}}%
+}
+
+\newcommand{\MarkOne}{%
+  \ifShowMarks{\sffamily\footnotesize\textcolor{textmuted}{\,(1 mark)}}\fi
+}
+
+\newcommand{\AnswerBox}{%
+  \vspace{4pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=linegray,
+    boxrule=0.85pt,
+    arc=2pt,
+    left=\AnswerBoxPadding,
+    right=\AnswerBoxPadding,
+    top=4pt,
+    bottom=4pt,
+    height=\AnswerBoxHeight
+  ]
+  \ifShowAnswerLabel
+    {\sffamily\footnotesize\textcolor{textmuted}{\textbf{Answer:}}}\hspace{6pt}
+  \fi
+  \end{tcolorbox}
+}
+
+\newcommand{\StudentStrip}{%
+\begin{tcolorbox}[bar]
+\sffamily\small
+\textbf{Name:} \underline{\hspace{4.0cm}}
+\hfill
+\textbf{Class:} \underline{\hspace{2.4cm}}
+\hfill
+\textbf{Date:} \underline{\hspace{2.8cm}}
+\end{tcolorbox}
+}
+
+\newcommand{\tickbox}{\(\square\)}
+
+\newcommand{\SectionHeader}[3]{%
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+  \sffamily
+  \textbf{#1}\quad\textcolor{textmuted}{|}%
+  \quad{\small\textbf{Skills:} #2 \quad\textcolor{textmuted}{|}\quad\textbf{Time:} #3}
+\end{tcolorbox}
+}
+
+% Small capsule (cover metadata chips)
+\newcommand{\chip}[1]{%
+\tcbox[
+  enhanced,
+  colback=mist2,
+  colframe=linegray,
+  boxrule=0.6pt,
+  arc=10pt,
+  left=8pt,right=8pt,top=2.5pt,bottom=2.5pt,
+  on line
+]{\sffamily\scriptsize\textcolor{mainblue}{\textbf{#1}}}%
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+\begin{document}
+\thispagestyle{empty}% cover page: no header/footer
+
+% =========================================================
+% COVER (beautified layout: hero + grid, calmer colours)
+% =========================================================
+% Top accent bar (brand entry point, replaces missing header)
+\noindent\textcolor{mainblue}{\rule{\linewidth}{3pt}}\par\vspace{14pt}
+
+\begin{center}
+  {\sffamily\Large\textcolor{textmuted}{Interactive Practice Suite}}\\[6pt]
+  {\sffamily\Huge\bfseries\textcolor{mainblue}{\ExamName\ --- \TopicName\strut}}\\
+  \vspace{6pt}
+  {\sffamily\large\textcolor{textmuted}{Worksheet + Kahoot \;\textbullet\; Built from the official Edexcel 4MA1 Higher syllabus}}
+\end{center}
+
+\vspace{10pt}
+
+% Meta chips row (cleaner than a big strip)
+\begin{center}
+  \chip{Worksheet ID: \WorksheetID}\hspace{6pt}
+  \chip{Claim by: \ClaimDeadline}\hspace{6pt}
+  \chip{Full Upgrade: \FullReleaseDate}
+\end{center}
+
+\vspace{10pt}
+
+% Hero value proposition (single calm box)
+\begin{tcolorbox}[soft]
+\sffamily
+\textbf{Who this is for:} Higher-tier students strengthening geometric angle fluency and teachers reinforcing proof-style angle reasoning.\\
+\textbf{What you train:} angle rules in lines and triangles, parallel-line relationships, and multi-step geometric angle solving.
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% Pre-sale spotlight (only warm colour on page)
+\begin{tcolorbox}[gold]
+\sffamily
+\textbf{\faFire\ URGENT PRE-SALE: Get it \PriceFreeText\ before \ClaimDeadline.}\par
+Claiming the Simplified Version today locks in your \textbf{FREE upgrade} to the \textbf{Full Version} on \textbf{\FullReleaseDate}.\par
+\textcolor{mainblue}{\textbf{Delivery:}} \DeliveryNote
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% Two-column feature grid (balanced, same style)
+\begin{multicols}{2}
+  \begin{tcolorbox}[card, title=\sffamily\bfseries\textcolor{white}{\faHandPointDown\ TODAY (Simplified Version)}, colbacktitle=mainblue, boxed title style={sharp corners, boxrule=0pt}]
+    \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+      \item \small \textbf{15 Core Questions} (angle rules, parallel lines, and triangle reasoning).
+      \item \small \textbf{Basic Answer Key} (final answers only).
+      \item \small \textbf{Bonus Kahoot Access} (premium quiz, free to play).
+    \end{itemize}
+  \end{tcolorbox}
+
+  \columnbreak
+
+  \begin{tcolorbox}[card, title=\sffamily\bfseries\textcolor{white}{\faRocket\ ON \FullReleaseDate\ (Full Upgrade)}, colbacktitle=mainblue, boxed title style={sharp corners, boxrule=0pt}]
+    \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+      \item \small \textbf{In-Depth Worked Solutions} (step-by-step).
+      \item \small \textbf{Exam Topic Analysis} (frequency by type).
+      \item \small \textbf{Common Mistakes Guide} (examiner traps).
+      \item \small \textbf{Extended Practice} variations.
+    \end{itemize}
+  \end{tcolorbox}
+\end{multicols}
+
+% Pricing + CTA in a single clean block
+\begin{tcolorbox}[soft2]
+\begin{minipage}[t]{0.62\linewidth}
+  \sffamily\bfseries\textcolor{mainblue}{\faChartLine\ Pricing Timeline}\par
+  \vspace{4pt}
+  \renewcommand{\arraystretch}{1.25}
+  \small
+  \begin{tabularx}{\linewidth}{X r}
+    \toprule
+    \textbf{Now -- \ClaimDeadline} & \textcolor{okgreen}{\faCheckCircle\ \textbf{\PriceFreeText}} \\
+    \textbf{March 2 -- March 31} & \PriceEarlyBird \\
+    \textbf{April 1 onwards} & \PriceRegular \\
+    \textbf{\FullReleaseDate} & \textbf{Full Version (Email)} \\
+    \bottomrule
+  \end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.34\linewidth}
+  \vspace{2pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback=mainblue,
+    colframe=mainblue,
+    coltext=white,
+    arc=16pt,
+    boxrule=0pt,
+    left=10pt,right=10pt,top=10pt,bottom=10pt,
+    halign=center
+  ]
+    \sffamily\Large\bfseries
+    \href{\SiteURL}{\textcolor{white}{Download for Free}}
+  \end{tcolorbox}
+  \vspace{6pt}
+  {\sffamily\scriptsize\textcolor{textmuted}{Claim before \ClaimDeadline\ to secure the free full upgrade.}}
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+% Link bar + usage note (minimal, premium)
+\begin{tcolorbox}[bar]
+  \sffamily\small
+  \faLink\ \textbf{Download:}\ \href{\SiteURL}{\SiteURL}
+  \hfill
+  \faGamepad\ \textbf{Kahoot:}\ \href{\KahootURL}{Edexcel 4MA1 H4.1 | Angles, Lines, and Triangles | Higher Tier}
+\end{tcolorbox}
+
+\vspace{6pt}
+{\sffamily\footnotesize\textcolor{textmuted}{\UsageNote}}
+
+\newpage
+
+% =========================================================
+% WORKSHEET
+% =========================================================
+\begin{center}
+  {\sffamily\huge\bfseries\textcolor{mainblue}{Worksheet: \TopicName\ (Higher Tier)}}\\
+  \vspace{4pt}
+  {\sffamily\small \textcolor{textmuted}{\textbf{Instructions:} State the angle rule used at each step before giving the final value.}}\\
+\end{center}
+
+\StudentStrip
+
+\begin{tcolorbox}[soft]
+  \sffamily\footnotesize
+  \faCogs\ \textbf{Skills Covered:}
+  \textcolor{mainblue}{Parallel Line Angles} $\bullet$
+  \textcolor{mainblue}{Triangle Angle Facts} $\bullet$
+  \textcolor{mainblue}{Polygon Angle Sums} $\bullet$
+  \textcolor{mainblue}{Reasoned Angle Solving}
+\end{tcolorbox}
+
+% ---- SECTION A
+\SectionHeader{Section A: Core Angle Facts}{Apply foundational angle rules}{7--9 mins}
+
+\begin{enumerate}[label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item In parallel lines, if one corresponding angle is \(68^\circ\), find the alternate angle.\MarkOne \AnswerBox
+  \item One angle on a straight line is \(121^\circ\). Find the adjacent angle.\MarkOne \AnswerBox
+  \item Angles around a point are \(145^\circ\), \(95^\circ\), and \(x\). Find \(x\).\MarkOne \AnswerBox
+  \item Two angles in a triangle are \(48^\circ\) and \(67^\circ\). Find the third angle.\MarkOne \AnswerBox
+  \item An exterior angle of a triangle is \(132^\circ\), and one remote interior angle is \(57^\circ\). Find the other remote interior angle.\MarkOne \AnswerBox
+\end{enumerate}
+
+% ---- SECTION B
+\SectionHeader{Section B: Structured Angle Solving}{Use linked angle equations}{8--10 mins}
+
+\begin{enumerate}[resume, label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item In an isosceles triangle, the vertex angle is \(40^\circ\). Find each base angle.\MarkOne \AnswerBox
+  \item In a right triangle, one acute angle is \(34^\circ\). Find the other acute angle.\MarkOne \AnswerBox
+  \item In triangle \(ABC\), \(AB=AC\), \(\angle B=x+10\), \(\angle C=2x-5\). Find \(x\).\MarkOne \AnswerBox
+  \item Co-interior angles between parallel lines are \(3x+12\) and \(2x+33\). Find \(x\).\MarkOne \AnswerBox
+  \item Angles in a quadrilateral are \(95^\circ\), \(83^\circ\), \(102^\circ\), and \(x\). Find \(x\).\MarkOne \AnswerBox
+\end{enumerate}
+
+% ---- SECTION C
+\SectionHeader{Section C: Geometric Reasoning}{Solve multi-step angle problems}{8--10 mins}
+
+\begin{enumerate}[resume, label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item An exterior angle of a triangle is \(146^\circ\), and one opposite interior angle is \(68^\circ\). Find the other opposite interior angle.\MarkOne \AnswerBox
+  \item In an isosceles triangle, base angles are \(2y+6\) and \(3y-9\). Find \(y\).\MarkOne \AnswerBox
+  \item In a right triangle, hypotenuse is 13 and one leg is 5. Find the other leg.\MarkOne \AnswerBox
+  \item Vertically opposite angles are \(4x-7\) and \(3x+18\). Find \(x\).\MarkOne \AnswerBox
+  \item True or False: The sum of interior angles of a pentagon is \(540^\circ\).\MarkOne \AnswerBox
+\end{enumerate}
+
+\vfill
+\begin{tcolorbox}[soft]
+  \sffamily\footnotesize\itshape
+  \faLightbulb\ \textbf{Teacher Tip:}
+  Push students to annotate each angle with a named rule rather than jumping straight to arithmetic.
+\end{tcolorbox}
+
+\newpage
+
+% =========================================================
+% ANSWER KEY (grouped by section)
+% =========================================================
+\begin{center}
+  {\sffamily\LARGE\bfseries\textcolor{mainblue}{Answer Key (Basic)}}\\
+\end{center}
+
+\begin{tcolorbox}[bar]
+\sffamily\small
+\textbf{Student:} \underline{\hspace{3.2cm}}
+\hfill
+\textbf{Score:} \underline{\hspace{1.1cm}} / 15
+\hfill
+\textbf{Checked by:} \underline{\hspace{2.2cm}}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section A Answers (Q1--Q5)}
+\end{tcolorbox}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+1 & \(68^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+2 & \(59^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+3 & \(120^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+4 & \(65^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+5 & \(75^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section B Answers (Q6--Q10)}
+\end{tcolorbox}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+6 & \(70^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+7 & \(56^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+8 & \(15\) & \tickbox & \textcolor{textmuted}{---} \\
+9 & \(27\) & \tickbox & \textcolor{textmuted}{---} \\
+10 & \(80^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section C Answers (Q11--Q15)}
+\end{tcolorbox}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+11 & \(78^\circ\) & \tickbox & \textcolor{textmuted}{---} \\
+12 & \(15\) & \tickbox & \textcolor{textmuted}{---} \\
+13 & \(12\) & \tickbox & \textcolor{textmuted}{---} \\
+14 & \(25\) & \tickbox & \textcolor{textmuted}{---} \\
+15 & True & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{14pt}
+\begin{center}
+  \sffamily\scriptsize\textcolor{textmuted}{
+    Tags: Edexcel Math $\bullet$ 4MA1 Higher $\bullet$ Angles, Lines, and Triangles $\bullet$ Angle Facts $\bullet$ Geometric Reasoning $\bullet$ Math Worksheet $\bullet$ Kahoot Quiz $\bullet$ Edexcel IGCSE $\bullet$ Math Revision
+  }
+\end{center}
+
+\end{document}
