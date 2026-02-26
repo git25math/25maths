@@ -44,6 +44,26 @@
 
 ## 2026-02-11 网站进展复盘 → 待办清单（按优先级）
 
+### P0+ 会员系统开发（新主线，2026-02-18 起）
+- [ ] **建立指挥中枢与执行标准**
+  - 指挥文档：`plan/MEMBER-SYSTEM-COMMAND-CENTER.md`
+  - 执行基线：`plan/MEMBER-LEARNING-PLATFORM-EXECUTION-PLAN.md`
+  - 调度脚本：`scripts/member/dispatch_member_agents.sh`
+- [ ] **完成 Supabase 生产路径准备**
+  - Auth 回调 URL 配置完成（本地 + 生产）
+  - 自定义 SMTP 接入完成（公开登录前必须）
+- [ ] **完成数据层与权限控制**
+  - 建表：`profiles`、`exercise_sessions`、`question_attempts`、`membership_status`、`entitlements`
+  - RLS：用户仅能读写本人数据
+- [ ] **Interactive Exercises 接入云端记录**
+  - 保留匿名模式 + localStorage 回退
+  - 登录用户写入 session 与 attempt 轨迹
+- [ ] **会员下载权限网关**
+  - Webhook：`POST /api/v1/membership/webhook/payhip`
+  - 下载：`GET /api/v1/download/:release_id`
+- [ ] **题库双渠道发布清单**
+  - 新增 `_data/releases.json`，统一支持 Payhip 上新和会员下载授权
+
 ### P0 直接影响收入与信任
 - [ ] **Payhip 付费产品上线**（获取 3 个付费产品 URL）
 - [ ] **替换付费产品购买链接**（Gumroad → Payhip，3 个产品页）

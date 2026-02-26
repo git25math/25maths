@@ -13,7 +13,8 @@ insert into public.member_benefit_offers (
   is_active,
   priority,
   starts_at,
-  ends_at
+  ends_at,
+  metadata
 )
 values
 (
@@ -28,7 +29,14 @@ values
   true,
   10,
   null,
-  null
+  null,
+  jsonb_build_object(
+    'trigger', jsonb_build_object(
+      'lookback_days', 45,
+      'min_recent_sessions', 3,
+      'reason_label', 'Unlocked after consistent recent practice activity.'
+    )
+  )
 ),
 (
   'coursepack-coupon-2026q1',
@@ -42,7 +50,16 @@ values
   true,
   20,
   null,
-  null
+  null,
+  jsonb_build_object(
+    'trigger', jsonb_build_object(
+      'lookback_days', 60,
+      'min_recent_wrong_attempts', 4,
+      'skill_tag_prefixes', jsonb_build_array('algebra/', 'number/'),
+      'min_matching_wrong_attempts', 2,
+      'reason_label', 'Unlocked because recent weak-point tags match Algebra/Number focus.'
+    )
+  )
 )
 on conflict (id) do update set
   kind = excluded.kind,
@@ -56,4 +73,5 @@ on conflict (id) do update set
   priority = excluded.priority,
   starts_at = excluded.starts_at,
   ends_at = excluded.ends_at,
+  metadata = excluded.metadata,
   updated_at = now();

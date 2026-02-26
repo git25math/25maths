@@ -1,6 +1,6 @@
 # 25Maths Website - Project Plan
 
-> **Last Updated**: 2026-02-17
+> **Last Updated**: 2026-02-18
 > **Status**: DEPLOYED (Modular Restructure Complete)
 > **Website**: https://www.25maths.com (GitHub Pages + Jekyll)
 > **Tech Stack**: Jekyll + Tailwind CSS CDN + Google Fonts (Inter)
@@ -12,6 +12,20 @@
 ## Project Overview
 
 25Maths is a modular static website (Jekyll on GitHub Pages) selling bilingual (English/Chinese) mathematics resources for multiple international exam boards. The site uses a per-module architecture where each exam board has independent pages for products, pricing, and free resources. A weekly membership model ($9.99/month) provides ongoing topical practice packs.
+
+## Strategic Addition (2026-02-18): Member Login + Learning Data Platform
+
+To support long-term retention and member value, the project now includes a dedicated execution track for:
+
+1. Account login for interactive exercise users.
+2. Cloud-based progress and per-question mistake tracking.
+3. Member-only download authorization.
+4. Dual-channel release pipeline:
+   - Channel A: Payhip product launch.
+   - Channel B: Site member-only downloads with entitlement checks.
+
+Execution document:
+- `plan/MEMBER-LEARNING-PLATFORM-EXECUTION-PLAN.md`
 
 ## Current State (as of 2026-02-11)
 
@@ -159,27 +173,35 @@ active_global: about   # highlights in global-nav
 | 2026-02-11 | **CIE 0580 multilingual expansion** — localized module pages + product detail pages |
 | 2026-02-11 | **Language simplification** — streamlined to EN + 简体双语站点 |
 | 2026-02-11 | **Scope change** — removed AMC8 and IAL modules from active site |
+| 2026-02-18 | **Member platform roadmap approved** — login, learning telemetry, membership entitlement gating, and dual-channel release registry |
 
 ## Next Steps
 
-### Short-term
-1. **Complete Payhip integration** — Upload 3 paid products, replace remaining Gumroad purchase links
-2. **Google Search Console** — Submit sitemap.xml, verify site ownership
-3. **Edexcel 4MA1 products** — Create premium bundles when content is ready, update products.html and pricing.html
-4. **Gemini interactive exercise generator (current development focus)** — Build a Gemini CLI pipeline to generate syllabus-aligned interactive web practice pages by micro-topic, closing the loop across Kahoot + worksheet + website practice
+### Track A (Current Priority): Member Platform + Learning Data
+1. **Freeze MVP scope and acceptance criteria** — Use `plan/MEMBER-LEARNING-PLATFORM-EXECUTION-PLAN.md` as the execution baseline.
+2. **Supabase Auth setup for production path** — Configure redirect URLs and custom SMTP before public login rollout.
+3. **Data model + RLS** — Implement `profiles`, `exercise_sessions`, `question_attempts`, `membership_status`, `entitlements`.
+4. **Interactive exercise telemetry** — Persist attempts and completion metrics from `assets/js/exercise_engine.js` without breaking anonymous usage.
+5. **Membership center data binding** — Replace static member cards with user-bound progress/mistake summaries.
+6. **Payhip webhook sync** — Update `membership_status` and entitlements from billing events.
+7. **Member-only download gateway** — Add `GET /api/v1/download/:release_id` with membership checks and short-lived links.
+8. **Release registry for dual-channel distribution** — Add `_data/releases.json` to support both Payhip launches and member-only downloads.
+
+### Track B: Commercial and Content Continuity
+9. **Complete Payhip integration** — Upload 3 paid products, replace remaining Gumroad purchase links.
+10. **Google Search Console** — Submit `sitemap.xml`, verify site ownership.
+11. **Edexcel 4MA1 products** — Create premium bundles and update `products.html` / `pricing.html`.
+12. **Gemini interactive exercise generator** — Continue micro-topic generation to close Kahoot + worksheet + web loop.
    - Execution checklist: `plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md`
 
 ### Medium-term
-5. **Tailwind build pipeline** — Replace CDN with CLI-built CSS for production (< 10KB vs ~300KB)
-6. **AMC 8 content** — Create resources, update module status in _config.yml from coming_soon to active
-7. **IAL Pure content** — Same as above for IAL P1 and P2
-8. **favicon.ico / apple-touch-icon.png** — Generate from favicon.svg for broader browser support
+13. **Tailwind build pipeline** — Replace CDN with CLI-built CSS for production.
+14. **favicon.ico / apple-touch-icon.png** — Generate from `favicon.svg` for broader browser support.
+15. **Analytics** — Add privacy-friendly analytics (Plausible/Umami).
 
 ### Long-term
-9. **Subscription model** — Add subscription_price to module config, implement on pricing pages
-10. **Migrate hosting** — Consider Cloudflare Pages/Netlify for true 301 redirects
-11. **Analytics** — Add privacy-friendly analytics (Plausible/Umami)
-12. **TikzVault integration (deferred)** — Use TikzVault as a backup/local diagram resource for generated exercises, after the Gemini interactive module is stable
+16. **Personalized recommendation and push** — Add weak-skill recommendations and scheduled follow-up messages.
+17. **TikzVault integration (deferred)** — Use TikzVault as a backup/local diagram resource after interactive module stability.
 
 ## How to Add a New Module
 
