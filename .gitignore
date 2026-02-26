@@ -17,6 +17,9 @@ _site/
 # Logs
 *.log
 
+# Local temp output
+.tmp/
+
 # Python bytecode cache
 __pycache__/
 

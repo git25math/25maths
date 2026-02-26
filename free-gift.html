@@ -8,6 +8,7 @@ description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short su
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Free Gift: CIE + Edexcel Vocabulary Packs</h1>
         <p class="text-lg md:text-xl text-gray-100">Complete the 30-second survey and get both free packs immediately.</p>
+        <p class="bilingual-support-only text-base text-gray-100 mt-3">完成 30 秒问卷，即可立即领取 CIE 与 Edexcel 双语词汇包。</p>
     </div>
 </section>
 
@@ -16,6 +17,7 @@ description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short su
         <div class="bg-gray-50 rounded-2xl p-8 md:p-10 border border-gray-200">
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Quick survey, instant access</h2>
             <p class="text-gray-600 mb-8">We use your answers to prioritize future topics and notify you when new packs go live.</p>
+            <p class="bilingual-support-only text-sm text-gray-600 mb-8">你的反馈将用于确定后续更新优先级，并在新资源上线时第一时间通知你。</p>
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-5">
                 <input type="hidden" name="topic" value="Free Gift Pack">
                 <input type="hidden" name="module" value="CIE 0580 + Edexcel 4MA1">
@@ -28,16 +30,19 @@ description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short su
 
                 <div>
                     <label class="block text-sm font-semibold mb-2" for="name">Name</label>
+                    <p class="bilingual-support-only text-xs text-gray-500 mb-2">姓名（可选）</p>
                     <input id="name" type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="Optional">
                 </div>
 
                 <div>
                     <label class="block text-sm font-semibold mb-2" for="email">Email</label>
+                    <p class="bilingual-support-only text-xs text-gray-500 mb-2">邮箱（用于接收礼包链接）</p>
                     <input id="email" type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="you@example.com">
                 </div>
 
                 <div>
                     <label class="block text-sm font-semibold mb-2" for="persona">I am a</label>
+                    <p class="bilingual-support-only text-xs text-gray-500 mb-2">你的身份</p>
                     <select id="persona" name="persona" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
                         <option value="">Select one</option>
                         <option>Student</option>
@@ -48,6 +53,7 @@ description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short su
 
                 <div>
                     <label class="block text-sm font-semibold mb-2" for="exam_board_interest">Primary exam board</label>
+                    <p class="bilingual-support-only text-xs text-gray-500 mb-2">主要考试体系</p>
                     <select id="exam_board_interest" name="exam_board_interest" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
                         <option value="">Select one</option>
                         <option value="CIE 0580">CIE 0580</option>
@@ -69,6 +75,7 @@ description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short su
 
                 <div>
                     <label class="block text-sm font-semibold mb-2" for="target_exam_session">Target exam session</label>
+                    <p class="bilingual-support-only text-xs text-gray-500 mb-2">目标考试季（例如 2026 年 5/6 月）</p>
                     <input id="target_exam_session" type="text" name="target_exam_session" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="e.g. May/June 2026">
                 </div>
 
@@ -93,6 +100,7 @@ description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short su
                         <input type="checkbox" name="consent_updates" value="yes" class="mt-1" required>
                         <span>I agree to receive resource updates and launch emails from 25Maths.</span>
                     </label>
+                    <p class="bilingual-support-only text-xs text-gray-500 mt-2">我同意接收 25Maths 的资源更新与上线通知邮件。</p>
                 </div>
 
                 <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Get My Free Packs</button>

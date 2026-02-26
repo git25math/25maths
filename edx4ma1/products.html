@@ -18,7 +18,7 @@ active_page: products
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+        <div class="edx-soft-bg border edx-soft-border rounded-xl p-5 text-sm edx-soft-text">
             <p class="font-semibold mb-1">Pricing Status</p>
             <p>Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.</p>
             <p data-bilingual-block class="mt-2">价格先作为锚点，后续可在不改结构的前提下统一调整。</p>
@@ -67,7 +67,7 @@ active_page: products
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="text-[11px] px-2 py-1 rounded-full bg-amber-100 text-amber-700 font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
+                        <span class="token-chip token-chip-sm">{{ unit.status | default: 'presale' | upcase }}</span>
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>

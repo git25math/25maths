@@ -1,0 +1,26 @@
+{% assign board_key = include.board | default: 'cie' %}
+{% assign size_key = include.size | default: 'md' %}
+{% assign wrapper_class = include.wrapper_class | default: 'flex flex-col sm:flex-row gap-3' %}
+
+{% if board_key == 'edx' %}
+  {% if size_key == 'sm' %}
+    {% assign primary_classes = 'text-center edx-solid-bg edx-solid-text px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover' %}
+    {% assign secondary_classes = 'text-center border edx-soft-border edx-soft-bg edx-soft-text px-5 py-2.5 rounded-lg font-semibold text-sm edx-soft-hover' %}
+  {% else %}
+    {% assign primary_classes = 'text-center edx-solid-bg edx-solid-text px-6 py-3 rounded-lg font-semibold edx-solid-hover' %}
+    {% assign secondary_classes = 'text-center border edx-soft-border edx-soft-bg edx-soft-text px-6 py-3 rounded-lg font-semibold edx-soft-hover' %}
+  {% endif %}
+{% else %}
+  {% if size_key == 'sm' %}
+    {% assign primary_classes = 'text-center cie-solid-bg cie-solid-text px-5 py-2.5 rounded-lg font-semibold text-sm cie-solid-hover' %}
+    {% assign secondary_classes = 'text-center border cie-soft-border cie-soft-bg cie-soft-text px-5 py-2.5 rounded-lg font-semibold text-sm cie-soft-hover' %}
+  {% else %}
+    {% assign primary_classes = 'text-center cie-solid-bg cie-solid-text px-6 py-3 rounded-lg font-semibold cie-solid-hover' %}
+    {% assign secondary_classes = 'text-center border cie-soft-border cie-soft-bg cie-soft-text px-6 py-3 rounded-lg font-semibold cie-soft-hover' %}
+  {% endif %}
+{% endif %}
+
+<div class="{{ wrapper_class }}">
+  {% include ui/cta-link.html href=include.primary_href target=include.primary_target rel=include.primary_rel classes=primary_classes label=include.primary_label %}
+  {% include ui/cta-link.html href=include.secondary_href target=include.secondary_target rel=include.secondary_rel classes=secondary_classes label=include.secondary_label %}
+</div>

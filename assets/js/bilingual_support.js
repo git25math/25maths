@@ -1,7 +1,9 @@
 (function() {
     var STORAGE_KEY = 'bilingual_support_enabled';
     var root = document.documentElement;
+    var TOGGLE_EVENT_NAME = 'bilingual-support:change';
     var state = false;
+    var lastEmittedState = null;
 
     function loadState() {
         try {
@@ -108,10 +110,78 @@
         });
     }
 
+    function emitToggleTelemetry(enabled, source) {
+        var payload = {
+            event: 'bilingual_toggle_change',
+            bilingual_support_state: enabled ? 'on' : 'off',
+            bilingual_support_enabled: enabled ? 1 : 0,
+            source: source || 'unknown',
+            emitted_at: new Date().toISOString()
+        };
+
+        if (Array.isArray(window.dataLayer)) {
+            window.dataLayer.push(payload);
+        }
+
+        if (typeof window.dispatchEvent === 'function' && typeof window.CustomEvent === 'function') {
+            window.dispatchEvent(new CustomEvent(TOGGLE_EVENT_NAME, { detail: payload }));
+        }
+    }
+
+    function detectFloatingPanelCollision() {
+        return !!(
+            document.querySelector('#hubspot-messages-iframe-container') ||
+            document.querySelector('.crisp-client') ||
+            document.querySelector('#tidio-chat') ||
+            document.querySelector('iframe[title*="chat"]') ||
+            document.querySelector('iframe[src*="intercom"]')
+        );
+    }
+
+    function syncFloatingDockOffset() {
+        var dock = document.querySelector('[data-bilingual-dock]');
+        if (!dock) return;
+        dock.style.setProperty('--bilingual-chat-offset', detectFloatingPanelCollision() ? '5rem' : '0px');
+    }
+
+    function bindFloatingDockSelfHeal() {
+        var dock = document.querySelector('[data-bilingual-dock]');
+        if (!dock) return;
+
+        syncFloatingDockOffset();
+        window.addEventListener('resize', syncFloatingDockOffset, { passive: true });
+        window.addEventListener('load', syncFloatingDockOffset, { once: true });
+        setTimeout(syncFloatingDockOffset, 1200);
+        setTimeout(syncFloatingDockOffset, 3500);
+
+        if (typeof MutationObserver !== 'function' || !document.body) return;
+
+        var rafQueued = false;
+        var observer = new MutationObserver(function() {
+            if (rafQueued) return;
+            rafQueued = true;
+            window.requestAnimationFrame(function() {
+                rafQueued = false;
+                syncFloatingDockOffset();
+            });
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['class', 'style']
+        });
+    }
+
+
     function syncToggleUi(enabled) {
         var toggles = document.querySelectorAll('[data-bilingual-toggle]');
         toggles.forEach(function(toggle) {
             toggle.setAttribute('aria-pressed', enabled ? 'true' : 'false');
+            if (toggle.getAttribute('role') === 'switch') {
+                toggle.setAttribute('aria-checked', enabled ? 'true' : 'false');
+            }
             toggle.classList.toggle('bilingual-toggle-on', enabled);
             if (toggle.tagName === 'INPUT' && toggle.type === 'checkbox') {
                 toggle.checked = enabled;
@@ -126,13 +196,17 @@
         });
     }
 
-    function applyState(enabled, persist) {
+    function applyState(enabled, persist, source) {
         state = !!enabled;
         root.classList.toggle('bilingual-support-enabled', state);
         root.setAttribute('data-bilingual-support', state ? 'on' : 'off');
         syncToggleUi(state);
         syncFormTelemetry(state);
         if (persist) persistState(state);
+        if (lastEmittedState !== state) {
+            emitToggleTelemetry(state, source || (persist ? 'user-action' : 'boot'));
+            lastEmittedState = state;
+        }
     }
 
     function bindToggles() {
@@ -143,7 +217,7 @@
 
             if (toggle.tagName === 'INPUT' && toggle.type === 'checkbox') {
                 toggle.addEventListener('change', function() {
-                    applyState(!!toggle.checked, true);
+                    applyState(!!toggle.checked, true, toggle.getAttribute('data-bilingual-toggle-source') || 'checkbox');
                     if (typeof toggle.blur === 'function') {
                         toggle.blur();
                     }
@@ -153,7 +227,7 @@
 
             toggle.addEventListener('click', function(event) {
                 event.preventDefault();
-                applyState(!state, true);
+                applyState(!state, true, toggle.getAttribute('data-bilingual-toggle-source') || 'button');
                 if (typeof toggle.blur === 'function') {
                     toggle.blur();
                 }
@@ -163,5 +237,6 @@
 
     bindToggles();
     bindGiftEnrichment();
-    applyState(loadState(), false);
+    bindFloatingDockSelfHeal();
+    applyState(loadState(), false, 'init');
 })();

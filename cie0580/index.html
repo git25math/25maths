@@ -10,17 +10,20 @@ active_page: overview
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
 <!-- Hero Section -->
-<section class="cie-hero-gradient text-white py-20">
+<section class="cie-hero-soft py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
-            Master CIE 0580 with<br>Exam Excellence
+            CIE 0580<br>Exam-Ready Resources
         </h1>
         <p class="text-xl md:text-2xl mb-4 text-gray-100">
-            Premium practice resources for Cambridge IGCSE Mathematics
+            Exam-aligned resources for Cambridge IGCSE Mathematics
+        </p>
+        <p class="bilingual-support-only text-base md:text-lg mb-3 text-gray-100">
+            针对 CIE 0580 课程要求构建的系统化备考资源，帮助你按考纲稳定提分。
         </p>
         <p data-bilingual-block class="text-base md:text-lg mb-4 text-gray-200">对标 CIE 0580 考纲，关键术语提供对照。</p>
         <p class="text-lg mb-8 text-gray-200">
-            Trusted by students and teachers worldwide
+            Free vocabulary cards are live. L1/L2/L3 presale architecture is now active.
         </p>
         <p data-bilingual-block class="text-sm md:text-base mb-8 text-gray-200">被国际学校学生与教师广泛使用。</p>
         <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
@@ -42,16 +45,16 @@ active_page: overview
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-gray-200">
             <div>
-                <div class="text-xs font-bold text-secondary mb-2">PRACTICE CHANNEL</div>
+                <div class="text-xs font-bold cie-solid-text mb-2">PRACTICE CHANNEL</div>
                 <h2 class="text-2xl font-bold text-gray-900 mb-2">CIE 0580 on Kahoot</h2>
                 <p class="text-gray-600">Use the CIE 0580 quiz channel for quick drills, then continue with our printable worksheets.</p>
                 <p data-bilingual-block class="text-sm text-gray-600 mt-1">可先在 Kahoot 做快速练习，再回到 25Maths 下载配套可打印练习。</p>
             </div>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <div class="flex flex-col sm:flex-row cta-row-equal gap-4">
+                <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition ui-focus-ring">
                     Open CIE 0580 Kahoot Channel
                 </a>
-                <a href="/kahoot/?src=cie0580&asset=module_kahoot_card" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+                <a href="/kahoot/?src=cie0580&asset=module_kahoot_card" class="sm:flex-1 cta-btn-equal border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-lg transition ui-focus-ring">
                     Kahoot Companion Hub
                 </a>
             </div>
@@ -60,7 +63,7 @@ active_page: overview
 </section>
 
 <!-- Membership Highlight -->
-<section class="py-12 bg-white border-b">
+<section class="py-16 bg-white border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gray-50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
@@ -69,9 +72,9 @@ active_page: overview
                 <p class="text-gray-600">One topical practice pack every week with full solutions — built for CIE 0580.</p>
                 <p data-bilingual-block class="text-sm text-gray-600 mt-1">每周一套专题练习包（含解析）。</p>
             </div>
-            <div class="flex items-center gap-4">
-                <div class="text-2xl font-bold cie-solid-text">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
-                <a href="/subscription.html" class="cie-solid-bg text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <div class="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-4">
+                <div class="text-2xl font-bold cie-solid-text whitespace-nowrap">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
+                <a href="/subscription.html" class="w-full sm:w-auto cta-btn-equal cie-solid-bg cie-solid-text px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">
                     View Membership
                 </a>
             </div>
@@ -128,7 +131,7 @@ active_page: overview
                 <p data-bilingual-block class="text-sm text-gray-600 mb-4">单个 SubTopic：Kahoot + Worksheet 下载，作为最低门槛入口。</p>
                 <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l1_early_bird }}</p>
                 <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l1_regular }}</p>
-                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg text-white text-center py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open L1 Listings</a>
+                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg cie-solid-text text-center py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open L1 Listings</a>
             </div>
 
             <div class="bg-white rounded-xl shadow-lg p-8">
@@ -138,7 +141,7 @@ active_page: overview
                 <p data-bilingual-block class="text-sm text-gray-600 mb-4">同一章节多个 SubTopic 的组合，是 L1 的主要升级路径。</p>
                 <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l2_early_bird }}</p>
                 <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l2_regular }}</p>
-                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg text-white text-center py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open L2 Listings</a>
+                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg cie-solid-text text-center py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open L2 Listings</a>
             </div>
 
             <div class="bg-white rounded-xl shadow-lg p-8">
@@ -148,12 +151,12 @@ active_page: overview
                 <p data-bilingual-block class="text-sm text-gray-600 mb-4">覆盖 Core + Extended 的单元合集，并承接双语词卡赠送与升级优惠。</p>
                 <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l3_early_bird }}</p>
                 <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l3_regular }}</p>
-                <a href="/cie0580/products.html" class="block w-full cie-solid-bg text-white text-center py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 Products</a>
+                <a href="/cie0580/products.html" class="block w-full cie-solid-bg cie-solid-text text-center py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 Products</a>
             </div>
         </div>
 
         <div class="mt-8 text-center">
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="inline-block border border-gray-300 text-gray-700 px-7 py-3 rounded-lg font-semibold hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="inline-block border border-gray-300 text-gray-700 px-7 py-3 rounded-lg font-semibold hover:bg-gray-50 hover:shadow-md transition ui-focus-ring">Read Presale Terms PDF</a>
         </div>
     </div>
 </section>

@@ -4,12 +4,15 @@
   const queryInput = document.getElementById('exercise-filter-query');
   const resetBtn = document.getElementById('exercise-filter-reset');
   const summary = document.getElementById('exercise-filter-summary');
+  const summaryZh = document.getElementById('exercise-filter-summary-zh');
   const empty = document.getElementById('exercise-empty');
   const emptyResetBtn = document.getElementById('exercise-empty-reset');
   const resumePanel = document.getElementById('exercise-resume');
   const resumeLink = document.getElementById('exercise-resume-link');
   const resumeTitle = document.getElementById('exercise-resume-title');
   const resumeMeta = document.getElementById('exercise-resume-meta');
+  const resumeTitleZh = document.getElementById('exercise-resume-title-zh');
+  const resumeMetaZh = document.getElementById('exercise-resume-meta-zh');
   const resumeClear = document.getElementById('exercise-resume-clear');
   const cards = Array.from(document.querySelectorAll('[data-exercise-card]'));
 
@@ -19,8 +22,11 @@
 
   const fallbackI18n = {
     summaryTemplate: 'Showing {visible} of {total} exercises.',
+    summaryTemplateZh: '当前显示 {visible}/{total} 个互动练习。',
     resumeTitleFallback: 'Last interactive exercise',
+    resumeTitleFallbackZh: '上次互动练习',
     resumeMetaFallback: 'Re-open your latest practice page.',
+    resumeMetaFallbackZh: '可一键返回最近一次练习页面。',
   };
   const i18n = (typeof window.exerciseHubI18n === 'object' && window.exerciseHubI18n)
     ? { ...fallbackI18n, ...window.exerciseHubI18n }
@@ -145,6 +151,17 @@
       resumeMeta.textContent = metaParts.length
         ? metaParts.join(' · ')
         : i18n.resumeMetaFallback;
+      if (resumeTitleZh) {
+        const zhTitleSource = String(payload.titleZh || payload.title || '').trim();
+        resumeTitleZh.textContent = zhTitleSource
+          ? `最近练习：${zhTitleSource}`
+          : i18n.resumeTitleFallbackZh;
+      }
+      if (resumeMetaZh) {
+        resumeMetaZh.textContent = metaParts.length
+          ? `筛选标签：${metaParts.join(' · ')}`
+          : i18n.resumeMetaFallbackZh;
+      }
       resumePanel.classList.remove('hidden');
     } catch (error) {
       // Ignore malformed local cache.
@@ -170,6 +187,12 @@
       visible,
       total: cards.length,
     });
+    if (summaryZh) {
+      summaryZh.textContent = formatTemplate(i18n.summaryTemplateZh, {
+        visible,
+        total: cards.length,
+      });
+    }
     empty.classList.toggle('hidden', visible !== 0);
     setResetButtonState();
     syncUrl();

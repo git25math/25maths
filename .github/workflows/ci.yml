@@ -19,6 +19,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: "3.3"
           bundler-cache: true
 
       - name: Setup Python
@@ -26,8 +27,19 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Install Python dependencies
-        run: python3 -m pip install --upgrade pip pyyaml
+        run: python3 -m pip install --upgrade pip pyyaml pillow
+
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - name: Install Playwright Chromium
+        run: npx --yes playwright@1.52.0 install --with-deps chromium
 
       - name: Validate Kahoot data integrity
         run: python3 scripts/health/check_kahoot_data.py
@@ -38,5 +50,18 @@ jobs:
       - name: Validate navigation consistency
         run: python3 scripts/health/check_nav_consistency.py
 
+      - name: Validate style consistency
+        run: bash scripts/health/check_style_consistency.sh
+
+      - name: Validate bilingual coverage guardrail
+        run: bash scripts/health/check_bilingual_coverage.sh
+
+
       - name: Build site with Jekyll
         run: bundle exec jekyll build
+
+      - name: Validate visual regression snapshots
+        continue-on-error: ${{ github.event_name == 'pull_request' }}
+        env:
+          VISUAL_MAX_RMSE: "0.0040"
+        run: bash scripts/health/check_visual_regression.sh
