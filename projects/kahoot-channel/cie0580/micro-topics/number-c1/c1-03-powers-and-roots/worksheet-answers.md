@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C1.3 Powers and roots
 
 1. 117
-2. `21/24`
-3. 2.40
-4. 729
+2. `5/6`
+3. 1.45
+4. 243
 5. 8
-6. 132.0
-7. 36
-8. Use place value; correct rounded value shown in working.
+6. 138
+7. 72
+8. 620
 9. `6 x 10^4`
 10. £9.90

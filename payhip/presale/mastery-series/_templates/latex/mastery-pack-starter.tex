@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{mastery-style}
+
+\begin{document}
+
+\MasterySetBrand{25Maths}{Mastery Series}
+\MasterySetHeader{Quadratics Mastery Pack}{CIE 0580 + Edexcel 4MA1}
+\MasterySetFooter{Starter Template v1}
+
+\MasteryPackCover
+  {Quadratics Mastery Pack}
+  {Structured progression from method fluency to exam transfer}
+  {CIE 0580 (Core/Extended), Edexcel 4MA1 (Foundation/Higher)}
+  {v1.0 Internal}
+
+\MasteryTOCPage
+
+\MasteryModuleCover
+  {1}
+  {Structured Workbook}
+  {Build confident method choice and stable step execution under exam conditions}
+
+\tableofcontents
+
+\section{Module Overview}
+This starter file demonstrates the visual system for all future Mastery Packs.
+
+\begin{keyconceptbox}
+Quadratics mastery improves when students select methods intentionally instead of applying a single default procedure.
+\end{keyconceptbox}
+
+\begin{examtipbox}
+Train method selection first. Speed gains are reliable only after method choice becomes consistent.
+\end{examtipbox}
+
+\begin{commonmistakebox}
+Students often lose marks by solving correctly but not stating both roots. Build an explicit answer-format check.
+\end{commonmistakebox}
+
+\section{TikZ Example}
+\MasteryTikzRules
+
+\begin{center}
+\begin{tikzpicture}[x=2.2cm,y=1.6cm]
+  \node[mastery-node] (a) at (0,0) {1};
+  \node[mastery-node] (b) at (1.5,0) {2};
+  \node[mastery-node] (c) at (3,0) {3};
+  \draw[mastery-link] (a) -- (b);
+  \draw[mastery-link] (b) -- (c);
+  \node[mastery-label] at (0,-0.7) {Diagnose};
+  \node[mastery-label] at (1.5,-0.7) {Build};
+  \node[mastery-label] at (3,-0.7) {Transfer};
+\end{tikzpicture}
+\end{center}
+
+\end{document}

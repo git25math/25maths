@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E7.4 Vector geometry
 
-1. 12.2
-2. 12
-3. 9
-4. `3/6`
-5. 0.3
-6. 18
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `(6,-5)`
+2. `(2,-3)`
+3. `(-2,3)`
+4. `(-2,1)`
+5. `(6,-2)`
+6. `(4,1)`
+7. Length and angle stay unchanged.
+8. Distance from centre stays unchanged.
+9. They are proportional.
+10. `(2,-5)`

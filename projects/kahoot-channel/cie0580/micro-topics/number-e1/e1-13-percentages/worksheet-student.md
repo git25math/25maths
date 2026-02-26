@@ -4,20 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Convert between decimal, fraction, and percentage forms; solve percentage changes.
+- Apply percentages methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-If a value increases by 15%, multiply by `1.15`.
-Example: `200 x 1.15 = 230`.
+Example: increase `80` by `12%`: compute `80 x (1 + 12/100)` to get `89.6`.
 
 ## Practice (10)
-1. Write `0.72` as a percentage.
-2. Write `45%` as a decimal.
-3. Write `0.04` as a fraction.
-4. Find 35% of 260.
-5. Increase 150 by 12%.
-6. Decrease 400 by 5%.
-7. A value rises from 80 to 92. Find % increase.
-8. A shirt after 20% discount costs $48. Original price?
-9. 18 is what % of 45?
-10. Compare: 0.58, 59%, 3/5.
+1. Evaluate `36 + 11 x 5`.
+2. Write `3/24 + 10/24` as a simplified fraction.
+3. Calculate `3.0 + 0.15`.
+4. Work out `4^4`.
+5. Find `sqrt(49)`.
+6. Increase `120` by `15%`.
+7. Share `120` in the ratio `2:3` and give the larger share.
+8. Round `103.8` to `4` significant figures.
+9. Write `50000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

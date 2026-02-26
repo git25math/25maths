@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E2.9 Graphs in practical situations
 
-1. 16.4
-2. 17
-3. 9
-4. `3/6`
-5. 0.2
-6. 22
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `0x`
+2. `5x + 15`
+3. `5(x + 3)`
+4. 8
+5. 304
+6. `x >= 3`
+7. 38
+8. `x = (y + 3)/5`
+9. `x = 5` or `x = 7`
+10. 41

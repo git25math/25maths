@@ -26,6 +26,15 @@ PLACEHOLDER_PATTERNS = [
 ALLOWED_TYPES = {"fluency", "method", "context"}
 
 
+def _expected_board(topic_dir: Path) -> str:
+    parts = {p.lower() for p in topic_dir.parts}
+    if "cie0580" in parts:
+        return "CIE 0580"
+    if "edexcel-4ma1" in parts:
+        return "Edexcel 4MA1"
+    return ""
+
+
 def _find_header_index(lines: list[str], header: str) -> int:
     target = header.strip().lower()
     for i, line in enumerate(lines):
@@ -109,7 +118,7 @@ def _parse_kahoot_table(lines: list[str]) -> tuple[list[tuple[int, str, str]], l
     return rows, errors
 
 
-def check_kahoot(path: Path) -> list[str]:
+def check_kahoot(path: Path, expected_board: str) -> list[str]:
     errors: list[str] = []
 
     if not path.exists():
@@ -123,6 +132,20 @@ def check_kahoot(path: Path) -> list[str]:
 
     if _has_placeholder(text):
         errors.append("Kahoot file contains placeholder text.")
+
+    if expected_board:
+        board_line = ""
+        for line in lines[:30]:
+            m = re.match(r"^- Board:\s*(.+)$", line.strip())
+            if m:
+                board_line = m.group(1).strip()
+                break
+        if not board_line:
+            errors.append("Kahoot metadata missing '- Board: ...' line.")
+        elif board_line != expected_board:
+            errors.append(
+                f"Kahoot board mismatch: expected '{expected_board}', found '{board_line}'."
+            )
 
     rows, table_errors = _parse_kahoot_table(lines)
     errors.extend(table_errors)
@@ -145,7 +168,7 @@ def check_kahoot(path: Path) -> list[str]:
     return errors
 
 
-def check_listing(path: Path) -> list[str]:
+def check_listing(path: Path, expected_board: str) -> list[str]:
     errors: list[str] = []
 
     if not path.exists():
@@ -185,6 +208,15 @@ def check_listing(path: Path) -> list[str]:
     if not desc or len(desc) < 24:
         errors.append("Listing Kahoot Description is too short or missing.")
 
+    if expected_board and name and expected_board not in name:
+        errors.append(
+            f"Listing Kahoot Name must include board '{expected_board}'."
+        )
+    if expected_board and desc and expected_board not in desc:
+        errors.append(
+            f"Listing Kahoot Description must include board '{expected_board}'."
+        )
+
     if not tags:
         errors.append("Listing Tags line is missing.")
     else:
@@ -208,10 +240,11 @@ def main() -> int:
     topic_dir = Path(sys.argv[1]).resolve()
     kahoot = topic_dir / "kahoot-question-set.md"
     listing = topic_dir / "listing-copy.md"
+    expected_board = _expected_board(topic_dir)
 
     errors: list[str] = []
-    errors.extend(check_kahoot(kahoot))
-    errors.extend(check_listing(listing))
+    errors.extend(check_kahoot(kahoot, expected_board))
+    errors.extend(check_listing(listing, expected_board))
 
     if errors:
         print(f"FAIL: {topic_dir}")

@@ -6,6 +6,154 @@
 
 ---
 
+## 2026-02-27 | Engagement 系统全链路实现 + B2B 教师工具
+
+### 决策背景
+- 四份技术规格已完成（自适应、打卡/成就、周报、B2B），进入实施阶段
+- 用户要求自主推进 6 小时，完成所有可独立完成的工作
+
+### 关键实施
+
+#### 1. Engagement 系统上线（前端 + API + 数据集成）
+- 数据库: 2 个迁移文件（engagement 5 表 + B2B 6 表）+ 成就种子数据 20 条
+- API: 4 个新端点 (streak / achievements / check-achievements / freeze)
+- Supabase helpers: 10 个新函数 (fetch/upsert streak, XP, achievements, daily activity)
+- 前端: streak_widget.js + achievement_toast.js + 成就画廊页
+- 集成: session complete 端点自动触发 engagement 处理（streak + XP + 成就评估）
+- 练习引擎: 完成时自动派发 achievement-unlocked 事件 → 弹出 toast 通知
+
+#### 2. B2B 教师工具
+- 着陆页 institution/index.html（3 tier 定价、痛点、功能预览）
+- 教师仪表盘 institution/dashboard.html（统计、热力图、at-risk、常见错误）
+- 作业管理 institution/assignments.html（创建表单、练习选择器、完成度追踪）
+
+#### 3. 内容扩展
+- 10 篇 SEO 博客（5 EN + 5 CN），双向 lang_links
+- 家长周报邮件模板 templates/emails/weekly-report.html（双语、内联 CSS）
+- Demo 数据种子脚本（30 天练习历史 + 成就 + 机构数据）
+
+### 决策理由
+- 前端 + API + 数据库同步推进，确保部署即可端到端验证
+- Achievement toast 直接集成到 exercise_engine.js，零额外用户操作
+- 教师工具以 demo 数据为骨架，API 未上线也可预览完整 UI
+
+---
+
+## 2026-02-27 | B2B 教培机构平台 + 技术规格库 + SEO 内容
+
+### 决策背景
+- 用户明确要求深度研究并开发针对教培机构的功能
+- 竞品研究发现：无平台同时满足 IGCSE 大纲对齐 + 中文界面 + B2B 管理 + AI 自适应
+- 全球教培 CRM 市场 $16.3 亿，亚太增速 15.2% CAGR
+- 中国 IGCSE 头部教培（唯寻、翰林、犀牛）均缺专业化练题 SaaS
+
+### 关键决策
+
+#### 1. B2B 定价策略
+- Starter: ¥99/学生/月 (10+ 学生)
+- Professional: ¥149/学生/月 (30+ 学生)
+- Enterprise: 定制 (100+ 学生)
+- 教师账号免费（随机构方案）
+
+#### 2. 技术规格库建立
+四份技术规格已落盘，可直接交给 Codex/Gemini 实施：
+- `plan/specs/ADAPTIVE-DIFFICULTY-ENGINE.md` — Elo 算法 + IRT 简化模型
+- `plan/specs/STREAK-ACHIEVEMENT-SYSTEM.md` — 打卡/成就/XP/等级体系
+- `plan/specs/WEEKLY-REPORT-SYSTEM.md` — 双语邮件 + 家长 CC
+- `plan/specs/B2B-INSTITUTION-PLATFORM.md` — 完整机构端设计
+
+#### 3. SEO 内容发布
+新增 5 篇英文 SEO 博客文章，目标关键词：
+- "IGCSE maths revision strategy"
+- "CIE 0580 Paper 4 tips"
+- "IGCSE trigonometry guide"
+- "IGCSE percentage problems"
+- "CIE 0580 vs Edexcel 4MA1"
+
+#### 4. B2B 获客路径
+教师免费使用 → 机构采购升级 → 30 天免费试用 → 签约
+
+### 影响范围
+- 新建 4 份 spec 文档 + 5 篇博客 + sitemap 更新
+- CHIEF-ENGINEER-OPS-PLAN.md 更新路线图
+- 项目方向增加 B2B 收入线
+
+---
+
+## 2026-02-27 | 北极星愿景：全球最佳 IGCSE 数学备考平台
+
+### 决策背景
+- 项目已有完整会员系统、202个微专题、双语内容体系、LaTeX 生产流水线
+- 竞品分析显示：无人同时满足「双语」+「个性化」+「家长报告」
+- 中国国际学校 IGCSE 学生 50 万+，是被严重低估的市场切口
+
+### 关键决策
+
+#### 1. 市场切入点：中国 IGCSE 家庭
+- 竞品（Save My Exams、Dr Frost、Seneca）均无中文支持
+- 中国家长是付费决策者，愿意为子女教育投入
+- 口碑传播文化强（微信群、小红书）
+
+#### 2. 五大战略支柱
+1. **内容护城河** — 最深的双语 IGCSE 数学内容（目标 15,000+ 题）
+2. **智能层** — 自适应难度 + 间隔重复 + 薄弱点分析
+3. **体验层** — 每日打卡、成就系统、掌握度热力图
+4. **报告层** — 中文家长报告（独一无二的差异化）
+5. **营销引擎** — SEO 200+ 文章 + 小红书 + 微信
+
+#### 3. 产品定价演进
+- Phase 1: $9.99/月（学生版）
+- Phase 2: $14.99/月（学生+家长版，含中文报告）
+- Phase 3: $299/年（学校班级授权）
+
+#### 4. 飞轮模型
+更多内容 → 更好 SEO → 更多免费用户 → 更多练习数据 → 更好个性化 → 更高留存 → 更多付费 → 更多投入
+
+### 行动项
+- [x] 竞品分析完成（Save My Exams / Dr Frost / Seneca / Revision Village / PMT）
+- [x] 北极星愿景文档创建 (`plan/NORTH-STAR-VISION.md`)
+- [ ] Gate B 关闭（当前优先）
+- [ ] 自适应引擎设计（Q2）
+- [ ] 家长面板设计（Q3）
+
+---
+
+## 2026-02-27 | 总工程师运维计划 + AI 多引擎协作模式 + Gate B 推进
+
+### 决策背景
+- 会员系统代码 99% 完成（W0-W3 done, W4-W8 in_progress）
+- subscription.html 从 waitlist 切换到 Payhip checkout（本次完成）
+- 需要系统化的 AI 协作模式来高效推进剩余工作
+
+### 关键决策
+
+#### 1. AI 工具分工明确化
+- **Claude Code (Opus)**: 总工程师角色 — 架构规划、多文件编辑、代码审查、文档生成
+- **Codex (GPT-5)**: 实现工程师 — 后端/前端迭代编码、具体功能实现
+- **Gemini Pro**: 架构审计员 — 风险分析、设计评审、内容初稿
+- **Gemini Flash**: QA 工程师 — 测试矩阵、内容质量检查、练习题生成
+
+#### 2. 进度追踪文档体系固化
+- 新增 `plan/CHIEF-ENGINEER-OPS-PLAN.md` 作为总调度中心
+- 所有执行进度必须落盘到对应文档
+- Gate 状态变更实时更新到 COMMAND-CENTER
+
+#### 3. Gate B 关键路径确认
+- 人工操作（Payhip 产品创建 + Cloudflare env vars）是当前唯一阻塞项
+- 代码层面已就绪（subscription.html + releases.json + release_registry.js）
+
+### 行动项
+- [x] subscription.html 切换到 Payhip checkout 模式
+- [x] releases.json 添加 Week 1 entry
+- [x] release_registry.js 同步
+- [x] 创建 CHIEF-ENGINEER-OPS-PLAN.md
+- [ ] Payhip 创建订阅产品（人工）
+- [ ] Cloudflare 环境变量配置（人工）
+- [ ] 替换 `{PRODUCT_ID}` 占位符
+- [ ] E2E 验证通过
+
+---
+
 ## 2026-02-10 | 战略框架整合 + Payhip 上线 + 退款政策
 
 ### 📌 决策背景

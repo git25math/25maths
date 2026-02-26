@@ -46,6 +46,7 @@ EXPECTED_ZERO_MARKER_PAGES=(
   "cie0580/products/functions.html"
   "cie0580/products/number.html"
   "projects/kahoot-channel/_templates/worksheet-pdf-template.html"
+  "templates/emails/weekly-report.html"
 )
 
 failures=0

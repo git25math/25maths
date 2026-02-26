@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E7.2 Vectors in two dimensions
 
-1. 10.2
-2. 11
-3. 9
-4. `3/6`
-5. 0.5
-6. 20
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `(5,-1)`
+2. `(2,-3)`
+3. `(-2,3)`
+4. `(-2,1)`
+5. `(6,-2)`
+6. `(1,1)`
+7. Length and angle stay unchanged.
+8. Distance from centre stays unchanged.
+9. They are proportional.
+10. `(2,-5)`

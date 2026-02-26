@@ -1,28 +1,28 @@
 # E1.3 Kahoot Question Set - Powers and roots
 
 ## Metadata
-- Tier: Extended
 - Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E1.3
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | `2^5` | 10 | 16 | 32 | 64 | C | Fluency |
-| 2 | `sqrt(81)` | 7 | 8 | 9 | 10 | C | Fluency |
-| 3 | `3^2 x 3^4` | `3^6` | `3^8` | `3^2` | `9^4` | A | Fluency |
-| 4 | `10^3 / 10^5` | `10^8` | `10^2` | `10^-2` | `10^-8` | C | Fluency |
-| 5 | `5^0` | 0 | 1 | 5 | undefined | B | Fluency |
-| 6 | `4^3 / 4` | `4^2` | `4^3` | `4^4` | `4` | A | Method |
-| 7 | `(2^3)^2` | `2^5` | `2^6` | `4^5` | `8^2` | B | Method |
-| 8 | `9^(1/2)` | 9 | 4.5 | 3 | 81 | C | Method |
-| 9 | `27^(1/3)` | 2 | 3 | 9 | 27 | B | Method |
-| 10 | `2^-3` | -8 | 8 | `1/8` | `-1/8` | C | Method |
-| 11 | `sqrt(0.01)` | 0.1 | 0.01 | 10 | 1 | A | Method |
-| 12 | If area of square is `64 cm^2`, side length is | 6 | 7 | 8 | 16 | C | Context |
-| 13 | `10^-4` as decimal | 0.0001 | 0.001 | 10000 | 0.01 | A | Context |
-| 14 | A bacteria culture doubles each hour. After 3 hours from 50, amount? | 200 | 300 | 400 | 450 | C | Context |
-| 15 | Simplify `x^3 x x^-5` | `x^8` | `x^-2` | `x^2` | `x^-8` | B | Context |
+| 1 | Evaluate `25 + 11 x 3`. | 58 | 60 | 57 | 59 | A | Fluency |
+| 2 | Write `7/24 + 15/24` as a simplified fraction. | 12/12 | 11/12 | 11/13 | 13/12 | B | Fluency |
+| 3 | Calculate `3.9 + 0.22`. | 4.12 | 3.62 | 5.12 | 4.62 | A | Fluency |
+| 4 | Work out `2^7`. | 130 | 128 | 127 | 129 | B | Fluency |
+| 5 | Find `sqrt(36)`. | 6 | 5 | 8 | 7 | A | Fluency |
+| 6 | Increase `120` by `22%`. | 147.40 | 146.90 | 145.90 | 146.4 | D | Method |
+| 7 | Share `105` in the ratio `2:3` and give the larger share. | 62 | 63 | 65 | 64 | B | Method |
+| 8 | Round `734.1` to `4` significant figures. | 734.1 | 735.10 | 733.60 | 734.60 | A | Method |
+| 9 | Write `40000` in standard form. | No solution | 4 x 10^4 | Cannot be determined | 0 | B | Method |
+| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | No solution | 0 | £9.90 | Cannot be determined | C | Method |
+| 11 | Context check: Write `7/24 + 15/24` as a simplified fraction. | 11/12 | 12/12 | 13/12 | 11/13 | A | Method |
+| 12 | Context check: Work out `2^7`. | 128 | 129 | 127 | 130 | A | Context |
+| 13 | Context check: Increase `120` by `22%`. | 145.90 | 146.4 | 146.90 | 147.40 | B | Context |
+| 14 | Context check: Round `734.1` to `4` significant figures. | 734.1 | 734.60 | 735.10 | 733.60 | A | Context |
+| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | No solution | £9.90 | Cannot be determined | 0 | B | Context |
 
 ## Timer
 - Q1-Q5: 20s

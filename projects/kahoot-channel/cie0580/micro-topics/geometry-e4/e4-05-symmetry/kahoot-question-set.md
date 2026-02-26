@@ -1,17 +1,17 @@
 # E4.5 Kahoot Question Set - Symmetry
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E4.5
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find third angle in a triangle with angles `45°` and `36°`. | 98 | 99 | 101 | 100 | B | Fluency |
+| 1 | Find third angle in a triangle with angles `45°` and `36°`. | 98 | 100 | 99 | 101 | C | Fluency |
 | 2 | Find sum of interior angles of a `5`-sided polygon. | 541 | 539 | 542 | 540 | D | Fluency |
 | 3 | State the order of rotational symmetry of a regular hexagon. | 7 | 5 | 8 | 6 | D | Fluency |
-| 4 | Find perimeter of rectangle `5 cm` by `9 cm`. | Cannot be determined | 0 | No solution | 28 cm | D | Fluency |
+| 4 | Find perimeter of rectangle `5 cm` by `9 cm`. | 0 | No solution | 28 cm | Cannot be determined | C | Fluency |
 | 5 | Find area of circle radius `8 cm` in terms of `pi`. | No solution | Cannot be determined | 64pi cm^2 | 0 | C | Fluency |
 | 6 | Use Pythagoras: legs `6` and `5`. | 0 | No solution | sqrt(61) | Cannot be determined | C | Method |
 | 7 | In a right triangle, `sin(theta)=0.5`. Find `theta` (acute). | No solution | 0 | 30° | Cannot be determined | C | Method |

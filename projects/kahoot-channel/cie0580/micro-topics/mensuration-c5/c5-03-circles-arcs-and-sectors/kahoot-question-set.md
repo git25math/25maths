@@ -1,28 +1,28 @@
 # C5.3 Kahoot Question Set - Circles, arcs and sectors
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Core
 - Micro-topic: C5.3
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[5, 12, 10, 12, 13]`. | No solution | Cannot be determined | 10.4 | 0 | C | Fluency |
-| 2 | Find median of `[5, 10, 12, 12, 13]`. | 12 | 13 | 11 | 14 | A | Fluency |
-| 3 | Find range of `[5, 12, 10, 12, 13]`. | 9 | 10 | 7 | 8 | D | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 2)`. | 4/6 | 5/6 | 6/6 | 4/7 | A | Fluency |
-| 5 | If `P(A)=0.7`, find `P(not A)`. | No solution | 0 | 0.3 | Cannot be determined | C | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `52` trials. | 14 | 17 | 15 | 16 | C | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | Cannot be determined | No solution | 0 | Median | D | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | 0 | Cannot be determined | No solution | A | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | 14/50 = 7/25 | 0 | Cannot be determined | No solution | A | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0 | Cannot be determined | No solution | 0.28 | D | Method |
-| 11 | Context check: Find median of `[5, 10, 12, 12, 13]`. | 14 | 12 | 13 | 11 | B | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 2)`. | 4/6 | 5/6 | 4/7 | 6/6 | A | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `52` trials. | 14 | 16 | 15 | 17 | C | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | Cannot be determined | 0 | 18/30 = 3/5 | No solution | C | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | No solution | 0 | 0.28 | Cannot be determined | C | Context |
+| 1 | Find perimeter of rectangle `14 cm` by `4 cm`. | 36 cm | 0 | No solution | Cannot be determined | A | Fluency |
+| 2 | Find area of rectangle `14 cm` by `4 cm`. | No solution | 56 cm^2 | 0 | Cannot be determined | B | Fluency |
+| 3 | Find area of triangle base `14` cm, height `6` cm. | 42.0 cm^2 | No solution | Cannot be determined | 0 | A | Fluency |
+| 4 | Find circumference of circle radius `4` cm in terms of `pi`. | 0 | No solution | Cannot be determined | 8pi cm | D | Fluency |
+| 5 | Find area of circle radius `4` cm in terms of `pi`. | Cannot be determined | 16pi cm^2 | 0 | No solution | B | Fluency |
+| 6 | Find volume of cuboid `14 x 4 x 6`. | 336 | 335 | 338 | 337 | A | Method |
+| 7 | Find surface area of cube side `6` cm. | 215 | 218 | 216 | 217 | C | Method |
+| 8 | A prism has cross-section area `56` and length `6`. Find volume. | 335 | 338 | 336 | 337 | C | Method |
+| 9 | Convert `56` cm^2 to mm^2. | 5601 | 5599 | 5602 | 5600 | D | Method |
+| 10 | A sector is `90°` of a circle radius `4`. Find arc length in terms of `pi`. | 4pi/2 | 0 | Cannot be determined | No solution | A | Method |
+| 11 | Context check: Find area of rectangle `14 cm` by `4 cm`. | 56 cm^2 | 0 | Cannot be determined | No solution | A | Method |
+| 12 | Context check: Find circumference of circle radius `4` cm in terms of `pi`. | 0 | Cannot be determined | No solution | 8pi cm | D | Context |
+| 13 | Context check: Find volume of cuboid `14 x 4 x 6`. | 338 | 336 | 337 | 335 | B | Context |
+| 14 | Context check: A prism has cross-section area `56` and length `6`. Find volume. | 336 | 337 | 335 | 338 | A | Context |
+| 15 | Context check: A sector is `90°` of a circle radius `4`. Find arc length in terms of `pi`. | No solution | Cannot be determined | 4pi/2 | 0 | C | Context |
 
 ## Timer
 - Q1-Q5: 20s

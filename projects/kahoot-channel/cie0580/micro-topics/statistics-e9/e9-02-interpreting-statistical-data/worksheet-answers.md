@@ -1,4 +1,4 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E9.2 Interpreting statistical data
 
 1. 15.4

@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply measures methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `7` and height `7` is `1/2 x 7 x 7 = 24`.
+Example: area of a triangle with base `7` and height `5` is `1/2 x 7 x 5 = 17`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `61°` and `42°`.

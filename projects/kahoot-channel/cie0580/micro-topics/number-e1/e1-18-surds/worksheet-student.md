@@ -4,19 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Simplify surds, perform basic operations, and recognize irrational numbers.
+- Apply surds methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-`sqrt(72) = sqrt(36x2) = 6sqrt(2)`.
+Example: increase `80` by `19%`: compute `80 x (1 + 19/100)` to get `95.2`.
 
 ## Practice (10)
-1. Simplify `sqrt(27)`.
-2. Simplify `sqrt(48)`.
-3. Calculate `sqrt(12) + sqrt(3)`.
-4. Calculate `sqrt(50) - sqrt(8)`.
-5. Rationalize `1/sqrt(2)`.
-6. Rationalize `3/sqrt(7)`.
-7. Is `sqrt(13)` rational or irrational?
-8. Find exact side length of a square with area 32 cm^2.
-9. Compute `sqrt(6) x sqrt(24)`.
-10. Approximate `sqrt(7)` to 1 d.p.
+1. Evaluate `31 + 10 x 5`.
+2. Write `8/24 + 16/24` as a simplified fraction.
+3. Calculate `2.6 + 0.23`.
+4. Work out `5^6`.
+5. Find `sqrt(64)`.
+6. Increase `120` by `23%`.
+7. Share `105` in the ratio `2:3` and give the larger share.
+8. Round `394.2` to `2` significant figures.
+9. Write `60000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

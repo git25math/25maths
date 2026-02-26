@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C1.4 Fractions, decimals and percentages
 
 1. 56
-2. `17/24`
-3. 2.93
-4. 1024
+2. `5/8`
+3. 2.19
+4. 27
 5. 8
-6. 135.6
-7. 63
-8. Use place value; correct rounded value shown in working.
-9. `2 x 10^4`
+6. 154.8
+7. 81
+8. 650
+9. `6 x 10^4`
 10. £9.90

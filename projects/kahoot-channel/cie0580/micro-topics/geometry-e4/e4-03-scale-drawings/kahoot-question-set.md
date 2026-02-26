@@ -1,8 +1,8 @@
 # E4.3 Kahoot Question Set - Scale drawings
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E4.3
 - Questions: 15 MCQ
 

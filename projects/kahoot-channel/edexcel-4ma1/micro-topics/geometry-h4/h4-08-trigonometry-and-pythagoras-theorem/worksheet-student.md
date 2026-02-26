@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply trigonometry and pythagoras’ theorem methods accurately in Edexcel 4MA1 Higher exam questions.
 
 ## Model example
-Example: area of a triangle with base `8` and height `5` is `1/2 x 8 x 5 = 20`.
+Example: area of a triangle with base `10` and height `6` is `1/2 x 10 x 6 = 30`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `48°` and `39°`.

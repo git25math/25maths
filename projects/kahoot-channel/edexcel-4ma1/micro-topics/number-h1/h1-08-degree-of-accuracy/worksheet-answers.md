@@ -2,12 +2,12 @@
 ## H1.8 Degree of accuracy
 
 1. 131
-2. `11/12`
-3. 3.00
-4. 625
-5. 9
-6. 144.0
-7. 36
-8. Use place value; correct rounded value shown in working.
-9. `6 x 10^4`
+2. `19/24`
+3. 2.29
+4. 2187
+5. 6
+6. 154.8
+7. 27
+8. 683.8
+9. `5 x 10^4`
 10. £9.90

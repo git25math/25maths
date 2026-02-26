@@ -22,7 +22,7 @@ Early-Bird Presale | All-Units Mega Bundle
 
 ### Short Description
 
-Early-bird presale for the complete CIE 0580 all-units package. Includes 9 units, 18 sections, and 124 subtopics in one roadmap.
+Early-bird presale for the complete CIE 0580 all-units package. Includes 9 units, 18 sections, and 124 subtopics in one roadmap. L1 singles total US$372; L4 early-bird US$89 (save US$283).
 
 ### Full Description (Markdown)
 
@@ -33,6 +33,11 @@ This is the early-bird presale for the **CIE 0580 All-Units Mega Bundle**.
 - **18 sections**
 - **124 subtopics**
 - A full exam-board structured progression path
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this board: **US$372** (124 x US$3)
+- L4 early-bird price: **US$89**
+- Savings at early-bird price: **US$283**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation for full-board access
@@ -60,7 +65,7 @@ This is the early-bird presale for the **CIE 0580 All-Units Mega Bundle**.
 ### SEO
 
 - SEO title: CIE 0580 All-Units Mega Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for the complete CIE 0580 all-units package. Includes 9 units, 18 sections, and 124 subtopics in one roadmap.
+- SEO description: Early-bird presale for the complete CIE 0580 all-units package. Includes 9 units, 18 sections, and 124 subtopics in one roadmap. L1 singles total US$372; L4 early-bird US$89 (save US$283).
 
 ### Tags
 
@@ -84,7 +89,7 @@ Early-Bird Presale | All-Units Mega Bundle
 
 ### Short Description
 
-Early-bird presale for the complete Edexcel 4MA1 all-units package. Includes 6 units, 12 sections, and 78 subtopics in one roadmap.
+Early-bird presale for the complete Edexcel 4MA1 all-units package. Includes 6 units, 12 sections, and 78 subtopics in one roadmap. L1 singles total US$234; L4 early-bird US$79 (save US$155).
 
 ### Full Description (Markdown)
 
@@ -95,6 +100,11 @@ This is the early-bird presale for the **Edexcel 4MA1 All-Units Mega Bundle**.
 - **12 sections**
 - **78 subtopics**
 - A full exam-board structured progression path
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this board: **US$234** (78 x US$3)
+- L4 early-bird price: **US$79**
+- Savings at early-bird price: **US$155**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation for full-board access
@@ -122,7 +132,7 @@ This is the early-bird presale for the **Edexcel 4MA1 All-Units Mega Bundle**.
 ### SEO
 
 - SEO title: Edexcel 4MA1 All-Units Mega Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for the complete Edexcel 4MA1 all-units package. Includes 6 units, 12 sections, and 78 subtopics in one roadmap.
+- SEO description: Early-bird presale for the complete Edexcel 4MA1 all-units package. Includes 6 units, 12 sections, and 78 subtopics in one roadmap. L1 singles total US$234; L4 early-bird US$79 (save US$155).
 
 ### Tags
 

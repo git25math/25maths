@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E2.2 Algebraic manipulation
 
-1. 13.4
-2. 15
-3. 12
-4. `3/6`
-5. 0.2
-6. 15
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `2x`
+2. `6x + 18`
+3. `6(x + 3)`
+4. 9
+5. 466
+6. `x >= 4`
+7. 25
+8. `x = (y + 3)/6`
+9. `x = 4` or `x = 5`
+10. 41

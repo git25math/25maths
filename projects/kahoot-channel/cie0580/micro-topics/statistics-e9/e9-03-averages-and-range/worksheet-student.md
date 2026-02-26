@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.3 Averages and range
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply averages and range methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply averages and range methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[6, 7, 9, 6, 8]` is `36/5 = 7.2`.

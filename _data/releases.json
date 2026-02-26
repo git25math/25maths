@@ -11,14 +11,14 @@
     "status": "active"
   },
   {
-    "release_id": "member-demo-algebra-c2-01-2026w07",
+    "release_id": "member-week01-algebra-foundations-2026w09",
     "version": "v1",
     "subtopic_id": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
     "channels": ["member"],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "{PRODUCT_ID}",
+    "payhip_url": "https://payhip.com/b/{PRODUCT_ID}",
     "membership_tier": "active",
-    "asset_key": "member-files/demo/algebra-c2-01-pack.pdf",
-    "status": "draft"
+    "asset_key": "member-files/week01/algebra-foundations-pack.pdf",
+    "status": "active"
   }
 ]

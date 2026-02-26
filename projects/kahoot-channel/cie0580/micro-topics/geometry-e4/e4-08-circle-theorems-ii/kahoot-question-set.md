@@ -1,15 +1,15 @@
 # E4.8 Kahoot Question Set - Circle theorems II
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E4.8
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find third angle in a triangle with angles `38°` and `57°`. | 85 | 87 | 84 | 86 | A | Fluency |
-| 2 | Find sum of interior angles of a `6`-sided polygon. | 721 | 722 | 719 | 720 | D | Fluency |
+| 1 | Find third angle in a triangle with angles `38°` and `57°`. | 87 | 85 | 84 | 86 | B | Fluency |
+| 2 | Find sum of interior angles of a `6`-sided polygon. | 721 | 722 | 720 | 719 | C | Fluency |
 | 3 | State the order of rotational symmetry of a regular hexagon. | 5 | 8 | 6 | 7 | C | Fluency |
 | 4 | Find perimeter of rectangle `16 cm` by `20 cm`. | 72 cm | No solution | 0 | Cannot be determined | A | Fluency |
 | 5 | Find area of circle radius `9 cm` in terms of `pi`. | 81pi cm^2 | No solution | Cannot be determined | 0 | A | Fluency |

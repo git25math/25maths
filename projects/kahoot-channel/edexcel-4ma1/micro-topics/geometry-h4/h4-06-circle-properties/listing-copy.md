@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - H4.6 Circle properties
 
 ## Kahoot Name
-Edexcel 4MA1 H4.6 | Circle properties | HIGHER TRACK
+Edexcel 4MA1 H4.6 | Circle properties | Higher Tier
 
 ## Kahoot Description
 H4.6 Circle properties exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

@@ -8,8 +8,8 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find third angle in a triangle with angles `55°` and `38°`. | 86 | 89 | 87 | 88 | C | Fluency |
-| 2 | Find sum of interior angles of a `5`-sided polygon. | 540 | 541 | 542 | 539 | A | Fluency |
+| 1 | Find third angle in a triangle with angles `55°` and `38°`. | 88 | 86 | 89 | 87 | D | Fluency |
+| 2 | Find sum of interior angles of a `5`-sided polygon. | 540 | 542 | 541 | 539 | A | Fluency |
 | 3 | State the order of rotational symmetry of a regular hexagon. | 6 | 5 | 7 | 8 | A | Fluency |
 | 4 | Find perimeter of rectangle `9 cm` by `13 cm`. | No solution | 44 cm | Cannot be determined | 0 | B | Fluency |
 | 5 | Find area of circle radius `3 cm` in terms of `pi`. | No solution | 0 | 9pi cm^2 | Cannot be determined | C | Fluency |

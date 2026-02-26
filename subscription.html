@@ -3,6 +3,7 @@ layout: global
 title: Weekly Topic Membership
 description: "Weekly topical practice packs for CIE 0580 — graded difficulty, full solutions, and a clear progress path."
 active_global: membership
+payhip: true
 ---
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
@@ -68,54 +69,45 @@ active_global: membership
 <section class="py-16 bg-white" id="pricing">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">Membership Pricing</h2>
-        <p class="text-gray-600 mb-8">Membership checkout opens soon. Join the priority list now and get first access.</p>
-        <p data-bilingual-block class="text-sm text-gray-600 mb-8">会员正式支付入口即将开放，可先加入优先候补获取首发链接。</p>
+        <p class="text-gray-600 mb-8">One simple plan. Cancel anytime.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">一个简单方案，随时可取消。</p>
         <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border">
             <div class="text-5xl font-bold text-primary mb-2">$9.99</div>
             <div class="text-gray-600 mb-6">per month</div>
-            <form action="{{ site.waitlist.endpoint }}" method="POST" class="max-w-md mx-auto space-y-4 text-left">
-                <input type="hidden" name="topic" value="Weekly Membership">
-                <input type="hidden" name="module" value="CIE 0580">
-                <input type="hidden" name="lang" value="en">
-                <input type="hidden" name="source_page" value="{{ page.url }}">
-                <input type="hidden" name="entry_point" value="membership_waitlist">
-                <input type="hidden" name="product" value="Weekly Membership">
-                <input type="hidden" name="_subject" value="Weekly Membership Waitlist">
-                <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
-                <input type="text" name="name" placeholder="Name (optional)" class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                <input type="email" name="email" required placeholder="Email address" class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                <div>
-                    <label class="block text-sm font-semibold mb-2" for="membership_support_track_choice">Support track</label>
-                    <select id="membership_support_track_choice" name="support_track_choice" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                        <option value="">Select one</option>
-                        <option value="standard">Standard Track (English-first)</option>
-                        <option value="bilingual">Bilingual Support Track (Chinese-English terms)</option>
-                    </select>
-                    <p class="text-xs text-gray-500 mt-1">Choosing bilingual support enables bilingual gift eligibility without review gating.</p>
-                    <p data-bilingual-block class="text-xs text-gray-500 mt-1">选择双语支持即可触发双语词汇卡赠送资格，不需要评价解锁。</p>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-sm font-semibold mb-2" for="membership_order_tier">Current order tier</label>
-                        <select id="membership_order_tier" name="order_tier" class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                            <option value="">Not set</option>
-                            <option value="L1">L1</option>
-                            <option value="L2">L2</option>
-                            <option value="L3">L3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold mb-2" for="membership_order_ref">Order reference</label>
-                        <input id="membership_order_ref" type="text" name="order_ref" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="Optional">
-                    </div>
-                </div>
-                <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    Join Priority Waitlist
-                </button>
-            </form>
-            <p class="text-sm text-gray-500 mt-4">You will receive launch notice, early access link, and onboarding details by email.</p>
-            <p class="text-sm mt-3">
-                <a href="/membership/" class="text-primary font-semibold hover:underline">Preview Member Resource Center →</a>
+            <ul class="text-left max-w-md mx-auto space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                    <span class="text-green-500 mt-1 flex-shrink-0">&#10003;</span>
+                    <span class="text-gray-700">Weekly topical practice pack with full solutions</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-green-500 mt-1 flex-shrink-0">&#10003;</span>
+                    <span class="text-gray-700">Graded difficulty aligned to CIE 0580 exam standards</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-green-500 mt-1 flex-shrink-0">&#10003;</span>
+                    <span class="text-gray-700">Step-by-step worked answers and common mistake notes</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-green-500 mt-1 flex-shrink-0">&#10003;</span>
+                    <span class="text-gray-700">Monthly recap packs for revision</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-green-500 mt-1 flex-shrink-0">&#10003;</span>
+                    <span class="text-gray-700">Access to the Member Resource Center with progress tracking</span>
+                </li>
+            </ul>
+            <a href="https://payhip.com/b/{PRODUCT_ID}"
+               data-payhip-product="{PRODUCT_ID}"
+               class="payhip-button inline-block w-full max-w-md bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">
+                Subscribe Now — $9.99/mo
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Secure checkout via Payhip. Cancel anytime from your account.</p>
+            <p data-bilingual-block class="text-sm text-gray-500 mt-2">通过 Payhip 安全结账，可随时在账户中取消订阅。</p>
+            <p class="text-sm mt-4">
+                <a href="/membership/" class="text-primary font-semibold hover:underline">Member Resource Center →</a>
+            </p>
+            <p class="text-sm mt-2">
+                <a href="/support-track.html" class="text-amber-600 font-semibold hover:underline">Set support track (optional) →</a>
             </p>
             <p class="text-sm mt-2">
                 <a href="/support-track.html" class="text-amber-600 font-semibold hover:underline">Set support track now (optional) →</a>

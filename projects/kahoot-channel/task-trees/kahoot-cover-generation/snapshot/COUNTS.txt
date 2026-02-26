@@ -1,0 +1,4 @@
+free_showcase_files=107
+cie_course_pack_files=73
+edx_course_pack_files=49
+coming_soon_files=11

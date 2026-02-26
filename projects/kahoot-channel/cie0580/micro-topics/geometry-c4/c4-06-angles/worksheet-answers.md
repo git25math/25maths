@@ -1,4 +1,4 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C4.6 Angles
 
 1. 72
@@ -10,4 +10,4 @@
 7. 30°
 8. 1287
 9. 9
-10. `400.0pi`
+10. `900pi`

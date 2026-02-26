@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C2.11 Sketching curves
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply sketching curves methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply sketching curves methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
-Example: mean of `[18, 8, 7, 11, 15]` is `59/5 = 11.8`.
+Example: solve `4x + 4 = 32` by inverse operations. Subtract `4` then divide by `4` to get `x = 7`.
 
 ## Practice (10)
-1. Find mean of `[13, 12, 15, 10, 9]`.
-2. Find median of `[9, 10, 12, 13, 15]`.
-3. Find range of `[13, 12, 15, 10, 9]`.
-4. A fair die is rolled. Find `P(score > 5)`.
-5. If `P(A)=0.7`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `47` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Simplify `4x + 3x - 6x`.
+2. Expand and simplify `4(x + 3)`.
+3. Factorise `4x + 12` fully.
+4. Solve `4x - 3 = 13`.
+5. When `x = 4`, evaluate `4x^2 - 3x + 6`.
+6. Solve the inequality `4x + 3 >= 28`.
+7. The nth term is `4n + 6`. Find term `4`.
+8. Rearrange `y = 4x - 3` to make `x` the subject.
+9. Solve `x^2 - 5x + 6 = 0`.
+10. Given `f(x)=2x-3`, find `f(8)`.

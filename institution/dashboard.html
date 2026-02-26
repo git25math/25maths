@@ -1,0 +1,267 @@
+---
+layout: global
+title: Teacher Dashboard | 教师仪表盘
+description: "25Maths teacher dashboard — manage classes, assign homework, track student progress."
+active_global: institution
+noindex: true
+supabase: true
+---
+
+<section class="py-8 bg-gray-50 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900" id="teacher-greeting">Teacher Dashboard</h1>
+                <p class="text-sm text-gray-500" id="institution-name">Loading...</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <select id="class-selector" class="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                    <option value="">Select class...</option>
+                </select>
+                <a href="/institution/assignments.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+                    + New Assignment
+                </a>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center">
+                <div class="text-3xl font-bold text-gray-900" id="stat-students">--</div>
+                <div class="text-xs text-gray-500 mt-1">Students</div>
+                <div class="text-xs text-gray-500" data-bilingual-block>学生总数</div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center">
+                <div class="text-3xl font-bold text-blue-600" id="stat-accuracy">--%</div>
+                <div class="text-xs text-gray-500 mt-1">Avg Accuracy</div>
+                <div class="text-xs text-gray-500" data-bilingual-block>平均正确率</div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center">
+                <div class="text-3xl font-bold text-green-600" id="stat-sessions">--</div>
+                <div class="text-xs text-gray-500 mt-1">Sessions This Week</div>
+                <div class="text-xs text-gray-500" data-bilingual-block>本周练习数</div>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center">
+                <div class="text-3xl font-bold text-red-600" id="stat-at-risk">--</div>
+                <div class="text-xs text-gray-500 mt-1">Needs Attention</div>
+                <div class="text-xs text-gray-500" data-bilingual-block>需关注学生</div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <!-- Pending Assignments -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-5">
+                <h2 class="text-sm font-semibold text-gray-700 mb-4">
+                    Pending Assignments
+                    <span data-bilingual-block class="text-xs font-normal text-gray-400 ml-2">未完成作业</span>
+                </h2>
+                <div id="pending-assignments" class="space-y-3">
+                    <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
+                        <div>
+                            <div class="text-sm font-medium text-gray-800">Algebra Ch2 Practice</div>
+                            <div class="text-xs text-gray-500">Due: Mar 1 · CIE 0580</div>
+                        </div>
+                        <div class="text-sm">
+                            <span class="text-blue-600 font-semibold">5</span>
+                            <span class="text-gray-400">/32</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
+                        <div>
+                            <div class="text-sm font-medium text-gray-800">Trigonometry Practice</div>
+                            <div class="text-xs text-gray-500">Due: Mar 3 · CIE 0580</div>
+                        </div>
+                        <div class="text-sm">
+                            <span class="text-blue-600 font-semibold">20</span>
+                            <span class="text-gray-400">/32</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
+                        <div>
+                            <div class="text-sm font-medium text-gray-800">Mock Exam 1</div>
+                            <div class="text-xs text-gray-500">Due: Mar 5 · Full paper</div>
+                        </div>
+                        <div class="text-sm">
+                            <span class="text-blue-600 font-semibold">28</span>
+                            <span class="text-gray-400">/32</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- At-Risk Students -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-5">
+                <h2 class="text-sm font-semibold text-gray-700 mb-4">
+                    Students Needing Attention
+                    <span data-bilingual-block class="text-xs font-normal text-gray-400 ml-2">需关注学生</span>
+                </h2>
+                <div id="at-risk-students" class="space-y-3">
+                    <div class="flex items-center justify-between border border-red-100 rounded-lg px-3 py-2 bg-red-50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-red-200 text-red-700 rounded-full flex items-center justify-center text-xs font-bold">WX</span>
+                            <div>
+                                <div class="text-sm font-medium text-gray-800">Wang Xiaoming</div>
+                                <div class="text-xs text-red-600">Trig accuracy: 32%</div>
+                            </div>
+                        </div>
+                        <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">Low accuracy</span>
+                    </div>
+                    <div class="flex items-center justify-between border border-amber-100 rounded-lg px-3 py-2 bg-amber-50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-amber-200 text-amber-700 rounded-full flex items-center justify-center text-xs font-bold">LH</span>
+                            <div>
+                                <div class="text-sm font-medium text-gray-800">Li Hua</div>
+                                <div class="text-xs text-amber-600">No activity for 3 days</div>
+                            </div>
+                        </div>
+                        <span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full">Inactive</span>
+                    </div>
+                    <div class="flex items-center justify-between border border-red-100 rounded-lg px-3 py-2 bg-red-50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-red-200 text-red-700 rounded-full flex items-center justify-center text-xs font-bold">ZS</span>
+                            <div>
+                                <div class="text-sm font-medium text-gray-800">Zhang San</div>
+                                <div class="text-xs text-red-600">Scores declining 3 weeks</div>
+                            </div>
+                        </div>
+                        <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">Declining</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic Mastery Heatmap -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-5 mb-8">
+            <h2 class="text-sm font-semibold text-gray-700 mb-4">
+                Topic Mastery Heatmap
+                <span data-bilingual-block class="text-xs font-normal text-gray-400 ml-2">主题掌握度热力图</span>
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm" id="heatmap-table">
+                    <thead>
+                        <tr class="text-xs text-gray-500">
+                            <th class="text-left py-2 px-3 font-medium">Student</th>
+                            <th class="text-center py-2 px-2 font-medium">Algebra</th>
+                            <th class="text-center py-2 px-2 font-medium">Number</th>
+                            <th class="text-center py-2 px-2 font-medium">Geometry</th>
+                            <th class="text-center py-2 px-2 font-medium">Trig</th>
+                            <th class="text-center py-2 px-2 font-medium">Stats</th>
+                            <th class="text-center py-2 px-2 font-medium">Functions</th>
+                            <th class="text-center py-2 px-2 font-medium">Mensuration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Demo data — will be replaced by JS -->
+                        <tr class="border-t border-gray-100">
+                            <td class="py-2 px-3 font-medium text-gray-800">Wang Xiaoming</td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">82</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">91</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">65</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-red-200 text-red-800 text-xs leading-6">32</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">58</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">78</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">85</span></td>
+                        </tr>
+                        <tr class="border-t border-gray-100">
+                            <td class="py-2 px-3 font-medium text-gray-800">Li Hua</td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">55</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">88</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">75</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">62</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-red-200 text-red-800 text-xs leading-6">40</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">60</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-green-200 text-green-800 text-xs leading-6">72</span></td>
+                        </tr>
+                        <tr class="border-t border-gray-100">
+                            <td class="py-2 px-3 font-medium text-gray-800">Zhang San</td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-red-200 text-red-800 text-xs leading-6">38</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">52</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">55</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-red-200 text-red-800 text-xs leading-6">28</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">50</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-red-200 text-red-800 text-xs leading-6">35</span></td>
+                            <td class="text-center py-2 px-2"><span class="inline-block w-6 h-6 rounded bg-yellow-200 text-yellow-800 text-xs leading-6">48</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex items-center gap-4 mt-4 text-xs text-gray-500">
+                <span>Legend:</span>
+                <span class="flex items-center gap-1"><span class="w-3 h-3 bg-green-200 rounded"></span> 80%+</span>
+                <span class="flex items-center gap-1"><span class="w-3 h-3 bg-yellow-200 rounded"></span> 50-79%</span>
+                <span class="flex items-center gap-1"><span class="w-3 h-3 bg-red-200 rounded"></span> &lt;50%</span>
+                <span class="flex items-center gap-1"><span class="w-3 h-3 bg-gray-100 rounded"></span> Not practiced</span>
+            </div>
+        </div>
+
+        <!-- Common Mistakes This Week -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-5">
+            <h2 class="text-sm font-semibold text-gray-700 mb-4">
+                Most Common Mistakes This Week
+                <span data-bilingual-block class="text-xs font-normal text-gray-400 ml-2">本周最常见错误</span>
+            </h2>
+            <div id="common-mistakes" class="space-y-3">
+                <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
+                    <div>
+                        <div class="text-sm font-medium text-gray-800">Trigonometry — Sine/Cosine Rule</div>
+                        <div class="text-xs text-gray-500">12 students got this wrong · C6-01</div>
+                    </div>
+                    <button class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full font-medium hover:bg-blue-100">
+                        Create Practice
+                    </button>
+                </div>
+                <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
+                    <div>
+                        <div class="text-sm font-medium text-gray-800">Algebra — Sign Errors in Expansion</div>
+                        <div class="text-xs text-gray-500">8 students got this wrong · C2-02</div>
+                    </div>
+                    <button class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full font-medium hover:bg-blue-100">
+                        Create Practice
+                    </button>
+                </div>
+                <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
+                    <div>
+                        <div class="text-sm font-medium text-gray-800">Number — Reverse Percentage</div>
+                        <div class="text-xs text-gray-500">6 students got this wrong · C1-02</div>
+                    </div>
+                    <button class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full font-medium hover:bg-blue-100">
+                        Create Practice
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Teacher Dashboard JS (placeholder — will be implemented by Codex) -->
+<script>
+(function() {
+    'use strict';
+    // This is a static skeleton with demo data.
+    // Dynamic data loading will be implemented when the
+    // institution API endpoints are built.
+    //
+    // Expected flow:
+    // 1. Check auth (teacher/admin role)
+    // 2. Fetch teacher's institution and classes
+    // 3. Fetch class stats, heatmap, at-risk students
+    // 4. Render dynamic data
+
+    document.getElementById('stat-students').textContent = '32';
+    document.getElementById('stat-accuracy').textContent = '68%';
+    document.getElementById('stat-sessions').textContent = '45';
+    document.getElementById('stat-at-risk').textContent = '3';
+    document.getElementById('teacher-greeting').textContent = 'Welcome back, Demo Teacher';
+    document.getElementById('institution-name').textContent = 'Demo Academy · CIE 0580 Extended';
+
+    var classSelector = document.getElementById('class-selector');
+    var opt = document.createElement('option');
+    opt.value = 'demo-class';
+    opt.textContent = 'CIE 0580 Extended Demo Class';
+    opt.selected = true;
+    classSelector.appendChild(opt);
+})();
+</script>

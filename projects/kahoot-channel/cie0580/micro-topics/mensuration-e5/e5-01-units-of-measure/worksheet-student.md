@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E5.1 Units of measure
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply units of measure methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply units of measure methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[16, 15, 5, 15, 5]` is `56/5 = 11.2`.
+Example: area of a triangle with base `9` and height `10` is `1/2 x 9 x 10 = 45`.
 
 ## Practice (10)
-1. Find mean of `[7, 12, 13, 6, 19]`.
-2. Find median of `[6, 7, 12, 13, 19]`.
-3. Find range of `[7, 12, 13, 6, 19]`.
-4. A fair die is rolled. Find `P(score > 5)`.
-5. If `P(A)=0.8`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `40` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Find perimeter of rectangle `7 cm` by `7 cm`.
+2. Find area of rectangle `7 cm` by `7 cm`.
+3. Find area of triangle base `7` cm, height `7` cm.
+4. Find circumference of circle radius `3` cm in terms of `pi`.
+5. Find area of circle radius `3` cm in terms of `pi`.
+6. Find volume of cuboid `7 x 7 x 7`.
+7. Find surface area of cube side `7` cm.
+8. A prism has cross-section area `49` and length `7`. Find volume.
+9. Convert `49` cm^2 to mm^2.
+10. A cone has radius `3` and height `7`. Find volume in terms of `pi`.

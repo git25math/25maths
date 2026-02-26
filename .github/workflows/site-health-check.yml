@@ -58,6 +58,7 @@ jobs:
           VISUAL_MAX_RMSE: "0.0040"
         run: bash scripts/health/check_visual_regression.sh
 
+
       - name: Generate Kahoot funnel health report
         run: python3 scripts/health/report_kahoot_funnel.py
 

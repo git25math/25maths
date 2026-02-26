@@ -4,19 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Solve rate problems including speed, density and unit-rate style questions.
+- Apply rates methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-From 14:35 to 17:10 is 2 h 35 min.
+Example: increase `80` by `17%`: compute `80 x (1 + 17/100)` to get `93.6`.
 
 ## Practice (10)
-1. Convert 3.25 hours to minutes.
-2. Convert 150 minutes to hours and minutes.
-3. Write 20:45 in 12-hour format.
-4. Write 6:15 am in 24-hour format.
-5. Find duration from 10:25 to 13:05.
-6. Add 1 h 55 min to 16:20.
-7. Subtract 2 h 15 min from 09:40.
-8. Convert 5400 seconds to hours.
-9. A train leaves 07:50 and takes 2 h 35 min. Arrival time?
-10. Speed 80 km/h for 1 h 45 min. Distance?
+1. Evaluate `41 + 8 x 6`.
+2. Write `9/24 + 11/24` as a simplified fraction.
+3. Calculate `4.3 + 0.26`.
+4. Work out `2^6`.
+5. Find `sqrt(100)`.
+6. Increase `120` by `26%`.
+7. Share `90` in the ratio `2:3` and give the larger share.
+8. Round `992.2` to `3` significant figures.
+9. Write `60000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

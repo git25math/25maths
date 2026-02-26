@@ -36,6 +36,15 @@ def collect_numbered_items(lines: list[str], start_idx: int, stop_on_header: boo
     return items
 
 
+def expected_board_from_path(topic_dir: Path) -> str:
+    parts = {p.lower() for p in topic_dir.parts}
+    if "cie0580" in parts:
+        return "CIE 0580"
+    if "edexcel-4ma1" in parts:
+        return "Edexcel 4MA1"
+    return ""
+
+
 def validate_topic(topic_dir: Path) -> tuple[bool, list[str]]:
     errors: list[str] = []
     student = topic_dir / "worksheet-student.md"
@@ -55,6 +64,19 @@ def validate_topic(topic_dir: Path) -> tuple[bool, list[str]]:
         errors.append("Student file line 1 must end with 'Worksheet (Student)'.")
     if not a_lines or not a_lines[0].strip().endswith("Worksheet (Answers)"):
         errors.append("Answers file line 1 must end with 'Worksheet (Answers)'.")
+
+    expected_board = expected_board_from_path(topic_dir)
+    if expected_board:
+        expected_student = f"# {expected_board} Worksheet (Student)"
+        expected_answers = f"# {expected_board} Worksheet (Answers)"
+        if s_lines and s_lines[0].strip() != expected_student:
+            errors.append(
+                f"Student file line 1 must be '{expected_student}' for this topic path."
+            )
+        if a_lines and a_lines[0].strip() != expected_answers:
+            errors.append(
+                f"Answers file line 1 must be '{expected_answers}' for this topic path."
+            )
 
     s_h2 = s_lines[1].strip() if len(s_lines) > 1 else ""
     a_h2 = a_lines[1].strip() if len(a_lines) > 1 else ""

@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply trigonometry and pythagoras’ theorem methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `11` and height `4` is `1/2 x 11 x 4 = 22`.
+Example: area of a triangle with base `6` and height `9` is `1/2 x 6 x 9 = 27`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `55°` and `38°`.

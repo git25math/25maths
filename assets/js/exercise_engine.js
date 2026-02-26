@@ -20,12 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressLabel = document.getElementById('progress-label');
     const scoreLabel = document.getElementById('score-label');
     const progressBar = document.getElementById('progress-bar');
+    const previousExerciseLinkSlot = document.getElementById('previous-exercise-link-slot');
     const nextExerciseLinkSlot = document.getElementById('next-exercise-link-slot');
 
     // --- State ---
     const questions = exerciseData.questions || [];
     const links = (typeof exerciseLinks !== 'undefined' && exerciseLinks) ? exerciseLinks : null;
     const topicSlugFromPage = (typeof exerciseTopicSlug === 'string' && exerciseTopicSlug) ? exerciseTopicSlug : '';
+    const boardSlugFromPage = (typeof exerciseBoardSlug === 'string' && exerciseBoardSlug) ? exerciseBoardSlug : '';
+    const boardDirectoryUrl = (typeof exerciseBoardDirectoryUrl === 'string' && exerciseBoardDirectoryUrl) ? exerciseBoardDirectoryUrl : '/kahoot/';
+    const boardDirectoryLabel = (typeof exerciseBoardDirectoryLabel === 'string' && exerciseBoardDirectoryLabel) ? exerciseBoardDirectoryLabel : 'Kahoot Directory';
+    const exercisesHubUrl = (typeof exerciseHubUrl === 'string' && exerciseHubUrl) ? exerciseHubUrl : '/exercises/';
     const laneItems = Array.isArray(exerciseLane) ? exerciseLane : [];
     const currentSubtopicId = (typeof exerciseCurrentSubtopicId === 'string' && exerciseCurrentSubtopicId)
         ? exerciseCurrentSubtopicId
@@ -34,9 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
         ? exerciseMetaData
         : null;
     const topicSlug = exerciseEngine.dataset.topic || topicSlugFromPage;
+    const boardSlug = boardSlugFromPage || resolveBoardSlug();
+    const completionThemeClass = (boardSlug === 'cie0580')
+        ? 'exercise-completion-actions--cie'
+        : (boardSlug === 'edexcel-4ma1')
+            ? 'exercise-completion-actions--edx'
+            : 'exercise-completion-actions--neutral';
     let currentQuestionIndex = 0;
     let score = 0;
     let selectedAnswer = null;
+    let previousExercise = null;
     let nextExercise = null;
     const exerciseStartedAtMs = Date.now();
     let cloudSupabaseClient = null;
@@ -84,6 +96,43 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.max(0, Math.round((Date.now() - exerciseStartedAtMs) / 1000));
     }
 
+    async function getCloudAccessToken() {
+        if (!cloudSupabaseClient) {
+            return '';
+        }
+        const { data, error } = await cloudSupabaseClient.auth.getSession();
+        if (error || !data || !data.session || !data.session.access_token) {
+            return '';
+        }
+        return String(data.session.access_token).trim();
+    }
+
+    async function postExerciseApi(path, payload) {
+        const accessToken = await getCloudAccessToken();
+        if (!accessToken) {
+            return { ok: false, status: 401, data: null };
+        }
+        try {
+            const response = await fetch(path, {
+                method: 'POST',
+                headers: {
+                    authorization: `Bearer ${accessToken}`,
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify(payload),
+            });
+            let data = null;
+            try {
+                data = await response.json();
+            } catch (error) {
+                data = null;
+            }
+            return { ok: response.ok, status: response.status, data };
+        } catch (error) {
+            return { ok: false, status: 0, data: null };
+        }
+    }
+
     async function initializeCloudSession() {
         if (cloudSessionId || cloudSessionCompleted) {
             return;
@@ -102,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cloudUserId = userData.user.id;
         const insertPayload = {
-            user_id: cloudUserId,
             exercise_slug: resolveExerciseSlug(),
             board: resolveBoardSlug(),
             tier: resolveTierSlug(),
@@ -110,9 +158,18 @@ document.addEventListener('DOMContentLoaded', () => {
             started_at: new Date(exerciseStartedAtMs).toISOString(),
         };
 
+        const apiResult = await postExerciseApi('/api/v1/exercise/session/start', insertPayload);
+        if (apiResult.ok && apiResult.data && apiResult.data.session_id) {
+            cloudSessionId = String(apiResult.data.session_id);
+            return;
+        }
+
         const { data: sessionData, error: sessionError } = await cloudSupabaseClient
             .from('exercise_sessions')
-            .insert(insertPayload)
+            .insert({
+                user_id: cloudUserId,
+                ...insertPayload,
+            })
             .select('id')
             .single();
 
@@ -129,8 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const attemptPayload = {
-            session_id: cloudSessionId,
-            user_id: cloudUserId,
             question_index: currentQuestionIndex,
             is_correct: Boolean(isCorrect),
             selected_answer: Number.isInteger(answerIndex) ? answerIndex : null,
@@ -138,9 +193,18 @@ document.addEventListener('DOMContentLoaded', () => {
             skill_tag: resolveSkillTag(question, currentQuestionIndex),
         };
 
+        const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/attempt`, attemptPayload);
+        if (apiResult.ok) {
+            return;
+        }
+
         const { error } = await cloudSupabaseClient
             .from('question_attempts')
-            .insert(attemptPayload);
+            .insert({
+                session_id: cloudSessionId,
+                user_id: cloudUserId,
+                ...attemptPayload,
+            });
         if (error) {
             // Keep exercise flow running even if cloud logging fails.
         }
@@ -153,19 +217,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cloudSessionCompleted = true;
         const updatePayload = {
-            completed_at: new Date().toISOString(),
             score,
             question_count: questions.length,
             duration_seconds: getCloudDurationSeconds(),
         };
 
+        const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/complete`, updatePayload);
+        if (apiResult.ok) {
+            // Dispatch engagement events if API returned achievement/streak data
+            if (apiResult.data) {
+                dispatchEngagementEvents(apiResult.data);
+            }
+            return;
+        }
+
         const { error } = await cloudSupabaseClient
             .from('exercise_sessions')
-            .update(updatePayload)
+            .update({
+                completed_at: new Date().toISOString(),
+                ...updatePayload,
+            })
             .eq('id', cloudSessionId)
             .eq('user_id', cloudUserId);
         if (error) {
             cloudSessionCompleted = false;
+        }
+    }
+
+    function dispatchEngagementEvents(responseData) {
+        const newlyUnlocked = responseData.newly_unlocked;
+        const levelUp = responseData.level_up;
+
+        if ((Array.isArray(newlyUnlocked) && newlyUnlocked.length > 0) || levelUp) {
+            window.dispatchEvent(new CustomEvent('achievement-unlocked', {
+                detail: {
+                    newly_unlocked: newlyUnlocked || [],
+                    level_up: Boolean(levelUp),
+                    level_info: levelUp ? {
+                        level: responseData.level,
+                        title: `Level ${responseData.level}`,
+                    } : null,
+                    xp_earned: responseData.xp_earned || 0,
+                    total_xp: responseData.total_xp || 0,
+                },
+            }));
+        }
+
+        if (responseData.streak) {
+            window.dispatchEvent(new CustomEvent('streak-updated', {
+                detail: responseData.streak,
+            }));
         }
     }
 
@@ -276,6 +377,18 @@ document.addEventListener('DOMContentLoaded', () => {
         return String(a.subtopic_id || '').localeCompare(String(b.subtopic_id || ''));
     }
 
+    function resolvePreviousExercise() {
+        if (!laneItems.length || !currentSubtopicId) {
+            return null;
+        }
+        const sortedLane = laneItems.slice().sort(compareLaneItems);
+        const currentIndex = sortedLane.findIndex((item) => item.subtopic_id === currentSubtopicId);
+        if (currentIndex <= 0) {
+            return null;
+        }
+        return sortedLane[currentIndex - 1];
+    }
+
     function resolveNextExercise() {
         if (!laneItems.length || !currentSubtopicId) {
             return null;
@@ -288,18 +401,36 @@ document.addEventListener('DOMContentLoaded', () => {
         return sortedLane[currentIndex + 1];
     }
 
-    function injectNextExerciseLink() {
-        if (!nextExerciseLinkSlot || !nextExercise || !nextExercise.url) {
-            return;
+    function buildSyllabusButtonHtml(exerciseItem, direction) {
+        const isPrevious = direction === 'previous';
+        const baseLabel = isPrevious ? 'Previous in Syllabus' : 'Next in Syllabus';
+        if (!exerciseItem || !exerciseItem.url) {
+            return `<span class="loop-btn-base loop-btn-primary loop-btn-disabled">${baseLabel}</span>`;
         }
-        const nextLabel = nextExercise.code
-            ? `Next in Syllabus (${nextExercise.code})`
-            : 'Next in Syllabus';
-        const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
-        const nextLabelSafe = escapeHtml(nextLabel);
-        nextExerciseLinkSlot.innerHTML = `
-            <a href="${nextHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">${nextLabelSafe}</a>
-        `;
+        const actionKey = isPrevious ? 'previous_exercise' : 'next_exercise';
+        const label = exerciseItem.code ? `${baseLabel} (${exerciseItem.code})` : baseLabel;
+        const href = escapeHtml(withTrackingUrl(exerciseItem.url, actionKey));
+        const safeLabel = escapeHtml(label);
+        return `<a href="${href}" class="loop-btn-base loop-btn-primary">${safeLabel}</a>`;
+    }
+
+    function injectSyllabusNavigationLinks() {
+        if (previousExerciseLinkSlot) {
+            previousExerciseLinkSlot.innerHTML = buildSyllabusButtonHtml(previousExercise, 'previous');
+        }
+        if (nextExerciseLinkSlot) {
+            nextExerciseLinkSlot.innerHTML = buildSyllabusButtonHtml(nextExercise, 'next');
+        }
+    }
+
+    function buildRowButtonHtml(href, label, buttonClass, actionKey, openInNewTab) {
+        const safeLabel = escapeHtml(label);
+        if (!href) {
+            return `<span class="loop-btn-base ${buttonClass} loop-btn-disabled">${safeLabel}</span>`;
+        }
+        const trackedHref = escapeHtml(withTrackingUrl(href, actionKey || 'resource'));
+        const targetAttrs = openInNewTab ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${trackedHref}"${targetAttrs} class="loop-btn-base ${buttonClass}">${safeLabel}</a>`;
     }
 
     function persistLastExercise() {
@@ -323,49 +454,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function buildCompletionActionsHtml() {
-        const retryHref = escapeHtml(window.location.pathname);
-        const actionButtons = [
-            `<a href="${retryHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">Retry This Exercise</a>`,
-        ];
-        if (nextExercise && nextExercise.url) {
-            const nextLabel = nextExercise.code
-                ? `Next in Syllabus (${nextExercise.code})`
-                : 'Next in Syllabus';
-            const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
-            const nextLabelSafe = escapeHtml(nextLabel);
-            actionButtons.push(
-                `<a href="${nextHref}" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">${nextLabelSafe}</a>`
-            );
-        }
-
-        if (links && typeof links === 'object' && links.kahoot_url) {
-            const kahootHref = escapeHtml(withTrackingUrl(links.kahoot_url, 'kahoot_complete'));
-            actionButtons.push(
-                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition ui-focus-ring exercise-kahoot-bridge">Play Matching Kahoot</a>`
-            );
-        }
-        if (links && typeof links === 'object' && links.worksheet_payhip_url) {
-            const worksheetHref = escapeHtml(withTrackingUrl(links.worksheet_payhip_url, 'worksheet_complete'));
-            actionButtons.push(
-                `<a href="${worksheetHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>`
-            );
-        }
-
+        const tryAnotherHref = exercisesHubUrl || '/exercises/';
+        const backLabel = boardDirectoryLabel ? `Back to ${boardDirectoryLabel}` : 'Back to Kahoot Directory';
         const bundleUrl = (links && typeof links === 'object')
             ? (links.bundle_url || links.section_bundle_payhip_url || links.unit_bundle_payhip_url || '')
             : '';
-        if (bundleUrl) {
-            const bundleHref = escapeHtml(withTrackingUrl(bundleUrl, 'bundle_complete'));
-            actionButtons.push(
-                `<a href="${bundleHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>`
-            );
-        }
+        const kahootUrl = (links && typeof links === 'object' && links.kahoot_url) ? links.kahoot_url : '';
+        const worksheetUrl = (links && typeof links === 'object' && links.worksheet_payhip_url) ? links.worksheet_payhip_url : '';
 
         return `
-            <div class="mt-5 border-t border-blue-200 pt-4">
+            <div class="exercise-completion-actions ${completionThemeClass} mt-5 border-t border-blue-200 pt-4">
                 <p class="text-sm font-semibold text-blue-900">Next step for this micro-topic</p>
-                <div class="mt-3 flex flex-wrap justify-center gap-3">
-                    ${actionButtons.join('')}
+                <div class="mt-3 space-y-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        ${buildSyllabusButtonHtml(previousExercise, 'previous')}
+                        ${buildSyllabusButtonHtml(nextExercise, 'next')}
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        ${buildRowButtonHtml(tryAnotherHref, 'Try Another Interactive Exercise', 'loop-btn-soft exercise-warm-primary', 'try_another', false)}
+                        ${buildRowButtonHtml(boardDirectoryUrl, backLabel, 'loop-btn-soft', 'board_directory', false)}
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        ${buildRowButtonHtml(kahootUrl, 'Playing Matching Kahoot', 'loop-btn-kahoot exercise-kahoot-bridge', 'kahoot_complete', true)}
+                        ${buildRowButtonHtml(worksheetUrl, 'Get Matching Worksheet', 'loop-btn-soft', 'worksheet_complete', true)}
+                        ${buildRowButtonHtml(bundleUrl, 'Explore Bundle', 'loop-btn-soft', 'bundle_complete', true)}
+                    </div>
                 </div>
             </div>
         `;
@@ -447,7 +560,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
-        const explanationHtml = escapeHtml(normalizeInlineMath(question.explanation || ''));
+        const explanationHtml = escapeHtml(question.explanation || '');
         const submittedAnswer = selectedAnswer;
 
         if (isCorrect) {
@@ -466,7 +579,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         }
-        renderMath(feedbackContainer);
         void persistCloudAttempt(question, submittedAnswer, isCorrect);
         updateProgressUi();
 
@@ -515,8 +627,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function initializeExercise() {
         persistLastExercise();
         void initializeCloudSession();
+        previousExercise = resolvePreviousExercise();
         nextExercise = resolveNextExercise();
-        injectNextExerciseLink();
+        injectSyllabusNavigationLinks();
         attachTrackingToVisibleLinks();
         if (questions.length === 0) {
             questionContainer.innerHTML = '<p class="text-gray-600">No questions found for this topic.</p>';

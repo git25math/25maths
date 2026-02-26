@@ -1,4 +1,4 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E4.5 Symmetry
 
 1. 99

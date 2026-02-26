@@ -80,3 +80,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - projects/kahoot-channel/WORKSHEET-GENERATION-ANALYSIS.md
+
+# Keep Cloudflare Pages edge redirect rules in generated output.
+include:
+  - _redirects

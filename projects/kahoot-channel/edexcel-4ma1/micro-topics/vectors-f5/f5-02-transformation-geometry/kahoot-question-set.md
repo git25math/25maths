@@ -14,7 +14,7 @@
 | 4 | Work out `3(4,6)`. | Cannot be determined | (12,18) | No solution | 0 | B | Fluency |
 | 5 | Translate point `(2,-1)` by vector `(4,3)`. | No solution | 0 | (6,2) | Cannot be determined | C | Fluency |
 | 6 | Work out `(6,0) - (4,6)`. | Cannot be determined | 0 | No solution | (2,-6) | D | Method |
-| 7 | Find midpoint of points `(2,3)` and `(8,3)`. | ((10/2),(6/2)) | No solution | Cannot be determined | 0 | A | Method |
+| 7 | Find midpoint of points `(2,3)` and `(8,3)`. | (5,3) | No solution | Cannot be determined | 0 | A | Method |
 | 8 | A translation maps `(x,y)` to `(x-3,y+5)`. State the vector. | No solution | Cannot be determined | (-3,5) | 0 | C | Method |
 | 9 | State one condition for two vectors to be parallel. | They are scalar multiples. | 0 | Cannot be determined | No solution | A | Method |
 | 10 | If `a=(2,1)` and `b=(5,4)`, find `2a+b`. | (9,6) | Cannot be determined | No solution | 0 | A | Method |

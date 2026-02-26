@@ -19,10 +19,10 @@ lang: en
         </p>
         <p data-bilingual-block class="text-sm text-gray-200 mt-3 max-w-3xl mx-auto">按考试局与层级浏览 SubTopic 目录，先练习再升级到 worksheet 与 bundle。</p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Open Interactive Exercises Hub</a>
-            <a href="/kahoot/#free-sample-live" class="sm:flex-1 cta-btn-equal border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Free Samples Live Now</a>
+            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Free Samples Live Now</a>
         </div>
     </div>
 </section>
@@ -70,7 +70,6 @@ lang: en
                 {% endif %}
                 {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
-                {% assign board_explorer_button_class = "border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover" %}
                 {% if board.board == "cie0580" %}
                     {% assign board_badge_class = "bg-primary/10 text-primary" %}
                     {% assign board_button_class = "bg-primary text-white" %}
@@ -267,7 +266,7 @@ lang: en
             <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Directories</h2>
             <p class="text-gray-600">Both pages are generated from the current `micro-topics` folder structures in your project workspace.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">目录会随 `micro-topics` 自动同步更新，避免手工维护遗漏。</p>
-            <p class="text-sm text-gray-500 mt-2">Per-SubTopic fields map to one closed-loop offer ladder: `Kahoot (L0)` -> `Interactive Exercise (L1)` -> `Worksheet (L2)` -> `Section Bundle (L3)` -> `Unit Bundle (L4)` plus presale dates and notes.</p>
+            <p class="text-sm text-gray-500 mt-2">Per-SubTopic fields map to one closed-loop offer ladder: `Worksheet (L1)` -> `Section Bundle (L2)` -> `Unit Bundle (L3)` plus presale dates and notes.</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6 items-stretch">
@@ -292,12 +291,12 @@ lang: en
                     <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 </picture>
                 <p class="text-xs font-bold tracking-wider edx-solid-text mb-2">Edexcel 4MA1</p>
-                <h3 class="text-xl font-bold text-gray-900 kahoot-unit-title">Foundation + Higher SubTopics</h3>
+                <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `edexcel-4ma1/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ edx_data.total_subtopics }} SubTopics across {{ edx_data.sections | size }} sections.</p>
-                <div class="mt-auto pt-2 flex flex-col sm:flex-row cta-row-equal gap-4">
-                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 cta-btn-equal edx-solid-bg px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Directory</a>
-                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-5 py-2.5 rounded-lg font-semibold text-sm edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Directory</a>
+                    <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
                 </div>
             </article>
         </div>
@@ -308,7 +307,7 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
-            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 Kahoot -> L1 interactive practice -> L2 worksheet -> L3 section bundle -> L4 unit bundle with presale terms.</p>
+            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 interactive practice -> L1 -> L2 -> L3 with presale terms.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">建议筛选顺序：先选考试局，再选层级，最后按关键词定位题组。</p>
         </div>
 
@@ -544,10 +543,12 @@ lang: en
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
-      const interactiveButtonClass = 'kahoot-ladder-l1 text-white hover:shadow-md';
-      const worksheetButtonClass = 'kahoot-ladder-l2 text-white hover:shadow-md';
-      const sectionBundleButtonClass = 'kahoot-ladder-l3 hover:shadow-sm';
-      const unitBundleButtonClass = 'kahoot-ladder-l4 hover:shadow-sm';
+      const interactiveButtonClass = item.board === 'cie0580'
+        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
+        : 'edx-solid-bg edx-solid-hover hover:shadow-md';
+      const worksheetButtonClass = item.board === 'cie0580'
+        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
+        : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'

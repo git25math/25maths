@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <!--
+    Weekly Progress Report — 25Maths.com
+    Bilingual template (EN/CN): Use {{LANG}} = "en" or "zh-CN"
+    All strings use {{PLACEHOLDER}} format for server-side replacement.
+    Inline CSS for maximum email client compatibility.
+  -->
+</head>
+<body style="margin:0;padding:0;background-color:#f4f4f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+
+<!-- Wrapper -->
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color:#f4f4f7;">
+  <tr>
+    <td align="center" style="padding:24px 16px;">
+
+      <!-- Container -->
+      <table role="presentation" cellpadding="0" cellspacing="0" width="600" style="max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+
+        <!-- Header -->
+        <tr>
+          <td style="background: linear-gradient(135deg, #6366f1, #8b5cf6); padding:28px 32px; text-align:center;">
+            <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;">
+              {{HEADER_TITLE}}
+            </h1>
+            <p style="margin:8px 0 0;color:#e0e7ff;font-size:13px;">
+              {{HEADER_SUBTITLE}}
+            </p>
+          </td>
+        </tr>
+
+        <!-- Student Info -->
+        <tr>
+          <td style="padding:24px 32px 16px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <p style="margin:0;font-size:16px;font-weight:700;color:#1f2937;">{{STUDENT_NAME}}</p>
+                  <p style="margin:4px 0 0;font-size:12px;color:#6b7280;">{{STUDENT_EMAIL}} &middot; {{PERIOD_LABEL}}: {{PERIOD_RANGE}}</p>
+                </td>
+                <td align="right">
+                  <div style="display:inline-block;background-color:#fef3c7;border-radius:20px;padding:6px 14px;">
+                    <span style="font-size:20px;">🔥</span>
+                    <span style="font-size:14px;font-weight:700;color:#d97706;">{{STREAK_COUNT}} {{STREAK_LABEL}}</span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Section 1: Weekly Summary -->
+        <tr>
+          <td style="padding:0 32px 16px;">
+            <h2 style="margin:0 0 12px;font-size:15px;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.5px;">
+              {{SECTION1_TITLE}}
+            </h2>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+              <tr>
+                <td width="25%" align="center" style="padding:16px 8px;border-right:1px solid #e5e7eb;">
+                  <p style="margin:0;font-size:24px;font-weight:800;color:#1f2937;">{{SESSIONS_COUNT}}</p>
+                  <p style="margin:4px 0 0;font-size:10px;color:#6b7280;text-transform:uppercase;">{{SESSIONS_LABEL}}</p>
+                  <p style="margin:2px 0 0;font-size:10px;color:{{SESSIONS_DELTA_COLOR}};">{{SESSIONS_DELTA}}</p>
+                </td>
+                <td width="25%" align="center" style="padding:16px 8px;border-right:1px solid #e5e7eb;">
+                  <p style="margin:0;font-size:24px;font-weight:800;color:#1f2937;">{{QUESTIONS_COUNT}}</p>
+                  <p style="margin:4px 0 0;font-size:10px;color:#6b7280;text-transform:uppercase;">{{QUESTIONS_LABEL}}</p>
+                  <p style="margin:2px 0 0;font-size:10px;color:{{QUESTIONS_DELTA_COLOR}};">{{QUESTIONS_DELTA}}</p>
+                </td>
+                <td width="25%" align="center" style="padding:16px 8px;border-right:1px solid #e5e7eb;">
+                  <p style="margin:0;font-size:24px;font-weight:800;color:#1f2937;">{{ACCURACY_PCT}}%</p>
+                  <p style="margin:4px 0 0;font-size:10px;color:#6b7280;text-transform:uppercase;">{{ACCURACY_LABEL}}</p>
+                  <p style="margin:2px 0 0;font-size:10px;color:{{ACCURACY_DELTA_COLOR}};">{{ACCURACY_DELTA}}</p>
+                </td>
+                <td width="25%" align="center" style="padding:16px 8px;">
+                  <p style="margin:0;font-size:24px;font-weight:800;color:#1f2937;">{{TIME_HOURS}}</p>
+                  <p style="margin:4px 0 0;font-size:10px;color:#6b7280;text-transform:uppercase;">{{TIME_LABEL}}</p>
+                  <p style="margin:2px 0 0;font-size:10px;color:{{TIME_DELTA_COLOR}};">{{TIME_DELTA}}</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Section 2: Topic Performance -->
+        <tr>
+          <td style="padding:0 32px 16px;">
+            <h2 style="margin:0 0 12px;font-size:15px;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.5px;">
+              {{SECTION2_TITLE}}
+            </h2>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+              <tr style="background-color:#f9fafb;">
+                <td style="padding:8px 12px;font-size:11px;font-weight:700;color:#6b7280;">{{COL_TOPIC}}</td>
+                <td width="80" align="center" style="padding:8px 8px;font-size:11px;font-weight:700;color:#6b7280;">{{COL_ACCURACY}}</td>
+                <td width="80" align="center" style="padding:8px 8px;font-size:11px;font-weight:700;color:#6b7280;">{{COL_QUESTIONS}}</td>
+                <td width="80" align="center" style="padding:8px 8px;font-size:11px;font-weight:700;color:#6b7280;">{{COL_TREND}}</td>
+              </tr>
+              {{TOPIC_ROWS}}
+              <!--
+                Each row template:
+                <tr style="border-top:1px solid #e5e7eb;">
+                  <td style="padding:10px 12px;font-size:13px;color:#1f2937;">{{TOPIC_NAME}}</td>
+                  <td align="center" style="padding:10px 8px;">
+                    <span style="display:inline-block;background-color:{{TOPIC_COLOR_BG}};color:{{TOPIC_COLOR_TEXT}};border-radius:12px;padding:2px 10px;font-size:12px;font-weight:600;">{{TOPIC_PCT}}%</span>
+                  </td>
+                  <td align="center" style="padding:10px 8px;font-size:13px;color:#6b7280;">{{TOPIC_Q_COUNT}}</td>
+                  <td align="center" style="padding:10px 8px;font-size:13px;color:{{TOPIC_TREND_COLOR}};">{{TOPIC_TREND}}</td>
+                </tr>
+              -->
+            </table>
+          </td>
+        </tr>
+
+        <!-- Section 3: Weak Points -->
+        <tr>
+          <td style="padding:0 32px 16px;">
+            <h2 style="margin:0 0 12px;font-size:15px;font-weight:700;color:#dc2626;text-transform:uppercase;letter-spacing:0.5px;">
+              {{SECTION3_TITLE}}
+            </h2>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color:#fef2f2;border:1px solid #fecaca;border-radius:8px;">
+              <tr>
+                <td style="padding:16px;">
+                  {{WEAK_POINTS_LIST}}
+                  <!--
+                    Each item template:
+                    <p style="margin:0 0 8px;font-size:13px;color:#991b1b;">
+                      <span style="font-weight:600;">{{WEAK_SKILL}}</span>
+                      — {{WEAK_COUNT}} {{WEAK_ERRORS_LABEL}} ({{WEAK_PCT}}% {{ACCURACY_LABEL}})
+                    </p>
+                  -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Section 4: Achievements -->
+        <tr>
+          <td style="padding:0 32px 16px;">
+            <h2 style="margin:0 0 12px;font-size:15px;font-weight:700;color:#d97706;text-transform:uppercase;letter-spacing:0.5px;">
+              {{SECTION4_TITLE}}
+            </h2>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                {{ACHIEVEMENT_CELLS}}
+                <!--
+                  Each cell template (max 4 per row):
+                  <td width="25%" align="center" style="padding:8px;">
+                    <div style="background-color:#fffbeb;border:2px solid #fbbf24;border-radius:12px;padding:12px 8px;">
+                      <p style="margin:0;font-size:28px;">{{ACH_ICON}}</p>
+                      <p style="margin:4px 0 0;font-size:11px;font-weight:700;color:#1f2937;">{{ACH_TITLE}}</p>
+                      <p style="margin:2px 0 0;font-size:10px;color:#6b7280;">+{{ACH_XP}} XP</p>
+                    </div>
+                  </td>
+                -->
+              </tr>
+            </table>
+            <p style="margin:8px 0 0;font-size:12px;color:#6b7280;text-align:center;">
+              {{XP_SUMMARY}}: {{TOTAL_XP}} XP &middot; {{LEVEL_LABEL}} {{LEVEL_NUM}} ({{LEVEL_TITLE}})
+            </p>
+          </td>
+        </tr>
+
+        <!-- Section 5: Recommended Actions -->
+        <tr>
+          <td style="padding:0 32px 16px;">
+            <h2 style="margin:0 0 12px;font-size:15px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:0.5px;">
+              {{SECTION5_TITLE}}
+            </h2>
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color:#ecfdf5;border:1px solid #a7f3d0;border-radius:8px;">
+              <tr>
+                <td style="padding:16px;">
+                  {{RECOMMENDATIONS_LIST}}
+                  <!--
+                    Each item template:
+                    <p style="margin:0 0 8px;font-size:13px;color:#065f46;">
+                      {{REC_NUM}}. {{REC_TEXT}}
+                    </p>
+                  -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Exam Grade Prediction (if available) -->
+        {{#SHOW_PREDICTION}}
+        <tr>
+          <td style="padding:0 32px 16px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background: linear-gradient(135deg, #dbeafe, #ede9fe); border-radius:8px;">
+              <tr>
+                <td style="padding:20px 24px;">
+                  <p style="margin:0;font-size:12px;font-weight:700;color:#4338ca;text-transform:uppercase;letter-spacing:0.5px;">{{PREDICTION_LABEL}}</p>
+                  <p style="margin:8px 0 0;font-size:28px;font-weight:800;color:#1e1b4b;">{{PREDICTED_GRADE}}</p>
+                  <p style="margin:4px 0 0;font-size:12px;color:#4338ca;">{{PREDICTION_NOTE}}</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        {{/SHOW_PREDICTION}}
+
+        <!-- CTA Button -->
+        <tr>
+          <td align="center" style="padding:8px 32px 24px;">
+            <a href="{{CTA_URL}}" style="display:inline-block;background-color:#4f46e5;color:#ffffff;text-decoration:none;font-size:14px;font-weight:700;padding:12px 32px;border-radius:8px;">
+              {{CTA_TEXT}}
+            </a>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td style="background-color:#f9fafb;padding:20px 32px;border-top:1px solid #e5e7eb;">
+            <p style="margin:0;font-size:11px;color:#9ca3af;text-align:center;">
+              {{FOOTER_TEXT}}
+            </p>
+            <p style="margin:8px 0 0;font-size:11px;color:#9ca3af;text-align:center;">
+              <a href="{{UNSUBSCRIBE_URL}}" style="color:#9ca3af;text-decoration:underline;">{{UNSUBSCRIBE_TEXT}}</a>
+              &middot;
+              <a href="https://www.25maths.com" style="color:#9ca3af;text-decoration:underline;">25Maths.com</a>
+            </p>
+          </td>
+        </tr>
+
+      </table>
+      <!-- /Container -->
+
+    </td>
+  </tr>
+</table>
+<!-- /Wrapper -->
+
+</body>
+</html>
+
+<!--
+  ══════════════════════════════════════════════════════════
+  Bilingual String Table
+  ══════════════════════════════════════════════════════════
+
+  EN strings:
+    TITLE                = "Weekly Progress Report — 25Maths"
+    HEADER_TITLE         = "Weekly Progress Report"
+    HEADER_SUBTITLE      = "Your learning summary for the past 7 days"
+    PERIOD_LABEL         = "Period"
+    STREAK_LABEL         = "day streak"
+    SECTION1_TITLE       = "Weekly Summary"
+    SESSIONS_LABEL       = "Sessions"
+    QUESTIONS_LABEL      = "Questions"
+    ACCURACY_LABEL       = "Accuracy"
+    TIME_LABEL           = "Hours"
+    SECTION2_TITLE       = "Topic Performance"
+    COL_TOPIC            = "Topic"
+    COL_ACCURACY         = "Accuracy"
+    COL_QUESTIONS        = "Questions"
+    COL_TREND            = "Trend"
+    SECTION3_TITLE       = "Areas to Improve"
+    WEAK_ERRORS_LABEL    = "errors"
+    SECTION4_TITLE       = "Achievements This Week"
+    XP_SUMMARY           = "Total"
+    LEVEL_LABEL          = "Level"
+    SECTION5_TITLE       = "Recommended Next Steps"
+    PREDICTION_LABEL     = "Estimated Exam Grade"
+    PREDICTION_NOTE      = "Based on current performance trends"
+    CTA_TEXT             = "Continue Practising"
+    CTA_URL              = "https://www.25maths.com/membership/"
+    FOOTER_TEXT          = "This report was automatically generated by 25Maths.com based on your practice activity."
+    UNSUBSCRIBE_TEXT     = "Unsubscribe from weekly reports"
+
+  CN strings:
+    TITLE                = "每周学习进度报告 — 25Maths"
+    HEADER_TITLE         = "每周学习进度报告"
+    HEADER_SUBTITLE      = "过去7天的学习摘要"
+    PERIOD_LABEL         = "周期"
+    STREAK_LABEL         = "天连续"
+    SECTION1_TITLE       = "本周概览"
+    SESSIONS_LABEL       = "练习次数"
+    QUESTIONS_LABEL      = "题目数量"
+    ACCURACY_LABEL       = "正确率"
+    TIME_LABEL           = "学习时长"
+    SECTION2_TITLE       = "各主题表现"
+    COL_TOPIC            = "主题"
+    COL_ACCURACY         = "正确率"
+    COL_QUESTIONS        = "题目数"
+    COL_TREND            = "趋势"
+    SECTION3_TITLE       = "需要加强的方面"
+    WEAK_ERRORS_LABEL    = "次错误"
+    SECTION4_TITLE       = "本周成就"
+    XP_SUMMARY           = "总计"
+    LEVEL_LABEL          = "等级"
+    SECTION5_TITLE       = "建议下一步"
+    PREDICTION_LABEL     = "预估考试成绩"
+    PREDICTION_NOTE      = "基于当前学习趋势"
+    CTA_TEXT             = "继续练习"
+    CTA_URL              = "https://www.25maths.com/membership/"
+    FOOTER_TEXT          = "此报告由 25Maths.com 根据您的练习活动自动生成。"
+    UNSUBSCRIBE_TEXT     = "取消订阅每周报告"
+
+  Color tokens for topic accuracy:
+    >= 80%: TOPIC_COLOR_BG=#dcfce7, TOPIC_COLOR_TEXT=#166534 (green)
+    50-79%: TOPIC_COLOR_BG=#fef9c3, TOPIC_COLOR_TEXT=#854d0e (yellow)
+    < 50%:  TOPIC_COLOR_BG=#fee2e2, TOPIC_COLOR_TEXT=#991b1b (red)
+
+  Delta color tokens:
+    Positive: #059669 (green), prefix with "+"
+    Negative: #dc2626 (red)
+    Neutral:  #6b7280 (gray), text "—"
+-->

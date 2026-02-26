@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C2.10 Graphs of functions
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply graphs of functions methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply graphs of functions methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
-Example: mean of `[4, 18, 8, 15, 7]` is `52/5 = 10.4`.
+Example: solve `4x + 9 = 22` by inverse operations. Subtract `9` then divide by `4` to get `x = 3.25`.
 
 ## Practice (10)
-1. Find mean of `[12, 17, 9, 20, 5]`.
-2. Find median of `[5, 9, 12, 17, 20]`.
-3. Find range of `[12, 17, 9, 20, 5]`.
-4. A fair die is rolled. Find `P(score > 1)`.
-5. If `P(A)=0.5`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `48` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Simplify `6x + 3x - 7x`.
+2. Expand and simplify `6(x + 3)`.
+3. Factorise `6x + 18` fully.
+4. Solve `6x - 3 = 21`.
+5. When `x = 4`, evaluate `6x^2 - 3x + 7`.
+6. Solve the inequality `6x + 3 >= 28`.
+7. The nth term is `6n + 7`. Find term `6`.
+8. Rearrange `y = 6x - 3` to make `x` the subject.
+9. Solve `x^2 - 5x + 6 = 0`.
+10. Given `f(x)=2x-3`, find `f(8)`.

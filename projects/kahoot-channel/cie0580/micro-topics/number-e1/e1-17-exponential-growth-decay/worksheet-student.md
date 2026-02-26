@@ -4,20 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Model repeated percentage change using multipliers for growth and decay.
+- Apply exponential growth and decay methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-A value grows by 12% yearly: multiply by `1.12` each year.
-After 3 years: `P(1.12)^3`.
+Example: increase `80` by `25%`: compute `80 x (1 + 25/100)` to get `100`.
 
 ## Practice (10)
-1. Write multiplier for 7% increase.
-2. Write multiplier for 18% decrease.
-3. Find value after one 15% increase on 240.
-4. Find value after one 25% decrease on 160.
-5. Evaluate `400(1.05)^2`.
-6. Evaluate `900(0.92)^3` (2 d.p.).
-7. A population grows 6% yearly from 5000. Formula after n years?
-8. A laptop depreciates 20% yearly from $1000. Value after 2 years?
-9. A culture triples every day from 40. After 4 days?
-10. Compare one-off 20% decrease and two consecutive 10% decreases on 200.
+1. Evaluate `46 + 10 x 6`.
+2. Write `7/24 + 16/24` as a simplified fraction.
+3. Calculate `1.8 + 0.23`.
+4. Work out `2^7`.
+5. Find `sqrt(121)`.
+6. Increase `120` by `23%`.
+7. Share `45` in the ratio `2:3` and give the larger share.
+8. Round `360.4` to `3` significant figures.
+9. Write `50000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

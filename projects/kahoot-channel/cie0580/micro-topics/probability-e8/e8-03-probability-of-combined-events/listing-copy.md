@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - E8.3 Probability of combined events
 
 ## Kahoot Name
-Edexcel 4MA1 E8.3 | Probability of combined events | HIGHER TRACK
+CIE 0580 E8.3 | Probability of combined events | Extended Track
 
 ## Kahoot Description
-E8.3 Probability of combined events exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+E8.3 Probability of combined events exam-style practice for CIE 0580 (Extended). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Probability #E83 #ExamStyleMaths
+#CIE0580 #ExtendedTrack #Probability #E83 #ExamStyleMaths

@@ -1,4 +1,4 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C4.5 Symmetry
 
 1. 77
@@ -10,4 +10,4 @@
 7. 30°
 8. 4845
 9. 9
-10. `216.0pi`
+10. `540pi`

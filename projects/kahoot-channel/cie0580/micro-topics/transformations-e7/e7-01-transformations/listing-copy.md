@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - E7.1 Transformations
 
 ## Kahoot Name
-Edexcel 4MA1 E7.1 | Transformations | HIGHER TRACK
+CIE 0580 E7.1 | Transformations | Extended Track
 
 ## Kahoot Description
-E7.1 Transformations exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+E7.1 Transformations exam-style practice for CIE 0580 (Extended). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Transformations #E71 #ExamStyleMaths
+#CIE0580 #ExtendedTrack #Transformations #E71 #ExamStyleMaths

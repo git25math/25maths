@@ -1,28 +1,28 @@
 # C8.1 Kahoot Question Set - Introduction to probability
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Core
 - Micro-topic: C8.1
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[6, 18, 5, 14, 5]`. | 9.6 | 0 | No solution | Cannot be determined | A | Fluency |
-| 2 | Find median of `[5, 5, 6, 14, 18]`. | 8 | 6 | 5 | 7 | B | Fluency |
-| 3 | Find range of `[6, 18, 5, 14, 5]`. | 12 | 14 | 15 | 13 | D | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 2)`. | 4/7 | 6/6 | 5/6 | 4/6 | D | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | No solution | 0.2 | 0 | Cannot be determined | B | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `50` trials. | 16 | 15 | 17 | 14 | B | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | 0 | Median | No solution | Cannot be determined | B | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | Cannot be determined | No solution | 0 | 18/30 = 3/5 | D | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | 14/50 = 7/25 | 0 | No solution | Cannot be determined | A | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | Cannot be determined | 0.28 | No solution | 0 | B | Method |
-| 11 | Context check: Find median of `[5, 5, 6, 14, 18]`. | 5 | 6 | 7 | 8 | B | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 2)`. | 5/6 | 6/6 | 4/6 | 4/7 | C | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `50` trials. | 14 | 15 | 17 | 16 | B | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 0 | Cannot be determined | 18/30 = 3/5 | D | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0 | No solution | Cannot be determined | 0.28 | D | Context |
+| 1 | A fair die is rolled. Find `P(score > 1)`. | 5/6 | 6/6 | 5/7 | 7/6 | A | Fluency |
+| 2 | If `P(A)=0.35`, find `P(not A)`. | 0.65 | 1.65 | 0.15 | 1.15 | A | Fluency |
+| 3 | Expected frequency for probability `0.3` in `66` trials. | 21 | 19 | 18 | 20 | B | Fluency |
+| 4 | If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A and B)`. | -0.22 | 0.78 | 1.28 | 0.28 | D | Fluency |
+| 5 | If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A or B)`. | 0.32 | 1.82 | 1.32 | 0.82 | D | Fluency |
+| 6 | A bag has 3 red and 7 blue counters. Find `P(red)`. | 3/11 | 3/10 | 5/10 | 4/10 | B | Method |
+| 7 | A spinner has 8 equal sections, 3 are blue. Find `P(blue)`. | 4/8 | 3/8 | 5/8 | 3/9 | B | Method |
+| 8 | In a class, 18 of 30 students are girls. Find `P(girl)`. | 0 | 18/30 = 3/5 | No solution | Cannot be determined | B | Method |
+| 9 | If `P(A)=0.25` and `P(B)=0.45` are mutually exclusive, find `P(A or B)`. | 1.20 | 0.20 | 1.70 | 0.70 | D | Method |
+| 10 | A fair coin is tossed twice. Find `P(two heads)`. | 1/4 | 3/4 | 1/5 | 2/4 | A | Method |
+| 11 | Context check: If `P(A)=0.35`, find `P(not A)`. | 1.15 | 0.65 | 0.15 | 1.65 | B | Method |
+| 12 | Context check: If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A and B)`. | -0.22 | 0.28 | 0.78 | 1.28 | B | Context |
+| 13 | Context check: A bag has 3 red and 7 blue counters. Find `P(red)`. | 4/10 | 5/10 | 3/10 | 3/11 | C | Context |
+| 14 | Context check: In a class, 18 of 30 students are girls. Find `P(girl)`. | No solution | 18/30 = 3/5 | 0 | Cannot be determined | B | Context |
+| 15 | Context check: A fair coin is tossed twice. Find `P(two heads)`. | 1/5 | 3/4 | 2/4 | 1/4 | D | Context |
 
 ## Timer
 - Q1-Q5: 20s

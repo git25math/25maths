@@ -1,0 +1,457 @@
+\documentclass[11pt,a4paper]{article}
+
+% =========================================================
+% BRAND CONFIG (edit here only)
+% =========================================================
+\newcommand{\BrandName}{25Maths}
+\newcommand{\SeriesName}{Take-away Series}
+\newcommand{\ExamName}{CIE 0580 Extended}
+\newcommand{\TopicName}{Algebraic Fractions}
+
+\newcommand{\TopicCode}{e2-03-algebraic-fractions}
+\newcommand{\WorksheetID}{0580E-\TopicCode-S} % S=Simplified, F=Full
+\newcommand{\DocVersion}{Simplified Entry-Level Version}
+\newcommand{\DocYear}{2026}
+
+\newcommand{\ClaimDeadline}{March 1, 2026}
+\newcommand{\FullReleaseDate}{April 30, 2026}
+\newcommand{\PriceFreeText}{FREE}
+\newcommand{\PriceEarlyBird}{\$3.00}
+\newcommand{\PriceRegular}{\$4.00}
+
+\newcommand{\SiteURL}{https://payhip.com/25maths}
+\newcommand{\KahootURL}{https://kahoot.it/challenge/00922493}
+
+\newcommand{\DeliveryNote}{The Full Version will be emailed to everyone who claimed or purchased this bundle on \FullReleaseDate.}
+\newcommand{\UsageNote}{For classroom use and individual revision. Redistribution not permitted.}
+
+% =========================================================
+% GLOBAL SWITCHES
+% =========================================================
+\newif\ifShowAnswerLabel
+\ShowAnswerLabeltrue
+
+\newif\ifShowMarks
+\ShowMarkstrue
+
+\newcommand{\AnswerBoxHeight}{1.30cm}
+\newcommand{\AnswerBoxPadding}{6pt}
+
+% =========================================================
+% PAGE + TYPOGRAPHY
+% =========================================================
+\usepackage[a4paper,margin=1.8cm,headheight=26pt,headsep=12pt,footskip=18pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage[scaled=0.92]{helvet}
+
+% =========================================================
+% MATH / LAYOUT
+% =========================================================
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{array}
+
+% =========================================================
+% COLOR / BOX / ICON / LINKS
+% =========================================================
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% =========================================================
+% HARMONISED COLOR PALETTE (soft + bright blue)
+% =========================================================
+\definecolor{mainblue}{HTML}{4A7FA7}
+\definecolor{accentblue}{HTML}{7FB8DB}
+\definecolor{mist}{HTML}{F8FBFE}
+\definecolor{mist2}{HTML}{EEF5FC}
+\definecolor{linegray}{HTML}{D6E3EE}
+\definecolor{softgold}{HTML}{FFF3D6}
+\definecolor{goldline}{HTML}{E7C56A}
+\definecolor{okgreen}{HTML}{1B5E20}
+\definecolor{textmuted}{HTML}{70859A}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=mainblue,
+  urlcolor=accentblue,
+  pdfnewwindow=true
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6.5pt}
+
+% =========================================================
+% HEADER / FOOTER STYLE
+% =========================================================
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{mainblue}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{linegray}\leaders\hrule height \footrulewidth\hfill}}
+
+\lhead{\sffamily\textcolor{mainblue}{\textbf{\ExamName}} \quad \textcolor{textmuted}{|} \quad \textbf{\TopicName}}
+\rhead{\sffamily\small \textbf{\BrandName} / \textit{\SeriesName}}
+
+\lfoot{\sffamily\scriptsize \textcolor{textmuted}{ID: \WorksheetID}}
+\cfoot{\sffamily\scriptsize \textcolor{textmuted}{\TopicCode \;\textbullet\; \DocVersion}}
+\rfoot{\sffamily\scriptsize \textcolor{textmuted}{Page \thepage \;\textbullet\; \copyright\ \DocYear\ \BrandName}}
+
+% =========================================================
+% TCOLORBOX STYLES
+% =========================================================
+\tcbset{
+  base/.style={
+    enhanced,
+    arc=5pt,
+    boxrule=0.85pt,
+    colframe=linegray,
+    left=11pt,right=11pt,top=9pt,bottom=9pt
+  },
+  card/.style={
+    base,
+    colback=white
+  },
+  soft/.style={
+    base,
+    colback=mist
+  },
+  soft2/.style={
+    base,
+    colback=mist2
+  },
+  gold/.style={
+    base,
+    colback=softgold,
+    colframe=goldline,
+    boxrule=0.95pt,
+    drop fuzzy shadow
+  },
+  bar/.style={
+    enhanced,
+    arc=5pt,
+    colback=mist2,
+    colframe=linegray,
+    boxrule=0.85pt,
+    left=11pt,right=11pt,top=8pt,bottom=8pt
+  }
+}
+
+% =========================================================
+% MACROS
+% =========================================================
+\newcommand{\qnum}[1]{%
+  \tcbox[
+    enhanced,
+    colback=mist2,
+    colframe=linegray,
+    boxrule=0.6pt,
+    arc=2pt,
+    top=1.2pt,bottom=1.2pt,left=5pt,right=5pt,
+    boxsep=0pt,
+    on line
+  ]{\sffamily\bfseries\textcolor{mainblue}{#1}}%
+}
+
+\newcommand{\MarkOne}{%
+  \ifShowMarks{\sffamily\footnotesize\textcolor{textmuted}{\,(1 mark)}}\fi
+}
+
+\newcommand{\AnswerBox}{%
+  \vspace{4pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=linegray,
+    boxrule=0.85pt,
+    arc=2pt,
+    left=\AnswerBoxPadding,
+    right=\AnswerBoxPadding,
+    top=4pt,
+    bottom=4pt,
+    height=\AnswerBoxHeight
+  ]
+  \ifShowAnswerLabel
+    {\sffamily\footnotesize\textcolor{textmuted}{\textbf{Answer:}}}\hspace{6pt}
+  \fi
+  \end{tcolorbox}
+}
+
+\newcommand{\StudentStrip}{%
+\begin{tcolorbox}[bar]
+\sffamily\small
+\textbf{Name:} \underline{\hspace{4.0cm}}
+\hfill
+\textbf{Class:} \underline{\hspace{2.4cm}}
+\hfill
+\textbf{Date:} \underline{\hspace{2.8cm}}
+\end{tcolorbox}
+}
+
+\newcommand{\tickbox}{\(\square\)}
+
+\newcommand{\SectionHeader}[3]{%
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+  \sffamily
+  \textbf{#1}\quad\textcolor{textmuted}{|}%
+  \quad{\small\textbf{Skills:} #2 \quad\textcolor{textmuted}{|}\quad\textbf{Time:} #3}
+\end{tcolorbox}
+}
+
+\newcommand{\chip}[1]{%
+\tcbox[
+  enhanced,
+  colback=mist2,
+  colframe=linegray,
+  boxrule=0.6pt,
+  arc=10pt,
+  left=8pt,right=8pt,top=2.5pt,bottom=2.5pt,
+  on line
+]{\sffamily\scriptsize\textcolor{mainblue}{\textbf{#1}}}%
+}
+
+% =========================================================
+% DOCUMENT
+% =========================================================
+\begin{document}
+\thispagestyle{empty}
+
+\noindent\textcolor{mainblue}{\rule{\linewidth}{3pt}}\par\vspace{14pt}
+
+\begin{center}
+  {\sffamily\Large\textcolor{textmuted}{Interactive Practice Suite}}\\[6pt]
+  {\sffamily\Huge\bfseries\textcolor{mainblue}{\ExamName\ --- \TopicName}}\\
+  \vspace{6pt}
+  {\sffamily\large\textcolor{textmuted}{Worksheet + Kahoot \;\textbullet\; Built from the official CIE 0580 syllabus}}
+\end{center}
+
+\vspace{10pt}
+
+\begin{center}
+  \chip{Worksheet ID: \WorksheetID}\hspace{6pt}
+  \chip{Claim by: \ClaimDeadline}\hspace{6pt}
+  \chip{Full Upgrade: \FullReleaseDate}
+\end{center}
+
+\vspace{10pt}
+
+\begin{tcolorbox}[soft]
+\sffamily
+\textbf{Who this is for:} students securing advanced marks \textcolor{textmuted}{(Extended)} and teachers who need exam-style challenge built from syllabus objectives.\\
+\textbf{What you train:} simplifying algebraic fractions and handling all four operations with accurate denominator control.
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{tcolorbox}[gold]
+\sffamily
+\textbf{\faFire\ URGENT PRE-SALE: Get it \PriceFreeText\ before \ClaimDeadline.}\par
+Claiming the Simplified Version today locks in your \textbf{FREE upgrade} to the \textbf{Full Version} on \textbf{\FullReleaseDate}.\par
+\textcolor{mainblue}{\textbf{Delivery:}} \DeliveryNote
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{multicols}{2}
+  \begin{tcolorbox}[card, title=\sffamily\bfseries\textcolor{white}{\faHandPointDown\ TODAY (Simplified Version)}, colbacktitle=mainblue, boxed title style={sharp corners, boxrule=0pt}]
+    \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+      \item \small \textbf{15 Extended Questions} aligned to the subtopic objective and exam command words.
+      \item \small \textbf{Basic Answer Key} (final answers only).
+      \item \small \textbf{Bonus Kahoot Access} (premium quiz, free to play).
+    \end{itemize}
+  \end{tcolorbox}
+
+  \columnbreak
+
+  \begin{tcolorbox}[card, title=\sffamily\bfseries\textcolor{white}{\faRocket\ ON \FullReleaseDate\ (Full Upgrade)}, colbacktitle=mainblue, boxed title style={sharp corners, boxrule=0pt}]
+    \begin{itemize}[leftmargin=1.2em, itemsep=2pt]
+      \item \small \textbf{In-Depth Worked Solutions} (step-by-step).
+      \item \small \textbf{Exam Topic Analysis} (frequency by type).
+      \item \small \textbf{Common Mistakes Guide} (examiner traps).
+      \item \small \textbf{High-Challenge Extension} variations.
+    \end{itemize}
+  \end{tcolorbox}
+\end{multicols}
+
+\begin{tcolorbox}[soft2]
+\begin{minipage}[t]{0.62\linewidth}
+  \sffamily\bfseries\textcolor{mainblue}{\faChartLine\ Pricing Timeline}\par
+  \vspace{4pt}
+  \renewcommand{\arraystretch}{1.25}
+  \small
+  \begin{tabularx}{\linewidth}{X r}
+    \toprule
+    \textbf{Now -- \ClaimDeadline} & \textcolor{okgreen}{\faCheckCircle\ \textbf{\PriceFreeText}} \\
+    \textbf{March 2 -- March 31} & \PriceEarlyBird \\
+    \textbf{April 1 onwards} & \PriceRegular \\
+    \textbf{\FullReleaseDate} & \textbf{Full Version (Email)} \\
+    \bottomrule
+  \end{tabularx}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.34\linewidth}
+  \vspace{2pt}
+  \begin{tcolorbox}[
+    enhanced,
+    colback=mainblue,
+    colframe=mainblue,
+    coltext=white,
+    arc=16pt,
+    boxrule=0pt,
+    left=10pt,right=10pt,top=10pt,bottom=10pt,
+    halign=center
+  ]
+    \sffamily\Large\bfseries
+    \href{\SiteURL}{\textcolor{white}{Download for Free}}
+  \end{tcolorbox}
+  \vspace{6pt}
+  {\sffamily\scriptsize\textcolor{textmuted}{Claim before \ClaimDeadline\ to secure the free full upgrade.}}
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{8pt}
+
+\begin{tcolorbox}[bar]
+  \sffamily\small
+  \faLink\ \textbf{Download:}\ \href{\SiteURL}{\SiteURL}
+  \hfill
+  \faGamepad\ \textbf{Kahoot:}\ \href{\KahootURL}{CIE 0580 E2.3 | Algebraic Fractions | Extended Track}
+\end{tcolorbox}
+
+\vspace{6pt}
+{\sffamily\footnotesize\textcolor{textmuted}{\UsageNote}}
+
+\newpage
+
+\begin{center}
+  {\sffamily\huge\bfseries\textcolor{mainblue}{Worksheet: \TopicName\ (Extended)}}\\
+  \vspace{4pt}
+  {\sffamily\small \textcolor{textmuted}{\textbf{Instructions:} State restrictions where needed and simplify fully by factorising before cancelling.}}\\
+\end{center}
+
+\StudentStrip
+
+\begin{tcolorbox}[soft]
+  \sffamily\footnotesize
+  \faCogs\ \textbf{Skills Covered:}
+  \textcolor{mainblue}{Factorise Then Cancel} $\bullet$
+  \textcolor{mainblue}{Common Denominator Method} $\bullet$
+  \textcolor{mainblue}{Multiplying/Dividing Fractions} $\bullet$
+  \textcolor{mainblue}{Solving Rational Equations}
+\end{tcolorbox}
+
+\SectionHeader{Section A: Simplifying Rational Expressions}{Cancelling factors and reducing algebraic fractions}{8--10 mins}
+\begin{enumerate}[label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item Simplify \(\frac{6x}{9}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{x^2-9}{x+3}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{12a^2b}{4ab^2}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{3x}{5}\times\frac{10}{x^2}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{4y}{9}\div\frac{2y}{3}\).\MarkOne \AnswerBox
+\end{enumerate}
+
+\SectionHeader{Section B: Operations with Algebraic Fractions}{Add, subtract, multiply, and divide rational terms}{8--10 mins}
+\begin{enumerate}[resume, label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item Simplify \(\frac{2}{x}+\frac{3}{x}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{1}{a}+\frac{1}{b}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{5}{x+1}-\frac{2}{x+1}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{x}{x-2}+\frac{2}{x-2}\).\MarkOne \AnswerBox
+  \item Simplify \(\frac{3}{x}-\frac{1}{2x}\).\MarkOne \AnswerBox
+\end{enumerate}
+
+\SectionHeader{Section C: Extended Rational Equations}{Cross-multiplication and solving fraction equations}{8--10 mins}
+\begin{enumerate}[resume, label=\qnum{\arabic*}, leftmargin=3.2em, itemsep=12pt]
+  \item Simplify \(\frac{2}{x}\times\frac{x^2-4}{x+2}\).\MarkOne \AnswerBox
+  \item Solve \(\frac{3}{x}=\frac{1}{2}\).\MarkOne \AnswerBox
+  \item Solve \(\frac{x+1}{4}=\frac{3}{2}\).\MarkOne \AnswerBox
+  \item Solve \(\frac{6}{x-1}=3\).\MarkOne \AnswerBox
+  \item Solve \(\frac{1}{x}+\frac{1}{3}=1\).\MarkOne \AnswerBox
+\end{enumerate}
+
+\vfill
+\begin{tcolorbox}[soft]
+  \sffamily\footnotesize\itshape
+  \faLightbulb\ \textbf{Teacher Tip:}
+  Students should factor every numerator and denominator first before attempting cancellation.
+\end{tcolorbox}
+
+\newpage
+
+\begin{center}
+  {\sffamily\LARGE\bfseries\textcolor{mainblue}{Answer Key (Basic)}}\\
+\end{center}
+
+\begin{tcolorbox}[bar]
+\sffamily\small
+\textbf{Student:} \underline{\hspace{3.2cm}}
+\hfill
+\textbf{Score:} \underline{\hspace{1.1cm}} / 15
+\hfill
+\textbf{Checked by:} \underline{\hspace{2.2cm}}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section A Answers (Q1--Q5)}
+\end{tcolorbox}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+1 & \(\frac{2x}{3}\) & \tickbox & \textcolor{textmuted}{---} \\
+2 & \(x-3\) & \tickbox & \textcolor{textmuted}{---} \\
+3 & \(\frac{3a}{b}\) & \tickbox & \textcolor{textmuted}{---} \\
+4 & \(\frac{6}{x}\) & \tickbox & \textcolor{textmuted}{---} \\
+5 & \(\frac{2}{3}\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section B Answers (Q6--Q10)}
+\end{tcolorbox}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+6 & \(\frac{5}{x}\) & \tickbox & \textcolor{textmuted}{---} \\
+7 & \(\frac{a+b}{ab}\) & \tickbox & \textcolor{textmuted}{---} \\
+8 & \(\frac{3}{x+1}\) & \tickbox & \textcolor{textmuted}{---} \\
+9 & \(\frac{x+2}{x-2}\) & \tickbox & \textcolor{textmuted}{---} \\
+10 & \(\frac{5}{2x}\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tcolorbox}[bar, borderline west={3pt}{0pt}{accentblue}]
+\sffamily\textbf{Section C Answers (Q11--Q15)}
+\end{tcolorbox}
+\begin{tabularx}{\linewidth}{>{\sffamily}c >{\sffamily}l >{\sffamily}c X}
+\toprule
+\textbf{\#} & \textbf{Answer} & \textbf{OK} & \textbf{Notes}\\
+\midrule
+11 & \(\frac{2(x-2)}{x}\) & \tickbox & \textcolor{textmuted}{---} \\
+12 & 6 & \tickbox & \textcolor{textmuted}{---} \\
+13 & 5 & \tickbox & \textcolor{textmuted}{---} \\
+14 & 3 & \tickbox & \textcolor{textmuted}{---} \\
+15 & \(\frac{3}{2}\) & \tickbox & \textcolor{textmuted}{---} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{14pt}
+\begin{center}
+  \sffamily\scriptsize\textcolor{textmuted}{
+    Tags: IGCSE Math $\bullet$ CIE 0580 $\bullet$ 0580 Extended $\bullet$ Algebraic Fractions $\bullet$ Rational Expressions $\bullet$ Simplifying Fractions $\bullet$ Math Worksheet $\bullet$ Kahoot Quiz $\bullet$ Cambridge IGCSE $\bullet$ Math Revision
+  }
+\end{center}
+
+\end{document}

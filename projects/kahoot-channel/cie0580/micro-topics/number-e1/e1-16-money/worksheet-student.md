@@ -4,19 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Solve money problems with percentage change, unit price, profit/loss, and exchange rates.
+- Apply money methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-If 1 USD = 0.8 GBP, then 75 USD = 75 x 0.8 = 60 GBP.
+Example: increase `80` by `20%`: compute `80 x (1 + 20/100)` to get `96`.
 
 ## Practice (10)
-1. Find 12% of $250.
-2. Decrease $180 by 15%.
-3. Add 7% tax to $320.
-4. Cost $48, sell $60. Find profit.
-5. Find profit percent on cost in Q4.
-6. 25% discount gives sale price $54. Find original.
-7. Exchange: 1 USD = 0.75 GBP. Convert 120 USD to GBP.
-8. Convert 90 GBP to USD at same rate.
-9. Which is better value: 500g for $3.20 or 800g for $4.80?
-10. A price $45.50 each, buy 6. Estimate total.
+1. Evaluate `38 + 17 x 4`.
+2. Write `2/24 + 10/24` as a simplified fraction.
+3. Calculate `2.7 + 0.27`.
+4. Work out `3^7`.
+5. Find `sqrt(81)`.
+6. Increase `120` by `27%`.
+7. Share `60` in the ratio `2:3` and give the larger share.
+8. Round `708.0` to `2` significant figures.
+9. Write `40000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

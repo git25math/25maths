@@ -1,28 +1,28 @@
 # E1.13 Kahoot Question Set - Percentages
 
 ## Metadata
-- Tier: Extended
 - Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E1.13
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | `0.6` as a percentage | 6% | 60% | 0.6% | 600% | B | Fluency |
-| 2 | `35%` as decimal | 0.035 | 0.35 | 3.5 | 35 | B | Fluency |
-| 3 | `0.125` as fraction | `1/8` | `1/5` | `1/4` | `3/8` | A | Fluency |
-| 4 | `3/5` as percent | 35% | 60% | 65% | 75% | B | Fluency |
-| 5 | 15% of 80 | 10 | 12 | 15 | 20 | B | Fluency |
-| 6 | Increase 120 by 10% | 126 | 132 | 130 | 110 | B | Method |
-| 7 | Decrease 250 by 12% | 210 | 220 | 230 | 240 | B | Method |
-| 8 | 20% of a number is 18. Number? | 72 | 90 | 54 | 36 | B | Method |
-| 9 | Price from 40 to 46. Percentage increase? | 10% | 12% | 15% | 20% | C | Method |
-| 10 | 25% discount gives $36. Original price? | $45 | $48 | $50 | $54 | B | Method |
-| 11 | 15 is what % of 60? | 20% | 25% | 30% | 15% | B | Method |
-| 12 | Tax is 8% on $250. Total price? | $258 | $268 | $270 | $275 | C | Context |
-| 13 | A score rises from 50 to 64. % increase? | 24% | 26% | 28% | 30% | C | Context |
-| 14 | Sale price is 90% of original and equals $540. Original? | $500 | $540 | $600 | $650 | C | Context |
-| 15 | Which is largest? | 0.62 | `5/8` | 61% | 0.605 | B | Context |
+| 1 | Evaluate `36 + 11 x 5`. | 92 | 91 | 93 | 90 | B | Fluency |
+| 2 | Write `3/24 + 10/24` as a simplified fraction. | 13/25 | 14/24 | 13/24 | 15/24 | C | Fluency |
+| 3 | Calculate `3.0 + 0.15`. | 3.65 | 2.65 | 3.15 | 4.15 | C | Fluency |
+| 4 | Work out `4^4`. | 256 | 255 | 257 | 258 | A | Fluency |
+| 5 | Find `sqrt(49)`. | 7 | 8 | 6 | 9 | A | Fluency |
+| 6 | Increase `120` by `15%`. | 140 | 138 | 139 | 137 | B | Method |
+| 7 | Share `120` in the ratio `2:3` and give the larger share. | 71 | 73 | 72 | 74 | C | Method |
+| 8 | Round `103.8` to `4` significant figures. | 103.30 | 104.80 | 103.8 | 104.30 | C | Method |
+| 9 | Write `50000` in standard form. | 5 x 10^4 | Cannot be determined | No solution | 0 | A | Method |
+| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | 0 | £9.90 | No solution | Cannot be determined | B | Method |
+| 11 | Context check: Write `3/24 + 10/24` as a simplified fraction. | 15/24 | 14/24 | 13/24 | 13/25 | C | Method |
+| 12 | Context check: Work out `4^4`. | 258 | 257 | 256 | 255 | C | Context |
+| 13 | Context check: Increase `120` by `15%`. | 140 | 139 | 138 | 137 | C | Context |
+| 14 | Context check: Round `103.8` to `4` significant figures. | 104.30 | 104.80 | 103.30 | 103.8 | D | Context |
+| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | £9.90 | No solution | Cannot be determined | 0 | A | Context |
 
 ## Timer
 - Q1-Q5: 20s

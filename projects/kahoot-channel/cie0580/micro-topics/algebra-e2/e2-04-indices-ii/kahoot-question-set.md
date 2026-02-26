@@ -1,28 +1,28 @@
 # E2.4 Kahoot Question Set - Indices II
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E2.4
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[20, 13, 6, 6, 7]`. | No solution | Cannot be determined | 10.4 | 0 | C | Fluency |
-| 2 | Find median of `[6, 6, 7, 13, 20]`. | 7 | 9 | 8 | 6 | A | Fluency |
-| 3 | Find range of `[20, 13, 6, 6, 7]`. | 13 | 14 | 15 | 16 | B | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 5)`. | 1/6 | 2/6 | 3/6 | 1/7 | A | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | 0.2 | Cannot be determined | 0 | No solution | A | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `60` trials. | 18 | 19 | 17 | 20 | A | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | No solution | Median | Cannot be determined | 0 | B | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | Cannot be determined | No solution | 0 | 18/30 = 3/5 | D | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | No solution | 14/50 = 7/25 | 0 | Cannot be determined | B | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | No solution | Cannot be determined | 0 | 0.28 | D | Method |
-| 11 | Context check: Find median of `[6, 6, 7, 13, 20]`. | 6 | 7 | 9 | 8 | B | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 5)`. | 1/7 | 1/6 | 3/6 | 2/6 | B | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `60` trials. | 17 | 20 | 18 | 19 | C | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | Cannot be determined | 0 | 18/30 = 3/5 | D | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | No solution | 0.28 | 0 | Cannot be determined | B | Context |
+| 1 | Simplify `5x + 6x - 5x`. | 6x | 0 | Cannot be determined | No solution | A | Fluency |
+| 2 | Expand and simplify `5(x + 6)`. | 5x + 30 | No solution | 0 | Cannot be determined | A | Fluency |
+| 3 | Factorise `5x + 30` fully. | 5(x + 6) | Cannot be determined | 0 | No solution | A | Fluency |
+| 4 | Solve `5x - 6 = 4`. | 1 | 2 | 3 | 4 | B | Fluency |
+| 5 | When `x = 2`, evaluate `5x^2 - 6x + 5`. | 13 | 14 | 15 | 12 | A | Fluency |
+| 6 | Solve the inequality `5x + 6 >= 28`. | x >= 4.4 | Cannot be determined | 0 | No solution | A | Method |
+| 7 | The nth term is `5n + 5`. Find term `3`. | 20 | 21 | 19 | 22 | A | Method |
+| 8 | Rearrange `y = 5x - 6` to make `x` the subject. | No solution | x = (y + 6)/5 | Cannot be determined | 0 | B | Method |
+| 9 | Solve `x^2 - 9x + 14 = 0`. | Cannot be determined | No solution | 0 | x = 2 or x = 7 | D | Method |
+| 10 | Given `f(x)=3x^2-2x+1`, find `f(4)`. | 40 | 41 | 43 | 42 | B | Method |
+| 11 | Context check: Expand and simplify `5(x + 6)`. | No solution | Cannot be determined | 0 | 5x + 30 | D | Method |
+| 12 | Context check: Solve `5x - 6 = 4`. | 1 | 2 | 4 | 3 | B | Context |
+| 13 | Context check: Solve the inequality `5x + 6 >= 28`. | No solution | x >= 4.4 | 0 | Cannot be determined | B | Context |
+| 14 | Context check: Rearrange `y = 5x - 6` to make `x` the subject. | No solution | 0 | x = (y + 6)/5 | Cannot be determined | C | Context |
+| 15 | Context check: Given `f(x)=3x^2-2x+1`, find `f(4)`. | 40 | 42 | 43 | 41 | D | Context |
 
 ## Timer
 - Q1-Q5: 20s

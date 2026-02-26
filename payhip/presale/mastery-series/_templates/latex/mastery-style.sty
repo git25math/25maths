@@ -1,0 +1,184 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mastery-style}[2026/02/26 25Maths Mastery Series visual system v1]
+
+\RequirePackage[a4paper,margin=1.9cm,headheight=22pt,headsep=10pt,footskip=16pt]{geometry}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage{microtype}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{fancyhdr}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{titlesec}
+\RequirePackage{tocloft}
+
+% Color system
+\definecolor{MPrimary}{HTML}{0F4C81}
+\definecolor{MSecondary}{HTML}{1F7A8C}
+\definecolor{MAccent}{HTML}{B45309}
+\definecolor{MAccentSoft}{HTML}{FFF7ED}
+\definecolor{MSoft}{HTML}{F8FAFC}
+\definecolor{MLine}{HTML}{D8E2EC}
+\definecolor{MInk}{HTML}{1F2937}
+\definecolor{MMuted}{HTML}{64748B}
+
+\color{MInk}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+% Typography
+\titleformat{\section}{\Large\sffamily\bfseries\color{MPrimary}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries\color{MSecondary}}{\thesubsection}{0.6em}{}
+\renewcommand{\cfttoctitlefont}{\Huge\sffamily\bfseries\color{MPrimary}}
+\renewcommand{\cftsecfont}{\sffamily}
+\renewcommand{\cftsecpagefont}{\sffamily}
+\setlength{\cftbeforesecskip}{4pt}
+
+% Brand labels
+\newcommand{\MasteryBrand}{25Maths}
+\newcommand{\MasterySeriesName}{Mastery Series}
+\newcommand{\MasterySetBrand}[2]{%
+  \renewcommand{\MasteryBrand}{#1}%
+  \renewcommand{\MasterySeriesName}{#2}%
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\newcommand{\MasteryHeaderLeft}{25Maths}
+\newcommand{\MasteryHeaderRight}{Mastery Series}
+\newcommand{\MasteryFooterRight}{Internal Draft}
+\newcommand{\MasterySetHeader}[2]{%
+  \renewcommand{\MasteryHeaderLeft}{#1}%
+  \renewcommand{\MasteryHeaderRight}{#2}%
+  \fancyhead[L]{\sffamily\small\textcolor{MPrimary}{\textbf{\MasteryHeaderLeft}}}%
+  \fancyhead[R]{\sffamily\small\textcolor{MMuted}{\MasteryHeaderRight}}%
+}
+\newcommand{\MasterySetFooter}[1]{%
+  \renewcommand{\MasteryFooterRight}{#1}%
+  \fancyfoot[L]{\sffamily\scriptsize\textcolor{MMuted}{\MasteryBrand}}%
+  \fancyfoot[C]{\sffamily\scriptsize\textcolor{MMuted}{\thepage}}%
+  \fancyfoot[R]{\sffamily\scriptsize\textcolor{MMuted}{\MasteryFooterRight}}%
+}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{MLine}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{MLine}\leaders\hrule height \footrulewidth\hfill}}
+\MasterySetHeader{\MasteryBrand}{\MasterySeriesName}
+\MasterySetFooter{Internal Draft}
+
+% Core box styles
+\tcbset{
+  masterycard/.style={
+    enhanced,
+    arc=3mm,
+    boxrule=0.55pt,
+    colframe=MLine,
+    colback=white,
+    left=2.2mm,
+    right=2.2mm,
+    top=1.8mm,
+    bottom=1.8mm
+  }
+}
+
+\newtcolorbox{keyconceptbox}{
+  masterycard,
+  colback=MSoft,
+  colframe=MPrimary!45!MLine,
+  title=Key Concept,
+  coltitle=MPrimary,
+  fonttitle=\sffamily\bfseries
+}
+
+\newtcolorbox{examtipbox}{
+  masterycard,
+  colback=MAccentSoft,
+  colframe=MAccent!55!MLine,
+  title=Exam Tip,
+  coltitle=MAccent,
+  fonttitle=\sffamily\bfseries
+}
+
+\newtcolorbox{commonmistakebox}{
+  masterycard,
+  colback=white,
+  colframe=MSecondary!55!MLine,
+  title=Common Mistake,
+  coltitle=MSecondary,
+  fonttitle=\sffamily\bfseries
+}
+
+% Cover and module pages
+\newcommand{\MasteryPackCover}[4]{%
+  \thispagestyle{empty}%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[MSoft] (current page.south west) rectangle (current page.north east);
+    \fill[MPrimary] ([yshift=-4.5cm]current page.north west) rectangle (current page.north east);
+    \draw[MLine,line width=0.8pt] ([xshift=8mm,yshift=-8mm]current page.north west) rectangle ([xshift=-8mm,yshift=8mm]current page.south east);
+    \node[anchor=west,text=white,font=\sffamily\bfseries\Large] at ([xshift=14mm,yshift=-17mm]current page.north west) {\MasteryBrand};
+    \node[anchor=west,text=white,font=\sffamily\large] at ([xshift=14mm,yshift=-30mm]current page.north west) {\MasterySeriesName};
+  \end{tikzpicture}
+
+  \vspace*{58mm}
+  {\Huge\sffamily\bfseries\color{MPrimary}#1\par}
+  \vspace{4mm}
+  {\Large\sffamily\color{MMuted}#2\par}
+  \vspace{8mm}
+
+  \begin{tcolorbox}[masterycard]
+    \textbf{Board Scope:} #3\\
+    \textbf{Version:} #4
+  \end{tcolorbox}
+
+  \vfill
+  \newpage
+}
+
+\newcommand{\MasteryModuleCover}[3]{%
+  \thispagestyle{empty}%
+  \begin{tcolorbox}[masterycard,colback=MPrimary,colframe=MPrimary]
+    {\sffamily\Large\bfseries\textcolor{white}{Module #1}}\\
+    {\sffamily\Huge\bfseries\textcolor{white}{#2}}
+  \end{tcolorbox}
+  \vspace{4mm}
+  \begin{tcolorbox}[masterycard,colback=MSoft]
+    {\sffamily\textbf{Learning Outcome:} #3}
+  \end{tcolorbox}
+  \vfill
+  \newpage
+}
+
+\newcommand{\MasteryTOCPage}{%
+  \clearpage
+  \renewcommand{\contentsname}{Pack Contents}
+  \tableofcontents
+  \newpage
+}
+
+% TikZ visual grammar
+\tikzset{
+  mastery-axis/.style={->, line width=0.9pt, draw=MLine},
+  mastery-link/.style={-{Latex[length=2.2mm]}, line width=0.9pt, draw=MPrimary},
+  mastery-node/.style={circle, draw=MPrimary, fill=MPrimary!8, minimum size=8mm, font=\sffamily\small},
+  mastery-focus/.style={rounded corners=2mm, draw=MAccent, fill=MAccentSoft, line width=0.7pt},
+  mastery-label/.style={font=\sffamily\footnotesize, text=MInk}
+}
+
+\newcommand{\MasteryTikzRules}{%
+  \begin{tcolorbox}[masterycard,colback=MSoft,title=TikZ Rules,fonttitle=\sffamily\bfseries,coltitle=MPrimary]
+    \begin{itemize}[leftmargin=1.3em,itemsep=2pt]
+      \item Use \texttt{mastery-axis} for coordinate references and progression timelines.
+      \item Use \texttt{mastery-node} and \texttt{mastery-link} for skill paths.
+      \item Reserve \texttt{mastery-focus} blocks for exam-critical transitions.
+      \item Keep labels sentence-case and under 6 words.
+    \end{itemize}
+  \end{tcolorbox}
+}

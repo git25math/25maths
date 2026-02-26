@@ -1,0 +1,21 @@
+# Legacy language routes -> canonical English-primary routes (HTTP 301)
+# Cloudflare Pages reads this file at deploy time.
+
+# Exact root aliases
+/en / 301
+/en/ / 301
+/zh-cn / 301
+/zh-cn/ / 301
+
+# Legacy leaf pages that do not have 1:1 canonical slugs
+/zh-cn/cie0580/products/ /cie0580/products.html 301
+/zh-cn/cie0580/products/index.html /cie0580/products.html 301
+/zh-cn/cie0580/products/* /cie0580/products.html 301
+
+# Index-file variants
+/en/index.html / 301
+/zh-cn/index.html / 301
+
+# Prefix-level canonicalization
+/en/* /:splat 301
+/zh-cn/* /:splat 301

@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply mensuration of 2d shapes methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `12` and height `6` is `1/2 x 12 x 6 = 36`.
+Example: area of a triangle with base `8` and height `10` is `1/2 x 8 x 10 = 40`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `48°` and `52°`.

@@ -2,24 +2,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ page.title }}{% if page.title_suffix %} {{ page.title_suffix }}{% endif %} | 25Maths</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
-{% assign canonical_url = site.url | append: page.url | replace: 'index.html', '' %}
+{% assign canonical_path = page.redirect_to | default: page.url %}
+{% if canonical_path contains '://' %}
+<link rel="canonical" href="{{ canonical_path }}">
+{% else %}
+{% assign canonical_url = site.url | append: canonical_path | replace: 'index.html', '' %}
 <link rel="canonical" href="{{ canonical_url }}">
+{% endif %}
+{% if page.lang_links %}{% for ll in page.lang_links %}<link rel="alternate" hreflang="{{ ll[0] }}" href="{{ site.url }}{{ ll[1] }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.lang_links['en'] | default: page.url | replace: 'index.html', '' }}">
+{% endif %}
 <meta name="referrer" content="{{ site.security.referrer_policy | default: 'strict-origin-when-cross-origin' }}">
 {% if site.security and site.security.csp %}
 <meta http-equiv="Content-Security-Policy" content="{{ site.security.csp }}">
 {% endif %}
 {% if page.noindex %}
 <meta name="robots" content="noindex, nofollow">
-{% endif %}
-{% if page.lang_links %}
-{% for item in page.lang_links %}
-<link rel="alternate" hreflang="{{ item.code }}" href="{{ item.url | absolute_url }}">
-{% endfor %}
-{% elsif page.collection == 'exercises' and page.subtopic_id %}
-{% assign exercise_alt_board = page.subtopic_id | split: ":" | first %}
-{% capture exercise_alt_zh_url %}{{ '/zh-cn/exercises/' | relative_url }}?board={{ exercise_alt_board }}{% if page.tier %}&tier={{ page.tier | downcase | url_encode }}{% endif %}{% if page.syllabus_code %}&q={{ page.syllabus_code | url_encode }}{% endif %}{% endcapture %}
-<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
-<link rel="alternate" hreflang="zh-CN" href="{{ exercise_alt_zh_url | absolute_url }}">
 {% endif %}
 
 <!-- Favicon -->
@@ -29,14 +27,16 @@
 <meta property="og:title" content="{{ page.title }}{% if page.title_suffix %} {{ page.title_suffix }}{% endif %} | 25Maths">
 <meta property="og:description" content="{{ page.description | default: site.description }}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-{% if page.og_image %}<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">{% endif %}
+<meta property="og:url" content="{% if canonical_path contains '://' %}{{ canonical_path }}{% else %}{{ site.url }}{{ canonical_path | replace: 'index.html', '' }}{% endif %}">
+{% if page.og_image %}<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">{% elsif site.og_image_default %}<meta property="og:image" content="{{ site.url }}{{ site.og_image_default }}">{% endif %}
 <meta property="og:site_name" content="25Maths">
+{% if page.lang == 'zh-CN' %}<meta property="og:locale" content="zh_CN">{% else %}<meta property="og:locale" content="en_GB">{% endif %}
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{% if page.og_image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{{ page.title }} | 25Maths">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+{% if page.og_image %}<meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}">{% elsif site.og_image_default %}<meta name="twitter:image" content="{{ site.url }}{{ site.og_image_default }}">{% endif %}
 
 <!-- Site CSS (generated from Tailwind) -->
 <link rel="stylesheet" href="/assets/css/site.css?v={{ site.assets_version }}">
@@ -285,6 +285,7 @@
         box-shadow: 0 8px 16px rgba(183, 82, 52, 0.28);
     }
 
+
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */
     .kahoot-solid-bg {
         background-color: #46178f;
@@ -308,6 +309,126 @@
     .kahoot-soft-bg { background-color: #efe9fb; }
     .kahoot-soft-text { color: #46178f; }
     .kahoot-soft-hover:hover { background-color: #e5dbf8; }
+
+    /* Interactive exercise loop button system (shared across CIE/Edexcel). */
+    .loop-btn-base {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 3rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid transparent;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .loop-btn-disabled {
+        opacity: 0.45;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .loop-btn-kahoot {
+        background-color: #46178f;
+        border-color: #46178f;
+        color: #ffffff;
+    }
+    .loop-btn-kahoot:hover {
+        background-color: #3d137a;
+        border-color: #3d137a;
+        color: #ffffff;
+    }
+
+    .loop-btn-neutral-soft {
+        background-color: #ffffff;
+        border-color: #d1d5db;
+        color: #1f2937;
+    }
+    .loop-btn-neutral-soft:hover {
+        background-color: #f9fafb;
+        border-color: #9ca3af;
+        color: #111827;
+    }
+
+    .resource-loop--cie .loop-btn-primary,
+    .exercise-completion-actions--cie .loop-btn-primary {
+        background-color: var(--cie-igcse-600);
+        border-color: var(--cie-igcse-600);
+        color: #ffffff;
+    }
+    .resource-loop--cie .loop-btn-primary:hover,
+    .exercise-completion-actions--cie .loop-btn-primary:hover {
+        background-color: var(--cie-igcse-700);
+        border-color: var(--cie-igcse-700);
+        color: #ffffff;
+    }
+    .resource-loop--cie .loop-btn-soft,
+    .exercise-completion-actions--cie .loop-btn-soft {
+        background-color: var(--cie-igcse-100);
+        border-color: var(--cie-igcse-700);
+        color: var(--cie-igcse-700);
+    }
+    .resource-loop--cie .loop-btn-soft:hover,
+    .exercise-completion-actions--cie .loop-btn-soft:hover {
+        background-color: #d4b9b2;
+        border-color: var(--cie-igcse-700);
+        color: var(--cie-igcse-700);
+    }
+
+    .resource-loop--edx .loop-btn-primary,
+    .exercise-completion-actions--edx .loop-btn-primary {
+        background-color: var(--edx-igcse-600);
+        border-color: var(--edx-igcse-600);
+        color: #ffffff;
+    }
+    .resource-loop--edx .loop-btn-primary:hover,
+    .exercise-completion-actions--edx .loop-btn-primary:hover {
+        background-color: var(--edx-igcse-700);
+        border-color: var(--edx-igcse-700);
+        color: #ffffff;
+    }
+    .resource-loop--edx .loop-btn-soft,
+    .exercise-completion-actions--edx .loop-btn-soft {
+        background-color: var(--edx-igcse-100);
+        border-color: var(--edx-igcse-700);
+        color: var(--edx-igcse-700);
+    }
+    .resource-loop--edx .loop-btn-soft:hover,
+    .exercise-completion-actions--edx .loop-btn-soft:hover {
+        background-color: #c3dbd7;
+        border-color: var(--edx-igcse-700);
+        color: var(--edx-igcse-700);
+    }
+
+    .resource-loop--neutral .loop-btn-primary,
+    .exercise-completion-actions--neutral .loop-btn-primary {
+        background-color: #374151;
+        border-color: #374151;
+        color: #ffffff;
+    }
+    .resource-loop--neutral .loop-btn-primary:hover,
+    .exercise-completion-actions--neutral .loop-btn-primary:hover {
+        background-color: #1f2937;
+        border-color: #1f2937;
+        color: #ffffff;
+    }
+    .resource-loop--neutral .loop-btn-soft,
+    .exercise-completion-actions--neutral .loop-btn-soft {
+        background-color: #ffffff;
+        border-color: #d1d5db;
+        color: #1f2937;
+    }
+    .resource-loop--neutral .loop-btn-soft:hover,
+    .exercise-completion-actions--neutral .loop-btn-soft:hover {
+        background-color: #f9fafb;
+        border-color: #9ca3af;
+        color: #111827;
+    }
 
     /* Warm gradient ladder for L1-L4 Kahoot action hierarchy. */
     .kahoot-ladder-l1 {

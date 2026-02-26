@@ -1,4 +1,8 @@
 (() => {
+  const WRONG_ATTEMPT_LOOKBACK_DAYS = 60;
+  const MAX_RECENT_SESSIONS = 50;
+  const MAX_RECENT_WRONG_ATTEMPTS = 200;
+
   const stateBadge = document.querySelector('[data-member-center-state]');
   const helper = document.querySelector('[data-member-center-helper]');
   const membershipStatusNode = document.querySelector('[data-membership-status]');
@@ -37,27 +41,77 @@
     return date.toLocaleString();
   }
 
-  function renderWeakSkills(rows) {
-    if (!rows.length) {
-      weakSkillListNode.innerHTML = '<li class="text-gray-500">No wrong-attempt clusters yet.</li>';
-      weakSkillCountNode.textContent = '0';
-      return;
-    }
+  function isMembershipRecordActive(record) {
+    if (!record) return false;
+    if (String(record.status || '').toLowerCase() !== 'active') return false;
+    if (!record.period_end) return true;
+    const until = new Date(record.period_end).getTime();
+    if (Number.isNaN(until)) return true;
+    return until > Date.now();
+  }
 
+  window.memberDashboardHelpers = {
+    isMembershipRecordActive,
+  };
+
+  function computeWeakSkills(rows) {
+    const nowMs = Date.now();
     const grouped = new Map();
     rows.forEach((row) => {
       const key = String(row.skill_tag || 'unclassified').trim() || 'unclassified';
-      grouped.set(key, (grouped.get(key) || 0) + 1);
-    });
-    const sorted = Array.from(grouped.entries()).sort((a, b) => b[1] - a[1]);
+      const createdAtMs = new Date(row.created_at || '').getTime();
+      const ageDays = Number.isFinite(createdAtMs)
+        ? Math.max(0, (nowMs - createdAtMs) / (24 * 60 * 60 * 1000))
+        : 30;
 
-    weakSkillCountNode.textContent = String(sorted.length);
-    weakSkillListNode.innerHTML = sorted.slice(0, 5).map(([skill, count]) => {
+      let recencyWeight = 1;
+      if (ageDays <= 7) recencyWeight = 1.5;
+      else if (ageDays <= 30) recencyWeight = 1.0;
+      else recencyWeight = 0.6;
+
+      const current = grouped.get(key) || {
+        count: 0,
+        weightedScore: 0,
+        lastSeenAt: null,
+      };
+      current.count += 1;
+      current.weightedScore += recencyWeight;
+      if (!current.lastSeenAt || (Number.isFinite(createdAtMs) && createdAtMs > new Date(current.lastSeenAt).getTime())) {
+        current.lastSeenAt = row.created_at || null;
+      }
+      grouped.set(key, current);
+    });
+
+    return Array.from(grouped.entries()).map(([skill, value]) => ({
+      skill,
+      count: value.count,
+      weighted_score: Number(value.weightedScore.toFixed(2)),
+      last_seen_at: value.lastSeenAt,
+    })).sort((a, b) => {
+      if (b.weighted_score !== a.weighted_score) return b.weighted_score - a.weighted_score;
+      if (b.count !== a.count) return b.count - a.count;
+      return String(a.skill).localeCompare(String(b.skill));
+    });
+  }
+
+  function renderWeakSkills(rows) {
+    const weakSkills = computeWeakSkills(rows);
+    if (!weakSkills.length) {
+      weakSkillListNode.innerHTML = '<li class="text-gray-500">No wrong-attempt clusters yet.</li>';
+      weakSkillCountNode.textContent = '0';
+      return weakSkills;
+    }
+
+    weakSkillCountNode.textContent = String(weakSkills.length);
+    weakSkillListNode.innerHTML = weakSkills.slice(0, 5).map((item) => {
+      const weightedText = Number.isFinite(item.weighted_score) ? item.weighted_score.toFixed(2) : '0.00';
       return `<li class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
-        <span class="truncate">${skill}</span>
-        <span class="text-xs font-semibold rounded bg-red-100 text-red-700 px-2 py-0.5">${count}</span>
+        <span class="truncate">${item.skill}</span>
+        <span class="text-xs font-semibold rounded bg-red-100 text-red-700 px-2 py-0.5">${item.count} / ${weightedText}</span>
       </li>`;
     }).join('');
+
+    return weakSkills;
   }
 
   function renderRecentSessions(rows) {
@@ -92,6 +146,8 @@
   }
 
   async function fetchDashboardData(client, userId) {
+    const attemptsCutoffIso = new Date(Date.now() - (WRONG_ATTEMPT_LOOKBACK_DAYS * 24 * 60 * 60 * 1000)).toISOString();
+
     const [membershipResult, sessionsResult, attemptsResult] = await Promise.all([
       client
         .from('membership_status')
@@ -103,14 +159,15 @@
         .select('exercise_slug, score, question_count, started_at, completed_at')
         .eq('user_id', userId)
         .order('started_at', { ascending: false })
-        .limit(50),
+        .limit(MAX_RECENT_SESSIONS),
       client
         .from('question_attempts')
-        .select('skill_tag')
+        .select('skill_tag, created_at')
         .eq('user_id', userId)
         .eq('is_correct', false)
+        .gte('created_at', attemptsCutoffIso)
         .order('created_at', { ascending: false })
-        .limit(200),
+        .limit(MAX_RECENT_WRONG_ATTEMPTS),
     ]);
 
     if (membershipResult.error) throw membershipResult.error;
@@ -121,6 +178,7 @@
       membership: membershipResult.data || null,
       sessions: sessionsResult.data || [],
       wrongAttempts: attemptsResult.data || [],
+      attemptsCutoffIso,
     };
   }
 
@@ -139,11 +197,25 @@
     }
   }
 
+  function emitDashboardData(detail) {
+    window.dispatchEvent(new CustomEvent('member-dashboard-data', { detail }));
+  }
+
   async function loadForUser(user) {
     if (!window.memberSupabase || !user || !user.id) {
       setBadge('NOT SIGNED IN', ['bg-gray-200', 'text-gray-700'], ['bg-emerald-100', 'text-emerald-800', 'bg-red-100', 'text-red-800']);
       helper.textContent = 'Sign in to see your latest progress and weak-point summary.';
       resetUi();
+      emitDashboardData({
+        loaded: false,
+        error: false,
+        userId: null,
+        membership: null,
+        membershipActive: false,
+        sessions: [],
+        wrongAttempts: [],
+        weakSkills: [],
+      });
       return;
     }
 
@@ -154,26 +226,67 @@
       const data = await fetchDashboardData(window.memberSupabase, user.id);
       applyMembershipState(data.membership);
       renderRecentSessions(data.sessions);
-      renderWeakSkills(data.wrongAttempts);
+      const weakSkills = renderWeakSkills(data.wrongAttempts);
 
-      const isActive = String(data.membership?.status || '').toLowerCase() === 'active';
-      if (isActive) {
+      const membershipActive = isMembershipRecordActive(data.membership);
+      if (membershipActive) {
         setBadge('ACTIVE MEMBER', ['bg-emerald-100', 'text-emerald-800'], ['bg-gray-200', 'text-gray-700', 'bg-blue-100', 'text-blue-800', 'bg-red-100', 'text-red-800']);
       } else {
         setBadge('NOT ACTIVE', ['bg-red-100', 'text-red-800'], ['bg-gray-200', 'text-gray-700', 'bg-blue-100', 'text-blue-800', 'bg-emerald-100', 'text-emerald-800']);
       }
-      helper.textContent = 'Data updated from your member profile records.';
+      helper.textContent = `Data updated from your member profile records. Weak-point window: last ${WRONG_ATTEMPT_LOOKBACK_DAYS} days.`;
+
+      emitDashboardData({
+        loaded: true,
+        error: false,
+        userId: user.id,
+        membership: data.membership,
+        membershipActive,
+        sessions: data.sessions,
+        wrongAttempts: data.wrongAttempts,
+        weakSkills,
+        attemptsCutoffIso: data.attemptsCutoffIso,
+      });
     } catch (error) {
       setBadge('LOAD ERROR', ['bg-red-100', 'text-red-800'], ['bg-gray-200', 'text-gray-700', 'bg-blue-100', 'text-blue-800', 'bg-emerald-100', 'text-emerald-800']);
       helper.textContent = 'Could not load member dashboard data. Please retry after login.';
       resetUi();
+      emitDashboardData({
+        loaded: false,
+        error: true,
+        userId: user.id,
+        membership: null,
+        membershipActive: false,
+        sessions: [],
+        wrongAttempts: [],
+        weakSkills: [],
+      });
     }
   }
 
   function start() {
+    window.addEventListener('member-auth-notice', (event) => {
+      const message = String(event?.detail?.message || '').trim();
+      const level = String(event?.detail?.level || 'info').trim().toLowerCase();
+      if (!message) return;
+      helper.textContent = message;
+      if (level === 'error' || level === 'warning') {
+        setBadge('AUTH NOTICE', ['bg-amber-100', 'text-amber-800'], ['bg-gray-200', 'text-gray-700', 'bg-blue-100', 'text-blue-800', 'bg-emerald-100', 'text-emerald-800', 'bg-red-100', 'text-red-800']);
+      }
+    });
+
     window.addEventListener('member-auth-change', (event) => {
       const user = event?.detail?.user || null;
       loadForUser(user).catch(() => {
+        setBadge('LOAD ERROR', ['bg-red-100', 'text-red-800'], ['bg-gray-200', 'text-gray-700']);
+      });
+    });
+
+    window.addEventListener('member-reconcile-complete', (event) => {
+      const reconcileUserId = String(event?.detail?.userId || '').trim();
+      const currentUserId = String(window.memberState?.user?.id || '').trim();
+      if (!reconcileUserId || reconcileUserId !== currentUserId) return;
+      loadForUser(window.memberState?.user || null).catch(() => {
         setBadge('LOAD ERROR', ['bg-red-100', 'text-red-800'], ['bg-gray-200', 'text-gray-700']);
       });
     });

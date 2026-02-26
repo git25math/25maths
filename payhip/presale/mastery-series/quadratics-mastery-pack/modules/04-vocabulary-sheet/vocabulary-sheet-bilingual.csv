@@ -1,0 +1,16 @@
+term_en,term_zh,exam_meaning,typical_misuse,quick_fix_prompt
+quadratic equation,二次方程,Equation where highest power of variable is 2,Calls any expression with x^2 an equation,Is there an equals sign?
+quadratic expression,二次代数式,Expression ax^2+bx+c without equation sign,Treated as solvable directly,Set expression equal to what?
+root/solution,根/解,Value of x making equation true,Writes only one root,How many roots are expected?
+factorise,因式分解,Rewrite as product of factors,Mixes with expansion,Can it be written as ()()?
+expand,展开,Multiply brackets to standard form,Used when asked to factorise,Direction: compact or expanded?
+discriminant,判别式,b^2-4ac predicts root nature,Wrong b sign in calculation,Substitute b with brackets
+completing the square,配方法,Rewrite to (x+p)^2+q form,Forgets balancing constant,What was added and subtracted?
+axis of symmetry,对称轴,Vertical line through vertex x-value,Confused with y-intercept,Is this a line x=...?
+vertex,顶点,Maximum or minimum turning point,Sign read incorrectly,Check y=(x-h)^2+k
+x-intercept,x轴截距,Point where graph crosses x-axis y=0,Reported as y-value only,Write as coordinate
+y-intercept,y轴截距,Point where graph crosses y-axis x=0,Mixed with root,Substitute x=0
+repeated root,重根,Same root occurs twice,Seen as two distinct roots,Does equation look like (x-a)^2?
+real roots,实根,Roots on real number line,Includes complex roots,Check discriminant sign
+no real roots,无实根,Discriminant < 0 in real context,Attempts invalid square root as real,Stop at classification
+interval notation,区间表示,Compact inequality solution form,Bracket direction errors,Boundary included or excluded?

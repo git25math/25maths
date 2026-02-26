@@ -174,6 +174,7 @@
         });
     }
 
+
     function syncToggleUi(enabled) {
         var toggles = document.querySelectorAll('[data-bilingual-toggle]');
         toggles.forEach(function(toggle) {

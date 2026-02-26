@@ -1,4 +1,4 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C4.1 Geometrical terms
 
 1. 93
@@ -10,4 +10,4 @@
 7. 30°
 8. 4032
 9. 9
-10. `277.6666666666667pi`
+10. `686pi`

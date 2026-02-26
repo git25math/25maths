@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply symmetry methods accurately in Edexcel 4MA1 Higher exam questions.
 
 ## Model example
-Example: area of a triangle with base `7` and height `9` is `1/2 x 7 x 9 = 31`.
+Example: area of a triangle with base `7` and height `5` is `1/2 x 7 x 5 = 17`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `50°` and `39°`.

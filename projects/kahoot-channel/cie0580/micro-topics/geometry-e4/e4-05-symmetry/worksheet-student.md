@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E4.5 Symmetry
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply symmetry methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply symmetry methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: area of a triangle with base `7` and height `7` is `1/2 x 7 x 7 = 24`.
+Example: area of a triangle with base `11` and height `5` is `1/2 x 11 x 5 = 27`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `45°` and `36°`.

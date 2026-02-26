@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E4.1 Geometrical terms
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply geometrical terms methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply geometrical terms methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: area of a triangle with base `10` and height `7` is `1/2 x 10 x 7 = 35`.
+Example: area of a triangle with base `9` and height `8` is `1/2 x 9 x 8 = 36`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `64°` and `46°`.

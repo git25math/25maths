@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E5.2 Area and perimeter
 
-1. 15.2
-2. 17
-3. 13
-4. `1/6`
-5. 0.3
-6. 18
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. 44 cm
+2. 112 cm^2
+3. 63.0 cm^2
+4. `12pi cm`
+5. `36pi cm^2`
+6. 1008
+7. 486
+8. 1008
+9. 11200
+10. `108.0pi`

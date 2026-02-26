@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E5.5 Compound shapes and parts of shapes
 
-1. 13.2
-2. 13
-3. 10
-4. `5/6`
-5. 0.4
-6. 21
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. 26 cm
+2. 42 cm^2
+3. 31.5 cm^2
+4. `16pi cm`
+5. `64pi cm^2`
+6. 378
+7. 486
+8. 378
+9. 4200
+10. `192.0pi`

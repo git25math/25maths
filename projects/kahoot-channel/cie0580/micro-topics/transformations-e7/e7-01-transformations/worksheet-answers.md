@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E7.1 Transformations
 
-1. 10.6
-2. 11
-3. 6
-4. `4/6`
-5. 0.5
-6. 20
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `(1,-5)`
+2. `(2,-3)`
+3. `(-2,3)`
+4. `(-2,1)`
+5. `(6,-2)`
+6. `(2,3)`
+7. Length and angle stay unchanged.
+8. Distance from centre stays unchanged.
+9. They are proportional.
+10. `(2,-5)`

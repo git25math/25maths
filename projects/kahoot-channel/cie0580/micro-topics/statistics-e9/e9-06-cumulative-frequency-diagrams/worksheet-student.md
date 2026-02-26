@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.6 Cumulative frequency diagrams
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply cumulative frequency diagrams methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply cumulative frequency diagrams methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[7, 14, 11, 15, 9]` is `56/5 = 11.2`.

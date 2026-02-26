@@ -1,28 +1,28 @@
 # C3.1 Kahoot Question Set - Coordinates
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Core
 - Micro-topic: C3.1
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[19, 18, 18, 13, 16]`. | 16.8 | 0 | No solution | Cannot be determined | A | Fluency |
-| 2 | Find median of `[13, 16, 18, 18, 19]`. | 20 | 18 | 17 | 19 | B | Fluency |
-| 3 | Find range of `[19, 18, 18, 13, 16]`. | 6 | 8 | 7 | 5 | A | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 3)`. | 3/6 | 3/7 | 4/6 | 5/6 | A | Fluency |
-| 5 | If `P(A)=0.7`, find `P(not A)`. | Cannot be determined | 0.3 | 0 | No solution | B | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `56` trials. | 15 | 18 | 17 | 16 | D | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | 0 | Cannot be determined | No solution | Median | D | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | Cannot be determined | No solution | 0 | 18/30 = 3/5 | D | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | Cannot be determined | No solution | 14/50 = 7/25 | 0 | C | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0 | Cannot be determined | 0.28 | No solution | C | Method |
-| 11 | Context check: Find median of `[13, 16, 18, 18, 19]`. | 17 | 20 | 18 | 19 | C | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 3)`. | 5/6 | 4/6 | 3/7 | 3/6 | D | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `56` trials. | 17 | 18 | 15 | 16 | D | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | No solution | 0 | Cannot be determined | A | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0.28 | No solution | 0 | Cannot be determined | A | Context |
+| 1 | State the quadrant of point `(-1,8)`. | II | Cannot be determined | 0 | No solution | A | Fluency |
+| 2 | Find midpoint of `(-1,3)` and `(8,8)`. | No solution | Cannot be determined | 0 | (3.5,5.5) | D | Fluency |
+| 3 | Find gradient of the line through `(-1,3)` and `(8,8)`. | 1.56 | 0.5555555556 | 0.06 | 1.06 | B | Fluency |
+| 4 | Write equation of line with gradient `4` and intercept `3`. | y = 4x + 3 | 0 | Cannot be determined | No solution | A | Fluency |
+| 5 | For `y = 4x + 3`, find `y` when `x = 4`. | 19 | 18 | 20 | 21 | A | Fluency |
+| 6 | For `y = 4x + 3`, find `x` when `y = 19`. | 5 | 4 | 6 | 3 | B | Method |
+| 7 | Find equation of line parallel to `y = 4x + 3` passing through `(0,6)`. | No solution | 0 | Cannot be determined | y = 4x + 6 | D | Method |
+| 8 | Find gradient of line perpendicular to `y = 4x + 3`. | 0.75 | 0.25 | -0.75 | -0.25 | D | Method |
+| 9 | Find distance between points `(-1,3)` and `(-1,8)`. | 6 | 4 | 7 | 5 | D | Method |
+| 10 | Find x-intercept of `y = 4x + 3`. | -0.25 | -1.25 | -0.75 | 0.25 | C | Method |
+| 11 | Context check: Find midpoint of `(-1,3)` and `(8,8)`. | 0 | Cannot be determined | (3.5,5.5) | No solution | C | Method |
+| 12 | Context check: Write equation of line with gradient `4` and intercept `3`. | No solution | 0 | y = 4x + 3 | Cannot be determined | C | Context |
+| 13 | Context check: For `y = 4x + 3`, find `x` when `y = 19`. | 6 | 5 | 3 | 4 | D | Context |
+| 14 | Context check: Find gradient of line perpendicular to `y = 4x + 3`. | 0.25 | 0.75 | -0.75 | -0.25 | D | Context |
+| 15 | Context check: Find x-intercept of `y = 4x + 3`. | -0.75 | -1.25 | 0.25 | -0.25 | A | Context |
 
 ## Timer
 - Q1-Q5: 20s

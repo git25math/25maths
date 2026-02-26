@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E2.3 Algebraic fractions
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply algebraic fractions methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply algebraic fractions methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[16, 7, 18, 15, 15]` is `71/5 = 14.2`.
+Example: solve `4x + 9 = 30` by inverse operations. Subtract `9` then divide by `4` to get `x = 5.25`.
 
 ## Practice (10)
-1. Find mean of `[12, 10, 12, 20, 13]`.
-2. Find median of `[10, 12, 12, 13, 20]`.
-3. Find range of `[12, 10, 12, 20, 13]`.
-4. A fair die is rolled. Find `P(score > 3)`.
-5. If `P(A)=0.7`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `65` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Simplify `6x + 7x - 4x`.
+2. Expand and simplify `6(x + 7)`.
+3. Factorise `6x + 42` fully.
+4. Solve `6x - 7 = 17`.
+5. When `x = 4`, evaluate `6x^2 - 7x + 4`.
+6. Solve the inequality `6x + 7 >= 28`.
+7. The nth term is `6n + 4`. Find term `4`.
+8. Rearrange `y = 6x - 7` to make `x` the subject.
+9. Solve `x^2 - 13x + 40 = 0`.
+10. Given `f(x)=3x^2-2x+1`, find `f(4)`.

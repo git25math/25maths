@@ -26,17 +26,107 @@ noindex: true
     </div>
 </section>
 
+<section class="py-6 bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Streak Widget -->
+        <div id="streak-widget" class="hidden flex items-center gap-4 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-2xl p-4 mb-4">
+            <div class="text-4xl" id="streak-icon">🔥</div>
+            <div>
+                <div class="text-2xl font-bold text-orange-700">
+                    <span id="streak-count">0</span> <span class="text-base font-semibold">day streak</span>
+                </div>
+                <div class="text-sm text-orange-600">
+                    Best: <span id="streak-best">0</span> days
+                    &middot; <span id="streak-status">Start your streak today!</span>
+                </div>
+            </div>
+            <div id="streak-freeze-btn" class="ml-auto hidden">
+                <button class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition">
+                    ❄️ Use Freeze
+                </button>
+            </div>
+        </div>
+
+        <!-- XP & Level Bar -->
+        <div id="xp-bar" class="hidden flex items-center gap-3 mb-4 bg-gradient-to-r from-purple-50 to-indigo-50 border border-purple-200 rounded-2xl p-4">
+            <div class="text-sm font-bold text-purple-700">
+                Lv.<span id="user-level">1</span>
+            </div>
+            <div class="text-xs font-semibold text-purple-600" id="level-title">Beginner</div>
+            <div class="flex-1 h-2.5 bg-gray-200 rounded-full overflow-hidden">
+                <div id="xp-progress" class="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full transition-all duration-700" style="width: 0%"></div>
+            </div>
+            <div class="text-xs text-gray-500 whitespace-nowrap">
+                <span id="xp-current">0</span> / <span id="xp-next">50</span> XP
+            </div>
+        </div>
+
+        <!-- Activity Heatmap -->
+        <div id="activity-heatmap" class="hidden bg-white border border-gray-200 rounded-2xl p-5 mb-4">
+            <h3 class="text-sm font-semibold text-gray-700 mb-3">Last 30 Days</h3>
+            <div class="grid grid-cols-10 gap-1" id="heatmap-grid">
+            </div>
+            <div class="flex justify-between text-xs text-gray-400 mt-2">
+                <span>Less</span>
+                <div class="flex gap-1">
+                    <span class="w-3 h-3 bg-gray-100 rounded-sm"></span>
+                    <span class="w-3 h-3 bg-green-200 rounded-sm"></span>
+                    <span class="w-3 h-3 bg-green-400 rounded-sm"></span>
+                    <span class="w-3 h-3 bg-green-600 rounded-sm"></span>
+                </div>
+                <span>More</span>
+            </div>
+        </div>
+
+        <!-- Recent Achievements -->
+        <div id="achievement-badges" class="hidden bg-white border border-gray-200 rounded-2xl p-5">
+            <h3 class="text-sm font-semibold text-gray-700 mb-3">Achievements</h3>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <a href="/membership/achievements.html" class="flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-sm font-medium text-amber-800 hover:bg-amber-100 transition">
+                <span>🏆</span> All Achievements
+            </a>
+            <a href="/membership/leaderboard.html" class="flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-3 text-sm font-medium text-yellow-800 hover:bg-yellow-100 transition">
+                <span>📊</span> Leaderboard
+            </a>
+            <a href="/membership/parent-dashboard.html" class="flex items-center gap-2 bg-indigo-50 border border-indigo-200 rounded-xl px-4 py-3 text-sm font-medium text-indigo-800 hover:bg-indigo-100 transition">
+                <span>👨‍👩‍👧</span> Parent View
+            </a>
+            <a href="/exercises/" class="flex items-center gap-2 bg-green-50 border border-green-200 rounded-xl px-4 py-3 text-sm font-medium text-green-800 hover:bg-green-100 transition">
+                <span>✏️</span> Practice Now
+            </a>
+        </div>
+    </div>
+</section>
+
 <section class="py-14 bg-blue-50 border-y border-blue-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <div>
                 <h2 class="text-3xl font-bold text-gray-900">Your Learning Snapshot</h2>
                 <p class="text-gray-600 mt-2" data-member-center-helper>Sign in to see your latest progress and weak-point summary.</p>
-                {% include bilingual/inline-note.html note="登录后可查看最近练习、错题标签与学习薄弱点摘要。" class="text-sm text-gray-600 mt-2" %}
             </div>
-            <span data-member-center-state class="inline-flex mt-4 sm:mt-0 items-center rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-700">
-                NOT SIGNED IN
-            </span>
+            <div class="mt-4 sm:mt-0 flex items-center gap-2">
+                <span data-member-center-state class="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-700">
+                    NOT SIGNED IN
+                </span>
+                <button
+                    type="button"
+                    data-member-login
+                    class="inline-flex items-center rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition"
+                >
+                    Log in
+                </button>
+                <button
+                    type="button"
+                    data-member-logout
+                    class="hidden inline-flex items-center rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition"
+                >
+                    Log out
+                </button>
+            </div>
         </div>
 
         <div class="grid md:grid-cols-4 gap-4 mt-8">
@@ -81,6 +171,29 @@ noindex: true
     </div>
 </section>
 
+<section class="py-14 bg-white border-y border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-6">
+            <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-gray-900">Targeted Practice Plan</h3>
+                <p class="text-sm text-gray-600 mt-2">Recommendations adapt to your recent weak-point tags.</p>
+                <div data-reco-root class="mt-4 space-y-3">
+                    <p class="text-sm text-gray-500">Sign in to see your weak-point learning plan.</p>
+                </div>
+            </article>
+            <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                <h3 class="text-xl font-bold text-gray-900">Member Benefits</h3>
+                <p class="text-sm text-gray-600 mt-2">Paid members unlock coupon and subscription offers.</p>
+                <div data-benefits-root class="mt-4"></div>
+                <div data-visible="paid-only" class="hidden mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
+                    <p class="text-sm font-semibold text-amber-900">Paid-only unlocks enabled</p>
+                    <p class="mt-1 text-sm text-amber-800">Your account can access member-only discount paths.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
@@ -115,6 +228,10 @@ noindex: true
 </section>
 
 <script src="{{ '/assets/js/member_center.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/member_recommendations.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/member_benefits.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/streak_widget.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/achievement_toast.js' | relative_url }}"></script>
 
 <section class="py-16 bg-gray-50 border-y">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

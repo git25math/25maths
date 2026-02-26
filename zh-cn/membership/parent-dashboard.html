@@ -1,0 +1,438 @@
+---
+layout: global
+title: 家长仪表盘 — 学生学习进度
+description: "实时查看孩子的 IGCSE 数学练习进度、每周表现和成就里程碑。"
+active_global: membership
+lang: zh-CN
+noindex: true
+supabase: true
+permalink: /zh-cn/membership/parent-dashboard.html
+lang_links:
+  en: /membership/parent-dashboard.html
+  zh-CN: /zh-cn/membership/parent-dashboard.html
+---
+
+<section class="bg-gradient-to-br from-indigo-600 to-purple-800 text-white py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-xs tracking-wider uppercase text-indigo-200 mb-2">家长专区</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-3">学生学习进度仪表盘</h1>
+        <p class="text-base text-indigo-100 max-w-2xl">
+            查看孩子的每周练习情况、各知识点表现和成就里程碑。
+        </p>
+    </div>
+</section>
+
+<!-- 登录入口 -->
+<section id="auth-gate" class="py-16 bg-white">
+    <div class="max-w-md mx-auto px-4 text-center">
+        <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+        </div>
+        <h2 class="text-xl font-bold text-gray-900 mb-2">登录查看学习进度</h2>
+        <p class="text-sm text-gray-600 mb-6">请使用与孩子 25Maths 账户关联的邮箱地址。</p>
+        <form id="parent-login-form" class="space-y-4">
+            <input id="parent-email" type="email" placeholder="parent@example.com" required
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            <button type="submit"
+                    class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                发送登录链接
+            </button>
+        </form>
+        <p id="parent-login-msg" class="mt-3 text-sm text-gray-500 hidden"></p>
+    </div>
+</section>
+
+<!-- 仪表盘（登录后显示） -->
+<section id="parent-dashboard" class="py-10 bg-gray-50 hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+        <!-- 学生信息 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center text-2xl font-bold text-indigo-600"
+                     id="student-avatar">S</div>
+                <div>
+                    <h2 id="student-name" class="text-xl font-bold text-gray-900">学生</h2>
+                    <p id="student-meta" class="text-sm text-gray-500">正在加载报告数据...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 周汇总卡片 -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">练习次数</p>
+                <p id="stat-sessions" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-sessions-delta" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">做题量</p>
+                <p id="stat-questions" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-questions-delta" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">正确率</p>
+                <p id="stat-accuracy" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-accuracy-delta" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">连续打卡</p>
+                <p id="stat-streak" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-streak-best" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+        </div>
+
+        <!-- 练习时间 + 经验值 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+                <p class="text-sm text-gray-500 mb-1">本周练习时长</p>
+                <p id="stat-time" class="text-2xl font-bold text-gray-900">—</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+                <p class="text-sm text-gray-500 mb-1">经验等级</p>
+                <div class="flex items-center gap-3 mt-1">
+                    <span id="stat-level" class="text-2xl font-bold text-indigo-600">—</span>
+                    <div class="flex-1">
+                        <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                            <div id="stat-xp-bar" class="h-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all" style="width:0%"></div>
+                        </div>
+                        <p id="stat-xp-text" class="text-xs text-gray-400 mt-1">0 / 0 XP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 知识点表现 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-4">各知识点表现</h3>
+            <div id="topic-table-container">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-gray-100">
+                            <th class="text-left py-2 text-gray-500 font-medium">知识点</th>
+                            <th class="text-right py-2 text-gray-500 font-medium">题数</th>
+                            <th class="text-right py-2 text-gray-500 font-medium">正确率</th>
+                            <th class="text-right py-2 text-gray-500 font-medium">趋势</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topic-table-body">
+                        <tr><td colspan="4" class="py-8 text-center text-gray-400">加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 薄弱环节 -->
+        <div class="bg-white rounded-xl border border-red-100 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">需要关注的薄弱环节</h3>
+            <p class="text-sm text-gray-500 mb-4">孩子本周错误最多的知识点。</p>
+            <div id="weak-areas-list" class="space-y-3">
+                <p class="text-sm text-gray-400">加载中...</p>
+            </div>
+        </div>
+
+        <!-- 最近成就 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-4">最近获得的成就</h3>
+            <div id="parent-achievements" class="flex flex-wrap gap-3">
+                <p class="text-sm text-gray-400">加载中...</p>
+            </div>
+        </div>
+
+        <!-- 建议 -->
+        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-100 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">下周建议</h3>
+            <ul id="recommendations-list" class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                    <span class="text-indigo-500 mt-0.5">&#9744;</span>
+                    <span>正在生成建议...</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 报告周期 -->
+        <p id="report-period-label" class="text-xs text-gray-400 text-center"></p>
+    </div>
+</section>
+
+<script>
+(function () {
+  'use strict';
+
+  const LEVEL_THRESHOLDS = [
+    { level: 1, title: '初学者', xp: 0 },
+    { level: 2, title: '学习者', xp: 50 },
+    { level: 3, title: '实践者', xp: 200 },
+    { level: 4, title: '成就者', xp: 500 },
+    { level: 5, title: '学者', xp: 1000 },
+    { level: 6, title: '专家', xp: 2000 },
+    { level: 7, title: '大师', xp: 4000 },
+    { level: 8, title: '宗师', xp: 8000 },
+    { level: 9, title: '传奇', xp: 16000 },
+    { level: 10, title: 'IGCSE冠军', xp: 32000 },
+  ];
+
+  // Topic name mapping EN -> CN
+  const TOPIC_CN = {
+    algebra: '代数',
+    number: '数与运算',
+    geometry: '几何',
+    trigonometry: '三角函数',
+    statistics: '统计',
+    probability: '概率',
+    functions: '函数与图像',
+    mensuration: '度量',
+    vectors: '向量',
+    matrices: '矩阵',
+    sets: '集合',
+    transformation: '变换',
+    unknown: '其他',
+  };
+
+  function getLevelInfo(totalXp) {
+    let current = LEVEL_THRESHOLDS[0];
+    let next = LEVEL_THRESHOLDS[1] || null;
+    for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
+      if (totalXp >= LEVEL_THRESHOLDS[i].xp) {
+        current = LEVEL_THRESHOLDS[i];
+        next = LEVEL_THRESHOLDS[i + 1] || null;
+        break;
+      }
+    }
+    const xpInLevel = totalXp - current.xp;
+    const xpForNext = next ? (next.xp - current.xp) : 0;
+    const pct = next ? Math.min(100, Math.round((xpInLevel / xpForNext) * 100)) : 100;
+    return { level: current.level, title: current.title, totalXp, nextXp: next ? next.xp : current.xp, pct };
+  }
+
+  function topicCn(name) {
+    return TOPIC_CN[name] || name;
+  }
+
+  function deltaText(delta, suffix) {
+    if (delta > 0) return `比上周 +${delta}${suffix}`;
+    if (delta < 0) return `比上周 ${delta}${suffix}`;
+    return '与上周持平';
+  }
+
+  function accuracyColor(pct) {
+    if (pct >= 80) return 'text-green-600';
+    if (pct >= 50) return 'text-yellow-600';
+    return 'text-red-600';
+  }
+
+  function renderReport(report) {
+    const s = report.summary;
+    const el = (id) => document.getElementById(id);
+
+    const name = report.student_name || '学生';
+    if (el('student-avatar')) el('student-avatar').textContent = name.charAt(0).toUpperCase();
+    if (el('student-name')) el('student-name').textContent = name;
+    if (el('student-meta')) el('student-meta').textContent = `报告周期：${report.report_period.start} 至 ${report.report_period.end}`;
+
+    if (el('stat-sessions')) el('stat-sessions').textContent = s.sessions;
+    if (el('stat-sessions-delta')) el('stat-sessions-delta').textContent = deltaText(s.sessions_delta, '次');
+    if (el('stat-questions')) el('stat-questions').textContent = s.questions_answered;
+    if (el('stat-questions-delta')) el('stat-questions-delta').textContent = deltaText(s.questions_delta, '题');
+    if (el('stat-accuracy')) {
+      el('stat-accuracy').textContent = s.accuracy_pct + '%';
+      el('stat-accuracy').className = `text-3xl font-bold mt-1 ${accuracyColor(s.accuracy_pct)}`;
+    }
+    if (el('stat-accuracy-delta')) el('stat-accuracy-delta').textContent = deltaText(s.accuracy_delta, '%');
+    if (el('stat-streak')) el('stat-streak').textContent = report.streak.current + ' 天';
+    if (el('stat-streak-best')) el('stat-streak-best').textContent = `最佳：${report.streak.best} 天`;
+    if (el('stat-time')) el('stat-time').textContent = s.time_practiced || '0分钟';
+
+    const info = getLevelInfo(report.xp.total);
+    if (el('stat-level')) el('stat-level').textContent = `Lv.${info.level} ${info.title}`;
+    if (el('stat-xp-bar')) el('stat-xp-bar').style.width = `${info.pct}%`;
+    if (el('stat-xp-text')) el('stat-xp-text').textContent = `${info.totalXp} / ${info.nextXp} XP`;
+
+    const tbody = el('topic-table-body');
+    if (tbody) {
+      const topics = report.topic_performance || [];
+      if (topics.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" class="py-6 text-center text-gray-400">本周暂无知识点数据</td></tr>';
+      } else {
+        tbody.innerHTML = topics.map(t => `
+          <tr class="border-b border-gray-50">
+            <td class="py-3 font-medium text-gray-800">${topicCn(t.topic)}</td>
+            <td class="py-3 text-right text-gray-600">${t.total}</td>
+            <td class="py-3 text-right ${accuracyColor(t.accuracy)} font-semibold">${t.accuracy}%</td>
+            <td class="py-3 text-right">${t.trend || '→'}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    const weakList = el('weak-areas-list');
+    if (weakList) {
+      const mistakes = report.top_mistakes || [];
+      if (mistakes.length === 0) {
+        weakList.innerHTML = '<p class="text-sm text-green-600 font-medium">本周未检测到明显薄弱环节，表现很好！</p>';
+      } else {
+        weakList.innerHTML = mistakes.map(m => `
+          <div class="flex items-center justify-between bg-red-50 rounded-lg px-4 py-3">
+            <div>
+              <p class="font-medium text-gray-800">${topicCn(m.skill_tag.split('-')[0])} — ${m.skill_tag.replace(/-/g, ' ')}</p>
+              <p class="text-xs text-gray-500">本周错误 ${m.count} 次</p>
+            </div>
+            <a href="/exercises/?board=cie0580" class="text-xs bg-indigo-600 text-white px-3 py-1 rounded-full hover:bg-indigo-700 transition">去练习</a>
+          </div>
+        `).join('');
+      }
+    }
+
+    const achContainer = el('parent-achievements');
+    if (achContainer) {
+      const achievements = report.recent_achievements || [];
+      if (achievements.length === 0) {
+        achContainer.innerHTML = '<p class="text-sm text-gray-400">本周暂无新成就。</p>';
+      } else {
+        achContainer.innerHTML = achievements.map(a => {
+          const tierColor = {
+            bronze: 'border-amber-500 bg-amber-50',
+            silver: 'border-gray-400 bg-gray-50',
+            gold: 'border-yellow-500 bg-yellow-50',
+            diamond: 'border-blue-400 bg-blue-50',
+          }[a.tier] || 'border-gray-300 bg-gray-50';
+          const title = a.title_cn || a.title_en || a.achievement_id;
+          return `<div class="flex flex-col items-center gap-1 p-3 border-2 rounded-xl ${tierColor} min-w-[80px]">
+            <span class="text-2xl">${a.icon || '🏆'}</span>
+            <span class="text-xs font-semibold text-gray-700 text-center">${title}</span>
+          </div>`;
+        }).join('');
+      }
+    }
+
+    const recList = el('recommendations-list');
+    if (recList) {
+      const recs = [];
+      const mistakes = report.top_mistakes || [];
+      if (mistakes.length > 0) {
+        recs.push(`重点关注 <strong>${topicCn(mistakes[0].skill_tag.split('-')[0])}</strong> — 本周错误 ${mistakes[0].count} 次`);
+      }
+      if (s.sessions < 5) {
+        recs.push('下周争取至少完成 5 次练习');
+      }
+      if (s.accuracy_pct < 70) {
+        recs.push('先复习薄弱知识点，再尝试新内容');
+      }
+      if (report.streak.current >= 7) {
+        recs.push('连续打卡势头很好！保持每日练习习惯');
+      } else if (report.streak.current > 0) {
+        recs.push('坚持打卡 — 争取连续 7 天');
+      } else {
+        recs.push('开始每日练习 — 持续练习才能巩固知识');
+      }
+      recs.push('尝试一个 <a href="/exercises/?board=cie0580" class="text-indigo-600 underline">新的互动练习</a> 增加多样性');
+
+      recList.innerHTML = recs.map(r => `
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-500 mt-0.5">&#9744;</span>
+          <span>${r}</span>
+        </li>
+      `).join('');
+    }
+
+    if (el('report-period-label')) {
+      el('report-period-label').textContent = `报告生成时间：${report.generated_at || '刚刚'} | 周期：${report.report_period.start} 至 ${report.report_period.end}`;
+    }
+  }
+
+  async function fetchReport(accessToken) {
+    const resp = await fetch('/api/v1/reports/weekly', {
+      headers: { authorization: `Bearer ${accessToken}` },
+    });
+    if (!resp.ok) throw new Error(`API 错误: ${resp.status}`);
+    return resp.json();
+  }
+
+  function showDashboard() {
+    const gate = document.getElementById('auth-gate');
+    const dash = document.getElementById('parent-dashboard');
+    if (gate) gate.classList.add('hidden');
+    if (dash) dash.classList.remove('hidden');
+  }
+
+  function showAuthGate() {
+    const gate = document.getElementById('auth-gate');
+    const dash = document.getElementById('parent-dashboard');
+    if (gate) gate.classList.remove('hidden');
+    if (dash) dash.classList.add('hidden');
+  }
+
+  async function init() {
+    if (!window.memberSupabase) {
+      showAuthGate();
+      return;
+    }
+
+    const form = document.getElementById('parent-login-form');
+    const emailInput = document.getElementById('parent-email');
+    const msgEl = document.getElementById('parent-login-msg');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = (emailInput.value || '').trim();
+        if (!email) return;
+
+        msgEl.textContent = '正在发送登录链接...';
+        msgEl.classList.remove('hidden', 'text-red-500');
+        msgEl.classList.add('text-gray-500');
+
+        try {
+          const { error } = await window.memberSupabase.auth.signInWithOtp({
+            email,
+            options: { emailRedirectTo: window.location.href },
+          });
+          if (error) throw error;
+          msgEl.textContent = '请查看邮箱，点击登录链接。';
+          msgEl.classList.add('text-green-600');
+          msgEl.classList.remove('text-gray-500');
+        } catch (err) {
+          msgEl.textContent = err.message || '发送失败，请重试。';
+          msgEl.classList.add('text-red-500');
+          msgEl.classList.remove('text-gray-500');
+        }
+      });
+    }
+
+    const { data: sessionData } = await window.memberSupabase.auth.getSession();
+    const session = sessionData?.session;
+
+    if (session && session.access_token) {
+      showDashboard();
+      try {
+        const report = await fetchReport(session.access_token);
+        report.student_name = session.user?.user_metadata?.display_name || session.user?.email?.split('@')[0] || '学生';
+        renderReport(report);
+      } catch (_err) {
+        document.getElementById('student-meta').textContent = '加载报告失败，请稍后重试。';
+      }
+    } else {
+      showAuthGate();
+    }
+
+    window.memberSupabase.auth.onAuthStateChange(async (_event, session) => {
+      if (session && session.access_token) {
+        showDashboard();
+        try {
+          const report = await fetchReport(session.access_token);
+          report.student_name = session.user?.user_metadata?.display_name || session.user?.email?.split('@')[0] || '学生';
+          renderReport(report);
+        } catch (_err) {
+          document.getElementById('student-meta').textContent = '加载报告失败。';
+        }
+      } else {
+        showAuthGate();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+})();
+</script>

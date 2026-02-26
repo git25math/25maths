@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - E1.15 Time
 
 ## Kahoot Name
-CIE 0580 E1.15 | Time | EXTENDED TRACK
+CIE 0580 E1.15 | Time | Extended Track
 
 ## Kahoot Description
-E1.15 Time is an Extended-track practice set. This 15-question exam-style Kahoot focuses on typical high-mark traps and method accuracy, suitable for diagnostics, revision sprints, and independent follow-up practice.
+E1.15 Time exam-style practice for CIE 0580 (Extended). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-CIE0580, IGCSEMaths, KahootMaths, ExtendedTrack, E115, ExamStyle, time
+#CIE0580 #ExtendedTrack #Number #E115 #ExamStyleMaths

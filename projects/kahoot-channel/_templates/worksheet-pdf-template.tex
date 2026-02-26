@@ -1,0 +1,225 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=14mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{eso-pic}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{BrandPrimary}{HTML}{A02050}   % warmer, slightly lighter maroon — less heavy on the eye
+\definecolor{BrandSecondary}{HTML}{4A7FD4} % softer muted blue — less corporate, more educational
+\definecolor{BrandGold}{HTML}{C9A56A}
+\definecolor{BrandSoft}{HTML}{F8F2E7}
+\definecolor{Ink}{HTML}{2D3748}            % slightly warmer charcoal for body text
+\definecolor{Muted}{HTML}{8794A3}          % lighter muted — gentler auxiliary text
+\definecolor{Line}{HTML}{E2E8F0}           % warm-tinted light border
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\footnotesize\color{Muted}\href{https://www.25maths.com}{www.25maths.com}}
+\newcommand{\SetFooterLabel}[1]{%
+  \fancyfoot[R]{\footnotesize\color{Muted}#1}%
+}
+\SetFooterLabel{Student Sheet 1/2}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\WorksheetTitle}{Number Arithmetic: BIDMAS, HCF, LCM}
+\newcommand{\WorksheetSubtitle}{Kahoot Extension Worksheet \;\textbar\; Topic ID: 01 \;\textbar\; Difficulty: Auto}
+\newcommand{\BoardLabel}{CIE 0580 / Edexcel 4MA1}
+
+\newcommand{\BrandFrame}{%
+  \AddToShipoutPictureBG{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \draw[BrandPrimary!70!white,line width=0.9pt,rounded corners=2.0mm] ([xshift=8mm,yshift=-8mm]current page.north west) rectangle ([xshift=-8mm,yshift=8mm]current page.south east);
+    \end{tikzpicture}%
+  }%
+}
+
+\newtcolorbox{topbandbox}{
+  colback=BrandSoft,
+  colframe=BrandGold,
+  arc=2.2mm,
+  boxrule=0.5pt,
+  left=2.2mm,right=2.2mm,top=1.7mm,bottom=1.7mm
+}
+
+\newtcolorbox{focusbox}{
+  colback=BrandSecondary!4!white, % very gentle blue tint — softer than pure blue!3
+  colframe=BrandSecondary!55!white, % reduced border saturation for a calmer feel
+  arc=2.0mm,   % rounder corners — friendlier visual
+  boxrule=0.5pt,
+  left=2.2mm,right=2.2mm,top=1.6mm,bottom=1.6mm
+}
+
+\newtcolorbox{notesbox}{
+  colback=BrandSoft!50!white,  % slightly softer cream
+  colframe=BrandGold!70!white, % lighter gold border — less heavy
+  arc=2.0mm,   % match focusbox rounding
+  boxrule=0.4pt,
+  left=2.2mm,right=2.2mm,top=1.4mm,bottom=1.4mm
+}
+
+\newtcolorbox{fieldbox}[1]{
+  colback=white,
+  colframe=Line,
+  arc=1.8mm,       % rounder to match overall softness
+  boxrule=0.4pt,
+  left=1.8mm,right=1.8mm,top=1.1mm,bottom=1.1mm,
+  height=14.5mm,
+  valign=center,
+  halign=left,
+  fonttitle=\footnotesize\bfseries,
+  coltitle=Muted,
+  title={#1}
+}
+
+\newcommand{\ansline}{\textcolor{Line!80!white}{\rule{\linewidth}{0.24pt}}} % thinner, slightly faded lines
+\newcommand{\answerlines}[1]{%
+  \vspace{1.4mm}
+  \begingroup
+  \setlength{\parskip}{2.4mm}  % more vertical space between lines — less cramped
+  \setlength{\parindent}{0pt}
+  \foreach \n in {1,...,#1}{\ansline\par}
+  \endgroup
+}
+
+\newtcolorbox{qbox}[2][]{
+  enhanced,
+  breakable,
+  width=\linewidth,
+  colback=white,
+  colframe=Line,
+  arc=2.0mm,          % rounder corners — consistent with focus/notes boxes
+  boxrule=0.4pt,      % slightly thinner border — lighter visual weight
+  left=2.4mm,right=2.4mm,top=1.8mm,bottom=2.0mm,  % a touch more breathing room
+  title={\textbf{#2}},
+  coltitle=BrandPrimary,
+  fonttitle=\bfseries\normalsize,
+  before upper={\RaggedRight\setlength{\parindent}{0pt}\hyphenpenalty=10000\exhyphenpenalty=10000\emergencystretch=2em},
+  #1
+}
+
+\begin{document}
+\color{Ink}
+\BrandFrame
+
+\begin{topbandbox}
+\begin{minipage}[t]{0.56\textwidth}
+\textbf{\color{BrandPrimary}25Maths Worksheet}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+\raggedleft\footnotesize\color{Muted}
+Board: \BoardLabel\\
+Format: Printable A4 PDF
+\end{minipage}
+\end{topbandbox}
+
+\vspace{2mm}
+\begin{center}
+{\LARGE\bfseries\color{BrandPrimary}\WorksheetTitle}\par
+\vspace{0.6mm}
+{\small\bfseries\color{Muted}\WorksheetSubtitle}
+\end{center}
+
+\vspace{3mm}
+\noindent
+\begin{minipage}[t]{0.32\textwidth}
+\begin{fieldbox}{Student Name}\vspace*{2.8mm}\end{fieldbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\begin{fieldbox}{Class / Group}\vspace*{2.8mm}\end{fieldbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\begin{fieldbox}{Date}\vspace*{2.8mm}\end{fieldbox}
+\end{minipage}
+
+\vspace{2mm}
+\begin{focusbox}
+\textbf{Syllabus focus:} Apply order of operations, calculate HCF/LCM, and convert between ordinary form and standard form using exam-style wording.
+\end{focusbox}
+
+\vspace{1.5mm}
+\begin{notesbox}
+\textbf{Exam reminder:} Powers first, then multiplication/division, then addition/subtraction. In word problems, decide whether you need \textbf{HCF} (grouping) or \textbf{LCM} (cycle timing).
+\end{notesbox}
+
+\vspace{2mm}
+\noindent{\large\bfseries Practice (10 Questions)}
+
+\begin{qbox}{Q1 (BIDMAS)}
+Evaluate ~$14-3\times2$~.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q2 (Brackets)}
+Evaluate ~$\left(\frac{18}{3}\right)(5-2)$~.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q3 (HCF)}
+Find the highest common factor of ~$24$~ and ~$36$~.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q4 (LCM)}
+Find the lowest common multiple of ~$8$~ and ~$12$~.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q5 (Standard Form)}
+Write ~$0.0032$~ in standard form.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q6 (Powers of 10)}
+Write ~$7.5\times10^2$~ as an ordinary number.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q7 (Rounding)}
+Round ~$12.467$~ to ~$2$~ decimal places.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q8 (Integers)}
+Evaluate ~$20-(-4)$~.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q9 (Estimation)}
+Estimate ~$\dfrac{49.8}{10.1}$~.
+\answerlines{2}
+\end{qbox}
+
+\begin{qbox}{Q10 (LCM in Context)}
+Two buses leave every ~$15$~ min and ~$20$~ min. They leave together at 09:00. When is the next same departure time?
+\answerlines{3}
+\end{qbox}
+
+\vspace{1.5mm}
+\noindent{\large\bfseries Quick Answer Grid}
+
+\vspace{1.5mm}
+\setlength{\arrayrulewidth}{0.35pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.55}
+\noindent
+\begin{tabularx}{\linewidth}{|*{10}{>{\centering\arraybackslash}X|}}
+\hline
+Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 & Q8 & Q9 & Q10 \\
+\hline
+\ \ & \ \ & \ \ & \ \ & \ \ & \ \ & \ \ & \ \ & \ \ & \ \ \\
+\hline
+\end{tabularx}
+
+\end{document}

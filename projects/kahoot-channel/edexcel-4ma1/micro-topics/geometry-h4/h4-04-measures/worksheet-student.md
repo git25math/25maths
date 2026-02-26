@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply measures methods accurately in Edexcel 4MA1 Higher exam questions.
 
 ## Model example
-Example: area of a triangle with base `8` and height `4` is `1/2 x 8 x 4 = 16`.
+Example: area of a triangle with base `9` and height `6` is `1/2 x 9 x 6 = 27`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `53°` and `62°`.

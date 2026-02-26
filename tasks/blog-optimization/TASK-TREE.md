@@ -2,6 +2,13 @@
 
 ## Objective
 
+Run Blog optimization work in an isolated task tree, with explicit scope and traceable execution, to simplify homepage navigation and keep Blog discovery through lower-page entry points.
+
+## Scope
+
+1. Remove Blog from top navigation on homepage routes only: `/`, `/en/`, `/zh-cn/`.
+2. Keep homepage lower-page Blog entry points in the Latest Articles section.
+3. Keep Blog navigation behavior unchanged on non-home pages.
 Run Blog optimization work in an isolated task tree, with explicit scope and traceable execution, to simplify global navigation and keep Blog discovery through lower-page entry points.
 
 ## Scope
@@ -32,6 +39,7 @@ Run Blog optimization work in an isolated task tree, with explicit scope and tra
 - Phase 0: Task-tree setup - Completed
 - Phase 1: Homepage top-nav Blog removal - Completed
 - Phase 2: Regression check for homepage Blog lower entry - Completed
+
 - Phase 3: Site-wide top-nav Blog removal - Completed
 - Phase 4: Site-wide top-nav Support removal - Completed
 - Phase 5: Site-wide top-nav About removal - Completed

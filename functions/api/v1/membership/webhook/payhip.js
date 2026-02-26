@@ -1,60 +1,32 @@
-import { sha256Hex, constantTimeEqualHex } from '../../../../_lib/crypto.js';
+import {
+  constantTimeEqualHex,
+  getPayhipSignatureHeader,
+  hmacSha256Hex,
+  sha256Hex,
+} from '../../../../_lib/crypto.js';
 import { jsonResponse } from '../../../../_lib/http.js';
 import {
+  isPayhipActivationEvent,
+  isPayhipRevocationEvent,
+  mapPayhipMembershipStatus,
+  parsePayhipEmail,
+  parsePayhipEventId,
+  parsePayhipEventType,
+  parsePayhipPeriodEnd,
+  parsePayhipPeriodStart,
+  parsePayhipProductId,
+  parsePayhipProviderCustomerId,
+} from '../../../../_lib/payhip_events.js';
+import {
+  expireEntitlement,
   findAuthUserByEmail,
+  incrementPayhipEventAttempts,
   insertPayhipEventLog,
+  updatePayhipEventLog,
   upsertEntitlement,
   upsertMembershipStatus,
 } from '../../../../_lib/supabase_server.js';
 import { releaseRegistry } from '../../../../_lib/release_registry.js';
-
-function parseEventType(payload) {
-  return String(payload?.event_type || payload?.event || payload?.type || '').trim();
-}
-
-function parseEventId(payload) {
-  const raw = payload?.event_id || payload?.id || payload?.sale_id || payload?.subscription_id || '';
-  if (String(raw).trim()) return String(raw).trim();
-  return `payhip-${Date.now()}`;
-}
-
-function parseEmail(payload) {
-  return String(
-    payload?.customer_email ||
-    payload?.buyer_email ||
-    payload?.email ||
-    ''
-  ).trim().toLowerCase();
-}
-
-function mapMembershipStatus(eventType) {
-  const value = String(eventType || '').toLowerCase();
-  if (!value) return null;
-  if (value.includes('cancel')) return 'cancelled';
-  if (value.includes('pause')) return 'paused';
-  if (value.includes('sale') || value.includes('payment') || value.includes('created') || value.includes('renew')) {
-    return 'active';
-  }
-  return null;
-}
-
-function parsePeriodStart(payload) {
-  return payload?.period_start || payload?.subscription_start || payload?.created_at || null;
-}
-
-function parsePeriodEnd(payload) {
-  return payload?.period_end || payload?.subscription_end || payload?.next_billing_date || null;
-}
-
-function parseProductId(payload) {
-  const candidate = payload?.product_id || payload?.product?.id || payload?.listing_id || '';
-  return String(candidate || '').trim();
-}
-
-function parseProviderCustomerId(payload) {
-  const candidate = payload?.customer_id || payload?.subscription_id || payload?.member_id || '';
-  return String(candidate || '').trim();
-}
 
 function findReleasesByProductId(productId) {
   if (!productId) return [];
@@ -62,6 +34,28 @@ function findReleasesByProductId(productId) {
     return String(entry.status || '').toLowerCase() === 'active'
       && String(entry.payhip_product_id || '') === String(productId);
   });
+}
+
+async function verifyPayhipSignature(request, payload, rawBody, payhipCredential) {
+  const headerSignature = getPayhipSignatureHeader(request);
+  if (headerSignature) {
+    const computedHeaderSignature = await hmacSha256Hex(payhipCredential, rawBody);
+    return constantTimeEqualHex(headerSignature, computedHeaderSignature);
+  }
+
+  const payloadSignature = String(payload?.signature || '').trim();
+  if (!payloadSignature) return false;
+
+  const computedPayloadSignature = await sha256Hex(payhipCredential);
+  return constantTimeEqualHex(payloadSignature, computedPayloadSignature);
+}
+
+async function safeUpdatePayhipLog(env, providerEventId, patch) {
+  try {
+    return await updatePayhipEventLog(env, providerEventId, patch);
+  } catch (_error) {
+    return null;
+  }
 }
 
 export async function onRequestPost(context) {
@@ -89,39 +83,54 @@ export async function onRequestPost(context) {
     return jsonResponse({ error: 'Invalid JSON payload.' }, 400);
   }
 
-  const incomingSignature = String(payload?.signature || '').trim();
-  if (!incomingSignature) {
-    return jsonResponse({ error: 'Missing Payhip payload signature.' }, 403);
-  }
-
-  const computedSignature = await sha256Hex(payhipCredential);
-  if (!constantTimeEqualHex(incomingSignature, computedSignature)) {
+  const isValidSignature = await verifyPayhipSignature(request, payload, rawBody, payhipCredential);
+  if (!isValidSignature) {
     return jsonResponse({ error: 'Invalid webhook signature.' }, 403);
   }
 
-  const eventType = parseEventType(payload);
-  const providerEventId = parseEventId(payload);
-  const customerEmail = parseEmail(payload);
-  const status = mapMembershipStatus(eventType);
-  const providerCustomerId = parseProviderCustomerId(payload);
-  const productId = parseProductId(payload);
-  const periodStart = parsePeriodStart(payload);
-  const periodEnd = parsePeriodEnd(payload);
+  const eventType = parsePayhipEventType(payload);
+  const providerEventId = parsePayhipEventId(payload);
+  const customerEmail = parsePayhipEmail(payload);
+  const status = mapPayhipMembershipStatus(eventType, payload);
+  const providerCustomerId = parsePayhipProviderCustomerId(payload);
+  const productId = parsePayhipProductId(payload);
+  const periodStart = parsePayhipPeriodStart(payload);
+  const periodEnd = parsePayhipPeriodEnd(payload);
 
+  const now = new Date().toISOString();
+
+  let insertedLog = null;
   try {
-    await insertPayhipEventLog(env, {
+    insertedLog = await insertPayhipEventLog(env, {
       provider_event_id: providerEventId,
       provider: 'payhip',
       event_type: eventType || 'unknown',
       customer_email: customerEmail || null,
       payload,
-      processed_at: new Date().toISOString(),
+      processed_at: now,
     });
   } catch (error) {
     return jsonResponse({ error: `Failed logging webhook event: ${error.message}` }, 500);
   }
 
+  if (!insertedLog) {
+    await safeUpdatePayhipLog(env, providerEventId, {
+      handled_status: 'ignored',
+      handled_at: now,
+    });
+    return jsonResponse({
+      ok: true,
+      duplicate: true,
+      provider_event_id: providerEventId,
+    });
+  }
+
   if (!customerEmail) {
+    await safeUpdatePayhipLog(env, providerEventId, {
+      handled_status: 'pending',
+      attempts: 1,
+      last_error: 'missing_customer_email',
+    });
     return jsonResponse({
       accepted: true,
       reason: 'No customer email in webhook payload. Logged for manual reconciliation.',
@@ -133,10 +142,21 @@ export async function onRequestPost(context) {
   try {
     authUser = await findAuthUserByEmail(env, customerEmail);
   } catch (error) {
+    await incrementPayhipEventAttempts(env, providerEventId).catch(() => null);
+    await safeUpdatePayhipLog(env, providerEventId, {
+      handled_status: 'failed',
+      handled_at: new Date().toISOString(),
+      last_error: `find_auth_user_failed: ${error.message}`,
+    });
     return jsonResponse({ error: `Failed querying auth users: ${error.message}` }, 500);
   }
 
   if (!authUser) {
+    await safeUpdatePayhipLog(env, providerEventId, {
+      handled_status: 'pending',
+      attempts: 1,
+      last_error: 'user_not_found',
+    });
     return jsonResponse({
       accepted: true,
       reason: 'User not found in Supabase Auth yet. Logged for delayed reconciliation.',
@@ -145,44 +165,68 @@ export async function onRequestPost(context) {
     }, 202);
   }
 
-  if (status) {
-    try {
+  try {
+    const effectivePeriodEnd = status === 'cancelled' && !periodEnd ? now : periodEnd;
+
+    if (status) {
       await upsertMembershipStatus(env, {
         user_id: authUser.id,
         status,
         provider: 'payhip',
         provider_customer_id: providerCustomerId || null,
         period_start: periodStart,
-        period_end: periodEnd,
-        updated_at: new Date().toISOString(),
+        period_end: effectivePeriodEnd,
+        updated_at: now,
       });
-    } catch (error) {
-      return jsonResponse({ error: `Failed updating membership status: ${error.message}` }, 500);
     }
-  }
 
-  if (status === 'active' && productId) {
     const releases = findReleasesByProductId(productId);
-    for (const release of releases) {
-      try {
+    let grantedCount = 0;
+    let revokedCount = 0;
+
+    if (isPayhipActivationEvent(eventType) && productId) {
+      for (const release of releases) {
         await upsertEntitlement(env, {
           user_id: authUser.id,
           release_id: release.release_id,
           source: 'payhip',
-          granted_at: new Date().toISOString(),
-          expires_at: periodEnd,
+          granted_at: now,
+          expires_at: effectivePeriodEnd,
         });
-      } catch (error) {
-        return jsonResponse({ error: `Failed granting entitlement: ${error.message}` }, 500);
+        grantedCount += 1;
       }
     }
-  }
 
-  return jsonResponse({
-    ok: true,
-    provider_event_id: providerEventId,
-    user_id: authUser.id,
-    status_applied: status,
-    product_id: productId || null,
-  });
+    if (isPayhipRevocationEvent(eventType) && productId) {
+      for (const release of releases) {
+        await expireEntitlement(env, authUser.id, release.release_id, 'payhip', now);
+        revokedCount += 1;
+      }
+    }
+
+    await safeUpdatePayhipLog(env, providerEventId, {
+      handled_status: 'handled',
+      handled_at: now,
+      attempts: 1,
+      last_error: null,
+    });
+
+    return jsonResponse({
+      ok: true,
+      provider_event_id: providerEventId,
+      user_id: authUser.id,
+      status_applied: status,
+      product_id: productId || null,
+      entitlements_granted: grantedCount,
+      entitlements_revoked: revokedCount,
+    });
+  } catch (error) {
+    await incrementPayhipEventAttempts(env, providerEventId).catch(() => null);
+    await safeUpdatePayhipLog(env, providerEventId, {
+      handled_status: 'failed',
+      handled_at: new Date().toISOString(),
+      last_error: error.message,
+    });
+    return jsonResponse({ error: `Webhook processing failed: ${error.message}` }, 500);
+  }
 }

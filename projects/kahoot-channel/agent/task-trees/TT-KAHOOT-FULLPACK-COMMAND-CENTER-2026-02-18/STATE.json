@@ -1,0 +1,14 @@
+{
+  "updated_local": "2026-02-18 21:10:21 CST",
+  "health": "GREEN",
+  "cie": {
+    "total": 124,
+    "pending": 0,
+    "pass": 124
+  },
+  "edexcel": {
+    "total": 78,
+    "pending": 0,
+    "pass": 78
+  }
+}
