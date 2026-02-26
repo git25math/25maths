@@ -224,6 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/complete`, updatePayload);
         if (apiResult.ok) {
+            // Dispatch engagement events if API returned achievement/streak data
+            if (apiResult.data) {
+                dispatchEngagementEvents(apiResult.data);
+            }
             return;
         }
 
@@ -237,6 +241,32 @@ document.addEventListener('DOMContentLoaded', () => {
             .eq('user_id', cloudUserId);
         if (error) {
             cloudSessionCompleted = false;
+        }
+    }
+
+    function dispatchEngagementEvents(responseData) {
+        const newlyUnlocked = responseData.newly_unlocked;
+        const levelUp = responseData.level_up;
+
+        if ((Array.isArray(newlyUnlocked) && newlyUnlocked.length > 0) || levelUp) {
+            window.dispatchEvent(new CustomEvent('achievement-unlocked', {
+                detail: {
+                    newly_unlocked: newlyUnlocked || [],
+                    level_up: Boolean(levelUp),
+                    level_info: levelUp ? {
+                        level: responseData.level,
+                        title: `Level ${responseData.level}`,
+                    } : null,
+                    xp_earned: responseData.xp_earned || 0,
+                    total_xp: responseData.total_xp || 0,
+                },
+            }));
+        }
+
+        if (responseData.streak) {
+            window.dispatchEvent(new CustomEvent('streak-updated', {
+                detail: responseData.streak,
+            }));
         }
     }
 

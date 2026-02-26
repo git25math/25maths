@@ -5,7 +5,7 @@ function ensureEnv(env, keys) {
   }
 }
 
-function serviceHeaders(env) {
+export function serviceHeaders(env) {
   const apiKey = String(env.SUPABASE_SERVICE_ROLE_KEY);
   return {
     apikey: apiKey,
@@ -286,6 +286,59 @@ export async function listMemberBenefitOffers(env, options = {}) {
   });
 }
 
+export async function listRecentWrongAttempts(env, userId, options = {}) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const lookbackDays = Number(options.lookbackDays || 60);
+  const limit = Number(options.limit || 500);
+  const sinceIso = new Date(Date.now() - (Math.max(1, lookbackDays) * 24 * 60 * 60 * 1000)).toISOString();
+
+  const query = new URLSearchParams({
+    select: 'skill_tag,created_at',
+    user_id: `eq.${userId}`,
+    is_correct: 'eq.false',
+    created_at: `gte.${sinceIso}`,
+    order: 'created_at.desc',
+    limit: String(Number.isFinite(limit) ? limit : 500),
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/question_attempts?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`question_attempts list failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload : [];
+}
+
+export async function listRecentSessions(env, userId, options = {}) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const lookbackDays = Number(options.lookbackDays || 60);
+  const limit = Number(options.limit || 200);
+  const sinceIso = new Date(Date.now() - (Math.max(1, lookbackDays) * 24 * 60 * 60 * 1000)).toISOString();
+
+  const query = new URLSearchParams({
+    select: 'id,started_at,completed_at',
+    user_id: `eq.${userId}`,
+    started_at: `gte.${sinceIso}`,
+    order: 'started_at.desc',
+    limit: String(Number.isFinite(limit) ? limit : 200),
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/exercise_sessions?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`exercise_sessions list failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload : [];
+}
+
 export async function insertExerciseSession(env, row) {
   ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
   const url = `${env.SUPABASE_URL}/rest/v1/exercise_sessions`;
@@ -413,6 +466,279 @@ export async function upsertEntitlement(env, row) {
     throw new Error(`entitlements upsert failed: ${response.status} ${JSON.stringify(errorBody)}`);
   }
   return parseJsonResponse(response);
+}
+
+export async function expireEntitlement(env, userId, releaseId, source = 'payhip', expiresAt = null) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const effectiveExpiresAt = expiresAt || new Date().toISOString();
+  const query = new URLSearchParams({
+    user_id: `eq.${userId}`,
+    release_id: `eq.${releaseId}`,
+    source: `eq.${source}`,
+    select: 'id,user_id,release_id,source,expires_at',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/entitlements?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'PATCH',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'return=representation',
+    },
+    body: JSON.stringify({ expires_at: effectiveExpiresAt }),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`entitlements expire failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload : [];
+}
+
+// ── Engagement System Helpers ──────────────────────────────────────
+
+export async function fetchUserStreak(env, userId) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const query = new URLSearchParams({
+    select: 'user_id,current_streak,best_streak,last_active_date,freeze_available,freeze_used_at,total_active_days',
+    user_id: `eq.${userId}`,
+    limit: '1',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/user_streaks?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_streaks fetch failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : null;
+}
+
+export async function upsertUserStreak(env, row) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const url = `${env.SUPABASE_URL}/rest/v1/user_streaks?on_conflict=user_id`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'resolution=merge-duplicates,return=representation',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_streaks upsert failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
+export async function listUserDailyActivity(env, userId, options = {}) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const days = Number(options.days || 30);
+  const since = new Date();
+  since.setDate(since.getDate() - days);
+  const sinceStr = since.toISOString().slice(0, 10);
+
+  const query = new URLSearchParams({
+    select: 'activity_date,sessions_completed,questions_answered,correct_answers,total_time_seconds',
+    user_id: `eq.${userId}`,
+    activity_date: `gte.${sinceStr}`,
+    order: 'activity_date.desc',
+    limit: String(days + 1),
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/user_daily_activity?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_daily_activity list failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload : [];
+}
+
+export async function upsertUserDailyActivity(env, data) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+
+  // First try to fetch existing
+  const query = new URLSearchParams({
+    select: 'id,sessions_completed,questions_answered,correct_answers,total_time_seconds,skills_practiced',
+    user_id: `eq.${data.user_id}`,
+    activity_date: `eq.${data.activity_date}`,
+    limit: '1',
+  });
+  const fetchUrl = `${env.SUPABASE_URL}/rest/v1/user_daily_activity?${query.toString()}`;
+  const fetchResponse = await fetch(fetchUrl, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!fetchResponse.ok) {
+    const errorBody = await parseJsonResponse(fetchResponse);
+    throw new Error(`user_daily_activity fetch failed: ${fetchResponse.status} ${JSON.stringify(errorBody)}`);
+  }
+  const existing = await parseJsonResponse(fetchResponse);
+  const row = Array.isArray(existing) ? existing[0] || null : null;
+
+  if (row) {
+    const skills = Array.isArray(row.skills_practiced) ? [...row.skills_practiced] : [];
+    if (data.skill_tag && !skills.includes(data.skill_tag)) {
+      skills.push(data.skill_tag);
+    }
+    const patch = {
+      sessions_completed: (row.sessions_completed || 0) + (data.sessions_delta || 0),
+      questions_answered: (row.questions_answered || 0) + (data.questions_delta || 0),
+      correct_answers: (row.correct_answers || 0) + (data.correct_delta || 0),
+      total_time_seconds: (row.total_time_seconds || 0) + (data.time_delta || 0),
+      skills_practiced: skills,
+    };
+    const updateQuery = new URLSearchParams({
+      id: `eq.${row.id}`,
+      select: 'id,sessions_completed,questions_answered,correct_answers,total_time_seconds,skills_practiced',
+    });
+    const updateUrl = `${env.SUPABASE_URL}/rest/v1/user_daily_activity?${updateQuery.toString()}`;
+    const updateResponse = await fetch(updateUrl, {
+      method: 'PATCH',
+      headers: {
+        ...serviceHeaders(env),
+        Prefer: 'return=representation',
+      },
+      body: JSON.stringify(patch),
+    });
+    if (!updateResponse.ok) {
+      const errorBody = await parseJsonResponse(updateResponse);
+      throw new Error(`user_daily_activity update failed: ${updateResponse.status} ${JSON.stringify(errorBody)}`);
+    }
+    const result = await parseJsonResponse(updateResponse);
+    return Array.isArray(result) ? result[0] || patch : patch;
+  }
+
+  const newRow = {
+    user_id: data.user_id,
+    activity_date: data.activity_date,
+    sessions_completed: data.sessions_delta || 0,
+    questions_answered: data.questions_delta || 0,
+    correct_answers: data.correct_delta || 0,
+    total_time_seconds: data.time_delta || 0,
+    skills_practiced: data.skill_tag ? [data.skill_tag] : [],
+  };
+  const insertUrl = `${env.SUPABASE_URL}/rest/v1/user_daily_activity`;
+  const insertResponse = await fetch(insertUrl, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'return=representation',
+    },
+    body: JSON.stringify(newRow),
+  });
+  if (!insertResponse.ok) {
+    const errorBody = await parseJsonResponse(insertResponse);
+    throw new Error(`user_daily_activity insert failed: ${insertResponse.status} ${JSON.stringify(errorBody)}`);
+  }
+  const result = await parseJsonResponse(insertResponse);
+  return Array.isArray(result) ? result[0] || newRow : newRow;
+}
+
+export async function fetchUserXp(env, userId) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const query = new URLSearchParams({
+    select: 'total_xp,level',
+    user_id: `eq.${userId}`,
+    limit: '1',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/user_xp?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_xp fetch failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : null;
+}
+
+export async function upsertUserXp(env, row) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const url = `${env.SUPABASE_URL}/rest/v1/user_xp?on_conflict=user_id`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'resolution=merge-duplicates,return=representation',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_xp upsert failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
+export async function listUserAchievements(env, userId) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const query = new URLSearchParams({
+    select: 'achievement_id,unlocked_at,notified',
+    user_id: `eq.${userId}`,
+    order: 'unlocked_at.desc',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/user_achievements?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_achievements list failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload : [];
+}
+
+export async function insertUserAchievement(env, row) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const url = `${env.SUPABASE_URL}/rest/v1/user_achievements?on_conflict=user_id,achievement_id`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'resolution=ignore-duplicates,return=representation',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`user_achievements insert failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
+export async function listAchievementDefinitions(env) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const query = new URLSearchParams({
+    select: 'id,title_en,title_cn,description_en,description_cn,icon,tier,category,criteria,xp_reward,is_secret,is_active,sort_order',
+    is_active: 'eq.true',
+    order: 'sort_order.asc',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/achievement_definitions?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`achievement_definitions list failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload : [];
 }
 
 export async function createSignedStorageUrl(env, assetKey, ttlSeconds = 600) {

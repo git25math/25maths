@@ -3,6 +3,14 @@ import {
   completeExerciseSession,
   fetchExerciseSession,
   getUserFromAccessToken,
+  upsertUserDailyActivity,
+  upsertUserStreak,
+  fetchUserStreak,
+  fetchUserXp,
+  upsertUserXp,
+  listUserAchievements,
+  listAchievementDefinitions,
+  insertUserAchievement,
 } from '../../../../../_lib/supabase_server.js';
 
 function parseInteger(value) {
@@ -94,12 +102,170 @@ export async function onRequestPost(context) {
     return jsonResponse({ error: 'Failed completing exercise session.' }, 500);
   }
 
-  return jsonResponse({
+  // ── Engagement System Integration (best-effort) ──
+  let engagement = null;
+  try {
+    engagement = await processEngagement(env, authUser.id, {
+      score,
+      question_count: questionCount,
+      duration_seconds: durationSeconds || 0,
+      exercise_slug: session.exercise_slug || '',
+    });
+  } catch (_error) {
+    // Engagement processing is best-effort — session completion should not fail
+    engagement = null;
+  }
+
+  const response = {
     session_id: updated.id,
     completed_at: updated.completed_at,
     score: updated.score,
     question_count: updated.question_count,
     duration_seconds: updated.duration_seconds,
     already_completed: false,
+  };
+
+  if (engagement) {
+    response.streak = engagement.streak;
+    response.newly_unlocked = engagement.newly_unlocked;
+    response.xp_earned = engagement.xp_earned;
+    response.total_xp = engagement.total_xp;
+    response.level = engagement.level;
+    response.level_up = engagement.level_up;
+  }
+
+  return jsonResponse(response);
+}
+
+function formatDateStr(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+function subtractDays(dateStr, n) {
+  const d = new Date(dateStr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() - n);
+  return formatDateStr(d);
+}
+
+async function processEngagement(env, userId, sessionData) {
+  const today = formatDateStr(new Date());
+
+  // 1. Update daily activity
+  const activity = await upsertUserDailyActivity(env, {
+    user_id: userId,
+    activity_date: today,
+    sessions_delta: 1,
+    questions_delta: sessionData.question_count,
+    correct_delta: sessionData.score,
+    time_delta: sessionData.duration_seconds,
+    skill_tag: sessionData.exercise_slug,
   });
+
+  // 2. Update streak
+  const existingStreak = await fetchUserStreak(env, userId) || {
+    user_id: userId,
+    current_streak: 0,
+    best_streak: 0,
+    last_active_date: null,
+    freeze_available: false,
+    total_active_days: 0,
+  };
+
+  const qualifies = (activity.sessions_completed || 0) >= 1 && (activity.questions_answered || 0) >= 5;
+  let streak = { ...existingStreak };
+
+  if (qualifies && streak.last_active_date !== today) {
+    const yesterday = subtractDays(today, 1);
+    if (streak.last_active_date === yesterday) {
+      streak.current_streak += 1;
+    } else if (streak.freeze_available && streak.last_active_date === subtractDays(today, 2)) {
+      streak.current_streak += 1;
+      streak.freeze_available = false;
+    } else {
+      streak.current_streak = 1;
+    }
+    streak.last_active_date = today;
+    streak.best_streak = Math.max(streak.best_streak, streak.current_streak);
+    streak.total_active_days += 1;
+    if (streak.current_streak > 0 && streak.current_streak % 7 === 0) {
+      streak.freeze_available = true;
+    }
+    await upsertUserStreak(env, {
+      user_id: userId,
+      current_streak: streak.current_streak,
+      best_streak: streak.best_streak,
+      last_active_date: streak.last_active_date,
+      freeze_available: streak.freeze_available,
+      total_active_days: streak.total_active_days,
+    });
+  }
+
+  // 3. Evaluate achievements
+  const [xpRecord, existingAchievements, allDefinitions] = await Promise.all([
+    fetchUserXp(env, userId),
+    listUserAchievements(env, userId),
+    listAchievementDefinitions(env),
+  ]);
+
+  const existingIds = new Set(existingAchievements.map(a => a.achievement_id));
+  const accuracy = sessionData.question_count > 0
+    ? Math.round((sessionData.score / sessionData.question_count) * 100)
+    : 0;
+
+  let xpEarned = 10;
+  if (accuracy === 100 && sessionData.question_count > 0) xpEarned += 25;
+  if (qualifies) xpEarned += 5;
+
+  const newlyUnlocked = [];
+  for (const def of allDefinitions) {
+    if (existingIds.has(def.id) || !def.is_active) continue;
+    if (!def.criteria || !def.criteria.type) continue;
+
+    let met = false;
+    if (def.criteria.type === 'streak') {
+      met = streak.current_streak >= (def.criteria.min_days || 0);
+    } else if (def.criteria.type === 'volume') {
+      met = (activity.sessions_completed || 0) >= (def.criteria.min_sessions || 0);
+    }
+    // Other criteria types require aggregate queries — skip for inline check
+
+    if (met) {
+      try {
+        await insertUserAchievement(env, { user_id: userId, achievement_id: def.id });
+        xpEarned += (def.xp_reward || 15);
+        newlyUnlocked.push({
+          id: def.id,
+          title: def.title_en || def.id,
+          title_cn: def.title_cn || '',
+          icon: def.icon || '🏆',
+          tier: def.tier || 'bronze',
+          xp_earned: def.xp_reward || 15,
+        });
+        existingIds.add(def.id);
+      } catch (_e) { /* duplicate — safe to ignore */ }
+    }
+  }
+
+  // 4. Update XP
+  const previousXp = xpRecord?.total_xp || 0;
+  const newTotalXp = previousXp + xpEarned;
+  const thresholds = [0, 50, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000];
+  let newLevel = 1;
+  for (let i = thresholds.length - 1; i >= 0; i--) {
+    if (newTotalXp >= thresholds[i]) { newLevel = i + 1; break; }
+  }
+  const previousLevel = xpRecord?.level || 1;
+  await upsertUserXp(env, { user_id: userId, total_xp: newTotalXp, level: newLevel });
+
+  return {
+    streak: { current_streak: streak.current_streak, best_streak: streak.best_streak },
+    newly_unlocked: newlyUnlocked,
+    xp_earned: xpEarned,
+    total_xp: newTotalXp,
+    level: newLevel,
+    level_up: newLevel > previousLevel,
+  };
 }

@@ -3,14 +3,6 @@ title: "Interactive Exercises"
 subtitle: "Find practice by exam board, tier, and syllabus code."
 layout: "global"
 active_global: exercises
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /exercises/
-  - code: zh-CN
-    label: 简体
-    url: /zh-cn/exercises/
 ---
 
 {% assign sorted_exercises = site.exercises | sort: "subtopic_id" %}
@@ -30,11 +22,13 @@ lang_links:
         <p class="text-xs uppercase tracking-wider text-gray-500">L0 Interactive Practice Hub</p>
         <h1 class="text-4xl font-bold text-gray-900">{{ page.title }}</h1>
         {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
+        <p data-bilingual-block class="text-sm text-gray-600 mt-1">按考试局、层级和考纲代码快速筛选练习。</p>
         <div class="mt-4 flex flex-wrap gap-2 text-sm">
             <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 font-semibold text-emerald-700">CIE 0580: {{ cie_count }}</span>
             <span class="inline-flex items-center rounded-full border edx-soft-border edx-soft-bg px-3 py-1 font-semibold edx-soft-text">Edexcel 4MA1: {{ edexcel_count }}</span>
             <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 font-semibold text-blue-700">Total: {{ sorted_exercises | size }}</span>
         </div>
+        <p data-bilingual-block class="text-sm text-gray-600 mt-2">总计：{{ sorted_exercises | size }} 组互动练习，可按条件快速筛选。</p>
         <div class="mt-4 flex flex-wrap gap-3">
             <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">Open CIE Kahoot Directory</a>
             <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">Open Edexcel Kahoot Directory</a>
@@ -59,6 +53,7 @@ lang_links:
         <div class="grid gap-4 md:grid-cols-4">
             <label class="block">
                 <span class="text-sm font-semibold text-gray-700">Exam Board</span>
+                <span data-bilingual-block class="block text-xs text-gray-500 mt-1">考试局</span>
                 <select id="exercise-filter-board" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
                     <option value="all">All Boards</option>
                     <option value="cie0580">CIE 0580</option>
@@ -67,6 +62,7 @@ lang_links:
             </label>
             <label class="block">
                 <span class="text-sm font-semibold text-gray-700">Tier</span>
+                <span data-bilingual-block class="block text-xs text-gray-500 mt-1">层级</span>
                 <select id="exercise-filter-tier" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
                     <option value="all">All Tiers</option>
                     <option value="core">Core</option>
@@ -77,6 +73,7 @@ lang_links:
             </label>
             <label class="block">
                 <span class="text-sm font-semibold text-gray-700">Search</span>
+                <span data-bilingual-block class="block text-xs text-gray-500 mt-1">关键词搜索</span>
                 <input id="exercise-filter-query" type="text" placeholder="e.g. H4-08, fractions, circle properties" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
             </label>
             <div class="block md:self-end">
@@ -86,6 +83,7 @@ lang_links:
     </section>
 
     <p id="exercise-filter-summary" class="mt-6 text-sm text-gray-600">Showing {{ sorted_exercises | size }} exercises.</p>
+    <p data-bilingual-block class="mt-1 text-sm text-gray-600">开启双语支持后，可对照中文说明快速定位题组。</p>
     <section id="exercise-grid" class="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {% for exercise in sorted_exercises %}
             {% assign board_key = exercise.subtopic_id | split: ":" | first %}

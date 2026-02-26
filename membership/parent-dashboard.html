@@ -1,0 +1,433 @@
+---
+layout: global
+title: Parent Dashboard — Student Progress
+description: "Monitor your child's IGCSE Maths practice progress, weekly performance, and achievements."
+active_global: membership
+lang: en
+noindex: true
+supabase: true
+lang_links:
+  en: /membership/parent-dashboard.html
+  zh-CN: /zh-cn/membership/parent-dashboard.html
+---
+
+<section class="bg-gradient-to-br from-indigo-600 to-purple-800 text-white py-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-xs tracking-wider uppercase text-indigo-200 mb-2">Parent Portal</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-3">Student Progress Dashboard</h1>
+        <p class="text-base text-indigo-100 max-w-2xl">
+            View your child's weekly practice summary, topic performance, and achievement milestones.
+        </p>
+    </div>
+</section>
+
+<!-- Auth Gate -->
+<section id="auth-gate" class="py-16 bg-white">
+    <div class="max-w-md mx-auto px-4 text-center">
+        <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+        </div>
+        <h2 class="text-xl font-bold text-gray-900 mb-2">Sign in to view progress</h2>
+        <p class="text-sm text-gray-600 mb-6">Use the same email linked to your child's 25Maths account.</p>
+        <form id="parent-login-form" class="space-y-4">
+            <input id="parent-email" type="email" placeholder="parent@example.com" required
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            <button type="submit"
+                    class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                Send Login Link
+            </button>
+        </form>
+        <p id="parent-login-msg" class="mt-3 text-sm text-gray-500 hidden"></p>
+    </div>
+</section>
+
+<!-- Dashboard (hidden until authenticated) -->
+<section id="parent-dashboard" class="py-10 bg-gray-50 hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+        <!-- Student Info Header -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center text-2xl font-bold text-indigo-600"
+                     id="student-avatar">S</div>
+                <div>
+                    <h2 id="student-name" class="text-xl font-bold text-gray-900">Student</h2>
+                    <p id="student-meta" class="text-sm text-gray-500">Loading report data...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Summary Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">Sessions</p>
+                <p id="stat-sessions" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-sessions-delta" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">Questions</p>
+                <p id="stat-questions" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-questions-delta" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">Accuracy</p>
+                <p id="stat-accuracy" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-accuracy-delta" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+                <p class="text-sm text-gray-500">Streak</p>
+                <p id="stat-streak" class="text-3xl font-bold text-gray-900 mt-1">—</p>
+                <p id="stat-streak-best" class="text-xs text-gray-400 mt-1"></p>
+            </div>
+        </div>
+
+        <!-- Time Practiced + XP -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+                <p class="text-sm text-gray-500 mb-1">Time Practiced This Week</p>
+                <p id="stat-time" class="text-2xl font-bold text-gray-900">—</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-5">
+                <p class="text-sm text-gray-500 mb-1">Experience Level</p>
+                <div class="flex items-center gap-3 mt-1">
+                    <span id="stat-level" class="text-2xl font-bold text-indigo-600">—</span>
+                    <div class="flex-1">
+                        <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                            <div id="stat-xp-bar" class="h-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all" style="width:0%"></div>
+                        </div>
+                        <p id="stat-xp-text" class="text-xs text-gray-400 mt-1">0 / 0 XP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topic Performance Table -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-4">Topic Performance</h3>
+            <div id="topic-table-container">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-gray-100">
+                            <th class="text-left py-2 text-gray-500 font-medium">Topic</th>
+                            <th class="text-right py-2 text-gray-500 font-medium">Questions</th>
+                            <th class="text-right py-2 text-gray-500 font-medium">Accuracy</th>
+                            <th class="text-right py-2 text-gray-500 font-medium">Trend</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topic-table-body">
+                        <tr><td colspan="4" class="py-8 text-center text-gray-400">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Weak Areas -->
+        <div class="bg-white rounded-xl border border-red-100 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Areas Needing Attention</h3>
+            <p class="text-sm text-gray-500 mb-4">Skills where your child made the most mistakes this week.</p>
+            <div id="weak-areas-list" class="space-y-3">
+                <p class="text-sm text-gray-400">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Recent Achievements -->
+        <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-4">Recent Achievements</h3>
+            <div id="parent-achievements" class="flex flex-wrap gap-3">
+                <p class="text-sm text-gray-400">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-100 p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Recommended Next Steps</h3>
+            <ul id="recommendations-list" class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                    <span class="text-indigo-500 mt-0.5">&#9744;</span>
+                    <span>Loading recommendations...</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Report Period -->
+        <p id="report-period-label" class="text-xs text-gray-400 text-center"></p>
+    </div>
+</section>
+
+<script>
+(function () {
+  'use strict';
+
+  const LEVEL_THRESHOLDS = [
+    { level: 1, title: 'Beginner', xp: 0 },
+    { level: 2, title: 'Learner', xp: 50 },
+    { level: 3, title: 'Practitioner', xp: 200 },
+    { level: 4, title: 'Achiever', xp: 500 },
+    { level: 5, title: 'Scholar', xp: 1000 },
+    { level: 6, title: 'Expert', xp: 2000 },
+    { level: 7, title: 'Master', xp: 4000 },
+    { level: 8, title: 'Grandmaster', xp: 8000 },
+    { level: 9, title: 'Legend', xp: 16000 },
+    { level: 10, title: 'IGCSE Champion', xp: 32000 },
+  ];
+
+  function getLevelInfo(totalXp) {
+    let current = LEVEL_THRESHOLDS[0];
+    let next = LEVEL_THRESHOLDS[1] || null;
+    for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
+      if (totalXp >= LEVEL_THRESHOLDS[i].xp) {
+        current = LEVEL_THRESHOLDS[i];
+        next = LEVEL_THRESHOLDS[i + 1] || null;
+        break;
+      }
+    }
+    const xpInLevel = totalXp - current.xp;
+    const xpForNext = next ? (next.xp - current.xp) : 0;
+    const pct = next ? Math.min(100, Math.round((xpInLevel / xpForNext) * 100)) : 100;
+    return { level: current.level, title: current.title, totalXp, nextXp: next ? next.xp : current.xp, pct };
+  }
+
+  function capitalise(str) {
+    if (!str) return '';
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function deltaText(delta, suffix) {
+    if (delta > 0) return `+${delta}${suffix} vs last week`;
+    if (delta < 0) return `${delta}${suffix} vs last week`;
+    return `No change vs last week`;
+  }
+
+  function accuracyColor(pct) {
+    if (pct >= 80) return 'text-green-600';
+    if (pct >= 50) return 'text-yellow-600';
+    return 'text-red-600';
+  }
+
+  function renderReport(report) {
+    const s = report.summary;
+    const el = (id) => document.getElementById(id);
+
+    // Student info
+    const name = report.student_name || 'Student';
+    if (el('student-avatar')) el('student-avatar').textContent = name.charAt(0).toUpperCase();
+    if (el('student-name')) el('student-name').textContent = name;
+    if (el('student-meta')) el('student-meta').textContent = `Report for ${report.report_period.start} to ${report.report_period.end}`;
+
+    // Summary cards
+    if (el('stat-sessions')) el('stat-sessions').textContent = s.sessions;
+    if (el('stat-sessions-delta')) el('stat-sessions-delta').textContent = deltaText(s.sessions_delta, '');
+    if (el('stat-questions')) el('stat-questions').textContent = s.questions_answered;
+    if (el('stat-questions-delta')) el('stat-questions-delta').textContent = deltaText(s.questions_delta, '');
+    if (el('stat-accuracy')) {
+      el('stat-accuracy').textContent = s.accuracy_pct + '%';
+      el('stat-accuracy').className = `text-3xl font-bold mt-1 ${accuracyColor(s.accuracy_pct)}`;
+    }
+    if (el('stat-accuracy-delta')) el('stat-accuracy-delta').textContent = deltaText(s.accuracy_delta, '%');
+    if (el('stat-streak')) el('stat-streak').textContent = report.streak.current + ' days';
+    if (el('stat-streak-best')) el('stat-streak-best').textContent = `Best: ${report.streak.best} days`;
+    if (el('stat-time')) el('stat-time').textContent = s.time_practiced || '0m';
+
+    // XP & Level
+    const info = getLevelInfo(report.xp.total);
+    if (el('stat-level')) el('stat-level').textContent = `Lv.${info.level} ${info.title}`;
+    if (el('stat-xp-bar')) el('stat-xp-bar').style.width = `${info.pct}%`;
+    if (el('stat-xp-text')) el('stat-xp-text').textContent = `${info.totalXp} / ${info.nextXp} XP`;
+
+    // Topic table
+    const tbody = el('topic-table-body');
+    if (tbody) {
+      const topics = report.topic_performance || [];
+      if (topics.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" class="py-6 text-center text-gray-400">No topic data this week</td></tr>';
+      } else {
+        tbody.innerHTML = topics.map(t => `
+          <tr class="border-b border-gray-50">
+            <td class="py-3 font-medium text-gray-800">${capitalise(t.topic)}</td>
+            <td class="py-3 text-right text-gray-600">${t.total}</td>
+            <td class="py-3 text-right ${accuracyColor(t.accuracy)} font-semibold">${t.accuracy}%</td>
+            <td class="py-3 text-right">${t.trend || '→'}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // Weak areas
+    const weakList = el('weak-areas-list');
+    if (weakList) {
+      const mistakes = report.top_mistakes || [];
+      if (mistakes.length === 0) {
+        weakList.innerHTML = '<p class="text-sm text-green-600 font-medium">No significant weak areas detected this week. Great work!</p>';
+      } else {
+        weakList.innerHTML = mistakes.map(m => `
+          <div class="flex items-center justify-between bg-red-50 rounded-lg px-4 py-3">
+            <div>
+              <p class="font-medium text-gray-800">${capitalise(m.skill_tag.replace(/-/g, ' '))}</p>
+              <p class="text-xs text-gray-500">${m.count} mistake${m.count !== 1 ? 's' : ''} this week</p>
+            </div>
+            <a href="/exercises/?board=cie0580" class="text-xs bg-indigo-600 text-white px-3 py-1 rounded-full hover:bg-indigo-700 transition">Practice</a>
+          </div>
+        `).join('');
+      }
+    }
+
+    // Achievements
+    const achContainer = el('parent-achievements');
+    if (achContainer) {
+      const achievements = report.recent_achievements || [];
+      if (achievements.length === 0) {
+        achContainer.innerHTML = '<p class="text-sm text-gray-400">No new achievements this week.</p>';
+      } else {
+        achContainer.innerHTML = achievements.map(a => {
+          const tierColor = {
+            bronze: 'border-amber-500 bg-amber-50',
+            silver: 'border-gray-400 bg-gray-50',
+            gold: 'border-yellow-500 bg-yellow-50',
+            diamond: 'border-blue-400 bg-blue-50',
+          }[a.tier] || 'border-gray-300 bg-gray-50';
+          return `<div class="flex flex-col items-center gap-1 p-3 border-2 rounded-xl ${tierColor} min-w-[80px]">
+            <span class="text-2xl">${a.icon || '🏆'}</span>
+            <span class="text-xs font-semibold text-gray-700 text-center">${a.title_en || a.achievement_id}</span>
+          </div>`;
+        }).join('');
+      }
+    }
+
+    // Recommendations
+    const recList = el('recommendations-list');
+    if (recList) {
+      const recs = [];
+      const mistakes = report.top_mistakes || [];
+      if (mistakes.length > 0) {
+        recs.push(`Focus on <strong>${capitalise(mistakes[0].skill_tag.replace(/-/g, ' '))}</strong> — ${mistakes[0].count} mistakes this week`);
+      }
+      if (s.sessions < 5) {
+        recs.push('Aim for at least 5 practice sessions next week');
+      }
+      if (s.accuracy_pct < 70) {
+        recs.push('Review weak topics before attempting new ones');
+      }
+      if (report.streak.current >= 7) {
+        recs.push('Streak going strong! Keep the daily practice habit');
+      } else if (report.streak.current > 0) {
+        recs.push('Build consistency — aim for a 7-day streak');
+      } else {
+        recs.push('Start a streak — daily practice builds lasting knowledge');
+      }
+      recs.push('Try a <a href="/exercises/?board=cie0580" class="text-indigo-600 underline">new interactive exercise</a> for variety');
+
+      recList.innerHTML = recs.map(r => `
+        <li class="flex items-start gap-2">
+          <span class="text-indigo-500 mt-0.5">&#9744;</span>
+          <span>${r}</span>
+        </li>
+      `).join('');
+    }
+
+    // Period label
+    if (el('report-period-label')) {
+      el('report-period-label').textContent = `Report generated ${report.generated_at || 'just now'} | Period: ${report.report_period.start} to ${report.report_period.end}`;
+    }
+  }
+
+  async function fetchReport(accessToken) {
+    const resp = await fetch('/api/v1/reports/weekly', {
+      headers: { authorization: `Bearer ${accessToken}` },
+    });
+    if (!resp.ok) {
+      throw new Error(`Report API error: ${resp.status}`);
+    }
+    return resp.json();
+  }
+
+  function showDashboard() {
+    const gate = document.getElementById('auth-gate');
+    const dash = document.getElementById('parent-dashboard');
+    if (gate) gate.classList.add('hidden');
+    if (dash) dash.classList.remove('hidden');
+  }
+
+  function showAuthGate() {
+    const gate = document.getElementById('auth-gate');
+    const dash = document.getElementById('parent-dashboard');
+    if (gate) gate.classList.remove('hidden');
+    if (dash) dash.classList.add('hidden');
+  }
+
+  async function init() {
+    if (!window.memberSupabase) {
+      showAuthGate();
+      return;
+    }
+
+    // Login form
+    const form = document.getElementById('parent-login-form');
+    const emailInput = document.getElementById('parent-email');
+    const msgEl = document.getElementById('parent-login-msg');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = (emailInput.value || '').trim();
+        if (!email) return;
+
+        msgEl.textContent = 'Sending login link...';
+        msgEl.classList.remove('hidden', 'text-red-500');
+        msgEl.classList.add('text-gray-500');
+
+        try {
+          const { error } = await window.memberSupabase.auth.signInWithOtp({
+            email,
+            options: { emailRedirectTo: window.location.href },
+          });
+          if (error) throw error;
+          msgEl.textContent = 'Check your email for the login link.';
+          msgEl.classList.add('text-green-600');
+          msgEl.classList.remove('text-gray-500');
+        } catch (err) {
+          msgEl.textContent = err.message || 'Failed to send login link.';
+          msgEl.classList.add('text-red-500');
+          msgEl.classList.remove('text-gray-500');
+        }
+      });
+    }
+
+    // Check existing session
+    const { data: sessionData } = await window.memberSupabase.auth.getSession();
+    const session = sessionData?.session;
+
+    if (session && session.access_token) {
+      showDashboard();
+      try {
+        const report = await fetchReport(session.access_token);
+        report.student_name = session.user?.user_metadata?.display_name || session.user?.email?.split('@')[0] || 'Student';
+        renderReport(report);
+      } catch (err) {
+        document.getElementById('student-meta').textContent = 'Failed to load report. Please try again later.';
+      }
+    } else {
+      showAuthGate();
+    }
+
+    // Listen for auth changes
+    window.memberSupabase.auth.onAuthStateChange(async (event, session) => {
+      if (session && session.access_token) {
+        showDashboard();
+        try {
+          const report = await fetchReport(session.access_token);
+          report.student_name = session.user?.user_metadata?.display_name || session.user?.email?.split('@')[0] || 'Student';
+          renderReport(report);
+        } catch (err) {
+          document.getElementById('student-meta').textContent = 'Failed to load report.';
+        }
+      } else {
+        showAuthGate();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
