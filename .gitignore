@@ -35,3 +35,15 @@ projects/kahoot-channel/agent/reports/
 projects/kahoot-channel/_templates/worksheet-pdf-template.aux
 projects/kahoot-channel/_templates/worksheet-pdf-template.out
 projects/kahoot-channel/_templates/worksheet-pdf-template.pdf
+
+# Multi-agent planning run outputs
+plan/member-agent-runs/
+
+# LaTeX build artifacts
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Claude Code worktrees
+.claude/worktrees/

@@ -21,16 +21,12 @@
         {% assign cta_title = "获取每周专题练习" %}
         {% assign cta_text = "加入等待名单，获得新内容与早鸟优惠。" %}
         {% assign cta_button = "加入等待名单" %}
-        {% assign cta_link = "/zh-cn/subscription.html" %}
         {% assign ask_title = "留言提问" %}
         {% assign name_ph = "姓名" %}
         {% assign email_ph = "邮箱（便于回复）" %}
         {% assign msg_ph = "你的问题" %}
         {% assign send_label = "提交问题" %}
         {% assign privacy_text = "我们会邮件回复，不发送垃圾邮件。" %}
-        {% assign privacy_link = "/zh-cn/privacy.html" %}
-    {% elsif page.lang == "en" %}
-        {% assign privacy_link = "/en/privacy.html" %}
     {% endif %}
 
     <article class="bg-white">
@@ -82,6 +78,8 @@
             </div>
         </div>
     </article>
+
+    {% include bilingual-floating-toggle.html %}
 
     {% include footer.html %}
     {% include mobile-menu-js.html %}

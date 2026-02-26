@@ -9,6 +9,9 @@
 {% assign canonical_url = site.url | append: canonical_path | replace: 'index.html', '' %}
 <link rel="canonical" href="{{ canonical_url }}">
 {% endif %}
+{% if page.lang_links %}{% for ll in page.lang_links %}<link rel="alternate" hreflang="{{ ll[0] }}" href="{{ site.url }}{{ ll[1] }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.lang_links['en'] | default: page.url | replace: 'index.html', '' }}">
+{% endif %}
 <meta name="referrer" content="{{ site.security.referrer_policy | default: 'strict-origin-when-cross-origin' }}">
 {% if site.security and site.security.csp %}
 <meta http-equiv="Content-Security-Policy" content="{{ site.security.csp }}">
@@ -25,13 +28,15 @@
 <meta property="og:description" content="{{ page.description | default: site.description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{% if canonical_path contains '://' %}{{ canonical_path }}{% else %}{{ site.url }}{{ canonical_path | replace: 'index.html', '' }}{% endif %}">
-{% if page.og_image %}<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">{% endif %}
+{% if page.og_image %}<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">{% elsif site.og_image_default %}<meta property="og:image" content="{{ site.url }}{{ site.og_image_default }}">{% endif %}
 <meta property="og:site_name" content="25Maths">
+{% if page.lang == 'zh-CN' %}<meta property="og:locale" content="zh_CN">{% else %}<meta property="og:locale" content="en_GB">{% endif %}
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{% if page.og_image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{{ page.title }} | 25Maths">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+{% if page.og_image %}<meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}">{% elsif site.og_image_default %}<meta name="twitter:image" content="{{ site.url }}{{ site.og_image_default }}">{% endif %}
 
 <!-- Site CSS (generated from Tailwind) -->
 <link rel="stylesheet" href="/assets/css/site.css">

@@ -50,17 +50,9 @@ title: 25Maths Changelog
                     <span class="text-green-500 mt-0.5">+</span>
                     <span><strong>Completeness verification</strong>: Verified on `origin/main` that top-nav patterns for removed entries are absent, while footer and homepage-lower entry paths remain present.</span>
                 </li>
-                <li class="flex items-start gap-2">
-                    <span class="text-green-500 mt-0.5">+</span>
-                    <span><strong>CI anti-regression guard</strong>: Added automated nav checks to enforce `Interactive Exercises -> Kahoot -> Membership` order in desktop/mobile top-nav, keep removed entries absent (`Blog/Support/About/EN-ZH-CN`), and confirm footer/homepage fallback entries stay available.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                    <span class="text-green-500 mt-0.5">+</span>
-                    <span><strong>Local bash fallback check</strong>: Added a shell-based nav consistency checker (`scripts/health/check_nav_consistency.sh`) so local verification can run without Python dependency.</span>
-                </li>
             </ul>
             <div class="mt-4 text-xs text-gray-400">
-                Files: _includes/global-nav.html, _includes/footer.html, index.html, en/index.html, zh-cn/index.html, scripts/health/check_nav_consistency.py, scripts/health/check_nav_consistency.sh, .github/workflows/ci.yml, .github/workflows/site-health-check.yml, tasks/blog-optimization/TASK-TREE.md, tasks/blog-optimization/MASTER-PLAN.md, tasks/blog-optimization/CHANGE-CONTROL.md, tasks/blog-optimization/EXECUTION-LOG.md, admin/changelog.html
+                Files: _includes/global-nav.html, _includes/footer.html, index.html, en/index.html, zh-cn/index.html, tasks/blog-optimization/TASK-TREE.md, tasks/blog-optimization/MASTER-PLAN.md, tasks/blog-optimization/CHANGE-CONTROL.md, tasks/blog-optimization/EXECUTION-LOG.md, admin/changelog.html
             </div>
         </div>
 

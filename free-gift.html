@@ -2,14 +2,6 @@
 layout: global
 title: Free Vocabulary Gift Pack
 description: "Get free CIE 0580 + Edexcel 4MA1 vocabulary packs after a short survey."
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /en/free-gift.html
-  - code: zh-CN
-    label: ZH-CN
-    url: /zh-cn/free-gift.html
 ---
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-16">
@@ -65,8 +57,35 @@ lang_links:
                 </div>
 
                 <div>
+                    <label class="block text-sm font-semibold mb-2" for="support_track_choice">Support track</label>
+                    <select id="support_track_choice" name="support_track_choice" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                        <option value="">Select one</option>
+                        <option value="standard">Standard Track (English-first)</option>
+                        <option value="bilingual">Bilingual Support Track (Chinese-English terms)</option>
+                    </select>
+                    <p class="text-xs text-gray-500 mt-1">No review is required for bilingual gift eligibility.</p>
+                    <p data-bilingual-block class="text-xs text-gray-500 mt-1">双语词汇卡赠送资格不与评价绑定，选择双语支持即可触发。</p>
+                </div>
+
+                <div>
                     <label class="block text-sm font-semibold mb-2" for="target_exam_session">Target exam session</label>
                     <input id="target_exam_session" type="text" name="target_exam_session" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="e.g. May/June 2026">
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="order_tier">Current order tier</label>
+                        <select id="order_tier" name="order_tier" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+                            <option value="">Not set</option>
+                            <option value="L1">L1</option>
+                            <option value="L2">L2</option>
+                            <option value="L3">L3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="order_ref">Order reference</label>
+                        <input id="order_ref" type="text" name="order_ref" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="Optional (recommended)">
+                    </div>
                 </div>
 
                 <div>
@@ -77,6 +96,9 @@ lang_links:
                 </div>
 
                 <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Get My Free Packs</button>
+                <p class="text-xs text-gray-500">
+                    Already purchased before? <a href="/support-track.html" class="text-amber-600 font-semibold hover:underline">Submit support track directly</a> to update bilingual gift routing.
+                </p>
             </form>
         </div>
     </div>
