@@ -4,14 +4,6 @@ title: Products
 description: "CIE 0580 presale product architecture: L1 single worksheet, L2 section bundle, L3 unit bundle."
 module: cie0580
 active_page: products
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /en/cie0580/products.html
-  - code: zh-CN
-    label: ZH-CN
-    url: /zh-cn/cie0580/products.html
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
@@ -20,6 +12,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl font-bold mb-4">CIE 0580 Product System</h1>
         <p class="text-xl opacity-90">Legacy 3-product setup retired. New closed loop: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
+        <p data-bilingual-block class="text-base opacity-90 mt-2">旧三产品模式已下线：当前闭环为 L1 单品 -> L2 小章节合集 -> L3 单元合集。</p>
     </div>
 </section>
 
@@ -28,6 +21,7 @@ lang_links:
         <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
             <p class="font-semibold mb-1">Pricing Status</p>
             <p>Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.</p>
+            <p data-bilingual-block class="mt-2">下方价格为建议区间，最终预售价格仍可在 Payhip 正式上线前调整。</p>
         </div>
     </div>
 </section>
@@ -35,23 +29,27 @@ lang_links:
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">闭环产品阶梯：L1 入门、L2 升级、L3 留存。</p>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Single Worksheet MVP</h3>
                 <p class="text-sm text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download. Lowest friction entry point.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">单个 SubTopic：Kahoot + Worksheet 下载，作为最低门槛入口。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l1_early_bird }} · suggested regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Section Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">Multiple SubTopics inside one syllabus section. Best upgrade from L1.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">同一章节多个 SubTopic 的合集，是 L1 的主要升级路径。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l2_early_bird }} · suggested regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-4">One full unit including Core + Extended tracks, plus bonus add-ons after release.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">覆盖 Core + Extended 的完整单元，并承接上线后的增值内容。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l3_early_bird }} · suggested regular: {{ catalog.pricing.l3_regular }}</p>
             </article>
         </div>
@@ -63,6 +61,7 @@ lang_links:
         <h2 class="text-3xl font-bold text-gray-900 mb-2">CIE Unit Bundle Presales (9)</h2>
         <p class="text-gray-600 mb-8">Each unit bundle includes bilingual vocabulary card support and a post-purchase upgrade path for bilingual enhancement.</p>
         <p class="text-sm text-gray-600 mb-8">Bilingual gift trigger: after checkout, customers complete a 30-second learning preference form. Review is optional and unlocks extra bonus, not the core bilingual gift.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">双语赠送触发规则：购买后完成 30 秒学习偏好表单；评价是可选奖励条件，不影响基础赠送资格。</p>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for unit in catalog.units %}
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
@@ -97,6 +96,7 @@ lang_links:
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Execution Links</h2>
         <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">SubTopic 级别的链接与升级路径统一在 Kahoot 目录页维护。</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/kahoot/cie0580/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition">Open CIE Kahoot Directory</a>
             <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Open Presale Terms PDF</a>
