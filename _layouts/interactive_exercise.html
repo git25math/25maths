@@ -103,15 +103,15 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <a href="{{ exercises_hub_url }}" data-track-action="try_another" class="loop-btn-base loop-btn-soft">Try Another Interactive Exercise</a>
-                    <a href="{{ board_directory_url | relative_url }}" data-track-action="board_directory" class="loop-btn-base loop-btn-soft">Back to {{ board_directory_label }}</a>
+                    <a href="{{ exercises_hub_url }}" data-track-action="try_another" class="loop-btn-base loop-btn-soft exercise-warm-primary">Try Another Interactive Exercise</a>
+                    <a href="{{ board_directory_url | relative_url }}" data-track-action="board_directory" class="loop-btn-base loop-btn-soft exercise-warm-secondary">Back to {{ board_directory_label }}</a>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     {% if exercise_links and exercise_links.kahoot_url and exercise_links.kahoot_url != '' %}
-                    <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="loop-btn-base loop-btn-kahoot">Playing Matching Kahoot</a>
+                    <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="loop-btn-base loop-btn-kahoot exercise-kahoot-bridge">Playing Matching Kahoot</a>
                     {% else %}
-                    <span class="loop-btn-base loop-btn-kahoot loop-btn-disabled">Playing Matching Kahoot</span>
+                    <span class="loop-btn-base loop-btn-kahoot loop-btn-disabled exercise-kahoot-bridge">Playing Matching Kahoot</span>
                     {% endif %}
 
                     {% if exercise_links and exercise_links.worksheet_payhip_url and exercise_links.worksheet_payhip_url != '' %}
