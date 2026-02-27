@@ -2,6 +2,7 @@
 layout: post
 title: "IGCSE Maths Revision Strategy: A 6-Week Plan That Actually Works"
 subtitle: "Stop rereading notes. Here's a structured revision plan based on how examiners set questions."
+description: "Stop rereading notes. Here's a structured revision plan based on how examiners set questions."
 category: Exam Strategy
 lang: en
 lang_links:

@@ -2,6 +2,7 @@
 layout: post
 title: "Edexcel 4MA1 比例与百分比：这些错误最常见"
 subtitle: "简单修正即可提升稳定得分。"
+description: "简单修正即可提升稳定得分。"
 category: Edexcel 4MA1 专题解析
 lang: zh-CN
 permalink: /zh-cn/blog/4ma1-bili-baifenbi-cuowu.html

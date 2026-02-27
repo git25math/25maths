@@ -2,6 +2,7 @@
 layout: post
 title: "CIE 0580 Functions & Graphs: How to Score Higher"
 subtitle: "A quick guide to common question types and the fastest ways to improve."
+description: "A quick guide to common question types and the fastest ways to improve."
 category: CIE 0580 Topic Guide
 lang: en
 lang_links:

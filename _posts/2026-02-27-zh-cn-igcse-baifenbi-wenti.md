@@ -2,6 +2,7 @@
 layout: post
 title: "IGCSE 百分比题型全解：考试中会遇到的每一种类型"
 subtitle: "百分比增减、逆向百分比、复利 — 一篇搞定全部题型。"
+description: "百分比增减、逆向百分比、复利 — 一篇搞定全部题型。"
 category: CIE 0580 专题指南
 lang: zh-CN
 permalink: /zh-cn/blog/igcse-baifenbi-wenti.html

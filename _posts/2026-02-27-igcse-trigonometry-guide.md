@@ -2,6 +2,7 @@
 layout: post
 title: "IGCSE Trigonometry: Complete Guide from Basics to Exam-Ready"
 subtitle: "Master SOHCAHTOA, sine/cosine rules, and 3D trig — the topics that appear on every Paper 4."
+description: "Master SOHCAHTOA, sine/cosine rules, and 3D trig — the topics that appear on every Paper 4."
 category: CIE 0580 Topic Guide
 lang: en
 lang_links:
