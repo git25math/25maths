@@ -261,8 +261,8 @@
     {
       "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 6, "topic": ["Functions"],
       "question": {
-        "en": "`f(x) = 2x + 7` \\hfill `g(x) = x^2 - 3`\n\n(a) Find `f(-4)`.\n\n(b) Find `gf(x)`. Give your answer in its simplest form.\n\n(c) Find `f^{-1}(x)`.",
-        "zh": "`f(x) = 2x + 7` \\hfill `g(x) = x^2 - 3`\n\n(a) 求 `f(-4)` 的值。\n\n(b) 求 `gf(x)`。将答案化为最简形式。\n\n(c) 求 `f^{-1}(x)`。"
+        "en": "`f(x) = 2x + 7` \\qquad `g(x) = x^2 - 3`\n\n(a) Find `f(-4)`.\n\n(b) Find `gf(x)`. Give your answer in its simplest form.\n\n(c) Find `f^{-1}(x)`.",
+        "zh": "`f(x) = 2x + 7` \\qquad `g(x) = x^2 - 3`\n\n(a) 求 `f(-4)` 的值。\n\n(b) 求 `gf(x)`。将答案化为最简形式。\n\n(c) 求 `f^{-1}(x)`。"
       },
       "answer": { "en": "(a) `-1`\n(b) `4x^2 + 28x + 46`\n(c) `f^{-1}(x) = \\dfrac{x - 7}{2}`", "zh": "(a) `-1`\n(b) `4x^2 + 28x + 46`\n(c) `f^{-1}(x) = \\dfrac{x - 7}{2}`" },
       "solution": {

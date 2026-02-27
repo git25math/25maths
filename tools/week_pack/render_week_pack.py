@@ -72,6 +72,7 @@ def math_to_latex(text):
     # Protect pass-through LaTeX commands before escaping
     _PASSTHROUGH = {
         "\\hfill": "\x00HFILL\x00",
+        "\\qquad": "\x00QQUAD\x00",
         "\\par": "\x00PAR\x00",
         "\\newline": "\x00NEWLINE\x00",
         "\\\\": "\x00DBLBS\x00",
