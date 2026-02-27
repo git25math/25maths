@@ -11,6 +11,38 @@
 {% assign exercises_label = "Interactive Exercises" %}
 {% assign terms_label = "Terms of Service" %}
 {% assign privacy_label = "Privacy Policy" %}
+{% assign footer_boards_label = "Exam Boards" %}
+{% assign footer_free_label = "Free Resources" %}
+{% assign footer_platform_label = "Platform" %}
+{% assign footer_help_label = "Help & Info" %}
+{% assign footer_member_label = "Member Center" %}
+{% assign footer_leaderboard_label = "Leaderboard" %}
+{% assign footer_institution_label = "For Institutions" %}
+{% assign footer_faq_label = "FAQ" %}
+{% assign footer_parent_label = "Parent Dashboard" %}
+{% if page.lang == 'zh-CN' %}
+    {% assign blog_path = "/zh-cn/blog/" %}
+    {% assign membership_path = "/zh-cn/subscription.html" %}
+    {% assign kahoot_path = "/zh-cn/kahoot/" %}
+    {% assign exercises_path = "/zh-cn/exercises/" %}
+    {% assign blog_label = "博客" %}
+    {% assign about_label = "关于" %}
+    {% assign support_label = "帮助" %}
+    {% assign membership_label = "会员" %}
+    {% assign kahoot_label = "Kahoot 题组" %}
+    {% assign exercises_label = "互动练习" %}
+    {% assign terms_label = "服务条款" %}
+    {% assign privacy_label = "隐私政策" %}
+    {% assign footer_boards_label = "考试局" %}
+    {% assign footer_free_label = "免费资源" %}
+    {% assign footer_platform_label = "平台" %}
+    {% assign footer_help_label = "帮助与信息" %}
+    {% assign footer_member_label = "会员中心" %}
+    {% assign footer_leaderboard_label = "排行榜" %}
+    {% assign footer_institution_label = "机构合作" %}
+    {% assign footer_faq_label = "常见问题" %}
+    {% assign footer_parent_label = "家长看板" %}
+{% endif %}
 <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-5 gap-8 mb-8">
@@ -21,7 +53,7 @@
                 </p>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4">Exam Boards</h4>
+                <h4 class="text-white font-semibold mb-4">{{ footer_boards_label }}</h4>
                 <ul class="space-y-2 text-sm">
                     {% for mod in site.modules %}
                     <li>
@@ -34,7 +66,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4">Free Resources</h4>
+                <h4 class="text-white font-semibold mb-4">{{ footer_free_label }}</h4>
                 <ul class="space-y-2 text-sm">
                     {% for mod in site.modules %}
                     {% if mod.status == 'active' and mod.free_count > 0 %}
@@ -48,27 +80,27 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4">Platform</h4>
+                <h4 class="text-white font-semibold mb-4">{{ footer_platform_label }}</h4>
                 <ul class="space-y-2 text-sm">
                     <li><a href="{{ blog_path }}" class="hover:text-white transition">{{ blog_label }}</a></li>
                     <li><a href="{{ kahoot_path }}" class="hover:text-white transition">{{ kahoot_label }}</a></li>
                     <li><a href="{{ exercises_path }}" class="hover:text-white transition">{{ exercises_label }}</a></li>
                     <li><a href="{{ membership_path }}" class="hover:text-white transition">{{ membership_label }}</a></li>
-                    <li><a href="/membership/" class="hover:text-white transition">Member Center</a></li>
-                    <li><a href="/membership/leaderboard.html" class="hover:text-white transition">Leaderboard</a></li>
-                    <li><a href="/institution/" class="hover:text-white transition">For Institutions</a></li>
+                    <li><a href="/membership/" class="hover:text-white transition">{{ footer_member_label }}</a></li>
+                    <li><a href="/membership/leaderboard.html" class="hover:text-white transition">{{ footer_leaderboard_label }}</a></li>
+                    <li><a href="/institution/" class="hover:text-white transition">{{ footer_institution_label }}</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4">Help & Info</h4>
+                <h4 class="text-white font-semibold mb-4">{{ footer_help_label }}</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="/faq.html" class="hover:text-white transition">FAQ</a></li>
+                    <li><a href="/faq.html" class="hover:text-white transition">{{ footer_faq_label }}</a></li>
                     <li><a href="/about.html" class="hover:text-white transition">{{ about_label }}</a></li>
                     <li><a href="/support.html" class="hover:text-white transition">{{ support_label }}</a></li>
-                    <li><a href="/membership/parent-dashboard.html" class="hover:text-white transition">Parent Dashboard</a></li>
-                    <li><a href="/zh-cn/parents.html" class="hover:text-white transition">家长专区</a></li>
+                    <li><a href="/membership/parent-dashboard.html" class="hover:text-white transition">{{ footer_parent_label }}</a></li>
+                    {% if page.lang == 'zh-CN' %}<li><a href="/zh-cn/parents.html" class="hover:text-white transition">家长专区</a></li>{% endif %}
                     <li><a href="/terms.html" class="hover:text-white transition">{{ terms_label }}</a></li>
-                    <li><a href="/privacy.html" class="hover:text-white transition">{{ privacy_label }}</a></li>
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/privacy.html{% else %}/privacy.html{% endif %}" class="hover:text-white transition">{{ privacy_label }}</a></li>
                 </ul>
             </div>
         </div>

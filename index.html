@@ -196,6 +196,22 @@ lang_links:
     </div>
 </section>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "25Maths",
+  "url": "{{ site.url }}/",
+  "description": {{ page.description | jsonify }},
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "25Maths",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+
 <!-- About -->
 <section class="bg-gray-50 py-20 md:py-24">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">

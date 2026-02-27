@@ -121,7 +121,7 @@ lang_links:
             {% assign cn_posts = site.posts | where: "lang", "zh-CN" %}
             {% for post in cn_posts limit:3 %}
             <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-lg hover:-translate-y-1 transition ui-focus-ring">
-                <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
+                <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%Y-%m-%d" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
                 <span class="text-sm font-semibold text-gray-900 group-hover:text-gray-600">阅读文章 →</span>
@@ -150,6 +150,22 @@ lang_links:
         </div>
     </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "25Maths",
+  "url": "{{ site.url }}/zh-cn/",
+  "description": {{ page.description | jsonify }},
+  "inLanguage": "zh-CN",
+  "publisher": {
+    "@type": "Organization",
+    "name": "25Maths",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
 
 <!-- 关于 -->
 <section class="bg-gray-50 py-20 md:py-24">
