@@ -69,8 +69,8 @@
             </div>
 
             <div id="controls-container" class="mt-6 border-t pt-6">
-                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Check Answer</button>
-                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition" style="display: none;" disabled>Next</button>
+                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Check Answer</button>
+                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" style="display: none;" disabled>Next</button>
             </div>
         </div>
 
@@ -79,23 +79,23 @@
             <h2 class="text-xl font-bold text-gray-900">Continue This Topic Loop</h2>
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
             <div class="mt-4 flex flex-wrap gap-3">
-                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Try Another Interactive Exercise</a>
+                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Try Another Interactive Exercise</a>
                 <span id="next-exercise-link-slot"></span>
                 {% if board_slug != '' %}
-                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">Back to {{ board_directory_label }}</a>
+                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Back to {{ board_directory_label }}</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.kahoot_url and exercise_links.kahoot_url != '' %}
-                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition">Play Matching Kahoot</a>
+                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Play Matching Kahoot</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.worksheet_payhip_url and exercise_links.worksheet_payhip_url != '' %}
-                <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>
+                <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Get Matching Worksheet</a>
                 {% endif %}
                 {% if exercise_links and exercise_links.bundle_url and exercise_links.bundle_url != '' %}
-                <a href="{{ exercise_links.bundle_url }}" data-track-action="bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>
+                <a href="{{ exercise_links.bundle_url }}" data-track-action="bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Explore Bundle</a>
                 {% elsif exercise_links and exercise_links.section_bundle_payhip_url and exercise_links.section_bundle_payhip_url != '' %}
-                <a href="{{ exercise_links.section_bundle_payhip_url }}" data-track-action="section_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Section Bundle</a>
+                <a href="{{ exercise_links.section_bundle_payhip_url }}" data-track-action="section_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Explore Section Bundle</a>
                 {% elsif exercise_links and exercise_links.unit_bundle_payhip_url and exercise_links.unit_bundle_payhip_url != '' %}
-                <a href="{{ exercise_links.unit_bundle_payhip_url }}" data-track-action="unit_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Unit Bundle</a>
+                <a href="{{ exercise_links.unit_bundle_payhip_url }}" data-track-action="unit_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Explore Unit Bundle</a>
                 {% endif %}
             </div>
         </section>
