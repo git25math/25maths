@@ -251,5 +251,27 @@
     "membership_tier": "",
     "asset_key": "member-files/week11/week-11-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week12-statistics-en-2026w21",
+    "version": "v1",
+    "subtopic_id": "cie0580:statistics-c9:c9-01-data-collection",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week12/week-12-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week12-statistics-bilingual-2026w21",
+    "version": "v1",
+    "subtopic_id": "cie0580:statistics-c9:c9-01-data-collection",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week12/week-12-bilingual.pdf",
+    "status": "active"
   }
 ]

@@ -1,0 +1,529 @@
+{
+  "_comment": "Week 12 -- Statistics. Based on CIE 0580 past papers (2018-2025) across C9.1-C9.4, E9.1-E9.7. Questions are strict variations of real exam patterns.",
+  "week_number": 12,
+  "topic": "Statistics",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week12-statistics-2026w21",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:statistics-c9:c9-01-data-collection"
+  ],
+  "syllabus_refs": ["C9.1", "C9.2", "C9.3", "C9.4", "E9.1", "E9.2", "E9.3", "E9.4", "E9.5", "E9.6", "E9.7"],
+  "key_vocabulary": [
+    { "term_en": "Mean", "term_zh": "平均数", "definition": "The sum of all values divided by the number of values. Also called the arithmetic mean.", "definition_zh": "所有数值的总和除以数值的个数。也称为算术平均数。" },
+    { "term_en": "Median", "term_zh": "中位数", "definition": "The middle value when data is arranged in order. For an even number of values, it is the mean of the two middle values.", "definition_zh": "将数据按顺序排列后位于中间的数值。若数据个数为偶数，则取中间两个数的平均值。" },
+    { "term_en": "Mode", "term_zh": "众数", "definition": "The value or category that occurs most frequently in a set of data.", "definition_zh": "在一组数据中出现次数最多的数值或类别。" },
+    { "term_en": "Range", "term_zh": "范围（全距）", "definition": "The difference between the highest and lowest values in a data set.", "definition_zh": "数据集中最大值与最小值之间的差。" },
+    { "term_en": "Frequency", "term_zh": "频数", "definition": "The number of times a particular value or category occurs in a data set.", "definition_zh": "某一数值或类别在数据集中出现的次数。" },
+    { "term_en": "Frequency Table", "term_zh": "频数表", "definition": "A table showing each value (or class interval) and the number of times it occurs.", "definition_zh": "显示每个数值（或组距）及其出现次数的表格。" },
+    { "term_en": "Pie Chart", "term_zh": "饼图", "definition": "A circular chart divided into sectors, where each sector angle is proportional to the frequency it represents.", "definition_zh": "一种圆形图表，被分成若干扇形，每个扇形的角度与其所代表的频数成比例。" },
+    { "term_en": "Bar Chart", "term_zh": "条形图", "definition": "A chart using rectangular bars of equal width to represent data. The height of each bar shows the frequency.", "definition_zh": "使用等宽矩形条来表示数据的图表。每根条的高度表示频数。" },
+    { "term_en": "Scatter Diagram", "term_zh": "散点图", "definition": "A graph showing individual data points plotted using two variables, one on each axis.", "definition_zh": "用两个变量分别作为横轴和纵轴，将各个数据点绘制在图上的图表。" },
+    { "term_en": "Correlation", "term_zh": "相关性", "definition": "A measure of the relationship between two variables. Can be positive, negative, or no correlation.", "definition_zh": "衡量两个变量之间关系的指标。可以是正相关、负相关或无相关。" },
+    { "term_en": "Line of Best Fit", "term_zh": "最佳拟合线", "definition": "A straight line drawn through the points on a scatter diagram to show the general trend of the data.", "definition_zh": "在散点图上穿过数据点绘制的直线，用以显示数据的总体趋势。" },
+    { "term_en": "Cumulative Frequency", "term_zh": "累积频数", "definition": "A running total of frequencies, showing how many data values are less than or equal to each upper class boundary.", "definition_zh": "频数的逐项累加，显示小于或等于各组上界的数据值有多少个。" },
+    { "term_en": "Cumulative Frequency Curve", "term_zh": "累积频数曲线", "definition": "A smooth S-shaped curve drawn through the cumulative frequency points plotted at the upper class boundaries.", "definition_zh": "通过将累积频数点绘制在各组上界处，并用光滑的 S 形曲线连接而成的图。" },
+    { "term_en": "Interquartile Range (IQR)", "term_zh": "四分位距", "definition": "The difference between the upper quartile (Q3) and lower quartile (Q1): IQR = Q3 - Q1.", "definition_zh": "上四分位数 (Q3) 与下四分位数 (Q1) 之差：IQR = Q3 - Q1。" },
+    { "term_en": "Histogram", "term_zh": "直方图", "definition": "A chart where the area of each bar is proportional to the frequency. With unequal class widths, the vertical axis shows frequency density.", "definition_zh": "每根柱的面积与频数成正比的图表。当组距不等时，纵轴表示频率密度。" },
+    { "term_en": "Frequency Density", "term_zh": "频率密度", "definition": "Frequency divided by class width. Used as the vertical axis in histograms with unequal class widths.", "definition_zh": "频数除以组距。在组距不等的直方图中用作纵轴。" },
+    { "term_en": "Grouped Data", "term_zh": "分组数据", "definition": "Data that has been organised into class intervals (groups) rather than listed as individual values.", "definition_zh": "将数据按组距（分组）整理而非逐个列出的数据。" },
+    { "term_en": "Estimated Mean", "term_zh": "估计平均数", "definition": "The mean calculated from grouped data using mid-interval values. It is an estimate because the exact values are unknown.", "definition_zh": "利用各组的组中值从分组数据计算出的平均数。因为不知道确切数值，所以是估计值。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Statistics", "Mean"],
+      "question": {
+        "en": "The ages, in years, of 8 students in a class are:\n\n12, 14, 13, 15, 12, 16, 13, 13\n\nCalculate the mean age.",
+        "zh": "一个班级中 8 名学生的年龄（岁）为：\n\n12, 14, 13, 15, 12, 16, 13, 13\n\n计算平均年龄。"
+      },
+      "answer": { "en": "13.5", "zh": "13.5" },
+      "solution": {
+        "en": [
+          "`\\text{Mean} = \\dfrac{\\text{sum of all values}}{\\text{number of values}}`",
+          "`= \\dfrac{12 + 14 + 13 + 15 + 12 + 16 + 13 + 13}{8}`",
+          "`= \\dfrac{108}{8}`",
+          "`= 13.5`"
+        ],
+        "zh": [
+          "`\\text{平均数} = \\dfrac{\\text{所有数值之和}}{\\text{数值个数}}`",
+          "`= \\dfrac{12 + 14 + 13 + 15 + 12 + 16 + 13 + 13}{8}`",
+          "`= \\dfrac{108}{8}`",
+          "`= 13.5`"
+        ]
+      },
+      "common_mistake": { "en": "Miscounting the number of values. There are 8 values, not 7. Always count carefully before dividing.", "zh": "数错数值的个数。共有 8 个数值而非 7 个。除之前务必仔细清点。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Statistics", "Mean from Frequency Table"],
+      "question": {
+        "en": "The table shows the number of goals scored per match by a football team in 20 matches.\n\nCalculate the mean number of goals per match.",
+        "zh": "下表显示了一支足球队在 20 场比赛中每场的进球数。\n\n计算每场比赛的平均进球数。"
+      },
+      "figure": [
+        "\\begin{tabular}{|c|c|}",
+        "\\hline",
+        "\\textbf{Goals} & \\textbf{Frequency} \\\\",
+        "\\hline",
+        "0 & 4 \\\\",
+        "\\hline",
+        "1 & 7 \\\\",
+        "\\hline",
+        "2 & 5 \\\\",
+        "\\hline",
+        "3 & 3 \\\\",
+        "\\hline",
+        "4 & 1 \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
+      "answer": { "en": "1.5", "zh": "1.5" },
+      "solution": {
+        "en": [
+          "`\\text{Mean} = \\dfrac{\\sum f x}{\\sum f}`",
+          "Calculate `fx` for each row:",
+          "`0 \\times 4 = 0`, `1 \\times 7 = 7`, `2 \\times 5 = 10`, `3 \\times 3 = 9`, `4 \\times 1 = 4`",
+          "`\\sum f x = 0 + 7 + 10 + 9 + 4 = 30`",
+          "`\\sum f = 4 + 7 + 5 + 3 + 1 = 20`",
+          "`\\text{Mean} = \\dfrac{30}{20} = 1.5`"
+        ],
+        "zh": [
+          "`\\text{平均数} = \\dfrac{\\sum f x}{\\sum f}`",
+          "计算每行的 `fx`：",
+          "`0 \\times 4 = 0`、`1 \\times 7 = 7`、`2 \\times 5 = 10`、`3 \\times 3 = 9`、`4 \\times 1 = 4`",
+          "`\\sum f x = 0 + 7 + 10 + 9 + 4 = 30`",
+          "`\\sum f = 4 + 7 + 5 + 3 + 1 = 20`",
+          "`\\text{平均数} = \\dfrac{30}{20} = 1.5`"
+        ]
+      },
+      "common_mistake": { "en": "Dividing the total of fx by the number of rows (5) instead of the total frequency (20). The denominator must be the total number of data values, not the number of categories.", "zh": "将 fx 的总和除以行数 (5) 而非总频数 (20)。分母必须是数据值的总个数，而非类别数。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Statistics", "Median", "Range"],
+      "question": {
+        "en": "The heights, in cm, of 9 plants are:\n\n15, 22, 18, 31, 25, 17, 28, 20, 23\n\n(a) Find the median height.\n\n(b) Find the range of the heights.",
+        "zh": "9 株植物的高度（cm）为：\n\n15, 22, 18, 31, 25, 17, 28, 20, 23\n\n(a) 求高度的中位数。\n\n(b) 求高度的范围（全距）。"
+      },
+      "answer": { "en": "(a) 22\n(b) 16", "zh": "(a) 22\n(b) 16" },
+      "solution": {
+        "en": [
+          "Arrange the data in order: 15, 17, 18, 20, 22, 23, 25, 28, 31",
+          "(a) There are 9 values so the median is the `\\dfrac{9+1}{2} = 5\\text{th}` value.",
+          "The 5th value is `22`.",
+          "Median `= 22` cm",
+          "(b) `\\text{Range} = \\text{highest} - \\text{lowest} = 31 - 15 = 16` cm"
+        ],
+        "zh": [
+          "将数据按顺序排列：15、17、18、20、22、23、25、28、31",
+          "(a) 共有 9 个数值，中位数是第 `\\dfrac{9+1}{2} = 5` 个值。",
+          "第 5 个值是 `22`。",
+          "中位数 `= 22` cm",
+          "(b) `\\text{范围} = \\text{最大值} - \\text{最小值} = 31 - 15 = 16` cm"
+        ]
+      },
+      "common_mistake": { "en": "Finding the median without first ordering the data. You MUST sort the values from smallest to largest before identifying the middle value.", "zh": "未先将数据排序就求中位数。必须先将数值从小到大排列，再找中间值。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Statistics", "Pie Chart"],
+      "question": {
+        "en": "The pie chart shows the favourite sports of 180 students.\n\n(a) What is the most popular sport?\n\n(b) How many students chose Swimming?\n\n(c) How many more students chose Football than Tennis?",
+        "zh": "饼图显示了 180 名学生最喜欢的运动。\n\n(a) 最受欢迎的运动是什么？\n\n(b) 有多少名学生选择了游泳？\n\n(c) 选择足球的学生比选择网球的多多少人？"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=1]",
+        "  \\coordinate (O) at (0,0);",
+        "  % Football: 120 degrees",
+        "  \\draw[fill=blue!30] (O) -- (90:2) arc (90:-30:2) -- cycle;",
+        "  \\node at (30:1.3) {\\small Football};",
+        "  \\node at (30:0.8) {\\small $120^\\circ$};",
+        "  % Swimming: 80 degrees",
+        "  \\draw[fill=green!30] (O) -- (-30:2) arc (-30:-110:2) -- cycle;",
+        "  \\node at (-70:1.3) {\\small Swimming};",
+        "  \\node at (-70:0.8) {\\small $80^\\circ$};",
+        "  % Tennis: 60 degrees",
+        "  \\draw[fill=red!30] (O) -- (-110:2) arc (-110:-170:2) -- cycle;",
+        "  \\node at (-140:1.3) {\\small Tennis};",
+        "  \\node at (-140:0.8) {\\small $60^\\circ$};",
+        "  % Cricket: 100 degrees",
+        "  \\draw[fill=yellow!30] (O) -- (-170:2) arc (-170:-270:2) -- cycle;",
+        "  \\node at (-220:1.3) {\\small Cricket};",
+        "  \\node at (-220:0.8) {\\small $100^\\circ$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) Football\n(b) 40\n(c) 30", "zh": "(a) 足球\n(b) 40\n(c) 30" },
+      "solution": {
+        "en": [
+          "(a) Football has the largest sector angle (`120^\\circ`), so Football is the most popular.",
+          "(b) Swimming sector angle `= 80^\\circ`",
+          "Number of students `= \\dfrac{80}{360} \\times 180 = 40`",
+          "(c) Football: `\\dfrac{120}{360} \\times 180 = 60` students",
+          "Tennis: `\\dfrac{60}{360} \\times 180 = 30` students",
+          "Difference `= 60 - 30 = 30` students"
+        ],
+        "zh": [
+          "(a) 足球的扇形角最大（`120^\\circ`），因此足球最受欢迎。",
+          "(b) 游泳的扇形角 `= 80^\\circ`",
+          "学生人数 `= \\dfrac{80}{360} \\times 180 = 40`",
+          "(c) 足球：`\\dfrac{120}{360} \\times 180 = 60` 名学生",
+          "网球：`\\dfrac{60}{360} \\times 180 = 30` 名学生",
+          "差值 `= 60 - 30 = 30` 名学生"
+        ]
+      },
+      "common_mistake": { "en": "Forgetting to multiply by the total number of students. The angle gives the proportion, not the frequency. Use: frequency = (angle / 360) x total.", "zh": "忘记乘以学生总数。角度给出的是比例，而非频数。应使用：频数 = (角度 / 360) x 总数。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Statistics", "Bar Chart"],
+      "question": {
+        "en": "The bar chart shows the number of books read by students during the summer holiday.\n\n(a) How many students read exactly 3 books?\n\n(b) How many students were surveyed in total?",
+        "zh": "条形图显示了学生在暑假期间阅读的书籍数量。\n\n(a) 恰好读了 3 本书的学生有多少人？\n\n(b) 共调查了多少名学生？"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\draw[->] (0,0) -- (7,0) node[below] {\\small Books};",
+        "  \\draw[->] (0,0) -- (0,6.5) node[left] {\\small Frequency};",
+        "  \\foreach \\y in {1,2,3,4,5,6} {",
+        "    \\draw (-0.1,\\y) -- (0.1,\\y);",
+        "    \\node[left] at (0,\\y) {\\small \\y};",
+        "  }",
+        "  \\draw[fill=blue!40] (0.5,0) rectangle (1.5,3);",
+        "  \\node[below] at (1,0) {\\small 0};",
+        "  \\draw[fill=blue!40] (2,0) rectangle (3,5);",
+        "  \\node[below] at (2.5,0) {\\small 1};",
+        "  \\draw[fill=blue!40] (3.5,0) rectangle (4.5,6);",
+        "  \\node[below] at (4,0) {\\small 2};",
+        "  \\draw[fill=blue!40] (5,0) rectangle (6,4);",
+        "  \\node[below] at (5.5,0) {\\small 3};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 4\n(b) 18", "zh": "(a) 4\n(b) 18" },
+      "solution": {
+        "en": [
+          "(a) The bar for 3 books reaches a height of 4.",
+          "So 4 students read exactly 3 books.",
+          "(b) Total `= 3 + 5 + 6 + 4 = 18` students"
+        ],
+        "zh": [
+          "(a) 3 本书对应的条形高度为 4。",
+          "因此有 4 名学生恰好读了 3 本书。",
+          "(b) 总数 `= 3 + 5 + 6 + 4 = 18` 名学生"
+        ]
+      },
+      "common_mistake": { "en": "Misreading the scale on the vertical axis. Always check the axis labels and scale markings carefully before reading bar heights.", "zh": "误读纵轴上的刻度。在读取条形高度之前，务必仔细检查轴标签和刻度标记。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Statistics", "Scatter Diagram", "Correlation"],
+      "question": {
+        "en": "The scatter diagram shows the relationship between the temperature (in degrees Celsius) and the number of ice creams sold at a shop on 10 different days.\n\n(a) Describe the type of correlation shown.\n\n(b) Give a reason for this correlation.",
+        "zh": "散点图显示了某商店在 10 个不同日子的气温（摄氏度）与冰淇淋销量之间的关系。\n\n(a) 描述图中所示的相关性类型。\n\n(b) 给出这种相关性的理由。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.7]",
+        "  \\draw[->] (0,0) -- (11,0) node[below] {\\small Temperature ($^\\circ$C)};",
+        "  \\draw[->] (0,0) -- (0,9) node[left, align=center] {\\small Ice creams\\\\\\small sold};",
+        "  \\foreach \\x in {2,4,6,8,10} {",
+        "    \\draw (\\x,-0.1) -- (\\x,0.1);",
+        "    \\node[below] at (\\x,0) {\\small \\x0};",
+        "  }",
+        "  \\foreach \\y in {2,4,6,8} {",
+        "    \\draw (-0.1,\\y) -- (0.1,\\y);",
+        "    \\node[left] at (0,\\y) {\\small \\y0};",
+        "  }",
+        "  \\filldraw (1.5,1.5) circle (3pt);",
+        "  \\filldraw (2,2.5) circle (3pt);",
+        "  \\filldraw (3,2) circle (3pt);",
+        "  \\filldraw (4,3.5) circle (3pt);",
+        "  \\filldraw (5,4) circle (3pt);",
+        "  \\filldraw (6,5.5) circle (3pt);",
+        "  \\filldraw (7,5) circle (3pt);",
+        "  \\filldraw (8,6.5) circle (3pt);",
+        "  \\filldraw (8.5,7) circle (3pt);",
+        "  \\filldraw (9.5,7.5) circle (3pt);",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) Positive correlation\n(b) As the temperature increases, more people want to buy ice cream to cool down.", "zh": "(a) 正相关\n(b) 气温升高时，更多人想买冰淇淋来降温。" },
+      "solution": {
+        "en": [
+          "(a) The scatter diagram shows a positive correlation.",
+          "As the temperature increases, the number of ice creams sold also increases.",
+          "The points lie roughly along a line going upwards from left to right.",
+          "(b) On hotter days, more people want cold food and drinks to cool down, so more ice creams are sold."
+        ],
+        "zh": [
+          "(a) 散点图显示正相关。",
+          "随着气温升高，冰淇淋的销量也增加。",
+          "数据点大致沿着一条从左下到右上的直线分布。",
+          "(b) 天气越热，越多人想要冷食和冷饮来降温，因此冰淇淋的销量也越多。"
+        ]
+      },
+      "common_mistake": { "en": "Confusing positive and negative correlation. Positive means both variables increase together (uphill pattern). Negative means one increases as the other decreases (downhill pattern).", "zh": "混淆正相关和负相关。正相关表示两个变量同时增大（上升趋势）。负相关表示一个增大而另一个减小（下降趋势）。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Statistics", "Mode", "Modal Class"],
+      "question": {
+        "en": "The table shows the masses (in kg) of 30 parcels.\n\n(a) Write down the modal class.\n\n(b) State the number of parcels with a mass greater than 4 kg.",
+        "zh": "下表显示了 30 个包裹的质量（千克）。\n\n(a) 写出众数组（出现频数最多的组）。\n\n(b) 写出质量大于 4 kg 的包裹数量。"
+      },
+      "figure": [
+        "\\begin{tabular}{|c|c|}",
+        "\\hline",
+        "\\textbf{Mass, $m$ (kg)} & \\textbf{Frequency} \\\\",
+        "\\hline",
+        "$0 < m \\leqslant 2$ & 5 \\\\",
+        "\\hline",
+        "$2 < m \\leqslant 4$ & 12 \\\\",
+        "\\hline",
+        "$4 < m \\leqslant 6$ & 8 \\\\",
+        "\\hline",
+        "$6 < m \\leqslant 8$ & 5 \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
+      "answer": { "en": "(a) 2 < m <= 4\n(b) 13", "zh": "(a) 2 < m <= 4\n(b) 13" },
+      "solution": {
+        "en": [
+          "(a) The highest frequency is 12, which corresponds to the class `2 < m \\leqslant 4`.",
+          "Modal class `= 2 < m \\leqslant 4`",
+          "(b) Parcels with mass greater than 4 kg are in the classes `4 < m \\leqslant 6` and `6 < m \\leqslant 8`.",
+          "Number of parcels `= 8 + 5 = 13`"
+        ],
+        "zh": [
+          "(a) 最高频数为 12，对应的组是 `2 < m \\leqslant 4`。",
+          "众数组 `= 2 < m \\leqslant 4`",
+          "(b) 质量大于 4 kg 的包裹在 `4 < m \\leqslant 6` 和 `6 < m \\leqslant 8` 两个组中。",
+          "包裹数量 `= 8 + 5 = 13`"
+        ]
+      },
+      "common_mistake": { "en": "Writing the mode as '12' (the frequency) instead of the class interval '2 < m <= 4'. The modal class is the interval with the highest frequency, not the frequency value itself.", "zh": "将众数写成「12」（频数）而非组距「2 < m <= 4」。众数组是频数最高的组距，而非频数值本身。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Statistics", "Estimated Mean", "Grouped Data"],
+      "question": {
+        "en": "The table shows the times, in minutes, taken by 50 students to complete a test.\n\nCalculate an estimate of the mean time.\nYou must show all your working.",
+        "zh": "下表显示了 50 名学生完成一次测试所用的时间（分钟）。\n\n计算平均时间的估计值。\n你必须展示所有计算过程。"
+      },
+      "figure": [
+        "\\begin{tabular}{|c|c|}",
+        "\\hline",
+        "\\textbf{Time, $t$ (min)} & \\textbf{Frequency} \\\\",
+        "\\hline",
+        "$10 < t \\leqslant 20$ & 6 \\\\",
+        "\\hline",
+        "$20 < t \\leqslant 30$ & 14 \\\\",
+        "\\hline",
+        "$30 < t \\leqslant 40$ & 18 \\\\",
+        "\\hline",
+        "$40 < t \\leqslant 50$ & 9 \\\\",
+        "\\hline",
+        "$50 < t \\leqslant 60$ & 3 \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
+      "answer": { "en": "32.8", "zh": "32.8" },
+      "solution": {
+        "en": [
+          "Use the midpoint of each class interval to estimate the mean.",
+          "Midpoints: `15, 25, 35, 45, 55`",
+          "Calculate `fx` for each row:",
+          "`15 \\times 6 = 90`",
+          "`25 \\times 14 = 350`",
+          "`35 \\times 18 = 630`",
+          "`45 \\times 9 = 405`",
+          "`55 \\times 3 = 165`",
+          "`\\sum fx = 90 + 350 + 630 + 405 + 165 = 1640`",
+          "`\\sum f = 6 + 14 + 18 + 9 + 3 = 50`",
+          "`\\text{Estimated mean} = \\dfrac{\\sum fx}{\\sum f} = \\dfrac{1640}{50} = 32.8`"
+        ],
+        "zh": [
+          "使用每组的组中值来估计平均数。",
+          "组中值：`15, 25, 35, 45, 55`",
+          "计算每行的 `fx`：",
+          "`15 \\times 6 = 90`",
+          "`25 \\times 14 = 350`",
+          "`35 \\times 18 = 630`",
+          "`45 \\times 9 = 405`",
+          "`55 \\times 3 = 165`",
+          "`\\sum fx = 90 + 350 + 630 + 405 + 165 = 1640`",
+          "`\\sum f = 6 + 14 + 18 + 9 + 3 = 50`",
+          "`\\text{估计平均数} = \\dfrac{\\sum fx}{\\sum f} = \\dfrac{1640}{50} = 32.8`"
+        ]
+      },
+      "common_mistake": { "en": "Using the upper or lower class boundary instead of the midpoint. For grouped data, you must use the mid-interval value (e.g. for 10 < t <= 20, the midpoint is 15, not 10 or 20).", "zh": "使用组的上界或下界而非组中值。对于分组数据，必须使用组中值（例如 10 < t <= 20 的组中值为 15，而非 10 或 20）。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 5, "topic": ["Statistics", "Cumulative Frequency"],
+      "question": {
+        "en": "The table shows the heights, in cm, of 80 plants.\n\n(a) Complete the cumulative frequency table.\n\n(b) On a grid, draw a cumulative frequency curve for this data.",
+        "zh": "下表显示了 80 株植物的高度（cm）。\n\n(a) 完成累积频数表。\n\n(b) 在网格上绘制该数据的累积频数曲线。"
+      },
+      "figure": [
+        "\\begin{tabular}{|c|c|c|}",
+        "\\hline",
+        "\\textbf{Height, $h$ (cm)} & \\textbf{Frequency} & \\textbf{Cumulative Frequency} \\\\",
+        "\\hline",
+        "$0 < h \\leqslant 10$ & 5 & \\\\",
+        "\\hline",
+        "$10 < h \\leqslant 20$ & 12 & \\\\",
+        "\\hline",
+        "$20 < h \\leqslant 30$ & 23 & \\\\",
+        "\\hline",
+        "$30 < h \\leqslant 40$ & 20 & \\\\",
+        "\\hline",
+        "$40 < h \\leqslant 50$ & 14 & \\\\",
+        "\\hline",
+        "$50 < h \\leqslant 60$ & 6 & \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
+      "answer": { "en": "(a) Cumulative frequencies: 5, 17, 40, 60, 74, 80\n(b) Smooth S-shaped curve through the plotted points", "zh": "(a) 累积频数：5、17、40、60、74、80\n(b) 通过各描点画出平滑的 S 形曲线" },
+      "solution": {
+        "en": [
+          "(a) Add each frequency to the running total:",
+          "`5`",
+          "`5 + 12 = 17`",
+          "`17 + 23 = 40`",
+          "`40 + 20 = 60`",
+          "`60 + 14 = 74`",
+          "`74 + 6 = 80`",
+          "Cumulative frequencies: `5, 17, 40, 60, 74, 80`",
+          "(b) Plot points at the upper class boundary: `(10, 5)`, `(20, 17)`, `(30, 40)`, `(40, 60)`, `(50, 74)`, `(60, 80)`.",
+          "Join the points with a smooth S-shaped curve.",
+          "Start the curve at `(0, 0)`."
+        ],
+        "zh": [
+          "(a) 将每个频数逐项累加：",
+          "`5`",
+          "`5 + 12 = 17`",
+          "`17 + 23 = 40`",
+          "`40 + 20 = 60`",
+          "`60 + 14 = 74`",
+          "`74 + 6 = 80`",
+          "累积频数：`5, 17, 40, 60, 74, 80`",
+          "(b) 在各组上界处描点：`(10, 5)`、`(20, 17)`、`(30, 40)`、`(40, 60)`、`(50, 74)`、`(60, 80)`。",
+          "用平滑的 S 形曲线连接各点。",
+          "曲线从 `(0, 0)` 开始。"
+        ]
+      },
+      "common_mistake": { "en": "Plotting cumulative frequency at the midpoint instead of the upper class boundary. Cumulative frequency must always be plotted at the upper boundary of each class interval.", "zh": "将累积频数描在组中值处而非组上界处。累积频数必须始终标在每个组距的上界处。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Statistics", "Cumulative Frequency Curve", "Median", "IQR"],
+      "question": {
+        "en": "The cumulative frequency curve shows the distribution of masses, in grams, of 100 apples.\n\nUse the curve to estimate:\n\n(a) the median mass,\n\n(b) the lower quartile (Q1),\n\n(c) the upper quartile (Q3),\n\n(d) the interquartile range.",
+        "zh": "累积频数曲线显示了 100 个苹果质量（克）的分布。\n\n利用曲线估计：\n\n(a) 质量的中位数，\n\n(b) 下四分位数 (Q1)，\n\n(c) 上四分位数 (Q3)，\n\n(d) 四分位距。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.08]",
+        "  \\draw[->] (0,0) -- (110,0) node[below] {\\small Mass (g)};",
+        "  \\draw[->] (0,0) -- (0,110) node[left] {\\small Cumulative frequency};",
+        "  \\foreach \\x in {20,40,60,80,100} {",
+        "    \\draw (\\x,-1.5) -- (\\x,1.5);",
+        "    \\node[below] at (\\x,-2) {\\small \\x};",
+        "  }",
+        "  \\foreach \\y in {20,40,60,80,100} {",
+        "    \\draw (-1.5,\\y) -- (1.5,\\y);",
+        "    \\node[left] at (-2,\\y) {\\small \\y};",
+        "  }",
+        "  \\draw[help lines, gray!30] (0,0) grid[step=20] (100,100);",
+        "  \\draw[thick, smooth] plot coordinates {(10,0) (20,4) (30,12) (40,28) (50,50) (60,72) (70,88) (80,96) (90,100)};",
+        "  \\draw[dashed, blue] (0,25) -- (38,25) -- (38,0);",
+        "  \\node[below, blue] at (38,-5) {\\small Q1};",
+        "  \\draw[dashed, red] (0,50) -- (50,50) -- (50,0);",
+        "  \\node[below, red] at (50,-5) {\\small Median};",
+        "  \\draw[dashed, blue] (0,75) -- (62,75) -- (62,0);",
+        "  \\node[below, blue] at (62,-5) {\\small Q3};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 50 g\n(b) 38 g\n(c) 62 g\n(d) 24 g", "zh": "(a) 50 g\n(b) 38 g\n(c) 62 g\n(d) 24 g" },
+      "solution": {
+        "en": [
+          "Total frequency `= 100`.",
+          "(a) Median is at the `\\dfrac{100}{2} = 50\\text{th}` value.",
+          "Read across from cumulative frequency 50 to the curve, then down to the horizontal axis.",
+          "Median `\\approx 50` g",
+          "(b) Lower quartile (Q1) is at the `\\dfrac{100}{4} = 25\\text{th}` value.",
+          "Read across from 25: Q1 `\\approx 38` g",
+          "(c) Upper quartile (Q3) is at the `\\dfrac{3 \\times 100}{4} = 75\\text{th}` value.",
+          "Read across from 75: Q3 `\\approx 62` g",
+          "(d) `\\text{IQR} = Q3 - Q1 = 62 - 38 = 24` g"
+        ],
+        "zh": [
+          "总频数 `= 100`。",
+          "(a) 中位数在第 `\\dfrac{100}{2} = 50` 个值处。",
+          "从累积频数 50 水平读到曲线，再垂直向下读到横轴。",
+          "中位数 `\\approx 50` g",
+          "(b) 下四分位数 (Q1) 在第 `\\dfrac{100}{4} = 25` 个值处。",
+          "从 25 水平读取：Q1 `\\approx 38` g",
+          "(c) 上四分位数 (Q3) 在第 `\\dfrac{3 \\times 100}{4} = 75` 个值处。",
+          "从 75 水平读取：Q3 `\\approx 62` g",
+          "(d) `\\text{IQR} = Q3 - Q1 = 62 - 38 = 24` g"
+        ]
+      },
+      "common_mistake": { "en": "Reading Q1 at the 25th percentile of the horizontal axis scale instead of finding where cumulative frequency = 25. You must read from the vertical axis (cumulative frequency) across to the curve, then down to the horizontal axis.", "zh": "在横轴刻度的第 25 百分位处读取 Q1，而非找到累积频数 = 25 的位置。必须从纵轴（累积频数）水平读到曲线，再垂直向下读到横轴。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Statistics", "Histogram", "Frequency Density"],
+      "question": {
+        "en": "The table shows the distances, in km, travelled by 60 delivery drivers in one day.\n\nSome of the class widths are unequal.\n\n(a) Calculate the frequency density for each class.\n\n(b) Draw a histogram to represent this data.",
+        "zh": "下表显示了 60 名快递员一天内行驶的距离（km）。\n\n部分组距不相等。\n\n(a) 计算每组的频率密度。\n\n(b) 画出表示该数据的直方图。"
+      },
+      "figure": [
+        "\\begin{tabular}{|c|c|c|c|}",
+        "\\hline",
+        "\\textbf{Distance, $d$ (km)} & \\textbf{Frequency} & \\textbf{Class width} & \\textbf{Frequency density} \\\\",
+        "\\hline",
+        "$0 < d \\leqslant 10$ & 6 & 10 & \\\\",
+        "\\hline",
+        "$10 < d \\leqslant 20$ & 14 & 10 & \\\\",
+        "\\hline",
+        "$20 < d \\leqslant 30$ & 18 & 10 & \\\\",
+        "\\hline",
+        "$30 < d \\leqslant 50$ & 16 & 20 & \\\\",
+        "\\hline",
+        "$50 < d \\leqslant 80$ & 6 & 30 & \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
+      "answer": { "en": "(a) Frequency densities: 0.6, 1.4, 1.8, 0.8, 0.2\n(b) Histogram with bars of correct widths and heights", "zh": "(a) 频率密度：0.6、1.4、1.8、0.8、0.2\n(b) 柱宽和柱高正确的直方图" },
+      "solution": {
+        "en": [
+          "(a) `\\text{Frequency density} = \\dfrac{\\text{Frequency}}{\\text{Class width}}`",
+          "`0 < d \\leqslant 10`: `\\dfrac{6}{10} = 0.6`",
+          "`10 < d \\leqslant 20`: `\\dfrac{14}{10} = 1.4`",
+          "`20 < d \\leqslant 30`: `\\dfrac{18}{10} = 1.8`",
+          "`30 < d \\leqslant 50`: `\\dfrac{16}{20} = 0.8`",
+          "`50 < d \\leqslant 80`: `\\dfrac{6}{30} = 0.2`",
+          "(b) Draw bars with:",
+          "Horizontal axis: Distance (km), from 0 to 80.",
+          "Vertical axis: Frequency density.",
+          "Each bar has width equal to the class width and height equal to the frequency density.",
+          "Check: area of each bar `= \\text{frequency density} \\times \\text{class width} = \\text{frequency}`."
+        ],
+        "zh": [
+          "(a) `\\text{频率密度} = \\dfrac{\\text{频数}}{\\text{组距}}`",
+          "`0 < d \\leqslant 10`：`\\dfrac{6}{10} = 0.6`",
+          "`10 < d \\leqslant 20`：`\\dfrac{14}{10} = 1.4`",
+          "`20 < d \\leqslant 30`：`\\dfrac{18}{10} = 1.8`",
+          "`30 < d \\leqslant 50`：`\\dfrac{16}{20} = 0.8`",
+          "`50 < d \\leqslant 80`：`\\dfrac{6}{30} = 0.2`",
+          "(b) 画出条形图：",
+          "横轴：距离（km），从 0 到 80。",
+          "纵轴：频率密度。",
+          "每根柱的宽度等于组距，高度等于频率密度。",
+          "验证：每根柱的面积 `= \\text{频率密度} \\times \\text{组距} = \\text{频数}`。"
+        ]
+      },
+      "common_mistake": { "en": "Using frequency instead of frequency density on the vertical axis. When class widths are unequal, you MUST use frequency density = frequency / class width, so that the AREA of each bar represents the frequency.", "zh": "在纵轴上使用频数而非频率密度。当组距不等时，必须使用频率密度 = 频数 / 组距，使每根柱的面积代表频数。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can calculate the mean, median, mode and range from a list of data values.", "zh": "我能根据一组数据计算平均数、中位数、众数和范围（全距）。" },
+    { "en": "I can calculate the mean from a frequency table using the formula: mean = sum of fx / sum of f.", "zh": "我能使用公式「平均数 = fx 之和 / f 之和」从频数表中计算平均数。" },
+    { "en": "I can read and interpret pie charts, calculating frequencies from sector angles.", "zh": "我能读取和解释饼图，根据扇形角度计算频数。" },
+    { "en": "I can read and interpret bar charts to find frequencies and totals.", "zh": "我能读取和解释条形图以找出频数和总数。" },
+    { "en": "I can describe the correlation shown in a scatter diagram (positive, negative, or none) and draw a line of best fit.", "zh": "我能描述散点图中显示的相关性（正相关、负相关或无相关），并画出最佳拟合线。" },
+    { "en": "I can construct and read cumulative frequency tables and curves to find the median, quartiles and interquartile range (Extended).", "zh": "我能构建和读取累积频数表和曲线，找出中位数、四分位数和四分位距（拓展）。" },
+    { "en": "I can draw and interpret histograms with unequal class widths using frequency density (Extended).", "zh": "我能使用频率密度绘制和解释组距不等的直方图（拓展）。" }
+  ]
+}
