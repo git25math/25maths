@@ -1,0 +1,26 @@
+flowchart TD
+    A[Stage 1 Diagnose]
+    B[Stage 2 Build]
+    C[Stage 3 Apply]
+    D[Stage 4 Correct]
+    E[Stage 5 Reinforce]
+
+    A --> B --> C --> D --> E
+
+    A1[Baseline method audit Q01-Q08] --> A
+    A2[Tag initial errors with Module 3] --> A
+
+    B1[Core fluency drills Q01-Q08] --> B
+    B2[Method-language training Module 4] --> B
+
+    C1[Mixed selection set Q09-Q16] --> C
+    C2[Transfer set Q17-Q24] --> C
+
+    D1[Error-tag intervention by top 2 tags] --> D
+    D2[Micro-drill loops DR-01 to DR-06] --> D
+
+    E1[Kahoot KQ-01 to KQ-06 spaced schedule] --> E
+    E2[Final mixed check and readiness gate] --> E
+
+    D --> B
+    E --> C

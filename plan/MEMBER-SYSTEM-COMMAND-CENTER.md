@@ -1,6 +1,6 @@
 # Member System Command Center
 
-> Updated: 2026-02-18
+> Updated: 2026-02-18 (UTC)
 > Branch baseline: `main` + `codex/member-system-dev`
 > Commander: Codex
 
@@ -123,7 +123,26 @@
 2. 异常分支有清晰报错与日志
 3. 回滚脚本与清单可执行
 
-## 7) Evidence and Audit Trail
+## 7) Gate Status Snapshot (2026-02-18 UTC)
+
+1. Gate A (Free MVP): pass
+- 登录链路可用，回跳兼容 `access_token/code/token_hash`。
+- 免费会员 session/attempt/complete 记录链路可用。
+- 匿名练习仍可运行（云端失败不阻塞）。
+
+2. Gate B (Paid MVP): in_progress
+- `membership_status`、`entitlements`、`benefits`、`download` API 已完成实现。
+- 待补：Payhip 实际事件到下载授权的生产链路实测证据。
+
+3. Gate C (Personalization): in_progress
+- 已有错题聚类 + 推荐卡展示（含频次与近期窗口加权）。
+- 待补：推荐权重与课程包映射策略强化。
+
+4. Gate D (Production Readiness): in_progress
+- 已形成可重复 Gate 验证脚本与运行证据。
+- 待补：回滚演练与异常注入测试报告。
+
+## 8) Evidence and Audit Trail
 
 所有执行证据统一落盘：
 
@@ -142,3 +161,19 @@
 2. `plan/member-agent-runs/20260218T124247Z/`
 - 第二轮并行成功收敛（backend/frontend/architect/qa 全部落盘）。
 - 输出用于驱动 W3/W4/W5 第一批代码硬化。
+
+3. `plan/member-agent-runs/20260218T205629Z/`
+- `dispatch gate` 顺序验证全绿（jekyll/node/supabase/health checks）。
+- 同步修复并沉淀了 Supabase CLI 并发认证冲突规避策略。
+
+4. `plan/member-agent-runs/20260218T210315Z/`
+- 在推荐加权改动后再次通过 `dispatch gate` 回归验证。
+- 证明当前 P3 第一轮改造未引入构建或数据链路回归。
+
+5. `plan/member-agent-runs/20260218T212638Z/`
+- 在 webhook/reconcile 增强退款回收 entitlement 后通过 `dispatch gate` 回归验证。
+- 证明 `refunded/cancel/subscription.deleted` 场景硬化未引入构建或迁移回归。
+
+6. `plan/member-agent-runs/20260218T213543Z/`
+- 在 `membership/benefits` 触发规则引擎（metadata.trigger）与前端权益原因展示改造后，通过 `dispatch gate` 回归验证。
+- 证明 W7 第一轮（规则驱动优惠）未引入构建或数据链路回归。

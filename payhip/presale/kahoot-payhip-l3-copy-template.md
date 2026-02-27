@@ -8,8 +8,8 @@ Global CTA label: `Get Early-Bird Access`
 
 - Board: `CIE 0580`
 - Unit: `U1 Number`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-number`
@@ -20,7 +20,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Number. Approx. 34 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Number. Approx. 34 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$102. This L3 early-bird price is US$20 (save US$82).
 
 ### Full Description (Markdown)
 
@@ -30,6 +30,11 @@ This is the early-bird presale for **CIE 0580 Number** (Core + Extended).
 - Approx. **34 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$102** (34 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$82**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -57,7 +62,7 @@ This is the early-bird presale for **CIE 0580 Number** (Core + Extended).
 ### SEO
 
 - SEO title: CIE 0580 U1 Number Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Number. Approx. 34 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Number. Approx. 34 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$102. This L3 early-bird price is US$20 (save US$82).
 
 ### Tags
 
@@ -67,8 +72,8 @@ kahoot,presale,l3,cie0580,unit:number
 
 - Board: `CIE 0580`
 - Unit: `U2 Algebra and Graphs`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-algebra`
@@ -79,7 +84,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Algebra and Graphs. Approx. 22 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Algebra and Graphs. Approx. 22 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$66. This L3 early-bird price is US$20 (save US$46).
 
 ### Full Description (Markdown)
 
@@ -89,6 +94,11 @@ This is the early-bird presale for **CIE 0580 Algebra and Graphs** (Core + Exten
 - Approx. **22 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$66** (22 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$46**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -116,7 +126,7 @@ This is the early-bird presale for **CIE 0580 Algebra and Graphs** (Core + Exten
 ### SEO
 
 - SEO title: CIE 0580 U2 Algebra and Graphs Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Algebra and Graphs. Approx. 22 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Algebra and Graphs. Approx. 22 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$66. This L3 early-bird price is US$20 (save US$46).
 
 ### Tags
 
@@ -126,8 +136,8 @@ kahoot,presale,l3,cie0580,unit:algebra
 
 - Board: `CIE 0580`
 - Unit: `U3 Coordinate Geometry`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-coordinate`
@@ -138,7 +148,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Coordinate Geometry. Approx. 12 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Coordinate Geometry. Approx. 12 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$36. This L3 early-bird price is US$20 (save US$16).
 
 ### Full Description (Markdown)
 
@@ -148,6 +158,11 @@ This is the early-bird presale for **CIE 0580 Coordinate Geometry** (Core + Exte
 - Approx. **12 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$36** (12 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$16**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -175,7 +190,7 @@ This is the early-bird presale for **CIE 0580 Coordinate Geometry** (Core + Exte
 ### SEO
 
 - SEO title: CIE 0580 U3 Coordinate Geometry Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Coordinate Geometry. Approx. 12 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Coordinate Geometry. Approx. 12 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$36. This L3 early-bird price is US$20 (save US$16).
 
 ### Tags
 
@@ -185,8 +200,8 @@ kahoot,presale,l3,cie0580,unit:coordinate
 
 - Board: `CIE 0580`
 - Unit: `U4 Geometry`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-geometry`
@@ -197,7 +212,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Geometry. Approx. 15 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Geometry. Approx. 15 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$45. This L3 early-bird price is US$20 (save US$25).
 
 ### Full Description (Markdown)
 
@@ -207,6 +222,11 @@ This is the early-bird presale for **CIE 0580 Geometry** (Core + Extended).
 - Approx. **15 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$45** (15 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$25**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -234,7 +254,7 @@ This is the early-bird presale for **CIE 0580 Geometry** (Core + Extended).
 ### SEO
 
 - SEO title: CIE 0580 U4 Geometry Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Geometry. Approx. 15 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Geometry. Approx. 15 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$45. This L3 early-bird price is US$20 (save US$25).
 
 ### Tags
 
@@ -244,8 +264,8 @@ kahoot,presale,l3,cie0580,unit:geometry
 
 - Board: `CIE 0580`
 - Unit: `U5 Mensuration`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-mensuration`
@@ -256,7 +276,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Mensuration. Approx. 10 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Mensuration. Approx. 10 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$30. This L3 early-bird price is US$20 (save US$10).
 
 ### Full Description (Markdown)
 
@@ -266,6 +286,11 @@ This is the early-bird presale for **CIE 0580 Mensuration** (Core + Extended).
 - Approx. **10 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$30** (10 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$10**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -293,7 +318,7 @@ This is the early-bird presale for **CIE 0580 Mensuration** (Core + Extended).
 ### SEO
 
 - SEO title: CIE 0580 U5 Mensuration Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Mensuration. Approx. 10 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Mensuration. Approx. 10 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$30. This L3 early-bird price is US$20 (save US$10).
 
 ### Tags
 
@@ -303,8 +328,8 @@ kahoot,presale,l3,cie0580,unit:mensuration
 
 - Board: `CIE 0580`
 - Unit: `U6 Trigonometry`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-trigonometry`
@@ -315,7 +340,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Trigonometry. Approx. 8 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Trigonometry. Approx. 8 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$24. This L3 early-bird price is US$20 (save US$4).
 
 ### Full Description (Markdown)
 
@@ -325,6 +350,11 @@ This is the early-bird presale for **CIE 0580 Trigonometry** (Core + Extended).
 - Approx. **8 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$24** (8 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$4**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -352,7 +382,7 @@ This is the early-bird presale for **CIE 0580 Trigonometry** (Core + Extended).
 ### SEO
 
 - SEO title: CIE 0580 U6 Trigonometry Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Trigonometry. Approx. 8 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Trigonometry. Approx. 8 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$24. This L3 early-bird price is US$20 (save US$4).
 
 ### Tags
 
@@ -362,8 +392,8 @@ kahoot,presale,l3,cie0580,unit:trigonometry
 
 - Board: `CIE 0580`
 - Unit: `U7 Transformations and Vectors`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-transformations`
@@ -374,7 +404,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Transformations and Vectors. Approx. 5 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Transformations and Vectors. Approx. 5 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Designed as a complete unit roadmap with bundled support, not just a sum of L1 files (L1 subtotal US$15).
 
 ### Full Description (Markdown)
 
@@ -384,6 +414,11 @@ This is the early-bird presale for **CIE 0580 Transformations and Vectors** (Cor
 - Approx. **5 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$15** (5 x US$3)
+- L3 early-bird price: **US$20**
+- This unit is priced for structured unit completion, answer workflow, and exam-support path beyond standalone L1 files.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -411,7 +446,7 @@ This is the early-bird presale for **CIE 0580 Transformations and Vectors** (Cor
 ### SEO
 
 - SEO title: CIE 0580 U7 Transformations and Vectors Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Transformations and Vectors. Approx. 5 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Transformations and Vectors. Approx. 5 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Designed as a complete unit roadmap with bundled support, not just a sum of L1 files (L1 subtotal US$15).
 
 ### Tags
 
@@ -421,8 +456,8 @@ kahoot,presale,l3,cie0580,unit:transformations
 
 - Board: `CIE 0580`
 - Unit: `U8 Probability`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-probability`
@@ -433,7 +468,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Probability. Approx. 7 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Probability. Approx. 7 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$21. This L3 early-bird price is US$20 (save US$1).
 
 ### Full Description (Markdown)
 
@@ -443,6 +478,11 @@ This is the early-bird presale for **CIE 0580 Probability** (Core + Extended).
 - Approx. **7 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$21** (7 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$1**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -470,7 +510,7 @@ This is the early-bird presale for **CIE 0580 Probability** (Core + Extended).
 ### SEO
 
 - SEO title: CIE 0580 U8 Probability Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Probability. Approx. 7 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Probability. Approx. 7 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$21. This L3 early-bird price is US$20 (save US$1).
 
 ### Tags
 
@@ -480,8 +520,8 @@ kahoot,presale,l3,cie0580,unit:probability
 
 - Board: `CIE 0580`
 - Unit: `U9 Statistics`
-- Early-bird price: `US$12`
-- Regular price: `US$16`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-03-31`
 - Release date: `2026-04-30`
 - Seed URL: `https://payhip.com/25maths?src=cie0580-unit-statistics`
@@ -492,7 +532,7 @@ Early-Bird Presale | Core + Extended | CIE 0580 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for CIE 0580 Statistics. Approx. 11 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+Early-bird presale for CIE 0580 Statistics. Approx. 11 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$33. This L3 early-bird price is US$20 (save US$13).
 
 ### Full Description (Markdown)
 
@@ -502,6 +542,11 @@ This is the early-bird presale for **CIE 0580 Statistics** (Core + Extended).
 - Approx. **11 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$33** (11 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$13**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -529,7 +574,7 @@ This is the early-bird presale for **CIE 0580 Statistics** (Core + Extended).
 ### SEO
 
 - SEO title: CIE 0580 U9 Statistics Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for CIE 0580 Statistics. Approx. 11 subtopics (Core + Extended) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for CIE 0580 Statistics. Approx. 11 subtopics (Core + Extended) with unit-level worksheet + answer support on release. Buying L1 separately would be US$33. This L3 early-bird price is US$20 (save US$13).
 
 ### Tags
 
@@ -539,8 +584,8 @@ kahoot,presale,l3,cie0580,unit:statistics
 
 - Board: `Edexcel 4MA1`
 - Unit: `U1 Number and Arithmetic`
-- Early-bird price: `US$11`
-- Regular price: `US$15`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-04-30`
 - Release date: `2026-05-31`
 - Seed URL: `https://payhip.com/25maths?src=edexcel4ma1-unit-number`
@@ -551,7 +596,7 @@ Early-Bird Presale | Foundation + Higher | Edexcel 4MA1 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Number and Arithmetic. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+Early-bird presale for Edexcel 4MA1 Number and Arithmetic. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$66. This L3 early-bird price is US$20 (save US$46).
 
 ### Full Description (Markdown)
 
@@ -561,6 +606,11 @@ This is the early-bird presale for **Edexcel 4MA1 Number and Arithmetic** (Found
 - Approx. **22 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$66** (22 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$46**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -588,7 +638,7 @@ This is the early-bird presale for **Edexcel 4MA1 Number and Arithmetic** (Found
 ### SEO
 
 - SEO title: Edexcel 4MA1 U1 Number and Arithmetic Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Number and Arithmetic. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for Edexcel 4MA1 Number and Arithmetic. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$66. This L3 early-bird price is US$20 (save US$46).
 
 ### Tags
 
@@ -598,8 +648,8 @@ kahoot,presale,l3,edexcel-4ma1,unit:number
 
 - Board: `Edexcel 4MA1`
 - Unit: `U2 Equations, Formulae and Identities`
-- Early-bird price: `US$11`
-- Regular price: `US$15`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-04-30`
 - Release date: `2026-05-31`
 - Seed URL: `https://payhip.com/25maths?src=edexcel4ma1-unit-equations`
@@ -610,7 +660,7 @@ Early-Bird Presale | Foundation + Higher | Edexcel 4MA1 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Equations, Formulae and Identities. Approx. 16 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+Early-bird presale for Edexcel 4MA1 Equations, Formulae and Identities. Approx. 16 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$48. This L3 early-bird price is US$20 (save US$28).
 
 ### Full Description (Markdown)
 
@@ -620,6 +670,11 @@ This is the early-bird presale for **Edexcel 4MA1 Equations, Formulae and Identi
 - Approx. **16 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$48** (16 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$28**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -647,7 +702,7 @@ This is the early-bird presale for **Edexcel 4MA1 Equations, Formulae and Identi
 ### SEO
 
 - SEO title: Edexcel 4MA1 U2 Equations, Formulae and Identities Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Equations, Formulae and Identities. Approx. 16 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for Edexcel 4MA1 Equations, Formulae and Identities. Approx. 16 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$48. This L3 early-bird price is US$20 (save US$28).
 
 ### Tags
 
@@ -657,8 +712,8 @@ kahoot,presale,l3,edexcel-4ma1,unit:equations
 
 - Board: `Edexcel 4MA1`
 - Unit: `U3 Functions, Sequences and Graphs`
-- Early-bird price: `US$11`
-- Regular price: `US$15`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-04-30`
 - Release date: `2026-05-31`
 - Seed URL: `https://payhip.com/25maths?src=edexcel4ma1-unit-sequences`
@@ -669,7 +724,7 @@ Early-Bird Presale | Foundation + Higher | Edexcel 4MA1 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Functions, Sequences and Graphs. Approx. 8 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+Early-bird presale for Edexcel 4MA1 Functions, Sequences and Graphs. Approx. 8 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$24. This L3 early-bird price is US$20 (save US$4).
 
 ### Full Description (Markdown)
 
@@ -679,6 +734,11 @@ This is the early-bird presale for **Edexcel 4MA1 Functions, Sequences and Graph
 - Approx. **8 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$24** (8 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$4**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -706,7 +766,7 @@ This is the early-bird presale for **Edexcel 4MA1 Functions, Sequences and Graph
 ### SEO
 
 - SEO title: Edexcel 4MA1 U3 Functions, Sequences and Graphs Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Functions, Sequences and Graphs. Approx. 8 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for Edexcel 4MA1 Functions, Sequences and Graphs. Approx. 8 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$24. This L3 early-bird price is US$20 (save US$4).
 
 ### Tags
 
@@ -716,8 +776,8 @@ kahoot,presale,l3,edexcel-4ma1,unit:sequences
 
 - Board: `Edexcel 4MA1`
 - Unit: `U4 Geometry and Mensuration`
-- Early-bird price: `US$11`
-- Regular price: `US$15`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-04-30`
 - Release date: `2026-05-31`
 - Seed URL: `https://payhip.com/25maths?src=edexcel4ma1-unit-geometry`
@@ -728,7 +788,7 @@ Early-Bird Presale | Foundation + Higher | Edexcel 4MA1 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Geometry and Mensuration. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+Early-bird presale for Edexcel 4MA1 Geometry and Mensuration. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$66. This L3 early-bird price is US$20 (save US$46).
 
 ### Full Description (Markdown)
 
@@ -738,6 +798,11 @@ This is the early-bird presale for **Edexcel 4MA1 Geometry and Mensuration** (Fo
 - Approx. **22 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$66** (22 x US$3)
+- L3 early-bird price: **US$20**
+- Savings at early-bird price: **US$46**.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -765,7 +830,7 @@ This is the early-bird presale for **Edexcel 4MA1 Geometry and Mensuration** (Fo
 ### SEO
 
 - SEO title: Edexcel 4MA1 U4 Geometry and Mensuration Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Geometry and Mensuration. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for Edexcel 4MA1 Geometry and Mensuration. Approx. 22 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Buying L1 separately would be US$66. This L3 early-bird price is US$20 (save US$46).
 
 ### Tags
 
@@ -775,8 +840,8 @@ kahoot,presale,l3,edexcel-4ma1,unit:geometry
 
 - Board: `Edexcel 4MA1`
 - Unit: `U5 Vectors and Transformations`
-- Early-bird price: `US$11`
-- Regular price: `US$15`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-04-30`
 - Release date: `2026-05-31`
 - Seed URL: `https://payhip.com/25maths?src=edexcel4ma1-unit-vectors`
@@ -787,7 +852,7 @@ Early-Bird Presale | Foundation + Higher | Edexcel 4MA1 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Vectors and Transformations. Approx. 4 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+Early-bird presale for Edexcel 4MA1 Vectors and Transformations. Approx. 4 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Designed as a complete unit roadmap with bundled support, not just a sum of L1 files (L1 subtotal US$12).
 
 ### Full Description (Markdown)
 
@@ -797,6 +862,11 @@ This is the early-bird presale for **Edexcel 4MA1 Vectors and Transformations** 
 - Approx. **4 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$12** (4 x US$3)
+- L3 early-bird price: **US$20**
+- This unit is priced for structured unit completion, answer workflow, and exam-support path beyond standalone L1 files.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -824,7 +894,7 @@ This is the early-bird presale for **Edexcel 4MA1 Vectors and Transformations** 
 ### SEO
 
 - SEO title: Edexcel 4MA1 U5 Vectors and Transformations Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Vectors and Transformations. Approx. 4 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for Edexcel 4MA1 Vectors and Transformations. Approx. 4 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Designed as a complete unit roadmap with bundled support, not just a sum of L1 files (L1 subtotal US$12).
 
 ### Tags
 
@@ -834,8 +904,8 @@ kahoot,presale,l3,edexcel-4ma1,unit:vectors
 
 - Board: `Edexcel 4MA1`
 - Unit: `U6 Statistics and Probability`
-- Early-bird price: `US$11`
-- Regular price: `US$15`
+- Early-bird price: `US$20`
+- Regular price: `US$25`
 - Early-bird end: `2026-04-30`
 - Release date: `2026-05-31`
 - Seed URL: `https://payhip.com/25maths?src=edexcel4ma1-unit-statistics`
@@ -846,7 +916,7 @@ Early-Bird Presale | Foundation + Higher | Edexcel 4MA1 Unit Bundle
 
 ### Short Description
 
-Early-bird presale for Edexcel 4MA1 Statistics and Probability. Approx. 6 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+Early-bird presale for Edexcel 4MA1 Statistics and Probability. Approx. 6 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Designed as a complete unit roadmap with bundled support, not just a sum of L1 files (L1 subtotal US$18).
 
 ### Full Description (Markdown)
 
@@ -856,6 +926,11 @@ This is the early-bird presale for **Edexcel 4MA1 Statistics and Probability** (
 - Approx. **6 subtopics** across **2 sections**
 - Structured for exam-spec progression and revision sequencing
 - Designed to align Kahoot usage with worksheet and answer support
+
+### Value positioning (L1 anchor: US$3 each)
+- L1 single-buy subtotal for this unit: **US$18** (6 x US$3)
+- L3 early-bird price: **US$20**
+- This unit is priced for structured unit completion, answer workflow, and exam-support path beyond standalone L1 files.
 
 ### What you receive now (presale stage)
 - Presale entitlement confirmation
@@ -883,7 +958,7 @@ This is the early-bird presale for **Edexcel 4MA1 Statistics and Probability** (
 ### SEO
 
 - SEO title: Edexcel 4MA1 U6 Statistics and Probability Unit Bundle | Early-Bird Presale
-- SEO description: Early-bird presale for Edexcel 4MA1 Statistics and Probability. Approx. 6 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release.
+- SEO description: Early-bird presale for Edexcel 4MA1 Statistics and Probability. Approx. 6 subtopics (Foundation + Higher) with unit-level worksheet + answer support on release. Designed as a complete unit roadmap with bundled support, not just a sum of L1 files (L1 subtotal US$18).
 
 ### Tags
 

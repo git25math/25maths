@@ -1,0 +1,7 @@
+set_id,title,focus,trigger_point,question_count,time_box_minutes,outcome_metric,next_set_id,board_scope,tags
+KQ-01,Quadratics Mastery | KQ-01 | Factorising Fluency,Factorising fluency,After Q01-Q08 completion,15,10,80%+ accurate first attempt,KQ-02,CIE 0580 + Edexcel 4MA1,"quadratics,mastery-series,exam-revision,kahoot"
+KQ-02,Quadratics Mastery | KQ-02 | Formula Setup,Formula setup,After Q09-Q12 practice,15,12,Discriminant setup errors <= 1,KQ-03,CIE 0580 + Edexcel 4MA1,"quadratics,mastery-series,exam-revision,kahoot"
+KQ-03,Quadratics Mastery | KQ-03 | Completing-Square Decisions,Completing-square decisions,After Q13-Q15,12,10,Correct method choice >= 75%,KQ-04,CIE 0580 + Edexcel 4MA1,"quadratics,mastery-series,exam-revision,kahoot"
+KQ-04,Quadratics Mastery | KQ-04 | Mixed Method Selection,Mixed method selection,After Module 2 review,15,12,Wrong-method rate <= 20%,KQ-05,CIE 0580 + Edexcel 4MA1,"quadratics,mastery-series,exam-revision,kahoot"
+KQ-05,Quadratics Mastery | KQ-05 | Context Root Filtering,Context root filtering,After Module 3 intervention,10,8,Invalid root acceptance = 0,KQ-06,CIE 0580 + Edexcel 4MA1,"quadratics,mastery-series,exam-revision,kahoot"
+KQ-06,Quadratics Mastery | KQ-06 | Final Exam-Speed Recap,Final exam-speed recap,48h before mock/test,20,15,85%+ overall score,,CIE 0580 + Edexcel 4MA1,"quadratics,mastery-series,exam-revision,kahoot"

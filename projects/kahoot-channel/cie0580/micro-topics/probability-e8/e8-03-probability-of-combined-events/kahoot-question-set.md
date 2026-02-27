@@ -1,28 +1,28 @@
 # E8.3 Kahoot Question Set - Probability of combined events
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E8.3
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[13, 11, 14, 11, 8]`. | 0 | Cannot be determined | No solution | 11.4 | D | Fluency |
-| 2 | Find median of `[8, 11, 11, 13, 14]`. | 11 | 12 | 13 | 10 | A | Fluency |
-| 3 | Find range of `[13, 11, 14, 11, 8]`. | 7 | 5 | 8 | 6 | D | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 1)`. | 6/6 | 7/6 | 5/7 | 5/6 | D | Fluency |
-| 5 | If `P(A)=0.5`, find `P(not A)`. | No solution | Cannot be determined | 0 | 0.5 | D | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `51` trials. | 15 | 14 | 16 | 17 | A | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | 0 | No solution | Median | Cannot be determined | C | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | No solution | Cannot be determined | 0 | A | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | 14/50 = 7/25 | 0 | Cannot be determined | No solution | A | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0.28 | 0 | No solution | Cannot be determined | A | Method |
-| 11 | Context check: Find median of `[8, 11, 11, 13, 14]`. | 10 | 13 | 11 | 12 | C | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 1)`. | 5/6 | 7/6 | 5/7 | 6/6 | A | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `51` trials. | 16 | 14 | 17 | 15 | D | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | Cannot be determined | 0 | No solution | 18/30 = 3/5 | D | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0.28 | No solution | Cannot be determined | 0 | A | Context |
+| 1 | A fair die is rolled. Find `P(score > 3)`. | 5/6 | 3/7 | 3/6 | 4/6 | C | Fluency |
+| 2 | If `P(A)=0.35`, find `P(not A)`. | 1.65 | 0.65 | 1.15 | 0.15 | B | Fluency |
+| 3 | Expected frequency for probability `0.3` in `73` trials. | 21 | 20 | 22 | 23 | A | Fluency |
+| 4 | If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A and B)`. | 0.78 | -0.22 | 1.28 | 0.28 | D | Fluency |
+| 5 | If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A or B)`. | 1.32 | 1.82 | 0.32 | 0.82 | D | Fluency |
+| 6 | A bag has 4 red and 4 blue counters. Find `P(red)`. | 4/9 | 5/8 | 6/8 | 4/8 | D | Method |
+| 7 | A spinner has 8 equal sections, 3 are blue. Find `P(blue)`. | 3/8 | 3/9 | 4/8 | 5/8 | A | Method |
+| 8 | In a class, 18 of 30 students are girls. Find `P(girl)`. | 0 | No solution | 18/30 = 3/5 | Cannot be determined | C | Method |
+| 9 | If `P(A)=0.25` and `P(B)=0.45` are mutually exclusive, find `P(A or B)`. | 0.70 | 0.20 | 1.20 | 1.70 | A | Method |
+| 10 | Given `P(A)=0.6`, `P(B)=0.5`, and `P(A and B)=0.3`, find `P(A/B)`. | 0.60 | 1.60 | 1.10 | 0.10 | A | Method |
+| 11 | Context check: If `P(A)=0.35`, find `P(not A)`. | 0.65 | 1.65 | 0.15 | 1.15 | A | Method |
+| 12 | Context check: If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A and B)`. | -0.22 | 1.28 | 0.28 | 0.78 | C | Context |
+| 13 | Context check: A bag has 4 red and 4 blue counters. Find `P(red)`. | 4/8 | 6/8 | 4/9 | 5/8 | A | Context |
+| 14 | Context check: In a class, 18 of 30 students are girls. Find `P(girl)`. | Cannot be determined | No solution | 0 | 18/30 = 3/5 | D | Context |
+| 15 | Context check: Given `P(A)=0.6`, `P(B)=0.5`, and `P(A and B)=0.3`, find `P(A/B)`. | 1.10 | 1.60 | 0.10 | 0.60 | D | Context |
 
 ## Timer
 - Q1-Q5: 20s

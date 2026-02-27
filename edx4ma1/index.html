@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Edexcel 4MA1
-description: "Exam-aligned resources for Pearson Edexcel IGCSE Mathematics 4MA1 with a closed-loop presale architecture."
+description: "Exam-aligned resources for Pearson Edexcel IGCSE Mathematics 4MA1. Free vocabulary cards, interactive exercises, and worksheet packs."
 module: edx4ma1
 active_page: overview
 ---
@@ -12,12 +12,17 @@ active_page: overview
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-6xl font-semibold mb-6">Edexcel 4MA1<br>Exam-Ready Resources</h1>
         <p class="text-xl md:text-2xl mb-4 text-blue-100">Exam-aligned resources for Pearson Edexcel IGCSE Mathematics</p>
-        <p class="text-lg mb-8 text-blue-200">Free vocabulary cards are live. L1/L2/L3 presale architecture is now active.</p>
-        <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold text-lg edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Browse Free Resources</a>
-            <a href="/exercises/?board=edexcel-4ma1&tier=foundation" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg edx-hero-outline-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Start Interactive Exercises</a>
-            <a href="/subscription.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg edx-hero-outline-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Weekly Membership</a>
-        </div>
+        <p data-bilingual-block class="text-base md:text-lg mb-4 text-blue-100">对标 Edexcel 4MA1 考纲，保留英文主线并补充中文术语提示。</p>
+        <p class="text-lg mb-8 text-blue-200">Free vocabulary cards, interactive exercises, and worksheet packs — aligned to the latest syllabus.</p>
+        <p data-bilingual-block class="text-sm mb-8 text-blue-200">免费词汇卡、互动练习与练习册 — 对齐最新 Edexcel 4MA1 考纲。</p>
+        {% include ui/module-hero-cta-row.html
+            board='edx'
+            primary_href='/free-gift.html'
+            primary_label='Browse Free Resources'
+            secondary_href='/exercises/?board=edexcel-4ma1&tier=foundation'
+            secondary_label='Start Interactive Exercises'
+            tertiary_href='/subscription.html'
+            tertiary_label='Term Practice Pass' %}
     </div>
 </section>
 
@@ -26,12 +31,13 @@ active_page: overview
         <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-gray-200">
             <div>
                 <div class="text-xs font-bold edx-solid-text mb-2">PRACTICE CHANNEL</div>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Edexcel 4MA1 on Kahoot</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Edexcel 4MA1 on Kahoot</h2>
                 <p class="text-gray-600">Start with Edexcel 4MA1 quiz practice on Kahoot, then continue with worksheet and bundle upgrades on 25Maths.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">先在 Kahoot 快速练习，再回到站内下载 worksheet 与升级包。</p>
             </div>
             <div class="flex flex-col sm:flex-row gap-3">
-                <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Channel</a>
-                <a href="/kahoot/?src=edx4ma1&asset=module_kahoot_card" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Kahoot Companion Hub</a>
+                <a href="https://create.kahoot.it/channels/25maths/edx-4ma1-igcse" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Channel</a>
+                <a href="/kahoot/?src=edx4ma1&asset=module_kahoot_card" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-lg transition ui-focus-ring">Kahoot Companion Hub</a>
             </div>
         </div>
     </div>
@@ -39,8 +45,9 @@ active_page: overview
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl font-semibold text-gray-900 mb-4">Free Vocabulary Cards</h2>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Free Vocabulary Cards</h2>
         <p class="text-xl text-gray-600 mb-8">Download 6 free sets covering the full Edexcel 4MA1 syllabus.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">免费词汇卡先解决术语理解，再衔接题型训练。</p>
         <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
             <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200"><h3 class="font-bold">Number</h3><p class="text-sm text-gray-600">52 terms</p></div>
             <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200"><h3 class="font-bold">Algebra</h3><p class="text-sm text-gray-600">27 terms</p></div>
@@ -49,37 +56,38 @@ active_page: overview
             <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200"><h3 class="font-bold">Vectors</h3><p class="text-sm text-gray-600">30 terms</p></div>
             <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-200"><h3 class="font-bold">Statistics</h3><p class="text-sm text-gray-600">44 terms</p></div>
         </div>
-        <a href="/free-gift.html" class="inline-block edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold text-lg edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Browse Free Resources</a>
+        <a href="/free-gift.html" class="inline-block edx-solid-bg px-8 py-4 rounded-lg font-semibold text-lg edx-solid-hover hover:shadow-lg transition ui-focus-ring">Browse Free Resources</a>
     </div>
 </section>
 
 <section id="product-loop" class="py-16 bg-white border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Closed-Loop Product System</h2>
-            <p class="text-gray-600">Customer path: L1 single worksheet -> L2 section bundle -> L3 unit bundle, with bilingual support gifts and repeat-purchase upgrade coupons.</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Worksheet Packs</h2>
+            <p class="text-gray-600">Pick individual topics or save with section and unit bundles.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">按考点单买，或选择章节/单元合集更划算。</p>
         </div>
         <div class="grid md:grid-cols-3 gap-5 mb-8">
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">L1 Entry</h3>
-                <p class="text-sm text-gray-600 mb-2">Single SubTopic worksheet MVP.</p>
-                <p class="text-sm text-gray-700">Suggested pricing: {{ catalog.pricing.l1_early_bird }} to {{ catalog.pricing.l1_regular }}</p>
+                <h3 class="font-bold text-gray-900 mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One topic with quiz and printable worksheet.</p>
+                <p class="text-sm text-gray-700">{{ catalog.pricing.l1_early_bird }} – {{ catalog.pricing.l1_regular }}</p>
             </div>
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">L2 Upgrade</h3>
-                <p class="text-sm text-gray-600 mb-2">Section bundle across multiple SubTopics.</p>
-                <p class="text-sm text-gray-700">Suggested pricing: {{ catalog.pricing.l2_early_bird }} to {{ catalog.pricing.l2_regular }}</p>
+                <h3 class="font-bold text-gray-900 mb-2">Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">Multiple topics from one syllabus section.</p>
+                <p class="text-sm text-gray-700">{{ catalog.pricing.l2_early_bird }} – {{ catalog.pricing.l2_regular }}</p>
             </div>
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">L3 Loyalty</h3>
-                <p class="text-sm text-gray-600 mb-2">Unit bundle with Foundation + Higher coverage.</p>
-                <p class="text-sm text-gray-700">Suggested pricing: {{ catalog.pricing.l3_early_bird }} to {{ catalog.pricing.l3_regular }}</p>
+                <h3 class="font-bold text-gray-900 mb-2">Unit Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">Foundation + Higher coverage for an entire unit.</p>
+                <p class="text-sm text-gray-700">{{ catalog.pricing.l3_early_bird }} – {{ catalog.pricing.l3_regular }}</p>
             </div>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/edx4ma1/products.html" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-7 py-3 rounded-lg font-semibold edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Products</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-7 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 Kahoot Directory</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
+            <a href="/edx4ma1/products.html" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-7 py-3 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 Products</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-7 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 Kahoot Directory</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover hover:shadow-md transition ui-focus-ring">Read Presale Terms PDF</a>
         </div>
     </div>
 </section>
@@ -88,15 +96,15 @@ active_page: overview
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8 text-center">
             <div>
-                <div class="text-5xl font-semibold edx-solid-text mb-2">266</div>
+                <div class="text-5xl font-bold edx-solid-text mb-2">266</div>
                 <div class="text-gray-600">Key Terms</div>
             </div>
             <div>
-                <div class="text-5xl font-semibold edx-solid-text mb-2">6</div>
+                <div class="text-5xl font-bold edx-solid-text mb-2">6</div>
                 <div class="text-gray-600">Free Downloads</div>
             </div>
             <div>
-                <div class="text-5xl font-semibold edx-solid-text mb-2">6</div>
+                <div class="text-5xl font-bold edx-solid-text mb-2">6</div>
                 <div class="text-gray-600">Unit Bundles</div>
             </div>
         </div>

@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply 3d shapes and volume methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `8` and height `10` is `1/2 x 8 x 10 = 40`.
+Example: area of a triangle with base `11` and height `6` is `1/2 x 11 x 6 = 33`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `58°` and `33°`.

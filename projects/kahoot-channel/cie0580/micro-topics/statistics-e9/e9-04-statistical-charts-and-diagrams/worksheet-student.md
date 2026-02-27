@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.4 Statistical charts and diagrams
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply statistical charts and diagrams methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply statistical charts and diagrams methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[14, 18, 13, 4, 7]` is `56/5 = 11.2`.

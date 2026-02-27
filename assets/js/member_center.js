@@ -55,14 +55,43 @@
   };
 
   function computeWeakSkills(rows) {
+    const nowMs = Date.now();
     const grouped = new Map();
     rows.forEach((row) => {
       const key = String(row.skill_tag || 'unclassified').trim() || 'unclassified';
-      grouped.set(key, (grouped.get(key) || 0) + 1);
+      const createdAtMs = new Date(row.created_at || '').getTime();
+      const ageDays = Number.isFinite(createdAtMs)
+        ? Math.max(0, (nowMs - createdAtMs) / (24 * 60 * 60 * 1000))
+        : 30;
+
+      let recencyWeight = 1;
+      if (ageDays <= 7) recencyWeight = 1.5;
+      else if (ageDays <= 30) recencyWeight = 1.0;
+      else recencyWeight = 0.6;
+
+      const current = grouped.get(key) || {
+        count: 0,
+        weightedScore: 0,
+        lastSeenAt: null,
+      };
+      current.count += 1;
+      current.weightedScore += recencyWeight;
+      if (!current.lastSeenAt || (Number.isFinite(createdAtMs) && createdAtMs > new Date(current.lastSeenAt).getTime())) {
+        current.lastSeenAt = row.created_at || null;
+      }
+      grouped.set(key, current);
     });
-    return Array.from(grouped.entries())
-      .sort((a, b) => b[1] - a[1])
-      .map(([skill, count]) => ({ skill, count }));
+
+    return Array.from(grouped.entries()).map(([skill, value]) => ({
+      skill,
+      count: value.count,
+      weighted_score: Number(value.weightedScore.toFixed(2)),
+      last_seen_at: value.lastSeenAt,
+    })).sort((a, b) => {
+      if (b.weighted_score !== a.weighted_score) return b.weighted_score - a.weighted_score;
+      if (b.count !== a.count) return b.count - a.count;
+      return String(a.skill).localeCompare(String(b.skill));
+    });
   }
 
   function renderWeakSkills(rows) {
@@ -75,9 +104,10 @@
 
     weakSkillCountNode.textContent = String(weakSkills.length);
     weakSkillListNode.innerHTML = weakSkills.slice(0, 5).map((item) => {
+      const weightedText = Number.isFinite(item.weighted_score) ? item.weighted_score.toFixed(2) : '0.00';
       return `<li class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
         <span class="truncate">${item.skill}</span>
-        <span class="text-xs font-semibold rounded bg-red-100 text-red-700 px-2 py-0.5">${item.count}</span>
+        <span class="text-xs font-semibold rounded bg-red-100 text-red-700 px-2 py-0.5">${item.count} / ${weightedText}</span>
       </li>`;
     }).join('');
 
@@ -132,7 +162,7 @@
         .limit(MAX_RECENT_SESSIONS),
       client
         .from('question_attempts')
-        .select('skill_tag')
+        .select('skill_tag, created_at')
         .eq('user_id', userId)
         .eq('is_correct', false)
         .gte('created_at', attemptsCutoffIso)

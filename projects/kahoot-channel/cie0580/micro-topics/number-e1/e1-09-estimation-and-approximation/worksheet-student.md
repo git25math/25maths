@@ -4,20 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Estimate calculations and test whether answers are reasonable.
+- Apply estimation and approximation methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Estimate `19.8 x 5.1` by `20 x 5 = 100`.
-So exact answer should be close to 100.
+Example: increase `80` by `22%`: compute `80 x (1 + 22/100)` to get `97.6`.
 
 ## Practice (10)
-1. Estimate `48 x 19`.
-2. Estimate `203 / 10.2`.
-3. Estimate `0.52 x 199`.
-4. Estimate `399 + 598`.
-5. Is 4.9 reasonable for `49/9.8`?
-6. Choose best estimate for `31.2/0.79`.
-7. Estimate `sqrt(80)`.
-8. A bill is 27 items at `$3.95` each. Estimate total.
-9. 196 students buy pens at `$1.99` each. Estimate total.
-10. Check reasonableness: `248/6 = 4.13`.
+1. Evaluate `24 + 11 x 8`.
+2. Write `5/24 + 8/24` as a simplified fraction.
+3. Calculate `3.0 + 0.25`.
+4. Work out `2^6`.
+5. Find `sqrt(36)`.
+6. Increase `120` by `25%`.
+7. Share `90` in the ratio `2:3` and give the larger share.
+8. Round `668.4` to `2` significant figures.
+9. Write `50000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply angles, lines and triangles methods accurately in Edexcel 4MA1 Higher exam questions.
 
 ## Model example
-Example: area of a triangle with base `9` and height `10` is `1/2 x 9 x 10 = 45`.
+Example: area of a triangle with base `8` and height `7` is `1/2 x 8 x 7 = 28`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `67°` and `45°`.

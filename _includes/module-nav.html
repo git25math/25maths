@@ -37,7 +37,7 @@
 <nav class="bg-white shadow-sm border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-12 space-x-6 overflow-x-auto">
-            <span class="text-sm font-bold {{ nav_brand_text_class }} whitespace-nowrap">{{ current_module.name }}</span>
+            <span class="text-sm font-semibold {{ nav_brand_text_class }} whitespace-nowrap">{{ current_module.name }}</span>
             <a href="{{ module_base }}"
                class="text-sm whitespace-nowrap {% if page.active_page == 'overview' %}{{ nav_active_color_class }} font-semibold border-b-2{% else %}text-gray-600 {{ nav_inactive_hover_class }}{% endif %} pb-px transition">
                 {{ nav_label_overview }}

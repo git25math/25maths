@@ -4,19 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Use positive and negative integers in all four operations.
+- Apply the four operations methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-`-12 - (-5) = -12 + 5 = -7`.
+Example: increase `80` by `15%`: compute `80 x (1 + 15/100)` to get `92`.
 
 ## Practice (10)
-1. `-7 + 12`
-2. `9 - (-4)`
-3. `-6 x (-8)`
-4. `-45 / 9`
-5. `-3 + (-11)`
-6. `-2^4`
-7. `(-2)^4`
-8. `-15 + 6 - 9`
-9. `-24 / (-3) x 2`
-10. A submarine at `-35 m` rises `18 m`. New depth?
+1. Evaluate `24 + 18 x 3`.
+2. Write `3/24 + 15/24` as a simplified fraction.
+3. Calculate `2.4 + 0.12`.
+4. Work out `2^4`.
+5. Find `sqrt(121)`.
+6. Increase `120` by `12%`.
+7. Share `75` in the ratio `2:3` and give the larger share.
+8. Round `358.4` to `3` significant figures.
+9. Write `30000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

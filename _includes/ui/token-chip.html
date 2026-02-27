@@ -1,0 +1,11 @@
+{% assign chip_size_class = '' %}
+{% if include.size == 'sm' %}
+  {% assign chip_size_class = ' token-chip-sm' %}
+{% endif %}
+
+{% assign chip_dashed_class = '' %}
+{% if include.dashed == true or include.dashed == 'true' %}
+  {% assign chip_dashed_class = ' token-chip-dashed' %}
+{% endif %}
+
+<span class="token-chip{{ chip_size_class }}{{ chip_dashed_class }}{% if include.classes %} {{ include.classes }}{% endif %}"{% if include.attrs %} {{ include.attrs }}{% endif %}>{{ include.label }}</span>

@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C6.2 Right-angled triangles
 
-1. 14.0
-2. 15
-3. 6
-4. `5/6`
-5. 0.1
-6. 21
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `sqrt(61)`
+2. `1/2`
+3. `1/2`
+4. 1
+5. 30°
+6. 60°
+7. 45°
+8. `a/sinA = b/sinB = c/sinC`
+9. 5
+10. 53°

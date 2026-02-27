@@ -1,0 +1,85 @@
+# Edexcel 4MA1 Official Subheadings (From PDF)
+
+Source: `international-gcse-in-mathematics-spec-a.pdf`
+
+## Foundation Tier
+- 1.1 Integers
+- 1.2 Fractions
+- 1.3 Decimals
+- 1.4 Powers and roots
+- 1.5 Set language and notation
+- 1.6 Percentages
+- 1.7 Ratio and proportion
+- 1.8 Degree of accuracy
+- 1.9 Standard form
+- 1.10 Applying number
+- 1.11 Electronic calculators
+- 2.1 Use of symbols
+- 2.2 Algebraic manipulation
+- 2.3 Expressions and formulae
+- 2.4 Linear equations
+- 2.5 Proportion
+- 2.6 Simultaneous linear equations
+- 2.7 Quadratic equations
+- 2.8 Inequalities
+- 3.1 Sequences
+- 3.2 Function notation
+- 3.3 Graphs
+- 3.4 Calculus
+- 4.1 Angles, lines and triangles
+- 4.2 Polygons
+- 4.3 Symmetry
+- 4.4 Measures
+- 4.5 Construction
+- 4.6 Circle properties
+- 4.7 Geometrical reasoning
+- 4.8 Trigonometry and Pythagoras’ theorem
+- 4.9 Mensuration of 2D shapes
+- 4.10 3D shapes and volume
+- 4.11 Similarity
+- 5.1 Vectors
+- 5.2 Transformation geometry
+- 6.1 Graphical representation of data
+- 6.2 Statistical measures
+- 6.3 Probability
+
+## Higher Tier
+- 1.1 Integers
+- 1.2 Fractions
+- 1.3 Decimals
+- 1.4 Powers and roots
+- 1.5 Set language and notation
+- 1.6 Percentages
+- 1.7 Ratio and proportion
+- 1.8 Degree of accuracy
+- 1.9 Standard form
+- 1.10 Applying number
+- 1.11 Electronic calculators
+- 2.1 Use of symbols
+- 2.2 Algebraic manipulation
+- 2.3 Expressions and formulae
+- 2.4 Linear equations
+- 2.5 Proportion
+- 2.6 Simultaneous linear equations
+- 2.7 Quadratic equations
+- 2.8 Inequalities
+- 3.1 Sequences
+- 3.2 Function notation
+- 3.3 Graphs
+- 3.4 Calculus
+- 4.1 Angles, lines and triangles
+- 4.2 Polygons
+- 4.3 Symmetry
+- 4.4 Measures
+- 4.5 Construction
+- 4.6 Circle properties
+- 4.7 Geometrical reasoning
+- 4.8 Trigonometry and Pythagoras’ theorem
+- 4.9 Mensuration
+- 4.10 3D shapes and volume
+- 4.11 Similarity
+- 5.1 Vectors
+- 5.2 Transformation geometry
+- 6.1 Graphical representation of data
+- 6.2 Statistical measures
+- 6.3 Probability

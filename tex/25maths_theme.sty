@@ -1,0 +1,252 @@
+% 25maths_theme.sty — Visual identity for 25Maths PDF products
+% Layer 1: fonts, colours, box styles, headers/footers
+% Used by: week_pack_template.tex
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{25maths_theme}[2026/02/27 25Maths PDF Theme v2]
+
+% ── Geometry ──────────────────────────────────────────────────────────────────
+\RequirePackage[a4paper, margin=20mm, top=25mm, bottom=25mm, headheight=22pt, headsep=12pt]{geometry}
+
+% ── Fonts (XeLaTeX) ──────────────────────────────────────────────────────────
+\RequirePackage{fontspec}
+\setmainfont{texgyretermes}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+\setsansfont{texgyreheros}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+\setmonofont{texgyrecursor}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+
+% ── CJK Support (Chinese vocabulary terms) ───────────────────────────────────
+\RequirePackage{xeCJK}
+\setCJKmainfont{STSong}
+\setCJKsansfont{Heiti SC}
+
+% ── Colours ──────────────────────────────────────────────────────────────────
+\RequirePackage[dvipsnames,svgnames]{xcolor}
+
+\definecolor{brand-primary}{HTML}{6D28D9}   % Purple (matches site --primary)
+\definecolor{brand-dark}{HTML}{1F2937}      % Gray-900
+\definecolor{brand-light}{HTML}{F9FAFB}     % Gray-50
+\definecolor{core-green}{HTML}{059669}      % Emerald-600
+\definecolor{ext-blue}{HTML}{2563EB}        % Blue-600
+\definecolor{warn-red}{HTML}{DC2626}        % Red-600
+\definecolor{note-amber}{HTML}{D97706}      % Amber-600
+\definecolor{light-gray}{HTML}{F3F4F6}      % Gray-100
+\definecolor{textmuted}{HTML}{70859A}       % Muted text
+\definecolor{linegray}{HTML}{D6DFE8}        % Subtle line/frame
+
+% ── Headers / Footers ───────────────────────────────────────────────────────
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{brand-primary}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{linegray}\leaders\hrule height \footrulewidth\hfill}}
+
+% ── Boxes ────────────────────────────────────────────────────────────────────
+\RequirePackage[most]{tcolorbox}
+
+% ── Global tcolorbox styles ──
+\tcbset{
+  base/.style={
+    enhanced,
+    arc=5pt,
+    boxrule=0.85pt,
+    colframe=linegray,
+    left=11pt,right=11pt,top=9pt,bottom=9pt
+  },
+  card/.style={base, colback=white},
+  soft/.style={base, colback=brand-light},
+  bar/.style={
+    enhanced,
+    arc=5pt,
+    colback=brand-light,
+    colframe=linegray,
+    boxrule=0.85pt,
+    left=11pt,right=11pt,top=8pt,bottom=8pt
+  }
+}
+
+% Common-mistake callout (for solutions section)
+\newtcolorbox{mistakebox}{%
+  colback=red!5, colframe=warn-red,
+  boxrule=0.5pt, arc=3pt,
+  left=4mm, right=4mm, top=2mm, bottom=2mm,
+  fonttitle=\sffamily\bfseries\small\color{warn-red},
+  title={Common Mistake},
+  before skip=3mm, after skip=3mm
+}
+
+% Vocabulary entry card
+\newtcolorbox{vocabcard}{%
+  colback=brand-light, colframe=gray!30,
+  boxrule=0.3pt, arc=2pt,
+  left=4mm, right=4mm, top=3mm, bottom=3mm,
+  before skip=2mm, after skip=2mm,
+  breakable
+}
+
+% Section header bar
+\newtcolorbox{sectionbar}[2][brand-primary]{%
+  colback=#1, colframe=#1,
+  colupper=white,
+  boxrule=0pt, arc=4pt,
+  left=6mm, right=6mm, top=3mm, bottom=3mm,
+  fontupper=\sffamily\bfseries\large,
+  before skip=8mm, after skip=4mm,
+  #2
+}
+
+% Topic overview info box
+\newtcolorbox{topicinfo}{%
+  colback=brand-light, colframe=brand-primary,
+  boxrule=0.5pt, arc=3pt,
+  left=5mm, right=5mm, top=4mm, bottom=4mm,
+  before skip=4mm, after skip=6mm
+}
+
+% ── Lists ────────────────────────────────────────────────────────────────────
+\RequirePackage{enumitem}
+\setlist{nosep, leftmargin=6mm}
+
+% ── Math ─────────────────────────────────────────────────────────────────────
+\RequirePackage{amsmath,amssymb}
+
+% ── Misc ─────────────────────────────────────────────────────────────────────
+\RequirePackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=brand-primary, urlcolor=brand-primary, breaklinks=true}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{graphicx}
+\RequirePackage{parskip}
+\RequirePackage{needspace}
+\RequirePackage{multicol}
+\RequirePackage{tikz}
+\usetikzlibrary{calc,angles,quotes,decorations.markings}
+
+% ── Utility commands ─────────────────────────────────────────────────────────
+\newcommand{\qmarks}[1]{\hfill{\sffamily\footnotesize\textcolor{textmuted}{[#1]}}}
+\newcommand{\corelabel}{\textcolor{core-green}{\sffamily\bfseries Core}}
+\newcommand{\extlabel}{\textcolor{ext-blue}{\sffamily\bfseries Extended}}
+
+% Inline common-mistake note for vocabulary section
+\newcommand{\vocabmistake}[1]{%
+  \par\smallskip
+  {\small\textcolor{warn-red}{\sffamily\textbf{Common mistake:}} #1}%
+}
+
+% Thin horizontal separator for solutions
+\newcommand{\solutionsep}{%
+  \par\medskip\noindent\textcolor{gray!40}{\rule{\linewidth}{0.3pt}}\medskip%
+}
+
+% Inline common-mistake note (compact, no box frame)
+\newcommand{\inlinemistake}[1]{%
+  \par\smallskip
+  {\small\textcolor{warn-red}{\sffamily\bfseries \raisebox{0.2ex}{\tiny$\blacktriangleright$}~Common mistake:}\ #1}%
+}
+
+% Working space (ruled lines for student working)
+\newcommand{\workingspace}[1][20mm]{%
+  \par\vspace{2mm}%
+  \noindent\textcolor{gray!25}{\rule{\linewidth}{0.3pt}}%
+  \vspace{#1}%
+  \par\noindent\textcolor{gray!25}{\rule{\linewidth}{0.3pt}}%
+  \par\vspace{1mm}%
+}
+
+% Question number label (tcbox — core = purple, extended = blue)
+\newcommand{\qnum}[1]{%
+  \tcbox[
+    enhanced,
+    colback=brand-light,
+    colframe=linegray,
+    boxrule=0.6pt,
+    arc=2pt,
+    top=1.2pt,bottom=1.2pt,left=5pt,right=5pt,
+    boxsep=0pt,
+    on line
+  ]{\sffamily\bfseries\textcolor{brand-primary}{#1}}%
+}
+\newcommand{\qnumext}[1]{%
+  \tcbox[
+    enhanced,
+    colback=blue!5,
+    colframe=linegray,
+    boxrule=0.6pt,
+    arc=2pt,
+    top=1.2pt,bottom=1.2pt,left=5pt,right=5pt,
+    boxsep=0pt,
+    on line
+  ]{\sffamily\bfseries\textcolor{ext-blue}{#1}}%
+}
+
+% Answer box (tcolorbox with fixed height)
+\newcommand{\AnswerBox}[1][1.30cm]{%
+  \vspace{4pt}%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=white,
+    colframe=linegray,
+    boxrule=0.85pt,
+    arc=2pt,
+    left=6pt,right=6pt,top=4pt,bottom=4pt,
+    height=#1
+  ]
+  {\sffamily\footnotesize\textcolor{textmuted}{\textbf{Answer:}}}\hspace{6pt}%
+  \end{tcolorbox}%
+}
+
+% Section header bar (with left borderline accent)
+\newcommand{\SectionHeader}[2][brand-primary]{%
+  \begin{tcolorbox}[bar, borderline west={3pt}{0pt}{#1}]
+    \sffamily\textbf{#2}%
+  \end{tcolorbox}%
+}
+
+% Student name/class/date strip
+\newcommand{\StudentStrip}{%
+  \begin{tcolorbox}[bar]
+    \sffamily\small
+    \textbf{Name:} \underline{\hspace{4.0cm}}%
+    \hfill
+    \textbf{Class:} \underline{\hspace{2.4cm}}%
+    \hfill
+    \textbf{Date:} \underline{\hspace{2.8cm}}%
+  \end{tcolorbox}%
+}
+
+% Metadata chip (small capsule)
+\newcommand{\chip}[1]{%
+  \tcbox[
+    enhanced,
+    colback=brand-light,
+    colframe=linegray,
+    boxrule=0.6pt,
+    arc=10pt,
+    left=8pt,right=8pt,top=2.5pt,bottom=2.5pt,
+    on line
+  ]{\sffamily\scriptsize\textcolor{brand-primary}{\textbf{#1}}}%
+}
+
+% Tick box
+\newcommand{\tickbox}{\(\square\)}
+
+\endinput

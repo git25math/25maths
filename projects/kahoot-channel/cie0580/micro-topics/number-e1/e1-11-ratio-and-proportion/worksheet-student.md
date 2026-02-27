@@ -4,20 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Simplify ratios, share quantities, and solve direct/inverse proportion basics.
+- Apply ratio and proportion methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Share 84 in ratio `3:4`.
-Total parts = 7, one part = 12, shares = 36 and 48.
+Example: increase `80` by `18%`: compute `80 x (1 + 18/100)` to get `94.4`.
 
 ## Practice (10)
-1. Simplify `24:36`.
-2. Divide 72 in ratio `5:3`.
-3. In ratio `2:7`, larger part is 63. Find smaller part.
-4. Cost of 15 pens if 8 pens cost `$6.40`.
-5. Scale factor 1.5 applied to length 12 cm.
-6. If `y` directly proportional to `x`, `y=14` at `x=4`, find `y` at `x=9`.
-7. If `y` inversely proportional to `x`, `y=20` at `x=3`, find `y` at `x=12`.
-8. Ratio red:blue:green = `4:3:3`, total 250 ml, find blue.
-9. Which is better value: 2 kg for `$5.60` or 3 kg for `$8.10`?
-10. Map scale `1:25000`, map distance 8 cm. Real distance?
+1. Evaluate `41 + 17 x 3`.
+2. Write `7/24 + 13/24` as a simplified fraction.
+3. Calculate `4.1 + 0.11`.
+4. Work out `5^4`.
+5. Find `sqrt(49)`.
+6. Increase `120` by `11%`.
+7. Share `60` in the ratio `2:3` and give the larger share.
+8. Round `201.5` to `3` significant figures.
+9. Write `20000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

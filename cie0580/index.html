@@ -4,42 +4,36 @@ title: CIE 0580
 description: "Premium exam-aligned resources for Cambridge IGCSE Mathematics 0580. Vocabulary cards, practice worksheets, and complete solutions."
 module: cie0580
 active_page: overview
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /en/cie0580/
-  - code: zh-CN
-    label: ZH-CN
-    url: /zh-cn/cie0580/
 ---
 
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
 
 <!-- Hero Section -->
-<section class="cie-hero-gradient text-white py-20">
+<section class="cie-hero-soft py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-6xl font-semibold mb-6">
-            Master CIE 0580 with<br>Exam Excellence
+            CIE 0580<br>Exam-Ready Resources
         </h1>
         <p class="text-xl md:text-2xl mb-4 text-gray-100">
-            Premium practice resources for Cambridge IGCSE Mathematics
+            Exam-aligned resources for Cambridge IGCSE Mathematics
         </p>
+        <p class="bilingual-support-only text-base md:text-lg mb-3 text-gray-100">
+            针对 CIE 0580 课程要求构建的系统化备考资源，帮助你按考纲稳定提分。
+        </p>
+        <p data-bilingual-block class="text-base md:text-lg mb-4 text-gray-200">对标 CIE 0580 考纲，关键术语提供对照。</p>
         <p class="text-lg mb-8 text-gray-200">
-            Trusted by students and teachers worldwide
+            Free vocabulary cards, interactive exercises, and worksheet packs — all aligned to the latest syllabus.
         </p>
-        <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Browse Free Resources
-            </a>
-            <a href="/exercises/?board=cie0580&tier=core" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg cie-hero-outline-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Start Interactive Exercises
-            </a>
-            <a href="/subscription.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg cie-hero-outline-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Weekly Membership
-            </a>
-        </div>
+        <p data-bilingual-block class="text-sm md:text-base mb-8 text-gray-200">免费词汇卡、互动练习与练习册 — 对齐最新考纲。</p>
+        {% include ui/module-hero-cta-row.html
+            board='cie'
+            primary_href='/free-gift.html'
+            primary_label='Browse Free Resources'
+            secondary_href='/exercises/?board=cie0580&tier=core'
+            secondary_label='Start Interactive Exercises'
+            tertiary_href='/subscription.html'
+            tertiary_label='Term Practice Pass' %}
     </div>
 </section>
 
@@ -48,15 +42,16 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border border-gray-200">
             <div>
-                <div class="text-xs font-bold text-secondary mb-2">PRACTICE CHANNEL</div>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">CIE 0580 on Kahoot</h2>
+                <div class="text-xs font-bold cie-solid-text mb-2">PRACTICE CHANNEL</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">CIE 0580 on Kahoot</h2>
                 <p class="text-gray-600">Use the CIE 0580 quiz channel for quick drills, then continue with our printable worksheets.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-1">可先在 Kahoot 做快速练习，再回到 25Maths 下载配套可打印练习。</p>
             </div>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <div class="flex flex-col sm:flex-row cta-row-equal gap-4">
+                <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-6 py-3 rounded-lg font-semibold kahoot-solid-hover transition ui-focus-ring">
                     Open CIE 0580 Kahoot Channel
                 </a>
-                <a href="/kahoot/?src=cie0580&asset=module_kahoot_card" class="sm:flex-1 inline-flex items-center justify-center text-center border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+                <a href="/kahoot/?src=cie0580&asset=module_kahoot_card" class="sm:flex-1 cta-btn-equal border kahoot-soft-border kahoot-soft-bg kahoot-soft-text px-6 py-3 rounded-lg font-semibold kahoot-soft-hover hover:shadow-lg transition ui-focus-ring">
                     Kahoot Companion Hub
                 </a>
             </div>
@@ -65,18 +60,19 @@ lang_links:
 </section>
 
 <!-- Membership Highlight -->
-<section class="py-12 bg-white border-b">
+<section class="py-16 bg-white border-b">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gray-50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
                 <div class="text-xs font-bold cie-solid-text mb-2">NEW</div>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Weekly Topic Membership</h2>
-                <p class="text-gray-600">One topical practice pack every week with full solutions — built for CIE 0580.</p>
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Term Practice Pass</h2>
+                <p class="text-gray-600">12 weekly topical practice packs with full solutions — built for CIE 0580.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-1">12 周专题练习包（含解析），一次购买。</p>
             </div>
-            <div class="flex items-center gap-4">
-                <div class="text-2xl font-semibold cie-solid-text">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
-                <a href="/subscription.html" class="cie-solid-bg text-white px-6 py-3 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                    View Membership
+            <div class="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-4">
+                <div class="text-2xl font-bold cie-solid-text whitespace-nowrap">$24.99<span class="text-sm text-gray-500 font-medium"> one-time</span></div>
+                <a href="/subscription.html" class="w-full sm:w-auto cta-btn-equal cie-solid-bg cie-solid-text px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">
+                    Get Term Pass
                 </a>
             </div>
         </div>
@@ -87,27 +83,30 @@ lang_links:
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center p-6">
-                <div class="text-5xl mb-4">🌐</div>
-                <h3 class="text-2xl font-semibold mb-3 text-gray-900">Terminology Support</h3>
-                <p class="text-gray-600">
+            <article class="border border-gray-200 rounded-2xl p-7 bg-white">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Bilingual</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Terminology Support</h3>
+                <p class="mt-3 text-gray-600">
                     Clear term definitions and exam-ready wording to help students answer in the expected format.
                 </p>
-            </div>
-            <div class="text-center p-6">
-                <div class="text-5xl mb-4">✅</div>
-                <h3 class="text-2xl font-semibold mb-3 text-gray-900">Exam-Ready Content</h3>
-                <p class="text-gray-600">
-                    Meticulously aligned with CIE 0580 syllabus and official mark schemes. Practice with confidence knowing you're preparing exactly what examiners expect.
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">不是全文翻译，重点解决易混术语与英语答题表达。</p>
+            </article>
+            <article class="border border-gray-200 rounded-2xl p-7 bg-white">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Syllabus-Aligned</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Exam-Ready Content</h3>
+                <p class="mt-3 text-gray-600">
+                    Meticulously aligned with CIE 0580 syllabus and official mark schemes.
                 </p>
-            </div>
-            <div class="text-center p-6">
-                <div class="text-5xl mb-4">⭐</div>
-                <h3 class="text-2xl font-semibold mb-3 text-gray-900">Quality Guaranteed</h3>
-                <p class="text-gray-600">
-                    Professional LaTeX typesetting, independently reviewed by experienced IGCSE teachers. Rated 9.7/10 for accuracy and clarity.
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">紧贴 CIE 0580 考纲与评分标准。</p>
+            </article>
+            <article class="border border-gray-200 rounded-2xl p-7 bg-white">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Professional</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Quality Guaranteed</h3>
+                <p class="mt-3 text-gray-600">
+                    LaTeX typesetting, reviewed by experienced IGCSE teachers. Rated 9.7/10 for accuracy and clarity.
                 </p>
-            </div>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">专业 LaTeX 排版，结构清晰。</p>
+            </article>
         </div>
     </div>
 </section>
@@ -116,50 +115,55 @@ lang_links:
 <section id="products" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-semibold text-gray-900 mb-4">New Closed-Loop Product Model</h2>
-            <p class="text-xl text-gray-600">Legacy 3 products removed. Now using L1 single product -> L2 section bundle -> L3 unit bundle.</p>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Worksheet Packs</h2>
+            <p class="text-xl text-gray-600">Pick individual topics or save with section and unit bundles.</p>
+            <p data-bilingual-block class="text-base text-gray-600 mt-2">按考点单买，或选择章节/单元合集更划算。</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl shadow-sm p-8">
-                <div class="text-xs font-bold tracking-wider cie-solid-text mb-3">L1 ENTRY</div>
-                <h3 class="text-2xl font-semibold mb-2">Single Worksheet MVP</h3>
-                <p class="text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download.</p>
-                <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l1_early_bird }}</p>
-                <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l1_regular }}</p>
-                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg text-white text-center py-3 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open L1 Listings</a>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-xs font-bold tracking-wider cie-solid-text mb-3">SINGLE TOPIC</div>
+                <h3 class="text-2xl font-bold mb-2">Topic Worksheet</h3>
+                <p class="text-gray-600 mb-4">One topic with Kahoot quiz and printable worksheet.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">单个考点：配套 Kahoot 测验 + 可打印练习。</p>
+                <p class="text-sm text-gray-700 mb-1">Early-bird: {{ catalog.pricing.l1_early_bird }}</p>
+                <p class="text-sm text-gray-700 mb-4">Regular: {{ catalog.pricing.l1_regular }}</p>
+                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg cie-solid-text text-center py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Browse Topics</a>
             </div>
 
-            <div class="bg-white rounded-xl shadow-sm p-8">
-                <div class="text-xs font-bold tracking-wider cie-solid-text mb-3">L2 UPGRADE</div>
-                <h3 class="text-2xl font-semibold mb-2">Section Bundles</h3>
-                <p class="text-gray-600 mb-4">Multi-SubTopic bundle inside one syllabus section.</p>
-                <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l2_early_bird }}</p>
-                <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l2_regular }}</p>
-                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg text-white text-center py-3 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open L2 Listings</a>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-xs font-bold tracking-wider cie-solid-text mb-3">SECTION BUNDLE</div>
+                <h3 class="text-2xl font-bold mb-2">Section Bundle</h3>
+                <p class="text-gray-600 mb-4">Multiple topics from one syllabus section — save over buying individually.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">同一章节多个考点的组合包，比逐个购买更实惠。</p>
+                <p class="text-sm text-gray-700 mb-1">Early-bird: {{ catalog.pricing.l2_early_bird }}</p>
+                <p class="text-sm text-gray-700 mb-4">Regular: {{ catalog.pricing.l2_regular }}</p>
+                <a href="/kahoot/cie0580/" class="block w-full cie-solid-bg cie-solid-text text-center py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Browse Sections</a>
             </div>
 
-            <div class="bg-white rounded-xl shadow-sm p-8">
-                <div class="text-xs font-bold tracking-wider cie-solid-text mb-3">L3 RETENTION</div>
-                <h3 class="text-2xl font-semibold mb-2">Unit Bundles (9 Units)</h3>
-                <p class="text-gray-600 mb-4">Core + Extended unit bundle with bilingual support gifts and upgrade coupons.</p>
-                <p class="text-sm text-gray-700 mb-1">Suggested early-bird: {{ catalog.pricing.l3_early_bird }}</p>
-                <p class="text-sm text-gray-700 mb-4">Suggested regular: {{ catalog.pricing.l3_regular }}</p>
-                <a href="/cie0580/products.html" class="block w-full cie-solid-bg text-white text-center py-3 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 Products</a>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="text-xs font-bold tracking-wider cie-solid-text mb-3">UNIT BUNDLE</div>
+                <h3 class="text-2xl font-bold mb-2">Unit Bundle (9 Units)</h3>
+                <p class="text-gray-600 mb-4">Complete Core + Extended coverage for an entire syllabus unit.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">覆盖 Core + Extended 的完整单元合集。</p>
+                <p class="text-sm text-gray-700 mb-1">Early-bird: {{ catalog.pricing.l3_early_bird }}</p>
+                <p class="text-sm text-gray-700 mb-4">Regular: {{ catalog.pricing.l3_regular }}</p>
+                <a href="/cie0580/products.html" class="block w-full cie-solid-bg cie-solid-text text-center py-3 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">View All Products</a>
             </div>
         </div>
 
         <div class="mt-8 text-center">
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="inline-block border border-gray-300 text-gray-700 px-7 py-3 rounded-lg font-semibold hover:bg-gray-50 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="inline-block border border-gray-300 text-gray-700 px-7 py-3 rounded-lg font-semibold hover:bg-gray-50 hover:shadow-md transition ui-focus-ring">Read Presale Terms PDF</a>
         </div>
     </div>
 </section>
 
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">Free Vocabulary Cards</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Free Vocabulary Cards</h2>
         <p class="text-xl text-gray-600 mb-8">Download 8 free vocabulary card sets covering the full CIE 0580 syllabus</p>
-        <a href="/free-gift.html" class="inline-block cie-solid-bg text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">领取 8 组免费词汇卡，覆盖 CIE 0580 全考纲。</p>
+        <a href="/free-gift.html" class="inline-block cie-solid-bg px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition ui-focus-ring">
             Browse Free Resources
         </a>
     </div>
@@ -170,19 +174,19 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-8 text-center">
             <div>
-                <div class="text-5xl font-semibold cie-solid-text mb-2">140+</div>
+                <div class="text-5xl font-bold cie-solid-text mb-2">140+</div>
                 <div class="text-gray-600">Practice Questions</div>
             </div>
             <div>
-                <div class="text-5xl font-semibold cie-solid-text mb-2">80+</div>
+                <div class="text-5xl font-bold cie-solid-text mb-2">80+</div>
                 <div class="text-gray-600">Key Terms</div>
             </div>
             <div>
-                <div class="text-5xl font-semibold cie-solid-text mb-2">9.7/10</div>
+                <div class="text-5xl font-bold cie-solid-text mb-2">9.7/10</div>
                 <div class="text-gray-600">Quality Rating</div>
             </div>
             <div>
-                <div class="text-5xl font-semibold cie-solid-text mb-2">8</div>
+                <div class="text-5xl font-bold cie-solid-text mb-2">8</div>
                 <div class="text-gray-600">Free Downloads</div>
             </div>
         </div>

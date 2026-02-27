@@ -1,0 +1,231 @@
+{
+  "_comment": "Week 03 practice questions covering Number (Ratio, Proportion and Rates) for CIE 0580.",
+  "week_number": 3,
+  "topic": "Number: Ratio, Proportion & Rates",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week03-number-ratio-proportion-2026w12",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:number-c1:c1-11-ratio-and-proportion",
+    "cie0580:number-c1:c1-12-rates"
+  ],
+  "syllabus_refs": ["C1.11", "C1.12", "E1.11", "E1.12"],
+  "key_vocabulary": [
+    { "term_en": "Ratio", "term_zh": "比", "definition": "A way of comparing two or more quantities.", "definition_zh": "比较两个或多个量的方式。" },
+    { "term_en": "Simplify (a ratio)", "term_zh": "化简（比）", "definition": "Reduce a ratio to its lowest terms by dividing by common factors.", "definition_zh": "通过除以公因数将比化为最简形式。" },
+    { "term_en": "Proportion", "term_zh": "比例", "definition": "A statement that two ratios are equal.", "definition_zh": "表示两个比相等的等式。" },
+    { "term_en": "Direct Proportion", "term_zh": "正比例", "definition": "Two quantities increase or decrease at the same rate.", "definition_zh": "两个量以相同的比率增加或减少。" },
+    { "term_en": "Inverse Proportion", "term_zh": "反比例", "definition": "As one quantity increases, the other decreases at the same rate.", "definition_zh": "当一个量增加时，另一个量以相同比率减少。" },
+    { "term_en": "Rate", "term_zh": "速率", "definition": "A measure of how one quantity changes with respect to another.", "definition_zh": "衡量一个量相对于另一个量变化的度量。" },
+    { "term_en": "Speed", "term_zh": "速度", "definition": "The rate at which an object covers distance.", "definition_zh": "物体覆盖距离的速率。" },
+    { "term_en": "Distance", "term_zh": "距离", "definition": "The total length of the path between two points.", "definition_zh": "两点之间路径的总长度。" },
+    { "term_en": "Time", "term_zh": "时间", "definition": "The duration of an event, measured in seconds, minutes, hours, etc.", "definition_zh": "事件的持续时间，以秒、分钟、小时等为单位。" },
+    { "term_en": "Unit Rate", "term_zh": "单位速率", "definition": "A rate expressed per one unit of a given quantity.", "definition_zh": "以给定量的一个单位表示的速率。" },
+    { "term_en": "Share", "term_zh": "分配", "definition": "To divide a quantity into parts according to a given ratio.", "definition_zh": "按照给定的比将一个量分成若干份。" },
+    { "term_en": "Map Scale", "term_zh": "地图比例尺", "definition": "The ratio of a distance on a map to the actual distance.", "definition_zh": "地图上距离与实际距离之间的比。" },
+    { "term_en": "Density", "term_zh": "密度", "definition": "Mass per unit volume of a substance.", "definition_zh": "物质单位体积的质量。" },
+    { "term_en": "Exchange Rate", "term_zh": "汇率", "definition": "The value of one currency compared to another.", "definition_zh": "一种货币与另一种货币相比的价值。" },
+    { "term_en": "Unitary Method", "term_zh": "归一法", "definition": "Finding the value of one unit first, then scaling up or down.", "definition_zh": "先求出一个单位的值，再按比例增减。" },
+    { "term_en": "Constant of Proportionality", "term_zh": "比例常数", "definition": "The fixed value linking two proportional quantities.", "definition_zh": "连接两个成比例的量的固定值。" },
+    { "term_en": "Best Value", "term_zh": "最优性价比", "definition": "The option that gives the most quantity for the least cost.", "definition_zh": "以最低成本获得最多数量的选项。" },
+    { "term_en": "Average Speed", "term_zh": "平均速度", "definition": "Total distance divided by total time.", "definition_zh": "总距离除以总时间。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Ratio"],
+      "question": {
+        "en": "(a) Simplify the ratio 24 : 36.\n\n(b) Write 24 : 36 in the form `1 : n`.",
+        "zh": "(a) 化简比 24 : 36。\n\n(b) 将 24 : 36 写成 `1 : n` 的形式。"
+      },
+      "answer": { "en": "(a) 2 : 3\n(b) 1 : 1.5", "zh": "(a) 2 : 3\n(b) 1 : 1.5" },
+      "solution": {
+        "en": ["(a) Find the HCF of 24 and 36, which is 12.", "Divide both sides by 12: `24 \\div 12 = 2` and `36 \\div 12 = 3`.", "The simplified ratio is 2 : 3.", "(b) Divide both sides of `2 : 3` by 2: `1 : 1.5`."],
+        "zh": ["(a) 求 24 和 36 的最大公因数，即 12。", "两边同除以 12: `24 \\div 12 = 2`，`36 \\div 12 = 3`。", "化简后的比是 2 : 3。", "(b) 将 `2 : 3` 两边同除以 2: `1 : 1.5`。"]
+      },
+      "common_mistake": { "en": "Not fully simplifying, e.g., writing 4 : 6 instead of 2 : 3.", "zh": "未完全化简，例如写成 4 : 6 而不是 2 : 3。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Ratio"],
+      "question": {
+        "en": "Divide $450 in the ratio 2 : 3.",
+        "zh": "将 $450 按 2 : 3 的比例分配。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.9]",
+        "  \\draw[fill=blue!15, draw=blue!50] (0,0) rectangle (2,0.6);",
+        "  \\draw[fill=blue!15, draw=blue!50] (2,0) rectangle (5,0.6);",
+        "  \\node at (1,0.3) {\\small 2 parts};",
+        "  \\node at (3.5,0.3) {\\small 3 parts};",
+        "  \\draw[<->] (0,-0.3) -- (5,-0.3) node[midway, below] {\\small \\$450};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "$180 and $270", "zh": "$180 和 $270" },
+      "solution": {
+        "en": ["Total number of parts: `2 + 3 = 5`.", "Value of one part: `\\$450 \\div 5 = \\$90`.", "First share: `2 \\times \\$90 = \\$180`.", "Second share: `3 \\times \\$90 = \\$270`."],
+        "zh": ["总份数: `2 + 3 = 5`。", "每份的值: `\\$450 \\div 5 = \\$90`。", "第一份: `2 \\times \\$90 = \\$180`。", "第二份: `3 \\times \\$90 = \\$270`。"]
+      },
+      "common_mistake": { "en": "Dividing by the ratio numbers directly: `\\$450 \\div 2 = \\$225`.", "zh": "直接除以比的数字: `\\$450 \\div 2 = \\$225`。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Speed, distance, time"],
+      "question": {
+        "en": "(a) A car travels 150 km in 2 hours 30 minutes. Calculate the average speed in km/h.\n\n(b) At this speed, how long does it take to travel 210 km? Give your answer in hours and minutes.",
+        "zh": "(a) 一辆汽车在 2 小时 30 分钟内行驶了 150 公里。计算平均速度（km/h）。\n\n(b) 以此速度，行驶 210 公里需要多长时间？用小时和分钟表示你的答案。"
+      },
+      "answer": { "en": "(a) 60 km/h\n(b) 3 hours 30 minutes", "zh": "(a) 60 km/h\n(b) 3 小时 30 分钟" },
+      "solution": {
+        "en": ["(a) Convert the time to hours: 2 hours 30 minutes `= 2.5` hours.", "Use the formula: speed `= \\dfrac{\\text{distance}}{\\text{time}}`.", "`= \\dfrac{150}{2.5} = 60` km/h.", "(b) Time `= \\dfrac{\\text{distance}}{\\text{speed}} = \\dfrac{210}{60} = 3.5` hours `= 3` hours 30 minutes."],
+        "zh": ["(a) 将时间转换为小时: 2 小时 30 分钟 `= 2.5` 小时。", "使用公式: 速度 `= \\dfrac{\\text{距离}}{\\text{时间}}`。", "`= \\dfrac{150}{2.5} = 60` km/h。", "(b) 时间 `= \\dfrac{\\text{距离}}{\\text{速度}} = \\dfrac{210}{60} = 3.5` 小时 `= 3` 小时 30 分钟。"]
+      },
+      "common_mistake": { "en": "Using 2.3 hours instead of 2.5 hours for 2 hours 30 minutes.", "zh": "将 2 小时 30 分钟写成 2.3 小时而不是 2.5 小时。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Proportion"],
+      "question": {
+        "en": "5 notebooks cost $8.00. How much do 8 notebooks cost?",
+        "zh": "5 本笔记本的价格是 $8.00。8 本笔记本的价格是多少？"
+      },
+      "answer": { "en": "$12.80", "zh": "$12.80" },
+      "solution": {
+        "en": ["Find the cost of one notebook: `\\$8.00 \\div 5 = \\$1.60`.", "Cost of 8 notebooks: `8 \\times \\$1.60 = \\$12.80`."],
+        "zh": ["求一本笔记本的价格: `\\$8.00 \\div 5 = \\$1.60`。", "8 本笔记本的价格: `8 \\times \\$1.60 = \\$12.80`。"]
+      },
+      "common_mistake": { "en": "Multiplying the total cost by 8 instead of first finding the unit cost.", "zh": "直接将总价乘以8，而没有先求单价。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Ratio"],
+      "question": {
+        "en": "Amy, Ben and Carla share $600 in the ratio 3 : 5 : 2. How much does each person receive?",
+        "zh": "Amy、Ben 和 Carla 按 3 : 5 : 2 的比例分配 $600。每人各分得多少？"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\draw[fill=red!15, draw=red!50] (0,0) rectangle (3,0.6);",
+        "  \\node at (1.5,0.3) {\\small Amy: 3};",
+        "  \\draw[fill=blue!15, draw=blue!50] (3,0) rectangle (8,0.6);",
+        "  \\node at (5.5,0.3) {\\small Ben: 5};",
+        "  \\draw[fill=green!15, draw=green!50] (8,0) rectangle (10,0.6);",
+        "  \\node at (9,0.3) {\\small Carla: 2};",
+        "  \\draw[<->] (0,-0.3) -- (10,-0.3) node[midway, below] {\\small \\$600};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "Amy = $180, Ben = $300, Carla = $120", "zh": "Amy = $180, Ben = $300, Carla = $120" },
+      "solution": {
+        "en": ["Total parts: `3 + 5 + 2 = 10`.", "Value of one part: `\\$600 \\div 10 = \\$60`.", "Amy: `3 \\times \\$60 = \\$180`.", "Ben: `5 \\times \\$60 = \\$300`.", "Carla: `2 \\times \\$60 = \\$120`."],
+        "zh": ["总份数: `3 + 5 + 2 = 10`。", "每份的值: `\\$600 \\div 10 = \\$60`。", "Amy: `3 \\times \\$60 = \\$180`。", "Ben: `5 \\times \\$60 = \\$300`。", "Carla: `2 \\times \\$60 = \\$120`。"]
+      },
+      "common_mistake": { "en": "Dividing $600 by 3 instead of by the total number of parts (10).", "zh": "将 $600 除以 3 而不是除以总份数（10）。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Speed, distance, time"],
+      "question": {
+        "en": "(a) A train travels at an average speed of 80 km/h. How far does it travel in 45 minutes?\n\n(b) Another train travels 200 km in 2 hours 30 minutes. Calculate its average speed.",
+        "zh": "(a) 一列火车以 80 km/h 的平均速度行驶。45 分钟内它行驶了多远？\n\n(b) 另一列火车在 2 小时 30 分钟内行驶了 200 公里。计算它的平均速度。"
+      },
+      "answer": { "en": "(a) 60 km\n(b) 80 km/h", "zh": "(a) 60 km\n(b) 80 km/h" },
+      "solution": {
+        "en": ["(a) Convert time to hours: 45 minutes `= \\dfrac{45}{60} = 0.75` hours.", "Distance `=` speed `\\times` time `= 80 \\times 0.75 = 60` km.", "(b) Convert time: 2 hours 30 minutes `= 2.5` hours.", "Speed `= \\dfrac{200}{2.5} = 80` km/h."],
+        "zh": ["(a) 将时间转换为小时: 45 分钟 `= \\dfrac{45}{60} = 0.75` 小时。", "距离 `=` 速度 `\\times` 时间 `= 80 \\times 0.75 = 60` km。", "(b) 将时间转换: 2 小时 30 分钟 `= 2.5` 小时。", "速度 `= \\dfrac{200}{2.5} = 80` km/h。"]
+      },
+      "common_mistake": { "en": "Using 45 as the time instead of converting to 0.75 hours.", "zh": "直接使用 45 作为时间，而没有转换为 0.75 小时。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Best value"],
+      "question": {
+        "en": "A 500 ml bottle of juice costs $1.20. A 1.5 litre bottle costs $3.00. Which is better value?",
+        "zh": "一瓶 500 毫升的果汁价格为 $1.20。一瓶 1.5 升的果汁价格为 $3.00。哪种更划算？"
+      },
+      "answer": { "en": "The 1.5 litre bottle is better value.", "zh": "1.5 升的瓶装更划算。" },
+      "solution": {
+        "en": ["Find the cost per ml for each:", "Small bottle: `\\$1.20 \\div 500 = \\$0.0024` per ml.", "Large bottle: `\\$3.00 \\div 1500 = \\$0.002` per ml.", "The large bottle costs less per ml, so it is better value."],
+        "zh": ["分别求每毫升的价格:", "小瓶: `\\$1.20 \\div 500 = \\$0.0024` 每毫升。", "大瓶: `\\$3.00 \\div 1500 = \\$0.002` 每毫升。", "大瓶每毫升的价格更低，所以更划算。"]
+      },
+      "common_mistake": { "en": "Comparing the total prices directly without calculating the unit cost.", "zh": "直接比较总价而没有计算单位成本。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Ratio"],
+      "question": {
+        "en": "The ratio of boys to girls in a class is 3 : 5. There are 12 more girls than boys. How many students are in the class?",
+        "zh": "一个班级中男生与女生的比例是 3 : 5。女生比男生多 12 人。班级共有多少名学生？"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\draw[fill=blue!15, draw=blue!50] (0,0.8) rectangle (3,1.4);",
+        "  \\node at (1.5,1.1) {\\small Boys: 3 parts};",
+        "  \\draw[fill=red!15, draw=red!50] (0,0) rectangle (5,0.6);",
+        "  \\node at (2.5,0.3) {\\small Girls: 5 parts};",
+        "  \\draw[<->] (3.1,0) -- (5,0) node[midway, below] {\\footnotesize 12};",
+        "  \\draw[dashed, gray] (3,0) -- (3,1.4);",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "48 students", "zh": "48 名学生" },
+      "solution": {
+        "en": ["The difference in ratio parts: `5 - 3 = 2` parts.", "2 parts represent 12 students, so 1 part `= 12 \\div 2 = 6`.", "Boys: `3 \\times 6 = 18`. Girls: `5 \\times 6 = 30`.", "Total: `18 + 30 = 48` students."],
+        "zh": ["比的差: `5 - 3 = 2` 份。", "2 份代表 12 名学生，所以 1 份 `= 12 \\div 2 = 6`。", "男生: `3 \\times 6 = 18`。女生: `5 \\times 6 = 30`。", "总计: `18 + 30 = 48` 名学生。"]
+      },
+      "common_mistake": { "en": "Dividing 12 by the total parts (8) instead of the difference in parts (2).", "zh": "将 12 除以总份数（8）而不是差值份数（2）。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Direct proportion"],
+      "question": {
+        "en": "`y` is directly proportional to `x`. When `x = 4`, `y = 20`. Find `y` when `x = 7`.",
+        "zh": "`y` 与 `x` 成正比。当 `x = 4` 时，`y = 20`。求当 `x = 7` 时 `y` 的值。"
+      },
+      "answer": { "en": "`y = 35`", "zh": "`y = 35`" },
+      "solution": {
+        "en": ["`y` is directly proportional to `x`, so `y = kx` for some constant `k`.", "Substitute `x = 4`, `y = 20`: `20 = k \\times 4`, so `k = 5`.", "When `x = 7`: `y = 5 \\times 7 = 35`."],
+        "zh": ["`y` 与 `x` 成正比，所以 `y = kx`，其中 `k` 为常数。", "代入 `x = 4`, `y = 20`: `20 = k \\times 4`，所以 `k = 5`。", "当 `x = 7` 时: `y = 5 \\times 7 = 35`。"]
+      },
+      "common_mistake": { "en": "Adding 3 to 20 (since `x` increased by 3) instead of using the proportionality constant.", "zh": "因为 `x` 增加了 3 就将 20 加 3，而没有使用比例常数。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Inverse proportion"],
+      "question": {
+        "en": "`y` is inversely proportional to `x`. When `x = 3`, `y = 12`. Find `y` when `x = 9`.",
+        "zh": "`y` 与 `x` 成反比。当 `x = 3` 时，`y = 12`。求当 `x = 9` 时 `y` 的值。"
+      },
+      "answer": { "en": "`y = 4`", "zh": "`y = 4`" },
+      "solution": {
+        "en": ["`y` is inversely proportional to `x`, so `y = \\dfrac{k}{x}` for some constant `k`.", "Substitute `x = 3`, `y = 12`: `12 = \\dfrac{k}{3}`, so `k = 36`.", "When `x = 9`: `y = \\dfrac{36}{9} = 4`."],
+        "zh": ["`y` 与 `x` 成反比，所以 `y = \\dfrac{k}{x}`，其中 `k` 为常数。", "代入 `x = 3`, `y = 12`: `12 = \\dfrac{k}{3}`，所以 `k = 36`。", "当 `x = 9` 时: `y = \\dfrac{36}{9} = 4`。"]
+      },
+      "common_mistake": { "en": "Using direct proportion (`y = kx`) instead of inverse proportion (`y = k/x`).", "zh": "使用正比例（`y = kx`）而不是反比例（`y = k/x`）。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Speed, distance, time"],
+      "question": {
+        "en": "A cyclist rides 30 km at 20 km/h, then a further 45 km at 30 km/h. Calculate the average speed for the entire journey.",
+        "zh": "一名骑行者以 20 km/h 的速度骑行 30 公里，然后以 30 km/h 的速度再骑行 45 公里。计算整个行程的平均速度。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.85]",
+        "  \\draw[thick, ->, blue!70] (0,0) -- (3,0);",
+        "  \\draw[thick, ->, red!70] (3,0) -- (7.5,0);",
+        "  \\fill (0,0) circle (2pt) node[above] {\\small A};",
+        "  \\fill (3,0) circle (2pt) node[above] {\\small B};",
+        "  \\fill (7.5,0) circle (2pt) node[above] {\\small C};",
+        "  \\node[below, blue!70] at (1.5,0) {\\footnotesize 30 km at 20 km/h};",
+        "  \\node[below, red!70] at (5.25,0) {\\footnotesize 45 km at 30 km/h};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "25 km/h", "zh": "25 km/h" },
+      "solution": {
+        "en": ["Time for first part: `\\dfrac{30}{20} = 1.5` hours.", "Time for second part: `\\dfrac{45}{30} = 1.5` hours.", "Total distance: `30 + 45 = 75` km.", "Total time: `1.5 + 1.5 = 3` hours.", "Average speed `= \\dfrac{\\text{total distance}}{\\text{total time}} = \\dfrac{75}{3} = 25` km/h."],
+        "zh": ["第一段所用时间: `\\dfrac{30}{20} = 1.5` 小时。", "第二段所用时间: `\\dfrac{45}{30} = 1.5` 小时。", "总距离: `30 + 45 = 75` km。", "总时间: `1.5 + 1.5 = 3` 小时。", "平均速度 `= \\dfrac{\\text{总距离}}{\\text{总时间}} = \\dfrac{75}{3} = 25` km/h。"]
+      },
+      "common_mistake": { "en": "Averaging the two speeds: `(20 + 30) \\div 2 = 25` — this gives the correct answer here by coincidence, but the method is wrong in general.", "zh": "将两个速度取平均: `(20 + 30) \\div 2 = 25`——这里碰巧得到正确答案，但这种方法通常是错误的。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can simplify ratios to their lowest terms.", "zh": "我能将比化简为最简形式。" },
+    { "en": "I can divide a quantity in a given ratio.", "zh": "我能按给定的比分配一个量。" },
+    { "en": "I can use the unitary method to solve proportion problems.", "zh": "我能用归一法解决比例问题。" },
+    { "en": "I can use speed = distance / time and rearrange it.", "zh": "我能使用速度 = 距离 / 时间公式并进行变形。" },
+    { "en": "I can compare unit rates to find best value.", "zh": "我能比较单位速率来判断最优性价比。" },
+    { "en": "I can solve direct and inverse proportion problems (Extended).", "zh": "我能解决正比例和反比例问题（拓展）。" },
+    { "en": "I can calculate average speed for multi-stage journeys (Extended).", "zh": "我能计算多段行程的平均速度（拓展）。" }
+  ]
+}

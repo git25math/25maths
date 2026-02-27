@@ -1,0 +1,3 @@
+sku,level,board,listing_title,source_slug_candidate,source_payhip_url_seed,final_payhip_url,update_target_file,update_target_key_path,status_backfilled,status_verified_live,notes
+L4-CIE0580-ALLUNITS,L4,cie0580,CIE 0580 All-Units Mega Bundle,l4-cie0580-allunits,https://payhip.com/25maths?src=cie0580-all-units,"",_data/kahoot_presale_catalog.json,boards.cie0580.all_units_bundle.presale_url,"","",""
+L4-EDX4MA1-ALLUNITS,L4,edexcel-4ma1,Edexcel 4MA1 All-Units Mega Bundle,l4-edx4ma1-allunits,https://payhip.com/25maths?src=edexcel4ma1-all-units,"",_data/kahoot_presale_catalog.json,boards.edexcel-4ma1.all_units_bundle.presale_url,"","",""

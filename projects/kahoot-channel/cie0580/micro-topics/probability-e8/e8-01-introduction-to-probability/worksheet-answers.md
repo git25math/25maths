@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E8.1 Introduction to probability
 
-1. 9.6
-2. 10
-3. 11
-4. `4/6`
-5. 0.2
-6. 14
-7. Median
+1. `4/6`
+2. 0.65
+3. 12
+4. 0.28
+5. 0.82
+6. `4/11`
+7. `3/8`
 8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+9. 0.70
+10. 0.60

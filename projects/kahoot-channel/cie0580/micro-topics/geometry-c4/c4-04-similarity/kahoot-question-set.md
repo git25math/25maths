@@ -1,8 +1,8 @@
 # C4.4 Kahoot Question Set - Similarity
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Core
 - Micro-topic: C4.4
 - Questions: 15 MCQ
 
@@ -17,12 +17,12 @@
 | 7 | In a right triangle, `sin(theta)=0.5`. Find `theta` (acute). | 30° | Cannot be determined | No solution | 0 | A | Method |
 | 8 | Find volume of cuboid `10 x 12 x 14`. | 1680 | 1681 | 1682 | 1679 | A | Method |
 | 9 | Two similar shapes have scale factor `3`. Area scale factor? | 9 | 11 | 10 | 8 | A | Method |
-| 10 | A cone has radius `4` and height `13`. Write volume in terms of `pi`. | Cannot be determined | No solution | 0 | 69.33333333333333pi | D | Method |
+| 10 | A cylinder has radius `4` and height `10`. Write volume in terms of `pi`. | Cannot be determined | No solution | 0 | 160pi | D | Method |
 | 11 | Context check: Find sum of interior angles of a `8`-sided polygon. | 1081 | 1079 | 1082 | 1080 | D | Method |
 | 12 | Context check: Find perimeter of rectangle `10 cm` by `14 cm`. | 0 | 48 cm | Cannot be determined | No solution | B | Context |
 | 13 | Context check: Use Pythagoras: legs `7` and `4`. | Cannot be determined | No solution | sqrt(65) | 0 | C | Context |
 | 14 | Context check: Find volume of cuboid `10 x 12 x 14`. | 1682 | 1681 | 1680 | 1679 | C | Context |
-| 15 | Context check: A cone has radius `4` and height `13`. Write volume in terms of `pi`. | No solution | 69.33333333333333pi | Cannot be determined | 0 | B | Context |
+| 15 | Context check: A cylinder has radius `4` and height `10`. Write volume in terms of `pi`. | No solution | 160pi | Cannot be determined | 0 | B | Context |
 
 ## Timer
 - Q1-Q5: 20s

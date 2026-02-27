@@ -1,57 +1,56 @@
 ---
 layout: module
 title: Products
-description: "CIE 0580 presale product architecture: L1 single worksheet, L2 section bundle, L3 unit bundle."
+description: "CIE 0580 worksheet packs: topic worksheets, section bundles, and unit bundles for exam preparation."
 module: cie0580
 active_page: products
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /en/cie0580/products.html
-  - code: zh-CN
-    label: ZH-CN
-    url: /zh-cn/cie0580/products.html
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_status_body %}Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.{% endcapture %}
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl font-semibold mb-4">CIE 0580 Product System</h1>
-        <p class="text-xl opacity-90">Legacy 3-product setup retired. New closed loop: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
+        <h1 class="text-5xl font-semibold mb-4">CIE 0580 Worksheet Packs</h1>
+        <p class="text-xl opacity-90">Topic worksheets, section bundles, and unit bundles — choose the level that fits your revision plan.</p>
+        <p data-bilingual-block class="text-base opacity-90 mt-2">专题练习、章节合集与单元合集 — 按你的复习计划选择合适的层级。</p>
     </div>
 </section>
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
+        <div class="cie-soft-bg border cie-soft-border rounded-xl p-5 text-sm cie-solid-text">
             <p class="font-semibold mb-1">Pricing Status</p>
             <p>Current prices shown below are recommendation ranges only. Final presale prices remain <strong>TBD</strong> and can be updated anytime before Payhip launch.</p>
+            <p data-bilingual-block class="mt-2">下方价格为建议区间，最终预售价格仍可在 Payhip 正式上线前调整。</p>
         </div>
     </div>
 </section>
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Worksheet Pack Tiers</h2>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">三个层级：专题练习、章节合集、单元合集。</p>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Single Worksheet MVP</h3>
-                <p class="text-sm text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download. Lowest friction entry point.</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-4">One focused subtopic with a Kahoot quiz and downloadable worksheet.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">单个知识点专项练习，含 Kahoot 测验与可下载练习册。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l1_early_bird }} · suggested regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Section Bundle</h3>
-                <p class="text-sm text-gray-600 mb-4">Multiple SubTopics inside one syllabus section. Best upgrade from L1.</p>
+                <p class="text-sm text-gray-600 mb-4">Multiple subtopics covering one syllabus section. Best value for focused revision.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">同一章节多个知识点打包，是专项复习的最佳选择。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l2_early_bird }} · suggested regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Bundle</h3>
-                <p class="text-sm text-gray-600 mb-4">One full unit including Core + Extended tracks, plus bonus add-ons after release.</p>
+                <p class="text-sm text-gray-600 mb-4">Complete unit coverage with Core + Extended tracks, plus bonus materials.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-4">完整单元覆盖 Core + Extended 双层级，附赠额外资料。</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l3_early_bird }} · suggested regular: {{ catalog.pricing.l3_regular }}</p>
             </article>
         </div>
@@ -60,47 +59,48 @@ lang_links:
 
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-2">CIE Unit Bundle Presales (9)</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">CIE 0580 Unit Bundles (9)</h2>
         <p class="text-gray-600 mb-8">Each unit bundle includes bilingual vocabulary card support and a post-purchase upgrade path for bilingual enhancement.</p>
-        <p class="text-sm text-gray-600 mb-8">Bilingual gift trigger: after checkout, customers complete a 30-second learning preference form. Review is optional and unlocks extra bonus, not the core bilingual gift.</p>
+        <p class="bilingual-support-only text-sm text-gray-600 mb-2">每个单元包都包含双语词汇卡支持，并预留购买后的双语增强升级路径。</p>
+        <p class="text-sm text-gray-600 mb-8">After purchase, complete a short learning preference form to unlock your free bilingual vocabulary card bonus.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">购买后填写简短学习偏好表单，即可解锁免费双语词汇卡赠品。</p>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for unit in catalog.units %}
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="text-xs px-2 py-1 rounded-full bg-amber-100 text-amber-700 font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
+                        {% assign unit_status_label = unit.status | default: 'presale' | upcase %}
+                        {% include ui/board-status-chip.html board='cie' label=unit_status_label %}
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center cie-solid-bg text-white py-2 rounded-lg font-semibold text-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Presale Placeholder</a>
+                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center cie-solid-bg cie-solid-text py-2 rounded-lg font-semibold text-xs cie-solid-hover ui-focus-ring">View Bundle Details</a>
                 </article>
             {% endfor %}
         </div>
 
-        <div class="mt-8 bg-gray-900 text-white rounded-xl p-6">
-            <h3 class="text-2xl font-semibold mb-2">All-Units Mega Bundle</h3>
-            <p class="text-sm text-gray-200 mb-1">{{ catalog.all_units_bundle.title }}</p>
-            <p class="text-sm text-gray-200 mb-1">Early-bird: {{ catalog.all_units_bundle.early_bird_price }} · Regular: {{ catalog.all_units_bundle.regular_price }}</p>
-            <p class="text-sm text-gray-200 mb-4">Launch: {{ catalog.all_units_bundle.release_date }} · Early-bird deadline: {{ catalog.all_units_bundle.early_bird_deadline }}</p>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <a href="{{ catalog.all_units_bundle.presale_url }}" target="_blank" rel="noopener" class="text-center bg-white text-gray-900 px-5 py-2.5 rounded-lg font-semibold text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Mega Bundle Placeholder</a>
-                <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-white px-5 py-2.5 rounded-lg font-semibold text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
-            </div>
+        <div class="mt-8 cie-soft-bg border cie-soft-border rounded-xl p-6">
+            <h3 class="text-2xl font-bold mb-2 cie-solid-text">All-Units Mega Bundle</h3>
+            <p class="text-sm cie-soft-text mb-1">{{ catalog.all_units_bundle.title }}</p>
+            <p class="text-sm cie-soft-text mb-1">Early-bird: {{ catalog.all_units_bundle.early_bird_price }} · Regular: {{ catalog.all_units_bundle.regular_price }}</p>
+            <p class="text-sm cie-soft-text mb-4">Launch: {{ catalog.all_units_bundle.release_date }} · Early-bird deadline: {{ catalog.all_units_bundle.early_bird_deadline }}</p>
+            {% include ui/board-dual-actions.html board='cie' size='sm' primary_href=catalog.all_units_bundle.presale_url primary_target='_blank' primary_rel='noopener' primary_label='View Mega Bundle' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='View Terms PDF' %}
         </div>
     </div>
 </section>
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">Execution Links</h2>
-        <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Quick Links</h2>
+        <p class="text-gray-600 mb-8">Access the Kahoot quiz directory, terms, and our Payhip storefront.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-8">快速访问 Kahoot 测验目录、条款说明及 Payhip 商店。</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE Kahoot Directory</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Presale Terms PDF</a>
-            <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Payhip Storefront</a>
+            <a href="/kahoot/cie0580/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition">Open CIE Kahoot Directory</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">View Terms PDF</a>
+            <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Open Payhip Storefront</a>
         </div>
     </div>
 </section>

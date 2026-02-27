@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply geometrical reasoning methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `10` and height `10` is `1/2 x 10 x 10 = 50`.
+Example: area of a triangle with base `12` and height `8` is `1/2 x 12 x 8 = 48`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `61°` and `34°`.

@@ -20,12 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressLabel = document.getElementById('progress-label');
     const scoreLabel = document.getElementById('score-label');
     const progressBar = document.getElementById('progress-bar');
+    const previousExerciseLinkSlot = document.getElementById('previous-exercise-link-slot');
     const nextExerciseLinkSlot = document.getElementById('next-exercise-link-slot');
 
     // --- State ---
     const questions = exerciseData.questions || [];
     const links = (typeof exerciseLinks !== 'undefined' && exerciseLinks) ? exerciseLinks : null;
     const topicSlugFromPage = (typeof exerciseTopicSlug === 'string' && exerciseTopicSlug) ? exerciseTopicSlug : '';
+    const boardSlugFromPage = (typeof exerciseBoardSlug === 'string' && exerciseBoardSlug) ? exerciseBoardSlug : '';
+    const boardDirectoryUrl = (typeof exerciseBoardDirectoryUrl === 'string' && exerciseBoardDirectoryUrl) ? exerciseBoardDirectoryUrl : '/kahoot/';
+    const boardDirectoryLabel = (typeof exerciseBoardDirectoryLabel === 'string' && exerciseBoardDirectoryLabel) ? exerciseBoardDirectoryLabel : 'Kahoot Directory';
+    const exercisesHubUrl = (typeof exerciseHubUrl === 'string' && exerciseHubUrl) ? exerciseHubUrl : '/exercises/';
     const laneItems = Array.isArray(exerciseLane) ? exerciseLane : [];
     const currentSubtopicId = (typeof exerciseCurrentSubtopicId === 'string' && exerciseCurrentSubtopicId)
         ? exerciseCurrentSubtopicId
@@ -34,9 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
         ? exerciseMetaData
         : null;
     const topicSlug = exerciseEngine.dataset.topic || topicSlugFromPage;
+    const boardSlug = boardSlugFromPage || resolveBoardSlug();
+    const completionThemeClass = (boardSlug === 'cie0580')
+        ? 'exercise-completion-actions--cie'
+        : (boardSlug === 'edexcel-4ma1')
+            ? 'exercise-completion-actions--edx'
+            : 'exercise-completion-actions--neutral';
     let currentQuestionIndex = 0;
     let score = 0;
     let selectedAnswer = null;
+    let previousExercise = null;
     let nextExercise = null;
     const exerciseStartedAtMs = Date.now();
     let cloudSupabaseClient = null;
@@ -212,6 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const apiResult = await postExerciseApi(`/api/v1/exercise/session/${encodeURIComponent(cloudSessionId)}/complete`, updatePayload);
         if (apiResult.ok) {
+            // Dispatch engagement events if API returned achievement/streak data
+            if (apiResult.data) {
+                dispatchEngagementEvents(apiResult.data);
+            }
             return;
         }
 
@@ -228,6 +244,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function dispatchEngagementEvents(responseData) {
+        const newlyUnlocked = responseData.newly_unlocked;
+        const levelUp = responseData.level_up;
+
+        if ((Array.isArray(newlyUnlocked) && newlyUnlocked.length > 0) || levelUp) {
+            window.dispatchEvent(new CustomEvent('achievement-unlocked', {
+                detail: {
+                    newly_unlocked: newlyUnlocked || [],
+                    level_up: Boolean(levelUp),
+                    level_info: levelUp ? {
+                        level: responseData.level,
+                        title: `Level ${responseData.level}`,
+                    } : null,
+                    xp_earned: responseData.xp_earned || 0,
+                    total_xp: responseData.total_xp || 0,
+                },
+            }));
+        }
+
+        if (responseData.streak) {
+            window.dispatchEvent(new CustomEvent('streak-updated', {
+                detail: responseData.streak,
+            }));
+        }
+    }
+
     function escapeHtml(rawValue) {
         return String(rawValue ?? '')
             .replace(/&/g, '&amp;')
@@ -235,6 +277,36 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
+    }
+
+    function normalizeInlineMath(rawValue) {
+        const value = String(rawValue ?? '');
+        return value.replace(/\$([^$]+)\$/g, (match, content) => {
+            const trimmed = String(content || '').trim();
+            if (!trimmed) return match;
+            // Convert LaTeX-like $...$ to \( ... \) while ignoring currency-like values.
+            if (!/[\\^_{}]/.test(trimmed)) return match;
+            return `\\(${trimmed}\\)`;
+        });
+    }
+
+    function renderMath(container) {
+        if (!container || typeof window.renderMathInElement !== 'function') {
+            return;
+        }
+        try {
+            window.renderMathInElement(container, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },
+                    { left: '\\(', right: '\\)', display: false },
+                ],
+                throwOnError: false,
+                strict: 'ignore',
+            });
+        } catch (error) {
+            // Keep question flow running even if formula rendering fails.
+        }
     }
 
     function withTrackingUrl(rawUrl, actionKey) {
@@ -305,6 +377,18 @@ document.addEventListener('DOMContentLoaded', () => {
         return String(a.subtopic_id || '').localeCompare(String(b.subtopic_id || ''));
     }
 
+    function resolvePreviousExercise() {
+        if (!laneItems.length || !currentSubtopicId) {
+            return null;
+        }
+        const sortedLane = laneItems.slice().sort(compareLaneItems);
+        const currentIndex = sortedLane.findIndex((item) => item.subtopic_id === currentSubtopicId);
+        if (currentIndex <= 0) {
+            return null;
+        }
+        return sortedLane[currentIndex - 1];
+    }
+
     function resolveNextExercise() {
         if (!laneItems.length || !currentSubtopicId) {
             return null;
@@ -317,18 +401,36 @@ document.addEventListener('DOMContentLoaded', () => {
         return sortedLane[currentIndex + 1];
     }
 
-    function injectNextExerciseLink() {
-        if (!nextExerciseLinkSlot || !nextExercise || !nextExercise.url) {
-            return;
+    function buildSyllabusButtonHtml(exerciseItem, direction) {
+        const isPrevious = direction === 'previous';
+        const baseLabel = isPrevious ? 'Previous in Syllabus' : 'Next in Syllabus';
+        if (!exerciseItem || !exerciseItem.url) {
+            return `<span class="loop-btn-base loop-btn-primary loop-btn-disabled">${baseLabel}</span>`;
         }
-        const nextLabel = nextExercise.code
-            ? `Next in Syllabus (${nextExercise.code})`
-            : 'Next in Syllabus';
-        const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
-        const nextLabelSafe = escapeHtml(nextLabel);
-        nextExerciseLinkSlot.innerHTML = `
-            <a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>
-        `;
+        const actionKey = isPrevious ? 'previous_exercise' : 'next_exercise';
+        const label = exerciseItem.code ? `${baseLabel} (${exerciseItem.code})` : baseLabel;
+        const href = escapeHtml(withTrackingUrl(exerciseItem.url, actionKey));
+        const safeLabel = escapeHtml(label);
+        return `<a href="${href}" class="loop-btn-base loop-btn-primary">${safeLabel}</a>`;
+    }
+
+    function injectSyllabusNavigationLinks() {
+        if (previousExerciseLinkSlot) {
+            previousExerciseLinkSlot.innerHTML = buildSyllabusButtonHtml(previousExercise, 'previous');
+        }
+        if (nextExerciseLinkSlot) {
+            nextExerciseLinkSlot.innerHTML = buildSyllabusButtonHtml(nextExercise, 'next');
+        }
+    }
+
+    function buildRowButtonHtml(href, label, buttonClass, actionKey, openInNewTab) {
+        const safeLabel = escapeHtml(label);
+        if (!href) {
+            return `<span class="loop-btn-base ${buttonClass} loop-btn-disabled">${safeLabel}</span>`;
+        }
+        const trackedHref = escapeHtml(withTrackingUrl(href, actionKey || 'resource'));
+        const targetAttrs = openInNewTab ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${trackedHref}"${targetAttrs} class="loop-btn-base ${buttonClass}">${safeLabel}</a>`;
     }
 
     function persistLastExercise() {
@@ -352,49 +454,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function buildCompletionActionsHtml() {
-        const retryHref = escapeHtml(window.location.pathname);
-        const actionButtons = [
-            `<a href="${retryHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Retry This Exercise</a>`,
-        ];
-        if (nextExercise && nextExercise.url) {
-            const nextLabel = nextExercise.code
-                ? `Next in Syllabus (${nextExercise.code})`
-                : 'Next in Syllabus';
-            const nextHref = escapeHtml(withTrackingUrl(nextExercise.url, 'next_exercise'));
-            const nextLabelSafe = escapeHtml(nextLabel);
-            actionButtons.push(
-                `<a href="${nextHref}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">${nextLabelSafe}</a>`
-            );
-        }
-
-        if (links && typeof links === 'object' && links.kahoot_url) {
-            const kahootHref = escapeHtml(withTrackingUrl(links.kahoot_url, 'kahoot_complete'));
-            actionButtons.push(
-                `<a href="${kahootHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition">Play Matching Kahoot</a>`
-            );
-        }
-        if (links && typeof links === 'object' && links.worksheet_payhip_url) {
-            const worksheetHref = escapeHtml(withTrackingUrl(links.worksheet_payhip_url, 'worksheet_complete'));
-            actionButtons.push(
-                `<a href="${worksheetHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Get Matching Worksheet</a>`
-            );
-        }
-
+        const tryAnotherHref = exercisesHubUrl || '/exercises/';
+        const backLabel = boardDirectoryLabel ? `Back to ${boardDirectoryLabel}` : 'Back to Kahoot Directory';
         const bundleUrl = (links && typeof links === 'object')
             ? (links.bundle_url || links.section_bundle_payhip_url || links.unit_bundle_payhip_url || '')
             : '';
-        if (bundleUrl) {
-            const bundleHref = escapeHtml(withTrackingUrl(bundleUrl, 'bundle_complete'));
-            actionButtons.push(
-                `<a href="${bundleHref}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Explore Bundle</a>`
-            );
-        }
+        const kahootUrl = (links && typeof links === 'object' && links.kahoot_url) ? links.kahoot_url : '';
+        const worksheetUrl = (links && typeof links === 'object' && links.worksheet_payhip_url) ? links.worksheet_payhip_url : '';
 
         return `
-            <div class="mt-5 border-t border-blue-200 pt-4">
+            <div class="exercise-completion-actions ${completionThemeClass} mt-5 border-t border-blue-200 pt-4">
                 <p class="text-sm font-semibold text-blue-900">Next step for this micro-topic</p>
-                <div class="mt-3 flex flex-wrap justify-center gap-3">
-                    ${actionButtons.join('')}
+                <div class="mt-3 space-y-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        ${buildSyllabusButtonHtml(previousExercise, 'previous')}
+                        ${buildSyllabusButtonHtml(nextExercise, 'next')}
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        ${buildRowButtonHtml(tryAnotherHref, 'Try Another Interactive Exercise', 'loop-btn-soft exercise-warm-primary', 'try_another', false)}
+                        ${buildRowButtonHtml(boardDirectoryUrl, backLabel, 'loop-btn-soft', 'board_directory', false)}
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        ${buildRowButtonHtml(kahootUrl, 'Playing Matching Kahoot', 'loop-btn-kahoot exercise-kahoot-bridge', 'kahoot_complete', true)}
+                        ${buildRowButtonHtml(worksheetUrl, 'Get Matching Worksheet', 'loop-btn-soft', 'worksheet_complete', true)}
+                        ${buildRowButtonHtml(bundleUrl, 'Explore Bundle', 'loop-btn-soft', 'bundle_complete', true)}
+                    </div>
                 </div>
             </div>
         `;
@@ -420,13 +504,13 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function renderQuestion(index) {
         const question = questions[index];
-        const questionText = escapeHtml(question.questionText || '');
+        const questionText = escapeHtml(normalizeInlineMath(question.questionText || ''));
         let optionsHtml = '';
 
         if (question.type === 'multiple-choice') {
             optionsHtml = '<div class="space-y-3">';
             question.options.forEach((option, i) => {
-                const optionLabel = escapeHtml(option);
+                const optionLabel = escapeHtml(normalizeInlineMath(option));
                 optionsHtml += `
                     <div>
                         <label class="block border border-gray-300 rounded-lg px-4 py-3 cursor-pointer hover:bg-gray-100 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
@@ -445,6 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="text-lg font-semibold">${index + 1}. ${questionText}</p>
             <div class="mt-4">${optionsHtml}</div>
         `;
+        renderMath(questionContainer);
         updateProgressUi();
 
         // Reset state for the new question
@@ -542,8 +627,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function initializeExercise() {
         persistLastExercise();
         void initializeCloudSession();
+        previousExercise = resolvePreviousExercise();
         nextExercise = resolveNextExercise();
-        injectNextExerciseLink();
+        injectSyllabusNavigationLinks();
         attachTrackingToVisibleLinks();
         if (questions.length === 0) {
             questionContainer.innerHTML = '<p class="text-gray-600">No questions found for this topic.</p>';

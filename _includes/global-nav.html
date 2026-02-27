@@ -1,57 +1,31 @@
 <!-- Global Navigation -->
-{% assign blog_path = "/blog/" %}
-{% assign membership_path = "/subscription.html" %}
+{% assign membership_path = "/membership/" %}
 {% assign kahoot_path = "/kahoot/" %}
 {% assign exercises_path = "/exercises/" %}
-{% assign blog_label = "Blog" %}
-{% assign about_label = "About" %}
-{% assign support_label = "Support" %}
 {% assign membership_label = "Membership" %}
 {% assign kahoot_label = "Kahoot" %}
 {% assign exercises_label = "Interactive Exercises" %}
-{% assign about_path = "/about.html" %}
-{% assign support_path = "/support.html" %}
-{% assign is_homepage = false %}
-{% if page.url == "/" or page.url == "/en/" or page.url == "/zh-cn/" %}
-    {% assign is_homepage = true %}
-{% endif %}
+{% assign member_login_label = "Log in" %}
+{% assign member_logout_label = "Log out" %}
+{% assign member_guest_label = "Guest" %}
 {% if page.lang == 'en' %}
-    {% assign blog_path = "/en/blog/" %}
     {% assign membership_path = "/en/subscription.html" %}
-    {% assign about_path = "/en/about.html" %}
-    {% assign support_path = "/en/support.html" %}
 {% elsif page.lang == 'zh-CN' %}
-    {% assign blog_path = "/zh-cn/blog/" %}
     {% assign membership_path = "/zh-cn/subscription.html" %}
     {% assign kahoot_path = "/zh-cn/kahoot/" %}
     {% assign exercises_path = "/zh-cn/exercises/" %}
-    {% assign blog_label = "博客" %}
-    {% assign about_label = "关于" %}
-    {% assign support_label = "支持" %}
     {% assign membership_label = "会员" %}
     {% assign kahoot_label = "Kahoot题组" %}
     {% assign exercises_label = "互动练习" %}
-    {% assign about_path = "/zh-cn/about.html" %}
-    {% assign support_path = "/zh-cn/support.html" %}
-{% endif %}
-{% assign exercise_lang_fallback_enabled = false %}
-{% assign exercise_lang_fallback_en_url = "" %}
-{% assign exercise_lang_fallback_zh_url = "" %}
-{% assign language_label = "Language" %}
-{% if page.lang == 'zh-CN' %}
-    {% assign language_label = "语言" %}
-{% endif %}
-{% if page.collection == 'exercises' and page.lang_links == nil %}
-    {% assign exercise_lang_fallback_enabled = true %}
-    {% assign exercise_lang_fallback_en_url = page.url | relative_url %}
-    {% assign exercise_board_slug = page.subtopic_id | default: "" | split: ":" | first %}
-    {% capture exercise_lang_fallback_zh_url %}{{ '/zh-cn/exercises/' | relative_url }}{% if exercise_board_slug != '' %}?board={{ exercise_board_slug }}{% if page.tier %}&tier={{ page.tier | downcase | url_encode }}{% endif %}{% if page.syllabus_code %}&q={{ page.syllabus_code | url_encode }}{% endif %}{% endif %}{% endcapture %}
+    {% assign member_login_label = "登录" %}
+    {% assign member_logout_label = "退出" %}
+    {% assign member_guest_label = "访客" %}
 {% endif %}
 <nav class="bg-gray-900 text-gray-300 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-14">
             <div class="flex items-center">
-                <a href="/" class="text-xl font-bold text-white">25Maths</a>
+                <a href="/" class="text-xl font-semibold text-white">25Maths</a>
             </div>
             <div class="hidden md:flex items-center space-x-1">
                 {% for mod in site.modules %}
@@ -62,35 +36,16 @@
                 </a>
                 {% endfor %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
-                {% unless is_homepage %}
-                <a href="{{ blog_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'blog' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ blog_label }}</a>
-                {% endunless %}
-                <a href="{{ kahoot_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'kahoot' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ kahoot_label }}</a>
                 <a href="{{ exercises_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'exercises' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ exercises_label }}</a>
-                <a href="{{ about_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'about' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ about_label }}</a>
-                <a href="{{ support_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'support' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ support_label }}</a>
+                <a href="{{ kahoot_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'kahoot' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ kahoot_label }}</a>
                 <a href="{{ membership_path }}" class="px-3 py-2 rounded text-sm {% if page.active_global == 'membership' %}text-white font-semibold{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ membership_label }}</a>
-                {% if page.lang_links or exercise_lang_fallback_enabled %}
+                {% if site.supabase and site.supabase.enabled %}
                 <span class="border-l border-gray-700 h-6 mx-2"></span>
-                <div class="flex items-center space-x-1">
-                    {% if page.lang_links %}
-                    {% for item in page.lang_links %}
-                    {% assign lang_switch_label = item.label %}
-                    {% if item.code == 'en' %}
-                        {% assign lang_switch_label = 'EN' %}
-                    {% elsif item.code == 'zh-CN' %}
-                        {% if page.lang == 'zh-CN' %}
-                            {% assign lang_switch_label = '简体' %}
-                        {% else %}
-                            {% assign lang_switch_label = 'ZH-CN' %}
-                        {% endif %}
-                    {% endif %}
-                    <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs {% if page.lang == item.code %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">{{ lang_switch_label }}</a>
-                    {% endfor %}
-                    {% else %}
-                    <a href="{{ exercise_lang_fallback_en_url }}" class="px-2 py-1 rounded text-xs {% if page.lang == 'en' %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">EN</a>
-                    <a href="{{ exercise_lang_fallback_zh_url }}" class="px-2 py-1 rounded text-xs {% if page.lang == 'zh-CN' %}text-white bg-gray-700{% else %}text-gray-300 hover:text-white hover:bg-gray-800{% endif %} transition">简体</a>
-                    {% endif %}
+                <div class="flex items-center space-x-2">
+                    <span data-member-status class="px-2 py-1 rounded bg-gray-800 text-xs text-gray-300">{{ member_guest_label }}</span>
+                    <span data-member-email class="hidden max-w-sm truncate text-xs text-gray-400"></span>
+                    <button type="button" data-member-login class="px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-800 transition">{{ member_login_label }}</button>
+                    <button type="button" data-member-logout class="hidden px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-800 transition">{{ member_logout_label }}</button>
                 </div>
                 {% endif %}
             </div>
@@ -115,36 +70,18 @@
             </a>
             {% endfor %}
             <div class="border-t border-gray-700 mt-2 pt-2">
-                {% unless is_homepage %}
-                <a href="{{ blog_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ blog_label }}</a>
-                {% endunless %}
-                <a href="{{ kahoot_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ kahoot_label }}</a>
                 <a href="{{ exercises_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ exercises_label }}</a>
-                <a href="{{ about_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ about_label }}</a>
-                <a href="{{ support_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ support_label }}</a>
+                <a href="{{ kahoot_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ kahoot_label }}</a>
                 <a href="{{ membership_path }}" class="block px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700">{{ membership_label }}</a>
-                {% if page.lang_links or exercise_lang_fallback_enabled %}
-                <div class="border-t border-gray-700 mt-2 pt-2">
-                    <div class="px-3 text-xs text-gray-500 mb-2">{{ language_label }}</div>
-                    <div class="flex flex-wrap gap-2 px-3">
-                        {% if page.lang_links %}
-                        {% for item in page.lang_links %}
-                        {% assign lang_switch_label = item.label %}
-                        {% if item.code == 'en' %}
-                            {% assign lang_switch_label = 'EN' %}
-                        {% elsif item.code == 'zh-CN' %}
-                            {% if page.lang == 'zh-CN' %}
-                                {% assign lang_switch_label = '简体' %}
-                            {% else %}
-                                {% assign lang_switch_label = 'ZH-CN' %}
-                            {% endif %}
-                        {% endif %}
-                        <a href="{{ item.url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">{{ lang_switch_label }}</a>
-                        {% endfor %}
-                        {% else %}
-                        <a href="{{ exercise_lang_fallback_en_url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">EN</a>
-                        <a href="{{ exercise_lang_fallback_zh_url }}" class="px-2 py-1 rounded text-xs text-gray-300 hover:text-white hover:bg-gray-700">简体</a>
-                        {% endif %}
+                {% if site.supabase and site.supabase.enabled %}
+                <div class="border-t border-gray-700 mt-2 pt-2 px-3 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span data-member-status class="px-2 py-1 rounded bg-gray-700 text-xs text-gray-300">{{ member_guest_label }}</span>
+                        <span data-member-email class="hidden max-w-sm truncate text-xs text-gray-400"></span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button type="button" data-member-login class="px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700 border border-gray-700">{{ member_login_label }}</button>
+                        <button type="button" data-member-logout class="hidden px-3 py-2 rounded text-sm text-gray-300 hover:text-white hover:bg-gray-700 border border-gray-700">{{ member_logout_label }}</button>
                     </div>
                 </div>
                 {% endif %}

@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   validate-and-build:
     runs-on: ubuntu-latest
@@ -19,6 +22,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: "3.3"
           bundler-cache: true
 
       - name: Setup Python
@@ -26,8 +30,19 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Install Python dependencies
-        run: python3 -m pip install --upgrade pip pyyaml
+        run: python3 -m pip install --upgrade pip pyyaml pillow
+
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - name: Install Playwright Chromium
+        run: npx --yes playwright@1.52.0 install --with-deps chromium
 
       - name: Validate Kahoot data integrity
         run: python3 scripts/health/check_kahoot_data.py
@@ -35,5 +50,35 @@ jobs:
       - name: Validate Exercise data integrity
         run: python3 scripts/health/check_exercise_data.py
 
+      - name: Validate navigation consistency
+        run: python3 scripts/health/check_nav_consistency.py
+
+      - name: Validate style consistency
+        run: bash scripts/health/check_style_consistency.sh
+
+      - name: Validate bilingual coverage guardrail
+        run: bash scripts/health/check_bilingual_coverage.sh
+
+
       - name: Build site with Jekyll
         run: bundle exec jekyll build
+
+      - name: Validate visual regression snapshots
+        continue-on-error: true
+        env:
+          VISUAL_MAX_RMSE: "0.0040"
+        run: bash scripts/health/check_visual_regression.sh
+
+      - name: Auto-update visual baseline (main only)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          cp -f .tmp/visual-current/*.png tests/visual/baseline/ 2>/dev/null || true
+          if git diff --quiet tests/visual/baseline/; then
+            echo "Baseline already up to date."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add tests/visual/baseline/
+            git commit -m "chore: auto-update visual regression baseline [skip ci]"
+            git push
+          fi

@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C8.2 Relative and expected frequencies
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply relative and expected frequencies methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply relative and expected frequencies methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
-Example: mean of `[11, 8, 14, 13, 18]` is `64/5 = 12.8`.
+Example: mean of `[17, 13, 14, 10, 4]` is `58/5 = 11.6`.
 
 ## Practice (10)
-1. Find mean of `[17, 20, 14, 18, 6]`.
-2. Find median of `[6, 14, 17, 18, 20]`.
-3. Find range of `[17, 20, 14, 18, 6]`.
-4. A fair die is rolled. Find `P(score > 3)`.
-5. If `P(A)=0.9`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `47` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. A fair die is rolled. Find `P(score > 4)`.
+2. If `P(A)=0.35`, find `P(not A)`.
+3. Expected frequency for probability `0.3` in `78` trials.
+4. If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A and B)`.
+5. If `P(A)=0.4` and `P(B)=0.7` are independent, find `P(A or B)`.
+6. A bag has 6 red and 4 blue counters. Find `P(red)`.
+7. A spinner has 8 equal sections, 3 are blue. Find `P(blue)`.
+8. In a class, 18 of 30 students are girls. Find `P(girl)`.
+9. If `P(A)=0.25` and `P(B)=0.45` are mutually exclusive, find `P(A or B)`.
+10. A fair coin is tossed twice. Find `P(two heads)`.

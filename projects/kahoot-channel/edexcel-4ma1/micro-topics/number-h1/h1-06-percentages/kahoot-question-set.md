@@ -8,20 +8,20 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Evaluate `32 + 19 x 4`. | 108 | 110 | 107 | 109 | A | Fluency |
-| 2 | Write `5/24 + 11/24` as a simplified fraction. | 8/13 | 9/12 | 8/12 | 10/12 | C | Fluency |
-| 3 | Calculate `1.4 + 0.11`. | No solution | 0 | Cannot be determined | 1.51 | D | Fluency |
-| 4 | Work out `4^5`. | 1026 | 1025 | 1024 | 1023 | C | Fluency |
-| 5 | Find `sqrt(36)`. | 6 | 5 | 7 | 8 | A | Fluency |
-| 6 | Increase `120` by `11%`. | 133.2 | No solution | Cannot be determined | 0 | A | Method |
-| 7 | Share `90` in the ratio `2:3` and give the larger share. | 55 | 53 | 54 | 56 | C | Method |
-| 8 | Round `791.7` to `2` significant figures. | No solution | 0 | Cannot be determined | Use place value; correct rounded value shown in working. | D | Method |
-| 9 | Write `20000` in standard form. | 2 x 10^4 | 0 | No solution | Cannot be determined | A | Method |
+| 1 | Evaluate `32 + 19 x 4`. | 107 | 109 | 110 | 108 | D | Fluency |
+| 2 | Write `9/24 + 12/24` as a simplified fraction. | 7/9 | 8/8 | 7/8 | 9/8 | C | Fluency |
+| 3 | Calculate `1.4 + 0.11`. | 1.01 | 2.51 | 2.01 | 1.51 | D | Fluency |
+| 4 | Work out `3^4`. | 83 | 82 | 81 | 80 | C | Fluency |
+| 5 | Find `sqrt(64)`. | 8 | 7 | 9 | 10 | A | Fluency |
+| 6 | Increase `120` by `11%`. | 133.2 | 132.70 | 133.70 | 134.20 | A | Method |
+| 7 | Share `135` in the ratio `2:3` and give the larger share. | 82 | 80 | 81 | 83 | C | Method |
+| 8 | Round `121.8` to `3` significant figures. | 121 | 124 | 123 | 122 | D | Method |
+| 9 | Write `30000` in standard form. | 3 x 10^4 | 0 | No solution | Cannot be determined | A | Method |
 | 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | 0 | No solution | Cannot be determined | £9.90 | D | Method |
-| 11 | Context check: Write `5/24 + 11/24` as a simplified fraction. | 8/12 | 10/12 | 9/12 | 8/13 | A | Method |
-| 12 | Context check: Work out `4^5`. | 1023 | 1025 | 1026 | 1024 | D | Context |
-| 13 | Context check: Increase `120` by `11%`. | 0 | No solution | 133.2 | Cannot be determined | C | Context |
-| 14 | Context check: Round `791.7` to `2` significant figures. | No solution | Cannot be determined | Use place value; correct rounded value shown in working. | 0 | C | Context |
+| 11 | Context check: Write `9/24 + 12/24` as a simplified fraction. | 7/8 | 9/8 | 8/8 | 7/9 | A | Method |
+| 12 | Context check: Work out `3^4`. | 80 | 82 | 83 | 81 | D | Context |
+| 13 | Context check: Increase `120` by `11%`. | 134.20 | 132.70 | 133.2 | 133.70 | C | Context |
+| 14 | Context check: Round `121.8` to `3` significant figures. | 121 | 123 | 122 | 124 | C | Context |
 | 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | No solution | Cannot be determined | 0 | £9.90 | D | Context |
 
 ## Timer

@@ -4,16 +4,12 @@ description: "Premium exam-aligned mathematics resources for international exam 
 url: "https://www.25maths.com"
 baseurl: ""
 repository: "git25math/25maths"
+assets_version: "20260219-bilingual-shutter-v2"
 
 # Waitlist collection (single endpoint for all topics)
 waitlist:
   endpoint: "https://script.google.com/macros/s/AKfycbyjJS9KL06UBo2MlxZ-WlleuXHeLzi1tG6MeoRqNTEGHdPg7Zhjc94J6w1iJmk8mFMT9g/exec"
   success_path: "/thanks.html"
-
-# Visitor analytics (simple page/site view counters)
-analytics:
-  provider: "countapi"
-  countapi_namespace: "25maths_website"
 
 # Supabase member system bootstrap (publishable values only)
 supabase:
@@ -24,9 +20,10 @@ supabase:
 # Security baseline (applied via meta tags in templates)
 security:
   referrer_policy: "strict-origin-when-cross-origin"
-  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.countapi.xyz https://script.google.com https://script.googleusercontent.com https://*.supabase.co wss://*.supabase.co; frame-src https://payhip.com; frame-ancestors 'self'; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.supabase.co wss://*.supabase.co; frame-src https://payhip.com; frame-ancestors 'self'; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
 
 # Build settings
+permalink: /:year/:month/:day/:title:output_ext
 plugins:
   - jekyll-redirect-from
 
@@ -79,3 +76,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - projects/kahoot-channel/WORKSHEET-GENERATION-ANALYSIS.md
+  - _ops/
+  - tex/
+  - build/
+  - tools/
+
+# Keep Cloudflare Pages edge redirect rules in generated output.
+include:
+  - _redirects

@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E4.2 Geometrical constructions
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply geometrical constructions methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply geometrical constructions methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: area of a triangle with base `8` and height `5` is `1/2 x 8 x 5 = 20`.
+Example: area of a triangle with base `6` and height `6` is `1/2 x 6 x 6 = 18`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `55°` and `56°`.

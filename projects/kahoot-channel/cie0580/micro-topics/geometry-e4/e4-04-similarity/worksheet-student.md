@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E4.4 Similarity
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply similarity methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply similarity methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: area of a triangle with base `9` and height `4` is `1/2 x 9 x 4 = 18`.
+Example: area of a triangle with base `6` and height `7` is `1/2 x 6 x 7 = 21`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `55°` and `30°`.

@@ -3,27 +3,43 @@ layout: global
 title: Page Not Found
 description: "The page you're looking for doesn't exist."
 permalink: /404.html
+lang_links:
+  - code: en
+    label: EN
+    url: /
+  - code: zh-CN
+    label: 简体
+    url: /zh-cn/
 ---
 
 <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="text-8xl font-semibold text-primary mb-6">404</div>
+        <div class="text-8xl font-bold text-primary mb-6">404</div>
         <h1 class="text-4xl font-semibold text-gray-900 mb-4">Page Not Found</h1>
-        <p class="text-xl text-gray-600 mb-8">
+        <p class="text-xl text-gray-600 mb-4">
             Sorry, the page you're looking for doesn't exist or has been moved.
         </p>
-        <div class="space-y-4">
-            <p class="text-gray-600">Here are some helpful links:</p>
+        {% include bilingual/inline-note.html note="抱歉，当前页面不存在或已移动。" class="text-sm text-gray-600 mb-8" %}
+        <div class="space-y-6">
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+                <a href="/" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition">
                     Go to Homepage
                 </a>
-                <a href="/cie0580/" class="bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                    CIE 0580 Resources
+                <a href="/cie0580/" class="cie-solid-bg px-6 py-3 rounded-lg font-semibold cie-solid-hover transition">
+                    CIE 0580
                 </a>
-                <a href="/edx4ma1/" class="bg-success text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                    Edexcel 4MA1 Resources
+                <a href="/edx4ma1/" class="edx-solid-bg px-6 py-3 rounded-lg font-semibold edx-solid-hover transition">
+                    Edexcel 4MA1
                 </a>
+            </div>
+            <div class="flex flex-wrap gap-4 justify-center text-sm">
+                <a href="/exercises/" class="text-gray-600 hover:text-gray-900 transition">Interactive Exercises</a>
+                <span class="text-gray-300">·</span>
+                <a href="/blog/" class="text-gray-600 hover:text-gray-900 transition">Blog</a>
+                <span class="text-gray-300">·</span>
+                <a href="/faq.html" class="text-gray-600 hover:text-gray-900 transition">FAQ</a>
+                <span class="text-gray-300">·</span>
+                <a href="/support.html" class="text-gray-600 hover:text-gray-900 transition">Support</a>
             </div>
         </div>
     </div>

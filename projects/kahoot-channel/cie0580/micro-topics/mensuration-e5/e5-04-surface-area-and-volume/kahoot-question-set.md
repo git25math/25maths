@@ -1,28 +1,28 @@
 # E5.4 Kahoot Question Set - Surface area and volume
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E5.4
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[18, 20, 15, 10, 5]`. | No solution | 0 | 13.6 | Cannot be determined | C | Fluency |
-| 2 | Find median of `[5, 10, 15, 18, 20]`. | 17 | 16 | 14 | 15 | D | Fluency |
-| 3 | Find range of `[18, 20, 15, 10, 5]`. | 17 | 15 | 14 | 16 | B | Fluency |
-| 4 | A fair die is rolled. Find `P(score > 3)`. | 4/6 | 3/7 | 3/6 | 5/6 | C | Fluency |
-| 5 | If `P(A)=0.7`, find `P(not A)`. | 0 | No solution | 0.3 | Cannot be determined | C | Fluency |
-| 6 | Expected frequency if probability is `0.3` in `46` trials. | 12 | 13 | 14 | 15 | B | Method |
-| 7 | State which average is least affected by outliers: mean, median, or mode. | No solution | Median | 0 | Cannot be determined | B | Method |
-| 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 18/30 = 3/5 | Cannot be determined | 0 | B | Method |
-| 9 | In a two-way table, 14 out of 50 students prefer algebra. Find the probability. | 0 | Cannot be determined | 14/50 = 7/25 | No solution | C | Method |
-| 10 | If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | 0.28 | Cannot be determined | 0 | No solution | A | Method |
-| 11 | Context check: Find median of `[5, 10, 15, 18, 20]`. | 15 | 14 | 16 | 17 | A | Method |
-| 12 | Context check: A fair die is rolled. Find `P(score > 3)`. | 3/7 | 4/6 | 3/6 | 5/6 | C | Context |
-| 13 | Context check: Expected frequency if probability is `0.3` in `46` trials. | 15 | 14 | 13 | 12 | C | Context |
-| 14 | Context check: A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | No solution | 18/30 = 3/5 | Cannot be determined | 0 | B | Context |
-| 15 | Context check: If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`. | Cannot be determined | No solution | 0.28 | 0 | C | Context |
+| 1 | Find perimeter of rectangle `12 cm` by `11 cm`. | 0 | No solution | Cannot be determined | 46 cm | D | Fluency |
+| 2 | Find area of rectangle `12 cm` by `11 cm`. | 0 | Cannot be determined | No solution | 132 cm^2 | D | Fluency |
+| 3 | Find area of triangle base `12` cm, height `8` cm. | 0 | 48.0 cm^2 | Cannot be determined | No solution | B | Fluency |
+| 4 | Find circumference of circle radius `8` cm in terms of `pi`. | No solution | 0 | Cannot be determined | 16pi cm | D | Fluency |
+| 5 | Find area of circle radius `8` cm in terms of `pi`. | Cannot be determined | 64pi cm^2 | No solution | 0 | B | Fluency |
+| 6 | Find volume of cuboid `12 x 11 x 8`. | 1055 | 1058 | 1057 | 1056 | D | Method |
+| 7 | Find surface area of cube side `8` cm. | 386 | 384 | 383 | 385 | B | Method |
+| 8 | A prism has cross-section area `132` and length `8`. Find volume. | 1058 | 1056 | 1055 | 1057 | B | Method |
+| 9 | Convert `132` cm^2 to mm^2. | 13199 | 13200 | 13201 | 13202 | B | Method |
+| 10 | A cone has radius `8` and height `8`. Find volume in terms of `pi`. | No solution | 170.66666666666666pi | 0 | Cannot be determined | B | Method |
+| 11 | Context check: Find area of rectangle `12 cm` by `11 cm`. | No solution | 132 cm^2 | Cannot be determined | 0 | B | Method |
+| 12 | Context check: Find circumference of circle radius `8` cm in terms of `pi`. | 0 | Cannot be determined | 16pi cm | No solution | C | Context |
+| 13 | Context check: Find volume of cuboid `12 x 11 x 8`. | 1056 | 1057 | 1058 | 1055 | A | Context |
+| 14 | Context check: A prism has cross-section area `132` and length `8`. Find volume. | 1056 | 1055 | 1057 | 1058 | A | Context |
+| 15 | Context check: A cone has radius `8` and height `8`. Find volume in terms of `pi`. | No solution | Cannot be determined | 170.66666666666666pi | 0 | C | Context |
 
 ## Timer
 - Q1-Q5: 20s

@@ -2,30 +2,29 @@
 
 ## Metadata
 - Board: CIE 0580
-- Micro-topic: E1.2
 - Tier: Extended
+- Micro-topic: E1.2
 - Questions: 15 MCQ
-- Design baseline: Mirrored from E1 workflow, adapted to the C1 syllabus statement.
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Which symbol means "is an element of"? | in | subset | union | intersection | A | Fluency |
-| 2 | Universal set U={1,2,3,4,5} and A={1,3,5}. Which is true? | 2 in A | 4 in A | 3 in A | A in 3 | C | Fluency |
-| 3 | If A={2,4,6} and B={4,6,8}, then A intersection B is | {2,8} | {4,6} | {2,4,6,8} | empty set | B | Fluency |
-| 4 | If A={2,4,6} and B={4,6,8}, then A union B is | {4,6} | {2,4,6,8} | {2,8} | empty set | B | Fluency |
-| 5 | n(A)=3 means | A has 2 elements | A has 3 elements | A is set number 3 | A has 30 elements | B | Fluency |
-| 6 | U={1..10}, A={2,4,6,8,10}. A complement is | {1,3,5,7,9} | {2,4,6,8,10} | empty set | {1..10} | A | Method |
-| 7 | A={1,2,3,4}, B={3,4,5}. n(A union B) is | 3 | 4 | 5 | 7 | C | Method |
-| 8 | A={1,2,3,4}, B={3,4,5}. n(A intersection B) is | 1 | 2 | 3 | 4 | B | Method |
-| 9 | In a class, 18 like maths, 12 like science, 7 like both. Number who like at least one is | 23 | 25 | 30 | 37 | A | Method |
-| 10 | In the same class, number who like only maths is | 7 | 11 | 18 | 25 | B | Method |
-| 11 | Which statement is true if A is subset of B? | Every element of B is in A | Every element of A is in B | A and B are disjoint | A equals U | B | Method |
-| 12 | U={1..12}, A=multiples of 2, B=multiples of 3. A intersection B are multiples of | 2 | 3 | 5 | 6 | D | Context |
-| 13 | In 40 students, 22 play football, 15 play basketball, 8 play both. Number who play neither is | 3 | 8 | 11 | 19 | C | Context |
-| 14 | If n(U)=30 and n(A)=18, n(A complement) is | 10 | 12 | 18 | 30 | B | Context |
-| 15 | Region outside both A and B in a Venn diagram represents | A intersection B | A union B | neither A nor B | A complement only | C | Context |
+| 1 | Evaluate `47 + 11 x 3`. | 82 | 81 | 79 | 80 | D | Fluency |
+| 2 | Write `10/24 + 16/24` as a simplified fraction. | 15/12 | 14/12 | 13/13 | 13/12 | D | Fluency |
+| 3 | Calculate `3.4 + 0.22`. | 3.12 | 4.12 | 4.62 | 3.62 | D | Fluency |
+| 4 | Work out `2^4`. | 18 | 17 | 15 | 16 | D | Fluency |
+| 5 | Find `sqrt(64)`. | 8 | 10 | 9 | 7 | A | Fluency |
+| 6 | Increase `120` by `22%`. | 145.90 | 146.4 | 146.90 | 147.40 | B | Method |
+| 7 | Share `45` in the ratio `2:3` and give the larger share. | 29 | 27 | 28 | 26 | B | Method |
+| 8 | Round `448.6` to `4` significant figures. | 449.10 | 449.60 | 448.10 | 448.6 | D | Method |
+| 9 | Write `50000` in standard form. | 5 x 10^4 | Cannot be determined | 0 | No solution | A | Method |
+| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | 0 | Cannot be determined | No solution | £9.90 | D | Method |
+| 11 | Context check: Write `10/24 + 16/24` as a simplified fraction. | 14/12 | 13/12 | 15/12 | 13/13 | B | Method |
+| 12 | Context check: Work out `2^4`. | 15 | 16 | 18 | 17 | B | Context |
+| 13 | Context check: Increase `120` by `22%`. | 146.90 | 147.40 | 145.90 | 146.4 | D | Context |
+| 14 | Context check: Round `448.6` to `4` significant figures. | 448.6 | 449.10 | 448.10 | 449.60 | A | Context |
+| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | £9.90 | Cannot be determined | No solution | 0 | A | Context |
 
 ## Timer
 - Q1-Q5: 20s
 - Q6-Q11: 30s
-- Q12-Q15: 40s
+- Q12-Q15: 45s

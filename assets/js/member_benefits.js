@@ -37,11 +37,11 @@
       container.innerHTML = `<div class="space-y-3">
         <article class="rounded-xl border border-emerald-200 bg-emerald-50 p-4">
           <p class="text-sm font-semibold text-emerald-900">Active Member Benefit</p>
-          <p class="mt-1 text-sm text-emerald-800">You are eligible for member-only worksheet/course-pack discounts.</p>
+          <p class="mt-1 text-sm text-emerald-800">Your account is active. Trigger-based offers will appear when your recent learning profile matches an offer rule.</p>
         </article>
         <article class="rounded-xl border border-blue-200 bg-blue-50 p-4">
-          <p class="text-sm font-semibold text-blue-900">Coupon Delivery</p>
-          <p class="mt-1 text-sm text-blue-800">Your eligible coupons are sent in member updates.</p>
+          <p class="text-sm font-semibold text-blue-900">How to unlock more offers</p>
+          <p class="mt-1 text-sm text-blue-800">Keep practicing interactive exercises. The system checks recent weak-point and activity rules to unlock targeted coupons.</p>
         </article>
       </div>`;
       return;
@@ -53,11 +53,14 @@
       const ctaLabel = String(offer?.cta_label || '').trim();
       const ctaUrl = String(offer?.cta_url || '').trim();
       const couponCode = String(offer?.coupon_code || '').trim();
+      const eligibilityReason = String(offer?.eligibility_reason || '').trim();
+      const eligibilityCode = String(offer?.eligibility_code || '').trim();
 
       return `<article class="rounded-xl border border-emerald-200 bg-emerald-50 p-4">
         <p class="text-sm font-semibold text-emerald-900">${title}</p>
         ${description ? `<p class="mt-1 text-sm text-emerald-800">${description}</p>` : ''}
         ${couponCode ? `<p class="mt-2 text-xs font-semibold inline-flex rounded bg-white border border-emerald-300 text-emerald-800 px-2 py-1">Coupon: ${couponCode}</p>` : ''}
+        ${(eligibilityReason || eligibilityCode) ? `<p class="mt-2 text-xs text-emerald-900">Eligibility: ${eligibilityReason || eligibilityCode}</p>` : ''}
         ${(ctaLabel && ctaUrl) ? `<div class="mt-3"><a href="${ctaUrl}" class="inline-flex items-center rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition">${ctaLabel}</a></div>` : ''}
       </article>`;
     }).join('');

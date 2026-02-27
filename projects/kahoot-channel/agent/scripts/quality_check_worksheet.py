@@ -11,6 +11,7 @@ practical worksheet quality:
 
 from __future__ import annotations
 
+import math
 import re
 import sys
 from collections import Counter
@@ -64,6 +65,123 @@ def _extract_numbered(path: Path) -> list[tuple[int, str]]:
             continue
         rows.append((int(m.group(1)), m.group(2).strip()))
     return rows
+
+
+def _clean_answer(text: str) -> str:
+    return text.replace("`", "").strip()
+
+
+def _is_number(text: str) -> bool:
+    return bool(re.fullmatch(r"-?[0-9]+(?:\.[0-9]+)?", text))
+
+
+def _round_sig(value: float, sig_figs: int) -> float:
+    if value == 0:
+        return 0.0
+    shift = sig_figs - int(math.floor(math.log10(abs(value)))) - 1
+    return round(value, shift)
+
+
+def _deterministic_math_checks(
+    questions: list[tuple[int, str]], answer_rows: list[tuple[int, str]]
+) -> list[str]:
+    errors: list[str] = []
+    q_map = {n: q for n, q in questions}
+    a_map = {n: _clean_answer(a) for n, a in answer_rows}
+
+    # Check: simplified fraction questions.
+    for idx, q in q_map.items():
+        m = re.match(
+            r"^Write `([0-9]+)/24 \+ ([0-9]+)/24` as a simplified fraction\.$", q
+        )
+        if not m:
+            continue
+        raw = a_map.get(idx, "")
+        mm = re.fullmatch(r"([0-9]+)/([0-9]+)", raw)
+        if not mm:
+            errors.append(
+                f"Answer {idx} should be a fraction for simplified-fraction question."
+            )
+            continue
+        got_num, got_den = int(mm.group(1)), int(mm.group(2))
+        exp_num = int(m.group(1)) + int(m.group(2))
+        exp_den = 24
+        if got_num * exp_den != got_den * exp_num:
+            errors.append(
+                f"Answer {idx} does not match question value ({exp_num}/{exp_den})."
+            )
+        if math.gcd(got_num, got_den) != 1:
+            errors.append(f"Answer {idx} fraction is not fully simplified.")
+
+    # Check: simultaneous equations x+y=s, x-y=d.
+    for idx, q in q_map.items():
+        m = re.match(
+            r"^Solve simultaneously: `x \+ y = ([0-9]+)`, `x - y = ([0-9]+)`\.$", q
+        )
+        if not m:
+            continue
+        raw = a_map.get(idx, "")
+        mm = re.fullmatch(
+            r"x\s*=\s*(-?[0-9]+(?:\.[0-9]+)?)\s*,\s*y\s*=\s*(-?[0-9]+(?:\.[0-9]+)?)",
+            raw,
+        )
+        if not mm:
+            errors.append(
+                f"Answer {idx} must be in format 'x = ..., y = ...' for simultaneous equations."
+            )
+            continue
+        s = int(m.group(1))
+        d = int(m.group(2))
+        exp_x = (s + d) / 2
+        exp_y = (s - d) / 2
+        got_x = float(mm.group(1))
+        got_y = float(mm.group(2))
+        if abs(got_x - exp_x) > 1e-9 or abs(got_y - exp_y) > 1e-9:
+            errors.append(
+                f"Answer {idx} simultaneous solution mismatch: expected ({exp_x}, {exp_y}), got ({got_x}, {got_y})."
+            )
+
+    # Check: arithmetic evaluate pattern.
+    for idx, q in q_map.items():
+        m = re.match(r"^Evaluate `([0-9]+) \+ ([0-9]+) x ([0-9]+)`\.$", q)
+        if not m:
+            continue
+        raw = a_map.get(idx, "")
+        if not re.fullmatch(r"-?[0-9]+", raw):
+            errors.append(f"Answer {idx} must be an integer for evaluate question.")
+            continue
+        exp = int(m.group(1)) + int(m.group(2)) * int(m.group(3))
+        if int(raw) != exp:
+            errors.append(
+                f"Answer {idx} evaluate mismatch: expected {exp}, got {raw}."
+            )
+
+    # Check: rounding must provide a final value, not guidance text.
+    for idx, q in q_map.items():
+        if not q.startswith("Round "):
+            continue
+        raw = a_map.get(idx, "")
+        low = raw.lower()
+        if "place value" in low or "working" in low:
+            errors.append(
+                f"Answer {idx} for rounding question must provide a final rounded value."
+            )
+            continue
+        m = re.match(
+            r"^Round `(-?[0-9]+(?:\.[0-9]+)?)` to `([0-9]+)` significant figures\.$",
+            q,
+        )
+        if m and _is_number(raw):
+            source = float(m.group(1))
+            sf = int(m.group(2))
+            exp = _round_sig(source, sf)
+            got = float(raw)
+            if abs(got - exp) > 1e-9:
+                errors.append(
+                    f"Answer {idx} rounding mismatch: expected {exp}, got {got}."
+                )
+
+    return errors
 
 
 def main() -> int:
@@ -142,6 +260,8 @@ def main() -> int:
     ]
     if repeated_answer_counts:
         warnings.append("High repetition in answers detected; verify variety.")
+
+    errors.extend(_deterministic_math_checks(questions, answer_rows))
 
     if errors:
         print(f"FAIL: {topic_dir}")

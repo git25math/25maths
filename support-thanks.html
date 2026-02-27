@@ -3,25 +3,18 @@ layout: global
 title: Message Received
 description: "Thanks for contacting 25Maths support. Our team will reply shortly."
 noindex: true
-lang: en
-lang_links:
-  - code: en
-    label: EN
-    url: /en/support-thanks.html
-  - code: zh-CN
-    label: ZH-CN
-    url: /zh-cn/support-thanks.html
 ---
 
-<section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white bg-opacity-20 mb-6">
-            <span class="text-3xl">✅</span>
+<section class="bg-gray-900 text-white py-20">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white bg-opacity-10 mb-6">
+            <span class="text-2xl text-gray-300">&#10003;</span>
         </div>
         <h1 class="text-4xl md:text-5xl font-semibold mb-4">We’ve received your message</h1>
         <p class="text-lg md:text-xl opacity-90 mb-8">
             Thanks for contacting us. Our support team will review your message and reply as soon as possible.
         </p>
+        {% include bilingual/inline-note.html note="我们已收到你的消息，开启双语支持后会显示中文流程提示。" class="text-sm text-gray-100 mb-8 opacity-90" %}
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/support.html" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 Back to Support
@@ -40,5 +33,6 @@ lang_links:
             We usually respond within 24 hours. Please check your inbox (and spam folder) for replies from
             <a href="mailto:support@25maths.com" class="text-primary font-semibold hover:underline">support@25maths.com</a>.
         </p>
+        {% include bilingual/inline-note.html note="通常 24 小时内回复；若未收到，请检查垃圾邮箱并提供提交邮箱给我们排查。" class="text-sm text-gray-600 mb-6" %}
     </div>
 </section>

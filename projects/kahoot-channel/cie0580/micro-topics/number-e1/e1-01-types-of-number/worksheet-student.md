@@ -4,19 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Identify primes, factors, multiples, and write prime factorization.
+- Apply types of number methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-`60 = 2 x 30 = 2 x 2 x 15 = 2^2 x 3 x 5`.
+Example: increase `80` by `19%`: compute `80 x (1 + 19/100)` to get `95.2`.
 
 ## Practice (10)
-1. List all factors of 24.
-2. State the first 5 multiples of 6.
-3. Is 47 prime? Explain briefly.
-4. Prime factorize 90.
-5. Greatest prime factor of 66.
-6. Is 91 prime or composite?
-7. Write 84 as product of primes.
-8. Give a common factor of 36 and 54.
-9. Give the smallest common multiple of 4 and 10.
-10. Number with exactly 3 factors.
+1. Evaluate `39 + 19 x 3`.
+2. Write `4/24 + 12/24` as a simplified fraction.
+3. Calculate `3.7 + 0.12`.
+4. Work out `5^6`.
+5. Find `sqrt(64)`.
+6. Increase `120` by `12%`.
+7. Share `90` in the ratio `2:3` and give the larger share.
+8. Round `737.6` to `3` significant figures.
+9. Write `30000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

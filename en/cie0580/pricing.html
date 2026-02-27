@@ -1,7 +1,8 @@
 ---
+redirect_to: /cie0580/pricing.html
 layout: module
 title: Pricing
-description: "CIE 0580 presale pricing framework with L1/L2/L3 closed-loop structure."
+description: "CIE 0580 worksheet pack pricing — topic worksheets, section bundles, and unit bundles."
 module: cie0580
 active_page: pricing
 lang: en
@@ -16,20 +17,18 @@ lang_links:
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_note_body %}These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.{% endcapture %}
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-5xl font-semibold mb-4">CIE 0580 Pricing Framework</h1>
-        <p class="text-xl opacity-90">Recommendation ranges for presale. Final public prices are TBD before launch.</p>
+        <h1 class="text-5xl font-semibold mb-4">CIE 0580 Pricing</h1>
+        <p class="text-xl opacity-90">Early-bird pricing available — lock in lower prices before launch.</p>
     </div>
 </section>
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
-            <p class="font-semibold mb-1">Important</p>
-            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
-        </div>
+        {% include ui/board-info-banner.html board='cie' title='Important' body=pricing_note_body %}
     </div>
 </section>
 
@@ -37,19 +36,19 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L1 Single Worksheet</h3>
-                <p class="text-sm text-gray-600 mb-2">One SubTopic MVP</p>
+                <h3 class="text-lg font-bold mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One focused subtopic</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l1_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L2 Section Bundle</h3>
-                <p class="text-sm text-gray-600 mb-2">A full section's SubTopics</p>
+                <h3 class="text-lg font-bold mb-2">Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">All subtopics in one syllabus section</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l2_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L3 Unit Bundle</h3>
+                <h3 class="text-lg font-bold mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-2">Core + Extended unit package</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l3_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l3_regular }}</p>
@@ -66,24 +65,21 @@ lang_links:
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">Retention Loop</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">How It Works</h2>
         <div class="grid md:grid-cols-3 gap-5">
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 1: Entry</h3>
-                <p class="text-sm text-gray-600">Customer buys L1 SubTopic worksheet and gets immediate value.</p>
+                <h3 class="font-bold text-gray-900 mb-2">Step 1: Start</h3>
+                <p class="text-sm text-gray-600">Pick a topic worksheet and start practising with immediate results.</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 2: Upgrade</h3>
-                <p class="text-sm text-gray-600">Offer L2 section bundle coupon to convert single-item buyers.</p>
+                <h3 class="font-bold text-gray-900 mb-2">Step 2: Expand</h3>
+                <p class="text-sm text-gray-600">Upgrade to a section bundle for broader coverage across related subtopics.</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 3: Loyalty</h3>
-                <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
+                <h3 class="font-bold text-gray-900 mb-2">Step 3: Complete</h3>
+                <p class="text-sm text-gray-600">Get the full unit bundle with Core + Extended tracks and bonus materials.</p>
             </div>
         </div>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/en/cie0580/products.html" class="cie-solid-bg text-white px-6 py-3 rounded-lg font-semibold text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Product Architecture</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Presale Terms PDF</a>
-        </div>
+        {% include ui/board-dual-actions.html board='cie' wrapper_class='mt-8 flex flex-col sm:flex-row gap-4' primary_href='/en/cie0580/products.html' primary_label='View All Products' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='View Terms PDF' %}
     </div>
 </section>

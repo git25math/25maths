@@ -8,7 +8,7 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find third angle in a triangle with angles `36°` and `57°`. | 87 | 89 | 86 | 88 | A | Fluency |
+| 1 | Find third angle in a triangle with angles `36°` and `57°`. | 86 | 89 | 87 | 88 | C | Fluency |
 | 2 | Find sum of interior angles of a `7`-sided polygon. | 900 | 901 | 899 | 902 | A | Fluency |
 | 3 | State the order of rotational symmetry of a regular hexagon. | 8 | 5 | 6 | 7 | C | Fluency |
 | 4 | Find perimeter of rectangle `13 cm` by `17 cm`. | No solution | Cannot be determined | 60 cm | 0 | C | Fluency |

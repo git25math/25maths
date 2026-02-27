@@ -1,4 +1,5 @@
 ---
+redirect_to: /exercises/
 title: "互动练习中心"
 subtitle: "按考试局、层级和考纲代码快速筛选练习。"
 layout: "global"
@@ -27,7 +28,7 @@ lang_links:
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <header class="mb-8">
-        <p class="text-xs uppercase tracking-wider text-gray-500">L0 互动练习中心</p>
+        <p class="text-xs uppercase tracking-wider text-gray-500">互动练习中心</p>
         <h1 class="text-4xl font-semibold text-gray-900">{{ page.title }}</h1>
         {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
         <div class="mt-4 flex flex-wrap gap-2 text-sm">
@@ -36,8 +37,8 @@ lang_links:
             <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 font-semibold text-blue-700">总计：{{ sorted_exercises | size }}</span>
         </div>
         <div class="mt-4 flex flex-wrap gap-3">
-            <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">打开 CIE Kahoot 目录</a>
-            <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">打开 Edexcel Kahoot 目录</a>
+            <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">打开 CIE Kahoot 目录</a>
+            <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">打开 Edexcel Kahoot 目录</a>
         </div>
     </header>
 
@@ -49,8 +50,8 @@ lang_links:
                 <p id="exercise-resume-meta" class="text-sm text-blue-700"></p>
             </div>
             <div class="flex flex-wrap gap-2">
-                <a id="exercise-resume-link" href="#" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">继续练习</a>
-                <button id="exercise-resume-clear" type="button" class="inline-flex items-center rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">清除记录</button>
+                <a id="exercise-resume-link" href="#" class="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">继续练习</a>
+                <button id="exercise-resume-clear" type="button" class="inline-flex items-center rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition">清除记录</button>
             </div>
         </div>
     </section>
@@ -80,7 +81,7 @@ lang_links:
                 <input id="exercise-filter-query" type="text" placeholder="例如 H4-08, fractions, circle properties" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
             </label>
             <div class="block md:self-end">
-                <button id="exercise-filter-reset" type="button" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" disabled>清空筛选</button>
+                <button id="exercise-filter-reset" type="button" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50" disabled>清空筛选</button>
             </div>
         </div>
     </section>
@@ -121,22 +122,22 @@ lang_links:
                 class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
             >
                 <div class="mb-2 flex flex-wrap items-center gap-2">
-                    <span class="rounded-full px-2 py-1 text-xs font-semibold {{ board_chip_class }}">{{ board_label }}</span>
+                    <span class="rounded-full px-2 py-1 text-[11px] font-semibold {{ board_chip_class }}">{{ board_label }}</span>
                     {% if exercise.tier %}
-                    <span class="rounded-full bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-700">{{ exercise.tier }}</span>
+                    <span class="rounded-full bg-gray-100 px-2 py-1 text-[11px] font-semibold text-gray-700">{{ exercise.tier }}</span>
                     {% endif %}
                     {% if code_value != "" %}
-                    <span class="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">{{ code_value }}</span>
+                    <span class="rounded-full bg-blue-100 px-2 py-1 text-[11px] font-semibold text-blue-700">{{ code_value }}</span>
                     {% endif %}
                 </div>
                 <h2 class="text-lg font-bold text-gray-900">{{ exercise.title }}</h2>
                 {% if exercise.subtitle %}<p class="mt-1 text-sm text-gray-600">{{ exercise.subtitle }}</p>{% endif %}
                 <p class="mt-2 text-xs text-gray-500">{{ exercise.subtopic_id }}</p>
                 <div class="mt-4 grid grid-cols-1 gap-2">
-                    <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">开始互动练习</a>
-                    <a href="{{ board_directory_url | relative_url }}" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">返回考试局目录</a>
+                    <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">开始互动练习</a>
+                    <a href="{{ board_directory_url | relative_url }}" class="text-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-secondary">返回考试局目录</a>
                     {% if card_kahoot_url != "" %}
-                    <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">打开配套 Kahoot</a>
+                    <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition ui-focus-ring exercise-kahoot-bridge">打开配套 Kahoot</a>
                     {% endif %}
                 </div>
             </article>
@@ -145,7 +146,7 @@ lang_links:
 
     <div id="exercise-empty" class="mt-6 hidden rounded-xl border border-gray-200 bg-white p-6 text-sm text-gray-600">
         <p>当前筛选条件下没有匹配练习。</p>
-        <button id="exercise-empty-reset" type="button" class="mt-4 inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">显示全部练习</button>
+        <button id="exercise-empty-reset" type="button" class="mt-4 inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold transition ui-focus-ring exercise-warm-primary">显示全部练习</button>
     </div>
 </div>
 

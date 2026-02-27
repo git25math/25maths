@@ -1,4 +1,5 @@
 ---
+redirect_to: /
 layout: global
 title: Exam-Aligned Mathematics Resources
 description: "25Maths — Premium exam-aligned mathematics resources covering CIE 0580 and Edexcel 4MA1. Trusted by international students worldwide."
@@ -12,31 +13,25 @@ lang_links:
     url: /zh-cn/
 ---
 
-<!-- Hero Section -->
-<section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-6xl font-semibold mb-6">
-            Exam-Ready Maths Resources<br>for Every Exam Board
+<!-- Hero -->
+<section class="bg-white text-gray-900 accent-top-dark border-b border-gray-100 py-24 md:py-32">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <p class="text-xs tracking-widest uppercase text-gray-500 mb-8">CIE 0580 · Edexcel 4MA1</p>
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight max-w-4xl">
+            Structured IGCSE Maths Practice That Builds Exam Control.
         </h1>
-        <p class="text-xl md:text-2xl mb-4 text-gray-100">
-            Premium practice packs, vocabulary support, and solutions aligned to international syllabuses
+        <p class="mt-8 text-lg md:text-xl text-gray-600 max-w-3xl leading-relaxed">
+            Free exercises, worksheet packs, and Kahoot quizzes — aligned to CIE 0580 and Edexcel 4MA1 syllabuses. Designed by an international school mathematics educator.
         </p>
-        <p class="text-lg mb-8 text-gray-200">
-            Trusted by students and teachers worldwide
-        </p>
-        <p class="text-sm text-gray-200 mb-8">Chinese support is available on the <a href="/zh-cn/" class="underline">Simplified Chinese site</a>.</p>
-        <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="#modules" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Choose Your Exam Board
+        <p class="mt-6 text-sm text-gray-500">202 free exercises · 9.7/10 accuracy · Designed by an international school educator</p>
+        <div class="mt-10 flex flex-wrap items-center gap-6">
+            <a href="/exercises/" class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-700 transition ui-focus-ring">
+                Try Free Exercises
+                <span aria-hidden="true">→</span>
             </a>
-            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Start Interactive Exercises
-            </a>
-            <a href="/kahoot/" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg border kahoot-solid-border text-white px-8 py-4 rounded-lg font-semibold text-lg kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Explore Kahoot Hub
-            </a>
-            <a href="/en/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                Get Free Gift Pack
+            <a href="/subscription.html" class="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 border-b border-gray-900 pb-px hover:text-gray-600 hover:border-gray-500 transition ui-focus-ring">
+                View Term Practice Pass
+                <span aria-hidden="true">→</span>
             </a>
         </div>
     </div>
@@ -47,7 +42,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-6">
             <div>
-                <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Interactive Practice Quick Access</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Interactive Practice Quick Access</h2>
                 <p class="text-gray-600">Jump directly into board+tier tracks and keep your Kahoot + worksheet + web loop connected.</p>
             </div>
             <a href="/exercises/" class="text-primary font-semibold hover:underline">Open full exercise hub →</a>
@@ -81,17 +76,17 @@ lang_links:
 <section id="modules" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-semibold text-gray-900 mb-4">Choose Your Exam Board</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Exam Board</h2>
             <p class="text-xl text-gray-600">Select your syllabus to access tailored practice resources</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for mod in site.modules %}
-            <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition transform hover:-translate-y-1 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
+            <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
                 <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}edx-soft-bg edx-soft-border border-b{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
-                    <span class="text-3xl font-semibold">{{ mod.name }}</span>
+                    <span class="text-3xl font-bold">{{ mod.name }}</span>
                     {% if mod.status == 'coming_soon' %}
-                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-semibold">Coming Soon</div>
+                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
                     {% endif %}
                 </div>
                 <div class="p-6">
@@ -121,7 +116,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
             <div>
-                <h2 class="text-3xl font-semibold text-gray-900">Latest Articles</h2>
+                <h2 class="text-3xl font-bold text-gray-900">Latest Articles</h2>
                 <p class="text-gray-600">Short, practical guides for CIE and Edexcel students.</p>
             </div>
             <a href="/en/blog/" class="text-primary font-semibold hover:underline">View all →</a>
@@ -129,7 +124,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-6">
             {% assign en_posts = site.posts | where: "lang", "en" %}
             {% for post in en_posts limit:3 %}
-            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
@@ -142,32 +137,23 @@ lang_links:
 
 <!-- Value Propositions -->
 <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-semibold text-gray-900 mb-4">Why 25Maths?</h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-center p-6">
-                <div class="text-5xl mb-4">🌐</div>
-                <h3 class="text-2xl font-semibold mb-3 text-gray-900">Terminology Support</h3>
-                <p class="text-gray-600">
-                    Clear term definitions and consistent exam wording so students answer in the expected format.
-                </p>
-            </div>
-            <div class="text-center p-6">
-                <div class="text-5xl mb-4">✅</div>
-                <h3 class="text-2xl font-semibold mb-3 text-gray-900">Exam-Aligned</h3>
-                <p class="text-gray-600">
-                    Resources meticulously aligned with official syllabuses and mark schemes. Practice with confidence knowing you're preparing exactly what examiners expect.
-                </p>
-            </div>
-            <div class="text-center p-6">
-                <div class="text-5xl mb-4">⭐</div>
-                <h3 class="text-2xl font-semibold mb-3 text-gray-900">Quality Guaranteed</h3>
-                <p class="text-gray-600">
-                    Professional LaTeX typesetting, independently reviewed by experienced teachers. Rated 9.7/10 for accuracy and clarity.
-                </p>
-            </div>
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-5">
+            <article class="border border-gray-200 rounded-2xl p-7 bg-white">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Bilingual</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Terminology Support</h3>
+                <p class="mt-3 text-gray-600">Clear term definitions and consistent exam wording so students answer in the expected format.</p>
+            </article>
+            <article class="border border-gray-200 rounded-2xl p-7 bg-white">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Syllabus-Aligned</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Exam-Aligned</h3>
+                <p class="mt-3 text-gray-600">Resources meticulously aligned with official syllabuses and mark schemes.</p>
+            </article>
+            <article class="border border-gray-200 rounded-2xl p-7 bg-white">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Professional</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Quality Guaranteed</h3>
+                <p class="mt-3 text-gray-600">Professional LaTeX typesetting, independently reviewed by experienced teachers. Rated 9.7/10 for accuracy and clarity.</p>
+            </article>
         </div>
     </div>
 </section>
@@ -178,13 +164,13 @@ lang_links:
         <div class="bg-gray-50 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
                 <div class="text-xs font-bold text-primary mb-2">NEW</div>
-                <h2 class="text-3xl font-semibold text-gray-900 mb-2">Weekly Topic Membership</h2>
-                <p class="text-gray-600">One topical practice pack every week with full solutions. Built for CIE 0580.</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Term Practice Pass</h2>
+                <p class="text-gray-600">12 weekly topical practice packs with full solutions. Built for CIE 0580.</p>
             </div>
-            <div class="flex items-center gap-4">
-                <div class="text-2xl font-semibold text-primary">$9.99<span class="text-sm text-gray-500 font-medium">/month</span></div>
-                <a href="/en/subscription.html" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-                    View Membership
+            <div class="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-4">
+                <div class="text-2xl font-bold text-primary whitespace-nowrap">$24.99<span class="text-sm text-gray-500 font-medium"> one-time</span></div>
+                <a href="/subscription.html" class="w-full sm:w-auto cta-btn-equal bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
+                    Get Term Pass
                 </a>
             </div>
         </div>

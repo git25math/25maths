@@ -1,0 +1,406 @@
+{
+  "_comment": "Week 07 — Coordinate Geometry & Linear Graphs. Based on CIE 0580 past papers (2019-2024): gradient, y=mx+c, midpoint, parallel/perpendicular lines, distance.",
+  "week_number": 7,
+  "topic": "Coordinate Geometry & Linear Graphs",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week07-coordinate-geometry-linear-graphs-2026w16",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:graphs-c3:c3-01-coordinates",
+    "cie0580:graphs-c3:c3-03-gradient",
+    "cie0580:graphs-c3:c3-05-equations-of-lines",
+    "cie0580:graphs-c3:c3-06-parallel-lines"
+  ],
+  "syllabus_refs": ["C3.1", "C3.2", "C3.3", "C3.4", "C3.5", "C3.6", "E3.1", "E3.2", "E3.3", "E3.4", "E3.5", "E3.6", "E3.7"],
+  "key_vocabulary": [
+    { "term_en": "Coordinate", "term_zh": "坐标", "definition": "An ordered pair (x, y) that describes the position of a point on a grid.", "definition_zh": "描述网格上某点位置的有序数对 (x, y)。" },
+    { "term_en": "x-axis", "term_zh": "x 轴", "definition": "The horizontal axis on a coordinate grid.", "definition_zh": "坐标网格上的水平轴。" },
+    { "term_en": "y-axis", "term_zh": "y 轴", "definition": "The vertical axis on a coordinate grid.", "definition_zh": "坐标网格上的竖直轴。" },
+    { "term_en": "Origin", "term_zh": "原点", "definition": "The point (0, 0) where the x-axis and y-axis cross.", "definition_zh": "x 轴和 y 轴交汇处的点 (0, 0)。" },
+    { "term_en": "Gradient", "term_zh": "斜率/梯度", "definition": "A measure of how steep a line is, calculated as the change in y divided by the change in x.", "definition_zh": "衡量直线陡峭程度的量，计算方式为 y 的变化量除以 x 的变化量。" },
+    { "term_en": "y-intercept", "term_zh": "y 轴截距", "definition": "The y-coordinate of the point where a line crosses the y-axis.", "definition_zh": "直线与 y 轴交点的 y 坐标。" },
+    { "term_en": "x-intercept", "term_zh": "x 轴截距", "definition": "The x-coordinate of the point where a line crosses the x-axis.", "definition_zh": "直线与 x 轴交点的 x 坐标。" },
+    { "term_en": "Linear Graph", "term_zh": "线性图像", "definition": "A straight-line graph of the form y = mx + c.", "definition_zh": "形如 y = mx + c 的直线图像。" },
+    { "term_en": "Equation of a Line", "term_zh": "直线方程", "definition": "An equation that relates x and y for every point on the line, usually written as y = mx + c.", "definition_zh": "关联直线上每一点的 x 和 y 的方程，通常写成 y = mx + c。" },
+    { "term_en": "Parallel Lines", "term_zh": "平行线", "definition": "Lines that have the same gradient and never meet.", "definition_zh": "斜率相同、永不相交的直线。" },
+    { "term_en": "Perpendicular Lines", "term_zh": "垂直线", "definition": "Lines that meet at right angles. Their gradients multiply to give -1.", "definition_zh": "互相成直角相交的直线。它们的斜率之积为 -1。" },
+    { "term_en": "Midpoint", "term_zh": "中点", "definition": "The point exactly halfway between two given points.", "definition_zh": "两个给定点之间正中间的点。" },
+    { "term_en": "Distance", "term_zh": "距离", "definition": "The length of the straight line between two points.", "definition_zh": "两点之间直线段的长度。" },
+    { "term_en": "Negative Reciprocal", "term_zh": "负倒数", "definition": "The gradient of a perpendicular line: flip the fraction and change the sign.", "definition_zh": "垂直线的斜率：将分数翻转并改变符号。" },
+    { "term_en": "Perpendicular Bisector", "term_zh": "垂直平分线", "definition": "A line that passes through the midpoint of a line segment at right angles.", "definition_zh": "通过线段中点并与其垂直的直线。" },
+    { "term_en": "Surd", "term_zh": "根式", "definition": "An irrational number left in square root form, e.g. the square root of 5.", "definition_zh": "以根号形式表示的无理数，如根号 5。" },
+    { "term_en": "Horizontal Line", "term_zh": "水平线", "definition": "A line with gradient 0, equation y = c.", "definition_zh": "斜率为 0 的直线，方程为 y = c。" },
+    { "term_en": "Vertical Line", "term_zh": "竖直线", "definition": "A line with undefined gradient, equation x = c.", "definition_zh": "斜率无定义的直线，方程为 x = c。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Gradient"],
+      "question": {
+        "en": "Find the gradient of the line joining the points `A(1, 3)` and `B(5, 11)`.",
+        "zh": "求过点 `A(1, 3)` 和 `B(5, 11)` 的直线的斜率。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\draw[gray!30, very thin] (0,0) grid (6,12);",
+        "  \\draw[->] (0,0) -- (6.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,0) -- (0,12.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {1,...,6} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {2,4,...,12} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (0.5,2) -- (5.5,12);",
+        "  \\fill[red] (1,3) circle (4pt) node[right, font=\\footnotesize] {$A(1,3)$};",
+        "  \\fill[red] (5,11) circle (4pt) node[right, font=\\footnotesize] {$B(5,11)$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "2", "zh": "2" },
+      "solution": {
+        "en": [
+          "Gradient `= \\dfrac{y_2 - y_1}{x_2 - x_1}`",
+          "`= \\dfrac{11 - 3}{5 - 1}`",
+          "`= \\dfrac{8}{4}`",
+          "`= 2`"
+        ],
+        "zh": [
+          "斜率 `= \\dfrac{y_2 - y_1}{x_2 - x_1}`",
+          "`= \\dfrac{11 - 3}{5 - 1}`",
+          "`= \\dfrac{8}{4}`",
+          "`= 2`"
+        ]
+      },
+      "common_mistake": { "en": "Subtracting the coordinates in the wrong order, e.g. `\\dfrac{11 - 3}{1 - 5} = -2`. You must subtract in the SAME order for both x and y.", "zh": "坐标相减顺序不一致，如 `\\dfrac{11 - 3}{1 - 5} = -2`。x 和 y 的相减顺序必须相同。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Equation of Line"],
+      "question": {
+        "en": "A line has the equation `y = 5x - 3`.\n\n(a) Write down the gradient of the line.\n\n(b) Write down the coordinates of the point where the line crosses the y-axis.",
+        "zh": "一条直线的方程为 `y = 5x - 3`。\n\n(a) 写出该直线的斜率。\n\n(b) 写出该直线与 y 轴交点的坐标。"
+      },
+      "answer": { "en": "(a) 5\n(b) `(0, -3)`", "zh": "(a) 5\n(b) `(0, -3)`" },
+      "solution": {
+        "en": [
+          "Compare `y = 5x - 3` with `y = mx + c`.",
+          "(a) Gradient `m = 5`",
+          "(b) y-intercept `c = -3`, so the line crosses the y-axis at `(0, -3)`."
+        ],
+        "zh": [
+          "将 `y = 5x - 3` 与 `y = mx + c` 对比。",
+          "(a) 斜率 `m = 5`",
+          "(b) y 轴截距 `c = -3`，所以直线与 y 轴的交点为 `(0, -3)`。"
+        ]
+      },
+      "common_mistake": { "en": "Writing the y-intercept as just `-3` instead of the coordinate `(0, -3)`. The question asks for coordinates, so you must give an ordered pair.", "zh": "仅写 y 轴截距为 `-3` 而不是坐标 `(0, -3)`。题目要求写坐标，必须给出有序数对。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Equation of Line"],
+      "question": {
+        "en": "A straight line has gradient 4 and passes through the point `(0, -2)`.\n\n(a) Write down the equation of this line.\n\n(b) Find the coordinates of the point where this line crosses the x-axis.",
+        "zh": "一条直线的斜率为 4，且过点 `(0, -2)`。\n\n(a) 写出该直线的方程。\n\n(b) 求该直线与 x 轴交点的坐标。"
+      },
+      "answer": { "en": "(a) `y = 4x - 2`\n(b) `(\\frac{1}{2}, 0)`", "zh": "(a) `y = 4x - 2`\n(b) `(\\frac{1}{2}, 0)`" },
+      "solution": {
+        "en": [
+          "(a) Gradient `m = 4`, y-intercept `c = -2` (since the line passes through `(0, -2)`).",
+          "Equation: `y = 4x - 2`",
+          "(b) The line crosses the x-axis when `y = 0`:",
+          "`0 = 4x - 2`",
+          "`4x = 2`",
+          "`x = \\dfrac{1}{2}`",
+          "The line crosses the x-axis at `(\\dfrac{1}{2}, 0)`."
+        ],
+        "zh": [
+          "(a) 斜率 `m = 4`，y 轴截距 `c = -2`（因为直线过点 `(0, -2)`）。",
+          "方程：`y = 4x - 2`",
+          "(b) 直线与 x 轴交叉时 `y = 0`：",
+          "`0 = 4x - 2`",
+          "`4x = 2`",
+          "`x = \\dfrac{1}{2}`",
+          "直线与 x 轴的交点为 `(\\dfrac{1}{2}, 0)`。"
+        ]
+      },
+      "common_mistake": { "en": "Forgetting that the x-axis crossing means `y = 0`, not `x = 0`. Setting `x = 0` gives the y-intercept, not the x-intercept.", "zh": "忘记与 x 轴的交点意味着 `y = 0`，而不是 `x = 0`。令 `x = 0` 得到的是 y 轴截距，不是 x 轴截距。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Equation of Line"],
+      "question": {
+        "en": "Find the equation of the straight line passing through the points `(1, 5)` and `(3, 11)`.\n\nGive your answer in the form `y = mx + c`.",
+        "zh": "求过点 `(1, 5)` 和 `(3, 11)` 的直线方程。\n\n将答案写成 `y = mx + c` 的形式。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\draw[gray!30, very thin] (0,0) grid (5,12);",
+        "  \\draw[->] (0,0) -- (5.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,0) -- (0,12.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {1,...,5} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {2,4,...,12} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (0,2) -- (3.5,12.5);",
+        "  \\fill[red] (1,5) circle (4pt) node[left, font=\\footnotesize] {$(1,5)$};",
+        "  \\fill[red] (3,11) circle (4pt) node[left, font=\\footnotesize] {$(3,11)$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "`y = 3x + 2`", "zh": "`y = 3x + 2`" },
+      "solution": {
+        "en": [
+          "Find the gradient: `m = \\dfrac{11 - 5}{3 - 1} = \\dfrac{6}{2} = 3`",
+          "Use `y = mx + c` with `m = 3` and the point `(1, 5)`:",
+          "`5 = 3(1) + c`",
+          "`5 = 3 + c`",
+          "`c = 2`",
+          "Equation: `y = 3x + 2`"
+        ],
+        "zh": [
+          "求斜率：`m = \\dfrac{11 - 5}{3 - 1} = \\dfrac{6}{2} = 3`",
+          "将 `m = 3` 和点 `(1, 5)` 代入 `y = mx + c`：",
+          "`5 = 3(1) + c`",
+          "`5 = 3 + c`",
+          "`c = 2`",
+          "方程：`y = 3x + 2`"
+        ]
+      },
+      "common_mistake": { "en": "Finding the gradient correctly but forgetting to find c. Some students leave the answer as `y = 3x` without calculating the y-intercept.", "zh": "正确求出斜率但忘记求 c。一些学生将答案留为 `y = 3x` 而没有计算 y 轴截距。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Midpoint"],
+      "question": {
+        "en": "Find the midpoint of `P(-2, 7)` and `Q(6, 3)`.",
+        "zh": "求 `P(-2, 7)` 和 `Q(6, 3)` 的中点。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\draw[gray!30, very thin] (-3,0) grid (7,8);",
+        "  \\draw[->] (-3,0) -- (7.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,0) -- (0,8.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {-2,0,2,4,6} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {2,4,6,8} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue, dashed] (-2,7) -- (6,3);",
+        "  \\fill[red] (-2,7) circle (4pt) node[above left, font=\\footnotesize] {$P(-2,7)$};",
+        "  \\fill[red] (6,3) circle (4pt) node[below right, font=\\footnotesize] {$Q(6,3)$};",
+        "  \\node[font=\\footnotesize] at (2,5.6) {$M$};",
+        "  \\draw[fill=white, draw=blue] (2,5) circle (4pt);",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "`(2, 5)`", "zh": "`(2, 5)`" },
+      "solution": {
+        "en": [
+          "Midpoint `= \\left(\\dfrac{x_1 + x_2}{2},\\; \\dfrac{y_1 + y_2}{2}\\right)`",
+          "`= \\left(\\dfrac{-2 + 6}{2},\\; \\dfrac{7 + 3}{2}\\right)`",
+          "`= \\left(\\dfrac{4}{2},\\; \\dfrac{10}{2}\\right)`",
+          "`= (2,\\; 5)`"
+        ],
+        "zh": [
+          "中点 `= \\left(\\dfrac{x_1 + x_2}{2},\\; \\dfrac{y_1 + y_2}{2}\\right)`",
+          "`= \\left(\\dfrac{-2 + 6}{2},\\; \\dfrac{7 + 3}{2}\\right)`",
+          "`= \\left(\\dfrac{4}{2},\\; \\dfrac{10}{2}\\right)`",
+          "`= (2,\\; 5)`"
+        ]
+      },
+      "common_mistake": { "en": "Subtracting coordinates instead of adding them. The midpoint formula uses ADDITION: `\\dfrac{x_1 + x_2}{2}`, not `\\dfrac{x_1 - x_2}{2}`.", "zh": "将坐标相减而不是相加。中点公式使用加法：`\\dfrac{x_1 + x_2}{2}`，而不是 `\\dfrac{x_1 - x_2}{2}`。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Parallel Lines"],
+      "question": {
+        "en": "Here are the equations of three lines.\n\nLine A: `y = 3x + 1` \\qquad Line B: `y = 3x - 5` \\qquad Line C: `y = -3x + 4`\n\nWhich two lines are parallel?\nGive a reason for your answer.",
+        "zh": "以下是三条直线的方程。\n\n直线 A：`y = 3x + 1` \\qquad 直线 B：`y = 3x - 5` \\qquad 直线 C：`y = -3x + 4`\n\n哪两条直线平行？\n请给出理由。"
+      },
+      "answer": { "en": "Lines A and B are parallel because they both have gradient 3.", "zh": "直线 A 和直线 B 平行，因为它们的斜率都是 3。" },
+      "solution": {
+        "en": [
+          "Line A: gradient `= 3`",
+          "Line B: gradient `= 3`",
+          "Line C: gradient `= -3`",
+          "Lines A and B both have the same gradient (3), so they are parallel."
+        ],
+        "zh": [
+          "直线 A：斜率 `= 3`",
+          "直线 B：斜率 `= 3`",
+          "直线 C：斜率 `= -3`",
+          "直线 A 和 B 的斜率相同（都是 3），所以它们平行。"
+        ]
+      },
+      "common_mistake": { "en": "Choosing Lines A and C because the number 3 appears in both gradients. Parallel lines must have EXACTLY the same gradient. `3` and `-3` are different gradients.", "zh": "选择直线 A 和 C，因为两个斜率中都出现了 3。平行线必须斜率完全相同。`3` 和 `-3` 是不同的斜率。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Equation of Line"],
+      "question": {
+        "en": "The line `y = 2x + c` passes through the point `(3, 11)`.\n\nFind the value of `c`.",
+        "zh": "直线 `y = 2x + c` 过点 `(3, 11)`。\n\n求 `c` 的值。"
+      },
+      "answer": { "en": "`c = 5`", "zh": "`c = 5`" },
+      "solution": {
+        "en": [
+          "Substitute `x = 3` and `y = 11` into `y = 2x + c`:",
+          "`11 = 2(3) + c`",
+          "`11 = 6 + c`",
+          "`c = 5`"
+        ],
+        "zh": [
+          "将 `x = 3` 和 `y = 11` 代入 `y = 2x + c`：",
+          "`11 = 2(3) + c`",
+          "`11 = 6 + c`",
+          "`c = 5`"
+        ]
+      },
+      "common_mistake": { "en": "Substituting `x = 11` and `y = 3` (swapping the coordinates). Remember: a point `(3, 11)` means `x = 3` and `y = 11`.", "zh": "代入 `x = 11` 和 `y = 3`（坐标互换了）。记住：点 `(3, 11)` 表示 `x = 3`，`y = 11`。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Distance"],
+      "question": {
+        "en": "`A` is the point `(-1, 3)` and `B` is the point `(5, -5)`.\n\nFind the length of `AB`.",
+        "zh": "`A` 是点 `(-1, 3)`，`B` 是点 `(5, -5)`。\n\n求 `AB` 的长度。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.35]",
+        "  \\draw[gray!30, very thin] (-2,-6) grid (6,4);",
+        "  \\draw[->] (-2,0) -- (6.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,-6) -- (0,4.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {-1,1,...,5} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {-4,-2,2,4} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (-1,3) -- (5,-5);",
+        "  \\fill[red] (-1,3) circle (5pt) node[above left, font=\\footnotesize] {$A(-1,3)$};",
+        "  \\fill[red] (5,-5) circle (5pt) node[below right, font=\\footnotesize] {$B(5,-5)$};",
+        "  \\draw[dashed, gray] (-1,3) -- (-1,-5) -- (5,-5);",
+        "  \\node[left, font=\\tiny, gray] at (-1,-1) {8};",
+        "  \\node[below, font=\\tiny, gray] at (2,-5) {6};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "10", "zh": "10" },
+      "solution": {
+        "en": [
+          "Use the distance formula: `AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}`",
+          "`= \\sqrt{(5 - (-1))^2 + (-5 - 3)^2}`",
+          "`= \\sqrt{6^2 + (-8)^2}`",
+          "`= \\sqrt{36 + 64}`",
+          "`= \\sqrt{100}`",
+          "`= 10`"
+        ],
+        "zh": [
+          "使用距离公式：`AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}`",
+          "`= \\sqrt{(5 - (-1))^2 + (-5 - 3)^2}`",
+          "`= \\sqrt{6^2 + (-8)^2}`",
+          "`= \\sqrt{36 + 64}`",
+          "`= \\sqrt{100}`",
+          "`= 10`"
+        ]
+      },
+      "common_mistake": { "en": "Forgetting to square the differences before adding, e.g. writing `\\sqrt{6 + (-8)} = \\sqrt{-2}`. You must square each difference first.", "zh": "忘记先平方再相加，如写成 `\\sqrt{6 + (-8)} = \\sqrt{-2}`。必须先将每个差值平方。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Perpendicular Lines"],
+      "question": {
+        "en": "Find the equation of the line perpendicular to `y = 2x - 1` that passes through the point `(4, 3)`.\n\nGive your answer in the form `y = mx + c`.",
+        "zh": "求过点 `(4, 3)` 且与 `y = 2x - 1` 垂直的直线方程。\n\n将答案写成 `y = mx + c` 的形式。"
+      },
+      "answer": { "en": "`y = -\\dfrac{1}{2}x + 5`", "zh": "`y = -\\dfrac{1}{2}x + 5`" },
+      "solution": {
+        "en": [
+          "The gradient of `y = 2x - 1` is `2`.",
+          "The gradient of a perpendicular line is the negative reciprocal: `m = -\\dfrac{1}{2}`",
+          "Use `y = mx + c` with `m = -\\dfrac{1}{2}` and the point `(4, 3)`:",
+          "`3 = -\\dfrac{1}{2}(4) + c`",
+          "`3 = -2 + c`",
+          "`c = 5`",
+          "Equation: `y = -\\dfrac{1}{2}x + 5`"
+        ],
+        "zh": [
+          "`y = 2x - 1` 的斜率为 `2`。",
+          "垂直线的斜率为负倒数：`m = -\\dfrac{1}{2}`",
+          "将 `m = -\\dfrac{1}{2}` 和点 `(4, 3)` 代入 `y = mx + c`：",
+          "`3 = -\\dfrac{1}{2}(4) + c`",
+          "`3 = -2 + c`",
+          "`c = 5`",
+          "方程：`y = -\\dfrac{1}{2}x + 5`"
+        ]
+      },
+      "common_mistake": { "en": "Using the same gradient (2) instead of the negative reciprocal (`-\\dfrac{1}{2}`). For perpendicular lines, flip the fraction AND change the sign.", "zh": "使用相同的斜率 (2) 而不是负倒数 (`-\\dfrac{1}{2}`)。对于垂直线，需要将分数翻转并改变符号。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 6, "topic": ["Perpendicular Bisector"],
+      "question": {
+        "en": "`A` is the point `(2, -1)` and `B` is the point `(8, 11)`.\n\n(a) Find the coordinates of the midpoint `M` of `AB`.\n\n(b) Find the equation of the perpendicular bisector of `AB`.\n\nGive your answer in the form `y = mx + c`.",
+        "zh": "`A` 是点 `(2, -1)`，`B` 是点 `(8, 11)`。\n\n(a) 求 `AB` 中点 `M` 的坐标。\n\n(b) 求 `AB` 的垂直平分线方程。\n\n将答案写成 `y = mx + c` 的形式。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.35]",
+        "  \\draw[gray!30, very thin] (0,-2) grid (10,12);",
+        "  \\draw[->] (0,0) -- (10.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,-2) -- (0,12.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {2,4,...,10} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {-2,0,2,...,12} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (1,-3) -- (9,13);",
+        "  \\fill[red] (2,-1) circle (5pt) node[right, font=\\footnotesize] {$A(2,-1)$};",
+        "  \\fill[red] (8,11) circle (5pt) node[right, font=\\footnotesize] {$B(8,11)$};",
+        "  \\fill[green!60!black] (5,5) circle (5pt) node[above right, font=\\footnotesize] {$M$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) `(5, 5)`\n(b) `y = -\\dfrac{1}{2}x + \\dfrac{15}{2}`", "zh": "(a) `(5, 5)`\n(b) `y = -\\dfrac{1}{2}x + \\dfrac{15}{2}`" },
+      "solution": {
+        "en": [
+          "(a) Midpoint `M = \\left(\\dfrac{2 + 8}{2},\\; \\dfrac{-1 + 11}{2}\\right) = (5,\\; 5)`",
+          "(b) Gradient of `AB = \\dfrac{11 - (-1)}{8 - 2} = \\dfrac{12}{6} = 2`",
+          "Perpendicular gradient `= -\\dfrac{1}{2}`",
+          "The perpendicular bisector passes through `M(5, 5)` with gradient `-\\dfrac{1}{2}`:",
+          "`5 = -\\dfrac{1}{2}(5) + c`",
+          "`5 = -\\dfrac{5}{2} + c`",
+          "`c = 5 + \\dfrac{5}{2} = \\dfrac{15}{2}`",
+          "Equation: `y = -\\dfrac{1}{2}x + \\dfrac{15}{2}`"
+        ],
+        "zh": [
+          "(a) 中点 `M = \\left(\\dfrac{2 + 8}{2},\\; \\dfrac{-1 + 11}{2}\\right) = (5,\\; 5)`",
+          "(b) `AB` 的斜率 `= \\dfrac{11 - (-1)}{8 - 2} = \\dfrac{12}{6} = 2`",
+          "垂直线斜率 `= -\\dfrac{1}{2}`",
+          "垂直平分线过 `M(5, 5)`，斜率为 `-\\dfrac{1}{2}`：",
+          "`5 = -\\dfrac{1}{2}(5) + c`",
+          "`5 = -\\dfrac{5}{2} + c`",
+          "`c = 5 + \\dfrac{5}{2} = \\dfrac{15}{2}`",
+          "方程：`y = -\\dfrac{1}{2}x + \\dfrac{15}{2}`"
+        ]
+      },
+      "common_mistake": { "en": "Using the gradient of AB (2) instead of the perpendicular gradient (`-\\dfrac{1}{2}`) for the bisector. The perpendicular bisector must be AT RIGHT ANGLES to AB.", "zh": "使用 AB 的斜率 (2) 而不是垂直斜率 (`-\\dfrac{1}{2}`) 来写垂直平分线方程。垂直平分线必须与 AB 成直角。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Parallel Lines", "Equation of Line"],
+      "question": {
+        "en": "Line `L_1` has equation `3x + 2y = 12`.\n\n(a) Find the gradient of `L_1`.\n\n(b) Line `L_2` is parallel to `L_1` and passes through the point `(4, -1)`.\n\nFind the equation of `L_2`.\nGive your answer in the form `y = mx + c`.",
+        "zh": "直线 `L_1` 的方程为 `3x + 2y = 12`。\n\n(a) 求 `L_1` 的斜率。\n\n(b) 直线 `L_2` 与 `L_1` 平行，且过点 `(4, -1)`。\n\n求 `L_2` 的方程。\n将答案写成 `y = mx + c` 的形式。"
+      },
+      "answer": { "en": "(a) `-\\dfrac{3}{2}`\n(b) `y = -\\dfrac{3}{2}x + 5`", "zh": "(a) `-\\dfrac{3}{2}`\n(b) `y = -\\dfrac{3}{2}x + 5`" },
+      "solution": {
+        "en": [
+          "(a) Rearrange `3x + 2y = 12` into the form `y = mx + c`:",
+          "`2y = -3x + 12`",
+          "`y = -\\dfrac{3}{2}x + 6`",
+          "Gradient of `L_1 = -\\dfrac{3}{2}`",
+          "(b) Parallel lines have the same gradient, so gradient of `L_2 = -\\dfrac{3}{2}`.",
+          "Use `y = mx + c` with `m = -\\dfrac{3}{2}` and the point `(4, -1)`:",
+          "`-1 = -\\dfrac{3}{2}(4) + c`",
+          "`-1 = -6 + c`",
+          "`c = 5`",
+          "Equation: `y = -\\dfrac{3}{2}x + 5`"
+        ],
+        "zh": [
+          "(a) 将 `3x + 2y = 12` 变换为 `y = mx + c` 的形式：",
+          "`2y = -3x + 12`",
+          "`y = -\\dfrac{3}{2}x + 6`",
+          "`L_1` 的斜率 `= -\\dfrac{3}{2}`",
+          "(b) 平行线斜率相同，所以 `L_2` 的斜率 `= -\\dfrac{3}{2}`。",
+          "将 `m = -\\dfrac{3}{2}` 和点 `(4, -1)` 代入 `y = mx + c`：",
+          "`-1 = -\\dfrac{3}{2}(4) + c`",
+          "`-1 = -6 + c`",
+          "`c = 5`",
+          "方程：`y = -\\dfrac{3}{2}x + 5`"
+        ]
+      },
+      "common_mistake": { "en": "Reading the gradient from `3x + 2y = 12` as `3` or `\\dfrac{3}{2}`. You must rearrange to `y = mx + c` first. The gradient is `-\\dfrac{3}{2}`, not `\\dfrac{3}{2}`.", "zh": "直接从 `3x + 2y = 12` 中读出斜率为 `3` 或 `\\dfrac{3}{2}`。必须先变换为 `y = mx + c` 的形式。斜率是 `-\\dfrac{3}{2}`，不是 `\\dfrac{3}{2}`。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can find the gradient of a line from two points.", "zh": "我能通过两个点求直线的斜率。" },
+    { "en": "I can identify the gradient and y-intercept from y = mx + c.", "zh": "我能从 y = mx + c 中识别斜率和 y 轴截距。" },
+    { "en": "I can find the equation of a line given gradient and a point.", "zh": "我能根据斜率和一个点求直线方程。" },
+    { "en": "I can find the midpoint of two points.", "zh": "我能求两点的中点。" },
+    { "en": "I can identify parallel lines by their gradients.", "zh": "我能通过斜率判断平行线。" },
+    { "en": "I can use the distance formula to find the length between two points (Extended).", "zh": "我能用距离公式求两点之间的距离（拓展）。" },
+    { "en": "I can find equations of perpendicular lines and perpendicular bisectors (Extended).", "zh": "我能求垂直线和垂直平分线的方程（拓展）。" }
+  ]
+}

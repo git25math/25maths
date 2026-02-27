@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## C1.5 Ordering
 
 1. 162
-2. `21/24`
-3. 2.73
-4. 32
+2. `7/8`
+3. 1.94
+4. 16
 5. 6
-6. 135.6
-7. 72
-8. Use place value; correct rounded value shown in working.
-9. `4 x 10^4`
+6. 136.8
+7. 45
+8. 590
+9. `6 x 10^4`
 10. £9.90

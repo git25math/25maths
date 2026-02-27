@@ -1,48 +1,202 @@
 ---
 layout: global
 title: Blog
-description: "Weekly topic analysis, study strategies, and CIE/Edexcel exam tips."
+title_suffix: "IGCSE Maths Revision Guides"
+description: "Practical IGCSE maths guides for CIE 0580 and Edexcel 4MA1: exam strategy, topic breakdowns, and weekly practice planning."
 active_global: blog
 lang: en
 lang_links:
   - code: en
     label: EN
-    url: /en/blog/
+    url: /blog/
   - code: zh-CN
-    label: ZH-CN
+    label: 简体
     url: /zh-cn/blog/
 ---
 
-<section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+{% assign en_posts = site.posts | where: "lang", "en" %}
+{% assign latest_post = en_posts | first %}
+{% assign strategy_posts = en_posts | where: "category", "Exam Strategy" %}
+{% assign cie_posts = en_posts | where: "category", "CIE 0580 Topic Guide" %}
+{% assign edexcel_posts = en_posts | where: "category", "Edexcel 4MA1 Topic Guide" %}
+
+<section class="bg-gray-900 text-white py-16">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+        <p class="text-xs tracking-widest uppercase text-gray-400 mb-6">Blog</p>
         <h1 class="text-4xl md:text-5xl font-semibold mb-4">25Maths Blog</h1>
-        <p class="text-lg md:text-xl opacity-90">Topic breakdowns, exam strategies, and weekly practice guidance.</p>
+        <p class="text-lg text-gray-300">Topic breakdowns, exam strategies, and weekly practice guidance.</p>
+        <p data-bilingual-block class="text-sm text-gray-400 mt-3">每周更新：考点拆解、备考策略与练习路径建议。</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm">
+            <span class="px-3 py-1 rounded-full bg-white text-gray-900 font-semibold">English</span>
+            <a href="/zh-cn/blog/" class="px-3 py-1 rounded-full bg-gray-700 text-gray-200 hover:bg-gray-800 transition">简体中文</a>
+        </div>
+        <div class="mt-10 grid md:grid-cols-3 gap-4 text-left">
+            <div class="bg-gray-800 rounded-xl p-4">
+                <p class="text-xs uppercase tracking-wider text-gray-400">English articles</p>
+                <p class="text-2xl font-semibold mt-2">{{ en_posts.size }}</p>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-4">
+                <p class="text-xs uppercase tracking-wider text-gray-400">Exam strategy</p>
+                <p class="text-2xl font-semibold mt-2">{{ strategy_posts.size }}</p>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-4">
+                <p class="text-xs uppercase tracking-wider text-gray-400">Topic guides</p>
+                <p class="text-2xl font-semibold mt-2">{{ cie_posts.size | plus: edexcel_posts.size }}</p>
+            </div>
+        </div>
+        {% if latest_post %}
+        <p class="text-sm text-gray-400 mt-6">Last updated {{ latest_post.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
     </div>
 </section>
 
-<section class="py-16 bg-white">
+{% if latest_post %}
+{% assign latest_words = latest_post.content | number_of_words %}
+{% assign latest_read_time = latest_words | divided_by: 220 | plus: 1 %}
+{% assign latest_summary = latest_post.subtitle | default: latest_post.excerpt %}
+<section class="py-16 bg-white border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-8">
-            {% for post in site.posts %}
-            {% if post.lang == 'en' %}
-            <a href="{{ post.url }}" class="block bg-gray-50 rounded-2xl p-6 hover:shadow-md transition">
-                <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
-                <h2 class="text-2xl font-semibold text-gray-900 mb-2">{{ post.title }}</h2>
-                {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
-                <p class="text-primary font-semibold">Read article →</p>
-            </a>
+        <div class="flex items-center justify-between gap-4 mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Start Here</h2>
+            <a href="#all-guides" class="text-primary font-semibold hover:underline">Browse all guides →</a>
+        </div>
+        <article class="bg-gray-50 border border-gray-200 rounded-2xl p-7 md:p-8">
+            <p class="text-xs uppercase tracking-wider text-gray-500 mb-3">Latest article</p>
+            <h3 class="text-3xl font-bold text-gray-900 mb-3">
+                <a href="{{ latest_post.url | relative_url }}" class="hover:text-primary transition">{{ latest_post.title }}</a>
+            </h3>
+            {% if latest_summary %}
+            <p class="text-gray-600 text-lg leading-relaxed mb-5">{{ latest_summary | strip_html | strip_newlines | truncate: 240 }}</p>
             {% endif %}
+            <p class="text-sm text-gray-500 mb-6">
+                <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: "%B %d, %Y" }}</time>{% if latest_post.category %} · {{ latest_post.category }}{% endif %} · {{ latest_read_time }} min read
+            </p>
+            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                Read featured article
+            </a>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-4">先从这篇开始，再按下方主题继续学习。</p>
+        </article>
+    </div>
+</section>
+{% endif %}
+
+<section id="all-guides" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4 mb-6">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">All Guides</h2>
+                <p class="text-gray-600">Exam strategy and topic-specific support for CIE 0580 and Edexcel 4MA1.</p>
+            </div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+            <button class="blog-filter-btn active" data-filter="all">All</button>
+            <button class="blog-filter-btn" data-filter="Exam Strategy">Exam Strategy</button>
+            <button class="blog-filter-btn" data-filter="CIE 0580 Topic Guide">CIE 0580</button>
+            <button class="blog-filter-btn" data-filter="Edexcel 4MA1 Topic Guide">Edexcel 4MA1</button>
+            <input id="blog-search-input" type="text" placeholder="Search articles…" class="ml-auto px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary w-48">
+            <select id="blog-sort-select" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                <option value="newest">Newest first</option>
+                <option value="shortest">Shortest read</option>
+            </select>
+        </div>
+
+        <div class="blog-card-grid grid md:grid-cols-2 gap-6">
+            {% if en_posts.size > 1 %}
+            {% for post in en_posts offset:1 %}
+            {% assign post_words = post.content | number_of_words %}
+            {% assign post_read_time = post_words | divided_by: 220 | plus: 1 %}
+            {% assign post_summary = post.subtitle | default: post.excerpt %}
+            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+                data-category="{{ post.category }}"
+                data-lang="{{ post.lang }}"
+                data-read-time="{{ post_read_time }}"
+                data-date="{{ post.date | date: '%Y-%m-%d' }}"
+                data-title="{{ post.title | downcase }}">
+                <p class="text-xs text-gray-500 mb-2">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.category %} · {{ post.category }}{% endif %} · {{ post_read_time }} min read
+                </p>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                    <a href="{{ post.url | relative_url }}" class="hover:text-primary transition">{{ post.title }}</a>
+                </h3>
+                {% if post_summary %}<p class="text-gray-600 mb-4">{{ post_summary | strip_html | strip_newlines | truncate: 160 }}</p>{% endif %}
+                <a href="{{ post.url | relative_url }}" class="text-primary font-semibold">Read article →</a>
+            </article>
             {% endfor %}
+            {% else %}
+            <article class="bg-white rounded-2xl p-6 border border-gray-200 md:col-span-2">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">More weekly guides are coming</h3>
+                <p class="text-gray-600">Check back soon for exam strategy updates and topic walkthroughs.</p>
+            </article>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900">Practice by Goal</h2>
+            <p class="text-gray-600">Use the blog, then move straight into guided practice.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">先看方法，再进入针对性练习，效率更高。</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <a href="/cie0580/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+                <p class="text-xs uppercase tracking-wider text-gray-500">CIE 0580</p>
+                <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">Topic-by-topic practice</h3>
+                <p class="text-gray-600">Apply methods from the guides to exam-style questions.</p>
+            </a>
+            <a href="/edx4ma1/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+                <p class="text-xs uppercase tracking-wider text-gray-500">Edexcel 4MA1</p>
+                <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">Board-specific walkthroughs</h3>
+                <p class="text-gray-600">Practice key skills with Edexcel-focused resources.</p>
+            </a>
+            <a href="/exercises/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+                <p class="text-xs uppercase tracking-wider text-gray-500">Interactive</p>
+                <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">Instant feedback drills</h3>
+                <p class="text-gray-600">Train accuracy with interactive questions and immediate checking.</p>
+            </a>
         </div>
     </div>
 </section>
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-semibold mb-3">Want weekly practice packs?</h2>
-        <p class="text-gray-600 mb-6">Join the membership and receive one topical pack every week.</p>
-        <a href="/en/subscription.html" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
-            View Membership
+        <h2 class="text-3xl font-bold mb-3">Want weekly practice packs?</h2>
+        <p class="text-gray-600 mb-6">Get the Term Practice Pass — 12 weekly topical packs with full solutions.</p>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-6">获取学期练习通行证，12 周专题练习包含完整解析。</p>
+        <a href="/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+            Get Term Pass
         </a>
     </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "25Maths Blog",
+  "description": {{ page.description | jsonify }},
+  "url": "{{ site.url }}/blog/",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "25Maths",
+    "url": "{{ site.url }}"
+  },
+  "blogPost": [
+    {% for post in en_posts limit:12 %}
+    {
+      "@type": "BlogPosting",
+      "headline": {{ post.title | jsonify }},
+      "description": {{ post.subtitle | default: post.excerpt | strip_html | strip_newlines | truncate: 180 | jsonify }},
+      "datePublished": "{{ post.date | date_to_xmlschema }}",
+      "url": "{{ site.url }}{{ post.url }}",
+      "inLanguage": "en"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+<script defer src="{{ '/assets/js/blog_index_enhancements.js' | relative_url }}"></script>

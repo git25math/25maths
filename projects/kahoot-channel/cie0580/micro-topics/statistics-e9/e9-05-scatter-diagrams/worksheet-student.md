@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.5 Scatter diagrams
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply scatter diagrams methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply scatter diagrams methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[8, 18, 18, 16, 12]` is `72/5 = 14.4`.

@@ -3,6 +3,7 @@
 ## Goal
 
 Make homepage navigation cleaner by removing top-nav Blog on home routes while preserving Blog access in lower-page sections.
+Make navigation cleaner by removing top-nav Blog, Support, About, and EN/ZH-CN language switch entries site-wide while preserving lower-page Blog entry points and footer company-entry points.
 
 ## Work Breakdown
 
@@ -19,3 +20,25 @@ Make homepage navigation cleaner by removing top-nav Blog on home routes while p
 1. On `/`, `/en/`, and `/zh-cn/`, top navigation has no Blog link (desktop + mobile).
 2. On non-home pages, Blog link remains available in top navigation.
 3. Homepage Latest Articles section still provides Blog access links.
+
+| 3 | P3-A1 | Remove Blog link from desktop top navigation on all routes | Completed | Codex |
+| 3 | P3-A2 | Remove Blog link from mobile menu on all routes | Completed | Codex |
+| 3 | P3-A3 | Verify non-home pages no longer render Blog in top navigation | Completed | Codex |
+| 4 | P4-A1 | Remove Support link from desktop top navigation on all routes | Completed | Codex |
+| 4 | P4-A2 | Remove Support link from mobile menu on all routes | Completed | Codex |
+| 4 | P4-A3 | Verify footer Support entry remains available across language routes | Completed | Codex |
+| 5 | P5-A1 | Remove About link from desktop top navigation on all routes | Completed | Codex |
+| 5 | P5-A2 | Remove About link from mobile menu on all routes | Completed | Codex |
+| 5 | P5-A3 | Verify footer About entry remains available across language routes | Completed | Codex |
+| 6 | P6-A1 | Remove EN/ZH-CN language switch entries from desktop top navigation on all routes | Completed | Codex |
+| 6 | P6-A2 | Remove EN/ZH-CN language switch entries from mobile menu on all routes | Completed | Codex |
+| 6 | P6-A3 | Verify localized routes are still reachable through direct URLs and existing page-level links | Completed | Codex |
+
+## Acceptance Criteria
+
+1. On all pages, top navigation has no Blog link (desktop + mobile).
+2. On all pages, top navigation has no Support link (desktop + mobile).
+3. On all pages, top navigation has no About link (desktop + mobile).
+4. On all pages, top navigation has no EN/ZH-CN language switch entries (desktop + mobile).
+5. Homepage Latest Articles section still provides Blog access links.
+6. Footer Support and About links remain available (`/support.html`, `/en/support.html`, `/zh-cn/support.html`; `/about.html`, `/en/about.html`, `/zh-cn/about.html`).

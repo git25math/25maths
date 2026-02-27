@@ -7,7 +7,7 @@ Name: ____________________   Date: ____________________
 - Apply circle properties methods accurately in Edexcel 4MA1 Foundation exam questions.
 
 ## Model example
-Example: area of a triangle with base `12` and height `9` is `1/2 x 12 x 9 = 54`.
+Example: area of a triangle with base `12` and height `10` is `1/2 x 12 x 10 = 60`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `45°` and `33°`.

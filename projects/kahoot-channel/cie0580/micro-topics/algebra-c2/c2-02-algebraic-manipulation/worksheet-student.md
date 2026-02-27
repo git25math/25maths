@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C2.2 Algebraic manipulation
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply algebraic manipulation methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply algebraic manipulation methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
-Example: mean of `[9, 17, 7, 15, 4]` is `52/5 = 10.4`.
+Example: solve `4x + 5 = 24` by inverse operations. Subtract `5` then divide by `4` to get `x = 4.75`.
 
 ## Practice (10)
-1. Find mean of `[6, 5, 17, 6, 17]`.
-2. Find median of `[5, 6, 6, 17, 17]`.
-3. Find range of `[6, 5, 17, 6, 17]`.
-4. A fair die is rolled. Find `P(score > 2)`.
-5. If `P(A)=0.6`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `59` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Simplify `2x + 7x - 1x`.
+2. Expand and simplify `2(x + 7)`.
+3. Factorise `2x + 14` fully.
+4. Solve `2x - 7 = 9`.
+5. When `x = 8`, evaluate `2x^2 - 7x + 1`.
+6. Solve the inequality `2x + 7 >= 22`.
+7. The nth term is `2n + 1`. Find term `3`.
+8. Rearrange `y = 2x - 7` to make `x` the subject.
+9. Solve `x^2 - 8x + 15 = 0`.
+10. Given `f(x)=2x-3`, find `f(8)`.

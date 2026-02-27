@@ -4,20 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Use calculator methods accurately and verify answers with estimation and reasonableness checks.
+- Apply using a calculator methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Before accepting `198 x 0.49`, estimate `200 x 0.5 = 100`.
-If calculator output is far from 100, recheck entry.
+Example: increase `80` by `12%`: compute `80 x (1 + 12/100)` to get `89.6`.
 
 ## Practice (10)
-1. Estimate `301 x 19`.
-2. Check whether `84/4 = 0.21` is reasonable.
-3. Write `4.8E-4` as decimal.
-4. Enter and evaluate `(25-7)/3` correctly.
-5. Explain why rounding only at the end improves accuracy.
-6. Verify `17 x 6 = 92` using estimation.
-7. A result for area is `-36 cm^2`. What should you do?
-8. Convert calculator output `7.2E3` to ordinary number.
-9. Round `12.498` to 1 d.p.
-10. A cost per item is $3.9 and quantity 52. Estimate total.
+1. Evaluate `26 + 19 x 9`.
+2. Write `2/24 + 14/24` as a simplified fraction.
+3. Calculate `3.0 + 0.19`.
+4. Work out `4^6`.
+5. Find `sqrt(49)`.
+6. Increase `120` by `19%`.
+7. Share `105` in the ratio `2:3` and give the larger share.
+8. Round `490.0` to `3` significant figures.
+9. Write `50000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

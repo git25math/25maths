@@ -4,20 +4,19 @@
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Read place value correctly and compare/order positive and negative decimals.
+- Apply ordering methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Compare `-2.3` and `-2.03`.
-Since `-2.3` is more negative, `-2.3 < -2.03`.
+Example: increase `80` by `23%`: compute `80 x (1 + 23/100)` to get `98.4`.
 
 ## Practice (10)
-1. Value of digit 6 in `46,281`.
-2. Place value of 8 in `3.084`.
-3. Order ascending: 0.9, 0.09, 0.909.
-4. Which is greater: -1.7 or -1.07?
-5. Smallest of: 5.08, 5.8, 5.18, 5.108.
-6. Arrange descending: 2.1, 2.01, 2.11.
-7. Number halfway between 7.2 and 7.8.
-8. Which satisfies `x > -0.4`? (-0.45, -0.39, -0.4, -0.41)
-9. Highest temperature: -3C, -1C, 0C, -2C.
-10. Fastest time: 9.8s, 9.08s, 9.18s.
+1. Evaluate `37 + 8 x 8`.
+2. Write `9/24 + 13/24` as a simplified fraction.
+3. Calculate `1.3 + 0.16`.
+4. Work out `4^5`.
+5. Find `sqrt(121)`.
+6. Increase `120` by `16%`.
+7. Share `105` in the ratio `2:3` and give the larger share.
+8. Round `855.5` to `3` significant figures.
+9. Write `40000` in standard form.
+10. A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost?

@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## C4.4 Similarity
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply similarity methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply similarity methods accurately in CIE 0580 Core exam questions.
 
 ## Model example
-Example: area of a triangle with base `12` and height `9` is `1/2 x 12 x 9 = 54`.
+Example: area of a triangle with base `9` and height `10` is `1/2 x 9 x 10 = 45`.
 
 ## Practice (10)
 1. Find third angle in a triangle with angles `52°` and `61°`.
@@ -19,4 +19,4 @@ Example: area of a triangle with base `12` and height `9` is `1/2 x 12 x 9 = 54`
 7. In a right triangle, `sin(theta)=0.5`. Find `theta` (acute).
 8. Find volume of cuboid `10 x 12 x 14`.
 9. Two similar shapes have scale factor `3`. Area scale factor?
-10. A cone has radius `4` and height `13`. Write volume in terms of `pi`.
+10. A cylinder has radius `4` and height `10`. Write volume in terms of `pi`.

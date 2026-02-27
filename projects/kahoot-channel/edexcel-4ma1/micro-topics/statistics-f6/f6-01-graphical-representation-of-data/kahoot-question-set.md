@@ -8,11 +8,11 @@
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find mean of `[13, 16, 11, 12, 14]`. | Cannot be determined | No solution | 0 | 13.2 | D | Fluency |
+| 1 | Find mean of `[13, 16, 11, 12, 14]`. | 13.70 | 12.70 | 14.20 | 13.2 | D | Fluency |
 | 2 | Find median of `[11, 12, 13, 14, 16]`. | 13 | 12 | 14 | 15 | A | Fluency |
 | 3 | Find range of `[13, 16, 11, 12, 14]`. | 5 | 6 | 7 | 4 | A | Fluency |
 | 4 | A fair die is rolled. Find `P(score > 4)`. | 2/6 | 2/7 | 3/6 | 4/6 | A | Fluency |
-| 5 | If `P(A)=0.8`, find `P(not A)`. | 0 | No solution | 0.2 | Cannot be determined | C | Fluency |
+| 5 | If `P(A)=0.8`, find `P(not A)`. | 1.20 | -0.30 | 0.2 | 0.70 | C | Fluency |
 | 6 | Expected frequency if probability is `0.3` in `72` trials. | 20 | 21 | 22 | 23 | B | Method |
 | 7 | State which average is least affected by outliers: mean, median, or mode. | No solution | Median | 0 | Cannot be determined | B | Method |
 | 8 | A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`. | 18/30 = 3/5 | Cannot be determined | 0 | No solution | A | Method |

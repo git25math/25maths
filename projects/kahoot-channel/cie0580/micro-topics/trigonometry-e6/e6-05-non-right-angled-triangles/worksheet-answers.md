@@ -1,13 +1,13 @@
-# Edexcel 4MA1 Worksheet (Answers)
+# CIE 0580 Worksheet (Answers)
 ## E6.5 Non-right-angled triangles
 
-1. 14.0
-2. 14
-3. 13
-4. `1/6`
-5. 0.2
-6. 15
-7. Median
-8. `18/30 = 3/5`
-9. `14/50 = 7/25`
-10. 0.28
+1. `sqrt(45)`
+2. `1/2`
+3. `1/2`
+4. 1
+5. 30°
+6. 60°
+7. 45°
+8. `a/sinA = b/sinB = c/sinC`
+9. `a^2 = b^2 + c^2 - 2bc cosA`
+10. 53°

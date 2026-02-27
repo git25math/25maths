@@ -1,0 +1,28 @@
+{% assign wrapper_class = include.wrapper_class | default: 'mt-auto pt-2 cta-stack' %}
+{% assign kahoot_label = include.kahoot_label | default: 'L0: Open Kahoot' %}
+{% assign exercise_label = include.exercise_label | default: 'L1: Interactive Exercise' %}
+{% assign worksheet_label = include.worksheet_label | default: 'L2: Worksheet' %}
+{% assign section_label = include.section_label | default: 'L3: Section Bundle' %}
+{% assign unit_label = include.unit_label | default: 'L4: Unit Bundle' %}
+{% assign has_exercise = false %}
+{% if include.exercise_url and include.exercise_url != '' %}
+  {% assign has_exercise = true %}
+{% endif %}
+
+{% assign kahoot_classes = 'cta-card-btn kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition' %}
+{% assign interactive_classes = 'cta-card-btn kahoot-ladder-l1 py-3 rounded-lg font-semibold text-sm hover:shadow-md transition' %}
+{% assign worksheet_classes = 'cta-card-btn kahoot-ladder-l2 py-3 rounded-lg font-semibold text-sm hover:shadow-md transition' %}
+{% assign section_classes = 'cta-card-btn kahoot-ladder-l3 py-3 rounded-lg font-semibold text-sm hover:shadow-sm transition' %}
+{% assign unit_classes = 'cta-card-btn kahoot-ladder-l4 py-3 rounded-lg font-semibold text-sm hover:shadow-sm transition' %}
+
+<div class="{{ wrapper_class }}">
+  {% include ui/cta-link.html href=include.kahoot_url target='_blank' rel='noopener' classes=kahoot_classes label=kahoot_label %}
+  {% if include.exercise_url and include.exercise_url != '' %}
+    {% include ui/cta-link.html href=include.exercise_url classes=interactive_classes label=exercise_label %}
+  {% else %}
+    <span class="{{ interactive_classes }} kahoot-ladder-disabled">{{ exercise_label }}</span>
+  {% endif %}
+  {% include ui/cta-link.html href=include.worksheet_url target='_blank' rel='noopener' classes=worksheet_classes label=worksheet_label %}
+  {% include ui/cta-link.html href=include.section_bundle_url target='_blank' rel='noopener' classes=section_classes label=section_label %}
+  {% include ui/cta-link.html href=include.unit_bundle_url target='_blank' rel='noopener' classes=unit_classes label=unit_label %}
+</div>

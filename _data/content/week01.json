@@ -1,0 +1,228 @@
+{
+  "_comment": "Week 01 practice questions covering Number (Fractions, Decimals, Percentages) and Money for CIE 0580.",
+  "week_number": 1,
+  "topic": "Number: Money, Fractions, Decimals & Percentages",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week01-number-fdp-2026w10",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:number-c1:c1-04-fractions-decimals-percentages",
+    "cie0580:number-c1:c1-02-money"
+  ],
+  "syllabus_refs": ["C1.2", "C1.5", "E1.2", "E1.5"],
+  "key_vocabulary": [
+    { "term_en": "Percentage", "term_zh": "百分比", "definition": "A rate, number, or amount in each hundred.", "definition_zh": "以一百为基数的比率、数目或数量。" },
+    { "term_en": "Decimal", "term_zh": "小数", "definition": "A number expressed in a system that uses powers of 10.", "definition_zh": "用十进制（以10的幂次）表示的数。" },
+    { "term_en": "Fraction", "term_zh": "分数", "definition": "A numerical quantity that is not a whole number.", "definition_zh": "不是整数的数值量，表示部分与整体的关系。" },
+    { "term_en": "Convert", "term_zh": "转换", "definition": "Change from one form to another.", "definition_zh": "从一种形式变为另一种形式。" },
+    { "term_en": "Amount", "term_zh": "数量/金额", "definition": "A quantity of something, especially the total of a thing or things in number, size, value, or extent.", "definition_zh": "某物的数量，特别是在数目、大小、价值或程度上的总数。" },
+    { "term_en": "Increase", "term_zh": "增加", "definition": "Become or make greater in size, amount, intensity, or degree.", "definition_zh": "在大小、数量、强度或程度上变得更大。" },
+    { "term_en": "Decrease", "term_zh": "减少", "definition": "Make or become smaller or fewer in size, amount, intensity, or degree.", "definition_zh": "在大小、数量、强度或程度上变小或变少。" },
+    { "term_en": "Simple Interest", "term_zh": "单利", "definition": "Interest calculated only on the principal amount.", "definition_zh": "仅基于本金计算的利息。" },
+    { "term_en": "Profit", "term_zh": "利润", "definition": "Financial gain, the difference between the amount earned and the amount spent.", "definition_zh": "经济收益，即赚取金额与支出金额之间的差额。" },
+    { "term_en": "Loss", "term_zh": "亏损", "definition": "An amount of money lost by a business or organization.", "definition_zh": "企业或组织损失的金额。" },
+    { "term_en": "Cost Price", "term_zh": "成本价", "definition": "The price at which goods are bought by a retailer.", "definition_zh": "零售商购买商品的价格。" },
+    { "term_en": "Selling Price", "term_zh": "售价", "definition": "The price at which something is sold.", "definition_zh": "某物出售的价格。" },
+    { "term_en": "Numerator", "term_zh": "分子", "definition": "The top number in a fraction.", "definition_zh": "分数中上面的数字。" },
+    { "term_en": "Denominator", "term_zh": "分母", "definition": "The bottom number in a fraction.", "definition_zh": "分数中下面的数字。" },
+    { "term_en": "Equivalent", "term_zh": "相等的", "definition": "Equal in value, amount, function, meaning, etc.", "definition_zh": "在价值、数量、功能、意义等方面相等。" },
+    { "term_en": "Reciprocal", "term_zh": "倒数", "definition": "The quantity obtained by dividing the number one by a given quantity.", "definition_zh": "用1除以给定数量所得的量。" },
+    { "term_en": "Percentage Change", "term_zh": "百分比变化", "definition": "The extent to which something gains or loses value, expressed as a percentage.", "definition_zh": "某物增值或贬值的程度，以百分比表示。" },
+    { "term_en": "Currency", "term_zh": "货币", "definition": "A system of money in general use in a particular country.", "definition_zh": "在特定国家普遍使用的货币制度。" },
+    { "term_en": "Exchange Rate", "term_zh": "汇率", "definition": "The value of one currency for the purpose of conversion to another.", "definition_zh": "一种货币兑换为另一种货币的价值。" },
+    { "term_en": "Calculate", "term_zh": "计算", "definition": "Determine (the amount or number of something) mathematically.", "definition_zh": "通过数学方法确定某物的数量或数目。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Money"],
+      "question": {
+        "en": "A book costs $12.60. A pen costs $0.85. What is the total cost of one book and two pens?",
+        "zh": "一本书的价格是 $12.60。一支笔的价格是 $0.85。购买一本书和两支笔的总费用是多少？"
+      },
+      "answer": { "en": "$14.30", "zh": "$14.30" },
+      "solution": {
+        "en": ["Cost of two pens: 2 × $0.85 = $1.70", "Total cost: $12.60 + $1.70", "= $14.30"],
+        "zh": ["两支笔的费用: 2 × $0.85 = $1.70", "总费用: $12.60 + $1.70", "= $14.30"]
+      },
+      "common_mistake": { "en": "Forgetting to multiply the cost of the pen by 2.", "zh": "忘记将笔的价格乘以2。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["FDP conversions"],
+      "question": {
+        "en": "Write 0.45 as a fraction in its simplest form.",
+        "zh": "将 0.45 写成最简分数形式。"
+      },
+      "answer": { "en": "`\\dfrac{9}{20}`", "zh": "`\\dfrac{9}{20}`" },
+      "solution": {
+        "en": ["`0.45 = \\dfrac{45}{100}`", "Divide numerator and denominator by their highest common factor, which is 5.", "`45 \\div 5 = 9`", "`100 \\div 5 = 20`", "So, the fraction is `\\dfrac{9}{20}`."],
+        "zh": ["`0.45 = \\dfrac{45}{100}`", "分子和分母同除以最大公因数5。", "`45 \\div 5 = 9`", "`100 \\div 5 = 20`", "所以，分数为 `\\dfrac{9}{20}`。"]
+      },
+      "common_mistake": { "en": "Leaving the fraction as `\\dfrac{45}{100}` without simplifying.", "zh": "将分数写为 `\\dfrac{45}{100}` 而没有化简。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Percentages"],
+      "question": {
+        "en": "(a) Calculate 15% of 300.\n\n(b) What percentage of 300 is 45?",
+        "zh": "(a) 计算 300 的 15%。\n\n(b) 45 是 300 的百分之几？"
+      },
+      "answer": { "en": "(a) 45\n(b) 15%", "zh": "(a) 45\n(b) 15%" },
+      "solution": {
+        "en": ["(a) Convert percentage to decimal: `15\\% = 0.15`", "`0.15 \\times 300 = 45`", "(b) `\\dfrac{45}{300} \\times 100 = 15\\%`"],
+        "zh": ["(a) 将百分比转换为小数: `15\\% = 0.15`", "`0.15 \\times 300 = 45`", "(b) `\\dfrac{45}{300} \\times 100 = 15\\%`"]
+      },
+      "common_mistake": { "en": "In (a), multiplying by 15 instead of 0.15. In (b), dividing 300 by 45 instead of 45 by 300.", "zh": "在 (a) 中，乘以 15 而不是 0.15。在 (b) 中，用 300 除以 45 而不是 45 除以 300。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Percentages", "Money"],
+      "question": {
+        "en": "A TV costs $400. In a sale, it is reduced by 20%.\n\n(a) How much money is saved in the sale?\n\n(b) What is the sale price?",
+        "zh": "一台电视价格为 $400。在促销中，它降价了 20%。\n\n(a) 促销中省了多少钱？\n\n(b) 促销价是多少？"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\draw[fill=blue!20] (0,0) rectangle (5,0.6);",
+        "  \\node at (2.5,0.3) {\\small \\$400 (Original)};",
+        "  \\draw[fill=green!20] (0,-0.9) rectangle (4,-0.3);",
+        "  \\node at (2,-0.6) {\\small \\$\\,? (Sale price)};",
+        "  \\draw[fill=red!20] (4,-0.9) rectangle (5,-0.3);",
+        "  \\node at (4.5,-0.6) {\\small 20\\%};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) $80\n(b) $320", "zh": "(a) $80\n(b) $320" },
+      "solution": {
+        "en": ["(a) Find the reduction: `20\\%` of $400 `= 0.20 \\times 400 = \\$80`.", "(b) Subtract from the original: `\\$400 - \\$80 = \\$320`."],
+        "zh": ["(a) 计算折扣金额: $400 的 `20\\%` `= 0.20 \\times 400 = \\$80`。", "(b) 从原价中减去: `\\$400 - \\$80 = \\$320`。"]
+      },
+      "common_mistake": { "en": "Giving only the reduction amount ($80) for part (b). Part (a) asks for the saving, part (b) asks for the new price.", "zh": "在 (b) 中只给出折扣金额（$80）。(a) 问的是省了多少，(b) 问的是新价格。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Fractions"],
+      "question": {
+        "en": "Work out `\\dfrac{2}{5} + \\dfrac{1}{3}`.",
+        "zh": "计算 `\\dfrac{2}{5} + \\dfrac{1}{3}`。"
+      },
+      "answer": { "en": "`\\dfrac{11}{15}`", "zh": "`\\dfrac{11}{15}`" },
+      "solution": {
+        "en": ["Find a common denominator, which is `5 \\times 3 = 15`.", "Convert the fractions: `\\dfrac{2}{5} = \\dfrac{6}{15}` and `\\dfrac{1}{3} = \\dfrac{5}{15}`.", "Add the numerators: `6 + 5 = 11`.", "The result is `\\dfrac{11}{15}`."],
+        "zh": ["找到公共分母，即 `5 \\times 3 = 15`。", "转换分数: `\\dfrac{2}{5} = \\dfrac{6}{15}` 和 `\\dfrac{1}{3} = \\dfrac{5}{15}`。", "分子相加: `6 + 5 = 11`。", "结果是 `\\dfrac{11}{15}`。"]
+      },
+      "common_mistake": { "en": "Adding the numerators and denominators directly: `\\dfrac{2+1}{5+3} = \\dfrac{3}{8}`.", "zh": "直接将分子和分母相加: `\\dfrac{2+1}{5+3} = \\dfrac{3}{8}`。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["FDP conversions"],
+      "question": {
+        "en": "(a) Write `\\dfrac{3}{8}` as a decimal.\n\n(b) Write 0.375 as a percentage.",
+        "zh": "(a) 将 `\\dfrac{3}{8}` 写成小数。\n\n(b) 将 0.375 写成百分数。"
+      },
+      "answer": { "en": "(a) 0.375\n(b) 37.5%", "zh": "(a) 0.375\n(b) 37.5%" },
+      "solution": {
+        "en": ["(a) Divide the numerator by the denominator: `3 \\div 8 = 0.375`", "(b) Multiply the decimal by 100: `0.375 \\times 100 = 37.5\\%`"],
+        "zh": ["(a) 用分子除以分母: `3 \\div 8 = 0.375`", "(b) 将小数乘以 100: `0.375 \\times 100 = 37.5\\%`"]
+      },
+      "common_mistake": { "en": "In (a), calculating `8 \\div 3` instead. In (b), forgetting to multiply by 100.", "zh": "在 (a) 中，错误地计算 `8 \\div 3`。在 (b) 中，忘记乘以 100。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Percentages", "Money"],
+      "question": {
+        "en": "An item costs $40. The price is increased by 10%.\n\n(a) What is the new price?\n\n(b) The item is then sold for $50. Calculate the percentage profit based on the original cost of $40.",
+        "zh": "一件商品价格为 $40。价格上涨了 10%。\n\n(a) 新价格是多少？\n\n(b) 该商品随后以 $50 售出。以原价 $40 为基准，计算利润百分比。"
+      },
+      "answer": { "en": "(a) $44\n(b) 25%", "zh": "(a) $44\n(b) 25%" },
+      "solution": {
+        "en": ["(a) Increase: `10\\%` of $40 `= 0.10 \\times 40 = \\$4`. New price: `\\$40 + \\$4 = \\$44`.", "(b) Profit `= \\$50 - \\$40 = \\$10`", "`\\text{Percentage profit} = \\dfrac{10}{40} \\times 100 = 25\\%`"],
+        "zh": ["(a) 上涨金额: $40 的 `10\\%` `= 0.10 \\times 40 = \\$4`。新价格: `\\$40 + \\$4 = \\$44`。", "(b) 利润 `= \\$50 - \\$40 = \\$10`", "`\\text{利润百分比} = \\dfrac{10}{40} \\times 100 = 25\\%`"]
+      },
+      "common_mistake": { "en": "In (b), calculating profit based on $44 instead of the original $40, or based on $50 (selling price).", "zh": "在 (b) 中，以 $44 而不是原价 $40 为基准计算利润百分比，或以 $50（售价）为基准。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Percentages", "Money"],
+      "question": {
+        "en": "A camera is sold for $546, making a 30% profit on the cost price. Find the cost price.",
+        "zh": "一台相机以 $546 的价格售出，获得了成本价 30% 的利润。求成本价。"
+      },
+      "answer": { "en": "$420", "zh": "$420" },
+      "solution": {
+        "en": ["The selling price represents `100\\% + 30\\% = 130\\%` of the cost price.", "Let `C` be the cost price. `1.30 \\times C = \\$546`.", "`C = \\$546 \\div 1.30`", "`C = \\$420`"],
+        "zh": ["售价代表成本价的 `100\\% + 30\\% = 130\\%`。", "设 `C` 为成本价。`1.30 \\times C = \\$546`。", "`C = \\$546 \\div 1.30`", "`C = \\$420`"]
+      },
+      "common_mistake": { "en": "Calculating 30% of $546 and subtracting it from the selling price.", "zh": "计算 $546 的 30% 并从售价中减去。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Percentages"],
+      "question": {
+        "en": "The value of a car depreciates from $15 000 to $12 000.\n\n(a) Calculate the percentage decrease in value.\n\n(b) The car continues to depreciate by the same percentage. Calculate its value after the second depreciation.",
+        "zh": "一辆汽车的价值从 $15 000 折旧到 $12 000。\n\n(a) 计算价值下降的百分比。\n\n(b) 该汽车继续以相同的百分比折旧。计算第二次折旧后的价值。"
+      },
+      "answer": { "en": "(a) 20%\n(b) $9600", "zh": "(a) 20%\n(b) $9600" },
+      "solution": {
+        "en": ["(a) Decrease `= \\$15\\,000 - \\$12\\,000 = \\$3\\,000`.", "`\\text{Percentage decrease} = \\dfrac{3\\,000}{15\\,000} \\times 100 = 20\\%`", "(b) Second depreciation: `20\\%` of $12 000 `= 0.20 \\times 12\\,000 = \\$2\\,400`.", "New value: `\\$12\\,000 - \\$2\\,400 = \\$9\\,600`"],
+        "zh": ["(a) 下降金额 `= \\$15\\,000 - \\$12\\,000 = \\$3\\,000`。", "`\\text{下降百分比} = \\dfrac{3\\,000}{15\\,000} \\times 100 = 20\\%`", "(b) 第二次折旧: $12 000 的 `20\\%` `= 0.20 \\times 12\\,000 = \\$2\\,400`。", "新价值: `\\$12\\,000 - \\$2\\,400 = \\$9\\,600`"]
+      },
+      "common_mistake": { "en": "In (a), dividing by $12 000 instead of $15 000. In (b), calculating 20% of $15 000 again instead of 20% of the NEW value $12 000.", "zh": "在 (a) 中，除以 $12 000 而不是 $15 000。在 (b) 中，再次计算 $15 000 的 20% 而不是新价值 $12 000 的 20%。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Fractions"],
+      "question": {
+        "en": "Calculate `\\left(3~\\dfrac{1}{4} - 1~\\dfrac{2}{3}\\right) \\div \\dfrac{2}{3}`.",
+        "zh": "计算 `\\left(3~\\dfrac{1}{4} - 1~\\dfrac{2}{3}\\right) \\div \\dfrac{2}{3}`。"
+      },
+      "answer": { "en": "`2~\\dfrac{3}{8}` or `\\dfrac{19}{8}`", "zh": "`2~\\dfrac{3}{8}` 或 `\\dfrac{19}{8}`" },
+      "solution": {
+        "en": [
+          "Convert mixed numbers to improper fractions: `3~\\dfrac{1}{4} = \\dfrac{13}{4}`, `1~\\dfrac{2}{3} = \\dfrac{5}{3}`.",
+          "Subtract fractions: `\\dfrac{13}{4} - \\dfrac{5}{3} = \\dfrac{39}{12} - \\dfrac{20}{12} = \\dfrac{19}{12}`.",
+          "Divide by `\\dfrac{2}{3}`, which is the same as multiplying by its reciprocal, `\\dfrac{3}{2}`.",
+          "`\\dfrac{19}{12} \\times \\dfrac{3}{2} = \\dfrac{57}{24}`.",
+          "Simplify the fraction: `\\dfrac{57}{24} = \\dfrac{19}{8}`.",
+          "Convert to mixed number: `2~\\dfrac{3}{8}`."
+        ],
+        "zh": [
+          "将带分数转换为假分数: `3~\\dfrac{1}{4} = \\dfrac{13}{4}`, `1~\\dfrac{2}{3} = \\dfrac{5}{3}`。",
+          "分数相减: `\\dfrac{13}{4} - \\dfrac{5}{3} = \\dfrac{39}{12} - \\dfrac{20}{12} = \\dfrac{19}{12}`。",
+          "除以 `\\dfrac{2}{3}`，等于乘以其倒数 `\\dfrac{3}{2}`。",
+          "`\\dfrac{19}{12} \\times \\dfrac{3}{2} = \\dfrac{57}{24}`。",
+          "化简分数: `\\dfrac{57}{24} = \\dfrac{19}{8}`。",
+          "转换为带分数: `2~\\dfrac{3}{8}`。"
+        ]
+      },
+      "common_mistake": { "en": "Making errors in finding the common denominator or when converting mixed numbers.", "zh": "在找公分母或转换带分数时出错。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Percentages"],
+      "question": {
+        "en": "A house price increases by 20% one year and then decreases by 20% the next year. What is the overall percentage change from the original price?",
+        "zh": "一个房价第一年上涨了 20%，第二年又下跌了 20%。与原价相比，总的百分比变化是多少？"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.85]",
+        "  \\draw[fill=blue!15, draw=blue!50, rounded corners=2pt] (0,0) rectangle (2,0.7);",
+        "  \\node at (1,0.35) {\\small $P$};",
+        "  \\draw[->, thick, blue!70] (2.2,0.35) -- (3.3,0.35) node[midway, above] {\\footnotesize $\\times 1.2$};",
+        "  \\draw[fill=green!15, draw=green!50, rounded corners=2pt] (3.5,0) rectangle (6,0.7);",
+        "  \\node at (4.75,0.35) {\\small $1.2P$};",
+        "  \\draw[->, thick, red!70] (6.2,0.35) -- (7.3,0.35) node[midway, above] {\\footnotesize $\\times 0.8$};",
+        "  \\draw[fill=red!15, draw=red!50, rounded corners=2pt] (7.5,0) rectangle (9.7,0.7);",
+        "  \\node at (8.6,0.35) {\\small $0.96P$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "A decrease of 4%", "zh": "下降 4%" },
+      "solution": {
+        "en": ["Let the original price be `P`.", "After 1 year, price is `P \\times (1 + 0.20) = 1.2P`.", "After 2 years, price is `1.2P \\times (1 - 0.20) = 1.2P \\times 0.8 = 0.96P`.", "The final price is `96\\%` of the original price.", "This is a `100\\% - 96\\% = 4\\%` decrease."],
+        "zh": ["设原价为 `P`。", "1 年后，价格为 `P \\times (1 + 0.20) = 1.2P`。", "2 年后，价格为 `1.2P \\times (1 - 0.20) = 1.2P \\times 0.8 = 0.96P`。", "最终价格是原价的 `96\\%`。", "这是一个 `100\\% - 96\\% = 4\\%` 的下降。"]
+      },
+      "common_mistake": { "en": "Assuming the overall change is 0% because +20% and −20% cancel out.", "zh": "假设总体变化为 0%，因为 +20% 和 −20% 相互抵消。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can solve multi-step problems involving money.", "zh": "我能解决涉及金钱的多步骤问题。" },
+    { "en": "I can confidently convert between fractions, decimals, and percentages.", "zh": "我能熟练地在分数、小数和百分数之间进行转换。" },
+    { "en": "I can calculate percentage of an amount.", "zh": "我能计算一个数量的百分比。" },
+    { "en": "I can calculate percentage increase and decrease.", "zh": "我能计算百分比的增加和减少。" },
+    { "en": "I can add, subtract, multiply and divide fractions.", "zh": "我能进行分数的加、减、乘、除运算。" },
+    { "en": "I can calculate reverse percentages (Extended).", "zh": "我能计算反向百分比（拓展）。" },
+    { "en": "I can solve problems involving repeated percentage change (Extended).", "zh": "我能解决涉及重复百分比变化的问题（拓展）。" }
+  ]
+}

@@ -6,6 +6,20 @@ import {
 } from '../../../../_lib/crypto.js';
 import { jsonResponse } from '../../../../_lib/http.js';
 import {
+  isPayhipActivationEvent,
+  isPayhipRevocationEvent,
+  isPayhipSubscriptionEvent,
+  mapPayhipMembershipStatus,
+  parsePayhipEmail,
+  parsePayhipEventId,
+  parsePayhipEventType,
+  parsePayhipPeriodEnd,
+  parsePayhipPeriodStart,
+  parsePayhipProductId,
+  parsePayhipProviderCustomerId,
+} from '../../../../_lib/payhip_events.js';
+import {
+  expireEntitlement,
   findAuthUserByEmail,
   incrementPayhipEventAttempts,
   insertPayhipEventLog,
@@ -14,59 +28,6 @@ import {
   upsertMembershipStatus,
 } from '../../../../_lib/supabase_server.js';
 import { releaseRegistry } from '../../../../_lib/release_registry.js';
-
-function parseEventType(payload) {
-  return String(payload?.event_type || payload?.event || payload?.type || '').trim();
-}
-
-function parseEventId(payload) {
-  const raw = payload?.event_id || payload?.id || payload?.sale_id || payload?.subscription_id || '';
-  if (String(raw).trim()) return String(raw).trim();
-  return `payhip-${Date.now()}`;
-}
-
-function parseEmail(payload) {
-  return String(
-    payload?.customer_email ||
-    payload?.buyer_email ||
-    payload?.email ||
-    ''
-  ).trim().toLowerCase();
-}
-
-function mapMembershipStatus(eventType) {
-  const value = String(eventType || '').trim().toLowerCase();
-  const normalized = value.replace(/\s+/g, '_');
-  if (!value) return null;
-  if (normalized === 'subscription_created') return 'active';
-  if (normalized === 'subscription_payment_succeeded') return 'active';
-  if (normalized === 'sale_completed') return 'active';
-  if (normalized === 'renewal_payment_succeeded') return 'active';
-  if (value.includes('cancel')) return 'cancelled';
-  if (value.includes('pause')) return 'paused';
-  if (value.includes('sale') || value.includes('payment') || value.includes('created') || value.includes('renew')) {
-    return 'active';
-  }
-  return null;
-}
-
-function parsePeriodStart(payload) {
-  return payload?.period_start || payload?.subscription_start || payload?.created_at || null;
-}
-
-function parsePeriodEnd(payload) {
-  return payload?.next_billing_date || payload?.period_end || payload?.subscription_end || null;
-}
-
-function parseProductId(payload) {
-  const candidate = payload?.product_id || payload?.product?.id || payload?.listing_id || '';
-  return String(candidate || '').trim();
-}
-
-function parseProviderCustomerId(payload) {
-  const candidate = payload?.customer_id || payload?.subscription_id || payload?.member_id || '';
-  return String(candidate || '').trim();
-}
 
 function findReleasesByProductId(productId) {
   if (!productId) return [];
@@ -128,14 +89,14 @@ export async function onRequestPost(context) {
     return jsonResponse({ error: 'Invalid webhook signature.' }, 403);
   }
 
-  const eventType = parseEventType(payload);
-  const providerEventId = parseEventId(payload);
-  const customerEmail = parseEmail(payload);
-  const status = mapMembershipStatus(eventType);
-  const providerCustomerId = parseProviderCustomerId(payload);
-  const productId = parseProductId(payload);
-  const periodStart = parsePeriodStart(payload);
-  const periodEnd = parsePeriodEnd(payload);
+  const eventType = parsePayhipEventType(payload);
+  const providerEventId = parsePayhipEventId(payload);
+  const customerEmail = parsePayhipEmail(payload);
+  const status = mapPayhipMembershipStatus(eventType, payload);
+  const providerCustomerId = parsePayhipProviderCustomerId(payload);
+  const productId = parsePayhipProductId(payload);
+  const periodStart = parsePayhipPeriodStart(payload);
+  const periodEnd = parsePayhipPeriodEnd(payload);
 
   const now = new Date().toISOString();
 
@@ -206,28 +167,52 @@ export async function onRequestPost(context) {
   }
 
   try {
+    const isSubscription = isPayhipSubscriptionEvent(eventType, payload);
+    let effectivePeriodEnd;
+    if (status === 'cancelled' && !periodEnd) {
+      effectivePeriodEnd = now;
+    } else if (!isSubscription && !periodEnd) {
+      // One-time purchase: grant 12-week access window
+      const termEnd = new Date(Date.now() + 12 * 7 * 24 * 60 * 60 * 1000);
+      effectivePeriodEnd = termEnd.toISOString();
+    } else {
+      effectivePeriodEnd = periodEnd;
+    }
+
     if (status) {
       await upsertMembershipStatus(env, {
         user_id: authUser.id,
         status,
         provider: 'payhip',
         provider_customer_id: providerCustomerId || null,
-        period_start: periodStart,
-        period_end: periodEnd,
+        period_start: periodStart || now,
+        period_end: effectivePeriodEnd,
         updated_at: now,
       });
     }
 
-    if (status === 'active' && productId) {
-      const releases = findReleasesByProductId(productId);
+    const releases = findReleasesByProductId(productId);
+    let grantedCount = 0;
+    let revokedCount = 0;
+
+    if (isPayhipActivationEvent(eventType) && productId) {
       for (const release of releases) {
         await upsertEntitlement(env, {
           user_id: authUser.id,
           release_id: release.release_id,
           source: 'payhip',
           granted_at: now,
-          expires_at: periodEnd,
+          // One-time purchases get perpetual entitlements; subscriptions expire
+          expires_at: isSubscription ? effectivePeriodEnd : null,
         });
+        grantedCount += 1;
+      }
+    }
+
+    if (isPayhipRevocationEvent(eventType) && productId) {
+      for (const release of releases) {
+        await expireEntitlement(env, authUser.id, release.release_id, 'payhip', now);
+        revokedCount += 1;
       }
     }
 
@@ -244,6 +229,8 @@ export async function onRequestPost(context) {
       user_id: authUser.id,
       status_applied: status,
       product_id: productId || null,
+      entitlements_granted: grantedCount,
+      entitlements_revoked: revokedCount,
     });
   } catch (error) {
     await incrementPayhipEventAttempts(env, providerEventId).catch(() => null);

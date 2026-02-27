@@ -44,9 +44,9 @@
 ]
     {% endcapture %}
 
-    <main id="main-content" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header class="mb-8">
-            <h1 class="text-4xl font-bold text-gray-900">{{ page.title }}</h1>
+            <h1 class="text-4xl font-semibold text-gray-900">{{ page.title }}</h1>
             {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
         </header>
 
@@ -69,38 +69,70 @@
             </div>
 
             <div id="controls-container" class="mt-6 border-t pt-6">
-                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Check Answer</button>
-                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" style="display: none;" disabled>Next</button>
+                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400">Check Answer</button>
+                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400" style="display: none;" disabled>Next</button>
             </div>
         </div>
 
+        {% assign loop_theme_class = 'resource-loop--neutral' %}
+        {% if board_slug == 'cie0580' %}
+            {% assign loop_theme_class = 'resource-loop--cie' %}
+        {% elsif board_slug == 'edexcel-4ma1' %}
+            {% assign loop_theme_class = 'resource-loop--edx' %}
+        {% endif %}
+        {% assign bundle_href = '' %}
+        {% if exercise_links and exercise_links.bundle_url and exercise_links.bundle_url != '' %}
+            {% assign bundle_href = exercise_links.bundle_url %}
+        {% elsif exercise_links and exercise_links.section_bundle_payhip_url and exercise_links.section_bundle_payhip_url != '' %}
+            {% assign bundle_href = exercise_links.section_bundle_payhip_url %}
+        {% elsif exercise_links and exercise_links.unit_bundle_payhip_url and exercise_links.unit_bundle_payhip_url != '' %}
+            {% assign bundle_href = exercise_links.unit_bundle_payhip_url %}
+        {% endif %}
+
         {% if exercise_links or board_slug != '' %}
-        <section id="resource-loop" class="mt-8 rounded-xl border border-gray-200 bg-white p-5">
-            <h2 class="text-xl font-bold text-gray-900">Continue This Topic Loop</h2>
+        <section id="resource-loop" class="resource-loop {{ loop_theme_class }} mt-8 rounded-xl border border-gray-200 bg-white p-5">
+            <h2 class="text-xl font-semibold text-gray-900">Continue This Topic Loop</h2>
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
-            <div class="mt-4 flex flex-wrap gap-3">
-                <a href="{{ exercises_hub_url }}" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Try Another Interactive Exercise</a>
-                <span id="next-exercise-link-slot"></span>
-                {% if board_slug != '' %}
-                <a href="{{ board_directory_url | relative_url }}" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Back to {{ board_directory_label }}</a>
-                {% endif %}
-                {% if exercise_links and exercise_links.kahoot_url and exercise_links.kahoot_url != '' %}
-                <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="inline-flex items-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Play Matching Kahoot</a>
-                {% endif %}
-                {% if exercise_links and exercise_links.worksheet_payhip_url and exercise_links.worksheet_payhip_url != '' %}
-                <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Get Matching Worksheet</a>
-                {% endif %}
-                {% if exercise_links and exercise_links.bundle_url and exercise_links.bundle_url != '' %}
-                <a href="{{ exercise_links.bundle_url }}" data-track-action="bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Explore Bundle</a>
-                {% elsif exercise_links and exercise_links.section_bundle_payhip_url and exercise_links.section_bundle_payhip_url != '' %}
-                <a href="{{ exercise_links.section_bundle_payhip_url }}" data-track-action="section_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Explore Section Bundle</a>
-                {% elsif exercise_links and exercise_links.unit_bundle_payhip_url and exercise_links.unit_bundle_payhip_url != '' %}
-                <a href="{{ exercise_links.unit_bundle_payhip_url }}" data-track-action="unit_bundle" class="inline-flex items-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Explore Unit Bundle</a>
-                {% endif %}
+            <div class="mt-4 space-y-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div id="previous-exercise-link-slot">
+                        <span class="loop-btn-base loop-btn-primary loop-btn-disabled">Previous in Syllabus</span>
+                    </div>
+                    <div id="next-exercise-link-slot">
+                        <span class="loop-btn-base loop-btn-primary loop-btn-disabled">Next in Syllabus</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <a href="{{ exercises_hub_url }}" data-track-action="try_another" class="loop-btn-base loop-btn-soft exercise-warm-primary">Try Another Interactive Exercise</a>
+                    <a href="{{ board_directory_url | relative_url }}" data-track-action="board_directory" class="loop-btn-base loop-btn-soft exercise-warm-secondary">Back to {{ board_directory_label }}</a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {% if exercise_links and exercise_links.kahoot_url and exercise_links.kahoot_url != '' %}
+                    <a href="{{ exercise_links.kahoot_url }}" data-track-action="kahoot" class="loop-btn-base loop-btn-kahoot exercise-kahoot-bridge">Playing Matching Kahoot</a>
+                    {% else %}
+                    <span class="loop-btn-base loop-btn-kahoot loop-btn-disabled exercise-kahoot-bridge">Playing Matching Kahoot</span>
+                    {% endif %}
+
+                    {% if exercise_links and exercise_links.worksheet_payhip_url and exercise_links.worksheet_payhip_url != '' %}
+                    <a href="{{ exercise_links.worksheet_payhip_url }}" data-track-action="worksheet" class="loop-btn-base loop-btn-soft">Get Matching Worksheet</a>
+                    {% else %}
+                    <span class="loop-btn-base loop-btn-soft loop-btn-disabled">Get Matching Worksheet</span>
+                    {% endif %}
+
+                    {% if bundle_href != '' %}
+                    <a href="{{ bundle_href }}" data-track-action="bundle" class="loop-btn-base loop-btn-soft">Explore Bundle</a>
+                    {% else %}
+                    <span class="loop-btn-base loop-btn-soft loop-btn-disabled">Explore Bundle</span>
+                    {% endif %}
+                </div>
             </div>
         </section>
         {% endif %}
     </main>
+
+    {% include bilingual-floating-toggle.html %}
 
     {% include footer.html %}
     {% include mobile-menu-js.html %}
@@ -111,6 +143,10 @@
         const exerciseTopicSlug = {{ page.topic | jsonify }};
         const exerciseLane = {{ exercise_lane_json | strip }};
         const exerciseCurrentSubtopicId = {{ page.subtopic_id | jsonify }};
+        const exerciseBoardSlug = {{ board_slug | jsonify }};
+        const exerciseBoardDirectoryUrl = {{ board_directory_url | relative_url | jsonify }};
+        const exerciseBoardDirectoryLabel = {{ board_directory_label | jsonify }};
+        const exerciseHubUrl = {{ exercises_hub_url | jsonify }};
         const exerciseMetaData = {
             title: {{ page.title | jsonify }},
             subtitle: {{ page.subtitle | default: "" | jsonify }},
@@ -120,5 +156,6 @@
         };
     </script>
     <script src="{{ '/assets/js/exercise_engine.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/achievement_toast.js' | relative_url }}"></script>
 </body>
 </html>

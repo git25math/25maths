@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - C1.7 Indices I
 
 ## Kahoot Name
-Edexcel 4MA1 C1.7 | Indices I | Higher Tier
+CIE 0580 C1.7 | Indices I | Core Track
 
 ## Kahoot Description
-C1.7 Indices I exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+C1.7 Indices I exam-style practice for CIE 0580 (Core). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Number #C17 #ExamStyleMaths
+#CIE0580 #CoreTrack #Number #C17 #ExamStyleMaths

@@ -17,6 +17,9 @@ _site/
 # Logs
 *.log
 
+# Local temp output
+.tmp/
+
 # Python bytecode cache
 __pycache__/
 
@@ -35,3 +38,22 @@ projects/kahoot-channel/agent/reports/
 projects/kahoot-channel/_templates/worksheet-pdf-template.aux
 projects/kahoot-channel/_templates/worksheet-pdf-template.out
 projects/kahoot-channel/_templates/worksheet-pdf-template.pdf
+
+# Multi-agent planning run outputs
+plan/member-agent-runs/
+
+# LaTeX build artifacts
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Root-level LaTeX worksheet outputs (compiled elsewhere)
+/F*.pdf
+/F*.out
+
+# Week Pack build output
+build/
+
+# Claude Code worktrees
+.claude/worktrees/

@@ -1,22 +1,22 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E2.11 Sketching curves
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply sketching curves methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply sketching curves methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
-Example: mean of `[15, 4, 17, 14, 7]` is `57/5 = 11.4`.
+Example: solve `3x + 7 = 41` by inverse operations. Subtract `7` then divide by `3` to get `x = 11.3333333333`.
 
 ## Practice (10)
-1. Find mean of `[8, 12, 12, 16, 12]`.
-2. Find median of `[8, 12, 12, 12, 16]`.
-3. Find range of `[8, 12, 12, 16, 12]`.
-4. A fair die is rolled. Find `P(score > 5)`.
-5. If `P(A)=0.9`, find `P(not A)`.
-6. Expected frequency if probability is `0.3` in `49` trials.
-7. State which average is least affected by outliers: mean, median, or mode.
-8. A class has 12 boys and 18 girls. Choose one at random. Find `P(girl)`.
-9. In a two-way table, 14 out of 50 students prefer algebra. Find the probability.
-10. If events are independent with `P(A)=0.4` and `P(B)=0.7`, find `P(A and B)`.
+1. Simplify `2x + 3x - 4x`.
+2. Expand and simplify `2(x + 3)`.
+3. Factorise `2x + 6` fully.
+4. Solve `2x - 3 = 11`.
+5. When `x = 7`, evaluate `2x^2 - 3x + 4`.
+6. Solve the inequality `2x + 3 >= 27`.
+7. The nth term is `2n + 4`. Find term `7`.
+8. Rearrange `y = 2x - 3` to make `x` the subject.
+9. Solve `x^2 - 13x + 42 = 0`.
+10. Given `f(x)=3x^2-2x+1`, find `f(4)`.

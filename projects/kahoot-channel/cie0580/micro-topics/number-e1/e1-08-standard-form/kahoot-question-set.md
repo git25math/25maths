@@ -1,28 +1,28 @@
 # E1.8 Kahoot Question Set - Standard form
 
 ## Metadata
-- Tier: Extended
 - Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E1.8
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | `0.00045` in standard form | `4.5x10^-5` | `4.5x10^-4` | `45x10^-5` | `0.45x10^-3` | B | Fluency |
-| 2 | `3.2x10^3` as ordinary number | 320 | 3200 | 32000 | 320000 | B | Fluency |
-| 3 | `5.6x10^-2` as decimal | 0.56 | 0.056 | 0.0056 | 56 | B | Fluency |
-| 4 | `7800000` in standard form | `7.8x10^6` | `78x10^5` | `0.78x10^7` | `7.8x10^7` | A | Fluency |
-| 5 | `9.1x10^4` equals | 9100 | 91000 | 910000 | 910 | B | Fluency |
-| 6 | `(2x10^3)(3x10^4)` | `6x10^7` | `6x10^12` | `5x10^7` | `6x10^1` | A | Method |
-| 7 | `(8x10^6)/(2x10^2)` | `4x10^4` | `4x10^8` | `16x10^8` | `4x10^3` | A | Method |
-| 8 | `0.0000072` in standard form | `7.2x10^-5` | `7.2x10^-6` | `72x10^-7` | `0.72x10^-5` | B | Method |
-| 9 | `6.4x10^-3` to ordinary form | 0.64 | 0.0064 | 0.00064 | 6400 | B | Method |
-| 10 | `2.5x10^5 + 3.1x10^5` | `5.6x10^5` | `5.6x10^10` | `0.56x10^6` | `56x10^4` | A | Method |
-| 11 | Order of magnitude of 8700 is | `10^2` | `10^3` | `10^4` | `10^5` | C | Method |
-| 12 | Distance to star is `4.1x10^8` km. This is | 41000000 km | 410000000 km | 4100000 km | 4100000000 km | B | Context |
-| 13 | Bacteria count `6.2x10^5` to nearest whole thousand | 620000 | 62000 | 600000 | 625000 | A | Context |
-| 14 | Mass `0.000092 kg` in standard form | `9.2x10^-5` | `9.2x10^-4` | `92x10^-6` | `0.92x10^-4` | A | Context |
-| 15 | Approx order of magnitude of 0.0037 is | `10^-1` | `10^-2` | `10^-3` | `10^-4` | C | Context |
+| 1 | Evaluate `34 + 10 x 3`. | 65 | 64 | 66 | 63 | B | Fluency |
+| 2 | Write `7/24 + 8/24` as a simplified fraction. | 7/8 | 6/8 | 5/9 | 5/8 | D | Fluency |
+| 3 | Calculate `2.0 + 0.11`. | 2.61 | 2.11 | 1.61 | 3.11 | B | Fluency |
+| 4 | Work out `2^6`. | 66 | 63 | 65 | 64 | D | Fluency |
+| 5 | Find `sqrt(49)`. | 7 | 9 | 8 | 6 | A | Fluency |
+| 6 | Increase `120` by `11%`. | 133.70 | 133.2 | 132.70 | 134.20 | B | Method |
+| 7 | Share `90` in the ratio `2:3` and give the larger share. | 55 | 54 | 56 | 53 | B | Method |
+| 8 | Round `831.4` to `2` significant figures. | 829 | 832 | 831 | 830 | D | Method |
+| 9 | Write `60000` in standard form. | 6 x 10^4 | 0 | Cannot be determined | No solution | A | Method |
+| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | £9.90 | Cannot be determined | 0 | No solution | A | Method |
+| 11 | Context check: Write `7/24 + 8/24` as a simplified fraction. | 6/8 | 7/8 | 5/9 | 5/8 | D | Method |
+| 12 | Context check: Work out `2^6`. | 64 | 66 | 65 | 63 | A | Context |
+| 13 | Context check: Increase `120` by `11%`. | 133.70 | 132.70 | 134.20 | 133.2 | D | Context |
+| 14 | Context check: Round `831.4` to `2` significant figures. | 832 | 829 | 830 | 831 | C | Context |
+| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | Cannot be determined | 0 | £9.90 | No solution | C | Context |
 
 ## Timer
 - Q1-Q5: 20s

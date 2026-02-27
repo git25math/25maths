@@ -1,7 +1,8 @@
 ---
+redirect_to: /cie0580/pricing.html
 layout: module
 title: 定价框架
-description: "CIE 0580 预售定价框架：围绕 L1/L2/L3 闭环的建议价区间。"
+description: "CIE 0580 练习包定价 — 专题练习、章节合集与单元合集。"
 module: cie0580
 active_page: pricing
 lang: zh-CN
@@ -16,20 +17,18 @@ lang_links:
 ---
 {% assign catalog = site.data.kahoot_presale_catalog.boards.cie0580 %}
 {% assign terms_pdf_url = catalog.terms_pdf_url | default: site.data.kahoot_presale_catalog.meta.presale_terms_pdf_url %}
+{% capture pricing_note_body %}早鸟价格限时供应，所有产品均为一次性购买，无订阅或循环扣款。{% endcapture %}
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-5xl font-semibold mb-4">CIE 0580 定价框架</h1>
-        <p class="text-xl opacity-90">用于预售阶段的建议区间，最终公开价格上线前可调整。</p>
+        <h1 class="text-5xl font-semibold mb-4">CIE 0580 定价</h1>
+        <p class="text-xl opacity-90">早鸟价格现已开放，正式上线前锁定更低价格。</p>
     </div>
 </section>
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 text-sm text-amber-900">
-            <p class="font-semibold mb-1">说明</p>
-            <p>当前价格用于建立阶梯与锚点。只要闭环结构不变，后续可以单独调整数字而不需要改整站结构。</p>
-        </div>
+        {% include ui/board-info-banner.html board='cie' title='说明' body=pricing_note_body %}
     </div>
 </section>
 
@@ -37,19 +36,19 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L1 Worksheet 单品</h3>
-                <p class="text-sm text-gray-600 mb-2">一个 SubTopic 的 MVP</p>
+                <h3 class="text-lg font-bold mb-2">专题练习</h3>
+                <p class="text-sm text-gray-600 mb-2">单个知识点专项练习</p>
                 <p class="text-sm text-gray-700">早鸟：{{ catalog.pricing.l1_early_bird }}</p>
                 <p class="text-sm text-gray-700">常规：{{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L2 小章节合集</h3>
-                <p class="text-sm text-gray-600 mb-2">同一 section 的 SubTopic 组合</p>
+                <h3 class="text-lg font-bold mb-2">章节合集</h3>
+                <p class="text-sm text-gray-600 mb-2">同一章节多个知识点打包</p>
                 <p class="text-sm text-gray-700">早鸟：{{ catalog.pricing.l2_early_bird }}</p>
                 <p class="text-sm text-gray-700">常规：{{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L3 单元合集</h3>
+                <h3 class="text-lg font-bold mb-2">单元合集</h3>
                 <p class="text-sm text-gray-600 mb-2">Core + Extended 单元包</p>
                 <p class="text-sm text-gray-700">早鸟：{{ catalog.pricing.l3_early_bird }}</p>
                 <p class="text-sm text-gray-700">常规：{{ catalog.pricing.l3_regular }}</p>
@@ -66,24 +65,21 @@ lang_links:
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-semibold text-gray-900 mb-4">复购闭环</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">如何使用</h2>
         <div class="grid md:grid-cols-3 gap-5">
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">第 1 步：入口</h3>
-                <p class="text-sm text-gray-600">先购买 L1 单个 SubTopic，快速验证产品价值。</p>
+                <h3 class="font-bold text-gray-900 mb-2">第 1 步：开始</h3>
+                <p class="text-sm text-gray-600">选择一个专题练习，即刻开始练习。</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">第 2 步：升级</h3>
-                <p class="text-sm text-gray-600">通过 L2 小章节优惠券，把单品客户升级为合集客户。</p>
+                <h3 class="font-bold text-gray-900 mb-2">第 2 步：扩展</h3>
+                <p class="text-sm text-gray-600">升级到章节合集，覆盖更多相关知识点。</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">第 3 步：留存</h3>
-                <p class="text-sm text-gray-600">对有需求的客户发放双语词卡与双语增强升级券，促成 L3 与复购。</p>
+                <h3 class="font-bold text-gray-900 mb-2">第 3 步：完成</h3>
+                <p class="text-sm text-gray-600">获取完整单元包（含 Core + Extended），附赠双语词汇卡。</p>
             </div>
         </div>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/zh-cn/cie0580/products.html" class="cie-solid-bg text-white px-6 py-3 rounded-lg font-semibold text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">打开产品架构</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">打开预售说明 PDF</a>
-        </div>
+        {% include ui/board-dual-actions.html board='cie' wrapper_class='mt-8 flex flex-col sm:flex-row gap-4' primary_href='/zh-cn/cie0580/products.html' primary_label='查看全部产品' secondary_href=terms_pdf_url secondary_target='_blank' secondary_rel='noopener' secondary_label='查看条款 PDF' %}
     </div>
 </section>

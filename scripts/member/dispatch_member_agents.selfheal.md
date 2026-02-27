@@ -22,3 +22,8 @@
 - Signature: supabase_migration_history_mismatch_8_digit_version
 - Fix: renamed migration `20260218_member_system_mvp.sql` -> `20260218000000_member_system_mvp.sql`, repaired remote history (`reverted 20260218`, `applied 20260218000000`), then revalidated `supabase db push --include-all`
 - Recorded at: 2026-02-18T23:38:00Z
+## 20260218T205415Z | commander-repair
+- Signature: supabase_cli_parallel_auth_race
+- Fix: added `dispatch_member_agents.sh gate` command that runs `supabase migration list --linked` and `supabase db push --include-all` sequentially (plus build/node/health checks), avoiding parallel auth contention.
+- Recorded at: 2026-02-18T20:58:00Z
+

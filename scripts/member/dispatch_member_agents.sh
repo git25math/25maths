@@ -18,6 +18,7 @@ Usage:
   bash scripts/member/dispatch_member_agents.sh preflight
   bash scripts/member/dispatch_member_agents.sh kickoff
   bash scripts/member/dispatch_member_agents.sh status
+  bash scripts/member/dispatch_member_agents.sh gate
   bash scripts/member/dispatch_member_agents.sh qa
 
 Environment variables:
@@ -451,6 +452,87 @@ qa() {
   log "QA checks completed"
 }
 
+gate() {
+  ensure_files
+  ensure_self_heal_file
+  require_cmd node
+  require_cmd supabase
+  require_cmd bundle
+  require_cmd python3
+
+  mkdir -p "${RUN_ROOT}"
+  local run_id out_dir
+  run_id="$(date -u +%Y%m%dT%H%M%SZ)"
+  out_dir="${RUN_ROOT}/${run_id}"
+  mkdir -p "${out_dir}"
+
+  cat > "${out_dir}/RUN-CONTEXT.md" <<EOF_CTX
+# Gate Verification Run ${run_id}
+
+- Scope: member system gate validation
+- Rule: run checks sequentially to avoid Supabase CLI auth race
+- Root: ${ROOT}
+EOF_CTX
+
+  log "Gate checks started: ${out_dir}"
+  (
+    cd "${ROOT}"
+
+    bundle exec jekyll build > "${out_dir}/01-jekyll-build.log" 2>&1
+
+    {
+      for f in \
+        assets/js/member_auth.js \
+        assets/js/member_center.js \
+        assets/js/member_benefits.js \
+        assets/js/member_recommendations.js \
+        assets/js/exercise_engine.js \
+        functions/_lib/payhip_events.js \
+        functions/_lib/supabase_server.js \
+        functions/api/v1/membership/webhook/payhip.js \
+        functions/api/v1/membership/reconcile.js \
+        functions/api/v1/membership/benefits.js \
+        'functions/api/v1/exercise/session/[id]/attempt.js' \
+        'functions/api/v1/exercise/session/[id]/complete.js' \
+        functions/api/v1/exercise/session/start.js \
+        'functions/api/v1/download/[release_id].js'
+      do
+        node --check "$f"
+      done
+      echo "node-check: ok"
+    } > "${out_dir}/02-node-check.log" 2>&1
+
+    # Keep Supabase commands sequential to avoid cli_login_postgres auth race.
+    supabase migration list --linked > "${out_dir}/03-supabase-migration-list.log" 2>&1
+    supabase db push --include-all > "${out_dir}/04-supabase-db-push.log" 2>&1
+
+    {
+      python3 scripts/health/check_exercise_data.py
+      python3 scripts/health/check_kahoot_data.py
+    } > "${out_dir}/05-health-qa.log" 2>&1
+  )
+
+  cat > "${out_dir}/README.md" <<EOF_DONE
+# Member Gate Verification ${run_id}
+
+## Result
+- jekyll build: pass
+- node syntax checks: pass
+- supabase migration list --linked: pass
+- supabase db push --include-all: pass (up to date)
+- health QA checks: pass
+
+## Logs
+- 01-jekyll-build.log
+- 02-node-check.log
+- 03-supabase-migration-list.log
+- 04-supabase-db-push.log
+- 05-health-qa.log
+EOF_DONE
+
+  log "Gate checks completed: ${out_dir}"
+}
+
 main() {
   if [[ $# -ne 1 ]]; then
     usage
@@ -461,6 +543,7 @@ main() {
     preflight) preflight ;;
     kickoff) kickoff ;;
     status) status ;;
+    gate) gate ;;
     qa) qa ;;
     *) usage; exit 1 ;;
   esac

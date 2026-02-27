@@ -1,10 +1,10 @@
 # Kahoot Listing Copy - C4.2 Geometrical constructions
 
 ## Kahoot Name
-Edexcel 4MA1 C4.2 | Geometrical constructions | Higher Tier
+CIE 0580 C4.2 | Geometrical constructions | Core Track
 
 ## Kahoot Description
-C4.2 Geometrical constructions exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
+C4.2 Geometrical constructions exam-style practice for CIE 0580 (Core). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
 
 ## Tags
-#Edexcel4MA1 #HigherTrack #Geometry #C42 #ExamStyleMaths
+#CIE0580 #CoreTrack #Geometry #C42 #ExamStyleMaths

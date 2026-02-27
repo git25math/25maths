@@ -1,0 +1,230 @@
+{
+  "_comment": "Week 02 practice questions covering Number (Types of Number, Powers, Roots and Indices) for CIE 0580.",
+  "week_number": 2,
+  "topic": "Number: Types, Powers, Roots & Indices",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week02-number-powers-indices-2026w11",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:number-c1:c1-01-types-of-number",
+    "cie0580:number-c1:c1-03-powers-and-roots",
+    "cie0580:number-c1:c1-07-indices-i"
+  ],
+  "syllabus_refs": ["C1.1", "C1.3", "C1.7", "E1.1", "E1.7"],
+  "key_vocabulary": [
+    { "term_en": "Factor", "term_zh": "因数", "definition": "A whole number that divides exactly into another number.", "definition_zh": "能整除另一个数的整数。" },
+    { "term_en": "Multiple", "term_zh": "倍数", "definition": "The result of multiplying a number by a whole number.", "definition_zh": "一个数乘以整数所得的结果。" },
+    { "term_en": "Prime Number", "term_zh": "质数", "definition": "A number greater than 1 that has exactly two factors: 1 and itself.", "definition_zh": "大于1且恰好只有两个因数（1和它本身）的数。" },
+    { "term_en": "Composite Number", "term_zh": "合数", "definition": "A number that has more than two factors.", "definition_zh": "有两个以上因数的数。" },
+    { "term_en": "Integer", "term_zh": "整数", "definition": "A whole number, which can be positive, negative, or zero.", "definition_zh": "整数，可以是正数、负数或零。" },
+    { "term_en": "Natural Number", "term_zh": "自然数", "definition": "A positive whole number: 1, 2, 3, 4, ...", "definition_zh": "正整数: 1, 2, 3, 4, ..." },
+    { "term_en": "Rational Number", "term_zh": "有理数", "definition": "A number that can be written as a fraction of two integers.", "definition_zh": "可以写成两个整数之比的数。" },
+    { "term_en": "Irrational Number", "term_zh": "无理数", "definition": "A number that cannot be written as a fraction of two integers.", "definition_zh": "不能写成两个整数之比的数。" },
+    { "term_en": "HCF", "term_zh": "最大公因数", "definition": "Highest Common Factor — the largest number that divides into two or more numbers.", "definition_zh": "最大公因数——能整除两个或多个数的最大数。" },
+    { "term_en": "LCM", "term_zh": "最小公倍数", "definition": "Lowest Common Multiple — the smallest number that is a multiple of two or more numbers.", "definition_zh": "最小公倍数——两个或多个数的公共倍数中最小的一个。" },
+    { "term_en": "Prime Factorisation", "term_zh": "质因数分解", "definition": "Writing a number as a product of its prime factors.", "definition_zh": "将一个数写成其质因数的乘积。" },
+    { "term_en": "Index (plural: Indices)", "term_zh": "指数", "definition": "The small number written above and to the right of a base number, showing how many times to multiply it by itself.", "definition_zh": "写在底数右上方的小数字，表示底数自乘的次数。" },
+    { "term_en": "Power", "term_zh": "幂", "definition": "The result of raising a base to an index.", "definition_zh": "底数的指数次方的结果。" },
+    { "term_en": "Base", "term_zh": "底数", "definition": "The number that is raised to a power.", "definition_zh": "被乘方的数。" },
+    { "term_en": "Square Number", "term_zh": "平方数", "definition": "The result of multiplying a whole number by itself.", "definition_zh": "一个整数乘以自身所得的结果。" },
+    { "term_en": "Cube Number", "term_zh": "立方数", "definition": "The result of multiplying a whole number by itself three times.", "definition_zh": "一个整数自乘三次所得的结果。" },
+    { "term_en": "Square Root", "term_zh": "平方根", "definition": "A value that, when multiplied by itself, gives the original number.", "definition_zh": "一个数自乘后等于原数的值。" },
+    { "term_en": "Cube Root", "term_zh": "立方根", "definition": "A value that, when multiplied by itself three times, gives the original number.", "definition_zh": "一个数自乘三次后等于原数的值。" },
+    { "term_en": "Reciprocal", "term_zh": "倒数", "definition": "The quantity obtained by dividing 1 by a given number.", "definition_zh": "用1除以给定数所得的量。" },
+    { "term_en": "Product", "term_zh": "乘积", "definition": "The result of multiplying two or more numbers together.", "definition_zh": "两个或多个数相乘的结果。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Types of number"],
+      "question": {
+        "en": "(a) Write down all the factors of 36.\n\n(b) From your list, write down the prime factors of 36.",
+        "zh": "(a) 写出 36 的所有因数。\n\n(b) 从你的列表中，写出 36 的质因数。"
+      },
+      "answer": { "en": "(a) 1, 2, 3, 4, 6, 9, 12, 18, 36\n(b) 2, 3", "zh": "(a) 1, 2, 3, 4, 6, 9, 12, 18, 36\n(b) 2, 3" },
+      "solution": {
+        "en": ["(a) Find factor pairs by starting from 1: `1 \\times 36`, `2 \\times 18`, `3 \\times 12`, `4 \\times 9`, `6 \\times 6`.", "List all factors in order: 1, 2, 3, 4, 6, 9, 12, 18, 36.", "(b) From the list, the prime numbers are 2 and 3."],
+        "zh": ["(a) 从1开始找因数对: `1 \\times 36`, `2 \\times 18`, `3 \\times 12`, `4 \\times 9`, `6 \\times 6`。", "按顺序列出所有因数: 1, 2, 3, 4, 6, 9, 12, 18, 36。", "(b) 从列表中，质数是 2 和 3。"]
+      },
+      "common_mistake": { "en": "Missing a factor pair, especially 4 and 9.", "zh": "遗漏因数对，尤其是4和9。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Prime factorisation"],
+      "question": {
+        "en": "Express 180 as a product of its prime factors. Give your answer in index notation.",
+        "zh": "将 180 表示为质因数的乘积。用指数形式表示你的答案。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[level distance=1.2cm, sibling distance=2cm,",
+        "  every node/.style={draw, circle, minimum size=7mm, inner sep=1pt, font=\\small}]",
+        "  \\node {180}",
+        "    child {node {2}}",
+        "    child {node {90}",
+        "      child {node {2}}",
+        "      child {node {45}",
+        "        child {node {3}}",
+        "        child {node {15}",
+        "          child {node {3}}",
+        "          child {node {5}}",
+        "        }",
+        "      }",
+        "    };",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "`2^2 \\times 3^2 \\times 5`", "zh": "`2^2 \\times 3^2 \\times 5`" },
+      "solution": {
+        "en": ["Divide by the smallest prime: `180 \\div 2 = 90`.", "`90 \\div 2 = 45`.", "`45 \\div 3 = 15`.", "`15 \\div 3 = 5`.", "5 is prime, so stop.", "`180 = 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^2 \\times 3^2 \\times 5`."],
+        "zh": ["从最小的质数开始除: `180 \\div 2 = 90`。", "`90 \\div 2 = 45`。", "`45 \\div 3 = 15`。", "`15 \\div 3 = 5`。", "5 是质数，停止。", "`180 = 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^2 \\times 3^2 \\times 5`。"]
+      },
+      "common_mistake": { "en": "Using non-prime factors such as 4 or 6 in the factorisation.", "zh": "在分解中使用非质因数，如4或6。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["HCF and LCM"],
+      "question": {
+        "en": "Find the Highest Common Factor (HCF) and Lowest Common Multiple (LCM) of 24 and 36.",
+        "zh": "求 24 和 36 的最大公因数（HCF）和最小公倍数（LCM）。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}",
+        "  \\draw (0,0) circle (1.5cm) node[above left=1.2cm, font=\\small\\bfseries] {24};",
+        "  \\draw (2,0) circle (1.5cm) node[above right=1.2cm, font=\\small\\bfseries] {36};",
+        "  \\node[font=\\small] at (-0.7,0) {$2$};",
+        "  \\node[font=\\small] at (1,0.3) {$2$};",
+        "  \\node[font=\\small] at (1,-0.3) {$2 \\times 3$};",
+        "  \\node[font=\\small] at (2.7,0) {$3$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "HCF = 12, LCM = 72", "zh": "HCF = 12, LCM = 72" },
+      "solution": {
+        "en": ["Find the prime factorisation of each number: `24 = 2^3 \\times 3` and `36 = 2^2 \\times 3^2`.", "HCF: take the lowest power of each common prime factor: `2^2 \\times 3 = 12`.", "LCM: take the highest power of each prime factor: `2^3 \\times 3^2 = 72`."],
+        "zh": ["分别进行质因数分解: `24 = 2^3 \\times 3`，`36 = 2^2 \\times 3^2`。", "HCF: 取每个公共质因数的最低幂次: `2^2 \\times 3 = 12`。", "LCM: 取每个质因数的最高幂次: `2^3 \\times 3^2 = 72`。"]
+      },
+      "common_mistake": { "en": "Confusing HCF and LCM — taking the highest powers for HCF instead of the lowest.", "zh": "混淆 HCF 和 LCM——求 HCF 时取了最高幂次而不是最低幂次。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Powers"],
+      "question": {
+        "en": "(a) Calculate `2^4 \\times 3^2`.\n\n(b) Calculate `5^3`.",
+        "zh": "(a) 计算 `2^4 \\times 3^2`。\n\n(b) 计算 `5^3`。"
+      },
+      "answer": { "en": "(a) 144\n(b) 125", "zh": "(a) 144\n(b) 125" },
+      "solution": {
+        "en": ["(a) `2^4 = 2 \\times 2 \\times 2 \\times 2 = 16`.", "`3^2 = 3 \\times 3 = 9`.", "`16 \\times 9 = 144`.", "(b) `5^3 = 5 \\times 5 \\times 5 = 125`."],
+        "zh": ["(a) `2^4 = 2 \\times 2 \\times 2 \\times 2 = 16`。", "`3^2 = 3 \\times 3 = 9`。", "`16 \\times 9 = 144`。", "(b) `5^3 = 5 \\times 5 \\times 5 = 125`。"]
+      },
+      "common_mistake": { "en": "Calculating `2^4` as `2 \\times 4 = 8` instead of `2 \\times 2 \\times 2 \\times 2 = 16`.", "zh": "将 `2^4` 计算为 `2 \\times 4 = 8`，而不是 `2 \\times 2 \\times 2 \\times 2 = 16`。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Roots"],
+      "question": {
+        "en": "Calculate `\\sqrt{225} - \\sqrt[3]{64}`.",
+        "zh": "计算 `\\sqrt{225} - \\sqrt[3]{64}`。"
+      },
+      "answer": { "en": "11", "zh": "11" },
+      "solution": {
+        "en": ["`\\sqrt{225} = 15` because `15 \\times 15 = 225`.", "`\\sqrt[3]{64} = 4` because `4 \\times 4 \\times 4 = 64`.", "`15 - 4 = 11`."],
+        "zh": ["`\\sqrt{225} = 15`，因为 `15 \\times 15 = 225`。", "`\\sqrt[3]{64} = 4`，因为 `4 \\times 4 \\times 4 = 64`。", "`15 - 4 = 11`。"]
+      },
+      "common_mistake": { "en": "Confusing square root with cube root, or not knowing that `\\sqrt[3]{64} = 4`.", "zh": "混淆平方根和立方根，或不知道 `\\sqrt[3]{64} = 4`。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Index laws"],
+      "question": {
+        "en": "Simplify `p^5 \\times p^3 \\div p^2`.",
+        "zh": "化简 `p^5 \\times p^3 \\div p^2`。"
+      },
+      "answer": { "en": "`p^6`", "zh": "`p^6`" },
+      "solution": {
+        "en": ["When multiplying, add the indices: `p^5 \\times p^3 = p^{5+3} = p^8`.", "When dividing, subtract the indices: `p^8 \\div p^2 = p^{8-2} = p^6`."],
+        "zh": ["乘法时，指数相加: `p^5 \\times p^3 = p^{5+3} = p^8`。", "除法时，指数相减: `p^8 \\div p^2 = p^{8-2} = p^6`。"]
+      },
+      "common_mistake": { "en": "Multiplying the indices instead of adding: writing `p^{15}` instead of `p^8`.", "zh": "将指数相乘而不是相加: 写成 `p^{15}` 而不是 `p^8`。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Index laws"],
+      "question": {
+        "en": "Simplify `\\dfrac{15a^4 b^3}{5a^2 b}`.",
+        "zh": "化简 `\\dfrac{15a^4 b^3}{5a^2 b}`。"
+      },
+      "answer": { "en": "`3a^2 b^2`", "zh": "`3a^2 b^2`" },
+      "solution": {
+        "en": ["Divide the coefficients: `15 \\div 5 = 3`.", "Subtract the indices for `a`: `a^{4-2} = a^2`.", "Subtract the indices for `b`: `b^{3-1} = b^2`.", "Result: `3a^2 b^2`."],
+        "zh": ["系数相除: `15 \\div 5 = 3`。", "`a` 的指数相减: `a^{4-2} = a^2`。", "`b` 的指数相减: `b^{3-1} = b^2`。", "结果: `3a^2 b^2`。"]
+      },
+      "common_mistake": { "en": "Forgetting to simplify the coefficient, or writing `b^3` instead of `b^2`.", "zh": "忘记化简系数，或将 `b^3` 写成而不是 `b^2`。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Prime factorisation", "HCF and LCM"],
+      "question": {
+        "en": "Using prime factorisation, find the HCF and LCM of 72 and 120.",
+        "zh": "用质因数分解法，求 72 和 120 的最大公因数（HCF）和最小公倍数（LCM）。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}",
+        "  \\draw (0,0) circle (1.5cm) node[above left=1.2cm, font=\\small\\bfseries] {72};",
+        "  \\draw (2,0) circle (1.5cm) node[above right=1.2cm, font=\\small\\bfseries] {120};",
+        "  \\node[font=\\small] at (-0.7,0) {$3$};",
+        "  \\node[font=\\small] at (1,0.3) {$2$};",
+        "  \\node[font=\\small] at (1,-0.3) {$2 \\times 2 \\times 3$};",
+        "  \\node[font=\\small] at (2.7,0) {$5$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "HCF = 24, LCM = 360", "zh": "HCF = 24, LCM = 360" },
+      "solution": {
+        "en": ["Prime factorisation: `72 = 2^3 \\times 3^2` and `120 = 2^3 \\times 3 \\times 5`.", "HCF: take the lowest power of each common prime: `2^3 \\times 3 = 24`.", "LCM: take the highest power of every prime: `2^3 \\times 3^2 \\times 5 = 360`.", "Check: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`. ✓"],
+        "zh": ["质因数分解: `72 = 2^3 \\times 3^2`，`120 = 2^3 \\times 3 \\times 5`。", "HCF: 取每个公共质因数的最低幂次: `2^3 \\times 3 = 24`。", "LCM: 取每个质因数的最高幂次: `2^3 \\times 3^2 \\times 5 = 360`。", "验证: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`。✓"]
+      },
+      "common_mistake": { "en": "Incorrectly factorising 72 or 120, e.g., writing `72 = 2^2 \\times 3^2` (missing a factor of 2).", "zh": "72 或 120 的质因数分解错误，例如写成 `72 = 2^2 \\times 3^2`（少了一个因数2）。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Negative and zero indices"],
+      "question": {
+        "en": "Evaluate `\\left(\\dfrac{2}{3}\\right)^{-2} + 4^0 \\times 2^{-3}`.",
+        "zh": "计算 `\\left(\\dfrac{2}{3}\\right)^{-2} + 4^0 \\times 2^{-3}`。"
+      },
+      "answer": { "en": "`\\dfrac{19}{8}` or `2~\\dfrac{3}{8}`", "zh": "`\\dfrac{19}{8}` 或 `2~\\dfrac{3}{8}`" },
+      "solution": {
+        "en": ["A negative index means take the reciprocal: `\\left(\\dfrac{2}{3}\\right)^{-2} = \\left(\\dfrac{3}{2}\\right)^{2} = \\dfrac{9}{4}`.", "Any number to the power of 0 is 1: `4^0 = 1`.", "Negative index: `2^{-3} = \\dfrac{1}{2^3} = \\dfrac{1}{8}`.", "So: `\\dfrac{9}{4} + 1 \\times \\dfrac{1}{8} = \\dfrac{9}{4} + \\dfrac{1}{8} = \\dfrac{18}{8} + \\dfrac{1}{8} = \\dfrac{19}{8}`."],
+        "zh": ["负指数表示取倒数: `\\left(\\dfrac{2}{3}\\right)^{-2} = \\left(\\dfrac{3}{2}\\right)^{2} = \\dfrac{9}{4}`。", "任何数的0次方等于1: `4^0 = 1`。", "负指数: `2^{-3} = \\dfrac{1}{2^3} = \\dfrac{1}{8}`。", "所以: `\\dfrac{9}{4} + 1 \\times \\dfrac{1}{8} = \\dfrac{9}{4} + \\dfrac{1}{8} = \\dfrac{18}{8} + \\dfrac{1}{8} = \\dfrac{19}{8}`。"]
+      },
+      "common_mistake": { "en": "Applying the negative index only to the numerator of the fraction, getting `\\dfrac{1}{4} \\div 9` instead of `\\dfrac{9}{4}`.", "zh": "只对分数的分子取负指数，得到 `\\dfrac{1}{4} \\div 9` 而不是 `\\dfrac{9}{4}`。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Fractional indices"],
+      "question": {
+        "en": "Evaluate `27^{\\frac{2}{3}} \\times 16^{-\\frac{1}{4}}`.",
+        "zh": "计算 `27^{\\frac{2}{3}} \\times 16^{-\\frac{1}{4}}`。"
+      },
+      "answer": { "en": "`\\dfrac{9}{2}` or 4.5", "zh": "`\\dfrac{9}{2}` 或 4.5" },
+      "solution": {
+        "en": ["For `27^{\\frac{2}{3}}`: the denominator 3 means cube root, the numerator 2 means square.", "`27^{\\frac{1}{3}} = \\sqrt[3]{27} = 3`, then `3^2 = 9`. So `27^{\\frac{2}{3}} = 9`.", "For `16^{-\\frac{1}{4}}`: the fraction `\\frac{1}{4}` means fourth root, the negative means reciprocal.", "`16^{\\frac{1}{4}} = \\sqrt[4]{16} = 2`, so `16^{-\\frac{1}{4}} = \\dfrac{1}{2}`.", "`9 \\times \\dfrac{1}{2} = \\dfrac{9}{2} = 4.5`."],
+        "zh": ["对于 `27^{\\frac{2}{3}}`: 分母3表示取立方根，分子2表示平方。", "`27^{\\frac{1}{3}} = \\sqrt[3]{27} = 3`，然后 `3^2 = 9`。所以 `27^{\\frac{2}{3}} = 9`。", "对于 `16^{-\\frac{1}{4}}`: 分数 `\\frac{1}{4}` 表示取四次方根，负号表示取倒数。", "`16^{\\frac{1}{4}} = \\sqrt[4]{16} = 2`，所以 `16^{-\\frac{1}{4}} = \\dfrac{1}{2}`。", "`9 \\times \\dfrac{1}{2} = \\dfrac{9}{2} = 4.5`。"]
+      },
+      "common_mistake": { "en": "Applying the fractional index in the wrong order: squaring 27 first (729) then taking the cube root.", "zh": "分数指数运算顺序错误: 先将27平方（729）再取立方根。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Index laws"],
+      "question": {
+        "en": "Simplify `\\dfrac{(2x^3)^2 \\times 3x^5}{6x^7}`. Give your answer in the form `ax^n`.",
+        "zh": "化简 `\\dfrac{(2x^3)^2 \\times 3x^5}{6x^7}`。用 `ax^n` 的形式表示你的答案。"
+      },
+      "answer": { "en": "`2x^4`", "zh": "`2x^4`" },
+      "solution": {
+        "en": ["Expand the bracket: `(2x^3)^2 = 2^2 \\times (x^3)^2 = 4x^6`.", "Multiply the numerator: `4x^6 \\times 3x^5 = 12x^{6+5} = 12x^{11}`.", "Divide by the denominator: `\\dfrac{12x^{11}}{6x^7} = 2x^{11-7} = 2x^4`."],
+        "zh": ["展开括号: `(2x^3)^2 = 2^2 \\times (x^3)^2 = 4x^6`。", "分子相乘: `4x^6 \\times 3x^5 = 12x^{6+5} = 12x^{11}`。", "除以分母: `\\dfrac{12x^{11}}{6x^7} = 2x^{11-7} = 2x^4`。"]
+      },
+      "common_mistake": { "en": "Only squaring `x^3` but not the coefficient 2, getting `2x^6` instead of `4x^6`.", "zh": "只对 `x^3` 取平方而忘记对系数2取平方，得到 `2x^6` 而不是 `4x^6`。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can identify factors, multiples, and prime numbers.", "zh": "我能识别因数、倍数和质数。" },
+    { "en": "I can write a number as a product of prime factors using index notation.", "zh": "我能用指数形式将一个数写成质因数的乘积。" },
+    { "en": "I can find the HCF and LCM of two numbers.", "zh": "我能求两个数的最大公因数和最小公倍数。" },
+    { "en": "I can evaluate powers, square roots, and cube roots.", "zh": "我能计算幂、平方根和立方根。" },
+    { "en": "I can use index laws to simplify expressions.", "zh": "我能运用指数法则化简表达式。" },
+    { "en": "I can evaluate expressions with negative and zero indices (Extended).", "zh": "我能计算含负指数和零指数的表达式（拓展）。" },
+    { "en": "I can evaluate fractional indices (Extended).", "zh": "我能计算分数指数（拓展）。" }
+  ]
+}

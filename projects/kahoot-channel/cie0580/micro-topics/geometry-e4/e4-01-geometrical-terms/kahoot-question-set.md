@@ -1,15 +1,15 @@
 # E4.1 Kahoot Question Set - Geometrical terms
 
 ## Metadata
-- Board: Edexcel 4MA1
-- Tier: Higher
+- Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E4.1
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Find third angle in a triangle with angles `64°` and `46°`. | 71 | 69 | 72 | 70 | D | Fluency |
-| 2 | Find sum of interior angles of a `7`-sided polygon. | 902 | 901 | 899 | 900 | D | Fluency |
+| 1 | Find third angle in a triangle with angles `64°` and `46°`. | 71 | 69 | 70 | 72 | C | Fluency |
+| 2 | Find sum of interior angles of a `7`-sided polygon. | 899 | 901 | 902 | 900 | D | Fluency |
 | 3 | State the order of rotational symmetry of a regular hexagon. | 8 | 5 | 7 | 6 | D | Fluency |
 | 4 | Find perimeter of rectangle `15 cm` by `19 cm`. | Cannot be determined | No solution | 0 | 68 cm | D | Fluency |
 | 5 | Find area of circle radius `7 cm` in terms of `pi`. | 0 | Cannot be determined | 49pi cm^2 | No solution | C | Fluency |

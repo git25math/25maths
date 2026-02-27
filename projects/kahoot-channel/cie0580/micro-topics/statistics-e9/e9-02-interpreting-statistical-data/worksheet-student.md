@@ -1,10 +1,10 @@
-# Edexcel 4MA1 Worksheet (Student)
+# CIE 0580 Worksheet (Student)
 ## E9.2 Interpreting statistical data
 
 Name: ____________________   Date: ____________________
 
 ## Syllabus focus
-- Apply interpreting statistical data methods accurately in Edexcel 4MA1 Higher exam questions.
+- Apply interpreting statistical data methods accurately in CIE 0580 Extended exam questions.
 
 ## Model example
 Example: mean of `[5, 11, 11, 14, 8]` is `49/5 = 9.8`.

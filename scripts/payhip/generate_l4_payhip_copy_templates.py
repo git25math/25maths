@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_L4_CSV = ROOT / "payhip/presale/kahoot-payhip-listings-l4.csv"
 DEFAULT_OUT_CSV = ROOT / "payhip/presale/kahoot-payhip-l4-copy-template.csv"
 DEFAULT_OUT_MD = ROOT / "payhip/presale/kahoot-payhip-l4-copy-template.md"
+L1_ANCHOR_USD = 3
 
 OUT_COLUMNS = [
     "sku",
@@ -60,14 +61,88 @@ def date_long(date_text: str) -> str:
             return date_text
 
 
+def parse_int(text: str) -> int:
+    value = str(text or "").strip()
+    if not value:
+        return 0
+    try:
+        return int(value)
+    except ValueError:
+        return 0
+
+
+def parse_price_usd(text: str) -> float:
+    value = "".join(ch for ch in str(text or "") if ch.isdigit() or ch == ".")
+    if not value:
+        return 0.0
+    try:
+        return float(value)
+    except ValueError:
+        return 0.0
+
+
+def usd(amount: float) -> str:
+    rounded = round(amount, 2)
+    if rounded.is_integer():
+        return f"US${int(rounded)}"
+    return f"US${rounded:.2f}"
+
+
+def all_units_value_line(row: dict) -> str:
+    subtopic_count = parse_int(row.get("subtopic_count", ""))
+    singles_total = subtopic_count * L1_ANCHOR_USD
+    bundle_price = parse_price_usd(row.get("price_early_bird", ""))
+    if bundle_price <= 0:
+        return "Full-board bundle value is positioned around complete progression and support."
+    if singles_total > bundle_price:
+        return (
+            f"L1 singles total {usd(singles_total)}; "
+            f"L4 early-bird {usd(bundle_price)} (save {usd(singles_total - bundle_price)})."
+        )
+    if singles_total == bundle_price:
+        return (
+            f"Same entry price as buying L1 separately ({usd(bundle_price)}), "
+            "with complete board-level workflow and support."
+        )
+    return (
+        f"Board-complete package pricing is based on full roadmap support "
+        f"(L1 subtotal {usd(singles_total)})."
+    )
+
+
+def all_units_value_block(row: dict) -> str:
+    subtopic_count = parse_int(row.get("subtopic_count", ""))
+    singles_total = subtopic_count * L1_ANCHOR_USD
+    bundle_price = parse_price_usd(row.get("price_early_bird", ""))
+    if bundle_price <= 0:
+        decision_line = "- Pricing will be announced before release."
+    elif singles_total > bundle_price:
+        decision_line = f"- Savings at early-bird price: **{usd(singles_total - bundle_price)}**."
+    elif singles_total == bundle_price:
+        decision_line = "- Price break-even versus singles; added value comes from complete board workflow."
+    else:
+        decision_line = (
+            "- Pricing is built around complete-board progression, cross-unit support, and bundled delivery logic."
+        )
+
+    return (
+        "### Value positioning (L1 anchor: US$3 each)\n"
+        f"- L1 single-buy subtotal for this board: **{usd(singles_total)}** ({subtopic_count} x US$3)\n"
+        f"- L4 early-bird price: **{usd(bundle_price)}**\n"
+        f"{decision_line}"
+    )
+
+
 def build_short_description(row: dict) -> str:
     board_label = row.get("board_label", "")
     unit_count = row.get("unit_count", "")
     section_count = row.get("section_count", "")
     subtopic_count = row.get("subtopic_count", "")
+    value_line = all_units_value_line(row)
     return (
         f"Early-bird presale for the complete {board_label} all-units package. "
-        f"Includes {unit_count} units, {section_count} sections, and {subtopic_count} subtopics in one roadmap."
+        f"Includes {unit_count} units, {section_count} sections, and {subtopic_count} subtopics in one roadmap. "
+        f"{value_line}"
     )
 
 
@@ -79,6 +154,7 @@ def build_description(row: dict) -> str:
     early_bird = date_long(row.get("early_bird_end_date", ""))
     release = date_long(row.get("release_date", ""))
     bonus = row.get("bonus", "") or row.get("presale_notes", "")
+    value_block = all_units_value_block(row)
 
     return (
         f"This is the early-bird presale for the **{board_label} All-Units Mega Bundle**.\n\n"
@@ -87,6 +163,7 @@ def build_description(row: dict) -> str:
         f"- **{section_count} sections**\n"
         f"- **{subtopic_count} subtopics**\n"
         f"- A full exam-board structured progression path\n\n"
+        f"{value_block}\n\n"
         f"### What you receive now (presale stage)\n"
         f"- Presale entitlement confirmation for full-board access\n"
         f"- Early-bird price lock for all-units package\n"

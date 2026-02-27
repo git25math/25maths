@@ -1,28 +1,28 @@
 # E1.14 Kahoot Question Set - Using a calculator
 
 ## Metadata
-- Tier: Extended
 - Board: CIE 0580
+- Tier: Extended
 - Micro-topic: E1.14
 - Questions: 15 MCQ
 
 | # | Question | A | B | C | D | Correct | Type |
 |---|---|---|---|---|---|---|---|
-| 1 | Best estimate for `198 x 0.49` | 10 | 50 | 100 | 150 | C | Fluency |
-| 2 | If calculator gives `0.0048` for `48/10`, this is | correct | impossible | maybe | rounding | B | Fluency |
-| 3 | Check `612/19=32.2` by multiplication: | `19x32.2≈612` | `19+32.2=612` | `612-19=32.2` | `612x19=32.2` | A | Fluency |
-| 4 | `3.4x10^5` equals | 34000 | 340000 | 3400000 | 0.00034 | B | Fluency |
-| 5 | Correct calculator entry for `(18+6)/3` | `18+6/3` | `(18+6)/3` | `18+(6/3)` only | `18/6+3` | B | Fluency |
-| 6 | To reduce rounding error in `1/3 + 1/3 + 1/3`, best is | round each first | keep full display then round end | always 0.99 | impossible | B | Method |
-| 7 | Exact value of `sqrt(50)` is closest to | 6 | 7.1 | 8 | 9 | B | Method |
-| 8 | A result is `-7` but estimate predicted positive. Best action | accept result | recheck signs/entry | round more | ignore estimate | B | Method |
-| 9 | Calculator shows `2.5E-3`, decimal form | 0.025 | 0.0025 | 2500 | 0.00025 | B | Method |
-| 10 | Best check for area `14x8=102` | `14+8` | `14x8≈112` | `14x8≈100` | `14/8` | C | Method |
-| 11 | For `200-3x40`, wrong use gives 7880. Likely mistake | added first | multiplied all | forgot brackets | decimal error | A | Method |
-| 12 | A fare is `$2.80` for 17 rides gives `$476`. Reasonable? | yes | no | maybe | cannot tell | B | Context |
-| 13 | Mass calc gives `-3.2 kg`. In this context mass must be positive. Action | keep | change to +3.2 without check | rework method/entry | round to 0 | C | Context |
-| 14 | If exact answer 49.98, report to nearest whole number | 49 | 50 | 51 | 60 | B | Context |
-| 15 | Best final step in exam calculator questions | round early | copy display exactly always | apply required accuracy at end | no units needed | C | Context |
+| 1 | Evaluate `26 + 19 x 9`. | 196 | 199 | 198 | 197 | D | Fluency |
+| 2 | Write `2/24 + 14/24` as a simplified fraction. | 2/4 | 3/3 | 4/3 | 2/3 | D | Fluency |
+| 3 | Calculate `3.0 + 0.19`. | 3.69 | 4.19 | 3.19 | 2.69 | C | Fluency |
+| 4 | Work out `4^6`. | 4095 | 4097 | 4096 | 4098 | C | Fluency |
+| 5 | Find `sqrt(49)`. | 6 | 9 | 7 | 8 | C | Fluency |
+| 6 | Increase `120` by `19%`. | 143.30 | 143.80 | 142.8 | 142.30 | C | Method |
+| 7 | Share `105` in the ratio `2:3` and give the larger share. | 62 | 63 | 64 | 65 | B | Method |
+| 8 | Round `490.0` to `3` significant figures. | 490 | 489 | 491 | 492 | A | Method |
+| 9 | Write `50000` in standard form. | 5 x 10^4 | Cannot be determined | 0 | No solution | A | Method |
+| 10 | A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | Cannot be determined | 0 | £9.90 | No solution | C | Method |
+| 11 | Context check: Write `2/24 + 14/24` as a simplified fraction. | 3/3 | 2/3 | 4/3 | 2/4 | B | Method |
+| 12 | Context check: Work out `4^6`. | 4098 | 4097 | 4096 | 4095 | C | Context |
+| 13 | Context check: Increase `120` by `19%`. | 143.80 | 142.30 | 143.30 | 142.8 | D | Context |
+| 14 | Context check: Round `490.0` to `3` significant figures. | 491 | 492 | 490 | 489 | C | Context |
+| 15 | Context check: A notebook costs `£2.40` and a pen costs `£1.35`. How much do 3 notebooks and 2 pens cost? | £9.90 | 0 | No solution | Cannot be determined | A | Context |
 
 ## Timer
 - Q1-Q5: 20s
