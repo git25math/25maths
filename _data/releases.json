@@ -185,5 +185,27 @@
     "membership_tier": "",
     "asset_key": "member-files/week08/week-08-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week09-mensuration-area-volume-en-2026w18",
+    "version": "v1",
+    "subtopic_id": "cie0580:mensuration-c5:c5-02-area-and-perimeter",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week09/week-09-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week09-mensuration-area-volume-bilingual-2026w18",
+    "version": "v1",
+    "subtopic_id": "cie0580:mensuration-c5:c5-02-area-and-perimeter",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week09/week-09-bilingual.pdf",
+    "status": "active"
   }
 ]
