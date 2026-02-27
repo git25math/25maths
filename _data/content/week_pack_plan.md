@@ -19,7 +19,7 @@
 | 08 | **Geometry: Angles, Symmetry & Constructions** | C4.1-C4.6, E4.1-E4.6 | Angle properties (triangles, parallel lines, polygons), line/rotational symmetry, constructions, loci, circle theorems (Extended) | DONE |
 | 09 | **Mensuration: Area, Volume & Surface Area** | C5.1-C5.5, E5.1-E5.5 | Perimeter & area (rectangles, triangles, circles), arc length & sector area, surface area & volume (prisms, cylinders, cones, spheres) | DONE |
 | 10 | **Trigonometry & Pythagoras** | C6.1, C6.2, E6.1-E6.6 | Pythagoras' theorem, SOHCAHTOA, exact trig values, sine/cosine rule, area = ½ab sin C, 3D problems (Extended) | DONE |
-| 11 | **Probability** | C8.1-C8.3, E8.1-E8.4 | Probability scale, experimental probability, expected frequency, combined events (tree diagrams, Venn diagrams), conditional probability (Extended) | |
+| 11 | **Probability** | C8.1-C8.3, E8.1-E8.4 | Probability scale, experimental probability, expected frequency, combined events (tree diagrams, Venn diagrams), conditional probability (Extended) | DONE |
 | 12 | **Statistics** | C9.1-C9.4, E9.1-E9.7 | Data types, averages & range, pie/bar charts, scatter diagrams & correlation, cumulative frequency, histograms (Extended) | |
 
 ---

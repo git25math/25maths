@@ -275,6 +275,32 @@ export const releaseRegistry = [
     "membership_tier": "",
     "asset_key": "member-files/week10/week-10-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week11-probability-en-2026w20",
+    "version": "v1",
+    "subtopic_id": "cie0580:probability-c8:c8-01-basic-probability",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week11/week-11-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week11-probability-bilingual-2026w20",
+    "version": "v1",
+    "subtopic_id": "cie0580:probability-c8:c8-01-basic-probability",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week11/week-11-bilingual.pdf",
+    "status": "active"
   }
 ];
 
