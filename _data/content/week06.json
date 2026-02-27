@@ -252,17 +252,6 @@
         "en": "Solve the inequality `-5 < 3x + 1` `\\leq` `16`.\n\nList the integer values of `x` that satisfy this inequality.",
         "zh": "解不等式 `-5 < 3x + 1` `\\leq` `16`。\n\n列出满足该不等式的所有整数值。"
       },
-      "figure": [
-        "\\begin{tikzpicture}[scale=0.6]",
-        "  \\draw[->] (-3.5,0) -- (6.5,0);",
-        "  \\foreach \\x in {-3,-2,...,6} {",
-        "    \\draw (\\x,0.15) -- (\\x,-0.15) node[below, font=\\footnotesize] {$\\x$};",
-        "  }",
-        "  \\draw[very thick, blue] (-2,0.4) -- (5,0.4);",
-        "  \\draw[blue, fill=white] (-2,0.4) circle (3pt);",
-        "  \\fill[blue] (5,0.4) circle (3pt);",
-        "\\end{tikzpicture}"
-      ],
       "answer": { "en": "`-2 < x` `\\leq` `5`\n\nIntegers: `-1, 0, 1, 2, 3, 4, 5`", "zh": "`-2 < x` `\\leq` `5`\n\n整数：`-1, 0, 1, 2, 3, 4, 5`" },
       "solution": {
         "en": [
