@@ -11,6 +11,17 @@
             this.setAttribute('aria-expanded', expanded);
             this.setAttribute('aria-label', expanded ? 'Close menu' : 'Open menu');
         });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                var menu = document.getElementById('global-mobile-menu');
+                if (menu && !menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                    globalMenuButton.setAttribute('aria-expanded', 'false');
+                    globalMenuButton.setAttribute('aria-label', 'Open menu');
+                    globalMenuButton.focus();
+                }
+            }
+        });
     }
 
     // Smooth scrolling for anchor links
