@@ -106,7 +106,7 @@
                     {% for rp in related limit:3 %}
                     {% assign rp_words = rp.content | number_of_words %}
                     {% assign rp_read = rp_words | divided_by: 220 | plus: 1 %}
-                    <a href="{{ rp.url | relative_url }}" data-blog-card class="block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+                    <a href="{{ rp.url | relative_url }}" data-blog-card class="block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:-translate-y-1 transition">
                         <p class="text-xs text-gray-500 mb-2">{% if page.lang == "zh-CN" %}{{ rp.date | date: "%Y-%m-%d" }} · 约 {{ rp_read }} 分钟{% else %}{{ rp.date | date: "%B %d, %Y" }} · {{ rp_read }} min{% endif %}</p>
                         <h3 class="text-base font-semibold text-gray-900 mb-1">{{ rp.title }}</h3>
                         {% if rp.subtitle %}<p class="text-sm text-gray-600 line-clamp-2">{{ rp.subtitle }}</p>{% endif %}

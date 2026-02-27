@@ -33,7 +33,7 @@ supabase: true
                 <!-- Class Selection -->
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-1">Class</label>
-                    <select id="assign-class" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <select id="assign-class" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
                         <option value="">Select a class...</option>
                     </select>
                 </div>
@@ -42,7 +42,7 @@ supabase: true
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-1">Title</label>
                     <input type="text" id="assign-title" placeholder="e.g., Week 3 Algebra Practice"
-                        class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
                 </div>
 
                 <!-- Exercise Selection -->
@@ -74,7 +74,7 @@ supabase: true
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Due Date</label>
                         <input type="datetime-local" id="assign-due"
-                            class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
                     </div>
 
                     <!-- Max Retries -->
@@ -103,7 +103,7 @@ supabase: true
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-1">Instructions (optional)</label>
                         <input type="text" id="assign-instructions" placeholder="e.g., Show all working"
-                            class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
                     </div>
                 </div>
 
@@ -203,7 +203,7 @@ supabase: true
 
     container.innerHTML = EXERCISE_TOPICS.map(t => `
       <label class="flex items-center gap-2 cursor-pointer p-1.5 rounded hover:bg-blue-50 transition text-sm">
-        <input type="checkbox" value="${t.slug}" class="exercise-checkbox rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+        <input type="checkbox" value="${t.slug}" class="exercise-checkbox rounded border-gray-300 text-blue-600 focus:ring-gray-400">
         <span class="truncate">${t.label}</span>
       </label>
     `).join('');
