@@ -15,12 +15,13 @@
     {% assign email_ph = "Email for reply" %}
     {% assign msg_ph = "Your question" %}
     {% assign send_label = "Send Question" %}
-    {% assign privacy_text = "We’ll reply by email. No spam." %}
+    {% assign privacy_text = "We'll reply by email. No spam." %}
     {% assign privacy_link = "/privacy.html" %}
     {% if page.lang == "zh-CN" %}
         {% assign cta_title = "获取每周专题练习" %}
         {% assign cta_text = "加入等待名单，获得新内容与早鸟优惠。" %}
         {% assign cta_button = "加入等待名单" %}
+        {% assign cta_link = "/zh-cn/subscription.html" %}
         {% assign ask_title = "留言提问" %}
         {% assign name_ph = "姓名" %}
         {% assign email_ph = "邮箱（便于回复）" %}
@@ -29,18 +30,47 @@
         {% assign privacy_text = "我们会邮件回复，不发送垃圾邮件。" %}
     {% endif %}
 
+    {% assign words = content | number_of_words %}
+    {% assign read_time = words | divided_by: 220 | plus: 1 %}
+
     <article class="bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="mb-8">
-                <p class="text-sm text-gray-500">{{ page.date | date: "%B %d, %Y" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+                <p class="text-sm text-gray-500">
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                    {% if page.category %} · {{ page.category }}{% endif %}
+                    · {% if page.lang == "zh-CN" %}约 {{ read_time }} 分钟阅读{% else %}{{ read_time }} min read{% endif %}
+                </p>
                 <h1 class="text-4xl font-semibold text-gray-900 mt-2">{{ page.title }}</h1>
                 {% if page.subtitle %}<p class="text-lg text-gray-600 mt-3">{{ page.subtitle }}</p>{% endif %}
             </div>
 
-            <div class="prose max-w-none">
-                {{ content }}
+            <!-- Mobile TOC (hidden on desktop) -->
+            <details id="blog-toc-mobile" class="lg:hidden mb-8 bg-gray-50 rounded-xl p-4 border border-gray-200">
+                <summary class="text-sm font-semibold text-gray-700 cursor-pointer">
+                    {% if page.lang == "zh-CN" %}目录{% else %}On this page{% endif %}
+                </summary>
+                <ul id="blog-toc-list-mobile" class="mt-3 space-y-2 text-sm text-gray-600 pl-4 border-l border-gray-200"></ul>
+            </details>
+
+            <div class="lg:grid lg:grid-cols-[minmax(0,48rem)_14rem] lg:gap-10">
+                <!-- Main content -->
+                <div class="blog-post-content {% if page.lang == 'zh-CN' %}blog-post-zh{% else %}blog-post-en{% endif %} prose max-w-none">
+                    {{ content }}
+                </div>
+
+                <!-- Desktop TOC sidebar -->
+                <aside id="blog-toc-sidebar" class="hidden lg:block" aria-label="Table of contents">
+                    <nav class="sticky top-20">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">
+                            {% if page.lang == "zh-CN" %}目录{% else %}On this page{% endif %}
+                        </p>
+                        <ul id="blog-toc-list" class="space-y-2 text-sm text-gray-600 border-l border-gray-200 pl-4"></ul>
+                    </nav>
+                </aside>
             </div>
 
+            <!-- Waitlist CTA -->
             <div class="mt-12 border-t pt-8">
                 <div class="bg-gray-50 rounded-2xl p-6 text-center">
                     <h2 class="text-2xl font-bold mb-2">{{ cta_title }}</h2>
@@ -51,6 +81,69 @@
                 </div>
             </div>
 
+            <!-- Related posts -->
+            {% assign same_lang_posts = site.posts | where: "lang", page.lang %}
+            {% assign related = "" | split: "" %}
+            {% for p in same_lang_posts %}
+                {% if p.url != page.url and p.category == page.category %}
+                    {% assign related = related | push: p %}
+                {% endif %}
+            {% endfor %}
+            {% if related.size > 0 %}
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold mb-6">{% if page.lang == "zh-CN" %}相关文章{% else %}Related articles{% endif %}</h2>
+                <div class="grid md:grid-cols-3 gap-5">
+                    {% for rp in related limit:3 %}
+                    {% assign rp_words = rp.content | number_of_words %}
+                    {% assign rp_read = rp_words | divided_by: 220 | plus: 1 %}
+                    <a href="{{ rp.url | relative_url }}" data-blog-card class="block bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition">
+                        <p class="text-xs text-gray-500 mb-2">{{ rp.date | date: "%B %d, %Y" }} · {{ rp_read }} min</p>
+                        <h3 class="text-base font-semibold text-gray-900 mb-1">{{ rp.title }}</h3>
+                        {% if rp.subtitle %}<p class="text-sm text-gray-600 line-clamp-2">{{ rp.subtitle }}</p>{% endif %}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Prev / Next navigation -->
+            {% assign lang_posts = site.posts | where: "lang", page.lang %}
+            {% assign prev_post = nil %}
+            {% assign next_post = nil %}
+            {% for p in lang_posts %}
+                {% if p.url == page.url %}
+                    {% assign next_idx = forloop.index0 | minus: 1 %}
+                    {% assign prev_idx = forloop.index0 | plus: 1 %}
+                    {% if next_idx >= 0 %}
+                        {% assign next_post = lang_posts[next_idx] %}
+                    {% endif %}
+                    {% if prev_idx < lang_posts.size %}
+                        {% assign prev_post = lang_posts[prev_idx] %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% if prev_post or next_post %}
+            <nav class="mt-12 grid grid-cols-2 gap-4" aria-label="{% if page.lang == 'zh-CN' %}前后文章导航{% else %}Post navigation{% endif %}">
+                {% if prev_post %}
+                <a href="{{ prev_post.url | relative_url }}" data-blog-nav class="group p-4 border border-gray-200 rounded-xl hover:border-primary hover:bg-gray-50 transition">
+                    <p class="text-xs text-gray-400 mb-1">{% if page.lang == "zh-CN" %}上一篇{% else %}Previous{% endif %}</p>
+                    <p class="text-sm font-semibold text-gray-700 group-hover:text-primary transition line-clamp-2">{{ prev_post.title }}</p>
+                </a>
+                {% else %}
+                <div></div>
+                {% endif %}
+                {% if next_post %}
+                <a href="{{ next_post.url | relative_url }}" data-blog-nav class="group p-4 border border-gray-200 rounded-xl hover:border-primary hover:bg-gray-50 transition text-right">
+                    <p class="text-xs text-gray-400 mb-1">{% if page.lang == "zh-CN" %}下一篇{% else %}Next{% endif %}</p>
+                    <p class="text-sm font-semibold text-gray-700 group-hover:text-primary transition line-clamp-2">{{ next_post.title }}</p>
+                </a>
+                {% else %}
+                <div></div>
+                {% endif %}
+            </nav>
+            {% endif %}
+
+            <!-- Ask a question form -->
             <div class="mt-12">
                 <h2 class="text-2xl font-bold mb-4">{{ ask_title }}</h2>
                 <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-4">
@@ -79,9 +172,35 @@
         </div>
     </article>
 
+    <!-- BlogPosting JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: page.subtitle | default: "" | jsonify }},
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+      "url": "{{ site.url }}{{ page.url }}",
+      "inLanguage": "{{ page.lang | default: 'en' }}",
+      "wordCount": {{ words }},
+      "publisher": {
+        "@type": "Organization",
+        "name": "25Maths",
+        "url": "{{ site.url }}"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      }
+    }
+    </script>
+
     {% include bilingual-floating-toggle.html %}
 
     {% include footer.html %}
     {% include mobile-menu-js.html %}
+    <script defer src="{{ '/assets/js/post_enhancements.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/post_conversion.js' | relative_url }}"></script>
 </body>
 </html>

@@ -80,19 +80,39 @@ lang_links:
 
 <section id="all-guides" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between gap-4 mb-8">
+        <div class="flex items-center justify-between gap-4 mb-6">
             <div>
                 <h2 class="text-3xl font-bold text-gray-900">全部文章</h2>
                 <p class="text-gray-600">按考试场景组织，方便快速找到可执行的方法。</p>
             </div>
         </div>
-        <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Filter bar -->
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+            <button class="blog-filter-btn active" data-filter="all">全部</button>
+            <button class="blog-filter-btn" data-filter="考试策略">考试策略</button>
+            <button class="blog-filter-btn" data-filter="CIE 0580 专题解析">CIE 0580</button>
+            <button class="blog-filter-btn" data-filter="CIE 0580 专题指南">CIE 专题指南</button>
+            <button class="blog-filter-btn" data-filter="Edexcel 4MA1 专题解析">Edexcel 4MA1</button>
+            <input id="blog-search-input" type="text" placeholder="搜索文章…" class="ml-auto px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary w-48">
+            <select id="blog-sort-select" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                <option value="newest">最新优先</option>
+                <option value="shortest">最短阅读</option>
+            </select>
+        </div>
+
+        <div class="blog-card-grid grid md:grid-cols-2 gap-6">
             {% if zh_posts.size > 1 %}
             {% for post in zh_posts offset:1 %}
             {% assign post_words = post.content | number_of_words %}
             {% assign post_read_time = post_words | divided_by: 220 | plus: 1 %}
             {% assign post_summary = post.subtitle | default: post.excerpt %}
-            <article class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+                data-category="{{ post.category }}"
+                data-lang="{{ post.lang }}"
+                data-read-time="{{ post_read_time }}"
+                data-date="{{ post.date | date: '%Y-%m-%d' }}"
+                data-title="{{ post.title | downcase }}">
                 <p class="text-xs text-gray-500 mb-2">
                     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>{% if post.category %} · {{ post.category }}{% endif %} · 约 {{ post_read_time }} 分钟阅读
                 </p>
@@ -176,3 +196,4 @@ lang_links:
   ]
 }
 </script>
+<script defer src="{{ '/assets/js/blog_index_enhancements.js' | relative_url }}"></script>

@@ -82,19 +82,38 @@ lang_links:
 
 <section id="all-guides" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between gap-4 mb-8">
+        <div class="flex items-center justify-between gap-4 mb-6">
             <div>
                 <h2 class="text-3xl font-bold text-gray-900">All Guides</h2>
                 <p class="text-gray-600">Exam strategy and topic-specific support for CIE 0580 and Edexcel 4MA1.</p>
             </div>
         </div>
-        <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Filter bar -->
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+            <button class="blog-filter-btn active" data-filter="all">All</button>
+            <button class="blog-filter-btn" data-filter="Exam Strategy">Exam Strategy</button>
+            <button class="blog-filter-btn" data-filter="CIE 0580 Topic Guide">CIE 0580</button>
+            <button class="blog-filter-btn" data-filter="Edexcel 4MA1 Topic Guide">Edexcel 4MA1</button>
+            <input id="blog-search-input" type="text" placeholder="Search articles…" class="ml-auto px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary w-48">
+            <select id="blog-sort-select" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                <option value="newest">Newest first</option>
+                <option value="shortest">Shortest read</option>
+            </select>
+        </div>
+
+        <div class="blog-card-grid grid md:grid-cols-2 gap-6">
             {% if en_posts.size > 1 %}
             {% for post in en_posts offset:1 %}
             {% assign post_words = post.content | number_of_words %}
             {% assign post_read_time = post_words | divided_by: 220 | plus: 1 %}
             {% assign post_summary = post.subtitle | default: post.excerpt %}
-            <article class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+                data-category="{{ post.category }}"
+                data-lang="{{ post.lang }}"
+                data-read-time="{{ post_read_time }}"
+                data-date="{{ post.date | date: '%Y-%m-%d' }}"
+                data-title="{{ post.title | downcase }}">
                 <p class="text-xs text-gray-500 mb-2">
                     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.category %} · {{ post.category }}{% endif %} · {{ post_read_time }} min read
                 </p>
@@ -180,3 +199,4 @@ lang_links:
   ]
 }
 </script>
+<script defer src="{{ '/assets/js/blog_index_enhancements.js' | relative_url }}"></script>
