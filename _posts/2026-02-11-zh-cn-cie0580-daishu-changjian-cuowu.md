@@ -2,6 +2,7 @@
 layout: post
 title: "CIE 0580 代数：7 个常见失分点与改法"
 subtitle: "专注那些最容易丢分的代数错误。"
+description: "专注那些最容易丢分的代数错误。"
 category: CIE 0580 专题指南
 lang: zh-CN
 permalink: /zh-cn/blog/cie0580-daishu-changjian-cuowu.html

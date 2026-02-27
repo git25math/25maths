@@ -2,6 +2,7 @@
 layout: post
 title: "IGCSE 三角函数完全指南：从基础到考试"
 subtitle: "掌握 SOHCAHTOA、正弦/余弦定理和3D三角函数 — 每年 Paper 4 必考。"
+description: "掌握 SOHCAHTOA、正弦/余弦定理和3D三角函数 — 每年 Paper 4 必考。"
 category: CIE 0580 专题指南
 lang: zh-CN
 permalink: /zh-cn/blog/igcse-sanjiaohanshu-zhinan.html

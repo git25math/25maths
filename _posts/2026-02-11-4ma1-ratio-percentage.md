@@ -2,6 +2,7 @@
 layout: post
 title: "Edexcel 4MA1 Ratio & Percentage: Avoid These Mistakes"
 subtitle: "Simple fixes that unlock easy marks in exam-style questions."
+description: "Simple fixes that unlock easy marks in exam-style questions."
 category: Edexcel 4MA1 Topic Guide
 lang: en
 lang_links:

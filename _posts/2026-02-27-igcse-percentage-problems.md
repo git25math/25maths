@@ -2,6 +2,7 @@
 layout: post
 title: "IGCSE Percentage Problems: Every Type You'll See in the Exam"
 subtitle: "Percentage increase, decrease, reverse percentages, and compound interest — all in one guide."
+description: "Percentage increase, decrease, reverse percentages, and compound interest — all in one guide."
 category: CIE 0580 Topic Guide
 lang: en
 lang_links:

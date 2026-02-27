@@ -2,6 +2,7 @@
 layout: post
 title: "IGCSE 数学复习策略：一个真正有效的6周计划"
 subtitle: "不要再反复看笔记了，这是一个基于考官出题方式设计的结构化复习计划。"
+description: "不要再反复看笔记了，这是一个基于考官出题方式设计的结构化复习计划。"
 category: 考试策略
 lang: zh-CN
 permalink: /zh-cn/blog/igcse-shuxue-fuxicelue.html

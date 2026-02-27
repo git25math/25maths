@@ -2,6 +2,7 @@
 layout: post
 title: "CIE 0580 Algebra: 7 Common Mistakes and How to Fix Them"
 subtitle: "Target the errors that cost the most marks in IGCSE algebra questions."
+description: "Target the errors that cost the most marks in IGCSE algebra questions."
 category: CIE 0580 Topic Guide
 lang: en
 lang_links:

@@ -2,6 +2,7 @@
 layout: post
 title: "CIE 0580 Paper 4 Extended: 10 Tips to Gain 20+ Extra Marks"
 subtitle: "Paper 4 is where grades are won or lost. These techniques target the marks most students leave on the table."
+description: "Paper 4 is where grades are won or lost. These techniques target the marks most students leave on the table."
 category: CIE 0580 Topic Guide
 lang: en
 lang_links:

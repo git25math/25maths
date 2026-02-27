@@ -2,6 +2,7 @@
 layout: post
 title: "CIE 0580 Paper 4 Extended：多拿20+分的10个技巧"
 subtitle: "Paper 4 是决定成绩的关键。这些技巧针对大多数学生丢掉的分数。"
+description: "Paper 4 是决定成绩的关键。这些技巧针对大多数学生丢掉的分数。"
 category: CIE 0580 专题指南
 lang: zh-CN
 permalink: /zh-cn/blog/cie0580-paper4-jiqiao.html
