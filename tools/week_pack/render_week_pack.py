@@ -64,9 +64,21 @@ def math_to_latex(text):
 
     Also handles dollar-sign math expressions like "$12.60" by preserving
     currency amounts (digits after $) while converting algebraic $ to math.
+    Supports pass-through LaTeX commands: \\hfill, \\par, \\newline, \\\\
     """
     if not text:
         return ""
+
+    # Protect pass-through LaTeX commands before escaping
+    _PASSTHROUGH = {
+        "\\hfill": "\x00HFILL\x00",
+        "\\par": "\x00PAR\x00",
+        "\\newline": "\x00NEWLINE\x00",
+        "\\\\": "\x00DBLBS\x00",
+    }
+    for cmd, placeholder in _PASSTHROUGH.items():
+        text = text.replace(cmd, placeholder)
+
     # If text has backtick-wrapped math, process those
     if "`" in text:
         parts = re.split(r'`([^`]+)`', text)
@@ -76,9 +88,15 @@ def math_to_latex(text):
                 result.append(tex_escape(part))
             else:
                 result.append(f"${part}$")
-        return "".join(result)
-    # Otherwise just escape
-    return tex_escape(text)
+        result = "".join(result)
+    else:
+        # Otherwise just escape
+        result = tex_escape(text)
+
+    # Restore pass-through commands
+    for cmd, placeholder in _PASSTHROUGH.items():
+        result = result.replace(placeholder, cmd)
+    return result
 
 
 def get_question_text(q):

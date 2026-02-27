@@ -12,7 +12,7 @@
 | 01 | **Number: Money, Fractions, Decimals & Percentages** | C1.2, C1.5, E1.2, E1.5 | FDP conversions, percentage increase/decrease, reverse percentages, money problems | DONE |
 | 02 | **Number: Types, Powers, Roots & Indices** | C1.1, C1.3, C1.7, E1.7 | Types of number, HCF/LCM, prime factorisation, squares/cubes/roots, index laws | DONE |
 | 03 | **Number: Ratio, Proportion & Rates** | C1.11, C1.12, E1.11, E1.12 | Simplifying ratios, dividing in a ratio, direct/inverse proportion, speed/distance/time, unit rates | DONE |
-| 04 | **Number: Standard Form, Estimation & Accuracy** | C1.8, C1.9, C1.10, E1.8, E1.10 | Standard form conversions & arithmetic, significant figures, upper/lower bounds, error intervals | |
+| 04 | **Number: Standard Form, Estimation & Accuracy** | C1.8, C1.9, C1.10, E1.8, E1.10 | Standard form conversions & arithmetic, significant figures, upper/lower bounds, error intervals | DONE |
 | 05 | **Algebra: Expressions, Manipulation & Equations** | C2.1, C2.2, C2.5, E2.1, E2.2, E2.5 | Substitution, expanding brackets, factorising, solving linear equations, simultaneous equations | |
 | 06 | **Algebra: Inequalities, Sequences & Functions** | C2.6, C2.7, E2.6, E2.7, E2.13 | Linear inequalities, number patterns, nth term, quadratic sequences, function notation (Extended) | |
 | 07 | **Coordinate Geometry & Linear Graphs** | C3.1-C3.6, E3.1-E3.7 | Plotting coordinates, gradient, y = mx + c, parallel/perpendicular lines, midpoint & distance (Extended) | |

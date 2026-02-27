@@ -93,6 +93,32 @@ export const releaseRegistry = [
     "membership_tier": "",
     "asset_key": "member-files/week03/week-03-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week04-number-standard-form-estimation-en-2026w13",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-08-standard-form",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week04/week-04-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week04-number-standard-form-estimation-bilingual-2026w13",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-08-standard-form",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week04/week-04-bilingual.pdf",
+    "status": "active"
   }
 ];
 

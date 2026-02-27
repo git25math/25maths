@@ -1,0 +1,335 @@
+{
+  "_comment": "Week 04 practice questions — Standard Form, Estimation & Accuracy. Questions designed from CIE 0580 past paper analysis: C1.8 (27 Core + 13 Extended questions), C1.9 (23 Core questions), C1.10 (28 Core questions).",
+  "week_number": 4,
+  "topic": "Number: Standard Form, Estimation & Accuracy",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week04-number-standard-form-estimation-2026w13",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:number-c1:c1-08-standard-form",
+    "cie0580:number-c1:c1-09-estimation",
+    "cie0580:number-c1:c1-10-limits-of-accuracy"
+  ],
+  "syllabus_refs": ["C1.8", "C1.9", "C1.10", "E1.8", "E1.10"],
+  "key_vocabulary": [
+    { "term_en": "Standard Form", "term_zh": "标准形式", "definition": "A way of writing very large or very small numbers as a times a power of 10, where a is between 1 and 10.", "definition_zh": "一种表示非常大或非常小数字的方法，写成 a 乘以 10 的 n 次方，其中 a 在 1 到 10 之间。" },
+    { "term_en": "Ordinary Number", "term_zh": "普通数", "definition": "A number written in the usual way, without using powers of 10.", "definition_zh": "用常规方式书写的数字，不使用10的幂。" },
+    { "term_en": "Power of 10", "term_zh": "10的幂", "definition": "10 multiplied by itself a given number of times, e.g. 1000 is 10 to the power 3.", "definition_zh": "10自乘若干次，例如 1000 就是 10 的 3 次方。" },
+    { "term_en": "Exponent", "term_zh": "指数", "definition": "The small number written above and to the right of a base number showing how many times to multiply.", "definition_zh": "写在底数右上方的小数字，表示乘方的次数。" },
+    { "term_en": "Significant Figure", "term_zh": "有效数字", "definition": "The digits in a number that carry meaning contributing to its precision, starting from the first non-zero digit.", "definition_zh": "从第一个非零数字开始，对数字精度有贡献的数字位。" },
+    { "term_en": "Decimal Place", "term_zh": "小数位", "definition": "The position of a digit to the right of the decimal point.", "definition_zh": "小数点右侧数字的位置。" },
+    { "term_en": "Estimate", "term_zh": "估算", "definition": "Find an approximate value by rounding numbers before calculating.", "definition_zh": "通过在计算前对数字进行四舍五入来求近似值。" },
+    { "term_en": "Round", "term_zh": "四舍五入", "definition": "Adjust a number to a specified degree of accuracy.", "definition_zh": "将数字调整到指定的精度。" },
+    { "term_en": "Upper Bound", "term_zh": "上界", "definition": "The greatest value a rounded measurement could have been before rounding.", "definition_zh": "一个经过四舍五入的测量值在四舍五入之前可能达到的最大值。" },
+    { "term_en": "Lower Bound", "term_zh": "下界", "definition": "The smallest value a rounded measurement could have been before rounding.", "definition_zh": "一个经过四舍五入的测量值在四舍五入之前可能达到的最小值。" },
+    { "term_en": "Accuracy", "term_zh": "精度", "definition": "How close a measured or calculated value is to the true value.", "definition_zh": "测量值或计算值与真实值的接近程度。" },
+    { "term_en": "Approximation", "term_zh": "近似值", "definition": "A value that is close to, but not exactly equal to, the true value.", "definition_zh": "接近但不完全等于真实值的值。" },
+    { "term_en": "Place Value", "term_zh": "位值", "definition": "The value of a digit based on its position in a number (ones, tens, hundreds, etc.).", "definition_zh": "数字中某一位根据其位置所代表的值（个位、十位、百位等）。" },
+    { "term_en": "Inequality", "term_zh": "不等式", "definition": "A mathematical statement that compares two values using symbols such as less than, greater than, or equal to.", "definition_zh": "使用小于、大于、小于或等于等符号比较两个值的数学表达式。" },
+    { "term_en": "Magnitude", "term_zh": "量级", "definition": "The size or order of a number, often expressed as a power of 10.", "definition_zh": "数字的大小或数量级，通常用10的幂来表示。" },
+    { "term_en": "Correct to", "term_zh": "精确到", "definition": "Rounded to a specified level of precision.", "definition_zh": "四舍五入到指定的精度水平。" },
+    { "term_en": "Error Interval", "term_zh": "误差区间", "definition": "The range of possible values for a rounded number, written as an inequality.", "definition_zh": "一个经过四舍五入的数字可能的取值范围，用不等式表示。" },
+    { "term_en": "Truncate", "term_zh": "截断", "definition": "Cut off digits after a certain point without rounding.", "definition_zh": "在某一位之后直接截去数字，不进行四舍五入。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Standard form"],
+      "question": {
+        "en": "(a) Write 0.000 47 in standard form.\n\n(b) Write `3.6 \\times 10^5` as an ordinary number.",
+        "zh": "(a) 将 0.000 47 写成标准形式。\n\n(b) 将 `3.6 \\times 10^5` 写成普通数。"
+      },
+      "answer": { "en": "(a) `4.7 \\times 10^{-4}`\n(b) 360 000", "zh": "(a) `4.7 \\times 10^{-4}`\n(b) 360 000" },
+      "solution": {
+        "en": [
+          "(a) Move the decimal point to after the first non-zero digit (4).",
+          "The decimal point moves 4 places to the right, so the exponent is `{-4}`.",
+          "`0.000\\,47 = 4.7 \\times 10^{-4}`",
+          "(b) The exponent is 5, so move the decimal point 5 places to the right.",
+          "`3.6 \\times 10^5 = 360\\,000`"
+        ],
+        "zh": [
+          "(a) 将小数点移到第一个非零数字 (4) 的后面。",
+          "小数点向右移动了4位，所以指数为 `{-4}`。",
+          "`0.000\\,47 = 4.7 \\times 10^{-4}`",
+          "(b) 指数为5，所以将小数点向右移动5位。",
+          "`3.6 \\times 10^5 = 360\\,000`"
+        ]
+      },
+      "common_mistake": { "en": "Writing `47 \\times 10^{-5}` instead of `4.7 \\times 10^{-4}` — the coefficient `a` must satisfy `1 \\leq a < 10`.", "zh": "写成 `47 \\times 10^{-5}` 而不是 `4.7 \\times 10^{-4}` — 系数 `a` 必须满足 `1 \\leq a < 10`。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Estimation"],
+      "question": {
+        "en": "Write 47 382.06 correct to\n\n(a) the nearest thousand,\n\n(b) 1 decimal place,\n\n(c) 2 significant figures.",
+        "zh": "将 47 382.06 四舍五入到\n\n(a) 最近的千位，\n\n(b) 1位小数，\n\n(c) 2位有效数字。"
+      },
+      "answer": { "en": "(a) 47 000\n(b) 47 382.1\n(c) 47 000", "zh": "(a) 47 000\n(b) 47 382.1\n(c) 47 000" },
+      "solution": {
+        "en": [
+          "(a) The thousands digit is 7. Look at the hundreds digit: 3 < 5, so round down.",
+          "`47\\,382.06 \\approx 47\\,000`",
+          "(b) Look at the 2nd decimal place: 6 `\\geq` 5, so round up the 1st decimal place.",
+          "`47\\,382.06 \\approx 47\\,382.1`",
+          "(c) The first two significant figures are 4 and 7. Look at the 3rd significant figure: 3 < 5, so round down.",
+          "`47\\,382.06 \\approx 47\\,000`"
+        ],
+        "zh": [
+          "(a) 千位数字是7。看百位数字：3 < 5，所以向下取。",
+          "`47\\,382.06 \\approx 47\\,000`",
+          "(b) 看第2位小数：6 `\\geq` 5，所以第1位小数向上进位。",
+          "`47\\,382.06 \\approx 47\\,382.1`",
+          "(c) 前两个有效数字是4和7。看第3个有效数字：3 < 5，所以向下取。",
+          "`47\\,382.06 \\approx 47\\,000`"
+        ]
+      },
+      "common_mistake": { "en": "For (c), writing 47 instead of 47 000 — when rounding whole numbers to significant figures, zeros must be used as placeholders to maintain the magnitude.", "zh": "在 (c) 中，写成47而不是47 000 — 将整数四舍五入到有效数字时，必须用零作为占位符来保持数量级。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Estimation", "Limits of accuracy"],
+      "question": {
+        "en": "By writing each number in the calculation correct to 1 significant figure, find an estimate for\n\n`\\dfrac{4.83 \\times 19.2}{0.507}`",
+        "zh": "将计算中的每个数字四舍五入到1位有效数字，估算\n\n`\\dfrac{4.83 \\times 19.2}{0.507}`"
+      },
+      "answer": { "en": "200", "zh": "200" },
+      "solution": {
+        "en": [
+          "Round each number to 1 significant figure:",
+          "`4.83 \\approx 5`, `19.2 \\approx 20`, `0.507 \\approx 0.5`",
+          "Substitute into the expression:",
+          "`\\dfrac{5 \\times 20}{0.5} = \\dfrac{100}{0.5}`",
+          "`= 200`"
+        ],
+        "zh": [
+          "将每个数字四舍五入到1位有效数字：",
+          "`4.83 \\approx 5`, `19.2 \\approx 20`, `0.507 \\approx 0.5`",
+          "代入表达式：",
+          "`\\dfrac{5 \\times 20}{0.5} = \\dfrac{100}{0.5}`",
+          "`= 200`"
+        ]
+      },
+      "common_mistake": { "en": "Not rounding ALL numbers to 1 significant figure — for example, keeping 19.2 as 19 instead of rounding to 20.", "zh": "没有将所有数字都四舍五入到1位有效数字 — 例如将19.2保留为19而不是四舍五入到20。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Limits of accuracy"],
+      "question": {
+        "en": "A length `l` is 5.3 m, correct to 1 decimal place.\n\nComplete the statement about the value of `l`.\n\n\\hfill `\\text{..........} \\leq l < \\text{..........}`",
+        "zh": "一个长度 `l` 为5.3 m，精确到1位小数。\n\n完成关于 `l` 的取值的表述。\n\n\\hfill `\\text{..........} \\leq l < \\text{..........}`"
+      },
+      "answer": { "en": "`5.25 \\leq l < 5.35`", "zh": "`5.25 \\leq l < 5.35`" },
+      "solution": {
+        "en": [
+          "The measurement is correct to 1 decimal place, so the precision is 0.1 m.",
+          "Half of the precision: `0.1 \\div 2 = 0.05`",
+          "Lower bound: `5.3 - 0.05 = 5.25`",
+          "Upper bound: `5.3 + 0.05 = 5.35`",
+          "So `5.25 \\leq l < 5.35`"
+        ],
+        "zh": [
+          "测量值精确到1位小数，所以精度为0.1 m。",
+          "精度的一半：`0.1 \\div 2 = 0.05`",
+          "下界：`5.3 - 0.05 = 5.25`",
+          "上界：`5.3 + 0.05 = 5.35`",
+          "所以 `5.25 \\leq l < 5.35`"
+        ]
+      },
+      "common_mistake": { "en": "Using `\\leq` for the upper bound instead of `<`. The upper bound uses strict inequality because a value of exactly 5.35 would round to 5.4, not 5.3.", "zh": "上界使用 `\\leq` 而不是 `<`。上界使用严格不等号，因为恰好等于5.35的值会四舍五入到5.4而不是5.3。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Standard form"],
+      "question": {
+        "en": "Calculate `(3.8 \\times 10^4) \\times (2 \\times 10^3)`.\n\nGive your answer in standard form.",
+        "zh": "计算 `(3.8 \\times 10^4) \\times (2 \\times 10^3)`。\n\n请以标准形式作答。"
+      },
+      "answer": { "en": "`7.6 \\times 10^7`", "zh": "`7.6 \\times 10^7`" },
+      "solution": {
+        "en": [
+          "Multiply the coefficients: `3.8 \\times 2 = 7.6`",
+          "Add the exponents: `10^4 \\times 10^3 = 10^{4+3} = 10^7`",
+          "The answer is `7.6 \\times 10^7`.",
+          "Check: `7.6` is between 1 and 10, so this is already in standard form."
+        ],
+        "zh": [
+          "系数相乘：`3.8 \\times 2 = 7.6`",
+          "指数相加：`10^4 \\times 10^3 = 10^{4+3} = 10^7`",
+          "答案为 `7.6 \\times 10^7`。",
+          "检查：`7.6` 在1到10之间，所以已经是标准形式。"
+        ]
+      },
+      "common_mistake": { "en": "Multiplying the exponents (giving `10^{12}`) instead of adding them. When multiplying powers of 10, add the exponents.", "zh": "将指数相乘（得到 `10^{12}`）而不是相加。相乘10的幂时，指数应相加。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Standard form"],
+      "question": {
+        "en": "The population of Country A is `4.2 \\times 10^7` and the population of Country B is `8.6 \\times 10^6`.\n\n(a) Which country has the larger population?\n\n(b) Calculate how many more people live in Country A than Country B.\nGive your answer in standard form.",
+        "zh": "A国的人口为 `4.2 \\times 10^7`，B国的人口为 `8.6 \\times 10^6`。\n\n(a) 哪个国家的人口更多？\n\n(b) 计算A国比B国多多少人。\n请以标准形式作答。"
+      },
+      "answer": { "en": "(a) Country A\n(b) `3.34 \\times 10^7`", "zh": "(a) A国\n(b) `3.34 \\times 10^7`" },
+      "solution": {
+        "en": [
+          "(a) Compare the exponents: `10^7 > 10^6`, so Country A has the larger population.",
+          "(b) Convert to the same power of 10:",
+          "`4.2 \\times 10^7 = 42\\,000\\,000`",
+          "`8.6 \\times 10^6 = 8\\,600\\,000`",
+          "Difference: `42\\,000\\,000 - 8\\,600\\,000 = 33\\,400\\,000`",
+          "In standard form: `3.34 \\times 10^7`"
+        ],
+        "zh": [
+          "(a) 比较指数：`10^7 > 10^6`，所以A国人口更多。",
+          "(b) 转换为相同的10的幂：",
+          "`4.2 \\times 10^7 = 42\\,000\\,000`",
+          "`8.6 \\times 10^6 = 8\\,600\\,000`",
+          "差值：`42\\,000\\,000 - 8\\,600\\,000 = 33\\,400\\,000`",
+          "标准形式：`3.34 \\times 10^7`"
+        ]
+      },
+      "common_mistake": { "en": "Subtracting the coefficients directly (`4.2 - 8.6`) without adjusting for the different powers of 10.", "zh": "直接相减系数（`4.2 - 8.6`）而没有调整不同的10的幂次。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Estimation", "Limits of accuracy"],
+      "question": {
+        "en": "Amir estimates the cost of 29 books at $4.85 each.\n\nHe rounds each value to 1 significant figure and calculates `30 \\times 5 = \\$150`.\n\n(a) Is his estimate greater than or less than the exact cost?\n\n(b) Explain how you decided.",
+        "zh": "Amir 估算29本书的费用，每本 $4.85。\n\n他将每个数值四舍五入到1位有效数字，计算 `30 \\times 5 = \\$150`。\n\n(a) 他的估算值比实际费用大还是小？\n\n(b) 解释你是如何判断的。"
+      },
+      "answer": { "en": "(a) Greater than the exact cost.\n(b) Both numbers were rounded up, so the product is larger than the exact value.", "zh": "(a) 比实际费用大。\n(b) 两个数字都被向上四舍五入了，所以乘积大于精确值。" },
+      "solution": {
+        "en": [
+          "(a) Greater than the exact cost.",
+          "(b) `29` was rounded up to `30`, and `4.85` was rounded up to `5`.",
+          "Since both factors were rounded up, the estimated product `30 \\times 5 = 150` is greater than the exact product `29 \\times 4.85 = 140.65`."
+        ],
+        "zh": [
+          "(a) 比实际费用大。",
+          "(b) `29` 被向上取整为 `30`，`4.85` 被向上取整为 `5`。",
+          "由于两个因数都被向上取整，估算的乘积 `30 \\times 5 = 150` 大于精确乘积 `29 \\times 4.85 = 140.65`。"
+        ]
+      },
+      "common_mistake": { "en": "Not explaining the reasoning clearly — just saying \"greater\" without identifying that both numbers were rounded up.", "zh": "没有清楚地解释原因 — 只说了\"更大\"而没有指出两个数字都被向上取整了。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 2, "topic": ["Standard form"],
+      "question": {
+        "en": "Calculate `(5.4 \\times 10^7) + (8.6 \\times 10^6)`.\n\nGive your answer in standard form.",
+        "zh": "计算 `(5.4 \\times 10^7) + (8.6 \\times 10^6)`。\n\n请以标准形式作答。"
+      },
+      "answer": { "en": "`6.26 \\times 10^7`", "zh": "`6.26 \\times 10^7`" },
+      "solution": {
+        "en": [
+          "Convert to the same power of 10. Rewrite `8.6 \\times 10^6` as `0.86 \\times 10^7`.",
+          "Add: `5.4 \\times 10^7 + 0.86 \\times 10^7 = (5.4 + 0.86) \\times 10^7`",
+          "`= 6.26 \\times 10^7`",
+          "Check: `6.26` is between 1 and 10, so this is in standard form."
+        ],
+        "zh": [
+          "转换为相同的10的幂。将 `8.6 \\times 10^6` 改写为 `0.86 \\times 10^7`。",
+          "相加：`5.4 \\times 10^7 + 0.86 \\times 10^7 = (5.4 + 0.86) \\times 10^7`",
+          "`= 6.26 \\times 10^7`",
+          "检查：`6.26` 在1到10之间，所以已经是标准形式。"
+        ]
+      },
+      "common_mistake": { "en": "Adding the coefficients directly without matching the powers first, e.g. `5.4 + 8.6 = 14`.", "zh": "在没有统一幂次的情况下直接相加系数，例如 `5.4 + 8.6 = 14`。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Limits of accuracy"],
+      "question": {
+        "en": "`p = 12.4` correct to 1 decimal place.\n\n`q = 3.7` correct to 1 decimal place.\n\nCalculate the upper bound of `\\dfrac{p}{q}`.\n\nShow your working.",
+        "zh": "`p = 12.4`，精确到1位小数。\n\n`q = 3.7`，精确到1位小数。\n\n计算 `\\dfrac{p}{q}` 的上界。\n\n写出你的计算过程。"
+      },
+      "answer": { "en": "`3.424\\ldots` (accept 3.42 to 3.43)", "zh": "`3.424\\ldots`（接受 3.42 到 3.43）" },
+      "solution": {
+        "en": [
+          "Find the bounds for `p`: `12.35 \\leq p < 12.45`",
+          "Find the bounds for `q`: `3.65 \\leq q < 3.75`",
+          "For the upper bound of `\\dfrac{p}{q}`, use the upper bound of `p` and the lower bound of `q`.",
+          "Upper bound of `\\dfrac{p}{q} = \\dfrac{12.45}{3.65}`",
+          "`= 3.4109\\ldots`",
+          "`\\approx 3.41`"
+        ],
+        "zh": [
+          "求 `p` 的范围：`12.35 \\leq p < 12.45`",
+          "求 `q` 的范围：`3.65 \\leq q < 3.75`",
+          "要求 `\\dfrac{p}{q}` 的上界，使用 `p` 的上界和 `q` 的下界。",
+          "`\\dfrac{p}{q}` 的上界 `= \\dfrac{12.45}{3.65}`",
+          "`= 3.4109\\ldots`",
+          "`\\approx 3.41`"
+        ]
+      },
+      "common_mistake": { "en": "Using the upper bound of both `p` and `q`. To maximise a fraction, use the largest numerator and the smallest denominator.", "zh": "同时使用 `p` 和 `q` 的上界。要使分数最大化，应使用最大的分子和最小的分母。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Standard form"],
+      "question": {
+        "en": "Light travels at a speed of `3 \\times 10^8` metres per second.\n\nThe distance from the Sun to the Earth is `1.5 \\times 10^{11}` metres.\n\n(a) Calculate the time, in seconds, it takes light to travel from the Sun to the Earth.\nGive your answer in standard form.\n\n(b) Convert your answer to minutes.",
+        "zh": "光速为 `3 \\times 10^8` 米每秒。\n\n从太阳到地球的距离为 `1.5 \\times 10^{11}` 米。\n\n(a) 计算光从太阳传到地球所需的时间（秒）。\n请以标准形式作答。\n\n(b) 将你的答案转换为分钟。"
+      },
+      "answer": { "en": "(a) `5 \\times 10^2` seconds\n(b) `8.\\overline{3}` minutes (accept 8 min 20 s)", "zh": "(a) `5 \\times 10^2` 秒\n(b) `8.\\overline{3}` 分钟（接受 8分20秒）" },
+      "solution": {
+        "en": [
+          "(a) Time = Distance `\\div` Speed",
+          "`= \\dfrac{1.5 \\times 10^{11}}{3 \\times 10^8}`",
+          "Divide the coefficients: `1.5 \\div 3 = 0.5`",
+          "Subtract the exponents: `10^{11} \\div 10^8 = 10^{11-8} = 10^3`",
+          "`= 0.5 \\times 10^3 = 5 \\times 10^2`",
+          "(b) Convert seconds to minutes: `500 \\div 60 = 8.\\overline{3}` minutes",
+          "This is 8 minutes and 20 seconds."
+        ],
+        "zh": [
+          "(a) 时间 = 距离 `\\div` 速度",
+          "`= \\dfrac{1.5 \\times 10^{11}}{3 \\times 10^8}`",
+          "系数相除：`1.5 \\div 3 = 0.5`",
+          "指数相减：`10^{11} \\div 10^8 = 10^{11-8} = 10^3`",
+          "`= 0.5 \\times 10^3 = 5 \\times 10^2`",
+          "(b) 将秒转换为分钟：`500 \\div 60 = 8.\\overline{3}` 分钟",
+          "即8分钟20秒。"
+        ]
+      },
+      "common_mistake": { "en": "Leaving the answer as `0.5 \\times 10^3` which is not in standard form — the coefficient must be at least 1.", "zh": "将答案留为 `0.5 \\times 10^3`，这不是标准形式 — 系数必须至少为1。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Standard form", "Limits of accuracy"],
+      "question": {
+        "en": "The population of a city is `2.35 \\times 10^6` and the area of the city is `4.7 \\times 10^2` km`{}^2`.\n\n(a) Calculate the population density (people per km`{}^2`).\nGive your answer in standard form.\n\n(b) The population is given correct to 3 significant figures.\n\nWrite down the lower bound of the population.",
+        "zh": "一个城市的人口为 `2.35 \\times 10^6`，城市面积为 `4.7 \\times 10^2` km`{}^2`。\n\n(a) 计算人口密度（人/km`{}^2`）。\n请以标准形式作答。\n\n(b) 人口精确到3位有效数字。\n\n写出人口的下界。"
+      },
+      "answer": { "en": "(a) `5 \\times 10^3` people per km`{}^2`\n(b) `2\\,345\\,000` or `2.345 \\times 10^6`", "zh": "(a) `5 \\times 10^3` 人/km`{}^2`\n(b) `2\\,345\\,000` 或 `2.345 \\times 10^6`" },
+      "solution": {
+        "en": [
+          "(a) Population density = Population `\\div` Area",
+          "`= \\dfrac{2.35 \\times 10^6}{4.7 \\times 10^2}`",
+          "Divide the coefficients: `2.35 \\div 4.7 = 0.5`",
+          "Subtract the exponents: `10^{6} \\div 10^{2} = 10^{4}`",
+          "`= 0.5 \\times 10^4 = 5 \\times 10^3`",
+          "The population density is `5 \\times 10^3` people per km`{}^2`.",
+          "(b) The population `2.35 \\times 10^6 = 2\\,350\\,000` is correct to 3 significant figures.",
+          "The precision is `10\\,000` (since the 3rd sig fig is in the ten-thousands place).",
+          "Half the precision: `10\\,000 \\div 2 = 5\\,000`",
+          "Lower bound: `2\\,350\\,000 - 5\\,000 = 2\\,345\\,000`"
+        ],
+        "zh": [
+          "(a) 人口密度 = 人口 `\\div` 面积",
+          "`= \\dfrac{2.35 \\times 10^6}{4.7 \\times 10^2}`",
+          "系数相除：`2.35 \\div 4.7 = 0.5`",
+          "指数相减：`10^{6} \\div 10^{2} = 10^{4}`",
+          "`= 0.5 \\times 10^4 = 5 \\times 10^3`",
+          "人口密度为 `5 \\times 10^3` 人/km`{}^2`。",
+          "(b) 人口 `2.35 \\times 10^6 = 2\\,350\\,000` 精确到3位有效数字。",
+          "精度为 `10\\,000`（因为第3个有效数字在万位上）。",
+          "精度的一半：`10\\,000 \\div 2 = 5\\,000`",
+          "下界：`2\\,350\\,000 - 5\\,000 = 2\\,345\\,000`"
+        ]
+      },
+      "common_mistake": { "en": "In (a), leaving the answer as `0.5 \\times 10^4`. In (b), finding the precision unit incorrectly — the 3rd significant figure of 2 350 000 is the 5 in the ten-thousands column.", "zh": "在 (a) 中，将答案留为 `0.5 \\times 10^4`。在 (b) 中，错误地确定精度单位 — 2 350 000 的第3个有效数字是万位上的5。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can convert between ordinary numbers and standard form.", "zh": "我能在普通数和标准形式之间进行转换。" },
+    { "en": "I can perform calculations (multiply, divide, add, subtract) with numbers in standard form.", "zh": "我能对标准形式的数字进行运算（乘、除、加、减）。" },
+    { "en": "I can round numbers to specified decimal places and significant figures.", "zh": "我能将数字四舍五入到指定的小数位和有效数字。" },
+    { "en": "I can estimate calculations by rounding to 1 significant figure.", "zh": "我能通过四舍五入到1位有效数字来估算计算结果。" },
+    { "en": "I can find upper and lower bounds for rounded measurements.", "zh": "我能找到经过四舍五入的测量值的上界和下界。" },
+    { "en": "I can explain whether an estimate is an over-estimate or under-estimate.", "zh": "我能解释估算值是偏大还是偏小。" },
+    { "en": "I can use bounds in calculations involving division (Extended).", "zh": "我能在涉及除法的计算中使用上下界（拓展）。" }
+  ]
+}
