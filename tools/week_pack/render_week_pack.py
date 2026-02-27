@@ -247,23 +247,25 @@ def _render_bilingual_solution(q, num, lines, show_zh=True):
                  f"\\noindent\\textbf{{\\sffamily Q{num}.}}")
     lines.append("")
 
-    # Step-by-step solution (smaller text for compactness)
+    # Step-by-step solution
     if sol_steps_en:
+        item_sep = "3pt" if show_zh else "1.5pt"
         lines.append(r"{\small")
-        lines.append(r"\begin{enumerate}[label=\arabic*., leftmargin=8mm, itemsep=0pt, topsep=2pt]")
+        lines.append(f"\\begin{{enumerate}}[label=\\arabic*., leftmargin=8mm, itemsep={item_sep}, topsep=3pt, parsep=0pt]")
         for j, step in enumerate(sol_steps_en):
             lines.append(f"  \\item {math_to_latex(step)}")
             # Interleave Chinese step below each English step
             if show_zh and j < len(sol_steps_zh):
                 zh_step = sol_steps_zh[j]
-                lines.append(f"  \\par {{\\footnotesize\\color{{textmuted}}{math_to_latex(zh_step)}}}")
+                lines.append(f"  \\par\\vspace{{1pt}} {{\\footnotesize\\color{{textmuted}}{math_to_latex(zh_step)}}}")
         lines.append(r"\end{enumerate}")
         lines.append(r"}")
 
-    # Common mistake — inline (no box) for compactness
+    # Common mistake
     if mistake_en:
         lines.append(f"\\inlinemistake{{{math_to_latex(mistake_en)}}}")
         if show_zh and mistake_zh:
+            lines.append(f"\\vspace{{1pt}}")
             lines.append(f"{{\\footnotesize\\color{{textmuted}}\\hspace{{4mm}}{math_to_latex(mistake_zh)}}}")
 
 
