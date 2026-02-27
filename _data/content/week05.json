@@ -11,194 +11,372 @@
     "cie0580:algebra-c2:c2-02-algebraic-manipulation",
     "cie0580:algebra-c2:c2-05-equations"
   ],
-  "syllabus_refs": ["C2.1", "C2.2", "C2.5", "E2.1", "E2.2", "E2.5"],
+  "syllabus_refs": [
+    "C2.1",
+    "C2.2",
+    "C2.5",
+    "E2.1",
+    "E2.2",
+    "E2.5"
+  ],
   "key_vocabulary": [
-    { "term_en": "Variable", "term_zh": "变量", "definition": "A letter or symbol used to represent an unknown value.", "definition_zh": "用字母或符号表示的未知量。" },
-    { "term_en": "Expression", "term_zh": "表达式", "definition": "A combination of numbers, variables and operations without an equals sign.", "definition_zh": "由数字、变量和运算符组成但不含等号的式子。" },
-    { "term_en": "Equation", "term_zh": "方程", "definition": "A mathematical statement with an equals sign showing two expressions are equal.", "definition_zh": "含有等号、表示两个表达式相等的数学语句。" },
-    { "term_en": "Term", "term_zh": "项", "definition": "A single number, variable, or the product of numbers and variables.", "definition_zh": "单个数字、变量或数字与变量的乘积。" },
-    { "term_en": "Coefficient", "term_zh": "系数", "definition": "The numerical factor in a term that multiplies the variable.", "definition_zh": "项中与变量相乘的数字因子。" },
-    { "term_en": "Constant", "term_zh": "常数", "definition": "A fixed value that does not change, i.e. a term without a variable.", "definition_zh": "不含变量的固定值。" },
-    { "term_en": "Substitute", "term_zh": "代入", "definition": "Replace a variable in an expression with a given numerical value.", "definition_zh": "用给定的数值替换表达式中的变量。" },
-    { "term_en": "Simplify", "term_zh": "化简", "definition": "Write an expression in its simplest form by collecting like terms.", "definition_zh": "通过合并同类项将表达式写成最简形式。" },
-    { "term_en": "Expand", "term_zh": "展开", "definition": "Multiply out the brackets in an algebraic expression.", "definition_zh": "将代数表达式中的括号乘开。" },
-    { "term_en": "Factorise", "term_zh": "因式分解", "definition": "Write an expression as a product of its factors.", "definition_zh": "将表达式写成其因式的乘积。" },
-    { "term_en": "Like Terms", "term_zh": "同类项", "definition": "Terms that have the same variable(s) raised to the same power.", "definition_zh": "含有相同变量且变量的幂次相同的项。" },
-    { "term_en": "Linear Equation", "term_zh": "线性方程", "definition": "An equation where the highest power of the variable is 1.", "definition_zh": "变量的最高次幂为1的方程。" },
-    { "term_en": "Simultaneous Equations", "term_zh": "联立方程组", "definition": "A set of two or more equations with the same unknowns, solved together.", "definition_zh": "含有相同未知数的两个或多个方程，需一起求解。" },
-    { "term_en": "Subject of Formula", "term_zh": "公式主项", "definition": "The variable that is isolated on one side of the formula.", "definition_zh": "在公式中被单独放在一侧的变量。" },
-    { "term_en": "Common Factor", "term_zh": "公因式", "definition": "A factor that divides exactly into every term of an expression.", "definition_zh": "能整除表达式中每一项的因子。" },
-    { "term_en": "Bracket", "term_zh": "括号", "definition": "Symbols ( ) used to group terms together in an expression.", "definition_zh": "用于将表达式中的项组合在一起的符号 ( )。" },
-    { "term_en": "Solve", "term_zh": "求解", "definition": "Find the value(s) of the unknown that make an equation true.", "definition_zh": "找到使方程成立的未知数的值。" },
-    { "term_en": "Rearrange", "term_zh": "变形/移项", "definition": "Change the form of a formula to isolate a different variable.", "definition_zh": "改变公式的形式以分离出另一个变量。" }
+    {
+      "term_en": "Variable",
+      "term_zh": "变量",
+      "definition": "A letter or symbol used to represent an unknown value.",
+      "definition_zh": "用字母或符号表示的未知量。"
+    },
+    {
+      "term_en": "Expression",
+      "term_zh": "表达式",
+      "definition": "A combination of numbers, variables and operations without an equals sign.",
+      "definition_zh": "由数字、变量和运算符组成但不含等号的式子。"
+    },
+    {
+      "term_en": "Equation",
+      "term_zh": "方程",
+      "definition": "A mathematical statement with an equals sign showing two expressions are equal.",
+      "definition_zh": "含有等号、表示两个表达式相等的数学语句。"
+    },
+    {
+      "term_en": "Term",
+      "term_zh": "项",
+      "definition": "A single number, variable, or the product of numbers and variables.",
+      "definition_zh": "单个数字、变量或数字与变量的乘积。"
+    },
+    {
+      "term_en": "Coefficient",
+      "term_zh": "系数",
+      "definition": "The numerical factor in a term that multiplies the variable.",
+      "definition_zh": "项中与变量相乘的数字因子。"
+    },
+    {
+      "term_en": "Constant",
+      "term_zh": "常数",
+      "definition": "A fixed value that does not change, i.e. a term without a variable.",
+      "definition_zh": "不含变量的固定值。"
+    },
+    {
+      "term_en": "Substitute",
+      "term_zh": "代入",
+      "definition": "Replace a variable in an expression with a given numerical value.",
+      "definition_zh": "用给定的数值替换表达式中的变量。"
+    },
+    {
+      "term_en": "Simplify",
+      "term_zh": "化简",
+      "definition": "Write an expression in its simplest form by collecting like terms.",
+      "definition_zh": "通过合并同类项将表达式写成最简形式。"
+    },
+    {
+      "term_en": "Expand",
+      "term_zh": "展开",
+      "definition": "Multiply out the brackets in an algebraic expression.",
+      "definition_zh": "将代数表达式中的括号乘开。"
+    },
+    {
+      "term_en": "Factorise",
+      "term_zh": "因式分解",
+      "definition": "Write an expression as a product of its factors.",
+      "definition_zh": "将表达式写成其因式的乘积。"
+    },
+    {
+      "term_en": "Like Terms",
+      "term_zh": "同类项",
+      "definition": "Terms that have the same variable(s) raised to the same power.",
+      "definition_zh": "含有相同变量且变量的幂次相同的项。"
+    },
+    {
+      "term_en": "Linear Equation",
+      "term_zh": "线性方程",
+      "definition": "An equation where the highest power of the variable is 1.",
+      "definition_zh": "变量的最高次幂为1的方程。"
+    },
+    {
+      "term_en": "Simultaneous Equations",
+      "term_zh": "联立方程组",
+      "definition": "A set of two or more equations with the same unknowns, solved together.",
+      "definition_zh": "含有相同未知数的两个或多个方程，需一起求解。"
+    },
+    {
+      "term_en": "Subject of Formula",
+      "term_zh": "公式主项",
+      "definition": "The variable that is isolated on one side of the formula.",
+      "definition_zh": "在公式中被单独放在一侧的变量。"
+    },
+    {
+      "term_en": "Common Factor",
+      "term_zh": "公因式",
+      "definition": "A factor that divides exactly into every term of an expression.",
+      "definition_zh": "能整除表达式中每一项的因子。"
+    },
+    {
+      "term_en": "Bracket",
+      "term_zh": "括号",
+      "definition": "Symbols ( ) used to group terms together in an expression.",
+      "definition_zh": "用于将表达式中的项组合在一起的符号 ( )。"
+    },
+    {
+      "term_en": "Solve",
+      "term_zh": "求解",
+      "definition": "Find the value(s) of the unknown that make an equation true.",
+      "definition_zh": "找到使方程成立的未知数的值。"
+    },
+    {
+      "term_en": "Rearrange",
+      "term_zh": "变形/移项",
+      "definition": "Change the form of a formula to isolate a different variable.",
+      "definition_zh": "改变公式的形式以分离出另一个变量。"
+    }
   ],
   "questions_core": [
     {
-      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Substitution"],
+      "id": "q001",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Substitution"
+      ],
       "question": {
         "en": "Work out the value of `3a^2 - 2b` when `a = 4` and `b = -3`.",
         "zh": "当 `a = 4`，`b = -3` 时，求 `3a^2 - 2b` 的值。"
       },
-      "answer": { "en": "54", "zh": "54" },
+      "answer": {
+        "en": "54",
+        "zh": "54"
+      },
       "solution": {
         "en": [
           "Substitute `a = 4` and `b = -3` into `3a^2 - 2b`.",
-          "`= 3 \\times 4^2 - 2 \\times (-3)`",
-          "`= 3 \\times 16 - (-6)`",
-          "`= 48 + 6`",
-          "`= 54`"
+          "`= 3 \\times 4^2 - 2 \\times (-3)`.",
+          "`= 3 \\times 16 - (-6)`.",
+          "`= 48 + 6`.",
+          "`= 54`."
         ],
         "zh": [
           "将 `a = 4` 和 `b = -3` 代入 `3a^2 - 2b`。",
-          "`= 3 \\times 4^2 - 2 \\times (-3)`",
-          "`= 3 \\times 16 - (-6)`",
-          "`= 48 + 6`",
-          "`= 54`"
+          "`= 3 \\times 4^2 - 2 \\times (-3)`。",
+          "`= 3 \\times 16 - (-6)`。",
+          "`= 48 + 6`。",
+          "`= 54`。"
         ]
       },
-      "common_mistake": { "en": "Calculating `(3a)^2 = 12^2 = 144` instead of `3 \\times a^2 = 3 \\times 16 = 48`. The exponent only applies to `a`, not to `3a`.", "zh": "计算 `(3a)^2 = 12^2 = 144` 而不是 `3 \\times a^2 = 3 \\times 16 = 48`。指数只作用于 `a`，而不是 `3a`。" }
+      "common_mistake": {
+        "en": "Calculating `(3a)^2 = 12^2 = 144` instead of `3 \\times a^2 = 3 \\times 16 = 48`. The exponent only applies to `a`, not to `3a`.",
+        "zh": "计算 `(3a)^2 = 12^2 = 144` 而不是 `3 \\times a^2 = 3 \\times 16 = 48`。指数只作用于 `a`，而不是 `3a`。"
+      }
     },
     {
-      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Simplify"],
+      "id": "q002",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Simplify"
+      ],
       "question": {
         "en": "Simplify `5x - 3y + 2x + 7y - 4`.",
         "zh": "化简 `5x - 3y + 2x + 7y - 4`。"
       },
-      "answer": { "en": "`7x + 4y - 4`", "zh": "`7x + 4y - 4`" },
+      "answer": {
+        "en": "`7x + 4y - 4`",
+        "zh": "`7x + 4y - 4`"
+      },
       "solution": {
         "en": [
           "Group like terms together:",
-          "`x` terms: `5x + 2x = 7x`",
-          "`y` terms: `-3y + 7y = 4y`",
-          "Constants: `-4`",
-          "Answer: `7x + 4y - 4`"
+          "`x` terms: `5x + 2x = 7x`.",
+          "`y` terms: `-3y + 7y = 4y`.",
+          "Constants: `-4`.",
+          "Answer: `7x + 4y - 4`."
         ],
         "zh": [
           "将同类项分组：",
-          "`x` 项：`5x + 2x = 7x`",
-          "`y` 项：`-3y + 7y = 4y`",
-          "常数项：`-4`",
-          "答案：`7x + 4y - 4`"
+          "`x` 项：`5x + 2x = 7x`。",
+          "`y` 项：`-3y + 7y = 4y`。",
+          "常数项：`-4`。",
+          "答案：`7x + 4y - 4`。"
         ]
       },
-      "common_mistake": { "en": "Incorrectly combining `-3y + 7y` as `-10y` by ignoring the signs. Remember: `-3 + 7 = +4`.", "zh": "错误地将 `-3y + 7y` 合并为 `-10y`，忽略了符号。记住：`-3 + 7 = +4`。" }
+      "common_mistake": {
+        "en": "Incorrectly combining `-3y + 7y` as `-10y` by ignoring the signs. Remember: `-3 + 7 = +4`.",
+        "zh": "错误地将 `-3y + 7y` 合并为 `-10y`，忽略了符号。记住：`-3 + 7 = +4`。"
+      }
     },
     {
-      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Expand"],
+      "id": "q003",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Expand"
+      ],
       "question": {
         "en": "(a) Expand `3(2x - 5)`.\n\n(b) Expand and simplify `(x + 4)(x - 3)`.",
         "zh": "(a) 展开 `3(2x - 5)`。\n\n(b) 展开并化简 `(x + 4)(x - 3)`。"
       },
-      "answer": { "en": "(a) `6x - 15`\n(b) `x^2 + x - 12`", "zh": "(a) `6x - 15`\n(b) `x^2 + x - 12`" },
+      "answer": {
+        "en": "(a) `6x - 15`\n(b) `x^2 + x - 12`",
+        "zh": "(a) `6x - 15`\n(b) `x^2 + x - 12`"
+      },
       "solution": {
         "en": [
           "(a) Multiply each term inside the bracket by 3:",
-          "`3 \\times 2x = 6x` and `3 \\times (-5) = -15`",
-          "`3(2x - 5) = 6x - 15`",
+          "`3 \\times 2x = 6x` and `3 \\times (-5) = -15`.",
+          "`3(2x - 5) = 6x - 15`.",
           "(b) Use FOIL: First, Outer, Inner, Last:",
-          "`x \\times x = x^2`, `x \\times (-3) = -3x`, `4 \\times x = 4x`, `4 \\times (-3) = -12`",
-          "Combine: `x^2 - 3x + 4x - 12 = x^2 + x - 12`"
+          "`x \\times x = x^2`, `x \\times (-3) = -3x`, `4 \\times x = 4x`, `4 \\times (-3) = -12`.",
+          "Combine: `x^2 - 3x + 4x - 12 = x^2 + x - 12`."
         ],
         "zh": [
           "(a) 将括号内每项乘以3：",
-          "`3 \\times 2x = 6x`，`3 \\times (-5) = -15`",
-          "`3(2x - 5) = 6x - 15`",
+          "`3 \\times 2x = 6x`，`3 \\times (-5) = -15`。",
+          "`3(2x - 5) = 6x - 15`。",
           "(b) 使用FOIL法：首项、外项、内项、末项：",
-          "`x \\times x = x^2`, `x \\times (-3) = -3x`, `4 \\times x = 4x`, `4 \\times (-3) = -12`",
-          "合并：`x^2 - 3x + 4x - 12 = x^2 + x - 12`"
+          "`x \\times x = x^2`, `x \\times (-3) = -3x`, `4 \\times x = 4x`, `4 \\times (-3) = -12`。",
+          "合并：`x^2 - 3x + 4x - 12 = x^2 + x - 12`。"
         ]
       },
-      "common_mistake": { "en": "In (b), getting the constant term wrong: `4 \\times (-3) = -12`, not `+12`. Watch the signs when multiplying.", "zh": "在 (b) 中，常数项计算错误：`4 \\times (-3) = -12`，不是 `+12`。乘法时注意符号。" }
+      "common_mistake": {
+        "en": "In (b), getting the constant term wrong: `4 \\times (-3) = -12`, not `+12`. Watch the signs when multiplying.",
+        "zh": "在 (b) 中，常数项计算错误：`4 \\times (-3) = -12`，不是 `+12`。乘法时注意符号。"
+      }
     },
     {
-      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Factorise"],
+      "id": "q004",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Factorise"
+      ],
       "question": {
         "en": "Factorise completely.\n\n(a) `12ab + 8a`\n\n(b) `6x^2 - 15x`",
         "zh": "完全因式分解。\n\n(a) `12ab + 8a`\n\n(b) `6x^2 - 15x`"
       },
-      "answer": { "en": "(a) `4a(3b + 2)`\n(b) `3x(2x - 5)`", "zh": "(a) `4a(3b + 2)`\n(b) `3x(2x - 5)`" },
+      "answer": {
+        "en": "(a) `4a(3b + 2)`\n(b) `3x(2x - 5)`",
+        "zh": "(a) `4a(3b + 2)`\n(b) `3x(2x - 5)`"
+      },
       "solution": {
         "en": [
           "(a) Find the HCF of `12ab` and `8a`:",
           "HCF of 12 and 8 is 4; both terms contain `a`.",
-          "HCF = `4a`",
-          "`12ab + 8a = 4a(3b + 2)`",
+          "HCF = `4a`.",
+          "`12ab + 8a = 4a(3b + 2)`.",
           "(b) Find the HCF of `6x^2` and `15x`:",
           "HCF of 6 and 15 is 3; both terms contain `x`.",
-          "HCF = `3x`",
-          "`6x^2 - 15x = 3x(2x - 5)`"
+          "HCF = `3x`.",
+          "`6x^2 - 15x = 3x(2x - 5)`."
         ],
         "zh": [
           "(a) 求 `12ab` 和 `8a` 的最大公因式：",
           "12和8的最大公因数是4；两项都含有 `a`。",
-          "最大公因式 = `4a`",
-          "`12ab + 8a = 4a(3b + 2)`",
+          "最大公因式 = `4a`。",
+          "`12ab + 8a = 4a(3b + 2)`。",
           "(b) 求 `6x^2` 和 `15x` 的最大公因式：",
           "6和15的最大公因数是3；两项都含有 `x`。",
-          "最大公因式 = `3x`",
-          "`6x^2 - 15x = 3x(2x - 5)`"
+          "最大公因式 = `3x`。",
+          "`6x^2 - 15x = 3x(2x - 5)`。"
         ]
       },
-      "common_mistake": { "en": "Incomplete factorisation, e.g. writing `3(4ab + 8a/3)` or `x(6x - 15)`. You must take out the HIGHEST common factor of both the numbers and the variables.", "zh": "因式分解不完全，例如写成 `x(6x - 15)`。必须提取数字和变量的最大公因式。" }
+      "common_mistake": {
+        "en": "Incomplete factorisation, e.g. writing `3(4ab + 8a/3)` or `x(6x - 15)`. You must take out the HIGHEST common factor of both the numbers and the variables.",
+        "zh": "因式分解不完全，例如写成 `x(6x - 15)`。必须提取数字和变量的最大公因式。"
+      }
     },
     {
-      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Equations"],
+      "id": "q005",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Equations"
+      ],
       "question": {
         "en": "Solve `5(2x - 3) = 4x + 9`.",
         "zh": "解方程 `5(2x - 3) = 4x + 9`。"
       },
-      "answer": { "en": "`x = 4`", "zh": "`x = 4`" },
+      "answer": {
+        "en": "`x = 4`",
+        "zh": "`x = 4`"
+      },
       "solution": {
         "en": [
-          "Expand the left side: `10x - 15 = 4x + 9`",
-          "Subtract `4x` from both sides: `6x - 15 = 9`",
-          "Add 15 to both sides: `6x = 24`",
-          "Divide both sides by 6: `x = 4`"
+          "Expand the left side: `10x - 15 = 4x + 9`.",
+          "Subtract `4x` from both sides: `6x - 15 = 9`.",
+          "Add 15 to both sides: `6x = 24`.",
+          "Divide both sides by 6: `x = 4`."
         ],
         "zh": [
-          "展开左边：`10x - 15 = 4x + 9`",
-          "两边减去 `4x`：`6x - 15 = 9`",
-          "两边加15：`6x = 24`",
-          "两边除以6：`x = 4`"
+          "展开左边：`10x - 15 = 4x + 9`。",
+          "两边减去 `4x`：`6x - 15 = 9`。",
+          "两边加15：`6x = 24`。",
+          "两边除以6：`x = 4`。"
         ]
       },
-      "common_mistake": { "en": "Expanding `5(2x - 3)` as `10x - 3` instead of `10x - 15`. The 5 must multiply EVERY term inside the bracket.", "zh": "将 `5(2x - 3)` 展开为 `10x - 3` 而不是 `10x - 15`。5必须乘以括号内的每一项。" }
+      "common_mistake": {
+        "en": "Expanding `5(2x - 3)` as `10x - 3` instead of `10x - 15`. The 5 must multiply EVERY term inside the bracket.",
+        "zh": "将 `5(2x - 3)` 展开为 `10x - 3` 而不是 `10x - 15`。5必须乘以括号内的每一项。"
+      }
     },
     {
-      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Equations"],
+      "id": "q006",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Equations"
+      ],
       "question": {
         "en": "Make `t` the subject of the formula `v = u + at`.",
         "zh": "将公式 `v = u + at` 中的 `t` 变为主项。"
       },
-      "answer": { "en": "`t = \\dfrac{v - u}{a}`", "zh": "`t = \\dfrac{v - u}{a}`" },
+      "answer": {
+        "en": "`t = \\dfrac{v - u}{a}`",
+        "zh": "`t = \\dfrac{v - u}{a}`"
+      },
       "solution": {
         "en": [
           "Start with `v = u + at`.",
-          "Subtract `u` from both sides: `v - u = at`",
-          "Divide both sides by `a`: `t = \\dfrac{v - u}{a}`"
+          "Subtract `u` from both sides: `v - u = at`.",
+          "Divide both sides by `a`: `t = \\dfrac{v - u}{a}`."
         ],
         "zh": [
           "从 `v = u + at` 开始。",
-          "两边减去 `u`：`v - u = at`",
-          "两边除以 `a`：`t = \\dfrac{v - u}{a}`"
+          "两边减去 `u`：`v - u = at`。",
+          "两边除以 `a`：`t = \\dfrac{v - u}{a}`。"
         ]
       },
-      "common_mistake": { "en": "Dividing only the `v` by `a`, giving `t = \\dfrac{v}{a} - u`. When dividing, the ENTIRE expression `(v - u)` must be divided by `a`.", "zh": "只将 `v` 除以 `a`，得到 `t = \\dfrac{v}{a} - u`。除法时，整个表达式 `(v - u)` 都必须除以 `a`。" }
+      "common_mistake": {
+        "en": "Dividing only the `v` by `a`, giving `t = \\dfrac{v}{a} - u`. When dividing, the ENTIRE expression `(v - u)` must be divided by `a`.",
+        "zh": "只将 `v` 除以 `a`，得到 `t = \\dfrac{v}{a} - u`。除法时，整个表达式 `(v - u)` 都必须除以 `a`。"
+      }
     },
     {
-      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Simultaneous equations"],
+      "id": "q007",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Simultaneous equations"
+      ],
       "question": {
         "en": "Solve the simultaneous equations.\n\nYou must show all your working.\n\n`3x + 2y = 16`\n\n`x - y = 2`",
         "zh": "解联立方程组。\n\n你必须写出所有计算过程。\n\n`3x + 2y = 16`\n\n`x - y = 2`"
       },
-      "answer": { "en": "`x = 4`, `y = 2`", "zh": "`x = 4`, `y = 2`" },
+      "answer": {
+        "en": "`x = 4`, `y = 2`",
+        "zh": "`x = 4`, `y = 2`"
+      },
       "solution": {
         "en": [
           "Label the equations: (1) `3x + 2y = 16`, (2) `x - y = 2`.",
           "From (2): `x = y + 2`.",
-          "Substitute into (1): `3(y + 2) + 2y = 16`",
-          "Expand: `3y + 6 + 2y = 16`",
-          "Simplify: `5y + 6 = 16`",
+          "Substitute into (1): `3(y + 2) + 2y = 16`.",
+          "Expand: `3y + 6 + 2y = 16`.",
+          "Simplify: `5y + 6 = 16`.",
           "`5y = 10`, so `y = 2`.",
           "Substitute back: `x = 2 + 2 = 4`.",
           "Solution: `x = 4`, `y = 2`."
@@ -206,136 +384,208 @@
         "zh": [
           "标记方程：(1) `3x + 2y = 16`，(2) `x - y = 2`。",
           "由 (2) 得：`x = y + 2`。",
-          "代入 (1)：`3(y + 2) + 2y = 16`",
-          "展开：`3y + 6 + 2y = 16`",
-          "化简：`5y + 6 = 16`",
+          "代入 (1)：`3(y + 2) + 2y = 16`。",
+          "展开：`3y + 6 + 2y = 16`。",
+          "化简：`5y + 6 = 16`。",
           "`5y = 10`，所以 `y = 2`。",
           "代回：`x = 2 + 2 = 4`。",
           "答案：`x = 4`，`y = 2`。"
         ]
       },
-      "common_mistake": { "en": "Sign errors when substituting, e.g. writing `3(y + 2)` as `3y + 2` instead of `3y + 6`. Always expand brackets carefully.", "zh": "代入时的符号错误，例如将 `3(y + 2)` 写成 `3y + 2` 而不是 `3y + 6`。展开括号时要仔细。" }
+      "common_mistake": {
+        "en": "Sign errors when substituting, e.g. writing `3(y + 2)` as `3y + 2` instead of `3y + 6`. Always expand brackets carefully.",
+        "zh": "代入时的符号错误，例如将 `3(y + 2)` 写成 `3y + 2` 而不是 `3y + 6`。展开括号时要仔细。"
+      }
     }
   ],
   "questions_extended": [
     {
-      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Factorise"],
+      "id": "q008",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 3,
+      "topic": [
+        "Factorise"
+      ],
       "question": {
         "en": "Factorise completely `50x^2 - 18y^2`.",
         "zh": "完全因式分解 `50x^2 - 18y^2`。"
       },
-      "answer": { "en": "`2(5x + 3y)(5x - 3y)`", "zh": "`2(5x + 3y)(5x - 3y)`" },
+      "answer": {
+        "en": "`2(5x + 3y)(5x - 3y)`",
+        "zh": "`2(5x + 3y)(5x - 3y)`"
+      },
       "solution": {
         "en": [
           "First, take out the common factor of 2:",
-          "`50x^2 - 18y^2 = 2(25x^2 - 9y^2)`",
+          "`50x^2 - 18y^2 = 2(25x^2 - 9y^2)`.",
           "Recognise the difference of two squares: `25x^2 = (5x)^2` and `9y^2 = (3y)^2`.",
           "Apply `a^2 - b^2 = (a + b)(a - b)`:",
-          "`= 2(5x + 3y)(5x - 3y)`"
+          "`= 2(5x + 3y)(5x - 3y)`."
         ],
         "zh": [
           "首先，提取公因数2：",
-          "`50x^2 - 18y^2 = 2(25x^2 - 9y^2)`",
+          "`50x^2 - 18y^2 = 2(25x^2 - 9y^2)`。",
           "识别平方差：`25x^2 = (5x)^2`，`9y^2 = (3y)^2`。",
           "应用 `a^2 - b^2 = (a + b)(a - b)`：",
-          "`= 2(5x + 3y)(5x - 3y)`"
+          "`= 2(5x + 3y)(5x - 3y)`。"
         ]
       },
-      "common_mistake": { "en": "Forgetting to take out the common factor first and writing `(\\sqrt{50}x + \\sqrt{18}y)(\\sqrt{50}x - \\sqrt{18}y)`. Always extract the HCF before applying difference of two squares.", "zh": "忘记先提取公因数，直接写成含有根号的形式。应先提取最大公因式，再应用平方差公式。" }
+      "common_mistake": {
+        "en": "Forgetting to take out the common factor first and writing `(\\sqrt{50}x + \\sqrt{18}y)(\\sqrt{50}x - \\sqrt{18}y)`. Always extract the HCF before applying difference of two squares.",
+        "zh": "忘记先提取公因数，直接写成含有根号的形式。应先提取最大公因式，再应用平方差公式。"
+      }
     },
     {
-      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Expand"],
+      "id": "q009",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 3,
+      "topic": [
+        "Expand"
+      ],
       "question": {
         "en": "Expand and simplify `5(2x - 7) - 3(x - 5)`.",
         "zh": "展开并化简 `5(2x - 7) - 3(x - 5)`。"
       },
-      "answer": { "en": "`7x - 20`", "zh": "`7x - 20`" },
+      "answer": {
+        "en": "`7x - 20`",
+        "zh": "`7x - 20`"
+      },
       "solution": {
         "en": [
           "Expand each bracket:",
-          "`5(2x - 7) = 10x - 35`",
-          "`-3(x - 5) = -3x + 15`",
-          "Combine: `10x - 35 - 3x + 15`",
-          "Collect like terms: `(10x - 3x) + (-35 + 15) = 7x - 20`"
+          "`5(2x - 7) = 10x - 35`.",
+          "`-3(x - 5) = -3x + 15`.",
+          "Combine: `10x - 35 - 3x + 15`.",
+          "Collect like terms: `(10x - 3x) + (-35 + 15) = 7x - 20`."
         ],
         "zh": [
           "展开每个括号：",
-          "`5(2x - 7) = 10x - 35`",
-          "`-3(x - 5) = -3x + 15`",
-          "合并：`10x - 35 - 3x + 15`",
-          "合并同类项：`(10x - 3x) + (-35 + 15) = 7x - 20`"
+          "`5(2x - 7) = 10x - 35`。",
+          "`-3(x - 5) = -3x + 15`。",
+          "合并：`10x - 35 - 3x + 15`。",
+          "合并同类项：`(10x - 3x) + (-35 + 15) = 7x - 20`。"
         ]
       },
-      "common_mistake": { "en": "Writing `-3(x - 5) = -3x - 15` instead of `-3x + 15`. A negative sign outside the bracket changes the sign of EVERY term inside.", "zh": "将 `-3(x - 5)` 写成 `-3x - 15` 而不是 `-3x + 15`。括号外的负号会改变括号内每一项的符号。" }
+      "common_mistake": {
+        "en": "Writing `-3(x - 5) = -3x - 15` instead of `-3x + 15`. A negative sign outside the bracket changes the sign of EVERY term inside.",
+        "zh": "将 `-3(x - 5)` 写成 `-3x - 15` 而不是 `-3x + 15`。括号外的负号会改变括号内每一项的符号。"
+      }
     },
     {
-      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Equations"],
+      "id": "q010",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 3,
+      "topic": [
+        "Equations"
+      ],
       "question": {
         "en": "Make `r` the subject of the formula\n\n`V = \\dfrac{1}{3} \\pi r^2 h`",
         "zh": "将公式 `V = \\dfrac{1}{3} \\pi r^2 h` 中的 `r` 变为主项。"
       },
-      "answer": { "en": "`r = \\sqrt{\\dfrac{3V}{\\pi h}}`", "zh": "`r = \\sqrt{\\dfrac{3V}{\\pi h}}`" },
+      "answer": {
+        "en": "`r = \\sqrt{\\dfrac{3V}{\\pi h}}`",
+        "zh": "`r = \\sqrt{\\dfrac{3V}{\\pi h}}`"
+      },
       "solution": {
         "en": [
           "Start with `V = \\dfrac{1}{3} \\pi r^2 h`.",
-          "Multiply both sides by 3: `3V = \\pi r^2 h`",
-          "Divide both sides by `\\pi h`: `\\dfrac{3V}{\\pi h} = r^2`",
-          "Take the square root: `r = \\sqrt{\\dfrac{3V}{\\pi h}}`"
+          "Multiply both sides by 3: `3V = \\pi r^2 h`.",
+          "Divide both sides by `\\pi h`: `\\dfrac{3V}{\\pi h} = r^2`.",
+          "Take the square root: `r = \\sqrt{\\dfrac{3V}{\\pi h}}`."
         ],
         "zh": [
           "从 `V = \\dfrac{1}{3} \\pi r^2 h` 开始。",
-          "两边乘以3：`3V = \\pi r^2 h`",
-          "两边除以 `\\pi h`：`\\dfrac{3V}{\\pi h} = r^2`",
-          "取平方根：`r = \\sqrt{\\dfrac{3V}{\\pi h}}`"
+          "两边乘以3：`3V = \\pi r^2 h`。",
+          "两边除以 `\\pi h`：`\\dfrac{3V}{\\pi h} = r^2`。",
+          "取平方根：`r = \\sqrt{\\dfrac{3V}{\\pi h}}`。"
         ]
       },
-      "common_mistake": { "en": "Forgetting to take the square root at the end, giving `r = \\dfrac{3V}{\\pi h}` instead of `r = \\sqrt{\\dfrac{3V}{\\pi h}}`.", "zh": "忘记最后取平方根，得到 `r = \\dfrac{3V}{\\pi h}` 而不是 `r = \\sqrt{\\dfrac{3V}{\\pi h}}`。" }
+      "common_mistake": {
+        "en": "Forgetting to take the square root at the end, giving `r = \\dfrac{3V}{\\pi h}` instead of `r = \\sqrt{\\dfrac{3V}{\\pi h}}`.",
+        "zh": "忘记最后取平方根，得到 `r = \\dfrac{3V}{\\pi h}` 而不是 `r = \\sqrt{\\dfrac{3V}{\\pi h}}`。"
+      }
     },
     {
-      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Simultaneous equations"],
+      "id": "q011",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Simultaneous equations"
+      ],
       "question": {
         "en": "3 adult tickets and 2 child tickets cost $43.50.\n\n5 adult tickets and 3 child tickets cost $70.50.\n\nWrite down two equations and solve them to find the cost of one adult ticket and the cost of one child ticket.",
         "zh": "3张成人票和2张儿童票共花费 $43.50。\n\n5张成人票和3张儿童票共花费 $70.50。\n\n列出两个方程并求解，求一张成人票和一张儿童票的价格。"
       },
-      "answer": { "en": "Adult ticket: $10.50, Child ticket: $6", "zh": "成人票：$10.50，儿童票：$6" },
+      "answer": {
+        "en": "Adult ticket: $10.50, Child ticket: $6",
+        "zh": "成人票：$10.50，儿童票：$6"
+      },
       "solution": {
         "en": [
           "Let `a` = cost of adult ticket, `c` = cost of child ticket.",
-          "Equation 1: `3a + 2c = 43.50`",
-          "Equation 2: `5a + 3c = 70.50`",
-          "Multiply (1) by 3: `9a + 6c = 130.50`",
-          "Multiply (2) by 2: `10a + 6c = 141`",
-          "Subtract: `10a + 6c - 9a - 6c = 141 - 130.50`",
-          "`a = 10.50`",
-          "Substitute into (1): `3(10.50) + 2c = 43.50`",
-          "`31.50 + 2c = 43.50`",
+          "Equation 1: `3a + 2c = 43.50`.",
+          "Equation 2: `5a + 3c = 70.50`.",
+          "Multiply (1) by 3: `9a + 6c = 130.50`.",
+          "Multiply (2) by 2: `10a + 6c = 141`.",
+          "Subtract: `10a + 6c - 9a - 6c = 141 - 130.50`.",
+          "`a = 10.50`.",
+          "Substitute into (1): `3(10.50) + 2c = 43.50`.",
+          "`31.50 + 2c = 43.50`.",
           "`2c = 12`, so `c = 6`.",
           "Adult ticket = $10.50, Child ticket = $6."
         ],
         "zh": [
           "设 `a` = 成人票价格，`c` = 儿童票价格。",
-          "方程1：`3a + 2c = 43.50`",
-          "方程2：`5a + 3c = 70.50`",
-          "将 (1) 乘以3：`9a + 6c = 130.50`",
-          "将 (2) 乘以2：`10a + 6c = 141`",
-          "相减：`10a + 6c - 9a - 6c = 141 - 130.50`",
-          "`a = 10.50`",
-          "代入 (1)：`3(10.50) + 2c = 43.50`",
-          "`31.50 + 2c = 43.50`",
+          "方程1：`3a + 2c = 43.50`。",
+          "方程2：`5a + 3c = 70.50`。",
+          "将 (1) 乘以3：`9a + 6c = 130.50`。",
+          "将 (2) 乘以2：`10a + 6c = 141`。",
+          "相减：`10a + 6c - 9a - 6c = 141 - 130.50`。",
+          "`a = 10.50`。",
+          "代入 (1)：`3(10.50) + 2c = 43.50`。",
+          "`31.50 + 2c = 43.50`。",
           "`2c = 12`，所以 `c = 6`。",
           "成人票 = $10.50，儿童票 = $6。"
         ]
       },
-      "common_mistake": { "en": "Errors when multiplying equations to match coefficients. Check carefully that EVERY term is multiplied, not just the first.", "zh": "为匹配系数而乘以方程时出错。仔细检查每一项都被乘到，而不只是第一项。" }
+      "common_mistake": {
+        "en": "Errors when multiplying equations to match coefficients. Check carefully that EVERY term is multiplied, not just the first.",
+        "zh": "为匹配系数而乘以方程时出错。仔细检查每一项都被乘到，而不只是第一项。"
+      }
     }
   ],
   "review_checklist": [
-    { "en": "I can substitute values into algebraic expressions and formulae.", "zh": "我能将数值代入代数表达式和公式。" },
-    { "en": "I can simplify expressions by collecting like terms.", "zh": "我能通过合并同类项来化简表达式。" },
-    { "en": "I can expand single and double brackets.", "zh": "我能展开单括号和双括号。" },
-    { "en": "I can factorise expressions by taking out common factors.", "zh": "我能通过提取公因式来进行因式分解。" },
-    { "en": "I can solve linear equations including those with brackets.", "zh": "我能解线性方程，包括含有括号的方程。" },
-    { "en": "I can solve simultaneous linear equations.", "zh": "我能解联立线性方程组。" },
-    { "en": "I can factorise using difference of two squares (Extended).", "zh": "我能使用平方差公式进行因式分解（拓展）。" }
+    {
+      "en": "I can substitute values into algebraic expressions and formulae.",
+      "zh": "我能将数值代入代数表达式和公式。"
+    },
+    {
+      "en": "I can simplify expressions by collecting like terms.",
+      "zh": "我能通过合并同类项来化简表达式。"
+    },
+    {
+      "en": "I can expand single and double brackets.",
+      "zh": "我能展开单括号和双括号。"
+    },
+    {
+      "en": "I can factorise expressions by taking out common factors.",
+      "zh": "我能通过提取公因式来进行因式分解。"
+    },
+    {
+      "en": "I can solve linear equations including those with brackets.",
+      "zh": "我能解线性方程，包括含有括号的方程。"
+    },
+    {
+      "en": "I can solve simultaneous linear equations.",
+      "zh": "我能解联立线性方程组。"
+    },
+    {
+      "en": "I can factorise using difference of two squares (Extended).",
+      "zh": "我能使用平方差公式进行因式分解（拓展）。"
+    }
   ]
 }

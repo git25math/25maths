@@ -9,55 +9,173 @@
   "subtopic_ids": [
     "cie0580:probability-c8:c8-01-basic-probability"
   ],
-  "syllabus_refs": ["C8.1", "C8.2", "C8.3", "E8.1", "E8.2", "E8.3", "E8.4"],
+  "syllabus_refs": [
+    "C8.1",
+    "C8.2",
+    "C8.3",
+    "E8.1",
+    "E8.2",
+    "E8.3",
+    "E8.4"
+  ],
   "key_vocabulary": [
-    { "term_en": "Probability", "term_zh": "概率", "definition": "A measure of how likely an event is to occur, expressed as a number between 0 and 1.", "definition_zh": "衡量一个事件发生可能性大小的数值，介于 0 和 1 之间。" },
-    { "term_en": "Outcome", "term_zh": "结果", "definition": "A possible result of an experiment or trial.", "definition_zh": "一次实验或试验中可能出现的结果。" },
-    { "term_en": "Event", "term_zh": "事件", "definition": "A set of one or more outcomes from an experiment.", "definition_zh": "实验中一个或多个结果的集合。" },
-    { "term_en": "Sample Space", "term_zh": "样本空间", "definition": "The set of all possible outcomes of an experiment.", "definition_zh": "一次实验所有可能结果的集合。" },
-    { "term_en": "Theoretical Probability", "term_zh": "理论概率", "definition": "Probability calculated using equally likely outcomes: P(event) = number of favourable outcomes / total number of outcomes.", "definition_zh": "利用等可能结果计算的概率：P(事件) = 有利结果数 / 总结果数。" },
-    { "term_en": "Experimental Probability", "term_zh": "实验概率", "definition": "Probability estimated from the results of an experiment: relative frequency = frequency / total trials.", "definition_zh": "根据实验结果估算的概率：相对频率 = 频数 / 总试验次数。" },
-    { "term_en": "Relative Frequency", "term_zh": "相对频率", "definition": "The proportion of times an outcome occurs in a series of trials; used to estimate probability.", "definition_zh": "在一系列试验中某一结果出现的比例；用于估算概率。" },
-    { "term_en": "Expected Frequency", "term_zh": "期望频数", "definition": "The predicted number of times an event will occur: expected frequency = probability x number of trials.", "definition_zh": "预测某事件出现的次数：期望频数 = 概率 x 试验次数。" },
-    { "term_en": "Complementary Event", "term_zh": "互补事件", "definition": "The event that A does NOT happen. P(not A) = 1 - P(A).", "definition_zh": "事件 A 不发生的事件。P(非 A) = 1 - P(A)。" },
-    { "term_en": "Independent Events", "term_zh": "独立事件", "definition": "Two events where the occurrence of one does not affect the probability of the other.", "definition_zh": "两个事件中，一个事件的发生不影响另一个事件的概率。" },
-    { "term_en": "Dependent Events", "term_zh": "非独立事件", "definition": "Two events where the occurrence of one changes the probability of the other (e.g. without replacement).", "definition_zh": "两个事件中，一个事件的发生会改变另一个事件的概率（如不放回抽样）。" },
-    { "term_en": "Tree Diagram", "term_zh": "树形图", "definition": "A diagram showing all possible outcomes of successive events, with probabilities on each branch.", "definition_zh": "显示连续事件所有可能结果的图表，每个分支上标有概率。" },
-    { "term_en": "Venn Diagram", "term_zh": "维恩图", "definition": "A diagram using overlapping circles to show relationships between sets or events.", "definition_zh": "使用重叠圆形表示集合或事件之间关系的图表。" },
-    { "term_en": "Two-way Table", "term_zh": "双向表", "definition": "A table that displays frequencies for two categorical variables, showing how they relate.", "definition_zh": "显示两个分类变量频数的表格，反映它们之间的关系。" },
-    { "term_en": "Combined Events", "term_zh": "复合事件", "definition": "The probability of two or more events occurring together or in succession.", "definition_zh": "两个或多个事件同时或先后发生的概率。" },
-    { "term_en": "Mutually Exclusive", "term_zh": "互斥事件", "definition": "Events that cannot happen at the same time. P(A or B) = P(A) + P(B).", "definition_zh": "不能同时发生的事件。P(A 或 B) = P(A) + P(B)。" },
-    { "term_en": "Conditional Probability", "term_zh": "条件概率", "definition": "The probability of an event occurring given that another event has already occurred: P(A|B).", "definition_zh": "在另一个事件已经发生的条件下，某事件发生的概率：P(A|B)。" },
-    { "term_en": "Without Replacement", "term_zh": "不放回抽样", "definition": "Selecting items one after another without putting them back, so the total decreases each time.", "definition_zh": "逐一取出物品而不放回，因此每次总数减少。" }
+    {
+      "term_en": "Probability",
+      "term_zh": "概率",
+      "definition": "A measure of how likely an event is to occur, expressed as a number between 0 and 1.",
+      "definition_zh": "衡量一个事件发生可能性大小的数值，介于 0 和 1 之间。"
+    },
+    {
+      "term_en": "Outcome",
+      "term_zh": "结果",
+      "definition": "A possible result of an experiment or trial.",
+      "definition_zh": "一次实验或试验中可能出现的结果。"
+    },
+    {
+      "term_en": "Event",
+      "term_zh": "事件",
+      "definition": "A set of one or more outcomes from an experiment.",
+      "definition_zh": "实验中一个或多个结果的集合。"
+    },
+    {
+      "term_en": "Sample Space",
+      "term_zh": "样本空间",
+      "definition": "The set of all possible outcomes of an experiment.",
+      "definition_zh": "一次实验所有可能结果的集合。"
+    },
+    {
+      "term_en": "Theoretical Probability",
+      "term_zh": "理论概率",
+      "definition": "Probability calculated using equally likely outcomes: P(event) = number of favourable outcomes / total number of outcomes.",
+      "definition_zh": "利用等可能结果计算的概率：P(事件) = 有利结果数 / 总结果数。"
+    },
+    {
+      "term_en": "Experimental Probability",
+      "term_zh": "实验概率",
+      "definition": "Probability estimated from the results of an experiment: relative frequency = frequency / total trials.",
+      "definition_zh": "根据实验结果估算的概率：相对频率 = 频数 / 总试验次数。"
+    },
+    {
+      "term_en": "Relative Frequency",
+      "term_zh": "相对频率",
+      "definition": "The proportion of times an outcome occurs in a series of trials; used to estimate probability.",
+      "definition_zh": "在一系列试验中某一结果出现的比例；用于估算概率。"
+    },
+    {
+      "term_en": "Expected Frequency",
+      "term_zh": "期望频数",
+      "definition": "The predicted number of times an event will occur: expected frequency = probability x number of trials.",
+      "definition_zh": "预测某事件出现的次数：期望频数 = 概率 x 试验次数。"
+    },
+    {
+      "term_en": "Complementary Event",
+      "term_zh": "互补事件",
+      "definition": "The event that A does NOT happen. P(not A) = 1 - P(A).",
+      "definition_zh": "事件 A 不发生的事件。P(非 A) = 1 - P(A)。"
+    },
+    {
+      "term_en": "Independent Events",
+      "term_zh": "独立事件",
+      "definition": "Two events where the occurrence of one does not affect the probability of the other.",
+      "definition_zh": "两个事件中，一个事件的发生不影响另一个事件的概率。"
+    },
+    {
+      "term_en": "Dependent Events",
+      "term_zh": "非独立事件",
+      "definition": "Two events where the occurrence of one changes the probability of the other (e.g. without replacement).",
+      "definition_zh": "两个事件中，一个事件的发生会改变另一个事件的概率（如不放回抽样）。"
+    },
+    {
+      "term_en": "Tree Diagram",
+      "term_zh": "树形图",
+      "definition": "A diagram showing all possible outcomes of successive events, with probabilities on each branch.",
+      "definition_zh": "显示连续事件所有可能结果的图表，每个分支上标有概率。"
+    },
+    {
+      "term_en": "Venn Diagram",
+      "term_zh": "维恩图",
+      "definition": "A diagram using overlapping circles to show relationships between sets or events.",
+      "definition_zh": "使用重叠圆形表示集合或事件之间关系的图表。"
+    },
+    {
+      "term_en": "Two-way Table",
+      "term_zh": "双向表",
+      "definition": "A table that displays frequencies for two categorical variables, showing how they relate.",
+      "definition_zh": "显示两个分类变量频数的表格，反映它们之间的关系。"
+    },
+    {
+      "term_en": "Combined Events",
+      "term_zh": "复合事件",
+      "definition": "The probability of two or more events occurring together or in succession.",
+      "definition_zh": "两个或多个事件同时或先后发生的概率。"
+    },
+    {
+      "term_en": "Mutually Exclusive",
+      "term_zh": "互斥事件",
+      "definition": "Events that cannot happen at the same time. P(A or B) = P(A) + P(B).",
+      "definition_zh": "不能同时发生的事件。P(A 或 B) = P(A) + P(B)。"
+    },
+    {
+      "term_en": "Conditional Probability",
+      "term_zh": "条件概率",
+      "definition": "The probability of an event occurring given that another event has already occurred: P(A|B).",
+      "definition_zh": "在另一个事件已经发生的条件下，某事件发生的概率：P(A|B)。"
+    },
+    {
+      "term_en": "Without Replacement",
+      "term_zh": "不放回抽样",
+      "definition": "Selecting items one after another without putting them back, so the total decreases each time.",
+      "definition_zh": "逐一取出物品而不放回，因此每次总数减少。"
+    }
   ],
   "questions_core": [
     {
-      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Probability", "Basic"],
+      "id": "q001",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Probability",
+        "Basic"
+      ],
       "question": {
         "en": "A bag contains 3 red balls, 5 blue balls and 2 green balls.\nA ball is taken from the bag at random.\n\n(a) Write down the probability that the ball is red.\n\n(b) Write down the probability that the ball is not green.",
         "zh": "一个袋子里有 3 个红球、5 个蓝球和 2 个绿球。\n随机从袋中取出一个球。\n\n(a) 写出取到红球的概率。\n\n(b) 写出取到的球不是绿球的概率。"
       },
-      "answer": { "en": "(a) 3/10\n(b) 4/5", "zh": "(a) 3/10\n(b) 4/5" },
+      "answer": {
+        "en": "(a) 3/10\n(b) 4/5",
+        "zh": "(a) 3/10\n(b) 4/5"
+      },
       "solution": {
         "en": [
-          "Total number of balls `= 3 + 5 + 2 = 10`",
-          "(a) `P(\\text{red}) = \\dfrac{3}{10}`",
-          "(b) Number of balls that are not green `= 3 + 5 = 8`",
-          "`P(\\text{not green}) = \\dfrac{8}{10} = \\dfrac{4}{5}`",
-          "Alternatively: `P(\\text{not green}) = 1 - P(\\text{green}) = 1 - \\dfrac{2}{10} = \\dfrac{8}{10} = \\dfrac{4}{5}`"
+          "Total number of balls `= 3 + 5 + 2 = 10`.",
+          "(a) `P(\\text{red}) = \\dfrac{3}{10}`.",
+          "(b) Number of balls that are not green `= 3 + 5 = 8`.",
+          "`P(\\text{not green}) = \\dfrac{8}{10} = \\dfrac{4}{5}`.",
+          "Alternatively: `P(\\text{not green}) = 1 - P(\\text{green}) = 1 - \\dfrac{2}{10} = \\dfrac{8}{10} = \\dfrac{4}{5}`."
         ],
         "zh": [
-          "球的总数 `= 3 + 5 + 2 = 10`",
-          "(a) `P(\\text{红}) = \\dfrac{3}{10}`",
-          "(b) 不是绿球的数量 `= 3 + 5 = 8`",
-          "`P(\\text{非绿}) = \\dfrac{8}{10} = \\dfrac{4}{5}`",
-          "或者：`P(\\text{非绿}) = 1 - P(\\text{绿}) = 1 - \\dfrac{2}{10} = \\dfrac{8}{10} = \\dfrac{4}{5}`"
+          "球的总数 `= 3 + 5 + 2 = 10`。",
+          "(a) `P(\\text{红}) = \\dfrac{3}{10}`。",
+          "(b) 不是绿球的数量 `= 3 + 5 = 8`。",
+          "`P(\\text{非绿}) = \\dfrac{8}{10} = \\dfrac{4}{5}`。",
+          "或者：`P(\\text{非绿}) = 1 - P(\\text{绿}) = 1 - \\dfrac{2}{10} = \\dfrac{8}{10} = \\dfrac{4}{5}`。"
         ]
       },
-      "common_mistake": { "en": "Writing probability as a ratio (3:10) instead of a fraction (3/10). In CIE 0580, probabilities must be given as fractions, decimals or percentages.", "zh": "将概率写成比（3:10）而不是分数（3/10）。在 CIE 0580 中，概率必须以分数、小数或百分数形式给出。" }
+      "common_mistake": {
+        "en": "Writing probability as a ratio (3:10) instead of a fraction (3/10). In CIE 0580, probabilities must be given as fractions, decimals or percentages.",
+        "zh": "将概率写成比（3:10）而不是分数（3/10）。在 CIE 0580 中，概率必须以分数、小数或百分数形式给出。"
+      }
     },
     {
-      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Probability Scale", "Complementary Events"],
+      "id": "q002",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Probability Scale",
+        "Complementary Events"
+      ],
       "question": {
         "en": "The probability that it rains on any given day in June is 0.35.\n\n(a) On the probability scale below, mark with an arrow the probability that it rains.\n\n(b) Calculate the probability that it does NOT rain on a given day in June.",
         "zh": "六月中任何一天下雨的概率是 0.35。\n\n(a) 在下面的概率标尺上，用箭头标出下雨的概率。\n\n(b) 计算六月中某一天不下雨的概率。"
@@ -71,23 +189,36 @@
         "  }",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) Arrow at 0.35 on the scale\n(b) 0.65", "zh": "(a) 箭头标在标尺的 0.35 处\n(b) 0.65" },
+      "answer": {
+        "en": "(a) Arrow at 0.35 on the scale\n(b) 0.65",
+        "zh": "(a) 箭头标在标尺的 0.35 处\n(b) 0.65"
+      },
       "solution": {
         "en": [
           "(a) Mark an arrow at `0.35` on the probability scale, which is between 0.25 and 0.5, slightly closer to 0.25.",
-          "(b) `P(\\text{not rain}) = 1 - P(\\text{rain})`",
-          "`= 1 - 0.35 = 0.65`"
+          "(b) `P(\\text{not rain}) = 1 - P(\\text{rain})`.",
+          "`= 1 - 0.35 = 0.65`."
         ],
         "zh": [
           "(a) 在概率标尺上 `0.35` 处标一个箭头，位于 0.25 和 0.5 之间，稍靠近 0.25。",
-          "(b) `P(\\text{不下雨}) = 1 - P(\\text{下雨})`",
-          "`= 1 - 0.35 = 0.65`"
+          "(b) `P(\\text{不下雨}) = 1 - P(\\text{下雨})`。",
+          "`= 1 - 0.35 = 0.65`。"
         ]
       },
-      "common_mistake": { "en": "Placing the arrow at 0.35 of the total LENGTH of the line rather than at the value 0.35. Read the scale markings carefully.", "zh": "将箭头标在线段总长度的 0.35 处，而不是标尺数值 0.35 处。请仔细读取标尺刻度。" }
+      "common_mistake": {
+        "en": "Placing the arrow at 0.35 of the total LENGTH of the line rather than at the value 0.35. Read the scale markings carefully.",
+        "zh": "将箭头标在线段总长度的 0.35 处，而不是标尺数值 0.35 处。请仔细读取标尺刻度。"
+      }
     },
     {
-      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Experimental Probability", "Relative Frequency"],
+      "id": "q003",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Experimental Probability",
+        "Relative Frequency"
+      ],
       "question": {
         "en": "Amir rolls a biased dice 200 times. The table shows his results.\n\n(a) Find the relative frequency of rolling a 4.\n\n(b) Is the dice fair? Give a reason for your answer.",
         "zh": "Amir 掷一枚不均匀的骰子 200 次。下表是他的结果。\n\n(a) 求掷出 4 的相对频率。\n\n(b) 这枚骰子公平吗？给出你的理由。"
@@ -101,48 +232,73 @@
         "\\hline",
         "\\end{tabular}"
       ],
-      "answer": { "en": "(a) 0.21\n(b) The dice may not be fair. The relative frequency of 4 is 0.21 which is noticeably higher than 1/6 (approx 0.167).", "zh": "(a) 0.21\n(b) 骰子可能不公平。4 的相对频率为 0.21，明显高于 1/6（约 0.167）。" },
+      "answer": {
+        "en": "(a) 0.21\n(b) The dice may not be fair. The relative frequency of 4 is 0.21 which is noticeably higher than 1/6 (approx 0.167).",
+        "zh": "(a) 0.21\n(b) 骰子可能不公平。4 的相对频率为 0.21，明显高于 1/6（约 0.167）。"
+      },
       "solution": {
         "en": [
-          "(a) `\\text{Relative frequency of 4} = \\dfrac{42}{200} = 0.21`",
+          "(a) `\\text{Relative frequency of 4} = \\dfrac{42}{200} = 0.21`.",
           "(b) For a fair dice, each score has probability `\\dfrac{1}{6} \\approx 0.167`.",
           "The expected frequency for each score would be `\\dfrac{200}{6} \\approx 33.3`.",
           "The frequency of 4 is 42, which is noticeably higher than 33.3.",
           "The dice may not be fair, but 200 trials may not be enough to be certain."
         ],
         "zh": [
-          "(a) `\\text{4 的相对频率} = \\dfrac{42}{200} = 0.21`",
+          "(a) `\\text{4 的相对频率} = \\dfrac{42}{200} = 0.21`。",
           "(b) 对于公平骰子，每个点数的概率为 `\\dfrac{1}{6} \\approx 0.167`。",
           "每个点数的期望频数为 `\\dfrac{200}{6} \\approx 33.3`。",
           "4 的频数为 42，明显高于 33.3。",
           "骰子可能不公平，但 200 次试验可能不足以确定。"
         ]
       },
-      "common_mistake": { "en": "Stating the dice is definitely unfair based on 200 trials. You should say 'may not be fair' because experimental results vary. More trials would give more reliable results.", "zh": "仅根据 200 次试验就断言骰子一定不公平。应该说「可能不公平」，因为实验结果会有波动。更多次试验能给出更可靠的结果。" }
+      "common_mistake": {
+        "en": "Stating the dice is definitely unfair based on 200 trials. You should say 'may not be fair' because experimental results vary. More trials would give more reliable results.",
+        "zh": "仅根据 200 次试验就断言骰子一定不公平。应该说「可能不公平」，因为实验结果会有波动。更多次试验能给出更可靠的结果。"
+      }
     },
     {
-      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Expected Frequency"],
+      "id": "q004",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Expected Frequency"
+      ],
       "question": {
         "en": "The probability that a train arrives late on any day is 0.15.\n\nThe train runs on 240 days in a year.\n\nCalculate the expected number of days the train arrives late.",
         "zh": "某火车在任意一天晚点的概率是 0.15。\n\n该火车一年运行 240 天。\n\n计算该火车预计晚点的天数。"
       },
-      "answer": { "en": "36", "zh": "36" },
+      "answer": {
+        "en": "36",
+        "zh": "36"
+      },
       "solution": {
         "en": [
-          "`\\text{Expected frequency} = \\text{probability} \\times \\text{number of trials}`",
-          "`= 0.15 \\times 240`",
-          "`= 36` days"
+          "`\\text{Expected frequency} = \\text{probability} \\times \\text{number of trials}`.",
+          "`= 0.15 \\times 240`.",
+          "`= 36` days."
         ],
         "zh": [
-          "`\\text{期望频数} = \\text{概率} \\times \\text{试验次数}`",
-          "`= 0.15 \\times 240`",
-          "`= 36` 天"
+          "`\\text{期望频数} = \\text{概率} \\times \\text{试验次数}`。",
+          "`= 0.15 \\times 240`。",
+          "`= 36` 天。"
         ]
       },
-      "common_mistake": { "en": "Dividing instead of multiplying: 240 / 0.15 = 1600. Expected frequency = probability TIMES number of trials, not divided.", "zh": "除以而不是乘以：240 / 0.15 = 1600。期望频数 = 概率乘以试验次数，不是除以。" }
+      "common_mistake": {
+        "en": "Dividing instead of multiplying: 240 / 0.15 = 1600. Expected frequency = probability TIMES number of trials, not divided.",
+        "zh": "除以而不是乘以：240 / 0.15 = 1600。期望频数 = 概率乘以试验次数，不是除以。"
+      }
     },
     {
-      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Two-way Table", "Probability"],
+      "id": "q005",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Two-way Table",
+        "Probability"
+      ],
       "question": {
         "en": "120 students were asked whether they prefer football or basketball.\nThe results are shown in the two-way table.\n\nA student is chosen at random.\n\n(a) Find the probability that the student is a girl who prefers basketball.\n\n(b) Find the probability that the student prefers football.\n\n(c) Find the probability that the student is a boy or prefers basketball (or both).",
         "zh": "120 名学生被问到喜欢足球还是篮球。\n结果如下表所示。\n\n随机选一名学生。\n\n(a) 求选到喜欢篮球的女生的概率。\n\n(b) 求选到喜欢足球的学生的概率。\n\n(c) 求选到男生或喜欢篮球（或两者兼具）的概率。"
@@ -160,31 +316,44 @@
         "\\hline",
         "\\end{tabular}"
       ],
-      "answer": { "en": "(a) 4/15\n(b) 21/40\n(c) 23/30", "zh": "(a) 4/15\n(b) 21/40\n(c) 23/30" },
+      "answer": {
+        "en": "(a) 4/15\n(b) 21/40\n(c) 23/30",
+        "zh": "(a) 4/15\n(b) 21/40\n(c) 23/30"
+      },
       "solution": {
         "en": [
-          "(a) Number of girls who prefer basketball `= 32`",
-          "`P(\\text{girl and basketball}) = \\dfrac{32}{120} = \\dfrac{4}{15}`",
-          "(b) Total who prefer football `= 63`",
-          "`P(\\text{football}) = \\dfrac{63}{120} = \\dfrac{21}{40}`",
-          "(c) Boys or basketball (or both) `= 35 + 25 + 32 = 92`",
+          "(a) Number of girls who prefer basketball `= 32`.",
+          "`P(\\text{girl and basketball}) = \\dfrac{32}{120} = \\dfrac{4}{15}`.",
+          "(b) Total who prefer football `= 63`.",
+          "`P(\\text{football}) = \\dfrac{63}{120} = \\dfrac{21}{40}`.",
+          "(c) Boys or basketball (or both) `= 35 + 25 + 32 = 92`.",
           "This counts: boys who prefer football (35), boys who prefer basketball (25), girls who prefer basketball (32).",
-          "`P(\\text{boy or basketball}) = \\dfrac{92}{120} = \\dfrac{23}{30}`"
+          "`P(\\text{boy or basketball}) = \\dfrac{92}{120} = \\dfrac{23}{30}`."
         ],
         "zh": [
-          "(a) 喜欢篮球的女生人数 `= 32`",
-          "`P(\\text{女生且篮球}) = \\dfrac{32}{120} = \\dfrac{4}{15}`",
-          "(b) 喜欢足球的总人数 `= 63`",
-          "`P(\\text{足球}) = \\dfrac{63}{120} = \\dfrac{21}{40}`",
-          "(c) 男生或喜欢篮球（或两者兼具）`= 35 + 25 + 32 = 92`",
+          "(a) 喜欢篮球的女生人数 `= 32`。",
+          "`P(\\text{女生且篮球}) = \\dfrac{32}{120} = \\dfrac{4}{15}`。",
+          "(b) 喜欢足球的总人数 `= 63`。",
+          "`P(\\text{足球}) = \\dfrac{63}{120} = \\dfrac{21}{40}`。",
+          "(c) 男生或喜欢篮球（或两者兼具）`= 35 + 25 + 32 = 92`。",
           "即：喜欢足球的男生 (35) + 喜欢篮球的男生 (25) + 喜欢篮球的女生 (32)。",
-          "`P(\\text{男生或篮球}) = \\dfrac{92}{120} = \\dfrac{23}{30}`"
+          "`P(\\text{男生或篮球}) = \\dfrac{92}{120} = \\dfrac{23}{30}`。"
         ]
       },
-      "common_mistake": { "en": "Double counting in part (c): adding 60 (boys) + 57 (basketball) = 117, forgetting to subtract the 25 boys who prefer basketball. Use: P(A or B) = P(A) + P(B) - P(A and B) = 60 + 57 - 25 = 92.", "zh": "第 (c) 部分重复计算：60（男生）+ 57（篮球）= 117，忘记减去喜欢篮球的 25 名男生。应使用：P(A 或 B) = P(A) + P(B) - P(A 且 B) = 60 + 57 - 25 = 92。" }
+      "common_mistake": {
+        "en": "Double counting in part (c): adding 60 (boys) + 57 (basketball) = 117, forgetting to subtract the 25 boys who prefer basketball. Use: P(A or B) = P(A) + P(B) - P(A and B) = 60 + 57 - 25 = 92.",
+        "zh": "第 (c) 部分重复计算：60（男生）+ 57（篮球）= 117，忘记减去喜欢篮球的 25 名男生。应使用：P(A 或 B) = P(A) + P(B) - P(A 且 B) = 60 + 57 - 25 = 92。"
+      }
     },
     {
-      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Combined Events", "Listing Outcomes"],
+      "id": "q006",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Combined Events",
+        "Listing Outcomes"
+      ],
       "question": {
         "en": "Two fair spinners are spun.\nSpinner A has the numbers 1, 2, 3.\nSpinner B has the numbers 1, 2, 3, 4.\n\nThe scores on the two spinners are added together.\n\n(a) Complete the sample space diagram.\n\n(b) Find the probability that the total score is 5.\n\n(c) Find the probability that the total score is greater than 4.",
         "zh": "旋转两个均匀转盘。\n转盘 A 上的数字为 1、2、3。\n转盘 B 上的数字为 1、2、3、4。\n\n两个转盘的点数相加。\n\n(a) 完成样本空间图。\n\n(b) 求总分为 5 的概率。\n\n(c) 求总分大于 4 的概率。"
@@ -202,29 +371,42 @@
         "\\hline",
         "\\end{tabular}"
       ],
-      "answer": { "en": "(a) See completed table\n(b) 1/4\n(c) 1/2", "zh": "(a) 见完整表格\n(b) 1/4\n(c) 1/2" },
+      "answer": {
+        "en": "(a) See completed table\n(b) 1/4\n(c) 1/2",
+        "zh": "(a) 见完整表格\n(b) 1/4\n(c) 1/2"
+      },
       "solution": {
         "en": [
           "(a) Completed sample space diagram: A=1: 2, 3, 4, 5; \\quad A=2: 3, 4, 5, 6; \\quad A=3: 4, 5, 6, 7.",
-          "Total number of outcomes `= 3 \\times 4 = 12`",
-          "(b) Outcomes with total 5: (1,4), (2,3), (3,2) `\\Rightarrow` 3 outcomes",
-          "`P(\\text{total} = 5) = \\dfrac{3}{12} = \\dfrac{1}{4}`",
-          "(c) Outcomes with total > 4: total 5 (3 outcomes), total 6 (2 outcomes), total 7 (1 outcome) `= 6`",
-          "`P(\\text{total} > 4) = \\dfrac{6}{12} = \\dfrac{1}{2}`"
+          "Total number of outcomes `= 3 \\times 4 = 12`.",
+          "(b) Outcomes with total 5: (1,4), (2,3), (3,2) `\\Rightarrow` 3 outcomes.",
+          "`P(\\text{total} = 5) = \\dfrac{3}{12} = \\dfrac{1}{4}`.",
+          "(c) Outcomes with total > 4: total 5 (3 outcomes), total 6 (2 outcomes), total 7 (1 outcome) `= 6`.",
+          "`P(\\text{total} > 4) = \\dfrac{6}{12} = \\dfrac{1}{2}`."
         ],
         "zh": [
           "(a) 完整的样本空间图：A=1: 2, 3, 4, 5；\\quad A=2: 3, 4, 5, 6；\\quad A=3: 4, 5, 6, 7。",
-          "结果总数 `= 3 \\times 4 = 12`",
-          "(b) 总分为 5 的结果：(1,4)、(2,3)、(3,2) `\\Rightarrow` 3 个结果",
-          "`P(\\text{总分} = 5) = \\dfrac{3}{12} = \\dfrac{1}{4}`",
-          "(c) 总分大于 4 的结果：总分 5（3 个）、总分 6（2 个）、总分 7（1 个）`= 6`",
-          "`P(\\text{总分} > 4) = \\dfrac{6}{12} = \\dfrac{1}{2}`"
+          "结果总数 `= 3 \\times 4 = 12`。",
+          "(b) 总分为 5 的结果：(1,4)、(2,3)、(3,2) `\\Rightarrow` 3 个结果。",
+          "`P(\\text{总分} = 5) = \\dfrac{3}{12} = \\dfrac{1}{4}`。",
+          "(c) 总分大于 4 的结果：总分 5（3 个）、总分 6（2 个）、总分 7（1 个）`= 6`。",
+          "`P(\\text{总分} > 4) = \\dfrac{6}{12} = \\dfrac{1}{2}`。"
         ]
       },
-      "common_mistake": { "en": "Miscounting outcomes with total > 4. List them systematically from the table: 5 appears 3 times, 6 appears 2 times, 7 appears 1 time = 6 outcomes out of 12.", "zh": "错误计数总分大于 4 的结果数。从表格中系统地列出：5 出现 3 次、6 出现 2 次、7 出现 1 次 = 12 个结果中的 6 个。" }
+      "common_mistake": {
+        "en": "Miscounting outcomes with total > 4. List them systematically from the table: 5 appears 3 times, 6 appears 2 times, 7 appears 1 time = 6 outcomes out of 12.",
+        "zh": "错误计数总分大于 4 的结果数。从表格中系统地列出：5 出现 3 次、6 出现 2 次、7 出现 1 次 = 12 个结果中的 6 个。"
+      }
     },
     {
-      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Tree Diagram", "Independent Events"],
+      "id": "q007",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Tree Diagram",
+        "Independent Events"
+      ],
       "question": {
         "en": "The probability that Priya passes her Maths exam is 0.8.\nThe probability that Priya passes her English exam is 0.6.\nThe two events are independent.\n\n(a) Complete the tree diagram.\n\n(b) Calculate the probability that Priya passes both exams.\n\n(c) Calculate the probability that Priya passes exactly one exam.",
         "zh": "Priya 通过数学考试的概率是 0.8。\nPriya 通过英语考试的概率是 0.6。\n两个事件是独立的。\n\n(a) 完成树形图。\n\n(b) 计算 Priya 两门考试都通过的概率。\n\n(c) 计算 Priya 恰好通过一门考试的概率。"
@@ -246,31 +428,44 @@
         "    };",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(b) 0.48\n(c) 0.44", "zh": "(b) 0.48\n(c) 0.44" },
+      "answer": {
+        "en": "(b) 0.48\n(c) 0.44",
+        "zh": "(b) 0.48\n(c) 0.44"
+      },
       "solution": {
         "en": [
-          "(a) P(Fail Maths) `= 1 - 0.8 = 0.2`, P(Fail English) `= 1 - 0.6 = 0.4`",
-          "(b) `P(\\text{both pass}) = 0.8 \\times 0.6 = 0.48`",
-          "(c) Exactly one pass means: (Pass M and Fail E) OR (Fail M and Pass E)",
-          "`P(\\text{Pass M and Fail E}) = 0.8 \\times 0.4 = 0.32`",
-          "`P(\\text{Fail M and Pass E}) = 0.2 \\times 0.6 = 0.12`",
-          "`P(\\text{exactly one}) = 0.32 + 0.12 = 0.44`"
+          "(a) P(Fail Maths) `= 1 - 0.8 = 0.2`, P(Fail English) `= 1 - 0.6 = 0.4`.",
+          "(b) `P(\\text{both pass}) = 0.8 \\times 0.6 = 0.48`.",
+          "(c) Exactly one pass means: (Pass M and Fail E) OR (Fail M and Pass E).",
+          "`P(\\text{Pass M and Fail E}) = 0.8 \\times 0.4 = 0.32`.",
+          "`P(\\text{Fail M and Pass E}) = 0.2 \\times 0.6 = 0.12`.",
+          "`P(\\text{exactly one}) = 0.32 + 0.12 = 0.44`."
         ],
         "zh": [
-          "(a) P(数学不通过) `= 1 - 0.8 = 0.2`，P(英语不通过) `= 1 - 0.6 = 0.4`",
-          "(b) `P(\\text{两门都通过}) = 0.8 \\times 0.6 = 0.48`",
-          "(c) 恰好通过一门意味着：（数学通过且英语不通过）或（数学不通过且英语通过）",
-          "`P(\\text{数学通过且英语不通过}) = 0.8 \\times 0.4 = 0.32`",
-          "`P(\\text{数学不通过且英语通过}) = 0.2 \\times 0.6 = 0.12`",
-          "`P(\\text{恰好一门}) = 0.32 + 0.12 = 0.44`"
+          "(a) P(数学不通过) `= 1 - 0.8 = 0.2`，P(英语不通过) `= 1 - 0.6 = 0.4`。",
+          "(b) `P(\\text{两门都通过}) = 0.8 \\times 0.6 = 0.48`。",
+          "(c) 恰好通过一门意味着：（数学通过且英语不通过）或（数学不通过且英语通过）。",
+          "`P(\\text{数学通过且英语不通过}) = 0.8 \\times 0.4 = 0.32`。",
+          "`P(\\text{数学不通过且英语通过}) = 0.2 \\times 0.6 = 0.12`。",
+          "`P(\\text{恰好一门}) = 0.32 + 0.12 = 0.44`。"
         ]
       },
-      "common_mistake": { "en": "For 'exactly one', adding P(pass M) + P(pass E) = 0.8 + 0.6 = 1.4. You must use the tree diagram branches: multiply along branches (AND), then add separate branches (OR).", "zh": "求「恰好一门」时，将 P(通过数学) + P(通过英语) = 0.8 + 0.6 = 1.4。必须使用树形图的分支：沿分支相乘（且），再将不同分支相加（或）。" }
+      "common_mistake": {
+        "en": "For 'exactly one', adding P(pass M) + P(pass E) = 0.8 + 0.6 = 1.4. You must use the tree diagram branches: multiply along branches (AND), then add separate branches (OR).",
+        "zh": "求「恰好一门」时，将 P(通过数学) + P(通过英语) = 0.8 + 0.6 = 1.4。必须使用树形图的分支：沿分支相乘（且），再将不同分支相加（或）。"
+      }
     }
   ],
   "questions_extended": [
     {
-      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Venn Diagram", "Probability"],
+      "id": "q008",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Venn Diagram",
+        "Probability"
+      ],
       "question": {
         "en": "In a class of 30 students, 18 study French (F) and 12 study Spanish (S).\n5 students study both French and Spanish.\n\n(a) Complete the Venn diagram.\n\n(b) A student is chosen at random. Find the probability that the student:\n  (i) studies French only,\n  (ii) studies neither French nor Spanish,\n  (iii) studies French or Spanish (or both).",
         "zh": "一个班有 30 名学生，18 人学法语 (F)，12 人学西班牙语 (S)。\n5 名学生同时学习两门语言。\n\n(a) 完成维恩图。\n\n(b) 随机选一名学生，求该学生：\n  (i) 只学法语的概率，\n  (ii) 两门都不学的概率，\n  (iii) 学法语或西班牙语（或两者都学）的概率。"
@@ -289,33 +484,46 @@
         "  \\node at (7,0.6) {\\small $...$};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) F only = 13, S only = 7, both = 5, neither = 5\n(b)(i) 13/30  (ii) 1/6  (iii) 5/6", "zh": "(a) 仅 F = 13，仅 S = 7，两者 = 5，都不 = 5\n(b)(i) 13/30  (ii) 1/6  (iii) 5/6" },
+      "answer": {
+        "en": "(a) F only = 13, S only = 7, both = 5, neither = 5\n(b)(i) 13/30  (ii) 1/6  (iii) 5/6",
+        "zh": "(a) 仅 F = 13，仅 S = 7，两者 = 5，都不 = 5\n(b)(i) 13/30  (ii) 1/6  (iii) 5/6"
+      },
       "solution": {
         "en": [
-          "(a) French only `= 18 - 5 = 13`",
-          "Spanish only `= 12 - 5 = 7`",
-          "Neither `= 30 - 13 - 5 - 7 = 5`",
-          "(b)(i) `P(\\text{French only}) = \\dfrac{13}{30}`",
-          "(b)(ii) `P(\\text{neither}) = \\dfrac{5}{30} = \\dfrac{1}{6}`",
-          "(b)(iii) French or Spanish `= 13 + 5 + 7 = 25`",
-          "`P(F \\cup S) = \\dfrac{25}{30} = \\dfrac{5}{6}`",
-          "Alternatively: `P(F \\cup S) = 1 - P(\\text{neither}) = 1 - \\dfrac{1}{6} = \\dfrac{5}{6}`"
+          "(a) French only `= 18 - 5 = 13`.",
+          "Spanish only `= 12 - 5 = 7`.",
+          "Neither `= 30 - 13 - 5 - 7 = 5`.",
+          "(b)(i) `P(\\text{French only}) = \\dfrac{13}{30}`.",
+          "(b)(ii) `P(\\text{neither}) = \\dfrac{5}{30} = \\dfrac{1}{6}`.",
+          "(b)(iii) French or Spanish `= 13 + 5 + 7 = 25`.",
+          "`P(F \\cup S) = \\dfrac{25}{30} = \\dfrac{5}{6}`.",
+          "Alternatively: `P(F \\cup S) = 1 - P(\\text{neither}) = 1 - \\dfrac{1}{6} = \\dfrac{5}{6}`."
         ],
         "zh": [
-          "(a) 仅学法语 `= 18 - 5 = 13`",
-          "仅学西班牙语 `= 12 - 5 = 7`",
-          "都不学 `= 30 - 13 - 5 - 7 = 5`",
-          "(b)(i) `P(\\text{仅法语}) = \\dfrac{13}{30}`",
-          "(b)(ii) `P(\\text{都不}) = \\dfrac{5}{30} = \\dfrac{1}{6}`",
-          "(b)(iii) 法语或西班牙语 `= 13 + 5 + 7 = 25`",
-          "`P(F \\cup S) = \\dfrac{25}{30} = \\dfrac{5}{6}`",
-          "或者：`P(F \\cup S) = 1 - P(\\text{都不}) = 1 - \\dfrac{1}{6} = \\dfrac{5}{6}`"
+          "(a) 仅学法语 `= 18 - 5 = 13`。",
+          "仅学西班牙语 `= 12 - 5 = 7`。",
+          "都不学 `= 30 - 13 - 5 - 7 = 5`。",
+          "(b)(i) `P(\\text{仅法语}) = \\dfrac{13}{30}`。",
+          "(b)(ii) `P(\\text{都不}) = \\dfrac{5}{30} = \\dfrac{1}{6}`。",
+          "(b)(iii) 法语或西班牙语 `= 13 + 5 + 7 = 25`。",
+          "`P(F \\cup S) = \\dfrac{25}{30} = \\dfrac{5}{6}`。",
+          "或者：`P(F \\cup S) = 1 - P(\\text{都不}) = 1 - \\dfrac{1}{6} = \\dfrac{5}{6}`。"
         ]
       },
-      "common_mistake": { "en": "Writing 'French only' as 18 instead of 18 - 5 = 13. The 18 who study French INCLUDES the 5 who study both. Always subtract the intersection to find the 'only' region.", "zh": "将「仅学法语」写成 18 而非 18 - 5 = 13。学法语的 18 人包含了同时学两门的 5 人。求「仅」某区域时，必须减去交集。" }
+      "common_mistake": {
+        "en": "Writing 'French only' as 18 instead of 18 - 5 = 13. The 18 who study French INCLUDES the 5 who study both. Always subtract the intersection to find the 'only' region.",
+        "zh": "将「仅学法语」写成 18 而非 18 - 5 = 13。学法语的 18 人包含了同时学两门的 5 人。求「仅」某区域时，必须减去交集。"
+      }
     },
     {
-      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Tree Diagram", "Without Replacement"],
+      "id": "q009",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Tree Diagram",
+        "Without Replacement"
+      ],
       "question": {
         "en": "A box contains 6 red sweets and 4 yellow sweets.\nMaya takes a sweet at random, eats it, and then takes another sweet at random.\n\n(a) Complete the tree diagram.\n\n(b) Calculate the probability that both sweets are the same colour.\n\n(c) Calculate the probability that the sweets are different colours.",
         "zh": "一个盒子里有 6 颗红色糖果和 4 颗黄色糖果。\nMaya 随机取一颗糖果吃掉，然后再随机取一颗。\n\n(a) 完成树形图。\n\n(b) 计算两颗糖果颜色相同的概率。\n\n(c) 计算两颗糖果颜色不同的概率。"
@@ -337,35 +545,47 @@
         "    };",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(b) 7/15\n(c) 8/15", "zh": "(b) 7/15\n(c) 8/15" },
+      "answer": {
+        "en": "(b) 7/15\n(c) 8/15",
+        "zh": "(b) 7/15\n(c) 8/15"
+      },
       "solution": {
         "en": [
           "(a) First sweet: `P(R) = \\dfrac{6}{10}`, `P(Y) = \\dfrac{4}{10}`.",
           "If first is R: 5 red and 4 yellow left out of 9.",
-          "`P(R|R) = \\dfrac{5}{9}`, `P(Y|R) = \\dfrac{4}{9}`",
+          "`P(R|R) = \\dfrac{5}{9}`, `P(Y|R) = \\dfrac{4}{9}`.",
           "If first is Y: 6 red and 3 yellow left out of 9.",
-          "`P(R|Y) = \\dfrac{6}{9}`, `P(Y|Y) = \\dfrac{3}{9}`",
-          "(b) `P(\\text{same colour}) = P(RR) + P(YY)`",
-          "`= \\dfrac{6}{10} \\times \\dfrac{5}{9} + \\dfrac{4}{10} \\times \\dfrac{3}{9}`",
-          "`= \\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90} = \\dfrac{7}{15}`",
-          "(c) `P(\\text{different}) = 1 - \\dfrac{7}{15} = \\dfrac{8}{15}`"
+          "`P(R|Y) = \\dfrac{6}{9}`, `P(Y|Y) = \\dfrac{3}{9}`.",
+          "(b) `P(\\text{same colour}) = P(RR) + P(YY)`.",
+          "`= \\dfrac{6}{10} \\times \\dfrac{5}{9} + \\dfrac{4}{10} \\times \\dfrac{3}{9}`.",
+          "`= \\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90} = \\dfrac{7}{15}`.",
+          "(c) `P(\\text{different}) = 1 - \\dfrac{7}{15} = \\dfrac{8}{15}`."
         ],
         "zh": [
           "(a) 第一颗：`P(\\text{红}) = \\dfrac{6}{10}`，`P(\\text{黄}) = \\dfrac{4}{10}`。",
           "若第一颗为红：剩 5 红 4 黄，共 9 颗。",
-          "`P(\\text{红}|\\text{红}) = \\dfrac{5}{9}`，`P(\\text{黄}|\\text{红}) = \\dfrac{4}{9}`",
+          "`P(\\text{红}|\\text{红}) = \\dfrac{5}{9}`，`P(\\text{黄}|\\text{红}) = \\dfrac{4}{9}`。",
           "若第一颗为黄：剩 6 红 3 黄，共 9 颗。",
-          "`P(\\text{红}|\\text{黄}) = \\dfrac{6}{9}`，`P(\\text{黄}|\\text{黄}) = \\dfrac{3}{9}`",
-          "(b) `P(\\text{颜色相同}) = P(\\text{红红}) + P(\\text{黄黄})`",
-          "`= \\dfrac{6}{10} \\times \\dfrac{5}{9} + \\dfrac{4}{10} \\times \\dfrac{3}{9}`",
-          "`= \\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90} = \\dfrac{7}{15}`",
-          "(c) `P(\\text{颜色不同}) = 1 - \\dfrac{7}{15} = \\dfrac{8}{15}`"
+          "`P(\\text{红}|\\text{黄}) = \\dfrac{6}{9}`，`P(\\text{黄}|\\text{黄}) = \\dfrac{3}{9}`。",
+          "(b) `P(\\text{颜色相同}) = P(\\text{红红}) + P(\\text{黄黄})`。",
+          "`= \\dfrac{6}{10} \\times \\dfrac{5}{9} + \\dfrac{4}{10} \\times \\dfrac{3}{9}`。",
+          "`= \\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90} = \\dfrac{7}{15}`。",
+          "(c) `P(\\text{颜色不同}) = 1 - \\dfrac{7}{15} = \\dfrac{8}{15}`。"
         ]
       },
-      "common_mistake": { "en": "Using the same denominator (10) for the second pick. Without replacement means one sweet has been removed, so the second denominator is 9, not 10.", "zh": "第二次取时仍用相同的分母（10）。不放回意味着已取走一颗糖果，因此第二次的分母是 9 而非 10。" }
+      "common_mistake": {
+        "en": "Using the same denominator (10) for the second pick. Without replacement means one sweet has been removed, so the second denominator is 9, not 10.",
+        "zh": "第二次取时仍用相同的分母（10）。不放回意味着已取走一颗糖果，因此第二次的分母是 9 而非 10。"
+      }
     },
     {
-      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Conditional Probability"],
+      "id": "q010",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Conditional Probability"
+      ],
       "question": {
         "en": "In a group of 40 students:\n- 22 study Biology (B)\n- 15 study Chemistry (C)\n- 8 study both Biology and Chemistry\n\n(a) Draw a Venn diagram to represent this information.\n\n(b) A student is chosen at random.\nFind `P(B | C)`, the probability that the student studies Biology given that they study Chemistry.\n\n(c) Find `P(C | B')`, the probability that the student studies Chemistry given that they do NOT study Biology.",
         "zh": "在 40 名学生中：\n- 22 人学习生物 (B)\n- 15 人学习化学 (C)\n- 8 人同时学习生物和化学\n\n(a) 画出维恩图表示以上信息。\n\n(b) 随机选一名学生。\n求 `P(B | C)`，即已知该学生学化学，求其学生物的概率。\n\n(c) 求 `P(C | B')`，即已知该学生不学生物，求其学化学的概率。"
@@ -384,84 +604,124 @@
         "  \\node at (7,0.6) {\\small $11$};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) B only = 14, both = 8, C only = 7, neither = 11\n(b) 8/15\n(c) 7/18", "zh": "(a) 仅 B = 14，两者 = 8，仅 C = 7，都不 = 11\n(b) 8/15\n(c) 7/18" },
+      "answer": {
+        "en": "(a) B only = 14, both = 8, C only = 7, neither = 11\n(b) 8/15\n(c) 7/18",
+        "zh": "(a) 仅 B = 14，两者 = 8，仅 C = 7，都不 = 11\n(b) 8/15\n(c) 7/18"
+      },
       "solution": {
         "en": [
-          "(a) B only `= 22 - 8 = 14`, C only `= 15 - 8 = 7`",
-          "Neither `= 40 - 14 - 8 - 7 = 11`",
+          "(a) B only `= 22 - 8 = 14`, C only `= 15 - 8 = 7`.",
+          "Neither `= 40 - 14 - 8 - 7 = 11`.",
           "(b) `P(B | C)` means: out of the students who study Chemistry, how many study Biology?",
-          "Number who study Chemistry `= 15`",
-          "Of these, number who also study Biology `= 8`",
-          "`P(B | C) = \\dfrac{8}{15}`",
+          "Number who study Chemistry `= 15`.",
+          "Of these, number who also study Biology `= 8`.",
+          "`P(B | C) = \\dfrac{8}{15}`.",
           "(c) `P(C | B')` means: out of the students who do NOT study Biology, how many study Chemistry?",
-          "Number who do not study Biology `= 40 - 22 = 18`",
-          "Of these, number who study Chemistry `= 7` (C only)",
-          "`P(C | B') = \\dfrac{7}{18}`"
+          "Number who do not study Biology `= 40 - 22 = 18`.",
+          "Of these, number who study Chemistry `= 7` (C only).",
+          "`P(C | B') = \\dfrac{7}{18}`."
         ],
         "zh": [
-          "(a) 仅 B `= 22 - 8 = 14`，仅 C `= 15 - 8 = 7`",
-          "都不 `= 40 - 14 - 8 - 7 = 11`",
+          "(a) 仅 B `= 22 - 8 = 14`，仅 C `= 15 - 8 = 7`。",
+          "都不 `= 40 - 14 - 8 - 7 = 11`。",
           "(b) `P(B | C)` 表示：在学化学的学生中，有多少人学生物？",
-          "学化学的人数 `= 15`",
-          "其中同时学生物的人数 `= 8`",
-          "`P(B | C) = \\dfrac{8}{15}`",
+          "学化学的人数 `= 15`。",
+          "其中同时学生物的人数 `= 8`。",
+          "`P(B | C) = \\dfrac{8}{15}`。",
           "(c) `P(C | B')` 表示：在不学生物的学生中，有多少人学化学？",
-          "不学生物的人数 `= 40 - 22 = 18`",
-          "其中学化学的人数 `= 7`（仅 C）",
-          "`P(C | B') = \\dfrac{7}{18}`"
+          "不学生物的人数 `= 40 - 22 = 18`。",
+          "其中学化学的人数 `= 7`（仅 C）。",
+          "`P(C | B') = \\dfrac{7}{18}`。"
         ]
       },
-      "common_mistake": { "en": "Using 40 as the denominator for conditional probability. P(B|C) means restrict to the C circle only: denominator is n(C) = 15, not the total 40.", "zh": "条件概率中用 40 作分母。P(B|C) 意味着只看 C 圈内的学生：分母是 n(C) = 15，而不是总数 40。" }
+      "common_mistake": {
+        "en": "Using 40 as the denominator for conditional probability. P(B|C) means restrict to the C circle only: denominator is n(C) = 15, not the total 40.",
+        "zh": "条件概率中用 40 作分母。P(B|C) 意味着只看 C 圈内的学生：分母是 n(C) = 15，而不是总数 40。"
+      }
     },
     {
-      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 5, "topic": ["Probability", "Algebra"],
+      "id": "q011",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 5,
+      "topic": [
+        "Probability",
+        "Algebra"
+      ],
       "question": {
         "en": "A bag contains `n` red counters and 4 blue counters.\nA counter is taken at random, its colour is noted, and it is NOT replaced.\nA second counter is then taken at random.\n\nThe probability that both counters are red is `\\dfrac{1}{3}`.\n\n(a) Show that `n^2 - 5n - 6 = 0`.\n\n(b) Solve the equation `n^2 - 5n - 6 = 0`.\n\n(c) Hence find the probability that both counters are blue.",
         "zh": "一个袋子里有 `n` 个红色计数片和 4 个蓝色计数片。\n随机取出一个计数片，记录颜色后不放回。\n然后再随机取出第二个计数片。\n\n两个计数片都是红色的概率为 `\\dfrac{1}{3}`。\n\n(a) 证明 `n^2 - 5n - 6 = 0`。\n\n(b) 解方程 `n^2 - 5n - 6 = 0`。\n\n(c) 由此求两个计数片都是蓝色的概率。"
       },
-      "answer": { "en": "(a) Shown\n(b) n = 6 (rejecting n = -1)\n(c) 2/15", "zh": "(a) 已证\n(b) n = 6（舍去 n = -1）\n(c) 2/15" },
+      "answer": {
+        "en": "(a) Shown\n(b) n = 6 (rejecting n = -1)\n(c) 2/15",
+        "zh": "(a) 已证\n(b) n = 6（舍去 n = -1）\n(c) 2/15"
+      },
       "solution": {
         "en": [
           "(a) Total counters `= n + 4`.",
-          "`P(\\text{1st red}) = \\dfrac{n}{n+4}`",
-          "After removing one red counter: `P(\\text{2nd red}) = \\dfrac{n-1}{n+3}`",
-          "`P(\\text{both red}) = \\dfrac{n}{n+4} \\times \\dfrac{n-1}{n+3} = \\dfrac{1}{3}`",
-          "Cross-multiply: `3n(n-1) = (n+4)(n+3)`",
-          "`3n^2 - 3n = n^2 + 7n + 12`",
-          "`2n^2 - 10n - 12 = 0`",
-          "Divide by 2: `n^2 - 5n - 6 = 0`",
-          "(b) Factorise: `(n - 6)(n + 1) = 0`",
-          "`n = 6` or `n = -1`",
+          "`P(\\text{1st red}) = \\dfrac{n}{n+4}`.",
+          "After removing one red counter: `P(\\text{2nd red}) = \\dfrac{n-1}{n+3}`.",
+          "`P(\\text{both red}) = \\dfrac{n}{n+4} \\times \\dfrac{n-1}{n+3} = \\dfrac{1}{3}`.",
+          "Cross-multiply: `3n(n-1) = (n+4)(n+3)`.",
+          "`3n^2 - 3n = n^2 + 7n + 12`.",
+          "`2n^2 - 10n - 12 = 0`.",
+          "Divide by 2: `n^2 - 5n - 6 = 0`.",
+          "(b) Factorise: `(n - 6)(n + 1) = 0`.",
+          "`n = 6` or `n = -1`.",
           "Since `n` must be a positive integer, `n = 6`.",
           "(c) With `n = 6`: total counters `= 6 + 4 = 10`, blue counters `= 4`.",
-          "`P(\\text{both blue}) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}`"
+          "`P(\\text{both blue}) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}`."
         ],
         "zh": [
           "(a) 计数片总数 `= n + 4`。",
-          "`P(\\text{第 1 个红}) = \\dfrac{n}{n+4}`",
-          "取走一个红色后：`P(\\text{第 2 个红}) = \\dfrac{n-1}{n+3}`",
-          "`P(\\text{都红}) = \\dfrac{n}{n+4} \\times \\dfrac{n-1}{n+3} = \\dfrac{1}{3}`",
-          "交叉相乘：`3n(n-1) = (n+4)(n+3)`",
-          "`3n^2 - 3n = n^2 + 7n + 12`",
-          "`2n^2 - 10n - 12 = 0`",
-          "除以 2：`n^2 - 5n - 6 = 0`",
-          "(b) 因式分解：`(n - 6)(n + 1) = 0`",
-          "`n = 6` 或 `n = -1`",
+          "`P(\\text{第 1 个红}) = \\dfrac{n}{n+4}`。",
+          "取走一个红色后：`P(\\text{第 2 个红}) = \\dfrac{n-1}{n+3}`。",
+          "`P(\\text{都红}) = \\dfrac{n}{n+4} \\times \\dfrac{n-1}{n+3} = \\dfrac{1}{3}`。",
+          "交叉相乘：`3n(n-1) = (n+4)(n+3)`。",
+          "`3n^2 - 3n = n^2 + 7n + 12`。",
+          "`2n^2 - 10n - 12 = 0`。",
+          "除以 2：`n^2 - 5n - 6 = 0`。",
+          "(b) 因式分解：`(n - 6)(n + 1) = 0`。",
+          "`n = 6` 或 `n = -1`。",
           "因为 `n` 必须是正整数，所以 `n = 6`。",
           "(c) 当 `n = 6` 时：计数片总数 `= 6 + 4 = 10`，蓝色计数片 `= 4`。",
-          "`P(\\text{都蓝}) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}`"
+          "`P(\\text{都蓝}) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}`。"
         ]
       },
-      "common_mistake": { "en": "Using (n+4) as the denominator for the second pick instead of (n+3). Without replacement reduces the total by 1 each time.", "zh": "第二次取时分母用 (n+4) 而非 (n+3)。不放回意味着每次取后总数减 1。" }
+      "common_mistake": {
+        "en": "Using (n+4) as the denominator for the second pick instead of (n+3). Without replacement reduces the total by 1 each time.",
+        "zh": "第二次取时分母用 (n+4) 而非 (n+3)。不放回意味着每次取后总数减 1。"
+      }
     }
   ],
   "review_checklist": [
-    { "en": "I can calculate simple probabilities using P(event) = favourable outcomes / total outcomes.", "zh": "我能使用 P(事件) = 有利结果数 / 总结果数来计算简单概率。" },
-    { "en": "I can use the probability scale from 0 (impossible) to 1 (certain) and find complementary probabilities.", "zh": "我能使用 0（不可能）到 1（必然）的概率标尺，并计算互补概率。" },
-    { "en": "I can calculate relative frequency from experimental data and use it to estimate probability.", "zh": "我能根据实验数据计算相对频率，并用其估算概率。" },
-    { "en": "I can calculate expected frequency using probability x number of trials.", "zh": "我能使用 概率 x 试验次数 计算期望频数。" },
-    { "en": "I can read and use two-way tables and sample space diagrams to find probabilities of combined events.", "zh": "我能读取和使用双向表及样本空间图来求复合事件的概率。" },
-    { "en": "I can draw and use tree diagrams for independent and dependent (without replacement) events (Extended).", "zh": "我能画出并使用树形图处理独立事件和非独立事件（不放回）（拓展）。" },
-    { "en": "I can use Venn diagrams and calculate conditional probability P(A|B) (Extended).", "zh": "我能使用维恩图并计算条件概率 P(A|B)（拓展）。" }
+    {
+      "en": "I can calculate simple probabilities using P(event) = favourable outcomes / total outcomes.",
+      "zh": "我能使用 P(事件) = 有利结果数 / 总结果数来计算简单概率。"
+    },
+    {
+      "en": "I can use the probability scale from 0 (impossible) to 1 (certain) and find complementary probabilities.",
+      "zh": "我能使用 0（不可能）到 1（必然）的概率标尺，并计算互补概率。"
+    },
+    {
+      "en": "I can calculate relative frequency from experimental data and use it to estimate probability.",
+      "zh": "我能根据实验数据计算相对频率，并用其估算概率。"
+    },
+    {
+      "en": "I can calculate expected frequency using probability x number of trials.",
+      "zh": "我能使用 概率 x 试验次数 计算期望频数。"
+    },
+    {
+      "en": "I can read and use two-way tables and sample space diagrams to find probabilities of combined events.",
+      "zh": "我能读取和使用双向表及样本空间图来求复合事件的概率。"
+    },
+    {
+      "en": "I can draw and use tree diagrams for independent and dependent (without replacement) events (Extended).",
+      "zh": "我能画出并使用树形图处理独立事件和非独立事件（不放回）（拓展）。"
+    },
+    {
+      "en": "I can use Venn diagrams and calculate conditional probability P(A|B) (Extended).",
+      "zh": "我能使用维恩图并计算条件概率 P(A|B)（拓展）。"
+    }
   ]
 }

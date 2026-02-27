@@ -12,30 +12,138 @@
     "cie0580:mensuration-c5:c5-04-surface-area-and-volume",
     "cie0580:mensuration-c5:c5-05-compound-shapes-and-parts-of-shapes"
   ],
-  "syllabus_refs": ["C5.1", "C5.2", "C5.3", "C5.4", "C5.5", "E5.1", "E5.2", "E5.3", "E5.4", "E5.5"],
+  "syllabus_refs": [
+    "C5.1",
+    "C5.2",
+    "C5.3",
+    "C5.4",
+    "C5.5",
+    "E5.1",
+    "E5.2",
+    "E5.3",
+    "E5.4",
+    "E5.5"
+  ],
   "key_vocabulary": [
-    { "term_en": "Perimeter", "term_zh": "周长", "definition": "The total distance around the edge of a 2D shape.", "definition_zh": "二维图形边缘的总距离。" },
-    { "term_en": "Area", "term_zh": "面积", "definition": "The amount of space inside a 2D shape, measured in square units.", "definition_zh": "二维图形内部的空间大小，以平方单位测量。" },
-    { "term_en": "Volume", "term_zh": "体积", "definition": "The amount of space inside a 3D shape, measured in cubic units.", "definition_zh": "三维图形内部的空间大小，以立方单位测量。" },
-    { "term_en": "Surface Area", "term_zh": "表面积", "definition": "The total area of all the faces of a 3D shape.", "definition_zh": "三维图形所有面的面积之和。" },
-    { "term_en": "Trapezium", "term_zh": "梯形", "definition": "A quadrilateral with exactly one pair of parallel sides.", "definition_zh": "恰好有一对平行边的四边形。" },
-    { "term_en": "Parallelogram", "term_zh": "平行四边形", "definition": "A quadrilateral with two pairs of parallel sides.", "definition_zh": "有两对平行边的四边形。" },
-    { "term_en": "Circumference", "term_zh": "圆周", "definition": "The perimeter of a circle.", "definition_zh": "圆的周长。" },
-    { "term_en": "Radius", "term_zh": "半径", "definition": "The distance from the centre of a circle to any point on the circumference.", "definition_zh": "从圆心到圆周上任意一点的距离。" },
-    { "term_en": "Diameter", "term_zh": "直径", "definition": "A straight line passing through the centre of a circle, connecting two points on the circumference. Equal to twice the radius.", "definition_zh": "通过圆心连接圆周上两点的直线段。等于半径的两倍。" },
-    { "term_en": "Arc", "term_zh": "弧", "definition": "A part of the circumference of a circle.", "definition_zh": "圆周的一部分。" },
-    { "term_en": "Sector", "term_zh": "扇形", "definition": "A region enclosed by two radii and an arc of a circle.", "definition_zh": "由两条半径和一段圆弧围成的区域。" },
-    { "term_en": "Prism", "term_zh": "棱柱", "definition": "A 3D shape with a uniform cross-section throughout its length.", "definition_zh": "沿其长度方向具有一致横截面的三维图形。" },
-    { "term_en": "Cylinder", "term_zh": "圆柱体", "definition": "A prism with a circular cross-section.", "definition_zh": "横截面为圆形的棱柱。" },
-    { "term_en": "Cone", "term_zh": "圆锥体", "definition": "A 3D shape with a circular base that tapers to a point (apex).", "definition_zh": "底面为圆形、向上渐缩至一个顶点的三维图形。" },
-    { "term_en": "Sphere", "term_zh": "球体", "definition": "A perfectly round 3D shape where every point on the surface is the same distance from the centre.", "definition_zh": "表面上每个点到中心距离都相同的完美圆形三维图形。" },
-    { "term_en": "Hemisphere", "term_zh": "半球", "definition": "Half of a sphere, cut along a great circle.", "definition_zh": "沿大圆切开的球的一半。" },
-    { "term_en": "Cross-section", "term_zh": "横截面", "definition": "The shape obtained by cutting a solid perpendicular to its length.", "definition_zh": "沿垂直于长度方向切割实体所得到的形状。" },
-    { "term_en": "Slant Height", "term_zh": "母线长", "definition": "The distance from the apex of a cone or pyramid to a point on the edge of the base.", "definition_zh": "从圆锥或棱锥的顶点到底边边缘上一点的距离。" }
+    {
+      "term_en": "Perimeter",
+      "term_zh": "周长",
+      "definition": "The total distance around the edge of a 2D shape.",
+      "definition_zh": "二维图形边缘的总距离。"
+    },
+    {
+      "term_en": "Area",
+      "term_zh": "面积",
+      "definition": "The amount of space inside a 2D shape, measured in square units.",
+      "definition_zh": "二维图形内部的空间大小，以平方单位测量。"
+    },
+    {
+      "term_en": "Volume",
+      "term_zh": "体积",
+      "definition": "The amount of space inside a 3D shape, measured in cubic units.",
+      "definition_zh": "三维图形内部的空间大小，以立方单位测量。"
+    },
+    {
+      "term_en": "Surface Area",
+      "term_zh": "表面积",
+      "definition": "The total area of all the faces of a 3D shape.",
+      "definition_zh": "三维图形所有面的面积之和。"
+    },
+    {
+      "term_en": "Trapezium",
+      "term_zh": "梯形",
+      "definition": "A quadrilateral with exactly one pair of parallel sides.",
+      "definition_zh": "恰好有一对平行边的四边形。"
+    },
+    {
+      "term_en": "Parallelogram",
+      "term_zh": "平行四边形",
+      "definition": "A quadrilateral with two pairs of parallel sides.",
+      "definition_zh": "有两对平行边的四边形。"
+    },
+    {
+      "term_en": "Circumference",
+      "term_zh": "圆周",
+      "definition": "The perimeter of a circle.",
+      "definition_zh": "圆的周长。"
+    },
+    {
+      "term_en": "Radius",
+      "term_zh": "半径",
+      "definition": "The distance from the centre of a circle to any point on the circumference.",
+      "definition_zh": "从圆心到圆周上任意一点的距离。"
+    },
+    {
+      "term_en": "Diameter",
+      "term_zh": "直径",
+      "definition": "A straight line passing through the centre of a circle, connecting two points on the circumference. Equal to twice the radius.",
+      "definition_zh": "通过圆心连接圆周上两点的直线段。等于半径的两倍。"
+    },
+    {
+      "term_en": "Arc",
+      "term_zh": "弧",
+      "definition": "A part of the circumference of a circle.",
+      "definition_zh": "圆周的一部分。"
+    },
+    {
+      "term_en": "Sector",
+      "term_zh": "扇形",
+      "definition": "A region enclosed by two radii and an arc of a circle.",
+      "definition_zh": "由两条半径和一段圆弧围成的区域。"
+    },
+    {
+      "term_en": "Prism",
+      "term_zh": "棱柱",
+      "definition": "A 3D shape with a uniform cross-section throughout its length.",
+      "definition_zh": "沿其长度方向具有一致横截面的三维图形。"
+    },
+    {
+      "term_en": "Cylinder",
+      "term_zh": "圆柱体",
+      "definition": "A prism with a circular cross-section.",
+      "definition_zh": "横截面为圆形的棱柱。"
+    },
+    {
+      "term_en": "Cone",
+      "term_zh": "圆锥体",
+      "definition": "A 3D shape with a circular base that tapers to a point (apex).",
+      "definition_zh": "底面为圆形、向上渐缩至一个顶点的三维图形。"
+    },
+    {
+      "term_en": "Sphere",
+      "term_zh": "球体",
+      "definition": "A perfectly round 3D shape where every point on the surface is the same distance from the centre.",
+      "definition_zh": "表面上每个点到中心距离都相同的完美圆形三维图形。"
+    },
+    {
+      "term_en": "Hemisphere",
+      "term_zh": "半球",
+      "definition": "Half of a sphere, cut along a great circle.",
+      "definition_zh": "沿大圆切开的球的一半。"
+    },
+    {
+      "term_en": "Cross-section",
+      "term_zh": "横截面",
+      "definition": "The shape obtained by cutting a solid perpendicular to its length.",
+      "definition_zh": "沿垂直于长度方向切割实体所得到的形状。"
+    },
+    {
+      "term_en": "Slant Height",
+      "term_zh": "母线长",
+      "definition": "The distance from the apex of a cone or pyramid to a point on the edge of the base.",
+      "definition_zh": "从圆锥或棱锥的顶点到底边边缘上一点的距离。"
+    }
   ],
   "questions_core": [
     {
-      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Area", "Trapezium"],
+      "id": "q001",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Area",
+        "Trapezium"
+      ],
       "question": {
         "en": "The diagram shows a trapezium.\nThe parallel sides are 8 cm and 14 cm.\nThe perpendicular height is 6 cm.\n\nCalculate the area of the trapezium.",
         "zh": "下图是一个梯形。\n两条平行边分别为 8 cm 和 14 cm。\n垂直高度为 6 cm。\n\n计算该梯形的面积。"
@@ -54,25 +162,38 @@
         "  \\node[left] at (1.1,1.5) {\\small 6 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "66 cm²", "zh": "66 cm²" },
+      "answer": {
+        "en": "66 cm²",
+        "zh": "66 cm²"
+      },
       "solution": {
         "en": [
-          "Area of trapezium `= \\dfrac{1}{2}(a + b) \\times h`",
-          "`= \\dfrac{1}{2}(8 + 14) \\times 6`",
-          "`= \\dfrac{1}{2} \\times 22 \\times 6`",
-          "`= 66` cm²"
+          "Area of trapezium `= \\dfrac{1}{2}(a + b) \\times h`.",
+          "`= \\dfrac{1}{2}(8 + 14) \\times 6`.",
+          "`= \\dfrac{1}{2} \\times 22 \\times 6`.",
+          "`= 66` cm²."
         ],
         "zh": [
-          "梯形面积 `= \\dfrac{1}{2}(a + b) \\times h`",
-          "`= \\dfrac{1}{2}(8 + 14) \\times 6`",
-          "`= \\dfrac{1}{2} \\times 22 \\times 6`",
-          "`= 66` cm²"
+          "梯形面积 `= \\dfrac{1}{2}(a + b) \\times h`。",
+          "`= \\dfrac{1}{2}(8 + 14) \\times 6`。",
+          "`= \\dfrac{1}{2} \\times 22 \\times 6`。",
+          "`= 66` cm²。"
         ]
       },
-      "common_mistake": { "en": "Using base times height without adding the parallel sides first. The trapezium formula requires ADDING the two parallel sides, dividing by 2, then multiplying by the height.", "zh": "直接用底乘高而不先将两条平行边相加。梯形公式要求先将两条平行边相加，除以 2，再乘以高。" }
+      "common_mistake": {
+        "en": "Using base times height without adding the parallel sides first. The trapezium formula requires ADDING the two parallel sides, dividing by 2, then multiplying by the height.",
+        "zh": "直接用底乘高而不先将两条平行边相加。梯形公式要求先将两条平行边相加，除以 2，再乘以高。"
+      }
     },
     {
-      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Area", "Parallelogram"],
+      "id": "q002",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Area",
+        "Parallelogram"
+      ],
       "question": {
         "en": "The diagram shows a parallelogram with base 12 cm and perpendicular height 7 cm.\nThe slant side is 9 cm.\n\nCalculate the area of the parallelogram.",
         "zh": "下图是一个平行四边形，底边为 12 cm，垂直高度为 7 cm。\n斜边为 9 cm。\n\n计算该平行四边形的面积。"
@@ -91,23 +212,35 @@
         "  \\node[right] at (1.5,1.5) {\\small 7 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "84 cm²", "zh": "84 cm²" },
+      "answer": {
+        "en": "84 cm²",
+        "zh": "84 cm²"
+      },
       "solution": {
         "en": [
-          "Area of parallelogram `=` base `\\times` perpendicular height",
-          "`= 12 \\times 7`",
-          "`= 84` cm²"
+          "Area of parallelogram `=` base `\\times` perpendicular height.",
+          "`= 12 \\times 7`.",
+          "`= 84` cm²."
         ],
         "zh": [
-          "平行四边形面积 `=` 底边 `\\times` 垂直高度",
-          "`= 12 \\times 7`",
-          "`= 84` cm²"
+          "平行四边形面积 `=` 底边 `\\times` 垂直高度。",
+          "`= 12 \\times 7`。",
+          "`= 84` cm²。"
         ]
       },
-      "common_mistake": { "en": "Using the slant side (9 cm) instead of the perpendicular height (7 cm). The formula requires the PERPENDICULAR height, not the slant height.", "zh": "使用斜边（9 cm）而不是垂直高度（7 cm）。公式要求的是垂直高度，而不是斜边长度。" }
+      "common_mistake": {
+        "en": "Using the slant side (9 cm) instead of the perpendicular height (7 cm). The formula requires the PERPENDICULAR height, not the slant height.",
+        "zh": "使用斜边（9 cm）而不是垂直高度（7 cm）。公式要求的是垂直高度，而不是斜边长度。"
+      }
     },
     {
-      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Circles"],
+      "id": "q003",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Circles"
+      ],
       "question": {
         "en": "A circle has radius 5 cm.\n\n(a) Calculate the circumference of the circle.\nGive your answer correct to 3 significant figures.\n\n(b) Calculate the area of the circle.\nGive your answer correct to 3 significant figures.",
         "zh": "一个圆的半径为 5 cm。\n\n(a) 计算该圆的周长。\n将答案精确到 3 位有效数字。\n\n(b) 计算该圆的面积。\n将答案精确到 3 位有效数字。"
@@ -122,29 +255,43 @@
         "  \\node[above] at (0.9,0) {\\small 5 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) 31.4 cm\n(b) 78.5 cm²", "zh": "(a) 31.4 cm\n(b) 78.5 cm²" },
+      "answer": {
+        "en": "(a) 31.4 cm\n(b) 78.5 cm²",
+        "zh": "(a) 31.4 cm\n(b) 78.5 cm²"
+      },
       "solution": {
         "en": [
-          "(a) Circumference `= 2\\pi r`",
-          "`= 2 \\times \\pi \\times 5 = 10\\pi`",
-          "`= 31.4` cm (3 s.f.)",
-          "(b) Area `= \\pi r^2`",
-          "`= \\pi \\times 5^2 = 25\\pi`",
-          "`= 78.5` cm² (3 s.f.)"
+          "(a) Circumference `= 2\\pi r`.",
+          "`= 2 \\times \\pi \\times 5 = 10\\pi`.",
+          "`= 31.4` cm (3 s.f.).",
+          "(b) Area `= \\pi r^2`.",
+          "`= \\pi \\times 5^2 = 25\\pi`.",
+          "`= 78.5` cm² (3 s.f.)."
         ],
         "zh": [
-          "(a) 周长 `= 2\\pi r`",
-          "`= 2 \\times \\pi \\times 5 = 10\\pi`",
-          "`= 31.4` cm（3 位有效数字）",
-          "(b) 面积 `= \\pi r^2`",
-          "`= \\pi \\times 5^2 = 25\\pi`",
-          "`= 78.5` cm²（3 位有效数字）"
+          "(a) 周长 `= 2\\pi r`。",
+          "`= 2 \\times \\pi \\times 5 = 10\\pi`。",
+          "`= 31.4` cm（3 位有效数字）。",
+          "(b) 面积 `= \\pi r^2`。",
+          "`= \\pi \\times 5^2 = 25\\pi`。",
+          "`= 78.5` cm²（3 位有效数字）。"
         ]
       },
-      "common_mistake": { "en": "Using the diameter (10 cm) instead of the radius in the area formula, giving `\\pi \\times 10^2 = 314`. Remember: `A = \\pi r^2` always uses the RADIUS.", "zh": "在面积公式中使用直径（10 cm）而不是半径，得到 `\\pi \\times 10^2 = 314`。记住：`A = \\pi r^2` 始终使用半径。" }
+      "common_mistake": {
+        "en": "Using the diameter (10 cm) instead of the radius in the area formula, giving `\\pi \\times 10^2 = 314`. Remember: `A = \\pi r^2` always uses the RADIUS.",
+        "zh": "在面积公式中使用直径（10 cm）而不是半径，得到 `\\pi \\times 10^2 = 314`。记住：`A = \\pi r^2` 始终使用半径。"
+      }
     },
     {
-      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 4, "topic": ["Area", "Composite Shapes", "Circles"],
+      "id": "q004",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 4,
+      "topic": [
+        "Area",
+        "Composite Shapes",
+        "Circles"
+      ],
       "question": {
         "en": "The diagram shows a shape made from a rectangle and a semicircle.\nThe rectangle has length 10 cm and width 6 cm.\nThe semicircle has diameter 6 cm.\n\n(a) Calculate the total area of the shape.\nGive your answer correct to 1 decimal place.\n\n(b) Calculate the perimeter of the shape.\nGive your answer correct to 1 decimal place.",
         "zh": "下图是一个由长方形和半圆组成的图形。\n长方形的长为 10 cm，宽为 6 cm。\n半圆的直径为 6 cm。\n\n(a) 计算该图形的总面积。\n将答案精确到 1 位小数。\n\n(b) 计算该图形的周长。\n将答案精确到 1 位小数。"
@@ -156,33 +303,46 @@
         "  \\node[left] at (-0.2,1.5) {\\small 6 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) 74.1 cm²\n(b) 35.4 cm", "zh": "(a) 74.1 cm²\n(b) 35.4 cm" },
+      "answer": {
+        "en": "(a) 74.1 cm²\n(b) 35.4 cm",
+        "zh": "(a) 74.1 cm²\n(b) 35.4 cm"
+      },
       "solution": {
         "en": [
-          "(a) Area of rectangle `= 10 \\times 6 = 60` cm²",
-          "Radius of semicircle `= 6 \\div 2 = 3` cm",
-          "Area of semicircle `= \\dfrac{1}{2} \\times \\pi \\times 3^2 = \\dfrac{9\\pi}{2} = 14.137...`",
-          "Total area `= 60 + 14.137... = 74.1` cm² (1 d.p.)",
-          "(b) Perimeter `=` two lengths `+` one width `+` semicircle arc",
-          "`= 10 + 10 + 6 + \\dfrac{1}{2} \\times \\pi \\times 6`",
-          "`= 26 + 3\\pi = 26 + 9.424...`",
-          "`= 35.4` cm (1 d.p.)"
+          "(a) Area of rectangle `= 10 \\times 6 = 60` cm².",
+          "Radius of semicircle `= 6 \\div 2 = 3` cm.",
+          "Area of semicircle `= \\dfrac{1}{2} \\times \\pi \\times 3^2 = \\dfrac{9\\pi}{2} = 14.137...`.",
+          "Total area `= 60 + 14.137... = 74.1` cm² (1 d.p.).",
+          "(b) Perimeter `=` two lengths `+` one width `+` semicircle arc.",
+          "`= 10 + 10 + 6 + \\dfrac{1}{2} \\times \\pi \\times 6`.",
+          "`= 26 + 3\\pi = 26 + 9.424...`.",
+          "`= 35.4` cm (1 d.p.)."
         ],
         "zh": [
-          "(a) 长方形面积 `= 10 \\times 6 = 60` cm²",
-          "半圆的半径 `= 6 \\div 2 = 3` cm",
-          "半圆面积 `= \\dfrac{1}{2} \\times \\pi \\times 3^2 = \\dfrac{9\\pi}{2} = 14.137...`",
-          "总面积 `= 60 + 14.137... = 74.1` cm²（1 位小数）",
-          "(b) 周长 `=` 两条长边 `+` 一条宽边 `+` 半圆弧",
-          "`= 10 + 10 + 6 + \\dfrac{1}{2} \\times \\pi \\times 6`",
-          "`= 26 + 3\\pi = 26 + 9.424...`",
-          "`= 35.4` cm（1 位小数）"
+          "(a) 长方形面积 `= 10 \\times 6 = 60` cm²。",
+          "半圆的半径 `= 6 \\div 2 = 3` cm。",
+          "半圆面积 `= \\dfrac{1}{2} \\times \\pi \\times 3^2 = \\dfrac{9\\pi}{2} = 14.137...`。",
+          "总面积 `= 60 + 14.137... = 74.1` cm²（1 位小数）。",
+          "(b) 周长 `=` 两条长边 `+` 一条宽边 `+` 半圆弧。",
+          "`= 10 + 10 + 6 + \\dfrac{1}{2} \\times \\pi \\times 6`。",
+          "`= 26 + 3\\pi = 26 + 9.424...`。",
+          "`= 35.4` cm（1 位小数）。"
         ]
       },
-      "common_mistake": { "en": "Including the diameter of the semicircle in the perimeter. The flat side of the semicircle is INSIDE the shape and should NOT be counted. Only the curved arc counts.", "zh": "将半圆的直径计入周长。半圆的平直一边在图形内部，不应计入周长。只有弧线部分算周长。" }
+      "common_mistake": {
+        "en": "Including the diameter of the semicircle in the perimeter. The flat side of the semicircle is INSIDE the shape and should NOT be counted. Only the curved arc counts.",
+        "zh": "将半圆的直径计入周长。半圆的平直一边在图形内部，不应计入周长。只有弧线部分算周长。"
+      }
     },
     {
-      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Volume", "Prisms"],
+      "id": "q005",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 3,
+      "topic": [
+        "Volume",
+        "Prisms"
+      ],
       "question": {
         "en": "The diagram shows a triangular prism.\nThe cross-section is a right-angled triangle with base 8 cm and height 6 cm.\nThe length of the prism is 15 cm.\n\nCalculate the volume of the prism.",
         "zh": "下图是一个三棱柱。\n横截面是一个直角三角形，底边为 8 cm，高为 6 cm。\n棱柱的长度为 15 cm。\n\n计算该棱柱的体积。"
@@ -206,25 +366,39 @@
         "  \\node[below right] at (5.2,0.6) {\\small 15 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "360 cm³", "zh": "360 cm³" },
+      "answer": {
+        "en": "360 cm³",
+        "zh": "360 cm³"
+      },
       "solution": {
         "en": [
-          "Area of cross-section `= \\dfrac{1}{2} \\times` base `\\times` height",
-          "`= \\dfrac{1}{2} \\times 8 \\times 6 = 24` cm²",
-          "Volume `=` area of cross-section `\\times` length",
-          "`= 24 \\times 15 = 360` cm³"
+          "Area of cross-section `= \\dfrac{1}{2} \\times` base `\\times` height.",
+          "`= \\dfrac{1}{2} \\times 8 \\times 6 = 24` cm².",
+          "Volume `=` area of cross-section `\\times` length.",
+          "`= 24 \\times 15 = 360` cm³."
         ],
         "zh": [
-          "横截面面积 `= \\dfrac{1}{2} \\times` 底边 `\\times` 高",
-          "`= \\dfrac{1}{2} \\times 8 \\times 6 = 24` cm²",
-          "体积 `=` 横截面面积 `\\times` 长度",
-          "`= 24 \\times 15 = 360` cm³"
+          "横截面面积 `= \\dfrac{1}{2} \\times` 底边 `\\times` 高。",
+          "`= \\dfrac{1}{2} \\times 8 \\times 6 = 24` cm²。",
+          "体积 `=` 横截面面积 `\\times` 长度。",
+          "`= 24 \\times 15 = 360` cm³。"
         ]
       },
-      "common_mistake": { "en": "Forgetting to halve the base times height for the triangle, giving `8 \\times 6 \\times 15 = 720`. The cross-section is a TRIANGLE, not a rectangle.", "zh": "忘记将底边乘以高再除以 2（三角形面积），得出 `8 \\times 6 \\times 15 = 720`。横截面是三角形，不是长方形。" }
+      "common_mistake": {
+        "en": "Forgetting to halve the base times height for the triangle, giving `8 \\times 6 \\times 15 = 720`. The cross-section is a TRIANGLE, not a rectangle.",
+        "zh": "忘记将底边乘以高再除以 2（三角形面积），得出 `8 \\times 6 \\times 15 = 720`。横截面是三角形，不是长方形。"
+      }
     },
     {
-      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 4, "topic": ["Volume", "Surface Area", "Cylinders"],
+      "id": "q006",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 4,
+      "topic": [
+        "Volume",
+        "Surface Area",
+        "Cylinders"
+      ],
       "question": {
         "en": "A cylinder has radius 4 cm and height 10 cm.\n\n(a) Calculate the volume of the cylinder.\nGive your answer in terms of `\\pi`.\n\n(b) Calculate the total surface area of the cylinder.\nGive your answer correct to 3 significant figures.",
         "zh": "一个圆柱体的半径为 4 cm，高为 10 cm。\n\n(a) 计算该圆柱体的体积。\n将答案用 `\\pi` 表示。\n\n(b) 计算该圆柱体的总表面积。\n将答案精确到 3 位有效数字。"
@@ -242,31 +416,44 @@
         "  \\node[right] at (2.3,2) {\\small 10 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) 160π cm³\n(b) 352 cm²", "zh": "(a) 160π cm³\n(b) 352 cm²" },
+      "answer": {
+        "en": "(a) 160π cm³\n(b) 352 cm²",
+        "zh": "(a) 160π cm³\n(b) 352 cm²"
+      },
       "solution": {
         "en": [
-          "(a) Volume `= \\pi r^2 h`",
-          "`= \\pi \\times 4^2 \\times 10`",
-          "`= 160\\pi` cm³",
-          "(b) Total surface area `= 2\\pi r^2 + 2\\pi r h`",
-          "`= 2\\pi(4)^2 + 2\\pi(4)(10)`",
-          "`= 32\\pi + 80\\pi = 112\\pi`",
-          "`= 351.858... = 352` cm² (3 s.f.)"
+          "(a) Volume `= \\pi r^2 h`.",
+          "`= \\pi \\times 4^2 \\times 10`.",
+          "`= 160\\pi` cm³.",
+          "(b) Total surface area `= 2\\pi r^2 + 2\\pi r h`.",
+          "`= 2\\pi(4)^2 + 2\\pi(4)(10)`.",
+          "`= 32\\pi + 80\\pi = 112\\pi`.",
+          "`= 351.858... = 352` cm² (3 s.f.)."
         ],
         "zh": [
-          "(a) 体积 `= \\pi r^2 h`",
-          "`= \\pi \\times 4^2 \\times 10`",
-          "`= 160\\pi` cm³",
-          "(b) 总表面积 `= 2\\pi r^2 + 2\\pi r h`",
-          "`= 2\\pi(4)^2 + 2\\pi(4)(10)`",
-          "`= 32\\pi + 80\\pi = 112\\pi`",
-          "`= 351.858... = 352` cm²（3 位有效数字）"
+          "(a) 体积 `= \\pi r^2 h`。",
+          "`= \\pi \\times 4^2 \\times 10`。",
+          "`= 160\\pi` cm³。",
+          "(b) 总表面积 `= 2\\pi r^2 + 2\\pi r h`。",
+          "`= 2\\pi(4)^2 + 2\\pi(4)(10)`。",
+          "`= 32\\pi + 80\\pi = 112\\pi`。",
+          "`= 351.858... = 352` cm²（3 位有效数字）。"
         ]
       },
-      "common_mistake": { "en": "Forgetting to include both circular ends in the surface area. The total surface area has TWO circles (`2\\pi r^2`) plus the curved surface (`2\\pi rh`). Omitting one circle gives an answer that is too small.", "zh": "忘记在表面积中包含两个圆形端面。总表面积包括两个圆（`2\\pi r^2`）加上曲面（`2\\pi rh`）。漏掉一个圆会使结果偏小。" }
+      "common_mistake": {
+        "en": "Forgetting to include both circular ends in the surface area. The total surface area has TWO circles (`2\\pi r^2`) plus the curved surface (`2\\pi rh`). Omitting one circle gives an answer that is too small.",
+        "zh": "忘记在表面积中包含两个圆形端面。总表面积包括两个圆（`2\\pi r^2`）加上曲面（`2\\pi rh`）。漏掉一个圆会使结果偏小。"
+      }
     },
     {
-      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Area", "Composite Shapes"],
+      "id": "q007",
+      "board": "CIE 0580",
+      "track": "Core",
+      "marks": 2,
+      "topic": [
+        "Area",
+        "Composite Shapes"
+      ],
       "question": {
         "en": "The diagram shows an L-shaped figure.\nAll angles are right angles.\nThe dimensions are shown on the diagram.\n\nCalculate the area of the shape.",
         "zh": "下图是一个 L 形图形。\n所有角都是直角。\n尺寸标注在图上。\n\n计算该图形的面积。"
@@ -286,25 +473,38 @@
         "  \\node[right] at (7,7) {\\small 4 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "88 cm²", "zh": "88 cm²" },
+      "answer": {
+        "en": "88 cm²",
+        "zh": "88 cm²"
+      },
       "solution": {
         "en": [
-          "Area `=` full rectangle `-` cut-out corner",
-          "`= 12 \\times 9 - 5 \\times 4`",
-          "`= 108 - 20 = 88` cm²"
+          "Area `=` full rectangle `-` cut-out corner.",
+          "`= 12 \\times 9 - 5 \\times 4`.",
+          "`= 108 - 20 = 88` cm²."
         ],
         "zh": [
-          "面积 `=` 完整长方形面积 `-` 缺角面积",
-          "`= 12 \\times 9 - 5 \\times 4`",
-          "`= 108 - 20 = 88` cm²"
+          "面积 `=` 完整长方形面积 `-` 缺角面积。",
+          "`= 12 \\times 9 - 5 \\times 4`。",
+          "`= 108 - 20 = 88` cm²。"
         ]
       },
-      "common_mistake": { "en": "Not subtracting the corner, giving `12 \\times 9 = 108` cm². The L-shape is NOT a full rectangle; you must subtract the area of the cut-out corner.", "zh": "没有减去缺角的面积，直接计算 `12 \\times 9 = 108` cm²。L 形不是完整的长方形，必须减去缺角部分的面积。" }
+      "common_mistake": {
+        "en": "Not subtracting the corner, giving `12 \\times 9 = 108` cm². The L-shape is NOT a full rectangle; you must subtract the area of the cut-out corner.",
+        "zh": "没有减去缺角的面积，直接计算 `12 \\times 9 = 108` cm²。L 形不是完整的长方形，必须减去缺角部分的面积。"
+      }
     }
   ],
   "questions_extended": [
     {
-      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Arc Length", "Sector Area"],
+      "id": "q008",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Arc Length",
+        "Sector Area"
+      ],
       "question": {
         "en": "The diagram shows a sector of a circle with centre `O`, radius 12 cm and angle 150°.\n\n(a) Calculate the arc length of the sector.\nGive your answer correct to 3 significant figures.\n\n(b) Calculate the area of the sector.\nGive your answer correct to 3 significant figures.",
         "zh": "下图是一个以 `O` 为圆心、半径为 12 cm、圆心角为 150° 的扇形。\n\n(a) 计算该扇形的弧长。\n将答案精确到 3 位有效数字。\n\n(b) 计算该扇形的面积。\n将答案精确到 3 位有效数字。"
@@ -322,33 +522,47 @@
         "  \\node[below left] at (O) {\\small $O$};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) 31.4 cm\n(b) 188 cm²", "zh": "(a) 31.4 cm\n(b) 188 cm²" },
+      "answer": {
+        "en": "(a) 31.4 cm\n(b) 188 cm²",
+        "zh": "(a) 31.4 cm\n(b) 188 cm²"
+      },
       "solution": {
         "en": [
-          "(a) Arc length `= \\dfrac{\\theta}{360} \\times 2\\pi r`",
-          "`= \\dfrac{150}{360} \\times 2\\pi \\times 12`",
-          "`= \\dfrac{5}{12} \\times 24\\pi = 10\\pi`",
-          "`= 31.4` cm (3 s.f.)",
-          "(b) Area of sector `= \\dfrac{\\theta}{360} \\times \\pi r^2`",
-          "`= \\dfrac{150}{360} \\times \\pi \\times 12^2`",
-          "`= \\dfrac{5}{12} \\times 144\\pi = 60\\pi`",
-          "`= 188` cm² (3 s.f.)"
+          "(a) Arc length `= \\dfrac{\\theta}{360} \\times 2\\pi r`.",
+          "`= \\dfrac{150}{360} \\times 2\\pi \\times 12`.",
+          "`= \\dfrac{5}{12} \\times 24\\pi = 10\\pi`.",
+          "`= 31.4` cm (3 s.f.).",
+          "(b) Area of sector `= \\dfrac{\\theta}{360} \\times \\pi r^2`.",
+          "`= \\dfrac{150}{360} \\times \\pi \\times 12^2`.",
+          "`= \\dfrac{5}{12} \\times 144\\pi = 60\\pi`.",
+          "`= 188` cm² (3 s.f.)."
         ],
         "zh": [
-          "(a) 弧长 `= \\dfrac{\\theta}{360} \\times 2\\pi r`",
-          "`= \\dfrac{150}{360} \\times 2\\pi \\times 12`",
-          "`= \\dfrac{5}{12} \\times 24\\pi = 10\\pi`",
-          "`= 31.4` cm（3 位有效数字）",
-          "(b) 扇形面积 `= \\dfrac{\\theta}{360} \\times \\pi r^2`",
-          "`= \\dfrac{150}{360} \\times \\pi \\times 12^2`",
-          "`= \\dfrac{5}{12} \\times 144\\pi = 60\\pi`",
-          "`= 188` cm²（3 位有效数字）"
+          "(a) 弧长 `= \\dfrac{\\theta}{360} \\times 2\\pi r`。",
+          "`= \\dfrac{150}{360} \\times 2\\pi \\times 12`。",
+          "`= \\dfrac{5}{12} \\times 24\\pi = 10\\pi`。",
+          "`= 31.4` cm（3 位有效数字）。",
+          "(b) 扇形面积 `= \\dfrac{\\theta}{360} \\times \\pi r^2`。",
+          "`= \\dfrac{150}{360} \\times \\pi \\times 12^2`。",
+          "`= \\dfrac{5}{12} \\times 144\\pi = 60\\pi`。",
+          "`= 188` cm²（3 位有效数字）。"
         ]
       },
-      "common_mistake": { "en": "Forgetting to multiply by `\\dfrac{\\theta}{360}`. The sector is a FRACTION of the full circle, so you must multiply by `\\dfrac{150}{360}` to get the correct proportion.", "zh": "忘记乘以 `\\dfrac{\\theta}{360}`。扇形是完整圆的一部分，因此必须乘以 `\\dfrac{150}{360}` 才能得到正确的比例。" }
+      "common_mistake": {
+        "en": "Forgetting to multiply by `\\dfrac{\\theta}{360}`. The sector is a FRACTION of the full circle, so you must multiply by `\\dfrac{150}{360}` to get the correct proportion.",
+        "zh": "忘记乘以 `\\dfrac{\\theta}{360}`。扇形是完整圆的一部分，因此必须乘以 `\\dfrac{150}{360}` 才能得到正确的比例。"
+      }
     },
     {
-      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 5, "topic": ["Volume", "Surface Area", "Cones"],
+      "id": "q009",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 5,
+      "topic": [
+        "Volume",
+        "Surface Area",
+        "Cones"
+      ],
       "question": {
         "en": "A cone has base radius 6 cm and slant height 10 cm.\n\n(a) Show that the perpendicular height of the cone is 8 cm.\n\n(b) Calculate the volume of the cone.\nGive your answer in terms of `\\pi`.\n\n(c) Calculate the total surface area of the cone.\nGive your answer correct to 3 significant figures.\n\n[The volume of a cone is `\\dfrac{1}{3}\\pi r^2 h`.\nThe curved surface area of a cone is `\\pi r l`.]",
         "zh": "一个圆锥的底面半径为 6 cm，母线长（斜高）为 10 cm。\n\n(a) 证明该圆锥的垂直高度为 8 cm。\n\n(b) 计算该圆锥的体积。\n将答案用 `\\pi` 表示。\n\n(c) 计算该圆锥的总表面积。\n将答案精确到 3 位有效数字。\n\n[圆锥的体积为 `\\dfrac{1}{3}\\pi r^2 h`。\n圆锥的曲面面积为 `\\pi r l`。]"
@@ -368,37 +582,50 @@
         "  \\node[left] at (-0.2,1.6) {\\small $h$};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) h² = 10² - 6² = 64, h = 8 cm\n(b) 96π cm³\n(c) 302 cm²", "zh": "(a) h² = 10² - 6² = 64, h = 8 cm\n(b) 96π cm³\n(c) 302 cm²" },
+      "answer": {
+        "en": "(a) h² = 10² - 6² = 64, h = 8 cm\n(b) 96π cm³\n(c) 302 cm²",
+        "zh": "(a) h² = 10² - 6² = 64, h = 8 cm\n(b) 96π cm³\n(c) 302 cm²"
+      },
       "solution": {
         "en": [
-          "(a) Using Pythagoras' theorem: `h^2 + r^2 = l^2`",
-          "`h^2 = 10^2 - 6^2 = 100 - 36 = 64`",
-          "`h = \\sqrt{64} = 8` cm",
-          "(b) Volume `= \\dfrac{1}{3}\\pi r^2 h`",
-          "`= \\dfrac{1}{3} \\times \\pi \\times 6^2 \\times 8`",
-          "`= \\dfrac{1}{3} \\times 288\\pi = 96\\pi` cm³",
-          "(c) Curved surface area `= \\pi r l = \\pi \\times 6 \\times 10 = 60\\pi`",
-          "Base area `= \\pi r^2 = \\pi \\times 6^2 = 36\\pi`",
-          "Total surface area `= 60\\pi + 36\\pi = 96\\pi`",
-          "`= 301.592... = 302` cm² (3 s.f.)"
+          "(a) Using Pythagoras' theorem: `h^2 + r^2 = l^2`.",
+          "`h^2 = 10^2 - 6^2 = 100 - 36 = 64`.",
+          "`h = \\sqrt{64} = 8` cm.",
+          "(b) Volume `= \\dfrac{1}{3}\\pi r^2 h`.",
+          "`= \\dfrac{1}{3} \\times \\pi \\times 6^2 \\times 8`.",
+          "`= \\dfrac{1}{3} \\times 288\\pi = 96\\pi` cm³.",
+          "(c) Curved surface area `= \\pi r l = \\pi \\times 6 \\times 10 = 60\\pi`.",
+          "Base area `= \\pi r^2 = \\pi \\times 6^2 = 36\\pi`.",
+          "Total surface area `= 60\\pi + 36\\pi = 96\\pi`.",
+          "`= 301.592... = 302` cm² (3 s.f.)."
         ],
         "zh": [
-          "(a) 利用勾股定理：`h^2 + r^2 = l^2`",
-          "`h^2 = 10^2 - 6^2 = 100 - 36 = 64`",
-          "`h = \\sqrt{64} = 8` cm",
-          "(b) 体积 `= \\dfrac{1}{3}\\pi r^2 h`",
-          "`= \\dfrac{1}{3} \\times \\pi \\times 6^2 \\times 8`",
-          "`= \\dfrac{1}{3} \\times 288\\pi = 96\\pi` cm³",
-          "(c) 曲面面积 `= \\pi r l = \\pi \\times 6 \\times 10 = 60\\pi`",
-          "底面面积 `= \\pi r^2 = \\pi \\times 6^2 = 36\\pi`",
-          "总表面积 `= 60\\pi + 36\\pi = 96\\pi`",
-          "`= 301.592... = 302` cm²（3 位有效数字）"
+          "(a) 利用勾股定理：`h^2 + r^2 = l^2`。",
+          "`h^2 = 10^2 - 6^2 = 100 - 36 = 64`。",
+          "`h = \\sqrt{64} = 8` cm。",
+          "(b) 体积 `= \\dfrac{1}{3}\\pi r^2 h`。",
+          "`= \\dfrac{1}{3} \\times \\pi \\times 6^2 \\times 8`。",
+          "`= \\dfrac{1}{3} \\times 288\\pi = 96\\pi` cm³。",
+          "(c) 曲面面积 `= \\pi r l = \\pi \\times 6 \\times 10 = 60\\pi`。",
+          "底面面积 `= \\pi r^2 = \\pi \\times 6^2 = 36\\pi`。",
+          "总表面积 `= 60\\pi + 36\\pi = 96\\pi`。",
+          "`= 301.592... = 302` cm²（3 位有效数字）。"
         ]
       },
-      "common_mistake": { "en": "Using the slant height (10 cm) instead of the perpendicular height (8 cm) in the volume formula. The volume formula uses the PERPENDICULAR height `h`, not the slant height `l`.", "zh": "在体积公式中使用母线长（10 cm）而不是垂直高度（8 cm）。体积公式使用的是垂直高度 `h`，而不是母线长 `l`。" }
+      "common_mistake": {
+        "en": "Using the slant height (10 cm) instead of the perpendicular height (8 cm) in the volume formula. The volume formula uses the PERPENDICULAR height `h`, not the slant height `l`.",
+        "zh": "在体积公式中使用母线长（10 cm）而不是垂直高度（8 cm）。体积公式使用的是垂直高度 `h`，而不是母线长 `l`。"
+      }
     },
     {
-      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Volume", "Spheres"],
+      "id": "q010",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Volume",
+        "Spheres"
+      ],
       "question": {
         "en": "A solid hemisphere has radius 9 cm.\n\n(a) Calculate the volume of the hemisphere.\nGive your answer in terms of `\\pi`.\n\n(b) The hemisphere is made of wood with density 0.8 g/cm³.\nCalculate the mass of the hemisphere.\nGive your answer correct to the nearest gram.\n\n[The volume of a sphere is `\\dfrac{4}{3}\\pi r^3`.]",
         "zh": "一个实心半球的半径为 9 cm。\n\n(a) 计算该半球的体积。\n将答案用 `\\pi` 表示。\n\n(b) 该半球由密度为 0.8 g/cm³ 的木材制成。\n计算该半球的质量。\n将答案精确到最接近的克。\n\n[球的体积为 `\\dfrac{4}{3}\\pi r^3`。]"
@@ -412,27 +639,41 @@
         "  \\node[below] at (1.25,-0.2) {\\small 9 cm};",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) 486π cm³\n(b) 1221 g", "zh": "(a) 486π cm³\n(b) 1221 g" },
+      "answer": {
+        "en": "(a) 486π cm³\n(b) 1221 g",
+        "zh": "(a) 486π cm³\n(b) 1221 g"
+      },
       "solution": {
         "en": [
-          "(a) Volume of full sphere `= \\dfrac{4}{3}\\pi r^3 = \\dfrac{4}{3}\\pi(9)^3 = \\dfrac{4}{3} \\times 729\\pi = 972\\pi`",
-          "Volume of hemisphere `= \\dfrac{1}{2} \\times 972\\pi = 486\\pi` cm³",
-          "(b) Volume `= 486\\pi = 1526.814...` cm³",
-          "Mass `=` density `\\times` volume `= 0.8 \\times 1526.814...`",
-          "`= 1221.451... = 1221` g (nearest gram)"
+          "(a) Volume of full sphere `= \\dfrac{4}{3}\\pi r^3 = \\dfrac{4}{3}\\pi(9)^3 = \\dfrac{4}{3} \\times 729\\pi = 972\\pi`.",
+          "Volume of hemisphere `= \\dfrac{1}{2} \\times 972\\pi = 486\\pi` cm³.",
+          "(b) Volume `= 486\\pi = 1526.814...` cm³.",
+          "Mass `=` density `\\times` volume `= 0.8 \\times 1526.814...`.",
+          "`= 1221.451... = 1221` g (nearest gram)."
         ],
         "zh": [
-          "(a) 完整球的体积 `= \\dfrac{4}{3}\\pi r^3 = \\dfrac{4}{3}\\pi(9)^3 = \\dfrac{4}{3} \\times 729\\pi = 972\\pi`",
-          "半球的体积 `= \\dfrac{1}{2} \\times 972\\pi = 486\\pi` cm³",
-          "(b) 体积 `= 486\\pi = 1526.814...` cm³",
-          "质量 `=` 密度 `\\times` 体积 `= 0.8 \\times 1526.814...`",
-          "`= 1221.451... = 1221` g（最接近的克）"
+          "(a) 完整球的体积 `= \\dfrac{4}{3}\\pi r^3 = \\dfrac{4}{3}\\pi(9)^3 = \\dfrac{4}{3} \\times 729\\pi = 972\\pi`。",
+          "半球的体积 `= \\dfrac{1}{2} \\times 972\\pi = 486\\pi` cm³。",
+          "(b) 体积 `= 486\\pi = 1526.814...` cm³。",
+          "质量 `=` 密度 `\\times` 体积 `= 0.8 \\times 1526.814...`。",
+          "`= 1221.451... = 1221` g（最接近的克）。"
         ]
       },
-      "common_mistake": { "en": "Forgetting to halve the sphere volume. A hemisphere is HALF a sphere, so you must divide `\\dfrac{4}{3}\\pi r^3` by 2.", "zh": "忘记将球的体积除以 2。半球是球的一半，所以必须将 `\\dfrac{4}{3}\\pi r^3` 除以 2。" }
+      "common_mistake": {
+        "en": "Forgetting to halve the sphere volume. A hemisphere is HALF a sphere, so you must divide `\\dfrac{4}{3}\\pi r^3` by 2.",
+        "zh": "忘记将球的体积除以 2。半球是球的一半，所以必须将 `\\dfrac{4}{3}\\pi r^3` 除以 2。"
+      }
     },
     {
-      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Similar Shapes", "Volume", "Surface Area"],
+      "id": "q011",
+      "board": "CIE 0580",
+      "track": "Extended",
+      "marks": 4,
+      "topic": [
+        "Similar Shapes",
+        "Volume",
+        "Surface Area"
+      ],
       "question": {
         "en": "Two solid cylinders, A and B, are mathematically similar.\nThe height of cylinder A is 6 cm.\nThe height of cylinder B is 15 cm.\n\n(a) The curved surface area of cylinder A is 48 cm².\nCalculate the curved surface area of cylinder B.\n\n(b) The volume of cylinder B is 1500 cm³.\nCalculate the volume of cylinder A.",
         "zh": "两个实心圆柱体 A 和 B 是数学相似的。\n圆柱体 A 的高为 6 cm。\n圆柱体 B 的高为 15 cm。\n\n(a) 圆柱体 A 的曲面面积为 48 cm²。\n计算圆柱体 B 的曲面面积。\n\n(b) 圆柱体 B 的体积为 1500 cm³。\n计算圆柱体 A 的体积。"
@@ -459,33 +700,60 @@
         "  \\end{scope}",
         "\\end{tikzpicture}"
       ],
-      "answer": { "en": "(a) 300 cm²\n(b) 96 cm³", "zh": "(a) 300 cm²\n(b) 96 cm³" },
+      "answer": {
+        "en": "(a) 300 cm²\n(b) 96 cm³",
+        "zh": "(a) 300 cm²\n(b) 96 cm³"
+      },
       "solution": {
         "en": [
-          "Linear scale factor `= \\dfrac{15}{6} = \\dfrac{5}{2}`",
-          "(a) Area scale factor `= \\left(\\dfrac{5}{2}\\right)^2 = \\dfrac{25}{4}`",
-          "Curved surface area of B `= 48 \\times \\dfrac{25}{4} = 300` cm²",
-          "(b) Volume scale factor `= \\left(\\dfrac{5}{2}\\right)^3 = \\dfrac{125}{8}`",
-          "Volume of A `= 1500 \\div \\dfrac{125}{8} = 1500 \\times \\dfrac{8}{125} = 96` cm³"
+          "Linear scale factor `= \\dfrac{15}{6} = \\dfrac{5}{2}`.",
+          "(a) Area scale factor `= \\left(\\dfrac{5}{2}\\right)^2 = \\dfrac{25}{4}`.",
+          "Curved surface area of B `= 48 \\times \\dfrac{25}{4} = 300` cm².",
+          "(b) Volume scale factor `= \\left(\\dfrac{5}{2}\\right)^3 = \\dfrac{125}{8}`.",
+          "Volume of A `= 1500 \\div \\dfrac{125}{8} = 1500 \\times \\dfrac{8}{125} = 96` cm³."
         ],
         "zh": [
-          "线性比例因子 `= \\dfrac{15}{6} = \\dfrac{5}{2}`",
-          "(a) 面积比例因子 `= \\left(\\dfrac{5}{2}\\right)^2 = \\dfrac{25}{4}`",
-          "B 的曲面面积 `= 48 \\times \\dfrac{25}{4} = 300` cm²",
-          "(b) 体积比例因子 `= \\left(\\dfrac{5}{2}\\right)^3 = \\dfrac{125}{8}`",
-          "A 的体积 `= 1500 \\div \\dfrac{125}{8} = 1500 \\times \\dfrac{8}{125} = 96` cm³"
+          "线性比例因子 `= \\dfrac{15}{6} = \\dfrac{5}{2}`。",
+          "(a) 面积比例因子 `= \\left(\\dfrac{5}{2}\\right)^2 = \\dfrac{25}{4}`。",
+          "B 的曲面面积 `= 48 \\times \\dfrac{25}{4} = 300` cm²。",
+          "(b) 体积比例因子 `= \\left(\\dfrac{5}{2}\\right)^3 = \\dfrac{125}{8}`。",
+          "A 的体积 `= 1500 \\div \\dfrac{125}{8} = 1500 \\times \\dfrac{8}{125} = 96` cm³。"
         ]
       },
-      "common_mistake": { "en": "Using the linear scale factor directly for area or volume. For similar shapes: area ratio `=` (linear ratio)², volume ratio `=` (linear ratio)³. You must SQUARE for area and CUBE for volume.", "zh": "直接使用线性比例因子计算面积或体积。对于相似图形：面积比 `=`（线性比）²，体积比 `=`（线性比）³。面积必须平方，体积必须立方。" }
+      "common_mistake": {
+        "en": "Using the linear scale factor directly for area or volume. For similar shapes: area ratio `=` (linear ratio)², volume ratio `=` (linear ratio)³. You must SQUARE for area and CUBE for volume.",
+        "zh": "直接使用线性比例因子计算面积或体积。对于相似图形：面积比 `=`（线性比）²，体积比 `=`（线性比）³。面积必须平方，体积必须立方。"
+      }
     }
   ],
   "review_checklist": [
-    { "en": "I can calculate the area of rectangles, triangles, parallelograms and trapeziums.", "zh": "我能计算长方形、三角形、平行四边形和梯形的面积。" },
-    { "en": "I can calculate the circumference and area of a circle.", "zh": "我能计算圆的周长和面积。" },
-    { "en": "I can find the area and perimeter of composite shapes.", "zh": "我能计算组合图形的面积和周长。" },
-    { "en": "I can calculate the volume of prisms and cylinders.", "zh": "我能计算棱柱和圆柱体的体积。" },
-    { "en": "I can calculate the total surface area of a cylinder.", "zh": "我能计算圆柱体的总表面积。" },
-    { "en": "I can calculate arc length, sector area, and volumes of cones and spheres (Extended).", "zh": "我能计算弧长、扇形面积以及圆锥和球的体积（拓展）。" },
-    { "en": "I can use area and volume scale factors for similar shapes (Extended).", "zh": "我能使用相似图形的面积和体积比例因子（拓展）。" }
+    {
+      "en": "I can calculate the area of rectangles, triangles, parallelograms and trapeziums.",
+      "zh": "我能计算长方形、三角形、平行四边形和梯形的面积。"
+    },
+    {
+      "en": "I can calculate the circumference and area of a circle.",
+      "zh": "我能计算圆的周长和面积。"
+    },
+    {
+      "en": "I can find the area and perimeter of composite shapes.",
+      "zh": "我能计算组合图形的面积和周长。"
+    },
+    {
+      "en": "I can calculate the volume of prisms and cylinders.",
+      "zh": "我能计算棱柱和圆柱体的体积。"
+    },
+    {
+      "en": "I can calculate the total surface area of a cylinder.",
+      "zh": "我能计算圆柱体的总表面积。"
+    },
+    {
+      "en": "I can calculate arc length, sector area, and volumes of cones and spheres (Extended).",
+      "zh": "我能计算弧长、扇形面积以及圆锥和球的体积（拓展）。"
+    },
+    {
+      "en": "I can use area and volume scale factors for similar shapes (Extended).",
+      "zh": "我能使用相似图形的面积和体积比例因子（拓展）。"
+    }
   ]
 }

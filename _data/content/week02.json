@@ -176,8 +176,8 @@
       ],
       "answer": { "en": "HCF = 24, LCM = 360", "zh": "HCF = 24, LCM = 360" },
       "solution": {
-        "en": ["Prime factorisation: `72 = 2^3 \\times 3^2` and `120 = 2^3 \\times 3 \\times 5`.", "HCF: take the lowest power of each common prime: `2^3 \\times 3 = 24`.", "LCM: take the highest power of every prime: `2^3 \\times 3^2 \\times 5 = 360`.", "Check: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`. ✓"],
-        "zh": ["质因数分解: `72 = 2^3 \\times 3^2`，`120 = 2^3 \\times 3 \\times 5`。", "HCF: 取每个公共质因数的最低幂次: `2^3 \\times 3 = 24`。", "LCM: 取每个质因数的最高幂次: `2^3 \\times 3^2 \\times 5 = 360`。", "验证: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`。✓"]
+        "en": ["Prime factorisation: `72 = 2^3 \\times 3^2` and `120 = 2^3 \\times 3 \\times 5`.", "HCF: take the lowest power of each common prime: `2^3 \\times 3 = 24`.", "LCM: take the highest power of every prime: `2^3 \\times 3^2 \\times 5 = 360`.", "Check: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`."],
+        "zh": ["质因数分解: `72 = 2^3 \\times 3^2`，`120 = 2^3 \\times 3 \\times 5`。", "HCF: 取每个公共质因数的最低幂次: `2^3 \\times 3 = 24`。", "LCM: 取每个质因数的最高幂次: `2^3 \\times 3^2 \\times 5 = 360`。", "验证: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`。"]
       },
       "common_mistake": { "en": "Incorrectly factorising 72 or 120, e.g., writing `72 = 2^2 \\times 3^2` (missing a factor of 2).", "zh": "72 或 120 的质因数分解错误，例如写成 `72 = 2^2 \\times 3^2`（少了一个因数2）。" }
     },
