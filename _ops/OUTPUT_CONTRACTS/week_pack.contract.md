@@ -71,20 +71,33 @@
 
 ---
 
+## Dual Editions
+
+Each week pack produces **two PDFs** from the same JSON data:
+
+| Edition | Flag | Cover label | Content |
+|---------|------|-------------|---------|
+| English | `--lang en` | English Edition | English only throughout |
+| Bilingual | `--lang bilingual` | Bilingual Edition 双语版 | English + Chinese in solutions, mistakes, checklist, self-assessment |
+
 ## File Naming & Delivery
 
 ```
-Filename:  week-{nn}-{topic-slug}.pdf
-Example:   week-01-algebra-foundations.pdf
+Filenames: week-{nn}-en.pdf, week-{nn}-bilingual.pdf
+Example:   week-01-en.pdf, week-01-bilingual.pdf
 
 Storage:   Supabase Storage → member-files/week{nn}/
-Asset key: member-files/week01/algebra-foundations-pack.pdf
+Asset keys: member-files/week01/week-01-en.pdf
+            member-files/week01/week-01-bilingual.pdf
 ```
 
-Must be registered in `_data/releases.json` with:
+Each edition has its own release entry in `_data/releases.json`:
+- `release_id`: `member-week{nn}-{slug}-en-2026w{ww}` / `member-week{nn}-{slug}-bilingual-2026w{ww}`
 - `status: "active"`
 - `channels: ["member"]`
 - `asset_key` matching the storage path
+
+After updating `releases.json`, run: `node scripts/member/sync_release_registry.js`
 
 ---
 
@@ -95,6 +108,9 @@ Before release, verify:
 - [ ] Mark totals match stated total
 - [ ] No broken LaTeX rendering
 - [ ] Topic aligns with stated syllabus codes
-- [ ] File size < 5MB
+- [ ] File size < 500KB per PDF
 - [ ] PDF is text-searchable (not image-only)
 - [ ] Version stamp matches release_id
+- [ ] English edition contains zero Chinese characters
+- [ ] Bilingual edition has Chinese in solutions, mistakes, checklist, self-assessment
+- [ ] See `week_pack_qa_checklist.md` for full acceptance criteria
