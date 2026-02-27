@@ -1,0 +1,493 @@
+{
+  "_comment": "Week 10 — Trigonometry & Pythagoras. Based on CIE 0580 past papers (2018-2025) across C6.1-C6.2, E6.1-E6.6. Questions are strict variations of real exam patterns.",
+  "week_number": 10,
+  "topic": "Trigonometry & Pythagoras",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week10-trigonometry-pythagoras-2026w19",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:trigonometry-c6:c6-01-pythagoras-theorem",
+    "cie0580:trigonometry-c6:c6-02-trigonometric-ratios",
+    "cie0580:trigonometry-c6:c6-03-bearings",
+    "cie0580:trigonometry-c6:c6-04-sine-and-cosine-rules",
+    "cie0580:trigonometry-c6:c6-06-three-dimensional-problems"
+  ],
+  "syllabus_refs": ["C6.1", "C6.2", "E6.1", "E6.2", "E6.3", "E6.4", "E6.5", "E6.6"],
+  "key_vocabulary": [
+    { "term_en": "Pythagoras' Theorem", "term_zh": "勾股定理", "definition": "In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.", "definition_zh": "在直角三角形中，斜边的平方等于另外两条边的平方之和。" },
+    { "term_en": "Hypotenuse", "term_zh": "斜边", "definition": "The longest side of a right-angled triangle, opposite the right angle.", "definition_zh": "直角三角形中最长的边，与直角相对。" },
+    { "term_en": "Right-angled Triangle", "term_zh": "直角三角形", "definition": "A triangle that contains one angle of exactly 90 degrees.", "definition_zh": "包含一个 90 度角的三角形。" },
+    { "term_en": "Trigonometry", "term_zh": "三角学", "definition": "The study of relationships between sides and angles of triangles.", "definition_zh": "研究三角形的边与角之间关系的学科。" },
+    { "term_en": "Sine (sin)", "term_zh": "正弦", "definition": "In a right-angled triangle, the ratio of the opposite side to the hypotenuse.", "definition_zh": "在直角三角形中，对边与斜边的比值。" },
+    { "term_en": "Cosine (cos)", "term_zh": "余弦", "definition": "In a right-angled triangle, the ratio of the adjacent side to the hypotenuse.", "definition_zh": "在直角三角形中，邻边与斜边的比值。" },
+    { "term_en": "Tangent (tan)", "term_zh": "正切", "definition": "In a right-angled triangle, the ratio of the opposite side to the adjacent side.", "definition_zh": "在直角三角形中，对边与邻边的比值。" },
+    { "term_en": "SOHCAHTOA", "term_zh": "SOHCAHTOA", "definition": "A mnemonic for trigonometric ratios: Sin = Opposite/Hypotenuse, Cos = Adjacent/Hypotenuse, Tan = Opposite/Adjacent.", "definition_zh": "三角比的助记词：Sin = 对边/斜边，Cos = 邻边/斜边，Tan = 对边/邻边。" },
+    { "term_en": "Opposite", "term_zh": "对边", "definition": "The side of a right-angled triangle across from a given angle.", "definition_zh": "直角三角形中与给定角相对的边。" },
+    { "term_en": "Adjacent", "term_zh": "邻边", "definition": "The side of a right-angled triangle next to a given angle (not the hypotenuse).", "definition_zh": "直角三角形中与给定角相邻的边（不是斜边）。" },
+    { "term_en": "Bearing", "term_zh": "方位角", "definition": "An angle measured clockwise from North, written as a three-figure number (e.g. 045°).", "definition_zh": "从正北方向顺时针测量的角度，写成三位数（如 045°）。" },
+    { "term_en": "Angle of Elevation", "term_zh": "仰角", "definition": "The angle measured upward from the horizontal to a line of sight.", "definition_zh": "从水平方向向上测量到视线的角度。" },
+    { "term_en": "Angle of Depression", "term_zh": "俯角", "definition": "The angle measured downward from the horizontal to a line of sight.", "definition_zh": "从水平方向向下测量到视线的角度。" },
+    { "term_en": "Sine Rule", "term_zh": "正弦定理", "definition": "In any triangle: a/sin A = b/sin B = c/sin C. Used when you know a side and its opposite angle.", "definition_zh": "在任意三角形中：a/sin A = b/sin B = c/sin C。当已知一边及其对角时使用。" },
+    { "term_en": "Cosine Rule", "term_zh": "余弦定理", "definition": "In any triangle: a² = b² + c² − 2bc cos A. Used when you know three sides or two sides and the included angle.", "definition_zh": "在任意三角形中：a² = b² + c² − 2bc cos A。当已知三边或两边及夹角时使用。" },
+    { "term_en": "Exact Value", "term_zh": "精确值", "definition": "A trigonometric value expressed as a fraction or surd rather than a decimal, e.g. sin 30° = 1/2.", "definition_zh": "用分数或根号表示的三角函数值，而非小数，如 sin 30° = 1/2。" },
+    { "term_en": "Included Angle", "term_zh": "夹角", "definition": "The angle between two known sides of a triangle.", "definition_zh": "三角形中两条已知边之间的角。" },
+    { "term_en": "Space Diagonal", "term_zh": "体对角线", "definition": "A line connecting two opposite vertices of a 3D shape, passing through the interior.", "definition_zh": "连接三维图形两个对角顶点的线段，穿过内部。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Pythagoras", "Hypotenuse"],
+      "question": {
+        "en": "The diagram shows a right-angled triangle ABC with the right angle at A.\nAB = 12 cm and AC = 5 cm.\n\nCalculate the length of BC.",
+        "zh": "下图是直角三角形 ABC，直角在 A 处。\nAB = 12 cm，AC = 5 cm。\n\n计算 BC 的长度。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.5]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (B) at (6,0);",
+        "  \\coordinate (C) at (0,2.5);",
+        "  \\draw[thick] (A)--(B)--(C)--cycle;",
+        "  \\draw (0,0.35)--(0.35,0.35)--(0.35,0);",
+        "  \\node[below left] at (A) {\\small $A$};",
+        "  \\node[below right] at (B) {\\small $B$};",
+        "  \\node[above left] at (C) {\\small $C$};",
+        "  \\node[below] at (3,-0.3) {\\small 12 cm};",
+        "  \\node[left] at (-0.3,1.25) {\\small 5 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "13 cm", "zh": "13 cm" },
+      "solution": {
+        "en": [
+          "Using Pythagoras' theorem: `BC^2 = AB^2 + AC^2`",
+          "`= 12^2 + 5^2 = 144 + 25 = 169`",
+          "`BC = \\sqrt{169} = 13` cm"
+        ],
+        "zh": [
+          "利用勾股定理：`BC^2 = AB^2 + AC^2`",
+          "`= 12^2 + 5^2 = 144 + 25 = 169`",
+          "`BC = \\sqrt{169} = 13` cm"
+        ]
+      },
+      "common_mistake": { "en": "Adding instead of squaring: calculating `12 + 5 = 17` instead of `\\sqrt{12^2 + 5^2}`. You must SQUARE each side first, ADD, then take the SQUARE ROOT.", "zh": "直接相加而不是平方：计算 `12 + 5 = 17` 而不是 `\\sqrt{12^2 + 5^2}`。必须先将每条边平方，再相加，最后开平方根。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Pythagoras", "Shorter Side"],
+      "question": {
+        "en": "The diagram shows a right-angled triangle ABC with the right angle at A.\nAB = 15 cm and BC = 17 cm.\n\nCalculate the length of AC.",
+        "zh": "下图是直角三角形 ABC，直角在 A 处。\nAB = 15 cm，BC = 17 cm。\n\n计算 AC 的长度。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.45]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (B) at (7.5,0);",
+        "  \\coordinate (C) at (0,4);",
+        "  \\draw[thick] (A)--(B)--(C)--cycle;",
+        "  \\draw (0,0.35)--(0.35,0.35)--(0.35,0);",
+        "  \\node[below left] at (A) {\\small $A$};",
+        "  \\node[below right] at (B) {\\small $B$};",
+        "  \\node[above left] at (C) {\\small $C$};",
+        "  \\node[below] at (3.75,-0.3) {\\small 15 cm};",
+        "  \\node[above right] at (4,2.5) {\\small 17 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "8 cm", "zh": "8 cm" },
+      "solution": {
+        "en": [
+          "BC is the hypotenuse. Using Pythagoras' theorem:",
+          "`AC^2 = BC^2 - AB^2`",
+          "`= 17^2 - 15^2 = 289 - 225 = 64`",
+          "`AC = \\sqrt{64} = 8` cm"
+        ],
+        "zh": [
+          "BC 是斜边。利用勾股定理：",
+          "`AC^2 = BC^2 - AB^2`",
+          "`= 17^2 - 15^2 = 289 - 225 = 64`",
+          "`AC = \\sqrt{64} = 8` cm"
+        ]
+      },
+      "common_mistake": { "en": "Adding the squares instead of subtracting: `17^2 + 15^2 = 514`. When finding a SHORTER side, you must SUBTRACT: `BC^2 - AB^2`.", "zh": "将平方相加而不是相减：`17^2 + 15^2 = 514`。求较短边时，必须相减：`BC^2 - AB^2`。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Trigonometry", "Find Angle"],
+      "question": {
+        "en": "The diagram shows a right-angled triangle ABC with the right angle at B.\nAB = 10 cm and BC = 7 cm.\n\nCalculate angle BAC.\nGive your answer correct to 1 decimal place.",
+        "zh": "下图是直角三角形 ABC，直角在 B 处。\nAB = 10 cm，BC = 7 cm。\n\n计算角 BAC。\n将答案精确到 1 位小数。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.55]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (B) at (5,0);",
+        "  \\coordinate (C) at (5,3.5);",
+        "  \\draw[thick] (A)--(B)--(C)--cycle;",
+        "  \\draw (5,0.35)--(4.65,0.35)--(4.65,0);",
+        "  \\node[below left] at (A) {\\small $A$};",
+        "  \\node[below right] at (B) {\\small $B$};",
+        "  \\node[above right] at (C) {\\small $C$};",
+        "  \\node[below] at (2.5,-0.3) {\\small 10 cm};",
+        "  \\node[right] at (5.3,1.75) {\\small 7 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "35.0°", "zh": "35.0°" },
+      "solution": {
+        "en": [
+          "BC is opposite angle A, AB is adjacent to angle A.",
+          "`\\tan(\\angle BAC) = \\dfrac{\\text{opposite}}{\\text{adjacent}} = \\dfrac{BC}{AB} = \\dfrac{7}{10} = 0.7`",
+          "`\\angle BAC = \\tan^{-1}(0.7) = 34.99...°`",
+          "`= 35.0°` (1 d.p.)"
+        ],
+        "zh": [
+          "BC 是角 A 的对边，AB 是角 A 的邻边。",
+          "`\\tan(\\angle BAC) = \\dfrac{\\text{对边}}{\\text{邻边}} = \\dfrac{BC}{AB} = \\dfrac{7}{10} = 0.7`",
+          "`\\angle BAC = \\tan^{-1}(0.7) = 34.99...°`",
+          "`= 35.0°`（1 位小数）"
+        ]
+      },
+      "common_mistake": { "en": "Using the wrong ratio: sin or cos instead of tan. Since you have the opposite and adjacent sides (not the hypotenuse), you need TAN = opposite/adjacent.", "zh": "使用了错误的比值：sin 或 cos 而不是 tan。由于已知对边和邻边（而非斜边），需要使用 TAN = 对边/邻边。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Trigonometry", "Find Side"],
+      "question": {
+        "en": "The diagram shows a right-angled triangle ABC with the right angle at C.\nAngle BAC = 40° and AB = 14 cm.\n\nCalculate the length of BC.\nGive your answer correct to 3 significant figures.",
+        "zh": "下图是直角三角形 ABC，直角在 C 处。\n角 BAC = 40°，AB = 14 cm。\n\n计算 BC 的长度。\n将答案精确到 3 位有效数字。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.5]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (C) at (5.4,0);",
+        "  \\coordinate (B) at (5.4,4.5);",
+        "  \\draw[thick] (A)--(C)--(B)--cycle;",
+        "  \\draw (5.4,0.35)--(5.05,0.35)--(5.05,0);",
+        "  \\draw[thick] (A) pic[draw=black, -, angle radius=0.9cm, angle eccentricity=1.5, \"$40^\\circ$\"] {angle=C--A--B};",
+        "  \\node[below left] at (A) {\\small $A$};",
+        "  \\node[below right] at (C) {\\small $C$};",
+        "  \\node[above right] at (B) {\\small $B$};",
+        "  \\node[above left] at (2.5,2.5) {\\small 14 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "9.00 cm", "zh": "9.00 cm" },
+      "solution": {
+        "en": [
+          "BC is opposite angle A, AB is the hypotenuse.",
+          "`\\sin(40°) = \\dfrac{BC}{AB} = \\dfrac{BC}{14}`",
+          "`BC = 14 \\times \\sin 40°`",
+          "`= 14 \\times 0.6427... = 8.999...`",
+          "`= 9.00` cm (3 s.f.)"
+        ],
+        "zh": [
+          "BC 是角 A 的对边，AB 是斜边。",
+          "`\\sin(40°) = \\dfrac{BC}{AB} = \\dfrac{BC}{14}`",
+          "`BC = 14 \\times \\sin 40°`",
+          "`= 14 \\times 0.6427... = 8.999...`",
+          "`= 9.00` cm（3 位有效数字）"
+        ]
+      },
+      "common_mistake": { "en": "Using cos instead of sin. BC is OPPOSITE the given angle, so use sin. Use cos only when finding the ADJACENT side.", "zh": "使用 cos 而不是 sin。BC 是给定角的对边，所以要用 sin。只有在求邻边时才用 cos。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Bearings", "Pythagoras"],
+      "question": {
+        "en": "A ship sails from port P on a bearing of 090° for 8 km to point Q.\nFrom Q, the ship sails on a bearing of 000° for 15 km to point R.\n\n(a) Calculate the direct distance from P to R.\n\n(b) Calculate the bearing of R from P.\nGive your answer correct to 1 decimal place.",
+        "zh": "一艘船从港口 P 以 090° 方位角航行 8 km 到达 Q 点。\n从 Q 点出发，船以 000° 方位角航行 15 km 到达 R 点。\n\n(a) 计算 P 到 R 的直线距离。\n\n(b) 计算 R 相对于 P 的方位角。\n将答案精确到 1 位小数。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.35]",
+        "  \\coordinate (P) at (0,0);",
+        "  \\coordinate (Q) at (4,0);",
+        "  \\coordinate (R) at (4,7.5);",
+        "  \\draw[thick] (P)--(Q)--(R);",
+        "  \\draw[dashed] (P)--(R);",
+        "  \\draw (4,0.4)--(3.6,0.4)--(3.6,0);",
+        "  \\draw[->] (P)--(0,2.5); \\node[above] at (0,2.5) {\\small N};",
+        "  \\node[below] at (2,-0.3) {\\small 8 km};",
+        "  \\node[right] at (4.3,3.75) {\\small 15 km};",
+        "  \\node[below left] at (P) {\\small $P$};",
+        "  \\node[below right] at (Q) {\\small $Q$};",
+        "  \\node[above right] at (R) {\\small $R$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 17 km\n(b) 028.1°", "zh": "(a) 17 km\n(b) 028.1°" },
+      "solution": {
+        "en": [
+          "(a) Angle PQR `= 90°` (090° east then 000° north).",
+          "`PR^2 = PQ^2 + QR^2 = 8^2 + 15^2 = 64 + 225 = 289`",
+          "`PR = \\sqrt{289} = 17` km",
+          "(b) `\\tan(\\angle RPQ) = \\dfrac{QR}{PQ}$... no. Wait.",
+          "R is 8 km east and 15 km north of P.",
+          "`\\tan(\\text{bearing angle}) = \\dfrac{\\text{east}}{\\text{north}} = \\dfrac{8}{15}`",
+          "Bearing `= \\tan^{-1}\\left(\\dfrac{8}{15}\\right) = 28.07...° = 028.1°`"
+        ],
+        "zh": [
+          "(a) 角 PQR `= 90°`（先向东 090° 再向北 000°）。",
+          "`PR^2 = PQ^2 + QR^2 = 8^2 + 15^2 = 64 + 225 = 289`",
+          "`PR = \\sqrt{289} = 17` km",
+          "(b) R 在 P 的东方 8 km、北方 15 km 处。",
+          "`\\tan(\\text{方位角}) = \\dfrac{\\text{东}}{\\text{北}} = \\dfrac{8}{15}`",
+          "方位角 `= \\tan^{-1}\\left(\\dfrac{8}{15}\\right) = 28.07...° = 028.1°`"
+        ]
+      },
+      "common_mistake": { "en": "Calculating the bearing as `\\tan^{-1}(15/8) = 61.9°`. For bearings measured from NORTH, use east/north (not north/east) in the tangent ratio.", "zh": "计算方位角时用 `\\tan^{-1}(15/8) = 61.9°`。从北方测量的方位角，正切比中应使用 东/北（而非 北/东）。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Pythagoras", "Context"],
+      "question": {
+        "en": "A ladder of length 6 m rests against a vertical wall.\nThe foot of the ladder is 1.5 m from the base of the wall.\n\n(a) Calculate how high up the wall the ladder reaches.\nGive your answer correct to 3 significant figures.\n\n(b) For safety, the angle between the ladder and the horizontal ground must be between 70° and 80°.\nDetermine whether this ladder position is safe.\nShow your working.",
+        "zh": "一架长 6 m 的梯子靠在一面垂直的墙上。\n梯子底部距墙脚 1.5 m。\n\n(a) 计算梯子到达墙上的高度。\n将答案精确到 3 位有效数字。\n\n(b) 为安全起见，梯子与水平地面之间的角度必须在 70° 到 80° 之间。\n判断该梯子的位置是否安全。\n写出你的计算过程。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.6]",
+        "  \\draw[thick] (3,0)--(3,3.5);",
+        "  \\draw[thick] (-0.3,0)--(3.5,0);",
+        "  \\draw[thick] (0.75,0)--(3,2.9);",
+        "  \\draw (3,0.3)--(2.7,0.3)--(2.7,0);",
+        "  \\node[below] at (1.875,-0.3) {\\small 1.5 m};",
+        "  \\node[above left] at (1.7,1.7) {\\small 6 m};",
+        "  \\node[right] at (3.2,1.45) {\\small $h$ m};",
+        "  \\foreach \\y in {0.4,0.8,...,3.2} { \\draw (3,\\y)--(3.15,\\y+0.15); }",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 5.81 m\n(b) Safe (75.5°, which is between 70° and 80°)", "zh": "(a) 5.81 m\n(b) 安全（75.5°，在 70° 到 80° 之间）" },
+      "solution": {
+        "en": [
+          "(a) `h^2 = 6^2 - 1.5^2 = 36 - 2.25 = 33.75`",
+          "`h = \\sqrt{33.75} = 5.809...`",
+          "`= 5.81` m (3 s.f.)",
+          "(b) `\\cos \\theta = \\dfrac{1.5}{6} = 0.25`",
+          "`\\theta = \\cos^{-1}(0.25) = 75.52...° \\approx 75.5°`",
+          "Since `70° < 75.5° < 80°`, the ladder is safe."
+        ],
+        "zh": [
+          "(a) `h^2 = 6^2 - 1.5^2 = 36 - 2.25 = 33.75`",
+          "`h = \\sqrt{33.75} = 5.809...`",
+          "`= 5.81` m（3 位有效数字）",
+          "(b) `\\cos \\theta = \\dfrac{1.5}{6} = 0.25`",
+          "`\\theta = \\cos^{-1}(0.25) = 75.52...° \\approx 75.5°`",
+          "因为 `70° < 75.5° < 80°`，梯子是安全的。"
+        ]
+      },
+      "common_mistake": { "en": "Using the ladder length as a side instead of the hypotenuse: calculating `6^2 + 1.5^2`. The ladder IS the hypotenuse, so you must SUBTRACT: `6^2 - 1.5^2`.", "zh": "将梯子长度作为直角边而非斜边：计算 `6^2 + 1.5^2`。梯子是斜边，因此必须相减：`6^2 - 1.5^2`。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Exact Values"],
+      "question": {
+        "en": "Without using a calculator, write down the exact value of each of the following.\n\n(a) `\\sin 30°`\n\n(b) `\\cos 45°`\n\n(c) `\\tan 60°`\n\n(d) `\\cos 60°`",
+        "zh": "不使用计算器，写出以下各项的精确值。\n\n(a) `\\sin 30°`\n\n(b) `\\cos 45°`\n\n(c) `\\tan 60°`\n\n(d) `\\cos 60°`"
+      },
+      "answer": { "en": "(a) 1/2\n(b) √2 / 2\n(c) √3\n(d) 1/2", "zh": "(a) 1/2\n(b) √2 / 2\n(c) √3\n(d) 1/2" },
+      "solution": {
+        "en": [
+          "(a) `\\sin 30° = \\dfrac{1}{2}`",
+          "(b) `\\cos 45° = \\dfrac{\\sqrt{2}}{2} = \\dfrac{1}{\\sqrt{2}}`",
+          "(c) `\\tan 60° = \\sqrt{3}`",
+          "(d) `\\cos 60° = \\dfrac{1}{2}`"
+        ],
+        "zh": [
+          "(a) `\\sin 30° = \\dfrac{1}{2}`",
+          "(b) `\\cos 45° = \\dfrac{\\sqrt{2}}{2} = \\dfrac{1}{\\sqrt{2}}`",
+          "(c) `\\tan 60° = \\sqrt{3}`",
+          "(d) `\\cos 60° = \\dfrac{1}{2}`"
+        ]
+      },
+      "common_mistake": { "en": "Confusing sin 30° with sin 60°. Remember: sin 30° = cos 60° = 1/2, and sin 60° = cos 30° = √3/2.", "zh": "混淆 sin 30° 和 sin 60°。记住：sin 30° = cos 60° = 1/2，sin 60° = cos 30° = √3/2。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Sine Rule"],
+      "question": {
+        "en": "The diagram shows triangle ABC where angle BAC = 42°, angle ABC = 73° and AC = 15 cm.\n\nCalculate the length of BC.\nGive your answer correct to 3 significant figures.",
+        "zh": "下图是三角形 ABC，其中角 BAC = 42°，角 ABC = 73°，AC = 15 cm。\n\n计算 BC 的长度。\n将答案精确到 3 位有效数字。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.55]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (B) at (7,0);",
+        "  \\coordinate (C) at (5.5,5);",
+        "  \\draw[thick] (A)--(B)--(C)--cycle;",
+        "  \\draw[thick] (A) pic[draw=black, -, angle radius=0.9cm, angle eccentricity=1.5, \"$42^\\circ$\"] {angle=B--A--C};",
+        "  \\draw[thick] (B) pic[draw=black, -, angle radius=0.8cm, angle eccentricity=1.6, \"$73^\\circ$\"] {angle=C--B--A};",
+        "  \\node[below left] at (A) {\\small $A$};",
+        "  \\node[below right] at (B) {\\small $B$};",
+        "  \\node[above] at (C) {\\small $C$};",
+        "  \\node[left] at (2.5,2.8) {\\small 15 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "10.5 cm", "zh": "10.5 cm" },
+      "solution": {
+        "en": [
+          "Angle ACB `= 180° - 42° - 73° = 65°`",
+          "AC is opposite angle B (73°), BC is opposite angle A (42°).",
+          "Using the sine rule: `\\dfrac{BC}{\\sin A} = \\dfrac{AC}{\\sin B}`",
+          "`\\dfrac{BC}{\\sin 42°} = \\dfrac{15}{\\sin 73°}`",
+          "`BC = \\dfrac{15 \\times \\sin 42°}{\\sin 73°}`",
+          "`= \\dfrac{15 \\times 0.6691...}{0.9563...} = 10.495...`",
+          "`= 10.5` cm (3 s.f.)"
+        ],
+        "zh": [
+          "角 ACB `= 180° - 42° - 73° = 65°`",
+          "AC 是角 B（73°）的对边，BC 是角 A（42°）的对边。",
+          "利用正弦定理：`\\dfrac{BC}{\\sin A} = \\dfrac{AC}{\\sin B}`",
+          "`\\dfrac{BC}{\\sin 42°} = \\dfrac{15}{\\sin 73°}`",
+          "`BC = \\dfrac{15 \\times \\sin 42°}{\\sin 73°}`",
+          "`= \\dfrac{15 \\times 0.6691...}{0.9563...} = 10.495...`",
+          "`= 10.5` cm（3 位有效数字）"
+        ]
+      },
+      "common_mistake": { "en": "Matching the wrong angle with the wrong side. In the sine rule, each side must be paired with its OPPOSITE angle: BC/sin A = AC/sin B.", "zh": "将角与错误的边配对。正弦定理中，每条边必须与其对角配对：BC/sin A = AC/sin B。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Cosine Rule"],
+      "question": {
+        "en": "The diagram shows triangle PQR.\nPQ = 7 cm, QR = 9 cm and PR = 11 cm.\n\nCalculate angle PQR.\nGive your answer correct to 1 decimal place.",
+        "zh": "下图是三角形 PQR。\nPQ = 7 cm，QR = 9 cm，PR = 11 cm。\n\n计算角 PQR。\n将答案精确到 1 位小数。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\coordinate (P) at (0,0);",
+        "  \\coordinate (Q) at (7,0);",
+        "  \\coordinate (R) at (6.4,9);",
+        "  \\draw[thick] (P)--(Q)--(R)--cycle;",
+        "  \\node[below left] at (P) {\\small $P$};",
+        "  \\node[below right] at (Q) {\\small $Q$};",
+        "  \\node[above] at (R) {\\small $R$};",
+        "  \\node[below] at (3.5,-0.3) {\\small 7 cm};",
+        "  \\node[right] at (6.9,4.5) {\\small 9 cm};",
+        "  \\node[left] at (2.8,4.8) {\\small 11 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "85.9°", "zh": "85.9°" },
+      "solution": {
+        "en": [
+          "PR is opposite angle Q. Using the cosine rule to find an angle:",
+          "`\\cos Q = \\dfrac{PQ^2 + QR^2 - PR^2}{2 \\times PQ \\times QR}`",
+          "`= \\dfrac{7^2 + 9^2 - 11^2}{2 \\times 7 \\times 9}`",
+          "`= \\dfrac{49 + 81 - 121}{126} = \\dfrac{9}{126}`",
+          "`Q = \\cos^{-1}\\left(\\dfrac{9}{126}\\right) = \\cos^{-1}(0.07142...)`",
+          "`= 85.903...° = 85.9°` (1 d.p.)"
+        ],
+        "zh": [
+          "PR 是角 Q 的对边。利用余弦定理（求角形式）：",
+          "`\\cos Q = \\dfrac{PQ^2 + QR^2 - PR^2}{2 \\times PQ \\times QR}`",
+          "`= \\dfrac{7^2 + 9^2 - 11^2}{2 \\times 7 \\times 9}`",
+          "`= \\dfrac{49 + 81 - 121}{126} = \\dfrac{9}{126}`",
+          "`Q = \\cos^{-1}\\left(\\dfrac{9}{126}\\right) = \\cos^{-1}(0.07142...)`",
+          "`= 85.903...° = 85.9°`（1 位小数）"
+        ]
+      },
+      "common_mistake": { "en": "Using the wrong side as the 'opposite' in the cosine rule. To find angle Q, subtract the square of the side OPPOSITE Q (which is PR = 11), not one of the sides adjacent to Q.", "zh": "在余弦定理中用错了「对边」。求角 Q 时，必须减去角 Q 的对边（PR = 11）的平方，而不是 Q 两侧的边的平方。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Area", "Sine Formula"],
+      "question": {
+        "en": "The diagram shows triangle DEF.\nDE = 8 cm, DF = 11 cm and angle EDF = 54°.\n\nCalculate the area of triangle DEF.\nGive your answer correct to 3 significant figures.",
+        "zh": "下图是三角形 DEF。\nDE = 8 cm，DF = 11 cm，角 EDF = 54°。\n\n计算三角形 DEF 的面积。\n将答案精确到 3 位有效数字。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.5]",
+        "  \\coordinate (D) at (0,0);",
+        "  \\coordinate (E) at (2.35,3.24);",
+        "  \\coordinate (F) at (5.5,0);",
+        "  \\draw[thick] (D)--(E)--(F)--cycle;",
+        "  \\draw[thick] (D) pic[draw=black, -, angle radius=1cm, angle eccentricity=1.5, \"$54^\\circ$\"] {angle=F--D--E};",
+        "  \\node[below left] at (D) {\\small $D$};",
+        "  \\node[above] at (E) {\\small $E$};",
+        "  \\node[below right] at (F) {\\small $F$};",
+        "  \\node[above left] at (1,1.8) {\\small 8 cm};",
+        "  \\node[below] at (2.75,-0.3) {\\small 11 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "35.6 cm²", "zh": "35.6 cm²" },
+      "solution": {
+        "en": [
+          "Area `= \\dfrac{1}{2} \\times DE \\times DF \\times \\sin(\\angle EDF)`",
+          "`= \\dfrac{1}{2} \\times 8 \\times 11 \\times \\sin 54°`",
+          "`= 44 \\times 0.8090...`",
+          "`= 35.596... = 35.6` cm² (3 s.f.)"
+        ],
+        "zh": [
+          "面积 `= \\dfrac{1}{2} \\times DE \\times DF \\times \\sin(\\angle EDF)`",
+          "`= \\dfrac{1}{2} \\times 8 \\times 11 \\times \\sin 54°`",
+          "`= 44 \\times 0.8090...`",
+          "`= 35.596... = 35.6` cm²（3 位有效数字）"
+        ]
+      },
+      "common_mistake": { "en": "Forgetting the `\\dfrac{1}{2}` factor, giving `8 \\times 11 \\times \\sin 54° = 71.2`. The area formula is `\\dfrac{1}{2} ab \\sin C` — the factor of `\\dfrac{1}{2}` is essential.", "zh": "忘记乘以 `\\dfrac{1}{2}`，得到 `8 \\times 11 \\times \\sin 54° = 71.2`。面积公式为 `\\dfrac{1}{2} ab \\sin C`，`\\dfrac{1}{2}` 是必不可少的。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 5, "topic": ["3D Trigonometry"],
+      "question": {
+        "en": "The diagram shows a cuboid ABCDEFGH.\nAB = 6 cm, BC = 8 cm and CG = 5 cm.\n\n(a) Calculate the length of AC, the diagonal of the base ABCD.\n\n(b) Calculate the length of AG, the space diagonal of the cuboid.\nGive your answer correct to 3 significant figures.\n\n(c) Calculate the angle that AG makes with the base ABCD.\nGive your answer correct to 1 decimal place.",
+        "zh": "下图是一个长方体 ABCDEFGH。\nAB = 6 cm，BC = 8 cm，CG = 5 cm。\n\n(a) 计算底面 ABCD 的对角线 AC 的长度。\n\n(b) 计算长方体的体对角线 AG 的长度。\n将答案精确到 3 位有效数字。\n\n(c) 计算 AG 与底面 ABCD 所成的角。\n将答案精确到 1 位小数。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.55]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (B) at (6,0);",
+        "  \\coordinate (C) at (8,2);",
+        "  \\coordinate (D) at (2,2);",
+        "  \\coordinate (E) at (0,5);",
+        "  \\coordinate (F) at (6,5);",
+        "  \\coordinate (G) at (8,7);",
+        "  \\coordinate (H) at (2,7);",
+        "  \\draw[thick] (A)--(B)--(C)--(D)--cycle;",
+        "  \\draw[thick] (E)--(F)--(G)--(H)--cycle;",
+        "  \\draw[thick] (A)--(E);",
+        "  \\draw[thick] (B)--(F);",
+        "  \\draw[thick] (C)--(G);",
+        "  \\draw[thick] (D)--(H);",
+        "  \\draw[dashed] (A)--(C);",
+        "  \\draw[dashed] (A)--(G);",
+        "  \\node[below left] at (A) {\\small $A$};",
+        "  \\node[below right] at (B) {\\small $B$};",
+        "  \\node[right] at (C) {\\small $C$};",
+        "  \\node[left] at (D) {\\small $D$};",
+        "  \\node[above left] at (E) {\\small $E$};",
+        "  \\node[above right] at ($(F)+(0.1,0)$) {\\small $F$};",
+        "  \\node[right] at (G) {\\small $G$};",
+        "  \\node[left] at (H) {\\small $H$};",
+        "  \\node[below] at (3,-0.3) {\\small 6 cm};",
+        "  \\node[below right] at (7,1) {\\small 8 cm};",
+        "  \\node[right] at (8.3,4.5) {\\small 5 cm};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 10 cm\n(b) 11.2 cm\n(c) 26.6°", "zh": "(a) 10 cm\n(b) 11.2 cm\n(c) 26.6°" },
+      "solution": {
+        "en": [
+          "(a) In triangle ABC (right-angled at B):",
+          "`AC^2 = AB^2 + BC^2 = 6^2 + 8^2 = 36 + 64 = 100`",
+          "`AC = \\sqrt{100} = 10` cm",
+          "(b) In triangle ACG (right-angled at C):",
+          "`AG^2 = AC^2 + CG^2 = 10^2 + 5^2 = 100 + 25 = 125`",
+          "`AG = \\sqrt{125} = 11.180...`",
+          "`= 11.2` cm (3 s.f.)",
+          "(c) The angle AG makes with the base is angle GAC.",
+          "`\\tan(\\angle GAC) = \\dfrac{CG}{AC} = \\dfrac{5}{10} = 0.5`",
+          "`\\angle GAC = \\tan^{-1}(0.5) = 26.565...°`",
+          "`= 26.6°` (1 d.p.)"
+        ],
+        "zh": [
+          "(a) 在直角三角形 ABC 中（B 为直角）：",
+          "`AC^2 = AB^2 + BC^2 = 6^2 + 8^2 = 36 + 64 = 100`",
+          "`AC = \\sqrt{100} = 10` cm",
+          "(b) 在直角三角形 ACG 中（C 为直角）：",
+          "`AG^2 = AC^2 + CG^2 = 10^2 + 5^2 = 100 + 25 = 125`",
+          "`AG = \\sqrt{125} = 11.180...`",
+          "`= 11.2` cm（3 位有效数字）",
+          "(c) AG 与底面所成的角为角 GAC。",
+          "`\\tan(\\angle GAC) = \\dfrac{CG}{AC} = \\dfrac{5}{10} = 0.5`",
+          "`\\angle GAC = \\tan^{-1}(0.5) = 26.565...°`",
+          "`= 26.6°`（1 位小数）"
+        ]
+      },
+      "common_mistake": { "en": "Using the wrong right-angled triangle for part (c). The angle between AG and the base must use triangle ACG where C is the right angle. The opposite is CG (height = 5) and the adjacent is AC (base diagonal = 10).", "zh": "在第 (c) 部分使用了错误的直角三角形。AG 与底面所成的角必须在直角三角形 ACG 中求解（C 为直角）。对边是 CG（高 = 5），邻边是 AC（底面对角线 = 10）。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can use Pythagoras' theorem to find the hypotenuse or a shorter side of a right-angled triangle.", "zh": "我能使用勾股定理求直角三角形的斜边或较短边。" },
+    { "en": "I can use SOHCAHTOA to find an unknown angle or side in a right-angled triangle.", "zh": "我能使用 SOHCAHTOA 求直角三角形中的未知角或边。" },
+    { "en": "I can solve bearings problems involving right-angled triangles.", "zh": "我能解决涉及直角三角形的方位角问题。" },
+    { "en": "I can apply Pythagoras' theorem to real-life contexts such as ladders and distances.", "zh": "我能将勾股定理应用于实际情境，如梯子和距离问题。" },
+    { "en": "I know the exact values of sin, cos and tan for 30°, 45° and 60°.", "zh": "我知道 30°、45°、60° 的 sin、cos 和 tan 精确值。" },
+    { "en": "I can use the sine rule, cosine rule and area = 1/2 ab sin C for non-right-angled triangles (Extended).", "zh": "我能对非直角三角形使用正弦定理、余弦定理和面积公式 1/2 ab sin C（拓展）。" },
+    { "en": "I can solve 3D trigonometry problems by identifying right-angled triangles within 3D shapes (Extended).", "zh": "我能通过在三维图形中识别直角三角形来解决三维三角学问题（拓展）。" }
+  ]
+}

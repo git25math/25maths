@@ -207,5 +207,27 @@
     "membership_tier": "",
     "asset_key": "member-files/week09/week-09-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week10-trigonometry-pythagoras-en-2026w19",
+    "version": "v1",
+    "subtopic_id": "cie0580:trigonometry-c6:c6-01-pythagoras-theorem",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week10/week-10-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week10-trigonometry-pythagoras-bilingual-2026w19",
+    "version": "v1",
+    "subtopic_id": "cie0580:trigonometry-c6:c6-01-pythagoras-theorem",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week10/week-10-bilingual.pdf",
+    "status": "active"
   }
 ]
