@@ -43,7 +43,7 @@ lang_links:
             按考试局与层级，直接进入互动题组。
         </h2>
         <div class="mt-10 grid md:grid-cols-2 gap-5">
-            <div class="group border border-gray-200 rounded-2xl bg-white hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition accent-top-cie">
+            <div class="group border border-gray-200 rounded-2xl bg-white hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition ui-focus-ring accent-top-cie">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">CIE 0580</p>
                 <h3 class="mt-3 text-2xl font-semibold text-gray-900">CIE 互动练习</h3>
                 <p class="mt-3 text-gray-600">覆盖 Core 与 Extended 全部考点，即时反馈，按题型分组训练。</p>
@@ -52,7 +52,7 @@ lang_links:
                     <a href="/zh-cn/exercises/?board=cie0580&tier=extended" class="text-sm font-semibold text-gray-900 hover:text-gray-600 transition ui-focus-ring">Extended 层级 →</a>
                 </div>
             </div>
-            <div class="group border border-gray-200 rounded-2xl bg-white hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition accent-top-green">
+            <div class="group border border-gray-200 rounded-2xl bg-white hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition ui-focus-ring accent-top-green">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Edexcel 4MA1</p>
                 <h3 class="mt-3 text-2xl font-semibold text-gray-900">Edexcel 互动练习</h3>
                 <p class="mt-3 text-gray-600">对齐 Edexcel 4MA1 考纲，Foundation 与 Higher 分层练习。</p>
@@ -88,16 +88,19 @@ lang_links:
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">01</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">关键术语对照</h3>
                 <p class="mt-3 text-gray-600">提供核心术语的中英对照与常见误区，解决"看得懂但不会答"的问题。</p>
+                <a href="/zh-cn/exercises/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">浏览练习 →</a>
             </article>
             <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">02</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">英文表达引导</h3>
                 <p class="mt-3 text-gray-600">强调题目如何问、答案如何写，帮助用英语准确表达数学思路。</p>
+                <a href="/zh-cn/exercises/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">开始练习 →</a>
             </article>
             <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">03</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">可选术语支持产品</h3>
                 <p class="mt-3 text-gray-600">若需要更深入的术语支持，可单独获取中英对照词汇卡与术语包。</p>
+                <a href="/zh-cn/cie0580/free/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">查看免费资源 →</a>
             </article>
         </div>
     </div>
@@ -117,7 +120,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-5">
             {% assign cn_posts = site.posts | where: "lang", "zh-CN" %}
             {% for post in cn_posts limit:3 %}
-            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-lg hover:-translate-y-1 transition ui-focus-ring">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
