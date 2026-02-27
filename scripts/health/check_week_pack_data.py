@@ -2,8 +2,12 @@
 """
 Validate week pack JSON files against data.contract.json (week_pack_spec).
 
+Supports both question formats:
+  - MCQ:       questionText, options, correctAnswer, explanation
+  - Bilingual: question.en/zh, answer, solution, common_mistake
+
 Usage:
-    python3 scripts/health/check_week_pack_data.py                  # all _data/content/week*.json
+    python3 scripts/health/check_week_pack_data.py                    # all _data/content/week*.json
     python3 scripts/health/check_week_pack_data.py path/to/file.json  # single file
 
 Requires: pip install jsonschema (>=4.0)
@@ -15,7 +19,7 @@ import glob
 import os
 
 try:
-    from jsonschema import validate, ValidationError, Draft202012Validator
+    from jsonschema import validate, ValidationError
 except ImportError:
     print("ERROR: jsonschema not installed. Run: pip install jsonschema")
     sys.exit(2)
@@ -30,18 +34,15 @@ def load_week_pack_schema():
     with open(CONTRACT_PATH, "r", encoding="utf-8") as f:
         contract = json.load(f)
 
-    # Build a standalone schema that validates week_pack_spec specifically
     schema = {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$defs": contract.get("definitions", {}),
         "type": "object",
         "required": ["week_number", "topic", "board", "tier", "subtopic_ids",
                       "questions_core", "questions_extended"],
-        "additionalProperties": False,
         "properties": {}
     }
 
-    # Pull properties from the week_pack_spec definition
     week_spec = contract.get("definitions", {}).get("week_pack_spec", {})
     schema["properties"] = week_spec.get("properties", {})
     schema["required"] = week_spec.get("required", schema["required"])
@@ -52,6 +53,11 @@ def load_week_pack_schema():
     schema = json.loads(schema_str)
 
     return schema
+
+
+def is_bilingual(q):
+    """Return True if question uses bilingual open-ended format."""
+    return isinstance(q.get("question"), dict)
 
 
 def validate_file(filepath, schema):
@@ -68,7 +74,7 @@ def validate_file(filepath, schema):
         failures.append(f"FAIL: {filename}: Invalid JSON: {e}")
         return passes, failures, warnings
 
-    # Strip _comment field before validation (allowed but not in schema)
+    # Strip _comment field before validation
     data_clean = {k: v for k, v in data.items() if k != "_comment"}
 
     try:
@@ -78,20 +84,24 @@ def validate_file(filepath, schema):
         path = " → ".join(str(p) for p in e.absolute_path) if e.absolute_path else "(root)"
         failures.append(f"FAIL: {filename}: [{path}] {e.message}")
 
-    # Additional content-level checks (warnings, not failures)
+    # ── Content-level checks (warnings) ──
     core_q = data.get("questions_core", [])
     ext_q = data.get("questions_extended", [])
+    all_q = core_q + ext_q
 
     if len(core_q) < 6:
-        warnings.append(f"WARN: {filename}: Only {len(core_q)} core questions (minimum 6)")
+        warnings.append(f"WARN: {filename}: Only {len(core_q)} core questions (recommend 6+)")
     if len(ext_q) < 4:
-        warnings.append(f"WARN: {filename}: Only {len(ext_q)} extended questions (minimum 4)")
+        warnings.append(f"WARN: {filename}: Only {len(ext_q)} extended questions (recommend 4+)")
 
-    total_marks = sum(q.get("marks", 0) for q in core_q + ext_q)
-    if total_marks < 30:
-        warnings.append(f"WARN: {filename}: Total marks = {total_marks} (target: 30-40)")
-    elif total_marks > 40:
-        warnings.append(f"WARN: {filename}: Total marks = {total_marks} (target: 30-40)")
+    # Marks check — bilingual format may not have explicit marks
+    has_marks = any(q.get("marks") for q in all_q)
+    if has_marks:
+        total_marks = sum(q.get("marks", 0) for q in all_q)
+        if total_marks < 30:
+            warnings.append(f"WARN: {filename}: Total marks = {total_marks} (target: 30-40)")
+        elif total_marks > 40:
+            warnings.append(f"WARN: {filename}: Total marks = {total_marks} (target: 30-40)")
 
     vocab = data.get("key_vocabulary", [])
     if len(vocab) < 4:
@@ -99,12 +109,24 @@ def validate_file(filepath, schema):
 
     checklist = data.get("review_checklist", [])
     if len(checklist) < 5:
-        warnings.append(f"WARN: {filename}: Only {len(checklist)} checklist items (minimum 5)")
+        warnings.append(f"WARN: {filename}: Only {len(checklist)} checklist items (recommend 5+)")
 
-    # Check all questions have explanations
-    for i, q in enumerate(core_q + ext_q):
-        if not q.get("explanation"):
-            warnings.append(f"WARN: {filename}: question[{i}] has no explanation")
+    # Format-specific checks
+    for i, q in enumerate(all_q):
+        if is_bilingual(q):
+            # Bilingual: check required nested fields
+            qtext = q.get("question", {})
+            if not qtext.get("en"):
+                warnings.append(f"WARN: {filename}: question[{i}] missing English text")
+            sol = q.get("solution", {})
+            if not sol.get("en"):
+                warnings.append(f"WARN: {filename}: question[{i}] missing English solution steps")
+            if not q.get("answer", {}).get("en"):
+                warnings.append(f"WARN: {filename}: question[{i}] missing English answer")
+        else:
+            # MCQ: check explanation
+            if not q.get("explanation"):
+                warnings.append(f"WARN: {filename}: question[{i}] has no explanation")
 
     return passes, failures, warnings
 
@@ -114,11 +136,9 @@ def main():
         files = [sys.argv[1]]
     else:
         files = sorted(glob.glob(DEFAULT_GLOB))
-        # Exclude .sample.json from default validation
         files = [f for f in files if ".sample." not in f]
 
     if not files:
-        # If no production files, validate the sample as a smoke test
         sample = os.path.join(REPO_ROOT, "_data", "content", "week01.sample.json")
         if os.path.exists(sample):
             print("No production week*.json found. Validating sample file as smoke test.\n")
@@ -139,7 +159,6 @@ def main():
         all_failures.extend(f)
         all_warnings.extend(w)
 
-    # Print results
     for msg in all_passes + all_warnings + all_failures:
         print(msg)
 

@@ -52,5 +52,8 @@ plan/member-agent-runs/
 /F*.pdf
 /F*.out
 
+# Week Pack build output
+build/
+
 # Claude Code worktrees
 .claude/worktrees/

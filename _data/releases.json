@@ -11,14 +11,25 @@
     "status": "active"
   },
   {
-    "release_id": "member-week01-algebra-foundations-2026w09",
+    "release_id": "member-week01-number-fdp-en-2026w10",
     "version": "v1",
-    "subtopic_id": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+    "subtopic_id": "cie0580:number-c1:c1-04-fractions-decimals-percentages",
     "channels": ["member"],
     "payhip_product_id": "eN4l6",
     "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
-    "asset_key": "member-files/week01/algebra-foundations-pack.pdf",
+    "asset_key": "member-files/week01/week-01-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week01-number-fdp-bilingual-2026w10",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-04-fractions-decimals-percentages",
+    "channels": ["member"],
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
+    "membership_tier": "",
+    "asset_key": "member-files/week01/week-01-bilingual.pdf",
     "status": "active"
   }
 ]
