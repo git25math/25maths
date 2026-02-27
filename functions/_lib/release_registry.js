@@ -171,6 +171,32 @@ export const releaseRegistry = [
     "membership_tier": "",
     "asset_key": "member-files/week06/week-06-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week07-coordinate-geometry-en-2026w16",
+    "version": "v1",
+    "subtopic_id": "cie0580:graphs-c3:c3-01-coordinates",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week07/week-07-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week07-coordinate-geometry-bilingual-2026w16",
+    "version": "v1",
+    "subtopic_id": "cie0580:graphs-c3:c3-01-coordinates",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week07/week-07-bilingual.pdf",
+    "status": "active"
   }
 ];
 
