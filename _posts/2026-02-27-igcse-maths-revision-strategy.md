@@ -95,3 +95,5 @@ Review this log before every practice session. Your mistakes are your syllabus.
 - Track your weak topics automatically: [Free Interactive Practice](/exercises/)
 - Get weekly targeted practice packs: [Weekly Membership](/subscription.html)
 - Practice CIE 0580 topics now: [CIE 0580 Practice](/cie0580/)
+
+**Related guides:** [CIE 0580 vs Edexcel 4MA1: Which Is Harder?](/2026/02/27/cie0580-vs-edexcel-4ma1.html) · [Paper 4: 10 Tips to Gain 20+ Marks](/2026/02/27/cie0580-paper4-extended-tips.html) · [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html)

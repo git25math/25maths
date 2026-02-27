@@ -82,7 +82,7 @@ $170 \div 0.85 = 200$
 
 ## Type 6: Compound Interest
 
-**Formula:** $A = P\!\left(1 + \frac{r}{100}\right)^n$
+**Formula:** $A = P\left(1 + \frac{r}{100}\right)^n$
 
 Where:
 - $A$ = final amount
@@ -113,7 +113,7 @@ Exam tip: If the question says "compound interest", always use the exponential f
 
 Same as compound interest but with decrease:
 
-**Formula:** $V = P\!\left(1 - \frac{r}{100}\right)^n$
+**Formula:** $V = P\left(1 - \frac{r}{100}\right)^n$
 
 **Example:** A car worth $20000$ depreciates at $12\%$ per year for $3$ years.
 
@@ -145,3 +145,5 @@ Answer: $4$ complete years needed.
 - [CIE 0580 Number Practice](/cie0580/) — percentage and ratio questions
 - [Edexcel 4MA1 Practice](/edx4ma1/) — percentage problems for Edexcel board
 - [Weekly Targeted Practice](/subscription.html) — curated exam questions with solutions
+
+**Related guides:** [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html) · [Paper 4: 10 Tips to Gain 20+ Marks](/2026/02/27/cie0580-paper4-extended-tips.html) · [CIE 0580 vs Edexcel 4MA1](/2026/02/27/cie0580-vs-edexcel-4ma1.html)

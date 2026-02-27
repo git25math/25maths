@@ -94,5 +94,7 @@ B 和 A* 之间的差距通常是技巧而不是知识。
 ### 开始行动
 
 - 自动追踪你的薄弱主题：[免费互动练习](/exercises/)
-- 获取每周针对性练习包：[每周会员](/subscription.html)
+- 获取每周针对性练习包：[每周会员](/zh-cn/subscription.html)
 - 立即练习 CIE 0580 主题：[CIE 0580 练习](/cie0580/)
+
+**相关指南：** [CIE 0580 vs Edexcel 4MA1 对比](/zh-cn/blog/cie0580-vs-edexcel-4ma1.html) · [Paper 4：多拿20+分的技巧](/zh-cn/blog/cie0580-paper4-jiqiao.html) · [三角函数完全指南](/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html)

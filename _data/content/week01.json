@@ -61,30 +61,40 @@
       "common_mistake": { "en": "Leaving the fraction as `\\dfrac{45}{100}` without simplifying.", "zh": "将分数写为 `\\dfrac{45}{100}` 而没有化简。" }
     },
     {
-      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 1, "topic": ["Percentages"],
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Percentages"],
       "question": {
-        "en": "Calculate 15% of 300.",
-        "zh": "计算 300 的 15%。"
+        "en": "(a) Calculate 15% of 300.\n\n(b) What percentage of 300 is 45?",
+        "zh": "(a) 计算 300 的 15%。\n\n(b) 45 是 300 的百分之几？"
       },
-      "answer": { "en": "45", "zh": "45" },
+      "answer": { "en": "(a) 45\n(b) 15%", "zh": "(a) 45\n(b) 15%" },
       "solution": {
-        "en": ["Convert percentage to decimal: `15\\% = 0.15`", "Multiply by the amount: `0.15 \\times 300`", "`= 45`"],
-        "zh": ["将百分比转换为小数: `15\\% = 0.15`", "乘以总数: `0.15 \\times 300`", "`= 45`"]
+        "en": ["(a) Convert percentage to decimal: `15\\% = 0.15`", "`0.15 \\times 300 = 45`", "(b) `\\dfrac{45}{300} \\times 100 = 15\\%`"],
+        "zh": ["(a) 将百分比转换为小数: `15\\% = 0.15`", "`0.15 \\times 300 = 45`", "(b) `\\dfrac{45}{300} \\times 100 = 15\\%`"]
       },
-      "common_mistake": { "en": "Multiplying by 15 instead of 0.15.", "zh": "乘以15而不是0.15。" }
+      "common_mistake": { "en": "In (a), multiplying by 15 instead of 0.15. In (b), dividing 300 by 45 instead of 45 by 300.", "zh": "在 (a) 中，乘以 15 而不是 0.15。在 (b) 中，用 300 除以 45 而不是 45 除以 300。" }
     },
     {
-      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Percentages", "Money"],
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Percentages", "Money"],
       "question": {
-        "en": "A TV costs $400. In a sale, it is reduced by 20%. What is the sale price?",
-        "zh": "一台电视价格为 $400。在促销中，它降价了 20%。促销价是多少？"
+        "en": "A TV costs $400. In a sale, it is reduced by 20%.\n\n(a) How much money is saved in the sale?\n\n(b) What is the sale price?",
+        "zh": "一台电视价格为 $400。在促销中，它降价了 20%。\n\n(a) 促销中省了多少钱？\n\n(b) 促销价是多少？"
       },
-      "answer": { "en": "$320", "zh": "$320" },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\draw[fill=blue!20] (0,0) rectangle (5,0.6);",
+        "  \\node at (2.5,0.3) {\\small \\$400 (Original)};",
+        "  \\draw[fill=green!20] (0,-0.9) rectangle (4,-0.3);",
+        "  \\node at (2,-0.6) {\\small \\$\\,? (Sale price)};",
+        "  \\draw[fill=red!20] (4,-0.9) rectangle (5,-0.3);",
+        "  \\node at (4.5,-0.6) {\\small 20\\%};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) $80\n(b) $320", "zh": "(a) $80\n(b) $320" },
       "solution": {
-        "en": ["Find the reduction amount: `20\\%` of $400 `= 0.20 \\times 400 = \\$80`.", "Subtract the reduction from the original price: `\\$400 - \\$80 = \\$320`.", "Alternatively, calculate the remaining percentage: `100\\% - 20\\% = 80\\%`.", "Calculate the sale price: `80\\%` of $400 `= 0.80 \\times 400 = \\$320`."],
-        "zh": ["计算折扣金额: $400 的 `20\\%` `= 0.20 \\times 400 = \\$80`。", "从原价中减去折扣金额: `\\$400 - \\$80 = \\$320`。", "或者，计算剩余百分比: `100\\% - 20\\% = 80\\%`。", "计算促销价: $400 的 `80\\%` `= 0.80 \\times 400 = \\$320`。"]
+        "en": ["(a) Find the reduction: `20\\%` of $400 `= 0.20 \\times 400 = \\$80`.", "(b) Subtract from the original: `\\$400 - \\$80 = \\$320`."],
+        "zh": ["(a) 计算折扣金额: $400 的 `20\\%` `= 0.20 \\times 400 = \\$80`。", "(b) 从原价中减去: `\\$400 - \\$80 = \\$320`。"]
       },
-      "common_mistake": { "en": "Giving the reduction amount ($80) as the final answer instead of the sale price.", "zh": "将折扣金额（$80）作为最终答案，而不是促销价。" }
+      "common_mistake": { "en": "Giving only the reduction amount ($80) for part (b). Part (a) asks for the saving, part (b) asks for the new price.", "zh": "在 (b) 中只给出折扣金额（$80）。(a) 问的是省了多少，(b) 问的是新价格。" }
     },
     {
       "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Fractions"],
@@ -100,30 +110,30 @@
       "common_mistake": { "en": "Adding the numerators and denominators directly: `\\dfrac{2+1}{5+3} = \\dfrac{3}{8}`.", "zh": "直接将分子和分母相加: `\\dfrac{2+1}{5+3} = \\dfrac{3}{8}`。" }
     },
     {
-      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 1, "topic": ["FDP conversions"],
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["FDP conversions"],
       "question": {
-        "en": "Write `\\dfrac{3}{8}` as a decimal.",
-        "zh": "将 `\\dfrac{3}{8}` 写成小数。"
+        "en": "(a) Write `\\dfrac{3}{8}` as a decimal.\n\n(b) Write 0.375 as a percentage.",
+        "zh": "(a) 将 `\\dfrac{3}{8}` 写成小数。\n\n(b) 将 0.375 写成百分数。"
       },
-      "answer": { "en": "0.375", "zh": "0.375" },
+      "answer": { "en": "(a) 0.375\n(b) 37.5%", "zh": "(a) 0.375\n(b) 37.5%" },
       "solution": {
-        "en": ["To convert a fraction to a decimal, divide the numerator by the denominator.", "`3 \\div 8 = 0.375`"],
-        "zh": ["要将分数转换为小数，用分子除以分母。", "`3 \\div 8 = 0.375`"]
+        "en": ["(a) Divide the numerator by the denominator: `3 \\div 8 = 0.375`", "(b) Multiply the decimal by 100: `0.375 \\times 100 = 37.5\\%`"],
+        "zh": ["(a) 用分子除以分母: `3 \\div 8 = 0.375`", "(b) 将小数乘以 100: `0.375 \\times 100 = 37.5\\%`"]
       },
-      "common_mistake": { "en": "Calculating `8 \\div 3` instead.", "zh": "错误地计算 `8 \\div 3`。" }
+      "common_mistake": { "en": "In (a), calculating `8 \\div 3` instead. In (b), forgetting to multiply by 100.", "zh": "在 (a) 中，错误地计算 `8 \\div 3`。在 (b) 中，忘记乘以 100。" }
     },
     {
-      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Percentages", "Money"],
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Percentages", "Money"],
       "question": {
-        "en": "An item costs $40. The price is increased by 10%. What is the new price?",
-        "zh": "一件商品价格为 $40。价格上涨了10%。新价格是多少？"
+        "en": "An item costs $40. The price is increased by 10%.\n\n(a) What is the new price?\n\n(b) The item is then sold for $50. Calculate the percentage profit based on the original cost of $40.",
+        "zh": "一件商品价格为 $40。价格上涨了 10%。\n\n(a) 新价格是多少？\n\n(b) 该商品随后以 $50 售出。以原价 $40 为基准，计算利润百分比。"
       },
-      "answer": { "en": "$44", "zh": "$44" },
+      "answer": { "en": "(a) $44\n(b) 25%", "zh": "(a) $44\n(b) 25%" },
       "solution": {
-        "en": ["Calculate the increase amount: `10\\%` of $40 `= 0.10 \\times 40 = \\$4`.", "Add the increase to the original price: `\\$40 + \\$4 = \\$44`."],
-        "zh": ["计算上涨金额: $40 的 `10\\%` `= 0.10 \\times 40 = \\$4`。", "将上涨金额加到原价上: `\\$40 + \\$4 = \\$44`。"]
+        "en": ["(a) Increase: `10\\%` of $40 `= 0.10 \\times 40 = \\$4`. New price: `\\$40 + \\$4 = \\$44`.", "(b) Profit `= \\$50 - \\$40 = \\$10`", "`\\text{Percentage profit} = \\dfrac{10}{40} \\times 100 = 25\\%`"],
+        "zh": ["(a) 上涨金额: $40 的 `10\\%` `= 0.10 \\times 40 = \\$4`。新价格: `\\$40 + \\$4 = \\$44`。", "(b) 利润 `= \\$50 - \\$40 = \\$10`", "`\\text{利润百分比} = \\dfrac{10}{40} \\times 100 = 25\\%`"]
       },
-      "common_mistake": { "en": "Only stating the increase amount ($4) as the answer.", "zh": "只把上涨金额（$4）作为答案。" }
+      "common_mistake": { "en": "In (b), calculating profit based on $44 instead of the original $40, or based on $50 (selling price).", "zh": "在 (b) 中，以 $44 而不是原价 $40 为基准计算利润百分比，或以 $50（售价）为基准。" }
     }
   ],
   "questions_extended": [
@@ -141,17 +151,17 @@
       "common_mistake": { "en": "Calculating 30% of $546 and subtracting it from the selling price.", "zh": "计算 $546 的 30% 并从售价中减去。" }
     },
     {
-      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 2, "topic": ["Percentages"],
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Percentages"],
       "question": {
-        "en": "The value of a car depreciates from $15 000 to $12 000. Calculate the percentage decrease in value.",
-        "zh": "一辆汽车的价值从 $15 000 折旧到 $12 000。计算价值下降的百分比。"
+        "en": "The value of a car depreciates from $15 000 to $12 000.\n\n(a) Calculate the percentage decrease in value.\n\n(b) The car continues to depreciate by the same percentage. Calculate its value after the second depreciation.",
+        "zh": "一辆汽车的价值从 $15 000 折旧到 $12 000。\n\n(a) 计算价值下降的百分比。\n\n(b) 该汽车继续以相同的百分比折旧。计算第二次折旧后的价值。"
       },
-      "answer": { "en": "20%", "zh": "20%" },
+      "answer": { "en": "(a) 20%\n(b) $9600", "zh": "(a) 20%\n(b) $9600" },
       "solution": {
-        "en": ["Calculate the actual decrease: `\\$15\\,000 - \\$12\\,000 = \\$3\\,000`.", "Calculate the percentage change: `\\dfrac{\\text{Change}}{\\text{Original}} \\times 100`", "`= \\dfrac{\\$3\\,000}{\\$15\\,000} \\times 100`", "`= \\dfrac{1}{5} \\times 100`", "`= 20\\%`"],
-        "zh": ["计算实际下降金额: `\\$15\\,000 - \\$12\\,000 = \\$3\\,000`。", "计算百分比变化: `\\dfrac{\\text{变化值}}{\\text{原始值}} \\times 100`", "`= \\dfrac{\\$3\\,000}{\\$15\\,000} \\times 100`", "`= \\dfrac{1}{5} \\times 100`", "`= 20\\%`"]
+        "en": ["(a) Decrease `= \\$15\\,000 - \\$12\\,000 = \\$3\\,000`.", "`\\text{Percentage decrease} = \\dfrac{3\\,000}{15\\,000} \\times 100 = 20\\%`", "(b) Second depreciation: `20\\%` of $12 000 `= 0.20 \\times 12\\,000 = \\$2\\,400`.", "New value: `\\$12\\,000 - \\$2\\,400 = \\$9\\,600`"],
+        "zh": ["(a) 下降金额 `= \\$15\\,000 - \\$12\\,000 = \\$3\\,000`。", "`\\text{下降百分比} = \\dfrac{3\\,000}{15\\,000} \\times 100 = 20\\%`", "(b) 第二次折旧: $12 000 的 `20\\%` `= 0.20 \\times 12\\,000 = \\$2\\,400`。", "新价值: `\\$12\\,000 - \\$2\\,400 = \\$9\\,600`"]
       },
-      "common_mistake": { "en": "Dividing the change by the new value ($12 000) instead of the original value.", "zh": "用变化值除以新价值（$12 000）而不是原始价值。" }
+      "common_mistake": { "en": "In (a), dividing by $12 000 instead of $15 000. In (b), calculating 20% of $15 000 again instead of 20% of the NEW value $12 000.", "zh": "在 (a) 中，除以 $12 000 而不是 $15 000。在 (b) 中，再次计算 $15 000 的 20% 而不是新价值 $12 000 的 20%。" }
     },
     {
       "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Fractions"],
@@ -186,6 +196,18 @@
         "en": "A house price increases by 20% one year and then decreases by 20% the next year. What is the overall percentage change from the original price?",
         "zh": "一个房价第一年上涨了 20%，第二年又下跌了 20%。与原价相比，总的百分比变化是多少？"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.85]",
+        "  \\draw[fill=blue!15, draw=blue!50, rounded corners=2pt] (0,0) rectangle (2,0.7);",
+        "  \\node at (1,0.35) {\\small $P$};",
+        "  \\draw[->, thick, blue!70] (2.2,0.35) -- (3.3,0.35) node[midway, above] {\\footnotesize $\\times 1.2$};",
+        "  \\draw[fill=green!15, draw=green!50, rounded corners=2pt] (3.5,0) rectangle (6,0.7);",
+        "  \\node at (4.75,0.35) {\\small $1.2P$};",
+        "  \\draw[->, thick, red!70] (6.2,0.35) -- (7.3,0.35) node[midway, above] {\\footnotesize $\\times 0.8$};",
+        "  \\draw[fill=red!15, draw=red!50, rounded corners=2pt] (7.5,0) rectangle (9.7,0.7);",
+        "  \\node at (8.6,0.35) {\\small $0.96P$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "A decrease of 4%", "zh": "下降 4%" },
       "solution": {
         "en": ["Let the original price be `P`.", "After 1 year, price is `P \\times (1 + 0.20) = 1.2P`.", "After 2 years, price is `1.2P \\times (1 - 0.20) = 1.2P \\times 0.8 = 0.96P`.", "The final price is `96\\%` of the original price.", "This is a `100\\% - 96\\% = 4\\%` decrease."],

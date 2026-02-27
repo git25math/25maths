@@ -132,8 +132,22 @@
     }
   }
 
+  /* === Wrap tables in scrollable containers === */
+  function initTables(){
+    var c=document.querySelector('.blog-post-content');
+    if(!c) return;
+    var tables=c.querySelectorAll('table');
+    tables.forEach(function(t){
+      var wrapper=document.createElement('div');
+      wrapper.className='blog-table-scroll';
+      t.parentNode.insertBefore(wrapper,t);
+      wrapper.appendChild(t);
+    });
+  }
+
   /* === Init === */
   function init(){
+    initTables();
     initKaTeX();
     initTOC();
   }

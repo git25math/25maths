@@ -6,7 +6,7 @@
 {% else %}
   {% assign board_soft_classes = 'border cie-soft-border cie-soft-bg cie-soft-text px-7 py-3 rounded-lg font-semibold cie-soft-hover transition' %}
 {% endif %}
-{% assign kahoot_classes = 'kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition' %}
+{% assign kahoot_classes = 'kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-md transition' %}
 
 <div class="{{ wrapper_class }}">
   {% include ui/cta-link.html href=include.kahoot_href classes=kahoot_classes label=include.kahoot_label %}

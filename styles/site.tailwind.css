@@ -107,9 +107,83 @@
   .blog-post-content h3 { margin-top: calc(var(--spacing) * 8); }
   .blog-post-content > h2:first-child { border-top: none; padding-top: 0; }
 
-  /* Table + code horizontal scroll */
-  .blog-post-content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  /* Blog table styling */
+  .blog-table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: calc(var(--spacing) * 4);
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+
+  .blog-post-content table {
+    min-width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-base);
+    border: 1px solid var(--color-gray-300);
+  }
+
+  .blog-post-content th,
+  .blog-post-content td {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    border: 1px solid var(--color-gray-200);
+    vertical-align: top;
+  }
+
+  .blog-post-content th {
+    font-weight: 600;
+    color: var(--color-gray-900);
+    background-color: var(--color-gray-50);
+    border: 1px solid var(--color-gray-300);
+    white-space: nowrap;
+  }
+
+  .blog-post-content td .katex {
+    font-size: 0.95em;
+  }
+
+  /* Table row hover */
+  .blog-post-content tbody tr:hover {
+    background-color: var(--color-gray-50);
+  }
+
+  /* Horizontal rule */
+  .blog-post-content hr {
+    border: none;
+    border-top: 1px solid var(--color-gray-200);
+    margin-top: calc(var(--spacing) * 8);
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+
+  /* Bold text */
+  .blog-post-content strong {
+    color: var(--color-gray-900);
+    font-weight: 600;
+  }
+
+  /* Blockquote */
+  .blog-post-content blockquote {
+    border-left: 3px solid var(--color-gray-300);
+    padding-left: calc(var(--spacing) * 4);
+    margin-left: 0;
+    color: var(--color-gray-600);
+    font-style: italic;
+  }
+
+  /* Code horizontal scroll */
   .blog-post-content pre { max-width: 100%; }
+
+  /* Blog ordered list spacing */
+  .blog-post-content ol li,
+  .blog-post-content ul li {
+    margin-top: calc(var(--spacing) * 1);
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+
+  /* Checkbox list styling */
+  .blog-post-content ul li input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
 
   /* Links */
   .blog-post-content a:not(.blog-cta-link) {
@@ -174,6 +248,8 @@
   @media (max-width: 400px) {
     .blog-post-content { font-size: var(--text-base); overflow-wrap: break-word; }
     .blog-heading-anchor { display: none; }
+    .blog-post-content th,
+    .blog-post-content td { padding: 0.5rem 0.75rem; font-size: var(--text-sm); }
   }
 }
 

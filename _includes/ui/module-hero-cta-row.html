@@ -1,9 +1,9 @@
 {% assign board_key = include.board | default: 'cie' %}
 
 {% if board_key == 'edx' %}
-  {% assign cta_classes = 'sm:flex-1 cta-btn-equal edx-soft-bg border edx-soft-border edx-soft-text px-8 py-4 rounded-lg font-semibold text-lg edx-soft-hover hover:shadow-lg transition' %}
+  {% assign cta_classes = 'sm:flex-1 cta-btn-equal edx-soft-bg border edx-soft-border edx-soft-text px-8 py-4 rounded-lg font-semibold text-lg edx-soft-hover hover:shadow-md transition' %}
 {% else %}
-  {% assign cta_classes = 'sm:flex-1 cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition' %}
+  {% assign cta_classes = 'sm:flex-1 cta-btn-equal cie-soft-bg border cie-soft-border cie-solid-text cie-soft-hover px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-md transition' %}
 {% endif %}
 
 <div class="flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">

@@ -82,7 +82,7 @@ Vector questions often chain multiple parts. Label each vector clearly:
 
 $\vec{AB} = \vec{AO} + \vec{OB} = -\mathbf{a} + \mathbf{b} = \mathbf{b} - \mathbf{a}$
 
-Losing track of direction ($A \to B$ vs $B \to A$) is the #1 vector error.
+Losing track of direction ($A \to B$ vs $B \to A$) is the \#1 vector error.
 
 ## 10) Use the Last 10 Minutes for Checking
 
@@ -101,3 +101,5 @@ Use this time to:
 - [CIE 0580 Interactive Practice](/cie0580/) — all Extended topics
 - [Weekly Practice Packs](/subscription.html) — exam-style questions with full solutions
 - [Free Algebra Practice](/cie0580/free/) — start with the highest-weight topic
+
+**Related guides:** [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html) · [Algebra: 7 Common Mistakes](/2026/02/11/cie0580-algebra-mistakes.html) · [6-Week Revision Strategy](/2026/02/27/igcse-maths-revision-strategy.html)

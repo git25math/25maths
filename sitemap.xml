@@ -174,84 +174,14 @@ permalink: /sitemap.xml
         <priority>0.6</priority>
     </url>
     {% endfor %}
+    {% for post in site.posts %}
     <url>
-        <loc>https://www.25maths.com/2026/02/11/cie0580-algebra-mistakes.html</loc>
-        <lastmod>2026-02-11</lastmod>
+        <loc>{{ post.url | absolute_url }}</loc>
+        <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>{% if post.lang == 'zh-CN' %}0.5{% else %}0.6{% endif %}</priority>
     </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/11/cie0580-functions-graphs.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/11/4ma1-ratio-percentage.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/27/igcse-maths-revision-strategy.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/27/cie0580-paper4-extended-tips.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/27/igcse-trigonometry-guide.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/27/igcse-percentage-problems.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/2026/02/27/cie0580-vs-edexcel-4ma1.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/zh-cn/blog/igcse-shuxue-fuxicelue.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/zh-cn/blog/cie0580-paper4-jiqiao.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/zh-cn/blog/igcse-baifenbi-wenti.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.25maths.com/zh-cn/blog/cie0580-vs-edexcel-4ma1.html</loc>
-        <lastmod>2026-02-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
+    {% endfor %}
 
     <!-- Membership -->
     <url>

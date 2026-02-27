@@ -7,7 +7,7 @@
     {% include global-nav.html %}
 
     {% assign cta_title = "Get weekly topic practice" %}
-    {% assign cta_text = "Join the waitlist to receive new packs and early‑bird pricing." %}
+    {% assign cta_text = "Join the waitlist to receive new packs and early-bird pricing." %}
     {% assign cta_button = "Join Waitlist" %}
     {% assign cta_link = "/subscription.html" %}
     {% assign ask_title = "Ask a question" %}
@@ -35,10 +35,10 @@
     {% assign read_time = words | divided_by: 220 | plus: 1 %}
 
     <article class="bg-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <div class="mb-8">
                 <p class="text-sm text-gray-500">
-                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{% if page.lang == "zh-CN" %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ page.date | date: "%B %d, %Y" }}{% endif %}</time>
                     {% if page.category %} · {{ page.category }}{% endif %}
                     · {% if page.lang == "zh-CN" %}约 {{ read_time }} 分钟阅读{% else %}{{ read_time }} min read{% endif %}
                 </p>
@@ -74,9 +74,9 @@
             <!-- Waitlist CTA -->
             <div class="mt-12 border-t pt-8">
                 <div class="bg-gray-50 rounded-2xl p-6 text-center">
-                    <h2 class="text-2xl font-bold mb-2">{{ cta_title }}</h2>
+                    <h2 class="text-2xl font-semibold mb-2">{{ cta_title }}</h2>
                     <p class="text-gray-600 mb-5">{{ cta_text }}</p>
-                    <a href="{{ cta_link }}" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    <a href="{{ cta_link }}" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
                         {{ cta_button }}
                     </a>
                 </div>
@@ -90,9 +90,17 @@
                     {% assign related = related | push: p %}
                 {% endif %}
             {% endfor %}
+            {% if related.size < 3 %}
+                {% for p in same_lang_posts %}
+                    {% if p.url != page.url and p.category != page.category %}
+                        {% assign related = related | push: p %}
+                        {% if related.size >= 3 %}{% break %}{% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
             {% if related.size > 0 %}
             <div class="mt-12">
-                <h2 class="text-2xl font-bold mb-6">{% if page.lang == "zh-CN" %}相关文章{% else %}Related articles{% endif %}</h2>
+                <h2 class="text-2xl font-semibold mb-6">{% if page.lang == "zh-CN" %}相关文章{% else %}Related articles{% endif %}</h2>
                 <div class="grid md:grid-cols-3 gap-5">
                     {% for rp in related limit:3 %}
                     {% assign rp_words = rp.content | number_of_words %}
@@ -126,17 +134,17 @@
             {% if prev_post or next_post %}
             <nav class="mt-12 grid grid-cols-2 gap-4" aria-label="{% if page.lang == 'zh-CN' %}前后文章导航{% else %}Post navigation{% endif %}">
                 {% if prev_post %}
-                <a href="{{ prev_post.url | relative_url }}" data-blog-nav class="group p-4 border border-gray-200 rounded-xl hover:border-primary hover:bg-gray-50 transition">
+                <a href="{{ prev_post.url | relative_url }}" data-blog-nav class="group p-4 border border-gray-200 rounded-xl hover:border-gray-900 hover:bg-gray-50 transition">
                     <p class="text-xs text-gray-400 mb-1">{% if page.lang == "zh-CN" %}上一篇{% else %}Previous{% endif %}</p>
-                    <p class="text-sm font-semibold text-gray-700 group-hover:text-primary transition line-clamp-2">{{ prev_post.title }}</p>
+                    <p class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition line-clamp-2">{{ prev_post.title }}</p>
                 </a>
                 {% else %}
                 <div></div>
                 {% endif %}
                 {% if next_post %}
-                <a href="{{ next_post.url | relative_url }}" data-blog-nav class="group p-4 border border-gray-200 rounded-xl hover:border-primary hover:bg-gray-50 transition text-right">
+                <a href="{{ next_post.url | relative_url }}" data-blog-nav class="group p-4 border border-gray-200 rounded-xl hover:border-gray-900 hover:bg-gray-50 transition text-right">
                     <p class="text-xs text-gray-400 mb-1">{% if page.lang == "zh-CN" %}下一篇{% else %}Next{% endif %}</p>
-                    <p class="text-sm font-semibold text-gray-700 group-hover:text-primary transition line-clamp-2">{{ next_post.title }}</p>
+                    <p class="text-sm font-semibold text-gray-700 group-hover:text-gray-900 transition line-clamp-2">{{ next_post.title }}</p>
                 </a>
                 {% else %}
                 <div></div>
@@ -146,7 +154,7 @@
 
             <!-- Ask a question form -->
             <div class="mt-12">
-                <h2 class="text-2xl font-bold mb-4">{{ ask_title }}</h2>
+                <h2 class="text-2xl font-semibold mb-4">{{ ask_title }}</h2>
                 <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-4">
                     <input type="hidden" name="topic" value="Blog Question">
                     <input type="hidden" name="module" value="Blog">
@@ -158,20 +166,33 @@
                     <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                     <div class="grid md:grid-cols-2 gap-4">
                         <input type="text" name="name" required placeholder="{{ name_ph }}"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
                         <input type="email" name="email" required placeholder="{{ email_ph }}"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
                     </div>
                     <textarea name="message" rows="5" required placeholder="{{ msg_ph }}"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
+                    <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
                         {{ send_label }}
                     </button>
-                    <p class="text-xs text-gray-500">{{ privacy_text }} <a href="{{ privacy_link }}" class="underline">Privacy Policy</a>.</p>
+                    <p class="text-xs text-gray-500">{{ privacy_text }} <a href="{{ privacy_link }}" class="underline">{% if page.lang == "zh-CN" %}隐私政策{% else %}Privacy Policy{% endif %}</a>.</p>
                 </form>
             </div>
         </div>
     </article>
+
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "{% if page.lang == 'zh-CN' %}首页{% else %}Home{% endif %}", "item": "{{ site.url }}{% if page.lang == 'zh-CN' %}/zh-cn/{% else %}/{% endif %}" },
+        { "@type": "ListItem", "position": 2, "name": "{% if page.lang == 'zh-CN' %}博客{% else %}Blog{% endif %}", "item": "{{ site.url }}{% if page.lang == 'zh-CN' %}/zh-cn/blog/{% else %}/blog/{% endif %}" },
+        { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }} }
+      ]
+    }
+    </script>
 
     <!-- BlogPosting JSON-LD -->
     <script type="application/ld+json">
@@ -185,6 +206,11 @@
       "url": "{{ site.url }}{{ page.url }}",
       "inLanguage": "{{ page.lang | default: 'en' }}",
       "wordCount": {{ words }},
+      "author": {
+        "@type": "Organization",
+        "name": "25Maths",
+        "url": "{{ site.url }}"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "25Maths",

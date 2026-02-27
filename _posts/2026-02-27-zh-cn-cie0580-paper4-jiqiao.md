@@ -20,7 +20,7 @@ Paper 4（Extended）是 CIE 0580 中最长、权重最高的试卷。$2$ 小时
 
 ## 1) 按分值分配时间，而不是按题目
 
-**规则：** $1$ 分 $\approx$ $1$ 分 $10$ 秒。
+**规则：** $1$ 分（mark）$\approx$ $1$ 分钟 $10$ 秒。
 
 $6$ 分的题值 $7$ 分钟。$1$ 分的题只给 $70$ 秒。
 在一道难题上花 $15$ 分钟的学生会在其他地方丢掉容易的分数。
@@ -98,5 +98,7 @@ $\vec{AB} = \vec{AO} + \vec{OB} = -\mathbf{a} + \mathbf{b} = \mathbf{b} - \mathb
 ### 练习 Paper 4 主题
 
 - [CIE 0580 互动练习](/cie0580/) — 所有 Extended 主题
-- [每周练习包](/subscription.html) — 考试风格题目配完整答案
+- [每周练习包](/zh-cn/subscription.html) — 考试风格题目配完整答案
 - [免费代数练习](/cie0580/free/) — 从分值最高的主题开始
+
+**相关指南：** [三角函数完全指南](/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html) · [代数7个常见失分点](/zh-cn/blog/cie0580-daishu-changjian-cuowu.html) · [6周复习计划](/zh-cn/blog/igcse-shuxue-fuxicelue.html)

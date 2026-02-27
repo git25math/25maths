@@ -35,7 +35,7 @@ The foundation. Applicable when you have a right angle ($90°$).
 Find angle $x$ in a right-angled triangle where opposite $= 5$ cm and hypotenuse $= 13$ cm.
 
 $\sin x = \frac{5}{13}$
-$x = \sin^{-1}\!\left(\frac{5}{13}\right)$
+$x = \sin^{-1}\left(\frac{5}{13}\right)$
 $x = 22.6°$ (1 d.p.)
 
 **Common mistake:** Using the wrong ratio. Always label sides first, then pick the formula.
@@ -126,3 +126,5 @@ This is faster and more accurate than $\frac{1}{2} \times \text{base} \times \te
 - [CIE 0580 Trigonometry Practice](/exercises/) — interactive questions with instant feedback
 - [Free Topic Resources](/cie0580/free/)
 - [Weekly Exam Practice Packs](/subscription.html)
+
+**Related guides:** [Paper 4 Extended: 10 Tips to Gain 20+ Marks](/2026/02/27/cie0580-paper4-extended-tips.html) · [IGCSE Percentage Problems](/2026/02/27/igcse-percentage-problems.html) · [6-Week Revision Strategy](/2026/02/27/igcse-maths-revision-strategy.html)

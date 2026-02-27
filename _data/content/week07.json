@@ -40,6 +40,18 @@
         "en": "Find the gradient of the line joining the points `A(1, 3)` and `B(5, 11)`.",
         "zh": "求过点 `A(1, 3)` 和 `B(5, 11)` 的直线的斜率。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\draw[gray!30, very thin] (0,0) grid (6,12);",
+        "  \\draw[->] (0,0) -- (6.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,0) -- (0,12.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {1,...,6} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {2,4,...,12} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (0.5,2) -- (5.5,12);",
+        "  \\fill[red] (1,3) circle (4pt) node[right, font=\\footnotesize] {$A(1,3)$};",
+        "  \\fill[red] (5,11) circle (4pt) node[right, font=\\footnotesize] {$B(5,11)$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "2", "zh": "2" },
       "solution": {
         "en": [
@@ -113,6 +125,18 @@
         "en": "Find the equation of the straight line passing through the points `(1, 5)` and `(3, 11)`.\n\nGive your answer in the form `y = mx + c`.",
         "zh": "求过点 `(1, 5)` 和 `(3, 11)` 的直线方程。\n\n将答案写成 `y = mx + c` 的形式。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\draw[gray!30, very thin] (0,0) grid (5,12);",
+        "  \\draw[->] (0,0) -- (5.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,0) -- (0,12.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {1,...,5} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {2,4,...,12} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (0,2) -- (3.5,12.5);",
+        "  \\fill[red] (1,5) circle (4pt) node[left, font=\\footnotesize] {$(1,5)$};",
+        "  \\fill[red] (3,11) circle (4pt) node[left, font=\\footnotesize] {$(3,11)$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "`y = 3x + 2`", "zh": "`y = 3x + 2`" },
       "solution": {
         "en": [
@@ -140,6 +164,20 @@
         "en": "Find the midpoint of `P(-2, 7)` and `Q(6, 3)`.",
         "zh": "求 `P(-2, 7)` 和 `Q(6, 3)` 的中点。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.4]",
+        "  \\draw[gray!30, very thin] (-3,0) grid (7,8);",
+        "  \\draw[->] (-3,0) -- (7.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,0) -- (0,8.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {-2,0,2,4,6} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {2,4,6,8} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue, dashed] (-2,7) -- (6,3);",
+        "  \\fill[red] (-2,7) circle (4pt) node[above left, font=\\footnotesize] {$P(-2,7)$};",
+        "  \\fill[red] (6,3) circle (4pt) node[below right, font=\\footnotesize] {$Q(6,3)$};",
+        "  \\node[font=\\footnotesize] at (2,5.6) {$M$};",
+        "  \\draw[fill=white, draw=blue] (2,5) circle (4pt);",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "`(2, 5)`", "zh": "`(2, 5)`" },
       "solution": {
         "en": [
@@ -211,6 +249,21 @@
         "en": "`A` is the point `(-1, 3)` and `B` is the point `(5, -5)`.\n\nFind the length of `AB`.",
         "zh": "`A` 是点 `(-1, 3)`，`B` 是点 `(5, -5)`。\n\n求 `AB` 的长度。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.35]",
+        "  \\draw[gray!30, very thin] (-2,-6) grid (6,4);",
+        "  \\draw[->] (-2,0) -- (6.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,-6) -- (0,4.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {-1,1,...,5} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {-4,-2,2,4} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (-1,3) -- (5,-5);",
+        "  \\fill[red] (-1,3) circle (5pt) node[above left, font=\\footnotesize] {$A(-1,3)$};",
+        "  \\fill[red] (5,-5) circle (5pt) node[below right, font=\\footnotesize] {$B(5,-5)$};",
+        "  \\draw[dashed, gray] (-1,3) -- (-1,-5) -- (5,-5);",
+        "  \\node[left, font=\\tiny, gray] at (-1,-1) {8};",
+        "  \\node[below, font=\\tiny, gray] at (2,-5) {6};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "10", "zh": "10" },
       "solution": {
         "en": [
@@ -267,6 +320,19 @@
         "en": "`A` is the point `(2, -1)` and `B` is the point `(8, 11)`.\n\n(a) Find the coordinates of the midpoint `M` of `AB`.\n\n(b) Find the equation of the perpendicular bisector of `AB`.\n\nGive your answer in the form `y = mx + c`.",
         "zh": "`A` 是点 `(2, -1)`，`B` 是点 `(8, 11)`。\n\n(a) 求 `AB` 中点 `M` 的坐标。\n\n(b) 求 `AB` 的垂直平分线方程。\n\n将答案写成 `y = mx + c` 的形式。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.35]",
+        "  \\draw[gray!30, very thin] (0,-2) grid (10,12);",
+        "  \\draw[->] (0,0) -- (10.5,0) node[right, font=\\footnotesize] {$x$};",
+        "  \\draw[->] (0,-2) -- (0,12.5) node[above, font=\\footnotesize] {$y$};",
+        "  \\foreach \\x in {2,4,...,10} \\node[below, font=\\tiny] at (\\x,0) {\\x};",
+        "  \\foreach \\y in {-2,0,2,...,12} \\node[left, font=\\tiny] at (0,\\y) {\\y};",
+        "  \\draw[thick, blue] (1,-3) -- (9,13);",
+        "  \\fill[red] (2,-1) circle (5pt) node[right, font=\\footnotesize] {$A(2,-1)$};",
+        "  \\fill[red] (8,11) circle (5pt) node[right, font=\\footnotesize] {$B(8,11)$};",
+        "  \\fill[green!60!black] (5,5) circle (5pt) node[above right, font=\\footnotesize] {$M$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "(a) `(5, 5)`\n(b) `y = -\\dfrac{1}{2}x + \\dfrac{15}{2}`", "zh": "(a) `(5, 5)`\n(b) `y = -\\dfrac{1}{2}x + \\dfrac{15}{2}`" },
       "solution": {
         "en": [

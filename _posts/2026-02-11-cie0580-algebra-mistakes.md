@@ -18,7 +18,7 @@ Use this checklist to fix the most common errors before your next exam.
 
 ## 1) Sign errors when expanding brackets
 **Fix:** Write one line for each term, then combine like terms.
-**Tip:** Double‑check negative signs by substituting a simple value (e.g., $x = 1$).
+**Tip:** Double-check negative signs by substituting a simple value (e.g., $x = 1$).
 
 ## 2) Factorising misses a common factor
 **Fix:** Always take out the greatest common factor first.
@@ -42,9 +42,24 @@ Example: $x + 2$ cannot cancel with $x$.
 
 ## 7) Ignoring domain restrictions
 **Fix:** Check if the question asks for valid values or restrictions.
+For example, a denominator of $x - 3$ means $x \neq 3$.
+
+## Quick Self-Check
+
+Before you submit any algebra answer, run through this:
+
+| Check | What to look for |
+|-------|-----------------|
+| Signs | Did I expand negatives correctly? |
+| Common factor | Did I take out the **greatest** common factor? |
+| Brackets | Did I use brackets when substituting? |
+| Equation vs expression | Am I solving or simplifying? |
+| Final answer | Did I answer what was asked? |
 
 ---
 
 ### Want targeted practice?
 - Get free vocabulary cards: [CIE 0580 Free Resources](/cie0580/free/)
 - Weekly topical practice: [Weekly Membership](/subscription.html)
+
+**Related guides:** [Functions & Graphs: How to Score Higher](/2026/02/11/cie0580-functions-graphs.html) · [CIE 0580 vs Edexcel 4MA1](/2026/02/27/cie0580-vs-edexcel-4ma1.html) · [6-Week Revision Strategy](/2026/02/27/igcse-maths-revision-strategy.html)

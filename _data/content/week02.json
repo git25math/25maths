@@ -36,15 +36,15 @@
   ],
   "questions_core": [
     {
-      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Types of number"],
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Types of number"],
       "question": {
-        "en": "Write down all the factors of 36.",
-        "zh": "写出 36 的所有因数。"
+        "en": "(a) Write down all the factors of 36.\n\n(b) From your list, write down the prime factors of 36.",
+        "zh": "(a) 写出 36 的所有因数。\n\n(b) 从你的列表中，写出 36 的质因数。"
       },
-      "answer": { "en": "1, 2, 3, 4, 6, 9, 12, 18, 36", "zh": "1, 2, 3, 4, 6, 9, 12, 18, 36" },
+      "answer": { "en": "(a) 1, 2, 3, 4, 6, 9, 12, 18, 36\n(b) 2, 3", "zh": "(a) 1, 2, 3, 4, 6, 9, 12, 18, 36\n(b) 2, 3" },
       "solution": {
-        "en": ["Find factor pairs by starting from 1: `1 \\times 36`, `2 \\times 18`, `3 \\times 12`, `4 \\times 9`, `6 \\times 6`.", "List all factors in order: 1, 2, 3, 4, 6, 9, 12, 18, 36."],
-        "zh": ["从1开始找因数对: `1 \\times 36`, `2 \\times 18`, `3 \\times 12`, `4 \\times 9`, `6 \\times 6`。", "按顺序列出所有因数: 1, 2, 3, 4, 6, 9, 12, 18, 36。"]
+        "en": ["(a) Find factor pairs by starting from 1: `1 \\times 36`, `2 \\times 18`, `3 \\times 12`, `4 \\times 9`, `6 \\times 6`.", "List all factors in order: 1, 2, 3, 4, 6, 9, 12, 18, 36.", "(b) From the list, the prime numbers are 2 and 3."],
+        "zh": ["(a) 从1开始找因数对: `1 \\times 36`, `2 \\times 18`, `3 \\times 12`, `4 \\times 9`, `6 \\times 6`。", "按顺序列出所有因数: 1, 2, 3, 4, 6, 9, 12, 18, 36。", "(b) 从列表中，质数是 2 和 3。"]
       },
       "common_mistake": { "en": "Missing a factor pair, especially 4 and 9.", "zh": "遗漏因数对，尤其是4和9。" }
     },
@@ -54,6 +54,23 @@
         "en": "Express 180 as a product of its prime factors. Give your answer in index notation.",
         "zh": "将 180 表示为质因数的乘积。用指数形式表示你的答案。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[level distance=1.2cm, sibling distance=2cm,",
+        "  every node/.style={draw, circle, minimum size=7mm, inner sep=1pt, font=\\small}]",
+        "  \\node {180}",
+        "    child {node {2}}",
+        "    child {node {90}",
+        "      child {node {2}}",
+        "      child {node {45}",
+        "        child {node {3}}",
+        "        child {node {15}",
+        "          child {node {3}}",
+        "          child {node {5}}",
+        "        }",
+        "      }",
+        "    };",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "`2^2 \\times 3^2 \\times 5`", "zh": "`2^2 \\times 3^2 \\times 5`" },
       "solution": {
         "en": ["Divide by the smallest prime: `180 \\div 2 = 90`.", "`90 \\div 2 = 45`.", "`45 \\div 3 = 15`.", "`15 \\div 3 = 5`.", "5 is prime, so stop.", "`180 = 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^2 \\times 3^2 \\times 5`."],
@@ -67,6 +84,16 @@
         "en": "Find the Highest Common Factor (HCF) and Lowest Common Multiple (LCM) of 24 and 36.",
         "zh": "求 24 和 36 的最大公因数（HCF）和最小公倍数（LCM）。"
       },
+      "figure": [
+        "\\begin{tikzpicture}",
+        "  \\draw (0,0) circle (1.5cm) node[above left=1.2cm, font=\\small\\bfseries] {24};",
+        "  \\draw (2,0) circle (1.5cm) node[above right=1.2cm, font=\\small\\bfseries] {36};",
+        "  \\node[font=\\small] at (-0.7,0) {$2$};",
+        "  \\node[font=\\small] at (1,0.3) {$2$};",
+        "  \\node[font=\\small] at (1,-0.3) {$2 \\times 3$};",
+        "  \\node[font=\\small] at (2.7,0) {$3$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "HCF = 12, LCM = 72", "zh": "HCF = 12, LCM = 72" },
       "solution": {
         "en": ["Find the prime factorisation of each number: `24 = 2^3 \\times 3` and `36 = 2^2 \\times 3^2`.", "HCF: take the lowest power of each common prime factor: `2^2 \\times 3 = 12`.", "LCM: take the highest power of each prime factor: `2^3 \\times 3^2 = 72`."],
@@ -75,15 +102,15 @@
       "common_mistake": { "en": "Confusing HCF and LCM — taking the highest powers for HCF instead of the lowest.", "zh": "混淆 HCF 和 LCM——求 HCF 时取了最高幂次而不是最低幂次。" }
     },
     {
-      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 1, "topic": ["Powers"],
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Powers"],
       "question": {
-        "en": "Calculate `2^4 \\times 3^2`.",
-        "zh": "计算 `2^4 \\times 3^2`。"
+        "en": "(a) Calculate `2^4 \\times 3^2`.\n\n(b) Calculate `5^3`.",
+        "zh": "(a) 计算 `2^4 \\times 3^2`。\n\n(b) 计算 `5^3`。"
       },
-      "answer": { "en": "144", "zh": "144" },
+      "answer": { "en": "(a) 144\n(b) 125", "zh": "(a) 144\n(b) 125" },
       "solution": {
-        "en": ["`2^4 = 2 \\times 2 \\times 2 \\times 2 = 16`.", "`3^2 = 3 \\times 3 = 9`.", "`16 \\times 9 = 144`."],
-        "zh": ["`2^4 = 2 \\times 2 \\times 2 \\times 2 = 16`。", "`3^2 = 3 \\times 3 = 9`。", "`16 \\times 9 = 144`。"]
+        "en": ["(a) `2^4 = 2 \\times 2 \\times 2 \\times 2 = 16`.", "`3^2 = 3 \\times 3 = 9`.", "`16 \\times 9 = 144`.", "(b) `5^3 = 5 \\times 5 \\times 5 = 125`."],
+        "zh": ["(a) `2^4 = 2 \\times 2 \\times 2 \\times 2 = 16`。", "`3^2 = 3 \\times 3 = 9`。", "`16 \\times 9 = 144`。", "(b) `5^3 = 5 \\times 5 \\times 5 = 125`。"]
       },
       "common_mistake": { "en": "Calculating `2^4` as `2 \\times 4 = 8` instead of `2 \\times 2 \\times 2 \\times 2 = 16`.", "zh": "将 `2^4` 计算为 `2 \\times 4 = 8`，而不是 `2 \\times 2 \\times 2 \\times 2 = 16`。" }
     },
@@ -134,6 +161,16 @@
         "en": "Using prime factorisation, find the HCF and LCM of 72 and 120.",
         "zh": "用质因数分解法，求 72 和 120 的最大公因数（HCF）和最小公倍数（LCM）。"
       },
+      "figure": [
+        "\\begin{tikzpicture}",
+        "  \\draw (0,0) circle (1.5cm) node[above left=1.2cm, font=\\small\\bfseries] {72};",
+        "  \\draw (2,0) circle (1.5cm) node[above right=1.2cm, font=\\small\\bfseries] {120};",
+        "  \\node[font=\\small] at (-0.7,0) {$3$};",
+        "  \\node[font=\\small] at (1,0.3) {$2$};",
+        "  \\node[font=\\small] at (1,-0.3) {$2 \\times 2 \\times 3$};",
+        "  \\node[font=\\small] at (2.7,0) {$5$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "HCF = 24, LCM = 360", "zh": "HCF = 24, LCM = 360" },
       "solution": {
         "en": ["Prime factorisation: `72 = 2^3 \\times 3^2` and `120 = 2^3 \\times 3 \\times 5`.", "HCF: take the lowest power of each common prime: `2^3 \\times 3 = 24`.", "LCM: take the highest power of every prime: `2^3 \\times 3^2 \\times 5 = 360`.", "Check: `\\text{HCF} \\times \\text{LCM} = 24 \\times 360 = 8640 = 72 \\times 120`. ✓"],

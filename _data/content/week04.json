@@ -116,6 +116,18 @@
         "en": "A length `l` is 5.3 m, correct to 1 decimal place.\n\nComplete the statement about the value of `l`.\n\n\\hfill `\\text{..........} \\leq l < \\text{..........}`",
         "zh": "一个长度 `l` 为5.3 m，精确到1位小数。\n\n完成关于 `l` 的取值的表述。\n\n\\hfill `\\text{..........} \\leq l < \\text{..........}`"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=1]",
+        "  \\draw[->] (0,0) -- (8,0);",
+        "  \\foreach \\x/\\v in {1/5.2, 3/5.25, 5/5.3, 7/5.35} {",
+        "    \\draw (\\x,0.15) -- (\\x,-0.15) node[below, font=\\footnotesize] {\\v};",
+        "  }",
+        "  \\draw[very thick, blue] (3,0.3) -- (7,0.3);",
+        "  \\fill[blue] (3,0.3) circle (2pt);",
+        "  \\draw[blue, fill=white] (7,0.3) circle (2pt);",
+        "  \\node[above, blue, font=\\footnotesize] at (5,0.3) {$l$};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "`5.25 \\leq l < 5.35`", "zh": "`5.25 \\leq l < 5.35`" },
       "solution": {
         "en": [
@@ -186,22 +198,24 @@
       "common_mistake": { "en": "Subtracting the coefficients directly (`4.2 - 8.6`) without adjusting for the different powers of 10.", "zh": "直接相减系数（`4.2 - 8.6`）而没有调整不同的10的幂次。" }
     },
     {
-      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Estimation", "Limits of accuracy"],
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Estimation", "Limits of accuracy"],
       "question": {
-        "en": "Amir estimates the cost of 29 books at $4.85 each.\n\nHe rounds each value to 1 significant figure and calculates `30 \\times 5 = \\$150`.\n\n(a) Is his estimate greater than or less than the exact cost?\n\n(b) Explain how you decided.",
-        "zh": "Amir 估算29本书的费用，每本 $4.85。\n\n他将每个数值四舍五入到1位有效数字，计算 `30 \\times 5 = \\$150`。\n\n(a) 他的估算值比实际费用大还是小？\n\n(b) 解释你是如何判断的。"
+        "en": "Amir estimates the cost of 29 books at $4.85 each.\n\nHe rounds each value to 1 significant figure and calculates `30 \\times 5 = \\$150`.\n\n(a) Is his estimate greater than or less than the exact cost?\n\n(b) Explain how you decided.\n\n(c) Calculate the exact cost.",
+        "zh": "Amir 估算29本书的费用，每本 $4.85。\n\n他将每个数值四舍五入到1位有效数字，计算 `30 \\times 5 = \\$150`。\n\n(a) 他的估算值比实际费用大还是小？\n\n(b) 解释你是如何判断的。\n\n(c) 计算精确费用。"
       },
-      "answer": { "en": "(a) Greater than the exact cost.\n(b) Both numbers were rounded up, so the product is larger than the exact value.", "zh": "(a) 比实际费用大。\n(b) 两个数字都被向上四舍五入了，所以乘积大于精确值。" },
+      "answer": { "en": "(a) Greater than the exact cost.\n(b) Both numbers were rounded up, so the product is larger than the exact value.\n(c) $140.65", "zh": "(a) 比实际费用大。\n(b) 两个数字都被向上四舍五入了，所以乘积大于精确值。\n(c) $140.65" },
       "solution": {
         "en": [
           "(a) Greater than the exact cost.",
           "(b) `29` was rounded up to `30`, and `4.85` was rounded up to `5`.",
-          "Since both factors were rounded up, the estimated product `30 \\times 5 = 150` is greater than the exact product `29 \\times 4.85 = 140.65`."
+          "Since both factors were rounded up, the estimated product `30 \\times 5 = 150` is greater than the exact product.",
+          "(c) Exact cost `= 29 \\times 4.85 = \\$140.65`."
         ],
         "zh": [
           "(a) 比实际费用大。",
           "(b) `29` 被向上取整为 `30`，`4.85` 被向上取整为 `5`。",
-          "由于两个因数都被向上取整，估算的乘积 `30 \\times 5 = 150` 大于精确乘积 `29 \\times 4.85 = 140.65`。"
+          "由于两个因数都被向上取整，估算的乘积 `30 \\times 5 = 150` 大于精确乘积。",
+          "(c) 精确费用 `= 29 \\times 4.85 = \\$140.65`。"
         ]
       },
       "common_mistake": { "en": "Not explaining the reasoning clearly — just saying \"greater\" without identifying that both numbers were rounded up.", "zh": "没有清楚地解释原因 — 只说了\"更大\"而没有指出两个数字都被向上取整了。" }
@@ -237,6 +251,26 @@
         "en": "`p = 12.4` correct to 1 decimal place.\n\n`q = 3.7` correct to 1 decimal place.\n\nCalculate the upper bound of `\\dfrac{p}{q}`.\n\nShow your working.",
         "zh": "`p = 12.4`，精确到1位小数。\n\n`q = 3.7`，精确到1位小数。\n\n计算 `\\dfrac{p}{q}` 的上界。\n\n写出你的计算过程。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.75]",
+        "  \\node[font=\\small\\bfseries] at (-1.5,1) {$p$:};",
+        "  \\draw[->] (0,1) -- (8,1);",
+        "  \\foreach \\x/\\v in {1/12.3, 3/12.35, 5/12.4, 7/12.45} {",
+        "    \\draw (\\x,1.15) -- (\\x,0.85) node[below, font=\\footnotesize] {\\v};",
+        "  }",
+        "  \\draw[very thick, blue] (3,1.3) -- (7,1.3);",
+        "  \\fill[blue] (3,1.3) circle (2pt);",
+        "  \\draw[blue, fill=white] (7,1.3) circle (2pt);",
+        "  \\node[font=\\small\\bfseries] at (-1.5,-0.5) {$q$:};",
+        "  \\draw[->] (0,-0.5) -- (8,-0.5);",
+        "  \\foreach \\x/\\v in {1/3.6, 3/3.65, 5/3.7, 7/3.75} {",
+        "    \\draw (\\x,-0.35) -- (\\x,-0.65) node[below, font=\\footnotesize] {\\v};",
+        "  }",
+        "  \\draw[very thick, red] (3,-0.2) -- (7,-0.2);",
+        "  \\fill[red] (3,-0.2) circle (2pt);",
+        "  \\draw[red, fill=white] (7,-0.2) circle (2pt);",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "`3.4109\\ldots` (accept 3.41)", "zh": "`3.4109\\ldots`（接受 3.41）" },
       "solution": {
         "en": [
@@ -264,6 +298,16 @@
         "en": "Light travels at a speed of `3 \\times 10^8` metres per second.\n\nThe distance from the Sun to the Earth is `1.5 \\times 10^{11}` metres.\n\n(a) Calculate the time, in seconds, it takes light to travel from the Sun to the Earth.\nGive your answer in standard form.\n\n(b) Convert your answer to minutes.",
         "zh": "光速为 `3 \\times 10^8` 米每秒。\n\n从太阳到地球的距离为 `1.5 \\times 10^{11}` 米。\n\n(a) 计算光从太阳传到地球所需的时间（秒）。\n请以标准形式作答。\n\n(b) 将你的答案转换为分钟。"
       },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\fill[yellow!60] (0,0) circle (0.6);",
+        "  \\node[font=\\footnotesize] at (0,-1) {Sun};",
+        "  \\fill[blue!50] (7,0) circle (0.3);",
+        "  \\node[font=\\footnotesize] at (7,-0.7) {Earth};",
+        "  \\draw[<->, thick] (0.7,0.5) -- (6.7,0.5) node[midway, above, font=\\footnotesize] {$1.5 \\times 10^{11}$ m};",
+        "  \\draw[->, dashed, orange, thick] (0.7,0) -- (6.7,0) node[midway, below, font=\\footnotesize] {$3 \\times 10^{8}$ m/s};",
+        "\\end{tikzpicture}"
+      ],
       "answer": { "en": "(a) `5 \\times 10^2` seconds\n(b) `8.\\overline{3}` minutes (accept 8 min 20 s)", "zh": "(a) `5 \\times 10^2` 秒\n(b) `8.\\overline{3}` 分钟（接受 8分20秒）" },
       "solution": {
         "en": [
