@@ -119,5 +119,27 @@
     "membership_tier": "",
     "asset_key": "member-files/week05/week-05-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week06-algebra-inequalities-sequences-en-2026w15",
+    "version": "v1",
+    "subtopic_id": "cie0580:algebra-c2:c2-06-inequalities",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week06/week-06-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week06-algebra-inequalities-sequences-bilingual-2026w15",
+    "version": "v1",
+    "subtopic_id": "cie0580:algebra-c2:c2-06-inequalities",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week06/week-06-bilingual.pdf",
+    "status": "active"
   }
 ]
