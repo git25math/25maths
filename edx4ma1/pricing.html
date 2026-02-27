@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Pricing
-description: "Edexcel 4MA1 presale pricing framework with L1/L2/L3 closed-loop structure."
+description: "Edexcel 4MA1 worksheet pack pricing — topic worksheets, section bundles, and unit bundles."
 module: edx4ma1
 active_page: pricing
 ---
@@ -10,18 +10,18 @@ active_page: pricing
 
 <section class="edx-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-5xl font-bold mb-4">Edexcel 4MA1 Pricing Framework</h1>
-        <p class="text-xl opacity-90">Recommendation ranges for presale. Final public prices are TBD before launch.</p>
-        <p data-bilingual-block class="text-sm text-gray-200 mt-3">当前价格为建议区间，正式上线前可统一调整。</p>
+        <h1 class="text-5xl font-semibold mb-4">Edexcel 4MA1 Pricing</h1>
+        <p class="text-xl opacity-90">Early-bird pricing available — lock in lower prices before launch.</p>
+        <p data-bilingual-block class="text-sm text-gray-200 mt-3">早鸟价格现已开放，正式上线前锁定更低价格。</p>
     </div>
 </section>
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="edx-soft-bg border edx-soft-border rounded-xl p-5 text-sm edx-soft-text">
-            <p class="font-semibold mb-1">Important</p>
-            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
-            <p data-bilingual-block class="mt-2">先固定梯度模型，再调整价格数字，可以降低维护成本。</p>
+            <p class="font-semibold mb-1">Pricing Note</p>
+            <p>Early-bird prices are available for a limited time. All prices are one-time purchases — no subscriptions or recurring fees.</p>
+            <p data-bilingual-block class="mt-2">早鸟价格限时供应，所有产品均为一次性购买，无订阅或循环扣款。</p>
         </div>
     </div>
 </section>
@@ -30,30 +30,30 @@ active_page: pricing
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L1 Single Worksheet</h3>
-                <p class="text-sm text-gray-600 mb-2">One SubTopic MVP</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mb-2">L1 用于低门槛首次体验。</p>
+                <h3 class="text-lg font-bold mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One focused subtopic</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-2">单个知识点专项练习。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l1_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L2 Section Bundle</h3>
-                <p class="text-sm text-gray-600 mb-2">A full section's SubTopics</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mb-2">L2 承接 L1 升级，强化章节学习深度。</p>
+                <h3 class="text-lg font-bold mb-2">Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">All subtopics in one syllabus section</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-2">同章节多个知识点打包，覆盖更全面。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l2_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L3 Unit Bundle</h3>
+                <h3 class="text-lg font-bold mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-2">Foundation + Higher unit package</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mb-2">L3 聚焦完整单元复习与复购留存。</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-2">完整单元包，覆盖 Foundation 与 Higher 的核心能力。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l3_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l3_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <h3 class="text-lg font-bold mb-2">Mega Bundle</h3>
                 <p class="text-sm text-gray-600 mb-2">All 6 units</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mb-2">Mega 适合整套课程打包学习。</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-2">全单元合集，适合完整备考周期。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.all_units_bundle.early_bird_price }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.all_units_bundle.regular_price }}</p>
             </article>
@@ -63,28 +63,28 @@ active_page: pricing
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Retention Loop</h2>
-        <p data-bilingual-block class="text-sm text-gray-600 mb-6">留存路径：L1 引流 -> L2 升级 -> L3 复购，叠加双语赠送策略。</p>
-        <div class="grid md:grid-cols-3 gap-5">
-            <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 1: Entry</h3>
-                <p class="text-sm text-gray-600">Customer buys L1 SubTopic worksheet and gets immediate value.</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mt-2">先建立“买了就有用”的即时反馈。</p>
+        <h2 class=”text-3xl font-bold text-gray-900 mb-4”>How It Works</h2>
+        <p data-bilingual-block class=”text-sm text-gray-600 mb-6”>从单个知识点开始，按学习进度逐步升级。</p>
+        <div class=”grid md:grid-cols-3 gap-5”>
+            <div class=”bg-white border border-gray-200 rounded-xl p-5”>
+                <h3 class=”font-bold text-gray-900 mb-2”>Step 1: Start</h3>
+                <p class=”text-sm text-gray-600”>Pick a topic worksheet and start practising with immediate results.</p>
+                <p data-bilingual-block class=”text-sm text-gray-600 mt-2”>选择一个专题练习，即刻开始练习。</p>
             </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 2: Upgrade</h3>
-                <p class="text-sm text-gray-600">Offer L2 section bundle coupon to convert single-item buyers.</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mt-2">用章节券驱动从单品向组合包升级。</p>
+            <div class=”bg-white border border-gray-200 rounded-xl p-5”>
+                <h3 class=”font-bold text-gray-900 mb-2”>Step 2: Expand</h3>
+                <p class=”text-sm text-gray-600”>Upgrade to a section bundle for broader coverage across related subtopics.</p>
+                <p data-bilingual-block class=”text-sm text-gray-600 mt-2”>升级到章节合集，覆盖更多相关知识点。</p>
             </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 3: Loyalty</h3>
-                <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mt-2">通过双语词卡与升级券增强长期留存。</p>
+            <div class=”bg-white border border-gray-200 rounded-xl p-5”>
+                <h3 class=”font-bold text-gray-900 mb-2”>Step 3: Complete</h3>
+                <p class=”text-sm text-gray-600”>Get the full unit bundle with Foundation + Higher tracks and bonus materials.</p>
+                <p data-bilingual-block class=”text-sm text-gray-600 mt-2”>获取完整单元包（含 Foundation + Higher），附赠双语词汇卡。</p>
             </div>
         </div>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/edx4ma1/products.html" class="edx-solid-bg px-6 py-3 rounded-lg font-semibold text-center edx-solid-hover">Open Product Architecture</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border edx-soft-border edx-soft-bg edx-soft-text px-6 py-3 rounded-lg font-semibold text-center edx-soft-hover">Open Presale Terms PDF</a>
+        <div class=”mt-8 flex flex-col sm:flex-row gap-4”>
+            <a href=”/edx4ma1/products.html” class=”edx-solid-bg px-6 py-3 rounded-lg font-semibold text-center edx-solid-hover”>View All Products</a>
+            <a href=”{{ terms_pdf_url }}” target=”_blank” rel=”noopener” class=”border edx-soft-border edx-soft-bg edx-soft-text px-6 py-3 rounded-lg font-semibold text-center edx-soft-hover”>View Terms PDF</a>
         </div>
     </div>
 </section>

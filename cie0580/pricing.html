@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Pricing
-description: "CIE 0580 presale pricing framework with L1/L2/L3 closed-loop structure."
+description: "CIE 0580 worksheet pack pricing — topic worksheets, section bundles, and unit bundles."
 module: cie0580
 active_page: pricing
 ---
@@ -10,18 +10,18 @@ active_page: pricing
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <h1 class="text-5xl font-bold mb-4">CIE 0580 Pricing Framework</h1>
-        <p class="text-xl opacity-90">Recommendation ranges for presale. Final public prices are TBD before launch.</p>
-        <p data-bilingual-block class="text-sm text-gray-200 mt-3">当前为预售建议区间，正式上线前可统一调整。</p>
+        <h1 class="text-5xl font-semibold mb-4">CIE 0580 Pricing</h1>
+        <p class="text-xl opacity-90">Early-bird pricing available — lock in lower prices before launch.</p>
+        <p data-bilingual-block class="text-sm text-gray-200 mt-3">早鸟价格现已开放，正式上线前锁定更低价格。</p>
     </div>
 </section>
 
 <section class="py-10 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="cie-soft-bg border cie-soft-border rounded-xl p-5 text-sm cie-soft-text">
-            <p class="font-semibold mb-1">Important</p>
-            <p>These prices are recommended anchors for your Payhip placeholders. You can keep the ladder and change all numbers later without changing the product architecture.</p>
-            <p data-bilingual-block class="mt-2">先固定产品阶梯，再迭代价格数字，可避免反复改结构。</p>
+            <p class="font-semibold mb-1">Pricing Note</p>
+            <p>Early-bird prices are available for a limited time. All prices are one-time purchases — no subscriptions or recurring fees.</p>
+            <p data-bilingual-block class="mt-2">早鸟价格限时供应，所有产品均为一次性购买，无订阅或循环扣款。</p>
         </div>
     </div>
 </section>
@@ -30,21 +30,21 @@ active_page: pricing
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L1 Single Worksheet</h3>
-                <p class="text-sm text-gray-600 mb-2">One SubTopic MVP</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mb-2">单个小知识点入口，降低首次购买门槛。</p>
+                <h3 class="text-lg font-bold mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One focused subtopic</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-2">单个知识点专项练习。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l1_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L2 Section Bundle</h3>
-                <p class="text-sm text-gray-600 mb-2">A full section's SubTopics</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mb-2">同章节多 SubTopic 打包，是 L1 的主要升级路径。</p>
+                <h3 class="text-lg font-bold mb-2">Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">All subtopics in one syllabus section</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mb-2">同章节多个知识点打包，覆盖更全面。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l2_early_bird }}</p>
                 <p class="text-sm text-gray-700">Regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 class="text-lg font-bold mb-2">L3 Unit Bundle</h3>
+                <h3 class="text-lg font-bold mb-2">Unit Bundle</h3>
                 <p class="text-sm text-gray-600 mb-2">Core + Extended unit package</p>
                 <p data-bilingual-block class="text-sm text-gray-600 mb-2">完整单元包，覆盖 Core 与 Extended 的核心能力。</p>
                 <p class="text-sm text-gray-700">Early-bird: {{ catalog.pricing.l3_early_bird }}</p>
@@ -63,28 +63,28 @@ active_page: pricing
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Retention Loop</h2>
-        <p data-bilingual-block class="text-sm text-gray-600 mb-6">留存闭环：先低门槛体验，再按学习进度升级，并叠加双语赠送与优惠券。</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">How It Works</h2>
+        <p data-bilingual-block class="text-sm text-gray-600 mb-6">从单个知识点开始，按学习进度逐步升级。</p>
         <div class="grid md:grid-cols-3 gap-5">
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 1: Entry</h3>
-                <p class="text-sm text-gray-600">Customer buys L1 SubTopic worksheet and gets immediate value.</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mt-2">先让学生快速获得可见价值。</p>
+                <h3 class="font-bold text-gray-900 mb-2">Step 1: Start</h3>
+                <p class="text-sm text-gray-600">Pick a topic worksheet and start practising with immediate results.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">选择一个专题练习，即刻开始练习。</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 2: Upgrade</h3>
-                <p class="text-sm text-gray-600">Offer L2 section bundle coupon to convert single-item buyers.</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mt-2">用章节优惠引导从单品升级到组合包。</p>
+                <h3 class="font-bold text-gray-900 mb-2">Step 2: Expand</h3>
+                <p class="text-sm text-gray-600">Upgrade to a section bundle for broader coverage across related subtopics.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">升级到章节合集，覆盖更多相关知识点。</p>
             </div>
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">Step 3: Loyalty</h3>
-                <p class="text-sm text-gray-600">Give bilingual card gifts and bilingual enhancement coupons for repeat purchases into L3.</p>
-                <p data-bilingual-block class="text-sm text-gray-600 mt-2">通过双语词汇卡赠送与升级券提升复购率。</p>
+                <h3 class="font-bold text-gray-900 mb-2">Step 3: Complete</h3>
+                <p class="text-sm text-gray-600">Get the full unit bundle with Core + Extended tracks and bonus materials.</p>
+                <p data-bilingual-block class="text-sm text-gray-600 mt-2">获取完整单元包（含 Core + Extended），附赠双语词汇卡。</p>
             </div>
         </div>
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="/cie0580/products.html" class="cie-solid-bg px-6 py-3 rounded-lg font-semibold text-center">Open Product Architecture</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">Open Presale Terms PDF</a>
+            <a href="/cie0580/products.html" class="cie-solid-bg px-6 py-3 rounded-lg font-semibold text-center">View All Products</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold text-center">View Terms PDF</a>
         </div>
     </div>
 </section>
