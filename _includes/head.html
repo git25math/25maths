@@ -649,16 +649,28 @@
 
 {% if page.payhip %}
 <!-- Payhip Embed Script -->
-<script src="https://payhip.com/payhip.js"></script>
+<script defer src="https://payhip.com/payhip.js"></script>
 {% endif %}
 
 {% if site.supabase and site.supabase.enabled %}
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
     window.__SUPABASE_CONFIG__ = {
         url: {{ site.supabase.url | jsonify }},
         anonKey: {{ site.supabase.anon_key | jsonify }}
     };
 </script>
-<script src="{{ '/assets/js/member_auth.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/member_auth.js' | relative_url }}"></script>
 {% endif %}
+
+<!-- Organization JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "25Maths",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "logo": "{{ site.url }}/assets/images/logo.png"
+}
+</script>

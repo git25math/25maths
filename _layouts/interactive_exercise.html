@@ -4,6 +4,7 @@
     {% include head.html %}
 </head>
 <body class="bg-gray-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-gray-900 focus:text-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold">Skip to main content</a>
     {% include global-nav.html %}
     {% assign exercise_links = nil %}
     {% if page.subtopic_id %}
@@ -68,8 +69,8 @@
             </div>
 
             <div id="controls-container" class="mt-6 border-t pt-6">
-                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Check Answer</button>
-                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition" style="display: none;" disabled>Next</button>
+                <button id="submit-answer-btn" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400">Check Answer</button>
+                <button id="next-question-btn" class="bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400" style="display: none;" disabled>Next</button>
             </div>
         </div>
 

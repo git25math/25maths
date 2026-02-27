@@ -4,9 +4,12 @@
     {% include head.html %}
 </head>
 <body class="bg-gray-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-gray-900 focus:text-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold">Skip to main content</a>
     {% include global-nav.html %}
 
+    <main id="main-content">
     {{ content }}
+    </main>
 
     {% include bilingual-floating-toggle.html %}
 
