@@ -311,10 +311,9 @@
     .kahoot-soft-text { color: #46178f; }
     .kahoot-soft-hover:hover { background-color: #e5dbf8; }
 
-    /* Homepage accent utilities — inset box-shadow preserves border-radius. */
-    .accent-top-cie,
-    .accent-top-green,
-    .accent-top-kahoot { padding-top: 2.25rem; /* p-7 (1.75rem) + 0.5rem stripe offset */ }
+    /* Homepage accent utilities — inset box-shadow preserves border-radius.
+       Extra top padding compensates for the 4px stripe eating into content space. */
+    [class*="accent-top-"] { padding: 2.5rem 2rem 2rem; }
     .accent-top-cie { box-shadow: inset 0 4px 0 var(--cie-igcse-700); }
     .accent-top-green { box-shadow: inset 0 4px 0 #10b981; }
     .accent-top-kahoot { box-shadow: inset 0 4px 0 #b497ff; }
