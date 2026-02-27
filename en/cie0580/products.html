@@ -2,7 +2,7 @@
 redirect_to: /cie0580/products.html
 layout: module
 title: Products
-description: "CIE 0580 presale product architecture: L1 single worksheet, L2 section bundle, L3 unit bundle."
+description: "CIE 0580 worksheet packs: topic worksheets, section bundles, and unit bundles for exam preparation."
 module: cie0580
 active_page: products
 lang: en
@@ -21,8 +21,8 @@ lang_links:
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl font-bold mb-4">CIE 0580 Product System</h1>
-        <p class="text-xl opacity-90">Legacy 3-product setup retired. New closed loop: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
+        <h1 class="text-5xl font-bold mb-4">CIE 0580 Worksheet Packs</h1>
+        <p class="text-xl opacity-90">Topic worksheets, section bundles, and unit bundles — choose the level that fits your revision plan.</p>
     </div>
 </section>
 
@@ -34,24 +34,24 @@ lang_links:
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Worksheet Pack Tiers</h2>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Single Worksheet MVP</h3>
-                <p class="text-sm text-gray-600 mb-4">One SubTopic: Kahoot + worksheet download. Lowest friction entry point.</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-4">One focused subtopic with a Kahoot quiz and downloadable worksheet.</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l1_early_bird }} · suggested regular: {{ catalog.pricing.l1_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L2</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Section Bundle</h3>
-                <p class="text-sm text-gray-600 mb-4">Multiple SubTopics inside one syllabus section. Best upgrade from L1.</p>
+                <p class="text-sm text-gray-600 mb-4">Multiple subtopics covering one syllabus section. Best value for focused revision.</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l2_early_bird }} · suggested regular: {{ catalog.pricing.l2_regular }}</p>
             </article>
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L3</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Unit Bundle</h3>
-                <p class="text-sm text-gray-600 mb-4">One full unit including Core + Extended tracks, plus bonus add-ons after release.</p>
+                <p class="text-sm text-gray-600 mb-4">Complete unit coverage with Core + Extended tracks, plus bonus materials.</p>
                 <p class="text-sm text-gray-700">Suggested early-bird: {{ catalog.pricing.l3_early_bird }} · suggested regular: {{ catalog.pricing.l3_regular }}</p>
             </article>
         </div>
@@ -93,8 +93,8 @@ lang_links:
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Execution Links</h2>
-        <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Quick Links</h2>
+        <p class="text-gray-600 mb-8">Access the Kahoot quiz directory, presale terms, and our Payhip storefront.</p>
         {% include ui/board-triple-actions.html board='cie' kahoot_href='/kahoot/cie0580/' kahoot_label='Open CIE Kahoot Directory' terms_href=terms_pdf_url terms_target='_blank' terms_rel='noopener' terms_label='Open Presale Terms PDF' store_href=catalog.default_worksheet_payhip_url store_target='_blank' store_rel='noopener' store_label='Open Payhip Storefront' %}
     </div>
 </section>

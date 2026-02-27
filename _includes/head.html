@@ -9,8 +9,8 @@
 {% assign canonical_url = site.url | append: canonical_path | replace: 'index.html', '' %}
 <link rel="canonical" href="{{ canonical_url }}">
 {% endif %}
-{% if page.lang_links %}{% for ll in page.lang_links %}<link rel="alternate" hreflang="{{ ll[0] }}" href="{{ site.url }}{{ ll[1] }}">
-{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.lang_links['en'] | default: page.url | replace: 'index.html', '' }}">
+{% if page.lang_links %}{% for ll in page.lang_links %}<link rel="alternate" hreflang="{{ ll.code }}" href="{{ site.url }}{{ ll.url }}">
+{% endfor %}{% assign x_default_url = page.url | replace: 'index.html', '' %}{% for ll in page.lang_links %}{% if ll.code == 'en' %}{% assign x_default_url = ll.url %}{% endif %}{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ x_default_url }}">
 {% endif %}
 <meta name="referrer" content="{{ site.security.referrer_policy | default: 'strict-origin-when-cross-origin' }}">
 {% if site.security and site.security.csp %}

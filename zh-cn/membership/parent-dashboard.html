@@ -8,15 +8,19 @@ noindex: true
 supabase: true
 permalink: /zh-cn/membership/parent-dashboard.html
 lang_links:
-  en: /membership/parent-dashboard.html
-  zh-CN: /zh-cn/membership/parent-dashboard.html
+  - code: en
+    label: EN
+    url: /membership/parent-dashboard.html
+  - code: zh-CN
+    label: 简体
+    url: /zh-cn/membership/parent-dashboard.html
 ---
 
-<section class="bg-gradient-to-br from-indigo-600 to-purple-800 text-white py-12">
+<section class="bg-gray-900 text-white py-12">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-xs tracking-wider uppercase text-indigo-200 mb-2">家长专区</p>
+        <p class="text-xs tracking-wider uppercase text-gray-400 mb-2">家长专区</p>
         <h1 class="text-3xl md:text-4xl font-bold mb-3">学生学习进度仪表盘</h1>
-        <p class="text-base text-indigo-100 max-w-2xl">
+        <p class="text-base text-gray-300 max-w-2xl">
             查看孩子的每周练习情况、各知识点表现和成就里程碑。
         </p>
     </div>
@@ -25,8 +29,8 @@ lang_links:
 <!-- 登录入口 -->
 <section id="auth-gate" class="py-16 bg-white">
     <div class="max-w-md mx-auto px-4 text-center">
-        <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 rounded-full flex items-center justify-center">
-            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
             </svg>
         </div>
@@ -36,7 +40,7 @@ lang_links:
             <input id="parent-email" type="email" placeholder="parent@example.com" required
                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
             <button type="submit"
-                    class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                    class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
                 发送登录链接
             </button>
         </form>
@@ -51,7 +55,7 @@ lang_links:
         <!-- 学生信息 -->
         <div class="bg-white rounded-xl border border-gray-200 p-6">
             <div class="flex items-center gap-4">
-                <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center text-2xl font-bold text-indigo-600"
+                <div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center text-2xl font-bold text-primary"
                      id="student-avatar">S</div>
                 <div>
                     <h2 id="student-name" class="text-xl font-bold text-gray-900">学生</h2>
@@ -93,7 +97,7 @@ lang_links:
             <div class="bg-white rounded-xl border border-gray-200 p-5">
                 <p class="text-sm text-gray-500 mb-1">经验等级</p>
                 <div class="flex items-center gap-3 mt-1">
-                    <span id="stat-level" class="text-2xl font-bold text-indigo-600">—</span>
+                    <span id="stat-level" class="text-2xl font-bold text-primary">—</span>
                     <div class="flex-1">
                         <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
                             <div id="stat-xp-bar" class="h-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all" style="width:0%"></div>
@@ -146,7 +150,7 @@ lang_links:
             <h3 class="text-lg font-bold text-gray-900 mb-3">下周建议</h3>
             <ul id="recommendations-list" class="space-y-2 text-sm text-gray-700">
                 <li class="flex items-start gap-2">
-                    <span class="text-indigo-500 mt-0.5">&#9744;</span>
+                    <span class="text-primary mt-0.5">&#9744;</span>
                     <span>正在生成建议...</span>
                 </li>
             </ul>
@@ -279,7 +283,7 @@ lang_links:
               <p class="font-medium text-gray-800">${topicCn(m.skill_tag.split('-')[0])} — ${m.skill_tag.replace(/-/g, ' ')}</p>
               <p class="text-xs text-gray-500">本周错误 ${m.count} 次</p>
             </div>
-            <a href="/exercises/?board=cie0580" class="text-xs bg-indigo-600 text-white px-3 py-1 rounded-full hover:bg-indigo-700 transition">去练习</a>
+            <a href="/exercises/?board=cie0580" class="text-xs bg-primary text-white px-3 py-1 rounded-full hover:bg-opacity-90 transition">去练习</a>
           </div>
         `).join('');
       }
@@ -327,11 +331,11 @@ lang_links:
       } else {
         recs.push('开始每日练习 — 持续练习才能巩固知识');
       }
-      recs.push('尝试一个 <a href="/exercises/?board=cie0580" class="text-indigo-600 underline">新的互动练习</a> 增加多样性');
+      recs.push('尝试一个 <a href="/exercises/?board=cie0580" class="text-primary underline">新的互动练习</a> 增加多样性');
 
       recList.innerHTML = recs.map(r => `
         <li class="flex items-start gap-2">
-          <span class="text-indigo-500 mt-0.5">&#9744;</span>
+          <span class="text-primary mt-0.5">&#9744;</span>
           <span>${r}</span>
         </li>
       `).join('');

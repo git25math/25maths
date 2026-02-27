@@ -1,7 +1,7 @@
 ---
 layout: module
 title: Edexcel 4MA1
-description: "Exam-aligned resources for Pearson Edexcel IGCSE Mathematics 4MA1 with a closed-loop presale architecture."
+description: "Exam-aligned resources for Pearson Edexcel IGCSE Mathematics 4MA1. Free vocabulary cards, interactive exercises, and worksheet packs."
 module: edx4ma1
 active_page: overview
 ---
@@ -13,8 +13,8 @@ active_page: overview
         <h1 class="text-4xl md:text-6xl font-bold mb-6">Edexcel 4MA1<br>Exam-Ready Resources</h1>
         <p class="text-xl md:text-2xl mb-4 text-blue-100">Exam-aligned resources for Pearson Edexcel IGCSE Mathematics</p>
         <p data-bilingual-block class="text-base md:text-lg mb-4 text-blue-100">对标 Edexcel 4MA1 考纲，保留英文主线并补充中文术语提示。</p>
-        <p class="text-lg mb-8 text-blue-200">Free vocabulary cards are live. L1/L2/L3 presale architecture is now active.</p>
-        <p data-bilingual-block class="text-sm mb-8 text-blue-200">当前闭环：L1 单品 -> L2 章节包 -> L3 单元包。</p>
+        <p class="text-lg mb-8 text-blue-200">Free vocabulary cards, interactive exercises, and worksheet packs — aligned to the latest syllabus.</p>
+        <p data-bilingual-block class="text-sm mb-8 text-blue-200">免费词汇卡、互动练习与练习册 — 对齐最新 Edexcel 4MA1 考纲。</p>
         {% include ui/module-hero-cta-row.html
             board='edx'
             primary_href='/free-gift.html'
@@ -63,25 +63,25 @@ active_page: overview
 <section id="product-loop" class="py-16 bg-white border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Closed-Loop Product System</h2>
-            <p class="text-gray-600">Customer path: L1 single worksheet -> L2 section bundle -> L3 unit bundle, with bilingual support gifts and repeat-purchase upgrade coupons.</p>
-            <p data-bilingual-block class="text-sm text-gray-600 mt-2">目标是低门槛体验、可追踪升级、可持续复购。</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Worksheet Packs</h2>
+            <p class="text-gray-600">Pick individual topics or save with section and unit bundles.</p>
+            <p data-bilingual-block class="text-sm text-gray-600 mt-2">按考点单买，或选择章节/单元合集更划算。</p>
         </div>
         <div class="grid md:grid-cols-3 gap-5 mb-8">
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">L1 Entry</h3>
-                <p class="text-sm text-gray-600 mb-2">Single SubTopic worksheet MVP.</p>
-                <p class="text-sm text-gray-700">Suggested pricing: {{ catalog.pricing.l1_early_bird }} to {{ catalog.pricing.l1_regular }}</p>
+                <h3 class="font-bold text-gray-900 mb-2">Topic Worksheet</h3>
+                <p class="text-sm text-gray-600 mb-2">One topic with quiz and printable worksheet.</p>
+                <p class="text-sm text-gray-700">{{ catalog.pricing.l1_early_bird }} – {{ catalog.pricing.l1_regular }}</p>
             </div>
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">L2 Upgrade</h3>
-                <p class="text-sm text-gray-600 mb-2">Section bundle across multiple SubTopics.</p>
-                <p class="text-sm text-gray-700">Suggested pricing: {{ catalog.pricing.l2_early_bird }} to {{ catalog.pricing.l2_regular }}</p>
+                <h3 class="font-bold text-gray-900 mb-2">Section Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">Multiple topics from one syllabus section.</p>
+                <p class="text-sm text-gray-700">{{ catalog.pricing.l2_early_bird }} – {{ catalog.pricing.l2_regular }}</p>
             </div>
             <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
-                <h3 class="font-bold text-gray-900 mb-2">L3 Loyalty</h3>
-                <p class="text-sm text-gray-600 mb-2">Unit bundle with Foundation + Higher coverage.</p>
-                <p class="text-sm text-gray-700">Suggested pricing: {{ catalog.pricing.l3_early_bird }} to {{ catalog.pricing.l3_regular }}</p>
+                <h3 class="font-bold text-gray-900 mb-2">Unit Bundle</h3>
+                <p class="text-sm text-gray-600 mb-2">Foundation + Higher coverage for an entire unit.</p>
+                <p class="text-sm text-gray-700">{{ catalog.pricing.l3_early_bird }} – {{ catalog.pricing.l3_regular }}</p>
             </div>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
