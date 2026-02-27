@@ -305,10 +305,20 @@
         border-color: #3f1480;
     }
 
+    .kahoot-solid-text { color: #46178f; }
     .kahoot-soft-border { border-color: #7f5ab6; }
     .kahoot-soft-bg { background-color: #efe9fb; }
     .kahoot-soft-text { color: #46178f; }
     .kahoot-soft-hover:hover { background-color: #e5dbf8; }
+
+    /* Homepage accent utilities (border-t-4 / border-l-4 not in compiled Tailwind). */
+    .accent-top-4 { border-top: 4px solid; }
+    .accent-left-4 { border-left: 4px solid; }
+    .accent-top-dark { border-top: 4px solid #171717; }
+    .accent-top-cie { border-top-color: var(--cie-igcse-700); }
+    .accent-top-green { border-top-color: #10b981; }
+    .accent-top-kahoot { border-top-color: #b497ff; }
+    .accent-left-dark { border-left-color: #171717; }
 
     /* Interactive exercise loop button system (shared across CIE/Edexcel). */
     .loop-btn-base {
