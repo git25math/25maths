@@ -12,16 +12,16 @@ lang: en
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-xs tracking-wider uppercase text-gray-200 mb-3">25Maths Kahoot Projects</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Kahoot Syllabus Project Hub</h1>
+        <h1 class="text-4xl md:text-5xl font-semibold mb-4">Kahoot Syllabus Project Hub</h1>
         <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto">
             Browse SubTopic directories for CIE 0580 and Edexcel 4MA1.
             CIE is grouped by <strong>Core / Extended</strong>; Edexcel is grouped by <strong>Foundation / Higher</strong>.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
-            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
+            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE 0580 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg text-white px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Free Samples Live Now</a>
         </div>
     </div>
 </section>
@@ -29,7 +29,7 @@ lang: en
 <section id="free-sample-live" class="py-16 bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Free Sample Sets (Live Now)</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Free Sample Sets (Live Now)</h2>
             <p class="text-gray-600">These sample sets are published first so visitors can try the real question quality before moving into the full worksheet and bundle path.</p>
             <p class="text-sm text-gray-500 mt-2">Published set: 16 topics total (updated {{ free_samples.updated_at }}).</p>
         </div>
@@ -94,12 +94,12 @@ lang: en
                                     </div>
                                     <div class="min-w-0 flex-1">
                                         <div class="flex flex-wrap items-center gap-2 mb-2">
-                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
-                                            <span class="text-[11px] px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
-                                            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.code }}</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">FREE SAMPLE</span>
+                                            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">{{ item.batch }}</span>
                                         </div>
                                         <h4 class="text-sm font-bold text-gray-900 mb-1">{{ item.title }}</h4>
-                                        <p class="text-[11px] text-gray-500">{{ item.tier }} tier</p>
+                                        <p class="text-xs text-gray-500">{{ item.tier }} tier</p>
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -260,7 +260,7 @@ lang: en
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Directories</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Exam Board Directories</h2>
             <p class="text-gray-600">Both pages are generated from the current `micro-topics` folder structures in your project workspace.</p>
             <p class="text-sm text-gray-500 mt-2">Per-SubTopic fields map to one closed-loop offer ladder: `Worksheet (L1)` -> `Section Bundle (L2)` -> `Unit Bundle (L3)` plus presale dates and notes.</p>
         </div>
@@ -302,7 +302,7 @@ lang: en
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
             <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 interactive practice -> L1 -> L2 -> L3 with presale terms.</p>
         </div>
 
@@ -588,15 +588,15 @@ lang: en
           <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
           </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.sectionCode)}</span>
-            <span class="text-[11px] px-2 py-1 rounded-full ${statusClass} font-semibold">${escapeHtml(statusLabel)}</span>
+            <span class="text-xs px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>
+            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.tier)}</span>
+            <span class="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700 font-semibold">${escapeHtml(item.sectionCode)}</span>
+            <span class="text-xs px-2 py-1 rounded-full ${statusClass} font-semibold">${escapeHtml(statusLabel)}</span>
           </div>
           <p class="text-xs font-semibold tracking-wide text-gray-500 mb-1">${escapeHtml(item.code)}</p>
           <h3 class="text-sm font-bold text-gray-900 mb-3">${escapeHtml(titleCase(item.title))}</h3>
-          <p class="text-[11px] text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
-          <p class="text-[11px] text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
+          <p class="text-xs text-gray-500 mb-1">${escapeHtml(releaseLabel)} | ${escapeHtml(earlyBirdLabel)}</p>
+          <p class="text-xs text-gray-500 mb-3">${escapeHtml(item.presaleNote || 'Upgrade path: L0 interactive -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.')}</p>
           <div class="mt-1 grid grid-cols-1 gap-3">
             ${interactiveButton}
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Kahoot</a>

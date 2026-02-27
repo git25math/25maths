@@ -15,11 +15,11 @@ lang_links:
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">CIE 0580 每周专题会员</h1>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-6">CIE 0580 每周专题会员</h1>
         <p class="text-lg md:text-2xl opacity-90 mb-8">
             每周一套高质量专题练习包（含解析）——对标考试大纲。
         </p>
-        <a href="#pricing" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition">
+        <a href="#pricing" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
             立即加入
         </a>
         <p class="text-sm opacity-80 mt-3">$9.99 / 月 · 可随时取消</p>
@@ -50,7 +50,7 @@ lang_links:
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center mb-10">如何运作</h2>
+        <h2 class="text-3xl font-semibold text-center mb-10">如何运作</h2>
         <div class="grid md:grid-cols-3 gap-6 text-center">
             <div class="bg-white rounded-xl p-6 shadow-sm">
                 <div class="text-2xl font-bold text-primary mb-2">1</div>
@@ -70,10 +70,10 @@ lang_links:
 
 <section class="py-16 bg-white" id="pricing">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-4">会员价格</h2>
+        <h2 class="text-3xl font-semibold mb-4">会员价格</h2>
         <p class="text-gray-600 mb-8">会员支付页即将开放。先加入优先通知名单，开放时第一时间收到链接。</p>
         <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border">
-            <div class="text-5xl font-bold text-primary mb-2">$9.99</div>
+            <div class="text-5xl font-semibold text-primary mb-2">$9.99</div>
             <div class="text-gray-600 mb-6">每月</div>
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="max-w-md mx-auto space-y-4 text-left">
                 <input type="hidden" name="topic" value="Weekly Membership">
@@ -86,7 +86,7 @@ lang_links:
                 <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                 <input type="text" name="name" placeholder="姓名（选填）" class="w-full border border-gray-300 rounded-lg px-4 py-3">
                 <input type="email" name="email" required placeholder="邮箱地址" class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                <button type="submit" class="w-full bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                     加入优先通知名单
                 </button>
             </form>
@@ -100,9 +100,9 @@ lang_links:
 
 <section class="py-16 bg-gradient-to-br from-primary to-purple-900 text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-4">想先体验免费资源？</h2>
+        <h2 class="text-3xl font-semibold mb-4">想先体验免费资源？</h2>
         <p class="text-lg opacity-90 mb-8">先领取免费词汇卡，体验内容质量。</p>
-        <a href="/cie0580/free/" class="bg-white text-primary px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition inline-block">
+        <a href="/cie0580/free/" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-md transition inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
             获取免费资源
         </a>
     </div>

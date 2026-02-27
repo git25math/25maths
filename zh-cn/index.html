@@ -14,20 +14,20 @@ lang_links:
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">全球考试局<br>英语为主的数学资源</h1>
+        <h1 class="text-4xl md:text-6xl font-semibold mb-6">全球考试局<br>英语为主的数学资源</h1>
         <p class="text-xl md:text-2xl mb-4 text-gray-100">以英语为主，关键术语提供对照与易错提示</p>
         <p class="text-lg mb-8 text-gray-200">被国际学校学生与教师广泛使用</p>
         <div class="flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="#modules" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="#modules" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 选择考试局
             </a>
-            <a href="/zh-cn/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="/zh-cn/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 进入互动练习中心
             </a>
-            <a href="/zh-cn/kahoot/" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg border kahoot-solid-border text-white px-8 py-4 rounded-lg font-semibold text-lg kahoot-solid-hover hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="/zh-cn/kahoot/" class="sm:flex-1 inline-flex items-center justify-center text-center kahoot-solid-bg border kahoot-solid-border text-white px-8 py-4 rounded-lg font-semibold text-lg kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 Kahoot 免费样题入口
             </a>
-            <a href="/zh-cn/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+            <a href="/zh-cn/free-gift.html" class="sm:flex-1 inline-flex items-center justify-center text-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                 领取免费资料赠品
             </a>
         </div>
@@ -38,7 +38,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-6">
             <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">互动练习快速入口</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">互动练习快速入口</h2>
                 <p class="text-gray-600">按考试局与层级直接进入题组，和 Kahoot + worksheet 形成完整闭环。</p>
             </div>
             <a href="/zh-cn/exercises/" class="text-primary font-semibold hover:underline">进入完整互动练习中心 →</a>
@@ -72,7 +72,7 @@ lang_links:
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gray-50 rounded-2xl p-8 md:p-10">
             <div class="text-xs font-bold text-primary mb-2">术语支持说明</div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">英语为主，关键术语辅助</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4">英语为主，关键术语辅助</h2>
             <p class="text-gray-600 mb-6">考试语言是英语，因此我们的主内容以英语呈现，帮助学生更快适应英语题干与答题表达。</p>
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-white rounded-xl p-6 border">
@@ -95,16 +95,16 @@ lang_links:
 <section id="modules" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">选择你的考试局</h2>
+            <h2 class="text-4xl font-semibold text-gray-900 mb-4">选择你的考试局</h2>
             <p class="text-xl text-gray-600">按考试大纲获取对应资源</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for mod in site.modules %}
-            <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
+            <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition transform hover:-translate-y-1 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
                 <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}edx-soft-bg edx-soft-border border-b{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
-                    <span class="text-3xl font-bold">{{ mod.name }}</span>
+                    <span class="text-3xl font-semibold">{{ mod.name }}</span>
                     {% if mod.status == 'coming_soon' %}
-                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
+                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-semibold">Coming Soon</div>
                     {% endif %}
                 </div>
                 <div class="p-6">
@@ -129,7 +129,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
             <div>
-                <h2 class="text-3xl font-bold text-gray-900">最新文章</h2>
+                <h2 class="text-3xl font-semibold text-gray-900">最新文章</h2>
                 <p class="text-gray-600">考试专题解析与学习策略。</p>
             </div>
             <a href="/zh-cn/blog/" class="text-primary font-semibold hover:underline">查看全部 →</a>
@@ -137,7 +137,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-6">
             {% assign cn_posts = site.posts | where: "lang", "zh-CN" %}
             {% for post in cn_posts limit:3 %}
-            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
@@ -153,12 +153,12 @@ lang_links:
         <div class="bg-gray-50 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
                 <div class="text-xs font-bold text-primary mb-2">NEW</div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">每周专题会员</h2>
+                <h2 class="text-3xl font-semibold text-gray-900 mb-2">每周专题会员</h2>
                 <p class="text-gray-600">每周一套专题练习包（含解析），对标 CIE 0580。</p>
             </div>
             <div class="flex items-center gap-4">
-                <div class="text-2xl font-bold text-primary">$9.99<span class="text-sm text-gray-500 font-medium">/月</span></div>
-                <a href="/zh-cn/subscription.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
+                <div class="text-2xl font-semibold text-primary">$9.99<span class="text-sm text-gray-500 font-medium">/月</span></div>
+                <a href="/zh-cn/subscription.html" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                     查看会员
                 </a>
             </div>

@@ -28,7 +28,7 @@ lang_links:
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <header class="mb-8">
         <p class="text-xs uppercase tracking-wider text-gray-500">L0 Interactive Practice Hub</p>
-        <h1 class="text-4xl font-bold text-gray-900">{{ page.title }}</h1>
+        <h1 class="text-4xl font-semibold text-gray-900">{{ page.title }}</h1>
         {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
         <div class="mt-4 flex flex-wrap gap-2 text-sm">
             <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 font-semibold text-emerald-700">CIE 0580: {{ cie_count }}</span>
@@ -36,8 +36,8 @@ lang_links:
             <span class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 font-semibold text-blue-700">Total: {{ sorted_exercises | size }}</span>
         </div>
         <div class="mt-4 flex flex-wrap gap-3">
-            <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">Open CIE Kahoot Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition">Open Edexcel Kahoot Directory</a>
+            <a href="/kahoot/cie0580/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE Kahoot Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="inline-flex items-center rounded-lg border kahoot-soft-border kahoot-soft-bg px-4 py-2 text-sm font-semibold kahoot-soft-text kahoot-soft-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Edexcel Kahoot Directory</a>
         </div>
     </header>
 
@@ -49,8 +49,8 @@ lang_links:
                 <p id="exercise-resume-meta" class="text-sm text-blue-700"></p>
             </div>
             <div class="flex flex-wrap gap-2">
-                <a id="exercise-resume-link" href="#" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Continue Practice</a>
-                <button id="exercise-resume-clear" type="button" class="inline-flex items-center rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition">Clear</button>
+                <a id="exercise-resume-link" href="#" class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Continue Practice</a>
+                <button id="exercise-resume-clear" type="button" class="inline-flex items-center rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-100 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Clear</button>
             </div>
         </div>
     </section>
@@ -80,7 +80,7 @@ lang_links:
                 <input id="exercise-filter-query" type="text" placeholder="e.g. H4-08, fractions, circle properties" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm">
             </label>
             <div class="block md:self-end">
-                <button id="exercise-filter-reset" type="button" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50" disabled>Clear Filters</button>
+                <button id="exercise-filter-reset" type="button" class="mt-2 w-full rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900" disabled>Clear Filters</button>
             </div>
         </div>
     </section>
@@ -120,22 +120,22 @@ lang_links:
                 class="rounded-xl border border-gray-200 bg-white p-4 shadow-sm"
             >
                 <div class="mb-2 flex flex-wrap items-center gap-2">
-                    <span class="rounded-full px-2 py-1 text-[11px] font-semibold {{ board_chip_class }}">{{ board_label }}</span>
+                    <span class="rounded-full px-2 py-1 text-xs font-semibold {{ board_chip_class }}">{{ board_label }}</span>
                     {% if exercise.tier %}
-                    <span class="rounded-full bg-gray-100 px-2 py-1 text-[11px] font-semibold text-gray-700">{{ exercise.tier }}</span>
+                    <span class="rounded-full bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-700">{{ exercise.tier }}</span>
                     {% endif %}
                     {% if code_value != "" %}
-                    <span class="rounded-full bg-blue-100 px-2 py-1 text-[11px] font-semibold text-blue-700">{{ code_value }}</span>
+                    <span class="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">{{ code_value }}</span>
                     {% endif %}
                 </div>
                 <h2 class="text-lg font-bold text-gray-900">{{ exercise.title }}</h2>
                 {% if exercise.subtitle %}<p class="mt-1 text-sm text-gray-600">{{ exercise.subtitle }}</p>{% endif %}
                 <p class="mt-2 text-xs text-gray-500">{{ exercise.subtopic_id }}</p>
                 <div class="mt-4 grid grid-cols-1 gap-2">
-                    <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Start Interactive Exercise</a>
-                    <a href="{{ board_directory_url | relative_url }}" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition">Back to Board Directory</a>
+                    <a href="{{ exercise.url | relative_url }}" class="text-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Start Interactive Exercise</a>
+                    <a href="{{ board_directory_url | relative_url }}" class="text-center rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Back to Board Directory</a>
                     {% if card_kahoot_url != "" %}
-                    <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition">Open Matching Kahoot</a>
+                    <a href="{{ card_kahoot_url }}" target="_blank" rel="noopener" class="text-center rounded-lg kahoot-solid-bg px-4 py-2 text-sm font-semibold text-white kahoot-solid-hover transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Matching Kahoot</a>
                     {% endif %}
                 </div>
             </article>
@@ -144,7 +144,7 @@ lang_links:
 
     <div id="exercise-empty" class="mt-6 hidden rounded-xl border border-gray-200 bg-white p-6 text-sm text-gray-600">
         <p>No exercises match your current filters.</p>
-        <button id="exercise-empty-reset" type="button" class="mt-4 inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition">Show All Exercises</button>
+        <button id="exercise-empty-reset" type="button" class="mt-4 inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white hover:bg-gray-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Show All Exercises</button>
     </div>
 </div>
 

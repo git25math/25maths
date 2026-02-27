@@ -18,7 +18,7 @@ lang_links:
 
 <section class="cie-hero-gradient text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl font-bold mb-4">CIE 0580 Product System</h1>
+        <h1 class="text-5xl font-semibold mb-4">CIE 0580 Product System</h1>
         <p class="text-xl opacity-90">Legacy 3-product setup retired. New closed loop: L1 single product -> L2 section bundle -> L3 unit bundle.</p>
     </div>
 </section>
@@ -34,7 +34,7 @@ lang_links:
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
+        <h2 class="text-3xl font-semibold text-gray-900 mb-8">Closed-Loop Offer Ladder</h2>
         <div class="grid md:grid-cols-3 gap-6">
             <article class="bg-white rounded-xl border border-gray-200 p-6">
                 <p class="text-xs uppercase tracking-wider cie-solid-text font-semibold mb-2">L1</p>
@@ -60,7 +60,7 @@ lang_links:
 
 <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-2">CIE Unit Bundle Presales (9)</h2>
+        <h2 class="text-3xl font-semibold text-gray-900 mb-2">CIE Unit Bundle Presales (9)</h2>
         <p class="text-gray-600 mb-8">Each unit bundle includes bilingual vocabulary card support and a post-purchase upgrade path for bilingual enhancement.</p>
         <p class="text-sm text-gray-600 mb-8">Bilingual gift trigger: after checkout, customers complete a 30-second learning preference form. Review is optional and unlocks extra bonus, not the core bilingual gift.</p>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -68,26 +68,26 @@ lang_links:
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="text-[11px] px-2 py-1 rounded-full bg-amber-100 text-amber-700 font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
+                        <span class="text-xs px-2 py-1 rounded-full bg-amber-100 text-amber-700 font-semibold">{{ unit.status | default: 'presale' | upcase }}</span>
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>
                     <p class="text-sm text-gray-600 mb-1">Launch: {{ unit.release_date }}</p>
                     <p class="text-sm text-gray-600 mb-3">Early-bird deadline: {{ unit.early_bird_deadline }}</p>
                     <p class="text-xs text-gray-500 mb-4">{{ unit.bonus }}</p>
-                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center cie-solid-bg text-white py-2 rounded-lg font-semibold text-xs">Open Presale Placeholder</a>
+                    <a href="{{ unit.presale_url }}" target="_blank" rel="noopener" class="block text-center cie-solid-bg text-white py-2 rounded-lg font-semibold text-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Presale Placeholder</a>
                 </article>
             {% endfor %}
         </div>
 
         <div class="mt-8 bg-gray-900 text-white rounded-xl p-6">
-            <h3 class="text-2xl font-bold mb-2">All-Units Mega Bundle</h3>
+            <h3 class="text-2xl font-semibold mb-2">All-Units Mega Bundle</h3>
             <p class="text-sm text-gray-200 mb-1">{{ catalog.all_units_bundle.title }}</p>
             <p class="text-sm text-gray-200 mb-1">Early-bird: {{ catalog.all_units_bundle.early_bird_price }} · Regular: {{ catalog.all_units_bundle.regular_price }}</p>
             <p class="text-sm text-gray-200 mb-4">Launch: {{ catalog.all_units_bundle.release_date }} · Early-bird deadline: {{ catalog.all_units_bundle.early_bird_deadline }}</p>
             <div class="flex flex-col sm:flex-row gap-3">
-                <a href="{{ catalog.all_units_bundle.presale_url }}" target="_blank" rel="noopener" class="text-center bg-white text-gray-900 px-5 py-2.5 rounded-lg font-semibold text-sm">Open Mega Bundle Placeholder</a>
-                <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-white px-5 py-2.5 rounded-lg font-semibold text-sm">Read Presale Terms PDF</a>
+                <a href="{{ catalog.all_units_bundle.presale_url }}" target="_blank" rel="noopener" class="text-center bg-white text-gray-900 px-5 py-2.5 rounded-lg font-semibold text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Mega Bundle Placeholder</a>
+                <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="text-center border border-white px-5 py-2.5 rounded-lg font-semibold text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Read Presale Terms PDF</a>
             </div>
         </div>
     </div>
@@ -95,12 +95,12 @@ lang_links:
 
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Execution Links</h2>
+        <h2 class="text-3xl font-semibold text-gray-900 mb-4">Execution Links</h2>
         <p class="text-gray-600 mb-8">Manage SubTopic-level links and upgrade logic from the Kahoot directory page.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-lg transition">Open CIE Kahoot Directory</a>
-            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Open Presale Terms PDF</a>
-            <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Open Payhip Storefront</a>
+            <a href="/kahoot/cie0580/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open CIE Kahoot Directory</a>
+            <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Presale Terms PDF</a>
+            <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="border border-gray-300 text-gray-800 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">Open Payhip Storefront</a>
         </div>
     </div>
 </section>
