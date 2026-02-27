@@ -1,0 +1,462 @@
+{
+  "_comment": "Week 08 — Geometry: Angles, Symmetry & Circle Theorems. Based on 35 CIE 0580 past paper questions (2018-2025) across C4.1-C4.7, E4.1-E4.7. Questions are strict variations of real exam patterns.",
+  "week_number": 8,
+  "topic": "Geometry: Angles, Symmetry & Circle Theorems",
+  "board": "CIE 0580",
+  "tier": "Core + Extended",
+  "release_id": "member-week08-geometry-angles-symmetry-2026w17",
+  "version": "v1",
+  "subtopic_ids": [
+    "cie0580:geometry-c4:c4-01-geometrical-terms",
+    "cie0580:geometry-c4:c4-05-symmetry",
+    "cie0580:geometry-c4:c4-06-angles",
+    "cie0580:geometry-c4:c4-07-circle-theorems"
+  ],
+  "syllabus_refs": ["C4.1", "C4.5", "C4.6", "C4.7", "E4.1", "E4.4", "E4.5", "E4.6", "E4.7"],
+  "key_vocabulary": [
+    { "term_en": "Parallel Lines", "term_zh": "平行线", "definition": "Lines that are always the same distance apart and never meet.", "definition_zh": "始终保持等距且永不相交的直线。" },
+    { "term_en": "Alternate Angles", "term_zh": "内错角", "definition": "Angles on opposite sides of a transversal between parallel lines. They are equal.", "definition_zh": "在平行线之间、截线两侧的角。它们相等。" },
+    { "term_en": "Corresponding Angles", "term_zh": "同位角", "definition": "Angles in the same position at each intersection where a transversal crosses parallel lines. They are equal.", "definition_zh": "截线与平行线相交时，在每个交点同一位置的角。它们相等。" },
+    { "term_en": "Co-interior Angles", "term_zh": "同旁内角", "definition": "Angles on the same side of a transversal between parallel lines. They add up to 180 degrees.", "definition_zh": "在平行线之间、截线同侧的角。它们之和为 180 度。" },
+    { "term_en": "Interior Angle", "term_zh": "内角", "definition": "An angle inside a polygon formed by two adjacent sides.", "definition_zh": "多边形内部由两条相邻边构成的角。" },
+    { "term_en": "Exterior Angle", "term_zh": "外角", "definition": "An angle formed between a side of a polygon and the extension of an adjacent side.", "definition_zh": "多边形一边与相邻边延长线之间的角。" },
+    { "term_en": "Regular Polygon", "term_zh": "正多边形", "definition": "A polygon with all sides equal and all angles equal.", "definition_zh": "所有边相等且所有角相等的多边形。" },
+    { "term_en": "Isosceles Triangle", "term_zh": "等腰三角形", "definition": "A triangle with two equal sides and two equal base angles.", "definition_zh": "有两条边相等、两个底角相等的三角形。" },
+    { "term_en": "Vertically Opposite Angles", "term_zh": "对顶角", "definition": "Angles formed opposite each other when two lines cross. They are always equal.", "definition_zh": "两条直线相交时形成的对面的角。它们始终相等。" },
+    { "term_en": "Tangent", "term_zh": "切线", "definition": "A straight line that touches a circle at exactly one point.", "definition_zh": "与圆恰好只有一个交点的直线。" },
+    { "term_en": "Chord", "term_zh": "弦", "definition": "A straight line joining two points on the circumference of a circle.", "definition_zh": "连接圆周上两点的直线段。" },
+    { "term_en": "Diameter", "term_zh": "直径", "definition": "A chord that passes through the centre of a circle.", "definition_zh": "通过圆心的弦。" },
+    { "term_en": "Circumference", "term_zh": "圆周", "definition": "The perimeter of a circle.", "definition_zh": "圆的周长。" },
+    { "term_en": "Arc", "term_zh": "弧", "definition": "A part of the circumference of a circle.", "definition_zh": "圆周的一部分。" },
+    { "term_en": "Cyclic Quadrilateral", "term_zh": "圆内接四边形", "definition": "A quadrilateral with all four vertices on the circumference of a circle.", "definition_zh": "四个顶点都在圆周上的四边形。" },
+    { "term_en": "Angle at the Centre", "term_zh": "圆心角", "definition": "An angle formed at the centre of a circle by two radii.", "definition_zh": "由两条半径在圆心处形成的角。" },
+    { "term_en": "Similar", "term_zh": "相似", "definition": "Shapes that have the same shape but different sizes; corresponding angles are equal and corresponding sides are in the same ratio.", "definition_zh": "形状相同但大小不同的图形；对应角相等，对应边成比例。" },
+    { "term_en": "Line of Symmetry", "term_zh": "对称轴", "definition": "A line that divides a shape into two identical halves that are mirror images of each other.", "definition_zh": "将图形分成两个互为镜像的相同部分的线。" }
+  ],
+  "questions_core": [
+    {
+      "id": "q001", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Angles", "Parallel Lines"],
+      "question": {
+        "en": "Two straight lines are parallel.\nA straight line crosses both parallel lines.\nOne of the angles formed is 72 degrees.\n\n(a) Write down the size of the alternate angle.\n\n(b) Write down the size of the co-interior angle.\n\n(c) Give a geometrical reason for your answer to part (b).",
+        "zh": "两条直线平行。\n一条直线与两条平行线相交。\n其中一个角为 72 度。\n\n(a) 写出内错角的大小。\n\n(b) 写出同旁内角的大小。\n\n(c) 写出 (b) 部分答案的几何原因。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.9]",
+        "  \\coordinate (A1) at (-1.5,0); \\coordinate (A2) at (4,0);",
+        "  \\coordinate (B1) at (-1.5,1.8); \\coordinate (B2) at (4,1.8);",
+        "  \\draw[thick, postaction={decorate, decoration={markings, mark=at position 0.7 with {\\arrow{>}}}}] (A1)--(A2);",
+        "  \\draw[thick, postaction={decorate, decoration={markings, mark=at position 0.7 with {\\arrow{>}}}}] (B1)--(B2);",
+        "  \\coordinate (P) at (1,0); \\coordinate (Q) at (1.585,1.8);",
+        "  \\draw[thick] ($(P)!-0.35!(Q)$)--($(Q)!-0.25!(P)$);",
+        "  \\draw ($(P)+(0:0.6)$) arc[start angle=0, end angle=72, radius=0.6];",
+        "  \\node at ($(P)+(36:0.9)$) {$72^\\circ$};",
+        "  \\fill (P) circle (1.5pt); \\fill (Q) circle (1.5pt);",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 72 degrees\n(b) 108 degrees\n(c) Co-interior angles add up to 180 degrees.", "zh": "(a) 72 度\n(b) 108 度\n(c) 同旁内角之和为 180 度。" },
+      "solution": {
+        "en": [
+          "(a) Alternate angles are equal, so the alternate angle `= 72°`.",
+          "(b) Co-interior angles add up to `180°`:",
+          "`180° - 72° = 108°`",
+          "(c) Co-interior angles between parallel lines are supplementary (add up to `180°`)."
+        ],
+        "zh": [
+          "(a) 内错角相等，所以内错角 `= 72°`。",
+          "(b) 同旁内角之和为 `180°`：",
+          "`180° - 72° = 108°`",
+          "(c) 平行线之间的同旁内角互补（之和为 `180°`）。"
+        ]
+      },
+      "common_mistake": { "en": "Confusing alternate angles with co-interior angles. Alternate angles are EQUAL; co-interior angles ADD UP TO 180 degrees.", "zh": "混淆内错角和同旁内角。内错角相等；同旁内角之和为 180 度。" }
+    },
+    {
+      "id": "q002", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Angles", "Polygons"],
+      "question": {
+        "en": "Calculate the interior angle of a regular 15-sided polygon.",
+        "zh": "计算正十五边形的内角。"
+      },
+      "answer": { "en": "156 degrees", "zh": "156 度" },
+      "solution": {
+        "en": [
+          "Sum of interior angles `= (n - 2) \\times 180°`",
+          "`= (15 - 2) \\times 180°`",
+          "`= 13 \\times 180° = 2340°`",
+          "Each interior angle `= 2340° \\div 15 = 156°`"
+        ],
+        "zh": [
+          "内角和 `= (n - 2) \\times 180°`",
+          "`= (15 - 2) \\times 180°`",
+          "`= 13 \\times 180° = 2340°`",
+          "每个内角 `= 2340° \\div 15 = 156°`"
+        ]
+      },
+      "common_mistake": { "en": "Using `n \\times 180°` instead of `(n - 2) \\times 180°` for the angle sum. The formula subtracts 2 from the number of sides.", "zh": "使用 `n \\times 180°` 而不是 `(n - 2) \\times 180°` 计算角度和。公式中需要将边数减 2。" }
+    },
+    {
+      "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Angles", "Triangles"],
+      "question": {
+        "en": "Triangle `ABC` is isosceles with `AB = AC`.\nAngle `BAC = 48°`.\n\nFind angle `ABC`.",
+        "zh": "三角形 `ABC` 为等腰三角形，`AB = AC`。\n角 `BAC = 48°`。\n\n求角 `ABC`。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.85]",
+        "  \\coordinate (A) at (0,2.8);",
+        "  \\coordinate (B) at (-1.6,0);",
+        "  \\coordinate (C) at (1.6,0);",
+        "  \\draw[thick] (A)--(B)--(C)--cycle;",
+        "  \\draw[thick] (A) pic[draw=black, -, angle radius=0.7cm, angle eccentricity=1.5, \"$48^\\circ$\"] {angle=B--A--C};",
+        "  \\node[above] at (A) {$A$};",
+        "  \\node[below left] at (B) {$B$};",
+        "  \\node[below right] at (C) {$C$};",
+        "  \\draw ($(A)!0.5!(B)$) ++(60:0.12)--++(240:0.24);",
+        "  \\draw ($(A)!0.5!(C)$) ++(120:0.12)--++(300:0.24);",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "66 degrees", "zh": "66 度" },
+      "solution": {
+        "en": [
+          "In an isosceles triangle, the base angles are equal.",
+          "Since `AB = AC`, angle `ABC` = angle `ACB`.",
+          "Angle sum of a triangle `= 180°`:",
+          "Angle `ABC` + angle `ACB` + `48° = 180°`",
+          "`2 \\times` angle `ABC = 180° - 48° = 132°`",
+          "Angle `ABC = 132° \\div 2 = 66°`"
+        ],
+        "zh": [
+          "等腰三角形的两个底角相等。",
+          "由于 `AB = AC`，角 `ABC` = 角 `ACB`。",
+          "三角形内角和 `= 180°`：",
+          "角 `ABC` + 角 `ACB` + `48° = 180°`",
+          "`2 \\times` 角 `ABC = 180° - 48° = 132°`",
+          "角 `ABC = 132° \\div 2 = 66°`"
+        ]
+      },
+      "common_mistake": { "en": "Identifying the wrong pair of equal angles. Since `AB = AC`, the angles OPPOSITE these sides are equal, i.e. angle `ABC` = angle `ACB` (not angle `BAC`).", "zh": "识别了错误的等角对。由于 `AB = AC`，这两条边的对角相等，即角 `ABC` = 角 `ACB`（不是角 `BAC`）。" }
+    },
+    {
+      "id": "q004", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Angles", "Quadrilaterals"],
+      "question": {
+        "en": "The angles of a quadrilateral are `x°`, `(x + 10)°`, `(2x - 30)°` and `(x + 20)°`.\n\nFind the value of `x`.",
+        "zh": "一个四边形的四个角分别为 `x°`、`(x + 10)°`、`(2x - 30)°` 和 `(x + 20)°`。\n\n求 `x` 的值。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.75]",
+        "  \\coordinate (A) at (0,0);",
+        "  \\coordinate (B) at (4,0.2);",
+        "  \\coordinate (C) at (4.5,2.6);",
+        "  \\coordinate (D) at (0.8,2.8);",
+        "  \\draw[thick] (A)--(B)--(C)--(D)--cycle;",
+        "  \\node at ($(A)+(35:0.75)$) {\\small $x^\\circ$};",
+        "  \\node at ($(B)+(155:0.9)$) {\\small $(x\\!+\\!10)^\\circ$};",
+        "  \\node at ($(C)+(215:0.9)$) {\\small $(2x\\!-\\!30)^\\circ$};",
+        "  \\node at ($(D)+(310:0.9)$) {\\small $(x\\!+\\!20)^\\circ$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "`x = 72`", "zh": "`x = 72`" },
+      "solution": {
+        "en": [
+          "Angles in a quadrilateral add up to `360°`:",
+          "`x + (x + 10) + (2x - 30) + (x + 20) = 360`",
+          "`5x + 0 = 360`",
+          "`5x = 360`",
+          "`x = 72`"
+        ],
+        "zh": [
+          "四边形内角和为 `360°`：",
+          "`x + (x + 10) + (2x - 30) + (x + 20) = 360`",
+          "`5x + 0 = 360`",
+          "`5x = 360`",
+          "`x = 72`"
+        ]
+      },
+      "common_mistake": { "en": "Using 180 degrees instead of 360 degrees as the angle sum. The angle sum of a TRIANGLE is 180 degrees, but a QUADRILATERAL has angle sum 360 degrees.", "zh": "使用 180 度而不是 360 度作为角度和。三角形的内角和是 180 度，但四边形的内角和是 360 度。" }
+    },
+    {
+      "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Symmetry"],
+      "question": {
+        "en": "(a) Write down the number of lines of symmetry of a regular hexagon.\n\n(b) Write down the order of rotational symmetry of a regular hexagon.",
+        "zh": "(a) 写出正六边形的对称轴数量。\n\n(b) 写出正六边形的旋转对称阶数。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.7]",
+        "  \\foreach \\i in {0,...,5} {",
+        "    \\coordinate (V\\i) at ({90+60*\\i}:1.4);",
+        "  }",
+        "  \\draw[thick] (V0)--(V1)--(V2)--(V3)--(V4)--(V5)--cycle;",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 6\n(b) 6", "zh": "(a) 6\n(b) 6" },
+      "solution": {
+        "en": [
+          "(a) A regular hexagon has 6 lines of symmetry (3 through opposite vertices, 3 through midpoints of opposite sides).",
+          "(b) A regular hexagon has rotational symmetry of order 6 (it looks the same 6 times during a full turn)."
+        ],
+        "zh": [
+          "(a) 正六边形有 6 条对称轴（3 条过对角顶点，3 条过对边中点）。",
+          "(b) 正六边形的旋转对称阶数为 6（旋转一周中有 6 次看起来完全相同）。"
+        ]
+      },
+      "common_mistake": { "en": "Giving the number of sides (6) for lines of symmetry is correct here, but students often confuse this for other shapes. For ANY regular n-sided polygon, there are n lines of symmetry and rotational symmetry of order n.", "zh": "正六边形的对称轴数量等于边数 (6)，这是正确的。对于任何正 n 边形，都有 n 条对称轴和 n 阶旋转对称。" }
+    },
+    {
+      "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Circle Properties"],
+      "question": {
+        "en": "`A`, `B` and `C` are points on a circle with centre `O`.\n`AC` is a diameter.\nAngle `BAC = 35°`.\n\nFind angle `ABC`.",
+        "zh": "`A`、`B`、`C` 是以 `O` 为圆心的圆上的点。\n`AC` 是直径。\n角 `BAC = 35°`。\n\n求角 `ABC`。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.85]",
+        "  \\coordinate (O) at (0,0);",
+        "  \\draw[thick] (O) circle (1.5);",
+        "  \\coordinate (A) at (180:1.5);",
+        "  \\coordinate (C) at (0:1.5);",
+        "  \\coordinate (B) at (110:1.5);",
+        "  \\draw[thick] (A)--(C);",
+        "  \\draw[thick] (A)--(B)--(C);",
+        "  \\draw[thick] (A) pic[draw=black, -, angle radius=0.5cm, angle eccentricity=1.6, \"$35^\\circ$\"] {angle=C--A--B};",
+        "  \\node[left] at (A) {$A$};",
+        "  \\node[above left] at (B) {$B$};",
+        "  \\node[right] at (C) {$C$};",
+        "  \\fill (O) circle (1.5pt); \\node[below] at (O) {$O$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "90 degrees", "zh": "90 度" },
+      "solution": {
+        "en": [
+          "The angle in a semicircle is `90°`.",
+          "Since `AC` is a diameter, angle `ABC = 90°`.",
+          "(Note: angle `BCA = 180° - 90° - 35° = 55°`)"
+        ],
+        "zh": [
+          "半圆上的角（直径所对的圆周角）为 `90°`。",
+          "由于 `AC` 是直径，角 `ABC = 90°`。",
+          "（注：角 `BCA = 180° - 90° - 35° = 55°`）"
+        ]
+      },
+      "common_mistake": { "en": "Calculating `180° - 35° = 145°` instead of recognising the angle in a semicircle. When a triangle is drawn in a semicircle with one side as the diameter, the angle opposite the diameter is ALWAYS 90 degrees.", "zh": "计算 `180° - 35° = 145°` 而没有识别半圆中的角。当三角形画在半圆中且一边为直径时，直径对面的角始终为 90 度。" }
+    },
+    {
+      "id": "q007", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Circle Properties"],
+      "question": {
+        "en": "A circle has centre `O`.\nThe line `CDE` is a tangent to the circle at point `D`.\n`OD` is a radius.\n`B` is a point on the circle and angle `ODB = 74°`.\n\nFind angle `BDE`.",
+        "zh": "一个圆的圆心为 `O`。\n直线 `CDE` 是圆在点 `D` 处的切线。\n`OD` 是半径。\n`B` 是圆上的一点，角 `ODB = 74°`。\n\n求角 `BDE`。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.85]",
+        "  \\coordinate (O) at (0,0);",
+        "  \\draw[thick] (O) circle (1.5);",
+        "  \\coordinate (D) at (270:1.5);",
+        "  \\coordinate (B) at (302:1.5);",
+        "  \\draw[thick] (O)--(D);",
+        "  \\draw[thick] (D)--(B);",
+        "  \\draw[thick] (-2.5,-1.5)--(2.5,-1.5);",
+        "  \\node[below left] at (-2.5,-1.5) {$C$};",
+        "  \\node[below right] at (2.5,-1.5) {$E$};",
+        "  \\node[below=3pt] at (D) {$D$};",
+        "  \\node[right] at (B) {$B$};",
+        "  \\fill (O) circle (1.5pt); \\node[above] at (O) {$O$};",
+        "  \\draw[thick] (D) pic[draw=black, -, angle radius=0.55cm, angle eccentricity=0.7, \"$74^\\circ$\"] {angle=B--D--O};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "16 degrees", "zh": "16 度" },
+      "solution": {
+        "en": [
+          "A tangent is perpendicular to the radius at the point of contact.",
+          "So angle `ODE = 90°`.",
+          "Angle `BDE = 90° - 74° = 16°`"
+        ],
+        "zh": [
+          "切线与过切点的半径垂直。",
+          "所以角 `ODE = 90°`。",
+          "角 `BDE = 90° - 74° = 16°`"
+        ]
+      },
+      "common_mistake": { "en": "Forgetting that the tangent meets the radius at 90 degrees. This is a key circle property: tangent is perpendicular to the radius at the point of tangency.", "zh": "忘记切线与半径成 90 度角。这是一个关键的圆的性质：切线在切点处与半径垂直。" }
+    }
+  ],
+  "questions_extended": [
+    {
+      "id": "q008", "board": "CIE 0580", "track": "Extended", "marks": 3, "topic": ["Angles", "Polygons"],
+      "question": {
+        "en": "The interior angle of a regular polygon is 132 degrees larger than the exterior angle.\n\nCalculate the number of sides of the polygon.",
+        "zh": "一个正多边形的内角比外角大 132 度。\n\n计算该多边形的边数。"
+      },
+      "answer": { "en": "15", "zh": "15" },
+      "solution": {
+        "en": [
+          "Interior angle + exterior angle `= 180°`",
+          "Let the exterior angle be `e`.",
+          "Interior angle `= e + 132`",
+          "`e + (e + 132) = 180`",
+          "`2e = 48`",
+          "`e = 24°`",
+          "Number of sides `= 360° \\div 24° = 15`"
+        ],
+        "zh": [
+          "内角 + 外角 `= 180°`",
+          "设外角为 `e`。",
+          "内角 `= e + 132`",
+          "`e + (e + 132) = 180`",
+          "`2e = 48`",
+          "`e = 24°`",
+          "边数 `= 360° \\div 24° = 15`"
+        ]
+      },
+      "common_mistake": { "en": "Setting up the equation as interior - exterior = 132 but forgetting that interior + exterior = 180. Both relationships are needed to solve for the exterior angle.", "zh": "列出内角 - 外角 = 132 的方程，但忘记内角 + 外角 = 180。两个关系都需要才能求出外角。" }
+    },
+    {
+      "id": "q009", "board": "CIE 0580", "track": "Extended", "marks": 5, "topic": ["Circle Theorems"],
+      "question": {
+        "en": "`A`, `B`, `C` and `D` are points on a circle with centre `O`.\nAngle `AOC = 104°`.\n\n(a) Find angle `ABC`.\n\n(b) Find angle `OCA`.\n\n(c) Find angle `ADC`.\n\nYou must give a geometrical reason for each answer.",
+        "zh": "`A`、`B`、`C`、`D` 是以 `O` 为圆心的圆上的点。\n角 `AOC = 104°`。\n\n(a) 求角 `ABC`。\n\n(b) 求角 `OCA`。\n\n(c) 求角 `ADC`。\n\n每个答案必须给出几何原因。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.95]",
+        "  \\coordinate (O) at (0,0);",
+        "  \\draw[thick] (O) circle (1.6);",
+        "  \\coordinate (A) at (142:1.6);",
+        "  \\coordinate (B) at (270:1.6);",
+        "  \\coordinate (C) at (38:1.6);",
+        "  \\coordinate (D) at (90:1.6);",
+        "  \\draw[thick] (A)--(B)--(C)--(D)--cycle;",
+        "  \\draw[thick] (O)--(A); \\draw[thick] (O)--(C);",
+        "  \\draw ($(O)+(38:0.45)$) arc[start angle=38, end angle=142, radius=0.45];",
+        "  \\node at ($(O)+(90:0.7)$) {\\small $104^\\circ$};",
+        "  \\node[above left] at (A) {$A$};",
+        "  \\node[below] at (B) {$B$};",
+        "  \\node[right] at (C) {$C$};",
+        "  \\node[above] at (D) {$D$};",
+        "  \\fill (O) circle (1.5pt); \\node[below left=1pt] at (O) {$O$};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 52 degrees\n(b) 38 degrees\n(c) 128 degrees", "zh": "(a) 52 度\n(b) 38 度\n(c) 128 度" },
+      "solution": {
+        "en": [
+          "(a) Angle `ABC = 104° \\div 2 = 52°`",
+          "Reason: The angle at the centre is twice the angle at the circumference.",
+          "(b) Triangle `OAC` is isosceles (`OA = OC`, both radii).",
+          "Angle `OAC` = angle `OCA = \\dfrac{180° - 104°}{2} = \\dfrac{76°}{2} = 38°`",
+          "(c) `ABCD` is a cyclic quadrilateral. Opposite angles add up to `180°`:",
+          "Angle `ABC` + angle `ADC = 180°`",
+          "Angle `ADC = 180° - 52° = 128°`"
+        ],
+        "zh": [
+          "(a) 角 `ABC = 104° \\div 2 = 52°`",
+          "原因：圆心角是同弧上圆周角的两倍。",
+          "(b) 三角形 `OAC` 是等腰三角形（`OA = OC`，都是半径）。",
+          "角 `OAC` = 角 `OCA = \\dfrac{180° - 104°}{2} = \\dfrac{76°}{2} = 38°`",
+          "(c) `ABCD` 是圆内接四边形，对角之和为 `180°`：",
+          "角 `ABC` + 角 `ADC = 180°`",
+          "角 `ADC = 180° - 52° = 128°`"
+        ]
+      },
+      "common_mistake": { "en": "Forgetting that OA = OC = radius, so triangle OAC is isosceles. Many students cannot find angle OCA without recognising the isosceles triangle.", "zh": "忘记 `OA = OC` = 半径，所以三角形 `OAC` 是等腰三角形。许多学生不能识别等腰三角形就无法求出角 `OCA`。" }
+    },
+    {
+      "id": "q010", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Similarity"],
+      "question": {
+        "en": "`S` lies on `PQ` and `T` lies on `PR`.\n`ST` is parallel to `QR`.\n`PS = 5` cm, `SQ = 10` cm and `ST = 3` cm.\n\n(a) Explain why triangle `PST` is similar to triangle `PQR`.\nGive a geometrical reason.\n\n(b) Calculate the length of `QR`.",
+        "zh": "`S` 在 `PQ` 上，`T` 在 `PR` 上。\n`ST` 平行于 `QR`。\n`PS = 5` cm，`SQ = 10` cm，`ST = 3` cm。\n\n(a) 解释为什么三角形 `PST` 与三角形 `PQR` 相似。\n给出几何原因。\n\n(b) 计算 `QR` 的长度。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=0.8]",
+        "  \\coordinate (P) at (0,3.5);",
+        "  \\coordinate (Q) at (-2.4,0);",
+        "  \\coordinate (R) at (2.4,0);",
+        "  \\coordinate (S) at ($(P)!0.333!(Q)$);",
+        "  \\coordinate (T) at ($(P)!0.333!(R)$);",
+        "  \\draw[thick] (P)--(Q)--(R)--cycle;",
+        "  \\draw[thick] (S)--(T);",
+        "  \\node[above] at (P) {$P$};",
+        "  \\node[below left] at (Q) {$Q$};",
+        "  \\node[below right] at (R) {$R$};",
+        "  \\node[left] at (S) {$S$};",
+        "  \\node[right] at (T) {$T$};",
+        "  \\node[left, font=\\small] at ($(P)!0.5!(S)$) {5};",
+        "  \\node[left, font=\\small] at ($(S)!0.5!(Q)$) {10};",
+        "  \\node[above, font=\\small] at ($(S)!0.5!(T)$) {3};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) Corresponding angles are equal because ST is parallel to QR.\n(b) 9 cm", "zh": "(a) 因为 ST 平行于 QR，所以对应角相等。\n(b) 9 cm" },
+      "solution": {
+        "en": [
+          "(a) Since `ST` is parallel to `QR`:",
+          "Angle `PST` = angle `PQR` (corresponding angles).",
+          "Angle `PTS` = angle `PRQ` (corresponding angles).",
+          "Angle `P` is common to both triangles.",
+          "Therefore triangle `PST` is similar to triangle `PQR` (AA similarity).",
+          "(b) `PQ = PS + SQ = 5 + 10 = 15` cm",
+          "Scale factor `= \\dfrac{PQ}{PS} = \\dfrac{15}{5} = 3`",
+          "`QR = ST \\times 3 = 3 \\times 3 = 9` cm"
+        ],
+        "zh": [
+          "(a) 由于 `ST` 平行于 `QR`：",
+          "角 `PST` = 角 `PQR`（同位角）。",
+          "角 `PTS` = 角 `PRQ`（同位角）。",
+          "角 `P` 是两个三角形的公共角。",
+          "因此三角形 `PST` 与三角形 `PQR` 相似（AA 相似）。",
+          "(b) `PQ = PS + SQ = 5 + 10 = 15` cm",
+          "比例因子 `= \\dfrac{PQ}{PS} = \\dfrac{15}{5} = 3`",
+          "`QR = ST \\times 3 = 3 \\times 3 = 9` cm"
+        ]
+      },
+      "common_mistake": { "en": "Using the wrong ratio. The scale factor is `\\dfrac{PQ}{PS} = \\dfrac{15}{5} = 3`, NOT `\\dfrac{SQ}{PS} = \\dfrac{10}{5} = 2`. You must use the FULL side PQ, not the remaining part SQ.", "zh": "使用了错误的比例。比例因子是 `\\dfrac{PQ}{PS} = \\dfrac{15}{5} = 3`，不是 `\\dfrac{SQ}{PS} = \\dfrac{10}{5} = 2`。必须使用完整的边 PQ，而不是剩余部分 SQ。" }
+    },
+    {
+      "id": "q011", "board": "CIE 0580", "track": "Extended", "marks": 4, "topic": ["Circle Theorems"],
+      "question": {
+        "en": "`A`, `B`, `C` and `D` are points on a circle.\n`EAF` is a tangent to the circle at `A`.\nAngle `BAF = 52°` and angle `ADC = 94°`.\n\n(a) Find angle `BCA`.\nGive a geometrical reason.\n\n(b) Find angle `ABC`.\nGive a geometrical reason.",
+        "zh": "`A`、`B`、`C`、`D` 是圆上的点。\n`EAF` 是圆在 `A` 处的切线。\n角 `BAF = 52°`，角 `ADC = 94°`。\n\n(a) 求角 `BCA`。\n给出几何原因。\n\n(b) 求角 `ABC`。\n给出几何原因。"
+      },
+      "figure": [
+        "\\begin{tikzpicture}[scale=1.3]",
+        "  \\def\\r{1.8}",
+        "  \\draw[thick] (0,0) circle (\\r);",
+        "  \\coordinate (A) at (270:\\r);",
+        "  \\coordinate (B) at (14:\\r);",
+        "  \\coordinate (C) at (98:\\r);",
+        "  \\coordinate (D) at (190:\\r);",
+        "  \\draw[thick] (A)--(B)--(C)--(D)--cycle;",
+        "  \\draw[thick] (C)--(A);",
+        "  \\coordinate (E) at (-2.8,-\\r);",
+        "  \\coordinate (F) at (2.8,-\\r);",
+        "  \\draw[thick] (E)--(F);",
+        "  \\node[below=3pt] at (A) {$A$};",
+        "  \\node[right] at (B) {$B$};",
+        "  \\node[above] at (C) {$C$};",
+        "  \\node[left] at (D) {$D$};",
+        "  \\node[below left] at (E) {$E$};",
+        "  \\node[below right] at (F) {$F$};",
+        "  \\draw[thick] (A) pic[draw=black, -, angle radius=0.8cm, angle eccentricity=0.7, \"$52^\\circ$\"] {angle=F--A--B};",
+        "  \\draw[thick] (D) pic[draw=black, -, angle radius=0.8cm, angle eccentricity=0.7, \"$94^\\circ$\"] {angle=A--D--C};",
+        "\\end{tikzpicture}"
+      ],
+      "answer": { "en": "(a) 52 degrees\n(b) 86 degrees", "zh": "(a) 52 度\n(b) 86 度" },
+      "solution": {
+        "en": [
+          "(a) Angle `BCA = 52°`",
+          "Reason: Alternate segment theorem — the angle between the tangent `AF` and chord `AB` equals the inscribed angle subtending arc `AB` in the alternate segment.",
+          "(b) `ABCD` is a cyclic quadrilateral. Opposite angles add up to `180°`:",
+          "Angle `ABC = 180° - 94° = 86°`"
+        ],
+        "zh": [
+          "(a) 角 `BCA = 52°`",
+          "原因：交替弓形定理（弦切角定理）——切线 `AF` 与弦 `AB` 之间的角等于交替弓形中弧 `AB` 所对的圆周角。",
+          "(b) `ABCD` 是圆内接四边形，对角之和为 `180°`：",
+          "角 `ABC = 180° - 94° = 86°`"
+        ]
+      },
+      "common_mistake": { "en": "For the alternate segment theorem, confusing which inscribed angle equals the tangent-chord angle. It is the angle in the ALTERNATE (opposite) segment, not the same segment as the tangent.", "zh": "对于交替弓形定理，混淆哪个圆周角等于切线-弦角。等于的是交替（对面）弓形中的角，而不是切线同侧弓形中的角。" }
+    }
+  ],
+  "review_checklist": [
+    { "en": "I can find missing angles using parallel line properties (alternate, corresponding, co-interior).", "zh": "我能利用平行线性质（内错角、同位角、同旁内角）求未知角。" },
+    { "en": "I can calculate interior and exterior angles of regular polygons.", "zh": "我能计算正多边形的内角和外角。" },
+    { "en": "I can find angles in isosceles triangles and quadrilaterals.", "zh": "我能求等腰三角形和四边形中的角。" },
+    { "en": "I can identify lines of symmetry and order of rotational symmetry.", "zh": "我能识别对称轴和旋转对称的阶数。" },
+    { "en": "I know that the angle in a semicircle is 90 degrees.", "zh": "我知道半圆上的角（直径所对的圆周角）是 90 度。" },
+    { "en": "I can use circle theorems: angle at centre, same segment, cyclic quadrilateral, alternate segment (Extended).", "zh": "我能使用圆的定理：圆心角、同弓形角、圆内接四边形、交替弓形定理（拓展）。" },
+    { "en": "I can prove triangles are similar and calculate unknown lengths (Extended).", "zh": "我能证明三角形相似并计算未知长度（拓展）。" }
+  ]
+}

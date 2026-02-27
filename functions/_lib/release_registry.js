@@ -197,6 +197,32 @@ export const releaseRegistry = [
     "membership_tier": "",
     "asset_key": "member-files/week07/week-07-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week08-geometry-angles-symmetry-en-2026w17",
+    "version": "v1",
+    "subtopic_id": "cie0580:geometry-c4:c4-01-geometrical-terms",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week08/week-08-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week08-geometry-angles-symmetry-bilingual-2026w17",
+    "version": "v1",
+    "subtopic_id": "cie0580:geometry-c4:c4-01-geometrical-terms",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week08/week-08-bilingual.pdf",
+    "status": "active"
   }
 ];
 

@@ -195,6 +195,19 @@ def _render_bilingual_question(q, num, marks_val, lines, section="core",
         lines.append(f"{{\\small\\color{{gray}}{math_to_latex(q_zh)}}}")
         lines.append("")
 
+    # Figure (raw LaTeX/TikZ — output directly, no escaping)
+    figure = q.get("figure", [])
+    if figure:
+        lines.append(r"\vspace{2mm}")
+        lines.append(r"\begin{center}")
+        if isinstance(figure, list):
+            lines.extend(figure)
+        else:
+            lines.append(figure)
+        lines.append(r"\end{center}")
+        lines.append(r"\vspace{1mm}")
+        lines.append("")
+
     # Answer box — height scales with marks/difficulty
     if marks_val <= 2:
         height = "1.3cm"

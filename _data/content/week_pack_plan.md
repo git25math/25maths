@@ -16,7 +16,7 @@
 | 05 | **Algebra: Expressions, Manipulation & Equations** | C2.1, C2.2, C2.5, E2.1, E2.2, E2.5 | Substitution, expanding brackets, factorising, solving linear equations, simultaneous equations | DONE |
 | 06 | **Algebra: Inequalities, Sequences & Functions** | C2.6, C2.7, E2.6, E2.7, E2.13 | Linear inequalities, number patterns, nth term, quadratic sequences, function notation (Extended) | DONE |
 | 07 | **Coordinate Geometry & Linear Graphs** | C3.1-C3.6, E3.1-E3.7 | Plotting coordinates, gradient, y = mx + c, parallel/perpendicular lines, midpoint & distance (Extended) | DONE |
-| 08 | **Geometry: Angles, Symmetry & Constructions** | C4.1-C4.6, E4.1-E4.6 | Angle properties (triangles, parallel lines, polygons), line/rotational symmetry, constructions, loci, circle theorems (Extended) | |
+| 08 | **Geometry: Angles, Symmetry & Constructions** | C4.1-C4.6, E4.1-E4.6 | Angle properties (triangles, parallel lines, polygons), line/rotational symmetry, constructions, loci, circle theorems (Extended) | DONE |
 | 09 | **Mensuration: Area, Volume & Surface Area** | C5.1-C5.5, E5.1-E5.5 | Perimeter & area (rectangles, triangles, circles), arc length & sector area, surface area & volume (prisms, cylinders, cones, spheres) | |
 | 10 | **Trigonometry & Pythagoras** | C6.1, C6.2, E6.1-E6.6 | Pythagoras' theorem, SOHCAHTOA, exact trig values, sine/cosine rule, area = ½ab sin C, 3D problems (Extended) | |
 | 11 | **Probability** | C8.1-C8.3, E8.1-E8.4 | Probability scale, experimental probability, expected frequency, combined events (tree diagrams, Venn diagrams), conditional probability (Extended) | |
