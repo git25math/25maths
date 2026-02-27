@@ -89,9 +89,18 @@
     {
       "id": "q003", "board": "CIE 0580", "track": "Core", "marks": 2, "topic": ["Experimental Probability", "Relative Frequency"],
       "question": {
-        "en": "Amir rolls a biased dice 200 times. The table shows his results.\n\n| Score | 1 | 2 | 3 | 4 | 5 | 6 |\n|-------|---|---|---|---|---|---|\n| Frequency | 28 | 35 | 30 | 42 | 33 | 32 |\n\n(a) Find the relative frequency of rolling a 4.\n\n(b) Is the dice fair? Give a reason for your answer.",
-        "zh": "Amir 掷一枚不均匀的骰子 200 次。下表是他的结果。\n\n| 点数 | 1 | 2 | 3 | 4 | 5 | 6 |\n|------|---|---|---|---|---|---|\n| 频数 | 28 | 35 | 30 | 42 | 33 | 32 |\n\n(a) 求掷出 4 的相对频率。\n\n(b) 这枚骰子公平吗？给出你的理由。"
+        "en": "Amir rolls a biased dice 200 times. The table shows his results.\n\n(a) Find the relative frequency of rolling a 4.\n\n(b) Is the dice fair? Give a reason for your answer.",
+        "zh": "Amir 掷一枚不均匀的骰子 200 次。下表是他的结果。\n\n(a) 求掷出 4 的相对频率。\n\n(b) 这枚骰子公平吗？给出你的理由。"
       },
+      "figure": [
+        "\\begin{tabular}{|c|c|c|c|c|c|c|}",
+        "\\hline",
+        "\\textbf{Score} & 1 & 2 & 3 & 4 & 5 & 6 \\\\",
+        "\\hline",
+        "\\textbf{Frequency} & 28 & 35 & 30 & 42 & 33 & 32 \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
       "answer": { "en": "(a) 0.21\n(b) The dice may not be fair. The relative frequency of 4 is 0.21 which is noticeably higher than 1/6 (approx 0.167).", "zh": "(a) 0.21\n(b) 骰子可能不公平。4 的相对频率为 0.21，明显高于 1/6（约 0.167）。" },
       "solution": {
         "en": [
@@ -135,9 +144,22 @@
     {
       "id": "q005", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Two-way Table", "Probability"],
       "question": {
-        "en": "120 students were asked whether they prefer football or basketball.\nThe results are shown in the two-way table.\n\n|           | Football | Basketball | Total |\n|-----------|----------|------------|-------|\n| Boys      | 35       | 25         | 60    |\n| Girls     | 28       | 32         | 60    |\n| Total     | 63       | 57         | 120   |\n\nA student is chosen at random.\n\n(a) Find the probability that the student is a girl who prefers basketball.\n\n(b) Find the probability that the student prefers football.\n\n(c) Find the probability that the student is a boy or prefers basketball (or both).",
-        "zh": "120 名学生被问到喜欢足球还是篮球。\n结果如下表所示。\n\n|       | 足球 | 篮球 | 总计 |\n|-------|------|------|------|\n| 男生  | 35   | 25   | 60   |\n| 女生  | 28   | 32   | 60   |\n| 总计  | 63   | 57   | 120  |\n\n随机选一名学生。\n\n(a) 求选到喜欢篮球的女生的概率。\n\n(b) 求选到喜欢足球的学生的概率。\n\n(c) 求选到男生或喜欢篮球（或两者兼具）的概率。"
+        "en": "120 students were asked whether they prefer football or basketball.\nThe results are shown in the two-way table.\n\nA student is chosen at random.\n\n(a) Find the probability that the student is a girl who prefers basketball.\n\n(b) Find the probability that the student prefers football.\n\n(c) Find the probability that the student is a boy or prefers basketball (or both).",
+        "zh": "120 名学生被问到喜欢足球还是篮球。\n结果如下表所示。\n\n随机选一名学生。\n\n(a) 求选到喜欢篮球的女生的概率。\n\n(b) 求选到喜欢足球的学生的概率。\n\n(c) 求选到男生或喜欢篮球（或两者兼具）的概率。"
       },
+      "figure": [
+        "\\begin{tabular}{|l|c|c|c|}",
+        "\\hline",
+        " & \\textbf{Football} & \\textbf{Basketball} & \\textbf{Total} \\\\",
+        "\\hline",
+        "\\textbf{Boys} & 35 & 25 & 60 \\\\",
+        "\\hline",
+        "\\textbf{Girls} & 28 & 32 & 60 \\\\",
+        "\\hline",
+        "\\textbf{Total} & 63 & 57 & 120 \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
       "answer": { "en": "(a) 4/15\n(b) 21/40\n(c) 23/30", "zh": "(a) 4/15\n(b) 21/40\n(c) 23/30" },
       "solution": {
         "en": [
@@ -164,9 +186,22 @@
     {
       "id": "q006", "board": "CIE 0580", "track": "Core", "marks": 3, "topic": ["Combined Events", "Listing Outcomes"],
       "question": {
-        "en": "Two fair spinners are spun.\nSpinner A has the numbers 1, 2, 3.\nSpinner B has the numbers 1, 2, 3, 4.\n\nThe scores on the two spinners are added together.\n\n(a) Complete the sample space diagram.\n\n|         | B = 1 | B = 2 | B = 3 | B = 4 |\n|---------|-------|-------|-------|-------|\n| A = 1   | 2     |       |       |       |\n| A = 2   |       |       |       |       |\n| A = 3   |       |       |       |       |\n\n(b) Find the probability that the total score is 5.\n\n(c) Find the probability that the total score is greater than 4.",
-        "zh": "旋转两个均匀转盘。\n转盘 A 上的数字为 1、2、3。\n转盘 B 上的数字为 1、2、3、4。\n\n两个转盘的点数相加。\n\n(a) 完成样本空间图。\n\n|         | B = 1 | B = 2 | B = 3 | B = 4 |\n|---------|-------|-------|-------|-------|\n| A = 1   | 2     |       |       |       |\n| A = 2   |       |       |       |       |\n| A = 3   |       |       |       |       |\n\n(b) 求总分为 5 的概率。\n\n(c) 求总分大于 4 的概率。"
+        "en": "Two fair spinners are spun.\nSpinner A has the numbers 1, 2, 3.\nSpinner B has the numbers 1, 2, 3, 4.\n\nThe scores on the two spinners are added together.\n\n(a) Complete the sample space diagram.\n\n(b) Find the probability that the total score is 5.\n\n(c) Find the probability that the total score is greater than 4.",
+        "zh": "旋转两个均匀转盘。\n转盘 A 上的数字为 1、2、3。\n转盘 B 上的数字为 1、2、3、4。\n\n两个转盘的点数相加。\n\n(a) 完成样本空间图。\n\n(b) 求总分为 5 的概率。\n\n(c) 求总分大于 4 的概率。"
       },
+      "figure": [
+        "\\begin{tabular}{|c|c|c|c|c|}",
+        "\\hline",
+        "\\textbf{+} & \\textbf{B = 1} & \\textbf{B = 2} & \\textbf{B = 3} & \\textbf{B = 4} \\\\",
+        "\\hline",
+        "\\textbf{A = 1} & 2 & & & \\\\",
+        "\\hline",
+        "\\textbf{A = 2} & & & & \\\\",
+        "\\hline",
+        "\\textbf{A = 3} & & & & \\\\",
+        "\\hline",
+        "\\end{tabular}"
+      ],
       "answer": { "en": "(a) See completed table\n(b) 1/4\n(c) 1/2", "zh": "(a) 见完整表格\n(b) 1/4\n(c) 1/2" },
       "solution": {
         "en": [
