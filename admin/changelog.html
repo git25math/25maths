@@ -26,6 +26,60 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-02-27 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-02-27</span>
+                <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-full font-semibold">HOMEPAGE UI</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Homepage visual hierarchy optimization — color accents, blog section, and evidence strip</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Hero trust metrics</strong>: Added trust signal row below subtitle ("202 free exercises · 9.7/10 accuracy · Designed by an international school educator") and dark top-border accent line across all three homepages (/, /en/, /zh-cn/).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Hero CTA upgrade</strong>: Primary "Try Free Exercises" CTA upgraded from text-link to solid button (`bg-gray-900 text-white rounded-lg`); secondary CTA kept as text link. Applied to all three homepages.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Practice Ecosystem color accents</strong>: Added colored top-stripes to the three practice cards — CIE rust for Worksheet Library, emerald green for Interactive Exercises, Kahoot purple for Kahoot Practice.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Start Free colored numbers</strong>: Stat numbers given distinctive colors — 202 in brand primary, 14 in CIE rust (`cie-solid-text`), 40+ in Kahoot purple (`kahoot-solid-text`).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Term Practice Pass accent</strong>: Added left border accent (`accent-left-dark`) and changed price to `text-primary` for visual emphasis.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Framework simplification</strong>: Removed 3 negative-framing "problem" cards; kept 4 numbered "how we help" cards in 2×2 grid. Heading rewritten to positive framing ("Four layers that turn effort into consistent exam results").</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Blog preview section</strong>: Added "Latest Articles" section before About with 3-column grid of latest English blog posts using `site.posts` data.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>About section enhanced</strong>: Added 9.7/10 accuracy rating mention and closing CTA row ("Get Started" button + "View Free Resources" text link).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Evidence strip images</strong>: Created 4 platform screenshot images (exercises-hub, free-packs, kahoot-hub, term-pass) as webp in `/assets/evidence/`.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>CSS utilities</strong>: Added `kahoot-solid-text` and homepage accent helpers (`accent-top-4`, `accent-top-dark`, `accent-top-cie`, `accent-top-green`, `accent-top-kahoot`, `accent-left-4`, `accent-left-dark`) to `head.html`.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: index.html, en/index.html, zh-cn/index.html, _includes/head.html, assets/evidence/*.webp
+            </div>
+        </div>
+
         <!-- 2026-02-19 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
