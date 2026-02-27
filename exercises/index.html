@@ -1,8 +1,16 @@
 ---
 title: "Interactive Exercises"
 subtitle: "Find practice by exam board, tier, and syllabus code."
+description: "Free interactive IGCSE maths exercises for CIE 0580 and Edexcel 4MA1. Filter by exam board, tier, and syllabus code."
 layout: "global"
 active_global: exercises
+lang_links:
+  - code: en
+    label: EN
+    url: /exercises/
+  - code: zh-CN
+    label: 简体
+    url: /exercises/
 ---
 
 {% assign sorted_exercises = site.exercises | sort: "subtopic_id" %}

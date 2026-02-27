@@ -27,6 +27,7 @@ lang_links:
             <p class="text-gray-600 mb-8">We use your answers to prioritize future topics and notify you when new packs go live.</p>
             <p class="bilingual-support-only text-sm text-gray-600 mb-8">你的反馈将用于确定后续更新优先级，并在新资源上线时第一时间通知你。</p>
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-5">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <input type="hidden" name="topic" value="Free Gift Pack">
                 <input type="hidden" name="module" value="CIE 0580 + Edexcel 4MA1">
                 <input type="hidden" name="lang" value="en">

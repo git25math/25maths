@@ -35,7 +35,7 @@
     {% assign words = content | number_of_words %}
     {% assign read_time = words | divided_by: 220 | plus: 1 %}
 
-    <article class="bg-white">
+    <article id="main-content" class="bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <div class="mb-8">
                 <p class="text-sm text-gray-500">
@@ -157,6 +157,7 @@
             <div class="mt-12">
                 <h2 class="text-2xl font-semibold mb-4">{{ ask_title }}</h2>
                 <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-4">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                     <input type="hidden" name="topic" value="Blog Question">
                     <input type="hidden" name="module" value="Blog">
                     <input type="hidden" name="lang" value="{{ page.lang | default: 'en' }}">
@@ -166,12 +167,19 @@
                     <input type="hidden" name="_subject" value="Blog Question Form">
                     <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" name="name" required placeholder="{{ name_ph }}"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
-                        <input type="email" name="email" required placeholder="{{ email_ph }}"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                        <div>
+                            <label for="blog-q-name" class="sr-only">{{ name_ph }}</label>
+                            <input id="blog-q-name" type="text" name="name" required placeholder="{{ name_ph }}"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                        </div>
+                        <div>
+                            <label for="blog-q-email" class="sr-only">{{ email_ph }}</label>
+                            <input id="blog-q-email" type="email" name="email" required placeholder="{{ email_ph }}"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                        </div>
                     </div>
-                    <textarea name="message" rows="5" required placeholder="{{ msg_ph }}"
+                    <label for="blog-q-message" class="sr-only">{{ msg_ph }}</label>
+                    <textarea id="blog-q-message" name="message" rows="5" required placeholder="{{ msg_ph }}"
                         class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
                     <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-400">
                         {{ send_label }}

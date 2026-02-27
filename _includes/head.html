@@ -39,7 +39,7 @@
 {% endif %}
 
 <!-- Twitter Card -->
-<meta name="twitter:card" content="{% if page.og_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:card" content="{% if page.og_image or site.og_image_default %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{{ page.title }} | 25Maths">
 <meta name="twitter:description" content="{{ page.description | default: page.subtitle | default: site.description }}">
 {% if page.og_image %}<meta name="twitter:image" content="{{ site.url }}{{ page.og_image }}">{% elsif site.og_image_default %}<meta name="twitter:image" content="{{ site.url }}{{ site.og_image_default }}">{% endif %}

@@ -44,7 +44,7 @@
 ]
     {% endcapture %}
 
-    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main id="main-content" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header class="mb-8">
             <h1 class="text-4xl font-semibold text-gray-900">{{ page.title }}</h1>
             {% if page.subtitle %}<p class="text-lg text-gray-600 mt-2">{{ page.subtitle }}</p>{% endif %}
@@ -90,7 +90,7 @@
         {% endif %}
 
         {% if exercise_links or board_slug != '' %}
-        <section id="resource-loop" class="resource-loop {{ loop_theme_class }} mt-8 rounded-xl border border-gray-200 bg-white p-5">
+        <section id="resource-loop" aria-label="Practice resource loop" class="resource-loop {{ loop_theme_class }} mt-8 rounded-xl border border-gray-200 bg-white p-5">
             <h2 class="text-xl font-semibold text-gray-900">Continue This Topic Loop</h2>
             <p class="mt-1 text-sm text-gray-600">Loop path: L0 interactive practice -> Kahoot warm-up -> L1 worksheet -> L2/L3 bundle revision.</p>
             <div class="mt-4 space-y-3">

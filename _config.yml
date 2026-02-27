@@ -5,6 +5,7 @@ url: "https://www.25maths.com"
 baseurl: ""
 repository: "git25math/25maths"
 assets_version: "20260219-bilingual-shutter-v2"
+og_image_default: "/assets/evidence/exercises-hub.webp"
 
 # Waitlist collection (single endpoint for all topics)
 waitlist:
@@ -80,6 +81,13 @@ exclude:
   - tex/
   - build/
   - tools/
+  - "*.aux"
+  - "*.log"
+  - "*.fls"
+  - "*.fdb_latexmk"
+  - "*.out"
+  - scripts/
+  - payhip/presale/
 
 # Keep Cloudflare Pages edge redirect rules in generated output.
 include:

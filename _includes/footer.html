@@ -54,10 +54,10 @@
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-4">{{ footer_boards_label }}</h4>
-                <ul class="space-y-2 text-sm">
+                <ul class="space-y-1 text-sm">
                     {% for mod in site.modules %}
                     <li>
-                        <a href="{{ mod.path }}" class="hover:text-white transition">
+                        <a href="{{ mod.path }}" class="inline-block py-1 hover:text-white transition">
                             {{ mod.name }}
                             {% if mod.status == 'coming_soon' %}<span class="text-gray-500">(coming soon)</span>{% endif %}
                         </a>
@@ -67,11 +67,11 @@
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-4">{{ footer_free_label }}</h4>
-                <ul class="space-y-2 text-sm">
+                <ul class="space-y-1 text-sm">
                     {% for mod in site.modules %}
                     {% if mod.status == 'active' and mod.free_count > 0 %}
                     <li>
-                        <a href="{{ mod.path }}free/" class="hover:text-white transition">
+                        <a href="{{ mod.path }}free/" class="inline-block py-1 hover:text-white transition">
                             {{ mod.name }} ({{ mod.free_count }})
                         </a>
                     </li>
@@ -81,26 +81,26 @@
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-4">{{ footer_platform_label }}</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="{{ blog_path }}" class="hover:text-white transition">{{ blog_label }}</a></li>
-                    <li><a href="{{ kahoot_path }}" class="hover:text-white transition">{{ kahoot_label }}</a></li>
-                    <li><a href="{{ exercises_path }}" class="hover:text-white transition">{{ exercises_label }}</a></li>
-                    <li><a href="{{ membership_path }}" class="hover:text-white transition">{{ membership_label }}</a></li>
-                    <li><a href="/membership/" class="hover:text-white transition">{{ footer_member_label }}</a></li>
-                    <li><a href="/membership/leaderboard.html" class="hover:text-white transition">{{ footer_leaderboard_label }}</a></li>
-                    <li><a href="/institution/" class="hover:text-white transition">{{ footer_institution_label }}</a></li>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="{{ blog_path }}" class="inline-block py-1 hover:text-white transition">{{ blog_label }}</a></li>
+                    <li><a href="{{ kahoot_path }}" class="inline-block py-1 hover:text-white transition">{{ kahoot_label }}</a></li>
+                    <li><a href="{{ exercises_path }}" class="inline-block py-1 hover:text-white transition">{{ exercises_label }}</a></li>
+                    <li><a href="{{ membership_path }}" class="inline-block py-1 hover:text-white transition">{{ membership_label }}</a></li>
+                    <li><a href="/membership/" class="inline-block py-1 hover:text-white transition">{{ footer_member_label }}</a></li>
+                    <li><a href="/membership/leaderboard.html" class="inline-block py-1 hover:text-white transition">{{ footer_leaderboard_label }}</a></li>
+                    <li><a href="/institution/" class="inline-block py-1 hover:text-white transition">{{ footer_institution_label }}</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-4">{{ footer_help_label }}</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="/faq.html" class="hover:text-white transition">{{ footer_faq_label }}</a></li>
-                    <li><a href="/about.html" class="hover:text-white transition">{{ about_label }}</a></li>
-                    <li><a href="/support.html" class="hover:text-white transition">{{ support_label }}</a></li>
-                    <li><a href="/membership/parent-dashboard.html" class="hover:text-white transition">{{ footer_parent_label }}</a></li>
-                    {% if page.lang == 'zh-CN' %}<li><a href="/zh-cn/parents.html" class="hover:text-white transition">家长专区</a></li>{% endif %}
-                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/terms.html{% else %}/terms.html{% endif %}" class="hover:text-white transition">{{ terms_label }}</a></li>
-                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/privacy.html{% else %}/privacy.html{% endif %}" class="hover:text-white transition">{{ privacy_label }}</a></li>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="/faq.html" class="inline-block py-1 hover:text-white transition">{{ footer_faq_label }}</a></li>
+                    <li><a href="/about.html" class="inline-block py-1 hover:text-white transition">{{ about_label }}</a></li>
+                    <li><a href="/support.html" class="inline-block py-1 hover:text-white transition">{{ support_label }}</a></li>
+                    <li><a href="/membership/parent-dashboard.html" class="inline-block py-1 hover:text-white transition">{{ footer_parent_label }}</a></li>
+                    {% if page.lang == 'zh-CN' %}<li><a href="/zh-cn/parents.html" class="inline-block py-1 hover:text-white transition">家长专区</a></li>{% endif %}
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/terms.html{% else %}/terms.html{% endif %}" class="inline-block py-1 hover:text-white transition">{{ terms_label }}</a></li>
+                    <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/privacy.html{% else %}/privacy.html{% endif %}" class="inline-block py-1 hover:text-white transition">{{ privacy_label }}</a></li>
                 </ul>
             </div>
         </div>

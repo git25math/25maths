@@ -178,9 +178,10 @@
     function syncToggleUi(enabled) {
         var toggles = document.querySelectorAll('[data-bilingual-toggle]');
         toggles.forEach(function(toggle) {
-            toggle.setAttribute('aria-pressed', enabled ? 'true' : 'false');
             if (toggle.getAttribute('role') === 'switch') {
                 toggle.setAttribute('aria-checked', enabled ? 'true' : 'false');
+            } else {
+                toggle.setAttribute('aria-pressed', enabled ? 'true' : 'false');
             }
             toggle.classList.toggle('bilingual-toggle-on', enabled);
             if (toggle.tagName === 'INPUT' && toggle.type === 'checkbox') {

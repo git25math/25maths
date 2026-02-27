@@ -27,6 +27,7 @@ lang_links:
             <h2 class="text-2xl font-semibold text-gray-900 mb-2">Quick survey, instant access</h2>
             <p class="text-gray-600 mb-8">We use your answers to prioritize future topics and notify you when new packs go live.</p>
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-5">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <input type="hidden" name="topic" value="Free Gift Pack">
                 <input type="hidden" name="module" value="CIE 0580 + Edexcel 4MA1">
                 <input type="hidden" name="lang" value="en">

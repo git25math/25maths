@@ -40,6 +40,7 @@ lang_links:
         <h2 class="text-3xl font-semibold text-center mb-8">联系我们</h2>
         <div class="bg-white p-8 rounded-xl shadow-sm">
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-6">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <input type="hidden" name="topic" value="Support">
                 <input type="hidden" name="module" value="General Support">
                 <input type="hidden" name="lang" value="zh-CN">
@@ -49,16 +50,16 @@ lang_links:
                 <input type="hidden" name="product" value="Support Request">
                 <input type="hidden" name="redirect_url" value="{{ site.url }}/zh-cn/support-thanks.html">
                 <div>
-                    <label class="block text-sm font-semibold mb-2">姓名</label>
-                    <input type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400" required>
+                    <label class="block text-sm font-semibold mb-2" for="zh-support-name">姓名</label>
+                    <input id="zh-support-name" type="text" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold mb-2">邮箱</label>
-                    <input type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400" required>
+                    <label class="block text-sm font-semibold mb-2" for="zh-support-email">邮箱</label>
+                    <input id="zh-support-email" type="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400" required>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold mb-2">主题</label>
-                    <select name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                    <label class="block text-sm font-semibold mb-2" for="zh-support-subject">主题</label>
+                    <select id="zh-support-subject" name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
                         <option>一般咨询</option>
                         <option>产品问题</option>
                         <option>技术支持</option>
@@ -67,8 +68,8 @@ lang_links:
                     </select>
                 </div>
                 <div>
-                    <label class="block text-sm font-semibold mb-2">留言内容</label>
-                    <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400" required></textarea>
+                    <label class="block text-sm font-semibold mb-2" for="zh-support-message">留言内容</label>
+                    <textarea id="zh-support-message" name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400" required></textarea>
                 </div>
                 <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">提交留言</button>
             </form>
