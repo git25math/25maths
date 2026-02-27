@@ -1,8 +1,8 @@
 ---
 redirect_to: /subscription.html
 layout: global
-title: Weekly Topic Membership
-description: "Weekly topical practice packs for CIE 0580 — graded difficulty, full solutions, and a clear progress path."
+title: CIE 0580 Term Practice Pass
+description: "12-week topical practice pass for CIE 0580 — graded difficulty, full solutions, and a clear progress path. One-time purchase."
 active_global: membership
 lang: en
 lang_links:
@@ -16,14 +16,14 @@ lang_links:
 
 <section class="bg-gradient-to-br from-primary to-purple-900 text-white py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Weekly Topic Mastery for CIE 0580</h1>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">CIE 0580 Term Practice Pass</h1>
         <p class="text-lg md:text-2xl opacity-90 mb-8">
-            Every week: one high‑quality topical practice pack with solutions — built to match the exam.
+            12 weekly topical practice packs with full solutions — one payment, full term access.
         </p>
         <a href="#pricing" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition">
-            Start Membership
+            Get Term Pass
         </a>
-        <p class="text-sm opacity-80 mt-3">$9.99 / month · Cancel anytime</p>
+        <p class="text-sm opacity-80 mt-3">$24.99 one-time · 12 weeks of practice packs</p>
     </div>
 </section>
 
@@ -55,7 +55,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-6 text-center">
             <div class="bg-white rounded-xl p-6 shadow-sm">
                 <div class="text-2xl font-bold text-primary mb-2">1</div>
-                <p class="text-gray-700">Subscribe and get the next pack within 7 days.</p>
+                <p class="text-gray-700">Purchase the Term Pass and get instant access.</p>
             </div>
             <div class="bg-white rounded-xl p-6 shadow-sm">
                 <div class="text-2xl font-bold text-primary mb-2">2</div>
@@ -71,29 +71,19 @@ lang_links:
 
 <section class="py-16 bg-white" id="pricing">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-4">Membership Pricing</h2>
-        <p class="text-gray-600 mb-8">Membership checkout opens soon. Join the priority list now and get first access.</p>
+        <h2 class="text-3xl font-bold mb-4">Term Pass Pricing</h2>
+        <p class="text-gray-600 mb-8">One payment. 12 weeks of practice.</p>
         <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border">
-            <div class="text-5xl font-bold text-primary mb-2">$9.99</div>
-            <div class="text-gray-600 mb-6">per month</div>
-            <form action="{{ site.waitlist.endpoint }}" method="POST" class="max-w-md mx-auto space-y-4 text-left">
-                <input type="hidden" name="topic" value="Weekly Membership">
-                <input type="hidden" name="module" value="CIE 0580">
-                <input type="hidden" name="lang" value="en">
-                <input type="hidden" name="source_page" value="{{ page.url }}">
-                <input type="hidden" name="entry_point" value="membership_waitlist">
-                <input type="hidden" name="product" value="Weekly Membership">
-                <input type="hidden" name="_subject" value="Weekly Membership Waitlist">
-                <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
-                <input type="text" name="name" placeholder="Name (optional)" class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                <input type="email" name="email" required placeholder="Email address" class="w-full border border-gray-300 rounded-lg px-4 py-3">
-                <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition">
-                    Join Priority Waitlist
-                </button>
-            </form>
-            <p class="text-sm text-gray-500 mt-4">You will receive launch notice, early access link, and onboarding details by email.</p>
+            <div class="text-5xl font-bold text-primary mb-2">$24.99</div>
+            <div class="text-gray-600 mb-6">one-time purchase</div>
+            <a href="https://payhip.com/b/eN4l6"
+               data-payhip-product="eN4l6"
+               class="payhip-button inline-block w-full max-w-md bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">
+                Get Term Pass — $24.99
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Secure checkout via Payhip. Instant access after purchase.</p>
             <p class="text-sm mt-3">
-                <a href="/membership/" class="text-primary font-semibold hover:underline">Preview Member Resource Center →</a>
+                <a href="/membership/" class="text-primary font-semibold hover:underline">Member Resource Center →</a>
             </p>
         </div>
     </div>
