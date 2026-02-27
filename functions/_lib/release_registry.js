@@ -119,6 +119,32 @@ export const releaseRegistry = [
     "membership_tier": "",
     "asset_key": "member-files/week04/week-04-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week05-algebra-expressions-equations-en-2026w14",
+    "version": "v1",
+    "subtopic_id": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week05/week-05-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week05-algebra-expressions-equations-bilingual-2026w14",
+    "version": "v1",
+    "subtopic_id": "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week05/week-05-bilingual.pdf",
+    "status": "active"
   }
 ];
 
