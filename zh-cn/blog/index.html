@@ -56,12 +56,12 @@ lang_links:
 <section class="py-16 bg-white border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between gap-4 mb-6">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">建议先读</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">建议先读</h2>
             <a href="#all-guides" class="text-primary font-semibold hover:underline">查看全部文章 →</a>
         </div>
         <article class="bg-gray-50 border border-gray-200 rounded-2xl p-7 md:p-8">
             <p class="text-xs uppercase tracking-wider text-gray-500 mb-3">最新文章</p>
-            <h3 class="text-3xl font-bold text-gray-900 mb-3">
+            <h3 class="text-3xl font-semibold text-gray-900 mb-3">
                 <a href="{{ latest_post.url | relative_url }}" class="hover:text-primary transition">{{ latest_post.title }}</a>
             </h3>
             {% if latest_summary %}
@@ -70,7 +70,7 @@ lang_links:
             <p class="text-sm text-gray-500 mb-6">
                 <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: "%Y-%m-%d" }}</time>{% if latest_post.category %} · {{ latest_post.category }}{% endif %} · 约 {{ latest_read_time }} 分钟阅读
             </p>
-            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
                 阅读这篇文章
             </a>
         </article>
@@ -82,7 +82,7 @@ lang_links:
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between gap-4 mb-6">
             <div>
-                <h2 class="text-3xl font-bold text-gray-900">全部文章</h2>
+                <h2 class="text-3xl font-semibold text-gray-900">全部文章</h2>
                 <p class="text-gray-600">按考试场景组织，方便快速找到可执行的方法。</p>
             </div>
         </div>
@@ -106,7 +106,7 @@ lang_links:
             {% assign post_words = post.content | number_of_words %}
             {% assign post_read_time = post_words | divided_by: 220 | plus: 1 %}
             {% assign post_summary = post.subtitle | default: post.excerpt %}
-            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
                 data-category="{{ post.category }}"
                 data-lang="{{ post.lang }}"
                 data-read-time="{{ post_read_time }}"
@@ -115,7 +115,7 @@ lang_links:
                 <p class="text-xs text-gray-500 mb-2">
                     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>{% if post.category %} · {{ post.category }}{% endif %} · 约 {{ post_read_time }} 分钟阅读
                 </p>
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">
                     <a href="{{ post.url | relative_url }}" class="hover:text-primary transition">{{ post.title }}</a>
                 </h3>
                 {% if post_summary %}<p class="text-gray-600 mb-4">{{ post_summary | strip_html | strip_newlines | truncate: 160 }}</p>{% endif %}
@@ -135,21 +135,21 @@ lang_links:
 <section class="py-16 bg-white border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">按目标开始练习</h2>
+            <h2 class="text-3xl font-semibold text-gray-900">按目标开始练习</h2>
             <p class="text-gray-600">看完文章后，直接进入对应练习场景，形成闭环。</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6">
-            <a href="/zh-cn/cie0580/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="/zh-cn/cie0580/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs uppercase tracking-wider text-gray-500">CIE 0580</p>
                 <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">专题分块训练</h3>
                 <p class="text-gray-600">按题型和考点刷题，巩固文章中的方法。</p>
             </a>
-            <a href="/edx4ma1/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="/edx4ma1/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs uppercase tracking-wider text-gray-500">Edexcel 4MA1</p>
                 <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">考纲定向练习</h3>
                 <p class="text-gray-600">聚焦 Edexcel 常考场景，提升做题稳定性。</p>
             </a>
-            <a href="/zh-cn/exercises/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="/zh-cn/exercises/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs uppercase tracking-wider text-gray-500">互动练习</p>
                 <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">即时反馈训练</h3>
                 <p class="text-gray-600">边做边查错，快速修正失分习惯。</p>
@@ -160,9 +160,9 @@ lang_links:
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-3">想要每周专题练习包？</h2>
+        <h2 class="text-3xl font-semibold mb-3">想要每周专题练习包？</h2>
         <p class="text-gray-600 mb-6">获取学期练习通行证 — 12 周专题练习包含完整解析。</p>
-        <a href="/zh-cn/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+        <a href="/zh-cn/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
             了解通行证
         </a>
     </div>

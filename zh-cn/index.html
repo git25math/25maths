@@ -84,19 +84,19 @@ lang_links:
             <p class="mt-4 text-lg text-gray-600">考试语言是英语，因此主内容以英语呈现，帮助学生适应英语题干与答题表达。</p>
         </div>
         <div class="grid md:grid-cols-3 gap-5">
-            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">01</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">关键术语对照</h3>
                 <p class="mt-3 text-gray-600">提供核心术语的中英对照与常见误区，解决"看得懂但不会答"的问题。</p>
                 <a href="/zh-cn/exercises/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">浏览练习 →</a>
             </article>
-            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">02</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">英文表达引导</h3>
                 <p class="mt-3 text-gray-600">强调题目如何问、答案如何写，帮助用英语准确表达数学思路。</p>
                 <a href="/zh-cn/exercises/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">开始练习 →</a>
             </article>
-            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">03</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">可选术语支持产品</h3>
                 <p class="mt-3 text-gray-600">若需要更深入的术语支持，可单独获取中英对照词汇卡与术语包。</p>
@@ -120,7 +120,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-5">
             {% assign cn_posts = site.posts | where: "lang", "zh-CN" %}
             {% for post in cn_posts limit:3 %}
-            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-lg hover:-translate-y-1 transition ui-focus-ring">
+            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition ui-focus-ring">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%Y-%m-%d" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
@@ -134,7 +134,7 @@ lang_links:
 <!-- 学期练习通行证 -->
 <section class="bg-white py-20 md:py-24 border-b border-gray-100">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">
-        <div class="border border-gray-200 accent-left-dark rounded-2xl p-8 md:p-10 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:shadow-lg transition">
+        <div class="border border-gray-200 accent-left-dark rounded-2xl p-8 md:p-10 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:shadow-md transition">
             <div>
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500 mb-3">Guided Practice</p>
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">学期练习通行证</h2>

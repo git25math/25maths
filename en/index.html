@@ -42,7 +42,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-6">
             <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Interactive Practice Quick Access</h2>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Interactive Practice Quick Access</h2>
                 <p class="text-gray-600">Jump directly into board+tier tracks and keep your Kahoot + worksheet + web loop connected.</p>
             </div>
             <a href="/exercises/" class="text-primary font-semibold hover:underline">Open full exercise hub →</a>
@@ -76,7 +76,7 @@ lang_links:
 <section id="modules" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Exam Board</h2>
+            <h2 class="text-4xl font-semibold text-gray-900 mb-4">Choose Your Exam Board</h2>
             <p class="text-xl text-gray-600">Select your syllabus to access tailored practice resources</p>
         </div>
 
@@ -84,7 +84,7 @@ lang_links:
             {% for mod in site.modules %}
             <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
                 <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}edx-soft-bg edx-soft-border border-b{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
-                    <span class="text-3xl font-bold">{{ mod.name }}</span>
+                    <span class="text-3xl font-semibold">{{ mod.name }}</span>
                     {% if mod.status == 'coming_soon' %}
                     <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
                     {% endif %}
@@ -116,7 +116,7 @@ lang_links:
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
             <div>
-                <h2 class="text-3xl font-bold text-gray-900">Latest Articles</h2>
+                <h2 class="text-3xl font-semibold text-gray-900">Latest Articles</h2>
                 <p class="text-gray-600">Short, practical guides for CIE and Edexcel students.</p>
             </div>
             <a href="/en/blog/" class="text-primary font-semibold hover:underline">View all →</a>
@@ -124,7 +124,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-6">
             {% assign en_posts = site.posts | where: "lang", "en" %}
             {% for post in en_posts limit:3 %}
-            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
@@ -164,11 +164,11 @@ lang_links:
         <div class="bg-gray-50 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
                 <div class="text-xs font-bold text-primary mb-2">NEW</div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Term Practice Pass</h2>
+                <h2 class="text-3xl font-semibold text-gray-900 mb-2">Term Practice Pass</h2>
                 <p class="text-gray-600">12 weekly topical practice packs with full solutions. Built for CIE 0580.</p>
             </div>
             <div class="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-4">
-                <div class="text-2xl font-bold text-primary whitespace-nowrap">$24.99<span class="text-sm text-gray-500 font-medium"> one-time</span></div>
+                <div class="text-2xl font-semibold text-primary whitespace-nowrap">$24.99<span class="text-sm text-gray-500 font-medium"> one-time</span></div>
                 <a href="/subscription.html" class="w-full sm:w-auto cta-btn-equal bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
                     Get Term Pass
                 </a>

@@ -92,19 +92,19 @@ lang_links:
         </div>
 
         <div class="grid md:grid-cols-3 gap-5">
-            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-3xl font-semibold text-primary">202</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">Interactive Exercises</h3>
                 <p class="mt-3 text-gray-600">Instant-feedback practice sets covering CIE 0580 Core/Extended and Edexcel 4MA1 Foundation/Higher.</p>
                 <a href="/exercises/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">Start now →</a>
             </article>
-            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-3xl font-semibold cie-solid-text">14</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">Free Worksheet Packs</h3>
                 <p class="mt-3 text-gray-600">Download structured topic packs with full solutions — 8 for CIE 0580, 6 for Edexcel 4MA1.</p>
                 <a href="/cie0580/free/" class="mt-4 inline-block text-sm font-semibold text-gray-900 hover:text-gray-600 transition">Browse free packs →</a>
             </article>
-            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-3xl font-semibold kahoot-solid-text">40+</p>
                 <h3 class="mt-2 text-xl font-semibold text-gray-900">Kahoot Quizzes</h3>
                 <p class="mt-3 text-gray-600">Classroom-ready retrieval quizzes for quick revision — free to play, no account required.</p>
@@ -117,7 +117,7 @@ lang_links:
 <!-- Term Practice Pass -->
 <section class="bg-gray-50 py-20 md:py-24 border-b border-gray-100">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">
-        <div class="border border-gray-200 accent-left-dark rounded-2xl p-8 md:p-10 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:shadow-lg transition">
+        <div class="border border-gray-200 accent-left-dark rounded-2xl p-8 md:p-10 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:shadow-md transition">
             <div>
                 <p class="text-xs font-semibold tracking-widest uppercase text-gray-500 mb-3">Guided Practice</p>
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Term Practice Pass</h2>
@@ -185,7 +185,7 @@ lang_links:
         <div class="grid md:grid-cols-3 gap-5">
             {% assign en_posts = site.posts | where: "lang", "en" %}
             {% for post in en_posts limit:3 %}
-            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
