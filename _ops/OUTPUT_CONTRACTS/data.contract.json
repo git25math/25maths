@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "25maths-content-data-contract",
+  "title": "25Maths Content Data Contract",
+  "description": "Schema for exercise/content data files. Any AI agent producing content must output data conforming to this contract.",
+
+  "definitions": {
+    "subtopic_id": {
+      "type": "string",
+      "pattern": "^(cie0580|edexcel-4ma1):[a-z]+-[a-z0-9]+:[a-z0-9]+-[a-z0-9-]+$",
+      "description": "Format: {board}:{domain}-{section}:{code}-{slug}",
+      "examples": [
+        "cie0580:algebra-c2:c2-01-introduction-to-algebra",
+        "edexcel-4ma1:number-h1:h1-05-set-language-and-notation"
+      ]
+    },
+
+    "board": {
+      "type": "string",
+      "enum": ["CIE 0580", "Edexcel 4MA1"]
+    },
+
+    "tier": {
+      "type": "string",
+      "enum": ["Core", "Extended", "Foundation", "Higher"]
+    },
+
+    "domain": {
+      "type": "string",
+      "enum": ["algebra", "number", "geometry", "coordinate", "trigonometry", "calculus", "statistics", "probability", "sets", "functions", "matrices", "vectors"]
+    },
+
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1=basic recall, 2=standard application, 3=multi-step, 4=problem solving, 5=extended challenge"
+    },
+
+    "question": {
+      "type": "object",
+      "required": ["type", "questionText", "options", "correctAnswer", "explanation"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["multiple-choice"],
+          "description": "Currently only MCQ supported"
+        },
+        "questionText": {
+          "type": "string",
+          "description": "Question stem. Math in backticks: `x^2 + 3x - 4`"
+        },
+        "questionText_zh": {
+          "type": "string",
+          "description": "Optional Simplified Chinese translation"
+        },
+        "options": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 3,
+          "maxItems": 5,
+          "description": "Answer choices. Math in backticks."
+        },
+        "correctAnswer": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Zero-based index of correct option"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "Step-by-step solution. Math in backticks."
+        },
+        "explanation_zh": {
+          "type": "string",
+          "description": "Optional Chinese explanation"
+        },
+        "difficulty": { "$ref": "#/definitions/difficulty" },
+        "marks": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "Mark allocation (for PDF packs)"
+        },
+        "syllabus_ref": {
+          "type": "string",
+          "description": "Syllabus reference code, e.g., C2.1, E2.5"
+        },
+        "common_errors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Typical student mistakes for this question"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Topic tags for filtering: [\"indices\", \"negative-exponents\", \"simplification\"]"
+        }
+      }
+    },
+
+    "exercise_set": {
+      "type": "object",
+      "required": ["topic", "board", "subtopicId", "syllabusCode", "tier", "domain", "questions"],
+      "properties": {
+        "topic": {
+          "type": "string",
+          "description": "Human-readable topic name"
+        },
+        "board": { "$ref": "#/definitions/board" },
+        "subtopicId": { "$ref": "#/definitions/subtopic_id" },
+        "syllabusCode": {
+          "type": "string",
+          "pattern": "^[A-Z][0-9]-[0-9]{2}$",
+          "description": "Syllabus section code, e.g., C2-01, E4-03"
+        },
+        "tier": { "$ref": "#/definitions/tier" },
+        "domain": { "$ref": "#/definitions/domain" },
+        "questions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/question" },
+          "minItems": 8,
+          "maxItems": 15,
+          "description": "10-12 questions recommended"
+        }
+      }
+    },
+
+    "release_entry": {
+      "type": "object",
+      "required": ["release_id", "version", "subtopic_id", "channels", "status"],
+      "properties": {
+        "release_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+-[0-9]{4}w[0-9]{2}$|^[a-z0-9-]+-v[0-9]+$",
+          "description": "Semantic ID: {board}-{type}-{slug}-{week_or_version}"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^v[0-9]+$"
+        },
+        "subtopic_id": { "$ref": "#/definitions/subtopic_id" },
+        "channels": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["payhip", "member"] }
+        },
+        "payhip_product_id": { "type": "string" },
+        "payhip_url": { "type": "string", "format": "uri" },
+        "membership_tier": { "type": "string" },
+        "asset_key": {
+          "type": "string",
+          "description": "Supabase Storage path: member-files/week{nn}/{slug}.pdf"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "planned", "archived", "draft"]
+        }
+      }
+    },
+
+    "week_pack_spec": {
+      "type": "object",
+      "required": ["week_number", "topic", "board", "tier", "subtopic_ids", "questions_core", "questions_extended"],
+      "description": "Specification for generating a Week Pack PDF",
+      "properties": {
+        "week_number": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "topic": { "type": "string" },
+        "board": { "$ref": "#/definitions/board" },
+        "tier": { "type": "string", "const": "Core + Extended" },
+        "subtopic_ids": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/subtopic_id" },
+          "minItems": 1
+        },
+        "syllabus_refs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "key_vocabulary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["term_en", "definition"],
+            "properties": {
+              "term_en": { "type": "string" },
+              "term_zh": { "type": "string" },
+              "definition": { "type": "string" },
+              "common_mistake": { "type": "string" }
+            }
+          }
+        },
+        "questions_core": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/question" },
+          "minItems": 6,
+          "maxItems": 8
+        },
+        "questions_extended": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/question" },
+          "minItems": 4,
+          "maxItems": 6
+        },
+        "review_checklist": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 5,
+          "maxItems": 8,
+          "description": "\"I can...\" statements for self-assessment"
+        }
+      }
+    }
+  },
+
+  "type": "object",
+  "description": "Root schema — use $ref to validate specific content types",
+  "properties": {
+    "exercise_set": { "$ref": "#/definitions/exercise_set" },
+    "release_entry": { "$ref": "#/definitions/release_entry" },
+    "week_pack_spec": { "$ref": "#/definitions/week_pack_spec" }
+  }
+}
