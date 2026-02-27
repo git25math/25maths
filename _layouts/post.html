@@ -2,8 +2,22 @@
 <html lang="{{ page.lang | default: 'en' }}">
 <head>
     {% include head.html %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.subtitle | default: page.description | jsonify }},
+      {% if page.og_image %}"image": "{{ site.url }}{{ page.og_image }}",{% endif %}
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "author": { "@type": "Organization", "name": "25Maths" },
+      "publisher": { "@type": "Organization", "name": "25Maths", "logo": { "@type": "ImageObject", "url": "{{ site.url }}/favicon.svg" } },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" }
+    }
+    </script>
 </head>
 <body class="bg-gray-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-gray-900 focus:text-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold">Skip to main content</a>
     {% include global-nav.html %}
 
     {% assign cta_title = "Get weekly topic practice" %}
@@ -33,7 +47,7 @@
         {% assign privacy_link = "/en/privacy.html" %}
     {% endif %}
 
-    <article class="bg-white">
+    <article id="main-content" class="bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="mb-8">
                 <p class="text-sm text-gray-500">{{ page.date | date: "%B %d, %Y" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
@@ -49,7 +63,7 @@
                 <div class="bg-gray-50 rounded-2xl p-6 text-center">
                     <h2 class="text-2xl font-bold mb-2">{{ cta_title }}</h2>
                     <p class="text-gray-600 mb-5">{{ cta_text }}</p>
-                    <a href="{{ cta_link }}" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                    <a href="{{ cta_link }}" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                         {{ cta_button }}
                     </a>
                 </div>
@@ -68,13 +82,13 @@
                     <input type="hidden" name="redirect_url" value="{{ site.url }}{{ site.waitlist.success_path }}">
                     <div class="grid md:grid-cols-2 gap-4">
                         <input type="text" name="name" required placeholder="{{ name_ph }}"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400">
                         <input type="email" name="email" required placeholder="{{ email_ph }}"
-                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary">
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400">
                     </div>
                     <textarea name="message" rows="5" required placeholder="{{ msg_ph }}"
-                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400"></textarea>
+                    <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 hover:shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-900">
                         {{ send_label }}
                     </button>
                     <p class="text-xs text-gray-500">{{ privacy_text }} <a href="{{ privacy_link }}" class="underline">Privacy Policy</a>.</p>
