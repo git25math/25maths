@@ -237,7 +237,7 @@
         "en": "`p = 12.4` correct to 1 decimal place.\n\n`q = 3.7` correct to 1 decimal place.\n\nCalculate the upper bound of `\\dfrac{p}{q}`.\n\nShow your working.",
         "zh": "`p = 12.4`，精确到1位小数。\n\n`q = 3.7`，精确到1位小数。\n\n计算 `\\dfrac{p}{q}` 的上界。\n\n写出你的计算过程。"
       },
-      "answer": { "en": "`3.424\\ldots` (accept 3.42 to 3.43)", "zh": "`3.424\\ldots`（接受 3.42 到 3.43）" },
+      "answer": { "en": "`3.4109\\ldots` (accept 3.41)", "zh": "`3.4109\\ldots`（接受 3.41）" },
       "solution": {
         "en": [
           "Find the bounds for `p`: `12.35 \\leq p < 12.45`",

@@ -205,11 +205,7 @@
       "answer": { "en": "(a) See completed table\n(b) 1/4\n(c) 1/2", "zh": "(a) 见完整表格\n(b) 1/4\n(c) 1/2" },
       "solution": {
         "en": [
-          "(a) Completed sample space diagram:",
-          "| | B=1 | B=2 | B=3 | B=4 |",
-          "|A=1| 2 | 3 | 4 | 5 |",
-          "|A=2| 3 | 4 | 5 | 6 |",
-          "|A=3| 4 | 5 | 6 | 7 |",
+          "(a) Completed sample space diagram: A=1: 2, 3, 4, 5; \\quad A=2: 3, 4, 5, 6; \\quad A=3: 4, 5, 6, 7.",
           "Total number of outcomes `= 3 \\times 4 = 12`",
           "(b) Outcomes with total 5: (1,4), (2,3), (3,2) `\\Rightarrow` 3 outcomes",
           "`P(\\text{total} = 5) = \\dfrac{3}{12} = \\dfrac{1}{4}`",
@@ -217,11 +213,7 @@
           "`P(\\text{total} > 4) = \\dfrac{6}{12} = \\dfrac{1}{2}`"
         ],
         "zh": [
-          "(a) 完整的样本空间图：",
-          "| | B=1 | B=2 | B=3 | B=4 |",
-          "|A=1| 2 | 3 | 4 | 5 |",
-          "|A=2| 3 | 4 | 5 | 6 |",
-          "|A=3| 4 | 5 | 6 | 7 |",
+          "(a) 完整的样本空间图：A=1: 2, 3, 4, 5；\\quad A=2: 3, 4, 5, 6；\\quad A=3: 4, 5, 6, 7。",
           "结果总数 `= 3 \\times 4 = 12`",
           "(b) 总分为 5 的结果：(1,4)、(2,3)、(3,2) `\\Rightarrow` 3 个结果",
           "`P(\\text{总分} = 5) = \\dfrac{3}{12} = \\dfrac{1}{4}`",

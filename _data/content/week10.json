@@ -211,8 +211,7 @@
           "(a) Angle PQR `= 90°` (090° east then 000° north).",
           "`PR^2 = PQ^2 + QR^2 = 8^2 + 15^2 = 64 + 225 = 289`",
           "`PR = \\sqrt{289} = 17` km",
-          "(b) `\\tan(\\angle RPQ) = \\dfrac{QR}{PQ}$... no. Wait.",
-          "R is 8 km east and 15 km north of P.",
+          "(b) R is 8 km east and 15 km north of P.",
           "`\\tan(\\text{bearing angle}) = \\dfrac{\\text{east}}{\\text{north}} = \\dfrac{8}{15}`",
           "Bearing `= \\tan^{-1}\\left(\\dfrac{8}{15}\\right) = 28.07...° = 028.1°`"
         ],
