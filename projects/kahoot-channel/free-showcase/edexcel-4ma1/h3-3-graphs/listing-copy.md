@@ -1,7 +1,7 @@
 # Free Kahoot Listing Copy - H3.3 Graphs
 
 ## Kahoot Name
-Edexcel 4MA1 H3.3 | Graphs | HIGHER TIER
+Edexcel 4MA1 H3.3 | Graphs | Higher Tier
 
 ## Kahoot Description (EN)
 Free sample set for H3.3 Graphs. This quiz is designed for quick classroom warm-up, homework recap, and independent revision. Questions focus on the most testable patterns and common mistakes so learners can experience the style and quality of your full paid packs.

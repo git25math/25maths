@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - C1.8 Standard form
 
 ## Kahoot Name
-Edexcel 4MA1 C1.8 | Standard form | HIGHER TRACK
+Edexcel 4MA1 C1.8 | Standard form | Higher Tier
 
 ## Kahoot Description
 C1.8 Standard form exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

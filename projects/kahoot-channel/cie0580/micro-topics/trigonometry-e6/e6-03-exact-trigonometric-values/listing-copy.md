@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - E6.3 Exact trigonometric values
 
 ## Kahoot Name
-Edexcel 4MA1 E6.3 | Exact trigonometric values | HIGHER TRACK
+Edexcel 4MA1 E6.3 | Exact trigonometric values | Higher Tier
 
 ## Kahoot Description
 E6.3 Exact trigonometric values exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

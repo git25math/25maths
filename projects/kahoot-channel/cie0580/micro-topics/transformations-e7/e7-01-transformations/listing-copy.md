@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - E7.1 Transformations
 
 ## Kahoot Name
-Edexcel 4MA1 E7.1 | Transformations | HIGHER TRACK
+Edexcel 4MA1 E7.1 | Transformations | Higher Tier
 
 ## Kahoot Description
 E7.1 Transformations exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

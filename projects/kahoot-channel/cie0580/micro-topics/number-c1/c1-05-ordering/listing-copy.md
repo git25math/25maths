@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - C1.5 Ordering
 
 ## Kahoot Name
-Edexcel 4MA1 C1.5 | Ordering | HIGHER TRACK
+Edexcel 4MA1 C1.5 | Ordering | Higher Tier
 
 ## Kahoot Description
 C1.5 Ordering exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

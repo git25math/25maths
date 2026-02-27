@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - E2.11 Sketching curves
 
 ## Kahoot Name
-Edexcel 4MA1 E2.11 | Sketching curves | HIGHER TRACK
+Edexcel 4MA1 E2.11 | Sketching curves | Higher Tier
 
 ## Kahoot Description
 E2.11 Sketching curves exam-style practice for Edexcel 4MA1 (Higher). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.

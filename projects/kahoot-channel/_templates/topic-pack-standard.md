@@ -28,7 +28,7 @@ Use this standard for every micro-topic (small syllabus point).
 4. Cover assets
 - `cover-2320x1520-kahoot-minimal.svg`
 - `cover-2320x1520-kahoot-minimal.png`
-- Must use track badge (`CORE TRACK` or `EXTENDED TRACK`) matching syllabus tier.
+- Must use track badge (`Core Track` or `Extended Track`) matching syllabus tier.
 
 ## 3. Alignment Checks (Must Pass)
 - Syllabus statement and questions are directly aligned.

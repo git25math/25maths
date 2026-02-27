@@ -1,7 +1,7 @@
 # Kahoot Listing Copy - F4.7 Geometrical reasoning
 
 ## Kahoot Name
-Edexcel 4MA1 F4.7 | Geometrical reasoning | FOUNDATION TRACK
+Edexcel 4MA1 F4.7 | Geometrical reasoning | Foundation Tier
 
 ## Kahoot Description
 F4.7 Geometrical reasoning exam-style practice for Edexcel 4MA1 (Foundation). Includes a 15-question Kahoot sequence plus a printable worksheet with worked answers for class use and independent revision.
