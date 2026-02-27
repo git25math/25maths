@@ -67,6 +67,32 @@ export const releaseRegistry = [
     "membership_tier": "",
     "asset_key": "member-files/week02/week-02-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week03-number-ratio-proportion-en-2026w12",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-11-ratio-and-proportion",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week03/week-03-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week03-number-ratio-proportion-bilingual-2026w12",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-11-ratio-and-proportion",
+    "channels": [
+      "member"
+    ],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week03/week-03-bilingual.pdf",
+    "status": "active"
   }
 ];
 
