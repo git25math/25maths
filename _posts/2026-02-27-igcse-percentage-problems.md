@@ -146,4 +146,4 @@ Answer: $4$ complete years needed.
 - [Edexcel 4MA1 Practice](/edx4ma1/) — percentage problems for Edexcel board
 - [Weekly Targeted Practice](/subscription.html) — curated exam questions with solutions
 
-**Related guides:** [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html) · [Paper 4: 10 Tips to Gain 20+ Marks](/2026/02/27/cie0580-paper4-extended-tips.html) · [CIE 0580 vs Edexcel 4MA1](/2026/02/27/cie0580-vs-edexcel-4ma1.html)
+**Related guides:** [Edexcel 4MA1: Ratio & Percentage Mistakes](/2026/02/11/4ma1-ratio-percentage.html) · [Paper 4: 10 Tips to Gain 20+ Marks](/2026/02/27/cie0580-paper4-extended-tips.html) · [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html)

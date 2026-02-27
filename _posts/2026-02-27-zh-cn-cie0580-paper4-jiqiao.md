@@ -101,4 +101,4 @@ $\vec{AB} = \vec{AO} + \vec{OB} = -\mathbf{a} + \mathbf{b} = \mathbf{b} - \mathb
 - [每周练习包](/zh-cn/subscription.html) — 考试风格题目配完整答案
 - [免费代数练习](/cie0580/free/) — 从分值最高的主题开始
 
-**相关指南：** [三角函数完全指南](/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html) · [代数7个常见失分点](/zh-cn/blog/cie0580-daishu-changjian-cuowu.html) · [6周复习计划](/zh-cn/blog/igcse-shuxue-fuxicelue.html)
+**相关指南：** [函数与图像：提分策略](/zh-cn/blog/cie0580-hanshu-tuxiang-tisheng.html) · [代数7个常见失分点](/zh-cn/blog/cie0580-daishu-changjian-cuowu.html) · [三角函数完全指南](/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html)

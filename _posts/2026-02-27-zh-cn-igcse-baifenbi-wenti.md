@@ -141,4 +141,4 @@ $n=4$: $1.05^4 = 1.216$（超过 $1.2$）
 - [Edexcel 4MA1 练习](/edx4ma1/) — Edexcel 百分比题
 - [每周针对性练习](/zh-cn/subscription.html) — 精选考试题配答案
 
-**相关指南：** [三角函数完全指南](/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html) · [Paper 4：多拿20+分的技巧](/zh-cn/blog/cie0580-paper4-jiqiao.html) · [CIE 0580 vs Edexcel 4MA1](/zh-cn/blog/cie0580-vs-edexcel-4ma1.html)
+**相关指南：** [Edexcel 4MA1：比例与百分比常见错误](/zh-cn/blog/4ma1-bili-baifenbi-cuowu.html) · [Paper 4：多拿20+分的技巧](/zh-cn/blog/cie0580-paper4-jiqiao.html) · [三角函数完全指南](/zh-cn/blog/igcse-sanjiaohanshu-zhinan.html)

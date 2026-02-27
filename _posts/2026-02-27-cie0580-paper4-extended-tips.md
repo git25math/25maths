@@ -102,4 +102,4 @@ Use this time to:
 - [Weekly Practice Packs](/subscription.html) — exam-style questions with full solutions
 - [Free Algebra Practice](/cie0580/free/) — start with the highest-weight topic
 
-**Related guides:** [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html) · [Algebra: 7 Common Mistakes](/2026/02/11/cie0580-algebra-mistakes.html) · [6-Week Revision Strategy](/2026/02/27/igcse-maths-revision-strategy.html)
+**Related guides:** [Functions & Graphs: Boost Your Grade](/2026/02/11/cie0580-functions-graphs.html) · [Algebra: 7 Common Mistakes](/2026/02/11/cie0580-algebra-mistakes.html) · [IGCSE Trigonometry Complete Guide](/2026/02/27/igcse-trigonometry-guide.html)
