@@ -13,37 +13,35 @@ lang_links:
     url: /zh-cn/blog/cie0580-paper4-jiqiao.html
 ---
 
-Paper 4 (Extended) is the longest and highest-weighted paper in CIE 0580. At 2 hours 30 minutes for 130 marks, pacing and technique matter as much as knowledge.
+Paper 4 (Extended) is the longest and highest-weighted paper in CIE 0580. At $2$ hours $30$ minutes for $130$ marks, pacing and technique matter as much as knowledge.
 
-Here are 10 specific techniques that help students gain 20+ marks.
+Here are $10$ specific techniques that help students gain $20$+ marks.
 
 ## 1) Allocate Time by Marks, Not by Question
 
-**Rule:** 1 mark ≈ 1 minute 10 seconds.
+**Rule:** $1$ mark $\approx$ $1$ minute $10$ seconds.
 
-A 6-mark question deserves 7 minutes. A 1-mark question gets 70 seconds.
-Students who spend 15 minutes on a hard 4-mark question lose easy marks elsewhere.
+A $6$-mark question deserves $7$ minutes. A $1$-mark question gets $70$ seconds.
+Students who spend $15$ minutes on a hard $4$-mark question lose easy marks elsewhere.
 
 ## 2) Start with Your Strongest Section
 
-Paper 4 doesn't require sequential answering. Skim all questions first (2 minutes), then start with the topic you know best. Confidence early improves performance on harder questions later.
+Paper 4 doesn't require sequential answering. Skim all questions first ($2$ minutes), then start with the topic you know best. Confidence early improves performance on harder questions later.
 
 ## 3) Write the Formula Before Substituting
 
 For any formula-based question (mensuration, trigonometry, compound interest):
 
-```
 Step 1: Write the formula
 Step 2: Substitute values
 Step 3: Calculate
-```
 
 This earns method marks even if your final answer is wrong.
 
 ## 4) Use the "Reverse Check" on Algebra
 
 After solving an equation, **substitute your answer back** into the original equation.
-This takes 30 seconds and catches sign errors that cost 2–3 marks per question.
+This takes $30$ seconds and catches sign errors that cost $2$–$3$ marks per question.
 
 ## 5) Draw Diagrams Even When Not Required
 
@@ -56,7 +54,7 @@ Diagrams reduce errors and sometimes earn a method mark.
 
 ## 6) "Show That" Questions Are Free Marks
 
-When a question says "show that x = 7.5", you're given the answer. Your job is to show clear working that leads to it.
+When a question says "show that $x = 7.5$", you're given the answer. Your job is to show clear working that leads to it.
 
 **Common mistake:** Students skip steps because they know the answer. Examiners need to see every line.
 
@@ -70,28 +68,25 @@ Paper 4 always includes graphing. Know what each type requires:
 | Read from graph | Draw construction lines with a ruler, read to the precision asked |
 | Describe transformation | State all required details (e.g., reflection: line of reflection; enlargement: scale factor AND centre) |
 
-## 8) Statistics: Always Check Your n Value
+## 8) Statistics: Always Check Your $n$ Value
 
 In cumulative frequency and histogram questions, the most common error is using the wrong total.
 
-- Read "n" from the question or table
-- Check that your cumulative frequency ends at n
-- For median: use n/2 (not (n+1)/2 for grouped data)
+- Read $n$ from the question or table
+- Check that your cumulative frequency ends at $n$
+- For median: use $\frac{n}{2}$ (not $\frac{n+1}{2}$ for grouped data)
 
 ## 9) Vectors: Label Everything
 
 Vector questions often chain multiple parts. Label each vector clearly:
 
-```
-→    →    →
-AB = AO + OB = -a + b = b - a
-```
+$\vec{AB} = \vec{AO} + \vec{OB} = -\mathbf{a} + \mathbf{b} = \mathbf{b} - \mathbf{a}$
 
-Losing track of direction (A→B vs B→A) is the #1 vector error.
+Losing track of direction ($A \to B$ vs $B \to A$) is the #1 vector error.
 
 ## 10) Use the Last 10 Minutes for Checking
 
-**Do not** start a new question in the last 10 minutes unless you have genuinely finished.
+**Do not** start a new question in the last $10$ minutes unless you have genuinely finished.
 
 Use this time to:
 1. Re-read questions you found easy (misread questions lose the most marks)
