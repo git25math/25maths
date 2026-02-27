@@ -53,7 +53,7 @@ lang_links:
 {% assign latest_words = latest_post.content | number_of_words %}
 {% assign latest_read_time = latest_words | divided_by: 220 | plus: 1 %}
 {% assign latest_summary = latest_post.subtitle | default: latest_post.excerpt %}
-<section class="py-16 bg-white border-b border-gray-100">
+<section class="py-16 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between gap-4 mb-6">
             <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">建议先读</h2>
@@ -132,7 +132,7 @@ lang_links:
     </div>
 </section>
 
-<section class="py-16 bg-white border-b border-gray-100">
+<section class="py-16 bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
             <h2 class="text-3xl font-semibold text-gray-900">按目标开始练习</h2>
