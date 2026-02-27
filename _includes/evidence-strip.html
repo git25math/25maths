@@ -11,7 +11,7 @@
             {% for shot in shots %}
             {% assign idx = forloop.index0 %}
             <a href="{{ links[idx] }}" class="group block">
-                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 group-hover:shadow-md group-hover:border-gray-300 transition">
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 group-hover:shadow-md group-hover:border-gray-300 group-hover:-translate-y-1 transition">
                     <img src="{{ evidence_dir }}{{ shot }}.webp"
                          alt="{{ labels[idx] }}"
                          width="800" height="500"
