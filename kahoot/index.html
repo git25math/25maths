@@ -19,10 +19,10 @@ lang: en
         </p>
         <p data-bilingual-block class="text-sm text-gray-200 mt-3 max-w-3xl mx-auto">按考试局与层级浏览 SubTopic 目录，先练习再升级到 worksheet 与 bundle。</p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
-            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
-            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-lg transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Open Interactive Exercises Hub</a>
-            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-lg transition ui-focus-ring">Free Samples Live Now</a>
+            <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-md transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
+            <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
+            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-md transition ui-focus-ring">Open Interactive Exercises Hub</a>
+            <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary hover:shadow-md transition ui-focus-ring">Free Samples Live Now</a>
         </div>
     </div>
 </section>
@@ -30,7 +30,7 @@ lang: en
 <section id="free-sample-live" class="py-16 bg-white border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Free Sample Sets (Live Now)</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Free Sample Sets (Live Now)</h2>
             <p class="text-gray-600">These sample sets are published first so visitors can try the real question quality before moving into the full worksheet and bundle path.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">先体验免费样题，再决定是否进入完整产品闭环。</p>
             <p class="text-sm text-gray-500 mt-2">Published set: 16 topics total (updated {{ free_samples.updated_at }}).</p>
@@ -263,7 +263,7 @@ lang: en
 <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Exam Board Directories</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">Exam Board Directories</h2>
             <p class="text-gray-600">Both pages are generated from the current `micro-topics` folder structures in your project workspace.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">目录会随 `micro-topics` 自动同步更新，避免手工维护遗漏。</p>
             <p class="text-sm text-gray-500 mt-2">Per-SubTopic fields map to one closed-loop offer ladder: `Worksheet (L1)` -> `Section Bundle (L2)` -> `Unit Bundle (L3)` plus presale dates and notes.</p>
@@ -306,7 +306,7 @@ lang: en
 <section class="py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
             <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 interactive practice -> L1 -> L2 -> L3 with presale terms.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">建议筛选顺序：先选考试局，再选层级，最后按关键词定位题组。</p>
         </div>
@@ -544,11 +544,11 @@ lang: en
         ? 'bg-emerald-100 text-emerald-700'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
       const interactiveButtonClass = item.board === 'cie0580'
-        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md'
-        : 'edx-solid-bg edx-solid-hover hover:shadow-md';
+        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md ui-focus-ring'
+        : 'edx-solid-bg edx-solid-hover hover:shadow-md ui-focus-ring';
       const worksheetButtonClass = item.board === 'cie0580'
-        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm'
-        : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm';
+        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm ui-focus-ring'
+        : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm ui-focus-ring';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')
         ? 'free_sample'

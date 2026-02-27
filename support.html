@@ -16,7 +16,7 @@ active_global: support
 
 <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+        <h2 class="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
         <p class="bilingual-support-only text-sm text-gray-600 mb-8">以下是最常见问题与处理方式，建议先查看再提交工单。</p>
         <div class="space-y-4">
             <details class="bg-gray-50 p-6 rounded-lg">
@@ -50,7 +50,7 @@ active_global: support
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-2xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
         <p class="bilingual-support-only text-sm text-gray-600 text-center mb-8">提交后将进入支持队列，我们会通过邮箱回复你。</p>
         <div class="bg-white p-8 rounded-xl shadow-lg">
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-6">
@@ -115,7 +115,7 @@ active_global: support
                     <p class="bilingual-support-only text-xs text-gray-500 mb-2">请描述你的具体问题（建议附上页面链接或截图说明）。</p>
                     <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-lg px-4 py-3" required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90">Send Message</button>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">Send Message</button>
             </form>
             <p class="text-center text-sm text-gray-600 mt-6">We'll receive your request in our support queue and reply from <a href="mailto:support@25maths.com" class="text-primary font-semibold">support@25maths.com</a>.</p>
             <p class="bilingual-support-only text-center text-sm text-gray-600 mt-2">我们会在支持队列中处理你的请求，并由 support@25maths.com 回复。</p>

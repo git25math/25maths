@@ -57,12 +57,12 @@ lang_links:
 <section class="py-16 bg-white border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between gap-4 mb-6">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Start Here</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">Start Here</h2>
             <a href="#all-guides" class="text-primary font-semibold hover:underline">Browse all guides →</a>
         </div>
         <article class="bg-gray-50 border border-gray-200 rounded-2xl p-7 md:p-8">
             <p class="text-xs uppercase tracking-wider text-gray-500 mb-3">Latest article</p>
-            <h3 class="text-3xl font-bold text-gray-900 mb-3">
+            <h3 class="text-3xl font-semibold text-gray-900 mb-3">
                 <a href="{{ latest_post.url | relative_url }}" class="hover:text-primary transition">{{ latest_post.title }}</a>
             </h3>
             {% if latest_summary %}
@@ -71,7 +71,7 @@ lang_links:
             <p class="text-sm text-gray-500 mb-6">
                 <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: "%B %d, %Y" }}</time>{% if latest_post.category %} · {{ latest_post.category }}{% endif %} · {{ latest_read_time }} min read
             </p>
-            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
                 Read featured article
             </a>
             <p data-bilingual-block class="text-sm text-gray-600 mt-4">先从这篇开始，再按下方主题继续学习。</p>
@@ -84,7 +84,7 @@ lang_links:
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between gap-4 mb-6">
             <div>
-                <h2 class="text-3xl font-bold text-gray-900">All Guides</h2>
+                <h2 class="text-3xl font-semibold text-gray-900">All Guides</h2>
                 <p class="text-gray-600">Exam strategy and topic-specific support for CIE 0580 and Edexcel 4MA1.</p>
             </div>
         </div>
@@ -108,7 +108,7 @@ lang_links:
             {% assign post_words = post.content | number_of_words %}
             {% assign post_read_time = post_words | divided_by: 220 | plus: 1 %}
             {% assign post_summary = post.subtitle | default: post.excerpt %}
-            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition"
+            <article class="blog-index-card bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
                 data-category="{{ post.category }}"
                 data-lang="{{ post.lang }}"
                 data-read-time="{{ post_read_time }}"
@@ -117,7 +117,7 @@ lang_links:
                 <p class="text-xs text-gray-500 mb-2">
                     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.category %} · {{ post.category }}{% endif %} · {{ post_read_time }} min read
                 </p>
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-2">
                     <a href="{{ post.url | relative_url }}" class="hover:text-primary transition">{{ post.title }}</a>
                 </h3>
                 {% if post_summary %}<p class="text-gray-600 mb-4">{{ post_summary | strip_html | strip_newlines | truncate: 160 }}</p>{% endif %}
@@ -137,22 +137,22 @@ lang_links:
 <section class="py-16 bg-white border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">Practice by Goal</h2>
+            <h2 class="text-3xl font-semibold text-gray-900">Practice by Goal</h2>
             <p class="text-gray-600">Use the blog, then move straight into guided practice.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">先看方法，再进入针对性练习，效率更高。</p>
         </div>
         <div class="grid md:grid-cols-3 gap-6">
-            <a href="/cie0580/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="/cie0580/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs uppercase tracking-wider text-gray-500">CIE 0580</p>
                 <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">Topic-by-topic practice</h3>
                 <p class="text-gray-600">Apply methods from the guides to exam-style questions.</p>
             </a>
-            <a href="/edx4ma1/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="/edx4ma1/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs uppercase tracking-wider text-gray-500">Edexcel 4MA1</p>
                 <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">Board-specific walkthroughs</h3>
                 <p class="text-gray-600">Practice key skills with Edexcel-focused resources.</p>
             </a>
-            <a href="/exercises/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+            <a href="/exercises/" class="block bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition">
                 <p class="text-xs uppercase tracking-wider text-gray-500">Interactive</p>
                 <h3 class="text-xl font-bold text-gray-900 mt-2 mb-2">Instant feedback drills</h3>
                 <p class="text-gray-600">Train accuracy with interactive questions and immediate checking.</p>
@@ -163,10 +163,10 @@ lang_links:
 
 <section class="py-16 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold mb-3">Want weekly practice packs?</h2>
+        <h2 class="text-3xl font-semibold mb-3">Want weekly practice packs?</h2>
         <p class="text-gray-600 mb-6">Get the Term Practice Pass — 12 weekly topical packs with full solutions.</p>
         <p data-bilingual-block class="text-sm text-gray-600 mb-6">获取学期练习通行证，12 周专题练习包含完整解析。</p>
-        <a href="/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+        <a href="/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
             Get Term Pass
         </a>
     </div>
