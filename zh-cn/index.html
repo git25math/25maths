@@ -35,132 +35,138 @@ lang_links:
     </div>
 </section>
 
-<section class="py-12 bg-gray-50 border-y border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-6">
+<!-- 互动练习入口 -->
+<section class="bg-gray-50 py-20 md:py-24 border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <p class="text-xs tracking-widest uppercase text-gray-500 mb-4">练习入口</p>
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 max-w-3xl">
+            按考试局与层级，直接进入互动题组。
+        </h2>
+        <div class="mt-10 grid md:grid-cols-2 gap-5">
+            <div class="group border border-gray-200 rounded-2xl bg-white hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition accent-top-cie">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">CIE 0580</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">CIE 互动练习</h3>
+                <p class="mt-3 text-gray-600">覆盖 Core 与 Extended 全部考点，即时反馈，按题型分组训练。</p>
+                <div class="mt-5 flex flex-wrap gap-4">
+                    <a href="/zh-cn/exercises/?board=cie0580&tier=core" class="text-sm font-semibold text-gray-900 hover:text-gray-600 transition ui-focus-ring">Core 层级 →</a>
+                    <a href="/zh-cn/exercises/?board=cie0580&tier=extended" class="text-sm font-semibold text-gray-900 hover:text-gray-600 transition ui-focus-ring">Extended 层级 →</a>
+                </div>
+            </div>
+            <div class="group border border-gray-200 rounded-2xl bg-white hover:border-gray-900 hover:shadow-md hover:-translate-y-1 transition accent-top-green">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">Edexcel 4MA1</p>
+                <h3 class="mt-3 text-2xl font-semibold text-gray-900">Edexcel 互动练习</h3>
+                <p class="mt-3 text-gray-600">对齐 Edexcel 4MA1 考纲，Foundation 与 Higher 分层练习。</p>
+                <div class="mt-5 flex flex-wrap gap-4">
+                    <a href="/zh-cn/exercises/?board=edexcel-4ma1&tier=foundation" class="text-sm font-semibold text-gray-900 hover:text-gray-600 transition ui-focus-ring">Foundation 层级 →</a>
+                    <a href="/zh-cn/exercises/?board=edexcel-4ma1&tier=higher" class="text-sm font-semibold text-gray-900 hover:text-gray-600 transition ui-focus-ring">Higher 层级 →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-sm text-gray-500">
+            <a href="/zh-cn/cie0580/" class="hover:text-gray-700 transition">CIE 0580</a>
+            <span class="mx-2">·</span>
+            <a href="/zh-cn/edx4ma1/" class="hover:text-gray-700 transition">Edexcel 4MA1</a>
+            <span class="mx-2">·</span>
+            <a href="/zh-cn/blog/" class="hover:text-gray-700 transition">Blog</a>
+        </div>
+    </div>
+</section>
+
+<!-- 术语支持 -->
+<section class="bg-white py-20 md:py-24 border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="max-w-3xl mb-10">
+            <p class="text-xs tracking-widest uppercase text-gray-500 mb-4">术语支持</p>
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
+                英语为主，关键术语辅助。
+            </h2>
+            <p class="mt-4 text-lg text-gray-600">考试语言是英语，因此主内容以英语呈现，帮助学生适应英语题干与答题表达。</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">01</p>
+                <h3 class="mt-2 text-xl font-semibold text-gray-900">关键术语对照</h3>
+                <p class="mt-3 text-gray-600">提供核心术语的中英对照与常见误区，解决"看得懂但不会答"的问题。</p>
+            </article>
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">02</p>
+                <h3 class="mt-2 text-xl font-semibold text-gray-900">英文表达引导</h3>
+                <p class="mt-3 text-gray-600">强调题目如何问、答案如何写，帮助用英语准确表达数学思路。</p>
+            </article>
+            <article class="border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500">03</p>
+                <h3 class="mt-2 text-xl font-semibold text-gray-900">可选术语支持产品</h3>
+                <p class="mt-3 text-gray-600">若需要更深入的术语支持，可单独获取中英对照词汇卡与术语包。</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- 最新文章 -->
+<section class="bg-gray-50 py-20 md:py-24 border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-8">
             <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">互动练习快速入口</h2>
-                <p class="text-gray-600">按考试局与层级直接进入题组，和 Kahoot + worksheet 形成完整闭环。</p>
+                <p class="text-xs tracking-widest uppercase text-gray-500 mb-4">Blog</p>
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">最新文章</h2>
+                <p class="mt-2 text-gray-600">考试专题解析与学习策略。</p>
             </div>
-            <a href="/zh-cn/exercises/" class="text-primary font-semibold hover:underline">进入完整互动练习中心 →</a>
+            <a href="/zh-cn/blog/" class="text-sm font-semibold text-gray-900 hover:text-gray-600 transition">查看全部 →</a>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <a href="/zh-cn/exercises/?board=cie0580&tier=core" class="rounded-xl border border-emerald-200 bg-white p-4 shadow-sm hover:shadow-md transition">
-                <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700">CIE 0580</p>
-                <h3 class="mt-1 text-lg font-bold text-gray-900">Core 层级</h3>
-                <p class="mt-1 text-sm text-gray-600">先完成 Core 核心题组训练。</p>
-            </a>
-            <a href="/zh-cn/exercises/?board=cie0580&tier=extended" class="rounded-xl border border-emerald-200 bg-white p-4 shadow-sm hover:shadow-md transition">
-                <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700">CIE 0580</p>
-                <h3 class="mt-1 text-lg font-bold text-gray-900">Extended 层级</h3>
-                <p class="mt-1 text-sm text-gray-600">强化 Extended 高频与综合难点。</p>
-            </a>
-            <a href="/zh-cn/exercises/?board=edexcel-4ma1&tier=foundation" class="rounded-xl border edx-soft-border bg-white p-4 shadow-sm hover:shadow-md transition">
-                <p class="text-xs font-semibold uppercase tracking-wide edx-solid-text">Edexcel 4MA1</p>
-                <h3 class="mt-1 text-lg font-bold text-gray-900">Foundation 层级</h3>
-                <p class="mt-1 text-sm text-gray-600">建立 Foundation 稳定解题能力。</p>
-            </a>
-            <a href="/zh-cn/exercises/?board=edexcel-4ma1&tier=higher" class="rounded-xl border edx-soft-border bg-white p-4 shadow-sm hover:shadow-md transition">
-                <p class="text-xs font-semibold uppercase tracking-wide edx-solid-text">Edexcel 4MA1</p>
-                <h3 class="mt-1 text-lg font-bold text-gray-900">Higher 层级</h3>
-                <p class="mt-1 text-sm text-gray-600">进入 Higher 挑战题与综合应用。</p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gray-50 rounded-2xl p-8 md:p-10">
-            <div class="text-xs font-bold text-primary mb-2">术语支持说明</div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">英语为主，关键术语辅助</h2>
-            <p class="text-gray-600 mb-6">考试语言是英语，因此我们的主内容以英语呈现，帮助学生更快适应英语题干与答题表达。</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl p-6 border">
-                    <h3 class="font-bold mb-2 text-gray-900">关键术语对照</h3>
-                    <p class="text-sm text-gray-600">提供核心术语的中英对照与常见误区，解决“看得懂但不会答”的问题。</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border">
-                    <h3 class="font-bold mb-2 text-gray-900">英文表达引导</h3>
-                    <p class="text-sm text-gray-600">强调题目如何问、答案如何写，帮助用英语准确表达数学思路。</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 border">
-                    <h3 class="font-bold mb-2 text-gray-900">可选术语支持产品</h3>
-                    <p class="text-sm text-gray-600">若需要更深入的术语支持，可单独获取中英对照词汇卡与术语包。</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="modules" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">选择你的考试局</h2>
-            <p class="text-xl text-gray-600">按考试大纲获取对应资源</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {% for mod in site.modules %}
-            <a href="{{ mod.path }}" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 border {% if mod.status == 'coming_soon' %}border-gray-200{% else %}border-transparent{% endif %}">
-                <div class="{% if mod.key == 'cie0580' %}bg-primary{% elsif mod.key == 'edx4ma1' %}edx-soft-bg edx-soft-border border-b{% else %}bg-success{% endif %} h-32 flex items-center justify-center text-white relative">
-                    <span class="text-3xl font-bold">{{ mod.name }}</span>
-                    {% if mod.status == 'coming_soon' %}
-                    <div class="absolute top-3 right-3 bg-white text-gray-700 text-xs px-2 py-1 rounded-full font-bold">Coming Soon</div>
-                    {% endif %}
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2 text-gray-900">{{ mod.full_name }}</h3>
-                    <p class="text-gray-600 text-sm mb-4">{{ mod.description }}</p>
-                    {% if mod.status == 'active' %}
-                    <div class="flex items-center text-sm text-gray-500 space-x-4">
-                        {% if mod.free_count > 0 %}<span>{{ mod.free_count }} 套免费资源</span>{% endif %}
-                        {% if mod.product_count > 0 %}<span>{{ mod.product_count }} 付费产品</span>{% endif %}
-                    </div>
-                    {% else %}
-                    <span class="text-sm text-gray-400">正在准备中</span>
-                    {% endif %}
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between mb-8">
-            <div>
-                <h2 class="text-3xl font-bold text-gray-900">最新文章</h2>
-                <p class="text-gray-600">考试专题解析与学习策略。</p>
-            </div>
-            <a href="/zh-cn/blog/" class="text-primary font-semibold hover:underline">查看全部 →</a>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-5">
             {% assign cn_posts = site.posts | where: "lang", "zh-CN" %}
             {% for post in cn_posts limit:3 %}
-            <a href="{{ post.url }}" class="block bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+            <a href="{{ post.url }}" class="group block border border-gray-200 rounded-2xl p-6 bg-white shadow-sm hover:border-gray-900 hover:shadow-lg hover:-translate-y-1 transition">
                 <p class="text-xs text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ post.title }}</h3>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ post.title }}</h3>
                 {% if post.subtitle %}<p class="text-gray-600 mb-3">{{ post.subtitle }}</p>{% endif %}
-                <span class="text-primary font-semibold">阅读文章 →</span>
+                <span class="text-sm font-semibold text-gray-900 group-hover:text-gray-600">阅读文章 →</span>
             </a>
             {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gray-50 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<!-- 学期练习通行证 -->
+<section class="bg-white py-20 md:py-24 border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="border border-gray-200 accent-left-dark rounded-2xl p-8 md:p-10 bg-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:shadow-lg transition">
             <div>
-                <div class="text-xs font-bold text-primary mb-2">NEW</div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">学期练习通行证</h2>
-                <p class="text-gray-600">12 周专题练习包（含解析），对标 CIE 0580，一次购买。</p>
+                <p class="text-xs font-semibold tracking-widest uppercase text-gray-500 mb-3">Guided Practice</p>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-900">学期练习通行证</h2>
+                <p class="mt-3 text-gray-600 max-w-lg">12 周专题练习包（含解析），对标 CIE 0580，一次购买。</p>
             </div>
-            <div class="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-4">
-                <div class="text-2xl font-bold text-primary whitespace-nowrap">$24.99<span class="text-sm text-gray-500 font-medium"> 一次性</span></div>
-                <a href="/subscription.html" class="w-full sm:w-auto cta-btn-equal bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
+            <div class="flex flex-col items-center gap-2">
+                <div class="text-2xl font-semibold text-primary">$24.99</div>
+                <div class="text-xs text-gray-500">一次性</div>
+                <a href="/zh-cn/subscription.html" class="mt-2 inline-block bg-gray-900 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-700 transition ui-focus-ring">
                     了解通行证
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 关于 -->
+<section class="bg-gray-50 py-20 md:py-24">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <div class="border border-gray-200 rounded-2xl p-8 md:p-12 bg-white accent-left-primary">
+            <p class="text-xs tracking-widest uppercase text-gray-500 mb-4">关于</p>
+            <p class="text-2xl md:text-3xl font-semibold text-gray-900">
+                由国际学校数学教师设计。
+            </p>
+            <p class="mt-4 text-gray-600 max-w-2xl">
+                所有内容旨在减少随机性，让考试表现可复现 — 覆盖不同考试局、层级与考试条件。独立评审准确率评分 9.7/10。
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-6">
+                <a href="/zh-cn/exercises/" class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-700 transition ui-focus-ring">
+                    免费互动练习
+                    <span aria-hidden="true">→</span>
+                </a>
+                <a href="/zh-cn/cie0580/free/" class="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 border-b border-gray-900 pb-px hover:text-gray-600 hover:border-gray-500 transition ui-focus-ring">
+                    查看免费资源
+                    <span aria-hidden="true">→</span>
                 </a>
             </div>
         </div>
