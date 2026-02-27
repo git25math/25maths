@@ -31,5 +31,27 @@
     "membership_tier": "",
     "asset_key": "member-files/week01/week-01-bilingual.pdf",
     "status": "active"
+  },
+  {
+    "release_id": "member-week02-number-powers-indices-en-2026w11",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-01-types-of-number",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week02/week-02-en.pdf",
+    "status": "active"
+  },
+  {
+    "release_id": "member-week02-number-powers-indices-bilingual-2026w11",
+    "version": "v1",
+    "subtopic_id": "cie0580:number-c1:c1-01-types-of-number",
+    "channels": ["member"],
+    "payhip_product_id": "",
+    "payhip_url": "",
+    "membership_tier": "",
+    "asset_key": "member-files/week02/week-02-bilingual.pdf",
+    "status": "active"
   }
 ]
