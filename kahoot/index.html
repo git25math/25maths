@@ -72,8 +72,8 @@ lang: en
                 {% assign board_badge_class = "border edx-soft-border edx-soft-bg edx-soft-text" %}
                 {% assign board_button_class = "edx-solid-bg edx-solid-hover" %}
                 {% if board.board == "cie0580" %}
-                    {% assign board_badge_class = "bg-primary/10 text-primary" %}
-                    {% assign board_button_class = "bg-primary text-white" %}
+                    {% assign board_badge_class = "cie-soft-bg cie-solid-text" %}
+                    {% assign board_button_class = "cie-solid-bg text-white cie-solid-hover" %}
                     {% assign board_explorer_button_class = "border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover" %}
                 {% endif %}
                 <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 h-full flex flex-col" data-free-sample-board="{{ board.board }}">
@@ -281,7 +281,7 @@ lang: en
                 <p class="text-gray-600 mt-2 mb-4">Directory includes every SubTopic folder under `cie0580/micro-topics`.</p>
                 <p class="text-sm text-gray-500 mb-5">{{ cie_data.total_subtopics }} SubTopics across {{ cie_data.sections | size }} sections.</p>
                 <div class="mt-auto pt-2 flex flex-col sm:flex-row cta-row-equal gap-4">
-                    <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal bg-primary text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:shadow-md transition ui-focus-ring">Open Directory</a>
+                    <a href="/kahoot/cie0580/" class="sm:flex-1 cta-btn-equal cie-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm cie-solid-hover hover:shadow-md transition ui-focus-ring">Open Directory</a>
                     <a href="https://create.kahoot.it/channels/25maths/igcse-maths" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-5 py-2.5 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open CIE 0580 Kahoot Channel</a>
                 </div>
             </article>
@@ -545,10 +545,10 @@ lang: en
         ? 'bg-emerald-100 text-emerald-700'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
       const interactiveButtonClass = item.board === 'cie0580'
-        ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-md ui-focus-ring'
+        ? 'cie-solid-bg text-white cie-solid-hover hover:shadow-md ui-focus-ring'
         : 'edx-solid-bg edx-solid-hover hover:shadow-md ui-focus-ring';
       const worksheetButtonClass = item.board === 'cie0580'
-        ? 'border border-primary/30 bg-primary/10 text-primary hover:bg-primary/15 hover:shadow-sm ui-focus-ring'
+        ? 'border cie-soft-border cie-soft-bg cie-solid-text cie-soft-hover hover:shadow-sm ui-focus-ring'
         : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm ui-focus-ring';
       const rawStatus = (item.status || 'planned').toLowerCase();
       const status = rawStatus.startsWith('free_sample')

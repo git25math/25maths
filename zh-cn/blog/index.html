@@ -70,7 +70,7 @@ lang_links:
             <p class="text-sm text-gray-500 mb-6">
                 <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: "%Y-%m-%d" }}</time>{% if latest_post.category %} · {{ latest_post.category }}{% endif %} · 约 {{ latest_read_time }} 分钟阅读
             </p>
-            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
+            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
                 阅读这篇文章
             </a>
         </article>
@@ -162,7 +162,7 @@ lang_links:
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-semibold mb-3">想要每周专题练习包？</h2>
         <p class="text-gray-600 mb-6">获取学期练习通行证 — 12 周专题练习包含完整解析。</p>
-        <a href="/zh-cn/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
+        <a href="/zh-cn/subscription.html" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
             了解通行证
         </a>
     </div>

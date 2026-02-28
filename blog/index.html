@@ -71,7 +71,7 @@ lang_links:
             <p class="text-sm text-gray-500 mb-6">
                 <time datetime="{{ latest_post.date | date_to_xmlschema }}">{{ latest_post.date | date: "%B %d, %Y" }}</time>{% if latest_post.category %} · {{ latest_post.category }}{% endif %} · {{ latest_read_time }} min read
             </p>
-            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
+            <a href="{{ latest_post.url | relative_url }}" class="inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
                 Read featured article
             </a>
             <p data-bilingual-block class="text-sm text-gray-600 mt-4">先从这篇开始，再按下方主题继续学习。</p>
@@ -166,7 +166,7 @@ lang_links:
         <h2 class="text-3xl font-semibold mb-3">Want weekly practice packs?</h2>
         <p class="text-gray-600 mb-6">Get the Term Practice Pass — 12 weekly topical packs with full solutions.</p>
         <p data-bilingual-block class="text-sm text-gray-600 mb-6">获取学期练习通行证，12 周专题练习包含完整解析。</p>
-        <a href="/subscription.html" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition ui-focus-ring">
+        <a href="/subscription.html" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition ui-focus-ring">
             Get Term Pass
         </a>
     </div>
