@@ -87,17 +87,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     })();
 </script>
-<script>
-    document.addEventListener('submit', function(e) {
-        var btn = e.target.querySelector('button[type="submit"]');
-        if (!btn || btn.disabled) return;
-        btn.disabled = true;
-        btn.dataset.originalText = btn.textContent;
-        btn.textContent = btn.closest('[lang="zh-CN"]') || document.documentElement.lang === 'zh-CN' ? '提交中…' : 'Sending…';
-        setTimeout(function() { btn.disabled = false; btn.textContent = btn.dataset.originalText; }, 8000);
-    });
-</script>
-
 <style>
     body { font-family: 'Inter', sans-serif; }
     html.visual-snapshot,

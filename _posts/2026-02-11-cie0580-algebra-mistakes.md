@@ -5,6 +5,7 @@ subtitle: "Target the errors that cost the most marks in IGCSE algebra questions
 description: "Target the errors that cost the most marks in IGCSE algebra questions."
 category: CIE 0580 Topic Guide
 lang: en
+tags: [IGCSE, CIE 0580, algebra, common mistakes]
 lang_links:
   - code: en
     label: EN

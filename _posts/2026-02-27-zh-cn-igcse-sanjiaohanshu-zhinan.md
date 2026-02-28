@@ -5,6 +5,7 @@ subtitle: "掌握 SOHCAHTOA、正弦/余弦定理和3D三角函数 — 每年 Pa
 description: "掌握 SOHCAHTOA、正弦/余弦定理和3D三角函数 — 每年 Paper 4 必考。"
 category: CIE 0580 专题指南
 lang: zh-CN
+tags: [IGCSE, CIE 0580, trigonometry, sine rule, cosine rule]
 permalink: /zh-cn/blog/igcse-sanjiaohanshu-zhinan.html
 lang_links:
   - code: en

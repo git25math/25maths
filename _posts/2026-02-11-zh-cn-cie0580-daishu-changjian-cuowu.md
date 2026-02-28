@@ -5,6 +5,7 @@ subtitle: "专注那些最容易丢分的代数错误。"
 description: "专注那些最容易丢分的代数错误。"
 category: CIE 0580 专题指南
 lang: zh-CN
+tags: [IGCSE, CIE 0580, algebra, common mistakes]
 permalink: /zh-cn/blog/cie0580-daishu-changjian-cuowu.html
 lang_links:
   - code: en

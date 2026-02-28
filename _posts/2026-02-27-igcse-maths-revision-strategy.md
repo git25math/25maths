@@ -5,6 +5,7 @@ subtitle: "Stop rereading notes. Here's a structured revision plan based on how 
 description: "Stop rereading notes. Here's a structured revision plan based on how examiners set questions."
 category: Exam Strategy
 lang: en
+tags: [IGCSE, revision strategy, study plan, exam preparation]
 lang_links:
   - code: en
     label: EN

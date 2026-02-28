@@ -5,6 +5,7 @@ subtitle: "两大最热门 IGCSE 数学考纲的全面对比。"
 description: "两大最热门 IGCSE 数学考纲的全面对比。"
 category: 考试策略
 lang: zh-CN
+tags: [IGCSE, CIE 0580, Edexcel 4MA1, exam comparison]
 permalink: /zh-cn/blog/cie0580-vs-edexcel-4ma1.html
 lang_links:
   - code: en
