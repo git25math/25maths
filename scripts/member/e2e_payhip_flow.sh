@@ -47,9 +47,9 @@ if [[ -z "${BASE_URL}" || -z "${PAYHIP_API_KEY}" || -z "${CUSTOMER_EMAIL}" || -z
   exit 1
 fi
 
-EVENT_ID="manual-$(date -u +%Y%m%dT%H%M%SZ)-$RANDOM"
-NOW_ISO="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-LEGACY_SIG="$(printf '%s' "${PAYHIP_API_KEY}" | openssl dgst -sha256 | awk '{print $NF}')"
+export EVENT_ID="manual-$(date -u +%Y%m%dT%H%M%SZ)-$RANDOM"
+export NOW_ISO="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+export LEGACY_SIG="$(printf '%s' "${PAYHIP_API_KEY}" | openssl dgst -sha256 | awk '{print $NF}')"
 
 PAYLOAD="$(
   python3 - <<'PY'
