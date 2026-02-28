@@ -161,6 +161,27 @@ lang_links:
     </div>
 </div>
 
+<!-- ItemList JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Interactive IGCSE Maths Exercises",
+  "description": "Free interactive exercises for CIE 0580 and Edexcel 4MA1, filterable by exam board, tier, and syllabus code.",
+  "numberOfItems": {{ sorted_exercises | size }},
+  "itemListElement": [
+    {% for exercise in sorted_exercises %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}{{ exercise.url | relative_url }}",
+      "name": {{ exercise.title | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
 <script>
 window.exerciseHubI18n = {
   summaryTemplate: 'Showing {visible} of {total} exercises.',
