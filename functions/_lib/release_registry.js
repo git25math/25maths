@@ -49,8 +49,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-02-en.pdf",
     "status": "active"
@@ -62,8 +62,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-02-bilingual.pdf",
     "status": "active"
@@ -75,8 +75,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-03-en.pdf",
     "status": "active"
@@ -88,8 +88,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-03-bilingual.pdf",
     "status": "active"
@@ -101,8 +101,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-04-en.pdf",
     "status": "active"
@@ -114,8 +114,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-04-bilingual.pdf",
     "status": "active"
@@ -127,8 +127,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-05-en.pdf",
     "status": "active"
@@ -140,8 +140,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-05-bilingual.pdf",
     "status": "active"
@@ -153,8 +153,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-06-en.pdf",
     "status": "active"
@@ -166,8 +166,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-06-bilingual.pdf",
     "status": "active"
@@ -179,8 +179,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-07-en.pdf",
     "status": "active"
@@ -192,8 +192,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-07-bilingual.pdf",
     "status": "active"
@@ -205,8 +205,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-08-en.pdf",
     "status": "active"
@@ -218,8 +218,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-08-bilingual.pdf",
     "status": "active"
@@ -231,8 +231,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-09-en.pdf",
     "status": "active"
@@ -244,8 +244,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-09-bilingual.pdf",
     "status": "active"
@@ -257,8 +257,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-10-en.pdf",
     "status": "active"
@@ -270,8 +270,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-10-bilingual.pdf",
     "status": "active"
@@ -283,8 +283,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-11-en.pdf",
     "status": "active"
@@ -296,8 +296,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-11-bilingual.pdf",
     "status": "active"
@@ -309,8 +309,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-12-en.pdf",
     "status": "active"
@@ -322,8 +322,8 @@ export const releaseRegistry = [
     "channels": [
       "member"
     ],
-    "payhip_product_id": "",
-    "payhip_url": "",
+    "payhip_product_id": "eN4l6",
+    "payhip_url": "https://payhip.com/b/eN4l6",
     "membership_tier": "",
     "asset_key": "member-files/week-packs/week-12-bilingual.pdf",
     "status": "active"
