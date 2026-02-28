@@ -2,7 +2,7 @@
 layout: post
 title: "Edexcel 4MA1 比例与百分比：这些错误最常见"
 subtitle: "简单修正即可提升稳定得分。"
-description: "简单修正即可提升稳定得分。"
+description: "Edexcel 4MA1 比例与百分比常见错误汇总：直接比例、反比例、百分比变化中最容易丢分的题型，附修正方法与练习建议。"
 category: Edexcel 4MA1 专题解析
 lang: zh-CN
 tags: [IGCSE, Edexcel 4MA1, ratio, percentage]

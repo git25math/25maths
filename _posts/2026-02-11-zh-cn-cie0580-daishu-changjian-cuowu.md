@@ -2,7 +2,7 @@
 layout: post
 title: "CIE 0580 代数：7 个常见失分点与改法"
 subtitle: "专注那些最容易丢分的代数错误。"
-description: "专注那些最容易丢分的代数错误。"
+description: "CIE 0580 代数部分 7 个高频失分点：符号展开、因式分解、方程求解中的典型错误，附正确做法与备考策略。"
 category: CIE 0580 专题指南
 lang: zh-CN
 tags: [IGCSE, CIE 0580, algebra, common mistakes]

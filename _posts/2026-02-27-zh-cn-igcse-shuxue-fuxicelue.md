@@ -2,7 +2,7 @@
 layout: post
 title: "IGCSE 数学复习策略：一个真正有效的6周计划"
 subtitle: "不要再反复看笔记了，这是一个基于考官出题方式设计的结构化复习计划。"
-description: "不要再反复看笔记了，这是一个基于考官出题方式设计的结构化复习计划。"
+description: "IGCSE 数学 6 周结构化复习计划：基于考官出题方式设计，覆盖 CIE 0580 和 Edexcel 4MA1 高频考点，含每周任务安排。"
 category: 考试策略
 lang: zh-CN
 tags: [IGCSE, revision strategy, study plan, exam preparation]

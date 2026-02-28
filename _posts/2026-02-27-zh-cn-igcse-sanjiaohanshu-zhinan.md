@@ -2,7 +2,7 @@
 layout: post
 title: "IGCSE 三角函数完全指南：从基础到考试"
 subtitle: "掌握 SOHCAHTOA、正弦/余弦定理和3D三角函数 — 每年 Paper 4 必考。"
-description: "掌握 SOHCAHTOA、正弦/余弦定理和3D三角函数 — 每年 Paper 4 必考。"
+description: "IGCSE 三角函数完全指南：SOHCAHTOA、正弦定理、余弦定理、3D 三角函数，从基础到考试题型全覆盖，Paper 4 必考内容。"
 category: CIE 0580 专题指南
 lang: zh-CN
 tags: [IGCSE, CIE 0580, trigonometry, sine rule, cosine rule]

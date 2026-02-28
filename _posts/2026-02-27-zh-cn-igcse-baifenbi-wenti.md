@@ -2,7 +2,7 @@
 layout: post
 title: "IGCSE 百分比题型全解：考试中会遇到的每一种类型"
 subtitle: "百分比增减、逆向百分比、复利 — 一篇搞定全部题型。"
-description: "百分比增减、逆向百分比、复利 — 一篇搞定全部题型。"
+description: "IGCSE 百分比题型完全指南：百分比增减、逆向百分比、复利计算，涵盖 CIE 0580 和 Edexcel 4MA1 所有考点与解题步骤。"
 category: CIE 0580 专题指南
 lang: zh-CN
 tags: [IGCSE, CIE 0580, percentage, compound interest]

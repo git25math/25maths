@@ -2,7 +2,7 @@
 layout: post
 title: "CIE 0580 函数与图像：快速提分思路"
 subtitle: "掌握常见题型与核心技巧。"
-description: "掌握常见题型与核心技巧。"
+description: "CIE 0580 函数与图像提分指南：二次函数、反比例函数、变换等核心考点题型解析，适用于 Core 和 Extended 考生。"
 category: CIE 0580 专题指南
 lang: zh-CN
 tags: [IGCSE, CIE 0580, functions, graphs]
