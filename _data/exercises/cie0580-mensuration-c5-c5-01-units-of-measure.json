@@ -76,7 +76,7 @@
         "54 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert square metres to square centimetres, you must multiply by 100². So, 5.4 m² = 5.4 × 100 × 100 = 54000 cm²."
+      "explanation": "To convert square metres to square centimetres, you must multiply by $100^2$. So, 5.4 m² = 5.4 × 100 × 100 = 54000 cm²."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "0.032 m³"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert cubic centimetres to cubic metres, you must divide by 100³. So, 320,000 cm³ = 320,000 ÷ (100 × 100 × 100) = 0.32 m³."
+      "explanation": "To convert cubic centimetres to cubic metres, you must divide by $100^3$. So, 320,000 cm³ = 320,000 ÷ (100 × 100 × 100) = 0.32 m³."
     },
     {
       "type": "multiple-choice",

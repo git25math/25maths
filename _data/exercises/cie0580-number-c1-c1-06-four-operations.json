@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate: (-2)³",
+      "questionText": "Calculate: $(-2)^3$",
       "options": [
         "8",
         "-8",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of -2⁴?",
+      "questionText": "What is the value of -$2^4$?",
       "options": [
         "16",
         "-16",
@@ -76,7 +76,7 @@
         "-8"
       ],
       "correctAnswer": 1,
-      "explanation": "According to the order of operations (BIDMAS/PEMDAS), powers are calculated before the negative sign is applied. So, we calculate 2⁴ = 16 first, and then the expression becomes -16."
+      "explanation": "According to the order of operations (BIDMAS/PEMDAS), powers are calculated before the negative sign is applied. So, we calculate $2^4$ = 16 first, and then the expression becomes -16."
     },
     {
       "type": "multiple-choice",

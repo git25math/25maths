@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "The table shows information about the heights of 80 students. A histogram is drawn for this information. The bar for the class interval 160 < h ≤ 170 has a width of 10 cm and a height of 3.4 cm. Calculate the frequency for the class interval 170 < h ≤ 180, given its frequency density is 2.8 students/cm.",
+      "questionText": "The table shows information about the heights of 80 students. A histogram is drawn for this information. The bar for the class interval 160 < h $\\leq$ 170 has a width of 10 cm and a height of 3.4 cm. Calculate the frequency for the class interval 170 < h $\\leq$ 180, given its frequency density is 2.8 students/cm.",
       "options": [
         "28 students",
         "25 students",
@@ -16,11 +16,11 @@
         "34 students"
       ],
       "correctAnswer": 0,
-      "explanation": "Frequency Density = Frequency / Class Width. For 160 < h ≤ 170, Frequency Density = 3.4. So, Frequency = 3.4 * 10 = 34. For 170 < h ≤ 180, Class Width = 180 - 170 = 10 cm. Frequency Density = 2.8 students/cm. Therefore, Frequency = Frequency Density * Class Width = 2.8 * 10 = 28 students."
+      "explanation": "Frequency Density = Frequency / Class Width. For 160 < h $\\leq$ 170, Frequency Density = 3.4. So, Frequency = 3.4 * 10 = 34. For 170 < h $\\leq$ 180, Class Width = 180 - 170 = 10 cm. Frequency Density = 2.8 students/cm. Therefore, Frequency = Frequency Density * Class Width = 2.8 * 10 = 28 students."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A group of 100 people were asked about the time they spent watching TV last week. The histogram shows information about their responses. The bar for 0 < t ≤ 10 has a frequency of 20 people. The bar for 20 < t ≤ 35 has a frequency of 20 people. Calculate the frequency density for the bar representing 20 < t ≤ 35.",
+      "questionText": "A group of 100 people were asked about the time they spent watching TV last week. The histogram shows information about their responses. The bar for 0 < t $\\leq$ 10 has a frequency of 20 people. The bar for 20 < t $\\leq$ 35 has a frequency of 20 people. Calculate the frequency density for the bar representing 20 < t $\\leq$ 35.",
       "options": [
         "1.6 people/hour",
         "1.33 people/hour",
@@ -28,7 +28,7 @@
         "2.0 people/hour"
       ],
       "correctAnswer": 1,
-      "explanation": "For 20 < t ≤ 35, Class Width = 35 - 20 = 15. The frequency for this interval is given as 20. Therefore, Frequency Density = Frequency / Class Width = 20 / 15 = 1.33 (approx)."
+      "explanation": "For 20 < t $\\leq$ 35, Class Width = 35 - 20 = 15. The frequency for this interval is given as 20. Therefore, Frequency Density = Frequency / Class Width = 20 / 15 = 1.33 (approx)."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A histogram shows the waiting times (in minutes) of patients at a clinic. The first bar represents 0 < t ≤ 5 with a frequency density of 4. The second bar represents 5 < t ≤ 15 with a frequency density of 2. What is the total number of patients represented by these two bars?",
+      "questionText": "A histogram shows the waiting times (in minutes) of patients at a clinic. The first bar represents 0 < t $\\leq$ 5 with a frequency density of 4. The second bar represents 5 < t $\\leq$ 15 with a frequency density of 2. What is the total number of patients represented by these two bars?",
       "options": [
         "10 patients",
         "20 patients",
@@ -124,11 +124,11 @@
         "40 patients"
       ],
       "correctAnswer": 3,
-      "explanation": "For the first bar (0 < t ≤ 5): Class Width = 5 - 0 = 5. Frequency Density = 4. Frequency = Frequency Density * Class Width = 4 * 5 = 20 patients. For the second bar (5 < t ≤ 15): Class Width = 15 - 5 = 10. Frequency Density = 2. Frequency = Frequency Density * Class Width = 2 * 10 = 20 patients. Total number of patients = 20 + 20 = 40 patients."
+      "explanation": "For the first bar (0 < t $\\leq$ 5): Class Width = 5 - 0 = 5. Frequency Density = 4. Frequency = Frequency Density * Class Width = 4 * 5 = 20 patients. For the second bar (5 < t $\\leq$ 15): Class Width = 15 - 5 = 10. Frequency Density = 2. Frequency = Frequency Density * Class Width = 2 * 10 = 20 patients. Total number of patients = 20 + 20 = 40 patients."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A frequency polygon is drawn to represent the marks of students in a test. The midpoints of the class intervals are plotted against the frequencies. For the class 40 < m ≤ 50, if the frequency is 15, what point would be plotted?",
+      "questionText": "A frequency polygon is drawn to represent the marks of students in a test. The midpoints of the class intervals are plotted against the frequencies. For the class 40 < m $\\leq$ 50, if the frequency is 15, what point would be plotted?",
       "options": [
         "(40, 15)",
         "(50, 15)",
@@ -136,7 +136,7 @@
         "(45, 10)"
       ],
       "correctAnswer": 2,
-      "explanation": "In a frequency polygon, the midpoint of each class interval is plotted against its corresponding frequency. For the class 40 < m ≤ 50, the midpoint is (40 + 50) / 2 = 45. The frequency is given as 15. Therefore, the point (45, 15) would be plotted."
+      "explanation": "In a frequency polygon, the midpoint of each class interval is plotted against its corresponding frequency. For the class 40 < m $\\leq$ 50, the midpoint is (40 + 50) / 2 = 45. The frequency is given as 15. Therefore, the point (45, 15) would be plotted."
     },
     {
       "type": "multiple-choice",

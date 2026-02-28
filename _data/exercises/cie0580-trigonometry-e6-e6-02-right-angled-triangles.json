@@ -16,7 +16,7 @@
         "23.33 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the sine ratio: sin(θ) = Opposite / Hypotenuse. So, Opposite = Hypotenuse × sin(θ) = 15 × sin(40°) ≈ 9.64 cm."
+      "explanation": "Use the sine ratio: sin($\\theta$) = Opposite / Hypotenuse. So, Opposite = Hypotenuse × sin($\\theta$) = 15 × sin(40°) ≈ 9.64 cm."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "34.87 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the cosine ratio: cos(θ) = Adjacent / Hypotenuse. So, Adjacent = Hypotenuse × cos(θ) = 20 × cos(55°) ≈ 11.47 cm."
+      "explanation": "Use the cosine ratio: cos($\\theta$) = Adjacent / Hypotenuse. So, Adjacent = Hypotenuse × cos($\\theta$) = 20 × cos(55°) ≈ 11.47 cm."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "28.81 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the tangent ratio: tan(θ) = Opposite / Adjacent. So, Opposite = Adjacent × tan(θ) = 18 × tan(32°) ≈ 11.25 cm."
+      "explanation": "Use the tangent ratio: tan($\\theta$) = Opposite / Adjacent. So, Opposite = Adjacent × tan($\\theta$) = 18 × tan(32°) ≈ 11.25 cm."
     },
     {
       "type": "multiple-choice",
@@ -52,11 +52,11 @@
         "18.93 m"
       ],
       "correctAnswer": 3,
-      "explanation": "Use the sine ratio: sin(θ) = Opposite / Hypotenuse. So, Hypotenuse = Opposite / sin(θ) = 8 / sin(25°) ≈ 18.93 m."
+      "explanation": "Use the sine ratio: sin($\\theta$) = Opposite / Hypotenuse. So, Hypotenuse = Opposite / sin($\\theta$) = 8 / sin(25°) ≈ 18.93 m."
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite an angle θ is 10 cm and the side adjacent to it is 15 cm. Calculate the size of angle θ, correct to 1 decimal place.",
+      "questionText": "In a right-angled triangle, the side opposite an angle $\\theta$ is 10 cm and the side adjacent to it is 15 cm. Calculate the size of angle $\\theta$, correct to 1 decimal place.",
       "options": [
         "33.7°",
         "56.3°",
@@ -64,7 +64,7 @@
         "41.8°"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the tangent ratio: tan(θ) = Opposite / Adjacent. So, θ = arctan(Opposite / Adjacent) = arctan(10 / 15) ≈ 33.7°."
+      "explanation": "Use the tangent ratio: tan($\\theta$) = Opposite / Adjacent. So, $\\theta$ = arctan(Opposite / Adjacent) = arctan(10 / 15) ≈ 33.7°."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "67.4°"
       ],
       "correctAnswer": 1,
-      "explanation": "The ladder is the hypotenuse (12 m) and the distance from the wall is the adjacent side (5 m). Use the cosine ratio: cos(θ) = Adjacent / Hypotenuse. So, θ = arccos(5 / 12) ≈ 65.4°."
+      "explanation": "The ladder is the hypotenuse (12 m) and the distance from the wall is the adjacent side (5 m). Use the cosine ratio: cos($\\theta$) = Adjacent / Hypotenuse. So, $\\theta$ = arccos(5 / 12) ≈ 65.4°."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "33.7°"
       ],
       "correctAnswer": 3,
-      "explanation": "The pole is the opposite side (8 m) and the shadow is the adjacent side (12 m). Use the tangent ratio: tan(θ) = Opposite / Adjacent. So, θ = arctan(8 / 12) ≈ 33.7°."
+      "explanation": "The pole is the opposite side (8 m) and the shadow is the adjacent side (12 m). Use the tangent ratio: tan($\\theta$) = Opposite / Adjacent. So, $\\theta$ = arctan(8 / 12) ≈ 33.7°."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "25/24"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the hypotenuse using Pythagoras' theorem: √(7² + 24²) = 25 cm. The smallest angle is opposite the shortest side (7 cm). The sine of an angle is Opposite / Hypotenuse. So, sin(θ) = 7 / 25."
+      "explanation": "First, find the hypotenuse using Pythagoras' theorem: √($7^2 + 24^2$) = 25 cm. The smallest angle is opposite the shortest side (7 cm). The sine of an angle is Opposite / Hypotenuse. So, sin($\\theta$) = 7 / 25."
     },
     {
       "type": "multiple-choice",

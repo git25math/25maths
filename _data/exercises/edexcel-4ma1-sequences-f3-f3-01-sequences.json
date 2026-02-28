@@ -124,7 +124,7 @@
         "30"
       ],
       "correctAnswer": 1,
-      "explanation": "The sequence is 1²=1, 2²=4, 3²=9, 4²=16. The next term is 5²=25."
+      "explanation": "The sequence is $1^2$=1, $2^2$=4, $3^2$=9, $4^2$=16. The next term is $5^2$=25."
     },
     {
       "type": "multiple-choice",

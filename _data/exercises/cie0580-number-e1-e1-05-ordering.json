@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of the following values for `y` satisfies the inequality `y < -2.55`?",
+      "questionText": "Which of the following values for ${y}$ satisfies the inequality ${y < -2.55}$?",
       "options": [
         "-2.5",
         "-2.55",
@@ -52,7 +52,7 @@
         "-2.56"
       ],
       "correctAnswer": 3,
-      "explanation": "A number `y` is less than -2.55 if it is further from zero on the negative number line. -2.56 is more negative than -2.55."
+      "explanation": "A number ${y}$ is less than -2.55 if it is further from zero on the negative number line. -2.56 is more negative than -2.55."
     },
     {
       "type": "multiple-choice",

@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A histogram is drawn to show the heights of plants. The bar for the interval 10 cm < h ≤ 25 cm has a height (frequency density) of 3. How many plants are in this interval?",
+      "questionText": "A histogram is drawn to show the heights of plants. The bar for the interval 10 cm < h $\\leq$ 25 cm has a height (frequency density) of 3. How many plants are in this interval?",
       "options": [
         "15",
         "5",
@@ -104,19 +104,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A histogram bar for the class `30 ≤ x < 40` has a frequency of 50. A bar for `40 ≤ x < 60` has a frequency of 80. Which bar is taller?",
+      "questionText": "A histogram bar for the class ${30 $\\leq$ x < 40}$ has a frequency of 50. A bar for ${40 $\\leq$ x < 60}$ has a frequency of 80. Which bar is taller?",
       "options": [
-        "The bar for 30 ≤ x < 40",
-        "The bar for 40 ≤ x < 60",
+        "The bar for 30 $\\leq$ x < 40",
+        "The bar for 40 $\\leq$ x < 60",
         "They have the same height",
         "Cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "The height represents frequency density. For 30 ≤ x < 40, width=10, density=50/10=5. For 40 ≤ x < 60, width=20, density=80/20=4. The first bar is taller."
+      "explanation": "The height represents frequency density. For 30 $\\leq$ x < 40, width=10, density=50/10=5. For 40 $\\leq$ x < 60, width=20, density=80/20=4. The first bar is taller."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The weights, w kg, of 120 parcels are measured. In the histogram, the bar representing 5 < w ≤ 10 has a frequency density of 8. What is the frequency for this class?",
+      "questionText": "The weights, w kg, of 120 parcels are measured. In the histogram, the bar representing 5 < w $\\leq$ 10 has a frequency density of 8. What is the frequency for this class?",
       "options": [
         "1.6",
         "40",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A histogram has two bars. Bar 1: class `0-10`, density `5`. Bar 2: class `10-30`, density `2`. What is the total frequency represented?",
+      "questionText": "A histogram has two bars. Bar 1: class ${0-10}$, density `5`. Bar 2: class ${10-30}$, density `2`. What is the total frequency represented?",
       "options": [
         "7",
         "90",

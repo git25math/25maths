@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the value of 2⁵.",
+      "questionText": "Calculate the value of $2^5$.",
       "options": [
         "10",
         "25",
@@ -16,11 +16,11 @@
         "64"
       ],
       "correctAnswer": 2,
-      "explanation": "The expression 2⁵ means 2 multiplied by itself 5 times: 2 × 2 × 2 × 2 × 2 = 32. It is not 2 × 5."
+      "explanation": "The expression $2^5$ means 2 multiplied by itself 5 times: 2 × 2 × 2 × 2 × 2 = 32. It is not 2 × 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of √81?",
+      "questionText": "What is the value of $\\sqrt{81}$?",
       "options": [
         "8.1",
         "9",
@@ -32,31 +32,31 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression 3² × 3⁴.",
+      "questionText": "Simplify the expression $3^2 \\times 3^4$.",
       "options": [
-        "3⁶",
-        "3⁸",
-        "9⁶",
-        "9⁸"
+        "$3^6$",
+        "$3^8$",
+        "$9^6$",
+        "$9^8$"
       ],
       "correctAnswer": 0,
-      "explanation": "According to the index laws, when you multiply powers with the same base, you add the exponents. So, 3² × 3⁴ = 3²⁺⁴ = 3⁶."
+      "explanation": "According to the index laws, when you multiply powers with the same base, you add the exponents. So, $3^2 \\times 3^4 = 3^{2+4} = 3^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression 10³ ÷ 10⁵.",
+      "questionText": "Simplify the expression $10^3 \\div 10^5$.",
       "options": [
-        "10⁸",
-        "10²",
-        "10⁻²",
-        "10⁻⁸"
+        "$10^8$",
+        "$10^2$",
+        "$10^{-2}$",
+        "$10^{-8}$"
       ],
       "correctAnswer": 2,
-      "explanation": "According to the index laws, when you divide powers with the same base, you subtract the exponents. So, 10³ ÷ 10⁵ = 10³⁻⁵ = 10⁻²."
+      "explanation": "According to the index laws, when you divide powers with the same base, you subtract the exponents. So, $10^3 \\div 10^5 = 10^{3-5} = 10^{-2}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 5⁰?",
+      "questionText": "What is the value of $5^0$?",
       "options": [
         "0",
         "1",
@@ -68,31 +68,31 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression 4³ ÷ 4.",
+      "questionText": "Simplify the expression $4^3$ ÷ 4.",
       "options": [
-        "4⁴",
-        "4³",
-        "4²",
+        "$4^4$",
+        "$4^3$",
+        "$4^2$",
         "4"
       ],
       "correctAnswer": 2,
-      "explanation": "The number 4 can be written as 4¹. Using the division index law, 4³ ÷ 4¹ = 4³⁻¹ = 4²."
+      "explanation": "The number 4 can be written as $4^1$. Using the division index law, $4^3 \\div 4^1 = 4^{3-1} = 4^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression (2³)².",
+      "questionText": "Simplify the expression $(2^3)^2$.",
       "options": [
-        "2⁵",
-        "2⁶",
-        "2⁹",
-        "4⁶"
+        "$2^5$",
+        "$2^6$",
+        "$2^9$",
+        "$4^6$"
       ],
       "correctAnswer": 1,
-      "explanation": "According to the index laws, when you raise a power to another power, you multiply the exponents. So, (2³)² = 2³ˣ² = 2⁶."
+      "explanation": "According to the index laws, when you raise a power to another power, you multiply the exponents. So, $(2^3)^2 = 2^3$ˣ² = $2^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 9¹ᐟ²?",
+      "questionText": "What is the value of $9^1$ᐟ²?",
       "options": [
         "3",
         "4.5",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 27¹ᐟ³?",
+      "questionText": "What is the value of $27^1$ᐟ³?",
       "options": [
         "3",
         "9",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the value of 2⁻³.",
+      "questionText": "Calculate the value of $2^{-3}$.",
       "options": [
         "−8",
         "−6",
@@ -124,7 +124,7 @@
         "1/6"
       ],
       "correctAnswer": 2,
-      "explanation": "A negative index indicates the reciprocal of the number. So, 2⁻³ = 1/2³ = 1/8."
+      "explanation": "A negative index indicates the reciprocal of the number. So, $2^{-3} = 1/2^3$ = 1/8."
     },
     {
       "type": "multiple-choice",
@@ -136,11 +136,11 @@
         "32 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a square is side length squared (s²). To find the side length, you need to find the square root of the area. √64 = 8 cm."
+      "explanation": "The area of a square is side length squared (s²). To find the side length, you need to find the square root of the area. $\\sqrt{64}$ = 8 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Express 10⁻⁴ as an ordinary number.",
+      "questionText": "Express $10^{-4}$ as an ordinary number.",
       "options": [
         "0.0001",
         "0.001",
@@ -148,7 +148,7 @@
         "−40"
       ],
       "correctAnswer": 0,
-      "explanation": "The negative index means a reciprocal. 10⁻⁴ = 1/10⁴ = 1/10000 = 0.0001."
+      "explanation": "The negative index means a reciprocal. $10^{-4} = 1/10^4$ = 1/10000 = 0.0001."
     }
   ]
 }

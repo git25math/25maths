@@ -11,9 +11,9 @@
       "questionText": "A number, x, is 14 when rounded to the nearest integer. What is the error interval for x?",
       "options": [
         "13 < x < 15",
-        "13.5 ≤ x < 14.5",
-        "13.5 < x ≤ 14.5",
-        "14 ≤ x < 15"
+        "13.5 $\\leq$ x < 14.5",
+        "13.5 < x $\\leq$ 14.5",
+        "14 $\\leq$ x < 15"
       ],
       "correctAnswer": 1,
       "explanation": "The number is rounded to the nearest integer, so the error is ±0.5. The lower bound is 14 - 0.5 = 13.5 (inclusive), and the upper bound is 14 + 0.5 = 14.5 (exclusive)."
@@ -46,10 +46,10 @@
       "type": "multiple-choice",
       "questionText": "A time, t, is measured as 45 seconds, correct to the nearest second. Which interval correctly represents the actual time?",
       "options": [
-        "44 ≤ t < 46",
-        "44.5 < t ≤ 45.5",
-        "45 ≤ t < 46",
-        "44.5 ≤ t < 45.5"
+        "44 $\\leq$ t < 46",
+        "44.5 < t $\\leq$ 45.5",
+        "45 $\\leq$ t < 46",
+        "44.5 $\\leq$ t < 45.5"
       ],
       "correctAnswer": 3,
       "explanation": "Correct to the nearest second, the error is ±0.5 seconds. The lower bound is 45 - 0.5 = 44.5 (inclusive), and the upper bound is 45 + 0.5 = 45.5 (exclusive)."
@@ -118,10 +118,10 @@
       "type": "multiple-choice",
       "questionText": "A value, p, is recorded as 0.84 correct to 2 decimal places. What is the error interval for p?",
       "options": [
-        "0.83 ≤ p < 0.85",
-        "0.835 ≤ p < 0.845",
-        "0.835 < p ≤ 0.845",
-        "0.84 ≤ p < 0.85"
+        "0.83 $\\leq$ p < 0.85",
+        "0.835 $\\leq$ p < 0.845",
+        "0.835 < p $\\leq$ 0.845",
+        "0.84 $\\leq$ p < 0.85"
       ],
       "correctAnswer": 1,
       "explanation": "Correct to 2 decimal places (0.01), the error is ±0.01 / 2 = ±0.005. The lower bound is 0.84 - 0.005 = 0.835 (inclusive), and the upper bound is 0.84 + 0.005 = 0.845 (exclusive)."

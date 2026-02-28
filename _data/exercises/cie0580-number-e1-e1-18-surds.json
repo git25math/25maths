@@ -8,147 +8,147 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Simplify √48.",
+      "questionText": "Simplify $\\sqrt{48}$.",
       "options": [
-        "4√3",
-        "2√12",
-        "16√3",
-        "3√16"
+        "$4\\sqrt{3}$",
+        "$2\\sqrt{12}$",
+        "$16\\sqrt{3}$",
+        "$3\\sqrt{16}$"
       ],
       "correctAnswer": 0,
-      "explanation": "To simplify √48, find the largest square number that is a factor of 48. This is 16. So, √48 = √(16 × 3) = √16 × √3 = 4√3."
+      "explanation": "To simplify $\\sqrt{48}$, find the largest square number that is a factor of 48. This is 16. So, $\\sqrt{48} = \\sqrt{16 \\times 3} = \\sqrt{16} \\times \\sqrt{3} = 4\\sqrt{3}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate √50 + √18.",
+      "questionText": "Calculate $\\sqrt{50} + \\sqrt{18}$.",
       "options": [
-        "√68",
-        "8√2",
-        "2√2",
-        "13√2"
+        "$\\sqrt{68}$",
+        "$8\\sqrt{2}$",
+        "$2\\sqrt{2}$",
+        "$13\\sqrt{2}$"
       ],
       "correctAnswer": 1,
-      "explanation": "First, simplify the surds: √50 = √(25 × 2) = 5√2 and √18 = √(9 × 2) = 3√2. Then, add the simplified surds: 5√2 + 3√2 = 8√2."
+      "explanation": "First, simplify the surds: $\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}$ and $\\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}$. Then, add the simplified surds: $5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Rationalise the denominator of 3/√5.",
+      "questionText": "Rationalise the denominator of $3/\\sqrt{5}$.",
       "options": [
-        "3√5/5",
-        "√5/3",
-        "3√5",
+        "$3\\sqrt{5}/5$",
+        "$\\sqrt{5}/3$",
+        "$3\\sqrt{5}$",
         "15/5"
       ],
       "correctAnswer": 0,
-      "explanation": "To rationalise the denominator, multiply the numerator and the denominator by √5. This gives (3 × √5) / (√5 × √5) = 3√5/5."
+      "explanation": "To rationalise the denominator, multiply the numerator and the denominator by $\\sqrt{5}$. This gives (3 × $\\sqrt{5}$) / ($\\sqrt{5} \\times \\sqrt{5}$) = $3\\sqrt{5}/5$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate √12 × √3.",
+      "questionText": "Calculate $\\sqrt{12} \\times \\sqrt{3}$.",
       "options": [
-        "√15",
-        "2√3",
+        "$\\sqrt{15}$",
+        "$2\\sqrt{3}$",
         "6",
-        "√360"
+        "$\\sqrt{360}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Multiply the numbers inside the square roots: √12 × √3 = √(12 × 3) = √36. The square root of 36 is 6."
+      "explanation": "Multiply the numbers inside the square roots: $\\sqrt{12} \\times \\sqrt{3} = \\sqrt{12 \\times 3} = \\sqrt{36}$. The square root of 36 is 6."
     },
     {
       "type": "multiple-choice",
       "questionText": "A square has an area of 32 cm². What is the exact length of one side?",
       "options": [
-        "√32 cm",
+        "$\\sqrt{32}$ cm",
         "16 cm",
-        "8√2 cm",
-        "4√2 cm"
+        "$8\\sqrt{2}$ cm",
+        "$4\\sqrt{2}$ cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The length of one side is the square root of the area. Side = √32 = √(16 × 2) = √16 × √2 = 4√2 cm."
+      "explanation": "The length of one side is the square root of the area. Side = $\\sqrt{32} = \\sqrt{16 \\times 2} = \\sqrt{16} \\times \\sqrt{2} = 4\\sqrt{2}$ cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify √75 - √12.",
+      "questionText": "Simplify $\\sqrt{75} - \\sqrt{12}$.",
       "options": [
-        "√63",
-        "3√3",
-        "7√3",
-        "3√5 - 2√3"
+        "$\\sqrt{63}$",
+        "$3\\sqrt{3}$",
+        "$7\\sqrt{3}$",
+        "$3\\sqrt{5} - 2\\sqrt{3}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Simplify each surd first. √75 = √(25 × 3) = 5√3. √12 = √(4 × 3) = 2√3. Then subtract: 5√3 - 2√3 = 3√3."
+      "explanation": "Simplify each surd first. $\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$. $\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}$. Then subtract: $5\\sqrt{3} - 2\\sqrt{3} = 3\\sqrt{3}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Which of the following numbers is irrational?",
       "options": [
-        "√100",
+        "$\\sqrt{100}$",
         "9/11",
-        "√15",
+        "$\\sqrt{15}$",
         "3.14"
       ],
       "correctAnswer": 2,
-      "explanation": "An irrational number cannot be written as a simple fraction. √15 cannot be simplified to a rational number because 15 is not a perfect square. √100 = 10, which is rational."
+      "explanation": "An irrational number cannot be written as a simple fraction. $\\sqrt{15}$ cannot be simplified to a rational number because 15 is not a perfect square. $\\sqrt{100}$ = 10, which is rational."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Expand and simplify (√3 + 2)².",
+      "questionText": "Expand and simplify $(\\sqrt{3} + 2)^2$.",
       "options": [
         "5",
         "7",
-        "7 + 4√3",
-        "5 + 4√3"
+        "7 + $4\\sqrt{3}$",
+        "5 + $4\\sqrt{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the FOIL method: (√3 + 2)(√3 + 2) = (√3)² + 2√3 + 2√3 + 2² = 3 + 4√3 + 4 = 7 + 4√3."
+      "explanation": "Use the FOIL method: ($\\sqrt{3}$ + 2)($\\sqrt{3}$ + 2) = $(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2$ = 3 + $4\\sqrt{3}$ + 4 = 7 + $4\\sqrt{3}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify √200 completely.",
+      "questionText": "Simplify $\\sqrt{200}$ completely.",
       "options": [
-        "10√2",
-        "5√20",
-        "20√10",
-        "100√2"
+        "$10\\sqrt{2}$",
+        "$5\\sqrt{20}$",
+        "$20\\sqrt{10}$",
+        "$100\\sqrt{2}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Find the largest square factor of 200, which is 100. √200 = √(100 × 2) = √100 × √2 = 10√2."
+      "explanation": "Find the largest square factor of 200, which is 100. $\\sqrt{200} = \\sqrt{100 \\times 2} = \\sqrt{100} \\times \\sqrt{2} = 10\\sqrt{2}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Rationalise the denominator of 7 / (2√3).",
+      "questionText": "Rationalise the denominator of 7 / ($2\\sqrt{3}$).",
       "options": [
-        "7√3 / 3",
-        "7√3 / 6",
-        "14√3 / 6",
+        "$7\\sqrt{3}$ / 3",
+        "$7\\sqrt{3}$ / 6",
+        "$14\\sqrt{3}$ / 6",
         "7 / 6"
       ],
       "correctAnswer": 1,
-      "explanation": "Multiply the numerator and denominator by √3. This gives (7 × √3) / (2√3 × √3) = 7√3 / (2 × 3) = 7√3 / 6."
+      "explanation": "Multiply the numerator and denominator by $\\sqrt{3}$. This gives (7 × $\\sqrt{3}$) / ($2\\sqrt{3} \\times \\sqrt{3}$) = $7\\sqrt{3}$ / (2 × 3) = $7\\sqrt{3}$ / 6."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The perimeter of an equilateral triangle is 12√5 cm. Find the length of one side.",
+      "questionText": "The perimeter of an equilateral triangle is $12\\sqrt{5}$ cm. Find the length of one side.",
       "options": [
-        "4√5 cm",
-        "3√5 cm",
-        "6√5 cm",
-        "4√15 cm"
+        "$4\\sqrt{5}$ cm",
+        "$3\\sqrt{5}$ cm",
+        "$6\\sqrt{5}$ cm",
+        "$4\\sqrt{15}$ cm"
       ],
       "correctAnswer": 0,
-      "explanation": "An equilateral triangle has three equal sides. To find the length of one side, divide the perimeter by 3. (12√5) / 3 = 4√5 cm."
+      "explanation": "An equilateral triangle has three equal sides. To find the length of one side, divide the perimeter by 3. ($12\\sqrt{5}$) / 3 = $4\\sqrt{5}$ cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate (4√2)², giving your answer as an integer.",
+      "questionText": "Calculate $(4\\sqrt{2})^2$, giving your answer as an integer.",
       "options": [
         "16",
         "8",
         "32",
-        "8√2"
+        "$8\\sqrt{2}$"
       ],
       "correctAnswer": 2,
-      "explanation": "To square the expression, square both parts: 4² = 16 and (√2)² = 2. Then multiply the results: 16 × 2 = 32."
+      "explanation": "To square the expression, square both parts: $4^2$ = 16 and $(\\sqrt{2})^2$ = 2. Then multiply the results: 16 × 2 = 32."
     }
   ]
 }

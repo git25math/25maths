@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "On a histogram, the frequency density for a class interval of 10 < x ≤ 20 is 4.5. What is the frequency for this class?",
+      "questionText": "On a histogram, the frequency density for a class interval of 10 < x $\\leq$ 20 is 4.5. What is the frequency for this class?",
       "options": [
         "45",
         "0.45",

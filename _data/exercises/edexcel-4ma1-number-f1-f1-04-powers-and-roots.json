@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 3³.",
+      "questionText": "Calculate $3^3$.",
       "options": [
         "9",
         "6",
@@ -28,7 +28,7 @@
         "12"
       ],
       "correctAnswer": 2,
-      "explanation": "3³ means 3 × 3 × 3. 3 × 3 = 9, and 9 × 3 = 27."
+      "explanation": "$3^3$ means 3 × 3 × 3. 3 × 3 = 9, and 9 × 3 = 27."
     },
     {
       "type": "multiple-choice",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 12⁰?",
+      "questionText": "What is the value of $12^0$?",
       "options": [
         "0",
         "1",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Work out the value of 2⁴.",
+      "questionText": "Work out the value of $2^4$.",
       "options": [
         "8",
         "6",
@@ -76,11 +76,11 @@
         "24"
       ],
       "correctAnswer": 2,
-      "explanation": "2⁴ means 2 × 2 × 2 × 2. 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16."
+      "explanation": "$2^4$ means 2 × 2 × 2 × 2. 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find √49.",
+      "questionText": "Find $\\sqrt{49}$.",
       "options": [
         "7",
         "24.5",
@@ -88,7 +88,7 @@
         "6"
       ],
       "correctAnswer": 0,
-      "explanation": "√49 is the square root of 49. The number that multiplies by itself to make 49 is 7."
+      "explanation": "$\\sqrt{49}$ is the square root of 49. The number that multiplies by itself to make 49 is 7."
     },
     {
       "type": "multiple-choice",
@@ -100,11 +100,11 @@
         "14 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a square is side length squared. To find the side length, you need to find the square root of the area. √144 = 12."
+      "explanation": "The area of a square is side length squared. To find the side length, you need to find the square root of the area. $\\sqrt{144}$ = 12."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 10³.",
+      "questionText": "Calculate $10^3$.",
       "options": [
         "30",
         "100",
@@ -112,11 +112,11 @@
         "10000"
       ],
       "correctAnswer": 2,
-      "explanation": "10³ means 10 × 10 × 10, which equals 1000."
+      "explanation": "$10^3$ means 10 × 10 × 10, which equals 1000."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of ∛125 (the cube root of 125)?",
+      "questionText": "What is the value of $\\sqrt[3]{125}$ (the cube root of 125)?",
       "options": [
         "5",
         "15",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Work out 1² + 2² + 3².",
+      "questionText": "Work out $1^2 + 2^2 + 3^2$.",
       "options": [
         "6",
         "9",
@@ -148,7 +148,7 @@
         "36"
       ],
       "correctAnswer": 2,
-      "explanation": "First, calculate the squares: 1² = 1, 2² = 4, 3² = 9. Then add them together: 1 + 4 + 9 = 14."
+      "explanation": "First, calculate the squares: $1^2$ = 1, $2^2$ = 4, $3^2$ = 9. Then add them together: 1 + 4 + 9 = 14."
     }
   ]
 }

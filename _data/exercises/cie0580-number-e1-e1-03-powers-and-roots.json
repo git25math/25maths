@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 2⁵.",
+      "questionText": "Evaluate $2^5$.",
       "options": [
         "10",
         "25",
@@ -16,47 +16,47 @@
         "16"
       ],
       "correctAnswer": 2,
-      "explanation": "2⁵ means 2 × 2 × 2 × 2 × 2, which equals 32. It is not 2 × 5."
+      "explanation": "$2^5$ means 2 × 2 × 2 × 2 × 2, which equals 32. It is not 2 × 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 3² × 3⁴.",
+      "questionText": "Simplify $3^2 \\times 3^4$.",
       "options": [
-        "3⁸",
-        "9⁶",
-        "3⁶",
-        "9⁸"
+        "$3^8$",
+        "$9^6$",
+        "$3^6$",
+        "$9^8$"
       ],
       "correctAnswer": 2,
-      "explanation": "When multiplying powers with the same base, you add the indices. So, 3² × 3⁴ = 3²⁺⁴ = 3⁶."
+      "explanation": "When multiplying powers with the same base, you add the indices. So, $3^2 \\times 3^4 = 3^{2+4} = 3^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 10⁶ ÷ 10².",
+      "questionText": "Simplify $10^6 \\div 10^2$.",
       "options": [
-        "10⁸",
-        "10³",
-        "10⁻⁴",
-        "10⁴"
+        "$10^8$",
+        "$10^3$",
+        "$10^{-4}$",
+        "$10^4$"
       ],
       "correctAnswer": 3,
-      "explanation": "When dividing powers with the same base, you subtract the indices. So, 10⁶ ÷ 10² = 10⁶⁻² = 10⁴."
+      "explanation": "When dividing powers with the same base, you subtract the indices. So, $10^6 \\div 10^2 = 10^{6-2} = 10^4$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate (2³)⁴.",
+      "questionText": "Evaluate $(2^3)^4$.",
       "options": [
-        "2⁷",
-        "2¹²",
-        "2⁶⁴",
-        "8⁴"
+        "$2^7$",
+        "$2^{12}$",
+        "$2^{64}$",
+        "$8^4$"
       ],
       "correctAnswer": 1,
-      "explanation": "When raising a power to another power, you multiply the indices. So, (2³)⁴ = 2³ˣ⁴ = 2¹²."
+      "explanation": "When raising a power to another power, you multiply the indices. So, $(2^3)^4 = 2^3$ˣ⁴ = $2^{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 5⁰?",
+      "questionText": "What is the value of $5^0$?",
       "options": [
         "0",
         "1",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 4⁻².",
+      "questionText": "Evaluate $4^{-2}$.",
       "options": [
         "-8",
         "-16",
@@ -76,11 +76,11 @@
         "1/16"
       ],
       "correctAnswer": 3,
-      "explanation": "A negative index indicates the reciprocal. So, 4⁻² = 1/4² = 1/16."
+      "explanation": "A negative index indicates the reciprocal. So, $4^{-2} = 1/4^2$ = 1/16."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 9¹/².",
+      "questionText": "Evaluate $9^{1/2}$.",
       "options": [
         "4.5",
         "18",
@@ -88,11 +88,11 @@
         "81"
       ],
       "correctAnswer": 2,
-      "explanation": "An index of 1/2 means the square root. So, 9¹/² = √9 = 3."
+      "explanation": "An index of 1/2 means the square root. So, $9^{1/2} = \\sqrt{9}$ = 3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 27¹/³.",
+      "questionText": "Evaluate $27^{1/3}$.",
       "options": [
         "9",
         "3",
@@ -100,23 +100,23 @@
         "2.7"
       ],
       "correctAnswer": 1,
-      "explanation": "An index of 1/3 means the cube root. So, 27¹/³ = ³√27 = 3."
+      "explanation": "An index of 1/3 means the cube root. So, $27^{1/3} = \\sqrt[3]{27}$ = 3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify a⁶ × a⁻².",
+      "questionText": "Simplify $a^6 \\times a^{-2}$.",
       "options": [
-        "a⁻¹²",
-        "a⁴",
-        "a⁸",
-        "a⁻³"
+        "$a^{-12}$",
+        "$a^4$",
+        "$a^8$",
+        "$a^{-3}$"
       ],
       "correctAnswer": 1,
-      "explanation": "When multiplying powers with the same base, add the indices. So, a⁶ × a⁻² = a⁶⁺⁽⁻²⁾ = a⁴."
+      "explanation": "When multiplying powers with the same base, add the indices. So, $a^6 \\times a^{-2} = a^{6+(-2)} = a^4$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write 10⁻³ as a decimal.",
+      "questionText": "Write $10^{-3}$ as a decimal.",
       "options": [
         "0.001",
         "-1000",
@@ -124,11 +124,11 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "10⁻³ is equivalent to 1/10³ = 1/1000, which is 0.001 as a decimal."
+      "explanation": "$10^{-3}$ is equivalent to $1/10^3$ = 1/1000, which is 0.001 as a decimal."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 16³/⁴.",
+      "questionText": "Evaluate $16^{3/4}$.",
       "options": [
         "12",
         "6",
@@ -136,7 +136,7 @@
         "32"
       ],
       "correctAnswer": 2,
-      "explanation": "16³/⁴ means (⁴√16)³. The 4th root of 16 is 2. Then, 2³ = 8."
+      "explanation": "$16^{3/4}$ means $(\\sqrt[4]{16})^3$. The 4th root of 16 is 2. Then, $2^3$ = 8."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "9.8 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a square is side length squared. To find the side length, you need to find the square root of the area. √49 = 7 cm."
+      "explanation": "The area of a square is side length squared. To find the side length, you need to find the square root of the area. $\\sqrt{49}$ = 7 cm."
     }
   ]
 }

@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "What is the shape of the graph for the equation y = x² + 3?",
+      "questionText": "What is the shape of the graph for the equation y = $x^2$ + 3?",
       "options": [
         "A straight line",
         "A U-shaped parabola",
@@ -16,11 +16,11 @@
         "A V-shaped graph"
       ],
       "correctAnswer": 1,
-      "explanation": "The equation contains an x² term, which is characteristic of a quadratic equation. The graph of a quadratic equation is a U-shaped curve called a parabola."
+      "explanation": "The equation contains an $x^2$ term, which is characteristic of a quadratic equation. The graph of a quadratic equation is a U-shaped curve called a parabola."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the y-intercept of the graph y = x² - 5x + 6?",
+      "questionText": "What is the y-intercept of the graph y = $x^2$ - 5x + 6?",
       "options": [
         "6",
         "-5",
@@ -28,23 +28,23 @@
         "3"
       ],
       "correctAnswer": 0,
-      "explanation": "The y-intercept is the point where the graph crosses the y-axis. This occurs when x = 0. Substituting x = 0 into the equation gives y = 0² - 5(0) + 6 = 6."
+      "explanation": "The y-intercept is the point where the graph crosses the y-axis. This occurs when x = 0. Substituting x = 0 into the equation gives y = $0^2$ - 5(0) + 6 = 6."
     },
     {
       "type": "multiple-choice",
       "questionText": "For which equation does the parabola open downwards?",
       "options": [
-        "y = 2x²",
-        "y = x² - 4",
-        "y = -3x² + 1",
-        "y = (x - 1)²"
+        "y = 2$x^2$",
+        "y = $x^2$ - 4",
+        "y = -3$x^2$ + 1",
+        "y = $(x - 1)^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "A parabola opens downwards when the coefficient of the x² term is negative. In the equation y = -3x² + 1, the coefficient is -3."
+      "explanation": "A parabola opens downwards when the coefficient of the $x^2$ term is negative. In the equation y = -3$x^2$ + 1, the coefficient is -3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What are the roots (x-intercepts) of the equation y = x² - 9?",
+      "questionText": "What are the roots (x-intercepts) of the equation y = $x^2$ - 9?",
       "options": [
         "x = 9 and x = -9",
         "x = 3 and x = -3",
@@ -52,11 +52,11 @@
         "The graph does not have roots."
       ],
       "correctAnswer": 1,
-      "explanation": "The roots are the values of x for which y = 0. We need to solve the equation x² - 9 = 0. This gives x² = 9, so x = 3 and x = -3."
+      "explanation": "The roots are the values of x for which y = 0. We need to solve the equation $x^2$ - 9 = 0. This gives $x^2$ = 9, so x = 3 and x = -3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the turning point of the graph y = (x - 4)² + 5?",
+      "questionText": "What is the turning point of the graph y = $(x - 4)^2$ + 5?",
       "options": [
         "(-4, 5)",
         "(4, 5)",
@@ -64,7 +64,7 @@
         "(-4, -5)"
       ],
       "correctAnswer": 1,
-      "explanation": "For a quadratic in the form y = (x - h)² + k, the turning point (vertex) is at the point (h, k). In this case, h = 4 and k = 5."
+      "explanation": "For a quadratic in the form y = $(x - h)^2$ + k, the turning point (vertex) is at the point (h, k). In this case, h = 4 and k = 5."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the axis of symmetry for the parabola y = (x + 3)² - 1?",
+      "questionText": "What is the axis of symmetry for the parabola y = $(x + 3)^2$ - 1?",
       "options": [
         "x = 3",
         "x = -3",
@@ -100,11 +100,11 @@
         "y = 3"
       ],
       "correctAnswer": 1,
-      "explanation": "The axis of symmetry for a parabola in the form y = (x - h)² + k is the vertical line x = h. For this equation, h = -3, so the axis of symmetry is x = -3."
+      "explanation": "The axis of symmetry for a parabola in the form y = $(x - h)^2$ + k is the vertical line x = h. For this equation, h = -3, so the axis of symmetry is x = -3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "How does the graph of y = 5x² compare to the graph of y = x²?",
+      "questionText": "How does the graph of y = 5$x^2$ compare to the graph of y = $x^2$?",
       "options": [
         "It is wider.",
         "It is shifted 5 units up.",
@@ -112,7 +112,7 @@
         "It is shifted 5 units to the right."
       ],
       "correctAnswer": 2,
-      "explanation": "The coefficient of the x² term affects the steepness of the parabola. A coefficient with an absolute value greater than 1 makes the parabola narrower (a vertical stretch)."
+      "explanation": "The coefficient of the $x^2$ term affects the steepness of the parabola. A coefficient with an absolute value greater than 1 makes the parabola narrower (a vertical stretch)."
     },
     {
       "type": "multiple-choice",

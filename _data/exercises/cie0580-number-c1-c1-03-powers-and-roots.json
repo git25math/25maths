@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the value of 2⁵.",
+      "questionText": "Calculate the value of $2^5$.",
       "options": [
         "10",
         "25",
@@ -16,7 +16,7 @@
         "16"
       ],
       "correctAnswer": 2,
-      "explanation": "2⁵ means 2 × 2 × 2 × 2 × 2, which equals 32. A common mistake is to calculate 2 × 5."
+      "explanation": "$2^5$ means 2 × 2 × 2 × 2 × 2, which equals 32. A common mistake is to calculate 2 × 5."
     },
     {
       "type": "multiple-choice",
@@ -28,35 +28,35 @@
         "7"
       ],
       "correctAnswer": 1,
-      "explanation": "The square root of 81, written as √81, is the number that multiplies by itself to make 81. Since 9 × 9 = 81, the answer is 9."
+      "explanation": "The square root of 81, written as $\\sqrt{81}$, is the number that multiplies by itself to make 81. Since 9 × 9 = 81, the answer is 9."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 3² × 3⁴.",
+      "questionText": "Simplify $3^2 \\times 3^4$.",
       "options": [
-        "3⁶",
-        "3⁸",
-        "9⁶",
-        "9⁸"
+        "$3^6$",
+        "$3^8$",
+        "$9^6$",
+        "$9^8$"
       ],
       "correctAnswer": 0,
-      "explanation": "When multiplying powers with the same base, you add the indices (exponents). So, 3² × 3⁴ = 3⁽²⁺⁴⁾ = 3⁶."
+      "explanation": "When multiplying powers with the same base, you add the indices (exponents). So, $3^2 \\times 3^4 = 3^{(2+4)} = 3^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 10⁶ ÷ 10².",
+      "questionText": "Simplify $10^6 \\div 10^2$.",
       "options": [
-        "10⁸",
-        "10³",
-        "10⁴",
+        "$10^8$",
+        "$10^3$",
+        "$10^4$",
         "1"
       ],
       "correctAnswer": 2,
-      "explanation": "When dividing powers with the same base, you subtract the indices (exponents). So, 10⁶ ÷ 10² = 10⁽⁶⁻²⁾ = 10⁴."
+      "explanation": "When dividing powers with the same base, you subtract the indices (exponents). So, $10^6 \\div 10^2 = 10^{(6-2)} = 10^4$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 7⁰?",
+      "questionText": "What is the value of $7^0$?",
       "options": [
         "0",
         "1",
@@ -68,19 +68,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (2³)².",
+      "questionText": "Simplify $(2^3)^2$.",
       "options": [
-        "2⁵",
-        "2⁶",
-        "4⁵",
-        "4⁶"
+        "$2^5$",
+        "$2^6$",
+        "$4^5$",
+        "$4^6$"
       ],
       "correctAnswer": 1,
-      "explanation": "When raising a power to another power, you multiply the indices (exponents). So, (2³)² = 2⁽³ˣ²⁾ = 2⁶."
+      "explanation": "When raising a power to another power, you multiply the indices (exponents). So, $(2^3)^2 = 2^{(3}$ˣ²⁾ = $2^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the value of 9¹ᐟ².",
+      "questionText": "Calculate the value of $9^1$ᐟ².",
       "options": [
         "4.5",
         "18",
@@ -88,11 +88,11 @@
         "81"
       ],
       "correctAnswer": 2,
-      "explanation": "A power of 1/2 is the same as the square root. Therefore, 9¹ᐟ² = √9 = 3."
+      "explanation": "A power of 1/2 is the same as the square root. Therefore, $9^1$ᐟ² = $\\sqrt{9}$ = 3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the value of 27¹ᐟ³.",
+      "questionText": "Calculate the value of $27^1$ᐟ³.",
       "options": [
         "9",
         "3",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is 2⁻³ written as a fraction?",
+      "questionText": "What is $2^{-3}$ written as a fraction?",
       "options": [
         "-8",
         "-6",
@@ -112,7 +112,7 @@
         "1/8"
       ],
       "correctAnswer": 3,
-      "explanation": "A negative power indicates the reciprocal. So, 2⁻³ = 1/2³ = 1/8. The negative sign in the power does not make the result negative."
+      "explanation": "A negative power indicates the reciprocal. So, $2^{-3} = 1/2^3$ = 1/8. The negative sign in the power does not make the result negative."
     },
     {
       "type": "multiple-choice",
@@ -124,11 +124,11 @@
         "4 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a square is side × side (side²). To find the side length from the area, you calculate the square root of the area. √64 = 8 cm."
+      "explanation": "The area of a square is side × side ($side^2$). To find the side length from the area, you calculate the square root of the area. $\\sqrt{64}$ = 8 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write 10⁻³ as a decimal.",
+      "questionText": "Write $10^{-3}$ as a decimal.",
       "options": [
         "0.001",
         "0.01",
@@ -136,19 +136,19 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "10⁻³ is equal to 1/10³ or 1/1000. As a decimal, this is 0.001."
+      "explanation": "$10^{-3}$ is equal to $1/10^3$ or 1/1000. As a decimal, this is 0.001."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify a⁵ × a⁻².",
+      "questionText": "Simplify $a^5 \\times a^{-2}$.",
       "options": [
-        "a⁻¹⁰",
-        "a⁷",
-        "a³",
-        "a⁻³"
+        "$a^{-10}$",
+        "$a^7$",
+        "$a^3$",
+        "$a^{-3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "When multiplying powers with the same base, add the indices. 5 + (-2) = 3. So, the result is a³."
+      "explanation": "When multiplying powers with the same base, add the indices. 5 + (-2) = 3. So, the result is $a^3$."
     }
   ]
 }

@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sequence has the nth term `n² + 5`. What is the 8th term?",
+      "questionText": "A sequence has the nth term ${n² + 5}$. What is the 8th term?",
       "options": [
         "21",
         "69",
@@ -28,23 +28,23 @@
         "165"
       ],
       "correctAnswer": 1,
-      "explanation": "Substitute n=8 into the formula `n² + 5`. This gives 8² + 5 = 64 + 5 = 69."
+      "explanation": "Substitute n=8 into the formula ${n² + 5}$. This gives $8^2$ + 5 = 64 + 5 = 69."
     },
     {
       "type": "multiple-choice",
       "questionText": "The first five terms of a sequence are 2, 8, 18, 32, 50. Find the nth term.",
       "options": [
         "6n - 4",
-        "n² + 1",
-        "3n² - 1",
-        "2n²"
+        "$n^2$ + 1",
+        "3$n^2$ - 1",
+        "2$n^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The first differences are 6, 10, 14, 18. The second differences are constant at 4. The `n²` coefficient is half the second difference, so it is 2. The rule starts with `2n²`. The terms of `2n²` are 2, 8, 18, 32, 50. This perfectly matches the sequence, so the nth term is `2n²`."
+      "explanation": "The first differences are 6, 10, 14, 18. The second differences are constant at 4. The ${n²}$ coefficient is half the second difference, so it is 2. The rule starts with ${2n²}$. The terms of ${2n²}$ are 2, 8, 18, 32, 50. This perfectly matches the sequence, so the nth term is ${2n²}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The nth term of a sequence is `8n - 3`. Which term in the sequence is equal to 77?",
+      "questionText": "The nth term of a sequence is ${8n - 3}$. Which term in the sequence is equal to 77?",
       "options": [
         "9th",
         "10th",
@@ -52,7 +52,7 @@
         "8th"
       ],
       "correctAnswer": 1,
-      "explanation": "Set the nth term formula equal to 77: `8n - 3 = 77`. Add 3 to both sides: `8n = 80`. Divide by 8: `n = 10`. It is the 10th term."
+      "explanation": "Set the nth term formula equal to 77: ${8n - 3 = 77}$. Add 3 to both sides: ${8n = 80}$. Divide by 8: ${n = 10}$. It is the 10th term."
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The nth term of a sequence is given by `n(n+3)`. What are the first three terms?",
+      "questionText": "The nth term of a sequence is given by ${n(n+3)}$. What are the first three terms?",
       "options": [
         "4, 10, 18",
         "1, 2, 3",
@@ -94,13 +94,13 @@
       "type": "multiple-choice",
       "questionText": "Find the nth term of the sequence: 0, 3, 8, 15, 24, ...",
       "options": [
-        "n² - 1",
+        "$n^2$ - 1",
         "2n - 2",
-        "n² + n - 2",
+        "$n^2$ + n - 2",
         "3n - 3"
       ],
       "correctAnswer": 0,
-      "explanation": "The sequence is 1 less than the square numbers (1, 4, 9, 16, 25...). For n=1, 1²-1=0. For n=2, 2²-1=3. For n=3, 3²-1=8. The formula is `n² - 1`."
+      "explanation": "The sequence is 1 less than the square numbers (1, 4, 9, 16, 25...). For n=1, $1^2$-1=0. For n=2, $2^2$-1=3. For n=3, $3^2$-1=8. The formula is ${n² - 1}$."
     },
     {
       "type": "multiple-choice",
@@ -118,17 +118,17 @@
       "type": "multiple-choice",
       "questionText": "Find the nth term of the sequence: 4, 9, 16, 25, ...",
       "options": [
-        "n² + 3",
+        "$n^2$ + 3",
         "5n - 1",
-        "(n+1)²",
-        "n² + 1"
+        "$(n+1)^2$",
+        "$n^2$ + 1"
       ],
       "correctAnswer": 2,
-      "explanation": "The terms are square numbers starting from 2²: 2², 3², 4², 5², ... The base of the square is one more than the term number (n). So for n=1, it's (1+1)² = 2². For n=2, it's (2+1)² = 3². Thus, the nth term is (n+1)²."
+      "explanation": "The terms are square numbers starting from $2^2$: $2^2$, $3^2$, $4^2$, $5^2$, ... The base of the square is one more than the term number (n). So for n=1, it's $(1+1)^2 = 2^2$. For n=2, it's $(2+1)^2 = 3^2$. Thus, the nth term is $(n+1)^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A quadratic sequence has the nth term `2n² - n + 1`. Find the 10th term.",
+      "questionText": "A quadratic sequence has the nth term ${2n² - n + 1}$. Find the 10th term.",
       "options": [
         "191",
         "201",
@@ -136,11 +136,11 @@
         "189"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute n=10 into the formula: 2(10)² - 10 + 1 = 2(100) - 10 + 1 = 200 - 10 + 1 = 191."
+      "explanation": "Substitute n=10 into the formula: 2$(10)^2$ - 10 + 1 = 2(100) - 10 + 1 = 200 - 10 + 1 = 191."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The nth term of an arithmetic sequence is `12 - 2n`. What is the first term to have a negative value?",
+      "questionText": "The nth term of an arithmetic sequence is ${12 - 2n}$. What is the first term to have a negative value?",
       "options": [
         "6th",
         "5th",
@@ -148,7 +148,7 @@
         "8th"
       ],
       "correctAnswer": 2,
-      "explanation": "We want to find the smallest integer n for which `12 - 2n < 0`. Add 2n to both sides: `12 < 2n`. Divide by 2: `6 < n`. The smallest integer n that is greater than 6 is 7. So, the 7th term is the first negative term. Let's check: the 6th term is 12 - 2(6) = 0. The 7th term is 12 - 2(7) = -2."
+      "explanation": "We want to find the smallest integer n for which ${12 - 2n < 0}$. Add 2n to both sides: ${12 < 2n}$. Divide by 2: ${6 < n}$. The smallest integer n that is greater than 6 is 7. So, the 7th term is the first negative term. Let's check: the 6th term is 12 - 2(6) = 0. The 7th term is 12 - 2(7) = -2."
     }
   ]
 }

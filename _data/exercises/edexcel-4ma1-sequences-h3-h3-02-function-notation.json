@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If g(x) = x² + 2x - 5, determine the value of g(-2).",
+      "questionText": "If g(x) = $x^2$ + 2x - 5, determine the value of g(-2).",
       "options": [
         "-1",
         "3",
@@ -28,7 +28,7 @@
         "-5"
       ],
       "correctAnswer": 3,
-      "explanation": "Substitute x = -2 into the function: g(-2) = (-2)² + 2(-2) - 5 = 4 - 4 - 5 = -5."
+      "explanation": "Substitute x = -2 into the function: g(-2) = $(-2)^2$ + 2(-2) - 5 = 4 - 4 - 5 = -5."
     },
     {
       "type": "multiple-choice",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let k(x) = x² - 3x. Find the values of x for which k(x) = 10.",
+      "questionText": "Let k(x) = $x^2$ - 3x. Find the values of x for which k(x) = 10.",
       "options": [
         "x = 5 or x = -2",
         "x = 2 or x = -5",
@@ -64,7 +64,7 @@
         "x = 5 or x = 2"
       ],
       "correctAnswer": 0,
-      "explanation": "Set the function equal to 10: x² - 3x = 10. Rearrange to a quadratic equation: x² - 3x - 10 = 0. Factorise: (x - 5)(x + 2) = 0. So, x = 5 or x = -2."
+      "explanation": "Set the function equal to 10: $x^2$ - 3x = 10. Rearrange to a quadratic equation: $x^2$ - 3x - 10 = 0. Factorise: (x - 5)(x + 2) = 0. So, x = 5 or x = -2."
     },
     {
       "type": "multiple-choice",
@@ -73,7 +73,7 @@
         "3x + 5",
         "3x + 15",
         "x + 15",
-        "x² + 5"
+        "$x^2$ + 5"
       ],
       "correctAnswer": 0,
       "explanation": "fg(x) means f(g(x)). Substitute g(x) into f(x): fg(x) = f(3x) = (3x) + 5 = 3x + 5."
@@ -85,7 +85,7 @@
         "3x + 5",
         "3x + 15",
         "x + 15",
-        "x² + 5"
+        "$x^2$ + 5"
       ],
       "correctAnswer": 1,
       "explanation": "gf(x) means g(f(x)). Substitute f(x) into g(x): gf(x) = g(x + 5) = 3(x + 5) = 3x + 15."
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The function f(x) = 4x - 5. Find the inverse function, f⁻¹(x).",
+      "questionText": "The function f(x) = 4x - 5. Find the inverse function, $f^{-1}$(x).",
       "options": [
         "(x + 5) / 4",
         "4 / (x - 5)",
@@ -112,7 +112,7 @@
         "x / 4 + 5"
       ],
       "correctAnswer": 0,
-      "explanation": "Let y = 4x - 5. Swap x and y: x = 4y - 5. Rearrange to make y the subject: x + 5 = 4y, so y = (x + 5) / 4. Therefore, f⁻¹(x) = (x + 5) / 4."
+      "explanation": "Let y = 4x - 5. Swap x and y: x = 4y - 5. Rearrange to make y the subject: x + 5 = 4y, so y = (x + 5) / 4. Therefore, $f^{-1}$(x) = (x + 5) / 4."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given that f(x) = 6x + 1. Find the value of x for which f⁻¹(x) = 3.",
+      "questionText": "Given that f(x) = 6x + 1. Find the value of x for which $f^{-1}$(x) = 3.",
       "options": [
         "x = 19",
         "x = 18",
@@ -136,11 +136,11 @@
         "x = 2"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find f⁻¹(x). Let y = 6x + 1. Swap x and y: x = 6y + 1. Rearrange: x - 1 = 6y, so y = (x - 1) / 6. Thus, f⁻¹(x) = (x - 1) / 6. Now, set f⁻¹(x) = 3: (x - 1) / 6 = 3. Multiply by 6: x - 1 = 18. Add 1: x = 19."
+      "explanation": "First, find $f^{-1}$(x). Let y = 6x + 1. Swap x and y: x = 6y + 1. Rearrange: x - 1 = 6y, so y = (x - 1) / 6. Thus, $f^{-1}$(x) = (x - 1) / 6. Now, set $f^{-1}$(x) = 3: (x - 1) / 6 = 3. Multiply by 6: x - 1 = 18. Add 1: x = 19."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The functions f and g are defined as f(x) = x² and g(x) = x + 1. Find the value of x such that gf(x) = 26.",
+      "questionText": "The functions f and g are defined as f(x) = $x^2$ and g(x) = x + 1. Find the value of x such that gf(x) = 26.",
       "options": [
         "x = 5 or x = -5",
         "x = 25",
@@ -148,7 +148,7 @@
         "x = 4 or x = -4"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find gf(x): gf(x) = g(f(x)) = g(x²) = x² + 1. Set gf(x) = 26: x² + 1 = 26. Subtract 1: x² = 25. Take the square root: x = ±5. So, x = 5 or x = -5."
+      "explanation": "First, find gf(x): gf(x) = g(f(x)) = g($x^2$) = $x^2$ + 1. Set gf(x) = 26: $x^2$ + 1 = 26. Subtract 1: $x^2$ = 25. Take the square root: x = ±5. So, x = 5 or x = -5."
     }
   ]
 }

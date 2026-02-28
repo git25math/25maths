@@ -16,7 +16,7 @@
         "942 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "Curved surface area of a cylinder = 2πrh.  \nArea = 2 × π × 5 × 12 = 120π ≈ 377 cm² (3 s.f.)."
+      "explanation": "Curved surface area of a cylinder = 2$\\pi$rh.  \nArea = 2 × $\\pi$ × 5 × 12 = 120$\\pi$ ≈ 377 cm² (3 s.f.)."
     },
     {
       "type": "multiple-choice",
@@ -28,11 +28,11 @@
         "4190 cm³"
       ],
       "correctAnswer": 0,
-      "explanation": "Radius r = diameter / 2 = 10 / 2 = 5 cm.  \nVolume of a sphere = (4/3)πr³.  \nVolume = (4/3) × π × 5³ = (4/3) × π × 125 = 500π/3 ≈ 524 cm³ (3 s.f.)."
+      "explanation": "Radius r = diameter / 2 = 10 / 2 = 5 cm.  \nVolume of a sphere = (4/3)$\\pi$$r^3$.  \nVolume = (4/3) × $\\pi \\times 5^3$ = (4/3) × $\\pi$ × 125 = 500$\\pi/3$ ≈ 524 cm³ (3 s.f.)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a sector of a circle with radius 6 cm is 18π cm². Calculate the angle of the sector in degrees.",
+      "questionText": "The area of a sector of a circle with radius 6 cm is 18$\\pi$ cm². Calculate the angle of the sector in degrees.",
       "options": [
         "60°",
         "90°",
@@ -40,7 +40,7 @@
         "180°"
       ],
       "correctAnswer": 3,
-      "explanation": "Area of sector = (θ/360) × πr².  \n18π = (θ/360) × π × 6².  \n18π = (θ/360) × 36π.  \n18 = (θ/360) × 36.  \n18/36 = θ/360.  \n1/2 = θ/360.  \nθ = 360/2 = 180°."
+      "explanation": "Area of sector = ($\\theta/360$) × $\\pi$$r^2$.  \n18$\\pi$ = ($\\theta/360$) × $\\pi \\times 6^2$.  \n18$\\pi$ = ($\\theta/360$) × 36$\\pi$.  \n18 = ($\\theta/360$) × 36.  \n18/36 = $\\theta/360$.  \n1/2 = $\\theta/360$.  \n$\\theta$ = 360/2 = 180°."
     },
     {
       "type": "multiple-choice",
@@ -49,10 +49,10 @@
         "2 cm",
         "3 cm",
         "4 cm",
-        "√34 cm"
+        "$\\sqrt{34}$ cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Using Pythagoras theorem: h² + r² = l².  \nh² + 3² = 5².  \nh² + 9 = 25.  \nh² = 16.  \nh = 4 cm."
+      "explanation": "Using Pythagoras theorem: h² + $r^2$ = l².  \nh² + $3^2 = 5^2$.  \nh² + 9 = 25.  \nh² = 16.  \nh = 4 cm."
     },
     {
       "type": "multiple-choice",
@@ -68,15 +68,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The circumference of a circle is 20π cm. What is its area?",
+      "questionText": "The circumference of a circle is 20$\\pi$ cm. What is its area?",
       "options": [
-        "100π cm²",
-        "200π cm²",
-        "400π cm²",
-        "50π cm²"
+        "100$\\pi$ cm²",
+        "200$\\pi$ cm²",
+        "400$\\pi$ cm²",
+        "50$\\pi$ cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "Circumference C = 2πr.  \n20π = 2πr.  \nr = 10 cm.  \nArea A = πr².  \nA = π × 10² = 100π cm²."
+      "explanation": "Circumference C = 2$\\pi$r.  \n20$\\pi$ = 2$\\pi$r.  \nr = 10 cm.  \nArea A = $\\pi$$r^2$.  \nA = $\\pi \\times 10^2$ = 100$\\pi$ cm²."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "301 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "Total surface area = 2πr² + 2πrh.  \nArea = 2π(4)² + 2π(4)(10).  \nArea = 32π + 80π = 112π ≈ 352 cm² (3 s.f.)."
+      "explanation": "Total surface area = 2$\\pi$$r^2$ + 2$\\pi$rh.  \nArea = 2$\\pi$$(4)^2$ + 2$\\pi$(4)(10).  \nArea = 32$\\pi$ + 80$\\pi$ = 112$\\pi$ ≈ 352 cm² (3 s.f.)."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "8 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "Let side length be 's'. By Pythagoras, s² + s² = 8².  \n2s² = 64.  \ns² = 32.  \nArea of square = s² = 32 cm²."
+      "explanation": "Let side length be 's'. By Pythagoras, s² + s² = $8^2$.  \n2s² = 64.  \ns² = 32.  \nArea of square = s² = 32 cm²."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "1:3"
       ],
       "correctAnswer": 0,
-      "explanation": "For similar shapes, if the ratio of volumes is V₁:V₂, then the ratio of corresponding lengths (e.g., radii) is ³√V₁:³√V₂.  \n³√8 : ³√27 = 2:3."
+      "explanation": "For similar shapes, if the ratio of volumes is V₁:V₂, then the ratio of corresponding lengths (e.g., radii) is ³$\\sqrt{V}$₁:³$\\sqrt{V}$₂.  \n$\\sqrt[3]{8}$ : $\\sqrt[3]{27}$ = 2:3."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sector of a circle has a radius of 8 cm and an arc length of 4π cm. Find the angle of the sector in degrees.",
+      "questionText": "A sector of a circle has a radius of 8 cm and an arc length of 4$\\pi$ cm. Find the angle of the sector in degrees.",
       "options": [
         "60°",
         "90°",
@@ -148,7 +148,7 @@
         "45°"
       ],
       "correctAnswer": 1,
-      "explanation": "Arc length L = (θ/360) × 2πr.  \n4π = (θ/360) × 2π × 8.  \n4π = (θ/360) × 16π.  \n4 = (θ/360) × 16.  \n4/16 = θ/360.  \n1/4 = θ/360.  \nθ = 360/4 = 90°."
+      "explanation": "Arc length L = ($\\theta/360$) × 2$\\pi$r.  \n4$\\pi$ = ($\\theta/360$) × 2$\\pi$ × 8.  \n4$\\pi$ = ($\\theta/360$) × 16$\\pi$.  \n4 = ($\\theta/360$) × 16.  \n4/16 = $\\theta/360$.  \n1/4 = $\\theta/360$.  \n$\\theta$ = 360/4 = 90°."
     }
   ]
 }

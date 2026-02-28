@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the value of √0.04.",
+      "questionText": "Find the value of $\\sqrt{0.04}$.",
       "options": [
         "0.2",
         "0.02",
@@ -124,7 +124,7 @@
         "36 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a square is side length squared. To find the side length, we take the square root of the area. √144 = 12 cm."
+      "explanation": "The area of a square is side length squared. To find the side length, we take the square root of the area. $\\sqrt{144}$ = 12 cm."
     },
     {
       "type": "multiple-choice",

@@ -37,7 +37,7 @@
         "4a + 10",
         "2a + 5",
         "a(a+5)",
-        "a² + 5a"
+        "$a^2$ + 5a"
       ],
       "correctAnswer": 0,
       "explanation": "The perimeter of a rectangle is 2 × (length + width). So, P = 2 × ((a + 5) + a) = 2 × (2a + 5) = 4a + 10."
@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "What is the expression for the area of a square with side length (x + 1)?",
       "options": [
-        "(x + 1)²",
+        "$(x + 1)^2$",
         "4(x + 1)",
-        "x² + 1",
+        "$x^2$ + 1",
         "2(x + 1)"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a square is the side length multiplied by itself (side²). With a side length of (x + 1), the area is (x + 1) × (x + 1), which is written as (x + 1)²."
+      "explanation": "The area of a square is the side length multiplied by itself ($side^2$). With a side length of (x + 1), the area is (x + 1) × (x + 1), which is written as $(x + 1)^2$."
     }
   ]
 }

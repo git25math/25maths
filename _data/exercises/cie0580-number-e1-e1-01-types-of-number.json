@@ -22,13 +22,13 @@
       "type": "multiple-choice",
       "questionText": "What is the prime factorization of 120?",
       "options": [
-        "2² × 3 × 10",
-        "2³ × 3 × 5",
+        "$2^2$ × 3 × 10",
+        "$2^3$ × 3 × 5",
         "8 × 15",
         "2 × 3 × 4 × 5"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the prime factorization, break the number down into its prime factors. 120 = 12 × 10 = (4 × 3) × (2 × 5) = (2² × 3) × (2 × 5) = 2³ × 3 × 5."
+      "explanation": "To find the prime factorization, break the number down into its prime factors. 120 = 12 × 10 = (4 × 3) × (2 × 5) = ($2^2$ × 3) × (2 × 5) = $2^3$ × 3 × 5."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "33"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the prime factorization of 99. 99 = 9 × 11 = 3² × 11. The prime factors are 3 and 11. The largest of these is 11."
+      "explanation": "First, find the prime factorization of 99. 99 = 9 × 11 = $3^2$ × 11. The prime factors are 3 and 11. The largest of these is 11."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "36"
       ],
       "correctAnswer": 1,
-      "explanation": "A number with exactly three factors must be the square of a prime number. In the options, 25 = 5², and 5 is a prime number. The factors of 25 are 1, 5, and 25."
+      "explanation": "A number with exactly three factors must be the square of a prime number. In the options, 25 = $5^2$, and 5 is a prime number. The factors of 25 are 1, 5, and 25."
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A number is written as a product of its prime factors as 2² × 3 × 5². What is the number?",
+      "questionText": "A number is written as a product of its prime factors as $2^2$ × 3 × $5^2$. What is the number?",
       "options": [
         "60",
         "150",
@@ -88,7 +88,7 @@
         "600"
       ],
       "correctAnswer": 2,
-      "explanation": "To find the number, calculate the product of the prime factors. 2² × 3 × 5² = 4 × 3 × 25 = 12 × 25 = 300."
+      "explanation": "To find the number, calculate the product of the prime factors. $2^2$ × 3 × $5^2$ = 4 × 3 × 25 = 12 × 25 = 300."
     },
     {
       "type": "multiple-choice",

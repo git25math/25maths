@@ -20,31 +20,31 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise completely 18x²y - 24xy³.",
+      "questionText": "Factorise completely 18$x^2$y - 24$xy^3$.",
       "options": [
-        "6xy(3x - 4y²)",
-        "6y(3x² - 4xy²)",
-        "xy(18x - 24y²)",
-        "6x(3xy - 4y³)"
+        "6xy(3x - 4$y^2$)",
+        "6y(3$x^2$ - 4$xy^2$)",
+        "xy(18x - 24$y^2$)",
+        "6x(3xy - 4$y^3$)"
       ],
       "correctAnswer": 0,
-      "explanation": "Find the highest common factor of the terms. For the numbers, it's 6. For x, it's x. For y, it's y. So the HCF is 6xy. Factoring this out gives 6xy(3x - 4y²)."
+      "explanation": "Find the highest common factor of the terms. For the numbers, it's 6. For x, it's x. For y, it's y. So the HCF is 6xy. Factoring this out gives 6xy(3x - 4$y^2$)."
     },
     {
       "type": "multiple-choice",
       "questionText": "Expand and simplify (2x - 3)(x + 5).",
       "options": [
-        "2x² + 7x - 15",
-        "2x² - 7x - 15",
-        "2x² + 13x - 15",
-        "2x² - 15"
+        "2$x^2$ + 7x - 15",
+        "2$x^2$ - 7x - 15",
+        "2$x^2$ + 13x - 15",
+        "2$x^2$ - 15"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the FOIL method: (2x * x) + (2x * 5) + (-3 * x) + (-3 * 5) = 2x² + 10x - 3x - 15. Combine the middle terms to get 2x² + 7x - 15."
+      "explanation": "Use the FOIL method: (2x * x) + (2x * 5) + (-3 * x) + (-3 * 5) = 2$x^2$ + 10x - 3x - 15. Combine the middle terms to get 2$x^2$ + 7x - 15."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise x² - 9x + 20.",
+      "questionText": "Factorise $x^2$ - 9x + 20.",
       "options": [
         "(x - 4)(x - 5)",
         "(x + 4)(x + 5)",
@@ -56,55 +56,55 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Make 'a' the subject of the formula s = ut + (1/2)at².",
+      "questionText": "Make 'a' the subject of the formula s = ut + (1/2)$at^2$.",
       "options": [
-        "a = 2(s - ut) / t²",
-        "a = (s - ut) / (2t²)",
-        "a = 2s - ut / t²",
-        "a = 2(s + ut) / t²"
+        "a = 2(s - ut) / $t^2$",
+        "a = (s - ut) / (2$t^2$)",
+        "a = 2s - ut / $t^2$",
+        "a = 2(s + ut) / $t^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, subtract 'ut' from both sides: s - ut = (1/2)at². Then multiply by 2: 2(s - ut) = at². Finally, divide by t² to isolate 'a': a = 2(s - ut) / t²."
+      "explanation": "First, subtract 'ut' from both sides: s - ut = (1/2)$at^2$. Then multiply by 2: 2(s - ut) = $at^2$. Finally, divide by $t^2$ to isolate 'a': a = 2(s - ut) / $t^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (9x⁶y⁴) / (3x²y).",
+      "questionText": "Simplify (9$x^6$$y^4$) / (3$x^2$y).",
       "options": [
-        "3x⁴y³",
-        "6x⁴y³",
-        "3x³y⁴",
-        "3x⁸y⁵"
+        "3$x^4$$y^3$",
+        "6$x^4$$y^3$",
+        "3$x^3$$y^4$",
+        "3$x^8$$y^5$"
       ],
       "correctAnswer": 0,
-      "explanation": "Divide the coefficients: 9 / 3 = 3. Subtract the powers of x: 6 - 2 = 4. Subtract the powers of y: 4 - 1 = 3. This gives 3x⁴y³."
+      "explanation": "Divide the coefficients: 9 / 3 = 3. Subtract the powers of x: 6 - 2 = 4. Subtract the powers of y: 4 - 1 = 3. This gives 3$x^4$$y^3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise 9a² - 16.",
+      "questionText": "Factorise 9$a^2$ - 16.",
       "options": [
         "(3a - 4)(3a + 4)",
-        "(3a - 4)²",
+        "$(3a - 4)^2$",
         "(9a - 4)(a + 4)",
-        "(3a + 4)²"
+        "$(3a + 4)^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "This is a difference of two squares, a² - b², which factorises to (a - b)(a + b). Here, a is 3a and b is 4. So the factors are (3a - 4)(3a + 4)."
+      "explanation": "This is a difference of two squares, $a^2 - b^2$, which factorises to (a - b)(a + b). Here, a is 3a and b is 4. So the factors are (3a - 4)(3a + 4)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Expand and simplify (3x - 2)².",
+      "questionText": "Expand and simplify $(3x - 2)^2$.",
       "options": [
-        "9x² - 12x + 4",
-        "9x² - 4",
-        "9x² + 4",
+        "9$x^2$ - 12x + 4",
+        "9$x^2$ - 4",
+        "9$x^2$ + 4",
         "6x - 4"
       ],
       "correctAnswer": 0,
-      "explanation": "(3x - 2)² is (3x - 2)(3x - 2). Using FOIL: (3x * 3x) + (3x * -2) + (-2 * 3x) + (-2 * -2) = 9x² - 6x - 6x + 4. Combine the middle terms to get 9x² - 12x + 4."
+      "explanation": "$(3x - 2)^2$ is (3x - 2)(3x - 2). Using FOIL: (3x * 3x) + (3x * -2) + (-2 * 3x) + (-2 * -2) = 9$x^2$ - 6x - 6x + 4. Combine the middle terms to get 9$x^2$ - 12x + 4."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise x² + 5x - 14.",
+      "questionText": "Factorise $x^2$ + 5x - 14.",
       "options": [
         "(x + 7)(x - 2)",
         "(x - 7)(x + 2)",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (x² - 9) / (x² + 2x - 15).",
+      "questionText": "Simplify ($x^2$ - 9) / ($x^2$ + 2x - 15).",
       "options": [
         "(x - 3) / (x + 5)",
         "(x + 3) / (x + 5)",

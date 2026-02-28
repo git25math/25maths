@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A mobile phone plan costs $10 per month plus $3 for every gigabyte (g) of data used. Which formula represents the total monthly cost, C?",
+      "questionText": "A mobile phone plan costs ${10 per month plus }$3 for every gigabyte (g) of data used. Which formula represents the total monthly cost, C?",
       "options": [
         "C = 10g + 3",
         "C = 3g + 10",
@@ -64,7 +64,7 @@
         "C = 10 - 3g"
       ],
       "correctAnswer": 1,
-      "explanation": "The cost is the fixed fee ($10) plus the variable fee ($3 times the number of gigabytes, g). So, C = 3g + 10."
+      "explanation": "The cost is the fixed fee (${10) plus the variable fee (}$3 times the number of gigabytes, g). So, C = 3g + 10."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "$59"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the conversion rate (gradient): $24 / €20 = 1.2 $/€. Then multiply by the amount in Euros: 35 * 1.2 = $42."
+      "explanation": "First, find the conversion rate (gradient): ${24 / €20 = 1.2 }$/€. Then multiply by the amount in Euros: 35 * 1.2 = $42."
     },
     {
       "type": "multiple-choice",

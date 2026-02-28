@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let $B = \\{\\text{factors of 12}\\}$. What is the value of $n(B)$?",
+      "questionText": "Let $B = \\{\\text{factors of 12}\\}$. What is the value of ${n(B)}$?",
       "options": [
         "4",
         "6",
@@ -28,7 +28,7 @@
         "12"
       ],
       "correctAnswer": 1,
-      "explanation": "The factors of 12 are 1, 2, 3, 4, 6, and 12. Counting these elements gives $n(B) = 6$."
+      "explanation": "The factors of 12 are 1, 2, 3, 4, 6, and 12. Counting these elements gives ${n(B) = 6}$."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let $\\mathscr{E} = \\{1, 2, 3, 4, 5, 6\\}$ and $A = \\{\\text{multiples of 3}\\}$. Which of the following is the set $A'$?",
+      "questionText": "Let $\\mathscr{E} = \\{1, 2, 3, 4, 5, 6\\}$ and $A = \\{\\text{multiples of 3}\\}${. Which of the following is the set $A'}$?",
       "options": [
         "\\{3, 6\\}",
         "\\{1, 2, 4, 5\\}",
@@ -76,7 +76,7 @@
         "\\{3\\}"
       ],
       "correctAnswer": 1,
-      "explanation": "First, identify set $A = \\{3, 6\\}$. The complement set $A'$ contains all elements in the universal set $\\mathscr{E}$ that are not in A. Therefore, $A' = \\{1, 2, 4, 5\\}$."
+      "explanation": "First, identify set $A = \\{3, 6\\}${. The complement set $A'}$ contains all elements in the universal set $\\mathscr{E}$ that are not in A. Therefore, $A' = \\{1, 2, 4, 5\\}$."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let $\\mathscr{E} = \\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ and $P = \\{2, 3, 5, 7\\}$. List the members of $P'$.",
+      "questionText": "Let $\\mathscr{E} = \\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ and $P = \\{2, 3, 5, 7\\}${. List the members of $P'}$.",
       "options": [
         "\\{1, 9\\}",
         "\\{2, 3, 5, 7\\}",
@@ -124,7 +124,7 @@
         "\\{1, 4, 6, 8, 9\\}"
       ],
       "correctAnswer": 3,
-      "explanation": "The complement $P'$ contains all the elements in the universal set $\\mathscr{E}$ that are not in set P. These are \\{1, 4, 6, 8, 9\\}."
+      "explanation": "The complement ${P'}$ contains all the elements in the universal set $\\mathscr{E}$ that are not in set P. These are \\{1, 4, 6, 8, 9\\}."
     },
     {
       "type": "multiple-choice",

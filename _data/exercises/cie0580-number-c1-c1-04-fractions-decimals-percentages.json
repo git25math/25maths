@@ -124,7 +124,7 @@
         "$0.90"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the percentage of a quantity, convert the percentage to a decimal and multiply. 15% = 0.15. Then, 0.15 × $60 = $9."
+      "explanation": "To find the percentage of a quantity, convert the percentage to a decimal and multiply. 15% = 0.15. Then, 0.15 × ${60 = }$9."
     },
     {
       "type": "multiple-choice",

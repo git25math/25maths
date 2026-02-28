@@ -40,19 +40,19 @@
         "12"
       ],
       "correctAnswer": 2,
-      "explanation": "y is proportional to x², so y = kx². Substitute the given values: 72 = k * (3²), which means 72 = 9k. Solving for k gives k = 8. So the formula is y = 8x². When x = 5, y = 8 * (5²) = 8 * 25 = 200."
+      "explanation": "y is proportional to $x^2$, so y = $kx^2$. Substitute the given values: 72 = k * ($3^2$), which means 72 = 9k. Solving for k gives k = 8. So the formula is y = 8$x^2$. When x = 5, y = 8 * ($5^2$) = 8 * 25 = 200."
     },
     {
       "type": "multiple-choice",
       "questionText": "Divide $132 in the ratio 3:8.",
       "options": [
-        "$36 and $96",
-        "$33 and $99",
-        "$44 and $88",
-        "$30 and $102"
+        "${36 and }$96",
+        "${33 and }$99",
+        "${44 and }$88",
+        "${30 and }$102"
       ],
       "correctAnswer": 0,
-      "explanation": "The total number of parts is 3 + 8 = 11. The value of one part is $132 / 11 = $12. The shares are 3 * $12 = $36 and 8 * $12 = $96."
+      "explanation": "The total number of parts is 3 + 8 = 11. The value of one part is ${132 / 11 = }$12. The shares are 3 * ${12 = }$36 and 8 * ${12 = }$96."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "6.25"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is T = k√L. Substitute the given values: 4.8 = k√36, so 4.8 = 6k, which gives k = 0.8. The formula is T = 0.8√L. When L = 25, T = 0.8√25 = 0.8 * 5 = 4.0."
+      "explanation": "The relationship is T = k$\\sqrt{L}$. Substitute the given values: 4.8 = k$\\sqrt{36}$, so 4.8 = 6k, which gives k = 0.8. The formula is T = 0.$8\\sqrt{L}$. When L = 25, T = 0.$8\\sqrt{25}$ = 0.8 * 5 = 4.0."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost C of a taxi journey is directly proportional to the distance d travelled. A journey of 8 km costs $18. How far can you travel for $45?",
+      "questionText": "The cost C of a taxi journey is directly proportional to the distance d travelled. A journey of 8 km costs ${18. How far can you travel for }$45?",
       "options": [
         "20 km",
         "101.25 km",
@@ -124,7 +124,7 @@
         "25 km"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is C = kd. From the data, k = 18/8 = 2.25 $/km. To find the distance for $45, calculate d = C/k = 45 / 2.25 = 20 km."
+      "explanation": "The relationship is C = kd. From the data, k = 18/8 = 2.25 ${/km. To find the distance for }$45, calculate d = C/k = 45 / 2.25 = 20 km."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "20"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is M = kr³. Substitute the known values: 135 = k * 3³ = 27k. This gives k = 5. The formula is M = 5r³. For r = 4, M = 5 * 4³ = 5 * 64 = 320."
+      "explanation": "The relationship is M = $kr^3$. Substitute the known values: 135 = k * $3^3$ = 27k. This gives k = 5. The formula is M = 5$r^3$. For r = 4, M = 5 * $4^3$ = 5 * 64 = 320."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "10"
       ],
       "correctAnswer": 3,
-      "explanation": "The relationship is I = k/d². Using the given data, 40 = k / 3², so k = 40 * 9 = 360. The formula is I = 360/d². At a distance of 6m, the intensity is I = 360 / 6² = 360 / 36 = 10."
+      "explanation": "The relationship is I = k/$d^2$. Using the given data, 40 = k / $3^2$, so k = 40 * 9 = 360. The formula is I = $360/d^2$. At a distance of 6m, the intensity is I = 360 / $6^2$ = 360 / 36 = 10."
     }
   ]
 }

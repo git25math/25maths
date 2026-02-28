@@ -28,7 +28,7 @@
         "25 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert from m² to cm², you must multiply by 100², which is 10000. So, 2.5 × 10000 = 25000 cm²."
+      "explanation": "To convert from m² to cm², you must multiply by $100^2$, which is 10000. So, 2.5 × 10000 = 25000 cm²."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "0.45 m³"
       ],
       "correctAnswer": 3,
-      "explanation": "To convert from cm³ to m³, you must divide by 100³, which is 1 000 000. So, 450 000 / 1 000 000 = 0.45 m³."
+      "explanation": "To convert from cm³ to m³, you must divide by $100^3$, which is 1 000 000. So, 450 000 / 1 000 000 = 0.45 m³."
     },
     {
       "type": "multiple-choice",

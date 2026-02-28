@@ -12,7 +12,7 @@
       "options": [
         "A' = {1, 4, 6, 8, 9}",
         "A is the set of even numbers",
-        "9 ∈ A",
+        "9 $\\in$ A",
         "A' = {1, 4, 6, 8, 9, 10}"
       ],
       "correctAnswer": 3,
@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If P = {factors of 12} and Q = {factors of 18}, find P ∩ Q.",
+      "questionText": "If P = {factors of 12} and Q = {factors of 18}, find P $\\cap$ Q.",
       "options": [
         "{1, 2, 3, 6}",
         "{4, 12, 18}",
@@ -28,11 +28,11 @@
         "{2, 3, 6}"
       ],
       "correctAnswer": 0,
-      "explanation": "P = {1, 2, 3, 4, 6, 12} and Q = {1, 2, 3, 6, 9, 18}. The intersection (P ∩ Q) contains elements common to both sets, which are {1, 2, 3, 6}."
+      "explanation": "P = {1, 2, 3, 4, 6, 12} and Q = {1, 2, 3, 6, 9, 18}. The intersection (P $\\cap$ Q) contains elements common to both sets, which are {1, 2, 3, 6}."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let A = {letters in the word 'subtract'} and B = {letters in the word 'addition'}. Find n(A ∪ B).",
+      "questionText": "Let A = {letters in the word 'subtract'} and B = {letters in the word 'addition'}. Find n(A $\\cup$ B).",
       "options": [
         "10",
         "11",
@@ -40,7 +40,7 @@
         "8"
       ],
       "correctAnswer": 0,
-      "explanation": "A={s,u,b,t,r,a,c}, B={a,d,i,t,o,n}. A ∪ B = {s,u,b,t,r,a,c,d,i,o,n}. The number of unique elements in the union is 10."
+      "explanation": "A={s,u,b,t,r,a,c}, B={a,d,i,t,o,n}. A $\\cup$ B = {s,u,b,t,r,a,c,d,i,o,n}. The number of unique elements in the union is 10."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "12"
       ],
       "correctAnswer": 2,
-      "explanation": "Number playing at least one sport = n(H ∪ F) = n(H) + n(F) - n(H ∩ F) = 20 + 25 - 8 = 37. Number playing neither = Total - n(H ∪ F) = 40 - 37 = 3."
+      "explanation": "Number playing at least one sport = n(H $\\cup$ F) = n(H) + n(F) - n(H $\\cap$ F) = 20 + 25 - 8 = 37. Number playing neither = Total - n(H $\\cup$ F) = 40 - 37 = 3."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let U = {x | x is an integer and 1 ≤ x ≤ 20}. A = {multiples of 2}, B = {multiples of 5}. Find n(A ∩ B).",
+      "questionText": "Let U = {x | x is an integer and 1 $\\leq$ x $\\leq$ 20}. A = {multiples of 2}, B = {multiples of 5}. Find n(A $\\cap$ B).",
       "options": [
         "1",
         "2",
@@ -100,23 +100,23 @@
         "12"
       ],
       "correctAnswer": 1,
-      "explanation": "The intersection A ∩ B contains numbers that are multiples of both 2 and 5, which are multiples of 10. In the given range, these are {10, 20}. Therefore, n(A ∩ B) = 2."
+      "explanation": "The intersection A $\\cap$ B contains numbers that are multiples of both 2 and 5, which are multiples of 10. In the given range, these are {10, 20}. Therefore, n(A $\\cap$ B) = 2."
     },
     {
       "type": "multiple-choice",
       "questionText": "The Venn diagram shows two sets, P and Q. What does the shaded region represent?",
       "options": [
-        "P ∩ Q",
-        "(P ∪ Q)'",
-        "P' ∩ Q",
-        "P ∪ Q"
+        "P $\\cap$ Q",
+        "(P $\\cup$ Q)'",
+        "P' $\\cap$ Q",
+        "P $\\cup$ Q"
       ],
       "correctAnswer": 1,
-      "explanation": "The shaded region is outside both circles P and Q. This represents the elements that are not in P and not in Q, which is the complement of the union of P and Q, written as (P ∪ Q)'."
+      "explanation": "The shaded region is outside both circles P and Q. This represents the elements that are not in P and not in Q, which is the complement of the union of P and Q, written as (P $\\cup$ Q)'."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given P = {odd numbers} and Q = {prime numbers}, which number is in P ∩ Q'?",
+      "questionText": "Given P = {odd numbers} and Q = {prime numbers}, which number is in P $\\cap$ Q'?",
       "options": [
         "2",
         "7",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Set A has 5 elements and Set B has 8 elements. If n(A ∩ B) = 3, what is n(A ∪ B)?",
+      "questionText": "Set A has 5 elements and Set B has 8 elements. If n(A $\\cap$ B) = 3, what is n(A $\\cup$ B)?",
       "options": [
         "10",
         "13",
@@ -136,7 +136,7 @@
         "11"
       ],
       "correctAnswer": 0,
-      "explanation": "Using the formula n(A ∪ B) = n(A) + n(B) - n(A ∩ B), we get n(A ∪ B) = 5 + 8 - 3 = 10."
+      "explanation": "Using the formula n(A $\\cup$ B) = n(A) + n(B) - n(A $\\cap$ B), we get n(A $\\cup$ B) = 5 + 8 - 3 = 10."
     },
     {
       "type": "multiple-choice",

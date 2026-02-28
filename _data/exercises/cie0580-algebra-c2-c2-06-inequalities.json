@@ -20,31 +20,31 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality 3x ≤ 12.",
+      "questionText": "Solve the inequality 3x $\\leq$ 12.",
       "options": [
-        "x ≥ 4",
-        "x ≤ 4",
+        "x $\\geq$ 4",
+        "x $\\leq$ 4",
         "x = 4",
         "x < 4"
       ],
       "correctAnswer": 1,
-      "explanation": "Divide both sides by 3: 3x / 3 ≤ 12 / 3, which simplifies to x ≤ 4."
+      "explanation": "Divide both sides by 3: 3x / 3 $\\leq$ 12 / 3, which simplifies to x $\\leq$ 4."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality 2x - 1 ≥ 7.",
+      "questionText": "Solve the inequality 2x - 1 $\\geq$ 7.",
       "options": [
-        "x ≥ 3",
-        "x ≤ 4",
-        "x ≥ 4",
+        "x $\\geq$ 3",
+        "x $\\leq$ 4",
+        "x $\\geq$ 4",
         "x = 4"
       ],
       "correctAnswer": 2,
-      "explanation": "First, add 1 to both sides: 2x ≥ 8. Then, divide by 2: x ≥ 4."
+      "explanation": "First, add 1 to both sides: 2x $\\geq$ 8. Then, divide by 2: x $\\geq$ 4."
     },
     {
       "type": "multiple-choice",
-      "questionText": "List the integer values that satisfy -1 < x ≤ 4.",
+      "questionText": "List the integer values that satisfy -1 < x $\\leq$ 4.",
       "options": [
         "-1, 0, 1, 2, 3, 4",
         "0, 1, 2, 3",
@@ -71,12 +71,12 @@
       "questionText": "Which inequality is shown on the number line? (A filled circle at 2, with an arrow pointing to the left)",
       "options": [
         "x < 2",
-        "x ≤ 2",
+        "x $\\leq$ 2",
         "x > 2",
-        "x ≥ 2"
+        "x $\\geq$ 2"
       ],
       "correctAnswer": 1,
-      "explanation": "The filled circle at 2 means x can be equal to 2. The arrow pointing left indicates all values less than 2. So, x ≤ 2."
+      "explanation": "The filled circle at 2 means x can be equal to 2. The arrow pointing left indicates all values less than 2. So, x $\\leq$ 2."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of these integers satisfies the inequality 2x - 5 ≤ 1?",
+      "questionText": "Which of these integers satisfies the inequality 2x - 5 $\\leq$ 1?",
       "options": [
         "4",
         "5",
@@ -136,19 +136,19 @@
         "6"
       ],
       "correctAnswer": 2,
-      "explanation": "Solving 2x - 5 ≤ 1 gives 2x ≤ 6, so x ≤ 3. Of the options, only 2 is less than or equal to 3."
+      "explanation": "Solving 2x - 5 $\\leq$ 1 gives 2x $\\leq$ 6, so x $\\leq$ 3. Of the options, only 2 is less than or equal to 3."
     },
     {
       "type": "multiple-choice",
       "questionText": "Write down the inequality that represents 'x is greater than or equal to -2 and less than 3'.",
       "options": [
-        "-2 ≤ x < 3",
-        "-2 < x ≤ 3",
+        "-2 $\\leq$ x < 3",
+        "-2 < x $\\leq$ 3",
         "-2 > x < 3",
-        "-2 ≤ x ≤ 3"
+        "-2 $\\leq$ x $\\leq$ 3"
       ],
       "correctAnswer": 0,
-      "explanation": "'Greater than or equal to -2' is written as -2 ≤ x. 'Less than 3' is written as x < 3. Combining them gives -2 ≤ x < 3."
+      "explanation": "'Greater than or equal to -2' is written as -2 $\\leq$ x. 'Less than 3' is written as x < 3. Combining them gives -2 $\\leq$ x < 3."
     }
   ]
 }

@@ -125,7 +125,7 @@
         "49"
       ],
       "correctAnswer": 2,
-      "explanation": "The nth term of square numbers is n². So the 6th term is 6² = 36."
+      "explanation": "The nth term of square numbers is $n^2$. So the 6th term is $6^2$ = 36."
     },
     {
       "type": "multiple-choice",
@@ -137,7 +137,7 @@
         "36"
       ],
       "correctAnswer": 1,
-      "explanation": "This is the sequence of square numbers (1², 2², 3², 4²). The next term is 5² = 25."
+      "explanation": "This is the sequence of square numbers ($1^2$, $2^2$, $3^2$, $4^2$). The next term is $5^2$ = 25."
     },
     {
       "type": "multiple-choice",

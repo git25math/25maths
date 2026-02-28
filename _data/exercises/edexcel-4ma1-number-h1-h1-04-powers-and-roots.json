@@ -28,7 +28,7 @@
         "4"
       ],
       "correctAnswer": 0,
-      "explanation": "The denominator of the fractional power is the root, and the numerator is the power. So, 64^(2/3) = (∛64)^2. The cube root of 64 is 4, and 4 squared is 16."
+      "explanation": "The denominator of the fractional power is the root, and the numerator is the power. So, 64^(2/3) = ($\\sqrt[3]{64}$)^2. The cube root of 64 is 4, and 4 squared is 16."
     },
     {
       "type": "multiple-choice",
@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify √x * x^(3/2).",
+      "questionText": "Simplify $\\sqrt{x}$ * x^(3/2).",
       "options": [
         "x^(3/4)",
         "x^2",
@@ -52,7 +52,7 @@
         "x"
       ],
       "correctAnswer": 1,
-      "explanation": "First, write √x as x^(1/2). When multiplying terms with the same base, you add the powers. So, x^(1/2) * x^(3/2) = x^(1/2 + 3/2) = x^(4/2) = x^2."
+      "explanation": "First, write $\\sqrt{x}$ as x^(1/2). When multiplying terms with the same base, you add the powers. So, x^(1/2) * x^(3/2) = x^(1/2 + 3/2) = x^(4/2) = x^2."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "-5/3"
       ],
       "correctAnswer": 2,
-      "explanation": "The negative power means taking the reciprocal of the fraction, which is 25/9. The power of 1/2 means taking the square root. So, √(25/9) = √25 / √9 = 5/3."
+      "explanation": "The negative power means taking the reciprocal of the fraction, which is 25/9. The power of 1/2 means taking the square root. So, $\\sqrt{25/9} = \\sqrt{25}$ / $\\sqrt{9}$ = 5/3."
     },
     {
       "type": "multiple-choice",

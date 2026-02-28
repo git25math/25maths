@@ -28,7 +28,7 @@
         "150 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "The ratio of corresponding lengths is 2:5. Therefore, the ratio of their areas is (2)²:(5)² = 4:25. If the area of the smaller rectangle is 12 cm², let the area of the larger be A. Then 4/25 = 12/A. So A = 12 × (25/4) = 3 × 25 = 75 cm²."
+      "explanation": "The ratio of corresponding lengths is 2:5. Therefore, the ratio of their areas is $(2)^2$:$(5)^2$ = 4:25. If the area of the smaller rectangle is 12 cm², let the area of the larger be A. Then 4/25 = 12/A. So A = 12 × (25/4) = 3 × 25 = 75 cm²."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "144 cm³"
       ],
       "correctAnswer": 2,
-      "explanation": "The ratio of corresponding lengths (heights) is 3:4. Therefore, the ratio of their volumes is (3)³:(4)³ = 27:64. If the volume of the smaller cone is 54 cm³, let the volume of the larger be V. Then 27/64 = 54/V. So V = 54 × (64/27) = 2 × 64 = 128 cm³."
+      "explanation": "The ratio of corresponding lengths (heights) is 3:4. Therefore, the ratio of their volumes is $(3)^3$:$(4)^3$ = 27:64. If the volume of the smaller cone is 54 cm³, let the volume of the larger be V. Then 27/64 = 54/V. So V = 54 × (64/27) = 2 × 64 = 128 cm³."
     },
     {
       "type": "multiple-choice",
@@ -76,19 +76,19 @@
         "10.67 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The ratio of surface areas is 9:16. The ratio of corresponding lengths (radii) is the square root of the area ratio, which is √9 : √16 = 3:4. Let the radius of the larger cylinder be R. Then 3/4 = 6/R. So R = 6 × (4/3) = 2 × 4 = 8 cm."
+      "explanation": "The ratio of surface areas is 9:16. The ratio of corresponding lengths (radii) is the square root of the area ratio, which is $\\sqrt{9}$ : $\\sqrt{16}$ = 3:4. Let the radius of the larger cylinder be R. Then 3/4 = 6/R. So R = 6 × (4/3) = 2 × 4 = 8 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Two spheres are similar. The radius of the smaller sphere is 3 cm and the radius of the larger sphere is 5 cm. If the volume of the smaller sphere is 36π cm³, find the volume of the larger sphere.",
+      "questionText": "Two spheres are similar. The radius of the smaller sphere is 3 cm and the radius of the larger sphere is 5 cm. If the volume of the smaller sphere is 36$\\pi$ cm³, find the volume of the larger sphere.",
       "options": [
-        "60π cm³",
-        "100π cm³",
-        "500π/3 cm³",
-        "180π cm³"
+        "60$\\pi$ cm³",
+        "100$\\pi$ cm³",
+        "500$\\pi/3$ cm³",
+        "180$\\pi$ cm³"
       ],
       "correctAnswer": 2,
-      "explanation": "The ratio of corresponding lengths (radii) is 3:5. The ratio of their volumes is (3)³:(5)³ = 27:125. Let the volume of the larger sphere be V. Then 27/125 = 36π/V. So V = 36π × (125/27) = (4π/3) × 125 = 500π/3 cm³."
+      "explanation": "The ratio of corresponding lengths (radii) is 3:5. The ratio of their volumes is $(3)^3$:$(5)^3$ = 27:125. Let the volume of the larger sphere be V. Then 27/125 = 36$\\pi$/V. So V = 36$\\pi$ × (125/27) = (4$\\pi/3$) × 125 = 500$\\pi/3$ cm³."
     },
     {
       "type": "multiple-choice",
@@ -96,11 +96,11 @@
       "options": [
         "4:9",
         "2:3",
-        "√20:√45",
+        "$\\sqrt{20}$:$\\sqrt{45}$",
         "16:81"
       ],
       "correctAnswer": 1,
-      "explanation": "First, simplify the ratio of areas: 20:45 simplifies to 4:9. For similar shapes, the ratio of areas is the square of the ratio of corresponding lengths. Therefore, the ratio of lengths is √(4):√(9) = 2:3."
+      "explanation": "First, simplify the ratio of areas: 20:45 simplifies to 4:9. For similar shapes, the ratio of areas is the square of the ratio of corresponding lengths. Therefore, the ratio of lengths is $\\sqrt{4}$:$\\sqrt{9}$ = 2:3."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "3:1"
       ],
       "correctAnswer": 2,
-      "explanation": "If the ratio of corresponding lengths is 1:3, then the ratio of their volumes is the cube of this ratio: (1)³:(3)³ = 1:27."
+      "explanation": "If the ratio of corresponding lengths is 1:3, then the ratio of their volumes is the cube of this ratio: $(1)^3$:$(3)^3$ = 1:27."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "150 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "The ratio of corresponding lengths is 7:14, which simplifies to 1:2. The ratio of their areas is the square of this ratio: (1)²:(2)² = 1:4. Let the area of the larger pentagon be A. Then 1/4 = 30/A. So A = 30 × 4 = 120 cm²."
+      "explanation": "The ratio of corresponding lengths is 7:14, which simplifies to 1:2. The ratio of their areas is the square of this ratio: $(1)^2$:$(2)^2$ = 1:4. Let the area of the larger pentagon be A. Then 1/4 = 30/A. So A = 30 × 4 = 120 cm²."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "1012.5 ml"
       ],
       "correctAnswer": 0,
-      "explanation": "The ratio of corresponding lengths (heights) from the smaller jug to the larger jug is 10:15, which simplifies to 2:3. The ratio of their volumes is the cube of this ratio: (2)³:(3)³ = 8:27. Let the volume of the smaller jug be V. Then V/1350 = 8/27. So V = 1350 × (8/27) = 50 × 8 = 400 ml."
+      "explanation": "The ratio of corresponding lengths (heights) from the smaller jug to the larger jug is 10:15, which simplifies to 2:3. The ratio of their volumes is the cube of this ratio: $(2)^3$:$(3)^3$ = 8:27. Let the volume of the smaller jug be V. Then V/1350 = 8/27. So V = 1350 × (8/27) = 50 × 8 = 400 ml."
     }
   ]
 }

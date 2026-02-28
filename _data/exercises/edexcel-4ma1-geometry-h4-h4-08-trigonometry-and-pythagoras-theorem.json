@@ -16,7 +16,7 @@
         "26 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Using Pythagoras' Theorem, a² + b² = c². So, 7² + 24² = 49 + 576 = 625. The hypotenuse c = √625 = 25 cm."
+      "explanation": "Using Pythagoras' Theorem, $a^2 + b^2 = c^2$. So, $7^2 + 24^2$ = 49 + 576 = 625. The hypotenuse c = $\\sqrt{625}$ = 25 cm."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "18 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Using Pythagoras' Theorem, a² + b² = c². We have 5² + b² = 13². So, 25 + b² = 169. b² = 169 - 25 = 144. Therefore, b = √144 = 12 cm."
+      "explanation": "Using Pythagoras' Theorem, $a^2 + b^2 = c^2$. We have $5^2 + b^2 = 13^2$. So, 25 + $b^2$ = 169. $b^2$ = 169 - 25 = 144. Therefore, b = $\\sqrt{144}$ = 12 cm."
     },
     {
       "type": "multiple-choice",
@@ -40,15 +40,15 @@
         "9.0 m"
       ],
       "correctAnswer": 1,
-      "explanation": "This forms a right-angled triangle. Using Pythagoras' Theorem, length² = 3² + 8² = 9 + 64 = 73. Length = √73 ≈ 8.544 m. To one decimal place, this is 8.5 m."
+      "explanation": "This forms a right-angled triangle. Using Pythagoras' Theorem, $length^2 = 3^2 + 8^2$ = 9 + 64 = 73. Length = $\\sqrt{73}$ ≈ 8.544 m. To one decimal place, this is 8.5 m."
     },
     {
       "type": "multiple-choice",
       "questionText": "In a right-angled triangle, the angle is 30°, and the hypotenuse is 10 cm. Find the length of the side opposite the 30° angle.",
       "options": [
         "5 cm",
-        "5√3 cm",
-        "10√3 cm",
+        "$5\\sqrt{3}$ cm",
+        "$10\\sqrt{3}$ cm",
         "10 cm"
       ],
       "correctAnswer": 0,
@@ -60,15 +60,15 @@
       "options": [
         "4 cm",
         "8 cm",
-        "4√3 cm",
-        "2√3 cm"
+        "$4\\sqrt{3}$ cm",
+        "$2\\sqrt{3}$ cm"
       ],
       "correctAnswer": 1,
       "explanation": "Using SOH CAH TOA, cos(angle) = adjacent / hypotenuse. So, cos(60°) = 4 / hypotenuse. Since cos(60°) = 0.5, hypotenuse = 4 / 0.5 = 8 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite an angle θ is 6 cm, and the side adjacent to θ is 8 cm. Find the value of tan θ.",
+      "questionText": "In a right-angled triangle, the side opposite an angle $\\theta$ is 6 cm, and the side adjacent to $\\theta$ is 8 cm. Find the value of tan $\\theta$.",
       "options": [
         "0.6",
         "0.75",
@@ -76,7 +76,7 @@
         "0.8"
       ],
       "correctAnswer": 1,
-      "explanation": "Using SOH CAH TOA, tan(θ) = opposite / adjacent. So, tan(θ) = 6 / 8 = 3/4 = 0.75."
+      "explanation": "Using SOH CAH TOA, tan($\\theta$) = opposite / adjacent. So, tan($\\theta$) = 6 / 8 = 3/4 = 0.75."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "119 km"
       ],
       "correctAnswer": 1,
-      "explanation": "The path forms a right-angled triangle. Using Pythagoras' Theorem, distance² = 12² + 5² = 144 + 25 = 169. Distance = √169 = 13 km."
+      "explanation": "The path forms a right-angled triangle. Using Pythagoras' Theorem, $distance^2 = 12^2 + 5^2$ = 144 + 25 = 169. Distance = $\\sqrt{169}$ = 13 km."
     },
     {
       "type": "multiple-choice",
@@ -112,19 +112,19 @@
         "36 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The diagonal forms a right-angled triangle with two sides of the rectangle. Let the unknown side be x. Using Pythagoras' Theorem, 8² + x² = 10². 64 + x² = 100. x² = 36. x = 6 cm. The sides of the rectangle are 8 cm and 6 cm. Perimeter = 2 * (8 + 6) = 2 * 14 = 28 cm."
+      "explanation": "The diagonal forms a right-angled triangle with two sides of the rectangle. Let the unknown side be x. Using Pythagoras' Theorem, $8^2 + x^2 = 10^2$. 64 + $x^2$ = 100. $x^2$ = 36. x = 6 cm. The sides of the rectangle are 8 cm and 6 cm. Perimeter = 2 * (8 + 6) = 2 * 14 = 28 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "A triangle has sides 8 cm, 15 cm and 17 cm. Is it a right-angled triangle?",
       "options": [
-        "Yes, because 8² + 15² = 17²",
+        "Yes, because $8^2 + 15^2 = 17^2$",
         "No, because 8 + 15 ≠ 17",
         "Yes, because the angles are 90°, 45°, 45°",
         "No, because it doesn't look like one"
       ],
       "correctAnswer": 0,
-      "explanation": "Check if Pythagoras' Theorem holds: 8² + 15² = 64 + 225 = 289. And 17² = 289. Since 8² + 15² = 17², it is a right-angled triangle."
+      "explanation": "Check if Pythagoras' Theorem holds: $8^2 + 15^2$ = 64 + 225 = 289. And $17^2$ = 289. Since $8^2 + 15^2 = 17^2$, it is a right-angled triangle."
     },
     {
       "type": "multiple-choice",
@@ -133,10 +133,10 @@
         "6 cm",
         "8 cm",
         "9 cm",
-        "√164 cm"
+        "$\\sqrt{164}$ cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Drawing the height down to the base bisects the base into two 6 cm segments, forming two right-angled triangles. Using Pythagoras' Theorem: height² + 6² = 10². height² + 36 = 100. height² = 64. height = 8 cm."
+      "explanation": "Drawing the height down to the base bisects the base into two 6 cm segments, forming two right-angled triangles. Using Pythagoras' Theorem: $height^2 + 6^2 = 10^2$. $height^2$ + 36 = 100. $height^2$ = 64. height = 8 cm."
     },
     {
       "type": "multiple-choice",

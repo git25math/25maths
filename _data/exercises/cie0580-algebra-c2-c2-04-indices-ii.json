@@ -8,43 +8,43 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Simplify x⁵ × x².",
+      "questionText": "Simplify $x^5 \\times x^2$.",
       "options": [
-        "x⁷",
-        "x¹⁰",
-        "x³",
-        "2x⁷"
+        "$x^7$",
+        "$x^{10}$",
+        "$x^3$",
+        "2$x^7$"
       ],
       "correctAnswer": 0,
-      "explanation": "When multiplying powers with the same base, you add the exponents. So, 5 + 2 = 7. The answer is x⁷."
+      "explanation": "When multiplying powers with the same base, you add the exponents. So, 5 + 2 = 7. The answer is $x^7$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify y⁹ ÷ y³.",
+      "questionText": "Simplify $y^9 \\div y^3$.",
       "options": [
-        "y³",
-        "y¹²",
-        "y⁶",
-        "y²⁷"
+        "$y^3$",
+        "$y^{12}$",
+        "$y^6$",
+        "$y^{27}$"
       ],
       "correctAnswer": 2,
-      "explanation": "When dividing powers with the same base, you subtract the exponents. So, 9 - 3 = 6. The answer is y⁶."
+      "explanation": "When dividing powers with the same base, you subtract the exponents. So, 9 - 3 = 6. The answer is $y^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (p⁴)³.",
+      "questionText": "Simplify $(p^4)^3$.",
       "options": [
-        "p⁷",
-        "p⁶⁴",
+        "$p^7$",
+        "$p^{64}$",
         "p",
-        "p¹²"
+        "$p^{12}$"
       ],
       "correctAnswer": 3,
-      "explanation": "When raising a power to another power, you multiply the exponents. So, 4 × 3 = 12. The answer is p¹²."
+      "explanation": "When raising a power to another power, you multiply the exponents. So, 4 × 3 = 12. The answer is $p^{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of 7⁰?",
+      "questionText": "What is the value of $7^0$?",
       "options": [
         "0",
         "1",
@@ -68,43 +68,43 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (2a³)⁴.",
+      "questionText": "Simplify $(2a^3)^4$.",
       "options": [
-        "8a¹²",
-        "16a⁷",
-        "8a⁷",
-        "16a¹²"
+        "8$a^{12}$",
+        "16$a^7$",
+        "8$a^7$",
+        "16$a^{12}$"
       ],
       "correctAnswer": 3,
-      "explanation": "Raise the coefficient to the power (2⁴ = 16) and multiply the exponents of the variable (3 × 4 = 12). The answer is 16a¹²."
+      "explanation": "Raise the coefficient to the power ($2^4$ = 16) and multiply the exponents of the variable (3 × 4 = 12). The answer is 16$a^{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 10k⁸ / (2k³).",
+      "questionText": "Simplify 10$k^8$ / (2$k^3$).",
       "options": [
-        "5k⁵",
-        "8k⁵",
-        "5k¹¹",
-        "5k²⁴"
+        "5$k^5$",
+        "8$k^5$",
+        "5$k^{11}$",
+        "5$k^{24}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Divide the coefficients (10 ÷ 2 = 5) and subtract the exponents of the variable (8 - 3 = 5). The answer is 5k⁵."
+      "explanation": "Divide the coefficients (10 ÷ 2 = 5) and subtract the exponents of the variable (8 - 3 = 5). The answer is 5$k^5$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Express x⁻⁵ as a fraction.",
+      "questionText": "Express $x^{-5}$ as a fraction.",
       "options": [
-        "-x⁵",
-        "1/x⁵",
+        "-$x^5$",
+        "$1/x^5$",
         "x/5",
-        "1/x⁻⁵"
+        "$1/x^{-5}$"
       ],
       "correctAnswer": 1,
-      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, x⁻⁵ = 1/x⁵."
+      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, $x^{-5} = 1/x^5$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 3⁻².",
+      "questionText": "Evaluate $3^{-2}$.",
       "options": [
         "1/9",
         "-6",
@@ -112,35 +112,35 @@
         "-9"
       ],
       "correctAnswer": 0,
-      "explanation": "3⁻² is the reciprocal of 3², which is 1/9."
+      "explanation": "$3^{-2}$ is the reciprocal of $3^2$, which is 1/9."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (x²y³)².",
+      "questionText": "Simplify $(x^2y^3)^2$.",
       "options": [
-        "x⁴y⁵",
-        "x⁴y⁶",
-        "x²y⁵",
-        "2x²y³"
+        "$x^4$$y^5$",
+        "$x^4$$y^6$",
+        "$x^2$$y^5$",
+        "2$x^2$$y^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "Apply the power to each factor inside the brackets. (x²)² = x⁴ and (y³)² = y⁶. So the answer is x⁴y⁶."
+      "explanation": "Apply the power to each factor inside the brackets. $(x^2)^2 = x^4$ and $(y^3)^2 = y^6$. So the answer is $x^4$$y^6$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (4c⁵ × 3c²) / 6c³.",
+      "questionText": "Simplify (4$c^5$ × 3$c^2$) / 6$c^3$.",
       "options": [
-        "2c⁴",
-        "2c⁹",
-        "12c⁴",
-        "c⁴"
+        "2$c^4$",
+        "2$c^9$",
+        "12$c^4$",
+        "$c^4$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, simplify the numerator: 4c⁵ × 3c² = 12c⁷. Then, divide by the denominator: 12c⁷ / 6c³ = 2c⁴."
+      "explanation": "First, simplify the numerator: 4$c^5$ × 3$c^2$ = 12$c^7$. Then, divide by the denominator: 12$c^7$ / 6$c^3$ = 2$c^4$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 8n⁰ + (3n)⁰.",
+      "questionText": "Simplify 8$n^0 + (3n)^0$.",
       "options": [
         "8",
         "9",
@@ -148,7 +148,7 @@
         "8n"
       ],
       "correctAnswer": 1,
-      "explanation": "First, 8n⁰ = 8 × 1 = 8. Second, (3n)⁰ = 1, as the whole bracket is raised to the power of 0. Finally, 8 + 1 = 9."
+      "explanation": "First, 8$n^0$ = 8 × 1 = 8. Second, $(3n)^0$ = 1, as the whole bracket is raised to the power of 0. Finally, 8 + 1 = 9."
     }
   ]
 }

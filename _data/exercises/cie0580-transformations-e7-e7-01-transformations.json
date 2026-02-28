@@ -88,7 +88,7 @@
         "72 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "When a shape is enlarged by a linear scale factor 'k', its area is enlarged by a factor of k². The new area is 12 × 3² = 12 × 9 = 108 cm²."
+      "explanation": "When a shape is enlarged by a linear scale factor 'k', its area is enlarged by a factor of $k^2$. The new area is 12 × $3^2$ = 12 × 9 = 108 cm²."
     },
     {
       "type": "multiple-choice",

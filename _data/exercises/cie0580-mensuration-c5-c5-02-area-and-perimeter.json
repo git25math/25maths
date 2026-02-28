@@ -44,27 +44,27 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the circumference of a circle with a radius of 5 cm? Give your answer in terms of π.",
+      "questionText": "What is the circumference of a circle with a radius of 5 cm? Give your answer in terms of $\\pi$.",
       "options": [
-        "5π cm",
-        "25π cm",
-        "10π cm",
-        "10π cm²"
+        "5$\\pi$ cm",
+        "25$\\pi$ cm",
+        "10$\\pi$ cm",
+        "10$\\pi$ cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "The circumference of a circle is calculated as 2 × π × radius. So, the circumference is 2 × π × 5 cm = 10π cm."
+      "explanation": "The circumference of a circle is calculated as 2 × $\\pi$ × radius. So, the circumference is 2 × $\\pi$ × 5 cm = 10$\\pi$ cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the area of a circle with a diameter of 12 cm. Give your answer in terms of π.",
+      "questionText": "Calculate the area of a circle with a diameter of 12 cm. Give your answer in terms of $\\pi$.",
       "options": [
-        "144π cm²",
-        "12π cm²",
-        "36π cm²",
-        "24π cm²"
+        "144$\\pi$ cm²",
+        "12$\\pi$ cm²",
+        "36$\\pi$ cm²",
+        "24$\\pi$ cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the radius from the diameter (radius = diameter / 2), which is 12 cm / 2 = 6 cm. The area of a circle is π × radius². So, the area is π × (6 cm)² = 36π cm²."
+      "explanation": "First, find the radius from the diameter (radius = diameter / 2), which is 12 cm / 2 = 6 cm. The area of a circle is $\\pi \\times radius^2$. So, the area is $\\pi \\times (6 cm)^2$ = 36$\\pi$ cm²."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "49 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the side length by taking the square root of the area: √49 = 7 cm. The perimeter of a square is 4 × side length. So, the perimeter is 4 × 7 cm = 28 cm."
+      "explanation": "First, find the side length by taking the square root of the area: $\\sqrt{49}$ = 7 cm. The perimeter of a square is 4 × side length. So, the perimeter is 4 × 7 cm = 28 cm."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "144 m²"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the side length by dividing the perimeter by 4: 36 m / 4 = 9 m. The area of a square is side length squared. So, the area is (9 m)² = 81 m²."
+      "explanation": "First, find the side length by dividing the perimeter by 4: 36 m / 4 = 9 m. The area of a square is side length squared. So, the area is $(9 m)^2$ = 81 m²."
     },
     {
       "type": "multiple-choice",

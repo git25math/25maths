@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use π = 22/7.",
+      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use $\\pi$ = 22/7.",
       "options": [
         "22 cm",
         "44 cm",
@@ -52,19 +52,19 @@
         "36 cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The perimeter of a semicircle consists of the curved arc (πr) and the diameter (2r). Arc length = (22/7) * 7 = 22 cm. Diameter = 2 * 7 = 14 cm. Total perimeter = 22 + 14 = 36 cm."
+      "explanation": "The perimeter of a semicircle consists of the curved arc ($\\pi$r) and the diameter (2r). Arc length = (22/7) * 7 = 22 cm. Diameter = 2 * 7 = 14 cm. Total perimeter = 22 + 14 = 36 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the area of a sector with a radius of 10 cm and an angle of 63 degrees. Give your answer in terms of π.",
+      "questionText": "Find the area of a sector with a radius of 10 cm and an angle of 63 degrees. Give your answer in terms of $\\pi$.",
       "options": [
-        "17.5π cm²",
-        "35π cm²",
-        "3.5π cm²",
-        "630π cm²"
+        "17.5$\\pi$ cm²",
+        "35$\\pi$ cm²",
+        "3.5$\\pi$ cm²",
+        "630$\\pi$ cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a sector is given by (θ/360) * πr². So, Area = (63/360) * π * 10² = (7/40) * 100π = 17.5π cm²."
+      "explanation": "The area of a sector is given by ($\\theta/360$) * $\\pi$$r^2$. So, Area = (63/360) * $\\pi$ * $10^2$ = (7/40) * 100$\\pi$ = 17.5$\\pi$ cm²."
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circle has an area of 49π cm². What is its radius?",
+      "questionText": "A circle has an area of 49$\\pi$ cm². What is its radius?",
       "options": [
         "49 cm",
         "24.5 cm",
@@ -88,7 +88,7 @@
         "14 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a circle is A = πr². Given A = 49π, we have πr² = 49π. Dividing both sides by π gives r² = 49. Taking the square root, the radius r = 7 cm."
+      "explanation": "The area of a circle is A = $\\pi$$r^2$. Given A = 49$\\pi$, we have $\\pi$$r^2$ = 49$\\pi$. Dividing both sides by $\\pi$ gives $r^2$ = 49. Taking the square root, the radius r = 7 cm."
     },
     {
       "type": "multiple-choice",
@@ -104,15 +104,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the area of the region between two concentric circles with radii 9 cm and 5 cm. Give your answer in terms of π.",
+      "questionText": "Find the area of the region between two concentric circles with radii 9 cm and 5 cm. Give your answer in terms of $\\pi$.",
       "options": [
-        "56π cm²",
-        "4π cm²",
-        "106π cm²",
-        "16π cm²"
+        "56$\\pi$ cm²",
+        "4$\\pi$ cm²",
+        "106$\\pi$ cm²",
+        "16$\\pi$ cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of the region (annulus) is the area of the larger circle minus the area of the smaller circle: Area = πR² - πr² = π(9² - 5²) = π(81 - 25) = 56π cm²."
+      "explanation": "The area of the region (annulus) is the area of the larger circle minus the area of the smaller circle: Area = $\\pi$$R^2 - \\pi$$r^2 = \\pi$($9^2 - 5^2$) = $\\pi$(81 - 25) = 56$\\pi$ cm²."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "192 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "The diagonals of a rhombus bisect at right angles. Using Pythagoras' theorem on a quadrant of the rhombus, half of the second diagonal is √(10² - 6²) = 8 cm. So the full diagonal is 16 cm. The area is (1/2) * d1 * d2 = (1/2) * 12 * 16 = 96 cm²."
+      "explanation": "The diagonals of a rhombus bisect at right angles. Using Pythagoras' theorem on a quadrant of the rhombus, half of the second diagonal is √($10^2 - 6^2$) = 8 cm. So the full diagonal is 16 cm. The area is (1/2) * d1 * d2 = (1/2) * 12 * 16 = 96 cm²."
     },
     {
       "type": "multiple-choice",
@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "A shape is made from a square of side 8 cm with four identical semicircles attached to each of its four sides. What is the perimeter of this new shape?",
       "options": [
-        "32π cm",
-        "8π cm",
-        "16π + 32 cm",
-        "16π cm"
+        "32$\\pi$ cm",
+        "8$\\pi$ cm",
+        "16$\\pi$ + 32 cm",
+        "16$\\pi$ cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The perimeter of the shape is formed by the four semicircular arcs. The internal sides of the square are not part of the perimeter. The diameter of each semicircle is 8 cm. The length of one arc is (1/2)πd = (1/2)π * 8 = 4π cm. Since there are four such arcs, the total perimeter is 4 * 4π = 16π cm."
+      "explanation": "The perimeter of the shape is formed by the four semicircular arcs. The internal sides of the square are not part of the perimeter. The diameter of each semicircle is 8 cm. The length of one arc is (1/2)$\\pi$d = (1/2)$\\pi$ * 8 = 4$\\pi$ cm. Since there are four such arcs, the total perimeter is 4 * 4$\\pi$ = 16$\\pi$ cm."
     }
   ]
 }

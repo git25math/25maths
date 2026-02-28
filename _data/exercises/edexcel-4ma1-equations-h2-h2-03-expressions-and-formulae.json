@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A taxi firm charges a fixed fee of $4 plus $1.50 per mile. Which formula represents the total cost, C, for a journey of m miles?",
+      "questionText": "A taxi firm charges a fixed fee of ${4 plus }$1.50 per mile. Which formula represents the total cost, C, for a journey of m miles?",
       "options": [
         "C = 4m + 1.50",
         "C = 1.50m + 4",
@@ -64,7 +64,7 @@
         "C = 1.50(m + 4)"
       ],
       "correctAnswer": 1,
-      "explanation": "The total cost (C) is the fixed fee ($4) plus the variable cost, which is the rate per mile ($1.50) multiplied by the number of miles (m). So, C = 1.50m + 4."
+      "explanation": "The total cost (C) is the fixed fee (${4) plus the variable cost, which is the rate per mile (}$1.50) multiplied by the number of miles (m). So, C = 1.50m + 4."
     },
     {
       "type": "multiple-choice",
@@ -80,15 +80,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Make r the subject of the formula A = πr^2.",
+      "questionText": "Make r the subject of the formula A = $\\pi$r^2.",
       "options": [
-        "r = A/π",
-        "r = √(A/π)",
-        "r = (A/π)^2",
-        "r = A - π"
+        "r = A/$\\pi$",
+        "r = $\\sqrt{A/$\\pi$}$",
+        "r = (A/$\\pi$)^2",
+        "r = A - $\\pi$"
       ],
       "correctAnswer": 1,
-      "explanation": "First, divide both sides by π to get A/π = r^2. Then, take the square root of both sides to find r. So, r = √(A/π)."
+      "explanation": "First, divide both sides by $\\pi$ to get A/$\\pi$ = r^2. Then, take the square root of both sides to find r. So, r = $\\sqrt{A/$\\pi$}$."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given the formula T = 2π√(L/g), find the value of T when L = 40 and g = 10, using π ≈ 3.14.",
+      "questionText": "Given the formula T = 2$\\pi$$\\sqrt{L/g}$, find the value of T when L = 40 and g = 10, using $\\pi$ ≈ 3.14.",
       "options": [
         "6.28",
         "12.56",
@@ -148,7 +148,7 @@
         "39.44"
       ],
       "correctAnswer": 1,
-      "explanation": "First, calculate L/g = 40/10 = 4. Then, √(L/g) = √4 = 2. Now substitute this into the formula: T = 2 * π * 2 = 4π. Using π ≈ 3.14, T = 4 * 3.14 = 12.56."
+      "explanation": "First, calculate L/g = 40/10 = 4. Then, $\\sqrt{L/g} = \\sqrt{4}$ = 2. Now substitute this into the formula: T = 2 * $\\pi$ * 2 = 4$\\pi$. Using $\\pi$ ≈ 3.14, T = 4 * 3.14 = 12.56."
     }
   ]
 }

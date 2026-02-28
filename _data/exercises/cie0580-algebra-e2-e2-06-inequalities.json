@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality x² > 9.",
+      "questionText": "Solve the inequality $x^2$ > 9.",
       "options": [
         "x > 3",
         "x > 3 or x < -3",
@@ -112,7 +112,7 @@
         "-3 < x < 3"
       ],
       "correctAnswer": 1,
-      "explanation": "The critical values are the solutions to x² = 9, which are x = 3 and x = -3. Testing the regions outside these values (e.g., x=4 or x=-4) shows that the inequality holds for x > 3 or x < -3."
+      "explanation": "The critical values are the solutions to $x^2$ = 9, which are x = 3 and x = -3. Testing the regions outside these values (e.g., x=4 or x=-4) shows that the inequality holds for x > 3 or x < -3."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality x² <= 25.",
+      "questionText": "Solve the inequality $x^2$ <= 25.",
       "options": [
         "x <= 5",
         "x <= -5",
@@ -148,7 +148,7 @@
         "-5 <= x <= 5"
       ],
       "correctAnswer": 3,
-      "explanation": "The critical values are x = 5 and x = -5. The inequality x² <= 25 holds for all values of x between and including -5 and 5."
+      "explanation": "The critical values are x = 5 and x = -5. The inequality $x^2$ <= 25 holds for all values of x between and including -5 and 5."
     }
   ]
 }

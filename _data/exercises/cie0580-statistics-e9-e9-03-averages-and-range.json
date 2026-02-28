@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The table shows the time, t (minutes), taken by 50 students to complete a puzzle. Estimate the mean time taken.\n\n| Time (t minutes) | Frequency |\n| :--------------- | :-------- |\n| 0 < t ≤ 10       | 5         |\n| 10 < t ≤ 20      | 15        |\n| 20 < t ≤ 30      | 20        |\n| 30 < t ≤ 40      | 10        |",
+      "questionText": "The table shows the time, t (minutes), taken by 50 students to complete a puzzle. Estimate the mean time taken.\n\n| Time (t minutes) | Frequency |\n| :--------------- | :-------- |\n| 0 < t $\\leq$ 10       | 5         |\n| 10 < t $\\leq$ 20      | 15        |\n| 20 < t $\\leq$ 30      | 20        |\n| 30 < t $\\leq$ 40      | 10        |",
       "options": [
         "22 minutes",
         "22.5 minutes",
@@ -28,7 +28,7 @@
         "25 minutes"
       ],
       "correctAnswer": 0,
-      "explanation": "To estimate the mean, we first find the midpoint for each class interval:\n- 0 < t ≤ 10: Midpoint = 5\n- 10 < t ≤ 20: Midpoint = 15\n- 20 < t ≤ 30: Midpoint = 25\n- 30 < t ≤ 40: Midpoint = 35\n\nNow, calculate the sum of (midpoint * frequency) and the total frequency:\nΣfx = (5*5) + (15*15) + (25*20) + (35*10)\nΣfx = 25 + 225 + 500 + 350 = 1100\nΣf = 5 + 15 + 20 + 10 = 50\n\nEstimated mean = Σfx / Σf = 1100 / 50 = 22 minutes."
+      "explanation": "To estimate the mean, we first find the midpoint for each class interval:\n- 0 < t $\\leq$ 10: Midpoint = 5\n- 10 < t $\\leq$ 20: Midpoint = 15\n- 20 < t $\\leq$ 30: Midpoint = 25\n- 30 < t $\\leq$ 40: Midpoint = 35\n\nNow, calculate the sum of (midpoint * frequency) and the total frequency:\nΣfx = (5*5) + (15*15) + (25*20) + (35*10)\nΣfx = 25 + 225 + 500 + 350 = 1100\nΣf = 5 + 15 + 20 + 10 = 50\n\nEstimated mean = Σfx / Σf = 1100 / 50 = 22 minutes."
     },
     {
       "type": "multiple-choice",

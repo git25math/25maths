@@ -136,7 +136,7 @@
         "$926.10"
       ],
       "correctAnswer": 0,
-      "explanation": "The interest per year is 5% of $800, which is 0.05 * 800 = $40. Over 3 years, the total simple interest is 3 * $40 = $120. The total value is the principal plus the interest: $800 + $120 = $920."
+      "explanation": "The interest per year is 5% of ${800, which is 0.05 * 800 = }$40. Over 3 years, the total simple interest is 3 * ${40 = }$120. The total value is the principal plus the interest: ${800 + }$120 = $920."
     },
     {
       "type": "multiple-choice",

@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "For the function y = x², what is the value of y when x = -2?",
+      "questionText": "For the function y = $x^2$, what is the value of y when x = -2?",
       "options": [
         "4",
         "-4",
@@ -88,11 +88,11 @@
         "2"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute x = -2 into the function: y = (-2)² = (-2) * (-2) = 4."
+      "explanation": "Substitute x = -2 into the function: y = $(-2)^2$ = (-2) * (-2) = 4."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The graph of y = x² - 4 crosses the x-axis at two points. What are the x-coordinates of these points?",
+      "questionText": "The graph of y = $x^2$ - 4 crosses the x-axis at two points. What are the x-coordinates of these points?",
       "options": [
         "x = 2 and x = -2",
         "x = 4 and x = -4",
@@ -100,7 +100,7 @@
         "x = 0 and x = 4"
       ],
       "correctAnswer": 0,
-      "explanation": "The graph crosses the x-axis when y = 0. Solve the equation x² - 4 = 0. This gives x² = 4, so x = √4, which means x = 2 and x = -2."
+      "explanation": "The graph crosses the x-axis when y = 0. Solve the equation $x^2$ - 4 = 0. This gives $x^2$ = 4, so x = $\\sqrt{4}$, which means x = 2 and x = -2."
     },
     {
       "type": "multiple-choice",

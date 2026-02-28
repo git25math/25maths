@@ -28,7 +28,7 @@
         "6:10"
       ],
       "correctAnswer": 2,
-      "explanation": "If the linear scale factor ratio is L:M, the volume ratio is L³:M³. Here, the linear ratio is 3:5, so the volume ratio is 3³:5³ = 27:125."
+      "explanation": "If the linear scale factor ratio is L:M, the volume ratio is $L^3$:$M^3$. Here, the linear ratio is 3:5, so the volume ratio is $3^3$:$5^3$ = 27:125."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "5.4 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area scale factor is 100/36 = 25/9. The linear scale factor is the square root of the area scale factor, which is √(25/9) = 5/3. The corresponding side length is 9 × (5/3) = 15 cm."
+      "explanation": "The area scale factor is 100/36 = 25/9. The linear scale factor is the square root of the area scale factor, which is $\\sqrt{25/9}$ = 5/3. The corresponding side length is 9 × (5/3) = 15 cm."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "6 km²"
       ],
       "correctAnswer": 0,
-      "explanation": "The area on the map is 2 cm × 3 cm = 6 cm². The linear scale factor is 50000. The area scale factor is 50000² = 2,500,000,000. Actual area = 6 × 2,500,000,000 cm² = 15,000,000,000 cm². To convert cm² to km², divide by (1000 × 100)² which is 10¹⁰. So, 15,000,000,000 / 10,000,000,000 = 1.5 km²."
+      "explanation": "The area on the map is 2 cm × 3 cm = 6 cm². The linear scale factor is 50000. The area scale factor is $50000^2$ = 2,500,000,000. Actual area = 6 × 2,500,000,000 cm² = 15,000,000,000 cm². To convert cm² to km², divide by $(1000 \\times 100)^2$ which is $10^{10}$. So, 15,000,000,000 / 10,000,000,000 = 1.5 km²."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "180 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "The volume ratio is 270/80 = 27/8. The linear scale factor is ³√(27/8) = 3/2. The area scale factor is (3/2)² = 9/4. The surface area of the larger solid is 60 × (9/4) = 135 cm²."
+      "explanation": "The volume ratio is 270/80 = 27/8. The linear scale factor is ³$\\sqrt{27/8}$ = 3/2. The area scale factor is $(3/2)^2$ = 9/4. The surface area of the larger solid is 60 × (9/4) = 135 cm²."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "18 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "Triangles XPQ and XYZ are similar. The linear scale factor is XY/XP = (4+6)/4 = 10/4 = 2.5. The area scale factor is 2.5² = 6.25. The area of triangle XYZ is 12 × 6.25 = 75 cm². The area of the trapezium is Area(XYZ) - Area(XPQ) = 75 - 12 = 63 cm²."
+      "explanation": "Triangles XPQ and XYZ are similar. The linear scale factor is XY/XP = (4+6)/4 = 10/4 = 2.5. The area scale factor is 2.$5^2$ = 6.25. The area of triangle XYZ is 12 × 6.25 = 75 cm². The area of the trapezium is Area(XYZ) - Area(XPQ) = 75 - 12 = 63 cm²."
     },
     {
       "type": "multiple-choice",
@@ -85,10 +85,10 @@
         "4:7",
         "16:49",
         "64:343",
-        "2:√7"
+        "2:$\\sqrt{7}$"
       ],
       "correctAnswer": 1,
-      "explanation": "The ratio of perimeters is the same as the linear scale factor, which is 4:7. The ratio of areas is the square of the linear scale factor, which is 4²:7² = 16:49."
+      "explanation": "The ratio of perimeters is the same as the linear scale factor, which is 4:7. The ratio of areas is the square of the linear scale factor, which is $4^2$:$7^2$ = 16:49."
     },
     {
       "type": "multiple-choice",
@@ -104,15 +104,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Two similar cones have base radii of 6 cm and 9 cm. If the volume of the smaller cone is 48π cm³, what is the volume of the larger cone?",
+      "questionText": "Two similar cones have base radii of 6 cm and 9 cm. If the volume of the smaller cone is 48$\\pi$ cm³, what is the volume of the larger cone?",
       "options": [
-        "72π cm³",
-        "108π cm³",
-        "162π cm³",
+        "72$\\pi$ cm³",
+        "108$\\pi$ cm³",
+        "162$\\pi$ cm³",
         "108 cm³"
       ],
       "correctAnswer": 2,
-      "explanation": "The linear scale factor is 9/6 = 1.5. The volume scale factor is 1.5³ = 3.375. The volume of the larger cone is 48π × 3.375 = 162π cm³."
+      "explanation": "The linear scale factor is 9/6 = 1.5. The volume scale factor is 1.$5^3$ = 3.375. The volume of the larger cone is 48$\\pi$ × 3.375 = 162$\\pi$ cm³."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "1000 ml"
       ],
       "correctAnswer": 2,
-      "explanation": "Capacity is related to volume. The linear scale factor is 15/10 = 1.5. The volume scale factor is 1.5³ = 3.375. The capacity of the larger jug is 400 ml × 3.375 = 1350 ml."
+      "explanation": "Capacity is related to volume. The linear scale factor is 15/10 = 1.5. The volume scale factor is 1.$5^3$ = 3.375. The capacity of the larger jug is 400 ml × 3.375 = 1350 ml."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "16:81"
       ],
       "correctAnswer": 2,
-      "explanation": "If the area ratio is A:B, the linear ratio is √A:√B. The linear ratio is √4:√9 = 2:3. The volume ratio is the cube of the linear ratio, which is 2³:3³ = 8:27."
+      "explanation": "If the area ratio is A:B, the linear ratio is $\\sqrt{A}$:$\\sqrt{B}$. The linear ratio is $\\sqrt{4}$:$\\sqrt{9}$ = 2:3. The volume ratio is the cube of the linear ratio, which is $2^3$:$3^3$ = 8:27."
     }
   ]
 }

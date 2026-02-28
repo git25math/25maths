@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The exchange rate is £1 = $1.20. How many dollars ($) can you get for £50?",
+      "questionText": "The exchange rate is £1 = ${1.20. How many dollars (}$) can you get for £50?",
       "options": [
         "$41.67",
         "$51.20",

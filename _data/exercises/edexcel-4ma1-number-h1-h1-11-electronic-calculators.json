@@ -28,7 +28,7 @@
         "4.58"
       ],
       "correctAnswer": 0,
-      "explanation": "First, calculate the value inside the root: 45² - 1200 = 2025 - 1200 = 825. Then find the 5th root of this number: ⁵√825 ≈ 3.823... Rounding to 2 decimal places gives 3.82."
+      "explanation": "First, calculate the value inside the root: $45^2$ - 1200 = 2025 - 1200 = 825. Then find the 5th root of this number: $\\sqrt[5]{825}$ ≈ 3.823... Rounding to 2 decimal places gives 3.82."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "2.635 \\times 10^{-3}"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply the numbers (3.1 × 8.5 = 26.35) and add the powers of 10 (4 + (-7) = -3). This gives 26.35 × 10⁻³. To express this in standard form, the first number must be between 1 and 10. So, we rewrite 26.35 as 2.635 × 10¹, giving 2.635 × 10¹ × 10⁻³ = 2.635 × 10⁻²."
+      "explanation": "Multiply the numbers (3.1 × 8.5 = 26.35) and add the powers of 10 (4 + (-7) = -3). This gives 26.35 × $10^{-3}$. To express this in standard form, the first number must be between 1 and 10. So, we rewrite 26.35 as 2.635 × $10^1$, giving 2.635 × $10^1 \\times 10^{-3}$ = 2.635 × $10^{-2}$."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "40"
       ],
       "correctAnswer": 0,
-      "explanation": "First, calculate the square of the denominator: 0.025² = 0.000625. Then, find the reciprocal of this value: 1 / 0.000625 = 1600. Alternatively, use the x² and x⁻¹ buttons on your calculator."
+      "explanation": "First, calculate the square of the denominator: 0.$025^2$ = 0.000625. Then, find the reciprocal of this value: 1 / 0.000625 = 1600. Alternatively, use the $x^2$ and $x^{-1}$ buttons on your calculator."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cylinder has a radius of 4.5 cm and a height of 12 cm. Calculate its volume using the formula V = πr²h. Give your answer correct to 1 decimal place.",
+      "questionText": "A cylinder has a radius of 4.5 cm and a height of 12 cm. Calculate its volume using the formula V = $\\pi$$r^2$h. Give your answer correct to 1 decimal place.",
       "options": [
         "763.4",
         "763.41",
@@ -76,7 +76,7 @@
         "339.3"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute the values into the formula: V = π × (4.5)² × 12. This equals 243π ≈ 763.407... cm³. Rounding to one decimal place gives 763.4 cm³. The value 339.3 is the curved surface area (2πrh)."
+      "explanation": "Substitute the values into the formula: V = $\\pi \\times (4.5)^2$ × 12. This equals 243$\\pi$ ≈ 763.407... cm³. Rounding to one decimal place gives 763.4 cm³. The value 339.3 is the curved surface area (2$\\pi$rh)."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "26.8"
       ],
       "correctAnswer": 0,
-      "explanation": "Follow the order of operations (BIDMAS/PEMDAS). First, calculate the power: (-1.5)³ = -3.375. Next, the multiplication: -3.375 × 4 = -13.5. Finally, the subtraction: 5.2 - (-13.5) = 5.2 + 13.5 = 18.7."
+      "explanation": "Follow the order of operations (BIDMAS/PEMDAS). First, calculate the power: $(-1.5)^3$ = -3.375. Next, the multiplication: -3.375 × 4 = -13.5. Finally, the subtraction: 5.2 - (-13.5) = 5.2 + 13.5 = 18.7."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "399.6"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find x by calculating √18.49, which is exactly 4.3. Then substitute this into the expression: 5 × (4.3)² - 3 × 4.3. This evaluates to 5 × 18.49 - 12.9 = 92.45 - 12.9 = 79.55."
+      "explanation": "First, find x by calculating $\\sqrt{18.49}$, which is exactly 4.3. Then substitute this into the expression: 5 × $(4.3)^2$ - 3 × 4.3. This evaluates to 5 × 18.49 - 12.9 = 92.45 - 12.9 = 79.55."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "3.48"
       ],
       "correctAnswer": 0,
-      "explanation": "Using a calculator, compute 2 × log(50) + log(4), which evaluates to exactly 4. Using logarithm laws: 2log(50) + log(4) = log(50²) + log(4) = log(2500 × 4) = log(10000) = 4."
+      "explanation": "Using a calculator, compute 2 × log(50) + log(4), which evaluates to exactly 4. Using logarithm laws: 2log(50) + log(4) = log($50^2$) + log(4) = log(2500 × 4) = log(10000) = 4."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "20"
       ],
       "correctAnswer": 0,
-      "explanation": "First, evaluate the expression inside the absolute value bars: 5² - 100 = -75. The absolute value is $|-75| = 75$. The cube root in the denominator is ³√125 = 5. Finally, perform the division: 75 ÷ 5 = 15."
+      "explanation": "First, evaluate the expression inside the absolute value bars: $5^2$ - 100 = -75. The absolute value is ${|-75| = 75}$. The cube root in the denominator is $\\sqrt[3]{125}$ = 5. Finally, perform the division: 75 ÷ 5 = 15."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "2.646"
       ],
       "correctAnswer": 0,
-      "explanation": "Start with x₀ = 1. Then calculate x₁ = √(2×1 + 5) = √7 ≈ 2.64575. Using the 'Ans' button, calculate x₂ = √(2×Ans + 5) ≈ 3.20803. Repeat to find x₃ = √(2×Ans + 5) ≈ 3.3787... which rounds to 3.379."
+      "explanation": "Start with x₀ = 1. Then calculate x₁ = $\\sqrt{2\\times1 + 5} = \\sqrt{7}$ ≈ 2.64575. Using the 'Ans' button, calculate x₂ = $\\sqrt{2\\timesAns + 5}$ ≈ 3.20803. Repeat to find x₃ = $\\sqrt{2\\timesAns + 5}$ ≈ 3.3787... which rounds to 3.379."
     }
   ]
 }

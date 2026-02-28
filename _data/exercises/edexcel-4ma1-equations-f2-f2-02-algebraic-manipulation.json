@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression `5x + 2x - x`.",
+      "questionText": "Simplify the expression ${5x + 2x - x}$.",
       "options": [
         "8x",
         "7x",
@@ -16,11 +16,11 @@
         "5x"
       ],
       "correctAnswer": 2,
-      "explanation": "To simplify, combine the coefficients of the like term 'x'. This gives 5 + 2 - 1 = 6. So, the expression simplifies to `6x`."
+      "explanation": "To simplify, combine the coefficients of the like term 'x'. This gives 5 + 2 - 1 = 6. So, the expression simplifies to ${6x}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression `7a + 3b + 2a - b`.",
+      "questionText": "Simplify the expression ${7a + 3b + 2a - b}$.",
       "options": [
         "9a + 2b",
         "9a + 4b",
@@ -28,11 +28,11 @@
         "11ab"
       ],
       "correctAnswer": 0,
-      "explanation": "Collect the like terms. For 'a': `7a + 2a = 9a`. For 'b': `3b - b = 2b`. Combining these gives `9a + 2b`."
+      "explanation": "Collect the like terms. For 'a': ${7a + 2a = 9a}$. For 'b': ${3b - b = 2b}$. Combining these gives ${9a + 2b}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Expand the expression `3(y + 6)`.",
+      "questionText": "Expand the expression ${3(y + 6)}$.",
       "options": [
         "3y + 6",
         "3y + 18",
@@ -40,11 +40,11 @@
         "21y"
       ],
       "correctAnswer": 1,
-      "explanation": "Multiply each term inside the bracket by 3. `3 * y = 3y` and `3 * 6 = 18`. The expanded expression is `3y + 18`."
+      "explanation": "Multiply each term inside the bracket by 3. ${3 * y = 3y}$ and ${3 * 6 = 18}$. The expanded expression is ${3y + 18}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise the expression `8p - 12`.",
+      "questionText": "Factorise the expression ${8p - 12}$.",
       "options": [
         "2(4p - 6)",
         "8(p - 12)",
@@ -52,11 +52,11 @@
         "4(2p - 8)"
       ],
       "correctAnswer": 2,
-      "explanation": "Find the highest common factor (HCF) of 8 and 12, which is 4. Divide each term by 4: `8p / 4 = 2p` and `-12 / 4 = -3`. The factorised expression is `4(2p - 3)`."
+      "explanation": "Find the highest common factor (HCF) of 8 and 12, which is 4. Divide each term by 4: ${8p / 4 = 2p}$ and ${-12 / 4 = -3}$. The factorised expression is ${4(2p - 3)}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the expression `c + c + c + c + c`.",
+      "questionText": "Simplify the expression ${c + c + c + c + c}$.",
       "options": [
         "c^5",
         "5c",
@@ -64,11 +64,11 @@
         "5c^5"
       ],
       "correctAnswer": 1,
-      "explanation": "Adding the same term 'c' five times is equivalent to multiplying 'c' by 5. The result is `5c`."
+      "explanation": "Adding the same term 'c' five times is equivalent to multiplying 'c' by 5. The result is ${5c}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Expand the expression `a(a - 4)`.",
+      "questionText": "Expand the expression ${a(a - 4)}$.",
       "options": [
         "a^2 - 4",
         "2a - 4",
@@ -76,11 +76,11 @@
         "a - 4a"
       ],
       "correctAnswer": 2,
-      "explanation": "Multiply each term inside the bracket by 'a'. `a * a = a^2` and `a * -4 = -4a`. The result is `a^2 - 4a`."
+      "explanation": "Multiply each term inside the bracket by 'a'. $a * a = a^2$ and ${a * -4 = -4a}$. The result is $a^2 - 4a$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify `10m + 4n - 3m + 2n`.",
+      "questionText": "Simplify ${10m + 4n - 3m + 2n}$.",
       "options": [
         "7m + 6n",
         "13m + 6n",
@@ -88,11 +88,11 @@
         "13mn"
       ],
       "correctAnswer": 0,
-      "explanation": "Collect the like terms. For 'm': `10m - 3m = 7m`. For 'n': `4n + 2n = 6n`. Combining these gives `7m + 6n`."
+      "explanation": "Collect the like terms. For 'm': ${10m - 3m = 7m}$. For 'n': ${4n + 2n = 6n}$. Combining these gives ${7m + 6n}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise the expression `y^2 + 7y`.",
+      "questionText": "Factorise the expression $y^2 + 7y$.",
       "options": [
         "y(y + 7y)",
         "7(y^2 + y)",
@@ -100,11 +100,11 @@
         "y(y + 7)"
       ],
       "correctAnswer": 3,
-      "explanation": "The highest common factor of `y^2` and `7y` is 'y'. Divide each term by 'y': `y^2 / y = y` and `7y / y = 7`. The factorised expression is `y(y + 7)`."
+      "explanation": "The highest common factor of $y^2$ and ${7y}$ is 'y'. Divide each term by 'y': $y^2 / y = y$ and ${7y / y = 7}$. The factorised expression is ${y(y + 7)}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Expand and simplify `4(x + 2) + 2(x + 5)`.",
+      "questionText": "Expand and simplify ${4(x + 2) + 2(x + 5)}$.",
       "options": [
         "6x + 7",
         "6x + 13",
@@ -112,11 +112,11 @@
         "8x + 10"
       ],
       "correctAnswer": 2,
-      "explanation": "First, expand both brackets: `4(x + 2) = 4x + 8` and `2(x + 5) = 2x + 10`. Then, collect the like terms: `(4x + 2x) + (8 + 10) = 6x + 18`."
+      "explanation": "First, expand both brackets: ${4(x + 2) = 4x + 8}$ and ${2(x + 5) = 2x + 10}$. Then, collect the like terms: ${(4x + 2x) + (8 + 10) = 6x + 18}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify `5f - 3g - f + 8g`.",
+      "questionText": "Simplify ${5f - 3g - f + 8g}$.",
       "options": [
         "4f - 5g",
         "4f + 5g",
@@ -124,11 +124,11 @@
         "4f + 11g"
       ],
       "correctAnswer": 1,
-      "explanation": "Collect the like terms. For 'f': `5f - f = 4f`. For 'g': `-3g + 8g = 5g`. Combining these gives `4f + 5g`."
+      "explanation": "Collect the like terms. For 'f': ${5f - f = 4f}$. For 'g': ${-3g + 8g = 5g}$. Combining these gives ${4f + 5g}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise fully `15x + 20y`.",
+      "questionText": "Factorise fully ${15x + 20y}$.",
       "options": [
         "3(5x + 4y)",
         "20(0.75x + y)",
@@ -136,11 +136,11 @@
         "15(x + 4/3 y)"
       ],
       "correctAnswer": 2,
-      "explanation": "The highest common factor of 15 and 20 is 5. Dividing the terms by 5 gives `15x / 5 = 3x` and `20y / 5 = 4y`. The fully factorised form is `5(3x + 4y)`."
+      "explanation": "The highest common factor of 15 and 20 is 5. Dividing the terms by 5 gives ${15x / 5 = 3x}$ and ${20y / 5 = 4y}$. The fully factorised form is ${5(3x + 4y)}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Expand and simplify `6(k + 3) - 2(k + 1)`.",
+      "questionText": "Expand and simplify ${6(k + 3) - 2(k + 1)}$.",
       "options": [
         "4k + 17",
         "4k + 20",
@@ -148,7 +148,7 @@
         "4k + 2"
       ],
       "correctAnswer": 2,
-      "explanation": "Expand the brackets: `6k + 18` and `-2k - 2`. Be careful with the negative sign. Then collect like terms: `(6k - 2k) + (18 - 2) = 4k + 16`."
+      "explanation": "Expand the brackets: ${6k + 18}$ and ${-2k - 2}$. Be careful with the negative sign. Then collect like terms: ${(6k - 2k) + (18 - 2) = 4k + 16}$."
     }
   ]
 }

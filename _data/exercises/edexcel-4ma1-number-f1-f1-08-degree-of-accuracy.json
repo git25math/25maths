@@ -22,13 +22,13 @@
       "type": "multiple-choice",
       "questionText": "A number, x, is 5.4 when rounded to one decimal place. What is the error interval for x?",
       "options": [
-        "5.3 ≤ x < 5.5",
-        "5.35 ≤ x < 5.45",
-        "5.4 ≤ x < 5.5",
-        "5.35 ≤ x < 5.44"
+        "5.3 $\\leq$ x < 5.5",
+        "5.35 $\\leq$ x < 5.45",
+        "5.4 $\\leq$ x < 5.5",
+        "5.35 $\\leq$ x < 5.44"
       ],
       "correctAnswer": 1,
-      "explanation": "The number has been rounded to one decimal place (nearest 0.1). The error is half of this, which is 0.05. The lower bound is 5.4 - 0.05 = 5.35. The upper bound is 5.4 + 0.05 = 5.45. The interval is 5.35 ≤ x < 5.45."
+      "explanation": "The number has been rounded to one decimal place (nearest 0.1). The error is half of this, which is 0.05. The lower bound is 5.4 - 0.05 = 5.35. The upper bound is 5.4 + 0.05 = 5.45. The interval is 5.35 $\\leq$ x < 5.45."
     },
     {
       "type": "multiple-choice",
@@ -94,13 +94,13 @@
       "type": "multiple-choice",
       "questionText": "The weight of a bag of sugar is 1 kg to the nearest 10 grams. What is the error interval for the weight (W) in grams?",
       "options": [
-        "990g ≤ W < 1010g",
-        "995g ≤ W < 1005g",
-        "950g ≤ W < 1050g",
-        "1000g ≤ W < 1010g"
+        "990g $\\leq$ W < 1010g",
+        "995g $\\leq$ W < 1005g",
+        "950g $\\leq$ W < 1050g",
+        "1000g $\\leq$ W < 1010g"
       ],
       "correctAnswer": 1,
-      "explanation": "First, convert 1 kg to 1000g. The measurement is to the nearest 10g. The error is half of this, which is 5g. The lower bound is 1000 - 5 = 995g. The upper bound is 1000 + 5 = 1005g. The interval is 995g ≤ W < 1005g."
+      "explanation": "First, convert 1 kg to 1000g. The measurement is to the nearest 10g. The error is half of this, which is 5g. The lower bound is 1000 - 5 = 995g. The upper bound is 1000 + 5 = 1005g. The interval is 995g $\\leq$ W < 1005g."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "246"
       ],
       "correctAnswer": 2,
-      "explanation": "Rounding to two significant figures means the interval is 235 ≤ y < 245. We need to check which of the options falls within this interval. 238 is the only value that satisfies this condition."
+      "explanation": "Rounding to two significant figures means the interval is 235 $\\leq$ y < 245. We need to check which of the options falls within this interval. 238 is the only value that satisfies this condition."
     },
     {
       "type": "multiple-choice",

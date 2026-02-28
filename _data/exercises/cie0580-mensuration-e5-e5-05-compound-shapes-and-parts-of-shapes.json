@@ -22,49 +22,49 @@
       "type": "multiple-choice",
       "questionText": "A shape is made from a 15 cm by 8 cm rectangle with a semicircle attached to one of the 8 cm sides. What is the total area of the shape?",
       "options": [
-        "120 + 16π cm²",
-        "120 + 32π cm²",
-        "120 + 8π cm²",
-        "120 + 64π cm²"
+        "120 + 16$\\pi$ cm²",
+        "120 + 32$\\pi$ cm²",
+        "120 + 8$\\pi$ cm²",
+        "120 + 64$\\pi$ cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "The area is the sum of the rectangle's area and the semicircle's area. The semicircle's diameter is 8 cm, so its radius is 4 cm. Area = (15 × 8) + (1/2)π(4)² = 120 + 8π cm²."
+      "explanation": "The area is the sum of the rectangle's area and the semicircle's area. The semicircle's diameter is 8 cm, so its radius is 4 cm. Area = (15 × 8) + (1/2)$\\pi$$(4)^2$ = 120 + 8$\\pi$ cm²."
     },
     {
       "type": "multiple-choice",
       "questionText": "For the same shape (a 15 cm by 8 cm rectangle with a semicircle of diameter 8 cm attached), what is its perimeter?",
       "options": [
-        "38 + 8π cm",
-        "46 + 4π cm",
-        "38 + 4π cm",
-        "23 + 4π cm"
+        "38 + 8$\\pi$ cm",
+        "46 + 4$\\pi$ cm",
+        "38 + 4$\\pi$ cm",
+        "23 + 4$\\pi$ cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The perimeter consists of two 15 cm sides, one 8 cm side of the rectangle, and the arc of the semicircle. Arc length = (1/2)πd = (1/2)π(8) = 4π cm. Total perimeter = 15 + 8 + 15 + 4π = 38 + 4π cm."
+      "explanation": "The perimeter consists of two 15 cm sides, one 8 cm side of the rectangle, and the arc of the semicircle. Arc length = (1/2)$\\pi$d = (1/2)$\\pi$(8) = 4$\\pi$ cm. Total perimeter = 15 + 8 + 15 + 4$\\pi$ = 38 + 4$\\pi$ cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the area of an annulus (a ring) with an outer radius of 10 cm and an inner radius of 6 cm.",
       "options": [
-        "64π cm²",
-        "16π cm²",
-        "136π cm²",
-        "4π cm²"
+        "64$\\pi$ cm²",
+        "16$\\pi$ cm²",
+        "136$\\pi$ cm²",
+        "4$\\pi$ cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of an annulus is the area of the outer circle minus the area of the inner circle. Area = πR² - πr² = π(10²) - π(6²) = 100π - 36π = 64π cm²."
+      "explanation": "The area of an annulus is the area of the outer circle minus the area of the inner circle. Area = $\\pi$$R^2 - \\pi$$r^2 = \\pi$($10^2$) - $\\pi$($6^2$) = 100$\\pi$ - 36$\\pi$ = 64$\\pi$ cm²."
     },
     {
       "type": "multiple-choice",
       "questionText": "A solid consists of a cylinder of radius 3 cm and height 10 cm, with a hemisphere of radius 3 cm on top. Find the total volume of the solid.",
       "options": [
-        "90π + 54π cm³",
-        "90π + 36π cm³",
-        "90π + 18π cm³",
-        "90π + 9π cm³"
+        "90$\\pi$ + 54$\\pi$ cm³",
+        "90$\\pi$ + 36$\\pi$ cm³",
+        "90$\\pi$ + 18$\\pi$ cm³",
+        "90$\\pi$ + 9$\\pi$ cm³"
       ],
       "correctAnswer": 2,
-      "explanation": "Total volume is the volume of the cylinder plus the volume of the hemisphere. Volume = (πr²h) + (2/3)πr³ = (π × 3² × 10) + ((2/3)π × 3³) = 90π + 18π cm³."
+      "explanation": "Total volume is the volume of the cylinder plus the volume of the hemisphere. Volume = ($\\pi$$r^2$h) + (2/3)$\\pi$$r^3$ = ($\\pi \\times 3^2$ × 10) + ((2/3)$\\pi \\times 3^3$) = 90$\\pi$ + 18$\\pi$ cm³."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "150 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "The total surface area is the sum of the surface areas of the two cubes minus twice the area of the face where they are joined. SA = 2 × (6 × 5²) - 2 × (5²) = 2 × 150 - 2 × 25 = 300 - 50 = 250 cm²."
+      "explanation": "The total surface area is the sum of the surface areas of the two cubes minus twice the area of the face where they are joined. SA = 2 × (6 × $5^2$) - 2 × ($5^2$) = 2 × 150 - 2 × 25 = 300 - 50 = 250 cm²."
     },
     {
       "type": "multiple-choice",
@@ -92,27 +92,27 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the volume of a cylindrical pipe of length 10 cm, with an outer radius of 5 cm and an inner radius of 4 cm. Leave your answer in terms of π.",
+      "questionText": "Find the volume of a cylindrical pipe of length 10 cm, with an outer radius of 5 cm and an inner radius of 4 cm. Leave your answer in terms of $\\pi$.",
       "options": [
-        "10π cm³",
-        "90π cm³",
-        "410π cm³",
-        "160π cm³"
+        "10$\\pi$ cm³",
+        "90$\\pi$ cm³",
+        "410$\\pi$ cm³",
+        "160$\\pi$ cm³"
       ],
       "correctAnswer": 1,
-      "explanation": "The volume is the area of the cross-sectional ring multiplied by the length. Cross-sectional area = π(R² - r²) = π(5² - 4²) = 9π cm². Volume = 9π cm² × 10 cm = 90π cm³."
+      "explanation": "The volume is the area of the cross-sectional ring multiplied by the length. Cross-sectional area = $\\pi$($R^2 - r^2$) = $\\pi$($5^2 - 4^2$) = 9$\\pi$ cm². Volume = 9$\\pi$ cm² × 10 cm = 90$\\pi$ cm³."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the perimeter of a sector of a circle with radius 10 cm and an angle of 60°.",
       "options": [
-        "20 + (10π/3) cm",
-        "10 + (10π/3) cm",
-        "(10π/3) cm",
-        "20 + (20π/3) cm"
+        "20 + (10$\\pi/3$) cm",
+        "10 + (10$\\pi/3$) cm",
+        "(10$\\pi/3$) cm",
+        "20 + (20$\\pi/3$) cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The perimeter consists of two radii and the arc length. Arc length = (60/360) × 2πr = (1/6) × 2π(10) = 10π/3 cm. Perimeter = 10 + 10 + 10π/3 = 20 + (10π/3) cm."
+      "explanation": "The perimeter consists of two radii and the arc length. Arc length = (60/360) × 2$\\pi$r = (1/6) × 2$\\pi$(10) = 10$\\pi/3$ cm. Perimeter = 10 + 10 + 10$\\pi/3$ = 20 + (10$\\pi/3$) cm."
     },
     {
       "type": "multiple-choice",
@@ -130,13 +130,13 @@
       "type": "multiple-choice",
       "questionText": "Find the area of the minor segment of a circle with radius 8 cm, cut off by a chord that subtends a right angle at the centre.",
       "options": [
-        "64π - 32 cm²",
-        "16π cm²",
-        "16π - 32 cm²",
-        "16π - 64 cm²"
+        "64$\\pi$ - 32 cm²",
+        "16$\\pi$ cm²",
+        "16$\\pi$ - 32 cm²",
+        "16$\\pi$ - 64 cm²"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of the segment is the area of the sector minus the area of the triangle. Sector area = (90/360) × πr² = (1/4)π(8²) = 16π. Triangle area = (1/2) × base × height = (1/2) × 8 × 8 = 32. Segment area = 16π - 32 cm²."
+      "explanation": "The area of the segment is the area of the sector minus the area of the triangle. Sector area = (90/360) × $\\pi$$r^2$ = (1/4)$\\pi$($8^2$) = 16$\\pi$. Triangle area = (1/2) × base × height = (1/2) × 8 × 8 = 32. Segment area = 16$\\pi$ - 32 cm²."
     },
     {
       "type": "multiple-choice",

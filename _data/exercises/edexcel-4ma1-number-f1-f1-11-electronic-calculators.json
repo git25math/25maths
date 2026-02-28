@@ -28,7 +28,7 @@
         "2.30"
       ],
       "correctAnswer": 0,
-      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square$) to enter the power of 3. Then multiply the result by $0.45$. The full answer is $132.651 \\times 0.45 = 59.69295$, which rounds to $59.69$."
+      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square${) to enter the power of 3. Then multiply the result by $0.45}$. The full answer is $132.651 \\times 0.45 = 59.69295${, which rounds to $59.69}$."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "2.35"
       ],
       "correctAnswer": 0,
-      "explanation": "First, calculate the value inside the brackets: $3.2 + 1.9 = 5.1$. Then, raise this to the power of 4: $5.1^4 = 676.5201$. Finally, divide by 8.7. The result is $77.7609...$, which rounds to 77.76."
+      "explanation": "First, calculate the value inside the brackets: ${3.2 + 1.9 = 5.1}$. Then, raise this to the power of 4: $5.1^4 = 676.5201$. Finally, divide by 8.7. The result is ${77.7609...}$, which rounds to 77.76."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "7.93"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the cube root function on your calculator, which might look like $\\sqrt[3]{\\square}$ or require using Shift + $\\sqrt{\\square}$. Input 500. The result is $7.93700...$, which is $7.94$ to 3 significant figures."
+      "explanation": "Use the cube root function on your calculator, which might look like $\\sqrt[3]{\\square}$ or require using Shift + $\\sqrt{\\square}$. Input 500. The result is ${7.93700...}${, which is $7.94}$ to 3 significant figures."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "141.9 cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2$ into your calculator. The result is $145.267...$ cm². Rounding to one decimal place gives $145.3$ cm²."
+      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2${ into your calculator. The result is $145.267...}$ cm². Rounding to one decimal place gives $145.3$ cm²."
     }
   ]
 }

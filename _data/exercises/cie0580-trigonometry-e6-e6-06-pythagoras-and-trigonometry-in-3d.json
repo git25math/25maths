@@ -16,7 +16,7 @@
         "19 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The body diagonal of a cuboid is found using the 3D Pythagoras formula: d = √(l² + w² + h²). So, d = √(12² + 4² + 3²) = √(144 + 16 + 9) = √169 = 13 cm."
+      "explanation": "The body diagonal of a cuboid is found using the 3D Pythagoras formula: d = √(l² + $w^2$ + h²). So, d = √($12^2 + 4^2 + 3^2$) = $\\sqrt{144 + 16 + 9} = \\sqrt{169}$ = 13 cm."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "17 m"
       ],
       "correctAnswer": 0,
-      "explanation": "This is the body diagonal of the cuboid. Use the formula d = √(l² + w² + h²). So, d = √(8² + 6² + 3²) = √(64 + 36 + 9) = √109 ≈ 10.44 m."
+      "explanation": "This is the body diagonal of the cuboid. Use the formula d = √(l² + $w^2$ + h²). So, d = √($8^2 + 6^2 + 3^2$) = $\\sqrt{64 + 36 + 9} = \\sqrt{109}$ ≈ 10.44 m."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "9.95 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Let the third edge be h. From d² = l² + w² + h², we have 18² = 8² + 15² + h². This gives 324 = 64 + 225 + h². So, 324 = 289 + h². h² = 35, so h = √35 ≈ 5.92 cm."
+      "explanation": "Let the third edge be h. From $d^2$ = l² + $w^2$ + h², we have $18^2 = 8^2 + 15^2$ + h². This gives 324 = 64 + 225 + h². So, 324 = 289 + h². h² = 35, so h = $\\sqrt{35}$ ≈ 5.92 cm."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "34.00 m"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the diagonal of the square base: d_base = √(10² + 10²) = √200 m. Then, use this as the base of a right-angled triangle with the mast as the height: D_top = √((√200)² + 24²) = √(200 + 576) = √776 ≈ 27.86 m."
+      "explanation": "First, find the diagonal of the square base: d_base = √($10^2 + 10^2$) = $\\sqrt{200}$ m. Then, use this as the base of a right-angled triangle with the mast as the height: D_top = √($(\\sqrt{200})^2 + 24^2$) = $\\sqrt{200 + 576} = \\sqrt{776}$ ≈ 27.86 m."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "90.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "The body diagonal is d = √(5² + 7² + 10²) = √174 cm. The angle θ with the 5x7 face can be found using sin(θ) = opposite/hypotenuse = 10/√174. So, θ = sin⁻¹(10/√174) ≈ 49.8°."
+      "explanation": "The body diagonal is d = √($5^2 + 7^2 + 10^2$) = $\\sqrt{174}$ cm. The angle $\\theta$ with the 5x7 face can be found using sin($\\theta$) = opposite/hypotenuse = $10/\\sqrt{174}$. So, $\\theta = sin^{-1}$($10/\\sqrt{174}$) ≈ 49.8°."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "14.42 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The vertical height, half the base edge, and the slant height form a right-angled triangle. The base of this triangle is 8/2 = 4 cm. The hypotenuse is the slant height, 12 cm. So, h = √(12² - 4²) = √(144 - 16) = √128 ≈ 11.31 cm."
+      "explanation": "The vertical height, half the base edge, and the slant height form a right-angled triangle. The base of this triangle is 8/2 = 4 cm. The hypotenuse is the slant height, 12 cm. So, h = √($12^2 - 4^2$) = $\\sqrt{144 - 16} = \\sqrt{128}$ ≈ 11.31 cm."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "45.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the horizontal distance from the point to the base of the pole: d = √(5² + 9²) = √106 m. The angle of elevation θ is given by tan(θ) = opposite/adjacent = 12/√106. So, θ = tan⁻¹(12/√106) ≈ 49.4°."
+      "explanation": "First, find the horizontal distance from the point to the base of the pole: d = √($5^2 + 9^2$) = $\\sqrt{106}$ m. The angle of elevation $\\theta$ is given by tan($\\theta$) = opposite/adjacent = $12/\\sqrt{106}$. So, $\\theta = tan^{-1}$($12/\\sqrt{106}$) ≈ 49.4°."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "12 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "For a cube of side s, the body diagonal is d = √(s² + s² + s²) = √(3s²) = s√3. So, d = 4√3 ≈ 6.93 cm."
+      "explanation": "For a cube of side s, the body diagonal is d = $\\sqrt{s² + s² + s²} = \\sqrt{3s²}$ = s$\\sqrt{3}$. So, d = $4\\sqrt{3}$ ≈ 6.93 cm."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "12.6 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find half the length of the base diagonal: d_base = √(8² + 6²) = 10 cm. Half the diagonal is 5 cm. The slant edge is the hypotenuse of a right-angled triangle with the vertical height (12 cm) and half the base diagonal (5 cm). So, edge = √(12² + 5²) = √(144 + 25) = √169 = 13 cm."
+      "explanation": "First, find half the length of the base diagonal: d_base = √($8^2 + 6^2$) = 10 cm. Half the diagonal is 5 cm. The slant edge is the hypotenuse of a right-angled triangle with the vertical height (12 cm) and half the base diagonal (5 cm). So, edge = √($12^2 + 5^2$) = $\\sqrt{144 + 25} = \\sqrt{169}$ = 13 cm."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "13.53 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Using the body diagonal formula, 13² = 3² + 4² + h². This gives 169 = 9 + 16 + h², so 169 = 25 + h². h² = 144, so h = 12 cm."
+      "explanation": "Using the body diagonal formula, $13^2 = 3^2 + 4^2$ + h². This gives 169 = 9 + 16 + h², so 169 = 25 + h². h² = 144, so h = 12 cm."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "45.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the diagonal of the base, AC = √(8² + 6²) = √100 = 10 cm. The angle θ between AG and the base is in the right-angled triangle ACG. We have tan(θ) = opposite/adjacent = CG/AC = 5/10 = 0.5. So, θ = tan⁻¹(0.5) ≈ 26.6°."
+      "explanation": "First, find the diagonal of the base, AC = √($8^2 + 6^2$) = $\\sqrt{100}$ = 10 cm. The angle $\\theta$ between AG and the base is in the right-angled triangle ACG. We have tan($\\theta$) = opposite/adjacent = CG/AC = 5/10 = 0.5. So, $\\theta = tan^{-1}$(0.5) ≈ 26.6°."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "3.6 m²"
       ],
       "correctAnswer": 0,
-      "explanation": "The sloping surface is a rectangle with width 3 m. Its length is the hypotenuse of the ramp's side profile: L = √(1.2² + 5²) = √(1.44 + 25) = √26.44 ≈ 5.142 m. The area is width × length = 3 × 5.142 ≈ 15.43 m² (to two decimal places)."
+      "explanation": "The sloping surface is a rectangle with width 3 m. Its length is the hypotenuse of the ramp's side profile: L = √(1.$2^2 + 5^2$) = $\\sqrt{1.44 + 25} = \\sqrt{26.44}$ ≈ 5.142 m. The area is width × length = 3 × 5.142 ≈ 15.43 m² (to two decimal places)."
     }
   ]
 }

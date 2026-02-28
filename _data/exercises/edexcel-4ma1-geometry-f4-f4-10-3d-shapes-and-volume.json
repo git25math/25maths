@@ -28,11 +28,11 @@
         "108 cm³"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a cube = side³ . So, Volume = 6 cm × 6 cm × 6 cm = 216 cm³."
+      "explanation": "Volume of a cube = $side^3$ . So, Volume = 6 cm × 6 cm × 6 cm = 216 cm³."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cylinder has a radius of 3 cm and a height of 10 cm. Using π = 3.14, calculate its volume to one decimal place.",
+      "questionText": "A cylinder has a radius of 3 cm and a height of 10 cm. Using $\\pi$ = 3.14, calculate its volume to one decimal place.",
       "options": [
         "94.2 cm³",
         "282.6 cm³",
@@ -40,7 +40,7 @@
         "90.0 cm³"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume of a cylinder = πr²h. So, Volume = 3.14 × (3 cm)² × 10 cm = 3.14 × 9 cm² × 10 cm = 282.6 cm³."
+      "explanation": "Volume of a cylinder = $\\pi$$r^2$h. So, Volume = 3.14 × $(3 cm)^2$ × 10 cm = 3.14 × 9 cm² × 10 cm = 282.6 cm³."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cylindrical can has a radius of 4 cm and a volume of 400π cm³. What is the height of the can?",
+      "questionText": "A cylindrical can has a radius of 4 cm and a volume of 400$\\pi$ cm³. What is the height of the can?",
       "options": [
         "100 cm",
         "25 cm",
@@ -100,7 +100,7 @@
         "20 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume = πr²h. So, 400π = π × (4)² × h. 400π = 16πh. h = 400π / 16π = 25 cm."
+      "explanation": "Volume = $\\pi$$r^2$h. So, 400$\\pi = \\pi \\times (4)^2$ × h. 400$\\pi$ = 16$\\pi$h. h = 400$\\pi$ / 16$\\pi$ = 25 cm."
     },
     {
       "type": "multiple-choice",

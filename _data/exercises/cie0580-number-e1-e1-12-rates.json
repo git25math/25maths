@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The exchange rate between US dollars ($) and euros (€) is $1 = €0.92. How many euros would you receive for $450?",
+      "questionText": "The exchange rate between US dollars (${) and euros (€) is }$1 = €0.92. How many euros would you receive for $450?",
       "options": [
         "€358",
         "€414",
@@ -100,7 +100,7 @@
         "€489.13"
       ],
       "correctAnswer": 1,
-      "explanation": "To convert dollars to euros, multiply the amount in dollars by the exchange rate: $450 × 0.92 €/$ = €414."
+      "explanation": "To convert dollars to euros, multiply the amount in dollars by the exchange rate: $450 \\times 0.92 €/$ = €414."
     },
     {
       "type": "multiple-choice",

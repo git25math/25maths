@@ -40,7 +40,7 @@
         "44.4 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the cosine rule: z² = x² + y² - 2xy*cos(Z). So, z² = 5² + 7² - 2(5)(7)cos(65°) = 25 + 49 - 29.58... = 44.41... Side z = sqrt(44.41...) = 6.664... cm."
+      "explanation": "Use the cosine rule: $z^2 = x^2 + y^2$ - 2xy*cos(Z). So, $z^2 = 5^2 + 7^2$ - 2(5)(7)cos(65°) = 25 + 49 - 29.58... = 44.41... Side z = sqrt(44.41...) = 6.664... cm."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "82.8°"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the cosine rule for finding an angle: cos(A) = (b² + c² - a²) / 2bc. So, cos(A) = (7² + 8² - 6²) / (2 * 7 * 8) = (49 + 64 - 36) / 112 = 77 / 112. Angle A = arccos(77/112) = 46.56...°."
+      "explanation": "Use the cosine rule for finding an angle: cos(A) = ($b^2 + c^2 - a^2$) / 2bc. So, cos(A) = ($7^2 + 8^2 - 6^2$) / (2 * 7 * 8) = (49 + 64 - 36) / 112 = 77 / 112. Angle A = arccos(77/112) = 46.56...°."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "18.0 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the cosine rule: r² = p² + q² - 2pq*cos(R). r² = 10² + 15² - 2(10)(15)cos(110°) = 100 + 225 - 300(-0.342...) = 325 + 102.6... = 427.6... Side r = sqrt(427.6...) = 20.67... cm."
+      "explanation": "Use the cosine rule: $r^2 = p^2 + q^2$ - 2pq*cos(R). $r^2 = 10^2 + 15^2$ - 2(10)(15)cos(110°) = 100 + 225 - 300(-0.342...) = 325 + 102.6... = 427.6... Side r = sqrt(427.6...) = 20.67... cm."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "108.2°"
       ],
       "correctAnswer": 1,
-      "explanation": "The largest angle is opposite the longest side (11 cm). Use the cosine rule: cos(C) = (5² + 8² - 11²) / (2*5*8) = (25 + 64 - 121) / 80 = -32 / 80 = -0.4. Angle C = arccos(-0.4) = 113.57...°."
+      "explanation": "The largest angle is opposite the longest side (11 cm). Use the cosine rule: cos(C) = ($5^2 + 8^2 - 11^2$) / (2*5*8) = (25 + 64 - 121) / 80 = -32 / 80 = -0.4. Angle C = arccos(-0.4) = 113.57...°."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "53.7 cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find an angle using the cosine rule. Let C be opposite side 9. cos(C) = (7²+8²-9²)/(2*7*8) = 32/112. C = 73.4°. Then use the area formula: Area = 0.5 * 7 * 8 * sin(73.4°) = 26.83... cm²."
+      "explanation": "First, find an angle using the cosine rule. Let C be opposite side 9. cos(C) = ($7^2 + 8^2 - 9^2$)/(2*7*8) = 32/112. C = 73.4°. Then use the area formula: Area = 0.5 * 7 * 8 * sin(73.4°) = 26.83... cm²."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "38.4 km"
       ],
       "correctAnswer": 2,
-      "explanation": "The angle between the ships' paths is 150° - 40° = 110°. Use the cosine rule: d² = 24² + 30² - 2(24)(30)cos(110°) = 576 + 900 - 1440(-0.342...) = 1968.5... The distance d = sqrt(1968.5...) = 44.36... km."
+      "explanation": "The angle between the ships' paths is 150° - 40° = 110°. Use the cosine rule: $d^2 = 24^2 + 30^2$ - 2(24)(30)cos(110°) = 576 + 900 - 1440(-0.342...) = 1968.5... The distance d = sqrt(1968.5...) = 44.36... km."
     }
   ]
 }

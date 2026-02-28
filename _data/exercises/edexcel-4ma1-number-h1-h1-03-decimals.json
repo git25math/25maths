@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate (0.2)³.",
+      "questionText": "Calculate $(0.2)^3$.",
       "options": [
         "0.006",
         "0.6",
@@ -100,7 +100,7 @@
         "0.008"
       ],
       "correctAnswer": 3,
-      "explanation": "(0.2)³ means 0.2 × 0.2 × 0.2. First, 2 × 2 × 2 = 8. There is one decimal place in each factor, for a total of three decimal places in the product. Therefore, the answer is 0.008."
+      "explanation": "$(0.2)^3$ means 0.2 × 0.2 × 0.2. First, 2 × 2 × 2 = 8. There is one decimal place in each factor, for a total of three decimal places in the product. Therefore, the answer is 0.008."
     },
     {
       "type": "multiple-choice",

@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The table shows the time, in minutes, that 40 people waited for a bus.\n\nTime (t minutes) | Frequency\n---|---\n0 < t ≤ 5 | 8\n5 < t ≤ 10 | 15\n10 < t ≤ 15 | 12\n15 < t ≤ 20 | 5\n\nEstimate the mean waiting time.",
+      "questionText": "The table shows the time, in minutes, that 40 people waited for a bus.\n\nTime (t minutes) | Frequency\n---|---\n0 < t $\\leq$ 5 | 8\n5 < t $\\leq$ 10 | 15\n10 < t $\\leq$ 15 | 12\n15 < t $\\leq$ 20 | 5\n\nEstimate the mean waiting time.",
       "options": [
         "8.5 min",
         "9.25 min",

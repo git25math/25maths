@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A regular polygon has an exterior angle of $x$ degrees. Its interior angle is $4x$ degrees. Find the number of sides of the polygon.",
+      "questionText": "A regular polygon has an exterior angle of ${x}$ degrees. Its interior angle is ${4x}$ degrees. Find the number of sides of the polygon.",
       "options": [
         "5",
         "6",
@@ -76,7 +76,7 @@
         "10"
       ],
       "correctAnswer": 3,
-      "explanation": "Interior angle + Exterior angle = 180°. So, $4x + x = 180°$, which means $5x = 180°$. Therefore, $x = 36°$. The exterior angle is 36°. The number of sides = 360° / exterior angle = 360° / 36° = 10 sides."
+      "explanation": "Interior angle + Exterior angle = 180°. So, ${4x + x = 180°}${, which means $5x = 180°}$. Therefore, ${x = 36°}$. The exterior angle is 36°. The number of sides = 360° / exterior angle = 360° / 36° = 10 sides."
     },
     {
       "type": "multiple-choice",

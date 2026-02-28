@@ -64,7 +64,7 @@
         "$30"
       ],
       "correctAnswer": 2,
-      "explanation": "This is a direct proportion problem. First, find the cost of one book: $15 ÷ 6 = $2.50. Then, multiply the cost of one book by the desired number of books: $2.50 × 10 = $25."
+      "explanation": "This is a direct proportion problem. First, find the cost of one book: $15 \\div 6 = $2.50. Then, multiply the cost of one book by the desired number of books: $2.50 \\times 10 = $25."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "$280"
       ],
       "correctAnswer": 2,
-      "explanation": "The total number of parts is 3 + 4 = 7. The value of one part is $420 ÷ 7 = $60. The larger share corresponds to the '4' in the ratio. The value is 4 × $60 = $240."
+      "explanation": "The total number of parts is 3 + 4 = 7. The value of one part is $420 \\div 7 = $60. The larger share corresponds to the '4' in the ratio. The value is 4 × ${60 = }$240."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of the following offers better value for money: 500g of flour for $3.00 or 750g of flour for $4.80?",
+      "questionText": "Which of the following offers better value for money: 500g of flour for ${3.00 or 750g of flour for }$4.80?",
       "options": [
         "The 500g bag",
         "The 750g bag",
@@ -136,7 +136,7 @@
         "Cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "To compare value, calculate the price per unit. For the 500g bag: $3.00 / 500g = $0.006/g. For the 750g bag: $4.80 / 750g = $0.0064/g. Since $0.006 is less than $0.0064, the 500g bag is better value."
+      "explanation": "To compare value, calculate the price per unit. For the 500g bag: ${3.00 / 500g = }$0.006/g. For the 750g bag: ${4.80 / 750g = }$0.0064/g. Since ${0.006 is less than }$0.0064, the 500g bag is better value."
     },
     {
       "type": "multiple-choice",

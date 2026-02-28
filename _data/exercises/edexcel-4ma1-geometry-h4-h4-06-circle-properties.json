@@ -136,7 +136,7 @@
         "4 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The tangent-secant theorem states that the square of the length of the tangent (PT) from an external point is equal to the product of the lengths of the secant segment (PB) and its external segment (PA). So, PT² = PA * PB. 8² = 4 * PB. 64 = 4 * PB. PB = 64 / 4 = 16 cm."
+      "explanation": "The tangent-secant theorem states that the square of the length of the tangent (PT) from an external point is equal to the product of the lengths of the secant segment (PB) and its external segment (PA). So, $PT^2$ = PA * PB. $8^2$ = 4 * PB. 64 = 4 * PB. PB = 64 / 4 = 16 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "7 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Drawing a radius to one end of the chord and a perpendicular from the centre to the chord forms a right-angled triangle. The radius is the hypotenuse (13 cm), and half the chord length is one leg (10/2 = 5 cm). Let the perpendicular distance be 'd'. By Pythagoras theorem: d² + 5² = 13². d² + 25 = 169. d² = 144. d = √144 = 12 cm."
+      "explanation": "Drawing a radius to one end of the chord and a perpendicular from the centre to the chord forms a right-angled triangle. The radius is the hypotenuse (13 cm), and half the chord length is one leg (10/2 = 5 cm). Let the perpendicular distance be 'd'. By Pythagoras theorem: $d^2 + 5^2 = 13^2$. $d^2$ + 25 = 169. $d^2$ = 144. d = $\\sqrt{144}$ = 12 cm."
     }
   ]
 }

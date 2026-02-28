@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circle has a radius of 3 cm. Using π = 3.14, what is its circumference?",
+      "questionText": "A circle has a radius of 3 cm. Using $\\pi$ = 3.14, what is its circumference?",
       "options": [
         "9.42 cm",
         "18.84 cm",
@@ -52,7 +52,7 @@
         "6 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The circumference of a circle is 2πr. Circumference = 2 × 3.14 × 3 cm = 18.84 cm."
+      "explanation": "The circumference of a circle is 2$\\pi$r. Circumference = 2 × 3.14 × 3 cm = 18.84 cm."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the area of a circle with a diameter of 10 cm. Use π = 3.14.",
+      "questionText": "Calculate the area of a circle with a diameter of 10 cm. Use $\\pi$ = 3.14.",
       "options": [
         "31.4 cm²",
         "78.5 cm²",
@@ -76,7 +76,7 @@
         "314 cm²"
       ],
       "correctAnswer": 1,
-      "explanation": "Radius = diameter / 2 = 10 cm / 2 = 5 cm. Area = πr². Area = 3.14 × (5 cm)² = 3.14 × 25 cm² = 78.5 cm²."
+      "explanation": "Radius = diameter / 2 = 10 cm / 2 = 5 cm. Area = $\\pi$$r^2$. Area = 3.14 × $(5 cm)^2$ = 3.14 × 25 cm² = 78.5 cm²."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A semi-circle has a radius of 7 cm. What is its area? Use π = 22/7.",
+      "questionText": "A semi-circle has a radius of 7 cm. What is its area? Use $\\pi$ = 22/7.",
       "options": [
         "77 cm²",
         "154 cm²",
@@ -100,7 +100,7 @@
         "22 cm²"
       ],
       "correctAnswer": 0,
-      "explanation": "Area of full circle = πr² = (22/7) × 7² = 22 × 7 = 154 cm². Area of semi-circle = ½ × 154 cm² = 77 cm²."
+      "explanation": "Area of full circle = $\\pi$$r^2$ = (22/7) × $7^2$ = 22 × 7 = 154 cm². Area of semi-circle = ½ × 154 cm² = 77 cm²."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "18 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a square is side × side. So, side = √Area. Side = √36 cm² = 6 cm."
+      "explanation": "The area of a square is side × side. So, side = $\\sqrt{A}$rea. Side = $\\sqrt{36}$ cm² = 6 cm."
     },
     {
       "type": "multiple-choice",

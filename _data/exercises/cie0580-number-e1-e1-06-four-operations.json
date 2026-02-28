@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of (-2)³?",
+      "questionText": "What is the value of $(-2)^3$?",
       "options": [
         "8",
         "-8",
@@ -76,7 +76,7 @@
         "6"
       ],
       "correctAnswer": 1,
-      "explanation": "The expression (-2)³ means (-2) × (-2) × (-2). (-2) × (-2) = 4. Then, 4 × (-2) = -8."
+      "explanation": "The expression $(-2)^3$ means (-2) × (-2) × (-2). (-2) × (-2) = 4. Then, 4 × (-2) = -8."
     },
     {
       "type": "multiple-choice",
