@@ -1,0 +1,9 @@
+name = "25maths-api-proxy"
+main = "index.js"
+compatibility_date = "2024-01-01"
+account_id = "55d26514ff318007de774eda888cc155"
+
+[env.production]
+routes = [
+  { pattern = "www.25maths.com/api/*", zone_id = "b397812bf28536488a1dabffcebfed19" }
+]
