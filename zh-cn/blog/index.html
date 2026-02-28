@@ -62,7 +62,7 @@ lang_links:
         <article class="bg-gray-50 border border-gray-200 rounded-2xl p-7 md:p-8">
             <p class="text-xs uppercase tracking-wider text-gray-500 mb-3">最新文章</p>
             <h3 class="text-3xl font-semibold text-gray-900 mb-3">
-                <a href="{{ latest_post.url | relative_url }}" class="hover:text-primary transition">{{ latest_post.title }}</a>
+                <a href="{{ latest_post.url | relative_url }}" class="hover:text-gray-900 transition">{{ latest_post.title }}</a>
             </h3>
             {% if latest_summary %}
             <p class="text-gray-600 text-lg leading-relaxed mb-5">{{ latest_summary | strip_html | strip_newlines | truncate: 240 }}</p>
@@ -116,7 +116,7 @@ lang_links:
                     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>{% if post.category %} · {{ post.category }}{% endif %} · 约 {{ post_read_time }} 分钟阅读
                 </p>
                 <h3 class="text-2xl font-semibold text-gray-900 mb-2">
-                    <a href="{{ post.url | relative_url }}" class="hover:text-primary transition">{{ post.title }}</a>
+                    <a href="{{ post.url | relative_url }}" class="hover:text-gray-900 transition">{{ post.title }}</a>
                 </h3>
                 {% if post_summary %}<p class="text-gray-600 mb-4">{{ post_summary | strip_html | strip_newlines | truncate: 160 }}</p>{% endif %}
                 <a href="{{ post.url | relative_url }}" class="text-primary font-semibold">阅读文章 →</a>
