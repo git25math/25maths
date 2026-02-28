@@ -44,6 +44,9 @@
 14. **2026-02-27**: subscription.html 从 waitlist 模式切换到 Payhip checkout 模式（Claude Code Opus 执行）。
 15. **2026-02-27**: releases.json 更新 — demo draft 替换为 Week 1 active entry (`member-week01-algebra-foundations-2026w09`)。
 16. **2026-02-27**: release_registry.js 同步完成。
+51. **2026-02-28**: **12-Week Term Practice Pass 全部完成** — 24 PDFs (12 EN + 12 bilingual) 已上传 Supabase，releases.json 含 25 条记录（含 free vocab），asset_key 路径已修正为 `member-files/week-packs/`。
+52. **2026-02-28**: 优化完成 — TikZ 图表 (W01-W04,W06,W07)、格式一致性审查 (810+ 修正)、Venn 图歧义修复、答案泄露图删除。
+53. **2026-02-28**: releases.json 源文件创建并同步到 release_registry.js。
 17. **2026-02-27**: 创建总工程师运维计划 `plan/CHIEF-ENGINEER-OPS-PLAN.md`，统一 AI 工具分配与验收标准。
 18. **待执行**: 用户创建 Payhip 订阅产品 -> 替换 `{PRODUCT_ID}` -> 配置 Cloudflare env vars -> E2E 验证。
 19. **2026-02-27**: 北极星愿景确立 — 目标：全球最佳 IGCSE 数学备考平台。详见 `plan/NORTH-STAR-VISION.md`。

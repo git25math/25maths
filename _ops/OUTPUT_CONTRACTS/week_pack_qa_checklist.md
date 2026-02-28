@@ -53,7 +53,7 @@
 
 - [ ] `_data/releases.json` has two entries (en + bilingual) with correct `asset_key`
 - [ ] `node scripts/member/sync_release_registry.js` run → `release_registry.js` updated
-- [ ] Both PDFs uploaded to Supabase Storage: `member-files/week{nn}/week-{nn}-{en|bilingual}.pdf`
+- [ ] Both PDFs uploaded to Supabase Storage: `member-files/week-packs/week-{nn}-{en|bilingual}.pdf`
 - [ ] Verify files exist via Storage API list
 
 ## 6. Build Script

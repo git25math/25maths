@@ -54,8 +54,8 @@
 | Number Exam Prep Core v1.0.0 | PDF READY, not on Payhip | 86 pages, 572KB |
 | Functions Bundle | PDF exists (older format) | Needs review against new standard |
 | Algebra supplementary products | Multiple exist | mastery-guide, worksheets, quick-ref, visual-notes, vocab-cards |
-| Week 1 Subscription Pack (Algebra Foundations) | NOT created | Template defined in SUBSCRIPTION-PLAN.md |
-| Weeks 2-8 Subscription Packs | NOT created | 8-week roadmap defined |
+| **CIE 0580 Week Packs 1-12** | **COMPLETE** | **12 topics × 2 editions (EN + bilingual) = 24 PDFs, all on Supabase, releases.json synced** |
+| Week Pack Optimization | COMPLETE | TikZ figures (W01-W04,W06,W07), format consistency audit, 810+ fixes |
 | 25Maths-4MA1 paid products | Infrastructure ready | 84% content reuse from CIE, 6 free products done |
 
 ---

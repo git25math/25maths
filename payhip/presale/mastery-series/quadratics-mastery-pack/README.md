@@ -20,3 +20,10 @@ This is the first benchmark product in the Mastery Series.
 ## Build Rule
 
 Complete and review modules independently, then publish as one product bundle.
+
+## Artifact Workflow
+
+Use immutable artifact workflow for all module PDFs:
+
+- Build/archive/diff script: `scripts/payhip/mastery_build_archive.py`
+- Runbook: `payhip/presale/mastery-series/ARTIFACTS-WORKFLOW.md`

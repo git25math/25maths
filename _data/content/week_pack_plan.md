@@ -46,14 +46,21 @@
 ## Production Pipeline
 
 ```
-1. Create _data/content/week{nn}.json (questions, solutions, vocabulary)
-2. Validate: python3 scripts/health/check_week_pack_data.py _data/content/week{nn}.json
-3. Build:    bash scripts/build_week_pack.sh week{nn}
-4. QA:       Review against _ops/OUTPUT_CONTRACTS/week_pack_qa_checklist.md
-5. Upload:   Supabase Storage → member-files/week{nn}/
-6. Register: _data/releases.json + sync_release_registry.js
-7. Commit & push
+1. Create _data/content/week{nn}.json (questions, solutions, vocabulary)     ✅ ALL 12 WEEKS
+2. Validate: python3 scripts/health/check_week_pack_data.py                  ✅ ALL PASS
+3. Build:    24 PDFs (12 EN + 12 bilingual)                                  ✅ ALL BUILT
+4. QA:       Figure review + format consistency audit                        ✅ COMPLETE
+5. Upload:   Supabase Storage → member-files/week-packs/                     ✅ ALL UPLOADED
+6. Register: _data/releases.json + sync_release_registry.js                  ✅ SYNCED (a211f1c)
+7. Commit & push                                                             ✅ PUSHED
 ```
+
+**Pipeline completed: 2026-02-28**
+
+### Optimization rounds completed:
+- Round 1: TikZ figures added (W01-W04, W06, W07) + marks adjusted to 30+ target
+- Round 2: Visual QA — fixed W02 Venn diagrams, removed W06 Q9 answer-revealing figure
+- Round 3: Format consistency — ~810 EN/ZH period fixes, Unicode cleanup, backtick math standardization, W06 Q9 answer paragraph break fix
 
 ## JSON Template
 
