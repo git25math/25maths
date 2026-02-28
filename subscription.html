@@ -86,6 +86,42 @@ lang_links:
     </div>
 </section>
 
+<section class="py-12">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-900 text-center">Weekly Learning Map</h2>
+        <p class="bilingual-support-only mt-1 text-center text-sm text-gray-500">每周学习路线</p>
+        <p class="mt-2 text-center text-sm text-gray-500">See exactly what you'll cover each week.</p>
+
+        <div class="mt-8 space-y-2">
+            {% assign weeks = "01,02,03,04,05,06,07,08,09,10,11,12" | split: "," %}
+            {% for w in weeks %}
+                {% assign week_key = "week" | append: w %}
+                {% assign week_data = site.data.content[week_key] %}
+                {% assign week_num = w | plus: 0 %}
+
+                {% if week_num <= 4 %}
+                    {% assign phase = "Diagnostic" %}
+                    {% assign phase_color = "bg-blue-50 text-blue-700" %}
+                {% elsif week_num <= 10 %}
+                    {% assign phase = "Stable Output" %}
+                    {% assign phase_color = "bg-green-50 text-green-700" %}
+                {% else %}
+                    {% assign phase = "Exam Rhythm" %}
+                    {% assign phase_color = "bg-orange-50 text-orange-700" %}
+                {% endif %}
+
+                <div class="flex items-center gap-4 py-3 px-4 rounded-lg {% cycle 'bg-gray-50', 'bg-white' %}">
+                    <span class="text-sm font-bold text-gray-400 w-16 shrink-0">Week {{ week_num }}</span>
+                    <span class="text-sm font-semibold text-gray-900 flex-1">{{ week_data.topic }}</span>
+                    <span class="text-xs font-medium px-2 py-1 rounded-full {{ phase_color }} shrink-0">{{ phase }}</span>
+                </div>
+            {% endfor %}
+        </div>
+
+        <p class="mt-4 text-center text-xs text-gray-400">+ Monthly recap packs included after Week 4, 8, and 12.</p>
+    </div>
+</section>
+
 {% include evidence-strip.html %}
 
 <section class="py-16 bg-white" id="delivery">
