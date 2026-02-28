@@ -155,7 +155,7 @@ def check_footer_entry_preservation() -> None:
 def check_homepage_blog_entries() -> None:
     expected_links = [
         (SITE_INDEX_FILE, "Home default", "/blog/"),
-        (SITE_EN_INDEX_FILE, "Home EN", "/en/blog/"),
+        (SITE_EN_INDEX_FILE, "Home EN", "/blog/"),
         (SITE_ZH_INDEX_FILE, "Home ZH", "/zh-cn/blog/"),
     ]
     for path, label, marker in expected_links:
