@@ -35,7 +35,8 @@
     {% assign words = content | number_of_words %}
     {% assign read_time = words | divided_by: 220 | plus: 1 %}
 
-    <article id="main-content" class="bg-white">
+    <main id="main-content">
+    <article class="bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <div class="mb-8">
                 <p class="text-sm text-gray-500">
@@ -224,6 +225,7 @@
             </div>
         </div>
     </article>
+    </main>
 
     <!-- BreadcrumbList JSON-LD -->
     <script type="application/ld+json">

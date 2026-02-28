@@ -741,15 +741,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "CIE 0580 Term Practice Pass",
-  "description": "12-week topical practice pass with full solutions for Cambridge IGCSE Mathematics 0580.",
+  "name": "{% if page.lang == 'zh-CN' %}CIE 0580 学期练习通行证{% else %}CIE 0580 Term Practice Pass{% endif %}",
+  "description": "{% if page.lang == 'zh-CN' %}CIE 0580 学期练习通行证：12 周专题练习包，分级题目、完整解析、清晰进度路径。{% else %}12-week topical practice pass with full solutions for Cambridge IGCSE Mathematics 0580.{% endif %}",
   "brand": { "@type": "Brand", "name": "25Maths" },
+  "category": "Educational Materials",
   "offers": {
     "@type": "Offer",
     "price": "24.99",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "url": "{{ site.url }}/subscription.html",
+    "url": "{{ site.url }}{{ page.url }}",
     "seller": { "@type": "Organization", "name": "25Maths" }
   }
 }
