@@ -2,7 +2,7 @@
 layout: post
 title: "CIE 0580 vs Edexcel 4MA1：哪个 IGCSE 数学考试更难？"
 subtitle: "两大最热门 IGCSE 数学考纲的全面对比。"
-description: "两大最热门 IGCSE 数学考纲的全面对比。"
+description: "CIE 0580 与 Edexcel 4MA1 全面对比：考纲结构、难度分布、评分标准、选科建议。帮你选择最适合的 IGCSE 数学考试。"
 category: 考试策略
 lang: zh-CN
 tags: [IGCSE, CIE 0580, Edexcel 4MA1, exam comparison]
