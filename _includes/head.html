@@ -696,11 +696,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "EducationalOrganization",
   "name": "25Maths",
   "url": "{{ site.url }}",
   "description": "{{ site.description }}",
-  "logo": "{{ site.url }}/favicon.svg"
+  "logo": "{{ site.url }}/favicon.svg",
+  "sameAs": [
+    "https://create.kahoot.it/profiles/25maths"
+  ],
+  "areaServed": {
+    "@type": "Place",
+    "name": "International"
+  },
+  "teaches": ["IGCSE Mathematics", "CIE 0580", "Edexcel 4MA1"]
 }
 </script>
 

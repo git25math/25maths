@@ -250,6 +250,9 @@
       "url": "{{ site.url }}{{ page.url }}",
       "inLanguage": "{{ page.lang | default: 'en' }}",
       "wordCount": {{ words }},
+      {% if page.category %}"articleSection": {{ page.category | jsonify }},{% endif %}
+      {% if page.tags %}"keywords": {{ page.tags | join: ", " | jsonify }},{% endif %}
+      {% if page.og_image %}"image": "{{ site.url }}{{ page.og_image }}",{% elsif site.og_image_default %}"image": "{{ site.url }}{{ site.og_image_default }}",{% endif %}
       "author": {
         "@type": "Organization",
         "name": "25Maths",
@@ -258,7 +261,11 @@
       "publisher": {
         "@type": "Organization",
         "name": "25Maths",
-        "url": "{{ site.url }}"
+        "url": "{{ site.url }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/favicon.svg"
+        }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
