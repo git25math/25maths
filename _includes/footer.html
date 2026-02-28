@@ -97,7 +97,9 @@
                     <li><a href="/faq.html" class="inline-block py-1 hover:text-white transition">{{ footer_faq_label }}</a></li>
                     <li><a href="/about.html" class="inline-block py-1 hover:text-white transition">{{ about_label }}</a></li>
                     <li><a href="/support.html" class="inline-block py-1 hover:text-white transition">{{ support_label }}</a></li>
-                    <li><a href="/membership/parent-dashboard.html" class="inline-block py-1 hover:text-white transition">{{ footer_parent_label }}</a></li>
+                    {% assign footer_parent_path = "/membership/parent-dashboard.html" %}
+                    {% if page.lang == 'zh-CN' %}{% assign footer_parent_path = "/zh-cn/membership/parent-dashboard.html" %}{% endif %}
+                    <li><a href="{{ footer_parent_path }}" class="inline-block py-1 hover:text-white transition">{{ footer_parent_label }}</a></li>
                     {% if page.lang == 'zh-CN' %}<li><a href="/zh-cn/parents.html" class="inline-block py-1 hover:text-white transition">家长专区</a></li>{% endif %}
                     <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/terms.html{% else %}/terms.html{% endif %}" class="inline-block py-1 hover:text-white transition">{{ terms_label }}</a></li>
                     <li><a href="{% if page.lang == 'zh-CN' %}/zh-cn/privacy.html{% else %}/privacy.html{% endif %}" class="inline-block py-1 hover:text-white transition">{{ privacy_label }}</a></li>

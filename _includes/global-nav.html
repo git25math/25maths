@@ -89,3 +89,32 @@
         </div>
     </div>
 </nav>
+{% if site.supabase and site.supabase.enabled %}
+<dialog id="member-login-dialog" class="rounded-xl border border-gray-200 shadow-lg p-0 max-w-sm w-full backdrop:bg-black/40">
+  <div class="p-6">
+    <h2 class="text-lg font-semibold text-gray-900">
+      {% if page.lang == 'zh-CN' %}会员登录{% else %}Member Login{% endif %}
+    </h2>
+    <p class="mt-2 text-sm text-gray-600">
+      {% if page.lang == 'zh-CN' %}输入邮箱，我们将发送登录链接到您的邮箱。{% else %}Enter your email and we'll send a login link to your inbox.{% endif %}
+    </p>
+    <form data-login-form class="mt-4">
+      <label class="block text-sm font-medium text-gray-700 mb-1" for="member-login-email">
+        {% if page.lang == 'zh-CN' %}邮箱地址{% else %}Email address{% endif %}
+      </label>
+      <input data-login-email-input id="member-login-email" type="email" required
+             class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+             placeholder="{% if page.lang == 'zh-CN' %}you@example.com{% else %}you@example.com{% endif %}">
+      <p data-login-error class="mt-1 text-xs text-red-600"></p>
+      <div class="mt-4 flex items-center justify-end gap-3">
+        <button type="button" data-login-cancel class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">
+          {% if page.lang == 'zh-CN' %}取消{% else %}Cancel{% endif %}
+        </button>
+        <button type="submit" class="px-4 py-2 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-gray-800 transition">
+          {% if page.lang == 'zh-CN' %}发送登录链接{% else %}Send login link{% endif %}
+        </button>
+      </div>
+    </form>
+  </div>
+</dialog>
+{% endif %}

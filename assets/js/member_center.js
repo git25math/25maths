@@ -3,6 +3,12 @@
   const MAX_RECENT_SESSIONS = 50;
   const MAX_RECENT_WRONG_ATTEMPTS = 200;
 
+  function escapeHtml(rawValue) {
+    return String(rawValue ?? '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   const stateBadge = document.querySelector('[data-member-center-state]');
   const helper = document.querySelector('[data-member-center-helper]');
   const membershipStatusNode = document.querySelector('[data-membership-status]');
@@ -106,7 +112,7 @@
     weakSkillListNode.innerHTML = weakSkills.slice(0, 5).map((item) => {
       const weightedText = Number.isFinite(item.weighted_score) ? item.weighted_score.toFixed(2) : '0.00';
       return `<li class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
-        <span class="truncate">${item.skill}</span>
+        <span class="truncate">${escapeHtml(item.skill)}</span>
         <span class="text-xs font-semibold rounded bg-red-100 text-red-700 px-2 py-0.5">${item.count} / ${weightedText}</span>
       </li>`;
     }).join('');
@@ -139,7 +145,7 @@
         : 'in progress';
       const when = formatDate(row.completed_at || row.started_at);
       return `<li class="border border-gray-100 rounded-lg px-3 py-2">
-        <p class="font-medium text-gray-900 truncate">${row.exercise_slug || 'interactive-exercise'}</p>
+        <p class="font-medium text-gray-900 truncate">${escapeHtml(row.exercise_slug || 'interactive-exercise')}</p>
         <p class="mt-1 text-xs text-gray-600">Score: ${scoreText} • ${when}</p>
       </li>`;
     }).join('');

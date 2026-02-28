@@ -135,34 +135,58 @@
     await triggerMembershipReconcileIfNeeded();
   }
 
-  async function handleLoginClick() {
-    if (!state.client) {
-      alert(t('Member login is not configured yet.', '会员登录尚未配置完成。'));
+  function openLoginDialog() {
+    const dialog = document.getElementById('member-login-dialog');
+    if (!dialog || typeof dialog.showModal !== 'function') {
+      // Fallback for browsers without <dialog> support
+      const email = window.prompt(
+        t('Enter your email to receive a login link:', '请输入邮箱以接收登录链接：')
+      );
+      if (email) submitLoginEmail(String(email).trim());
       return;
     }
-    const email = window.prompt(
-      t('Enter your email to receive a login link:', '请输入邮箱以接收登录链接：')
-    );
-    if (!email) return;
+    const input = dialog.querySelector('[data-login-email-input]');
+    const errorNode = dialog.querySelector('[data-login-error]');
+    if (input) input.value = '';
+    if (errorNode) errorNode.textContent = '';
+    dialog.showModal();
+  }
 
+  function closeLoginDialog() {
+    const dialog = document.getElementById('member-login-dialog');
+    if (dialog && typeof dialog.close === 'function' && dialog.open) {
+      dialog.close();
+    }
+  }
+
+  async function submitLoginEmail(email) {
+    if (!email) return;
     const redirectTo = `${window.location.origin}${getMemberCenterPath()}`;
     const { error } = await state.client.auth.signInWithOtp({
-      email: String(email).trim(),
+      email,
       options: { emailRedirectTo: redirectTo },
     });
-
+    closeLoginDialog();
     if (error) {
-      alert(t('Failed to send login email.', '发送登录邮件失败。'));
+      emitAuthNotice('error', t('Failed to send login email.', '发送登录邮件失败。'));
       return;
     }
-    alert(t('Login email sent. Please check your inbox.', '登录邮件已发送，请检查邮箱。'));
+    emitAuthNotice('success', t('Login email sent. Please check your inbox.', '登录邮件已发送，请检查邮箱。'));
+  }
+
+  async function handleLoginClick() {
+    if (!state.client) {
+      emitAuthNotice('warning', t('Member login is not configured yet.', '会员登录尚未配置完成。'));
+      return;
+    }
+    openLoginDialog();
   }
 
   async function handleLogoutClick() {
     if (!state.client) return;
     const { error } = await state.client.auth.signOut();
     if (error) {
-      alert(t('Logout failed. Please retry.', '退出失败，请重试。'));
+      emitAuthNotice('error', t('Logout failed. Please retry.', '退出失败，请重试。'));
       return;
     }
     await refreshSession();
@@ -291,7 +315,7 @@
     document.querySelectorAll('[data-member-login]').forEach((button) => {
       button.addEventListener('click', () => {
         handleLoginClick().catch(() => {
-          alert(t('Login failed. Please retry.', '登录失败，请重试。'));
+          emitAuthNotice('error', t('Login failed. Please retry.', '登录失败，请重试。'));
         });
       });
     });
@@ -299,10 +323,35 @@
     document.querySelectorAll('[data-member-logout]').forEach((button) => {
       button.addEventListener('click', () => {
         handleLogoutClick().catch(() => {
-          alert(t('Logout failed. Please retry.', '退出失败，请重试。'));
+          emitAuthNotice('error', t('Logout failed. Please retry.', '退出失败，请重试。'));
         });
       });
     });
+
+    // Bind login dialog form
+    const dialog = document.getElementById('member-login-dialog');
+    if (dialog) {
+      const form = dialog.querySelector('[data-login-form]');
+      const cancelBtn = dialog.querySelector('[data-login-cancel]');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const input = dialog.querySelector('[data-login-email-input]');
+          const email = String(input?.value || '').trim();
+          if (!email) return;
+          submitLoginEmail(email).catch(() => {
+            closeLoginDialog();
+            emitAuthNotice('error', t('Login failed. Please retry.', '登录失败，请重试。'));
+          });
+        });
+      }
+      if (cancelBtn) {
+        cancelBtn.addEventListener('click', closeLoginDialog);
+      }
+      dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) closeLoginDialog();
+      });
+    }
   }
 
   async function initialize() {

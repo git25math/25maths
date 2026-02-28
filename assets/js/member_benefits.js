@@ -2,6 +2,12 @@
   const container = document.querySelector('[data-benefits-root]');
   if (!container) return;
 
+  function escapeHtml(rawValue) {
+    return String(rawValue ?? '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   const state = {
     userId: '',
     loading: false,
@@ -57,11 +63,11 @@
       const eligibilityCode = String(offer?.eligibility_code || '').trim();
 
       return `<article class="rounded-xl border border-emerald-200 bg-emerald-50 p-4">
-        <p class="text-sm font-semibold text-emerald-900">${title}</p>
-        ${description ? `<p class="mt-1 text-sm text-emerald-800">${description}</p>` : ''}
-        ${couponCode ? `<p class="mt-2 text-xs font-semibold inline-flex rounded bg-white border border-emerald-300 text-emerald-800 px-2 py-1">Coupon: ${couponCode}</p>` : ''}
-        ${(eligibilityReason || eligibilityCode) ? `<p class="mt-2 text-xs text-emerald-900">Eligibility: ${eligibilityReason || eligibilityCode}</p>` : ''}
-        ${(ctaLabel && ctaUrl) ? `<div class="mt-3"><a href="${ctaUrl}" class="inline-flex items-center rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition">${ctaLabel}</a></div>` : ''}
+        <p class="text-sm font-semibold text-emerald-900">${escapeHtml(title)}</p>
+        ${description ? `<p class="mt-1 text-sm text-emerald-800">${escapeHtml(description)}</p>` : ''}
+        ${couponCode ? `<p class="mt-2 text-xs font-semibold inline-flex rounded bg-white border border-emerald-300 text-emerald-800 px-2 py-1">Coupon: ${escapeHtml(couponCode)}</p>` : ''}
+        ${(eligibilityReason || eligibilityCode) ? `<p class="mt-2 text-xs text-emerald-900">Eligibility: ${escapeHtml(eligibilityReason || eligibilityCode)}</p>` : ''}
+        ${(ctaLabel && ctaUrl) ? `<div class="mt-3"><a href="${escapeHtml(ctaUrl)}" class="inline-flex items-center rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition">${escapeHtml(ctaLabel)}</a></div>` : ''}
       </article>`;
     }).join('');
   }

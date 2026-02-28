@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const optionLabel = escapeHtml(normalizeInlineMath(option));
                 optionsHtml += `
                     <div>
-                        <label class="block border border-gray-300 rounded-lg px-4 py-3 cursor-pointer hover:bg-gray-100 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
+                        <label data-option-label class="block border border-gray-300 rounded-lg px-4 py-3 cursor-pointer hover:bg-gray-100 has-[:checked]:bg-blue-100 has-[:checked]:border-blue-500">
                             <input type="radio" name="answer" value="${i}" class="sr-only">
                             <span class="font-mono text-sm mr-4 text-gray-500">${String.fromCharCode(65 + i)}</span>
                             <span>${optionLabel}</span>
@@ -545,6 +545,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('input[name="answer"]').forEach((radio) => {
             radio.addEventListener('change', (event) => {
                 selectedAnswer = parseInt(event.target.value, 10);
+                // Toggle .option-selected class for Safari <15.4 compat (no :has() support)
+                document.querySelectorAll('[data-option-label]').forEach((lbl) => {
+                    lbl.classList.remove('option-selected');
+                });
+                const parentLabel = event.target.closest('[data-option-label]');
+                if (parentLabel) parentLabel.classList.add('option-selected');
             });
         });
     }

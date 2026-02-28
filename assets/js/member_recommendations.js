@@ -2,6 +2,12 @@
   const container = document.querySelector('[data-reco-root]');
   if (!container) return;
 
+  function escapeHtml(rawValue) {
+    return String(rawValue ?? '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   function formatLastSeen(isoString) {
     if (!isoString) return 'no recent timestamp';
     const ms = new Date(isoString).getTime();
@@ -72,14 +78,14 @@
       const lockTag = membershipActive ? '' : '<span class="inline-flex rounded-full bg-amber-100 text-amber-800 text-[11px] font-semibold px-2 py-0.5">Member unlock</span>';
       return `<article class="border border-gray-200 rounded-xl p-4 bg-white">
         <div class="flex items-center justify-between gap-3">
-          <p class="font-semibold text-gray-900 truncate">${skill}</p>
+          <p class="font-semibold text-gray-900 truncate">${escapeHtml(skill)}</p>
           ${lockTag}
         </div>
         <p class="mt-2 text-xs text-gray-600">Recent mistakes: ${count} • priority: ${weighted}</p>
         <p class="mt-1 text-xs text-gray-500">${formatLastSeen(item.last_seen_at)}</p>
         <div class="mt-3 flex flex-wrap gap-2">
-          <a href="${practiceUrl}" class="inline-flex items-center rounded-lg bg-secondary px-3 py-1.5 text-xs font-semibold text-white hover:bg-gray-800 transition">Practice now</a>
-          <a href="${packUrl}" class="inline-flex items-center rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition">Matching pack</a>
+          <a href="${escapeHtml(practiceUrl)}" class="inline-flex items-center rounded-lg bg-secondary px-3 py-1.5 text-xs font-semibold text-white hover:bg-gray-800 transition">Practice now</a>
+          <a href="${escapeHtml(packUrl)}" class="inline-flex items-center rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition">Matching pack</a>
         </div>
       </article>`;
     }).join('');

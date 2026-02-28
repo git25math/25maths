@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var isZH=document.documentElement.lang==='zh-CN';
+  var isZH=String(document.documentElement.lang||'').toLowerCase()==='zh-cn';
   var pagePath=window.location.pathname;
 
   function pushEvent(event,data){
