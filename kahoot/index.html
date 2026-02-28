@@ -94,7 +94,7 @@ lang: en
                             <article class="bg-white rounded-xl border border-gray-200 p-3 shadow-sm h-full flex flex-col" data-free-sample-card data-board="{{ board.board }}" data-batch="{{ item_batch_key }}" data-code="{{ item.code | downcase }}" data-title="{{ item.title | downcase }}" data-tier="{{ item.tier | downcase }}"{% unless item_batch_key == 'batch_1' %} hidden{% endunless %}>
                                 <div class="flex flex-col sm:flex-row gap-3 mb-3">
                                     <div class="h-20 w-full sm:w-32 sm:flex-shrink-0 bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center p-2">
-                                        <img src="{{ item.cover }}" alt="{{ item.code }} free sample cover" class="h-full w-full object-contain" loading="lazy">
+                                        <img src="{{ item.cover }}" alt="{{ item.code }} free sample cover" width="2320" height="1520" class="h-full w-full object-contain" loading="lazy">
                                     </div>
                                     <div class="min-w-0 flex-1">
                                         <div class="flex flex-wrap items-center gap-2 mb-2">
@@ -274,7 +274,7 @@ lang: en
             <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 h-full flex flex-col">
                 <picture>
                     <source srcset="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.webp" type="image/webp">
-                    <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                    <img src="/projects/kahoot-channel/cie0580/micro-topics/number-c1/c1-04-fractions-decimals-percentages/cover-2320x1520-kahoot-minimal.png" alt="CIE 0580 SubTopic preview" width="2320" height="1520" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 </picture>
                 <p class="text-xs font-bold tracking-wider text-primary mb-2">CIE 0580</p>
                 <h3 class="text-xl font-bold text-gray-900 kahoot-unit-title">Core + Extended SubTopics</h3>
@@ -289,7 +289,7 @@ lang: en
             <article class="bg-gray-50 rounded-2xl border border-gray-200 p-6 h-full flex flex-col">
                 <picture>
                     <source srcset="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.webp" type="image/webp">
-                    <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
+                    <img src="/projects/kahoot-channel/edexcel-4ma1/micro-topics/number-f1/f1-03-decimals/cover-2320x1520-kahoot-minimal.png" alt="Edexcel 4MA1 SubTopic preview" width="2320" height="1520" class="w-full h-36 object-cover rounded-xl border border-gray-200 mb-4" loading="lazy">
                 </picture>
                 <p class="text-xs font-bold tracking-wider edx-solid-text mb-2">Edexcel 4MA1</p>
                 <h3 class="text-xl font-bold text-gray-900">Foundation + Higher SubTopics</h3>
@@ -597,7 +597,7 @@ lang: en
         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm h-full flex flex-col">
           <picture>
             <source srcset="${escapeHtml(coverWebp)}" type="image/webp">
-          <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+          <img src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.code)} cover preview" width="2320" height="1520" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
           </picture>
           <div class="flex flex-wrap items-center gap-2 mb-2">
             <span class="text-[11px] px-2 py-1 rounded-full ${boardBadge} font-semibold">${escapeHtml(config.label)}</span>

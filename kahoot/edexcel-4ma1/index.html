@@ -184,7 +184,7 @@ lang: en
                         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm hover:shadow-md transition h-full flex flex-col">
                             <picture>
                                 <source srcset="{{ item.cover | replace: '.png', '.webp' }}" type="image/webp">
-                                <img src="{{ item.cover }}" alt="{{ item.code }} cover preview" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
+                                <img src="{{ item.cover }}" alt="{{ item.code }} cover preview" width="2320" height="1520" class="w-full h-28 object-cover rounded-lg border border-gray-200 mb-3" loading="lazy">
                             </picture>
                             <div class="flex flex-wrap items-center gap-2 mb-2">
                                 <span class="text-[11px] px-2 py-1 rounded-full border edx-soft-border edx-soft-bg edx-soft-text font-semibold">{{ item.code }}</span>
