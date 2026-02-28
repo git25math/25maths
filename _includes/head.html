@@ -41,10 +41,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{% if canonical_path contains '://' %}{{ canonical_path }}{% else %}{{ site.url }}{{ canonical_path | replace: 'index.html', '' }}{% endif %}">
 {% if page.og_image %}<meta property="og:image" content="{{ site.url }}{{ page.og_image }}">{% elsif site.og_image_default %}<meta property="og:image" content="{{ site.url }}{{ site.og_image_default }}">{% endif %}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="25Maths">
-{% if page.lang == 'zh-CN' %}<meta property="og:locale" content="zh_CN">{% else %}<meta property="og:locale" content="en_GB">{% endif %}
+{% if page.lang == 'zh-CN' %}<meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_GB">{% else %}<meta property="og:locale" content="en_GB"><meta property="og:locale:alternate" content="zh_CN">{% endif %}
 {% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 {% if page.category %}<meta property="article:section" content="{{ page.category }}">{% endif %}
+{% if page.tags %}{% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}{% endif %}
 {% endif %}
 
 <!-- Twitter Card -->
@@ -68,6 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 {% if page.payhip %}<link rel="dns-prefetch" href="https://payhip.com">{% endif %}
+{% if site.supabase and site.supabase.enabled %}<link rel="dns-prefetch" href="{{ site.supabase.url }}">{% endif %}
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script>

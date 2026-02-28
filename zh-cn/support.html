@@ -40,7 +40,7 @@ lang_links:
         <h2 class="text-3xl font-semibold text-center mb-8">联系我们</h2>
         <div class="bg-white p-8 rounded-xl shadow-sm">
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-6">
-                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <input type="hidden" name="topic" value="Support">
                 <input type="hidden" name="module" value="General Support">
                 <input type="hidden" name="lang" value="zh-CN">
