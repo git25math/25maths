@@ -673,6 +673,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             min-height: 2.7rem;
         }
     }
+
+    /* Print styles — hide chrome, keep content readable. */
+    @media print {
+        nav, footer, aside, details,
+        .bilingual-floating-panel,
+        [data-blog-card], [data-blog-nav],
+        form, .bg-gray-50.rounded-2xl { display: none !important; }
+        body { font-size: 12pt; color: #000; background: #fff; }
+        a { color: #000; text-decoration: underline; }
+        h1, h2, h3 { page-break-after: avoid; }
+        img { max-width: 100% !important; }
+    }
 </style>
 
 {% if page.payhip %}

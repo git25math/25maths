@@ -8,6 +8,7 @@ layout: null
     <description>{{ site.description }}</description>
     <link>{{ site.url }}/blog/</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     {% for post in site.posts limit:20 %}
     <item>
@@ -16,6 +17,7 @@ layout: null
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <link>{{ post.url | absolute_url }}</link>
       <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+      <author>support@25maths.com (25Maths)</author>
       {% if post.category %}<category>{{ post.category | xml_escape }}</category>{% endif %}
     </item>
     {% endfor %}

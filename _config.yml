@@ -96,3 +96,4 @@ exclude:
 # Keep Cloudflare Pages edge redirect rules in generated output.
 include:
   - _redirects
+  - _headers
