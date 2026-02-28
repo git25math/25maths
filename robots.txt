@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /institution/
+Disallow: /assets/js/
+Disallow: /products/
+Disallow: /free/
+Disallow: /pricing.html
 
 Sitemap: https://www.25maths.com/sitemap.xml

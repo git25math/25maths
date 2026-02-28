@@ -82,6 +82,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     })();
 </script>
+<script>
+    document.addEventListener('submit', function(e) {
+        var btn = e.target.querySelector('button[type="submit"]');
+        if (!btn || btn.disabled) return;
+        btn.disabled = true;
+        btn.dataset.originalText = btn.textContent;
+        btn.textContent = btn.closest('[lang="zh-CN"]') || document.documentElement.lang === 'zh-CN' ? '提交中…' : 'Sending…';
+        setTimeout(function() { btn.disabled = false; btn.textContent = btn.dataset.originalText; }, 8000);
+    });
+</script>
 
 <style>
     body { font-family: 'Inter', sans-serif; }
@@ -687,3 +697,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "logo": "{{ site.url }}/favicon.svg"
 }
 </script>
+
+{% unless layout.name == "post" %}
+<!-- BreadcrumbList JSON-LD (non-blog pages) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" }
+    {% if page.module %}
+    ,{ "@type": "ListItem", "position": 2, "name": "{{ page.module | upcase }}", "item": "{{ site.url }}/{{ page.module }}/" }
+    {% if page.active_page %}
+    ,{ "@type": "ListItem", "position": 3, "name": "{{ page.title }}" }
+    {% endif %}
+    {% elsif page.active_global == "membership" %}
+    ,{ "@type": "ListItem", "position": 2, "name": "{{ page.title }}" }
+    {% elsif page.url contains "/blog/" %}
+    ,{ "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ site.url }}/blog/" }
+    {% endif %}
+  ]
+}
+</script>
+{% endunless %}
+
+{% if page.url contains "subscription" %}
+<!-- Product JSON-LD for Term Practice Pass -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "CIE 0580 Term Practice Pass",
+  "description": "12-week topical practice pass with full solutions for Cambridge IGCSE Mathematics 0580.",
+  "brand": { "@type": "Brand", "name": "25Maths" },
+  "offers": {
+    "@type": "Offer",
+    "price": "24.99",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "{{ site.url }}/subscription.html",
+    "seller": { "@type": "Organization", "name": "25Maths" }
+  }
+}
+</script>
+{% endif %}

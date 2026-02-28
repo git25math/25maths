@@ -16,8 +16,8 @@
                          alt="{{ labels[idx] }}"
                          width="800" height="500"
                          loading="lazy"
-                         class="w-full h-auto"
-                         onerror="this.parentElement.parentElement.style.display='none'">
+                         decoding="async"
+                         class="w-full h-auto evidence-img">
                 </div>
                 <p class="mt-2 text-sm font-medium text-gray-700 group-hover:text-gray-900 transition">{{ labels[idx] }}</p>
             </a>
@@ -25,3 +25,8 @@
         </div>
     </div>
 </section>
+<script>
+document.querySelectorAll('.evidence-img').forEach(function(img) {
+    img.addEventListener('error', function() { this.closest('a').style.display = 'none'; });
+});
+</script>
