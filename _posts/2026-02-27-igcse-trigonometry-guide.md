@@ -5,6 +5,7 @@ subtitle: "Master SOHCAHTOA, sine/cosine rules, and 3D trig — the topics that 
 description: "Master SOHCAHTOA, sine/cosine rules, and 3D trig — the topics that appear on every Paper 4."
 category: CIE 0580 Topic Guide
 lang: en
+tags: [IGCSE, CIE 0580, trigonometry, sine rule, cosine rule]
 lang_links:
   - code: en
     label: EN

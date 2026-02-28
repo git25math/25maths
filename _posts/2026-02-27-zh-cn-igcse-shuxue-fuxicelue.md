@@ -5,6 +5,7 @@ subtitle: "不要再反复看笔记了，这是一个基于考官出题方式设
 description: "不要再反复看笔记了，这是一个基于考官出题方式设计的结构化复习计划。"
 category: 考试策略
 lang: zh-CN
+tags: [IGCSE, revision strategy, study plan, exam preparation]
 permalink: /zh-cn/blog/igcse-shuxue-fuxicelue.html
 lang_links:
   - code: en

@@ -5,6 +5,7 @@ subtitle: "百分比增减、逆向百分比、复利 — 一篇搞定全部题�
 description: "百分比增减、逆向百分比、复利 — 一篇搞定全部题型。"
 category: CIE 0580 专题指南
 lang: zh-CN
+tags: [IGCSE, CIE 0580, percentage, compound interest]
 permalink: /zh-cn/blog/igcse-baifenbi-wenti.html
 lang_links:
   - code: en

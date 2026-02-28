@@ -5,6 +5,7 @@ subtitle: "A quick guide to common question types and the fastest ways to improv
 description: "A quick guide to common question types and the fastest ways to improve."
 category: CIE 0580 Topic Guide
 lang: en
+tags: [IGCSE, CIE 0580, functions, graphs]
 lang_links:
   - code: en
     label: EN

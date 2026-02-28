@@ -5,6 +5,7 @@ subtitle: "Simple fixes that unlock easy marks in exam-style questions."
 description: "Simple fixes that unlock easy marks in exam-style questions."
 category: Edexcel 4MA1 Topic Guide
 lang: en
+tags: [IGCSE, Edexcel 4MA1, ratio, percentage]
 lang_links:
   - code: en
     label: EN

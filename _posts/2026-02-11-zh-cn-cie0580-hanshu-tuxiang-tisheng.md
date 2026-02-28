@@ -5,6 +5,7 @@ subtitle: "掌握常见题型与核心技巧。"
 description: "掌握常见题型与核心技巧。"
 category: CIE 0580 专题指南
 lang: zh-CN
+tags: [IGCSE, CIE 0580, functions, graphs]
 permalink: /zh-cn/blog/cie0580-hanshu-tuxiang-tisheng.html
 lang_links:
   - code: en

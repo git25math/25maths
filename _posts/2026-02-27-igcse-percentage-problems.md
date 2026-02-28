@@ -5,6 +5,7 @@ subtitle: "Percentage increase, decrease, reverse percentages, and compound inte
 description: "Percentage increase, decrease, reverse percentages, and compound interest — all in one guide."
 category: CIE 0580 Topic Guide
 lang: en
+tags: [IGCSE, CIE 0580, percentage, compound interest]
 lang_links:
   - code: en
     label: EN

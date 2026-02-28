@@ -5,6 +5,7 @@ subtitle: "Paper 4 is where grades are won or lost. These techniques target the 
 description: "Paper 4 is where grades are won or lost. These techniques target the marks most students leave on the table."
 category: CIE 0580 Topic Guide
 lang: en
+tags: [IGCSE, CIE 0580, Paper 4, Extended, exam tips]
 lang_links:
   - code: en
     label: EN
