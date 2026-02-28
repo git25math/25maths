@@ -48,7 +48,7 @@
             </div>
 
             <!-- Mobile TOC (hidden on desktop) -->
-            <details id="blog-toc-mobile" class="lg:hidden mb-8 bg-gray-50 rounded-xl p-4 border border-gray-200">
+            <details id="blog-toc-mobile" class="lg:hidden mb-8 bg-gray-50 rounded-xl p-4 border border-gray-200" role="doc-toc">
                 <summary class="text-sm font-semibold text-gray-700 cursor-pointer">
                     {% if page.lang == "zh-CN" %}目录{% else %}On this page{% endif %}
                 </summary>
@@ -62,8 +62,8 @@
                 </div>
 
                 <!-- Desktop TOC sidebar -->
-                <aside id="blog-toc-sidebar" class="hidden lg:block" aria-label="Table of contents">
-                    <nav class="sticky top-20">
+                <aside id="blog-toc-sidebar" class="hidden lg:block">
+                    <nav class="sticky top-20" role="doc-toc" aria-label="Table of contents">
                         <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">
                             {% if page.lang == "zh-CN" %}目录{% else %}On this page{% endif %}
                         </p>
