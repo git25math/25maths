@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
-        const explanationHtml = escapeHtml(question.explanation || '');
+        const explanationHtml = escapeHtml(normalizeInlineMath(question.explanation || ''));
         const submittedAnswer = selectedAnswer;
 
         if (isCorrect) {
@@ -585,6 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         }
+        renderMath(feedbackContainer);
         void persistCloudAttempt(question, submittedAnswer, isCorrect);
         updateProgressUi();
 
