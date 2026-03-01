@@ -6,6 +6,52 @@
 
 ---
 
+## 2026-03-01 | LaTeX Phase 4 — KaTeX 质量保证（~1,094 处修复）
+
+### 决策背景
+- Phase 3 批量转换（`9cb4c59`）引入了三类系统性 bug：
+  1. **合并伪影**：相邻 `$...$` 块合并逻辑产生 `${DIGIT...}` 模式（547 处）
+  2. **嵌套定界符**：双重包裹 `${$...$}$` 模式（329 处）
+  3. **断裂表达式**：`$` 定界符位置错误导致数学公式断裂（218 处）
+- 另有 ~18 处人工发现的边缘 case（断裂 `\sqrt`、缺失 `$`、断裂 `\frac`、联立方程文件全面损坏）
+
+### 关键实施
+
+#### 1. 三层自动化修复管道
+- `scripts/katex-merge-fix.js`（5 pass）：547 fixes / 66 files — 修复合并逻辑产出的伪影
+- `scripts/katex-fix-broken.js`：218 fixes / 39 files — 修复 `${DIGIT...}` 断裂模式
+- `scripts/katex-fix-nested.js`（3 pass）：329 fixes / 29 files — 修复 `${$...$}$` 嵌套
+
+#### 2. 人工逐文件审查（9 个文件）
+- `cie0580-number-c1-c1-14-using-a-calculator.json` — 断裂 `\sqrt` 表达式
+- `cie0580-transformations-e7-e7-02-vectors-in-two-dimensions.json` — 缺失 `$` 定界符
+- `edexcel-4ma1-geometry-h4-h4-02-polygons.json` — 缺失 `$` 定界符
+- `edexcel-4ma1-number-f1-f1-05-set-language-and-notation.json` — 补集符号缺失 `$`
+- `edexcel-4ma1-sequences-h3-h3-03-graphs.json` — 缺失 `$` 定界符
+- `edexcel-4ma1-equations-h2-h2-06-simultaneous-linear-equations.json` — **完全重写**（12 题全部损坏）
+- `edexcel-4ma1-equations-h2-h2-04-linear-equations.json` — 4 处修复
+- `cie0580-number-e1-e1-13-percentages.json` — 断裂 `\frac`
+- `edexcel-4ma1-number-f1-f1-11-electronic-calculators.json` — 悬挂数字
+
+#### 3. 验证体系
+- `scripts/katex-verify.js`：统计每个字段中 `$` 符号数量，奇数即报警
+- 最终结果：236 个"问题"全部为货币 `$` 符号（如 `$42`、`$120`），确认为误报
+- 202 个 JSON 文件全部通过 `JSON.parse()` 校验
+
+### 结果
+- **修复量**：~1,094 处（547 + 218 + 329 + ~18 人工）
+- **文件数**：102/202 JSON 文件修改
+- **新脚本**：4 个（merge-fix / fix-broken / fix-nested / verify）
+- **剩余 LaTeX 错误**：0
+- **Commit**: `121ccd9`
+
+### 决策理由
+- 三层自动化修复（先修合并→再修断裂→最后修嵌套）比单一脚本更安全
+- 联立方程文件损坏过于严重，逐个 Edit 不如完全重写
+- 验证脚本误报（货币 `$`）不修改，因为 `normalizeInlineMath` 只匹配配对的 `$...$`，单独 `$42` 不会被误解析
+
+---
+
 ## 2026-03-01 | LaTeX Phase 3 — 练习题 KaTeX 批量转换
 
 ### 决策背景

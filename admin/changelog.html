@@ -26,6 +26,44 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-03-01 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-03-01</span>
+                <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-semibold">LATEX PHASE 4</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">KaTeX quality assurance — ~1,094 LaTeX fixes across 102 exercise JSON files</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>katex-merge-fix.js</strong>: Automated script fixing 547 merge artifacts across 66 files — adjacent <code>$...$</code> blocks improperly joined during Phase 3 batch conversion.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>katex-fix-broken.js</strong>: Automated script fixing 218 broken <code>${DIGIT...}</code> patterns across 39 files — stray curly braces from merge logic corrupting math expressions.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>katex-fix-nested.js</strong>: Automated script fixing 329 nested <code>${$...$}$</code> double-wrapped delimiter patterns across 29 files.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Manual fixes (9 files)</strong>: Hand-repaired ~18 broken expressions — broken <code>\sqrt</code>, missing <code>$</code> delimiters, broken <code>\frac</code>, dangling math tokens. Simultaneous equations file required complete rewrite (12 questions).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>katex-verify.js</strong>: Verification script counting <code>$</code> signs per field, flagging odd counts. Final run: 236 issues — all confirmed as harmless currency <code>$</code> signs (false positives). 0 actual LaTeX errors remaining.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Project docs updated</strong>: PROJECT-PLAN.md (new milestone), HANDOFF.md (LaTeX 90% &rarr; 99%, Phase 4 record), NEXT-STEPS.md (Phase 4 marked complete).</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: 102 _data/exercises/*.json, scripts/katex-*.js (4 new), PROJECT-PLAN.md, HANDOFF.md, NEXT-STEPS.md | Commit: 121ccd9
+            </div>
+        </div>
+
         <!-- 2026-02-27 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">
