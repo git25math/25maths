@@ -1,0 +1,154 @@
+{
+  "topic": "Graphs of functions",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-e2:e2-10-graphs-of-functions",
+  "syllabusCode": "E2-10",
+  "tier": "Extended",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the y-intercept of the graph with equation y = 4 - 3x?",
+      "options": [
+        "3",
+        "4",
+        "-3",
+        "4/3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The y-intercept occurs where x = 0. Substituting x = 0 into the equation gives y = 4 - 3(0) = 4. The y-intercept is at (0, 4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The point (k, 15) lies on the line with equation y = 2x + 5. Find the value of k.",
+      "options": [
+        "10",
+        "35",
+        "5",
+        "7.5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Substitute y = 15 into the equation: 15 = 2k + 5. Subtract 5 from both sides: 10 = 2k. Divide by 2: k = 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A curve has the equation y = $x^2$ - 8x + 12. Find the coordinates of the points where the curve intersects the x-axis.",
+      "options": [
+        "(6, 0) and (2, 0)",
+        "(-6, 0) and (-2, 0)",
+        "(0, 12)",
+        "(8, 0) and (-4, 0)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The curve intersects the x-axis when y = 0. We need to solve the quadratic equation $x^2$ - 8x + 12 = 0. Factoring gives (x - 6)(x - 2) = 0. Therefore, x = 6 or x = 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the value of y on the curve y = $x^3$ - 10 when x = -2.",
+      "options": [
+        "-18",
+        "-2",
+        "2",
+        "-12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute x = -2 into the equation: y = $(-2)^3$ - 10. Calculate the cube: y = -8 - 10. So, y = -18."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the point of intersection of the lines y = 3x - 1 and y = 7 - x.",
+      "options": [
+        "(1, 6)",
+        "(4, 3)",
+        "(-2, -7)",
+        "(2, 5)"
+      ],
+      "correctAnswer": 3,
+      "explanation": "At the point of intersection, the y-values are equal. Set the expressions for y equal: 3x - 1 = 7 - x. Add x to both sides: 4x - 1 = 7. Add 1 to both sides: 4x = 8. Divide by 4: x = 2. Substitute x = 2 into y = 7 - x to find y: y = 7 - 2 = 5. The intersection point is (2, 5)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these is the equation of a line with gradient 2 passing through the point (0, -5)?",
+      "options": [
+        "y = -5x + 2",
+        "y = 2x + 5",
+        "y = 2x - 5",
+        "y = 5x - 2"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The equation of a straight line is y = mx + c, where m is the gradient and c is the y-intercept. The gradient is 2, and the y-intercept is -5 (since the line passes through (0, -5)). So the equation is y = 2x - 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the gradient of the straight line with equation 3y = 6x + 5?",
+      "options": [
+        "6",
+        "2",
+        "5",
+        "5/3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To find the gradient, the equation must be in the form y = mx + c. Divide the entire equation by 3: y = (6/3)x + 5/3, which simplifies to y = 2x + 5/3. The gradient (m) is 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the coordinates of the turning point of the graph y = $(x - 3)^2$ + 4.",
+      "options": [
+        "(-3, 4)",
+        "(3, 4)",
+        "(3, -4)",
+        "(-3, -4)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The equation is in completed square form y = $(x - a)^2$ + b, where the turning point is at (a, b). Comparing this with y = $(x - 3)^2$ + 4, we have a = 3 and b = 4. So the turning point is (3, 4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The graph of y = $x^2$ - 4x - 5 is a parabola. What is the equation of its line of symmetry?",
+      "options": [
+        "x = 4",
+        "x = -2",
+        "x = 2",
+        "x = -5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The line of symmetry for a parabola y = $ax^2$ + bx + c is given by the formula x = -b / (2a). Here, a = 1 and b = -4. So, x = -(-4) / (2 * 1) = 4 / 2 = 2. The equation is x = 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which point lies on the graph of y = 5/x ?",
+      "options": [
+        "(0, 5)",
+        "(5, 0)",
+        "(2, 2.5)",
+        "(1, -5)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Substitute the x and y coordinates of each option into the equation. For (2, 2.5): does 2.5 = 5/2? Yes, it does. So this point lies on the graph."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "At which of these points does the graph of y = $x^2$ + 3x - 4 intersect the y-axis?",
+      "options": [
+        "(0, -4)",
+        "(0, 4)",
+        "(1, 0)",
+        "(-4, 0)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The graph intersects the y-axis when x = 0. Substitute x = 0 into the equation: y = $(0)^2$ + 3(0) - 4 = -4. The coordinate is (0, -4)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find one of the x-coordinates for the points of intersection between y = $x^2$ and y = 2x + 3.",
+      "options": [
+        "1",
+        "-3",
+        "-1",
+        "2"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Set the equations equal to find the intersection: $x^2$ = 2x + 3. Rearrange into a quadratic equation: $x^2$ - 2x - 3 = 0. Factor the quadratic: (x - 3)(x + 1) = 0. The solutions are x = 3 and x = -1. One of the x-coordinates is -1."
+    }
+  ]
+}

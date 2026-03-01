@@ -1,0 +1,154 @@
+{
+  "topic": "Electronic calculators",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-f1:f1-11-electronic-calculators",
+  "syllabusCode": "F1-11",
+  "tier": "Foundation",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate the value of $\\frac{\\sqrt{144}}{2.5^2 - 1.5}$ to 3 decimal places.",
+      "options": [
+        "2.526",
+        "0.420",
+        "12.000",
+        "3.429"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use the fraction button on your calculator. Input $\\sqrt{144}$ in the numerator. In the denominator, input $2.5^2 - 1.5$. The calculation is $\\frac{12}{6.25 - 1.5} = \\frac{12}{4.75} \\approx 2.526315...$. Rounded to 3 decimal places, this is 2.526."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $5.1^3 \\times 0.45$. Give your answer to 2 decimal places.",
+      "options": [
+        "59.69",
+        "6.89",
+        "132.65",
+        "2.30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square${) to enter the power of 3. Then multiply the result by $0.45}$. The full answer is $132.651 \\times 0.45 = 59.69295${, which rounds to $59.69}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Work out the value of $\\frac{3.4 \\times 9.1}{15.2 - 7.6}$. Give your answer to 3 significant figures.",
+      "options": [
+        "4.07",
+        "2.04",
+        "-5.56",
+        "30.9"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use the fraction button or brackets to ensure the denominator is calculated before the division. The calculation is $\\frac{30.94}{7.6} = 4.07105...$. Rounded to 3 significant figures, this is 4.07."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the value of $\\frac{1}{\\sqrt{8.5^2 - 4.1}}$ to 3 significant figures.",
+      "options": [
+        "0.121",
+        "0.227",
+        "8.26",
+        "0.0147"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Calculate the expression under the square root first: $8.5^2 - 4.1 = 72.25 - 4.1 = 68.15$. Then take the square root: $\\sqrt{68.15} \\approx 8.255...$. Finally, find the reciprocal: $1 \\div 8.255... \\approx 0.1211...$, which is 0.121 to 3 s.f."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $(3.2 + 1.9)^4 \\div 8.7$. Give your answer correct to 2 decimal places.",
+      "options": [
+        "77.76",
+        "4.70",
+        "676.52",
+        "2.35"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, calculate the value inside the brackets: ${3.2 + 1.9 = 5.1}$. Then, raise this to the power of 4: $5.1^4 = 676.5201$. Finally, divide by 8.7. The result is ${77.7609...}$, which rounds to 77.76."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bank account offers 5% interest per year. If £120 is invested, what is the balance after 3 years? Use the calculation $120 \\times (1.05)^3$.",
+      "options": [
+        "£138.92",
+        "£138.00",
+        "£126.00",
+        "£378.00"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Input $120 \\times (1.05)^3$ into your calculator. $1.05^3 = 1.157625$. Then $120 \\times 1.157625 = 138.915$. As this is money, we round to two decimal places, giving £138.92."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the value of $\\sqrt[3]{500}$. Give your answer to 3 significant figures.",
+      "options": [
+        "7.94",
+        "167",
+        "22.4",
+        "7.93"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use the cube root function on your calculator, which might look like $\\sqrt[3]{\\square}$ or require using Shift + $\\sqrt{\\square}$. Input 500. The result is ${7.93700...}${, which is $7.94}$ to 3 significant figures."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $\\frac{(4.5 + 2.1)^2}{(8.7 - 5.2)^3}$. Give your answer to 3 decimal places.",
+      "options": [
+        "1.016",
+        "0.152",
+        "1.886",
+        "0.283"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use the fraction button. In the numerator, calculate $(4.5 + 2.1)^2 = 6.6^2 = 43.56$. In the denominator, calculate $(8.7 - 5.2)^3 = 3.5^3 = 42.875$. The final calculation is $\\frac{43.56}{42.875} \\approx 1.01597...$, which is 1.016."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $(3.5 \\times 10^4) \\times (8.2 \\times 10^{-2})$.",
+      "options": [
+        "2870",
+        "28700",
+        "287",
+        "2.87"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use the standard form button on your calculator (often 'EXP' or 'x10^x'). Input $3.5 \\times 10^4$, then multiply by $8.2 \\times 10^{-2}$. The calculator should display 2870."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $5\\frac{1}{4} - 3.87$ as a decimal.",
+      "options": [
+        "1.38",
+        "-2.62",
+        "1.27",
+        "2.13"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Input the mixed number $5\\frac{1}{4}$ using the fraction button, or convert it to the decimal 5.25. Then subtract 3.87. The calculation is $5.25 - 3.87 = 1.38$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $\\frac{\\sin(30^\\circ)}{0.5} + \\cos(60^\\circ)$. Ensure your calculator is in degrees mode.",
+      "options": [
+        "1.5",
+        "1.366",
+        "-2.928",
+        "1.0"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Ensure your calculator is in 'DEG' mode. $\\sin(30^\\circ) = 0.5$ and $\\cos(60^\\circ) = 0.5$. The calculation becomes $\\frac{0.5}{0.5} + 0.5 = 1 + 0.5 = 1.5$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A circle has a radius of 6.8 cm. Calculate its area, using the $\\pi$ button on your calculator. Give your answer correct to 1 decimal place.",
+      "options": [
+        "145.3 cm²",
+        "42.7 cm²",
+        "145.2 cm²",
+        "141.9 cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2${ into your calculator. The result is $145.267...}$ cm². Rounding to one decimal place gives $145.3$ cm²."
+    }
+  ]
+}

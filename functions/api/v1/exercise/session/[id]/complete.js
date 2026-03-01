@@ -4,8 +4,6 @@ import {
   fetchExerciseSession,
   getUserFromAccessToken,
   upsertUserDailyActivity,
-  upsertUserStreak,
-  fetchUserStreak,
   fetchUserXp,
   upsertUserXp,
   listUserAchievements,
@@ -19,6 +17,8 @@ import {
   fetchTotalCompletedSessions,
   computeLevel,
 } from '../../../../../_lib/achievement_evaluator.js';
+import { formatDateStr } from '../../../../../_lib/date_utils.js';
+import { updateStreak } from '../../../../../_lib/streak_utils.js';
 
 function parseInteger(value) {
   const num = Number(value);
@@ -144,19 +144,6 @@ export async function onRequestPost(context) {
   return jsonResponse(response);
 }
 
-function formatDateStr(date) {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
-}
-
-function subtractDays(dateStr, n) {
-  const d = new Date(dateStr + 'T00:00:00Z');
-  d.setUTCDate(d.getUTCDate() - n);
-  return formatDateStr(d);
-}
-
 async function processEngagement(env, userId, sessionData) {
   const today = formatDateStr(new Date());
 
@@ -172,43 +159,8 @@ async function processEngagement(env, userId, sessionData) {
   });
 
   // 2. Update streak
-  const existingStreak = await fetchUserStreak(env, userId) || {
-    user_id: userId,
-    current_streak: 0,
-    best_streak: 0,
-    last_active_date: null,
-    freeze_available: false,
-    total_active_days: 0,
-  };
-
+  const streak = await updateStreak(env, userId, activity);
   const qualifies = (activity.sessions_completed || 0) >= 1 && (activity.questions_answered || 0) >= 5;
-  let streak = { ...existingStreak };
-
-  if (qualifies && streak.last_active_date !== today) {
-    const yesterday = subtractDays(today, 1);
-    if (streak.last_active_date === yesterday) {
-      streak.current_streak += 1;
-    } else if (streak.freeze_available && streak.last_active_date === subtractDays(today, 2)) {
-      streak.current_streak += 1;
-      streak.freeze_available = false;
-    } else {
-      streak.current_streak = 1;
-    }
-    streak.last_active_date = today;
-    streak.best_streak = Math.max(streak.best_streak, streak.current_streak);
-    streak.total_active_days += 1;
-    if (streak.current_streak > 0 && streak.current_streak % 7 === 0) {
-      streak.freeze_available = true;
-    }
-    await upsertUserStreak(env, {
-      user_id: userId,
-      current_streak: streak.current_streak,
-      best_streak: streak.best_streak,
-      last_active_date: streak.last_active_date,
-      freeze_available: streak.freeze_available,
-      total_active_days: streak.total_active_days,
-    });
-  }
 
   // 3. Evaluate achievements (full criteria coverage via shared module)
   const [xpRecord, existingAchievements, allDefinitions, recentSessions] = await Promise.all([

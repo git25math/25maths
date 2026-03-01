@@ -1,0 +1,154 @@
+{
+  "topic": "Angles, Lines and Triangles",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-h4:h4-01-angles-lines-and-triangles",
+  "syllabusCode": "H4-01",
+  "tier": "Higher",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A straight line has point O on it. A ray OC is drawn from O such that angle AOC is 65°. What is the measure of angle BOC?",
+      "options": [
+        "25°",
+        "65°",
+        "115°",
+        "180°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Angles on a straight line sum to 180°. So, angle BOC = 180° - 65° = 115°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two straight lines AB and CD intersect at point O. If angle AOC is 40°, what is the measure of angle BOD?",
+      "options": [
+        "40°",
+        "50°",
+        "140°",
+        "180°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Vertically opposite angles are equal. Since angle AOC and angle BOD are vertically opposite, angle BOD = 40°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Three angles around a point are x, 2x, and 3x. What is the value of x?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Angles around a point sum to 360°. So, x + 2x + 3x = 360°, which means 6x = 360°. Therefore, x = 60°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the diagram, lines AB and CD are parallel. Line EF is a transversal intersecting AB at G and CD at H. If angle AGE is 70°, what is the measure of angle GHC?",
+      "options": [
+        "20°",
+        "70°",
+        "110°",
+        "180°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Angle AGE and angle GHC are corresponding angles. Corresponding angles are equal when lines are parallel. So, angle GHC = 70°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the diagram, lines PQ and RS are parallel. Line TU is a transversal intersecting PQ at X and RS at Y. If angle PXY is 120°, what is the measure of angle XYR?",
+      "options": [
+        "30°",
+        "60°",
+        "120°",
+        "180°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Angle PXY and angle QXY form a straight line, so angle QXY = 180° - 120° = 60°. Angle QXY and angle XYR are alternate interior angles, which are equal when lines are parallel. Therefore, angle XYR = 60°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Lines MN and OP are parallel. Line QR is a transversal intersecting MN at S and OP at T. If angle MST is 110°, what is the measure of angle STP?",
+      "options": [
+        "70°",
+        "110°",
+        "180°",
+        "250°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Angle MST and angle STP are interior angles on the same side of the transversal. Their sum is 180° when lines are parallel. So, angle STP = 180° - 110° = 70°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A triangle has angles measuring 50° and 75°. What is the measure of the third angle?",
+      "options": [
+        "45°",
+        "55°",
+        "65°",
+        "75°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sum of angles in a triangle is 180°. So, the third angle = 180° - (50° + 75°) = 180° - 125° = 55°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An isosceles triangle has its apex angle measuring 80°. What is the measure of one of its base angles?",
+      "options": [
+        "20°",
+        "50°",
+        "80°",
+        "100°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In an isosceles triangle, the two base angles are equal. If the apex angle is 80°, then the sum of the two base angles is 180° - 80° = 100°. Therefore, each base angle is 100° / 2 = 50°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In triangle ABC, side BC is extended to point D. If angle ABC = 60° and angle BAC = 70°, what is the measure of the exterior angle ACD?",
+      "options": [
+        "50°",
+        "110°",
+        "130°",
+        "180°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The exterior angle of a triangle is equal to the sum of the two opposite interior angles. So, angle ACD = angle ABC + angle BAC = 60° + 70° = 130°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A quadrilateral has interior angles x, 2x, 3x, and 4x. What is the value of x?",
+      "options": [
+        "36°",
+        "45°",
+        "72°",
+        "90°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The sum of interior angles in a quadrilateral is 360°. So, x + 2x + 3x + 4x = 360°, which means 10x = 360°. Therefore, x = 36°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a diagram, lines AB and CD are parallel. A transversal line EF intersects AB at X and CD at Y. Point Z is on line CD such that triangle XYZ is formed (with vertices X, Y, Z). If angle EXB = 70° and angle XZY = 60°, find the measure of angle YXZ.",
+      "options": [
+        "50°",
+        "60°",
+        "70°",
+        "80°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Angle EXB = 70°. Angle AXY is vertically opposite to angle EXB, so angle AXY = 70°. Since AB is parallel to CD, angle XYD and angle AXY are alternate interior angles, so angle XYD = 70°. In triangle XYZ, YZ is a segment of line CD, so angle XYZ (the angle at Y in the triangle) is 70°. We are given angle XZY = 60°. The sum of angles in a triangle is 180°. Therefore, angle YXZ = 180° - (angle XYZ + angle XZY) = 180° - (70° + 60°) = 180° - 130° = 50°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In triangle ABC, angle A = (2x + 10)°, angle B = (3x - 5)°, and angle C = (x + 25)°. Find the value of x.",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sum of angles in a triangle is 180°. So, (2x + 10) + (3x - 5) + (x + 25) = 180. Combining like terms: 6x + 30 = 180. Subtract 30 from both sides: 6x = 150. Divide by 6: x = 25."
+    }
+  ]
+}

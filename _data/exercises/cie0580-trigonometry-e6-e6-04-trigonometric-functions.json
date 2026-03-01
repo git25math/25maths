@@ -40,7 +40,7 @@
         "60° and 300°"
       ],
       "correctAnswer": 0,
-      "explanation": "The principal value is $\\theta = sin⁻¹(0.5) = 30°$. Since sin($\\theta$) is positive, the second solution in the range $0° ≤ \\theta ≤ 180°$ is found using the identity $sin(\\theta{) = sin(180°-$\\theta$)}$, which gives $180° - 30° = 150°$."
+      "explanation": "The principal value is $\\theta = sin⁻¹(0.5) = 30°$. Since sin($\\theta$) is positive, the second solution in the range $0° ≤ \\theta ≤ 180°$ is found using the identity $\\sin(\\theta) = \\sin(180° - \\theta)$, which gives $180° - 30° = 150°$."
     },
     {
       "type": "multiple-choice",

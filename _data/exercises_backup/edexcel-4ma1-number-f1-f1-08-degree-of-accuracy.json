@@ -1,0 +1,154 @@
+{
+  "topic": "Degree of accuracy",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-f1:f1-08-degree-of-accuracy",
+  "syllabusCode": "F1-08",
+  "tier": "Foundation",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Round the number 8.562 to one decimal place.",
+      "options": [
+        "8.5",
+        "8.6",
+        "8.56",
+        "9"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To round to one decimal place, look at the second decimal place. The digit is 6, which is 5 or more, so we round up the first decimal digit. 5 becomes 6. The answer is 8.6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A number, x, is 5.4 when rounded to one decimal place. What is the error interval for x?",
+      "options": [
+        "5.3 $\\leq$ x < 5.5",
+        "5.35 $\\leq$ x < 5.45",
+        "5.4 $\\leq$ x < 5.5",
+        "5.35 $\\leq$ x < 5.44"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The number has been rounded to one decimal place (nearest 0.1). The error is half of this, which is 0.05. The lower bound is 5.4 - 0.05 = 5.35. The upper bound is 5.4 + 0.05 = 5.45. The interval is 5.35 $\\leq$ x < 5.45."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Round the number 24,871 to two significant figures.",
+      "options": [
+        "25,000",
+        "24,900",
+        "24,000",
+        "24.87"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The first two significant figures are 2 and 4. The third significant figure is 8, which is 5 or more, so we round up the second significant figure. 4 becomes 5. The rest of the digits become zeros to keep the place value. The answer is 25,000."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A length, L, is measured as 15 cm to the nearest centimetre. What is the smallest possible value of L?",
+      "options": [
+        "15 cm",
+        "14 cm",
+        "14.5 cm",
+        "14.9 cm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The measurement is to the nearest 1 cm. The error is half of this, which is 0.5 cm. The smallest possible value (the lower bound) is the measurement minus the error: 15 - 0.5 = 14.5 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Truncate the number 7.987 to two decimal places.",
+      "options": [
+        "7.98",
+        "7.99",
+        "8.00",
+        "7.9"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To truncate means to cut off the number at the specified decimal place without rounding. We cut off the number after the second decimal place, leaving 7.98."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A crowd of 4,300 was reported, rounded to the nearest 100. What is the largest possible number of people in the crowd?",
+      "options": [
+        "4350",
+        "4349",
+        "4400",
+        "4250"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The rounding is to the nearest 100. The error is half of this, which is 50. The upper bound is 4300 + 50 = 4350. The actual number must be less than the upper bound. The largest integer value is therefore 4349."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Round the number 0.03051 to three significant figures.",
+      "options": [
+        "0.03",
+        "0.031",
+        "0.0305",
+        "0.030"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The first significant figure is the first non-zero digit, which is 3. The first three significant figures are 3, 0, and 5. The next digit is 1, which is less than 5, so we do not round up. The answer is 0.0305."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The weight of a bag of sugar is 1 kg to the nearest 10 grams. What is the error interval for the weight (W) in grams?",
+      "options": [
+        "990g $\\leq$ W < 1010g",
+        "995g $\\leq$ W < 1005g",
+        "950g $\\leq$ W < 1050g",
+        "1000g $\\leq$ W < 1010g"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, convert 1 kg to 1000g. The measurement is to the nearest 10g. The error is half of this, which is 5g. The lower bound is 1000 - 5 = 995g. The upper bound is 1000 + 5 = 1005g. The interval is 995g $\\leq$ W < 1005g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A calculation gives the answer 4.572895. What is this answer to 3 decimal places?",
+      "options": [
+        "4.57",
+        "4.572",
+        "4.573",
+        "4.5728"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To round to 3 decimal places, we look at the fourth decimal place. The digit is 8, which is 5 or more, so we round up the third decimal digit. 2 becomes 3. The answer is 4.573."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A number, y, is 240 when rounded to two significant figures. Which of these could be the actual value of y?",
+      "options": [
+        "234.9",
+        "245.1",
+        "238",
+        "246"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Rounding to two significant figures means the interval is 235 $\\leq$ y < 245. We need to check which of the options falls within this interval. 238 is the only value that satisfies this condition."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The number 14,951 is rounded to the nearest thousand. What is the result?",
+      "options": [
+        "14,000",
+        "14,900",
+        "15,000",
+        "14,950"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Rounding to the nearest thousand means we look at the hundreds digit. The hundreds digit is 9, which is 5 or more. Therefore, we round up the thousands digit. 14 becomes 15. The result is 15,000."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The length of a football pitch is given as 105 m. This is correct to the nearest metre. What is the upper bound for the length of the pitch?",
+      "options": [
+        "105.5 m",
+        "106 m",
+        "105.49 m",
+        "105 m"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The measurement is correct to the nearest 1 metre. The error is half of this, which is 0.5 m. The upper bound is the measurement plus the error: 105 + 0.5 = 105.5 m."
+    }
+  ]
+}

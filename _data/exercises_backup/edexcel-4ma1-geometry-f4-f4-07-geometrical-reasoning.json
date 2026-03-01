@@ -1,0 +1,154 @@
+{
+  "topic": "Geometry",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:geometry-f4:f4-07-geometrical-reasoning",
+  "syllabusCode": "F4-07",
+  "tier": "Foundation",
+  "domain": "geometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A, B and C are points on a straight line. Angle x is adjacent to an angle of 110°. What is the size of angle x?",
+      "options": [
+        "70°",
+        "80°",
+        "110°",
+        "250°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Angles on a straight line add up to 180°. So, x = 180° - 110° = 70°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Three angles are around a point. Two of the angles are 150° and 90°. What is the size of the third angle?",
+      "options": [
+        "30°",
+        "60°",
+        "120°",
+        "210°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Angles around a point add up to 360°. The third angle is 360° - 150° - 90° = 120°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two straight lines intersect. One of the angles formed is 55°. What is the size of the vertically opposite angle?",
+      "options": [
+        "35°",
+        "55°",
+        "125°",
+        "305°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Vertically opposite angles are equal. Therefore, the angle is 55°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a triangle, two of the angles are 60° and 70°. What is the size of the third angle?",
+      "options": [
+        "40°",
+        "50°",
+        "65°",
+        "130°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The angles in a triangle add up to 180°. The third angle is 180° - 60° - 70° = 50°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the diagram, line L1 is parallel to line L2. What is the value of angle a?",
+      "options": [
+        "48°",
+        "132°",
+        "90°",
+        "42°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Angle 'a' and the angle marked 48° are alternate interior angles. Alternate interior angles are equal when lines are parallel. So, a = 48°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the diagram, line M1 is parallel to line M2. What is the value of angle b?",
+      "options": [
+        "62°",
+        "118°",
+        "28°",
+        "90°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Angle 'b' and the angle marked 118° are corresponding angles. Corresponding angles are equal when lines are parallel. So, b = 118°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In the diagram, line P1 is parallel to line P2. An interior angle on the same side of the transversal is 105°. What is the value of angle c?",
+      "options": [
+        "75°",
+        "105°",
+        "15°",
+        "285°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Angle 'c' and an angle of 105° are allied (or co-interior) angles. Allied angles add up to 180°. So, c = 180° - 105° = 75°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A triangle is isosceles. One of its base angles is 40°. What is the size of the angle at the vertex?",
+      "options": [
+        "40°",
+        "70°",
+        "100°",
+        "140°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In an isosceles triangle, the two base angles are equal, so both are 40°. The angles in a triangle add up to 180°. The vertex angle is 180° - 40° - 40° = 100°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the size of the exterior angle, x, of the triangle shown.",
+      "options": [
+        "50°",
+        "60°",
+        "110°",
+        "130°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The exterior angle of a triangle is equal to the sum of the two opposite interior angles. So, x = 50° + 60° = 110°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A quadrilateral has angles 100°, 80°, and 130°. What is the size of the fourth angle?",
+      "options": [
+        "30°",
+        "50°",
+        "90°",
+        "150°"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The interior angles of a quadrilateral add up to 360°. The fourth angle is 360° - (100° + 80° + 130°) = 360° - 310° = 50°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Consider two intersecting straight lines. If one of the angles formed is 70°, what is the reason that the vertically opposite angle is also 70°?",
+      "options": [
+        "Angles on a straight line add to 180°",
+        "Alternate angles are equal",
+        "Vertically opposite angles are equal",
+        "Angles around a point add to 360°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When two straight lines cross, the angles opposite each other are equal. This property is known as 'vertically opposite angles are equal'."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An equilateral triangle has three equal sides and three equal angles. What is the size of each angle?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The angles in a triangle add up to 180°. In an equilateral triangle, all three angles are equal. Therefore, each angle is 180° / 3 = 60°."
+    }
+  ]
+}

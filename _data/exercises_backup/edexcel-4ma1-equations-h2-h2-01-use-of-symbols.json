@@ -1,0 +1,154 @@
+{
+  "topic": "Use of symbols",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:equations-h2:h2-01-use-of-symbols",
+  "syllabusCode": "H2-01",
+  "tier": "Higher",
+  "domain": "equations",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Write an expression for '7 less than a number x'.",
+      "options": [
+        "x - 7",
+        "7 - x",
+        "7x",
+        "x/7"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'7 less than x' means you start with x and subtract 7. This is written as x - 7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A pen costs 'p' pence and a ruler costs 'r' pence. What is the total cost of 5 pens and 2 rulers?",
+      "options": [
+        "5p + 2r",
+        "7pr",
+        "5p - 2r",
+        "10pr"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The cost of 5 pens is 5 × p = 5p. The cost of 2 rulers is 2 × r = 2r. The total cost is the sum of these, which is 5p + 2r."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangle has a length of (a + 5) cm and a width of 'a' cm. Find an expression for the perimeter of the rectangle.",
+      "options": [
+        "4a + 10",
+        "2a + 5",
+        "a(a+5)",
+        "$a^2$ + 5a"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The perimeter of a rectangle is 2 × (length + width). So, P = 2 × ((a + 5) + a) = 2 × (2a + 5) = 4a + 10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If 'n' is an odd number, what is the expression for the next consecutive odd number?",
+      "options": [
+        "n + 2",
+        "n + 1",
+        "2n",
+        "n - 2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Odd numbers (like 1, 3, 5, ...) are separated by 2. To get the next odd number after 'n', you must add 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A taxi fare is a fixed charge of £3.00 plus £1.50 per mile. If a journey is 'm' miles long, which expression represents the total cost in pounds?",
+      "options": [
+        "3 + 1.5m",
+        "3m + 1.5",
+        "4.5m",
+        "(3 + 1.5)m"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The total cost is the fixed charge of £3 plus the variable charge, which is £1.50 multiplied by the number of miles, m. This gives the expression 3 + 1.5m."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The product of two numbers is P. If one of the numbers is x, what is the other number?",
+      "options": [
+        "P/x",
+        "P - x",
+        "x - P",
+        "Px"
+      ],
+      "correctAnswer": 0,
+      "explanation": "If the product of two numbers is P and one is x, the other number is found by dividing the product by the known number. So, the other number is P/x."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A plank of wood of length Y metres is cut into two pieces. One piece has a length of 'k' metres. What is the length of the other piece?",
+      "options": [
+        "Y - k",
+        "Y/k",
+        "k - Y",
+        "Y + k"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The length of the second piece is the original total length (Y) minus the length of the piece that was cut off (k). This gives Y - k."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Let 'n' be any integer. Which expression represents a number that is always a multiple of 5?",
+      "options": [
+        "5n",
+        "n + 5",
+        "n/5",
+        "n - 5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A multiple of 5 is defined as 5 multiplied by an integer. If 'n' is an integer, then 5n will always produce a multiple of 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The sum of the angles in a quadrilateral is 360°. Three of the angles are x, y, and z. What is the size of the fourth angle?",
+      "options": [
+        "360 - x - y - z",
+        "360 / (x+y+z)",
+        "x + y + z",
+        "360 - (x+y)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The fourth angle is the total sum (360°) minus the sum of the other three angles. This can be written as 360 - (x + y + z) or 360 - x - y - z."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A car is hired for a number of days, 'd'. The hire cost is £40 per day. There is also a one-off insurance fee of £25. What is the total cost of hiring the car?",
+      "options": [
+        "40d + 25",
+        "40 + 25d",
+        "65d",
+        "40(d + 25)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The daily cost is 40 multiplied by the number of days (40d). The fixed insurance fee of £25 is then added to this amount, giving a total cost of 40d + 25."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "David is 'y' years old. His brother, Ben, is 3 years younger. Their mother is twice as old as Ben. What is the expression for their mother's age?",
+      "options": [
+        "2(y - 3)",
+        "2y - 3",
+        "2y",
+        "y - 3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "David's age is y. Ben's age is y - 3. The mother's age is twice Ben's age, so we must multiply Ben's entire age by 2. This gives 2(y - 3)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the expression for the area of a square with side length (x + 1)?",
+      "options": [
+        "$(x + 1)^2$",
+        "4(x + 1)",
+        "$x^2$ + 1",
+        "2(x + 1)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The area of a square is the side length multiplied by itself ($side^2$). With a side length of (x + 1), the area is (x + 1) × (x + 1), which is written as $(x + 1)^2$."
+    }
+  ]
+}

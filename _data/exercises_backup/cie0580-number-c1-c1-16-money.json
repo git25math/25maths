@@ -1,0 +1,154 @@
+{
+  "topic": "Money",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-c1:c1-16-money",
+  "syllabusCode": "C1-16",
+  "tier": "Core",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate 15% of $80.",
+      "options": [
+        "$10",
+        "$12",
+        "$15",
+        "$68"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To find 15% of a number, multiply the number by 0.15. So, ${80 * 0.15 = }$12."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Increase $120 by 10%.",
+      "options": [
+        "$12",
+        "$130",
+        "$132",
+        "$108"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, find 10% of ${120, which is }$12. Then, add this to the original amount: ${120 + }$12 = ${132. Alternatively, multiply }$120 by 1.10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shirt costing $40 is reduced by 25% in a sale. What is the sale price?",
+      "options": [
+        "$10",
+        "$30",
+        "$50",
+        "$37.50"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The discount is 25% of ${40, which is 0.25 * }$40 = ${10. The sale price is the original price minus the discount: }$40 - ${10 = }$30."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shopkeeper buys a book for ${15 and sells it for }$20. What is the profit?",
+      "options": [
+        "$5",
+        "$15",
+        "$20",
+        "$35"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Profit is the selling price minus the cost price. So, ${20 - }$15 = $5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Using the previous question's figures (cost ${15, selling price }$20), what is the profit percentage on the cost price?",
+      "options": [
+        "25%",
+        "33.3%",
+        "75%",
+        "5%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The profit is ${5 and the cost price is }$15. The profit percentage is (Profit / Cost Price) * 100 = (${5 / }$15) * 100 = 33.3...%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The exchange rate is 1 USD = 0.8 GBP. How many GBP would you get for 50 USD?",
+      "options": [
+        "40 GBP",
+        "50.8 GBP",
+        "62.50 GBP",
+        "50 GBP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To convert USD to GBP at this rate, you multiply by the exchange rate: 50 USD * 0.8 = 40 GBP."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The exchange rate is 1 EUR = 1.10 USD. How many USD would you get for 200 EUR?",
+      "options": [
+        "181.82 USD",
+        "201.10 USD",
+        "220 USD",
+        "200 USD"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To convert EUR to USD at this rate, you multiply by the exchange rate: 200 EUR * 1.10 = 220 USD."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "After a 20% discount, a television is sold for $720. What was the original price?",
+      "options": [
+        "$576",
+        "$864",
+        "$900",
+        "$800"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A 20% discount means the sale price is 80% of the original price. So, ${720 = 80% of Original Price. To find the original price, calculate }$720 / 0.80 = $900."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bill for a meal is $60. A 8% service charge is added. What is the total bill?",
+      "options": [
+        "$4.80",
+        "$55.20",
+        "$68.00",
+        "$64.80"
+      ],
+      "correctAnswer": 3,
+      "explanation": "First, calculate the service charge: 8% of ${60 is 0.08 * }$60 = ${4.80. Add this to the original bill: }$60 + ${4.80 = }$64.80."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which is the better value for money: a 2-litre bottle of water for ${3.20 or a 3-litre bottle for }$4.50?",
+      "options": [
+        "The 2-litre bottle",
+        "The 3-litre bottle",
+        "They are the same value",
+        "It cannot be determined"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To compare, find the price per litre for each. 2L bottle: ${3.20 / 2 = }$1.60 per litre. 3L bottle: ${4.50 / 3 = }$1.50 per litre. The 3-litre bottle is cheaper per litre, so it is better value."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Anna buys 3 pens at $1.99 each. Which is the best estimate for the total cost?",
+      "options": [
+        "$3",
+        "$5",
+        "$6",
+        "$7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To estimate, we can round ${1.99 up to }$2. The estimated cost is then 3 * ${2 = }$6. The exact cost is ${5.97, so }$6 is the closest estimate."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A phone costs $320. Its price is increased by 5%. What is the new price?",
+      "options": [
+        "$16",
+        "$304",
+        "$336",
+        "$325"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The price increase is 5% of ${320, which is 0.05 * }$320 = ${16. The new price is the original price plus the increase: }$320 + ${16 = }$336."
+    }
+  ]
+}

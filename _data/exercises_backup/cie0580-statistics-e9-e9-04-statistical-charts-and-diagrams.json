@@ -1,0 +1,154 @@
+{
+  "topic": "Statistical charts and diagrams",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:statistics-e9:e9-04-statistical-charts-and-diagrams",
+  "syllabusCode": "E9-04",
+  "tier": "Extended",
+  "domain": "statistics",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A histogram is drawn for grouped continuous data. The frequency of a class is 30 and the class width is 5. What is the frequency density?",
+      "options": [
+        "6",
+        "150",
+        "25",
+        "0.167"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Frequency density is calculated by dividing the frequency by the class width. So, Frequency Density = 30 / 5 = 6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "On a histogram, the frequency density for a class interval of 10 < x $\\leq$ 20 is 4.5. What is the frequency for this class?",
+      "options": [
+        "45",
+        "0.45",
+        "14.5",
+        "450"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Frequency is calculated by multiplying the frequency density by the class width. The class width is 20 - 10 = 10. So, Frequency = 4.5 * 10 = 45."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which type of graph is most suitable for estimating the median and quartiles of grouped continuous data?",
+      "options": [
+        "A cumulative frequency graph",
+        "A histogram",
+        "A pie chart",
+        "A scatter plot"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A cumulative frequency graph is specifically used to find estimates for the median, lower quartile, upper quartile, and interquartile range for grouped data."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A box-and-whisker plot shows a lower quartile of 25 and an upper quartile of 40. What is the interquartile range (IQR)?",
+      "options": [
+        "15",
+        "65",
+        "32.5",
+        "The median is needed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The interquartile range (IQR) is the difference between the upper quartile (Q3) and the lower quartile (Q1). IQR = 40 - 25 = 15."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a pie chart representing 120 students, a sector for 'Bus' has an angle of 72°. How many students travel by bus?",
+      "options": [
+        "24",
+        "72",
+        "20",
+        "30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The number of students is a fraction of the total, represented by the angle's fraction of 360°. Number of students = (72 / 360) * 120 = 0.2 * 120 = 24."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A scatter plot shows that as the temperature increases, the sales of ice cream also increase. What type of correlation is this?",
+      "options": [
+        "Positive correlation",
+        "Negative correlation",
+        "No correlation",
+        "Zero correlation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Positive correlation occurs when one variable increases as the other variable increases. Here, both temperature and ice cream sales are increasing together."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A stem-and-leaf diagram has a key: '4 | 2 represents 4.2'. What value does the leaf '7' on the stem '5' represent?",
+      "options": [
+        "5.7",
+        "57",
+        "0.57",
+        "5 and 7"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Following the key, the stem is the units digit and the leaf is the first decimal place. So, a stem of '5' and a leaf of '7' represents the value 5.7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A box plot has a minimum value of 10, a lower quartile of 18, a median of 25, an upper quartile of 30, and a maximum value of 45. What is the range?",
+      "options": [
+        "35",
+        "12",
+        "20",
+        "27"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The range is the difference between the maximum and minimum values. Range = Maximum value - Minimum value = 45 - 10 = 35."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the primary difference between a histogram and a bar chart?",
+      "options": [
+        "A histogram has no gaps between bars and is for continuous data.",
+        "A bar chart always has vertical bars.",
+        "A histogram is used for discrete data only.",
+        "A bar chart shows frequency density."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Histograms are used for continuous data, and the bars typically have no gaps between them, representing a continuous range. Bar charts are for discrete or categorical data, and have gaps between the bars."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "On a cumulative frequency graph with a total frequency of 200, where would you read the value for the upper quartile (Q3)?",
+      "options": [
+        "At the 150th value on the cumulative frequency axis",
+        "At the 100th value on the cumulative frequency axis",
+        "At the 50th value on the cumulative frequency axis",
+        "At the 75th value on the data axis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The upper quartile (Q3) is found at the 75th percentile of the data. To find its position, calculate 75% of the total frequency: 0.75 * 200 = 150. You read across from the 150th value on the cumulative frequency axis."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The heights of 80 plants were measured. On the cumulative frequency curve, the interquartile range is found to be 12 cm. What does this value represent?",
+      "options": [
+        "The spread of the middle 50% of the heights.",
+        "The difference between the tallest and shortest plant.",
+        "The average height of the plants.",
+        "The height of the 40th plant."
+      ],
+      "correctAnswer": 0,
+      "explanation": "The interquartile range (IQR) measures the statistical dispersion, being equal to the difference between the 75th and 25th percentiles. It represents the range covered by the middle 50% of the data."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A scatter diagram is plotted to investigate the link between age and time spent on social media. The points are widely spread with no clear pattern. What can be concluded?",
+      "options": [
+        "There is no correlation between age and time spent.",
+        "There is a strong positive correlation.",
+        "There is a weak negative correlation.",
+        "The data is invalid."
+      ],
+      "correctAnswer": 0,
+      "explanation": "When the points on a scatter diagram are spread out and do not form any discernible line or curve, it indicates that there is no correlation between the two variables."
+    }
+  ]
+}

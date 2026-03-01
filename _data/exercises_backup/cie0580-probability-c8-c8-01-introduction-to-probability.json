@@ -1,0 +1,154 @@
+{
+  "topic": "Introduction to probability",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:probability-c8:c8-01-introduction-to-probability",
+  "syllabusCode": "C8-01",
+  "tier": "Core",
+  "domain": "probability",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of these values represents the probability of an event that is impossible?",
+      "options": [
+        "1",
+        "0",
+        "0.5",
+        "-1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The probability of an impossible event is always 0. A probability of 1 means the event is certain. Probability cannot be negative."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A fair six-sided die is rolled once. What is the probability of rolling a 4?",
+      "options": [
+        "1/6",
+        "4/6",
+        "1/2",
+        "1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A fair six-sided die has 6 equally likely outcomes {1, 2, 3, 4, 5, 6}. There is one '4'. So, P(4) = (Number of 4s) / (Total outcomes) = 1/6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The probability that it will rain tomorrow is 0.3. What is the probability that it will not rain tomorrow?",
+      "options": [
+        "0.3",
+        "1.3",
+        "0.7",
+        "0"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The sum of the probabilities of an event happening and not happening is 1. P(not rain) = 1 - P(rain) = 1 - 0.3 = 0.7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bag contains 3 blue balls and 7 green balls. A ball is chosen at random. What is the probability that the ball is blue?",
+      "options": [
+        "3/7",
+        "7/10",
+        "3/10",
+        "1/3"
+      ],
+      "correctAnswer": 2,
+      "explanation": "There are 3 blue balls and a total of 3 + 7 = 10 balls. The probability of choosing a blue ball is the number of blue balls divided by the total number of balls: 3/10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following values could not be a probability?",
+      "options": [
+        "0.75",
+        "1.2",
+        "0",
+        "1"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Probability values must be between 0 and 1, inclusive. The value 1.2 is greater than 1, so it cannot be a probability."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An event has a probability of 0.9. How would you describe the likelihood of this event occurring?",
+      "options": [
+        "Unlikely",
+        "Even chance",
+        "Likely",
+        "Impossible"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A probability of 0.9 is very close to 1, which means the event is very likely to occur. A value of 0.5 is an even chance, and a value close to 0 is unlikely."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bag contains 5 red sweets and nothing else. If one sweet is picked at random, what is the probability of picking a red sweet?",
+      "options": [
+        "0",
+        "0.2",
+        "1",
+        "5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Since all sweets in the bag are red, picking a red sweet is a certain event. The probability of a certain event is 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The letters of the word 'MATHS' are written on cards. A card is drawn at random. What is the probability of drawing the letter 'A'?",
+      "options": [
+        "1/4",
+        "1/5",
+        "4/5",
+        "5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "There are 5 letters in the word 'MATHS'. There is one letter 'A'. The probability of drawing 'A' is 1 out of 5, which is 1/5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A fair six-sided die is rolled. What is the probability of rolling a 7?",
+      "options": [
+        "1/6",
+        "1/7",
+        "7/6",
+        "0"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A standard six-sided die has faces numbered 1 to 6. It is impossible to roll a 7. The probability of an impossible event is 0."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A fair spinner has 4 equal sectors coloured red, blue, green, and yellow. What is the probability of the spinner landing on blue?",
+      "options": [
+        "1/4",
+        "1/3",
+        "1/2",
+        "4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "There are 4 equally likely outcomes. One of these outcomes is blue. Therefore, the probability of landing on blue is 1/4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A fair six-sided die is rolled. What is the probability of rolling an even number?",
+      "options": [
+        "3/6",
+        "1/6",
+        "2/6",
+        "4/6"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The even numbers on a die are 2, 4, and 6. There are 3 favourable outcomes out of 6 total outcomes. P(even) = 3/6. This can be simplified to 1/2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "From the numbers 2, 3, 4, 5, 6, 7, 8, a number is chosen at random. What is the probability that the number is a prime number?",
+      "options": [
+        "3/7",
+        "4/7",
+        "2/7",
+        "4/8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "There are 7 numbers in the list. The prime numbers in the list are 2, 3, 5, and 7. There are 4 prime numbers. Therefore, the probability is 4/7."
+    }
+  ]
+}

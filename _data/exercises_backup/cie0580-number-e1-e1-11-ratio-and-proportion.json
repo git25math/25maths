@@ -1,0 +1,154 @@
+{
+  "topic": "ratio and proportion",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-e1:e1-11-ratio-and-proportion",
+  "syllabusCode": "E1-11",
+  "tier": "Extended",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify the ratio 18:24 to its simplest form.",
+      "options": [
+        "3:4",
+        "4:3",
+        "9:12",
+        "6:8"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To simplify the ratio 18:24, find the greatest common divisor (GCD) of 18 and 24, which is 6. Divide both parts of the ratio by 6: 18 ÷ 6 = 3 and 24 ÷ 6 = 4. The simplified ratio is 3:4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A quantity of 56 is divided in the ratio 3:4. What is the value of the smaller part?",
+      "options": [
+        "21",
+        "24",
+        "28",
+        "32"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, find the total number of parts by adding the parts of the ratio: 3 + 4 = 7 parts. Next, find the value of one part by dividing the total quantity by the number of parts: 56 ÷ 7 = 8. The smaller share corresponds to the smaller part of the ratio (3), so calculate 3 × 8 = 24."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The ratio a:b is 5:2. If a = 35, what is the value of b?",
+      "options": [
+        "10",
+        "14",
+        "20",
+        "7"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The ratio is a:b = 5:2. We are given a = 35. To find the multiplier, divide the given value of a by its corresponding ratio part: 35 ÷ 5 = 7. Now, multiply the ratio part for b by this multiplier: 2 × 7 = 14."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a recipe, the ratio of sugar to flour is 2:5. If 18 grams of sugar are used, how much flour is needed?",
+      "options": [
+        "36 g",
+        "30 g",
+        "45 g",
+        "50 g"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of sugar to flour is 2:5. We have 18g of sugar, which corresponds to the '2' part of the ratio. Find the value of one part: 18 g ÷ 2 = 9 g. The amount of flour corresponds to the '5' part, so calculate 5 × 9 g = 45 g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If 6 identical books cost $15, what is the cost of 10 of these books?",
+      "options": [
+        "$20",
+        "$24",
+        "$25",
+        "$30"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is a direct proportion problem. First, find the cost of one book: $15 \\div 6 = $2.50. Then, multiply the cost of one book by the desired number of books: $2.50 \\times 10 = $25."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that y is directly proportional to x, and y = 18 when x = 6. What is the value of y when x = 10?",
+      "options": [
+        "24",
+        "30",
+        "36",
+        "20"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For direct proportion, y = kx, where k is the constant of proportionality. First, find k using the given values: 18 = k × 6, so k = 18 ÷ 6 = 3. Now use this constant to find y when x = 10: y = 3 × 10 = 30."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "y is inversely proportional to x. When x = 4, y = 12. Find the value of y when x = 8.",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "24"
+      ],
+      "correctAnswer": 2,
+      "explanation": "For inverse proportion, y = k/x, or xy = k. First, find the constant k using the initial values: k = 4 × 12 = 48. Now use this constant to find y when x = 8: y = 48 ÷ 8 = 6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A mixture of paint contains red and blue paint in the ratio 4:1. If the total volume is 25 litres, what is the volume of blue paint?",
+      "options": [
+        "4 L",
+        "5 L",
+        "6 L",
+        "10 L"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The ratio of red to blue is 4:1. The total number of parts is 4 + 1 = 5. The total volume is 25 litres. The value of one part is 25 L ÷ 5 = 5 L. The blue paint corresponds to 1 part, so there are 5 L of blue paint."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two workers share a payment of $420 in the ratio 3:4. What is the value of the larger share?",
+      "options": [
+        "$160",
+        "$180",
+        "$240",
+        "$280"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The total number of parts is 3 + 4 = 7. The value of one part is $420 \\div 7 = $60. The larger share corresponds to the '4' in the ratio. The value is 4 × ${60 = }$240."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A map has a scale of 1:50000. What is the actual distance in kilometres if the distance on the map is 3 cm?",
+      "options": [
+        "0.5 km",
+        "1.0 km",
+        "1.5 km",
+        "2.0 km"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The scale 1:50000 means 1 cm on the map represents 50000 cm in reality. The actual distance for 3 cm is 3 × 50000 cm = 150000 cm. To convert cm to km, divide by 100,000. 150000 cm ÷ 100000 = 1.5 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following offers better value for money: 500g of flour for ${3.00 or 750g of flour for }$4.80?",
+      "options": [
+        "The 500g bag",
+        "The 750g bag",
+        "They are the same value",
+        "Cannot be determined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To compare value, calculate the price per unit. For the 500g bag: ${3.00 / 500g = }$0.006/g. For the 750g bag: ${4.80 / 750g = }$0.0064/g. Since ${0.006 is less than }$0.0064, the 500g bag is better value."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two numbers are in the ratio 2:7. If the larger number is 63, what is the smaller number?",
+      "options": [
+        "14",
+        "18",
+        "21",
+        "28"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The larger number, 63, corresponds to the '7' part of the ratio. The value of one part is 63 ÷ 7 = 9. The smaller number corresponds to the '2' part. Its value is 2 × 9 = 18."
+    }
+  ]
+}

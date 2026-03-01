@@ -148,7 +148,7 @@
         "141.9 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2${ into your calculator. The result is $145.267...} \\text{cm}^2$. Rounding to one decimal place gives $145.3 \\text{cm}^2$."
+      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2$ into your calculator. The result is $145.267... \\text{cm}^2$. Rounding to one decimal place gives $145.3 \\text{cm}^2$."
     }
   ]
 }

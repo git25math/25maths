@@ -1,0 +1,88 @@
+{
+  "pack": "quadratics-mastery-pack",
+  "module": "01-structured-workbook",
+  "pack_name": "quadratics-mastery-pack",
+  "module_name": "01-structured-workbook",
+  "content_version": "1.0.0",
+  "build_version": "demo-c",
+  "build_ref": "1.0.0/demo-c",
+  "built_at": "2026-02-27T00:01:17Z",
+  "built_at_utc": "2026-02-27T00:01:17Z",
+  "git_commit": "f6feb42",
+  "git_dirty": true,
+  "release_channel": "release",
+  "tex_engine": "pdflatex",
+  "tex_commands": [
+    [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory=/private/var/folders/c8/rf7ychgn7wsgyf5d1kz9xg480000gn/T/mastery-build-6sej6t4y",
+      "structured-workbook.tex"
+    ],
+    [
+      "pdflatex",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "-output-directory=/private/var/folders/c8/rf7ychgn7wsgyf5d1kz9xg480000gn/T/mastery-build-6sej6t4y",
+      "structured-workbook.tex"
+    ]
+  ],
+  "tex_primary_command": [
+    "pdflatex",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-output-directory=/private/var/folders/c8/rf7ychgn7wsgyf5d1kz9xg480000gn/T/mastery-build-6sej6t4y",
+    "structured-workbook.tex"
+  ],
+  "compare_baseline_ref": "1.0.0/demo-b",
+  "compare_diff_path": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/diffs/1.0.0__demo-b_to_1.0.0__demo-c",
+  "compare_semantically_equal": "true",
+  "compare_error": "",
+  "engine": "pdflatex",
+  "runs": 2,
+  "source_tex": "payhip/presale/mastery-series/quadratics-mastery-pack/modules/01-structured-workbook/structured-workbook.tex",
+  "artifact_dir": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/1.0.0/demo-c",
+  "output_pdf": {
+    "path": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/1.0.0/demo-c/01-structured-workbook.pdf",
+    "sha256": "db189efcffc517a812c67b080a7f9b02d57bda0ea4d0a53370da6cd1b83e8f21",
+    "pages": 5,
+    "size_bytes": 198275
+  },
+  "pdf": {
+    "path": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/1.0.0/demo-c/01-structured-workbook.pdf",
+    "sha256": "db189efcffc517a812c67b080a7f9b02d57bda0ea4d0a53370da6cd1b83e8f21",
+    "pages": 5,
+    "size_bytes": 198275
+  },
+  "input_sources": [
+    {
+      "path": "payhip/presale/mastery-series/_templates/latex/mastery-style.sty",
+      "sha256": "57a1a397dfb54cbc863cecb4dee796475a347d31fa3f2449e7f0d8a6b3a9c1e8",
+      "bytes": "6010"
+    },
+    {
+      "path": "payhip/presale/mastery-series/quadratics-mastery-pack/modules/01-structured-workbook/structured-workbook.tex",
+      "sha256": "6fb9eec484a4f311cf6efe397db792458dde15d63c355dc540c2e48664c43fb9",
+      "bytes": "5192"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "payhip/presale/mastery-series/_templates/latex/mastery-style.sty",
+      "sha256": "57a1a397dfb54cbc863cecb4dee796475a347d31fa3f2449e7f0d8a6b3a9c1e8",
+      "bytes": "6010"
+    },
+    {
+      "path": "payhip/presale/mastery-series/quadratics-mastery-pack/modules/01-structured-workbook/structured-workbook.tex",
+      "sha256": "6fb9eec484a4f311cf6efe397db792458dde15d63c355dc540c2e48664c43fb9",
+      "bytes": "5192"
+    }
+  ],
+  "compare_result": {
+    "from_ref": "1.0.0/demo-b",
+    "path": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/diffs/1.0.0__demo-b_to_1.0.0__demo-c",
+    "semantically_equal": true
+  },
+  "release_marked_at_utc": "2026-02-27T00:02:44Z"
+}

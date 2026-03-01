@@ -1,0 +1,154 @@
+{
+  "topic": "compound shapes and parts of shapes",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:mensuration-c5:c5-05-compound-shapes-and-parts-of-shapes",
+  "syllabusCode": "C5-05",
+  "tier": "Core",
+  "domain": "mensuration",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A compound shape is made by joining a 10 cm by 4 cm rectangle and a 3 cm by 2 cm rectangle without overlap. What is the total area of the shape?",
+      "options": [
+        "46 cm²",
+        "78 cm²",
+        "34 cm²",
+        "19 cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The total area is the sum of the areas of the two rectangles. Area = (10 × 4) + (3 × 2) = 40 + 6 = 46 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A square hole with a side length of 2 cm is cut from a rectangular piece of card measuring 12 cm by 7 cm. What is the area of the remaining card?",
+      "options": [
+        "88 cm²",
+        "82 cm²",
+        "80 cm²",
+        "50 cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Subtract the area of the hole from the area of the rectangle. Area = (12 × 7) - (2 × 2) = 84 - 4 = 80 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate the area of a semicircle with a radius of 6 cm. Leave your answer in terms of $\\pi$.",
+      "options": [
+        "36$\\pi$ cm²",
+        "18$\\pi$ cm²",
+        "12$\\pi$ cm²",
+        "6$\\pi$ cm²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The area of a full circle is $\\pi$$r^2$. The area of a semicircle is half of that. Area = (1/2) × $\\pi \\times 6^2$ = (1/2) × 36$\\pi$ = 18$\\pi$ cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the area of a quarter circle with a radius of 8 cm. Leave your answer in terms of $\\pi$.",
+      "options": [
+        "64$\\pi$ cm²",
+        "32$\\pi$ cm²",
+        "16$\\pi$ cm²",
+        "8$\\pi$ cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The area of a quarter circle is one fourth of the area of a full circle. Area = (1/4) × $\\pi \\times 8^2$ = (1/4) × 64$\\pi$ = 16$\\pi$ cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A circular ring (annulus) has an outer radius of 10 cm and an inner radius of 6 cm. What is the area of the ring? Leave your answer in terms of $\\pi$.",
+      "options": [
+        "16$\\pi$ cm²",
+        "100$\\pi$ cm²",
+        "36$\\pi$ cm²",
+        "64$\\pi$ cm²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The area of the ring is the area of the outer circle minus the area of the inner circle. Area = $\\pi$($R^2 - r^2$) = $\\pi$($10^2 - 6^2$) = $\\pi$(100 - 36) = 64$\\pi$ cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the perimeter of a semicircle with a radius of 5 cm, including the straight diameter. Leave your answer in terms of $\\pi$.",
+      "options": [
+        "5$\\pi$ cm",
+        "5$\\pi$ + 10 cm",
+        "10$\\pi$ cm",
+        "10$\\pi$ + 10 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The perimeter consists of the curved arc and the straight diameter. Arc length = (1/2) × 2$\\pi$r = $\\pi$ × 5 = 5$\\pi$. Diameter = 2r = 10. Total perimeter = 5$\\pi$ + 10 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A composite shape consists of a rectangle with dimensions 10 cm by 6 cm, with a triangle on top. The base of the triangle is 10 cm, and its height is 4 cm. What is the total area of the composite shape?",
+      "options": [
+        "80 cm²",
+        "70 cm²",
+        "90 cm²",
+        "100 cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Area of rectangle = 10 × 6 = 60 cm². Area of triangle = (1/2) × base × height = (1/2) × 10 × 4 = 20 cm². Total area = 60 + 20 = 80 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An L-shaped polygon is made by removing a 4 cm by 5 cm rectangle from the corner of a 10 cm by 8 cm rectangle. What is the area of the polygon?",
+      "options": [
+        "80 cm²",
+        "60 cm²",
+        "100 cm²",
+        "18 cm²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Subtract the area of the removed rectangle from the area of the larger rectangle. Area = (10 × 8) - (4 × 5) = 80 - 20 = 60 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two identical cubes, each with a side length of 3 cm, are joined together face-to-face to form a cuboid. What is the volume of the resulting cuboid?",
+      "options": [
+        "27 cm³",
+        "54 cm³",
+        "216 cm³",
+        "18 cm³"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The volume of one cube is $3^3$ = 27 cm³. Since two cubes are joined, the total volume is 2 × 27 = 54 cm³. Alternatively, the new cuboid has dimensions 6 cm × 3 cm × 3 cm, so Volume = 6 × 3 × 3 = 54 cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Two identical cubes, each with a side length of 3 cm, are joined together face-to-face to form a cuboid. What is the total surface area of the new cuboid?",
+      "options": [
+        "108 cm²",
+        "54 cm²",
+        "90 cm²",
+        "72 cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Each cube has a surface area of 6 × $3^2$ = 54 cm². When joined, two faces are covered. The area of one face is $3^2$ = 9 cm². So, the total surface area is (2 × 54) - (2 × 9) = 108 - 18 = 90 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shape is formed by a 14 cm by 10 cm rectangle and a semicircle. The diameter of the semicircle is 14 cm and it's attached to a 14 cm side of the rectangle. Calculate the total area. (Use $\\pi$ = 22/7)",
+      "options": [
+        "140 cm²",
+        "294 cm²",
+        "448 cm²",
+        "217 cm²"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Area of rectangle = 14 × 10 = 140. Radius of semicircle = 14/2 = 7. Area of semicircle = (1/2) × (22/7) × $7^2$ = 77. Total area = 140 + 77 = 217 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A shape is formed by a 14 cm by 10 cm rectangle and a semicircle. The diameter of the semicircle is 14 cm and it's attached to a 14 cm side of the rectangle. Calculate the perimeter. (Use $\\pi$ = 22/7)",
+      "options": [
+        "56 cm",
+        "70 cm",
+        "48 cm",
+        "78 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The perimeter is composed of three sides of the rectangle and the semicircle's arc. Perimeter = 10 + 14 + 10 + (1/2 × (22/7) × 14) = 34 + 22 = 56 cm."
+    }
+  ]
+}

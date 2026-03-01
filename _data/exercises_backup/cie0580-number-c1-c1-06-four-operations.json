@@ -1,0 +1,154 @@
+{
+  "topic": "four operations",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-c1:c1-06-four-operations",
+  "syllabusCode": "C1-06",
+  "tier": "Core",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: -4 + 9",
+      "options": [
+        "-13",
+        "-5",
+        "5",
+        "13"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Starting at -4 on the number line and moving 9 places to the right gives 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: 15 - (-7)",
+      "options": [
+        "8",
+        "-8",
+        "22",
+        "-22"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Subtracting a negative number is the same as adding the positive. So, 15 - (-7) becomes 15 + 7 = 22."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: -6 × 4",
+      "options": [
+        "-24",
+        "24",
+        "-10",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A negative number multiplied by a positive number gives a negative result. 6 × 4 = 24, so the answer is -24."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: -20 ÷ (-5)",
+      "options": [
+        "-4",
+        "4",
+        "-15",
+        "15"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A negative number divided by a negative number gives a positive result. 20 ÷ 5 = 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: $(-2)^3$",
+      "options": [
+        "8",
+        "-8",
+        "-6",
+        "6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This means (-2) × (-2) × (-2). (-2) × (-2) = 4. Then 4 × (-2) = -8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of -$2^4$?",
+      "options": [
+        "16",
+        "-16",
+        "8",
+        "-8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "According to the order of operations (BIDMAS/PEMDAS), powers are calculated before the negative sign is applied. So, we calculate $2^4$ = 16 first, and then the expression becomes -16."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: 7 - 12 + 5",
+      "options": [
+        "0",
+        "-10",
+        "10",
+        "24"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Work from left to right. First, 7 - 12 = -5. Then, -5 + 5 = 0."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: -18 ÷ 3 × (-2)",
+      "options": [
+        "-12",
+        "12",
+        "3",
+        "-3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Division and multiplication have equal priority, so we work from left to right. First, -18 ÷ 3 = -6. Then, -6 × (-2) = 12."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate: 4 - [6 - (3 - 8)]",
+      "options": [
+        "-7",
+        "7",
+        "9",
+        "-9"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Start with the innermost bracket: (3 - 8) = -5. The expression becomes 4 - [6 - (-5)]. Then 6 - (-5) = 6 + 5 = 11. Finally, 4 - 11 = -7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The temperature drops from 3°C to -4°C. What is the change in temperature?",
+      "options": [
+        "7°C",
+        "1°C",
+        "-1°C",
+        "-7°C"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The change is the final temperature minus the initial temperature: -4 - 3 = -7°C."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A diver is at a depth of -12 metres. He rises 5 metres. What is his new depth?",
+      "options": [
+        "-17 m",
+        "-7 m",
+        "7 m",
+        "17 m"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rising is a positive movement. The new depth is -12 + 5 = -7 metres."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A company's daily profit/loss in thousands of dollars was -8, +3 and -6 on three consecutive days. What was the total profit/loss?",
+      "options": [
+        "-$11,000",
+        "-$1,000",
+        "$1,000",
+        "$11,000"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Sum the values: -8 + 3 - 6. First, -8 + 3 = -5. Then, -5 - 6 = -11. This represents a loss of $11,000."
+    }
+  ]
+}

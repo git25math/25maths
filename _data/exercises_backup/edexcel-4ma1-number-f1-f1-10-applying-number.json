@@ -1,0 +1,154 @@
+{
+  "topic": "Applying number",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-f1:f1-10-applying-number",
+  "syllabusCode": "F1-10",
+  "tier": "Foundation",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A smartphone costs £350. A case costs £15.50 and screen protector costs £7.99. How much does it cost to buy all three items?",
+      "options": [
+        "£373.49",
+        "£363.49",
+        "£358.49",
+        "£372.59"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To find the total cost, add the prices of the three items: £350 + £15.50 + £7.99 = £373.49."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A recipe for 4 people requires 120g of flour. How much flour is needed for 10 people?",
+      "options": [
+        "240g",
+        "300g",
+        "360g",
+        "480g"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, find the amount of flour for one person: 120g / 4 = 30g. Then, multiply by the new number of people: 30g * 10 = 300g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A train journey starts at 09:45 and finishes at 11:15. How long is the journey in minutes?",
+      "options": [
+        "60 minutes",
+        "70 minutes",
+        "80 minutes",
+        "90 minutes"
+      ],
+      "correctAnswer": 3,
+      "explanation": "From 09:45 to 10:45 is 60 minutes. From 10:45 to 11:15 is another 30 minutes. Total time is 60 + 30 = 90 minutes."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Sami works for 8 hours at a rate of £11.50 per hour. He has a 30-minute unpaid break. How much does he earn?",
+      "options": [
+        "£92.00",
+        "£86.25",
+        "£97.75",
+        "£80.50"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sami is paid for 8 hours - 0.5 hours = 7.5 hours. His total earnings are 7.5 * £11.50 = £86.25."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A pack of 6 pens costs £1.80. A pack of 9 pens costs £2.88. Which pack offers better value for money?",
+      "options": [
+        "The pack of 6 is better value",
+        "The pack of 9 is better value",
+        "Both are the same value",
+        "It cannot be determined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cost per pen for the 6-pack: £1.80 / 6 = £0.30 (or 30p). Cost per pen for the 9-pack: £2.88 / 9 = £0.32 (or 32p). The pack of 6 is cheaper per pen, so it is better value."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A car travels 150 miles in 3 hours. What is its average speed in miles per hour?",
+      "options": [
+        "45 mph",
+        "50 mph",
+        "60 mph",
+        "450 mph"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Average speed is calculated as Total Distance / Total Time. So, 150 miles / 3 hours = 50 mph."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The exchange rate is £1 = $1.25. How many dollars would you get for £200?",
+      "options": [
+        "$160",
+        "$225",
+        "$250",
+        "$275"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To convert pounds to dollars, multiply the amount in pounds by the exchange rate: £200 * 1.25 = $250."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An electricity bill has a standing charge of £12 and a cost of 20p per unit. If a household uses 300 units, what is the total bill?",
+      "options": [
+        "£60.12",
+        "£72.00",
+        "£312.20",
+        "£60.00"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, calculate the cost of the units: 300 * 20p = 6000p, which is £60.00. Then, add the standing charge: £60.00 + £12 = £72.00."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A cinema has 25 rows of seats with 18 seats in each row. If 400 people are in the cinema, how many seats are empty?",
+      "options": [
+        "450",
+        "150",
+        "50",
+        "25"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, find the total number of seats: 25 rows * 18 seats/row = 450 seats. Then, subtract the number of people to find the empty seats: 450 - 400 = 50 seats."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Ben buys a bike for £80 and sells it for £100. What is his percentage profit?",
+      "options": [
+        "20%",
+        "25%",
+        "80%",
+        "125%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The profit is £100 - £80 = £20. The percentage profit is (Profit / Original Cost) * 100 = (£20 / £80) * 100 = 0.25 * 100 = 25%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A phone plan costs £15 per month and includes 5GB of data. Extra data is £2 per GB. If a user uses 7GB in a month, what is their bill?",
+      "options": [
+        "£17",
+        "£19",
+        "£29",
+        "£22"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The user has used 7GB - 5GB = 2GB of extra data. The cost for this is 2 * £2 = £4. The total bill is the plan cost plus the extra data cost: £15 + £4 = £19."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Four friends share a taxi fare of £23.60 equally. How much does each person pay?",
+      "options": [
+        "£5.80",
+        "£5.90",
+        "£6.00",
+        "£5.60"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To find out how much each person pays, divide the total fare by the number of friends: £23.60 / 4 = £5.90."
+    }
+  ]
+}

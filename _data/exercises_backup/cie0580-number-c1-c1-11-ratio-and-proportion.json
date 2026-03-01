@@ -1,0 +1,154 @@
+{
+  "topic": "ratio and proportion",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-c1:c1-11-ratio-and-proportion",
+  "syllabusCode": "C1-11",
+  "tier": "Core",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Simplify the ratio 18:24.",
+      "options": [
+        "3:4",
+        "4:3",
+        "9:12",
+        "2:3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To simplify a ratio, find the greatest common divisor (GCD) of both numbers. The GCD of 18 and 24 is 6. Divide both numbers by 6: 18 ÷ 6 = 3 and 24 ÷ 6 = 4. So the simplest form is 3:4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Divide $56 in the ratio 3:4. What is the value of the smaller part?",
+      "options": [
+        "$21",
+        "$24",
+        "$28",
+        "$32"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The total number of parts is 3 + 4 = 7. One part is worth $56 \\div 7 = $8. The smaller part is 3 parts, so 3 × ${8 = }$24."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A sum of money is shared in the ratio 2:3. The larger part is $54. What is the total sum of money?",
+      "options": [
+        "$36",
+        "$81",
+        "$90",
+        "$135"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The larger part corresponds to 3 parts in the ratio. If 3 parts = ${54, then 1 part = }$54 ÷ 3 = $18. The total number of parts is 2 + 3 = 5. The total sum is 5 \\times $18 = $90."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The ratio a:b is 5:2. If a = 35, what is the value of b?",
+      "options": [
+        "10",
+        "14",
+        "70",
+        "7"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The ratio 5:2 means for every 5 units of a, there are 2 units of b. To get from 5 to 35, we multiply by 7 (35 ÷ 5 = 7). So, we must also multiply b's part of the ratio by 7: 2 × 7 = 14."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Write the ratio 0.45 : 0.3 in its simplest integer form.",
+      "options": [
+        "3:2",
+        "2:3",
+        "45:30",
+        "9:6"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, make the numbers integers by multiplying both by 100: 45:30. Then, simplify by dividing by their greatest common divisor, which is 15. 45 ÷ 15 = 3 and 30 ÷ 15 = 2. The simplest ratio is 3:2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a recipe, the ratio of sugar to flour is 2:5. If 180g of sugar is used, how much flour is needed?",
+      "options": [
+        "72g",
+        "360g",
+        "450g",
+        "900g"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio is sugar:flour = 2:5. If 2 parts equal 180g, then 1 part is 180g ÷ 2 = 90g. Flour is 5 parts, so 5 × 90g = 450g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If 6 books cost $15, how much will 10 books cost?",
+      "options": [
+        "$20",
+        "$22.50",
+        "$25",
+        "$30"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is a direct proportion problem. First, find the cost of one book: $15 \\div 6 = $2.50. Then, multiply by the desired number of books: 10 × ${2.50 = }$25."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "y is directly proportional to x. When y = 18, x = 6. What is the value of y when x = 10?",
+      "options": [
+        "24",
+        "30",
+        "36",
+        "20"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Direct proportion means y = kx, where k is a constant. First, find k: 18 = k × 6, so k = 18 ÷ 6 = 3. The formula is y = 3x. Now find y when x = 10: y = 3 × 10 = 30."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "y is inversely proportional to x. When y = 12, x = 4. What is the value of y when x = 8?",
+      "options": [
+        "3",
+        "24",
+        "4",
+        "6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Inverse proportion means y = k/x, where k is a constant. First, find k: 12 = k ÷ 4, so k = 12 × 4 = 48. The formula is y = 48/x. Now find y when x = 8: y = 48 ÷ 8 = 6."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which is the better value for money: 500g of pasta for ${3.00 or 750g for }$4.80?",
+      "options": [
+        "The 500g bag",
+        "The 750g bag",
+        "They are the same value",
+        "Cannot be determined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To compare, find the price per gram (or per 100g). For the 500g bag: ${3.00 / 500g = }$0.006 per gram. For the 750g bag: ${4.80 / 750g = }$0.0064 per gram. Since ${0.006 is less than }$0.0064, the 500g bag is better value."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A map has a scale of 1:50 000. A distance on the map is 3 cm. What is the actual distance in kilometers?",
+      "options": [
+        "0.15 km",
+        "1.5 km",
+        "15 km",
+        "150 km"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The scale 1:50 000 means 1 cm on the map represents 50 000 cm in reality. The actual distance is 3 cm × 50 000 = 150 000 cm. To convert to kilometers, divide by 100 (for meters) and then by 1000 (for kilometers): 150 000 cm ÷ 100 = 1500 m. 1500 m ÷ 1000 = 1.5 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A drink is made by mixing juice and water in the ratio 3:7. If you have 210 ml of juice, how much water do you need?",
+      "options": [
+        "90 ml",
+        "300 ml",
+        "490 ml",
+        "700 ml"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The ratio of juice to water is 3:7. If 3 parts correspond to 210 ml of juice, then 1 part is 210 ml ÷ 3 = 70 ml. You need 7 parts of water, so 7 × 70 ml = 490 ml."
+    }
+  ]
+}

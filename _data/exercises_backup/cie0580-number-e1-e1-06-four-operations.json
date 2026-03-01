@@ -1,0 +1,154 @@
+{
+  "topic": "four operations",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-e1:e1-06-four-operations",
+  "syllabusCode": "E1-06",
+  "tier": "Extended",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate the value of -4 + 9.",
+      "options": [
+        "-13",
+        "-5",
+        "5",
+        "13"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Starting at -4 on the number line and moving 9 units in the positive direction gives 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate 15 - (-7).",
+      "options": [
+        "8",
+        "-8",
+        "22",
+        "-22"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Subtracting a negative number is equivalent to adding the positive. So, 15 - (-7) becomes 15 + 7, which equals 22."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the result of -6 × 4?",
+      "options": [
+        "-24",
+        "24",
+        "-10",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A negative number multiplied by a positive number results in a negative product. 6 × 4 = 24, so -6 × 4 = -24."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate -20 ÷ (-5).",
+      "options": [
+        "-4",
+        "4",
+        "5",
+        "-5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dividing a negative number by another negative number results in a positive quotient. 20 ÷ 5 = 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate -3 + (-8).",
+      "options": [
+        "5",
+        "-11",
+        "-5",
+        "11"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Adding a negative number is equivalent to subtraction. So, -3 + (-8) is the same as -3 - 8, which equals -11."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of $(-2)^3$?",
+      "options": [
+        "8",
+        "-8",
+        "-6",
+        "6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The expression $(-2)^3$ means (-2) × (-2) × (-2). (-2) × (-2) = 4. Then, 4 × (-2) = -8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate 7 - 12 + 5.",
+      "options": [
+        "0",
+        "-10",
+        "14",
+        "-24"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Following the order of operations from left to right: first calculate 7 - 12 = -5, then calculate -5 + 5 = 0."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate -18 ÷ 3 × (-2).",
+      "options": [
+        "-12",
+        "12",
+        "-3",
+        "3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Perform division and multiplication from left to right. First, -18 ÷ 3 = -6. Then, -6 × (-2) = 12."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate 4 - [6 - (3 - 8)].",
+      "options": [
+        "-7",
+        "5",
+        "3",
+        "-5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Start with the innermost bracket: 3 - 8 = -5. The expression becomes 4 - [6 - (-5)], which is 4 - [6 + 5] = 4 - 11. The result is -7."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of -5 × (2 - 9)?",
+      "options": [
+        "-35",
+        "35",
+        "-45",
+        "25"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, evaluate the expression inside the brackets: 2 - 9 = -7. Then, multiply -5 × (-7), which gives 35."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The temperature in a city dropped from 3°C to -4°C. What was the change in temperature?",
+      "options": [
+        "-7°C",
+        "+7°C",
+        "-1°C",
+        "+1°C"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The change in temperature is the final temperature minus the initial temperature: -4°C - 3°C = -7°C."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A diver is at a depth of -12 metres. The diver rises 5 metres. What is the diver's new level?",
+      "options": [
+        "-17 m",
+        "-7 m",
+        "7 m",
+        "17 m"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The initial position is -12 m. Rising 5 metres is represented by adding 5. The new level is -12 + 5 = -7 metres."
+    }
+  ]
+}

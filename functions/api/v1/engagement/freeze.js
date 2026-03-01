@@ -5,13 +5,7 @@ import {
   upsertUserStreak,
   fetchMembershipStatus,
 } from '../../../_lib/supabase_server.js';
-
-function formatDateStr(date) {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
-}
+import { formatDateStr } from '../../../_lib/date_utils.js';
 
 function isMembershipActive(record) {
   if (!record) return false;

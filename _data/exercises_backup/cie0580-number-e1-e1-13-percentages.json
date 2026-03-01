@@ -1,0 +1,154 @@
+{
+  "topic": "percentages",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:number-e1:e1-13-percentages",
+  "syllabusCode": "E1-13",
+  "tier": "Extended",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Convert the decimal 0.85 into a percentage.",
+      "options": [
+        "8.5%",
+        "85%",
+        "0.85%",
+        "850%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To convert a decimal to a percentage, you multiply the decimal by 100. So, 0.85 * 100 = 85%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express 42% as a decimal.",
+      "options": [
+        "0.42",
+        "4.2",
+        "0.042",
+        "42.0"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To convert a percentage to a decimal, you divide the percentage by 100. So, 42 / 100 = 0.42."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is 3/8 expressed as a percentage?",
+      "options": [
+        "38%",
+        "37.5%",
+        "0.375%",
+        "3.8%"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To convert a fraction to a percentage, first divide the numerator by the denominator to get a decimal (3 ÷ 8 = 0.375), then multiply by 100. So, 0.375 * 100 = 37.5%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate 15% of 280.",
+      "options": [
+        "35",
+        "40",
+        "42",
+        "56"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To find the percentage of a number, convert the percentage to a decimal and multiply by the number. 15% is 0.15. So, 0.15 * 280 = 42."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Increase 240 by 30%.",
+      "options": [
+        "72",
+        "270",
+        "312",
+        "292"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A 30% increase means you have 130% of the original value. Convert 130% to a decimal (1.30) and multiply by the original number. So, 240 * 1.30 = 312."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Decrease 500 by 8%.",
+      "options": [
+        "492",
+        "460",
+        "40",
+        "450"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A decrease of 8% means you are left with 92% of the original amount (100% - 8%). Convert 92% to a decimal (0.92) and multiply. So, 500 * 0.92 = 460."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "40% of a certain number is 90. What is the number?",
+      "options": [
+        "36",
+        "225",
+        "250",
+        "360"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Let the number be 'x'. The equation is 0.40 * x = 90. To find x, divide both sides by 0.40. So, x = 90 / 0.40 = 225."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A student's score improved from 60 to 75. What is the percentage increase in the score?",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The increase in score is 75 - 60 = 15. To find the percentage increase, use the formula (Increase / Original Value) * 100. So, (15 / 60) * 100 = 0.25 * 100 = 25%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "After a 20% discount, a jacket costs $96. What was the original price of the jacket?",
+      "options": [
+        "$115.20",
+        "$120",
+        "$76.80",
+        "$116"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A 20% discount means the sale price is 80% of the original price. Let 'P' be the original price. The equation is 0.80 * P = 96. To find P, divide 96 by 0.80. So, P = 96 / 0.80 = $120."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express 18 as a percentage of 45.",
+      "options": [
+        "25%",
+        "36%",
+        "40%",
+        "45%"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To express one quantity as a percentage of another, use the formula (Part / Whole) * 100. So, (18 / 45) * 100 = 0.4 * 100 = 40%."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A simple interest of 5% per year is earned on an investment of $800. What is the total value of the investment after 3 years?",
+      "options": [
+        "$920",
+        "$840",
+        "$120",
+        "$926.10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The interest per year is 5% of ${800, which is 0.05 * 800 = }$40. Over 3 years, the total simple interest is 3 * ${40 = }$120. The total value is the principal plus the interest: ${800 + }$120 = $920."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following values is the smallest?",
+      "options": [
+        "0.65",
+        "2/3",
+        "66%",
+        "0.667"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To compare the values, convert them all to a consistent format, such as decimals. 2/3 is approximately 0.666...; 66% is 0.66; 0.667 is 0.667. Comparing 0.65, 0.666..., 0.66, and 0.667, the smallest value is 0.65."
+    }
+  ]
+}

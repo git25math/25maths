@@ -7,13 +7,8 @@ import {
   listAchievementDefinitions,
   serviceHeaders,
 } from '../../../_lib/supabase_server.js';
-
-function formatDateStr(date) {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
-}
+import { computeLevel } from '../../../_lib/achievement_evaluator.js';
+import { formatDateStr } from '../../../_lib/date_utils.js';
 
 function weekBounds() {
   const now = new Date();
@@ -234,16 +229,7 @@ export async function onRequestGet(context) {
 
   // XP and level
   const totalXp = xpRecord ? xpRecord.total_xp || 0 : 0;
-  const LEVEL_THRESHOLDS = [
-    0, 50, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000,
-  ];
-  let level = 1;
-  for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
-    if (totalXp >= LEVEL_THRESHOLDS[i]) {
-      level = i + 1;
-      break;
-    }
-  }
+  const level = computeLevel(totalXp);
 
   return jsonResponse({
     report_period: {

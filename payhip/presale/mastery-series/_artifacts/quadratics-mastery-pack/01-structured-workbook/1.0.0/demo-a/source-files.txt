@@ -1,0 +1,2 @@
+57a1a397dfb54cbc863cecb4dee796475a347d31fa3f2449e7f0d8a6b3a9c1e8  payhip/presale/mastery-series/_templates/latex/mastery-style.sty
+6fb9eec484a4f311cf6efe397db792458dde15d63c355dc540c2e48664c43fb9  payhip/presale/mastery-series/quadratics-mastery-pack/modules/01-structured-workbook/structured-workbook.tex

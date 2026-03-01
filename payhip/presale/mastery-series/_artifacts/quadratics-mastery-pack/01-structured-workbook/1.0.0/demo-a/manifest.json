@@ -1,0 +1,32 @@
+{
+  "pack_name": "quadratics-mastery-pack",
+  "module_name": "01-structured-workbook",
+  "content_version": "1.0.0",
+  "build_version": "demo-a",
+  "build_ref": "1.0.0/demo-a",
+  "built_at_utc": "2026-02-26T22:11:18Z",
+  "git_commit": "f5f4a93",
+  "git_dirty": true,
+  "engine": "pdflatex",
+  "runs": 2,
+  "source_tex": "payhip/presale/mastery-series/quadratics-mastery-pack/modules/01-structured-workbook/structured-workbook.tex",
+  "artifact_dir": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/1.0.0/demo-a",
+  "pdf": {
+    "path": "payhip/presale/mastery-series/_artifacts/quadratics-mastery-pack/01-structured-workbook/1.0.0/demo-a/01-structured-workbook.pdf",
+    "sha256": "f1103fdd31987b7a06df61a945d85c78ccfe708b47f1c2a182e2c1c4630d2f4a",
+    "pages": 5,
+    "size_bytes": 198275
+  },
+  "source_files": [
+    {
+      "path": "payhip/presale/mastery-series/_templates/latex/mastery-style.sty",
+      "sha256": "57a1a397dfb54cbc863cecb4dee796475a347d31fa3f2449e7f0d8a6b3a9c1e8",
+      "bytes": "6010"
+    },
+    {
+      "path": "payhip/presale/mastery-series/quadratics-mastery-pack/modules/01-structured-workbook/structured-workbook.tex",
+      "sha256": "6fb9eec484a4f311cf6efe397db792458dde15d63c355dc540c2e48664c43fb9",
+      "bytes": "5192"
+    }
+  ]
+}

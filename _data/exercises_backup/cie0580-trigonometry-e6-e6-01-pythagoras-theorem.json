@@ -1,0 +1,154 @@
+{
+  "topic": "Pythagoras' Theorem",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:trigonometry-e6:e6-01-pythagoras-theorem",
+  "syllabusCode": "E6-01",
+  "tier": "Extended",
+  "domain": "trigonometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "In a right-angled triangle, the two shorter sides have lengths 9 cm and 12 cm. What is the length of the hypotenuse?",
+      "options": [
+        "15 cm",
+        "21 cm",
+        "10.5 cm",
+        "144 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "By Pythagoras' theorem, $hypotenuse^2 = 9^2 + 12^2$ = 81 + 144 = 225. The length of the hypotenuse is the square root of 225, which is 15 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A right-angled triangle has a hypotenuse of length 25 cm and one shorter side of length 7 cm. What is the length of the other shorter side?",
+      "options": [
+        "24 cm",
+        "18 cm",
+        "25.9 cm",
+        "576 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Let the missing side be 'a'. By Pythagoras' theorem, $a^2 + 7^2 = 25^2$. So, $a^2 = 25^2 - 7^2$ = 625 - 49 = 576. The length of the side is the square root of 576, which is 24 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the distance between the coordinates (-1, -2) and (5, 6)?",
+      "options": [
+        "10",
+        "14",
+        "8",
+        "100"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The change in x is 5 - (-1) = 6. The change in y is 6 - (-2) = 8. The distance is √($6^2 + 8^2$) = $\\sqrt{36 + 64} = \\sqrt{100}$ = 10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangle has a length of 15 cm and a width of 8 cm. What is the length of its diagonal?",
+      "options": [
+        "17 cm",
+        "23 cm",
+        "13 cm",
+        "289 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The diagonal forms the hypotenuse of a right-angled triangle with sides 8 cm and 15 cm. $Diagonal^2 = 8^2 + 15^2$ = 64 + 225 = 289. The length of the diagonal is $\\sqrt{289}$ = 17 cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a right-angled triangle, the hypotenuse is 13 cm and one side is 5 cm. What is the area of the triangle?",
+      "options": [
+        "30 cm²",
+        "65 cm²",
+        "32.5 cm²",
+        "12 cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, find the length of the other side: $a^2 = 13^2 - 5^2$ = 169 - 25 = 144, so a = 12 cm. The area of the triangle is (1/2) * base * height = (1/2) * 5 * 12 = 30 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A 10-metre ladder leans against a vertical wall. The foot of the ladder is 6 metres from the base of the wall. How high up the wall does the ladder reach?",
+      "options": [
+        "8 m",
+        "4 m",
+        "11.7 m",
+        "64 m"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ladder, wall, and ground form a right-angled triangle with the ladder as the hypotenuse. Let the height be h. Then h² + $6^2 = 10^2$. h² = 100 - 36 = 64. So, the height is $\\sqrt{64}$ = 8 m."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Find the length of the space diagonal of a cuboid with side lengths 3 cm, 4 cm, and 5 cm. Give your answer in exact form.",
+      "options": [
+        "$5\\sqrt{2}$ cm",
+        "$\\sqrt{50}$ cm",
+        "12 cm",
+        "$\\sqrt{41}$ cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The formula for the space diagonal (d) is $d^2$ = l² + $w^2$ + h². So, $d^2 = 3^2 + 4^2 + 5^2$ = 9 + 16 + 25 = 50. Therefore, d = $\\sqrt{50} = \\sqrt{25 * 2} = 5\\sqrt{2}$ cm. Option B is numerically correct but not in the simplest exact form."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the distance between the points (3, -1) and (-1, -4)?",
+      "options": [
+        "5",
+        "25",
+        "7",
+        "$\\sqrt{7}$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The change in x is 3 - (-1) = 4. The change in y is -1 - (-4) = 3. The distance is √($4^2 + 3^2$) = $\\sqrt{16 + 9} = \\sqrt{25}$ = 5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A right-angled isosceles triangle has a hypotenuse of 10 cm. What is the length of one of the equal shorter sides? Give your answer in exact form.",
+      "options": [
+        "$5\\sqrt{2}$ cm",
+        "5 cm",
+        "$10\\sqrt{2}$ cm",
+        "$\\sqrt{50}$ cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Let the length of a shorter side be x. Then $x^2 + x^2 = 10^2$. This gives 2$x^2$ = 100, so $x^2$ = 50. The length is x = $\\sqrt{50} = \\sqrt{25 * 2} = 5\\sqrt{2}$ cm."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An aircraft flies 120 km east and then 90 km north. What is its direct distance from its starting point?",
+      "options": [
+        "150 km",
+        "210 km",
+        "30 km",
+        "110 km"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This forms a right-angled triangle. The distance (d) is the hypotenuse. $d^2 = 120^2 + 90^2$ = 14400 + 8100 = 22500. The distance is $\\sqrt{22500}$ = 150 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that x > 0 and $x^2 + 15^2 = 17^2$, find the value of x.",
+      "options": [
+        "8",
+        "2",
+        "32",
+        "64"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Rearrange the equation to find $x^2$. $x^2 = 17^2 - 15^2$ = 289 - 225 = 64. Since x > 0, x is the square root of 64, which is 8."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The area of a right-angled triangle is 54 cm². One of its shorter sides is 12 cm. What is the length of the hypotenuse?",
+      "options": [
+        "15 cm",
+        "9 cm",
+        "18 cm",
+        "21 cm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, find the other shorter side (b). Area = (1/2) * a * b. So, 54 = (1/2) * 12 * b, which simplifies to 54 = 6b. This gives b = 9 cm. Now use Pythagoras' theorem: $hypotenuse^2 = 12^2 + 9^2$ = 144 + 81 = 225. The hypotenuse is $\\sqrt{225}$ = 15 cm."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "topic": "ratio and proportion",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-f1:f1-07-ratio-and-proportion",
+  "syllabusCode": "F1-07",
+  "tier": "Foundation",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Write the ratio 18 : 24 in its simplest form.",
+      "options": [
+        "3 : 4",
+        "9 : 12",
+        "2 : 3",
+        "1 : 1.33"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To simplify a ratio, find the highest common factor (HCF) of the numbers. The HCF of 18 and 24 is 6. Divide both parts of the ratio by 6. 18 ÷ 6 = 3 and 24 ÷ 6 = 4. So the simplest form is 3 : 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Share £45 in the ratio 2 : 7.",
+      "options": [
+        "£10 and £35",
+        "£9 and £36",
+        "£5 and £40",
+        "£15 and £30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, add the parts of the ratio: 2 + 7 = 9 parts. Then, divide the total amount by the number of parts to find the value of one part: £45 ÷ 9 = £5. Finally, multiply the value of one part by each number in the ratio: 2 × £5 = £10 and 7 × £5 = £35."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "In a box of 60 sweets, the ratio of red sweets to blue sweets is 3 : 2. How many red sweets are there?",
+      "options": [
+        "36",
+        "24",
+        "30",
+        "40"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The total number of parts in the ratio is 3 + 2 = 5. Divide the total number of sweets by the total parts: 60 ÷ 5 = 12 sweets per part. The number of red sweets is 3 parts, so 3 × 12 = 36."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The ratio of cats to dogs at a rescue centre is 5 : 4. If there are 20 dogs, how many cats are there?",
+      "options": [
+        "25",
+        "16",
+        "20",
+        "30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ratio for dogs is 4 parts, which equals 20 dogs. To find the value of one part, divide the number of dogs by its ratio part: 20 ÷ 4 = 5. The ratio for cats is 5 parts. Multiply this by the value of one part: 5 × 5 = 25 cats."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A recipe for a fruit smoothie requires bananas and strawberries in the ratio 2 : 3. If 80g of banana is used, how much strawberry is needed?",
+      "options": [
+        "120g",
+        "53g",
+        "240g",
+        "100g"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ratio for bananas is 2 parts, which equals 80g. One part is 80g ÷ 2 = 40g. The ratio for strawberries is 3 parts. So, the amount of strawberry needed is 3 × 40g = 120g."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If 5 pens cost £1.50, how much would 7 pens cost?",
+      "options": [
+        "£2.10",
+        "£2.00",
+        "£1.70",
+        "£2.50"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is a direct proportion problem. First, find the cost of one pen: £1.50 ÷ 5 = £0.30. Then, multiply the cost of one pen by the desired number of pens: 7 × £0.30 = £2.10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The angles in a triangle are in the ratio 1 : 2 : 3. What is the size of the largest angle?",
+      "options": [
+        "90°",
+        "60°",
+        "120°",
+        "30°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The sum of angles in a triangle is 180°. The total number of parts in the ratio is 1 + 2 + 3 = 6. The value of one part is 180° ÷ 6 = 30°. The largest angle corresponds to the largest part of the ratio (3), so its size is 3 × 30° = 90°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "To make a certain shade of green paint, blue paint and yellow paint are mixed in the ratio 4 : 5. If a painter has 20 litres of blue paint, how much yellow paint does he need?",
+      "options": [
+        "25 litres",
+        "16 litres",
+        "20 litres",
+        "45 litres"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ratio for blue paint is 4 parts, which is equal to 20 litres. Therefore, one part is 20 ÷ 4 = 5 litres. The ratio for yellow paint is 5 parts. So, the amount of yellow paint needed is 5 × 5 = 25 litres."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A map has a scale of 1 : 50 000. What is the real distance in kilometres represented by 4 cm on the map?",
+      "options": [
+        "2 km",
+        "20 km",
+        "0.2 km",
+        "200 km"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The scale 1 : 50 000 means 1 cm on the map represents 50 000 cm in reality. So, 4 cm on the map represents 4 × 50 000 = 200 000 cm. To convert cm to km, divide by 100 (for metres) and then by 1000 (for kilometres). 200 000 cm = 2000 m = 2 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Ben and Jerry share some money in the ratio 3 : 5. Jerry gets £12 more than Ben. How much money do they share in total?",
+      "options": [
+        "£48",
+        "£36",
+        "£30",
+        "£18"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Jerry has 5 parts and Ben has 3 parts. The difference is 5 - 3 = 2 parts. These 2 parts are worth £12. So, one part is worth £12 ÷ 2 = £6. The total number of parts is 3 + 5 = 8. The total money shared is 8 × £6 = £48."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "It takes 4 builders 10 days to build a wall. Assuming all builders work at the same rate, how long would it take 8 builders to build the same wall?",
+      "options": [
+        "5 days",
+        "20 days",
+        "8 days",
+        "40 days"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is an inverse proportion problem. More builders means less time. The total work is 4 builders × 10 days = 40 'builder-days'. To find the time for 8 builders, divide the total work by the number of builders: 40 ÷ 8 = 5 days."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The ratio of boys to girls in a school is 7 : 8. There are 420 boys in the school. How many students are there in total?",
+      "options": [
+        "900",
+        "480",
+        "840",
+        "60"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ratio for boys is 7 parts, which equals 420 students. One part is worth 420 ÷ 7 = 60 students. The total number of parts in the ratio is 7 + 8 = 15. The total number of students is 15 × 60 = 900."
+    }
+  ]
+}

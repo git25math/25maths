@@ -1,0 +1,154 @@
+{
+  "topic": "Decimals",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:number-h1:h1-03-decimals",
+  "syllabusCode": "H1-03",
+  "tier": "Higher",
+  "domain": "number",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Convert 0.065 to a fraction in its simplest form.",
+      "options": [
+        "13/200",
+        "65/1000",
+        "13/20",
+        "6.5/100"
+      ],
+      "correctAnswer": 0,
+      "explanation": "0.065 is equivalent to 65/1000. To simplify, find the greatest common divisor of 65 and 1000, which is 5. Divide both the numerator and the denominator by 5: 65 ÷ 5 = 13 and 1000 ÷ 5 = 200. So the fraction is 13/200."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate 5.4 - 3.28.",
+      "options": [
+        "2.12",
+        "2.22",
+        "2.28",
+        "1.12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To subtract decimals, align the decimal points. You can add a zero to 5.4 to make it 5.40. Then, 5.40 - 3.28 = 2.12."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is 1.25 × 0.4?",
+      "options": [
+        "5.0",
+        "0.5",
+        "0.05",
+        "50.0"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, multiply the numbers as if they were whole numbers: 125 × 4 = 500. Then, count the total number of decimal places in the original numbers. 1.25 has two and 0.4 has one, for a total of three. Place the decimal point three places from the right in the product: 0.500, which simplifies to 0.5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Divide 7.2 by 0.09.",
+      "options": [
+        "8",
+        "80",
+        "0.8",
+        "800"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To make the divisor (0.09) a whole number, multiply both numbers by 100. This gives 7.2 × 100 = 720 and 0.09 × 100 = 9. The new calculation is 720 ÷ 9, which equals 80."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express the recurring decimal 0.444... as a fraction.",
+      "options": [
+        "4/9",
+        "4/10",
+        "2/5",
+        "44/100"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Let x = 0.444... Multiply by 10 to get 10x = 4.444... Subtract the first equation from the second: 10x - x = 4.444... - 0.444..., which simplifies to 9x = 4. Therefore, x = 4/9."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Round 3.14159 to 3 decimal places.",
+      "options": [
+        "3.141",
+        "3.142",
+        "3.14",
+        "3.1416"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To round to 3 decimal places, look at the fourth decimal place. The number is 3.14159. The fourth decimal digit is 5. Since it is 5 or greater, we round up the third decimal digit. So, the 1 becomes a 2, resulting in 3.142."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following numbers is the largest?",
+      "options": [
+        "0.805",
+        "0.85",
+        "0.8",
+        "0.815"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To compare the decimals, we can pad them with zeros to have the same number of decimal places: 0.805, 0.850, 0.800, 0.815. Comparing the numbers after the decimal point (805, 850, 800, 815), the largest is 850. Thus, 0.85 is the largest number."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate $(0.2)^3$.",
+      "options": [
+        "0.006",
+        "0.6",
+        "0.08",
+        "0.008"
+      ],
+      "correctAnswer": 3,
+      "explanation": "$(0.2)^3$ means 0.2 × 0.2 × 0.2. First, 2 × 2 × 2 = 8. There is one decimal place in each factor, for a total of three decimal places in the product. Therefore, the answer is 0.008."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Convert 7/8 to a decimal.",
+      "options": [
+        "0.78",
+        "0.875",
+        "0.7",
+        "0.8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator. 7 ÷ 8 = 0.875. You can also recognise that 1/8 = 0.125, so 7/8 = 7 × 0.125 = 0.875."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Express the recurring decimal 0.161616... as a fraction in its simplest form.",
+      "options": [
+        "16/99",
+        "16/100",
+        "4/25",
+        "8/49"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Let x = 0.161616... Since two digits repeat, multiply by 100 to get 100x = 16.161616... Subtract the first equation from the second: 100x - x = 16.161616... - 0.161616..., which gives 99x = 16. Therefore, x = 16/99."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the result of 12.5 ÷ 0.5 + 2.5?",
+      "options": [
+        "7.5",
+        "27.5",
+        "15",
+        "5"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Following the order of operations (BIDMAS/BODMAS), division must be performed before addition. First, calculate 12.5 ÷ 0.5 = 25. Then, add 2.5: 25 + 2.5 = 27.5."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangle has a length of 4.5 cm and a width of 3.2 cm. What is its area?",
+      "options": [
+        "14.4 cm²",
+        "13.4 cm²",
+        "7.7 cm²",
+        "14.0 cm²"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The area of a rectangle is found by multiplying its length by its width. Area = 4.5 cm × 3.2 cm. 45 × 32 = 1440. Since there is one decimal place in each number, the product will have two decimal places. So, the area is 14.40 cm², or 14.4 cm²."
+    }
+  ]
+}

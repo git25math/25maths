@@ -1,0 +1,154 @@
+{
+  "topic": "expressions and formulae",
+  "board": "Edexcel 4MA1",
+  "subtopicId": "edexcel-4ma1:equations-h2:h2-03-expressions-and-formulae",
+  "syllabusCode": "H2-03",
+  "tier": "Higher",
+  "domain": "equations",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Given the formula P = 2l + 2w, find the value of P when l = 8 and w = 5.",
+      "options": [
+        "13",
+        "21",
+        "26",
+        "80"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Substitute the values of l and w into the formula: P = 2(8) + 2(5) = 16 + 10 = 26."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make x the subject of the formula y = mx + c.",
+      "options": [
+        "x = (y - c) / m",
+        "x = (y + c) / m",
+        "x = y/m - c",
+        "x = y - c - m"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To make x the subject, first subtract c from both sides: y - c = mx. Then, divide both sides by m: (y - c) / m = x."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The formula for the area of a trapezium is A = (1/2)(a+b)h. Find A when a = 5, b = 9, and h = 4.",
+      "options": [
+        "23",
+        "28",
+        "38",
+        "56"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Substitute the values into the formula: A = (1/2)(5+9)(4) = (1/2)(14)(4) = 7 * 4 = 28."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make t the subject of the formula v = u + at.",
+      "options": [
+        "t = v - u / a",
+        "t = (v - u) / a",
+        "t = (v + u) / a",
+        "t = v / a - u"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Subtract u from both sides to get v - u = at. Then, divide by a to isolate t, giving t = (v - u) / a."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A taxi firm charges a fixed fee of ${4 plus }$1.50 per mile. Which formula represents the total cost, C, for a journey of m miles?",
+      "options": [
+        "C = 4m + 1.50",
+        "C = 1.50m + 4",
+        "C = 4m + 1.50m",
+        "C = 1.50(m + 4)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The total cost (C) is the fixed fee (${4) plus the variable cost, which is the rate per mile (}$1.50) multiplied by the number of miles (m). So, C = 1.50m + 4."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given that s = ut + (1/2)at^2, find s when u = 10, t = 4, and a = 3.",
+      "options": [
+        "52",
+        "64",
+        "84",
+        "184"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Substitute the values: s = (10)(4) + (1/2)(3)(4^2) = 40 + (1/2)(3)(16) = 40 + 24 = 64."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make r the subject of the formula A = $\\pi$r^2.",
+      "options": [
+        "r = A/$\\pi$",
+        "r = $\\sqrt{A/$\\pi$}$",
+        "r = (A/$\\pi$)^2",
+        "r = A - $\\pi$"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, divide both sides by $\\pi$ to get A/$\\pi$ = r^2. Then, take the square root of both sides to find r. So, r = $\\sqrt{A/$\\pi$}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The cost of hiring a hall is £50 plus £15 per hour. How much does it cost to hire the hall for 4 hours?",
+      "options": [
+        "£69",
+        "£110",
+        "£215",
+        "£260"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The formula is C = 50 + 15h. Substitute h = 4: C = 50 + 15(4) = 50 + 60 = £110."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make a the subject of the formula P = 2(a + b).",
+      "options": [
+        "a = P/2 - b",
+        "a = P/2 + b",
+        "a = P - 2b",
+        "a = (P-b)/2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, divide both sides by 2 to get P/2 = a + b. Then, subtract b from both sides to isolate a. So, a = P/2 - b."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The temperature in Celsius, C, can be converted to Fahrenheit, F, using the formula F = (9/5)C + 32. Convert 25°C to Fahrenheit.",
+      "options": [
+        "45°F",
+        "57°F",
+        "77°F",
+        "102°F"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Substitute C = 25 into the formula: F = (9/5)(25) + 32 = 9 * 5 + 32 = 45 + 32 = 77°F."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Make x the subject of the formula y = a / (x - b).",
+      "options": [
+        "x = a/y + b",
+        "x = a/(y+b)",
+        "x = (a-b)/y",
+        "x = a/y - b"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiply both sides by (x - b) to get y(x - b) = a. Divide by y: x - b = a/y. Finally, add b to both sides: x = a/y + b."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Given the formula T = 2$\\pi$$\\sqrt{L/g}$, find the value of T when L = 40 and g = 10, using $\\pi$ ≈ 3.14.",
+      "options": [
+        "6.28",
+        "12.56",
+        "25.12",
+        "39.44"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, calculate L/g = 40/10 = 4. Then, $\\sqrt{L/g} = \\sqrt{4}$ = 2. Now substitute this into the formula: T = 2 * $\\pi$ * 2 = 4$\\pi$. Using $\\pi$ ≈ 3.14, T = 4 * 3.14 = 12.56."
+    }
+  ]
+}

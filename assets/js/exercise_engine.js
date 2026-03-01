@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function renderQuestion(index) {
         const question = questions[index];
-        const questionText = escapeHtml(normalizeInlineMath(question.questionText || ''));
+        const questionText = escapeHtml(normalizeInlineMath(question.questionText || '')).replace(/\n/g, '<br>');
         let optionsHtml = '';
 
         if (question.type === 'multiple-choice') {
@@ -567,7 +567,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const question = questions[currentQuestionIndex];
         const isCorrect = (selectedAnswer === question.correctAnswer);
-        const explanationHtml = escapeHtml(normalizeInlineMath(question.explanation || ''));
+        const explanationHtml = escapeHtml(normalizeInlineMath(question.explanation || '')).replace(/\n/g, '<br>');
         const submittedAnswer = selectedAnswer;
 
         if (isCorrect) {

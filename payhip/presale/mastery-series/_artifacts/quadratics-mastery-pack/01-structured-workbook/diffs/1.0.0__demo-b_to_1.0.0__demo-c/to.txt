@@ -1,0 +1,193 @@
+Module 1
+Structured Workbook
+Learning Outcome: Stabilise method choice, step order, and exam wording response
+Quadratics Mastery Pack                                                     Module 1: Structured Workbook
+
+
+1 How To Use This Workbook
+
+• Complete blocks in order: A → B → C.
+• Write method selection before algebra steps.
+• Keep final answers in exam format (all roots stated).
+• Use Module 2 to mark and Module 3 to diagnose repeated errors.
+
+  Key Concept
+  Quadratics performance improves fastest when students train method selection first, then execution
+  speed.
+
+  Exam Tip
+  Before writing the final line, run a two-step check: (1) all roots listed, (2) root values satisfy the
+  original equation.
+
+
+
+2 Block A - Core Fluency (Q01-Q08)
+
+Focus: factorising, rearranging to standard form, and stable sign handling.
+
+
+A1. Structured Practice
+
+1. [Q01] Solve x2 − 9 = 0. Method: Difference of squares                                         [2 marks]
+
+
+
+
+2. [Q02] Solve x2 + 7x + 12 = 0. Method: Factorising                                             [2 marks]
+
+
+
+
+3. [Q03] Solve x2 − 11x + 24 = 0. Method: Factorising                                            [2 marks]
+
+
+
+
+4. [Q04] Solve 2x2 − 18 = 0. Method: Simplify then solve                                         [2 marks]
+
+
+
+
+5. [Q05] Solve x2 + 2x − 15 = 0. Method: Factorising                                             [2 marks]
+
+
+
+
+6. [Q06] Solve x2 = 5x. Method: Rearrange then factorise                                         [2 marks]
+
+
+
+
+25Maths                                             2                       Quadratics v1 | Module 1 | Workbook
+Quadratics Mastery Pack                                                     Module 1: Structured Workbook
+
+
+ 7. [Q07] Solve (x − 4)(x + 1) = 0. Method: Zero product rule                                     [2 marks]
+
+
+
+
+ 8. [Q08] Solve x2 − 4x = 45. Method: Rearrange and factorise                                     [3 marks]
+
+
+
+
+3 Block B - Method Selection (Q09-Q16)
+
+Focus: deciding when to use formula, completing the square, or discriminant.
+
+
+B1. Mixed Forms
+
+ 9. [Q09] Solve x2 − 6x + 1 = 0. Method: Quadratic formula or completing square                   [3 marks]
+
+
+
+
+10. [Q10] Solve 3x2 + 2x − 5 = 0. Method: Quadratic formula / factorising check                   [3 marks]
+
+
+
+
+11. [Q11] Solve 5x2 − 3x − 2 = 0. Method: Quadratic formula                                       [3 marks]
+
+
+
+
+12. [Q12] Solve 2x2 − 4x + 1 = 0, give answers to 3 s.f. Method: Formula and rounding             [3 marks]
+
+
+
+
+13. [Q13] Solve x2 + 4x − 1 = 0. Method: Completing square or formula                             [3 marks]
+
+
+
+
+14. [Q14] Solve x2 + 10x + 20 = 0. Method: Completing square                                      [3 marks]
+
+
+
+
+                                                               √
+15. [Q15] Show that the solutions to x2 − 4x − 1 = 0 are 2 ±       5. Method: Complete square [4 marks]
+
+
+
+
+16. [Q16] Determine the number of real roots of 4x2 + 4x + 5 = 0. Method: Discriminant [2 marks]
+
+
+25Maths                                           3                          Quadratics v1 | Module 1 | Workbook
+Quadratics Mastery Pack                                                    Module 1: Structured Workbook
+
+
+
+
+4 Block C - Exam Transfer (Q17-Q24)
+
+Focus: context interpretation, graph links, and answer validity.
+
+
+C1. Applied Questions
+
+17. [Q17] A rectangle has sides x and x + 3, area 54 cm2 . Find x. Method: Model then solve and validate
+    [4 marks]
+
+
+
+
+18. [Q18] A model gives height h = t(12 − 3t). Find when h = 0. Method: Factor form interpretation
+    [3 marks]
+
+
+
+
+19. [Q19] A quadratic has roots 3 and −2. Form the equation in the form x2 + bx + c = 0. Method:
+    Root-to-equation build                                                            [3 marks]
+
+
+
+
+20. [Q20] A monic quadratic has a repeated root at x = 3. Write its equation. Method: Repeated-root
+    form                                                                                [2 marks]
+
+
+
+
+21. [Q21] For y = x2 − 6x + 5, state: (i) axis of symmetry, (ii) vertex, (iii) x-intercepts. Method:
+    Complete square + factor check                                                        [5 marks]
+
+
+
+
+22. [Q22] For x2 − kx + 12 = 0, one root is 3. Find the other root and the value of k. Method: Vieta
+    links                                                                                 [4 marks]
+
+
+
+
+23. [Q23] Solve x2 − 5x + 6 ≤ 0. Method: Factorise then interval reasoning                      [3 marks]
+
+
+
+
+24. [Q24] Two consecutive integers have product 156. Find the positive pair. Method: Model and context
+    root filter                                                                            [4 marks]
+
+25Maths                                            4                       Quadratics v1 | Module 1 | Workbook
+Quadratics Mastery Pack                                      Module 1: Structured Workbook
+
+
+
+
+5 Quick Self-Check
+
+  After marking, record your top error tags from Module 3:
+  Tag 1:                  Tag 2:                  Tag 3:
+
+
+
+
+25Maths                                   5                  Quadratics v1 | Module 1 | Workbook
+

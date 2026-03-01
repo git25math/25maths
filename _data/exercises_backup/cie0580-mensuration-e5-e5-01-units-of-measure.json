@@ -1,0 +1,154 @@
+{
+  "topic": "units of measure",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:mensuration-e5:e5-01-units-of-measure",
+  "syllabusCode": "E5-01",
+  "tier": "Extended",
+  "domain": "mensuration",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "Convert 0.05 km to cm.",
+      "options": [
+        "500 cm",
+        "5000 cm",
+        "50 cm",
+        "0.00005 cm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First convert kilometres to metres (0.05 km × 1000 m/km = 50 m), then convert metres to centimetres (50 m × 100 cm/m = 5000 cm)."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A rectangle has an area of 2.5 m². What is its area in cm²?",
+      "options": [
+        "250 cm²",
+        "2500 cm²",
+        "25000 cm²",
+        "25 cm²"
+      ],
+      "correctAnswer": 2,
+      "explanation": "To convert from m² to cm², you must multiply by $100^2$, which is 10000. So, 2.5 × 10000 = 25000 cm²."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Convert 450 000 cm³ to m³.",
+      "options": [
+        "4.5 m³",
+        "0.045 m³",
+        "45 m³",
+        "0.45 m³"
+      ],
+      "correctAnswer": 3,
+      "explanation": "To convert from cm³ to m³, you must divide by $100^3$, which is 1 000 000. So, 450 000 / 1 000 000 = 0.45 m³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A car is travelling at a constant speed of 108 km/h. What is its speed in m/s?",
+      "options": [
+        "30 m/s",
+        "3.0 m/s",
+        "300 m/s",
+        "388.8 m/s"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To convert km/h to m/s, multiply by 1000 (for metres) and divide by 3600 (for seconds). This is equivalent to dividing by 3.6. 108 / 3.6 = 30 m/s."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An athlete runs at an average speed of 8 m/s. What is this speed in km/h?",
+      "options": [
+        "2.22 km/h",
+        "28.8 km/h",
+        "288 km/h",
+        "0.0288 km/h"
+      ],
+      "correctAnswer": 1,
+      "explanation": "To convert m/s to km/h, multiply by 3600 (for seconds in an hour) and divide by 1000 (for metres in a km). This is equivalent to multiplying by 3.6. 8 × 3.6 = 28.8 km/h."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A tank holds 7500 litres of water. What is the volume of the water in m³? (1 m³ = 1000 litres)",
+      "options": [
+        "0.75 m³",
+        "75 m³",
+        "7.5 m³",
+        "7 500 000 m³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Since 1 cubic metre is equal to 1000 litres, to convert from litres to m³, you must divide by 1000. 7500 / 1000 = 7.5 m³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "An object has a mass of 1.2 kg and a volume of 150 cm³. Find its density in g/cm³.",
+      "options": [
+        "0.008 g/cm³",
+        "0.125 g/cm³",
+        "8 g/cm³",
+        "180 g/cm³"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, convert the mass to grams: 1.2 kg = 1200 g. Then use the formula Density = Mass / Volume. Density = 1200 g / 150 cm³ = 8 g/cm³."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A journey takes 3.4 hours. How long is this in hours and minutes?",
+      "options": [
+        "3 hours 4 minutes",
+        "3 hours 40 minutes",
+        "3 hours 15 minutes",
+        "3 hours 24 minutes"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The '3' represents 3 full hours. The '0.4' represents 0.4 of an hour. To convert this fraction to minutes, multiply by 60. 0.4 × 60 = 24 minutes. The total time is 3 hours and 24 minutes."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Convert 5 600 000 mm to km.",
+      "options": [
+        "5.6 km",
+        "56 km",
+        "0.56 km",
+        "560 km"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To convert mm to km, you divide by 10 (to get cm), then by 100 (to get m), then by 1000 (to get km). This is equivalent to dividing by 1 000 000. 5 600 000 / 1 000 000 = 5.6 km."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Water flows into a tank at a rate of 200 cm³ per second. How long will it take to fill a 1.8 m³ tank? Give your answer in minutes.",
+      "options": [
+        "15 minutes",
+        "90 minutes",
+        "150 minutes",
+        "9000 minutes"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, convert the tank's volume to cm³: 1.8 m³ = 1 800 000 cm³. Then, find the time in seconds by dividing volume by rate: 1 800 000 / 200 = 9000 seconds. Finally, convert to minutes: 9000 / 60 = 150 minutes."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A floor has an area of 24 m². It is to be covered with tiles that are 20 cm by 20 cm. How many tiles are needed?",
+      "options": [
+        "60",
+        "120",
+        "600",
+        "6000"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Convert the floor area to cm²: 24 m² = 240 000 cm². Calculate one tile's area: 20 cm × 20 cm = 400 cm². Divide the total area by the tile area: 240 000 / 400 = 600 tiles."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The density of a metal is 8.5 g/cm³. What is the mass, in kg, of a block of this metal with a volume of 0.2 m³?",
+      "options": [
+        "1.7 kg",
+        "17 kg",
+        "170 kg",
+        "1700 kg"
+      ],
+      "correctAnswer": 3,
+      "explanation": "First, convert the volume to cm³: 0.2 m³ = 200 000 cm³. Then, calculate mass in grams: Mass = Density × Volume = 8.5 g/cm³ × 200 000 cm³ = 1 700 000 g. Finally, convert mass to kg: 1 700 000 g = 1700 kg."
+    }
+  ]
+}

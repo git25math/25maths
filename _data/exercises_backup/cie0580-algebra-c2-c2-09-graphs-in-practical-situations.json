@@ -1,0 +1,154 @@
+{
+  "topic": "graphs in practical situations",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:algebra-c2:c2-09-graphs-in-practical-situations",
+  "syllabusCode": "C2-09",
+  "tier": "Core",
+  "domain": "algebra",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "A distance-time graph for a journey is a straight line passing through (0, 0) and (3, 180). What is the speed in km/h?",
+      "options": [
+        "60 km/h",
+        "180 km/h",
+        "3 km/h",
+        "540 km/h"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Speed is the gradient of the distance-time graph. Gradient = (change in distance) / (change in time) = 180 km / 3 h = 60 km/h."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The cost, $C, to hire a plumber is modelled by the equation C = 50h + 40, where h is the number of hours. What does the number 40 represent in this equation?",
+      "options": [
+        "The cost per hour",
+        "The total cost for 40 hours",
+        "A fixed call-out fee",
+        "The number of hours worked"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The value 40 is the y-intercept (when h=0), which represents the initial, fixed cost before any hours are worked. This is often called a call-out fee."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A car's journey is shown on a distance-time graph. A section of the graph is a horizontal line. What does this represent?",
+      "options": [
+        "The car is travelling at a constant speed.",
+        "The car is stationary.",
+        "The car is accelerating.",
+        "The car is returning to its starting point."
+      ],
+      "correctAnswer": 1,
+      "explanation": "A horizontal line on a distance-time graph means that time is increasing, but the distance from the start is not changing. Therefore, the car is stationary."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The volume of water, V litres, in a tank after t minutes is given by V = 300 - 5t. What is the volume of water after 20 minutes?",
+      "options": [
+        "200 litres",
+        "100 litres",
+        "275 litres",
+        "400 litres"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Substitute t = 20 into the formula: V = 300 - 5(20) = 300 - 100 = 200 litres."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A mobile phone plan costs ${10 per month plus }$3 for every gigabyte (g) of data used. Which formula represents the total monthly cost, C?",
+      "options": [
+        "C = 10g + 3",
+        "C = 3g + 10",
+        "C = 13g",
+        "C = 10 - 3g"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The cost is the fixed fee (${10) plus the variable fee (}$3 times the number of gigabytes, g). So, C = 3g + 10."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A graph converting temperature from Celsius (°C) to Fahrenheit (°F) is a straight line. The point (10, 50) lies on the line. What does this point represent?",
+      "options": [
+        "10°F is equivalent to 50°C.",
+        "The temperature increases by 10°F every 50 minutes.",
+        "10°C is equivalent to 50°F.",
+        "The maximum temperature is 50°F."
+      ],
+      "correctAnswer": 2,
+      "explanation": "The point (x, y) on this graph represents a specific conversion. With Celsius on the x-axis and Fahrenheit on the y-axis, (10, 50) means 10°C is equivalent to 50°F."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The cost, $C, for a taxi journey of d km is C = 1.5d + 2. How much would a journey of 8 km cost?",
+      "options": [
+        "$12",
+        "$14",
+        "$11.50",
+        "$20"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Substitute d = 8 into the formula: C = 1.5(8) + 2 = 12 + 2 = $14."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "At 08:00 the temperature is 12°C. At 11:00 the temperature is 21°C. If the temperature increased at a constant rate, what was the rate of increase per hour?",
+      "options": [
+        "9°C/h",
+        "3°C/h",
+        "7°C/h",
+        "4°C/h"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The rate of change is the gradient. Change in temperature = 21 - 12 = 9°C. Change in time = 11:00 - 08:00 = 3 hours. Rate = 9°C / 3 h = 3°C/h."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A conversion graph from Euros (€) to Dollars ($) is a straight line passing through (0, 0) and (20, 24). How many Dollars would you get for €35?",
+      "options": [
+        "$42",
+        "$39",
+        "$29.17",
+        "$59"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, find the conversion rate (gradient): ${24 / €20 = 1.2 }$/€. Then multiply by the amount in Euros: 35 * 1.2 = $42."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The electricity bill, B, is calculated as B = 0.2k + 15, where k is the number of units used. If a bill is $65, how many units were used?",
+      "options": [
+        "250",
+        "400",
+        "50",
+        "18.2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Set B = 65 and solve for k: 65 = 0.2k + 15. Subtract 15: 50 = 0.2k. Divide by 0.2: k = 50 / 0.2 = 250 units."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "The equation of a line on a graph is y = -4x + 80. In a practical context, this represents the amount of fuel y (litres) left in a car after driving x hours. What does the x-intercept represent?",
+      "options": [
+        "The starting amount of fuel.",
+        "The fuel consumption rate.",
+        "The time when the car runs out of fuel.",
+        "The distance travelled."
+      ],
+      "correctAnswer": 2,
+      "explanation": "The x-intercept is where y = 0. In this context, y=0 means there is no fuel left. So, the x-intercept represents the time taken for the car to run out of fuel."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "A bath is filled with water. The volume, V litres, after t seconds is shown by a straight-line graph. The gradient of the graph is 0.5. What does this gradient represent?",
+      "options": [
+        "The total volume of the bath.",
+        "The time it takes to fill the bath.",
+        "The rate at which the bath is filling.",
+        "The initial volume of water."
+      ],
+      "correctAnswer": 2,
+      "explanation": "The gradient of a volume-time graph represents the rate of change of volume over time. A gradient of 0.5 means the volume is increasing by 0.5 litres every second."
+    }
+  ]
+}

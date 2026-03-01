@@ -1,0 +1,154 @@
+{
+  "topic": "Exact trigonometric values",
+  "board": "CIE 0580",
+  "subtopicId": "cie0580:trigonometry-e6:e6-03-exact-trigonometric-values",
+  "syllabusCode": "E6-03",
+  "tier": "Extended",
+  "domain": "trigonometry",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the exact value of sin(30°)?",
+      "options": [
+        "1/2",
+        "$\\sqrt{3}/2$",
+        "$1/\\sqrt{2}$",
+        "$\\sqrt{3}$"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The value of sin(30°) is a standard exact value that should be memorized. sin(30°) = 1/2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the exact value of cos(45°)?",
+      "options": [
+        "1/2",
+        "$\\sqrt{3}/2$",
+        "$1/\\sqrt{2}$",
+        "1"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The value of cos(45°) is a standard exact value. It can be found from an isosceles right-angled triangle. cos(45°) = $1/\\sqrt{2}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the exact value of tan(60°)?",
+      "options": [
+        "$1/\\sqrt{3}$",
+        "1",
+        "$\\sqrt{3}$",
+        "$\\sqrt{3}/2$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The value of tan(60°) is a standard exact value. It can be found from an equilateral triangle. tan(60°) = $\\sqrt{3}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which of the following has a value of 0?",
+      "options": [
+        "sin(0°)",
+        "sin(90°)",
+        "cos(0°)",
+        "tan(45°)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Evaluating the options: sin(0°) = 0, sin(90°) = 1, cos(0°) = 1, tan(45°) = 1. Therefore, sin(0°) is the correct answer."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the exact value of cos(30°)?",
+      "options": [
+        "1/2",
+        "$1/\\sqrt{2}$",
+        "$\\sqrt{3}/2$",
+        "$\\sqrt{3}$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The value of cos(30°) is a standard exact value that should be memorized. It is equal to sin(60°). cos(30°) = $\\sqrt{3}/2$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate sin(60°) + cos(30°).",
+      "options": [
+        "1",
+        "$\\sqrt{3}/2$",
+        "$\\sqrt{3}$",
+        "1/2 + $\\sqrt{3}/2$"
+      ],
+      "correctAnswer": 2,
+      "explanation": "First, recall the exact values: sin(60°) = $\\sqrt{3}/2$ and cos(30°) = $\\sqrt{3}/2$. Then, add them: $\\sqrt{3}/2 + \\sqrt{3}/2 = 2\\sqrt{3}/2 = \\sqrt{3}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "If sin(x) = $\\sqrt{3}/2$ for 0° < x < 90°, what is the value of x?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This requires knowing the exact trigonometric values in reverse. The angle whose sine is $\\sqrt{3}/2$ is 60°."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the value of 2 * tan(45°)?",
+      "options": [
+        "1",
+        "2",
+        "$\\sqrt{2}$",
+        "undefined"
+      ],
+      "correctAnswer": 1,
+      "explanation": "First, find the exact value of tan(45°), which is 1. Then, multiply by 2. 2 * 1 = 2."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Which expression is equal to 1?",
+      "options": [
+        "sin(45°) + cos(45°)",
+        "tan(45°)",
+        "sin(60°)",
+        "cos(90°)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Evaluating the options: sin(45°) + cos(45°) = $1/\\sqrt{2} + 1/\\sqrt{2} = \\sqrt{2}$. tan(45°) = 1. sin(60°) = $\\sqrt{3}/2$. cos(90°) = 0. Therefore, tan(45°) is the only expression equal to 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Calculate the value of sin(90°) - cos(90°).",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Recall the exact values: sin(90°) = 1 and cos(90°) = 0. Therefore, 1 - 0 = 1."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "What is the exact value of tan(30°)?",
+      "options": [
+        "$\\sqrt{3}$",
+        "1",
+        "1/2",
+        "$1/\\sqrt{3}$"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The value of tan(30°) is a standard exact value. It can be found from an equilateral triangle. tan(30°) = $1/\\sqrt{3}$."
+    },
+    {
+      "type": "multiple-choice",
+      "questionText": "Evaluate tan(60°) / sin(60°).",
+      "options": [
+        "2",
+        "$\\sqrt{3}$",
+        "$\\sqrt{3}/2$",
+        "1/2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Recall the exact values: tan(60°) = $\\sqrt{3}$ and sin(60°) = $\\sqrt{3}/2$. So, $\\sqrt{3}$ / ($\\sqrt{3}/2$) = $\\sqrt{3}$ * ($2/\\sqrt{3}$) = 2."
+    }
+  ]
+}

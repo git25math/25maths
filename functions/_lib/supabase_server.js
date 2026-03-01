@@ -744,8 +744,8 @@ export async function listAchievementDefinitions(env) {
 export async function fetchProfile(env, userId) {
   ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
   const query = new URLSearchParams({
-    select: 'id,display_name,preferred_lang,target_board,weekly_report_enabled',
-    id: `eq.${userId}`,
+    select: 'user_id,display_name,preferred_lang,target_board,weekly_report_enabled',
+    user_id: `eq.${userId}`,
     limit: '1',
   });
   const url = `${env.SUPABASE_URL}/rest/v1/profiles?${query.toString()}`;
@@ -763,8 +763,8 @@ export async function fetchProfile(env, userId) {
 
 export async function upsertProfile(env, userId, fields) {
   ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
-  const row = { id: userId, ...fields };
-  const url = `${env.SUPABASE_URL}/rest/v1/profiles?on_conflict=id`;
+  const row = { user_id: userId, ...fields };
+  const url = `${env.SUPABASE_URL}/rest/v1/profiles?on_conflict=user_id`;
   const response = await fetch(url, {
     method: 'POST',
     headers: {
