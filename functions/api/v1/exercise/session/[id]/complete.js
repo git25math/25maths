@@ -11,6 +11,7 @@ import {
   listUserAchievements,
   listAchievementDefinitions,
   insertUserAchievement,
+  serviceHeaders,
 } from '../../../../../_lib/supabase_server.js';
 
 function parseInteger(value) {
@@ -215,6 +216,30 @@ async function processEngagement(env, userId, sessionData) {
     ? Math.round((sessionData.score / sessionData.question_count) * 100)
     : 0;
 
+  // Lazy-fetch completed session count for volume achievements
+  let totalCompletedSessions = null;
+  const hasVolumeCriteria = allDefinitions.some(
+    d => !existingIds.has(d.id) && d.is_active && d.criteria?.type === 'volume'
+  );
+  if (hasVolumeCriteria) {
+    try {
+      const countQuery = new URLSearchParams({
+        select: 'id',
+        user_id: `eq.${userId}`,
+        'completed_at': 'not.is.null',
+      });
+      const countUrl = `${env.SUPABASE_URL}/rest/v1/exercise_sessions?${countQuery.toString()}`;
+      const countResp = await fetch(countUrl, {
+        headers: { ...serviceHeaders(env), Prefer: 'count=exact' },
+      });
+      const range = countResp.headers.get('content-range') || '';
+      const match = range.match(/\/(\d+)$/);
+      totalCompletedSessions = match ? Number(match[1]) : null;
+    } catch (_e) {
+      // fall back to daily count if query fails
+    }
+  }
+
   let xpEarned = 10;
   if (accuracy === 100 && sessionData.question_count > 0) xpEarned += 25;
   if (qualifies) xpEarned += 5;
@@ -228,7 +253,10 @@ async function processEngagement(env, userId, sessionData) {
     if (def.criteria.type === 'streak') {
       met = streak.current_streak >= (def.criteria.min_days || 0);
     } else if (def.criteria.type === 'volume') {
-      met = (activity.sessions_completed || 0) >= (def.criteria.min_sessions || 0);
+      const count = totalCompletedSessions != null
+        ? totalCompletedSessions
+        : (activity.sessions_completed || 0);
+      met = count >= (def.criteria.min_sessions || 0);
     }
     // Other criteria types require aggregate queries — skip for inline check
 

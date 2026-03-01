@@ -10,6 +10,7 @@ import {
   insertUserAchievement,
   upsertUserXp,
   listRecentSessions,
+  serviceHeaders,
 } from '../../../_lib/supabase_server.js';
 
 function formatDateStr(date) {
@@ -74,6 +75,53 @@ async function updateStreak(env, userId, todayActivity) {
   return streak;
 }
 
+async function fetchSkillImprovementData(env, userId) {
+  const cutoff120 = new Date(Date.now() - 120 * 86400000).toISOString();
+  const cutoff30 = new Date(Date.now() - 30 * 86400000).toISOString();
+
+  const query = new URLSearchParams({
+    select: 'skill_tag,is_correct,created_at',
+    user_id: `eq.${userId}`,
+    created_at: `gte.${cutoff120}`,
+    order: 'created_at.asc',
+    limit: '2000',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/question_attempts?${query.toString()}`;
+  const resp = await fetch(url, { headers: serviceHeaders(env) });
+  if (!resp.ok) return null;
+
+  const rows = await resp.json();
+  if (!Array.isArray(rows) || rows.length < 6) return null;
+
+  // Group by skill_tag, split into old (>30d ago) and recent (<=30d)
+  const skills = {};
+  for (const r of rows) {
+    const tag = r.skill_tag;
+    if (!tag) continue;
+    if (!skills[tag]) skills[tag] = { old: { correct: 0, total: 0 }, recent: { correct: 0, total: 0 } };
+    const bucket = r.created_at >= cutoff30 ? 'recent' : 'old';
+    skills[tag][bucket].total += 1;
+    if (r.is_correct) skills[tag][bucket].correct += 1;
+  }
+
+  let bestDelta = 0;
+  let bestNewPct = 0;
+  for (const tag of Object.keys(skills)) {
+    const { old, recent } = skills[tag];
+    if (old.total < 3 || recent.total < 3) continue;
+    const oldPct = Math.round((old.correct / old.total) * 100);
+    const newPct = Math.round((recent.correct / recent.total) * 100);
+    const delta = newPct - oldPct;
+    if (delta > bestDelta) {
+      bestDelta = delta;
+      bestNewPct = newPct;
+    }
+  }
+
+  if (bestDelta <= 0) return null;
+  return { bestDelta, bestNewPct };
+}
+
 function checkCriteria(criteria, context) {
   if (!criteria || !criteria.type) return false;
 
@@ -93,6 +141,13 @@ function checkCriteria(criteria, context) {
       return context.sessionData
         && context.sessionData.duration_seconds <= (criteria.max_seconds || 300)
         && context.sessionData.accuracy >= (criteria.min_pct || 80);
+    case 'improvement': {
+      if (!context.improvementData) return false;
+      const { bestDelta, bestNewPct } = context.improvementData;
+      if (bestDelta < (criteria.min_delta || 0)) return false;
+      if (criteria.target_pct != null && bestNewPct < criteria.target_pct) return false;
+      return true;
+    }
     default:
       return false;
   }
@@ -185,12 +240,26 @@ export async function onRequestPost(context) {
     }).length;
   }
 
+  // Lazy-fetch improvement data only when needed
+  const hasImprovementCriteria = allDefinitions.some(
+    d => !existingIds.has(d.id) && d.is_active && d.criteria?.type === 'improvement'
+  );
+  let improvementData = null;
+  if (hasImprovementCriteria) {
+    try {
+      improvementData = await fetchSkillImprovementData(env, authUser.id);
+    } catch (_e) {
+      // best-effort — skip if query fails
+    }
+  }
+
   const evalContext = {
     streak,
     totalSessions,
     distinctTopics: sessionTopics.size,
     sessionsAbovePct,
     sessionData,
+    improvementData,
   };
 
   const newlyUnlocked = [];

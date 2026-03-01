@@ -235,7 +235,7 @@ export async function onRequestGet(context) {
   // XP and level
   const totalXp = xpRecord ? xpRecord.total_xp || 0 : 0;
   const LEVEL_THRESHOLDS = [
-    0, 100, 300, 600, 1000, 2000, 4000, 8000, 16000, 32000,
+    0, 50, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000,
   ];
   let level = 1;
   for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
