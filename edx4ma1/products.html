@@ -69,7 +69,8 @@ active_page: products
                 <article class="bg-gray-50 rounded-xl border border-gray-200 p-5">
                     <div class="flex items-center justify-between gap-2 mb-2">
                         <h3 class="text-lg font-bold text-gray-900">{{ unit.code }} · {{ unit.title }}</h3>
-                        <span class="token-chip token-chip-sm">{{ unit.status | default: 'presale' | upcase }}</span>
+                        {% assign unit_status_label = unit.status | default: 'presale' | upcase %}
+                        {% include ui/board-status-chip.html board='edx' label=unit_status_label %}
                     </div>
                     <p class="text-sm text-gray-600 mb-1">{{ unit.tier_scope }}</p>
                     <p class="text-sm text-gray-600 mb-1">Early-bird: {{ unit.early_bird_price }} · Regular: {{ unit.regular_price }}</p>
@@ -103,6 +104,18 @@ active_page: products
             <a href="/kahoot/edexcel-4ma1/" class="kahoot-solid-bg text-white px-7 py-3 rounded-lg font-semibold kahoot-solid-hover hover:shadow-md transition">Open Edexcel Kahoot Directory</a>
             <a href="{{ terms_pdf_url }}" target="_blank" rel="noopener" class="border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover transition">View Terms PDF</a>
             <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="border edx-soft-border edx-soft-bg edx-soft-text px-7 py-3 rounded-lg font-semibold edx-soft-hover transition">Open Payhip Storefront</a>
+        </div>
+    </div>
+</section>
+
+<!-- Try Before You Buy CTA -->
+<section class="py-12 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+        <p class="text-lg text-gray-700">Want to try before you buy?</p>
+        <p class="bilingual-support-only mt-1 text-sm text-gray-500">想先试试看？</p>
+        <div class="mt-4 flex flex-col sm:flex-row justify-center gap-4">
+            <a href="/exercises/?board=edexcel-4ma1" class="text-sm font-semibold text-gray-900 underline hover:text-gray-700 transition">Try free interactive exercises →</a>
+            <a href="/edx4ma1/free/" class="text-sm font-semibold text-gray-900 underline hover:text-gray-700 transition">Download free worksheet packs →</a>
         </div>
     </div>
 </section>
