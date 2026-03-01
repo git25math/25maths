@@ -741,6 +741,46 @@ export async function listAchievementDefinitions(env) {
   return Array.isArray(payload) ? payload : [];
 }
 
+export async function fetchProfile(env, userId) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const query = new URLSearchParams({
+    select: 'id,display_name,preferred_lang,target_board,weekly_report_enabled',
+    id: `eq.${userId}`,
+    limit: '1',
+  });
+  const url = `${env.SUPABASE_URL}/rest/v1/profiles?${query.toString()}`;
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: serviceHeaders(env),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`profiles fetch failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : null;
+}
+
+export async function upsertProfile(env, userId, fields) {
+  ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
+  const row = { id: userId, ...fields };
+  const url = `${env.SUPABASE_URL}/rest/v1/profiles?on_conflict=id`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      ...serviceHeaders(env),
+      Prefer: 'resolution=merge-duplicates,return=representation',
+    },
+    body: JSON.stringify(row),
+  });
+  if (!response.ok) {
+    const errorBody = await parseJsonResponse(response);
+    throw new Error(`profiles upsert failed: ${response.status} ${JSON.stringify(errorBody)}`);
+  }
+  const payload = await parseJsonResponse(response);
+  return Array.isArray(payload) ? payload[0] || null : payload;
+}
+
 export async function createSignedStorageUrl(env, assetKey, ttlSeconds = 600) {
   ensureEnv(env, ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']);
   const normalized = String(assetKey || '').trim().replace(/^\/+/, '');

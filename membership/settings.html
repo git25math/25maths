@@ -1,0 +1,258 @@
+---
+layout: global
+title: Account Settings
+description: "Manage your profile, preferences, and membership details."
+active_global: membership
+lang: en
+noindex: true
+supabase: true
+---
+
+<section class="bg-gradient-to-br from-gray-700 to-gray-900 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-semibold mb-2">Account Settings</h1>
+        <p class="text-lg text-gray-300">Manage your profile and preferences.</p>
+        <p class="bilingual-support-only mt-3 text-sm text-gray-400">账户设置 — 管理个人资料和偏好</p>
+    </div>
+</section>
+
+<section class="py-10 bg-white border-b border-gray-100">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Auth Gate -->
+        <div id="settings-auth-gate" class="text-center py-16">
+            <p class="text-gray-500 text-lg">Sign in to manage your account settings.</p>
+            <p class="bilingual-support-only text-sm text-gray-400 mt-2">请登录以管理账户设置</p>
+        </div>
+
+        <!-- Main Content (hidden until auth) -->
+        <div id="settings-content" class="hidden space-y-8">
+
+            <!-- Account Summary -->
+            <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+                <h2 class="text-lg font-semibold text-gray-900 mb-4">Account Summary</h2>
+                <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <dt class="text-gray-500">Email</dt>
+                        <dd id="summary-email" class="font-medium text-gray-900 mt-0.5">—</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500">Membership</dt>
+                        <dd id="summary-membership" class="font-medium text-gray-900 mt-0.5">—</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500">XP / Level</dt>
+                        <dd id="summary-xp" class="font-medium text-gray-900 mt-0.5">—</dd>
+                    </div>
+                    <div>
+                        <dt class="text-gray-500">Achievements Unlocked</dt>
+                        <dd id="summary-achievements" class="font-medium text-gray-900 mt-0.5">—</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <!-- Profile Form -->
+            <form id="settings-form" class="bg-white border border-gray-200 rounded-2xl p-6 space-y-5">
+                <h2 class="text-lg font-semibold text-gray-900 mb-2">Profile</h2>
+
+                <div>
+                    <label for="field-display-name" class="block text-sm font-medium text-gray-700 mb-1">Display Name</label>
+                    <input type="text" id="field-display-name" name="display_name" maxlength="50"
+                        class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+                        placeholder="Your display name">
+                </div>
+
+                <div>
+                    <label for="field-target-board" class="block text-sm font-medium text-gray-700 mb-1">Target Exam Board</label>
+                    <select id="field-target-board" name="target_board"
+                        class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-white">
+                        <option value="">— Select —</option>
+                        <option value="CIE 0580">CIE 0580</option>
+                        <option value="Edexcel 4MA1">Edexcel 4MA1</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="field-preferred-lang" class="block text-sm font-medium text-gray-700 mb-1">Preferred Language</label>
+                    <select id="field-preferred-lang" name="preferred_lang"
+                        class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-white">
+                        <option value="en">English</option>
+                        <option value="zh-CN">中文</option>
+                    </select>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <input type="checkbox" id="field-weekly-report" name="weekly_report_enabled"
+                        class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <label for="field-weekly-report" class="text-sm text-gray-700">Enable weekly progress report</label>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                    <button type="submit" id="settings-save-btn"
+                        class="px-5 py-2 text-sm font-semibold rounded-lg bg-gray-900 text-white hover:bg-gray-700 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                        Save Changes
+                    </button>
+                    <span id="settings-status" class="text-sm text-gray-500 hidden"></span>
+                </div>
+            </form>
+
+            <!-- Danger Zone -->
+            <div class="border border-red-200 rounded-2xl p-6">
+                <h2 class="text-lg font-semibold text-red-700 mb-3">Sign Out</h2>
+                <p class="text-sm text-gray-600 mb-4">Sign out of your account on this device.</p>
+                <button id="settings-logout-btn"
+                    class="px-4 py-2 text-sm font-semibold rounded-lg border border-red-300 text-red-700 hover:bg-red-50 transition">
+                    Sign Out
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+  'use strict';
+
+  let currentToken = '';
+
+  async function getAccessToken() {
+    if (!window.memberSupabase) return '';
+    const { data } = await window.memberSupabase.auth.getSession();
+    return data?.session?.access_token || '';
+  }
+
+  function showStatus(msg, isError) {
+    const el = document.getElementById('settings-status');
+    el.textContent = msg;
+    el.className = 'text-sm ' + (isError ? 'text-red-600' : 'text-green-600');
+    el.classList.remove('hidden');
+    if (!isError) {
+      setTimeout(() => { el.classList.add('hidden'); }, 3000);
+    }
+  }
+
+  function populateSummary(data) {
+    document.getElementById('summary-email').textContent = data.email || '—';
+
+    const ms = data.membership || {};
+    let memberText = ms.status === 'active' ? 'Active' : (ms.status || 'Free');
+    if (ms.status === 'active' && ms.period_end) {
+      memberText += ' (until ' + new Date(ms.period_end).toLocaleDateString() + ')';
+    }
+    document.getElementById('summary-membership').textContent = memberText;
+
+    const xp = data.xp || {};
+    document.getElementById('summary-xp').textContent = (xp.total_xp || 0) + ' XP — Level ' + (xp.level || 1);
+    document.getElementById('summary-achievements').textContent = String(data.achievements_unlocked || 0);
+  }
+
+  function populateForm(data) {
+    document.getElementById('field-display-name').value = data.display_name || '';
+    document.getElementById('field-target-board').value = data.target_board || '';
+    document.getElementById('field-preferred-lang').value = data.preferred_lang || 'en';
+    document.getElementById('field-weekly-report').checked = data.weekly_report_enabled !== false;
+  }
+
+  async function loadProfile() {
+    const token = await getAccessToken();
+    if (!token) return;
+    currentToken = token;
+
+    const resp = await fetch('/api/v1/user/profile', {
+      method: 'GET',
+      headers: { authorization: 'Bearer ' + token },
+    });
+    if (!resp.ok) throw new Error('Failed to load profile');
+    const data = await resp.json();
+    populateSummary(data);
+    populateForm(data);
+  }
+
+  async function saveProfile(formData) {
+    const body = {};
+    const name = formData.get('display_name')?.trim();
+    if (name) body.display_name = name;
+
+    const board = formData.get('target_board');
+    if (board) body.target_board = board;
+
+    body.preferred_lang = formData.get('preferred_lang') || 'en';
+    body.weekly_report_enabled = !!formData.get('weekly_report_enabled');
+
+    const token = currentToken || await getAccessToken();
+    const resp = await fetch('/api/v1/user/profile', {
+      method: 'PATCH',
+      headers: {
+        authorization: 'Bearer ' + token,
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error || 'Save failed');
+    }
+    return resp.json();
+  }
+
+  function showContent(visible) {
+    document.getElementById('settings-auth-gate').classList.toggle('hidden', visible);
+    document.getElementById('settings-content').classList.toggle('hidden', !visible);
+  }
+
+  function onAuth(user) {
+    if (!user) {
+      showContent(false);
+      return;
+    }
+    showContent(true);
+    loadProfile().catch(() => {
+      showStatus('Failed to load profile.', true);
+    });
+  }
+
+  function start() {
+    // Form submit
+    document.getElementById('settings-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('settings-save-btn');
+      btn.disabled = true;
+      btn.textContent = 'Saving...';
+      try {
+        const fd = new FormData(e.target);
+        await saveProfile(fd);
+        showStatus('Saved!', false);
+      } catch (err) {
+        showStatus(err.message || 'Save failed.', true);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Save Changes';
+      }
+    });
+
+    // Logout
+    document.getElementById('settings-logout-btn').addEventListener('click', async () => {
+      if (window.memberSupabase) {
+        await window.memberSupabase.auth.signOut();
+      }
+      showContent(false);
+    });
+
+    // Auth listener
+    window.addEventListener('member-auth-change', (event) => {
+      onAuth(event?.detail?.user || null);
+    });
+
+    // Check existing session
+    if (window.memberSupabase) {
+      window.memberSupabase.auth.getSession().then(({ data }) => {
+        onAuth(data?.session?.user || null);
+      }).catch(() => {});
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', start);
+})();
+</script>
