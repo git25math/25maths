@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Given the universal set ε = {integers from 1 to 10}, and the set A = {prime numbers}, what is the set A'?",
+      "questionText": "Given the universal set $\\epsilon$ = {integers from 1 to 10}, and the set A = {prime numbers}, what is the set A'?",
       "options": [
         "{1, 4, 6, 8, 9, 10}",
         "{2, 3, 5, 7}",
@@ -16,7 +16,7 @@
         "{4, 6, 8, 9, 10}"
       ],
       "correctAnswer": 0,
-      "explanation": "The set of prime numbers in ε is A = {2, 3, 5, 7}. The complement, A', contains all elements of ε that are not in A. Therefore, A' = {1, 4, 6, 8, 9, 10}."
+      "explanation": "The set of prime numbers in $\\epsilon$ is A = {2, 3, 5, 7}. The complement, A', contains all elements of $\\epsilon$ that are not in A. Therefore, A' = {1, 4, 6, 8, 9, 10}."
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If n(ε) = 50, n(A) = 22, n(B) = 30, and n(A $\\cup$ B) = 45, what is n(A $\\cap$ B)?",
+      "questionText": "If n($\\epsilon$) = 50, n(A) = 22, n(B) = 30, and n(A $\\cup$ B) = 45, what is n(A $\\cap$ B)?",
       "options": [
         "5",
         "7",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Let ε = {letters of the alphabet}, V = {vowels}. What is n(V')?",
+      "questionText": "Let $\\epsilon$ = {letters of the alphabet}, V = {vowels}. What is n(V')?",
       "options": [
         "5",
         "21",
@@ -112,7 +112,7 @@
         "0"
       ],
       "correctAnswer": 1,
-      "explanation": "There are 26 letters in the alphabet, so n(ε)=26. The set of vowels is V = {a, e, i, o, u}, so n(V)=5. The complement V' contains all letters that are not vowels. The number of elements in V' is n(V') = n(ε) - n(V) = 26 - 5 = 21."
+      "explanation": "There are 26 letters in the alphabet, so n($\\epsilon$)=26. The set of vowels is V = {a, e, i, o, u}, so n(V)=5. The complement V' contains all letters that are not vowels. The number of elements in V' is n(V') = n($\\epsilon$) - n(V) = 26 - 5 = 21."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given ε = {1, 2, 3, 4, 5, 6}, A = {1, 2, 3}, and B = {2, 4}. Find the set (A $\\cap$ B)'.",
+      "questionText": "Given $\\epsilon$ = {1, 2, 3, 4, 5, 6}, A = {1, 2, 3}, and B = {2, 4}. Find the set (A $\\cap$ B)'.",
       "options": [
         "{2}",
         "{1, 3, 4, 5, 6}",
@@ -136,7 +136,7 @@
         "{4, 5, 6}"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the intersection: A $\\cap$ B = {2}. Then, find the complement of this set with respect to the universal set ε. (A $\\cap$ B)' contains all elements in ε except for 2. So, (A $\\cap$ B)' = {1, 3, 4, 5, 6}."
+      "explanation": "First, find the intersection: A $\\cap$ B = {2}. Then, find the complement of this set with respect to the universal set $\\epsilon$. (A $\\cap$ B)' contains all elements in $\\epsilon$ except for 2. So, (A $\\cap$ B)' = {1, 3, 4, 5, 6}."
     },
     {
       "type": "multiple-choice",

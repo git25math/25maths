@@ -40,7 +40,7 @@
         "100"
       ],
       "correctAnswer": 0,
-      "explanation": "The change in x is 5 - (-1) = 6. The change in y is 6 - (-2) = 8. The distance is √($6^2 + 8^2$) = $\\sqrt{36 + 64} = \\sqrt{100}$ = 10."
+      "explanation": "The change in x is 5 - (-1) = 6. The change in y is 6 - (-2) = 8. The distance is $\\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100}$ = 10."
     },
     {
       "type": "multiple-choice",
@@ -58,13 +58,13 @@
       "type": "multiple-choice",
       "questionText": "In a right-angled triangle, the hypotenuse is 13 cm and one side is 5 cm. What is the area of the triangle?",
       "options": [
-        "30 cm²",
-        "65 cm²",
-        "32.5 cm²",
-        "12 cm²"
+        "30 $\\text{cm}^2$",
+        "65 $\\text{cm}^2$",
+        "32.5 $\\text{cm}^2$",
+        "12 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the length of the other side: $a^2 = 13^2 - 5^2$ = 169 - 25 = 144, so a = 12 cm. The area of the triangle is (1/2) * base * height = (1/2) * 5 * 12 = 30 cm²."
+      "explanation": "First, find the length of the other side: $a^2 = 13^2 - 5^2$ = 169 - 25 = 144, so a = 12 cm. The area of the triangle is ($\\frac{1}{2}$) * base * height = ($\\frac{1}{2}$) * 5 * 12 = 30 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "64 m"
       ],
       "correctAnswer": 0,
-      "explanation": "The ladder, wall, and ground form a right-angled triangle with the ladder as the hypotenuse. Let the height be h. Then h² + $6^2 = 10^2$. h² = 100 - 36 = 64. So, the height is $\\sqrt{64}$ = 8 m."
+      "explanation": "The ladder, wall, and ground form a right-angled triangle with the ladder as the hypotenuse. Let the height be h. Then $h^{2} + 6^2 = 10^2$. h² = 100 - 36 = 64. So, the height is $\\sqrt{64}$ = 8 m."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "$\\sqrt{7}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The change in x is 3 - (-1) = 4. The change in y is -1 - (-4) = 3. The distance is √($4^2 + 3^2$) = $\\sqrt{16 + 9} = \\sqrt{25}$ = 5."
+      "explanation": "The change in x is 3 - (-1) = 4. The change in y is -1 - (-4) = 3. The distance is $\\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25}$ = 5."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a right-angled triangle is 54 cm². One of its shorter sides is 12 cm. What is the length of the hypotenuse?",
+      "questionText": "The area of a right-angled triangle is 54 $\\text{cm}^2$. One of its shorter sides is 12 cm. What is the length of the hypotenuse?",
       "options": [
         "15 cm",
         "9 cm",
@@ -148,7 +148,7 @@
         "21 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the other shorter side (b). Area = (1/2) * a * b. So, 54 = (1/2) * 12 * b, which simplifies to 54 = 6b. This gives b = 9 cm. Now use Pythagoras' theorem: $hypotenuse^2 = 12^2 + 9^2$ = 144 + 81 = 225. The hypotenuse is $\\sqrt{225}$ = 15 cm."
+      "explanation": "First, find the other shorter side (b). Area = ($\\frac{1}{2}$) * a * b. So, 54 = ($\\frac{1}{2}$) * 12 * b, which simplifies to 54 = 6b. This gives b = 9 cm. Now use Pythagoras' theorem: $hypotenuse^2 = 12^2 + 9^2$ = 144 + 81 = 225. The hypotenuse is $\\sqrt{225}$ = 15 cm."
     }
   ]
 }

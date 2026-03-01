@@ -32,15 +32,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Rationalise the denominator of $3/\\sqrt{5}$.",
+      "questionText": "Rationalise the denominator of $\\frac{3}{\\sqrt{5}}$.",
       "options": [
-        "$3\\sqrt{5}/5$",
-        "$\\sqrt{5}/3$",
+        "$3 \\frac{\\sqrt{5}}{5}$",
+        "$\\frac{\\sqrt{5}}{3}$",
         "$3\\sqrt{5}$",
-        "15/5"
+        "$\\frac{15}{5}$"
       ],
       "correctAnswer": 0,
-      "explanation": "To rationalise the denominator, multiply the numerator and the denominator by $\\sqrt{5}$. This gives (3 × $\\sqrt{5}$) / ($\\sqrt{5} \\times \\sqrt{5}$) = $3\\sqrt{5}/5$."
+      "explanation": "To rationalise the denominator, multiply the numerator and the denominator by $\\sqrt{5}$. This gives (3 × $\\sqrt{5}$) / ($\\sqrt{5} \\times \\sqrt{5}$) = $3 \\frac{\\sqrt{5}}{5}$."
     },
     {
       "type": "multiple-choice",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A square has an area of 32 cm². What is the exact length of one side?",
+      "questionText": "A square has an area of 32 $\\text{cm}^2$. What is the exact length of one side?",
       "options": [
         "$\\sqrt{32}$ cm",
         "16 cm",
@@ -83,7 +83,7 @@
       "questionText": "Which of the following numbers is irrational?",
       "options": [
         "$\\sqrt{100}$",
-        "9/11",
+        "$\\frac{9}{11}$",
         "$\\sqrt{15}$",
         "3.14"
       ],
@@ -100,7 +100,7 @@
         "5 + $4\\sqrt{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the FOIL method: ($\\sqrt{3}$ + 2)($\\sqrt{3}$ + 2) = $(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2$ = 3 + $4\\sqrt{3}$ + 4 = 7 + $4\\sqrt{3}$."
+      "explanation": "Use the FOIL method: ($\\sqrt{3) + 2)(}$\\sqrt{3}${ + 2) = }$(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2${ = 3 + }$4\\sqrt{3}${ + 4 = 7 + }$4\\sqrt{3}$."
     },
     {
       "type": "multiple-choice",
@@ -121,7 +121,7 @@
         "$7\\sqrt{3}$ / 3",
         "$7\\sqrt{3}$ / 6",
         "$14\\sqrt{3}$ / 6",
-        "7 / 6"
+        "$\\frac{7}{6}$"
       ],
       "correctAnswer": 1,
       "explanation": "Multiply the numerator and denominator by $\\sqrt{3}$. This gives (7 × $\\sqrt{3}$) / ($2\\sqrt{3} \\times \\sqrt{3}$) = $7\\sqrt{3}$ / (2 × 3) = $7\\sqrt{3}$ / 6."

@@ -10,65 +10,65 @@
       "type": "multiple-choice",
       "questionText": "A cuboid has dimensions 5 cm, 8 cm, and 10 cm. Calculate its volume.",
       "options": [
-        "23 cm³",
-        "40 cm³",
-        "80 cm³",
-        "400 cm³"
+        "23 $\\text{cm}^3$",
+        "40 $\\text{cm}^3$",
+        "80 $\\text{cm}^3$",
+        "400 $\\text{cm}^3$"
       ],
       "correctAnswer": 3,
-      "explanation": "Volume of a cuboid = length × width × height. So, 5 cm × 8 cm × 10 cm = 400 cm³."
+      "explanation": "Volume of a cuboid = length × width × height. So, 5 cm × 8 cm × 10 cm = 400 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A cylinder has a radius of 3 cm and a height of 7 cm. Calculate its volume. Use $\\pi$ = 3.14.",
       "options": [
-        "21.98 cm³",
-        "65.94 cm³",
-        "197.82 cm³",
-        "220.00 cm³"
+        "21.98 $\\text{cm}^3$",
+        "65.94 $\\text{cm}^3$",
+        "197.82 $\\text{cm}^3$",
+        "220.00 $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a cylinder = $\\pi \\times r^2$ × h. So, 3.14 × $(3 cm)^2$ × 7 cm = 3.14 × 9 cm² × 7 cm = 197.82 cm³."
+      "explanation": "Volume of a cylinder = $\\pi \\times r^2$ × h. So, 3.14 × $(3 cm)^2$ × 7 cm = 3.14 × 9 $\\text{cm}^2$ × 7 cm = 197.82 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A sphere has a radius of 6 cm. Calculate its volume, leaving your answer in terms of $\\pi$.",
       "options": [
-        "36$\\pi$ cm³",
-        "72$\\pi$ cm³",
-        "288$\\pi$ cm³",
-        "864$\\pi$ cm³"
+        "36$\\pi$ $\\text{cm}^3$",
+        "72$\\pi$ $\\text{cm}^3$",
+        "288$\\pi$ $\\text{cm}^3$",
+        "864$\\pi$ $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a sphere = (4/3) × $\\pi \\times r^3$. So, (4/3) × $\\pi \\times (6 cm)^3$ = (4/3) × $\\pi$ × 216 cm³ = 288$\\pi$ cm³."
+      "explanation": "Volume of a sphere = ($\\frac{4}{3}$) × $\\pi \\times r^3$. So, ($\\frac{4}{3}$) × $\\pi \\times (6 cm)^3$ = ($\\frac{4}{3}$) × $\\pi$ × 216 $\\text{cm}^3$ = 288$\\pi$ $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A square-based pyramid has a base side length of 6 cm and a perpendicular height of 10 cm. Calculate its volume.",
       "options": [
-        "30 cm³",
-        "60 cm³",
-        "120 cm³",
-        "360 cm³"
+        "30 $\\text{cm}^3$",
+        "60 $\\text{cm}^3$",
+        "120 $\\text{cm}^3$",
+        "360 $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a pyramid = (1/3) × base area × height. Base area = 6 cm × 6 cm = 36 cm². So, (1/3) × 36 cm² × 10 cm = 120 cm³."
+      "explanation": "Volume of a pyramid = ($\\frac{1}{3}$) × base area × height. Base area = 6 cm × 6 cm = 36 $\\text{cm}^2$. So, ($\\frac{1}{3}$) × 36 $\\text{cm}^2$ × 10 cm = 120 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A cone has a radius of 5 cm and a height of 12 cm. Calculate its volume, leaving your answer in terms of $\\pi$.",
       "options": [
-        "60$\\pi$ cm³",
-        "100$\\pi$ cm³",
-        "300$\\pi$ cm³",
-        "400$\\pi$ cm³"
+        "60$\\pi$ $\\text{cm}^3$",
+        "100$\\pi$ $\\text{cm}^3$",
+        "300$\\pi$ $\\text{cm}^3$",
+        "400$\\pi$ $\\text{cm}^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume of a cone = (1/3) × $\\pi \\times r^2$ × h. So, (1/3) × $\\pi \\times (5 cm)^2$ × 12 cm = (1/3) × $\\pi$ × 25 cm² × 12 cm = 100$\\pi$ cm³."
+      "explanation": "Volume of a cone = ($\\frac{1}{3}$) × $\\pi \\times r^2$ × h. So, ($\\frac{1}{3}$) × $\\pi \\times (5 cm)^2$ × 12 cm = ($\\frac{1}{3}$) × $\\pi$ × 25 $\\text{cm}^2$ × 12 cm = 100$\\pi$ $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cuboid has a volume of 240 cm³. If its length is 8 cm and width is 5 cm, what is its height?",
+      "questionText": "A cuboid has a volume of 240 $\\text{cm}^3$. If its length is 8 cm and width is 5 cm, what is its height?",
       "options": [
         "4 cm",
         "6 cm",
@@ -76,11 +76,11 @@
         "10 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume = length × width × height. So, 240 cm³ = 8 cm × 5 cm × height. 240 = 40 × height. Height = 240/40 = 6 cm."
+      "explanation": "Volume = length × width × height. So, 240 $\\text{cm}^3$ = 8 cm × 5 cm × height. 240 = 40 × height. Height = $\\frac{240}{40}$ = 6 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The volume of a cylinder is 300$\\pi$ cm³. If its height is 12 cm, what is its radius?",
+      "questionText": "The volume of a cylinder is 300$\\pi$ $\\text{cm}^3$. If its height is 12 cm, what is its radius?",
       "options": [
         "3 cm",
         "5 cm",
@@ -88,35 +88,35 @@
         "25 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume = $\\pi \\times r^2$ × h. So, 300$\\pi = \\pi \\times r^2$ × 12. 300 = 12$r^2$. $r^2$ = 300/12 = 25. r = $\\sqrt{25}$ = 5 cm."
+      "explanation": "Volume = $\\pi \\times r^2$ × h. So, 300$\\pi = \\pi \\times r^2$ × 12. 300 = 12$r^2$. $r^2 = \\frac{300}{12}$ = 25. r = $\\sqrt{25}$ = 5 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "A hemispherical bowl has a radius of 9 cm. Calculate the volume of the bowl, leaving your answer in terms of $\\pi$.",
       "options": [
-        "162$\\pi$ cm³",
-        "324$\\pi$ cm³",
-        "486$\\pi$ cm³",
-        "972$\\pi$ cm³"
+        "162$\\pi$ $\\text{cm}^3$",
+        "324$\\pi$ $\\text{cm}^3$",
+        "486$\\pi$ $\\text{cm}^3$",
+        "972$\\pi$ $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a hemisphere = (1/2) × (4/3) × $\\pi \\times r^3$ = (2/3) × $\\pi \\times r^3$. So, (2/3) × $\\pi \\times (9 cm)^3$ = (2/3) × $\\pi$ × 729 cm³ = 486$\\pi$ cm³."
+      "explanation": "Volume of a hemisphere = ($\\frac{1}{2}$) × ($\\frac{4}{3}$) × $\\pi \\times r^3$ = ($\\frac{2}{3}$) × $\\pi \\times r^3$. So, ($\\frac{2}{3}$) × $\\pi \\times (9 cm)^3$ = ($\\frac{2}{3}$) × $\\pi$ × 729 $\\text{cm}^3$ = 486$\\pi$ $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A prism has a uniform cross-section with an area of 45 cm². If the length of the prism is 10 cm, what is its volume?",
+      "questionText": "A prism has a uniform cross-section with an area of 45 $\\text{cm}^2$. If the length of the prism is 10 cm, what is its volume?",
       "options": [
-        "45 cm³",
-        "135 cm³",
-        "450 cm³",
-        "4500 cm³"
+        "45 $\\text{cm}^3$",
+        "135 $\\text{cm}^3$",
+        "450 $\\text{cm}^3$",
+        "4500 $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a prism = cross-sectional area × length. So, 45 cm² × 10 cm = 450 cm³."
+      "explanation": "Volume of a prism = cross-sectional area × length. So, 45 $\\text{cm}^2$ × 10 cm = 450 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A rectangular-based pyramid has a base measuring 4 cm by 7 cm and a volume of 84 cm³. What is the perpendicular height of the pyramid?",
+      "questionText": "A rectangular-based pyramid has a base measuring 4 cm by 7 cm and a volume of 84 $\\text{cm}^3$. What is the perpendicular height of the pyramid?",
       "options": [
         "3 cm",
         "6 cm",
@@ -124,7 +124,7 @@
         "12 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a pyramid = (1/3) × base area × height. Base area = 4 cm × 7 cm = 28 cm². So, 84 cm³ = (1/3) × 28 cm² × height. 84 = (28/3) × height. Height = (84 × 3) / 28 = 9 cm."
+      "explanation": "Volume of a pyramid = ($\\frac{1}{3}$) × base area × height. Base area = 4 cm × 7 cm = 28 $\\text{cm}^2$. So, 84 $\\text{cm}^3$ = ($\\frac{1}{3}$) × 28 $\\text{cm}^2$ × height. 84 = ($\\frac{28}{3}$) × height. Height = (84 × 3) / 28 = 9 cm."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cone has a volume of 75$\\pi$ cm³. If its radius is 5 cm, what is its height?",
+      "questionText": "A cone has a volume of 75$\\pi$ $\\text{cm}^3$. If its radius is 5 cm, what is its height?",
       "options": [
         "3 cm",
         "6 cm",
@@ -148,7 +148,7 @@
         "12 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of a cone = (1/3) × $\\pi \\times r^2$ × h. So, 75$\\pi$ = (1/3) × $\\pi \\times (5 cm)^2$ × h. 75 = (1/3) × 25 × h. 225 = 25 × h. h = 225/25 = 9 cm."
+      "explanation": "Volume of a cone = ($\\frac{1}{3}$) × $\\pi \\times r^2$ × h. So, 75$\\pi$ = ($\\frac{1}{3}$) × $\\pi \\times (5 cm)^2$ × h. 75 = ($\\frac{1}{3}$) × 25 × h. 225 = 25 × h. h = $\\frac{225}{25}$ = 9 cm."
     }
   ]
 }

@@ -28,7 +28,7 @@
         "72.0"
       ],
       "correctAnswer": 1,
-      "explanation": "Total score for the first class = 25 * 68 = 1700. Total score for the second class = 30 * 73 = 2190. Total score for all students = 1700 + 2190 = 3890. Combined mean score = 3890 / 55 = 70.727... ≈ 70.73."
+      "explanation": "Total score for the first class = 25 * 68 = 1700. Total score for the second class = 30 * 73 = 2190. Total score for all students = 1700 + 2190 = 3890. Combined mean score = $\\frac{3890}{55}$ = 70.727... ≈ 70.73."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "10.0 min"
       ],
       "correctAnswer": 1,
-      "explanation": "Midpoints: 2.5, 7.5, 12.5, 17.5. Sum of (midpoint × frequency) = (2.5×8) + (7.5×15) + (12.5×12) + (17.5×5) = 20 + 112.5 + 150 + 87.5 = 370. Estimated mean = 370 / 40 = 9.25 min."
+      "explanation": "Midpoints: 2.5, 7.5, 12.5, 17.5. Sum of (midpoint × frequency) = (2.5×8) + (7.5×15) + (12.5×12) + (17.5×5) = 20 + 112.5 + 150 + 87.5 = 370. Estimated mean = $\\frac{370}{40}$ = 9.25 min."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "24"
       ],
       "correctAnswer": 1,
-      "explanation": "Initial total sum = 5 * 18 = 90. After removing 10, the new sum = 90 - 10 = 80. The number of remaining values is 4. New mean = 80 / 4 = 20."
+      "explanation": "Initial total sum = 5 * 18 = 90. After removing 10, the new sum = 90 - 10 = 80. The number of remaining values is 4. New mean = $\\frac{80}{4}$ = 20."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "0.8"
       ],
       "correctAnswer": 2,
-      "explanation": "The number of families owning 2 pets is 8. The total number of families is 30. Probability = 8/30 = 4/15 = 0.2666... ≈ 0.267."
+      "explanation": "The number of families owning 2 pets is 8. The total number of families is 30. Probability = $\\frac{8}{30} = \\frac{4}{15}$ = 0.2666... ≈ 0.267."
     },
     {
       "type": "multiple-choice",

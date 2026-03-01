@@ -68,27 +68,27 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Convert 5.4 m² to cm².",
+      "questionText": "Convert 5.4 $\\text{m}^2$ to $\\text{cm}^2$.",
       "options": [
-        "540 cm²",
-        "5400 cm²",
-        "54000 cm²",
-        "54 cm²"
+        "540 $\\text{cm}^2$",
+        "5400 $\\text{cm}^2$",
+        "54000 $\\text{cm}^2$",
+        "54 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert square metres to square centimetres, you must multiply by $100^2$. So, 5.4 m² = 5.4 × 100 × 100 = 54000 cm²."
+      "explanation": "To convert square metres to square centimetres, you must multiply by $100^2$. So, 5.4 $\\text{m}^2$ = 5.4 × 100 × 100 = 54000 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Convert 320,000 cm³ to m³.",
+      "questionText": "Convert 320,000 $\\text{cm}^3$ to $\\text{m}^3$.",
       "options": [
-        "32 m³",
-        "3.2 m³",
-        "0.32 m³",
-        "0.032 m³"
+        "32 $\\text{m}^3$",
+        "3.2 $\\text{m}^3$",
+        "0.32 $\\text{m}^3$",
+        "0.032 $\\text{m}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert cubic centimetres to cubic metres, you must divide by $100^3$. So, 320,000 cm³ = 320,000 ÷ (100 × 100 × 100) = 0.32 m³."
+      "explanation": "To convert cubic centimetres to cubic metres, you must divide by $100^3$. So, 320,000 $\\text{cm}^3$ = 320,000 ÷ (100 × 100 × 100) = 0.32 $\\text{m}^3$."
     },
     {
       "type": "multiple-choice",

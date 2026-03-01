@@ -143,7 +143,7 @@
       "questionText": "Two angles are complementary. If one angle is 'x', what is the expression for the other angle?",
       "options": [
         "90 - x",
-        "x - 90",
+        "${x - 90}$",
         "180 - x",
         "x"
       ],

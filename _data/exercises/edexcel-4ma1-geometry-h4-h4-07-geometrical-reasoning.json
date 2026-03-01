@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Lines AB and CD are parallel. Line EF is a transversal intersecting AB at E and CD at F. If angle AEF = 65°, what is the measure of angle EFD?",
+      "questionText": "Lines AB and CD are parallel. Line EF is a transversal intersecting AB at E and CD at F. If $\\angle AEF$ = 65°, what is the measure of $\\angle EFD$?",
       "options": [
         "25°",
         "65°",
@@ -16,11 +16,11 @@
         "155°"
       ],
       "correctAnswer": 2,
-      "explanation": "Angle AEF and angle EFD are consecutive interior angles. For parallel lines, consecutive interior angles are supplementary, so their sum is 180°. Therefore, angle EFD = 180° - 65° = 115°."
+      "explanation": "$\\angle AEF$ and $\\angle EFD$ are consecutive interior angles. For parallel lines, consecutive interior angles are supplementary, so their sum is 180°. Therefore, $\\angle EFD$ = 180° - 65° = 115°."
     },
     {
       "type": "multiple-choice",
-      "questionText": "In triangle PQR, PQ = PR. Angle QPR = 40°. What is the measure of angle PQR?",
+      "questionText": "In triangle PQR, PQ = PR. $\\angle QPR$ = 40°. What is the measure of $\\angle PQR$?",
       "options": [
         "70°",
         "100°",
@@ -28,7 +28,7 @@
         "140°"
       ],
       "correctAnswer": 0,
-      "explanation": "Since PQ = PR, triangle PQR is an isosceles triangle. The base angles are equal, so angle PQR = angle PRQ. The sum of angles in a triangle is 180°. So, 2 * angle PQR + 40° = 180°. 2 * angle PQR = 140°, which means angle PQR = 70°."
+      "explanation": "Since PQ = PR, triangle PQR is an isosceles triangle. The base angles are equal, so $\\angle PQR = \\angle PRQ$. The sum of angles in a triangle is 180°. So, 2 * $\\angle PQR$ + 40° = 180°. 2 * $\\angle PQR$ = 140°, which means $\\angle PQR$ = 70°."
     },
     {
       "type": "multiple-choice",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circle has a tangent AB at point P. O is the centre of the circle. If angle AOP = 50°, what is the measure of angle OPB?",
+      "questionText": "A circle has a tangent AB at point P. O is the centre of the circle. If $\\angle AOP$ = 50°, what is the measure of $\\angle OPB$?",
       "options": [
         "40°",
         "50°",
@@ -64,7 +64,7 @@
         "130°"
       ],
       "correctAnswer": 2,
-      "explanation": "The radius drawn to the point of tangency is perpendicular to the tangent. Therefore, angle OPB (the angle between the radius OP and the tangent AB) is 90°."
+      "explanation": "The radius drawn to the point of tangency is perpendicular to the tangent. Therefore, $\\angle OPB$ (the angle between the radius OP and the tangent AB) is 90°."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Lines GH and IJ are parallel. Angle GHK = 125°. Line HK is a transversal. What is the measure of angle HKI?",
+      "questionText": "Lines GH and IJ are parallel. $\\angle GHK$ = 125°. Line HK is a transversal. What is the measure of $\\angle HKI$?",
       "options": [
         "55°",
         "65°",
@@ -136,11 +136,11 @@
         "180°"
       ],
       "correctAnswer": 0,
-      "explanation": "Angle GHK and angle HKI are consecutive interior angles between parallel lines. They are supplementary, so angle HKI = 180° - 125° = 55°."
+      "explanation": "$\\angle GHK$ and $\\angle HKI$ are consecutive interior angles between parallel lines. They are supplementary, so $\\angle HKI$ = 180° - 125° = 55°."
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a parallelogram ABCD, angle DAB = 100°. What is the measure of angle ABC?",
+      "questionText": "In a parallelogram ABCD, $\\angle DAB$ = 100°. What is the measure of $\\angle ABC$?",
       "options": [
         "80°",
         "100°",
@@ -148,7 +148,7 @@
         "200°"
       ],
       "correctAnswer": 0,
-      "explanation": "In a parallelogram, consecutive angles are supplementary. Therefore, angle DAB + angle ABC = 180°. So, 100° + angle ABC = 180°. Angle ABC = 180° - 100° = 80°."
+      "explanation": "In a parallelogram, consecutive angles are supplementary. Therefore, $\\angle DAB + \\angle ABC$ = 180°. So, 100° + $\\angle ABC$ = 180°. $\\angle ABC$ = 180° - 100° = 80°."
     }
   ]
 }

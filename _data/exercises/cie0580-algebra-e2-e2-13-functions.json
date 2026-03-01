@@ -34,7 +34,7 @@
       "type": "multiple-choice",
       "questionText": "The function h(x) = 3x - 7. Find the value of x for which h(x) = 11.",
       "options": [
-        "4/3",
+        "$\\frac{4}{3}$",
         "18",
         "6",
         "1"
@@ -52,7 +52,7 @@
         "-x - 8"
       ],
       "correctAnswer": 0,
-      "explanation": "Let y = x - 8. To find the inverse, swap x and y: x = y - 8. Then solve for y: y = x + 8. So, $f^{-1}$(x) = x + 8."
+      "explanation": "Let ${y = x - 8}$. To find the inverse, swap x and y: x = y - 8. Then solve for y: ${y = x + 8}$. So, $f^{-1}$(x) = x + 8."
     },
     {
       "type": "multiple-choice",
@@ -64,14 +64,14 @@
         "1/(5x+4)"
       ],
       "correctAnswer": 2,
-      "explanation": "Let y = 5x + 4. Swap x and y: x = 5y + 4. Solve for y: x - 4 = 5y, so y = (x - 4)/5. Thus, g⁻¹(x) = (x - 4)/5."
+      "explanation": "Let ${y = 5x + 4}$. Swap x and y: x = 5y + 4. Solve for y: x - 4 = 5y, so y = (x - 4)/5. Thus, g⁻¹(x) = (x - 4)/5."
     },
     {
       "type": "multiple-choice",
       "questionText": "If h(x) = 2x - 3, find h⁻¹(15).",
       "options": [
         "27",
-        "1/27",
+        "$\\frac{1}{27}$",
         "9",
         "24"
       ],

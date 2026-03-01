@@ -28,7 +28,7 @@
         "16 metres"
       ],
       "correctAnswer": 1,
-      "explanation": "This forms a right-angled triangle. Let the height be h. By Pythagoras' theorem, h² + $3^2 = 5^2$. So, h² + 9 = 25. Subtracting 9 from both sides gives h² = 16. Therefore, h = $\\sqrt{16}$ = 4 metres."
+      "explanation": "This forms a right-angled triangle. Let the height be h. By Pythagoras' theorem, $h^{2} + 3^2 = 5^2$. So, h² + 9 = 25. Subtracting 9 from both sides gives h² = 16. Therefore, h = $\\sqrt{16}$ = 4 metres."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "$5\\sqrt{3}$ cm"
       ],
       "correctAnswer": 1,
-      "explanation": "For a right-angled triangle, sin(angle) = opposite/hypotenuse. So, sin(30°) = 5 / hypotenuse. Since sin(30°) = 0.5, we have 0.5 = 5 / hypotenuse. Therefore, hypotenuse = 5 / 0.5 = 10 cm."
+      "explanation": "For a right-angled triangle, sin(angle) = opposite/hypotenuse. So, sin(30°) = 5 / hypotenuse. Since sin(30°) = 0.5, we have 0.5 = 5 / hypotenuse. Therefore, hypotenuse = $\\frac{5}{0}$.5 = 10 cm."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "59°"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the angle of elevation be $\\theta$. We have the opposite side (height = 6m) and the hypotenuse (ramp length = 10m). So, sin($\\theta$) = opposite/hypotenuse = 6/10 = 0.6. Using a calculator, $\\theta$ = arcsin(0.6) ≈ 36.86°, which is 37° to the nearest degree."
+      "explanation": "Let the angle of elevation be $\\theta$. We have the opposite side (height = 6m) and the hypotenuse (ramp length = 10m). So, sin($\\theta$) = opposite/hypotenuse = $\\frac{6}{10}$ = 0.6. Using a calculator, $\\theta$ = arcsin(0.6) ≈ 36.86°, which is 37° to the nearest degree."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "90°"
       ],
       "correctAnswer": 2,
-      "explanation": "Let the angle be x. We have the adjacent side (7 cm) and the hypotenuse (14 cm). So, cos(x) = adjacent/hypotenuse = 7/14 = 0.5. Using a calculator, x = arccos(0.5) = 60°."
+      "explanation": "Let the angle be x. We have the adjacent side (7 cm) and the hypotenuse (14 cm). So, cos(x) = adjacent/hypotenuse = $\\frac{7}{14}$ = 0.5. Using a calculator, x = arccos(0.5) = 60°."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "0"
       ],
       "correctAnswer": 0,
-      "explanation": "The exact value of cos(60°) is 1/2, which is 0.5."
+      "explanation": "The exact value of cos(60°) is $\\frac{1}{2}$, which is 0.5."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "10.0 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the side length of the square be 's'. The diagonal forms the hypotenuse of a right-angled triangle with two sides 's'. By Pythagoras' theorem, s² + s² = $10^2$. So, 2s² = 100. This means s² = 50. Therefore, s = $\\sqrt{50}$ ≈ 7.071, which is 7.1 cm to one decimal place."
+      "explanation": "Let the side length of the square be 's'. The diagonal forms the hypotenuse of a right-angled triangle with two sides 's'. By Pythagoras' theorem, $s^{2} + s^{2} = 10^2$. So, 2s² = 100. This means s² = 50. Therefore, s = $\\sqrt{50}$ ≈ 7.071, which is 7.1 cm to one decimal place."
     },
     {
       "type": "multiple-choice",

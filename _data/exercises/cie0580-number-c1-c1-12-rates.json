@@ -100,7 +100,7 @@
         "3 hours 5 minutes"
       ],
       "correctAnswer": 1,
-      "explanation": "Divide 165 by 60 to find the number of full hours. 165 / 60 = 2 with a remainder. 2 * 60 = 120 minutes. The remainder is 165 - 120 = 45 minutes. So, it's 2 hours and 45 minutes."
+      "explanation": "Divide 165 by 60 to find the number of full hours. $\\frac{165}{60}$ = 2 with a remainder. 2 * 60 = 120 minutes. The remainder is 165 - 120 = 45 minutes. So, it's 2 hours and 45 minutes."
     },
     {
       "type": "multiple-choice",

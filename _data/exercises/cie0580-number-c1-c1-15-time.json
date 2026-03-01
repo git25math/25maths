@@ -100,7 +100,7 @@
         "2 hours"
       ],
       "correctAnswer": 2,
-      "explanation": "There are 3600 seconds in an hour (60 seconds/minute * 60 minutes/hour). So, 5400 / 3600 = 1.5 hours."
+      "explanation": "There are 3600 seconds in an hour (60 seconds/minute * 60 minutes/hour). So, $\\frac{5400}{3600}$ = 1.5 hours."
     },
     {
       "type": "multiple-choice",

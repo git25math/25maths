@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "A rectangular field measures 168m by 196m. It is divided into identical square plots of the largest possible size. What is the area of one of these plots?",
       "options": [
-        "28 m²",
-        "56 m²",
-        "196 m²",
-        "784 m²"
+        "28 $\\text{m}^2$",
+        "56 $\\text{m}^2$",
+        "196 $\\text{m}^2$",
+        "784 $\\text{m}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The side length of the largest possible square plot is the HCF of 168 and 196. Prime factors: 168 = $2^3$ × 3 × 7 and 196 = $2^2 \\times 7^2$. The HCF is $2^2$ × 7 = 28 m. The area of one square plot is side × side = 28 × 28 = 784 m²."
+      "explanation": "The side length of the largest possible square plot is the HCF of 168 and 196. Prime factors: 168 = $2^3$ × 3 × 7 and 196 = $2^2 \\times 7^2$. The HCF is $2^2$ × 7 = 28 m. The area of one square plot is side × side = 28 × 28 = 784 $\\text{m}^2$."
     }
   ]
 }

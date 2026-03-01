@@ -40,7 +40,7 @@
         "1:2"
       ],
       "correctAnswer": 1,
-      "explanation": "First, convert both lengths to the same unit. 300 m = 300 × 100 = 30000 cm. The scale is Drawing:Actual = 15:30000. To get the form 1:n, divide both sides by 15. 15/15 : 30000/15 gives 1:2000."
+      "explanation": "First, convert both lengths to the same unit. 300 m = 300 × 100 = 30000 cm. The scale is Drawing:Actual = 15:30000. To get the form 1:n, divide both sides by 15. $\\frac{15}{15}$ : $\\frac{30000}{15}$ gives 1:2000."
     },
     {
       "type": "multiple-choice",
@@ -58,13 +58,13 @@
       "type": "multiple-choice",
       "questionText": "An architect's plan has a scale of 1:100. A rectangular room on the plan measures 6 cm by 5 cm. What is the actual area of the room in square metres?",
       "options": [
-        "30 m²",
-        "3 m²",
-        "300 m²",
-        "3000 m²"
+        "30 $\\text{m}^2$",
+        "3 $\\text{m}^2$",
+        "300 $\\text{m}^2$",
+        "3000 $\\text{m}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Actual length = 6 cm × 100 = 600 cm = 6 m. Actual width = 5 cm × 100 = 500 cm = 5 m. Actual area = Actual length × Actual width = 6 m × 5 m = 30 m²."
+      "explanation": "Actual length = 6 cm × 100 = 600 cm = 6 m. Actual width = 5 cm × 100 = 500 cm = 5 m. Actual area = Actual length × Actual width = 6 m × 5 m = 30 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "50:1"
       ],
       "correctAnswer": 0,
-      "explanation": "Convert lengths to the same unit. Drawing length = 4 cm = 40 mm. Actual length = 8 mm. The scale is Drawing:Actual = 40:8. To get the form n:1, divide both sides by 8. 40/8 : 8/8 gives 5:1."
+      "explanation": "Convert lengths to the same unit. Drawing length = 4 cm = 40 mm. Actual length = 8 mm. The scale is Drawing:Actual = 40:8. To get the form n:1, divide both sides by 8. $\\frac{40}{8}$ : $\\frac{8}{8}$ gives 5:1."
     },
     {
       "type": "multiple-choice",

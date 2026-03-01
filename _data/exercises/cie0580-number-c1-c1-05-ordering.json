@@ -100,7 +100,7 @@
         "3.25"
       ],
       "correctAnswer": 2,
-      "explanation": "To find the midpoint of two numbers, you calculate their average. Add the two numbers together and divide by 2: (3.2 + 3.5) / 2 = 6.7 / 2 = 3.35."
+      "explanation": "To find the midpoint of two numbers, you calculate their average. Add the two numbers together and divide by 2: (3.2 + 3.5) / 2 = 6.$\\frac{7}{2}$ = 3.35."
     },
     {
       "type": "multiple-choice",

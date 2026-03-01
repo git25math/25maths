@@ -37,10 +37,10 @@
         "4 - x",
         "x / 4",
         "4x",
-        "x - 4"
+        "${x - 4}$"
       ],
       "correctAnswer": 3,
-      "explanation": "Starting with x sweets, eating 4 means you subtract 4 from the original amount. The remaining number of sweets is x - 4."
+      "explanation": "Starting with x sweets, eating 4 means you subtract 4 from the original amount. The remaining number of sweets is ${x - 4}$."
     },
     {
       "type": "multiple-choice",
@@ -94,7 +94,7 @@
       "type": "multiple-choice",
       "questionText": "A pizza is shared equally among x people. What fraction of the pizza does each person receive?",
       "options": [
-        "x - 1",
+        "${x - 1}$",
         "1/x",
         "x/1",
         "1 - x"
@@ -118,13 +118,13 @@
       "type": "multiple-choice",
       "questionText": "Amy is y years old. Her brother, Ben, is 3 years older. Which expression represents Ben's age?",
       "options": [
-        "y - 3",
+        "${y - 3}$",
         "3y",
-        "y + 3",
+        "${y + 3}$",
         "y/3"
       ],
       "correctAnswer": 2,
-      "explanation": "If Ben is older, you need to add to Amy's age. Since he is 3 years older than y, his age is y + 3."
+      "explanation": "If Ben is older, you need to add to Amy's age. Since he is 3 years older than y, his age is ${y + 3}$."
     },
     {
       "type": "multiple-choice",

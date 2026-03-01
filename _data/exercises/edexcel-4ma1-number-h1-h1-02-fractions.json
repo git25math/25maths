@@ -112,7 +112,7 @@
         "$\\frac{2}{5}$"
       ],
       "correctAnswer": 1,
-      "explanation": "The total number of parts is $5 + 3 = 8$. The person with the larger share receives 5 parts out of 8. Therefore, they receive $\\frac{5}{8}$ of the sum."
+      "explanation": "The total number of parts is ${5 + 3 = 8}$. The person with the larger share receives 5 parts out of 8. Therefore, they receive $\\frac{5}{8}$ of the sum."
     },
     {
       "type": "multiple-choice",

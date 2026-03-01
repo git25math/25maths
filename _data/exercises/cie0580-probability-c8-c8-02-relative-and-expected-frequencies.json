@@ -16,7 +16,7 @@
         "140"
       ],
       "correctAnswer": 0,
-      "explanation": "Relative frequency is calculated as the number of times an event occurs divided by the total number of trials. So, Relative Frequency = 60 / 200 = 0.3."
+      "explanation": "Relative frequency is calculated as the number of times an event occurs divided by the total number of trials. So, Relative Frequency = $\\frac{60}{200}$ = 0.3."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "465"
       ],
       "correctAnswer": 0,
-      "explanation": "Relative frequency is the ratio of occurrences to the total number of trials. So, Relative Frequency = 35 / 500 = 0.07."
+      "explanation": "Relative frequency is the ratio of occurrences to the total number of trials. So, Relative Frequency = $\\frac{35}{500}$ = 0.07."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "18"
       ],
       "correctAnswer": 2,
-      "explanation": "The probability of rolling a 5 on a fair die is 1/6. The expected number is the probability multiplied by the number of trials: (1/6) * 180 = 30."
+      "explanation": "The probability of rolling a 5 on a fair die is $\\frac{1}{6}$. The expected number is the probability multiplied by the number of trials: ($\\frac{1}{6}$) * 180 = 30."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "52"
       ],
       "correctAnswer": 2,
-      "explanation": "The estimated probability from an experiment is the relative frequency. Relative Frequency = 28 / 80 = 0.35."
+      "explanation": "The estimated probability from an experiment is the relative frequency. Relative Frequency = $\\frac{28}{80}$ = 0.35."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "180"
       ],
       "correctAnswer": 0,
-      "explanation": "Relative frequency is the number of favorable outcomes divided by the total number of outcomes. Relative Frequency = 120 / 300 = 0.4."
+      "explanation": "Relative frequency is the number of favorable outcomes divided by the total number of outcomes. Relative Frequency = $\\frac{120}{300}$ = 0.4."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "105"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the relative frequency, divide the number of 'point up' results by the total number of drops. Relative Frequency = 45 / 150 = 0.3."
+      "explanation": "To find the relative frequency, divide the number of 'point up' results by the total number of drops. Relative Frequency = $\\frac{45}{150}$ = 0.3."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "64"
       ],
       "correctAnswer": 1,
-      "explanation": "Relative frequency is calculated by dividing the number of red cars by the total number of cars. Relative Frequency = 16 / 80 = 0.2."
+      "explanation": "Relative frequency is calculated by dividing the number of red cars by the total number of cars. Relative Frequency = $\\frac{16}{80}$ = 0.2."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "24"
       ],
       "correctAnswer": 0,
-      "explanation": "Probability can be estimated by dividing the expected frequency by the number of trials. Probability = Expected Rainy Days / Total Days = 6 / 30 = 0.2."
+      "explanation": "Probability can be estimated by dividing the expected frequency by the number of trials. Probability = Expected Rainy Days / Total Days = $\\frac{6}{30}$ = 0.2."
     }
   ]
 }

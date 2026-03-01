@@ -28,7 +28,7 @@
         "50"
       ],
       "correctAnswer": 0,
-      "explanation": "Frequency density = frequency / class width = 40 / 10 = 4."
+      "explanation": "Frequency density = frequency / class width = $\\frac{40}{10}$ = 4."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "90"
       ],
       "correctAnswer": 0,
-      "explanation": "Class width = frequency / frequency density = 75 / 15 = 5."
+      "explanation": "Class width = frequency / frequency density = $\\frac{75}{15}$ = 5."
     },
     {
       "type": "multiple-choice",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A histogram bar for the class ${30 $\\leq$ x < 40}$ has a frequency of 50. A bar for ${40 $\\leq$ x < 60}$ has a frequency of 80. Which bar is taller?",
+      "questionText": "A histogram bar for the class $30 $\\leq x < 40} has a frequency of 50. A bar for ${40 $\\leq${ x < 60}$ has a frequency of 80. Which bar is taller?",
       "options": [
         "The bar for 30 $\\leq$ x < 40",
         "The bar for 40 $\\leq$ x < 60",
@@ -112,7 +112,7 @@
         "Cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "The height represents frequency density. For 30 $\\leq$ x < 40, width=10, density=50/10=5. For 40 $\\leq$ x < 60, width=20, density=80/20=4. The first bar is taller."
+      "explanation": "The height represents frequency density. For 30 $\\leq$ x < 40, width=10, density=$\\frac{50}{10}$=5. For 40 $\\leq$ x < 60, width=20, density=$\\frac{80}{20}$=4. The first bar is taller."
     },
     {
       "type": "multiple-choice",

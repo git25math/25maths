@@ -64,7 +64,7 @@
         "$2\\sqrt{3}$ cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Using SOH CAH TOA, cos(angle) = adjacent / hypotenuse. So, cos(60°) = 4 / hypotenuse. Since cos(60°) = 0.5, hypotenuse = 4 / 0.5 = 8 cm."
+      "explanation": "Using SOH CAH TOA, cos(angle) = adjacent / hypotenuse. So, cos(60°) = 4 / hypotenuse. Since cos(60°) = 0.5, hypotenuse = $\\frac{4}{0}$.5 = 8 cm."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "0.8"
       ],
       "correctAnswer": 1,
-      "explanation": "Using SOH CAH TOA, tan($\\theta$) = opposite / adjacent. So, tan($\\theta$) = 6 / 8 = 3/4 = 0.75."
+      "explanation": "Using SOH CAH TOA, tan($\\theta$) = opposite / adjacent. So, tan($\\theta$) = $\\frac{6}{8} = \\frac{3}{4}$ = 0.75."
     },
     {
       "type": "multiple-choice",

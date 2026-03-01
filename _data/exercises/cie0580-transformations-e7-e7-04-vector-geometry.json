@@ -128,15 +128,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In triangle OAB, O$\\vec{A}$ = a, O$\\vec{B}$ = b. P is the point on AB such that AP = 2/5 AB. Find O$\\vec{P}$ in terms of a and b.",
+      "questionText": "In triangle OAB, O$\\vec{A}$ = a, O$\\vec{B}$ = b. P is the point on AB such that AP = $\\frac{2}{5}$ AB. Find O$\\vec{P}$ in terms of a and b.",
       "options": [
-        "a + 2/5 b",
-        "3/5 a + 2/5 b",
-        "2/5 a + 3/5 b",
-        "a - 3/5 b"
+        "a + $\\frac{2}{5}$ b",
+        "$\\frac{3}{5}$ a + $\\frac{2}{5}$ b",
+        "$\\frac{2}{5}$ a + $\\frac{3}{5}$ b",
+        "a - $\\frac{3}{5}$ b"
       ],
       "correctAnswer": 1,
-      "explanation": "O$\\vec{P}$ = O$\\vec{A} + \\vec{AP}$. We know $\\vec{AP}$ = 2/5 $\\vec{AB}$ and $\\vec{AB}$ = b - a. So, $\\vec{AP}$ = 2/5 (b - a). Therefore, O$\\vec{P}$ = a + 2/5 (b - a) = a + 2/5 b - 2/5 a = 3/5 a + 2/5 b."
+      "explanation": "O$\\vec{P}$ = O$\\vec{A} + \\vec{AP}$. We know $\\vec{AP} = \\frac{2}{5}$ $\\vec{AB}$ and $\\vec{AB}$ = b - a. So, $\\vec{AP} = \\frac{2}{5}$ (b - a). Therefore, O$\\vec{P}$ = a + $\\frac{2}{5}$ (b - a) = a + $\\frac{2}{5}$ b - $\\frac{2}{5}$ a = $\\frac{3}{5}$ a + $\\frac{2}{5}$ b."
     },
     {
       "type": "multiple-choice",

@@ -28,7 +28,7 @@
         "480g"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the amount of flour for one person: 120g / 4 = 30g. Then, multiply by the new number of people: 30g * 10 = 300g."
+      "explanation": "First, find the amount of flour for one person: $\\frac{120g}{4}$ = 30g. Then, multiply by the new number of people: 30g * 10 = 300g."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "It cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "Cost per pen for the 6-pack: £1.80 / 6 = £0.30 (or 30p). Cost per pen for the 9-pack: £2.88 / 9 = £0.32 (or 32p). The pack of 6 is cheaper per pen, so it is better value."
+      "explanation": "Cost per pen for the 6-pack: £1.$\\frac{80}{6}$ = £0.30 (or 30p). Cost per pen for the 9-pack: £2.$\\frac{88}{9}$ = £0.32 (or 32p). The pack of 6 is cheaper per pen, so it is better value."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "£5.60"
       ],
       "correctAnswer": 1,
-      "explanation": "To find out how much each person pays, divide the total fare by the number of friends: £23.60 / 4 = £5.90."
+      "explanation": "To find out how much each person pays, divide the total fare by the number of friends: £23.$\\frac{60}{4}$ = £5.90."
     }
   ]
 }

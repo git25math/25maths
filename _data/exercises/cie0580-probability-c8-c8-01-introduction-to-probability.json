@@ -22,13 +22,13 @@
       "type": "multiple-choice",
       "questionText": "A fair six-sided die is rolled once. What is the probability of rolling a 4?",
       "options": [
-        "1/6",
-        "4/6",
-        "1/2",
+        "$\\frac{1}{6}$",
+        "$\\frac{4}{6}$",
+        "$\\frac{1}{2}$",
         "1"
       ],
       "correctAnswer": 0,
-      "explanation": "A fair six-sided die has 6 equally likely outcomes {1, 2, 3, 4, 5, 6}. There is one '4'. So, P(4) = (Number of 4s) / (Total outcomes) = 1/6."
+      "explanation": "A fair six-sided die has 6 equally likely outcomes {1, 2, 3, 4, 5, 6}. There is one '4'. So, P(4) = (Number of 4s) / (Total outcomes) = $\\frac{1}{6}$."
     },
     {
       "type": "multiple-choice",
@@ -46,13 +46,13 @@
       "type": "multiple-choice",
       "questionText": "A bag contains 3 blue balls and 7 green balls. A ball is chosen at random. What is the probability that the ball is blue?",
       "options": [
-        "3/7",
-        "7/10",
-        "3/10",
-        "1/3"
+        "$\\frac{3}{7}$",
+        "$\\frac{7}{10}$",
+        "$\\frac{3}{10}$",
+        "$\\frac{1}{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "There are 3 blue balls and a total of 3 + 7 = 10 balls. The probability of choosing a blue ball is the number of blue balls divided by the total number of balls: 3/10."
+      "explanation": "There are 3 blue balls and a total of 3 + 7 = 10 balls. The probability of choosing a blue ball is the number of blue balls divided by the total number of balls: $\\frac{3}{10}$."
     },
     {
       "type": "multiple-choice",
@@ -94,21 +94,21 @@
       "type": "multiple-choice",
       "questionText": "The letters of the word 'MATHS' are written on cards. A card is drawn at random. What is the probability of drawing the letter 'A'?",
       "options": [
-        "1/4",
-        "1/5",
-        "4/5",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{5}$",
+        "$\\frac{4}{5}$",
         "5"
       ],
       "correctAnswer": 1,
-      "explanation": "There are 5 letters in the word 'MATHS'. There is one letter 'A'. The probability of drawing 'A' is 1 out of 5, which is 1/5."
+      "explanation": "There are 5 letters in the word 'MATHS'. There is one letter 'A'. The probability of drawing 'A' is 1 out of 5, which is $\\frac{1}{5}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A fair six-sided die is rolled. What is the probability of rolling a 7?",
       "options": [
-        "1/6",
-        "1/7",
-        "7/6",
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{7}$",
+        "$\\frac{7}{6}$",
         "0"
       ],
       "correctAnswer": 3,
@@ -118,37 +118,37 @@
       "type": "multiple-choice",
       "questionText": "A fair spinner has 4 equal sectors coloured red, blue, green, and yellow. What is the probability of the spinner landing on blue?",
       "options": [
-        "1/4",
-        "1/3",
-        "1/2",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{2}$",
         "4"
       ],
       "correctAnswer": 0,
-      "explanation": "There are 4 equally likely outcomes. One of these outcomes is blue. Therefore, the probability of landing on blue is 1/4."
+      "explanation": "There are 4 equally likely outcomes. One of these outcomes is blue. Therefore, the probability of landing on blue is $\\frac{1}{4}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A fair six-sided die is rolled. What is the probability of rolling an even number?",
       "options": [
-        "3/6",
-        "1/6",
-        "2/6",
-        "4/6"
+        "$\\frac{3}{6}$",
+        "$\\frac{1}{6}$",
+        "$\\frac{2}{6}$",
+        "$\\frac{4}{6}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The even numbers on a die are 2, 4, and 6. There are 3 favourable outcomes out of 6 total outcomes. P(even) = 3/6. This can be simplified to 1/2."
+      "explanation": "The even numbers on a die are 2, 4, and 6. There are 3 favourable outcomes out of 6 total outcomes. P(even) = $\\frac{3}{6}$. This can be simplified to $\\frac{1}{2}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "From the numbers 2, 3, 4, 5, 6, 7, 8, a number is chosen at random. What is the probability that the number is a prime number?",
       "options": [
-        "3/7",
-        "4/7",
-        "2/7",
-        "4/8"
+        "$\\frac{3}{7}$",
+        "$\\frac{4}{7}$",
+        "$\\frac{2}{7}$",
+        "$\\frac{4}{8}$"
       ],
       "correctAnswer": 1,
-      "explanation": "There are 7 numbers in the list. The prime numbers in the list are 2, 3, 5, and 7. There are 4 prime numbers. Therefore, the probability is 4/7."
+      "explanation": "There are 7 numbers in the list. The prime numbers in the list are 2, 3, 5, and 7. There are 4 prime numbers. Therefore, the probability is $\\frac{4}{7}$."
     }
   ]
 }

@@ -40,7 +40,7 @@
         "60%"
       ],
       "correctAnswer": 1,
-      "explanation": "The percentage is calculated as (Angle / 360) * 100. So, (120 / 360) * 100 = 33.3%."
+      "explanation": "The percentage is calculated as (Angle / 360) * 100. So, ($\\frac{120}{360}$) * 100 = 33.3%."
     },
     {
       "type": "multiple-choice",

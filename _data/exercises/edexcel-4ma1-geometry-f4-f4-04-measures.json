@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "A swimming pool holds 50 000 litres of water. How many cubic metres is this?",
       "options": [
-        "0.05 m³",
-        "5 m³",
-        "50 m³",
-        "500 m³"
+        "0.05 $\\text{m}^3$",
+        "5 $\\text{m}^3$",
+        "50 $\\text{m}^3$",
+        "500 $\\text{m}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "1 cubic metre (m³) is equal to 1000 litres. So, 50 000 litres = 50 000 ÷ 1000 = 50 m³."
+      "explanation": "1 cubic metre ($\\text{m}^3$) is equal to 1000 litres. So, 50 000 litres = 50 000 ÷ 1000 = 50 $\\text{m}^3$."
     }
   ]
 }

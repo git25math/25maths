@@ -28,7 +28,7 @@
         "1"
       ],
       "correctAnswer": 1,
-      "explanation": "Since y is inversely proportional to x, y = k/x. From the given values, 6 = k/5, so k = 30. The relationship is y = 30/x. When x = 10, y = 30/10 = 3."
+      "explanation": "Since y is inversely proportional to x, y = k/x. From the given values, 6 = k/5, so k = 30. The relationship is y = 30/x. When x = 10, y = $\\frac{30}{10}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "150000 km"
       ],
       "correctAnswer": 0,
-      "explanation": "The map distance is 6 cm. The actual distance in cm is 6 * 25000 = 150000 cm. To convert cm to km, divide by 100 (for meters) and then by 1000 (for kilometers). 150000 / 100 / 1000 = 1.5 km."
+      "explanation": "The map distance is 6 cm. The actual distance in cm is 6 * 25000 = 150000 cm. To convert cm to km, divide by 100 (for meters) and then by 1000 (for kilometers). $\\frac{150000}{100}$ / 1000 = 1.5 km."
     },
     {
       "type": "multiple-choice",
@@ -76,19 +76,19 @@
         "25 days"
       ],
       "correctAnswer": 1,
-      "explanation": "This is an inverse proportion problem. The total work is 10 builders * 21 days = 210 builder-days. With 14 builders, the time taken is 210 / 14 = 15 days."
+      "explanation": "This is an inverse proportion problem. The total work is 10 builders * 21 days = 210 builder-days. With 14 builders, the time taken is $\\frac{210}{14}$ = 15 days."
     },
     {
       "type": "multiple-choice",
       "questionText": "Given y is directly proportional to x, and y = 18 when x = 12. Which equation represents the relationship between x and y?",
       "options": [
-        "y = x + 6",
+        "y = ${x + 6}$",
         "xy = 216",
-        "y = (2/3)x",
+        "y = ($\\frac{2}{3}$)x",
         "y = 1.5x"
       ],
       "correctAnswer": 3,
-      "explanation": "For direct proportion, y = kx. Using the given values, 18 = k * 12. Solving for k gives k = 18/12 = 1.5. Therefore, the equation is y = 1.5x."
+      "explanation": "For direct proportion, y = kx. Using the given values, 18 = k * 12. Solving for k gives k = $\\frac{18}{12}$ = 1.5. Therefore, the equation is y = 1.5x."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "25 km"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is C = kd. From the data, k = 18/8 = 2.25 ${/km. To find the distance for }$45, calculate d = C/k = 45 / 2.25 = 20 km."
+      "explanation": "The relationship is C = kd. From the data, k = $\\frac{18}{8}$ = 2.25 ${/km. To find the distance for }$45, calculate d = C/k = $\\frac{45}{2}$.25 = 20 km."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "10"
       ],
       "correctAnswer": 3,
-      "explanation": "The relationship is I = k/$d^2$. Using the given data, 40 = k / $3^2$, so k = 40 * 9 = 360. The formula is I = $360/d^2$. At a distance of 6m, the intensity is I = 360 / $6^2$ = 360 / 36 = 10."
+      "explanation": "The relationship is I = k/$d^2$. Using the given data, 40 = k / $3^2$, so k = 40 * 9 = 360. The formula is I = $\\frac{360}{d^2}$. At a distance of 6m, the intensity is I = 360 / $6^2 = \\frac{360}{36}$ = 10."
     }
   ]
 }

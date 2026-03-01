@@ -136,7 +136,7 @@
         "20"
       ],
       "correctAnswer": 2,
-      "explanation": "The relationship is p = k / $q^2$. Substitute the given values: 5 = k / $2^2$, so 5 = k / 4. The constant of proportionality is k = 5 × 4 = 20. The formula is p = 20 / $q^2$. When q = 10, p = 20 / $10^2$ = 20 / 100 = 0.2."
+      "explanation": "The relationship is p = k / $q^2$. Substitute the given values: 5 = k / $2^2$, so 5 = k / 4. The constant of proportionality is k = 5 × 4 = 20. The formula is p = 20 / $q^2$. When q = 10, p = 20 / $10^2 = \\frac{20}{100}$ = 0.2."
     },
     {
       "type": "multiple-choice",

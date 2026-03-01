@@ -16,7 +16,7 @@
         "50%"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the percentage, divide the part by the whole and multiply by 100. (72 / 180) * 100 = 40%."
+      "explanation": "To find the percentage, divide the part by the whole and multiply by 100. ($\\frac{72}{180}$) * 100 = 40%."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "60%"
       ],
       "correctAnswer": 1,
-      "explanation": "A full circle is 360 degrees. The percentage is calculated as (Angle / 360) * 100. So, (108 / 360) * 100 = 30%."
+      "explanation": "A full circle is 360 degrees. The percentage is calculated as (Angle / 360) * 100. So, ($\\frac{108}{360}$) * 100 = 30%."
     },
     {
       "type": "multiple-choice",

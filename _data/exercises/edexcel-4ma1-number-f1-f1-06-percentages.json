@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Convert the fraction 3/4 into a percentage.",
+      "questionText": "Convert the fraction $\\frac{3}{4}$ into a percentage.",
       "options": [
         "34%",
         "60%",
@@ -52,7 +52,7 @@
         "20%"
       ],
       "correctAnswer": 0,
-      "explanation": "First, ensure both amounts are in the same units. £2.00 is 200p. Then, write as a fraction and multiply by 100. (50 / 200) × 100 = 0.25 × 100 = 25%."
+      "explanation": "First, ensure both amounts are in the same units. £2.00 is 200p. Then, write as a fraction and multiply by 100. ($\\frac{50}{200}$) × 100 = 0.25 × 100 = 25%."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "10%"
       ],
       "correctAnswer": 2,
-      "explanation": "The increase is 450 - 400 = 50. The percentage increase is (Increase / Original Amount) × 100. (50 / 400) × 100 = 12.5%."
+      "explanation": "The increase is 450 - 400 = 50. The percentage increase is (Increase / Original Amount) × 100. ($\\frac{50}{400}$) × 100 = 12.5%."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "£360"
       ],
       "correctAnswer": 1,
-      "explanation": "A 20% discount means the sale price is 80% of the original price. So, £320 is 80% of the original price. To find the original price (100%), calculate (£320 / 80) × 100 = £400."
+      "explanation": "A 20% discount means the sale price is 80% of the original price. So, £320 is 80% of the original price. To find the original price (100%), calculate (£$\\frac{320}{80}$) × 100 = £400."
     },
     {
       "type": "multiple-choice",

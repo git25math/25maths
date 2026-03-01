@@ -28,7 +28,7 @@
         "2.30"
       ],
       "correctAnswer": 0,
-      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square${) to enter the power of 3. Then multiply the result by $0.45}$. The full answer is $132.651 \\times 0.45 = 59.69295${, which rounds to $59.69}$."
+      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square$) to enter the power of 3. Then multiply the result by 0.45}. The full answer is $132.651 \\times 0.45 = 59.69295${, which rounds to $59.69$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "2.13"
       ],
       "correctAnswer": 0,
-      "explanation": "Input the mixed number $5\\frac{1}{4}$ using the fraction button, or convert it to the decimal 5.25. Then subtract 3.87. The calculation is $5.25 - 3.87 = 1.38$."
+      "explanation": "Input the mixed number $5\\frac{1}{4}$ using the fraction button, or convert it to the decimal 5.25. Then subtract 3.87. The calculation is ${5.25 - 3.87 = 1.38}$."
     },
     {
       "type": "multiple-choice",
@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "A circle has a radius of 6.8 cm. Calculate its area, using the $\\pi$ button on your calculator. Give your answer correct to 1 decimal place.",
       "options": [
-        "145.3 cm²",
-        "42.7 cm²",
-        "145.2 cm²",
-        "141.9 cm²"
+        "145.3 $\\text{cm}^2$",
+        "42.7 $\\text{cm}^2$",
+        "145.2 $\\text{cm}^2$",
+        "141.9 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2${ into your calculator. The result is $145.267...}$ cm². Rounding to one decimal place gives $145.3$ cm²."
+      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Input $\\pi \\times 6.8^2${ into your calculator. The result is $145.267...}$ $\\text{cm}^2$. Rounding to one decimal place gives $145.3$ $\\text{cm}^2$."
     }
   ]
 }

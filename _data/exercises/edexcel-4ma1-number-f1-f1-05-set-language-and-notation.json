@@ -76,7 +76,7 @@
         "\\{3\\}"
       ],
       "correctAnswer": 1,
-      "explanation": "First, identify set $A = \\{3, 6\\}${. The complement set $A'}$ contains all elements in the universal set $\\mathscr{E}$ that are not in A. Therefore, $A' = \\{1, 2, 4, 5\\}$."
+      "explanation": "First, identify set $A = \\{3, 6\\}$. The complement set A'} contains all elements in the universal set $\\mathscr{E$ that are not in A. Therefore, $A' = \\{1, 2, 4, 5\\}$."
     },
     {
       "type": "multiple-choice",

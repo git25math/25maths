@@ -56,15 +56,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify 3m⁵ × 4m².",
+      "questionText": "Simplify $3m^{5} \\times 4m^{2}$.",
       "options": [
-        "12m⁷",
-        "7m⁷",
+        "$12m^{7}$",
+        "$7m^{7}$",
         "12m¹⁰",
         "7m¹⁰"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply the coefficients (3 × 4 = 12) and add the exponents of the variable (5 + 2 = 7). The result is 12m⁷."
+      "explanation": "Multiply the coefficients (3 × 4 = 12) and add the exponents of the variable (5 + 2 = 7). The result is $12m^{7}$."
     },
     {
       "type": "multiple-choice",
@@ -95,36 +95,36 @@
       "questionText": "Express $x^{-5}$ as a fraction.",
       "options": [
         "-$x^5$",
-        "$1/x^5$",
+        "$\\frac{1}{x^5}$",
         "x/5",
-        "$1/x^{-5}$"
+        "$\\frac{1}{x^{-5}}$"
       ],
       "correctAnswer": 1,
-      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, $x^{-5} = 1/x^5$."
+      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, $x^{-5} = \\frac{1}{x^5}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Evaluate $3^{-2}$.",
       "options": [
-        "1/9",
+        "$\\frac{1}{9}$",
         "-6",
         "9",
         "-9"
       ],
       "correctAnswer": 0,
-      "explanation": "$3^{-2}$ is the reciprocal of $3^2$, which is 1/9."
+      "explanation": "$3^{-2}$ is the reciprocal of $3^2$, which is $\\frac{1}{9}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Simplify $(x^2y^3)^2$.",
       "options": [
-        "$x^4$$y^5$",
-        "$x^4$$y^6$",
-        "$x^2$$y^5$",
-        "2$x^2$$y^3$"
+        "$x^4y^5$",
+        "$x^4y^6$",
+        "$x^2y^5$",
+        "2$x^2y^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "Apply the power to each factor inside the brackets. $(x^2)^2 = x^4$ and $(y^3)^2 = y^6$. So the answer is $x^4$$y^6$."
+      "explanation": "Apply the power to each factor inside the brackets. $(x^2)^2 = x^4$ and $(y^3)^2 = y^6$. So the answer is $x^4y^6$."
     },
     {
       "type": "multiple-choice",

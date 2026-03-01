@@ -76,7 +76,7 @@
         "x = 1.875 or x = -1.875"
       ],
       "correctAnswer": 2,
-      "explanation": "Rearrange the equation to $4x^2 = 49$. Divide by 4 to get $x^2 = 49/4$. Take the square root of both sides, remembering both positive and negative roots: ${x = ±\\sqrt{49/4} = ±7/2}$. So, ${x = 3.5}$ or ${x = -3.5}$."
+      "explanation": "Rearrange the equation to $4x^2 = 49$. Divide by 4 to get $x^2 = \\frac{49}{4}$. Take the square root of both sides, remembering both positive and negative roots: ${x = ±\\sqrt{49/4} = ±7/2}$. So, ${x = 3.5}$ or ${x = -3.5}$."
     },
     {
       "type": "multiple-choice",
@@ -84,7 +84,7 @@
       "options": [
         "x = 2, y = 5",
         "x = 3, y = 4",
-        "x = 8/3, y = 13/3",
+        "x = $\\frac{8}{3}$, y = $\\frac{13}{3}$",
         "x = 2.5, y = 4.5"
       ],
       "correctAnswer": 0,
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a rectangle is 48 cm². Its length is ${x + 4}$ cm and its width is 6 cm. Find the value of ${x}$.",
+      "questionText": "The area of a rectangle is 48 $\\text{cm}^2$. Its length is ${x + 4}$ cm and its width is 6 cm. Find the value of ${x}$.",
       "options": [
         "x = 14",
         "x = 4",

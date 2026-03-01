@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality 3x - 4 > 5.",
+      "questionText": "Solve the inequality ${3x - 4}$> 5.",
       "options": [
         "x > 1",
         "x < 3",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality 2(y + 5) $\\leq$ 16.",
+      "questionText": "Solve the inequality 2(${y + 5}$) $\\leq$ 16.",
       "options": [
         "y $\\leq$ 3",
         "y $\\leq$ 8",
@@ -40,7 +40,7 @@
         "y $\\leq$ 1.5"
       ],
       "correctAnswer": 0,
-      "explanation": "First, expand the brackets: 2y + 10 $\\leq$ 16. Next, subtract 10 from both sides: 2y $\\leq$ 6. Finally, divide by 2: y $\\leq$ 3."
+      "explanation": "First, expand the brackets: $2y + 10\\leq$ 16. Next, subtract 10 from both sides: 2y $\\leq$ 6. Finally, divide by 2: y $\\leq$ 3."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "5"
       ],
       "correctAnswer": 2,
-      "explanation": "First, solve the inequality for x by dividing by 4: x > 15/4, which is x > 3.75. The smallest integer that is greater than 3.75 is 4."
+      "explanation": "First, solve the inequality for x by dividing by 4: x > $\\frac{15}{4}$, which is x > 3.75. The smallest integer that is greater than 3.75 is 4."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the largest integer that satisfies the inequality 2x - 7 < 1?",
+      "questionText": "What is the largest integer that satisfies the inequality ${2x - 7}$< 1?",
       "options": [
         "3",
         "4",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve 1 < 2y - 3 $\\leq$ 11.",
+      "questionText": "Solve 1 < $2y - 3\\leq$ 11.",
       "options": [
         "1 < y $\\leq$ 6",
         "2 < y $\\leq$ 7",

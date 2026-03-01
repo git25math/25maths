@@ -44,19 +44,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "An object has a mass of 540 g and a volume of 60 cm³. Calculate its density in g/cm³.",
+      "questionText": "An object has a mass of 540 g and a volume of 60 $\\text{cm}^3$. Calculate its density in g/$\\text{cm}^3$.",
       "options": [
-        "0.11 g/cm³",
-        "9 g/cm³",
-        "480 g/cm³",
-        "32400 g/cm³"
+        "0.11 g/$\\text{cm}^3$",
+        "9 g/$\\text{cm}^3$",
+        "480 g/$\\text{cm}^3$",
+        "32400 g/$\\text{cm}^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the formula Density = Mass / Volume. Density = 540 g / 60 cm³ = 9 g/cm³."
+      "explanation": "Use the formula Density = Mass / Volume. Density = 540 g / 60 $\\text{cm}^3$ = 9 g/$\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The density of a liquid is 1.4 g/cm³. Find the mass, in grams, of 250 cm³ of the liquid.",
+      "questionText": "The density of a liquid is 1.4 g/$\\text{cm}^3$. Find the mass, in grams, of 250 $\\text{cm}^3$ of the liquid.",
       "options": [
         "178.6 g",
         "251.4 g",
@@ -64,7 +64,7 @@
         "390 g"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the formula Mass = Density × Volume. Mass = 1.4 g/cm³ × 250 cm³ = 350 g."
+      "explanation": "Use the formula Mass = Density × Volume. Mass = 1.4 g/$\\text{cm}^3$ × 250 $\\text{cm}^3$ = 350 g."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "600 m/s"
       ],
       "correctAnswer": 0,
-      "explanation": "To convert km/h to m/s, multiply by 1000 (to get metres) and divide by 3600 (to get seconds). Speed = (36 × 1000) / 3600 = 36000 / 3600 = 10 m/s."
+      "explanation": "To convert km/h to m/s, multiply by 1000 (to get metres) and divide by 3600 (to get seconds). Speed = (36 × 1000) / 3600 = $\\frac{36000}{3600}$ = 10 m/s."
     },
     {
       "type": "multiple-choice",

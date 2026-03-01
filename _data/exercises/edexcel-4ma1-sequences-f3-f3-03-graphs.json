@@ -76,7 +76,7 @@
         "Fibonacci sequence"
       ],
       "correctAnswer": 1,
-      "explanation": "The terms are 1, 4, 9, 16... which are square numbers (n^2). A sequence with an nth term rule involving n^2 is a quadratic sequence."
+      "explanation": "The terms are 1, 4, 9, 16... which are square numbers ($n^{2}$). A sequence with an nth term rule involving $n^{2}$ is a quadratic sequence."
     },
     {
       "type": "multiple-choice",

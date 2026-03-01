@@ -28,7 +28,7 @@
         "5.8 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Correct to one decimal place (0.1 cm), the error is ±0.1 / 2 = ±0.05. The lower bound is 5.8 - 0.05 = 5.75 cm."
+      "explanation": "Correct to one decimal place (0.1 cm), the error is ±0.$\\frac{1}{2}$ = ±0.05. The lower bound is 5.8 - 0.05 = 5.75 cm."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "2.505 kg"
       ],
       "correctAnswer": 0,
-      "explanation": "Correct to the nearest 0.1 kg, the error is ±0.1 / 2 = ±0.05 kg. The upper bound is 2.5 + 0.05 = 2.55 kg."
+      "explanation": "Correct to the nearest 0.1 kg, the error is ±0.$\\frac{1}{2}$ = ±0.05 kg. The upper bound is 2.5 + 0.05 = 2.55 kg."
     },
     {
       "type": "multiple-choice",
@@ -82,25 +82,25 @@
       "type": "multiple-choice",
       "questionText": "A rectangle measures 12 cm by 8 cm, with both dimensions correct to the nearest centimetre. What is the maximum possible area?",
       "options": [
-        "96 cm²",
-        "100 cm²",
-        "105.75 cm²",
-        "106.25 cm²"
+        "96 $\\text{cm}^2$",
+        "100 $\\text{cm}^2$",
+        "105.75 $\\text{cm}^2$",
+        "106.25 $\\text{cm}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "To find the maximum area, multiply the upper bounds. UB(length) = 12.5 cm. UB(width) = 8.5 cm. Max area = 12.5 × 8.5 = 106.25 cm²."
+      "explanation": "To find the maximum area, multiply the upper bounds. UB(length) = 12.5 cm. UB(width) = 8.5 cm. Max area = 12.5 × 8.5 = 106.25 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A rectangle measures 12 cm by 8 cm, with both dimensions correct to the nearest centimetre. What is the minimum possible area?",
       "options": [
-        "86.25 cm²",
-        "95 cm²",
-        "88.25 cm²",
-        "96 cm²"
+        "86.25 $\\text{cm}^2$",
+        "95 $\\text{cm}^2$",
+        "88.25 $\\text{cm}^2$",
+        "96 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the minimum area, multiply the lower bounds. LB(length) = 12 - 0.5 = 11.5 cm. LB(width) = 8 - 0.5 = 7.5 cm. Min area = 11.5 × 7.5 = 86.25 cm²."
+      "explanation": "To find the minimum area, multiply the lower bounds. LB(length) = 12 - 0.5 = 11.5 cm. LB(width) = 8 - 0.5 = 7.5 cm. Min area = 11.5 × 7.5 = 86.25 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "3.9"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the lower bound of a division, divide the lower bound of the numerator by the upper bound of the denominator. LB(x) = 20 - 0.5 = 19.5. UB(y) = 5 + 0.5 = 5.5. Lower bound = 19.5 / 5.5 ≈ 3.545..."
+      "explanation": "To find the lower bound of a division, divide the lower bound of the numerator by the upper bound of the denominator. LB(x) = 20 - 0.5 = 19.5. UB(y) = 5 + 0.5 = 5.5. Lower bound = 19.$\\frac{5}{5}$.5 ≈ 3.545..."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "0.84 $\\leq$ p < 0.85"
       ],
       "correctAnswer": 1,
-      "explanation": "Correct to 2 decimal places (0.01), the error is ±0.01 / 2 = ±0.005. The lower bound is 0.84 - 0.005 = 0.835 (inclusive), and the upper bound is 0.84 + 0.005 = 0.845 (exclusive)."
+      "explanation": "Correct to 2 decimal places (0.01), the error is ±0.$\\frac{01}{2}$ = ±0.005. The lower bound is 0.84 - 0.005 = 0.835 (inclusive), and the upper bound is 0.84 + 0.005 = 0.845 (exclusive)."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "110"
       ],
       "correctAnswer": 2,
-      "explanation": "100 correct to 1 s.f. means the number is rounded to the nearest 100. The error is ±100 / 2 = ±50. The upper bound is 100 + 50 = 150."
+      "explanation": "100 correct to 1 s.f. means the number is rounded to the nearest 100. The error is ±$\\frac{100}{2}$ = ±50. The upper bound is 100 + 50 = 150."
     }
   ]
 }

@@ -136,7 +136,7 @@
         "$396.75"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the original price be P. Then P × 1.15 = ${345. To find P, we calculate }$345 / 1.15 = $300."
+      "explanation": "Let the original price be P. Then P × 1.15 = ${345. To find P, we calculate }\\frac{345}{1}$.15 = $300."
     },
     {
       "type": "multiple-choice",

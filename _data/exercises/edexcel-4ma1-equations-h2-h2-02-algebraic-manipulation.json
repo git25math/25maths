@@ -28,7 +28,7 @@
         "3y + 2"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the FOIL method: (First) 2y * y = 2$y^2$; (Outer) 2y * 5 = 10y; (Inner) -3 * y = -3y; (Last) -3 * 5 = -15. Combine the middle terms: 10y - 3y = 7y. The result is 2$y^2$ + 7y - 15."
+      "explanation": "Use the FOIL method: (First) 2y * y = 2$y^2$; (Outer) 2y * 5 = 10y; (Inner) -3 * ${y = -3y}$; (Last) -3 * 5 = -15. Combine the middle terms: 10y - 3y = 7y. The result is 2$y^2$ + 7y - 15."
     },
     {
       "type": "multiple-choice",
@@ -61,7 +61,7 @@
         "(x + 3) / (x + 2)",
         "(x - 3) / (x - 2)",
         "(x + 3) / (x - 2)",
-        "x - 3/2"
+        "x - $\\frac{3}{2}$"
       ],
       "correctAnswer": 0,
       "explanation": "Factorise the numerator: $x^2$ + x - 6 = (x + 3)(x - 2). Factorise the denominator (difference of two squares): $x^2$ - 4 = (x - 2)(x + 2). The fraction is ((x + 3)(x - 2)) / ((x - 2)(x + 2)). Cancel the common factor (x - 2) to get (x + 3) / (x + 2)."
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Make 'r' the subject of the formula V = (4/3)$\\pi$$r^3$.",
+      "questionText": "Make 'r' the subject of the formula V = ($\\frac{4}{3}$)$\\pi r^3$.",
       "options": [
         "r = ³$\\sqrt{3V / 4$\\pi$}$",
         "r = ³$\\sqrt{4V / 3$\\pi$}$",
@@ -88,7 +88,7 @@
         "r = 3V / 4$\\pi$"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply by 3: 3V = 4$\\pi$$r^3$. Divide by 4$\\pi$: 3V / 4$\\pi = r^3$. Take the cube root of both sides: r = ³$\\sqrt{3V / 4$\\pi$}$."
+      "explanation": "Multiply by 3: 3V = 4$\\pi r^3$. Divide by 4$\\pi$: 3V / 4$\\pi = r^3$. Take the cube root of both sides: r = ³$\\sqrt{3V / 4$\\pi$}$."
     },
     {
       "type": "multiple-choice",
@@ -104,15 +104,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Factorise completely 50 - 2m².",
+      "questionText": "Factorise completely 50 - $2m^{2}$.",
       "options": [
-        "2(25 - m²)",
+        "2(25 - $\\text{m}^2$)",
         "2(5 - m)(5 + m)",
         "(10 - 2m)(5 + m)",
         "2(m - 5)(m + 5)"
       ],
       "correctAnswer": 1,
-      "explanation": "First, take out the common factor of 2: 2(25 - m²). Then, factorise the difference of two squares inside the bracket: 2(5 - m)(5 + m)."
+      "explanation": "First, take out the common factor of 2: 2(25 - $\\text{m}^2$). Then, factorise the difference of two squares inside the bracket: 2(5 - m)(5 + m)."
     },
     {
       "type": "multiple-choice",

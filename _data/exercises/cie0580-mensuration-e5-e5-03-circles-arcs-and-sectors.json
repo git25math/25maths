@@ -12,7 +12,7 @@
       "options": [
         "$7\\pi$ cm",
         "$14\\pi$ cm",
-        "$49\\pi$ cm²",
+        "$49\\pi$ $\\text{cm}^2$",
         "$28\\pi$ cm"
       ],
       "correctAnswer": 1,
@@ -22,13 +22,13 @@
       "type": "multiple-choice",
       "questionText": "What is the area of a circle with a radius of 9 cm, in terms of $\\pi$?",
       "options": [
-        "$18\\pi$ cm²",
-        "$9\\pi$ cm²",
-        "$81\\pi$ cm²",
-        "$324\\pi$ cm²"
+        "$18\\pi$ $\\text{cm}^2$",
+        "$9\\pi$ $\\text{cm}^2$",
+        "$81\\pi$ $\\text{cm}^2$",
+        "$324\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Given ${r = 9}${ cm, the area is }$\\pi \\times 9^2 = 81\\pi$ cm²."
+      "explanation": "The formula for the area of a circle is $A = \\pi r^2$. Given ${r = 9}${ cm, the area is }$\\pi \\times 9^2 = 81\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -36,7 +36,7 @@
       "options": [
         "$10\\pi$ cm",
         "$30\\pi$ cm",
-        "$37.5\\pi$ cm²",
+        "$37.5\\pi$ $\\text{cm}^2$",
         "$5\\pi$ cm"
       ],
       "correctAnswer": 3,
@@ -46,13 +46,13 @@
       "type": "multiple-choice",
       "questionText": "Find the area of a sector with a radius of 12 cm and a central angle of 90°, in terms of $\\pi$.",
       "options": [
-        "$36\\pi$ cm²",
-        "$144\\pi$ cm²",
+        "$36\\pi$ $\\text{cm}^2$",
+        "$144\\pi$ $\\text{cm}^2$",
         "$6\\pi$ cm",
         "$24\\pi$ cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the area of a sector is $\\frac{\\theta}{360} \\times \\pi r^2$. Substituting the values: $\\frac{90}{360} \\times \\pi \\times 12^2 = \\frac{1}{4} \\times 144\\pi = 36\\pi$ cm²."
+      "explanation": "The formula for the area of a sector is $\\frac{\\theta}{360} \\times \\pi r^2$. Substituting the values: $\\frac{90}{360} \\times \\pi \\times 12^2 = \\frac{1}{4} \\times 144\\pi = 36\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a circle is $64\\pi$ cm². What is its diameter?",
+      "questionText": "The area of a circle is $64\\pi$ $\\text{cm}^2$. What is its diameter?",
       "options": [
         "8 cm",
         "32 cm",
@@ -76,7 +76,7 @@
         "16 cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The formula for area is $A = \\pi r^2$. Given $A = 64\\pi$ cm², we have $64\\pi = \\pi r^2$, so $r^2 = 64$, which means ${r = 8}$ cm. The diameter is twice the radius, so $d = 2 \\times 8 = 16$ cm."
+      "explanation": "The formula for area is $A = \\pi r^2$. Given $A = 64\\pi$ $\\text{cm}^2$, we have $64\\pi = \\pi r^2$, so $r^2 = 64$, which means ${r = 8}$ cm. The diameter is twice the radius, so $d = 2 \\times 8 = 16$ cm."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sector has an area of $12\\pi$ cm² and is part of a circle with radius 6 cm. What is the central angle of the sector?",
+      "questionText": "A sector has an area of $12\\pi$ $\\text{cm}^2$ and is part of a circle with radius 6 cm. What is the central angle of the sector?",
       "options": [
         "60°",
         "90°",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a sector is $20\\pi$ cm² and its central angle is 45°. What is the radius of the circle?",
+      "questionText": "The area of a sector is $20\\pi$ $\\text{cm}^2$ and its central angle is 45°. What is the radius of the circle?",
       "options": [
         "$4\\sqrt{10}$ cm",
         "10 cm",
@@ -136,19 +136,19 @@
         "36 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Using the arc length formula, $2\\pi = \\frac{40}{360} \\times 2\\pi r$. This simplifies to $1 = \\frac{1}{9}r$. Therefore, the radius $r = 9$ cm."
+      "explanation": "Using the arc length formula, $2\\pi = \\frac{40}{360} \\times 2\\pi r$. This simplifies to $1 = \\frac{1}{9}r$. Therefore, the radius ${r = 9}$ cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the area of the minor segment bounded by a chord and a 90° arc in a circle of radius 10 cm.",
       "options": [
-        "$25\\pi$ cm²",
-        "$100\\pi - 50$ cm²",
-        "50 cm²",
-        "$25\\pi - 50$ cm²"
+        "$25\\pi$ $\\text{cm}^2$",
+        "$100\\pi - 50$ $\\text{cm}^2$",
+        "50 $\\text{cm}^2$",
+        "$25\\pi - 50$ $\\text{cm}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The area of a segment is the area of the sector minus the area of the triangle. Sector area $= \\frac{90}{360} \\times \\pi \\times 10^2 = 25\\pi$. Triangle area $= \\frac{1}{2} \\times 10 \\times 10 \\times \\sin(90°) = 50$. Segment area $= 25\\pi - 50$ cm²."
+      "explanation": "The area of a segment is the area of the sector minus the area of the triangle. Sector area $= \\frac{90}{360} \\times \\pi \\times 10^2 = 25\\pi$. Triangle area $= \\frac{1}{2} \\times 10 \\times 10 \\times \\sin(90°) = 50$. Segment area $= 25\\pi - 50$ $\\text{cm}^2$."
     }
   ]
 }

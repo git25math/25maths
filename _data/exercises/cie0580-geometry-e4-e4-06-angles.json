@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a pair of parallel lines, two co-interior angles are given by the expressions (3x + 10)° and (2x + 20)°. Find the value of x.",
+      "questionText": "In a pair of parallel lines, two co-interior angles are given by the expressions (${3x + 10}$)° and (${2x + 20}$)°. Find the value of x.",
       "options": [
         "10",
         "15",
@@ -28,11 +28,11 @@
         "30"
       ],
       "correctAnswer": 3,
-      "explanation": "Co-interior angles between parallel lines add up to 180°. So, (3x + 10) + (2x + 20) = 180. This simplifies to 5x + 30 = 180. Subtracting 30 from both sides gives 5x = 150. Dividing by 5 gives x = 30."
+      "explanation": "Co-interior angles between parallel lines add up to 180°. So, (${3x + 10}$) + (${2x + 20}$) = 180. This simplifies to ${5x + 30 = 180}$. Subtracting 30 from both sides gives 5x = 150. Dividing by 5 gives x = 30."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A, B, C and D are points on a circle, forming a cyclic quadrilateral. If angle ABC = 85°, what is the size of angle ADC?",
+      "questionText": "A, B, C and D are points on a circle, forming a cyclic quadrilateral. If $\\angle ABC$ = 85°, what is the size of $\\angle ADC$?",
       "options": [
         "85°",
         "95°",
@@ -40,7 +40,7 @@
         "170°"
       ],
       "correctAnswer": 1,
-      "explanation": "Opposite angles in a cyclic quadrilateral are supplementary, meaning they add up to 180°. Therefore, angle ADC = 180° - 85° = 95°."
+      "explanation": "Opposite angles in a cyclic quadrilateral are supplementary, meaning they add up to 180°. Therefore, $\\angle ADC$ = 180° - 85° = 95°."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Three angles around a point are x, (2x + 30)°, and (3x - 90)°. Find the value of x.",
+      "questionText": "Three angles around a point are x, (${2x + 30}$)°, and (${3x - 90}$)°. Find the value of x.",
       "options": [
         "60",
         "70",
@@ -100,7 +100,7 @@
         "90"
       ],
       "correctAnswer": 1,
-      "explanation": "Angles around a point sum to 360°. So, x + (2x + 30) + (3x - 90) = 360. This simplifies to 6x - 60 = 360. Adding 60 to both sides gives 6x = 420. Dividing by 6 gives x = 70."
+      "explanation": "Angles around a point sum to 360°. So, ${x +}$(${2x + 30}$) + (${3x - 90}$) = 360. This simplifies to ${6x - 60 = 360}$. Adding 60 to both sides gives 6x = 420. Dividing by 6 gives x = 70."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a pair of parallel lines, two alternate interior angles are expressed as (4y)° and (y + 75)°. Find the value of y.",
+      "questionText": "In a pair of parallel lines, two alternate interior angles are expressed as (4y)° and (${y + 75}$)°. Find the value of y.",
       "options": [
         "15",
         "25",
@@ -124,7 +124,7 @@
         "35"
       ],
       "correctAnswer": 1,
-      "explanation": "Alternate interior angles in parallel lines are equal. Therefore, 4y = y + 75. Subtracting y from both sides gives 3y = 75. Dividing by 3 gives y = 25."
+      "explanation": "Alternate interior angles in parallel lines are equal. Therefore, 4y = ${y + 75}$. Subtracting y from both sides gives 3y = 75. Dividing by 3 gives y = 25."
     },
     {
       "type": "multiple-choice",

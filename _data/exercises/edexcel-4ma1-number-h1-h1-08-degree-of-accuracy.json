@@ -94,13 +94,13 @@
       "type": "multiple-choice",
       "questionText": "A rectangle has length 24 cm and width 15 cm, both measured to the nearest centimetre. What is the upper bound for the area of the rectangle?",
       "options": [
-        "360 cm²",
-        "379.75 cm²",
-        "341.25 cm²",
-        "380 cm²"
+        "360 $\\text{cm}^2$",
+        "379.75 $\\text{cm}^2$",
+        "341.25 $\\text{cm}^2$",
+        "380 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the upper bound of the area, we multiply the upper bounds of the length and width. UB(length) = 24.5 cm. UB(width) = 15.5 cm. Upper bound of area = 24.5 × 15.5 = 379.75 cm²."
+      "explanation": "To find the upper bound of the area, we multiply the upper bounds of the length and width. UB(length) = 24.5 cm. UB(width) = 15.5 cm. Upper bound of area = 24.5 × 15.5 = 379.75 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "98 km/h"
       ],
       "correctAnswer": 0,
-      "explanation": "Speed = Distance / Time. To find the lower bound of the speed, we must divide the lower bound of the distance by the upper bound of the time. LB(Distance) = 245 km. UB(Time) = 3.5 hours. Lower bound of speed = 245 / 3.5 = 70 km/h."
+      "explanation": "Speed = Distance / Time. To find the lower bound of the speed, we must divide the lower bound of the distance by the upper bound of the time. LB(Distance) = 245 km. UB(Time) = 3.5 hours. Lower bound of speed = $\\frac{245}{3}$.5 = 70 km/h."
     },
     {
       "type": "multiple-choice",
@@ -124,11 +124,11 @@
         "102 km/h"
       ],
       "correctAnswer": 3,
-      "explanation": "Speed = Distance / Time. To find the upper bound of the speed, we must divide the upper bound of the distance by the lower bound of the time. UB(Distance) = 255 km. LB(Time) = 2.5 hours. Upper bound of speed = 255 / 2.5 = 102 km/h."
+      "explanation": "Speed = Distance / Time. To find the upper bound of the speed, we must divide the upper bound of the distance by the lower bound of the time. UB(Distance) = 255 km. LB(Time) = 2.5 hours. Upper bound of speed = $\\frac{255}{2}$.5 = 102 km/h."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given v = u + at, where u = 10 m/s (to the nearest m/s), a = 4.2 m/s² (to 2 s.f.), and t = 3 s (to the nearest second). Find the upper bound of v.",
+      "questionText": "Given v = u + at, where u = 10 m/s (to the nearest m/s), a = 4.2 m/$s^{2}$ (to 2 s.f.), and t = 3 s (to the nearest second). Find the upper bound of v.",
       "options": [
         "22.6",
         "25.375",
@@ -143,12 +143,12 @@
       "questionText": "A number m is 200, correct to the nearest 10. Another number n is 5, correct to the nearest integer. Find the lower bound of m ÷ n.",
       "options": [
         "40",
-        "390/11",
-        "410/11",
-        "380/11"
+        "$\\frac{390}{11}$",
+        "$\\frac{410}{11}$",
+        "$\\frac{380}{11}$"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the lower bound of a division (m/n), we must divide the lower bound of m by the upper bound of n. Lower bound of m = 195. Upper bound of n = 5.5. So, the lower bound of m ÷ n is 195 / 5.5, which simplifies to 1950 / 55 = 390 / 11."
+      "explanation": "To find the lower bound of a division (m/n), we must divide the lower bound of m by the upper bound of n. Lower bound of m = 195. Upper bound of n = 5.5. So, the lower bound of m ÷ n is $\\frac{195}{5}$.5, which simplifies to $\\frac{1950}{55} = \\frac{390}{11}$."
     }
   ]
 }

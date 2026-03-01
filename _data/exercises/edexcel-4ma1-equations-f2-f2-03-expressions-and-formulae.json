@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given the formula y = 5x - 3, what is the value of y when x = -2?",
+      "questionText": "Given the formula ${y = 5x - 3}$, what is the value of y when x = -2?",
       "options": [
         "7",
         "-7",
@@ -32,15 +32,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The formula for the area of a square is A = s². What is the area of a square with side length s = 9 cm?",
+      "questionText": "The formula for the area of a square is A = $s^{2}$. What is the area of a square with side length s = 9 cm?",
       "options": [
-        "18 cm²",
-        "81 cm²",
-        "36 cm²",
-        "9 cm²"
+        "18 $\\text{cm}^2$",
+        "81 $\\text{cm}^2$",
+        "36 $\\text{cm}^2$",
+        "9 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "Substitute s = 9 into the formula: A = $9^2$. This means A = 9 × 9, which is 81 cm²."
+      "explanation": "Substitute s = 9 into the formula: A = $9^2$. This means A = 9 × 9, which is 81 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Use the formula F = (9/5)C + 32 to convert a temperature of 15°C to Fahrenheit.",
+      "questionText": "Use the formula F = ($\\frac{9}{5}$)C + 32 to convert a temperature of 15°C to Fahrenheit.",
       "options": [
         "59°F",
         "47°F",
@@ -76,7 +76,7 @@
         "86.6°F"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute C = 15 into the formula: F = (9/5) × 15 + 32. This simplifies to F = 9 × 3 + 32, which is F = 27 + 32 = 59°F."
+      "explanation": "Substitute C = 15 into the formula: F = ($\\frac{9}{5}$) × 15 + 32. This simplifies to F = 9 × 3 + 32, which is F = 27 + 32 = 59°F."
     },
     {
       "type": "multiple-choice",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The formula for the area of a trapezium is A = (1/2)(a+b)h. Find the area when a = 6, b = 10, and h = 5.",
+      "questionText": "The formula for the area of a trapezium is A = ($\\frac{1}{2}$)(a+b)h. Find the area when a = 6, b = 10, and h = 5.",
       "options": [
         "80",
         "35",
@@ -112,7 +112,7 @@
         "50"
       ],
       "correctAnswer": 2,
-      "explanation": "Substitute the values into the formula: A = (1/2)(6+10) × 5. This simplifies to A = (1/2)(16) × 5, which is A = 8 × 5 = 40."
+      "explanation": "Substitute the values into the formula: A = ($\\frac{1}{2}$)(6+10) × 5. This simplifies to A = ($\\frac{1}{2}$)(16) × 5, which is A = 8 × 5 = 40."
     },
     {
       "type": "multiple-choice",

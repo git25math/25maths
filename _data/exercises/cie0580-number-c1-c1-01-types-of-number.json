@@ -46,13 +46,13 @@
       "type": "multiple-choice",
       "questionText": "What is the prime factorization of 90?",
       "options": [
-        "2 x 3^2 x 5",
+        "2 x $3^{2}$ x 5",
         "2 x 3 x 15",
         "9 x 10",
-        "2^2 x 3 x 5"
+        "$2^{2}$ x 3 x 5"
       ],
       "correctAnswer": 0,
-      "explanation": "Prime factorization means writing a number as a product of its prime factors. 90 = 2 x 45 = 2 x 3 x 15 = 2 x 3 x 3 x 5 = 2 x 3^2 x 5."
+      "explanation": "Prime factorization means writing a number as a product of its prime factors. 90 = 2 x 45 = 2 x 3 x 15 = 2 x 3 x 3 x 5 = 2 x $3^{2}$ x 5."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "25"
       ],
       "correctAnswer": 0,
-      "explanation": "A number with exactly 3 factors is the square of a prime number. 9 = 3^2, and its factors are 1, 3, and 9. (Distractors: 12 has factors 1,2,3,4,6,12; 16 has 1,2,4,8,16; 25 has 1,5,25)."
+      "explanation": "A number with exactly 3 factors is the square of a prime number. 9 = $3^{2}$, and its factors are 1, 3, and 9. (Distractors: 12 has factors 1,2,3,4,6,12; 16 has 1,2,4,8,16; 25 has 1,5,25)."
     },
     {
       "type": "multiple-choice",

@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Make 'a' the subject of the formula s = ut + (1/2)$at^2$.",
+      "questionText": "Make 'a' the subject of the formula s = ut + ($\\frac{1}{2}$)$at^2$.",
       "options": [
         "a = 2(s - ut) / $t^2$",
         "a = (s - ut) / (2$t^2$)",
@@ -64,19 +64,19 @@
         "a = 2(s + ut) / $t^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, subtract 'ut' from both sides: s - ut = (1/2)$at^2$. Then multiply by 2: 2(s - ut) = $at^2$. Finally, divide by $t^2$ to isolate 'a': a = 2(s - ut) / $t^2$."
+      "explanation": "First, subtract 'ut' from both sides: s - ut = ($\\frac{1}{2}$)$at^2$. Then multiply by 2: 2(s - ut) = $at^2$. Finally, divide by $t^2$ to isolate 'a': a = 2(s - ut) / $t^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (9$x^6$$y^4$) / (3$x^2$y).",
+      "questionText": "Simplify (9$x^6y^4$) / (3$x^2$y).",
       "options": [
-        "3$x^4$$y^3$",
-        "6$x^4$$y^3$",
-        "3$x^3$$y^4$",
-        "3$x^8$$y^5$"
+        "3$x^4y^3$",
+        "6$x^4y^3$",
+        "3$x^3y^4$",
+        "3$x^8y^5$"
       ],
       "correctAnswer": 0,
-      "explanation": "Divide the coefficients: 9 / 3 = 3. Subtract the powers of x: 6 - 2 = 4. Subtract the powers of y: 4 - 1 = 3. This gives 3$x^4$$y^3$."
+      "explanation": "Divide the coefficients: $\\frac{9}{3}$ = 3. Subtract the powers of x: 6 - 2 = 4. Subtract the powers of y: 4 - 1 = 3. This gives 3$x^4y^3$."
     },
     {
       "type": "multiple-choice",

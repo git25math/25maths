@@ -64,7 +64,7 @@
         "2.7 hours"
       ],
       "correctAnswer": 2,
-      "explanation": "There are 60 minutes in an hour. 162 / 60 = 2 with a remainder of 42. Therefore, 162 minutes is 2 hours and 42 minutes."
+      "explanation": "There are 60 minutes in an hour. $\\frac{162}{60}$ = 2 with a remainder of 42. Therefore, 162 minutes is 2 hours and 42 minutes."
     },
     {
       "type": "multiple-choice",

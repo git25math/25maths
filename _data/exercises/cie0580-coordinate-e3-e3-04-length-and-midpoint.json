@@ -16,7 +16,7 @@
         "$\\sqrt{13}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the distance formula: d = √($(x₂-x₁)^2 + (y₂-y₁)^2$). So, d = √($(5-2)^2 + (7-3)^2$) = √($3^2 + 4^2$) = $\\sqrt{9 + 16} = \\sqrt{25}$ = 5."
+      "explanation": "Use the distance formula: d = $\\sqrt{(x₂-x₁)^2 + (y₂-y₁)^2}$. So, d = $\\sqrt{(5-2)^2 + (7-3)^2} = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25}$ = 5."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "(6, 12)"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the midpoint formula: M = ((x₁+x₂)/2, (y₁+y₂)/2). So, M = ((-1+7)/2, (8+4)/2) = (6/2, 12/2) = (3, 6)."
+      "explanation": "Use the midpoint formula: M = ((x₁+x₂)/2, (y₁+y₂)/2). So, M = ((-1+7)/2, (8+4)/2) = ($\\frac{6}{2}$, $\\frac{12}{2}$) = (3, 6)."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "$\\sqrt{52}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the distance formula: d = $\\sqrt{(3 - $(-3}$)^2$ + (4 - (-4))²) = √($6^2 + 8^2$) = $\\sqrt{36 + 64} = \\sqrt{100}$ = 10."
+      "explanation": "Use the distance formula: d = $\\sqrt{(3 - $(-3))^2}${ + (4 - (-4))²) = }$\\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100}$ = 10."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "(-4, -10)"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the midpoint formula: M = ((-5+1)/2, (-2+(-8))/2) = (-4/2, -10/2) = (-2, -5)."
+      "explanation": "Use the midpoint formula: M = ((-5+1)/2, (-2+(-8))/2) = (-$\\frac{4}{2}$, -$\\frac{10}{2}$) = (-2, -5)."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "4"
       ],
       "correctAnswer": 0,
-      "explanation": "Using the distance formula: d = √($(4-1)^2 + (3-2)^2$) = √($3^2 + 1^2$) = $\\sqrt{9 + 1} = \\sqrt{10}$."
+      "explanation": "Using the distance formula: d = $\\sqrt{(4-1)^2 + (3-2)^2} = \\sqrt{3^2 + 1^2} = \\sqrt{9 + 1} = \\sqrt{10}$."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "14"
       ],
       "correctAnswer": 0,
-      "explanation": "Length AC = 4-1 = 3. Length BC = 5-1 = 4. Length AB = √($(4-1)^2 + (5-1)^2$) = √($3^2 + 4^2$) = 5. Perimeter = 3 + 4 + 5 = 12."
+      "explanation": "Length AC = 4-1 = 3. Length BC = 5-1 = 4. Length AB = $\\sqrt{(4-1)^2 + (5-1)^2} = \\sqrt{3^2 + 4^2}$ = 5. Perimeter = 3 + 4 + 5 = 12."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "(7, 6)"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the midpoint formula: M = ((7+7)/2, (-2+8)/2) = (14/2, 6/2) = (7, 3)."
+      "explanation": "Use the midpoint formula: M = ((7+7)/2, (-2+8)/2) = ($\\frac{14}{2}$, $\\frac{6}{2}$) = (7, 3)."
     },
     {
       "type": "multiple-choice",

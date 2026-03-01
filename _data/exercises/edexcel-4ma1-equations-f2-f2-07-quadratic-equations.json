@@ -10,17 +10,17 @@
       "type": "multiple-choice",
       "questionText": "Which of the following is a quadratic equation?",
       "options": [
-        "3x + 5 = 11",
-        "x^2 - 6x + 8 = 0",
-        "x^3 - 2x^2 + 1 = 0",
-        "5/x + x = 4"
+        "${3x + 5 = 11}$",
+        "$x^{2} - 6x + 8 = 0$",
+        "$x^{3}$ - 2x^2 + 1 = 0",
+        "$\\frac{5}{x} + x = 4$"
       ],
       "correctAnswer": 1,
-      "explanation": "A quadratic equation is a polynomial equation of the second degree, meaning the highest power of the variable is 2. The equation 'x^2 - 6x + 8 = 0' fits this form (ax^2 + bx + c = 0)."
+      "explanation": "A quadratic equation is a polynomial equation of the second degree, meaning the highest power of the variable is 2. The equation '$x^{2} - 6x + 8 = 0$' fits this form (ax^2 + bx + c = 0)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x^2 = 64.",
+      "questionText": "Solve the equation $x^{2}$ = 64.",
       "options": [
         "x = 8",
         "x = -8",
@@ -28,11 +28,11 @@
         "x = 32"
       ],
       "correctAnswer": 2,
-      "explanation": "To solve x^2 = 64, take the square root of both sides. Remember to include both the positive and negative roots. The square root of 64 is 8, so x = 8 or x = -8."
+      "explanation": "To solve $x^{2}$ = 64, take the square root of both sides. Remember to include both the positive and negative roots. The square root of 64 is 8, so x = 8 or x = -8."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation (x - 4)(x + 3) = 0.",
+      "questionText": "Solve the equation (${x - 4}$)(${x + 3}$) = 0.",
       "options": [
         "x = -4 or x = 3",
         "x = 4 or x = -3",
@@ -40,11 +40,11 @@
         "x = -4 or x = -3"
       ],
       "correctAnswer": 1,
-      "explanation": "If the product of two factors is zero, then at least one of the factors must be zero. Set each bracket equal to zero: x - 4 = 0 gives x = 4, and x + 3 = 0 gives x = -3."
+      "explanation": "If the product of two factors is zero, then at least one of the factors must be zero. Set each bracket equal to zero: ${x - 4 = 0}$ gives x = 4, and ${x + 3 = 0}$ gives x = -3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x^2 - 25 = 0.",
+      "questionText": "Solve the equation $x^{2}$ - 25 = 0.",
       "options": [
         "x = 5",
         "x = -5",
@@ -52,11 +52,11 @@
         "x = 5 or x = -5"
       ],
       "correctAnswer": 3,
-      "explanation": "Rearrange the equation to x^2 = 25. Then take the square root of both sides. This gives two solutions: x = 5 and x = -5. This is also known as the difference of two squares, (x-5)(x+5)=0."
+      "explanation": "Rearrange the equation to $x^{2}$ = 25. Then take the square root of both sides. This gives two solutions: x = 5 and x = -5. This is also known as the difference of two squares, (${x-5}$)(${x+5}$)=0."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x^2 + 7x + 10 = 0.",
+      "questionText": "Solve the equation $x^{2} + 7x + 10 = 0$.",
       "options": [
         "x = 2 or x = 5",
         "x = -2 or x = -5",
@@ -64,11 +64,11 @@
         "x = -2 or x = 5"
       ],
       "correctAnswer": 1,
-      "explanation": "Factorise the quadratic by finding two numbers that multiply to make 10 and add to make 7. These numbers are +2 and +5. So, (x + 2)(x + 5) = 0. The solutions are x = -2 and x = -5."
+      "explanation": "Factorise the quadratic by finding two numbers that multiply to make 10 and add to make 7. These numbers are +2 and +5. So, (${x + 2}$)(${x + 5}$) = 0. The solutions are x = -2 and x = -5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x^2 - 5x = 0.",
+      "questionText": "Solve the equation $x^{2}$ - 5x = 0.",
       "options": [
         "x = 5 only",
         "x = 0 only",
@@ -76,11 +76,11 @@
         "x = 0 or x = -5"
       ],
       "correctAnswer": 2,
-      "explanation": "Factorise by taking out the common factor, x. This gives x(x - 5) = 0. For this to be true, either x = 0 or x - 5 = 0. So, the solutions are x = 0 and x = 5."
+      "explanation": "Factorise by taking out the common factor, x. This gives x(${x - 5}$) = 0. For this to be true, either x = 0 or ${x - 5 = 0}$. So, the solutions are x = 0 and x = 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x^2 - x - 6 = 0.",
+      "questionText": "Solve the equation $x^{2} - x - 6 = 0$.",
       "options": [
         "x = -2 or x = 3",
         "x = 2 or x = -3",
@@ -88,35 +88,35 @@
         "x = 1 or x = -6"
       ],
       "correctAnswer": 0,
-      "explanation": "Factorise the quadratic by finding two numbers that multiply to make -6 and add to make -1. These numbers are -3 and +2. So, (x - 3)(x + 2) = 0. The solutions are x = 3 and x = -2."
+      "explanation": "Factorise the quadratic by finding two numbers that multiply to make -6 and add to make -1. These numbers are -3 and +2. So, (${x - 3}$)(${x + 2}$) = 0. The solutions are x = 3 and x = -2."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the first step to solve the equation x(x + 5) = 14?",
+      "questionText": "What is the first step to solve the equation x(${x + 5}$) = 14?",
       "options": [
         "Set x = 14",
-        "Expand the brackets to get x^2 + 5x = 14",
+        "Expand the brackets to get $x^{2}$ + 5x = 14",
         "Divide both sides by x",
-        "Set x + 5 = 14"
+        "Set ${x + 5 = 14}$"
       ],
       "correctAnswer": 1,
-      "explanation": "To solve a quadratic equation, you must first arrange it into the standard form ax^2 + bx + c = 0. The first step here is to expand the brackets, giving x^2 + 5x = 14. The next step would be to subtract 14 from both sides."
+      "explanation": "To solve a quadratic equation, you must first arrange it into the standard form ax^2 + bx + c = 0. The first step here is to expand the brackets, giving $x^{2}$ + 5x = 14. The next step would be to subtract 14 from both sides."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write the equation 3x^2 = 7x - 2 in the form ax^2 + bx + c = 0.",
+      "questionText": "Write the equation 3x^2 = ${7x - 2}$ in the form ax^2 + bx + c = 0.",
       "options": [
-        "3x^2 - 7x + 2 = 0",
-        "3x^2 + 7x - 2 = 0",
-        "3x^2 - 7x - 2 = 0",
-        "3x^2 + 7x + 2 = 0"
+        "3x^2 - ${7x + 2 = 0}$",
+        "3x^2 + ${7x - 2 = 0}$",
+        "3x^2 - ${7x - 2 = 0}$",
+        "3x^2 + ${7x + 2 = 0}$"
       ],
       "correctAnswer": 0,
-      "explanation": "To get the equation into the form ax^2 + bx + c = 0, you need to move all terms to one side of the equals sign. Subtract 7x and add 2 to both sides to get 3x^2 - 7x + 2 = 0."
+      "explanation": "To get the equation into the form ax^2 + bx + c = 0, you need to move all terms to one side of the equals sign. Subtract 7x and add 2 to both sides to get 3x^2 - ${7x + 2 = 0}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x^2 - 10x + 21 = 0.",
+      "questionText": "Solve the equation $x^{2} - 10x + 21 = 0$.",
       "options": [
         "x = -3 or x = -7",
         "x = 3 or x = -7",
@@ -124,11 +124,11 @@
         "x = 3 or x = 7"
       ],
       "correctAnswer": 3,
-      "explanation": "Factorise the quadratic by finding two numbers that multiply to make 21 and add to make -10. These numbers are -3 and -7. So, (x - 3)(x - 7) = 0. The solutions are x = 3 and x = 7."
+      "explanation": "Factorise the quadratic by finding two numbers that multiply to make 21 and add to make -10. These numbers are -3 and -7. So, (${x - 3}$)(${x - 7}$) = 0. The solutions are x = 3 and x = 7."
     },
     {
       "type": "multiple-choice",
-      "questionText": "One solution to the equation x^2 + 4x - 32 = 0 is x = 4. What is the other solution?",
+      "questionText": "One solution to the equation $x^{2} + 4x - 32 = 0$ is x = 4. What is the other solution?",
       "options": [
         "x = 8",
         "x = -8",
@@ -136,19 +136,19 @@
         "x = -4"
       ],
       "correctAnswer": 1,
-      "explanation": "The equation factorises to (x - 4)(x + 8) = 0. We find two numbers that multiply to -32 and add to +4, which are +8 and -4. Since one solution is x=4 (from x-4=0), the other solution must come from x+8=0, which gives x = -8."
+      "explanation": "The equation factorises to (${x - 4}$)(${x + 8}$) = 0. We find two numbers that multiply to -32 and add to +4, which are +8 and -4. Since one solution is x=4 (from ${x-4=0}$), the other solution must come from ${x+8=0}$, which gives x = -8."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a rectangle is 30 cm². Its length is 1 cm more than its width. If the width is x, which equation represents this information?",
+      "questionText": "The area of a rectangle is 30 $\\text{cm}^2$. Its length is 1 cm more than its width. If the width is x, which equation represents this information?",
       "options": [
-        "x(x + 1) = 30",
-        "2x + 2(x+1) = 30",
-        "x + (x+1) = 30",
-        "x^2 = 30"
+        "x(${x + 1}$) = 30",
+        "${2x + 2}$(${x+1}$) = 30",
+        "${x +}$(${x+1}$) = 30",
+        "$x^{2}$ = 30"
       ],
       "correctAnswer": 0,
-      "explanation": "Let the width be x. The length is x + 1. The area of a rectangle is length × width. Therefore, the equation is (x + 1) × x = 30."
+      "explanation": "Let the width be x. The length is ${x + 1}$. The area of a rectangle is length × width. Therefore, the equation is (${x + 1}$) × x = 30."
     }
   ]
 }

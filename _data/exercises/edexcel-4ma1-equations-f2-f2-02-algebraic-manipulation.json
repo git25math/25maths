@@ -52,16 +52,16 @@
         "4(2p - 8)"
       ],
       "correctAnswer": 2,
-      "explanation": "Find the highest common factor (HCF) of 8 and 12, which is 4. Divide each term by 4: ${8p / 4 = 2p}$ and ${-12 / 4 = -3}$. The factorised expression is ${4(2p - 3)}$."
+      "explanation": "Find the highest common factor (HCF) of 8 and 12, which is 4. Divide each term by 4: ${8p / 4 = 2p}$ and $- \\frac{12}{4} = -3$. The factorised expression is ${4(2p - 3)}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Simplify the expression ${c + c + c + c + c}$.",
       "options": [
-        "c^5",
+        "$c^{5}$",
         "5c",
         "c+5",
-        "5c^5"
+        "$5c^{5}$"
       ],
       "correctAnswer": 1,
       "explanation": "Adding the same term 'c' five times is equivalent to multiplying 'c' by 5. The result is ${5c}$."
@@ -70,9 +70,9 @@
       "type": "multiple-choice",
       "questionText": "Expand the expression ${a(a - 4)}$.",
       "options": [
-        "a^2 - 4",
+        "$a^{2}$ - 4",
         "2a - 4",
-        "a^2 - 4a",
+        "$a^{2}$ - 4a",
         "a - 4a"
       ],
       "correctAnswer": 2,
@@ -95,12 +95,12 @@
       "questionText": "Factorise the expression $y^2 + 7y$.",
       "options": [
         "y(y + 7y)",
-        "7(y^2 + y)",
-        "y^2(1 + 7)",
+        "7($y^{2}$ + y)",
+        "$y^{2}$(1 + 7)",
         "y(y + 7)"
       ],
       "correctAnswer": 3,
-      "explanation": "The highest common factor of $y^2$ and ${7y}$ is 'y'. Divide each term by 'y': $y^2 / y = y$ and ${7y / y = 7}$. The factorised expression is ${y(y + 7)}$."
+      "explanation": "The highest common factor of $y^2$ and ${7y}$ is 'y'. Divide each term by 'y': $\\frac{y^2}{y} = y$ and $\\frac{7y}{y} = 7$. The factorised expression is ${y(y + 7)}$."
     },
     {
       "type": "multiple-choice",
@@ -133,10 +133,10 @@
         "3(5x + 4y)",
         "20(0.75x + y)",
         "5(3x + 4y)",
-        "15(x + 4/3 y)"
+        "15(x + $\\frac{4}{3}$ y)"
       ],
       "correctAnswer": 2,
-      "explanation": "The highest common factor of 15 and 20 is 5. Dividing the terms by 5 gives ${15x / 5 = 3x}$ and ${20y / 5 = 4y}$. The fully factorised form is ${5(3x + 4y)}$."
+      "explanation": "The highest common factor of 15 and 20 is 5. Dividing the terms by 5 gives ${15x / 5 = 3x}$ and $\\frac{20y}{5} = 4y$. The fully factorised form is ${5(3x + 4y)}$."
     },
     {
       "type": "multiple-choice",

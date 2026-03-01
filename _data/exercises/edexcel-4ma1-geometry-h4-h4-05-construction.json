@@ -32,11 +32,11 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "When constructing an angle bisector of angle XYZ, you first draw an arc from Y that intersects YX at A and YZ at B. What is the next step?",
+      "questionText": "When constructing an angle bisector of $\\angle XYZ$, you first draw an arc from Y that intersects YX at A and YZ at B. What is the next step?",
       "options": [
         "Draw a line from Y to the midpoint of AB.",
         "From A, draw an arc into the angle's interior, then from B, draw another arc with the same radius intersecting the first.",
-        "Measure the angle XYZ with a protractor and divide by two.",
+        "Measure the $\\angle XYZ$ with a protractor and divide by two.",
         "Extend the lines YX and YZ."
       ],
       "correctAnswer": 1,
@@ -52,7 +52,7 @@
         "50 degrees"
       ],
       "correctAnswer": 3,
-      "explanation": "Angles that can be constructed with ruler and compass are those whose measure is of the form k * (360 / 2^n) where k and n are integers, and also sums/differences of such angles. 50 degrees is not constructible by these methods. 45° (90° bisected), 75° (60° + 15°), and 105° (60° + 45° or 90° + 15°) are constructible."
+      "explanation": "Angles that can be constructed with ruler and compass are those whose measure is of the form k * ($\\frac{360}{2}$^n) where k and n are integers, and also sums/differences of such angles. 50 degrees is not constructible by these methods. 45° (90° bisected), 75° (60° + 15°), and 105° (60° + 45° or 90° + 15°) are constructible."
     },
     {
       "type": "multiple-choice",
@@ -130,7 +130,7 @@
       "type": "multiple-choice",
       "questionText": "When constructing an angle of 90 degrees using only a ruler and compasses, what fundamental construction is being performed?",
       "options": [
-        "Angle bisection.",
+        "angle bisection.",
         "Line bisection.",
         "Perpendicular line from a point on a line.",
         "Parallel line construction."

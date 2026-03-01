@@ -136,7 +136,7 @@
         "(3, 2)"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the midpoint formula: ((x1 + x2)/2, (y1 + y2)/2). Midpoint = ((2+8)/2, (6+10)/2) = (10/2, 16/2) = (5, 8)."
+      "explanation": "Use the midpoint formula: ((x1 + x2)/2, (y1 + y2)/2). Midpoint = ((2+8)/2, (6+10)/2) = ($\\frac{10}{2}$, $\\frac{16}{2}$) = (5, 8)."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "(-5, -3)"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the midpoint formula: ((x1 + x2)/2, (y1 + y2)/2). Midpoint = ((-3+7)/2, (5+(-1))/2) = (4/2, 4/2) = (2, 2)."
+      "explanation": "Use the midpoint formula: ((x1 + x2)/2, (y1 + y2)/2). Midpoint = ((-3+7)/2, (5+(-1))/2) = ($\\frac{4}{2}$, $\\frac{4}{2}$) = (2, 2)."
     }
   ]
 }

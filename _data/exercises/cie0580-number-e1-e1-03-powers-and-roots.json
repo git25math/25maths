@@ -72,11 +72,11 @@
       "options": [
         "-8",
         "-16",
-        "1/8",
-        "1/16"
+        "$\\frac{1}{8}$",
+        "$\\frac{1}{16}$"
       ],
       "correctAnswer": 3,
-      "explanation": "A negative index indicates the reciprocal. So, $4^{-2} = 1/4^2$ = 1/16."
+      "explanation": "A negative index indicates the reciprocal. So, $4^{-2} = 1/4^2 = \\frac{1}{16}$."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "81"
       ],
       "correctAnswer": 2,
-      "explanation": "An index of 1/2 means the square root. So, $9^{1/2} = \\sqrt{9}$ = 3."
+      "explanation": "An index of $\\frac{1}{2}$ means the square root. So, $9^{1/2} = \\sqrt{9}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "2.7"
       ],
       "correctAnswer": 1,
-      "explanation": "An index of 1/3 means the cube root. So, $27^{1/3} = \\sqrt[3]{27}$ = 3."
+      "explanation": "An index of $\\frac{1}{3}$ means the cube root. So, $27^{1/3} = \\sqrt[3]{27}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "$10^{-3}$ is equivalent to $1/10^3$ = 1/1000, which is 0.001 as a decimal."
+      "explanation": "$10^{-3}$ is equivalent to $1/10^3 = \\frac{1}{1000}$, which is 0.001 as a decimal."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a square is 49 cm². What is the length of one side?",
+      "questionText": "The area of a square is 49 $\\text{cm}^2$. What is the length of one side?",
       "options": [
         "24.5 cm",
         "7 cm",

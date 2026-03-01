@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A bag contains coloured beads. The probability of picking a blue bead is 1/5. If the experiment is repeated 70 times, what is the expected frequency of picking a blue bead?",
+      "questionText": "A bag contains coloured beads. The probability of picking a blue bead is $\\frac{1}{5}$. If the experiment is repeated 70 times, what is the expected frequency of picking a blue bead?",
       "options": [
         "10",
         "14",
@@ -124,7 +124,7 @@
         "35"
       ],
       "correctAnswer": 1,
-      "explanation": "Expected frequency is the probability of the event (1/5) multiplied by the number of trials (70). (1/5) × 70 = 14."
+      "explanation": "Expected frequency is the probability of the event ($\\frac{1}{5}$) multiplied by the number of trials (70). ($\\frac{1}{5}$) × 70 = 14."
     },
     {
       "type": "multiple-choice",

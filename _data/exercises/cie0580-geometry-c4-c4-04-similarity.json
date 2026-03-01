@@ -52,7 +52,7 @@
         "4 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The scale factor from Q to P is 2/5. Multiply the side length of Q by this scale factor: 20 cm * (2/5) = 8 cm."
+      "explanation": "The scale factor from Q to P is $\\frac{2}{5}$. Multiply the side length of Q by this scale factor: 20 cm * ($\\frac{2}{5}$) = 8 cm."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "(2, 3, 4) and (4, 5, 6)"
       ],
       "correctAnswer": 0,
-      "explanation": "Two triangles are similar if all corresponding sides have the same ratio. For (3, 4, 6) and (6, 8, 12), the ratio is 1:2 for all sides (6/3=2, 8/4=2, 12/6=2)."
+      "explanation": "Two triangles are similar if all corresponding sides have the same ratio. For (3, 4, 6) and (6, 8, 12), the ratio is 1:2 for all sides ($\\frac{6}{3}$=2, $\\frac{8}{4}$=2, $\\frac{12}{6}$=2)."
     },
     {
       "type": "multiple-choice",
@@ -108,11 +108,11 @@
       "options": [
         "3",
         "60",
-        "1/3",
+        "$\\frac{1}{3}$",
         "2700"
       ],
       "correctAnswer": 0,
-      "explanation": "The scale factor for perimeter is the same as for side length. Scale factor = New perimeter / Original perimeter = 90 / 30 = 3."
+      "explanation": "The scale factor for perimeter is the same as for side length. Scale factor = New perimeter / Original perimeter = $\\frac{90}{30}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -136,19 +136,19 @@
         "3 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Triangle PST is similar to triangle PQR. The full length of side PQ is PS + SQ = 4 + 2 = 6 cm. The scale factor from the small triangle to the large one is PQ/PS = 6/4 = 1.5. Therefore, QR = ST * 1.5 = 6 * 1.5 = 9 cm."
+      "explanation": "Triangle PST is similar to triangle PQR. The full length of side PQ is PS + SQ = 4 + 2 = 6 cm. The scale factor from the small triangle to the large one is PQ/PS = $\\frac{6}{4}$ = 1.5. Therefore, QR = ST * 1.5 = 6 * 1.5 = 9 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "Triangle ABC is similar to DEF. Side AB = 9 cm corresponds to side DE = 15 cm. What is the scale factor of enlargement from triangle ABC to triangle DEF?",
       "options": [
-        "5/3",
-        "3/5",
+        "$\\frac{5}{3}$",
+        "$\\frac{3}{5}$",
         "6",
         "1.6"
       ],
       "correctAnswer": 0,
-      "explanation": "The scale factor is the ratio of the new side length to the original side length. Scale factor = 15 / 9. This simplifies to 5/3."
+      "explanation": "The scale factor is the ratio of the new side length to the original side length. Scale factor = $\\frac{15}{9}$. This simplifies to $\\frac{5}{3}$."
     }
   ]
 }

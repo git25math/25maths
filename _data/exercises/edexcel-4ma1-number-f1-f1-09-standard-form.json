@@ -10,13 +10,13 @@
       "type": "multiple-choice",
       "questionText": "Write the number 83,000 in standard form.",
       "options": [
-        "8.3 x 10^3",
-        "83 x 10^3",
-        "8.3 x 10^4",
-        "0.83 x 10^5"
+        "8.3 x $10^{3}$",
+        "83 x $10^{3}$",
+        "8.3 x $10^{4}$",
+        "0.83 x $10^{5}$"
       ],
       "correctAnswer": 2,
-      "explanation": "To write 83,000 in standard form, the first part must be a number between 1 and 10. We place the decimal point after the first non-zero digit, which gives 8.3. We then count how many places the decimal point has moved, which is 4. So, 83,000 = 8.3 x 10^4."
+      "explanation": "To write 83,000 in standard form, the first part must be a number between 1 and 10. We place the decimal point after the first non-zero digit, which gives 8.3. We then count how many places the decimal point has moved, which is 4. So, 83,000 = 8.3 x $10^{4}$."
     },
     {
       "type": "multiple-choice",
@@ -25,14 +25,14 @@
         "5.2 x 10^-2",
         "5.2 x 10^-3",
         "52 x 10^-4",
-        "5.2 x 10^3"
+        "5.2 x $10^{3}$"
       ],
       "correctAnswer": 1,
       "explanation": "To write 0.0052 in standard form, we move the decimal point to get a number between 1 and 10, which is 5.2. The decimal point moved 3 places to the right, so the power of 10 is -3. Thus, 0.0052 = 5.2 x 10^-3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write 4.7 x 10^5 as an ordinary number.",
+      "questionText": "Write 4.7 x $10^{5}$ as an ordinary number.",
       "options": [
         "47,000",
         "4,700,000",
@@ -40,7 +40,7 @@
         "0.000047"
       ],
       "correctAnswer": 2,
-      "explanation": "To write 4.7 x 10^5 as an ordinary number, we move the decimal point 5 places to the right, filling the empty places with zeros. 4.7 becomes 470,000."
+      "explanation": "To write 4.7 x $10^{5}$ as an ordinary number, we move the decimal point 5 places to the right, filling the empty places with zeros. 4.7 becomes 470,000."
     },
     {
       "type": "multiple-choice",
@@ -58,19 +58,19 @@
       "type": "multiple-choice",
       "questionText": "The distance from the Earth to the Sun is approximately 150,000,000 km. How is this written in standard form?",
       "options": [
-        "1.5 x 10^7",
-        "15 x 10^7",
-        "1.5 x 10^8",
+        "1.5 x $10^{7}$",
+        "15 x $10^{7}$",
+        "1.5 x $10^{8}$",
         "1.5 x 10^-8"
       ],
       "correctAnswer": 2,
-      "explanation": "The decimal point moves 8 places to the left to get 1.5. Therefore, 150,000,000 = 1.5 x 10^8."
+      "explanation": "The decimal point moves 8 places to the left to get 1.5. Therefore, 150,000,000 = 1.5 x $10^{8}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A red blood cell has a diameter of 0.000007 metres. Write this number in standard form.",
       "options": [
-        "7 x 10^6",
+        "7 x $10^{6}$",
         "7 x 10^-5",
         "0.7 x 10^-5",
         "7 x 10^-6"
@@ -82,13 +82,13 @@
       "type": "multiple-choice",
       "questionText": "Which of these numbers is the largest?",
       "options": [
-        "6.2 x 10^5",
-        "8.9 x 10^4",
-        "6.2 x 10^6",
-        "9.5 x 10^5"
+        "6.2 x $10^{5}$",
+        "8.9 x $10^{4}$",
+        "6.2 x $10^{6}$",
+        "9.5 x $10^{5}$"
       ],
       "correctAnswer": 2,
-      "explanation": "When comparing numbers in standard form, first look at the power of 10. The largest power of 10 is 6, so 6.2 x 10^6 is the largest number."
+      "explanation": "When comparing numbers in standard form, first look at the power of 10. The largest power of 10 is 6, so 6.2 x $10^{6}$ is the largest number."
     },
     {
       "type": "multiple-choice",
@@ -104,23 +104,23 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate (2 x 10^4) x (3 x 10^2). Give your answer in standard form.",
+      "questionText": "Calculate (2 x $10^{4}$) x (3 x $10^{2}$). Give your answer in standard form.",
       "options": [
-        "6 x 10^6",
-        "6 x 10^8",
-        "5 x 10^6",
-        "5 x 10^8"
+        "6 x $10^{6}$",
+        "6 x $10^{8}$",
+        "5 x $10^{6}$",
+        "5 x $10^{8}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply the numbers (2 x 3 = 6) and add the powers of 10 (10^4 x 10^2 = 10^(4+2) = 10^6). The result is 6 x 10^6."
+      "explanation": "Multiply the numbers (2 x 3 = 6) and add the powers of 10 ($10^{4}$ x $10^{2}$ = 10^(4+2) = $10^{6}$). The result is 6 x $10^{6}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Which of the following numbers is NOT in standard form?",
       "options": [
-        "5.1 x 10^9",
+        "5.1 x $10^{9}$",
         "12.3 x 10^-2",
-        "1 x 10^5",
+        "1 x $10^{5}$",
         "9.99 x 10^-12"
       ],
       "correctAnswer": 1,
@@ -128,19 +128,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate (8 x 10^5) ÷ (4 x 10^2). Give your answer in standard form.",
+      "questionText": "Calculate (8 x $10^{5}$) ÷ (4 x $10^{2}$). Give your answer in standard form.",
       "options": [
-        "2 x 10^2.5",
-        "4 x 10^3",
-        "2 x 10^7",
-        "2 x 10^3"
+        "2 x $10^{2}$.5",
+        "4 x $10^{3}$",
+        "2 x $10^{7}$",
+        "2 x $10^{3}$"
       ],
       "correctAnswer": 3,
-      "explanation": "Divide the numbers (8 ÷ 4 = 2) and subtract the powers of 10 (10^5 ÷ 10^2 = 10^(5-2) = 10^3). The result is 2 x 10^3."
+      "explanation": "Divide the numbers (8 ÷ 4 = 2) and subtract the powers of 10 ($10^{5} \\div 10^{2}$ = 10^(5-2) = $10^{3}$). The result is 2 x $10^{3}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A spaceship travels 5.4 x 10^6 miles. Write this distance as an ordinary number.",
+      "questionText": "A spaceship travels 5.4 x $10^{6}$ miles. Write this distance as an ordinary number.",
       "options": [
         "540,000",
         "54,000,000",
@@ -148,7 +148,7 @@
         "0.0000054"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert 5.4 x 10^6 to an ordinary number, the decimal point must be moved 6 places to the right. This gives 5,400,000."
+      "explanation": "To convert 5.4 x $10^{6}$ to an ordinary number, the decimal point must be moved 6 places to the right. This gives 5,400,000."
     }
   ]
 }

@@ -124,11 +124,11 @@
         "18.2"
       ],
       "correctAnswer": 0,
-      "explanation": "Set B = 65 and solve for k: 65 = 0.2k + 15. Subtract 15: 50 = 0.2k. Divide by 0.2: k = 50 / 0.2 = 250 units."
+      "explanation": "Set B = 65 and solve for k: 65 = 0.2k + 15. Subtract 15: 50 = 0.2k. Divide by 0.2: k = $\\frac{50}{0}$.2 = 250 units."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The equation of a line on a graph is y = -4x + 80. In a practical context, this represents the amount of fuel y (litres) left in a car after driving x hours. What does the x-intercept represent?",
+      "questionText": "The equation of a line on a graph is y = -${4x + 80}$. In a practical context, this represents the amount of fuel y (litres) left in a car after driving x hours. What does the x-intercept represent?",
       "options": [
         "The starting amount of fuel.",
         "The fuel consumption rate.",

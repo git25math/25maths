@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If a shape is enlarged with a scale factor of 1/2, what happens to its area?",
+      "questionText": "If a shape is enlarged with a scale factor of $\\frac{1}{2}$, what happens to its area?",
       "options": [
         "It is quartered",
         "It is halved",
@@ -136,7 +136,7 @@
         "It is doubled"
       ],
       "correctAnswer": 0,
-      "explanation": "When a shape is enlarged by a scale factor of k, its area is enlarged by a scale factor of $k^2$. If the scale factor is 1/2, the area is multiplied by $(1/2)^2$ = 1/4 (quartered)."
+      "explanation": "When a shape is enlarged by a scale factor of k, its area is enlarged by a scale factor of $k^2$. If the scale factor is $\\frac{1}{2}$, the area is multiplied by $(1/2)^2 = \\frac{1}{4}$ (quartered)."
     },
     {
       "type": "multiple-choice",

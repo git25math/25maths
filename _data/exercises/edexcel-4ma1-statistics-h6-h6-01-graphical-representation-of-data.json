@@ -28,7 +28,7 @@
         "2.0 people/hour"
       ],
       "correctAnswer": 1,
-      "explanation": "For 20 < t $\\leq$ 35, Class Width = 35 - 20 = 15. The frequency for this interval is given as 20. Therefore, Frequency Density = Frequency / Class Width = 20 / 15 = 1.33 (approx)."
+      "explanation": "For 20 < t $\\leq$ 35, Class Width = 35 - 20 = 15. The frequency for this interval is given as 20. Therefore, Frequency Density = Frequency / Class Width = $\\frac{20}{15}$ = 1.33 (approx)."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "25 minutes"
       ],
       "correctAnswer": 0,
-      "explanation": "The total number of customers is 60. The median is the value at the (n/2)th position, which is 60/2 = 30th position. Locate 30 on the cumulative frequency axis, draw a horizontal line to the graph, and then a vertical line down to the time axis. This value typically falls around 18 minutes."
+      "explanation": "The total number of customers is 60. The median is the value at the (n/2)th position, which is $\\frac{60}{2}$ = 30th position. Locate 30 on the cumulative frequency axis, draw a horizontal line to the graph, and then a vertical line down to the time axis. This value typically falls around 18 minutes."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "13 minutes"
       ],
       "correctAnswer": 2,
-      "explanation": "The lower quartile (Q1) is at the (n/4)th position, which is 60/4 = 15th position. The upper quartile (Q3) is at the (3n/4)th position, which is 3 * 60/4 = 45th position. From the graph, estimate Q1 (e.g., 14 minutes) and Q3 (e.g., 24 minutes). Interquartile Range (IQR) = Q3 - Q1 = 24 - 14 = 10 minutes."
+      "explanation": "The lower quartile (Q1) is at the (n/4)th position, which is $\\frac{60}{4}$ = 15th position. The upper quartile (Q3) is at the ($\\frac{3n}{4}$)th position, which is 3 * $\\frac{60}{4}$ = 45th position. From the graph, estimate Q1 (e.g., 14 minutes) and Q3 (e.g., 24 minutes). Interquartile Range (IQR) = Q3 - Q1 = 24 - 14 = 10 minutes."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "29 years"
       ],
       "correctAnswer": 3,
-      "explanation": "First, count the total number of data points. There are 12 data points. The median is the average of the 6th and 7th data points. The ordered data is 15, 18, 20, 23, 25, 27, 31, 34, 36, 39, 42, 45. The 6th value is 27 and the 7th value is 31. Median = (27 + 31) / 2 = 58 / 2 = 29 years."
+      "explanation": "First, count the total number of data points. There are 12 data points. The median is the average of the 6th and 7th data points. The ordered data is 15, 18, 20, 23, 25, 27, 31, 34, 36, 39, 42, 45. The 6th value is 27 and the 7th value is 31. Median = (27 + 31) / 2 = $\\frac{58}{2}$ = 29 years."
     },
     {
       "type": "multiple-choice",

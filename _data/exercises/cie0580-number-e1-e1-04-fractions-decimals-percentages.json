@@ -8,127 +8,127 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Simplify the fraction 36/48 completely.",
+      "questionText": "Simplify the fraction $\\frac{36}{48}$ completely.",
       "options": [
-        "9/12",
-        "3/4",
-        "12/16",
-        "2/3"
+        "$\\frac{9}{12}$",
+        "$\\frac{3}{4}$",
+        "$\\frac{12}{16}$",
+        "$\\frac{2}{3}$"
       ],
       "correctAnswer": 1,
-      "explanation": "To simplify 36/48, find the greatest common divisor (GCD) of 36 and 48, which is 12. Divide both the numerator and the denominator by 12: 36 ÷ 12 = 3 and 48 ÷ 12 = 4. The simplified fraction is 3/4."
+      "explanation": "To simplify $\\frac{36}{48}$, find the greatest common divisor (GCD) of 36 and 48, which is 12. Divide both the numerator and the denominator by 12: 36 ÷ 12 = 3 and 48 ÷ 12 = 4. The simplified fraction is $\\frac{3}{4}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 3/8 + 5/16.",
+      "questionText": "Calculate $\\frac{3}{8} + \\frac{5}{16}$.",
       "options": [
-        "8/24",
-        "1/3",
-        "11/16",
-        "1/2"
+        "$\\frac{8}{24}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{11}{16}$",
+        "$\\frac{1}{2}$"
       ],
       "correctAnswer": 2,
-      "explanation": "To add the fractions, find a common denominator, which is 16. Convert 3/8 to 6/16. Then, add the numerators: 6/16 + 5/16 = 11/16."
+      "explanation": "To add the fractions, find a common denominator, which is 16. Convert $\\frac{3}{8}$ to $\\frac{6}{16}$. Then, add the numerators: $\\frac{6}{16} + \\frac{5}{16} = \\frac{11}{16}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 5/6 - 1/4.",
+      "questionText": "Calculate $\\frac{5}{6} - \\frac{1}{4}$.",
       "options": [
-        "4/2",
+        "$\\frac{4}{2}$",
         "1",
-        "7/12",
-        "1/3"
+        "$\\frac{7}{12}$",
+        "$\\frac{1}{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The least common multiple of 6 and 4 is 12. Convert the fractions: 5/6 = 10/12 and 1/4 = 3/12. Subtract the new fractions: 10/12 - 3/12 = 7/12."
+      "explanation": "The least common multiple of 6 and 4 is 12. Convert the fractions: $\\frac{5}{6} = \\frac{10}{12}$ and $\\frac{1}{4} = \\frac{3}{12}$. Subtract the new fractions: $\\frac{10}{12} - \\frac{3}{12} = \\frac{7}{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 4/9 × 15/16.",
+      "questionText": "Calculate $\\frac{4}{9} \\times \\frac{15}{16}$.",
       "options": [
-        "5/12",
-        "19/25",
-        "60/144",
-        "3/4"
+        "$\\frac{5}{12}$",
+        "$\\frac{19}{25}$",
+        "$\\frac{60}{144}$",
+        "$\\frac{3}{4}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply the numerators and the denominators: (4 × 15) / (9 × 16) = 60/144. You can simplify by cancelling common factors before multiplying. 4 and 16 share a factor of 4. 9 and 15 share a factor of 3. (1/3) × (5/4) = 5/12."
+      "explanation": "Multiply the numerators and the denominators: (4 × 15) / (9 × 16) = $\\frac{60}{144}$. You can simplify by cancelling common factors before multiplying. 4 and 16 share a factor of 4. 9 and 15 share a factor of 3. ($\\frac{1}{3}$) × ($\\frac{5}{4}$) = $\\frac{5}{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 7/8 ÷ 3/4.",
+      "questionText": "Calculate $\\frac{7}{8} \\div \\frac{3}{4}$.",
       "options": [
-        "21/32",
-        "6/7",
-        "7/6",
+        "$\\frac{21}{32}$",
+        "$\\frac{6}{7}$",
+        "$\\frac{7}{6}$",
         "2"
       ],
       "correctAnswer": 2,
-      "explanation": "To divide by a fraction, multiply by its reciprocal. 7/8 ÷ 3/4 = 7/8 × 4/3. Multiply the numerators and denominators: (7 × 4) / (8 × 3) = 28/24. Simplify the fraction by dividing both parts by 4, which gives 7/6."
+      "explanation": "To divide by a fraction, multiply by its reciprocal. $\\frac{7}{8} \\div \\frac{3}{4} = \\frac{7}{8} \\times \\frac{4}{3}$. Multiply the numerators and denominators: (7 × 4) / (8 × 3) = $\\frac{28}{24}$. Simplify the fraction by dividing both parts by 4, which gives $\\frac{7}{6}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Convert the mixed number 3 4/7 into an improper fraction.",
+      "questionText": "Convert the mixed number 3 $\\frac{4}{7}$ into an improper fraction.",
       "options": [
-        "21/7",
-        "12/7",
-        "25/7",
-        "25/4"
+        "$\\frac{21}{7}$",
+        "$\\frac{12}{7}$",
+        "$\\frac{25}{7}$",
+        "$\\frac{25}{4}$"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert a mixed number to an improper fraction, multiply the whole number by the denominator and add the numerator. (3 × 7) + 4 = 25. The denominator remains the same. The improper fraction is 25/7."
+      "explanation": "To convert a mixed number to an improper fraction, multiply the whole number by the denominator and add the numerator. (3 × 7) + 4 = 25. The denominator remains the same. The improper fraction is $\\frac{25}{7}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Convert the improper fraction 29/6 into a mixed number.",
+      "questionText": "Convert the improper fraction $\\frac{29}{6}$ into a mixed number.",
       "options": [
-        "4 5/6",
-        "5 1/6",
-        "4 1/6",
-        "3 11/6"
+        "4 $\\frac{5}{6}$",
+        "5 $\\frac{1}{6}$",
+        "4 $\\frac{1}{6}$",
+        "3 $\\frac{11}{6}$"
       ],
       "correctAnswer": 0,
-      "explanation": "To convert an improper fraction to a mixed number, divide the numerator by the denominator. 29 ÷ 6 = 4 with a remainder of 5. The quotient (4) is the whole number, the remainder (5) is the new numerator, and the denominator (6) stays the same. The mixed number is 4 5/6."
+      "explanation": "To convert an improper fraction to a mixed number, divide the numerator by the denominator. 29 ÷ 6 = 4 with a remainder of 5. The quotient (4) is the whole number, the remainder (5) is the new numerator, and the denominator (6) stays the same. The mixed number is 4 $\\frac{5}{6}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 2 1/3 + 1 3/4.",
+      "questionText": "Calculate 2 $\\frac{1}{3}$ + 1 $\\frac{3}{4}$.",
       "options": [
-        "3 4/7",
-        "4 1/12",
-        "3 1/12",
-        "4 1/7"
+        "3 $\\frac{4}{7}$",
+        "4 $\\frac{1}{12}$",
+        "3 $\\frac{1}{12}$",
+        "4 $\\frac{1}{7}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Convert the mixed numbers to improper fractions: 2 1/3 = 7/3 and 1 3/4 = 7/4. Find a common denominator, which is 12. 7/3 = 28/12 and 7/4 = 21/12. Add them: 28/12 + 21/12 = 49/12. Convert back to a mixed number: 49 ÷ 12 = 4 remainder 1. So, the answer is 4 1/12."
+      "explanation": "Convert the mixed numbers to improper fractions: 2 $\\frac{1}{3} = \\frac{7}{3}$ and 1 $\\frac{3}{4} = \\frac{7}{4}$. Find a common denominator, which is 12. $\\frac{7}{3} = \\frac{28}{12}$ and $\\frac{7}{4} = \\frac{21}{12}$. Add them: $\\frac{28}{12} + \\frac{21}{12} = \\frac{49}{12}$. Convert back to a mixed number: 49 ÷ 12 = 4 remainder 1. So, the answer is 4 $\\frac{1}{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate 5 1/6 - 2 3/4.",
+      "questionText": "Calculate 5 $\\frac{1}{6}$ - 2 $\\frac{3}{4}$.",
       "options": [
-        "3 7/12",
-        "2 5/12",
-        "3 1/6",
-        "2 1/2"
+        "3 $\\frac{7}{12}$",
+        "2 $\\frac{5}{12}$",
+        "3 $\\frac{1}{6}$",
+        "2 $\\frac{1}{2}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Convert to improper fractions: 5 1/6 = 31/6 and 2 3/4 = 11/4. The common denominator is 12. 31/6 = 62/12 and 11/4 = 33/12. Subtract: 62/12 - 33/12 = 29/12. Convert back to a mixed number: 29 ÷ 12 = 2 remainder 5. The result is 2 5/12."
+      "explanation": "Convert to improper fractions: 5 $\\frac{1}{6} = \\frac{31}{6}$ and 2 $\\frac{3}{4} = \\frac{11}{4}$. The common denominator is 12. $\\frac{31}{6} = \\frac{62}{12}$ and $\\frac{11}{4} = \\frac{33}{12}$. Subtract: $\\frac{62}{12} - \\frac{33}{12} = \\frac{29}{12}$. Convert back to a mixed number: 29 ÷ 12 = 2 remainder 5. The result is 2 $\\frac{5}{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A recipe requires 1 3/4 cups of sugar to make one cake. How many cups of sugar are needed for 4 cakes?",
+      "questionText": "A recipe requires 1 $\\frac{3}{4}$ cups of sugar to make one cake. How many cups of sugar are needed for 4 cakes?",
       "options": [
-        "4 3/4",
+        "4 $\\frac{3}{4}$",
         "5",
         "7",
         "8"
       ],
       "correctAnswer": 2,
-      "explanation": "Convert 1 3/4 to an improper fraction, which is 7/4. Multiply the amount of sugar for one cake by the number of cakes: 7/4 × 4. The 4s cancel out, leaving 7. So, 7 cups of sugar are needed."
+      "explanation": "Convert 1 $\\frac{3}{4}$ to an improper fraction, which is $\\frac{7}{4}$. Multiply the amount of sugar for one cake by the number of cakes: $\\frac{7}{4}$ × 4. The 4s cancel out, leaving 7. So, 7 cups of sugar are needed."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A plank of wood is 8 1/2 metres long. It is cut into pieces that are 1/4 metre long. How many full pieces can be cut?",
+      "questionText": "A plank of wood is 8 $\\frac{1}{2}$ metres long. It is cut into pieces that are $\\frac{1}{4}$ metre long. How many full pieces can be cut?",
       "options": [
         "17",
         "32",
@@ -136,11 +136,11 @@
         "36"
       ],
       "correctAnswer": 2,
-      "explanation": "To find the number of pieces, divide the total length by the length of one piece. Convert 8 1/2 to an improper fraction: 17/2. Now calculate 17/2 ÷ 1/4. This is the same as 17/2 × 4/1 = 68/2 = 34. So, 34 pieces can be cut."
+      "explanation": "To find the number of pieces, divide the total length by the length of one piece. Convert 8 $\\frac{1}{2}$ to an improper fraction: $\\frac{17}{2}$. Now calculate $\\frac{17}{2} \\div \\frac{1}{4}$. This is the same as $\\frac{17}{2} \\times \\frac{4}{1} = \\frac{68}{2}$ = 34. So, 34 pieces can be cut."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A fuel tank is 2/5 full. If it contains 40 litres of fuel, what is the total capacity of the tank?",
+      "questionText": "A fuel tank is $\\frac{2}{5}$ full. If it contains 40 litres of fuel, what is the total capacity of the tank?",
       "options": [
         "16 litres",
         "80 litres",
@@ -148,7 +148,7 @@
         "200 litres"
       ],
       "correctAnswer": 2,
-      "explanation": "If 2/5 of the tank is 40 litres, then 1/5 of the tank is 40 ÷ 2 = 20 litres. The total capacity is 5/5, so multiply the volume of 1/5 by 5: 20 × 5 = 100 litres. The total capacity is 100 litres."
+      "explanation": "If $\\frac{2}{5}$ of the tank is 40 litres, then $\\frac{1}{5}$ of the tank is 40 ÷ 2 = 20 litres. The total capacity is $\\frac{5}{5}$, so multiply the volume of $\\frac{1}{5}$ by 5: 20 × 5 = 100 litres. The total capacity is 100 litres."
     }
   ]
 }

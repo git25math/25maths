@@ -12,8 +12,8 @@
       "options": [
         "17 cm",
         "34 cm",
-        "60 cm²",
-        "34 cm²"
+        "60 $\\text{cm}^2$",
+        "34 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
       "explanation": "The perimeter of a rectangle is calculated as 2 × (length + width). So, the perimeter is 2 × (12 cm + 5 cm) = 2 × 17 cm = 34 cm."
@@ -22,25 +22,25 @@
       "type": "multiple-choice",
       "questionText": "Calculate the area of a rectangle with a length of 9 m and a width of 4 m.",
       "options": [
-        "36 m²",
+        "36 $\\text{m}^2$",
         "26 m",
-        "13 m²",
+        "13 $\\text{m}^2$",
         "36 m"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a rectangle is calculated as length × width. So, the area is 9 m × 4 m = 36 m²."
+      "explanation": "The area of a rectangle is calculated as length × width. So, the area is 9 m × 4 m = 36 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the area of a triangle with a base of 10 cm and a perpendicular height of 7 cm.",
       "options": [
-        "70 cm²",
-        "17 cm²",
+        "70 $\\text{cm}^2$",
+        "17 $\\text{cm}^2$",
         "35 cm",
-        "35 cm²"
+        "35 $\\text{cm}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The area of a triangle is calculated as (1/2) × base × height. So, the area is (1/2) × 10 cm × 7 cm = 35 cm²."
+      "explanation": "The area of a triangle is calculated as ($\\frac{1}{2}$) × base × height. So, the area is ($\\frac{1}{2}$) × 10 cm × 7 cm = 35 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -49,7 +49,7 @@
         "5$\\pi$ cm",
         "25$\\pi$ cm",
         "10$\\pi$ cm",
-        "10$\\pi$ cm²"
+        "10$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
       "explanation": "The circumference of a circle is calculated as 2 × $\\pi$ × radius. So, the circumference is 2 × $\\pi$ × 5 cm = 10$\\pi$ cm."
@@ -58,17 +58,17 @@
       "type": "multiple-choice",
       "questionText": "Calculate the area of a circle with a diameter of 12 cm. Give your answer in terms of $\\pi$.",
       "options": [
-        "144$\\pi$ cm²",
-        "12$\\pi$ cm²",
-        "36$\\pi$ cm²",
-        "24$\\pi$ cm²"
+        "144$\\pi$ $\\text{cm}^2$",
+        "12$\\pi$ $\\text{cm}^2$",
+        "36$\\pi$ $\\text{cm}^2$",
+        "24$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the radius from the diameter (radius = diameter / 2), which is 12 cm / 2 = 6 cm. The area of a circle is $\\pi \\times radius^2$. So, the area is $\\pi \\times (6 cm)^2$ = 36$\\pi$ cm²."
+      "explanation": "First, find the radius from the diameter (radius = diameter / 2), which is 12 cm / 2 = 6 cm. The area of a circle is $\\pi \\times radius^2$. So, the area is $\\pi \\times (6 cm)^2$ = 36$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A square has an area of 49 cm². What is its perimeter?",
+      "questionText": "A square has an area of 49 $\\text{cm}^2$. What is its perimeter?",
       "options": [
         "7 cm",
         "14 cm",
@@ -82,29 +82,29 @@
       "type": "multiple-choice",
       "questionText": "Find the area of a parallelogram with a base of 8 cm and a perpendicular height of 6 cm.",
       "options": [
-        "24 cm²",
-        "28 cm²",
-        "48 cm²",
-        "64 cm²"
+        "24 $\\text{cm}^2$",
+        "28 $\\text{cm}^2$",
+        "48 $\\text{cm}^2$",
+        "64 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a parallelogram is calculated as base × perpendicular height. So, the area is 8 cm × 6 cm = 48 cm²."
+      "explanation": "The area of a parallelogram is calculated as base × perpendicular height. So, the area is 8 cm × 6 cm = 48 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A trapezium has parallel sides of length 5 cm and 9 cm. Its perpendicular height is 4 cm. What is the area of the trapezium?",
       "options": [
-        "28 cm²",
-        "56 cm²",
-        "180 cm²",
-        "23 cm²"
+        "28 $\\text{cm}^2$",
+        "56 $\\text{cm}^2$",
+        "180 $\\text{cm}^2$",
+        "23 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a trapezium is (1/2) × (sum of parallel sides) × height. So, the area is (1/2) × (5 cm + 9 cm) × 4 cm = (1/2) × 14 cm × 4 cm = 28 cm²."
+      "explanation": "The area of a trapezium is ($\\frac{1}{2}$) × (sum of parallel sides) × height. So, the area is ($\\frac{1}{2}$) × (5 cm + 9 cm) × 4 cm = ($\\frac{1}{2}$) × 14 cm × 4 cm = 28 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A rectangle has an area of 72 cm² and a width of 6 cm. What is its length?",
+      "questionText": "A rectangle has an area of 72 $\\text{cm}^2$ and a width of 6 cm. What is its length?",
       "options": [
         "432 cm",
         "30 cm",
@@ -112,26 +112,26 @@
         "18 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The length of a rectangle is found by dividing the area by the width. So, the length is 72 cm² / 6 cm = 12 cm."
+      "explanation": "The length of a rectangle is found by dividing the area by the width. So, the length is 72 $\\text{cm}^2$ / 6 cm = 12 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "The perimeter of a square is 36 m. What is its area?",
       "options": [
-        "81 m²",
-        "36 m²",
-        "9 m²",
-        "144 m²"
+        "81 $\\text{m}^2$",
+        "36 $\\text{m}^2$",
+        "9 $\\text{m}^2$",
+        "144 $\\text{m}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the side length by dividing the perimeter by 4: 36 m / 4 = 9 m. The area of a square is side length squared. So, the area is $(9 m)^2$ = 81 m²."
+      "explanation": "First, find the side length by dividing the perimeter by 4: 36 m / 4 = 9 m. The area of a square is side length squared. So, the area is $(9 m)^2$ = 81 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A triangle has sides of length 5 cm, 12 cm, and 13 cm. What is its perimeter?",
       "options": [
         "60 cm",
-        "30 cm²",
+        "30 $\\text{cm}^2$",
         "30 cm",
         "25 cm"
       ],

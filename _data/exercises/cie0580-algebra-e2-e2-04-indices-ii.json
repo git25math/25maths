@@ -59,12 +59,12 @@
       "questionText": "Write 5$x^{-2}$ with a positive index.",
       "options": [
         "1/(5$x^2$)",
-        "$5/x^2$",
+        "$\\frac{5}{x^2}$",
         "-5$x^2$",
         "-10x"
       ],
       "correctAnswer": 1,
-      "explanation": "A negative power indicates the reciprocal. $x^{-2}$ is $1/x^2$. The coefficient 5 remains in the numerator. So, the expression is $5/x^2$."
+      "explanation": "A negative power indicates the reciprocal. $x^{-2}$ is $\\frac{1}{x^2}$. The coefficient 5 remains in the numerator. So, the expression is $\\frac{5}{x^2}$."
     },
     {
       "type": "multiple-choice",
@@ -80,15 +80,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify ($p^5$$q^3$) / ($pq^{-2}$).",
+      "questionText": "Simplify ($p^5q^3$) / ($pq^{-2}$).",
       "options": [
         "$p^4$q",
         "$p^6$q",
-        "$p^4$$q^5$",
+        "$p^4q^5$",
         "$p^5$q"
       ],
       "correctAnswer": 2,
-      "explanation": "For 'p', subtract the powers: 5 - 1 = 4. For 'q', subtract the powers: 3 - (-2) = 5. This gives $p^4$$q^5$."
+      "explanation": "For 'p', subtract the powers: 5 - 1 = 4. For 'q', subtract the powers: 3 - (-2) = 5. This gives $p^4q^5$."
     },
     {
       "type": "multiple-choice",
@@ -107,7 +107,7 @@
       "questionText": "Simplify $(m³n^{-4})^{-2}$.",
       "options": [
         "m⁻⁶$n^8$",
-        "m⁶$n^{-8}$",
+        "$\\text{m}^6n^{-8}$",
         "m⁻¹$n^{-6}$",
         "m/$n^8$"
       ],
@@ -116,15 +116,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate $(9/25)^{-1}$/².",
+      "questionText": "Evaluate $( \\frac{9}{25} )^{-1}$/².",
       "options": [
-        "5/3",
-        "3/5",
-        "-3/5",
-        "-18/50"
+        "$\\frac{5}{3}$",
+        "$\\frac{3}{5}$",
+        "-$\\frac{3}{5}$",
+        "-$\\frac{18}{50}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The negative power inverts the fraction to 25/9. The power of 1/2 means square root. $\\sqrt{25/9}$ = 5/3."
+      "explanation": "The negative power inverts the fraction to $\\frac{25}{9}$. The power of $\\frac{1}{2}$ means square root. $\\sqrt{25/9} = \\frac{5}{3}$."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify √(16$x^{16}$).",
+      "questionText": "Simplify $\\sqrt{16x^{16}}$.",
       "options": [
         "8$x^8$",
         "4$x^4$",
@@ -148,7 +148,7 @@
         "4$x^8$"
       ],
       "correctAnswer": 3,
-      "explanation": "The square root is equivalent to the power of 1/2. $\\sqrt{16}$ = 4 and $(x^{16})^1$/² = $x^{16}$*¹/² = $x^8$. The result is 4$x^8$."
+      "explanation": "The square root is equivalent to the power of $\\frac{1}{2}$. $\\sqrt{16}$ = 4 and $(x^{16})^1$/² = $x^{16}$*¹/² = $x^8$. The result is 4$x^8$."
     }
   ]
 }

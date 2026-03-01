@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A square has an area of 144 cm². What is the length of one side?",
+      "questionText": "A square has an area of 144 $\\text{cm}^2$. What is the length of one side?",
       "options": [
         "12 cm",
         "36 cm",

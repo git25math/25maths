@@ -100,7 +100,7 @@
         "$800"
       ],
       "correctAnswer": 2,
-      "explanation": "A 20% discount means the sale price is 80% of the original price. So, ${720 = 80% of Original Price. To find the original price, calculate }$720 / 0.80 = $900."
+      "explanation": "A 20% discount means the sale price is 80% of the original price. So, ${720 = 80% of Original Price. To find the original price, calculate }\\frac{720}{0}$.80 = $900."
     },
     {
       "type": "multiple-choice",

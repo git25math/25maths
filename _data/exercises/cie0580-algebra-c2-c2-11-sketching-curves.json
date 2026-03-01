@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of these points lies on the line y = 3x - 2?",
+      "questionText": "Which of these points lies on the line ${y = 3x - 2}$?",
       "options": [
         "(1, 1)",
         "(0, 2)",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the x-intercept of the line y = -2x + 8?",
+      "questionText": "What is the x-intercept of the line ${y = -2x + 8}$?",
       "options": [
         "8",
         "-2",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What are the coordinates of the y-intercept of the line y = 4x + 2?",
+      "questionText": "What are the coordinates of the y-intercept of the line ${y = 4x + 2}$?",
       "options": [
         "(0, 2)",
         "(2, 0)",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which description matches the graph of y = -x + 5?",
+      "questionText": "Which description matches the graph of ${y = -x + 5}$?",
       "options": [
         "A straight line sloping upwards.",
         "A straight line sloping downwards.",

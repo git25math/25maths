@@ -28,7 +28,7 @@
         "40"
       ],
       "correctAnswer": 2,
-      "explanation": "The median is the middle value. For a total frequency of N, the median position is at N/2. Here, 160 / 2 = 80."
+      "explanation": "The median is the middle value. For a total frequency of N, the median position is at N/2. Here, $\\frac{160}{2}$ = 80."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "80"
       ],
       "correctAnswer": 0,
-      "explanation": "The lower quartile (Q1) is found at the 1/4 mark of the total frequency. For a total frequency of 240, the position is (1/4) * 240 = 60."
+      "explanation": "The lower quartile (Q1) is found at the $\\frac{1}{4}$ mark of the total frequency. For a total frequency of 240, the position is ($\\frac{1}{4}$) * 240 = 60."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "75"
       ],
       "correctAnswer": 2,
-      "explanation": "The upper quartile (Q3) is found at the 3/4 mark of the total frequency. For a total frequency of 80, the position is (3/4) * 80 = 60."
+      "explanation": "The upper quartile (Q3) is found at the $\\frac{3}{4}$ mark of the total frequency. For a total frequency of 80, the position is ($\\frac{3}{4}$) * 80 = 60."
     },
     {
       "type": "multiple-choice",

@@ -28,11 +28,11 @@
         "42.0"
       ],
       "correctAnswer": 0,
-      "explanation": "To convert a percentage to a decimal, you divide the percentage by 100. So, 42 / 100 = 0.42."
+      "explanation": "To convert a percentage to a decimal, you divide the percentage by 100. So, $\\frac{42}{100}$ = 0.42."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is 3/8 expressed as a percentage?",
+      "questionText": "What is $\\frac{3}{8}$ expressed as a percentage?",
       "options": [
         "38%",
         "37.5%",
@@ -88,7 +88,7 @@
         "360"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the number be 'x'. The equation is 0.40 * x = 90. To find x, divide both sides by 0.40. So, x = 90 / 0.40 = 225."
+      "explanation": "Let the number be 'x'. The equation is 0.40 * x = 90. To find x, divide both sides by 0.40. So, x = $\\frac{90}{0}$.40 = 225."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "30%"
       ],
       "correctAnswer": 2,
-      "explanation": "The increase in score is 75 - 60 = 15. To find the percentage increase, use the formula (Increase / Original Value) * 100. So, (15 / 60) * 100 = 0.25 * 100 = 25%."
+      "explanation": "The increase in score is 75 - 60 = 15. To find the percentage increase, use the formula (Increase / Original Value) * 100. So, ($\\frac{15}{60}$) * 100 = 0.25 * 100 = 25%."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "$116"
       ],
       "correctAnswer": 1,
-      "explanation": "A 20% discount means the sale price is 80% of the original price. Let 'P' be the original price. The equation is 0.80 * P = 96. To find P, divide 96 by 0.80. So, P = 96 / 0.80 = $120."
+      "explanation": "A 20% discount means the sale price is 80% of the original price. Let 'P' be the original price. The equation is 0.80 * P = 96. To find P, divide 96 by 0.80. So, P = $\\frac{96}{0}$.80 = $120."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "45%"
       ],
       "correctAnswer": 2,
-      "explanation": "To express one quantity as a percentage of another, use the formula (Part / Whole) * 100. So, (18 / 45) * 100 = 0.4 * 100 = 40%."
+      "explanation": "To express one quantity as a percentage of another, use the formula (Part / Whole) * 100. So, ($\\frac{18}{45}$) * 100 = 0.4 * 100 = 40%."
     },
     {
       "type": "multiple-choice",
@@ -143,12 +143,12 @@
       "questionText": "Which of the following values is the smallest?",
       "options": [
         "0.65",
-        "2/3",
+        "$\\frac{2}{3}$",
         "66%",
         "0.667"
       ],
       "correctAnswer": 0,
-      "explanation": "To compare the values, convert them all to a consistent format, such as decimals. 2/3 is approximately 0.666...; 66% is 0.66; 0.667 is 0.667. Comparing 0.65, 0.666..., 0.66, and 0.667, the smallest value is 0.65."
+      "explanation": "To compare the values, convert them all to a consistent format, such as decimals. $\\frac{2}{3}$ is approximately 0.666...; 66% is 0.66; 0.667 is 0.667. Comparing 0.65, 0.666..., 0.66, and 0.667, the smallest value is 0.65."
     }
   ]
 }

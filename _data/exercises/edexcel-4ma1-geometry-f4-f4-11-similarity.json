@@ -28,7 +28,7 @@
         "15 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The shortest side of ABC is 3 cm. The shortest side of PQR is 6 cm. The scale factor for sides is 6/3 = 2. The longest side of ABC is 5 cm, so the longest side of PQR is 5 * 2 = 10 cm."
+      "explanation": "The shortest side of ABC is 3 cm. The shortest side of PQR is 6 cm. The scale factor for sides is $\\frac{6}{3}$ = 2. The longest side of ABC is 5 cm, so the longest side of PQR is 5 * 2 = 10 cm."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "5 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The ratio of lengths is 15/10 = 1.5. So the width of the second rectangle is 5 cm * 1.5 = 7.5 cm."
+      "explanation": "The ratio of lengths is $\\frac{15}{10}$ = 1.5. So the width of the second rectangle is 5 cm * 1.5 = 7.5 cm."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "30 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The original dimensions are 20 cm (width) and 30 cm (length). The new width is 10 cm. The scale factor for reduction is 10/20 = 0.5. So the new length is 30 cm * 0.5 = 15 cm."
+      "explanation": "The original dimensions are 20 cm (width) and 30 cm (length). The new width is 10 cm. The scale factor for reduction is $\\frac{10}{20}$ = 0.5. So the new length is 30 cm * 0.5 = 15 cm."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "36 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The smallest side of the first triangle is 6 cm. The smallest side of the second triangle is 4 cm. The scale factor is 4/6 = 2/3. The perimeter of the first triangle is 6 + 9 + 12 = 27 cm. The perimeter of the second triangle is 27 * (2/3) = 18 cm."
+      "explanation": "The smallest side of the first triangle is 6 cm. The smallest side of the second triangle is 4 cm. The scale factor is $\\frac{4}{6} = \\frac{2}{3}$. The perimeter of the first triangle is 6 + 9 + 12 = 27 cm. The perimeter of the second triangle is 27 * ($\\frac{2}{3}$) = 18 cm."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "13 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "For similar shapes, the ratio of their perimeters is the same as the ratio of their corresponding sides. So, (Perimeter of larger) / 10 = 3/2. Perimeter of larger = 10 * (3/2) = 15 cm."
+      "explanation": "For similar shapes, the ratio of their perimeters is the same as the ratio of their corresponding sides. So, (Perimeter of larger) / 10 = $\\frac{3}{2}$. Perimeter of larger = 10 * ($\\frac{3}{2}$) = 15 cm."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "Only if they are right-angled triangles."
       ],
       "correctAnswer": 1,
-      "explanation": "We can check for SAS (Side-Angle-Side) similarity. The ratio of the first pair of sides is 12/8 = 1.5. The ratio of the second pair of sides is 18/12 = 1.5. The included angle is 40° for both. Since two pairs of corresponding sides are in the same ratio and their included angles are equal, the triangles are similar."
+      "explanation": "We can check for SAS (Side-Angle-Side) similarity. The ratio of the first pair of sides is $\\frac{12}{8}$ = 1.5. The ratio of the second pair of sides is $\\frac{18}{12}$ = 1.5. The included angle is 40° for both. Since two pairs of corresponding sides are in the same ratio and their included angles are equal, the triangles are similar."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "Only if their perimeters are the same."
       ],
       "correctAnswer": 1,
-      "explanation": "For rectangles to be similar, the ratio of their corresponding sides must be equal. Comparing short sides: 6/4 = 1.5. Comparing long sides: 9/6 = 1.5. Since both ratios are equal, the rectangles are similar."
+      "explanation": "For rectangles to be similar, the ratio of their corresponding sides must be equal. Comparing short sides: $\\frac{6}{4}$ = 1.5. Comparing long sides: $\\frac{9}{6}$ = 1.5. Since both ratios are equal, the rectangles are similar."
     }
   ]
 }

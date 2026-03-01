@@ -52,7 +52,7 @@
         "4(x + 2)"
       ],
       "correctAnswer": 3,
-      "explanation": "Find the highest common factor of ${4x}$ and `8`, which is `4`. Divide each term by `4` to find the expression inside the bracket: ${4x/4 = x}$ and ${8/4 = 2}$. The factorised form is ${4(x + 2)}$."
+      "explanation": "Find the highest common factor of ${4x}$ and `8`, which is `4`. Divide each term by `4` to find the expression inside the bracket: $\\frac{4x}{4} = x$ and $\\frac{8}{4} = 2$. The factorised form is ${4(x + 2)}$."
     },
     {
       "type": "multiple-choice",
@@ -64,19 +64,19 @@
         "5(3y + 2)"
       ],
       "correctAnswer": 1,
-      "explanation": "The highest common factor of ${15y}$ and `10` is `5`. ${15y/5 = 3y}$ and ${-10/5 = -2}$. So, the factorised expression is ${5(3y - 2)}$."
+      "explanation": "The highest common factor of ${15y}$ and `10` is `5`. $\\frac{15y}{5} = 3y$ and $- \\frac{10}{5} = -2$. So, the factorised expression is ${5(3y - 2)}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Simplify $(12a^4) / (3a)$.",
       "options": [
-        "9a^3",
-        "4a^4",
-        "4a^3",
-        "4a^5"
+        "$9a^{3}$",
+        "$4a^{4}$",
+        "$4a^{3}$",
+        "$4a^{5}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Simplify the coefficients: ${12 / 3 = 4}$. Simplify the variables using index laws: $a^4 / a^1 = a^{4-1} = a^3$. Combine them to get $4a^3$."
+      "explanation": "Simplify the coefficients: ${12 / 3 = 4}$. Simplify the variables using index laws: $\\frac{a^4}{a^1} = a^{4-1} = a^3$. Combine them to get $4a^3$."
     },
     {
       "type": "multiple-choice",
@@ -94,7 +94,7 @@
       "type": "multiple-choice",
       "questionText": "Factorise completely $18x^2 + 9x$.",
       "options": [
-        "9(2x^2 + x)",
+        "9($2x^{2}$ + x)",
         "9x(2x + 1)",
         "x(18x + 9)",
         "3x(6x + 3)"
@@ -112,7 +112,7 @@
         "2x + 2"
       ],
       "correctAnswer": 2,
-      "explanation": "Divide each term in the numerator by the denominator: ${4x / 2 = 2x}$ and ${8 / 2 = 4}$. The result is ${2x + 4}$."
+      "explanation": "Divide each term in the numerator by the denominator: ${4x / 2 = 2x}$ and $\\frac{8}{2} = 4$. The result is ${2x + 4}$."
     },
     {
       "type": "multiple-choice",
@@ -130,10 +130,10 @@
       "type": "multiple-choice",
       "questionText": "Expand ${x(3x - 7)}$.",
       "options": [
-        "3x^2 - 7",
-        "3x^2 - 7x",
+        "$3x^{2}$ - 7",
+        "$3x^{2}$ - 7x",
         "4x - 7",
-        "-4x^2"
+        "-$4x^{2}$"
       ],
       "correctAnswer": 1,
       "explanation": "Multiply the term ${x}$ by each term inside the bracket: $x * 3x - x * 7 = 3x^2 - 7x$."
@@ -143,7 +143,7 @@
       "questionText": "Factorise $7y^2 - 14y$.",
       "options": [
         "7y(y - 2)",
-        "7(y^2 - 2y)",
+        "7($y^{2}$ - 2y)",
         "y(7y - 14)",
         "7y(y - 14)"
       ],

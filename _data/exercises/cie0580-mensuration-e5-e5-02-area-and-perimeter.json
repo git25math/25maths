@@ -10,29 +10,29 @@
       "type": "multiple-choice",
       "questionText": "Find the area of a trapezium with parallel sides 10 cm and 16 cm, and a perpendicular height of 8 cm.",
       "options": [
-        "104 cm²",
-        "208 cm²",
-        "80 cm²",
-        "128 cm²"
+        "104 $\\text{cm}^2$",
+        "208 $\\text{cm}^2$",
+        "80 $\\text{cm}^2$",
+        "128 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a trapezium is given by the formula Area = (1/2) * (a + b) * h, where 'a' and 'b' are the lengths of the parallel sides and 'h' is the perpendicular height. So, Area = (1/2) * (10 + 16) * 8 = 104 cm²."
+      "explanation": "The area of a trapezium is given by the formula Area = ($\\frac{1}{2}$) * (a + b) * h, where 'a' and 'b' are the lengths of the parallel sides and 'h' is the perpendicular height. So, Area = ($\\frac{1}{2}$) * (10 + 16) * 8 = 104 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A kite has diagonals of length 14 cm and 20 cm. What is its area?",
       "options": [
-        "280 cm²",
-        "70 cm²",
-        "140 cm²",
-        "34 cm²"
+        "280 $\\text{cm}^2$",
+        "70 $\\text{cm}^2$",
+        "140 $\\text{cm}^2$",
+        "34 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a kite is calculated as half the product of its diagonals. Area = (1/2) * d1 * d2 = (1/2) * 14 * 20 = 140 cm²."
+      "explanation": "The area of a kite is calculated as half the product of its diagonals. Area = ($\\frac{1}{2}$) * d1 * d2 = ($\\frac{1}{2}$) * 14 * 20 = 140 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A parallelogram has an area of 96 cm² and a base of 12 cm. What is its perpendicular height?",
+      "questionText": "A parallelogram has an area of 96 $\\text{cm}^2$ and a base of 12 cm. What is its perpendicular height?",
       "options": [
         "1152 cm",
         "8 cm",
@@ -40,11 +40,11 @@
         "12 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a parallelogram is Area = base * height. To find the height, rearrange the formula: height = Area / base. So, height = 96 / 12 = 8 cm."
+      "explanation": "The area of a parallelogram is Area = base * height. To find the height, rearrange the formula: height = Area / base. So, height = $\\frac{96}{12}$ = 8 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use $\\pi$ = 22/7.",
+      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use $\\pi = \\frac{22}{7}$.",
       "options": [
         "22 cm",
         "44 cm",
@@ -52,19 +52,19 @@
         "36 cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The perimeter of a semicircle consists of the curved arc ($\\pi$r) and the diameter (2r). Arc length = (22/7) * 7 = 22 cm. Diameter = 2 * 7 = 14 cm. Total perimeter = 22 + 14 = 36 cm."
+      "explanation": "The perimeter of a semicircle consists of the curved arc ($\\pi$r) and the diameter (2r). Arc length = ($\\frac{22}{7}$) * 7 = 22 cm. Diameter = 2 * 7 = 14 cm. Total perimeter = 22 + 14 = 36 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the area of a sector with a radius of 10 cm and an angle of 63 degrees. Give your answer in terms of $\\pi$.",
       "options": [
-        "17.5$\\pi$ cm²",
-        "35$\\pi$ cm²",
-        "3.5$\\pi$ cm²",
-        "630$\\pi$ cm²"
+        "17.5$\\pi$ $\\text{cm}^2$",
+        "35$\\pi$ $\\text{cm}^2$",
+        "3.5$\\pi$ $\\text{cm}^2$",
+        "630$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a sector is given by ($\\theta/360$) * $\\pi$$r^2$. So, Area = (63/360) * $\\pi$ * $10^2$ = (7/40) * 100$\\pi$ = 17.5$\\pi$ cm²."
+      "explanation": "The area of a sector is given by ($\\frac{\\theta}{360}$) * $\\pi r^2$. So, Area = ($\\frac{63}{360}$) * $\\pi$ * $10^2$ = ($\\frac{7}{40}$) * 100$\\pi$ = 17.5$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circle has an area of 49$\\pi$ cm². What is its radius?",
+      "questionText": "A circle has an area of 49$\\pi$ $\\text{cm}^2$. What is its radius?",
       "options": [
         "49 cm",
         "24.5 cm",
@@ -88,47 +88,47 @@
         "14 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a circle is A = $\\pi$$r^2$. Given A = 49$\\pi$, we have $\\pi$$r^2$ = 49$\\pi$. Dividing both sides by $\\pi$ gives $r^2$ = 49. Taking the square root, the radius r = 7 cm."
+      "explanation": "The area of a circle is A = $\\pi r^2$. Given A = 49$\\pi$, we have $\\pi r^2$ = 49$\\pi$. Dividing both sides by $\\pi$ gives $r^2$ = 49. Taking the square root, the radius r = 7 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "A shape is formed by a rectangle and a triangle. The rectangle has dimensions 10m by 6m. The triangle is attached to one of the 6m sides and has a perpendicular height of 5m from that side. What is the total area of the shape?",
       "options": [
-        "90 m²",
-        "60 m²",
-        "70 m²",
-        "75 m²"
+        "90 $\\text{m}^2$",
+        "60 $\\text{m}^2$",
+        "70 $\\text{m}^2$",
+        "75 $\\text{m}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The total area is the sum of the area of the rectangle and the area of the triangle. Area of rectangle = 10 * 6 = 60 m². Area of triangle = (1/2) * base * height = (1/2) * 6 * 5 = 15 m². Total Area = 60 + 15 = 75 m²."
+      "explanation": "The total area is the sum of the area of the rectangle and the area of the triangle. Area of rectangle = 10 * 6 = 60 $\\text{m}^2$. Area of triangle = ($\\frac{1}{2}$) * base * height = ($\\frac{1}{2}$) * 6 * 5 = 15 $\\text{m}^2$. Total Area = 60 + 15 = 75 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the area of the region between two concentric circles with radii 9 cm and 5 cm. Give your answer in terms of $\\pi$.",
       "options": [
-        "56$\\pi$ cm²",
-        "4$\\pi$ cm²",
-        "106$\\pi$ cm²",
-        "16$\\pi$ cm²"
+        "56$\\pi$ $\\text{cm}^2$",
+        "4$\\pi$ $\\text{cm}^2$",
+        "106$\\pi$ $\\text{cm}^2$",
+        "16$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of the region (annulus) is the area of the larger circle minus the area of the smaller circle: Area = $\\pi$$R^2 - \\pi$$r^2 = \\pi$($9^2 - 5^2$) = $\\pi$(81 - 25) = 56$\\pi$ cm²."
+      "explanation": "The area of the region (annulus) is the area of the larger circle minus the area of the smaller circle: Area = $\\piR^2 - \\pir^2 = \\pi$($9^2 - 5^2$) = $\\pi$(81 - 25) = 56$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A rhombus has a side length of 10 cm and one of its diagonals is 12 cm. What is its area?",
       "options": [
-        "120 cm²",
-        "96 cm²",
-        "60 cm²",
-        "192 cm²"
+        "120 $\\text{cm}^2$",
+        "96 $\\text{cm}^2$",
+        "60 $\\text{cm}^2$",
+        "192 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "The diagonals of a rhombus bisect at right angles. Using Pythagoras' theorem on a quadrant of the rhombus, half of the second diagonal is √($10^2 - 6^2$) = 8 cm. So the full diagonal is 16 cm. The area is (1/2) * d1 * d2 = (1/2) * 12 * 16 = 96 cm²."
+      "explanation": "The diagonals of a rhombus bisect at right angles. Using Pythagoras' theorem on a quadrant of the rhombus, half of the second diagonal is $\\sqrt{10^2 - 6^2}$ = 8 cm. So the full diagonal is 16 cm. The area is ($\\frac{1}{2}$) * d1 * d2 = ($\\frac{1}{2}$) * 12 * 16 = 96 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a trapezium is 120 cm². Its parallel sides are 12 cm and 18 cm. Find the perpendicular distance between the parallel sides.",
+      "questionText": "The area of a trapezium is 120 $\\text{cm}^2$. Its parallel sides are 12 cm and 18 cm. Find the perpendicular distance between the parallel sides.",
       "options": [
         "4 cm",
         "10 cm",
@@ -136,7 +136,7 @@
         "6.67 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the formula Area = (1/2)(a+b)h. We have 120 = (1/2)(12 + 18)h. This simplifies to 120 = 15h. Dividing by 15 gives the height h = 8 cm."
+      "explanation": "Use the formula Area = ($\\frac{1}{2}$)(a+b)h. We have 120 = ($\\frac{1}{2}$)(12 + 18)h. This simplifies to 120 = 15h. Dividing by 15 gives the height h = 8 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "16$\\pi$ cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The perimeter of the shape is formed by the four semicircular arcs. The internal sides of the square are not part of the perimeter. The diameter of each semicircle is 8 cm. The length of one arc is (1/2)$\\pi$d = (1/2)$\\pi$ * 8 = 4$\\pi$ cm. Since there are four such arcs, the total perimeter is 4 * 4$\\pi$ = 16$\\pi$ cm."
+      "explanation": "The perimeter of the shape is formed by the four semicircular arcs. The internal sides of the square are not part of the perimeter. The diameter of each semicircle is 8 cm. The length of one arc is ($\\frac{1}{2}$)$\\pi$d = ($\\frac{1}{2}$)$\\pi$ * 8 = 4$\\pi$ cm. Since there are four such arcs, the total perimeter is 4 * 4$\\pi$ = 16$\\pi$ cm."
     }
   ]
 }

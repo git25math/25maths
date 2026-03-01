@@ -10,37 +10,37 @@
       "type": "multiple-choice",
       "questionText": "In a right-angled triangle, the side opposite angle $\\theta$ is 5 cm and the hypotenuse is 13 cm. What is the value of sin($\\theta$)?",
       "options": [
-        "5/13",
-        "12/13",
-        "5/12",
-        "13/5"
+        "$\\frac{5}{13}$",
+        "$\\frac{12}{13}$",
+        "$\\frac{5}{12}$",
+        "$\\frac{13}{5}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The sine of an angle is the ratio of the length of the opposite side to the length of the hypotenuse (SOH). So, sin($\\theta$) = Opposite / Hypotenuse = 5/13."
+      "explanation": "The sine of an angle is the ratio of the length of the opposite side to the length of the hypotenuse (SOH). So, sin($\\theta$) = Opposite / Hypotenuse = $\\frac{5}{13}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "In a right-angled triangle, the side adjacent to angle $\\theta$ is 8 cm and the hypotenuse is 17 cm. What is the value of cos($\\theta$)?",
       "options": [
-        "15/17",
-        "8/17",
-        "8/15",
-        "17/8"
+        "$\\frac{15}{17}$",
+        "$\\frac{8}{17}$",
+        "$\\frac{8}{15}$",
+        "$\\frac{17}{8}$"
       ],
       "correctAnswer": 1,
-      "explanation": "The cosine of an angle is the ratio of the length of the adjacent side to the length of the hypotenuse (CAH). So, cos($\\theta$) = Adjacent / Hypotenuse = 8/17."
+      "explanation": "The cosine of an angle is the ratio of the length of the adjacent side to the length of the hypotenuse (CAH). So, cos($\\theta$) = Adjacent / Hypotenuse = $\\frac{8}{17}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "In a right-angled triangle, the side opposite angle $\\theta$ is 9 cm and the adjacent side is 40 cm. What is the value of tan($\\theta$)?",
       "options": [
-        "9/41",
-        "40/41",
-        "9/40",
-        "40/9"
+        "$\\frac{9}{41}$",
+        "$\\frac{40}{41}$",
+        "$\\frac{9}{40}$",
+        "$\\frac{40}{9}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The tangent of an angle is the ratio of the length of the opposite side to the length of the adjacent side (TOA). So, tan($\\theta$) = Opposite / Adjacent = 9/40."
+      "explanation": "The tangent of an angle is the ratio of the length of the opposite side to the length of the adjacent side (TOA). So, tan($\\theta$) = Opposite / Adjacent = $\\frac{9}{40}$."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "35.0°"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the sine ratio: sin(A) = Opposite / Hypotenuse = 7/10 = 0.7. To find the angle, use the inverse sine function: A = $sin^{-1}$(0.7) ≈ 44.4°."
+      "explanation": "Use the sine ratio: sin(A) = Opposite / Hypotenuse = $\\frac{7}{10}$ = 0.7. To find the angle, use the inverse sine function: A = $sin^{-1}$(0.7) ≈ 44.4°."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "0.4°"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the cosine ratio: cos(B) = Adjacent / Hypotenuse = 5/13. To find the angle, use the inverse cosine function: B = $cos^{-1}$(5/13) ≈ 67.4°."
+      "explanation": "Use the cosine ratio: cos(B) = Adjacent / Hypotenuse = $\\frac{5}{13}$. To find the angle, use the inverse cosine function: B = $cos^{-1}$($\\frac{5}{13}$) ≈ 67.4°."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "46.7°"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the tangent ratio: tan(C) = Opposite / Adjacent = 8/11. To find the angle, use the inverse tangent function: C = $tan^{-1}$(8/11) ≈ 36.0°."
+      "explanation": "Use the tangent ratio: tan(C) = Opposite / Adjacent = $\\frac{8}{11}$. To find the angle, use the inverse tangent function: C = $tan^{-1}$($\\frac{8}{11}$) ≈ 36.0°."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "59.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "The ladder, wall, and ground form a right-angled triangle. The ladder is the hypotenuse (5 m) and the distance from the wall is the adjacent side (3 m). Use cos($\\theta$) = Adjacent / Hypotenuse = 3/5. $\\theta = cos^{-1}$(0.6) ≈ 53.1°."
+      "explanation": "The ladder, wall, and ground form a right-angled triangle. The ladder is the hypotenuse (5 m) and the distance from the wall is the adjacent side (3 m). Use cos($\\theta$) = Adjacent / Hypotenuse = $\\frac{3}{5}$. $\\theta = cos^{-1}$(0.6) ≈ 53.1°."
     },
     {
       "type": "multiple-choice",

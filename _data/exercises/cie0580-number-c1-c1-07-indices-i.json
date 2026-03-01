@@ -100,7 +100,7 @@
         "81"
       ],
       "correctAnswer": 0,
-      "explanation": "A number raised to the power of 1/2 is equivalent to finding its square root. The square root of 9 is 3."
+      "explanation": "A number raised to the power of $\\frac{1}{2}$ is equivalent to finding its square root. The square root of 9 is 3."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "81"
       ],
       "correctAnswer": 0,
-      "explanation": "A number raised to the power of 1/3 is equivalent to finding its cube root. The cube root of 27 is 3, because 3 × 3 × 3 = 27."
+      "explanation": "A number raised to the power of $\\frac{1}{3}$ is equivalent to finding its cube root. The cube root of 27 is 3, because 3 × 3 × 3 = 27."
     },
     {
       "type": "multiple-choice",
@@ -120,15 +120,15 @@
       "options": [
         "−8",
         "−6",
-        "1/8",
-        "1/6"
+        "$\\frac{1}{8}$",
+        "$\\frac{1}{6}$"
       ],
       "correctAnswer": 2,
-      "explanation": "A negative index indicates the reciprocal of the number. So, $2^{-3} = 1/2^3$ = 1/8."
+      "explanation": "A negative index indicates the reciprocal of the number. So, $2^{-3} = 1/2^3 = \\frac{1}{8}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a square is 64 cm². What is the length of one side?",
+      "questionText": "The area of a square is 64 $\\text{cm}^2$. What is the length of one side?",
       "options": [
         "4 cm",
         "8 cm",
@@ -136,7 +136,7 @@
         "32 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a square is side length squared (s²). To find the side length, you need to find the square root of the area. $\\sqrt{64}$ = 8 cm."
+      "explanation": "The area of a square is side length squared ($s^{2}$). To find the side length, you need to find the square root of the area. $\\sqrt{64}$ = 8 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "−40"
       ],
       "correctAnswer": 0,
-      "explanation": "The negative index means a reciprocal. $10^{-4} = 1/10^4$ = 1/10000 = 0.0001."
+      "explanation": "The negative index means a reciprocal. $10^{-4} = 1/10^4 = \\frac{1}{10000}$ = 0.0001."
     }
   ]
 }

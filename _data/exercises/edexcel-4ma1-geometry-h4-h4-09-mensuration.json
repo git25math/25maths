@@ -10,29 +10,29 @@
       "type": "multiple-choice",
       "questionText": "A cylinder has a radius of 5 cm and a height of 12 cm. Calculate its curved surface area, correct to 3 significant figures.",
       "options": [
-        "188 cm²",
-        "377 cm²",
-        "471 cm²",
-        "942 cm²"
+        "188 $\\text{cm}^2$",
+        "377 $\\text{cm}^2$",
+        "471 $\\text{cm}^2$",
+        "942 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "Curved surface area of a cylinder = 2$\\pi$rh.  \nArea = 2 × $\\pi$ × 5 × 12 = 120$\\pi$ ≈ 377 cm² (3 s.f.)."
+      "explanation": "Curved surface area of a cylinder = 2$\\pi$rh.  \nArea = 2 × $\\pi$ × 5 × 12 = 120$\\pi$ ≈ 377 $\\text{cm}^2$ (3 s.f.)."
     },
     {
       "type": "multiple-choice",
       "questionText": "A sphere has a diameter of 10 cm. Find its volume, correct to 3 significant figures.",
       "options": [
-        "524 cm³",
-        "262 cm³",
-        "131 cm³",
-        "4190 cm³"
+        "524 $\\text{cm}^3$",
+        "262 $\\text{cm}^3$",
+        "131 $\\text{cm}^3$",
+        "4190 $\\text{cm}^3$"
       ],
       "correctAnswer": 0,
-      "explanation": "Radius r = diameter / 2 = 10 / 2 = 5 cm.  \nVolume of a sphere = (4/3)$\\pi$$r^3$.  \nVolume = (4/3) × $\\pi \\times 5^3$ = (4/3) × $\\pi$ × 125 = 500$\\pi/3$ ≈ 524 cm³ (3 s.f.)."
+      "explanation": "Radius r = diameter / 2 = $\\frac{10}{2}$ = 5 cm.  \nVolume of a sphere = ($\\frac{4}{3}$)$\\pi r^3$.  \nVolume = ($\\frac{4}{3}$) × $\\pi \\times 5^3$ = ($\\frac{4}{3}$) × $\\pi$ × 125 = 500$\\frac{\\pi}{3}$ ≈ 524 $\\text{cm}^3$ (3 s.f.)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a sector of a circle with radius 6 cm is 18$\\pi$ cm². Calculate the angle of the sector in degrees.",
+      "questionText": "The area of a sector of a circle with radius 6 cm is 18$\\pi$ $\\text{cm}^2$. Calculate the angle of the sector in degrees.",
       "options": [
         "60°",
         "90°",
@@ -40,7 +40,7 @@
         "180°"
       ],
       "correctAnswer": 3,
-      "explanation": "Area of sector = ($\\theta/360$) × $\\pi$$r^2$.  \n18$\\pi$ = ($\\theta/360$) × $\\pi \\times 6^2$.  \n18$\\pi$ = ($\\theta/360$) × 36$\\pi$.  \n18 = ($\\theta/360$) × 36.  \n18/36 = $\\theta/360$.  \n1/2 = $\\theta/360$.  \n$\\theta$ = 360/2 = 180°."
+      "explanation": "Area of sector = ($\\frac{\\theta}{360}$) × $\\pi r^2$.  \n18$\\pi$ = ($\\frac{\\theta}{360}$) × $\\pi \\times 6^2$.  \n18$\\pi$ = ($\\frac{\\theta}{360}$) × 36$\\pi$.  \n18 = ($\\frac{\\theta}{360}$) × 36.  \n$\\frac{18}{36} = \\theta/360$.  \n$\\frac{1}{2} = \\theta/360$.  \n$\\theta = \\frac{360}{2}$ = 180°."
     },
     {
       "type": "multiple-choice",
@@ -52,59 +52,59 @@
         "$\\sqrt{34}$ cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Using Pythagoras theorem: h² + $r^2$ = l².  \nh² + $3^2 = 5^2$.  \nh² + 9 = 25.  \nh² = 16.  \nh = 4 cm."
+      "explanation": "Using Pythagoras theorem: $h^{2} + r^2$ = l².  \nh² + $3^2 = 5^2$.  \nh² + 9 = 25.  \nh² = 16.  \nh = 4 cm."
     },
     {
       "type": "multiple-choice",
       "questionText": "A cuboid has dimensions 2 cm by 3 cm by 5 cm. Calculate its total surface area.",
       "options": [
-        "30 cm²",
-        "38 cm²",
-        "62 cm²",
-        "76 cm²"
+        "30 $\\text{cm}^2$",
+        "38 $\\text{cm}^2$",
+        "62 $\\text{cm}^2$",
+        "76 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Total surface area = 2(lw + lh + wh).  \nArea = 2((2×3) + (2×5) + (3×5)).  \nArea = 2(6 + 10 + 15).  \nArea = 2(31) = 62 cm²."
+      "explanation": "Total surface area = 2(lw + lh + wh).  \nArea = 2((2×3) + (2×5) + (3×5)).  \nArea = 2(6 + 10 + 15).  \nArea = 2(31) = 62 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "The circumference of a circle is 20$\\pi$ cm. What is its area?",
       "options": [
-        "100$\\pi$ cm²",
-        "200$\\pi$ cm²",
-        "400$\\pi$ cm²",
-        "50$\\pi$ cm²"
+        "100$\\pi$ $\\text{cm}^2$",
+        "200$\\pi$ $\\text{cm}^2$",
+        "400$\\pi$ $\\text{cm}^2$",
+        "50$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Circumference C = 2$\\pi$r.  \n20$\\pi$ = 2$\\pi$r.  \nr = 10 cm.  \nArea A = $\\pi$$r^2$.  \nA = $\\pi \\times 10^2$ = 100$\\pi$ cm²."
+      "explanation": "Circumference C = 2$\\pi$r.  \n20$\\pi$ = 2$\\pi$r.  \nr = 10 cm.  \nArea A = $\\pi r^2$.  \nA = $\\pi \\times 10^2$ = 100$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A solid cylinder has a radius of 4 cm and a height of 10 cm. Calculate its total surface area, correct to 3 significant figures.",
       "options": [
-        "251 cm²",
-        "302 cm²",
-        "352 cm²",
-        "301 cm²"
+        "251 $\\text{cm}^2$",
+        "302 $\\text{cm}^2$",
+        "352 $\\text{cm}^2$",
+        "301 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Total surface area = 2$\\pi$$r^2$ + 2$\\pi$rh.  \nArea = 2$\\pi$$(4)^2$ + 2$\\pi$(4)(10).  \nArea = 32$\\pi$ + 80$\\pi$ = 112$\\pi$ ≈ 352 cm² (3 s.f.)."
+      "explanation": "Total surface area = 2$\\pi r^2$ + 2$\\pi$rh.  \nArea = 2$\\pi(4)^2$ + 2$\\pi$(4)(10).  \nArea = 32$\\pi$ + 80$\\pi$ = 112$\\pi$ ≈ 352 $\\text{cm}^2$ (3 s.f.)."
     },
     {
       "type": "multiple-choice",
       "questionText": "A square has a diagonal of length 8 cm. What is its area?",
       "options": [
-        "16 cm²",
-        "32 cm²",
-        "64 cm²",
-        "8 cm²"
+        "16 $\\text{cm}^2$",
+        "32 $\\text{cm}^2$",
+        "64 $\\text{cm}^2$",
+        "8 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "Let side length be 's'. By Pythagoras, s² + s² = $8^2$.  \n2s² = 64.  \ns² = 32.  \nArea of square = s² = 32 cm²."
+      "explanation": "Let side length be 's'. By Pythagoras, $s^{2} + s^{2} = 8^2$.  \n2s² = 64.  \ns² = 32.  \nArea of square = s² = 32 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A rectangular prism has a volume of 120 cm³. If its length is 6 cm and width is 4 cm, what is its height?",
+      "questionText": "A rectangular prism has a volume of 120 $\\text{cm}^3$. If its length is 6 cm and width is 4 cm, what is its height?",
       "options": [
         "4 cm",
         "5 cm",
@@ -112,7 +112,7 @@
         "8 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume = length × width × height.  \n120 = 6 × 4 × h.  \n120 = 24h.  \nh = 120 / 24 = 5 cm."
+      "explanation": "Volume = length × width × height.  \n120 = 6 × 4 × h.  \n120 = 24h.  \nh = $\\frac{120}{24}$ = 5 cm."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a trapezium is 40 cm². If the parallel sides are 7 cm and 9 cm, calculate the perpendicular height.",
+      "questionText": "The area of a trapezium is 40 $\\text{cm}^2$. If the parallel sides are 7 cm and 9 cm, calculate the perpendicular height.",
       "options": [
         "4 cm",
         "5 cm",
@@ -136,7 +136,7 @@
         "8 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Area of trapezium = (1/2)(a+b)h.  \n40 = (1/2)(7+9)h.  \n40 = (1/2)(16)h.  \n40 = 8h.  \nh = 40/8 = 5 cm."
+      "explanation": "Area of trapezium = ($\\frac{1}{2}$)(a+b)h.  \n40 = ($\\frac{1}{2}$)(7+9)h.  \n40 = ($\\frac{1}{2}$)(16)h.  \n40 = 8h.  \nh = $\\frac{40}{8}$ = 5 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "45°"
       ],
       "correctAnswer": 1,
-      "explanation": "Arc length L = ($\\theta/360$) × 2$\\pi$r.  \n4$\\pi$ = ($\\theta/360$) × 2$\\pi$ × 8.  \n4$\\pi$ = ($\\theta/360$) × 16$\\pi$.  \n4 = ($\\theta/360$) × 16.  \n4/16 = $\\theta/360$.  \n1/4 = $\\theta/360$.  \n$\\theta$ = 360/4 = 90°."
+      "explanation": "Arc length L = ($\\frac{\\theta}{360}$) × 2$\\pi$r.  \n4$\\pi$ = ($\\frac{\\theta}{360}$) × 2$\\pi$ × 8.  \n4$\\pi$ = ($\\frac{\\theta}{360}$) × 16$\\pi$.  \n4 = ($\\frac{\\theta}{360}$) × 16.  \n$\\frac{4}{16} = \\theta/360$.  \n$\\frac{1}{4} = \\theta/360$.  \n$\\theta = \\frac{360}{4}$ = 90°."
     }
   ]
 }

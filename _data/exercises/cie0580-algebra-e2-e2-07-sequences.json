@@ -64,7 +64,7 @@
         "256"
       ],
       "correctAnswer": 2,
-      "explanation": "This is a geometric sequence with a common ratio. To find the ratio, divide a term by the previous one: 2 / 0.5 = 4. The rule is to multiply by 4. The next term is 32 × 4 = 128."
+      "explanation": "This is a geometric sequence with a common ratio. To find the ratio, divide a term by the previous one: $\\frac{2}{0}$.5 = 4. The rule is to multiply by 4. The next term is 32 × 4 = 128."
     },
     {
       "type": "multiple-choice",

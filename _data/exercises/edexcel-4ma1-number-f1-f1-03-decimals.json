@@ -70,17 +70,17 @@
       "type": "multiple-choice",
       "questionText": "Convert 0.85 to a fraction in its simplest form.",
       "options": [
-        "85/100",
-        "8/5",
-        "17/20",
-        "4/5"
+        "$\\frac{85}{100}$",
+        "$\\frac{8}{5}$",
+        "$\\frac{17}{20}$",
+        "$\\frac{4}{5}$"
       ],
       "correctAnswer": 2,
-      "explanation": "0.85 is equivalent to 85/100. To simplify, divide the numerator and the denominator by their greatest common divisor, which is 5. 85 ÷ 5 = 17 and 100 ÷ 5 = 20. So the fraction is 17/20."
+      "explanation": "0.85 is equivalent to $\\frac{85}{100}$. To simplify, divide the numerator and the denominator by their greatest common divisor, which is 5. 85 ÷ 5 = 17 and 100 ÷ 5 = 20. So the fraction is $\\frac{17}{20}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is 3/5 as a decimal?",
+      "questionText": "What is $\\frac{3}{5}$ as a decimal?",
       "options": [
         "0.3",
         "0.6",

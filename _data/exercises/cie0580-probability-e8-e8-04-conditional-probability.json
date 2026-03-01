@@ -16,31 +16,31 @@
         "3.33"
       ],
       "correctAnswer": 1,
-      "explanation": "Use the formula P(A|B) = P(A and B) / P(B). So, P(A|B) = 0.15 / 0.5 = 0.3."
+      "explanation": "Use the formula P(A|B) = P(A and B) / P(B). So, P(A|B) = 0.$\\frac{15}{0}$.5 = 0.3."
     },
     {
       "type": "multiple-choice",
       "questionText": "In a class of 30 students, 12 take Art and 18 take Music. 5 students take both. Given that a student takes Music, what is the probability they also take Art?",
       "options": [
-        "5/12",
-        "5/18",
-        "5/30",
-        "18/30"
+        "$\\frac{5}{12}$",
+        "$\\frac{5}{18}$",
+        "$\\frac{5}{30}$",
+        "$\\frac{18}{30}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Let A be Art and M be Music. We want P(A|M) = P(A and M) / P(M). There are 18 students taking Music, and 5 of these also take Art. So the probability is 5/18."
+      "explanation": "Let A be Art and M be Music. We want P(A|M) = P(A and M) / P(M). There are 18 students taking Music, and 5 of these also take Art. So the probability is $\\frac{5}{18}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A bag contains 7 red balls and 4 blue balls. Two balls are drawn without replacement. Given the first ball was red, what is the probability the second ball is also red?",
       "options": [
-        "7/11",
-        "6/11",
-        "6/10",
-        "7/10"
+        "$\\frac{7}{11}$",
+        "$\\frac{6}{11}$",
+        "$\\frac{6}{10}$",
+        "$\\frac{7}{10}$"
       ],
       "correctAnswer": 2,
-      "explanation": "After one red ball is drawn, there are 10 balls left in the bag. Of these, 6 are red. So the probability is 6/10."
+      "explanation": "After one red ball is drawn, there are 10 balls left in the bag. Of these, 6 are red. So the probability is $\\frac{6}{10}$."
     },
     {
       "type": "multiple-choice",
@@ -58,13 +58,13 @@
       "type": "multiple-choice",
       "questionText": "Two fair six-sided dice are rolled. Given the sum of the numbers is 9, what is the probability that the first die showed a 4?",
       "options": [
-        "1/4",
-        "1/6",
-        "1/9",
-        "1/36"
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{9}$",
+        "$\\frac{1}{36}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The combinations that sum to 9 are (3,6), (4,5), (5,4), and (6,3). There are 4 possible outcomes. Only one of these, (4,5), has the first die as a 4. So the probability is 1/4."
+      "explanation": "The combinations that sum to 9 are (3,6), (4,5), (5,4), and (6,3). There are 4 possible outcomes. Only one of these, (4,5), has the first die as a 4. So the probability is $\\frac{1}{4}$."
     },
     {
       "type": "multiple-choice",
@@ -76,19 +76,19 @@
         "0.36"
       ],
       "correctAnswer": 2,
-      "explanation": "From the formula P(C|D) = P(C and D) / P(D), we can rearrange to get P(D) = P(C and D) / P(C|D). So, P(D) = 0.24 / 0.6 = 0.4."
+      "explanation": "From the formula P(C|D) = P(C and D) / P(D), we can rearrange to get P(D) = P(C and D) / P(C|D). So, P(D) = 0.$\\frac{24}{0}$.6 = 0.4."
     },
     {
       "type": "multiple-choice",
       "questionText": "A card is drawn from a standard 52-card deck. Given the card is a King, what is the probability it is red?",
       "options": [
-        "2/52",
-        "4/52",
-        "1/4",
-        "1/2"
+        "$\\frac{2}{52}$",
+        "$\\frac{4}{52}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{2}$"
       ],
       "correctAnswer": 3,
-      "explanation": "There are 4 Kings in a deck. Two are red (Hearts, Diamonds) and two are black (Clubs, Spades). So, given the card is a King, there is a 2 out of 4 chance it is red, which simplifies to 1/2."
+      "explanation": "There are 4 Kings in a deck. Two are red (Hearts, Diamonds) and two are black (Clubs, Spades). So, given the card is a King, there is a 2 out of 4 chance it is red, which simplifies to $\\frac{1}{2}$."
     },
     {
       "type": "multiple-choice",
@@ -100,55 +100,55 @@
         "0.25"
       ],
       "correctAnswer": 2,
-      "explanation": "Let A be owning an Android and T be owning a tablet. We want P(T|A) = P(T and A) / P(A). So, P(T|A) = 0.25 / 0.40 = 0.625."
+      "explanation": "Let A be owning an Android and T be owning a tablet. We want P(T|A) = P(T and A) / P(A). So, P(T|A) = 0.$\\frac{25}{0}$.40 = 0.625."
     },
     {
       "type": "multiple-choice",
       "questionText": "A bag has 3 green and 2 red balls. Two are drawn without replacement. Given the first was green, what is the probability the second is green?",
       "options": [
-        "3/5",
-        "2/5",
-        "1/2",
-        "3/4"
+        "$\\frac{3}{5}$",
+        "$\\frac{2}{5}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{3}{4}$"
       ],
       "correctAnswer": 2,
-      "explanation": "After drawing one green ball, there are 4 balls left: 2 green and 2 red. The probability of the second being green is 2/4 = 1/2."
+      "explanation": "After drawing one green ball, there are 4 balls left: 2 green and 2 red. The probability of the second being green is $\\frac{2}{4} = \\frac{1}{2}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "The probability of a train being late is 0.2. If the train is late, the probability a passenger misses their connection is 0.8. If the train is on time, the probability they miss the connection is 0.1. Given a passenger missed their connection, what is the probability the train was late?",
       "options": [
-        "16/24",
+        "$\\frac{16}{24}$",
         "0.16",
         "0.24",
         "0.8"
       ],
       "correctAnswer": 0,
-      "explanation": "P(Late and Miss) = 0.2 * 0.8 = 0.16. P(On time and Miss) = 0.8 * 0.1 = 0.08. P(Miss) = 0.16 + 0.08 = 0.24. We want P(Late|Miss) = P(Late and Miss) / P(Miss) = 0.16 / 0.24 = 16/24 = 2/3."
+      "explanation": "P(Late and Miss) = 0.2 * 0.8 = 0.16. P(On time and Miss) = 0.8 * 0.1 = 0.08. P(Miss) = 0.16 + 0.08 = 0.24. We want P(Late|Miss) = P(Late and Miss) / P(Miss) = 0.$\\frac{16}{0}$.24 = $\\frac{16}{24} = \\frac{2}{3}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Two dice are rolled. Given that at least one die shows a 5, what is the probability the sum is exactly 7?",
       "options": [
-        "1/11",
-        "2/11",
-        "2/36",
-        "1/6"
+        "$\\frac{1}{11}$",
+        "$\\frac{2}{11}$",
+        "$\\frac{2}{36}$",
+        "$\\frac{1}{6}$"
       ],
       "correctAnswer": 1,
-      "explanation": "There are 11 outcomes with at least one 5: (1,5), (2,5), (3,5), (4,5), (5,5), (6,5) and (5,1), (5,2), (5,3), (5,4), (5,6). Of these, two sum to 7: (2,5) and (5,2). So the probability is 2/11."
+      "explanation": "There are 11 outcomes with at least one 5: (1,5), (2,5), (3,5), (4,5), (5,5), (6,5) and (5,1), (5,2), (5,3), (5,4), (5,6). Of these, two sum to 7: (2,5) and (5,2). So the probability is $\\frac{2}{11}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A bag contains 5 red and 7 blue balls. Two draws are made without replacement. Given the first ball drawn was blue, what is the probability the second ball is blue?",
       "options": [
-        "7/12",
-        "6/12",
-        "6/11",
-        "7/11"
+        "$\\frac{7}{12}$",
+        "$\\frac{6}{12}$",
+        "$\\frac{6}{11}$",
+        "$\\frac{7}{11}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Originally there are 12 balls. After drawing one blue ball, there are 11 balls left. Of these, 6 are blue. So the probability is 6/11."
+      "explanation": "Originally there are 12 balls. After drawing one blue ball, there are 11 balls left. Of these, 6 are blue. So the probability is $\\frac{6}{11}$."
     }
   ]
 }

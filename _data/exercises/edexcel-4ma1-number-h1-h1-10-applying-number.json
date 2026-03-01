@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A metal block has a mass of 540 g and a density of 4.5 g/cm³. The block is a cuboid with a base of 4 cm by 5 cm. What is the height of the block?",
+      "questionText": "A metal block has a mass of 540 g and a density of 4.5 g/$\\text{cm}^3$. The block is a cuboid with a base of 4 cm by 5 cm. What is the height of the block?",
       "options": [
         "12 cm",
         "6 cm",
@@ -124,7 +124,7 @@
         "5 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the volume using the formula Volume = Mass ÷ Density. Volume = 540 g ÷ 4.5 g/cm³ = 120 cm³. The volume of a cuboid is base area × height. So, Height = Volume ÷ Base Area. Height = 120 cm³ ÷ (4 cm × 5 cm) = 120 cm³ ÷ 20 cm² = 6 cm."
+      "explanation": "First, find the volume using the formula Volume = Mass ÷ Density. Volume = 540 g ÷ 4.5 g/$\\text{cm}^3$ = 120 $\\text{cm}^3$. The volume of a cuboid is base area × height. So, Height = Volume ÷ Base Area. Height = 120 $\\text{cm}^3$ ÷ (4 cm × 5 cm) = 120 $\\text{cm}^3$ ÷ 20 $\\text{cm}^2$ = 6 cm."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A train is scheduled to take 1 hour and 45 minutes for a journey. It is delayed and its journey time increases by 1/7 of the scheduled time. How long did the journey actually take?",
+      "questionText": "A train is scheduled to take 1 hour and 45 minutes for a journey. It is delayed and its journey time increases by $\\frac{1}{7}$ of the scheduled time. How long did the journey actually take?",
       "options": [
         "1 hour 50 minutes",
         "2 hours",
@@ -148,7 +148,7 @@
         "2 hours 10 minutes"
       ],
       "correctAnswer": 1,
-      "explanation": "First, convert the scheduled time to minutes: 1 hour 45 minutes = 60 + 45 = 105 minutes. Calculate the delay: (1/7) × 105 minutes = 15 minutes. The actual journey time is the scheduled time plus the delay: 105 + 15 = 120 minutes, which is 2 hours."
+      "explanation": "First, convert the scheduled time to minutes: 1 hour 45 minutes = 60 + 45 = 105 minutes. Calculate the delay: ($\\frac{1}{7}$) × 105 minutes = 15 minutes. The actual journey time is the scheduled time plus the delay: 105 + 15 = 120 minutes, which is 2 hours."
     }
   ]
 }

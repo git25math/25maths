@@ -40,7 +40,7 @@
         "£648"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the original salary be S. A 20% pay rise means the new salary is 120% of the original. So, 1.20 * S = £540. To find the original salary, divide the new salary by the multiplier: S = 540 / 1.20 = £450."
+      "explanation": "Let the original salary be S. A 20% pay rise means the new salary is 120% of the original. So, 1.20 * S = £540. To find the original salary, divide the new salary by the multiplier: S = $\\frac{540}{1}$.20 = £450."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "£8,280.00"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the compound interest formula: A = P(1 + r/100)^n, where P is the principal, r is the rate, and n is the number of years. A = 8000 * (1 + 3.5/100)^4 = 8000 * (1.035)^4 ≈ £9,180.18."
+      "explanation": "Use the compound interest formula: A = P(1 + r/100)^n, where P is the principal, r is the rate, and n is the number of years. A = 8000 * (1 + 3.$\\frac{5}{100}$)^4 = 8000 * (1.035)^4 ≈ £9,180.18."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "126%"
       ],
       "correctAnswer": 1,
-      "explanation": "First, calculate the profit: £576 - £450 = £126. The percentage profit is the profit divided by the original cost, multiplied by 100. Percentage Profit = (126 / 450) * 100 = 28%."
+      "explanation": "First, calculate the profit: £576 - £450 = £126. The percentage profit is the profit divided by the original cost, multiplied by 100. Percentage Profit = ($\\frac{126}{450}$) * 100 = 28%."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "78.6%"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the number of boys: 1250 - 700 = 550. To find the percentage of boys, divide the number of boys by the total number of students and multiply by 100: (550 / 1250) * 100 = 44%."
+      "explanation": "First, find the number of boys: 1250 - 700 = 550. To find the percentage of boys, divide the number of boys by the total number of students and multiply by 100: ($\\frac{550}{1250}$) * 100 = 44%."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "£136.71"
       ],
       "correctAnswer": 1,
-      "explanation": "This is a reverse percentage problem. A 5% increase corresponds to a multiplier of 1.05. Let the original price be P. So, P * 1.05 = £130.20. To find P, we calculate: P = 130.20 / 1.05 = £124."
+      "explanation": "This is a reverse percentage problem. A 5% increase corresponds to a multiplier of 1.05. Let the original price be P. So, P * 1.05 = £130.20. To find P, we calculate: P = 130.$\\frac{20}{1}$.05 = £124."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "£26.00"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the original price be P. A 20% reduction means the sale price is 80% of the original price. So, P * (1 - 0.20) = £24. P * 0.80 = £24. To find P, calculate: P = 24 / 0.80 = £30.00."
+      "explanation": "Let the original price be P. A 20% reduction means the sale price is 80% of the original price. So, P * (1 - 0.20) = £24. P * 0.80 = £24. To find P, calculate: P = $\\frac{24}{0}$.80 = £30.00."
     }
   ]
 }

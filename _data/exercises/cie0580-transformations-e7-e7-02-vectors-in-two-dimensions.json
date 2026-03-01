@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given points ${C(-2, 6)}${ and $D(-5, 1)}$, what is the column vector for $\\overrightarrow{DC}$?",
+      "questionText": "Given points ${C(-2, 6)}$ and D(-5, 1)}, what is the column vector for $\\overrightarrow{DC$?",
       "options": [
         "$\\begin{pmatrix} -3 \\\\ -5 \\end{pmatrix}$",
         "$\\begin{pmatrix} 3 \\\\ 5 \\end{pmatrix}$",

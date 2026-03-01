@@ -8,19 +8,19 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Which of the following lines is parallel to the line y = 5x + 3?",
+      "questionText": "Which of the following lines is parallel to the line ${y = 5x + 3}$?",
       "options": [
-        "y = 5x - 1",
-        "y = 3x + 5",
-        "y = -5x + 3",
-        "y = (1/5)x + 3"
+        "${y = 5x - 1}$",
+        "${y = 3x + 5}$",
+        "${y = -5x + 3}$",
+        "y = ($\\frac{1}{5}$)x + 3"
       ],
       "correctAnswer": 0,
-      "explanation": "Parallel lines have the same gradient. The gradient of y = 5x + 3 is 5. The line y = 5x - 1 also has a gradient of 5."
+      "explanation": "Parallel lines have the same gradient. The gradient of ${y = 5x + 3}$ is 5. The line ${y = 5x - 1}$ also has a gradient of 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The line y = mx + 2 is parallel to the line y = -3x + 4. What is the value of m?",
+      "questionText": "The line y = mx + 2 is parallel to the line ${y = -3x + 4}$. What is the value of m?",
       "options": [
         "2",
         "4",
@@ -32,19 +32,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the equation of the line that is parallel to y = 2x - 1 and passes through the point (0, 4).",
+      "questionText": "Find the equation of the line that is parallel to ${y = 2x - 1}$ and passes through the point (0, 4).",
       "options": [
-        "y = 2x + 4",
-        "y = 4x + 2",
-        "y = 2x - 1",
-        "y = -0.5x + 4"
+        "${y = 2x + 4}$",
+        "${y = 4x + 2}$",
+        "${y = 2x - 1}$",
+        "${y = -0.5x + 4}$"
       ],
       "correctAnswer": 0,
-      "explanation": "A line parallel to y = 2x - 1 must have a gradient of 2. The equation will be in the form y = 2x + c. Since it passes through (0, 4), the y-intercept 'c' is 4. So the equation is y = 2x + 4."
+      "explanation": "A line parallel to ${y = 2x - 1}$ must have a gradient of 2. The equation will be in the form ${y = 2x +}$c. Since it passes through (0, 4), the y-intercept 'c' is 4. So the equation is ${y = 2x + 4}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Are the lines y = 4x - 2 and 2y = 8x + 6 parallel?",
+      "questionText": "Are the lines ${y = 4x - 2}$ and 2y = 8x + 6 parallel?",
       "options": [
         "Yes",
         "No",
@@ -52,7 +52,7 @@
         "They are perpendicular"
       ],
       "correctAnswer": 0,
-      "explanation": "First, write the second equation in the form y = mx + c. Dividing 2y = 8x + 6 by 2 gives y = 4x + 3. Both lines have a gradient of 4, so they are parallel."
+      "explanation": "First, write the second equation in the form y = mx + c. Dividing 2y = 8x + 6 by 2 gives ${y = 4x + 3}$. Both lines have a gradient of 4, so they are parallel."
     },
     {
       "type": "multiple-choice",
@@ -60,7 +60,7 @@
       "options": [
         "y = -5",
         "x = 3",
-        "y = 3x",
+        "${y = 3x}$",
         "x = -5"
       ],
       "correctAnswer": 0,
@@ -68,15 +68,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the equation of a line parallel to y = -x + 7 that passes through the point (1, 5).",
+      "questionText": "Find the equation of a line parallel to ${y = -x + 7}$ that passes through the point (1, 5).",
       "options": [
-        "y = -x + 6",
-        "y = x + 4",
-        "y = -x + 5",
-        "y = -x + 1"
+        "${y = -x + 6}$",
+        "${y = x + 4}$",
+        "${y = -x + 5}$",
+        "${y = -x + 1}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The gradient of the parallel line must be -1. Using y - y₁ = m(x - x₁), we get y - 5 = -1(x - 1). This simplifies to y - 5 = -x + 1, and then y = -x + 6."
+      "explanation": "The gradient of the parallel line must be -1. Using y - y₁ = m(x - x₁), we get y - 5 = -1(x - 1). This simplifies to y - 5 = -x + 1, and then ${y = -x + 6}$."
     },
     {
       "type": "multiple-choice",
@@ -84,7 +84,7 @@
       "options": [
         "x = 1",
         "y = 4",
-        "y = x + 4",
+        "${y = x + 4}$",
         "y = -4"
       ],
       "correctAnswer": 0,
@@ -92,19 +92,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A line L is parallel to y = 0.5x - 3. It passes through the point (6, 1). What is the equation of line L?",
+      "questionText": "A line L is parallel to ${y = 0.5x - 3}$. It passes through the point (6, 1). What is the equation of line L?",
       "options": [
-        "y = 0.5x - 2",
-        "y = 2x - 11",
-        "y = 0.5x + 1",
-        "y = -2x + 13"
+        "${y = 0.5x - 2}$",
+        "${y = 2x - 11}$",
+        "${y = 0.5x + 1}$",
+        "${y = -2x + 13}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The gradient of line L is 0.5. Using y - y₁ = m(x - x₁), we get y - 1 = 0.5(x - 6). This simplifies to y - 1 = 0.5x - 3, and then y = 0.5x - 2."
+      "explanation": "The gradient of line L is 0.5. Using y - y₁ = m(x - x₁), we get y - 1 = 0.5(x - 6). This simplifies to y - 1 = 0.5x - 3, and then ${y = 0.5x - 2}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Line A has the equation y = 7x + 1. Line B has the equation y = (k-1)x + 3. If the lines are parallel, what is the value of k?",
+      "questionText": "Line A has the equation ${y = 7x + 1}$. Line B has the equation y = (k-1)x + 3. If the lines are parallel, what is the value of k?",
       "options": [
         "7",
         "8",
@@ -116,39 +116,39 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which line is NOT parallel to y = 2x + 9?",
+      "questionText": "Which line is NOT parallel to ${y = 2x + 9}$?",
       "options": [
-        "y = 3x + 9",
-        "y = 2x + 1",
-        "y = 2x",
+        "${y = 3x + 9}$",
+        "${y = 2x + 1}$",
+        "${y = 2x}$",
         "2y = 4x - 10"
       ],
       "correctAnswer": 0,
-      "explanation": "A line not parallel to y = 2x + 9 will have a gradient that is not equal to 2. The line y = 3x + 9 has a gradient of 3."
+      "explanation": "A line not parallel to ${y = 2x + 9}$ will have a gradient that is not equal to 2. The line ${y = 3x + 9}$ has a gradient of 3."
     },
     {
       "type": "multiple-choice",
       "questionText": "A line passes through the points (0, 2) and (3, 8). Which of the following lines is parallel to it?",
       "options": [
-        "y = 2x - 5",
-        "y = 6x + 2",
-        "y = 3x + 2",
-        "y = 0.5x + 8"
+        "${y = 2x - 5}$",
+        "${y = 6x + 2}$",
+        "${y = 3x + 2}$",
+        "${y = 0.5x + 8}$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the gradient: m = (8 - 2) / (3 - 0) = 6 / 3 = 2. A parallel line must also have a gradient of 2. The equation y = 2x - 5 has a gradient of 2."
+      "explanation": "First, find the gradient: m = (8 - 2) / (3 - 0) = $\\frac{6}{3}$ = 2. A parallel line must also have a gradient of 2. The equation ${y = 2x - 5}$ has a gradient of 2."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the equation of the line parallel to y = 4x - 5 that passes through (-1, -2).",
+      "questionText": "Find the equation of the line parallel to ${y = 4x - 5}$ that passes through (-1, -2).",
       "options": [
-        "y = 4x + 2",
-        "y = 4x - 1",
-        "y = -x - 3",
-        "y = 4x - 5"
+        "${y = 4x + 2}$",
+        "${y = 4x - 1}$",
+        "${y = -x - 3}$",
+        "${y = 4x - 5}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The gradient of the parallel line is 4. Using y - y₁ = m(x - x₁), we get y - (-2) = 4(x - (-1)). This simplifies to y + 2 = 4(x + 1), then y + 2 = 4x + 4, and finally y = 4x + 2."
+      "explanation": "The gradient of the parallel line is 4. Using y - y₁ = m(x - x₁), we get y - (-2) = 4(x - (-1)). This simplifies to y + 2 = 4(x + 1), then y + 2 = 4x + 4, and finally ${y = 4x + 2}$."
     }
   ]
 }

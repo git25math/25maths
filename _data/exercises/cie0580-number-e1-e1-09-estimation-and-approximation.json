@@ -52,7 +52,7 @@
         "100"
       ],
       "correctAnswer": 1,
-      "explanation": "Rounding each number to 1 significant figure gives (0.5 x 400) / 20. This simplifies to 200 / 20 = 10."
+      "explanation": "Rounding each number to 1 significant figure gives (0.5 x 400) / 20. This simplifies to $\\frac{200}{20}$ = 10."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Estimate the value of 30.8 / 0.49.",
+      "questionText": "Estimate the value of 30.$\\frac{8}{0}$.49.",
       "options": [
         "15",
         "30",
@@ -76,7 +76,7 @@
         "75"
       ],
       "correctAnswer": 2,
-      "explanation": "Rounding the numbers gives 30 / 0.5. Dividing by 0.5 is the same as multiplying by 2. So, 30 x 2 = 60."
+      "explanation": "Rounding the numbers gives $\\frac{30}{0}$.5. Dividing by 0.5 is the same as multiplying by 2. So, 30 x 2 = 60."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "1000"
       ],
       "correctAnswer": 1,
-      "explanation": "First, estimate the sum inside the brackets: 9.8 + 20.1 ≈ 10 + 20 = 30. Then, square the result: 30^2 = 900."
+      "explanation": "First, estimate the sum inside the brackets: 9.8 + 20.1 ≈ 10 + 20 = 30. Then, square the result: $30^{2}$ = 900."
     },
     {
       "type": "multiple-choice",
@@ -140,15 +140,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A calculator shows that 418 / 7.9 = 5.291... Is this answer reasonable?",
+      "questionText": "A calculator shows that $\\frac{418}{7}$.9 = 5.291... Is this answer reasonable?",
       "options": [
-        "Yes, because 400/8 = 50.",
-        "No, because 400/8 = 50, so the decimal point is wrong.",
+        "Yes, because $\\frac{400}{8}$ = 50.",
+        "No, because $\\frac{400}{8}$ = 50, so the decimal point is wrong.",
         "Yes, because the numbers are close.",
         "No, because the answer should be an integer."
       ],
       "correctAnswer": 1,
-      "explanation": "To check for reasonableness, estimate the calculation as 400 / 8 = 50. The calculator's answer of 5.291... is about ten times too small, so it is not reasonable."
+      "explanation": "To check for reasonableness, estimate the calculation as $\\frac{400}{8}$ = 50. The calculator's answer of 5.291... is about ten times too small, so it is not reasonable."
     }
   ]
 }

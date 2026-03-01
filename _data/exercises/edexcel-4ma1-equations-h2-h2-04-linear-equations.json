@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 5x - 3 = 22.",
+      "questionText": "Solve the equation ${5x - 3 = 22}$.",
       "options": [
         "x = 5",
         "x = 3.8",
@@ -16,11 +16,11 @@
         "x = 4"
       ],
       "correctAnswer": 0,
-      "explanation": "To solve for x, first add 3 to both sides: 5x = 22 + 3, which gives 5x = 25. Then, divide both sides by 5: x = 25 / 5. Thus, x = 5."
+      "explanation": "To solve for x, first add 3 to both sides: 5x = 22 + 3, which gives 5x = 25. Then, divide both sides by 5: x = $\\frac{25}{5}$. Thus, x = 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 7y - 5 = 3y + 11.",
+      "questionText": "Solve the equation ${7y - 5 = 3y + 11}$.",
       "options": [
         "y = 1.6",
         "y = 0.6",
@@ -28,11 +28,11 @@
         "y = -4"
       ],
       "correctAnswer": 2,
-      "explanation": "First, gather the terms with y on one side by subtracting 3y from both sides: 4y - 5 = 11. Next, add 5 to both sides: 4y = 16. Finally, divide by 4: y = 4."
+      "explanation": "First, gather the terms with y on one side by subtracting 3y from both sides: ${4y - 5 = 11}$. Next, add 5 to both sides: 4y = 16. Finally, divide by 4: y = 4."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 4(2x - 1) = 36.",
+      "questionText": "Solve the equation 4(${2x - 1}$) = 36.",
       "options": [
         "x = 4.5",
         "x = 5",
@@ -40,11 +40,11 @@
         "x = 22"
       ],
       "correctAnswer": 1,
-      "explanation": "First, expand the bracket: 8x - 4 = 36. Then, add 4 to both sides: 8x = 40. Finally, divide by 8: x = 5."
+      "explanation": "First, expand the bracket: ${8x - 4 = 36}$. Then, add 4 to both sides: 8x = 40. Finally, divide by 8: x = 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve for z in the equation 5(z + 3) = 3(z - 1).",
+      "questionText": "Solve for z in the equation 5(${z + 3}$) = 3(${z - 1}$).",
       "options": [
         "z = 6",
         "z = -9",
@@ -52,7 +52,7 @@
         "z = 9"
       ],
       "correctAnswer": 1,
-      "explanation": "Expand both brackets: 5z + 15 = 3z - 3. Subtract 3z from both sides: 2z + 15 = -3. Subtract 15 from both sides: 2z = -18. Finally, divide by 2: z = -9."
+      "explanation": "Expand both brackets: ${5z + 15 = 3z - 3}$. Subtract 3z from both sides: ${2z + 15 = -3}$. Subtract 15 from both sides: 2z = -18. Finally, divide by 2: z = -9."
     },
     {
       "type": "multiple-choice",
@@ -88,16 +88,16 @@
         "x = 20"
       ],
       "correctAnswer": 0,
-      "explanation": "To add the fractions, find a common denominator, which is 10. The equation becomes (5x/10) + (2x/10) = 7, which simplifies to 7x/10 = 7. Multiply both sides by 10: 7x = 70. Divide by 7: x = 10."
+      "explanation": "To add the fractions, find a common denominator, which is 10. The equation becomes ($\\frac{5x}{10}$) + ($\\frac{2x}{10}$) = 7, which simplifies to $\\frac{7x}{10}$ = 7. Multiply both sides by 10: 7x = 70. Divide by 7: x = 10."
     },
     {
       "type": "multiple-choice",
       "questionText": "Solve the equation (3p - 2) / 4 = 7.",
       "options": [
-        "p = 22/3",
+        "p = $\\frac{22}{3}$",
         "p = 8",
         "p = 10",
-        "p = 26/3"
+        "p = $\\frac{26}{3}$"
       ],
       "correctAnswer": 2,
       "explanation": "Multiply both sides by 4 to remove the denominator: 3p - 2 = 28. Add 2 to both sides: 3p = 30. Finally, divide by 3: p = 10."
@@ -116,19 +116,19 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 10 - 3(x - 2) = 1.",
+      "questionText": "Solve the equation 10 - 3(${x - 2}$) = 1.",
       "options": [
-        "x = -5/3",
+        "x = -$\\frac{5}{3}$",
         "x = 5",
-        "x = 9/3",
+        "x = $\\frac{9}{3}$",
         "x = -3"
       ],
       "correctAnswer": 1,
-      "explanation": "First, expand the bracket, being careful with the negative sign: 10 - 3x + 6 = 1. Combine the constant terms: 16 - 3x = 1. Subtract 16 from both sides: -3x = -15. Divide by -3: x = 5."
+      "explanation": "First, expand the bracket, being careful with the negative sign: 10 - ${3x + 6 = 1}$. Combine the constant terms: 16 - 3x = 1. Subtract 16 from both sides: -3x = -15. Divide by -3: x = 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the value of y that satisfies 2(3y - 1) = 4(y + 5).",
+      "questionText": "Find the value of y that satisfies 2(${3y - 1}$) = 4(${y + 5}$).",
       "options": [
         "y = 11",
         "y = 9",
@@ -136,11 +136,11 @@
         "y = 2"
       ],
       "correctAnswer": 0,
-      "explanation": "Expand both brackets: 6y - 2 = 4y + 20. Subtract 4y from both sides: 2y - 2 = 20. Add 2 to both sides: 2y = 22. Divide by 2: y = 11."
+      "explanation": "Expand both brackets: ${6y - 2 = 4y + 20}$. Subtract 4y from both sides: ${2y - 2 = 20}$. Add 2 to both sides: 2y = 22. Divide by 2: y = 11."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation (2x + 1)/3 - (x - 1)/2 = 2.",
+      "questionText": "Solve the equation (${2x + 1}$)/3 - (${x - 1}$)/2 = 2.",
       "options": [
         "x = 7",
         "x = 5",
@@ -148,7 +148,7 @@
         "x = 9"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply every term by the lowest common multiple of the denominators (6): 2(2x + 1) - 3(x - 1) = 12. Expand the brackets: 4x + 2 - 3x + 3 = 12. Combine like terms: x + 5 = 12. Subtract 5 from both sides: x = 7."
+      "explanation": "Multiply every term by the lowest common multiple of the denominators (6): 2(${2x + 1}$) - 3(${x - 1}$) = 12. Expand the brackets: ${4x + 2 - 3x + 3 = 12}$. Combine like terms: ${x + 5 = 12}$. Subtract 5 from both sides: x = 7."
     }
   ]
 }

@@ -16,7 +16,7 @@
         "79"
       ],
       "correctAnswer": 1,
-      "explanation": "Total score for the first class = 10 * 75 = 750. Total score for the second class = 15 * 80 = 1200. Total score for all students = 750 + 1200 = 1950. Combined mean score = 1950 / (10 + 15) = 1950 / 25 = 78."
+      "explanation": "Total score for the first class = 10 * 75 = 750. Total score for the second class = 15 * 80 = 1200. Total score for all students = 750 + 1200 = 1950. Combined mean score = 1950 / (10 + 15) = $\\frac{1950}{25}$ = 78."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "25 minutes"
       ],
       "correctAnswer": 0,
-      "explanation": "To estimate the mean, we first find the midpoint for each class interval:\n- 0 < t $\\leq$ 10: Midpoint = 5\n- 10 < t $\\leq$ 20: Midpoint = 15\n- 20 < t $\\leq$ 30: Midpoint = 25\n- 30 < t $\\leq$ 40: Midpoint = 35\n\nNow, calculate the sum of (midpoint * frequency) and the total frequency:\nΣfx = (5*5) + (15*15) + (25*20) + (35*10)\nΣfx = 25 + 225 + 500 + 350 = 1100\nΣf = 5 + 15 + 20 + 10 = 50\n\nEstimated mean = Σfx / Σf = 1100 / 50 = 22 minutes."
+      "explanation": "To estimate the mean, we first find the midpoint for each class interval:\n- 0 < t $\\leq$ 10: Midpoint = 5\n- 10 < t $\\leq$ 20: Midpoint = 15\n- 20 < t $\\leq$ 30: Midpoint = 25\n- 30 < t $\\leq$ 40: Midpoint = 35\n\nNow, calculate the sum of (midpoint * frequency) and the total frequency:\nΣfx = (5*5) + (15*15) + (25*20) + (35*10)\nΣfx = 25 + 225 + 500 + 350 = 1100\nΣf = 5 + 15 + 20 + 10 = 50\n\nEstimated mean = Σfx / Σf = $\\frac{1100}{50}$ = 22 minutes."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "19"
       ],
       "correctAnswer": 1,
-      "explanation": "First, order the numbers: 9, 12, 15, 17, 19, 21, 23, 28. There are 8 numbers (an even set). The median is the average of the two middle values (the 4th and 5th values). Median = (17 + 19) / 2 = 36 / 2 = 18."
+      "explanation": "First, order the numbers: 9, 12, 15, 17, 19, 21, 23, 28. There are 8 numbers (an even set). The median is the average of the two middle values (the 4th and 5th values). Median = (17 + 19) / 2 = $\\frac{36}{2}$ = 18."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "160g"
       ],
       "correctAnswer": 1,
-      "explanation": "The ratio of weights is 15:25, which simplifies to 3:5. The total parts are 3 + 5 = 8. The food for the lighter dog is (3/8) * 400g = 150g."
+      "explanation": "The ratio of weights is 15:25, which simplifies to 3:5. The total parts are 3 + 5 = 8. The food for the lighter dog is ($\\frac{3}{8}$) * 400g = 150g."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "2.2"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the mean, calculate Σfx / Σf.\nΣfx = (0*5) + (1*8) + (2*10) + (3*5) + (4*2)\nΣfx = 0 + 8 + 20 + 15 + 8 = 51\nΣf = 5 + 8 + 10 + 5 + 2 = 30\n\nMean = Σfx / Σf = 51 / 30 = 1.7."
+      "explanation": "To find the mean, calculate Σfx / Σf.\nΣfx = (0*5) + (1*8) + (2*10) + (3*5) + (4*2)\nΣfx = 0 + 8 + 20 + 15 + 8 = 51\nΣf = 5 + 8 + 10 + 5 + 2 = 30\n\nMean = Σfx / Σf = $\\frac{51}{30}$ = 1.7."
     },
     {
       "type": "multiple-choice",

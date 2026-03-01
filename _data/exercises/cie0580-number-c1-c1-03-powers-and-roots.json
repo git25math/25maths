@@ -88,7 +88,7 @@
         "81"
       ],
       "correctAnswer": 2,
-      "explanation": "A power of 1/2 is the same as the square root. Therefore, $9^1$ᐟ² = $\\sqrt{9}$ = 3."
+      "explanation": "A power of $\\frac{1}{2}$ is the same as the square root. Therefore, $9^1$ᐟ² = $\\sqrt{9}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "6"
       ],
       "correctAnswer": 1,
-      "explanation": "A power of 1/3 is the same as the cube root. We are looking for a number that, when multiplied by itself three times, equals 27. 3 × 3 × 3 = 27."
+      "explanation": "A power of $\\frac{1}{3}$ is the same as the cube root. We are looking for a number that, when multiplied by itself three times, equals 27. 3 × 3 × 3 = 27."
     },
     {
       "type": "multiple-choice",
@@ -108,15 +108,15 @@
       "options": [
         "-8",
         "-6",
-        "1/6",
-        "1/8"
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{8}$"
       ],
       "correctAnswer": 3,
-      "explanation": "A negative power indicates the reciprocal. So, $2^{-3} = 1/2^3$ = 1/8. The negative sign in the power does not make the result negative."
+      "explanation": "A negative power indicates the reciprocal. So, $2^{-3} = 1/2^3 = \\frac{1}{8}$. The negative sign in the power does not make the result negative."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The area of a square is 64 cm². What is the length of one of its sides?",
+      "questionText": "The area of a square is 64 $\\text{cm}^2$. What is the length of one of its sides?",
       "options": [
         "16 cm",
         "32 cm",
@@ -136,7 +136,7 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "$10^{-3}$ is equal to $1/10^3$ or 1/1000. As a decimal, this is 0.001."
+      "explanation": "$10^{-3}$ is equal to $\\frac{1}{10} ^3$ or $\\frac{1}{1000}$. As a decimal, this is 0.001."
     },
     {
       "type": "multiple-choice",

@@ -16,7 +16,7 @@
         "400g"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the amount of flour for one person: 200g / 4 = 50g. Then, multiply by the new number of people: 50g * 6 = 300g."
+      "explanation": "First, find the amount of flour for one person: $\\frac{200g}{4}$ = 50g. Then, multiply by the new number of people: 50g * 6 = 300g."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "10.7 days"
       ],
       "correctAnswer": 0,
-      "explanation": "This is inverse proportion. The total work is 3 builders * 8 days = 24 builder-days. With 4 builders, the time taken is 24 / 4 = 6 days."
+      "explanation": "This is inverse proportion. The total work is 3 builders * 8 days = 24 builder-days. With 4 builders, the time taken is $\\frac{24}{4}$ = 6 days."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "250 km"
       ],
       "correctAnswer": 1,
-      "explanation": "The actual length is 5 cm * 50000 = 250000 cm. To convert cm to km, divide by 100000 (since 1 km = 1000m and 1m = 100cm). 250000 / 100000 = 2.5 km."
+      "explanation": "The actual length is 5 cm * 50000 = 250000 cm. To convert cm to km, divide by 100000 (since 1 km = 1000m and 1m = 100cm). $\\frac{250000}{100000}$ = 2.5 km."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "50p"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the cost of one pencil: 80p / 5 = 16p. Then, find the cost of three pencils: 16p * 3 = 48p."
+      "explanation": "First, find the cost of one pencil: $\\frac{80p}{5}$ = 16p. Then, find the cost of three pencils: 16p * 3 = 48p."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "48"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is p = k/q. The constant of proportionality is k = p * q = 6 * 4 = 24. Now find p when q = 8: p = 24 / 8 = 3."
+      "explanation": "The relationship is p = k/q. The constant of proportionality is k = p * q = 6 * 4 = 24. Now find p when q = 8: p = $\\frac{24}{8}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "Cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "Find the price per apple for each shop. First shop: £1.20 / 6 = 20p per apple. Second shop: £1.68 / 8 = 21p per apple. The first shop is cheaper."
+      "explanation": "Find the price per apple for each shop. First shop: £1.$\\frac{20}{6}$ = 20p per apple. Second shop: £1.$\\frac{68}{8}$ = 21p per apple. The first shop is cheaper."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "120 minutes"
       ],
       "correctAnswer": 1,
-      "explanation": "The charging rate is 40% per 30 minutes. To find the time for 1%, divide the time by the percentage: 30 / 40 = 0.75 minutes per %. To charge to 100%, multiply by 100: 0.75 * 100 = 75 minutes."
+      "explanation": "The charging rate is 40% per 30 minutes. To find the time for 1%, divide the time by the percentage: $\\frac{30}{40}$ = 0.75 minutes per %. To charge to 100%, multiply by 100: 0.75 * 100 = 75 minutes."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "4500"
       ],
       "correctAnswer": 2,
-      "explanation": "There are 60 minutes in 1 hour. The number of 15-minute intervals in an hour is 60 / 15 = 4. Therefore, the machine can fill 300 * 4 = 1200 bottles in an hour."
+      "explanation": "There are 60 minutes in 1 hour. The number of 15-minute intervals in an hour is $\\frac{60}{15}$ = 4. Therefore, the machine can fill 300 * 4 = 1200 bottles in an hour."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "£1.00"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the cost per minute: 40p / 5 minutes = 8p per minute. Then, calculate the cost for a 12-minute call: 8p * 12 = 96p."
+      "explanation": "First, find the cost per minute: $\\frac{40p}{5}$ minutes = 8p per minute. Then, calculate the cost for a 12-minute call: 8p * 12 = 96p."
     }
   ]
 }

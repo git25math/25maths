@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Solve for x: x + 5 = 12",
+      "questionText": "Solve for x: ${x + 5 = 12}$",
       "options": [
         "x = 7",
         "x = 17",
@@ -28,11 +28,11 @@
         "y = 32"
       ],
       "correctAnswer": 0,
-      "explanation": "To find y, divide both sides of the equation by 4. 28 / 4 = 7."
+      "explanation": "To find y, divide both sides of the equation by 4. $\\frac{28}{4}$ = 7."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 3x - 4 = 11.",
+      "questionText": "Solve the equation ${3x - 4 = 11}$.",
       "options": [
         "x = 5",
         "x = 2.33",
@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of z if 5(z + 2) = 35?",
+      "questionText": "What is the value of z if 5(${z + 2}$) = 35?",
       "options": [
         "z = 5",
         "z = 3",
@@ -52,11 +52,11 @@
         "z = 30"
       ],
       "correctAnswer": 0,
-      "explanation": "First, divide both sides by 5 to get z + 2 = 7. Then, subtract 2 from both sides to find z = 5."
+      "explanation": "First, divide both sides by 5 to get ${z + 2 = 7}$. Then, subtract 2 from both sides to find z = 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 6x + 4 = 2x + 20.",
+      "questionText": "Solve the equation ${6x + 4 = 2x + 20}$.",
       "options": [
         "x = 4",
         "x = 2",
@@ -64,7 +64,7 @@
         "x = 6"
       ],
       "correctAnswer": 0,
-      "explanation": "Subtract 2x from both sides to get 4x + 4 = 20. Subtract 4 from both sides to get 4x = 16. Finally, divide by 4 to get x = 4."
+      "explanation": "Subtract 2x from both sides to get ${4x + 4 = 20}$. Subtract 4 from both sides to get 4x = 16. Finally, divide by 4 to get x = 4."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The perimeter of a square is 24 cm. If the side length is (x + 1) cm, what is the value of x?",
+      "questionText": "The perimeter of a square is 24 cm. If the side length is (${x + 1}$) cm, what is the value of x?",
       "options": [
         "x = 5",
         "x = 6",
@@ -100,7 +100,7 @@
         "x = 5.75"
       ],
       "correctAnswer": 0,
-      "explanation": "The perimeter is 4 times the side length, so 4(x + 1) = 24. Divide by 4 to get x + 1 = 6. Subtract 1 to get x = 5."
+      "explanation": "The perimeter is 4 times the side length, so 4(${x + 1}$) = 24. Divide by 4 to get ${x + 1 = 6}$. Subtract 1 to get x = 5."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve for y: 7y - 5 = 5y + 3.",
+      "questionText": "Solve for y: ${7y - 5 = 5y + 3}$.",
       "options": [
         "y = 4",
         "y = 1",
@@ -148,7 +148,7 @@
         "y = 0.67"
       ],
       "correctAnswer": 0,
-      "explanation": "Subtract 5y from both sides to get 2y - 5 = 3. Add 5 to both sides to get 2y = 8. Finally, divide by 2 to get y = 4."
+      "explanation": "Subtract 5y from both sides to get ${2y - 5 = 3}$. Add 5 to both sides to get 2y = 8. Finally, divide by 2 to get y = 4."
     }
   ]
 }

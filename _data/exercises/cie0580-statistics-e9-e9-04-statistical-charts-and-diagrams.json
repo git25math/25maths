@@ -16,7 +16,7 @@
         "0.167"
       ],
       "correctAnswer": 0,
-      "explanation": "Frequency density is calculated by dividing the frequency by the class width. So, Frequency Density = 30 / 5 = 6."
+      "explanation": "Frequency density is calculated by dividing the frequency by the class width. So, Frequency Density = $\\frac{30}{5}$ = 6."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "30"
       ],
       "correctAnswer": 0,
-      "explanation": "The number of students is a fraction of the total, represented by the angle's fraction of 360°. Number of students = (72 / 360) * 120 = 0.2 * 120 = 24."
+      "explanation": "The number of students is a fraction of the total, represented by the angle's fraction of 360°. Number of students = ($\\frac{72}{360}$) * 120 = 0.2 * 120 = 24."
     },
     {
       "type": "multiple-choice",

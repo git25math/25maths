@@ -16,7 +16,7 @@
         "4.88"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the fraction button on your calculator. The calculation is (3.45 + 2.89) / (6.2 - 3.130...) = 6.34 / 3.069... ≈ 2.0654... which rounds to 2.07 to 3 significant figures."
+      "explanation": "Use the fraction button on your calculator. The calculation is (3.45 + 2.89) / (6.2 - 3.130...) = 6.$\\frac{34}{3}$.069... ≈ 2.0654... which rounds to 2.07 to 3 significant figures."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "40"
       ],
       "correctAnswer": 0,
-      "explanation": "First, calculate the square of the denominator: 0.$025^2$ = 0.000625. Then, find the reciprocal of this value: 1 / 0.000625 = 1600. Alternatively, use the $x^2$ and $x^{-1}$ buttons on your calculator."
+      "explanation": "First, calculate the square of the denominator: 0.$025^2$ = 0.000625. Then, find the reciprocal of this value: $\\frac{1}{0}$.000625 = 1600. Alternatively, use the $x^2$ and $x^{-1}$ buttons on your calculator."
     },
     {
       "type": "multiple-choice",
@@ -64,11 +64,11 @@
         "-1.570"
       ],
       "correctAnswer": 0,
-      "explanation": "Ensure your calculator is in Degrees (DEG) mode. Calculate the numerator: sin(45°) + cos(30°) ≈ 1.5731. Calculate the denominator: 2 × tan(60°) ≈ 3.4641. Finally, divide them: 1.5731 / 3.4641 ≈ 0.4541... which is 0.454 to 3 d.p."
+      "explanation": "Ensure your calculator is in Degrees (DEG) mode. Calculate the numerator: sin(45°) + cos(30°) ≈ 1.5731. Calculate the denominator: 2 × tan(60°) ≈ 3.4641. Finally, divide them: 1.$\\frac{5731}{3}$.4641 ≈ 0.4541... which is 0.454 to 3 d.p."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cylinder has a radius of 4.5 cm and a height of 12 cm. Calculate its volume using the formula V = $\\pi$$r^2$h. Give your answer correct to 1 decimal place.",
+      "questionText": "A cylinder has a radius of 4.5 cm and a height of 12 cm. Calculate its volume using the formula V = $\\pi r^2$h. Give your answer correct to 1 decimal place.",
       "options": [
         "763.4",
         "763.41",
@@ -76,7 +76,7 @@
         "339.3"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute the values into the formula: V = $\\pi \\times (4.5)^2$ × 12. This equals 243$\\pi$ ≈ 763.407... cm³. Rounding to one decimal place gives 763.4 cm³. The value 339.3 is the curved surface area (2$\\pi$rh)."
+      "explanation": "Substitute the values into the formula: V = $\\pi \\times (4.5)^2$ × 12. This equals 243$\\pi$ ≈ 763.407... $\\text{cm}^3$. Rounding to one decimal place gives 763.4 $\\text{cm}^3$. The value 339.3 is the curved surface area (2$\\pi$rh)."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "39.2"
       ],
       "correctAnswer": 0,
-      "explanation": "Enter the expression into your calculator. The calculation is (551.368 - 68.921) / (67.24 + 16.81) = 482.447 / 84.05 = 5.74. Note that 8.2 = 2 × 4.1, so the expression simplifies to (7/5) × 4.1 = 5.74."
+      "explanation": "Enter the expression into your calculator. The calculation is (551.368 - 68.921) / (67.24 + 16.81) = 482.$\\frac{447}{84}$.05 = 5.74. Note that 8.2 = 2 × 4.1, so the expression simplifies to ($\\frac{7}{5}$) × 4.1 = 5.74."
     },
     {
       "type": "multiple-choice",

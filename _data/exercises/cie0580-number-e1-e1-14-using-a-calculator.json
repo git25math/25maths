@@ -10,7 +10,7 @@
       "type": "multiple-choice",
       "questionText": "To evaluate (18.5 + 7.75) / (2.5 * 1.25) on a calculator, what is the correct sequence of keystrokes?",
       "options": [
-        "18.5 + 7.75 / 2.5 * 1.25",
+        "18.5 + 7.$\\frac{75}{2}$.5 * 1.25",
         "(18.5 + 7.75) / 2.5 * 1.25",
         "18.5 + 7.75 / (2.5 * 1.25)",
         "(18.5 + 7.75) / (2.5 * 1.25)"
@@ -44,12 +44,12 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A student calculates the volume of a sphere and gets an answer of -350 cm³. What is the most logical first step?",
+      "questionText": "A student calculates the volume of a sphere and gets an answer of -350 $\\text{cm}^3$. What is the most logical first step?",
       "options": [
         "Accept the answer as it is.",
         "Make the answer positive, because volume cannot be negative.",
         "Re-check the formula and the values entered into the calculator.",
-        "Round the answer to -400 cm³."
+        "Round the answer to -400 $\\text{cm}^3$."
       ],
       "correctAnswer": 2,
       "explanation": "Volume, like length and area, must be a positive quantity. A negative result indicates a fundamental error in the calculation, such as incorrectly entering a negative value for the radius, which should be investigated and corrected."
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "To verify the result of the division 810 / 18 = 45, which of the following calculations should be performed?",
+      "questionText": "To verify the result of the division $\\frac{810}{18}$ = 45, which of the following calculations should be performed?",
       "options": [
         "45 + 18",
         "810 - 45",
@@ -136,19 +136,19 @@
         "2.00"
       ],
       "correctAnswer": 0,
-      "explanation": "Ensure your calculator is in degrees mode. $\\sqrt[5]{100}$ ≈ 2.5118. sin(30°) = 0.5. The calculation is 2.5118 / 0.5 ≈ 5.0237. Rounded to 3 significant figures, the answer is 5.02."
+      "explanation": "Ensure your calculator is in degrees mode. $\\sqrt[5]{100}$ ≈ 2.5118. sin(30°) = 0.5. The calculation is 2.$\\frac{5118}{0}$.5 ≈ 5.0237. Rounded to 3 significant figures, the answer is 5.02."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate (3/7 - 2/9) using a calculator. Which of the following is the exact answer?",
+      "questionText": "Evaluate ($\\frac{3}{7} - \\frac{2}{9}$) using a calculator. Which of the following is the exact answer?",
       "options": [
         "0.206",
-        "13/63",
-        "1/2",
+        "$\\frac{13}{63}$",
+        "$\\frac{1}{2}$",
         "0.206349"
       ],
       "correctAnswer": 1,
-      "explanation": "While a calculator gives a decimal approximation, the question asks for the exact answer. Using a common denominator: (3*9)/(7*9) - (2*7)/(9*7) = 27/63 - 14/63 = 13/63. Some calculators can perform this exact fraction arithmetic."
+      "explanation": "While a calculator gives a decimal approximation, the question asks for the exact answer. Using a common denominator: (3*9)/(7*9) - (2*7)/(9*7) = $\\frac{27}{63} - \\frac{14}{63} = \\frac{13}{63}$. Some calculators can perform this exact fraction arithmetic."
     }
   ]
 }

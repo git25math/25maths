@@ -70,25 +70,25 @@
       "type": "multiple-choice",
       "questionText": "A rectangular field has a length of 90 m and a width of 50 m, both measured to the nearest metre. What is the maximum possible area of the field?",
       "options": [
-        "4500 m²",
-        "4570.25 m²",
-        "4430.25 m²",
-        "4615.25 m²"
+        "4500 $\\text{m}^2$",
+        "4570.25 $\\text{m}^2$",
+        "4430.25 $\\text{m}^2$",
+        "4615.25 $\\text{m}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the maximum area, multiply the upper bound of the length by the upper bound of the width. Length UB = 90.5 m and Width UB = 50.5 m. Max Area = 90.5 * 50.5 = 4570.25 m²."
+      "explanation": "To find the maximum area, multiply the upper bound of the length by the upper bound of the width. Length UB = 90.5 m and Width UB = 50.5 m. Max Area = 90.5 * 50.5 = 4570.25 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A rectangular field has a length of 90 m and a width of 50 m, both measured to the nearest metre. What is the minimum possible area of the field?",
       "options": [
-        "4430.25 m²",
-        "4500 m²",
-        "4570.25 m²",
-        "4400 m²"
+        "4430.25 $\\text{m}^2$",
+        "4500 $\\text{m}^2$",
+        "4570.25 $\\text{m}^2$",
+        "4400 $\\text{m}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the minimum area, multiply the lower bound of the length by the lower bound of the width. Length LB = 89.5 m and Width LB = 49.5 m. Min Area = 89.5 * 49.5 = 4430.25 m²."
+      "explanation": "To find the minimum area, multiply the lower bound of the length by the lower bound of the width. Length LB = 89.5 m and Width LB = 49.5 m. Min Area = 89.5 * 49.5 = 4430.25 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",

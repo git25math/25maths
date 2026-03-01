@@ -20,27 +20,27 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A rectangle has an area of 2.5 m². What is its area in cm²?",
+      "questionText": "A rectangle has an area of 2.5 $\\text{m}^2$. What is its area in $\\text{cm}^2$?",
       "options": [
-        "250 cm²",
-        "2500 cm²",
-        "25000 cm²",
-        "25 cm²"
+        "250 $\\text{cm}^2$",
+        "2500 $\\text{cm}^2$",
+        "25000 $\\text{cm}^2$",
+        "25 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "To convert from m² to cm², you must multiply by $100^2$, which is 10000. So, 2.5 × 10000 = 25000 cm²."
+      "explanation": "To convert from $\\text{m}^2$ to $\\text{cm}^2$, you must multiply by $100^2$, which is 10000. So, 2.5 × 10000 = 25000 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Convert 450 000 cm³ to m³.",
+      "questionText": "Convert 450 000 $\\text{cm}^3$ to $\\text{m}^3$.",
       "options": [
-        "4.5 m³",
-        "0.045 m³",
-        "45 m³",
-        "0.45 m³"
+        "4.5 $\\text{m}^3$",
+        "0.045 $\\text{m}^3$",
+        "45 $\\text{m}^3$",
+        "0.45 $\\text{m}^3$"
       ],
       "correctAnswer": 3,
-      "explanation": "To convert from cm³ to m³, you must divide by $100^3$, which is 1 000 000. So, 450 000 / 1 000 000 = 0.45 m³."
+      "explanation": "To convert from $\\text{cm}^3$ to $\\text{m}^3$, you must divide by $100^3$, which is 1 000 000. So, 450 $\\frac{000}{1}$ 000 000 = 0.45 $\\text{m}^3$."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "388.8 m/s"
       ],
       "correctAnswer": 0,
-      "explanation": "To convert km/h to m/s, multiply by 1000 (for metres) and divide by 3600 (for seconds). This is equivalent to dividing by 3.6. 108 / 3.6 = 30 m/s."
+      "explanation": "To convert km/h to m/s, multiply by 1000 (for metres) and divide by 3600 (for seconds). This is equivalent to dividing by 3.6. $\\frac{108}{3}$.6 = 30 m/s."
     },
     {
       "type": "multiple-choice",
@@ -68,27 +68,27 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A tank holds 7500 litres of water. What is the volume of the water in m³? (1 m³ = 1000 litres)",
+      "questionText": "A tank holds 7500 litres of water. What is the volume of the water in $\\text{m}^3$? (1 $\\text{m}^3$ = 1000 litres)",
       "options": [
-        "0.75 m³",
-        "75 m³",
-        "7.5 m³",
-        "7 500 000 m³"
+        "0.75 $\\text{m}^3$",
+        "75 $\\text{m}^3$",
+        "7.5 $\\text{m}^3$",
+        "7 500 000 $\\text{m}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "Since 1 cubic metre is equal to 1000 litres, to convert from litres to m³, you must divide by 1000. 7500 / 1000 = 7.5 m³."
+      "explanation": "Since 1 cubic metre is equal to 1000 litres, to convert from litres to $\\text{m}^3$, you must divide by 1000. $\\frac{7500}{1000}$ = 7.5 $\\text{m}^3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "An object has a mass of 1.2 kg and a volume of 150 cm³. Find its density in g/cm³.",
+      "questionText": "An object has a mass of 1.2 kg and a volume of 150 $\\text{cm}^3$. Find its density in g/$\\text{cm}^3$.",
       "options": [
-        "0.008 g/cm³",
-        "0.125 g/cm³",
-        "8 g/cm³",
-        "180 g/cm³"
+        "0.008 g/$\\text{cm}^3$",
+        "0.125 g/$\\text{cm}^3$",
+        "8 g/$\\text{cm}^3$",
+        "180 g/$\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "First, convert the mass to grams: 1.2 kg = 1200 g. Then use the formula Density = Mass / Volume. Density = 1200 g / 150 cm³ = 8 g/cm³."
+      "explanation": "First, convert the mass to grams: 1.2 kg = 1200 g. Then use the formula Density = Mass / Volume. Density = 1200 g / 150 $\\text{cm}^3$ = 8 g/$\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
@@ -112,11 +112,11 @@
         "560 km"
       ],
       "correctAnswer": 0,
-      "explanation": "To convert mm to km, you divide by 10 (to get cm), then by 100 (to get m), then by 1000 (to get km). This is equivalent to dividing by 1 000 000. 5 600 000 / 1 000 000 = 5.6 km."
+      "explanation": "To convert mm to km, you divide by 10 (to get cm), then by 100 (to get m), then by 1000 (to get km). This is equivalent to dividing by 1 000 000. 5 600 $\\frac{000}{1}$ 000 000 = 5.6 km."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Water flows into a tank at a rate of 200 cm³ per second. How long will it take to fill a 1.8 m³ tank? Give your answer in minutes.",
+      "questionText": "Water flows into a tank at a rate of 200 $\\text{cm}^3$ per second. How long will it take to fill a 1.8 $\\text{m}^3$ tank? Give your answer in minutes.",
       "options": [
         "15 minutes",
         "90 minutes",
@@ -124,11 +124,11 @@
         "9000 minutes"
       ],
       "correctAnswer": 2,
-      "explanation": "First, convert the tank's volume to cm³: 1.8 m³ = 1 800 000 cm³. Then, find the time in seconds by dividing volume by rate: 1 800 000 / 200 = 9000 seconds. Finally, convert to minutes: 9000 / 60 = 150 minutes."
+      "explanation": "First, convert the tank's volume to $\\text{cm}^3$: 1.8 $\\text{m}^3$ = 1 800 000 $\\text{cm}^3$. Then, find the time in seconds by dividing volume by rate: 1 800 $\\frac{000}{200}$ = 9000 seconds. Finally, convert to minutes: $\\frac{9000}{60}$ = 150 minutes."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A floor has an area of 24 m². It is to be covered with tiles that are 20 cm by 20 cm. How many tiles are needed?",
+      "questionText": "A floor has an area of 24 $\\text{m}^2$. It is to be covered with tiles that are 20 cm by 20 cm. How many tiles are needed?",
       "options": [
         "60",
         "120",
@@ -136,11 +136,11 @@
         "6000"
       ],
       "correctAnswer": 2,
-      "explanation": "Convert the floor area to cm²: 24 m² = 240 000 cm². Calculate one tile's area: 20 cm × 20 cm = 400 cm². Divide the total area by the tile area: 240 000 / 400 = 600 tiles."
+      "explanation": "Convert the floor area to $\\text{cm}^2$: 24 $\\text{m}^2$ = 240 000 $\\text{cm}^2$. Calculate one tile's area: 20 cm × 20 cm = 400 $\\text{cm}^2$. Divide the total area by the tile area: 240 $\\frac{000}{400}$ = 600 tiles."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The density of a metal is 8.5 g/cm³. What is the mass, in kg, of a block of this metal with a volume of 0.2 m³?",
+      "questionText": "The density of a metal is 8.5 g/$\\text{cm}^3$. What is the mass, in kg, of a block of this metal with a volume of 0.2 $\\text{m}^3$?",
       "options": [
         "1.7 kg",
         "17 kg",
@@ -148,7 +148,7 @@
         "1700 kg"
       ],
       "correctAnswer": 3,
-      "explanation": "First, convert the volume to cm³: 0.2 m³ = 200 000 cm³. Then, calculate mass in grams: Mass = Density × Volume = 8.5 g/cm³ × 200 000 cm³ = 1 700 000 g. Finally, convert mass to kg: 1 700 000 g = 1700 kg."
+      "explanation": "First, convert the volume to $\\text{cm}^3$: 0.2 $\\text{m}^3$ = 200 000 $\\text{cm}^3$. Then, calculate mass in grams: Mass = Density × Volume = 8.5 g/$\\text{cm}^3$ × 200 000 $\\text{cm}^3$ = 1 700 000 g. Finally, convert mass to kg: 1 700 000 g = 1700 kg."
     }
   ]
 }

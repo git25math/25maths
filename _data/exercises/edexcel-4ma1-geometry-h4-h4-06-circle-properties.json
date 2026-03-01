@@ -72,7 +72,7 @@
       "options": [
         "It is parallel to AB",
         "It is twice the length of the radius",
-        "It bisects the angle AOB",
+        "It bisects the $\\angle AOB$",
         "It is equal in length to AB"
       ],
       "correctAnswer": 2,
@@ -124,7 +124,7 @@
         "2 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "When two chords intersect inside a circle, the product of the segments of one chord equals the product of the segments of the other. So, AX * XB = CX * XD. 6 * 4 = 3 * XD. 24 = 3 * XD. XD = 24 / 3 = 8 cm."
+      "explanation": "When two chords intersect inside a circle, the product of the segments of one chord equals the product of the segments of the other. So, AX * XB = CX * XD. 6 * 4 = 3 * XD. 24 = 3 * XD. XD = $\\frac{24}{3}$ = 8 cm."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "4 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The tangent-secant theorem states that the square of the length of the tangent (PT) from an external point is equal to the product of the lengths of the secant segment (PB) and its external segment (PA). So, $PT^2$ = PA * PB. $8^2$ = 4 * PB. 64 = 4 * PB. PB = 64 / 4 = 16 cm."
+      "explanation": "The tangent-secant theorem states that the square of the length of the tangent (PT) from an external point is equal to the product of the lengths of the secant segment (PB) and its external segment (PA). So, $PT^2$ = PA * PB. $8^2$ = 4 * PB. 64 = 4 * PB. PB = $\\frac{64}{4}$ = 16 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "7 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Drawing a radius to one end of the chord and a perpendicular from the centre to the chord forms a right-angled triangle. The radius is the hypotenuse (13 cm), and half the chord length is one leg (10/2 = 5 cm). Let the perpendicular distance be 'd'. By Pythagoras theorem: $d^2 + 5^2 = 13^2$. $d^2$ + 25 = 169. $d^2$ = 144. d = $\\sqrt{144}$ = 12 cm."
+      "explanation": "Drawing a radius to one end of the chord and a perpendicular from the centre to the chord forms a right-angled triangle. The radius is the hypotenuse (13 cm), and half the chord length is one leg ($\\frac{10}{2}$ = 5 cm). Let the perpendicular distance be 'd'. By Pythagoras theorem: $d^2 + 5^2 = 13^2$. $d^2$ + 25 = 169. $d^2$ = 144. d = $\\sqrt{144}$ = 12 cm."
     }
   ]
 }

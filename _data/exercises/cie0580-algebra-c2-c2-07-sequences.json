@@ -112,7 +112,7 @@
         "No, because solving 5n - 1 = 100 does not give an integer value for n."
       ],
       "correctAnswer": 3,
-      "explanation": "The nth term is 5n - 1. Set this equal to 100: 5n - 1 = 100. This gives 5n = 101. n = 101/5 = 20.2. Since n is not an integer, 100 is not a term in the sequence."
+      "explanation": "The nth term is 5n - 1. Set this equal to 100: 5n - 1 = 100. This gives 5n = 101. n = $\\frac{101}{5}$ = 20.2. Since n is not an integer, 100 is not a term in the sequence."
     },
     {
       "type": "multiple-choice",

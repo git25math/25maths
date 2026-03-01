@@ -440,6 +440,320 @@ def merge_adjacent_math(text: str) -> str:
     return text
 
 
+def _parse_frac_operand(s: str, direction: str) -> str:
+    """Parse a numerator (left) or denominator (right) from a string boundary.
+
+    direction='left':  scan backwards from end of s to find the numerator.
+    direction='right': scan forwards from start of s to find the denominator.
+
+    Returns the operand string (may include LaTeX commands, braces, superscripts).
+    """
+    if direction == 'left':
+        # Scan backwards from end of s
+        s_stripped = s.rstrip()
+        if not s_stripped:
+            return ''
+        pos = len(s_stripped) - 1
+
+        # Case 1: closing brace — find matching open brace, then grab preceding \command
+        if s_stripped[pos] == '}':
+            depth = 1
+            i = pos - 1
+            while i >= 0 and depth > 0:
+                if s_stripped[i] == '}':
+                    depth += 1
+                elif s_stripped[i] == '{':
+                    depth -= 1
+                i -= 1
+            start = i + 1  # points to '{'
+            # Check for preceding \command (e.g., \sqrt, \pi)
+            if start > 0 and s_stripped[start - 1] == '\\':
+                # not a named command, just backslash + brace
+                return s_stripped[start - 1:]
+            cmd_start = start
+            while cmd_start > 0 and (s_stripped[cmd_start - 1].isalpha() or s_stripped[cmd_start - 1] == '\\'):
+                cmd_start -= 1
+            if cmd_start < start and s_stripped[cmd_start] == '\\':
+                return s_stripped[cmd_start:]
+            return s_stripped[start:]
+
+        # Case 2: letters (possibly with preceding \) — LaTeX command or variable
+        if s_stripped[pos].isalpha():
+            i = pos
+            while i >= 0 and s_stripped[i].isalpha():
+                i -= 1
+            # Check for leading backslash (LaTeX command like \pi, \theta)
+            if i >= 0 and s_stripped[i] == '\\':
+                # Also grab preceding digits (e.g., "1000\pi" → "1000\\pi")
+                j = i - 1
+                while j >= 0 and s_stripped[j].isdigit():
+                    j -= 1
+                return s_stripped[j + 1:]
+            # Check for preceding digits (e.g., variable with coefficient)
+            j = i
+            while j >= 0 and s_stripped[j].isdigit():
+                j -= 1
+            if j < i:
+                return s_stripped[j + 1:]
+            return s_stripped[i + 1:]
+
+        # Case 3: digits (possibly with decimal point)
+        if s_stripped[pos].isdigit():
+            i = pos
+            while i >= 0 and (s_stripped[i].isdigit() or s_stripped[i] == '.'):
+                i -= 1
+            # Check if these digits are an exponent after ^ (e.g., a^4)
+            if i >= 0 and s_stripped[i] == '^':
+                # Include the base before ^
+                j = i - 1
+                # Base could be } (closing a brace group), letter, or digit
+                if j >= 0 and s_stripped[j] == '}':
+                    depth = 1
+                    k = j - 1
+                    while k >= 0 and depth > 0:
+                        if s_stripped[k] == '}':
+                            depth += 1
+                        elif s_stripped[k] == '{':
+                            depth -= 1
+                        k -= 1
+                    # Check for \command before {
+                    while k >= 0 and s_stripped[k].isalpha():
+                        k -= 1
+                    if k >= 0 and s_stripped[k] == '\\':
+                        k -= 1
+                    return s_stripped[k + 1:]
+                elif j >= 0 and s_stripped[j].isalpha():
+                    # Base is letters (variable name)
+                    k = j
+                    while k >= 0 and s_stripped[k].isalpha():
+                        k -= 1
+                    # Check for preceding digits (coefficient)
+                    while k >= 0 and s_stripped[k].isdigit():
+                        k -= 1
+                    return s_stripped[k + 1:]
+                elif j >= 0 and s_stripped[j].isdigit():
+                    k = j
+                    while k >= 0 and (s_stripped[k].isdigit() or s_stripped[k] == '.'):
+                        k -= 1
+                    return s_stripped[k + 1:]
+            return s_stripped[i + 1:]
+
+        return ''
+
+    else:  # direction == 'right'
+        s_stripped = s.lstrip()
+        if not s_stripped:
+            return ''
+        pos = 0
+
+        # Case 1: opening brace — find matching close brace
+        if s_stripped[pos] == '{':
+            depth = 1
+            i = 1
+            while i < len(s_stripped) and depth > 0:
+                if s_stripped[i] == '{':
+                    depth += 1
+                elif s_stripped[i] == '}':
+                    depth -= 1
+                i += 1
+            return s_stripped[:i]
+
+        # Case 2: \command (possibly followed by {arg})
+        if s_stripped[pos] == '\\':
+            i = 1
+            while i < len(s_stripped) and s_stripped[i].isalpha():
+                i += 1
+            # Check for following {arg}
+            if i < len(s_stripped) and s_stripped[i] == '{':
+                depth = 1
+                j = i + 1
+                while j < len(s_stripped) and depth > 0:
+                    if s_stripped[j] == '{':
+                        depth += 1
+                    elif s_stripped[j] == '}':
+                        depth -= 1
+                    j += 1
+                return s_stripped[:j]
+            return s_stripped[:i]
+
+        # Case 3: digits (possibly with decimal point)
+        if s_stripped[pos].isdigit():
+            i = 0
+            while i < len(s_stripped) and (s_stripped[i].isdigit() or s_stripped[i] == '.'):
+                i += 1
+            return s_stripped[:i]
+
+        # Case 4: letters (variable names, possibly followed by ^{exp})
+        if s_stripped[pos].isalpha():
+            i = 0
+            while i < len(s_stripped) and s_stripped[i].isalpha():
+                i += 1
+            # Check for ^{exp} or ^digit
+            if i < len(s_stripped) and s_stripped[i] == '^':
+                i += 1
+                if i < len(s_stripped) and s_stripped[i] == '{':
+                    depth = 1
+                    i += 1
+                    while i < len(s_stripped) and depth > 0:
+                        if s_stripped[i] == '{':
+                            depth += 1
+                        elif s_stripped[i] == '}':
+                            depth -= 1
+                        i += 1
+                elif i < len(s_stripped) and (s_stripped[i].isdigit() or s_stripped[i].isalpha()):
+                    i += 1
+            return s_stripped[:i]
+
+        return ''
+
+
+def convert_fractions_in_math(text: str) -> str:
+    r"""Convert a/b inside existing $...$ spans to \frac{a}{b}.
+
+    Examples:
+        $\sqrt{3}/2$ → $\frac{\sqrt{3}}{2}$
+        $\pi/3$ → $\frac{\pi}{3}$
+        $dy/dx$ → $\frac{dy}{dx}$
+        $90/d^2$ → $\frac{90}{d^{2}}$
+    """
+    def convert_span(m):
+        inner = m.group(1)
+        # Skip if already has \frac
+        if '\\frac' in inner:
+            return m.group(0)
+        # Skip if no slash
+        if '/' not in inner:
+            return m.group(0)
+
+        # Process each / in the span
+        result = inner
+        # Find slashes that are NOT inside braces
+        iterations = 0
+        while '/' in result and iterations < 5:
+            iterations += 1
+            # Find the first / not inside braces
+            depth = 0
+            slash_pos = -1
+            for i, ch in enumerate(result):
+                if ch == '{':
+                    depth += 1
+                elif ch == '}':
+                    depth -= 1
+                elif ch == '/' and depth == 0:
+                    slash_pos = i
+                    break
+            if slash_pos < 0:
+                break
+
+            left = result[:slash_pos]
+            right = result[slash_pos + 1:]
+
+            numer = _parse_frac_operand(left, 'left')
+            denom = _parse_frac_operand(right, 'right')
+
+            if not numer or not denom:
+                break
+
+            # Build the replacement — use stripped versions for position calc
+            left_s = left.rstrip()
+            right_s = right.lstrip()
+            prefix = left_s[:len(left_s) - len(numer)].rstrip()
+            suffix = right_s[len(denom):].lstrip()
+
+            frac = f'\\frac{{{numer}}}{{{denom}}}'
+            parts = []
+            if prefix:
+                parts.append(prefix + ' ')
+            parts.append(frac)
+            if suffix:
+                parts.append(' ' + suffix)
+            result = ''.join(parts)
+
+        return f'${result}$'
+
+    text = re.sub(r'\$([^$]+)\$', convert_span, text)
+    return text
+
+
+# ── Unit rate skip list for plain-text fractions ─────────────────────────────
+
+UNIT_RATE_PATTERN = re.compile(
+    r'(?:km|cm|mm|m|ft|yd|mi|in|g|kg|mg|ml|kl|l|ha|cm²|cm³|m²|m³|km²)'
+    r'\s*/\s*'
+    r'(?:h|hr|hrs|min|mins|s|sec|secs|day|days|week|year|km|cm|mm|m|ft|ml|l|g|kg)',
+    re.IGNORECASE
+)
+
+
+def convert_plain_fractions(text: str) -> str:
+    r"""Convert plain-text fractions to $\frac{}{}$ outside of $...$ spans.
+
+    Examples:
+        3/5 → $\frac{3}{5}$
+        75/100 → $\frac{75}{100}$
+        2 1/3 → $2\frac{1}{3}$
+
+    Skips:
+        km/h, m/s, cm³/s (unit rates)
+        opposite / adjacent (prose with spaces around /)
+    """
+    # Split into math spans and non-math segments
+    parts = re.split(r'(\$[^$]+\$)', text)
+    result = []
+    for part in parts:
+        if part.startswith('$') and part.endswith('$') and len(part) > 2:
+            result.append(part)
+            continue
+
+        # Convert digit fractions in non-math text
+        # First: mixed numbers like "2 1/3" → "$2\frac{1}{3}$"
+        def replace_mixed(m):
+            # Check this isn't part of a unit rate
+            start = m.start()
+            context = part[max(0, start - 10):m.end() + 10]
+            if UNIT_RATE_PATTERN.search(context):
+                return m.group(0)
+            whole = m.group(1)
+            num = m.group(2)
+            den = m.group(3)
+            return f'${whole}\\frac{{{num}}}{{{den}}}$'
+
+        part = re.sub(
+            r'(\d+)\s+(\d+)/(\d+)',
+            replace_mixed,
+            part
+        )
+
+        # Then: simple fractions like "3/5" → "$\frac{3}{5}$"
+        def replace_simple(m):
+            # Check boundaries — skip if part of a larger word/unit
+            start = m.start()
+            end = m.end()
+            # Check if preceded by a letter (unit rate like "km/h")
+            if start > 0 and part[start - 1].isalpha():
+                return m.group(0)
+            # Check if followed by a letter (unit denominator)
+            if end < len(part) and part[end].isalpha():
+                return m.group(0)
+            # Check this isn't part of a unit rate
+            context = part[max(0, start - 10):min(len(part), end + 10)]
+            if UNIT_RATE_PATTERN.search(context):
+                return m.group(0)
+            num = m.group(1)
+            den = m.group(2)
+            return f'$\\frac{{{num}}}{{{den}}}$'
+
+        part = re.sub(
+            r'(\d+)/(\d+)',
+            replace_simple,
+            part
+        )
+
+        result.append(part)
+
+    return ''.join(result)
+
+
 def ensure_guard_passes(text: str) -> str:
     """Ensure all $...$ spans contain at least one guard character (\\^_{}).
 
@@ -502,7 +816,7 @@ def convert_text(text: str) -> str:
         return text
 
     # Skip if the text is already heavily LaTeX (contains \begin, \mathbf, etc.)
-    if '\\begin{' in text or '\\mathbf{' in text or '\\frac{' in text:
+    if '\\begin{' in text or '\\mathbf{' in text:
         return text
 
     original = text
@@ -539,10 +853,19 @@ def convert_text(text: str) -> str:
     # 7. Merge adjacent math spans
     text = merge_adjacent_math(text)
 
-    # 8. Ensure all $...$ pass the guard
+    # 8. Convert fractions inside $...$ spans to \frac
+    text = convert_fractions_in_math(text)
+
+    # 9. Convert plain-text fractions to $\frac{}{}$
+    text = convert_plain_fractions(text)
+
+    # 10. Re-merge adjacent spans created by fraction conversion
+    text = merge_adjacent_math(text)
+
+    # 11. Ensure all $...$ pass the guard
     text = ensure_guard_passes(text)
 
-    # 9. Restore currency $ signs
+    # 11. Restore currency $ signs
     text = restore_currency(text)
 
     return text

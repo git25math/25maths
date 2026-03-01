@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Points A, B, C, and D are on the circumference of a circle. Angle BAC is 48°. Find the size of angle BDC.",
+      "questionText": "Points A, B, C, and D are on the circumference of a circle. $\\angle BAC$ is 48°. Find the size of $\\angle BDC$.",
       "options": [
         "24°",
         "48°",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The opposite angles of a cyclic quadrilateral are (x + 20)° and 80°. Find the value of x.",
+      "questionText": "The opposite angles of a cyclic quadrilateral are (${x + 20}$)° and 80°. Find the value of x.",
       "options": [
         "60",
         "80",
@@ -100,7 +100,7 @@
         "160"
       ],
       "correctAnswer": 1,
-      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. So, (x + 20) + 80 = 180. This gives x + 100 = 180, so x = 80."
+      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. So, (${x + 20}$) + 80 = 180. This gives ${x + 100 = 180}$, so x = 80."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Points P, Q, and R are on a circle's circumference. If PQ is a diameter, what is the size of angle PRQ?",
+      "questionText": "Points P, Q, and R are on a circle's circumference. If PQ is a diameter, what is the size of $\\angle PRQ$?",
       "options": [
         "45°",
         "60°",

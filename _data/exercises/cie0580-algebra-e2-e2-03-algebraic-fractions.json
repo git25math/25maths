@@ -10,13 +10,13 @@
       "type": "multiple-choice",
       "questionText": "Simplify the algebraic fraction $(12x^2y) / (18xy^3)$.",
       "options": [
-        "(2x) / (3y^2)",
-        "(2y^2) / (3x)",
-        "(6x) / (9y^2)",
+        "(2x) / ($3y^{2}$)",
+        "($2y^{2}$) / (3x)",
+        "(6x) / ($9y^{2}$)",
         "2x / 3y"
       ],
       "correctAnswer": 0,
-      "explanation": "Divide the numerator and denominator by their greatest common divisor, which is ${6xy}$. This gives $(12x^2y / 6xy) / (18xy^3 / 6xy) = (2x) / (3y^2)$."
+      "explanation": "Divide the numerator and denominator by their greatest common divisor, which is ${6xy}$. This gives $(12x^ \\frac{2y}{6} xy) / (18xy^3 / 6xy) = (2x) / (3y^2)$."
     },
     {
       "type": "multiple-choice",
@@ -36,7 +36,7 @@
       "options": [
         "(3x)/8",
         "(11x)/15",
-        "(2x^2)/15",
+        "($2x^{2}$)/15",
         "(11x)/8"
       ],
       "correctAnswer": 1,
@@ -46,9 +46,9 @@
       "type": "multiple-choice",
       "questionText": "Simplify $(x^2 - 16) / (x + 4)$.",
       "options": [
-        "x - 4",
-        "x + 4",
-        "x - 16",
+        "${x - 4}$",
+        "${x + 4}$",
+        "${x - 16}$",
         "Cannot be simplified"
       ],
       "correctAnswer": 0,
@@ -64,16 +64,16 @@
         "(4a - 2b) / ab"
       ],
       "correctAnswer": 1,
-      "explanation": "The common denominator is ${ab}$. Rewrite the fractions: ${(4b/ab) - (2a/ab)}$. Combine the numerators to get ${(4b - 2a) / ab}$."
+      "explanation": "The common denominator is ${ab}$. Rewrite the fractions: $( \\frac{4b}{ab} ) - ( \\frac{2a}{ab} )$. Combine the numerators to get ${(4b - 2a) / ab}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify $(x/3) * (6y/x^2)$.",
+      "questionText": "Simplify $( \\frac{x}{3} ) * ( \\frac{6y}{x^2} )$.",
       "options": [
         "2y / x",
         "y / (2x)",
         "2x / y",
-        "6xy / 3x^2"
+        "6xy / $3x^{2}$"
       ],
       "correctAnswer": 0,
       "explanation": "Multiply the numerators and denominators: $(6xy) / (3x^2)$. Simplify by dividing the numerator and denominator by ${3x}$, which results in ${2y / x}$."
@@ -82,9 +82,9 @@
       "type": "multiple-choice",
       "questionText": "Simplify ${(2x/5) \\div (4x/15)}$.",
       "options": [
-        "2/3",
-        "8x^2 / 75",
-        "3/2",
+        "$\\frac{2}{3}$",
+        "8x^$\\frac{2}{75}$",
+        "$\\frac{3}{2}$",
         "x/5"
       ],
       "correctAnswer": 2,
@@ -94,34 +94,34 @@
       "type": "multiple-choice",
       "questionText": "Solve the equation ${9 / (2x) = 3}$.",
       "options": [
-        "x = 3/2",
+        "x = $\\frac{3}{2}$",
         "x = 6",
-        "x = 2/3",
-        "x = 1/6"
+        "x = $\\frac{2}{3}$",
+        "x = $\\frac{1}{6}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply both sides by ${2x}$ to get ${9 = 3 * (2x)}$, which is ${9 = 6x}$. Divide by 6: ${x = 9/6}$, which simplifies to ${x = 3/2}$."
+      "explanation": "Multiply both sides by ${2x}$ to get ${9 = 3 * (2x)}$, which is ${9 = 6x}$. Divide by 6: $x = \\frac{9}{6}$, which simplifies to ${x = 3/2}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Write ${3 + (2/x)}$ as a single fraction.",
       "options": [
-        "(3x + 2) / x",
+        "(${3x + 2}$) / x",
         "5 / x",
         "(3 + 2x) / x",
-        "3x / 2"
+        "$\\frac{3x}{2}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Rewrite 3 as ${3x/x}$. Then add the fractions: ${(3x/x) + (2/x)}$. Combine the numerators to get ${(3x + 2) / x}$."
+      "explanation": "Rewrite 3 as ${3x/x}$. Then add the fractions: $( \\frac{3x}{x} ) + ( \\frac{2}{x} )$. Combine the numerators to get ${(3x + 2) / x}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Simplify $(x^2 + 5x + 6) / (x + 2)$.",
       "options": [
-        "x + 5",
-        "x + 6",
-        "x + 3",
-        "5x + 3"
+        "${x + 5}$",
+        "${x + 6}$",
+        "${x + 3}$",
+        "${5x + 3}$"
       ],
       "correctAnswer": 2,
       "explanation": "Factorise the quadratic numerator: $x^2 + 5x + 6 = (x + 2)(x + 3)$. Then ${((x + 2)(x + 3)) / (x + 2)}$. Cancel the common factor ${(x + 2)}$ to get ${x + 3}$."
@@ -142,10 +142,10 @@
       "type": "multiple-choice",
       "questionText": "Simplify ${(3/(x-1)) - (2/(x+1))}$.",
       "options": [
-        "1 / ((x-1)(x+1))",
-        "(x-5) / ((x-1)(x+1))",
-        "1 / (x^2 - 1)",
-        "(x+5) / (x^2 - 1)"
+        "1 / ((${x-1}$)(${x+1}$))",
+        "(${x-5}$) / ((${x-1}$)(${x+1}$))",
+        "1 / ($x^{2}$ - 1)",
+        "(${x+5}$) / ($x^{2}$ - 1)"
       ],
       "correctAnswer": 3,
       "explanation": "The common denominator is $(x-1)(x+1) = x^2 - 1$. Rewrite the fractions: $(3(x+1) - 2(x-1)) / (x^2 - 1)$. Expand the numerator: $(3x + 3 - 2x + 2) / (x^2 - 1)$. Simplify to get $(x+5) / (x^2 - 1)$."

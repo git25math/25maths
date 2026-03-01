@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Consider the function $k(n) = \\frac{n+1}{2}$. Find $k(9)$.",
+      "questionText": "Consider the function $k(n) = \\frac{n+1}{2}$. Find ${k(9)}$.",
       "options": [
         "4",
         "5",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If $s(n) = \\frac{10-n}{2}$, what is $s(4)$?",
+      "questionText": "If $s(n) = \\frac{10-n}{2}$, what is ${s(4)}$?",
       "options": [
         "1",
         "2",

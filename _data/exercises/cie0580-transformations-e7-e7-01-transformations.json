@@ -64,7 +64,7 @@
         "(4, -8)"
       ],
       "correctAnswer": 2,
-      "explanation": "The image Q is found by multiplying P by the scale factor. To find the original point P, we must divide the image Q by the scale factor. P = (8 / 0.5, -4 / 0.5) = (16, -8)."
+      "explanation": "The image Q is found by multiplying P by the scale factor. To find the original point P, we must divide the image Q by the scale factor. P = ($\\frac{8}{0}$.5, -$\\frac{4}{0}$.5) = (16, -8)."
     },
     {
       "type": "multiple-choice",
@@ -80,22 +80,22 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A parallelogram has an area of 12 cm². It is enlarged by a scale factor of 3. What is the area of the enlarged parallelogram?",
+      "questionText": "A parallelogram has an area of 12 $\\text{cm}^2$. It is enlarged by a scale factor of 3. What is the area of the enlarged parallelogram?",
       "options": [
-        "36 cm²",
-        "144 cm²",
-        "108 cm²",
-        "72 cm²"
+        "36 $\\text{cm}^2$",
+        "144 $\\text{cm}^2$",
+        "108 $\\text{cm}^2$",
+        "72 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "When a shape is enlarged by a linear scale factor 'k', its area is enlarged by a factor of $k^2$. The new area is 12 × $3^2$ = 12 × 9 = 108 cm²."
+      "explanation": "When a shape is enlarged by a linear scale factor 'k', its area is enlarged by a factor of $k^2$. The new area is 12 × $3^2$ = 12 × 9 = 108 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Triangle A is mapped onto Triangle B by a reflection in the x-axis. Which property is NOT preserved?",
       "options": [
         "Area",
-        "Angle sizes",
+        "angle sizes",
         "Orientation",
         "Side lengths"
       ],
@@ -130,13 +130,13 @@
       "type": "multiple-choice",
       "questionText": "Point P(3, 4) is mapped to P'(9, 12) by an enlargement. What is the scale factor if the centre of enlargement is the origin?",
       "options": [
-        "1/3",
+        "$\\frac{1}{3}$",
         "3",
         "6",
         "2"
       ],
       "correctAnswer": 1,
-      "explanation": "When the centre of enlargement is the origin, the scale factor is the ratio of an image coordinate to the corresponding original coordinate. Scale factor = P'x / Px = 9/3 = 3. Checking with the y-coordinate gives 12/4 = 3."
+      "explanation": "When the centre of enlargement is the origin, the scale factor is the ratio of an image coordinate to the corresponding original coordinate. Scale factor = P'x / Px = $\\frac{9}{3}$ = 3. Checking with the y-coordinate gives $\\frac{12}{4}$ = 3."
     },
     {
       "type": "multiple-choice",

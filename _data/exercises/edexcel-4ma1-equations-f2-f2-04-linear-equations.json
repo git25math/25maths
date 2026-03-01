@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation x + 5 = 12.",
+      "questionText": "Solve the equation ${x + 5 = 12}$.",
       "options": [
         "x = 7",
         "x = 17",
@@ -28,7 +28,7 @@
         "y = 21"
       ],
       "correctAnswer": 2,
-      "explanation": "To find y, divide both sides of the equation by 3. 18 / 3 = 6. So, y = 6."
+      "explanation": "To find y, divide both sides of the equation by 3. $\\frac{18}{3}$ = 6. So, y = 6."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 7 = 2x - 5.",
+      "questionText": "Solve the equation 7 = ${2x - 5}$.",
       "options": [
         "x = 1",
         "x = 6",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 3(2y - 1) = 21.",
+      "questionText": "Solve the equation 3(${2y - 1}$) = 21.",
       "options": [
         "y = 4",
         "y = 3.5",
@@ -112,7 +112,7 @@
         "y = 3"
       ],
       "correctAnswer": 0,
-      "explanation": "Divide both sides by 3 to get 2y - 1 = 7. Add 1 to both sides to get 2y = 8. Finally, divide by 2 to get y = 4."
+      "explanation": "Divide both sides by 3 to get ${2y - 1 = 7}$. Add 1 to both sides to get 2y = 8. Finally, divide by 2 to get y = 4."
     },
     {
       "type": "multiple-choice",
@@ -140,15 +140,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the equation 5x - 8 = 2x + 7.",
+      "questionText": "Solve the equation ${5x - 8 = 2x + 7}$.",
       "options": [
-        "x = -1/3",
+        "x = -$\\frac{1}{3}$",
         "x = 5",
         "x = 15",
         "x = 1"
       ],
       "correctAnswer": 1,
-      "explanation": "Subtract 2x from both sides to get 3x - 8 = 7. Add 8 to both sides to get 3x = 15. Finally, divide by 3 to get x = 5."
+      "explanation": "Subtract 2x from both sides to get ${3x - 8 = 7}$. Add 8 to both sides to get 3x = 15. Finally, divide by 3 to get x = 5."
     }
   ]
 }

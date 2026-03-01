@@ -10,13 +10,13 @@
       "type": "multiple-choice",
       "questionText": "A bag contains 5 red balls and 3 blue balls. If one ball is chosen at random, what is the probability that it is red?",
       "options": [
-        "3/8",
-        "5/3",
-        "5/8",
-        "1/2"
+        "$\\frac{3}{8}$",
+        "$\\frac{5}{3}$",
+        "$\\frac{5}{8}$",
+        "$\\frac{1}{2}$"
       ],
       "correctAnswer": 2,
-      "explanation": "There are 5 red balls and a total of 5 + 3 = 8 balls. The probability of choosing a red ball is the number of red balls divided by the total number of balls, which is 5/8."
+      "explanation": "There are 5 red balls and a total of 5 + 3 = 8 balls. The probability of choosing a red ball is the number of red balls divided by the total number of balls, which is $\\frac{5}{8}$."
     },
     {
       "type": "multiple-choice",
@@ -34,25 +34,25 @@
       "type": "multiple-choice",
       "questionText": "A fair six-sided die is rolled. What is the probability of rolling an even number?",
       "options": [
-        "1/6",
-        "1/3",
-        "1/2",
-        "2/3"
+        "$\\frac{1}{6}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{2}{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The even numbers on a six-sided die are 2, 4, 6. There are 3 even numbers out of 6 possible outcomes. So, the probability is 3/6 = 1/2."
+      "explanation": "The even numbers on a six-sided die are 2, 4, 6. There are 3 even numbers out of 6 possible outcomes. So, the probability is $\\frac{3}{6} = \\frac{1}{2}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "A spinner has 8 equal sections numbered 1 to 8. What is the probability of landing on a number greater than 6?",
       "options": [
-        "1/8",
-        "2/8",
-        "3/8",
-        "6/8"
+        "$\\frac{1}{8}$",
+        "$\\frac{2}{8}$",
+        "$\\frac{3}{8}$",
+        "$\\frac{6}{8}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Numbers greater than 6 are 7 and 8. There are 2 such numbers. The total number of outcomes is 8. So, the probability is 2/8, which simplifies to 1/4."
+      "explanation": "Numbers greater than 6 are 7 and 8. There are 2 such numbers. The total number of outcomes is 8. So, the probability is $\\frac{2}{8}$, which simplifies to $\\frac{1}{4}$."
     },
     {
       "type": "multiple-choice",
@@ -70,13 +70,13 @@
       "type": "multiple-choice",
       "questionText": "A deck of 52 playing cards is shuffled. What is the probability of drawing a King?",
       "options": [
-        "1/52",
-        "4/52",
-        "1/13",
-        "1/4"
+        "$\\frac{1}{52}$",
+        "$\\frac{4}{52}$",
+        "$\\frac{1}{13}$",
+        "$\\frac{1}{4}$"
       ],
       "correctAnswer": 2,
-      "explanation": "There are 4 Kings in a standard deck of 52 cards. The probability is 4/52, which simplifies to 1/13."
+      "explanation": "There are 4 Kings in a standard deck of 52 cards. The probability is $\\frac{4}{52}$, which simplifies to $\\frac{1}{13}$."
     },
     {
       "type": "multiple-choice",
@@ -94,13 +94,13 @@
       "type": "multiple-choice",
       "questionText": "A box contains 10 sweets: 4 chocolate, 3 strawberry, and 3 lemon. What is the probability of picking a lemon sweet?",
       "options": [
-        "3/10",
-        "4/10",
-        "7/10",
-        "1/10"
+        "$\\frac{3}{10}$",
+        "$\\frac{4}{10}$",
+        "$\\frac{7}{10}$",
+        "$\\frac{1}{10}$"
       ],
       "correctAnswer": 0,
-      "explanation": "There are 3 lemon sweets out of a total of 10 sweets. The probability is 3/10."
+      "explanation": "There are 3 lemon sweets out of a total of 10 sweets. The probability is $\\frac{3}{10}$."
     },
     {
       "type": "multiple-choice",
@@ -118,25 +118,25 @@
       "type": "multiple-choice",
       "questionText": "A letter is chosen at random from the word 'MATHEMATICS'. What is the probability of choosing the letter 'A'?",
       "options": [
-        "1/11",
-        "2/11",
-        "3/11",
-        "1/4"
+        "$\\frac{1}{11}$",
+        "$\\frac{2}{11}$",
+        "$\\frac{3}{11}$",
+        "$\\frac{1}{4}$"
       ],
       "correctAnswer": 1,
-      "explanation": "The word 'MATHEMATICS' has 11 letters in total. The letter 'A' appears 2 times. So, the probability is 2/11."
+      "explanation": "The word 'MATHEMATICS' has 11 letters in total. The letter 'A' appears 2 times. So, the probability is $\\frac{2}{11}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "In a group of 20 students, 8 wear glasses. What is the probability that a randomly chosen student does NOT wear glasses?",
       "options": [
-        "8/20",
-        "12/20",
-        "20/8",
-        "1/20"
+        "$\\frac{8}{20}$",
+        "$\\frac{12}{20}$",
+        "$\\frac{20}{8}$",
+        "$\\frac{1}{20}$"
       ],
       "correctAnswer": 1,
-      "explanation": "If 8 students wear glasses, then 20 - 8 = 12 students do not wear glasses. The probability of choosing a student who does not wear glasses is 12/20."
+      "explanation": "If 8 students wear glasses, then 20 - 8 = 12 students do not wear glasses. The probability of choosing a student who does not wear glasses is $\\frac{12}{20}$."
     },
     {
       "type": "multiple-choice",
