@@ -64,7 +64,7 @@
         "90.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "The body diagonal is d = $\\sqrt{5^2 + 7^2 + 10^2}$ = $\\sqrt{174}$ cm. The angle $\\theta$ with the 5x7 face can be found using sin($\\theta$) = opposite/hypotenuse = $10/\\sqrt{174}$. So, $\\theta = sin^{-1}$($10/\\sqrt{174}$) ≈ 49.8°."
+      "explanation": "The body diagonal is d = $\\sqrt{5^2 + 7^2 + 10^2}$ = $\\sqrt{174}$ cm. The $angle \\theta with$ the 5x7 face can be found using sin($\\theta$) = opposite/hypotenuse = $10/\\sqrt{174}$. So, $\\theta = sin^{-1}$($10/\\sqrt{174}$) ≈ 49.8°."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "45.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the horizontal distance from the point to the base of the pole: d = $\\sqrt{5^2 + 9^2}$ = $\\sqrt{106}$ m. The angle of elevation $\\theta$ is given by tan($\\theta$) = opposite/adjacent = $12/\\sqrt{106}$. So, $\\theta = tan^{-1}$($12/\\sqrt{106}$) ≈ 49.4°."
+      "explanation": "First, find the horizontal distance from the point to the base of the pole: d = $\\sqrt{5^2 + 9^2}$ = $\\sqrt{106}$ m. The angle of $elevation \\theta is$ given by tan($\\theta$) = opposite/adjacent = $12/\\sqrt{106}$. So, $\\theta = tan^{-1}$($12/\\sqrt{106}$) ≈ 49.4°."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "12 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "For a cube of side s, the body diagonal is d = $\\sqrt{s² + s² + s²} = \\sqrt{3s²}$ = s$\\sqrt{3}$. So, d = $4\\sqrt{3}$ ≈ 6.93 cm."
+      "explanation": "For a cube of side s, the body diagonal is d = $\\sqrt{s² + s² + s²} = \\sqrt{3s²} = s\\sqrt{3}$. So, d = $4\\sqrt{3}$ ≈ 6.93 cm."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "45.0°"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the diagonal of the base, AC = $\\sqrt{8^2 + 6^2}$ = $\\sqrt{100}$ = 10 cm. The angle $\\theta$ between AG and the base is in the right-angled triangle ACG. We have tan($\\theta$) = opposite/adjacent = CG/AC = $\\frac{5}{10}$ = 0.5. So, $\\theta = tan^{-1}$(0.5) ≈ 26.6°."
+      "explanation": "First, find the diagonal of the base, AC = $\\sqrt{8^2 + 6^2}$ = $\\sqrt{100}$ = 10 cm. The $angle \\theta between$ AG and the base is in the right-angled triangle ACG. We have tan($\\theta$) = opposite/adjacent = CG/AC = $\\frac{5}{10}$ = 0.5. So, $\\theta = tan^{-1}$(0.5) ≈ 26.6°."
     },
     {
       "type": "multiple-choice",

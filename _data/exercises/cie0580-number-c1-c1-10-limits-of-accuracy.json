@@ -10,10 +10,10 @@
       "type": "multiple-choice",
       "questionText": "A number, x, is given as 15 when rounded to the nearest integer. What is the error interval for x?",
       "options": [
-        "14 < x < 16",
-        "14.5 <= x < 15.5",
-        "14.5 < x < 15.5",
-        "15 <= x < 16"
+        "$14 < x < 16$",
+        "$14.5 <= x < 15.5$",
+        "$14.5 < x < 15.5$",
+        "$15 <= x < 16$"
       ],
       "correctAnswer": 1,
       "explanation": "For a number rounded to the nearest integer, the tolerance is ±0.5. The lower bound is inclusive (>=) and the upper bound is exclusive (<). So the interval is 15 ± 0.5, which is [14.5, 15.5)."
@@ -58,10 +58,10 @@
       "type": "multiple-choice",
       "questionText": "A probability, p, is calculated as 0.28, correct to 2 decimal places. What is the error interval for p?",
       "options": [
-        "0.27 <= p < 0.29",
-        "0.275 <= p < 0.285",
-        "0.27 < p < 0.28",
-        "0.275 < p < 0.285"
+        "$0.27 <= p < 0.29$",
+        "$0.275 <= p < 0.285$",
+        "$0.27 < p < 0.28$",
+        "$0.275 < p < 0.285$"
       ],
       "correctAnswer": 1,
       "explanation": "For a value correct to 2 decimal places (0.01), the tolerance is ±0.005. The error interval is [0.275, 0.285)."
@@ -130,10 +130,10 @@
       "type": "multiple-choice",
       "questionText": "A journey takes 45 minutes, correct to the nearest minute. Which inequality correctly represents the actual time, t, in minutes?",
       "options": [
-        "44 < t < 46",
-        "45 <= t < 46",
-        "44.5 <= t < 45.5",
-        "44.5 < t < 45.5"
+        "$44 < t < 46$",
+        "$45 <= t < 46$",
+        "$44.5 <= t < 45.5$",
+        "$44.5 < t < 45.5$"
       ],
       "correctAnswer": 2,
       "explanation": "Correct to the nearest minute means the tolerance is ±0.5 minutes. The lower bound is inclusive and the upper bound is exclusive. The interval is [44.5, 45.5)."

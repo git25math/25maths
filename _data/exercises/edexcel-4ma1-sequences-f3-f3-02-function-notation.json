@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "If ${f(n) = 3n + 2}$, what is the value of ${f(4)}$?",
+      "questionText": "If $f(n) = 3n + 2$, what is the value of $f(4)$?",
       "options": [
         "5",
         "10",
@@ -16,11 +16,11 @@
         "20"
       ],
       "correctAnswer": 2,
-      "explanation": "Substitute n=4 into the function: ${f(4) = 3(4) + 2 = 12 + 2 = 14}$."
+      "explanation": "Substitute n=4 into the function: $f(4) = 3(4) + 2 = 12 + 2 = 14$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given $g(n) = n^2 - 1$, find ${g(3)}$.",
+      "questionText": "Given $g(n) = n^2 - 1$, find $g(3)$.",
       "options": [
         "2",
         "5",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sequence is defined by ${h(n) = 20 - 2n}$. What is the 5th term of the sequence?",
+      "questionText": "A sequence is defined by $h(n) = 20 - 2n$. What is the 5th term of the sequence?",
       "options": [
         "10",
         "12",
@@ -40,11 +40,11 @@
         "18"
       ],
       "correctAnswer": 0,
-      "explanation": "The 5th term is found by substituting n=5 into the function: ${h(5) = 20 - 2(5) = 20 - 10 = 10}$."
+      "explanation": "The 5th term is found by substituting n=5 into the function: $h(5) = 20 - 2(5) = 20 - 10 = 10$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "If ${f(n) = 5n - 7}$, find the value of ${n}$ for which ${f(n) = 13}$.",
+      "questionText": "If $f(n) = 5n - 7$, find the value of $n$ for which $f(n) = 13$.",
       "options": [
         "2",
         "3",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The ${n}$th term of a sequence is given by $u_n = 4n + 1$. What is the value of $u_6$?",
+      "questionText": "The $n$th term of a sequence is given by $u_n = 4n + 1$. What is the value of $u_6$?",
       "options": [
         "21",
         "23",
@@ -64,7 +64,7 @@
         "27"
       ],
       "correctAnswer": 2,
-      "explanation": "Substitute n=6 into the formula for the ${n}$th term: $u_6 = 4(6) + 1 = 24 + 1 = 25$."
+      "explanation": "Substitute n=6 into the formula for the $n$th term: $u_6 = 4(6) + 1 = 24 + 1 = 25$."
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given $m(n) = 2n^2 + n$, find ${m(2)}$.",
+      "questionText": "Given $m(n) = 2n^2 + n$, find $m(2)$.",
       "options": [
         "6",
         "8",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sequence has its ${n}$th term defined as $a_n = 15 - 3n$. Which term in the sequence is equal to 0?",
+      "questionText": "A sequence has its $n$th term defined as $a_n = 15 - 3n$. Which term in the sequence is equal to 0?",
       "options": [
         "3rd",
         "4th",
@@ -100,11 +100,11 @@
         "6th"
       ],
       "correctAnswer": 2,
-      "explanation": "Set the ${n}$th term equal to 0 and solve for n: $15 - 3n = 0 \\Rightarrow 3n = 15 \\Rightarrow n = 5$. So, it's the 5th term."
+      "explanation": "Set the $n$th term equal to 0 and solve for n: $15 - 3n = 0 \\Rightarrow 3n = 15 \\Rightarrow n = 5$. So, it's the 5th term."
     },
     {
       "type": "multiple-choice",
-      "questionText": "If $p(n) = (n+1)^2$, calculate ${p(4)}$.",
+      "questionText": "If $p(n) = (n+1)^2$, calculate $p(4)$.",
       "options": [
         "16",
         "17",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "For the function ${q(n) = 3n + 5}$, find ${n}$ when ${q(n) = 26}$.",
+      "questionText": "For the function $q(n) = 3n + 5$, find $n$ when $q(n) = 26$.",
       "options": [
         "5",
         "7",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The ${n}$th term of a sequence is $T_n = n^2 + 2n$. Find $T_3$.",
+      "questionText": "The $n$th term of a sequence is $T_n = n^2 + 2n$. Find $T_3$.",
       "options": [
         "9",
         "12",
@@ -136,7 +136,7 @@
         "18"
       ],
       "correctAnswer": 2,
-      "explanation": "Substitute n=3 into the formula for the ${n}$th term: $T_3 = (3)^2 + 2(3) = 9 + 6 = 15$."
+      "explanation": "Substitute n=3 into the formula for the $n$th term: $T_3 = (3)^2 + 2(3) = 9 + 6 = 15$."
     },
     {
       "type": "multiple-choice",

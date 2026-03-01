@@ -10,17 +10,17 @@
       "type": "multiple-choice",
       "questionText": "Given the universal set $\\xi$ = {1, 2, 3, 4, 5, 6} and set A = {2, 4, 6}, which statement is correct?",
       "options": [
-        "3 $\\in$ A",
-        "A $\\in$ 6",
-        "4 $\\in$ A",
+        "$3 \\in A$",
+        "$A \\in 6$",
+        "$4 \\in A$",
         "A = {1, 3, 5}"
       ],
       "correctAnswer": 2,
-      "explanation": "The symbol $\\in$ means 'is an element of'. The number 4 is an element of set A. 3 is not in A. A' (the complement) would be {1, 3, 5}."
+      "explanation": "The $symbol \\in means$ 'is an element of'. The number 4 is an element of set A. 3 is not in A. A' (the complement) would be {1, 3, 5}."
     },
     {
       "type": "multiple-choice",
-      "questionText": "If P = {factors of 10} and Q = {even numbers less than 10}, what is P $\\cap$ Q?",
+      "questionText": "If P = {factors of 10} and Q = {even numbers less than 10}, what is $P \\cap Q$?",
       "options": [
         "{2}",
         "{2, 10}",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If M = {3, 6, 9} and N = {1, 3, 5, 9}, what is M $\\cup$ N?",
+      "questionText": "If M = {3, 6, 9} and N = {1, 3, 5, 9}, what is $M \\cup N$?",
       "options": [
         "{3, 9}",
         "{1, 3, 5, 6, 9}",
@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given $\\xi$ = {x : x is an integer, 1 $\\leq$ x $\\leq$ 10} and A = {multiples of 3}. Find A'.",
+      "questionText": "Given $\\xi$ = {x : x is an integer, $1 \\leq x \\leq$ 10} and A = {multiples of 3}. Find A'.",
       "options": [
         "{3, 6, 9}",
         "{1, 2, 4, 5, 7, 8, 10}",
@@ -52,7 +52,7 @@
         "{1, 2, 4, 5, 7, 8}"
       ],
       "correctAnswer": 1,
-      "explanation": "The universal set $\\xi$ is {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Set A is {3, 6, 9}. The complement (A') is all elements in $\\xi$ that are not in A, which is {1, 2, 4, 5, 7, 8, 10}."
+      "explanation": "The universal $set \\xi is$ {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}. Set A is {3, 6, 9}. The complement (A') is all elements $in \\xi that$ are not in A, which is {1, 2, 4, 5, 7, 8, 10}."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find n(A $\\cup$ B).",
+      "questionText": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find n($A \\cup B$).",
       "options": [
         "4",
         "8",
@@ -76,11 +76,11 @@
         "6"
       ],
       "correctAnswer": 3,
-      "explanation": "First, find the union: A $\\cup$ B = {1, 2, 3, 4, 5, 6}. Then, count the number of elements in this new set. There are 6 elements, so n(A $\\cup$ B) = 6."
+      "explanation": "First, find the union: $A \\cup B$ = {1, 2, 3, 4, 5, 6}. Then, count the number of elements in this new set. There are 6 elements, so n($A \\cup B$) = 6."
     },
     {
       "type": "multiple-choice",
-      "questionText": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find n(A $\\cap$ B).",
+      "questionText": "If A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find n($A \\cap B$).",
       "options": [
         "4",
         "8",
@@ -88,7 +88,7 @@
         "6"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the intersection: A $\\cap$ B = {3, 4}. Then, count the number of elements in this new set. There are 2 elements, so n(A $\\cap$ B) = 2."
+      "explanation": "First, find the intersection: $A \\cap B$ = {3, 4}. Then, count the number of elements in this new set. There are 2 elements, so n($A \\cap B$) = 2."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "13"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the number who play at least one (F $\\cup$ T), use the formula n(F $\\cup$ T) = n(F) + n(T) - n(F $\\cap$ T). So, 15 + 8 - 5 = 18. Alternatively, Only F = 15-5=10, Only T = 8-5=3. Total = 10 + 3 + 5 = 18."
+      "explanation": "To find the number who play at least one ($F \\cup T$), use the formula n($F \\cup T$) = n(F) + n(T) - n($F \\cap T$). So, 15 + 8 - 5 = 18. Alternatively, Only F = 15-5=10, Only T = 8-5=3. Total = 10 + 3 + 5 = 18."
     },
     {
       "type": "multiple-choice",
@@ -136,19 +136,19 @@
         "5"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the number who like at least one: n(C $\\cup$ P) = n(C) + n(P) - n(C $\\cap$ P) = 18 + 15 - 7 = 26. The total number of pupils is 30. The number who like neither is 30 - 26 = 4."
+      "explanation": "First, find the number who like at least one: n($C \\cup P$) = n(C) + n(P) - n($C \\cap P$) = 18 + 15 - 7 = 26. The total number of pupils is 30. The number who like neither is 30 - 26 = 4."
     },
     {
       "type": "multiple-choice",
       "questionText": "In a Venn diagram, what does the shaded region representing the area outside of two intersecting circles show?",
       "options": [
-        "A $\\cap$ B",
-        "(A $\\cup$ B)'",
-        "A $\\cup$ B",
+        "$A \\cap B$",
+        "($A \\cup B$)'",
+        "$A \\cup B$",
         "A'"
       ],
       "correctAnswer": 1,
-      "explanation": "The area inside circle A is set A, inside B is set B. The area inside both is the union (A $\\cup$ B). The shaded region outside both circles represents everything that is NOT in the union, which is the complement of the union, written as (A $\\cup$ B)'."
+      "explanation": "The area inside circle A is set A, inside B is set B. The area inside both is the union ($A \\cup B$). The shaded region outside both circles represents everything that is NOT in the union, which is the complement of the union, written as ($A \\cup B$)'."
     }
   ]
 }

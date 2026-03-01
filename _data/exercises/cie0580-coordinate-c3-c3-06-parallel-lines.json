@@ -100,7 +100,7 @@
         "$y = -2x + 13$"
       ],
       "correctAnswer": 0,
-      "explanation": "The gradient of line L is 0.5. Using y - y₁ = m(x - x₁), we get y - 1 = 0.5(x - 6). This simplifies to $y - 1 = 0.5x - 3, and then $y = 0.$5x - 2."
+      "explanation": "The gradient of line L is 0.5. Using $y - y_1 = m(x - x_1)$, we get $y - 1 = 0.5(x - 6)$. This simplifies to $y - 1 = 0.5x - 3$, and then $y = 0.5x - 2$."
     },
     {
       "type": "multiple-choice",

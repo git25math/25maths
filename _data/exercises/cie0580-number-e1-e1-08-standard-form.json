@@ -16,7 +16,7 @@
         "$0.834 × 10^{7}$"
       ],
       "correctAnswer": 0,
-      "explanation": "To express a number in standard form, it must be in the form A × 10^n, where 1 $\\leq$ A < 10. The decimal point in 8,340,000 moves 6 places to the left to get 8.34. Therefore, the number in standard form is 8.34 × $10^{6}$."
+      "explanation": "To express a number in standard form, it must be in the form A × 10^n, where $1 \\leq A$ < 10. The decimal point in 8,340,000 moves 6 places to the left to get 8.34. Therefore, the number in standard form is 8.34 × $10^{6}$."
     },
     {
       "type": "multiple-choice",

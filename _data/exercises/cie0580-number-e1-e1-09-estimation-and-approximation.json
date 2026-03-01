@@ -64,7 +64,7 @@
         "$120,000"
       ],
       "correctAnswer": 2,
-      "explanation": "Round the ticket price to ${50 and the number of people to 2000. The estimated total is 50 x 2000 = }$100,000."
+      "explanation": "Round the ticket price to $50 and the number of people to 2000. The estimated total is 50 x 2000 = $100,000."
     },
     {
       "type": "multiple-choice",

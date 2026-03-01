@@ -64,7 +64,7 @@
         "3000 $\\text{m}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Actual length = 6 cm × 100 = 600 cm = 6 m. Actual width = 5 cm × 100 = 500 cm = 5 m. Actual area = Actual length × Actual width = 6 m × 5 $m = 30$ $\\text{m}^2$."
+      "explanation": "Actual length = 6 cm × 100 = 600 cm = 6 m. Actual width = 5 cm × 100 = 500 cm = 5 m. Actual area = Actual length × Actual width = 6 m × 5 $m = 30 \\text{m}^2$."
     },
     {
       "type": "multiple-choice",

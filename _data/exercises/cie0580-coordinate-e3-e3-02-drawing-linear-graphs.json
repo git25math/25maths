@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Which of the following points lies on the line ${y = 2x - 5}$?",
+      "questionText": "Which of the following points lies on the line $y = 2x - 5$?",
       "options": [
         "(3, 1)",
         "(1, -2)",
@@ -16,11 +16,11 @@
         "(0, 5)"
       ],
       "correctAnswer": 0,
-      "explanation": "To check if a point lies on the line, substitute the x-coordinate into the equation and see if the result equals the y-coordinate. For (3, 1), ${y = 2(3) - 5 = 6 - 5 = 1}$. The point satisfies the equation."
+      "explanation": "To check if a point lies on the line, substitute the x-coordinate into the equation and see if the result equals the y-coordinate. For (3, 1), $y = 2(3) - 5 = 6 - 5 = 1$. The point satisfies the equation."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the y-intercept of the line with equation ${y = -3x + 8}$?",
+      "questionText": "What is the y-intercept of the line with equation $y = -3x + 8$?",
       "options": [
         "(8, 0)",
         "(0, 8)",
@@ -28,11 +28,11 @@
         "(-3, 0)"
       ],
       "correctAnswer": 1,
-      "explanation": "The y-intercept is the point where the line crosses the y-axis, which occurs when ${x = 0}$. Substituting ${x = 0}$ into the equation ${y = -3x + 8}$ gives ${y = 8}$. The coordinates of the y-intercept are (0, 8)."
+      "explanation": "The y-intercept is the point where the line crosses the y-axis, which occurs when $x = 0$. Substituting $x = 0$ into the equation $y = -3x + 8$ gives $y = 8$. The coordinates of the y-intercept are (0, 8)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the x-intercept of the line ${2y = 4x - 10}$.",
+      "questionText": "Find the x-intercept of the line $2y = 4x - 10$.",
       "options": [
         "(2.5, 0)",
         "(0, -5)",
@@ -40,11 +40,11 @@
         "(5, 0)"
       ],
       "correctAnswer": 0,
-      "explanation": "The x-intercept is the point where the line crosses the x-axis, which occurs when ${y = 0}$. Substitute ${y = 0}$ into ${2y = 4x - 10}$ to get ${0 = 4x - 10}$. Solving for x gives ${4x = 10}$, so ${x = 2.5}$. The coordinates are (2.5, 0)."
+      "explanation": "The x-intercept is the point where the line crosses the x-axis, which occurs when $y = 0$. Substitute $y = 0$ into $2y = 4x - 10$ to get $0 = 4x - 10$. Solving for x gives $4x = 10$, so $x = 2.5$. The coordinates are (2.5, 0)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Does the point ${(-2, 7)}$ lie on the line ${y = -2x + 3}$?",
+      "questionText": "Does the point $(-2, 7)$ lie on the line $y = -2x + 3$?",
       "options": [
         "Yes, because 7 = -2(-2) + 3",
         "No, because the x-coordinate is negative",
@@ -52,11 +52,11 @@
         "No, because 7 ≠ -2(-2) - 3"
       ],
       "correctAnswer": 0,
-      "explanation": "To check if ${(-2, 7)}$ is on the line, substitute ${x = -2}$ into the equation. ${y = -2(-2) + 3 = 4 + 3 = 7}$. Since the calculated y-value matches the point's y-coordinate, the point lies on the line."
+      "explanation": "To check if $(-2, 7)$ is on the line, substitute $x = -2$ into the equation. $y = -2(-2) + 3 = 4 + 3 = 7$. Since the calculated y-value matches the point's y-coordinate, the point lies on the line."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A line is drawn using the points ${(4, -1)}$, ${(4, 0)}$, and ${(4, 5)}$. What is the equation of this line?",
+      "questionText": "A line is drawn using the points $(4, -1)$, $(4, 0)$, and $(4, 5)$. What is the equation of this line?",
       "options": [
         "$y = 4$",
         "$x = 4$",
@@ -64,7 +64,7 @@
         "y = -x + 4"
       ],
       "correctAnswer": 1,
-      "explanation": "For all given points, the x-coordinate is consistently 4, regardless of the y-coordinate. This describes a vertical line, and its equation is ${x = 4}$."
+      "explanation": "For all given points, the x-coordinate is consistently 4, regardless of the y-coordinate. This describes a vertical line, and its equation is $x = 4$."
     },
     {
       "type": "multiple-choice",
@@ -76,11 +76,11 @@
         "$x + y = 1$"
       ],
       "correctAnswer": 1,
-      "explanation": "A horizontal line has a constant y-value for all x-values. The equation ${y = 3}$ represents such a line, where the y-coordinate is always 3."
+      "explanation": "A horizontal line has a constant y-value for all x-values. The equation $y = 3$ represents such a line, where the y-coordinate is always 3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A straight line passes through the points ${(-1, 5)}$ and ${(1, 1)}$. Which other point is also on this line?",
+      "questionText": "A straight line passes through the points $(-1, 5)$ and $(1, 1)$. Which other point is also on this line?",
       "options": [
         "(0, 4)",
         "(2, 1)",
@@ -88,11 +88,11 @@
         "(0, 3)"
       ],
       "correctAnswer": 3,
-      "explanation": "First, find the gradient: ${m = (1 - 5) / (1 - (-1)) = -4 / 2 = -2}$. Using point ${(1, 1)}$, the equation is ${y - 1 = -2(x - 1)}$, which simplifies to ${y = -2x + 3}$. Now test the options. For ${(0, 3)}$, ${3 = -2(0) + 3}$, which is true."
+      "explanation": "First, find the gradient: $m = (1 - 5) / (1 - (-1)) = -4 / 2 = -2$. Using point $(1, 1)$, the equation is $y - 1 = -2(x - 1)$, which simplifies to $y = -2x + 3$. Now test the options. For $(0, 3)$, $3 = -2(0) + 3$, which is true."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The line ${y = 0.5x + c}$ passes through the point ${(4, 5)}$. What is the value of ${c}$?",
+      "questionText": "The line $y = 0.5x + c$ passes through the point $(4, 5)$. What is the value of $c$?",
       "options": [
         "3",
         "7",
@@ -100,11 +100,11 @@
         "4"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute the coordinates of the point ${(4, 5)}$ into the equation ${y = 0.5x + c}$. This gives ${5 = 0.5(4) + c}$. Simplifying, ${5 = 2 + c}$. Therefore, ${c = 3}$."
+      "explanation": "Substitute the coordinates of the point $(4, 5)$ into the equation $y = 0.5x + c$. This gives $5 = 0.5(4) + c$. Simplifying, $5 = 2 + c$. Therefore, $c = 3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of these points does NOT lie on the line ${x + 2y = 8}$?",
+      "questionText": "Which of these points does NOT lie on the line $x + 2y = 8$?",
       "options": [
         "(8, 0)",
         "(0, 4)",
@@ -112,11 +112,11 @@
         "(4, 3)"
       ],
       "correctAnswer": 3,
-      "explanation": "Substitute the coordinates of each point into the equation ${x + 2y = 8}$. For ${(4, 3)}$, the calculation is ${4 + 2(3) = 10}$. Since ${10 ≠ 8}$, this point does not lie on the line."
+      "explanation": "Substitute the coordinates of each point into the equation $x + 2y = 8$. For $(4, 3)$, the calculation is $4 + 2(3) = 10$. Since $10 ≠ 8$, this point does not lie on the line."
     },
     {
       "type": "multiple-choice",
-      "questionText": "To draw the graph of ${y = -x + 1}$, three points are calculated. Which set of points is correct?",
+      "questionText": "To draw the graph of $y = -x + 1$, three points are calculated. Which set of points is correct?",
       "options": [
         "[(-1, 2), (0, 1), (1, 0)]",
         "[(-1, 0), (0, 1), (1, 2)]",
@@ -124,7 +124,7 @@
         "[(-1, 2), (0, 1), (2, 1)]"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute the x-values from each set into ${y = -x + 1}$. For ${x = -1}$, ${y = -(-1) + 1 = 2}$. For ${x = 0}$, ${y = -(0) + 1 = 1}$. For ${x = 1}$, ${y = -(1) + 1 = 0}$. The set ${[(-1, 2), (0, 1), (1, 0)]}$ correctly matches these calculations."
+      "explanation": "Substitute the x-values from each set into $y = -x + 1$. For $x = -1$, $y = -(-1) + 1 = 2$. For $x = 0$, $y = -(0) + 1 = 1$. For $x = 1$, $y = -(1) + 1 = 0$. The set $[(-1, 2), (0, 1), (1, 0)]$ correctly matches these calculations."
     },
     {
       "type": "multiple-choice",
@@ -136,11 +136,11 @@
         "$y = -2x - 3$"
       ],
       "correctAnswer": 0,
-      "explanation": "In the form ${y = mx + c}$, ${m}$ is the gradient and ${c}$ is the y-intercept. A positive gradient means ${m > 0}$, and a negative y-intercept means ${c < 0}$. The equation ${y = 2x - 3}$ has ${m = 2}$ and ${c = -3}$, which matches the description."
+      "explanation": "In the form $y = mx + c$, $m$ is the gradient and $c$ is the y-intercept. A positive gradient means $m > 0$, and a negative y-intercept means $c < 0$. The equation $y = 2x - 3$ has $m = 2$ and $c = -3$, which matches the description."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A taxi fare ${F}$ (in dollars) is calculated as ${F = 1.5d + 2}$, where ${d}$ is the distance in km. What is the fare for a 10 km journey?",
+      "questionText": "A taxi fare $F$ (in dollars) is calculated as $F = 1.5d + 2$, where $d$ is the distance in km. What is the fare for a 10 km journey?",
       "options": [
         "$17",
         "$15",
@@ -148,7 +148,7 @@
         "$20"
       ],
       "correctAnswer": 0,
-      "explanation": "The question provides a linear equation ${F = 1.5d + 2}$ to model the taxi fare. To find the fare for a 10 km journey, substitute ${d = 10}$ into the equation: ${F = 1.5(10) + 2 = 15 + 2 = 17}$. The fare is $17."
+      "explanation": "The question provides a linear equation $F = 1.5d + 2$ to model the taxi fare. To find the fare for a 10 km journey, substitute $d = 10$ into the equation: $F = 1.5(10) + 2 = 15 + 2 = 17$. The fare is $17."
     }
   ]
 }

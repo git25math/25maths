@@ -104,15 +104,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Two similar cones have base radii of 6 cm and 9 cm. If the volume of the smaller cone is 48$\\pi$ $\\text{cm}^3$, what is the volume of the larger cone?",
+      "questionText": "Two similar cones have base radii of 6 cm and 9 cm. If the volume of the smaller cone is $48\\pi \\text{cm}^3$, what is the volume of the larger cone?",
       "options": [
-        "72$\\pi$ $\\text{cm}^3$",
-        "108$\\pi$ $\\text{cm}^3$",
-        "162$\\pi$ $\\text{cm}^3$",
+        "$72\\pi \\text{cm}^3$",
+        "$108\\pi \\text{cm}^3$",
+        "$162\\pi \\text{cm}^3$",
         "108 $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The linear scale factor is $\\frac{9}{6}$ = 1.5. The volume scale factor is 1.$5^3$ = 3.375. The volume of the larger cone is 48$\\pi$ × 3.375 = 162$\\pi$ $\\text{cm}^3$."
+      "explanation": "The linear scale factor is $\\frac{9}{6}$ = 1.5. The volume scale factor is 1.$5^3$ = 3.375. The volume of the larger cone is $48\\pi$ × 3.375 = $162\\pi \\text{cm}^3$."
     },
     {
       "type": "multiple-choice",

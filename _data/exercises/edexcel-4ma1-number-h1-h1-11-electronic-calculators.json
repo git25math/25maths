@@ -76,7 +76,7 @@
         "339.3"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute the values into the formula: V = $\\pi \\times (4.5)^2$ × 12. This equals 243$\\pi$ ≈ 763.407... $\\text{cm}^3$. Rounding to one decimal place gives 763.4 $\\text{cm}^3$. The value 339.3 is the curved surface area (2$\\pi$rh)."
+      "explanation": "Substitute the values into the formula: V = $\\pi \\times (4.5)^2$ × 12. This equals $243\\pi$ ≈ 763.407... $\\text{cm}^3$. Rounding to one decimal place gives 763.4 $\\text{cm}^3$. The value 339.3 is the curved surface area ($2 \\pi rh$)."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "20"
       ],
       "correctAnswer": 0,
-      "explanation": "First, evaluate the expression inside the absolute value bars: $5^2$ - 100 = -75. The absolute value is ${|-75| = 75}$. The cube root in the denominator is $\\sqrt[3]{125}$ = 5. Finally, perform the division: 75 ÷ 5 = 15."
+      "explanation": "First, evaluate the expression inside the absolute value bars: $5^2$ - 100 = -75. The absolute value is $|-75| = 75$. The cube root in the denominator is $\\sqrt[3]{125}$ = 5. Finally, perform the division: 75 ÷ 5 = 15."
     },
     {
       "type": "multiple-choice",

@@ -112,7 +112,7 @@
         "$116"
       ],
       "correctAnswer": 1,
-      "explanation": "A 20% discount means the sale price is 80% of the original price. Let 'P' be the original price. The equation is 0.80 * P = 96. To find P, divide 96 by 0.80. So, P = $\\frac{96}{0}$.80 = $120."
+      "explanation": "A 20% discount means the sale price is 80% of the original price. Let 'P' be the original price. The equation is 0.80 * P = 96. To find P, divide 96 by 0.80. So, $P = \\frac{96}{0.80} = 120$."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "$926.10"
       ],
       "correctAnswer": 0,
-      "explanation": "The interest per year is 5% of ${800, which is 0.05 * 800 = }$40. Over 3 years, the total simple interest is 3 * ${40 = }$120. The total value is the principal plus the interest: ${800 + }$120 = $920."
+      "explanation": "The interest per year is 5% of $800, which is 0.05 * 800 = $40. Over 3 years, the total simple interest is 3 * $40 = $120. The total value is the principal plus the interest: $800 + $120 = $920."
     },
     {
       "type": "multiple-choice",

@@ -52,7 +52,7 @@
         "$p + ¾(q-p)$"
       ],
       "correctAnswer": 1,
-      "explanation": "O$\\vec{R}$ = O$\\vec{P} + \\vec{PR}$. First find $\\vec{PQ}$ = q - p. Since PR:RQ = 1:3, the total ratio is 4, so $\\vec{PR}$ = ¼$\\vec{PQ}$ = ¼(q - p). Thus, O$\\vec{R}$ = p + ¼(q - p) = p + ¼q - ¼p = ¾p + ¼q."
+      "explanation": "O$\\vec{R} = O\\vec{P} + \\vec{PR}$. First find $\\vec{PQ}$ = q - p. Since PR:RQ = 1:3, the total ratio is 4, so $\\vec{PR}$ = ¼$\\vec{PQ}$ = ¼(q - p). Thus, O$\\vec{R}$ = p + ¼(q - p) = p + ¼q - ¼p = ¾p + ¼q."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "½(b - a)"
       ],
       "correctAnswer": 2,
-      "explanation": "O$\\vec{M}$ = O$\\vec{A} + \\vec{AM}$. The vector $\\vec{AB}$ = b - a. Since M is the midpoint of AB, $\\vec{AM}$ = ½$\\vec{AB}$ = ½(b - a). So, O$\\vec{M}$ = a + ½(b - a) = a + ½b - ½a = ½a + ½b = ½(a + b)."
+      "explanation": "O$\\vec{M} = O\\vec{A} + \\vec{AM}$. The vector $\\vec{AB}$ = b - a. Since M is the midpoint of AB, $\\vec{AM}$ = ½$\\vec{AB}$ = ½(b - a). So, O$\\vec{M}$ = a + ½(b - a) = a + ½b - ½a = ½a + ½b = ½(a + b)."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "$2(a + b)$"
       ],
       "correctAnswer": 0,
-      "explanation": "O$\\vec{C}$ = O$\\vec{B} + \\vec{BC}$. We are given O$\\vec{B}$ = b. Since $\\vec{BC}$ is parallel to O$\\vec{A}$ and twice its length, $\\vec{BC}$ = 2 * O$\\vec{A}$ = 2a. Therefore, O$\\vec{C}$ = b + 2a."
+      "explanation": "O$\\vec{C} = O\\vec{B} + \\vec{BC}$. We are given O$\\vec{B}$ = b. Since $\\vec{BC}$ is parallel to O$\\vec{A}$ and twice its length, $\\vec{BC} = 2 * O\\vec{A}$ = 2a. Therefore, O$\\vec{C}$ = b + 2a."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "$\\begin{pmatrix} 4 \\\\ 5 \\end{pmatrix}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The position vector O$\\vec{B}$ can be found by the path O to A, then A to B. So, O$\\vec{B}$ = O$\\vec{A}$ + $\\vec{AB}$. O$\\vec{B}$ = $\\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$ + $\\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix}$ = $\\begin{pmatrix} -3+7 \\\\ 4-1 \\end{pmatrix}$ = $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$."
+      "explanation": "The position vector O$\\vec{B}$ can be found by the path O to A, then A to B. So, O$\\vec{B} = O\\vec{A}$ + $\\vec{AB}$. O$\\vec{B}$ = $\\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$ + $\\begin{pmatrix} 7 \\\\ -1 \\end{pmatrix}$ = $\\begin{pmatrix} -3+7 \\\\ 4-1 \\end{pmatrix}$ = $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "$a - \\frac{3}{5} b$"
       ],
       "correctAnswer": 1,
-      "explanation": "O$\\vec{P}$ = O$\\vec{A} + \\vec{AP}$. We know $\\vec{AP}$ = $\\frac{2}{5}$ $\\vec{AB}$ and $\\vec{AB}$ = b - a. So, $\\vec{AP}$ = $\\frac{2}{5}$ (b - a). Therefore, O$\\vec{P}$ = a + $\\frac{2}{5}$ (b - a) = a + $\\frac{2}{5}$ b - $\\frac{2}{5}$ a = $\\frac{3}{5}$ a + $\\frac{2}{5}$ b."
+      "explanation": "O$\\vec{P} = O\\vec{A} + \\vec{AP}$. We know $\\vec{AP}$ = $\\frac{2}{5} \\vec{AB}$ and $\\vec{AB}$ = b - a. So, $\\vec{AP}$ = $\\frac{2}{5}$ (b - a). Therefore, O$\\vec{P} = a + \\frac{2}{5}$ (b - a) = a + $\\frac{2}{5}$ b - $\\frac{2}{5}$ a = $\\frac{3}{5}$ a + $\\frac{2}{5}$ b."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "$3a + ½c$"
       ],
       "correctAnswer": 0,
-      "explanation": "In parallelogram OABC, $\\vec{OB}$ = O$\\vec{A} + \\vec{AB}$. Since OABC is a parallelogram, $\\vec{AB}$ = O$\\vec{C}$ = c. So, $\\vec{OB}$ = a + c. M is the midpoint of AB, thus O$\\vec{M}$ = ½(O$\\vec{A}$ + O$\\vec{B}$) = ½(a + (a + c)) = ½(2a + c) = a + ½c. Finally, $\\vec{CM}$ = O$\\vec{M}$ - O$\\vec{C}$ = (a + ½c) - c = a - ½c."
+      "explanation": "In parallelogram OABC, $\\vec{OB} = O\\vec{A} + \\vec{AB}$. Since OABC is a parallelogram, $\\vec{AB} = O\\vec{C}$ = c. So, $\\vec{OB}$ = a + c. M is the midpoint of AB, thus O$\\vec{M}$ = ½(O$\\vec{A} + O\\vec{B}$) = ½(a + (a + c)) = ½(2a + c) = a + ½c. Finally, $\\vec{CM} = O\\vec{M} - O\\vec{C}$ = (a + ½c) - c = a - ½c."
     }
   ]
 }

@@ -88,7 +88,7 @@
         "60"
       ],
       "correctAnswer": 0,
-      "explanation": "E = kM/$\\sqrt{L}$. Using E = 12, M = 3, L = 9: 12 = k * 3 / $\\sqrt{9}$ => 12 = k * $\\frac{3}{3}$ => $k = 12$. So, E = 12M/$\\sqrt{L}$. When M = 5 and L = 16: E = 12 * 5 / $\\sqrt{16}$ = 12 * $\\frac{5}{4}$ = $\\frac{60}{4}$ = 15."
+      "explanation": "E = kM/$\\sqrt{L}$. Using E = 12, M = 3, L = 9: 12 = k * 3 / $\\sqrt{9}$ => 12 = k * $\\frac{3}{3}$ => $k = 12$. So, E = 12M/$\\sqrt{L}$. When M = 5 and L = 16: E = 12 * 5 / $\\sqrt{16} = 12 * \\frac{5}{4}$ = $\\frac{60}{4}$ = 15."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The volume, V, of a cone is directly proportional to the square of its radius, r, and its height, h. If V = 100$\\pi$ when $r = 5$ and $h = 12$, find the constant of proportionality.",
+      "questionText": "The volume, V, of a cone is directly proportional to the square of its radius, r, and its height, h. If V = $100 \\pi when r = 5$ and $h = 12$, find the constant of proportionality.",
       "options": [
         "$\\frac{1}{3}$",
         "$\\frac{1}{2}$",
@@ -124,7 +124,7 @@
         "$\\pi/3$"
       ],
       "correctAnswer": 3,
-      "explanation": "V = $kr^2$h. Using V = 100$\\pi$, $r = 5$, $h = 12$: 100$\\pi$ = k * ($5^2$) * 12 => 100$\\pi$ = k * 25 * 12 => 100$\\pi$ = 300k. So, $k = 100\\pi$ / 300 = $\\pi/3$."
+      "explanation": "V = $kr^2$h. Using V = $100\\pi$, $r = 5$, $h = 12$: $100\\pi$ = k * ($5^2$) * 12 => $100\\pi$ = k * 25 * 12 => $100\\pi$ = 300k. So, $k = 100\\pi / 300 = \\pi/3$."
     },
     {
       "type": "multiple-choice",

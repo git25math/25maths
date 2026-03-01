@@ -179,6 +179,7 @@ active_global: about   # highlights in global-nav
 | 2026-02-28 | **E2E verification complete** — Webhook → 24 entitlements → signed PDF download, all 26 test items PASS |
 | 2026-03-01 | **Payhip webhook configured** — `sale_completed` → `www.25maths.com/api/v1/membership/webhook/payhip` live |
 | 2026-03-01 | **LaTeX Phase 3** — Batch KaTeX conversion: 4,574 new expressions across 161 JSON files (fractions, angles, powers, sqrt, Greek, algebra). Total: 8,731 LaTeX expressions |
+| 2026-03-01 | **LaTeX Phase 4** — KaTeX quality assurance: ~1,094 fixes across 102 JSON files (merge artifacts, nested delimiters, broken expressions, missing delimiters). 4 automated scripts + manual review. 0 remaining broken LaTeX |
 
 ## Next Steps
 

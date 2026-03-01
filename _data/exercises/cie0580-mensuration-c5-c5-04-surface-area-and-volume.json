@@ -28,7 +28,7 @@
         "48 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "A cube has 6 identical square faces. The area of one face is 4 cm × 4 cm = 16 $\\text{cm}^2$. The total surface area is 6 × 16 $\\text{cm}^2$ = 96 $\\text{cm}^2$."
+      "explanation": "A cube has 6 identical square faces. The area of one face is 4 cm × 4 cm = 16 $\\text{cm}^2$. The total surface area is 6 × 16 $\\text{cm}^2 = 96 \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "314.0 $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The volume of a cylinder is given by the formula V = $\\pir^2$h. V = $\\pi \\times (3 cm)^2$ × 10 cm = 90$\\pi$ $\\text{cm}^3$ ≈ 282.6 $\\text{cm}^3$."
+      "explanation": "The volume of a cylinder is given by the formula V = $\\pir^2$h. V = $\\pi \\times (3 cm)^2$ × 10 cm = $90\\pi \\text{cm}^3$ ≈ 282.6 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "12 $\\text{m}^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "The volume (capacity) of the cuboid tank is length × width × height. Volume = 3 m × 2 m × 1.5 $m = 9$ $\\text{m}^3$."
+      "explanation": "The volume (capacity) of the cuboid tank is length × width × height. Volume = 3 m × 2 m × 1.5 $m = 9 \\text{m}^3$."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "1000 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "A cube has 6 identical square faces. The area of one face is 10 cm × 10 cm = 100 $\\text{cm}^2$. The total surface area is 6 × 100 $\\text{cm}^2$ = 600 $\\text{cm}^2$."
+      "explanation": "A cube has 6 identical square faces. The area of one face is 10 cm × 10 cm = 100 $\\text{cm}^2$. The total surface area is 6 × 100 $\\text{cm}^2 = 600 \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "2009.6 $\\text{cm}^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "The radius is half the diameter, so r = 4 cm. The volume of a cylinder is V = $\\pir^2$h. V = $\\pi \\times (4 cm)^2$ × 10 cm = 160$\\pi$ $\\text{cm}^3$ ≈ 502.4 $\\text{cm}^3$."
+      "explanation": "The radius is half the diameter, so r = 4 cm. The volume of a cylinder is V = $\\pir^2$h. V = $\\pi \\times (4 cm)^2$ × 10 cm = $160\\pi \\text{cm}^3$ ≈ 502.4 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",

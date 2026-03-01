@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost, $C, to hire a plumber is modelled by the equation $C = 50h + 40$, where h is the number of hours. What does the number 40 represent in this equation?",
+      "questionText": "The cost, $C$, to hire a plumber is modelled by the equation $C = 50h + 40$, where $h$ is the number of hours. What does the number 40 represent in this equation?",
       "options": [
         "The cost per hour",
         "The total cost for 40 hours",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A mobile phone plan costs ${10 per month plus }$3 for every gigabyte (g) of data used. Which formula represents the total monthly cost, C?",
+      "questionText": "A mobile phone plan costs $10 per month plus $3 for every gigabyte (g) of data used. Which formula represents the total monthly cost, C?",
       "options": [
         "C = 10g + 3",
         "C = 3g + 10",
@@ -64,7 +64,7 @@
         "C = 10 - 3g"
       ],
       "correctAnswer": 1,
-      "explanation": "The cost is the fixed fee (${10) plus the variable fee (}$3 times the number of gigabytes, g). So, $C = 3g + 10.$"
+      "explanation": "The cost is the fixed fee ($10) plus the variable fee ($3 times the number of gigabytes, g). So, $C = 3g + 10.$"
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost, $C, for a taxi journey of d km is C = 1.5d + 2$.$ How much would a journey of 8 km cost?",
+      "questionText": "The cost, $C$, for a taxi journey of $d$ km is $C = 1.5d + 2$. How much would a journey of 8 km cost?",
       "options": [
         "$12",
         "$14",
@@ -112,7 +112,7 @@
         "$59"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the conversion rate (gradient): ${24 / €20 = 1.2 }$/€. Then multiply by the amount in Euros: 35 * 1.2 = $42."
+      "explanation": "First, find the conversion rate (gradient): $24 / €20 = 1.2 $/€. Then multiply by the amount in Euros: 35 * 1.2 = $42."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "18.2"
       ],
       "correctAnswer": 0,
-      "explanation": "Set B = 65 and solve for k: 65 = 0.2k + 15. Subtract 15: 50 = 0.2k. Divide by 0.2: k = $\\frac{50}{0}$.2 = 250 units."
+      "explanation": "Set $B = 65$ and solve for $k$: $65 = 0.2k + 15$. Subtract 15: $50 = 0.2k$. Divide by 0.2: $k = \\frac{50}{0.2} = 250$ units."
     },
     {
       "type": "multiple-choice",

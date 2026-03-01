@@ -100,7 +100,7 @@
         "5 + $4\\sqrt{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the FOIL method: ($\\sqrt{3}$ + 2)($\\sqrt{3}$ + 2) = $(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2$ = 3 + $4\\sqrt{3}$ + 4 = 7 + $4\\sqrt{3}$."
+      "explanation": "Use the FOIL method: ($\\sqrt{3}$ + 2)($\\sqrt{3}$ + 2) = $(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2 = 3 + 4\\sqrt{3}$ + 4 = 7 + $4\\sqrt{3}$."
     },
     {
       "type": "multiple-choice",

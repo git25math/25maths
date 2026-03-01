@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite an angle $\\theta$ is 6 cm, and the side adjacent to $\\theta$ is 8 cm. Find the value of tan $\\theta$.",
+      "questionText": "In a right-angled triangle, the side opposite an $angle \\theta is$ 6 cm, and the side adjacent $to \\theta is$ 8 cm. Find the value of $tan \\theta .$",
       "options": [
         "0.6",
         "0.75",

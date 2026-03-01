@@ -8,51 +8,51 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Find the circumference of a circle with a radius of 7 cm. Give your answer in terms of $\\pi$.",
+      "questionText": "Find the circumference of a circle with a radius of 7 cm. Give your answer in terms $of \\pi .$",
       "options": [
-        "14$\\pi$ cm",
-        "7$\\pi$ cm",
-        "49$\\pi$ cm",
-        "28$\\pi$ cm"
+        "$14 \\pi cm$",
+        "$7 \\pi cm$",
+        "$49 \\pi cm$",
+        "$28 \\pi cm$"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the circumference of a circle is C = 2$\\pi$r. Substituting the radius r = 7 cm gives C = 2 * $\\pi$ * 7 = 14$\\pi$ cm."
+      "explanation": "The formula for the circumference of a circle is C = $2 \\pi r.$ Substituting the radius r = 7 cm gives C = 2 * $\\pi * 7 = 14 \\pi cm.$"
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the area of a circle with a radius of 6 cm. Give your answer in terms of $\\pi$.",
+      "questionText": "Calculate the area of a circle with a radius of 6 cm. Give your answer in terms $of \\pi .$",
       "options": [
-        "12$\\pi$ $\\text{cm}^2$",
-        "6$\\pi$ $\\text{cm}^2$",
-        "36$\\pi$ $\\text{cm}^2$",
-        "18$\\pi$ $\\text{cm}^2$"
+        "$12\\pi \\text{cm}^2$",
+        "$6\\pi \\text{cm}^2$",
+        "$36\\pi \\text{cm}^2$",
+        "$18\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The formula for the area of a circle is A = $\\pir^2$. Substituting the radius r = 6 cm gives A = $\\pi$ * $6^2$ = 36$\\pi$ $\\text{cm}^2$."
+      "explanation": "The formula for the area of a circle is A = $\\pir^2$. Substituting the radius r = 6 cm gives A = $\\pi$ * $6^2$ = $36\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the length of the arc of a 90° sector in a circle with a radius of 8 cm? Give your answer in terms of $\\pi$.",
+      "questionText": "What is the length of the arc of a 90° sector in a circle with a radius of 8 cm? Give your answer in terms $of \\pi .$",
       "options": [
-        "2$\\pi$ cm",
-        "8$\\pi$ cm",
-        "16$\\pi$ cm",
-        "4$\\pi$ cm"
+        "$2 \\pi cm$",
+        "$8 \\pi cm$",
+        "$16 \\pi cm$",
+        "$4 \\pi cm$"
       ],
       "correctAnswer": 3,
-      "explanation": "The formula for arc length is ($\\theta/360$) * 2$\\pi$r. Substituting $\\theta$ = 90° and r = 8 cm gives ($\\frac{90}{360}$) * 2 * $\\pi$ * 8 = ($\\frac{1}{4}$) * 16$\\pi$ = 4$\\pi$ cm."
+      "explanation": "The formula for arc length is ($\\theta/360$) * $2 \\pi r.$ Substituting $\\theta$ = 90° and r = 8 cm gives ($\\frac{90}{360}$) * 2 * $\\pi$ * 8 = ($\\frac{1}{4}$) * $16\\pi$ = $4 \\pi cm.$"
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the area of a sector with a central angle of 120° in a circle with a radius of 9 cm. Give your answer in terms of $\\pi$.",
+      "questionText": "Find the area of a sector with a central angle of 120° in a circle with a radius of 9 cm. Give your answer in terms $of \\pi .$",
       "options": [
-        "27$\\pi$ $\\text{cm}^2$",
-        "9$\\pi$ $\\text{cm}^2$",
-        "18$\\pi$ $\\text{cm}^2$",
-        "81$\\pi$ $\\text{cm}^2$"
+        "$27\\pi \\text{cm}^2$",
+        "$9\\pi \\text{cm}^2$",
+        "$18\\pi \\text{cm}^2$",
+        "$81\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the area of a sector is ($\\theta/360$) * $\\pir^2$. Substituting $\\theta$ = 120° and r = 9 cm gives ($\\frac{120}{360}$) * $\\pi$ * $9^2$ = ($\\frac{1}{3}$) * 81$\\pi$ = 27$\\pi$ $\\text{cm}^2$."
+      "explanation": "The formula for the area of a sector is ($\\theta/360$) * $\\pir^2$. Substituting $\\theta$ = 120° and r = 9 cm gives ($\\frac{120}{360}$) * $\\pi$ * $9^2$ = ($\\frac{1}{3}$) * $81\\pi$ = $27\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -64,11 +64,11 @@
         "28 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The formula for circumference is C = $\\pi$d. Substituting C = 44 and $\\pi$ = $\\frac{22}{7}$ gives 44 = ($\\frac{22}{7}$) * d. Solving for d gives $d = 44$ * ($\\frac{7}{22}$) = 14 cm."
+      "explanation": "The formula for circumference is C = $\\pi d$. Substituting C = 44 and $\\pi$ = $\\frac{22}{7}$ gives 44 = ($\\frac{22}{7}$) * d. Solving for d gives $d = 44$ * ($\\frac{7}{22}$) = 14 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circle has an area of 49$\\pi$ $\\text{cm}^2$. What is the radius of the circle?",
+      "questionText": "A circle has an area of $49\\pi \\text{cm}^2$. What is the radius of the circle?",
       "options": [
         "49 cm",
         "24.5 cm",
@@ -76,7 +76,7 @@
         "7 cm"
       ],
       "correctAnswer": 3,
-      "explanation": "The formula for the area of a circle is A = $\\pir^2$. Substituting A = 49$\\pi$ gives 49$\\pi = \\pir^2$. Dividing by $\\pi$ gives $r^2$ = 49, so the radius r is $\\sqrt{49}$ = 7 cm."
+      "explanation": "The formula for the area of a circle is A = $\\pir^2$. Substituting A = $49 \\pi gives$ 49$\\pi = \\pir^2$. Dividing $by \\pi gives r^2$ = 49, so the radius r is $\\sqrt{49}$ = 7 cm."
     },
     {
       "type": "multiple-choice",
@@ -92,63 +92,63 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the area of a semicircle with a radius of 10 cm. Give your answer in terms of $\\pi$.",
+      "questionText": "Find the area of a semicircle with a radius of 10 cm. Give your answer in terms $of \\pi .$",
       "options": [
-        "10$\\pi$ $\\text{cm}^2$",
-        "100$\\pi$ $\\text{cm}^2$",
-        "25$\\pi$ $\\text{cm}^2$",
-        "50$\\pi$ $\\text{cm}^2$"
+        "$10\\pi \\text{cm}^2$",
+        "$100\\pi \\text{cm}^2$",
+        "$25\\pi \\text{cm}^2$",
+        "$50\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The area of a full circle is A = $\\pir^2$. For a semicircle, the area is half, so ($\\frac{1}{2}$)$\\pir^2$. Substituting r = 10 cm gives ($\\frac{1}{2}$) * $\\pi$ * $10^2$ = 50$\\pi$ $\\text{cm}^2$."
+      "explanation": "The area of a full circle is A = $\\pir^2$. For a semicircle, the area is half, so ($\\frac{1}{2}$)$\\pir^2$. Substituting r = 10 cm gives ($\\frac{1}{2}$) * $\\pi$ * $10^2$ = $50\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The arc length of a semicircle is 5$\\pi$ cm. What is the radius of the circle?",
+      "questionText": "The arc length of a semicircle is $5 \\pi cm.$ What is the radius of the circle?",
       "options": [
         "5 cm",
         "10 cm",
         "2.5 cm",
-        "5$\\pi$ cm"
+        "$5 \\pi cm$"
       ],
       "correctAnswer": 0,
-      "explanation": "A semicircle has an angle of 180°. Using the arc length formula, 5$\\pi$ = ($\\frac{180}{360}$) * 2$\\pi$r. This simplifies to 5$\\pi$ = ($\\frac{1}{2}$) * 2$\\pi$r, so 5$\\pi = \\pi$r. Therefore, r = 5 cm."
+      "explanation": "A semicircle has an angle of 180°. Using the arc length formula, $5\\pi$ = ($\\frac{180}{360}$) * $2 \\pi r.$ This simplifies to $5\\pi$ = ($\\frac{1}{2}$) * $2 \\pi r$, so 5$\\pi = \\pi$r. Therefore, r = 5 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A car wheel has a diameter of 60 cm. How far does the car travel in one full rotation of the wheel? Give your answer in terms of $\\pi$.",
+      "questionText": "A car wheel has a diameter of 60 cm. How far does the car travel in one full rotation of the wheel? Give your answer in terms $of \\pi .$",
       "options": [
-        "30$\\pi$ cm",
-        "120$\\pi$ cm",
-        "60$\\pi$ cm",
-        "900$\\pi$ cm"
+        "$30 \\pi cm$",
+        "$120 \\pi cm$",
+        "$60 \\pi cm$",
+        "$900 \\pi cm$"
       ],
       "correctAnswer": 2,
-      "explanation": "One full rotation is equal to the circumference of the wheel. The formula is C = $\\pi$d. Substituting d = 60 cm gives C = 60$\\pi$ cm."
+      "explanation": "One full rotation is equal to the circumference of the wheel. The formula is C = $\\pi d$. Substituting d = 60 cm gives C = $60 \\pi cm.$"
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the perimeter of a quarter-circle sector with a radius of 14 cm. Give your answer in terms of $\\pi$.",
+      "questionText": "Calculate the perimeter of a quarter-circle sector with a radius of 14 cm. Give your answer in terms $of \\pi .$",
       "options": [
-        "7$\\pi$ cm",
-        "(7$\\pi$ + 28) cm",
-        "14$\\pi$ cm",
-        "(14$\\pi$ + 14) cm"
+        "$7 \\pi cm$",
+        "($7\\pi$ + 28) cm",
+        "$14 \\pi cm$",
+        "($14\\pi$ + 14) cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The perimeter of a sector consists of two radii and an arc. The arc length is ($\\frac{90}{360}$) * 2 * $\\pi$ * 14 = 7$\\pi$ cm. The two radii add 2 * 14 = 28 cm. The total perimeter is 7$\\pi$ + 28 cm."
+      "explanation": "The perimeter of a sector consists of two radii and an arc. The arc length is ($\\frac{90}{360}$) * 2 * $\\pi * 14 = 7 \\pi cm.$ The two radii add 2 * 14 = 28 cm. The total perimeter is $7\\pi$ + 28 cm."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circular pizza with a diameter of 30 cm is cut into 8 equal slices. What is the area of one slice? Give your answer in terms of $\\pi$.",
+      "questionText": "A circular pizza with a diameter of 30 cm is cut into 8 equal slices. What is the area of one slice? Give your answer in terms $of \\pi .$",
       "options": [
-        "28.125$\\pi$ $\\text{cm}^2$",
-        "112.5$\\pi$ $\\text{cm}^2$",
-        "3.75$\\pi$ $\\text{cm}^2$",
-        "37.5$\\pi$ $\\text{cm}^2$"
+        "28.$125\\pi \\text{cm}^2$",
+        "112.$5\\pi \\text{cm}^2$",
+        "3.$75\\pi \\text{cm}^2$",
+        "37.$5\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The radius is half the diameter, so r = 15 cm. The total area is A = $\\pi$ * $15^2$ = 225$\\pi$ $\\text{cm}^2$. For one of 8 equal slices, the area is 225$\\pi$ / 8 = 28.125$\\pi$ $\\text{cm}^2$."
+      "explanation": "The radius is half the diameter, so r = 15 cm. The total area is A = $\\pi$ * $15^2$ = $225\\pi \\text{cm}^2$. For one of 8 equal slices, the area is $225\\pi$ / 8 = 28.$125\\pi \\text{cm}^2$."
     }
   ]
 }

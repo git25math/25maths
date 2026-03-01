@@ -37,7 +37,7 @@
         "Round $\\sqrt{19}$ to 2 d.p. and $\\pi$³ to 2 d.p. before adding.",
         "Use the full calculator display for both $\\sqrt{19}$ and $\\pi$³ and only round the final answer.",
         "Use $\\pi$ ≈ 3.14 and a rounded value for $\\sqrt{19}$.",
-        "Calculate $\\sqrt{19}$, round it, then add the value from the $\\pi$ button cubed."
+        "Calculate $\\sqrt{19}$, round it, then add the value from $the \\pi button$ cubed."
       ],
       "correctAnswer": 1,
       "explanation": "Rounding intermediate results introduces errors that accumulate. To maintain accuracy, use the full values stored in the calculator for as long as possible and only round the final result to the required degree of accuracy."

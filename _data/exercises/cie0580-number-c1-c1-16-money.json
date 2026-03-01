@@ -16,7 +16,7 @@
         "$68"
       ],
       "correctAnswer": 1,
-      "explanation": "To find 15% of a number, multiply the number by 0.15. So, ${80 * 0.15 = }$12."
+      "explanation": "To find 15% of a number, multiply the number by 0.15. So, $80 * 0.15 = $12."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "$108"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find 10% of ${120, which is }$12. Then, add this to the original amount: ${120 + }$12 = ${132. Alternatively, multiply }$120 by 1.10."
+      "explanation": "First, find 10% of $120, which is $12. Then, add this to the original amount: $120 + $12 = $132. Alternatively, multiply $120 by 1.10."
     },
     {
       "type": "multiple-choice",
@@ -40,11 +40,11 @@
         "$37.50"
       ],
       "correctAnswer": 1,
-      "explanation": "The discount is 25% of ${40, which is 0.25 * }$40 = ${10. The sale price is the original price minus the discount: }$40 - ${10 = }$30."
+      "explanation": "The discount is 25% of $40, which is 0.25 * $40 = $10. The sale price is the original price minus the discount: $40 - $10 = $30."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A shopkeeper buys a book for ${15 and sells it for }$20. What is the profit?",
+      "questionText": "A shopkeeper buys a book for $15 and sells it for $20. What is the profit?",
       "options": [
         "$5",
         "$15",
@@ -52,11 +52,11 @@
         "$35"
       ],
       "correctAnswer": 0,
-      "explanation": "Profit is the selling price minus the cost price. So, ${20 - }$15 = $5."
+      "explanation": "Profit is the selling price minus the cost price. So, $20 - $15 = $5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Using the previous question's figures (cost ${15, selling price }$20), what is the profit percentage on the cost price?",
+      "questionText": "Using the previous question's figures (cost $15, selling price $20), what is the profit percentage on the cost price?",
       "options": [
         "25%",
         "33.3%",
@@ -64,7 +64,7 @@
         "5%"
       ],
       "correctAnswer": 1,
-      "explanation": "The profit is ${5 and the cost price is }$15. The profit percentage is (Profit / Cost Price) * 100 = (${5 / }$15) * 100 = 33.3...%."
+      "explanation": "The profit is $5 and the cost price is $15. The profit percentage is (Profit / Cost Price) * 100 = ($5 / $15) * 100 = 33.3...%."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "$800"
       ],
       "correctAnswer": 2,
-      "explanation": "A 20% discount means the sale price is 80% of the original price. So, ${720 = 80% of Original Price. To find the original price, calculate }\\frac{720}{0}$.80 = $900."
+      "explanation": "A 20% discount means the sale price is 80% of the original price. So, $720 = 80% of Original Price. To find the original price, calculate $\\frac{720}{0.80} = 900$."
     },
     {
       "type": "multiple-choice",
@@ -112,11 +112,11 @@
         "$64.80"
       ],
       "correctAnswer": 3,
-      "explanation": "First, calculate the service charge: 8% of ${60 is 0.08 * }$60 = ${4.80. Add this to the original bill: }$60 + ${4.80 = }$64.80."
+      "explanation": "First, calculate the service charge: 8% of $60 is 0.08 * $60 = $4.80. Add this to the original bill: $60 + $4.80 = $64.80."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which is the better value for money: a 2-litre bottle of water for ${3.20 or a 3-litre bottle for }$4.50?",
+      "questionText": "Which is the better value for money: a 2-litre bottle of water for $3.20 or a 3-litre bottle for $4.50?",
       "options": [
         "The 2-litre bottle",
         "The 3-litre bottle",
@@ -124,7 +124,7 @@
         "It cannot be determined"
       ],
       "correctAnswer": 1,
-      "explanation": "To compare, find the price per litre for each. 2L bottle: ${3.20 / 2 = }$1.60 per litre. 3L bottle: ${4.50 / 3 = }$1.50 per litre. The 3-litre bottle is cheaper per litre, so it is better value."
+      "explanation": "To compare, find the price per litre for each. 2L bottle: $3.20 / 2 = $1.60 per litre. 3L bottle: $4.50 / 3 = $1.50 per litre. The 3-litre bottle is cheaper per litre, so it is better value."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "$7"
       ],
       "correctAnswer": 2,
-      "explanation": "To estimate, we can round ${1.99 up to }$2. The estimated cost is then 3 * ${2 = }$6. The exact cost is ${5.97, so }$6 is the closest estimate."
+      "explanation": "To estimate, we can round $1.99 up to $2. The estimated cost is then 3 * $2 = $6. The exact cost is $5.97, so $6 is the closest estimate."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "$325"
       ],
       "correctAnswer": 2,
-      "explanation": "The price increase is 5% of ${320, which is 0.05 * }$320 = ${16. The new price is the original price plus the increase: }$320 + ${16 = }$336."
+      "explanation": "The price increase is 5% of $320, which is 0.05 * $320 = $16. The new price is the original price plus the increase: $320 + $16 = $336."
     }
   ]
 }

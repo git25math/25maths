@@ -23,7 +23,7 @@
       "questionText": "Factorise completely 18$x^2$y - 24$xy^3$.",
       "options": [
         "6xy(3x - 4$y^2$)",
-        "6y(3$x^2$ - 4$xy^2$)",
+        "6y(3$x^2 - 4xy^2$)",
         "xy(18x - 24$y^2$)",
         "6x(3xy - 4$y^3$)"
       ],

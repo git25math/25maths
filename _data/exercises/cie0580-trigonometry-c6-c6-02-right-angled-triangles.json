@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite angle $\\theta$ is 5 cm and the hypotenuse is 13 cm. What is the value of sin($\\theta$)?",
+      "questionText": "In a right-angled triangle, the side opposite $angle \\theta is$ 5 cm and the hypotenuse is 13 cm. What is the value of sin($\\theta$)?",
       "options": [
         "$\\frac{5}{13}$",
         "$\\frac{12}{13}$",
@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side adjacent to angle $\\theta$ is 8 cm and the hypotenuse is 17 cm. What is the value of cos($\\theta$)?",
+      "questionText": "In a right-angled triangle, the side adjacent to $angle \\theta is$ 8 cm and the hypotenuse is 17 cm. What is the value of cos($\\theta$)?",
       "options": [
         "$\\frac{15}{17}$",
         "$\\frac{8}{17}$",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite angle $\\theta$ is 9 cm and the adjacent side is 40 cm. What is the value of tan($\\theta$)?",
+      "questionText": "In a right-angled triangle, the side opposite $angle \\theta is$ 9 cm and the adjacent side is 40 cm. What is the value of tan($\\theta$)?",
       "options": [
         "$\\frac{9}{41}$",
         "$\\frac{40}{41}$",

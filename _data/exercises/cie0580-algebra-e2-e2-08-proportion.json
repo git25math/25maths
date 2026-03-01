@@ -46,13 +46,13 @@
       "type": "multiple-choice",
       "questionText": "Divide $132 in the ratio 3:8.",
       "options": [
-        "${36 and }$96",
-        "${33 and }$99",
-        "${44 and }$88",
-        "${30 and }$102"
+        "$36 and $96",
+        "$33 and $99",
+        "$44 and $88",
+        "$30 and $102"
       ],
       "correctAnswer": 0,
-      "explanation": "The total number of parts is 3 + 8 = 11. The value of one part is ${132 / 11 = }$12. The shares are 3 * ${12 = }$36 and 8 * ${12 = }$96."
+      "explanation": "The total number of parts is 3 + 8 = 11. The value of one part is $132 / 11 = $12. The shares are 3 * $12 = $36 and 8 * $12 = $96."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost C of a taxi journey is directly proportional to the distance d travelled. A journey of 8 km costs ${18. How far can you travel for }$45?",
+      "questionText": "The cost C of a taxi journey is directly proportional to the distance d travelled. A journey of 8 km costs $18. How far can you travel for $45?",
       "options": [
         "20 km",
         "101.25 km",
@@ -124,7 +124,7 @@
         "25 km"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is C = kd. From the data, k = $\\frac{18}{8}$ = 2.25 ${/km. To find the distance for }$45, calculate d = C/k = $\\frac{45}{2}$.25 = 20 km."
+      "explanation": "The relationship is C = kd. From the data, k = $\\frac{18}{8}$ = 2.25 ${/km. To find the distance for $45, calculate d = C/k = $\\frac{45}{2}$.25 = 20 km."
     },
     {
       "type": "multiple-choice",

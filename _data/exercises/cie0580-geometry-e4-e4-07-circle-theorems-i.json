@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A, B and C are points on a circle. Angles subtended by the arc AC at the circumference are 54° and ${x}$°. What is the value of ${x}$?",
+      "questionText": "A, B and C are points on a circle. Angles subtended by the arc AC at the circumference are 54° and $x$°. What is the value of $x$?",
       "options": [
         "54",
         "27",
@@ -52,7 +52,7 @@
         "126"
       ],
       "correctAnswer": 0,
-      "explanation": "Angles subtended by the same arc at the circumference are equal (angles in the same segment are equal). Therefore, ${x = 54}$."
+      "explanation": "Angles subtended by the same arc at the circumference are equal (angles in the same segment are equal). Therefore, $x = 54$."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In cyclic quadrilateral WXYZ, $\\angle WXY = 95°$ and $\\angle WZY = (x+15)°$. Find the value of ${x}$.",
+      "questionText": "In cyclic quadrilateral WXYZ, $\\angle WXY = 95°$ and $\\angle WZY = (x+15)°$. Find the value of $x$.",
       "options": [
         "80",
         "70",
@@ -148,7 +148,7 @@
         "100"
       ],
       "correctAnswer": 1,
-      "explanation": "Opposite angles of a cyclic quadrilateral sum to 180°. So, ${95 + (x + 15) = 180}$. This simplifies to ${x + 110 = 180}${, which means }${x = 70}$."
+      "explanation": "Opposite angles of a cyclic quadrilateral sum to 180°. So, $95 + (x + 15) = 180$. This simplifies to $x + 110 = 180${, which means }$x = 70$."
     }
   ]
 }

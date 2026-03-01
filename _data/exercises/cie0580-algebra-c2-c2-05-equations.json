@@ -124,7 +124,7 @@
         "$n = 9$"
       ],
       "correctAnswer": 0,
-      "explanation": "Expand the brackets to get $5n - 10 = 2n + 8. Move the terms to get $3n = 18$. Divide by 3 to find $n = 6$."
+      "explanation": "Expand the brackets to get $5n - 10 = 2n + 8$. Move the terms to get $3n = 18$. Divide by 3 to find $n = 6$."
     },
     {
       "type": "multiple-choice",

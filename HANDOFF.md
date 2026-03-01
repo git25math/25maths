@@ -15,7 +15,7 @@
 部署 ████████████ 100%  (Jekyll 构建，GitHub Pages + Cloudflare)
 会员 ████████████  98%  (认证/支付/下载/Engagement/双语/E2E — 剩余:成就阈值审查+等级统一)
 双语 ████████████ 100%  (toggle 基础 + 静态覆盖 + JS t() 动态翻译)
-LaTeX ██████████░░  90%  (Phase 1-3 完成，Phase 4 KaTeX 浏览器渲染验证待做)
+LaTeX ████████████  99%  (Phase 1-4 完成，仅剩浏览器端渲染验证)
 ```
 
 ### Git 提交记录
@@ -40,6 +40,7 @@ LaTeX ██████████░░  90%  (Phase 1-3 完成，Phase 4 KaT
 | `fb85ac8` | **Last-mile delivery** — releases.json 数据修复 + member_downloads.js + membership UI |
 | `7e8b4b1` | **E2E 测试通过** — webhook→24 entitlements→24 签名 URL→PDF，26/26 PASS |
 | `9cb4c59` | **LaTeX Phase 3** — 批量 KaTeX 转换（161 JSON，4,574 新表达式：分数/角度/幂次/根号/希腊/代数） |
+| (待提交) | **LaTeX Phase 4** — KaTeX 质量保证：102 个 JSON 文件 ~1,094 处修复（合并伪影/嵌套定界符/断裂表达式/缺失定界符），4 个自动化脚本 + 人工逐文件审查 |
 
 ---
 
@@ -151,8 +152,8 @@ LaTeX ██████████░░  90%  (Phase 1-3 完成，Phase 4 KaT
 | # | 任务 | 状态 |
 |---|------|------|
 | ~~3~~ | ~~批量 KaTeX 转换（分数/角度/幂次/根号/希腊/代数）~~ | ✅ 完成（`9cb4c59`，161 文件，4,574 新转换） |
-| 4 | ~86 处边缘 case 人工复查（负幂 Unicode、嵌套 sqrt、括号因式） | 待做 |
-| 5 | KaTeX 浏览器端渲染验证 | 待做 |
+| ~~4~~ | ~~边缘 case 修复（合并伪影/嵌套定界符/断裂表达式/缺失 $）~~ | ✅ 完成（102 文件，~1,094 处修复，4 个自动化脚本 + 人工审查） |
+| 5 | KaTeX 浏览器端渲染验证（抽样检查关键题型） | 待做 |
 
 ### P2 — Edexcel 4MA1 补齐
 
@@ -188,6 +189,7 @@ LaTeX ██████████░░  90%  (Phase 1-3 完成，Phase 4 KaT
 - ✅ 练习引擎（202 题 + session/attempt API + 成就触发）
 - ✅ LaTeX 数学渲染 Phase 1-2（上标/根号/分数，278 个 JSON）
 - ✅ LaTeX Phase 3 — 批量 KaTeX 转换（161 JSON，4,574 新表达式，总计 8,731 处 LaTeX）
+- ✅ LaTeX Phase 4 — KaTeX 质量保证（102 JSON，~1,094 处修复：547 合并伪影 + 218 断裂模式 + 329 嵌套定界符 + ~18 人工修复，0 剩余 LaTeX 错误）
 - ✅ 会员 JS/HTML 双语文案补全（6 文件，~60 处翻译）
 - ✅ 账户设置页（Profile CRUD API）
 - ✅ Last-mile 会员交付（releases.json 数据修复 + 下载 UI + Worker proxy 部署）

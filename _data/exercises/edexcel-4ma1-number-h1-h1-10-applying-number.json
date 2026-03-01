@@ -124,7 +124,7 @@
         "5 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the volume using the formula Volume = Mass ÷ Density. Volume = 540 g ÷ 4.5 g/$\\text{cm}^3$ = 120 $\\text{cm}^3$. The volume of a cuboid is base area × height. So, Height = Volume ÷ Base Area. Height = 120 $\\text{cm}^3$ ÷ (4 cm × 5 cm) = 120 $\\text{cm}^3$ ÷ 20 $\\text{cm}^2$ = 6 cm."
+      "explanation": "First, find the volume using the formula Volume = Mass ÷ Density. Volume = 540 g ÷ 4.5 g/$\\text{cm}^3 = 120 \\text{cm}^3$. The volume of a cuboid is base area × height. So, Height = Volume ÷ Base Area. Height = 120 $\\text{cm}^3$ ÷ (4 cm × 5 cm) = 120 $\\text{cm}^3$ ÷ 20 $\\text{cm}^2$ = 6 cm."
     },
     {
       "type": "multiple-choice",

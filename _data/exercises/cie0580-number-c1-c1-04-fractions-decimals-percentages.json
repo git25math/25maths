@@ -124,7 +124,7 @@
         "$0.90"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the percentage of a quantity, convert the percentage to a decimal and multiply. 15% = 0.15. Then, 0.15 × ${60 = }$9."
+      "explanation": "To find the percentage of a quantity, convert the percentage to a decimal and multiply. 15% = 0.15. Then, 0.15 × $60 = $9."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Work out 3 $\\frac{1}{4}$ - 1 $\\frac{1}{2}$.",
+      "questionText": "Work out 3 $\\frac{1}{4} - 1 \\frac{1}{2}$.",
       "options": [
         "2 $\\frac{1}{4}$",
         "1 $\\frac{1}{4}$",
@@ -148,7 +148,7 @@
         "1 $\\frac{3}{4}$"
       ],
       "correctAnswer": 3,
-      "explanation": "Convert to improper fractions: 3 $\\frac{1}{4}$ = $\\frac{13}{4}$ and 1 $\\frac{1}{2}$ = $\\frac{3}{2}$. Find a common denominator: $\\frac{3}{2}$ = $\\frac{6}{4}$. Then subtract: $\\frac{13}{4}$ - $\\frac{6}{4}$ = $\\frac{7}{4}$. Convert back to a mixed number: $\\frac{7}{4}$ = 1 $\\frac{3}{4}$."
+      "explanation": "Convert to improper fractions: 3 $\\frac{1}{4}$ = $\\frac{13}{4}$ and 1 $\\frac{1}{2}$ = $\\frac{3}{2}$. Find a common denominator: $\\frac{3}{2}$ = $\\frac{6}{4}$. Then subtract: $\\frac{13}{4}$ - $\\frac{6}{4}$ = $\\frac{7}{4}$. Convert back to a mixed number: $\\frac{7}{4} = 1 \\frac{3}{4}$."
     }
   ]
 }

@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A price increases from ${50 to }$55. What is the percentage increase?",
+      "questionText": "A price increases from $50 to $55. What is the percentage increase?",
       "options": [
         "5%",
         "10%",
@@ -88,7 +88,7 @@
         "9.1%"
       ],
       "correctAnswer": 1,
-      "explanation": "The increase is ${55 - }$50 = $5. The percentage increase is (Increase / Original Price) * 100. So, ($\\frac{5}{50}$) * 100 = 10%."
+      "explanation": "The increase is $55 - $50 = $5. The percentage increase is (Increase / Original Price) * 100. So, ($\\frac{5}{50}$) * 100 = 10%."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "$72"
       ],
       "correctAnswer": 1,
-      "explanation": "The discounted price (${18) is 75% (100% - 25%) of the original price. So, the original price is }\\frac{18}{0}$.75 = $24."
+      "explanation": "The discounted price ($18) is 75% (100% - 25%) of the original price. So, the original price is $\\frac{18}{0.75} = 24$."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A phone's price is reduced from ${400 to }$340. What is the percentage decrease?",
+      "questionText": "A phone's price is reduced from $400 to $340. What is the percentage decrease?",
       "options": [
         "60%",
         "15%",
@@ -136,7 +136,7 @@
         "85%"
       ],
       "correctAnswer": 1,
-      "explanation": "The decrease in price is ${400 - }$340 = $60. The percentage decrease is (Decrease / Original Price) * 100. So, ($\\frac{60}{400}$) * 100 = 15%."
+      "explanation": "The decrease in price is $400 - $340 = $60. The percentage decrease is (Decrease / Original Price) * 100. So, ($\\frac{60}{400}$) * 100 = 15%."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "$700"
       ],
       "correctAnswer": 2,
-      "explanation": "First, calculate the interest earned: 4% of ${500 is 0.04 * 500 = }$20. Then, add the interest to the original investment: ${500 + }$20 = $520."
+      "explanation": "First, calculate the interest earned: 4% of $500 is 0.04 * 500 = $20. Then, add the interest to the original investment: $500 + $20 = $520."
     }
   ]
 }

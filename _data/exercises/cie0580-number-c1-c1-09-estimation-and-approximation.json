@@ -52,7 +52,7 @@
         "$14000"
       ],
       "correctAnswer": 1,
-      "explanation": "Round the ticket price to ${50 and the number of people to 300. The estimated total is 50 x 300 = }$15000."
+      "explanation": "Round the ticket price to $50 and the number of people to 300. The estimated total is 50 x 300 = $15000."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "$90"
       ],
       "correctAnswer": 2,
-      "explanation": "Round the distance to 40 km and the cost per km to ${2. The estimated total cost is 40 x }$2 = $80."
+      "explanation": "Round the distance to 40 km and the cost per km to $2. The estimated total cost is 40 x $2 = $80."
     },
     {
       "type": "multiple-choice",

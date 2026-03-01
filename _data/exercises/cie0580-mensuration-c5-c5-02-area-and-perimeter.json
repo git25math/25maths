@@ -28,7 +28,7 @@
         "36 m"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a rectangle is calculated as length × width. So, the area is 9 m × 4 $m = 36$ $\\text{m}^2$."
+      "explanation": "The area of a rectangle is calculated as length × width. So, the area is 9 m × 4 $m = 36 \\text{m}^2$."
     },
     {
       "type": "multiple-choice",
@@ -44,27 +44,27 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the circumference of a circle with a radius of 5 cm? Give your answer in terms of $\\pi$.",
+      "questionText": "What is the circumference of a circle with a radius of 5 cm? Give your answer in terms $of \\pi .$",
       "options": [
-        "5$\\pi$ cm",
-        "25$\\pi$ cm",
-        "10$\\pi$ cm",
-        "10$\\pi$ $\\text{cm}^2$"
+        "$5 \\pi cm$",
+        "$25 \\pi cm$",
+        "$10 \\pi cm$",
+        "$10\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The circumference of a circle is calculated as 2 × $\\pi$ × radius. So, the circumference is 2 × $\\pi$ × 5 cm = 10$\\pi$ cm."
+      "explanation": "The circumference of a circle is calculated as 2 × $\\pi$ × radius. So, the circumference is 2 × $\\pi$ × 5 cm = $10 \\pi cm.$"
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the area of a circle with a diameter of 12 cm. Give your answer in terms of $\\pi$.",
+      "questionText": "Calculate the area of a circle with a diameter of 12 cm. Give your answer in terms $of \\pi .$",
       "options": [
-        "144$\\pi$ $\\text{cm}^2$",
-        "12$\\pi$ $\\text{cm}^2$",
-        "36$\\pi$ $\\text{cm}^2$",
-        "24$\\pi$ $\\text{cm}^2$"
+        "$144\\pi \\text{cm}^2$",
+        "$12\\pi \\text{cm}^2$",
+        "$36\\pi \\text{cm}^2$",
+        "$24\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the radius from the diameter (radius = diameter / 2), which is 12 cm / 2 = 6 cm. The area of a circle is $\\pi \\times radius^2$. So, the area is $\\pi \\times (6 cm)^2$ = 36$\\pi$ $\\text{cm}^2$."
+      "explanation": "First, find the radius from the diameter (radius = diameter / 2), which is 12 cm / 2 = 6 cm. The area of a circle is $\\pi \\times radius^2$. So, the area is $\\pi \\times (6 cm)^2$ = $36\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "144 $\\text{m}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the side length by dividing the perimeter by 4: 36 m / 4 = 9 m. The area of a square is side length squared. So, the area is $(9 m)^2$ = 81 $\\text{m}^2$."
+      "explanation": "First, find the side length by dividing the perimeter by 4: 36 m / 4 = 9 m. The area of a square is side length squared. So, the area is $(9 m)^2 = 81 \\text{m}^2$."
     },
     {
       "type": "multiple-choice",

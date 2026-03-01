@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given that x > 0 and $x^2 + 15^2 = 17^2$, find the value of x.",
+      "questionText": "Given that $x > 0$ and $x^2 + 15^2 = 17^2$, find the value of x.",
       "options": [
         "8",
         "2",
@@ -136,7 +136,7 @@
         "64"
       ],
       "correctAnswer": 0,
-      "explanation": "Rearrange the equation to find $x^2$. $x^2 = 17^2 - 15^2$ = 289 - 225 = 64. Since x > 0, x is the square root of 64, which is 8."
+      "explanation": "Rearrange the equation to find $x^2$. $x^2 = 17^2 - 15^2$ = 289 - 225 = 64. Since $x > 0$, x is the square root of 64, which is 8."
     },
     {
       "type": "multiple-choice",

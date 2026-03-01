@@ -46,25 +46,25 @@
       "type": "multiple-choice",
       "questionText": "The capacity of a jug is c litres. $c = 2.4$ correct to 1 decimal place. Which of the following represents the error interval for c?",
       "options": [
-        "2.35 $\\leq$ c < 2.45",
-        "2.3 $\\leq$ c < 2.5",
-        "2.35 < c $\\leq$ 2.45",
-        "2.4 $\\leq$ c < 2.5"
+        "$2.35 \\leq c$ < 2.45",
+        "$2.3 \\leq c$ < 2.5",
+        "2.35 < $c \\leq 2.45$",
+        "$2.4 \\leq c$ < 2.5"
       ],
       "correctAnswer": 0,
-      "explanation": "The measurement is correct to 1 decimal place (0.1). The tolerance is half of this, ±0.05. The lower bound is 2.4 - 0.05 = 2.35. The upper bound is 2.4 + 0.05 = 2.45. The value of c can be exactly 2.35 but must be less than 2.45, so the interval is 2.35 $\\leq$ c < 2.45."
+      "explanation": "The measurement is correct to 1 decimal place (0.1). The tolerance is half of this, ±0.05. The lower bound is 2.4 - 0.05 = 2.35. The upper bound is 2.4 + 0.05 = 2.45. The value of c can be exactly 2.35 but must be less than 2.45, so the interval is $2.35 \\leq c$ < 2.45."
     },
     {
       "type": "multiple-choice",
       "questionText": "A number x is truncated to 1 decimal place, giving 7.2. What is the error interval for x?",
       "options": [
-        "7.15 $\\leq$ x < 7.25",
-        "7.2 $\\leq$ x < 7.3",
-        "7.2 < x < 7.3",
-        "7.1 $\\leq$ x < 7.2"
+        "$7.15 \\leq x$ < 7.25",
+        "$7.2 \\leq x$ < 7.3",
+        "$7.2 < x < 7.3$",
+        "$7.1 \\leq x$ < 7.2"
       ],
       "correctAnswer": 1,
-      "explanation": "Truncation means cutting off the digits without rounding. So any number from 7.200... up to (but not including) 7.300... would be truncated to 7.2. The error interval is therefore 7.2 $\\leq$ x < 7.3."
+      "explanation": "Truncation means cutting off the digits without rounding. So any number from 7.200... up to (but not including) 7.300... would be truncated to 7.2. The error interval is therefore $7.2 \\leq x$ < 7.3."
     },
     {
       "type": "multiple-choice",

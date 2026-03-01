@@ -10,22 +10,22 @@
       "type": "multiple-choice",
       "questionText": "Solve the inequality 3x - 4 > 11.",
       "options": [
-        "x > 5",
-        "x < 5",
+        "$x > 5$",
+        "$x < 5$",
         "x > $\\frac{7}{3}$",
         "x < $\\frac{7}{3}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Add 4 to both sides: 3x > 15. Then, divide by 3: x > 5."
+      "explanation": "Add 4 to both sides: $3x > 15.$ Then, divide by 3: $x > 5.$"
     },
     {
       "type": "multiple-choice",
       "questionText": "Solve the inequality 7 - 2x <= 1.",
       "options": [
-        "x <= 3",
-        "x >= -3",
-        "x <= -3",
-        "x >= 3"
+        "$x <= 3$",
+        "$x >= -3$",
+        "$x <= -3$",
+        "$x >= 3$"
       ],
       "correctAnswer": 3,
       "explanation": "Subtract 7 from both sides: -2x <= -6. Divide by -2 and reverse the inequality sign: x >= 3."
@@ -40,23 +40,23 @@
         "5.2"
       ],
       "correctAnswer": 0,
-      "explanation": "Solve the inequality: 5x < 26, so x < 5.2. The largest integer less than 5.2 is 5."
+      "explanation": "Solve the inequality: $5x < 26$, so $x < 5.2$. The largest integer less than 5.2 is 5."
     },
     {
       "type": "multiple-choice",
       "questionText": "Solve the inequality 4(x - 3) >= 8.",
       "options": [
-        "x >= 5",
-        "x >= 2",
-        "x <= 5",
-        "x >= -1"
+        "$x >= 5$",
+        "$x >= 2$",
+        "$x <= 5$",
+        "$x >= -1$"
       ],
       "correctAnswer": 0,
       "explanation": "Expand the bracket: 4x - 12 >= 8. Add 12 to both sides: 4x >= 20. Divide by 4: x >= 5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of the following represents the solution to -3 <= x < 2?",
+      "questionText": "Which of the following represents the solution to -3 <= $x < 2$?",
       "options": [
         "Integers -3, -2, -1, 0, 1",
         "Integers -2, -1, 0, 1",
@@ -70,10 +70,10 @@
       "type": "multiple-choice",
       "questionText": "Solve the compound inequality -1 < 2x + 1 <= 7.",
       "options": [
-        "-1 < x <= 3",
-        "-1 <= x < 3",
-        "0 < x <= 4",
-        "-2 < x <= 6"
+        "$-1 < x <= 3$",
+        "$-1 <= x < 3$",
+        "$0 < x <= 4$",
+        "$-2 < x <= 6$"
       ],
       "correctAnswer": 0,
       "explanation": "Subtract 1 from all parts: -2 < 2x <= 6. Then, divide all parts by 2: -1 < x <= 3."
@@ -106,22 +106,22 @@
       "type": "multiple-choice",
       "questionText": "Solve the inequality $x^2$ > 9.",
       "options": [
-        "x > 3",
+        "$x > 3$",
         "x > 3 or x < -3",
-        "x < -3",
-        "-3 < x < 3"
+        "$x < -3$",
+        "$-3 < x < 3$"
       ],
       "correctAnswer": 1,
-      "explanation": "The critical values are the solutions to $x^2$ = 9, which are $x = 3$ and $x = -3$. Testing the regions outside these values (e.g., $x = 4$ or $x = -4$) shows that the inequality holds for x > 3 or x < -3."
+      "explanation": "The critical values are the solutions to $x^2$ = 9, which are $x = 3$ and $x = -3$. Testing the regions outside these values (e.g., $x = 4$ or $x = -4$) shows that the inequality holds for $x > 3$ or $x < -3.$"
     },
     {
       "type": "multiple-choice",
       "questionText": "Solve the inequality (x-1)(x-4) < 0.",
       "options": [
         "x < 1 or x > 4",
-        "1 < x < 4",
+        "$1 < x < 4$",
         "x < -4 or x > -1",
-        "-1 < x < -4"
+        "$-1 < x < -4$"
       ],
       "correctAnswer": 1,
       "explanation": "The critical values are $x = 1$ and $x = 4$. For the product to be negative, one factor must be positive and the other negative. This occurs when x is between 1 and 4."
@@ -130,22 +130,22 @@
       "type": "multiple-choice",
       "questionText": "Solve the inequality 5 - x/2 > 4.",
       "options": [
-        "x > 2",
+        "$x > 2$",
         "x < $\\frac{1}{2}$",
-        "x < 2",
-        "x > -2"
+        "$x < 2$",
+        "$x > -2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Subtract 5 from both sides: -x/2 > -1. Multiply by -2 and reverse the inequality sign: x < 2."
+      "explanation": "Subtract 5 from both sides: -x/2 > -1. Multiply by -2 and reverse the inequality sign: $x < 2.$"
     },
     {
       "type": "multiple-choice",
       "questionText": "Solve the inequality $x^2$ <= 25.",
       "options": [
-        "x <= 5",
-        "x <= -5",
+        "$x <= 5$",
+        "$x <= -5$",
         "x <= 5 or x >= -5",
-        "-5 <= x <= 5"
+        "$-5 <= x <= 5$"
       ],
       "correctAnswer": 3,
       "explanation": "The critical values are $x = 5$ and $x = -5$. The inequality $x^2$ <= 25 holds for all values of x between and including -5 and 5."

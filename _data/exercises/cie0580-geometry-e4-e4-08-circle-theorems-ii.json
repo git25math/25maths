@@ -52,7 +52,7 @@
         "$x = 0.67$"
       ],
       "correctAnswer": 0,
-      "explanation": "The lengths of two tangents from an external point to a circle are equal. Therefore, $x + 3 = 2x - 5. Solving this equation gives $x = 8$."
+      "explanation": "The lengths of two tangents from an external point to a circle are equal. Therefore, $x + 3 = 2x - 5$. Solving this equation gives $x = 8$."
     },
     {
       "type": "multiple-choice",

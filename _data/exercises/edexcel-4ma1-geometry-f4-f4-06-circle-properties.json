@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circle has a radius of ${r}$. Another circle has a radius of ${2r}$. How many times larger is the circumference of the second circle compared to the first?",
+      "questionText": "A circle has a radius of $r$. Another circle has a radius of $2r$. How many times larger is the circumference of the second circle compared to the first?",
       "options": [
         "1 time",
         "2 times",

@@ -64,7 +64,7 @@
         "59°"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the angle of elevation be $\\theta$. We have the opposite side (height = 6m) and the hypotenuse (ramp length = 10m). So, sin($\\theta$) = opposite/hypotenuse = $\\frac{6}{10}$ = 0.6. Using a calculator, $\\theta$ = arcsin(0.6) ≈ 36.86°, which is 37° to the nearest degree."
+      "explanation": "Let the angle of elevation $be \\theta .$ We have the opposite side (height = 6m) and the hypotenuse (ramp length = 10m). So, sin($\\theta$) = opposite/hypotenuse = $\\frac{6}{10}$ = 0.6. Using a calculator, $\\theta$ = arcsin(0.6) ≈ 36.86°, which is 37° to the nearest degree."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the angle is $\\theta$. If sin($\\theta$) = 0.8, what is cos($\\theta$)?",
+      "questionText": "In a right-angled triangle, the angle $is \\theta .$ If sin($\\theta$) = 0.8, what is cos($\\theta$)?",
       "options": [
         "0.2",
         "0.6",
@@ -148,7 +148,7 @@
         "1.0"
       ],
       "correctAnswer": 1,
-      "explanation": "Using the identity $sin^2$($\\theta$) + $cos^2$($\\theta$) = 1. We have $(0.8)^2 + cos^2$($\\theta$) = 1. So, 0.64 + $cos^2$($\\theta$) = 1. This means $cos^2$($\\theta$) = 1 - 0.64 = 0.36. Therefore, cos($\\theta$) = $\\sqrt{0.36}$ = 0.6 (since $\\theta$ is an angle in a triangle, cos($\\theta$) must be positive)."
+      "explanation": "Using the identity $sin^2$($\\theta$) + $cos^2$($\\theta$) = 1. We have $(0.8)^2 + cos^2$($\\theta$) = 1. So, 0.64 + $cos^2$($\\theta$) = 1. This means $cos^2$($\\theta$) = 1 - 0.64 = 0.36. Therefore, cos($\\theta$) = $\\sqrt{0.36}$ = 0.6 ($since \\theta is$ an angle in a triangle, cos($\\theta$) must be positive)."
     }
   ]
 }

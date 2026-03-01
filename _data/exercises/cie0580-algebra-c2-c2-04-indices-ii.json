@@ -136,7 +136,7 @@
         "$c^4$"
       ],
       "correctAnswer": 0,
-      "explanation": "First, simplify the numerator: 4$c^5$ × 3$c^2$ = 12$c^7$. Then, divide by the denominator: 12$c^7$ / 6$c^3$ = 2$c^4$."
+      "explanation": "First, simplify the numerator: 4$c^5$ × 3$c^2 = 12c^7$. Then, divide by the denominator: 12$c^7 / 6c^3 = 2c^4$."
     },
     {
       "type": "multiple-choice",

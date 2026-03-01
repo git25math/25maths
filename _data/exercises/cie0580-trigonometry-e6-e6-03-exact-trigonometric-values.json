@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "If sin(x) = $\\sqrt{3}/2$ for 0° < x < 90°, what is the value of x?",
+      "questionText": "If sin(x) = $\\sqrt{3}/2$ for 0° < $x < 90$°, what is the value of x?",
       "options": [
         "30°",
         "45°",

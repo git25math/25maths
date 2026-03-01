@@ -32,51 +32,51 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the area of a semicircle with a radius of 6 cm. Leave your answer in terms of $\\pi$.",
+      "questionText": "Calculate the area of a semicircle with a radius of 6 cm. Leave your answer in terms $of \\pi .$",
       "options": [
-        "36$\\pi$ $\\text{cm}^2$",
-        "18$\\pi$ $\\text{cm}^2$",
-        "12$\\pi$ $\\text{cm}^2$",
-        "6$\\pi$ $\\text{cm}^2$"
+        "$36\\pi \\text{cm}^2$",
+        "$18\\pi \\text{cm}^2$",
+        "$12\\pi \\text{cm}^2$",
+        "$6\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a full circle is $\\pir^2$. The area of a semicircle is half of that. Area = ($\\frac{1}{2}$) × $\\pi \\times 6^2$ = ($\\frac{1}{2}$) × 36$\\pi$ = 18$\\pi$ $\\text{cm}^2$."
+      "explanation": "The area of a full circle is $\\pir^2$. The area of a semicircle is half of that. Area = ($\\frac{1}{2}$) × $\\pi \\times 6^2$ = ($\\frac{1}{2}$) × $36\\pi$ = $18\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the area of a quarter circle with a radius of 8 cm. Leave your answer in terms of $\\pi$.",
+      "questionText": "Find the area of a quarter circle with a radius of 8 cm. Leave your answer in terms $of \\pi .$",
       "options": [
-        "64$\\pi$ $\\text{cm}^2$",
-        "32$\\pi$ $\\text{cm}^2$",
-        "16$\\pi$ $\\text{cm}^2$",
-        "8$\\pi$ $\\text{cm}^2$"
+        "$64\\pi \\text{cm}^2$",
+        "$32\\pi \\text{cm}^2$",
+        "$16\\pi \\text{cm}^2$",
+        "$8\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a quarter circle is one fourth of the area of a full circle. Area = ($\\frac{1}{4}$) × $\\pi \\times 8^2$ = ($\\frac{1}{4}$) × 64$\\pi$ = 16$\\pi$ $\\text{cm}^2$."
+      "explanation": "The area of a quarter circle is one fourth of the area of a full circle. Area = ($\\frac{1}{4}$) × $\\pi \\times 8^2$ = ($\\frac{1}{4}$) × $64\\pi$ = $16\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A circular ring (annulus) has an outer radius of 10 cm and an inner radius of 6 cm. What is the area of the ring? Leave your answer in terms of $\\pi$.",
+      "questionText": "A circular ring (annulus) has an outer radius of 10 cm and an inner radius of 6 cm. What is the area of the ring? Leave your answer in terms $of \\pi .$",
       "options": [
-        "16$\\pi$ $\\text{cm}^2$",
-        "100$\\pi$ $\\text{cm}^2$",
-        "36$\\pi$ $\\text{cm}^2$",
-        "64$\\pi$ $\\text{cm}^2$"
+        "$16\\pi \\text{cm}^2$",
+        "$100\\pi \\text{cm}^2$",
+        "$36\\pi \\text{cm}^2$",
+        "$64\\pi \\text{cm}^2$"
       ],
       "correctAnswer": 3,
-      "explanation": "The area of the ring is the area of the outer circle minus the area of the inner circle. Area = $\\pi$($R^2 - r^2$) = $\\pi$($10^2 - 6^2$) = $\\pi$(100 - 36) = 64$\\pi$ $\\text{cm}^2$."
+      "explanation": "The area of the ring is the area of the outer circle minus the area of the inner circle. Area = $\\pi$($R^2 - r^2$) = $\\pi$($10^2 - 6^2$) = $\\pi$(100 - 36) = $64\\pi \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the perimeter of a semicircle with a radius of 5 cm, including the straight diameter. Leave your answer in terms of $\\pi$.",
+      "questionText": "Find the perimeter of a semicircle with a radius of 5 cm, including the straight diameter. Leave your answer in terms $of \\pi .$",
       "options": [
-        "5$\\pi$ cm",
-        "5$\\pi$ + 10 cm",
-        "10$\\pi$ cm",
-        "10$\\pi$ + 10 cm"
+        "$5 \\pi cm$",
+        "$5\\pi$ + 10 cm",
+        "$10 \\pi cm$",
+        "$10\\pi$ + 10 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The perimeter consists of the curved arc and the straight diameter. Arc length = ($\\frac{1}{2}$) × 2$\\pi$r = $\\pi$ × 5 = 5$\\pi$. Diameter = $2r = 10$. Total perimeter = 5$\\pi$ + 10 cm."
+      "explanation": "The perimeter consists of the curved arc and the straight diameter. Arc length = ($\\frac{1}{2}$) × $2 \\pi r$ = $\\pi$ × 5 = $5 \\pi .$ Diameter = $2r = 10$. Total perimeter = $5\\pi$ + 10 cm."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "18 $\\text{cm}^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "The volume of one cube is $3^3$ = 27 $\\text{cm}^3$. Since two cubes are joined, the total volume is 2 × 27 = 54 $\\text{cm}^3$. Alternatively, the new cuboid has dimensions 6 cm × 3 cm × 3 cm, so Volume = 6 × 3 × 3 = 54 $\\text{cm}^3$."
+      "explanation": "The volume of one cube is $3^3 = 27 \\text{cm}^3$. Since two cubes are joined, the total volume is 2 × 27 = 54 $\\text{cm}^3$. Alternatively, the new cuboid has dimensions 6 cm × 3 cm × 3 cm, so Volume = 6 × 3 × 3 = 54 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "72 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Each cube has a surface area of 6 × $3^2$ = 54 $\\text{cm}^2$. When joined, two faces are covered. The area of one face is $3^2$ = 9 $\\text{cm}^2$. So, the total surface area is (2 × 54) - (2 × 9) = 108 - 18 = 90 $\\text{cm}^2$."
+      "explanation": "Each cube has a surface area of 6 × $3^2 = 54 \\text{cm}^2$. When joined, two faces are covered. The area of one face is $3^2 = 9 \\text{cm}^2$. So, the total surface area is (2 × 54) - (2 × 9) = 108 - 18 = 90 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",

@@ -94,9 +94,9 @@
       "type": "multiple-choice",
       "questionText": "Given that vectors $\\mathbf{m} = \\begin{pmatrix} 4 \\\\ x \\end{pmatrix}$ and $\\mathbf{n} = \\begin{pmatrix} 6 \\\\ -9 \\end{pmatrix}$ are parallel, find the value of $x$.",
       "options": [
-        "${-6}$",
+        "$-6$",
         "$6$",
-        "${-3}$",
+        "$-3$",
         "$3$"
       ],
       "correctAnswer": 0,

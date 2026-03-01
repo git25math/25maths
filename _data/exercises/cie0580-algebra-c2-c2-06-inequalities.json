@@ -52,7 +52,7 @@
         "-1, 0, 1, 2, 3"
       ],
       "correctAnswer": 2,
-      "explanation": "The inequality means $x$ is greater than $-1$ and less than or equal to $4$. The integers are 0, 1, 2, 3, and 4."
+      "explanation": "The inequality means $x$ is greater than -1 and less than or equal to $4$. The integers are 0, 1, 2, 3, and 4."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "$x < 14$"
       ],
       "correctAnswer": 1,
-      "explanation": "Subtract 10 from both sides: $-x > -6$. Then, multiply by $-1$ and reverse the inequality sign: $x < 6$."
+      "explanation": "Subtract 10 from both sides: $-x > -6$. Then, multiply by -1 and reverse the inequality sign: $x < 6$."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write down the inequality that represents '$x$ is greater than or equal to $-2$ and less than $3$'.",
+      "questionText": "Write down the inequality that represents '$x$ is greater than or equal to -2 and less than $3$'.",
       "options": [
         "$-2 \\leq x < 3$",
         "$-2 < x \\leq 3$",

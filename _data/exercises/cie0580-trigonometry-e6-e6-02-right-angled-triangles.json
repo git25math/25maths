@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite an angle $\\theta$ is 10 cm and the side adjacent to it is 15 cm. Calculate the size of angle $\\theta$, correct to 1 decimal place.",
+      "questionText": "In a right-angled triangle, the side opposite an $angle \\theta is$ 10 cm and the side adjacent to it is 15 cm. Calculate the size of angle $\\theta$, correct to 1 decimal place.",
       "options": [
         "33.7°",
         "56.3°",

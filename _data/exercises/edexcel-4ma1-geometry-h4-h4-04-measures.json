@@ -28,7 +28,7 @@
         "616 $\\text{m}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a circle is given by the formula A = $\\pir^2$. A = $\\pi \\times 7^2$ = 49$\\pi$ ≈ 153.938 $\\text{m}^2$. Rounded to 3 significant figures, the area is 154 $\\text{m}^2$."
+      "explanation": "The area of a circle is given by the formula A = $\\pir^2$. A = $\\pi \\times 7^2$ = $49\\pi$ ≈ 153.938 $\\text{m}^2$. Rounded to 3 significant figures, the area is 154 $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "402 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "The total surface area of a cylinder is 2$\\pi$r(r + h). TSA = 2$\\pi$ × 4 × (4 + 10) = 8$\\pi$ × 14 = 112$\\pi$. Calculating this gives approximately 351.858 $\\text{cm}^2$. Rounded to 3 significant figures, the total surface area is 352 $\\text{cm}^2$."
+      "explanation": "The total surface area of a cylinder is $2 \\pi r$(r + h). TSA = $2\\pi$ × 4 × (4 + 10) = $8\\pi$ × 14 = $112 \\pi .$ Calculating this gives approximately 351.858 $\\text{cm}^2$. Rounded to 3 significant figures, the total surface area is 352 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "520000 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Since 1 m = 100 cm, then 1 $\\text{m}^2$ = $(100 cm)^2$ = 10000 $\\text{cm}^2$. Therefore, 5.2 $\\text{m}^2$ = 5.2 × 10000 $\\text{cm}^2$ = 52000 $\\text{cm}^2$."
+      "explanation": "Since 1 m = 100 cm, then 1 $\\text{m}^2$ = $(100 cm)^2 = 10000 \\text{cm}^2$. Therefore, 5.2 $\\text{m}^2$ = 5.2 × 10000 $\\text{cm}^2 = 52000 \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "144 $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The volume of a sphere is given by the formula V = ($\\frac{4}{3}$)$\\pir^3$. V = ($\\frac{4}{3}$)$\\pi \\times 3^3$ = ($\\frac{4}{3}$)$\\pi$ × 27 = 36$\\pi$. Calculating this gives approximately 113.097 $\\text{cm}^3$. Rounded to 3 significant figures, the volume is 113 $\\text{cm}^3$."
+      "explanation": "The volume of a sphere is given by the formula V = ($\\frac{4}{3}$)$\\pir^3$. V = ($\\frac{4}{3}$)$\\pi \\times 3^3$ = ($\\frac{4}{3}$)$\\pi$ × 27 = $36 \\pi .$ Calculating this gives approximately 113.097 $\\text{cm}^3$. Rounded to 3 significant figures, the volume is 113 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",

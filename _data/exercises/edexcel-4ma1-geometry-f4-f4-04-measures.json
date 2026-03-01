@@ -112,7 +112,7 @@
         "Cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "Convert 2.5 km to metres: 2.5 km = 2.5 × 1000 = 2500 m. Since 2500 m > 2000 m, 2.5 km is greater."
+      "explanation": "Convert 2.5 km to metres: 2.5 km = 2.5 × 1000 = 2500 m. Since 2500 $m > 2000$ m, 2.5 km is greater."
     },
     {
       "type": "multiple-choice",

@@ -52,7 +52,7 @@
         "6 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The circumference of a circle is 2$\\pi$r. Circumference = 2 × 3.14 × 3 cm = 18.84 cm."
+      "explanation": "The circumference of a circle is $2 \\pi r.$ Circumference = 2 × 3.14 × 3 cm = 18.84 cm."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "22 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Area of full circle = $\\pir^2$ = ($\\frac{22}{7}$) × $7^2$ = 22 × 7 = 154 $\\text{cm}^2$. Area of semi-circle = ½ × 154 $\\text{cm}^2$ = 77 $\\text{cm}^2$."
+      "explanation": "Area of full circle = $\\pir^2$ = ($\\frac{22}{7}$) × $7^2$ = 22 × 7 = 154 $\\text{cm}^2$. Area of semi-circle = ½ × 154 $\\text{cm}^2 = 77 \\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "18 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a square is side × side. So, side = $\\sqrt{A}$rea. Side = $\\sqrt{36}$ $\\text{cm}^2$ = 6 cm."
+      "explanation": "The area of a square is side × side. So, side = $\\sqrt{A}$rea. Side = $\\sqrt{36} \\text{cm}^2$ = 6 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "42 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Area of rectangle = 6 cm × 4 cm = 24 $\\text{cm}^2$. Area of square = 3 cm × 3 cm = 9 $\\text{cm}^2$. Total area = 24 $\\text{cm}^2$ + 9 $\\text{cm}^2$ = 33 $\\text{cm}^2$."
+      "explanation": "Area of rectangle = 6 cm × 4 cm = 24 $\\text{cm}^2$. Area of square = 3 cm × 3 cm = 9 $\\text{cm}^2$. Total area = 24 $\\text{cm}^2 + 9 \\text{cm}^2 = 33 \\text{cm}^2$."
     }
   ]
 }

@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "The cost, $C, for a taxi journey of distance 'd' km is given by the formula C = 2.50 + 1.80d. What is the cost of a 10 km journey?",
+      "questionText": "The cost, $C$, for a taxi journey of distance $d$ km is given by the formula $C = 2.50 + 1.80d$. What is the cost of a 10 km journey?",
       "options": [
         "$18.00",
         "$20.50",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The value of a machine, $V, depreciates linearly over time, 't' years. The graph of V against t is a straight line passing through (0, 25000) and (10, 5000). What does the gradient of the graph represent?",
+      "questionText": "The value of a machine, $V$, depreciates linearly over time, $t$ years. The graph of $V$ against $t$ is a straight line passing through (0, 25000) and (10, 5000). What does the gradient of the graph represent?",
       "options": [
         "The initial value of the machine",
         "The scrap value of the machine after 10 years",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost, $P, of printing 'n' leaflets is given by P = 20 + 0.05n. What is the cost of printing 800 leaflets?",
+      "questionText": "The cost, $P$, of printing $n$ leaflets is given by $P = 20 + 0.05n$. What is the cost of printing 800 leaflets?",
       "options": [
         "$40",
         "$60",

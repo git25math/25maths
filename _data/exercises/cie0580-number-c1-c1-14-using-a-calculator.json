@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Without using a calculator, what is the best estimate for the calculation ${398 \\times 0.49}$?",
+      "questionText": "Without using a calculator, what is the best estimate for the calculation $398 \\times 0.49$?",
       "options": [
         "100",
         "200",
@@ -16,19 +16,19 @@
         "400"
       ],
       "correctAnswer": 1,
-      "explanation": "To estimate, round the numbers to one significant figure. `398` is approximately `400` and `0.49` is approximately `0.5`. The estimated calculation is ${400 \\times 0.5 = 200}$."
+      "explanation": "To estimate, round the numbers to one significant figure. `398` is approximately `400` and `0.49` is approximately `0.5`. The estimated calculation is $400 \\times 0.5 = 200$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which sequence of calculator key presses correctly evaluates ${(55 + 25) \\div 5}$?",
+      "questionText": "Which sequence of calculator key presses correctly evaluates $(55 + 25) \\div 5$?",
       "options": [
-        "${55 + 25 \\div 5}$",
-        "${( 55 + 25 ) \\div 5}$",
-        "${55 \\div 5 + 25}$",
-        "${55 + ( 25 \\div 5 )}$"
+        "$55 + 25 \\div 5$",
+        "$( 55 + 25 ) \\div 5$",
+        "$55 \\div 5 + 25$",
+        "$55 + ( 25 \\div 5 )$"
       ],
       "correctAnswer": 1,
-      "explanation": "To ensure the addition is performed before the division, the expression ${55 + 25}$ must be enclosed in brackets, following the order of operations (BODMAS/PEMDAS)."
+      "explanation": "To ensure the addition is performed before the division, the expression $55 + 25$ must be enclosed in brackets, following the order of operations (BODMAS/PEMDAS)."
     },
     {
       "type": "multiple-choice",
@@ -44,15 +44,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "To verify the calculation ${646 \\div 19 = 34}$, which inverse operation should be used?",
+      "questionText": "To verify the calculation $646 \\div 19 = 34$, which inverse operation should be used?",
       "options": [
-        "${34 + 19}$",
-        "${646 - 19}$",
-        "${19 \\times 34}$",
-        "${646 \\times 34}$"
+        "$34 + 19$",
+        "$646 - 19$",
+        "$19 \\times 34$",
+        "$646 \\times 34$"
       ],
       "correctAnswer": 2,
-      "explanation": "Division and multiplication are inverse operations. To check ${a \\div b = c}$, you should verify that $b \\times c = a$. In this case, check if ${19 \\times 34 = 646}$."
+      "explanation": "Division and multiplication are inverse operations. To check $a \\div b = c$, you should verify that $b \\times c = a$. In this case, check if $19 \\times 34 = 646$."
     },
     {
       "type": "multiple-choice",
@@ -68,10 +68,10 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A calculation for the volume of a box results in an answer of ${-45.5 cm³}$. What is the most sensible action to take?",
+      "questionText": "A calculation for the volume of a box results in an answer of $-45.5 cm³$. What is the most sensible action to take?",
       "options": [
-        "Assume the volume is ${45.5 cm³}$ and ignore the sign.",
-        "State that the volume is ${0 cm³}$.",
+        "Assume the volume is $45.5 cm³$ and ignore the sign.",
+        "State that the volume is $0 cm³$.",
         "Re-check the formula and the numbers entered into the calculator.",
         "Accept the result as it is."
       ],
@@ -88,11 +88,11 @@
         "24"
       ],
       "correctAnswer": 2,
-      "explanation": "First, calculate the expression inside the square root: ${15² - 9² = 225 - 81 = 144}$. Then, find the square root: ${\\sqrt{144} = 12}$."
+      "explanation": "First, calculate the expression inside the square root: $15² - 9² = 225 - 81 = 144$. Then, find the square root: ${\\sqrt{144} = 12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate ${(18.6 - 3.1) / (1.2 + 1.3)}$. What is the result?",
+      "questionText": "Calculate $(18.6 - 3.1) / (1.2 + 1.3)$. What is the result?",
       "options": [
         "15.5",
         "2.5",
@@ -100,11 +100,11 @@
         "6.2"
       ],
       "correctAnswer": 3,
-      "explanation": "First, evaluate the numerator: ${18.6 - 3.1 = 15.5}$. Then evaluate the denominator: ${1.2 + 1.3 = 2.5}$. Finally, perform the division: ${15.5 \\div 2.5 = 6.2}$."
+      "explanation": "First, evaluate the numerator: $18.6 - 3.1 = 15.5$. Then evaluate the denominator: $1.2 + 1.3 = 2.5$. Finally, perform the division: $15.5 \\div 2.5 = 6.2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A student calculates ${200 - 5 \\times 30}$ and gets the answer `5850`. What mistake did they likely make?",
+      "questionText": "A student calculates $200 - 5 \\times 30$ and gets the answer `5850`. What mistake did they likely make?",
       "options": [
         "They multiplied before subtracting.",
         "Their calculator is faulty.",
@@ -112,7 +112,7 @@
         "They added instead of subtracting."
       ],
       "correctAnswer": 2,
-      "explanation": "The correct order of operations (BODMAS/PEMDAS) is to multiply first: ${5 \\times 30 = 150}$, then subtract: ${200 - 150 = 50}$. The student likely calculated ${(200 - 5) = 195}$ first, then ${195 \\times 30 = 5850}$. This indicates they subtracted before multiplying."
+      "explanation": "The correct order of operations (BODMAS/PEMDAS) is to multiply first: $5 \\times 30 = 150$, then subtract: $200 - 150 = 50$. The student likely calculated $(200 - 5) = 195$ first, then $195 \\times 30 = 5850$. This indicates they subtracted before multiplying."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate ${4.5³}$. What is the correct value?",
+      "questionText": "Calculate $4.5³$. What is the correct value?",
       "options": [
         "13.5",
         "91.125",
@@ -136,11 +136,11 @@
         "45.3"
       ],
       "correctAnswer": 1,
-      "explanation": "${4.5³}$ means $4.5 \\times 4.5 \\times 4.5$. Using a calculator, $4.5 \\times 4.5 = 20.25$, and ${20.25 \\times 4.5 = 91.125}$."
+      "explanation": "$4.5³$ means $4.5 \\times 4.5 \\times 4.5$. Using a calculator, $4.5 \\times 4.5 = 20.25$, and $20.25 \\times 4.5 = 91.125$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the value of ${($\\sqrt[3]{125}$) + (\\sqrt{81})}$?",
+      "questionText": "What is the value of $\\sqrt[3]{125} + \\sqrt{81}$?",
       "options": [
         "14",
         "9.5",
@@ -148,7 +148,7 @@
         "46"
       ],
       "correctAnswer": 0,
-      "explanation": "First, find the cube root of 125, which is 5. Then, find the square root of 81, which is 9. Finally, add the two results: ${5 + 9 = 14}$."
+      "explanation": "First, find the cube root of 125, which is 5. Then, find the square root of 81, which is 9. Finally, add the two results: $5 + 9 = 14$."
     }
   ]
 }

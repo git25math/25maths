@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the y-intercept of the curve y = $x^3$ - 4$x^2$ + 7?",
+      "questionText": "What is the y-intercept of the curve y = $x^3 - 4x^2$ + 7?",
       "options": [
         "$y = -4$",
         "$y = 1$",
@@ -52,7 +52,7 @@
         "$y = 7$"
       ],
       "correctAnswer": 3,
-      "explanation": "The y-intercept occurs where $x = 0$. Substituting $x = 0$ into the equation gives y = $0^3$ - 4$(0)^2$ + 7, which simplifies to $y = 7$."
+      "explanation": "The y-intercept occurs where $x = 0$. Substituting $x = 0$ into the equation gives y = $0^3 - 4(0)^2$ + 7, which simplifies to $y = 7$."
     },
     {
       "type": "multiple-choice",
