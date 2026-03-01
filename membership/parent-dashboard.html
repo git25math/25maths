@@ -35,6 +35,7 @@ lang_links:
             </svg>
         </div>
         <h2 class="text-xl font-bold text-gray-900 mb-2">Sign in to view progress</h2>
+        <p class="bilingual-support-only text-sm text-gray-500 -mt-1 mb-1">登录查看学习进度</p>
         <p class="text-sm text-gray-600 mb-6">Use the same email linked to your child's 25Maths account.</p>
         <form id="parent-login-form" class="space-y-4">
             <input id="parent-email" type="email" placeholder="parent@example.com" required
@@ -178,6 +179,7 @@ lang_links:
   }
   function t(en, zh) { return isZh() ? zh : en; }
 
+  // Sync with functions/_lib/achievement_evaluator.js:XP_THRESHOLDS
   const LEVEL_THRESHOLDS = [
     { level: 1, title: 'Beginner', titleCn: '初学者', xp: 0 },
     { level: 2, title: 'Learner', titleCn: '学习者', xp: 50 },

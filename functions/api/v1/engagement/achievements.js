@@ -5,19 +5,14 @@ import {
   listUserAchievements,
   listAchievementDefinitions,
 } from '../../../_lib/supabase_server.js';
+import { XP_THRESHOLDS } from '../../../_lib/achievement_evaluator.js';
 
-const LEVEL_THRESHOLDS = [
-  { level: 1, title: 'Beginner', xp: 0 },
-  { level: 2, title: 'Learner', xp: 50 },
-  { level: 3, title: 'Practitioner', xp: 200 },
-  { level: 4, title: 'Achiever', xp: 500 },
-  { level: 5, title: 'Scholar', xp: 1000 },
-  { level: 6, title: 'Expert', xp: 2000 },
-  { level: 7, title: 'Master', xp: 4000 },
-  { level: 8, title: 'Grandmaster', xp: 8000 },
-  { level: 9, title: 'Legend', xp: 16000 },
-  { level: 10, title: 'IGCSE Champion', xp: 32000 },
-];
+const LEVEL_TITLES = ['Beginner','Learner','Practitioner','Achiever','Scholar','Expert','Master','Grandmaster','Legend','IGCSE Champion'];
+const LEVEL_THRESHOLDS = XP_THRESHOLDS.map((xp, i) => ({
+  level: i + 1,
+  title: LEVEL_TITLES[i] || `Level ${i + 1}`,
+  xp,
+}));
 
 function getLevelInfo(totalXp) {
   let current = LEVEL_THRESHOLDS[0];

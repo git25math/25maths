@@ -1,17 +1,18 @@
 (() => {
   'use strict';
 
+  // Sync with functions/_lib/achievement_evaluator.js:XP_THRESHOLDS
   const LEVEL_THRESHOLDS = [
     { level: 1, title: 'Beginner', titleCn: '初学者', xp: 0 },
     { level: 2, title: 'Learner', titleCn: '学习者', xp: 50 },
-    { level: 3, title: 'Practitioner', titleCn: '实践者', xp: 200 },
+    { level: 3, title: 'Practitioner', titleCn: '练习者', xp: 200 },
     { level: 4, title: 'Achiever', titleCn: '成就者', xp: 500 },
     { level: 5, title: 'Scholar', titleCn: '学者', xp: 1000 },
     { level: 6, title: 'Expert', titleCn: '专家', xp: 2000 },
     { level: 7, title: 'Master', titleCn: '大师', xp: 4000 },
     { level: 8, title: 'Grandmaster', titleCn: '宗师', xp: 8000 },
     { level: 9, title: 'Legend', titleCn: '传奇', xp: 16000 },
-    { level: 10, title: 'IGCSE Champion', titleCn: 'IGCSE冠军', xp: 32000 },
+    { level: 10, title: 'IGCSE Champion', titleCn: 'IGCSE 冠军', xp: 32000 },
   ];
 
   function isZh() {

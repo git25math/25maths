@@ -165,17 +165,18 @@ lang_links:
 (function () {
   'use strict';
 
+  // Sync with functions/_lib/achievement_evaluator.js:XP_THRESHOLDS
   const LEVEL_THRESHOLDS = [
     { level: 1, title: '初学者', xp: 0 },
     { level: 2, title: '学习者', xp: 50 },
-    { level: 3, title: '实践者', xp: 200 },
+    { level: 3, title: '练习者', xp: 200 },
     { level: 4, title: '成就者', xp: 500 },
     { level: 5, title: '学者', xp: 1000 },
     { level: 6, title: '专家', xp: 2000 },
     { level: 7, title: '大师', xp: 4000 },
     { level: 8, title: '宗师', xp: 8000 },
     { level: 9, title: '传奇', xp: 16000 },
-    { level: 10, title: 'IGCSE冠军', xp: 32000 },
+    { level: 10, title: 'IGCSE 冠军', xp: 32000 },
   ];
 
   // Topic name mapping EN -> CN
