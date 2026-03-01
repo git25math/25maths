@@ -178,6 +178,7 @@ active_global: about   # highlights in global-nav
 | 2026-02-28 | **Last-mile member delivery** — releases.json data fix (22/24 payhip_product_id), member_downloads.js UI, Worker proxy for API Functions |
 | 2026-02-28 | **E2E verification complete** — Webhook → 24 entitlements → signed PDF download, all 26 test items PASS |
 | 2026-03-01 | **Payhip webhook configured** — `sale_completed` → `www.25maths.com/api/v1/membership/webhook/payhip` live |
+| 2026-03-01 | **LaTeX Phase 3** — Batch KaTeX conversion: 4,574 new expressions across 161 JSON files (fractions, angles, powers, sqrt, Greek, algebra). Total: 8,731 LaTeX expressions |
 
 ## Next Steps
 

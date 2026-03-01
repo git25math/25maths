@@ -44,7 +44,7 @@
 | W7 Benefits/Coupons | IN PROGRESS | Trigger engine done, skill-tag mapping pending |
 | W8 QA/Release Gate | **DONE** | 26/26 E2E tests PASS, delivery log at `_ops/delivery-log/2026-02-28-last-mile.md` |
 | W9 Account Settings | **DONE** | Profile CRUD API + settings.html (ab48f5e, 2026-03-01) |
-| W10 LaTeX Math Rendering | **Phase 1-2 DONE** | Unicode→LaTeX (108 JSON) + fractions→\frac (170 JSON); Phase 3-4 pending |
+| W10 LaTeX Math Rendering | **Phase 1-3 DONE** | Unicode→LaTeX (108 JSON) + fractions→\frac (170 JSON) + batch KaTeX (161 JSON, 4,574 new, 8,731 total); Phase 4 (browser render validation) pending |
 | W11 Member Bilingual JS | **DONE** | 6 files, ~60 translations, isZh()+t() pattern (269fe7f, 2026-03-01) |
 
 ### Content Status
@@ -346,6 +346,7 @@ After each significant action:
   [x] Account settings page (Profile CRUD API)
   [x] Member JS/HTML bilingual completion (6 files, ~60 translations)
   [x] LaTeX Phase 1-2 (278 exercise JSON files converted)
+  [x] LaTeX Phase 3 — batch KaTeX conversion (161 JSON, 4,574 new expressions, 8,731 total)
 
 2026 Q2 (Apr - Jun) — INTELLIGENCE
   [ ] Gate C Personalization (partial: recommendation engine built, weight tuning remaining)
@@ -474,6 +475,7 @@ After each significant action:
 | 2026-03-01 | `_includes/head.html` | Fixed missing text-gray-300/text-blue-300 hero color overrides for CIE/EDX brand colors | Claude Code |
 | 2026-03-01 | `_data/exercises/*.json` (108 files) | LaTeX Phase 1 — Unicode superscripts/roots/Greek letters → LaTeX notation | Claude Code |
 | 2026-03-01 | `_data/exercises/*.json` (170 files) | LaTeX Phase 2 — Plain-text fractions → \frac{}{} notation | Claude Code |
+| 2026-03-01 | `_data/exercises/*.json` (161 files) | LaTeX Phase 3 — Batch KaTeX: fractions, angles, powers, sqrt, Greek, algebra. 4,574 new conversions (4,157→8,731 total). 2,044 ins/del. | Claude Code |
 
 ---
 
