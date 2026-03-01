@@ -137,6 +137,26 @@ Payhip ──Webhook HMAC──▶ /webhook/payhip.js ──▶ membership_statu
 - `complete.js` 替换内联 streak+volume 逻辑，改用 `checkCriteria`，覆盖全部 6 类 criteria
 - 等级阈值统一为单一来源 (`XP_THRESHOLDS`)，消除未来不一致风险
 
+### Commit 731ad30 — 练习题 LaTeX 分数转换（Phase 2）
+
+**功能: 将纯文本分数批量转换为 LaTeX `\frac{}{}` 格式**
+- 文件：`scripts/convert_exercise_math.py`（+329 行）+ 170 个 exercise JSON
+- 新增 3 个函数：
+  - `_parse_frac_operand()` — 从 `/` 两侧解析分子/分母，支持 LaTeX 命令、上标、大括号组
+  - `convert_fractions_in_math()` — 在 `$...$` 内将 `a/b` → `\frac{a}{b}`
+  - `convert_plain_fractions()` — 在纯文本中将 `3/5` → `$\frac{3}{5}$`，带分数 `2 1/3` → `$2\frac{1}{3}$`
+- 跳过列表：单位速率（`km/h`, `m/s`）、散文分数（`opposite / adjacent`）、括号内分数
+- 移除过于激进的 `\frac{` 跳过守卫（阻止了含有部分 `\frac` 的文本中其他分数的转换）
+- 统计：646 变更，103 个文件，完全幂等（重复运行 0 变更）
+- 背景：Phase 1 已完成上标、根号、希腊字母、反引号→LaTeX 转换（commit bd78109）
+
+**后续改进方向（Phase 3）：**
+1. 括号分数：`$(12a^4) / (3a)$` 目前跳过，需扩展解析器支持 `(...)` 作为分子/分母
+2. 大括号内分数：`${dy/dx = 0}$` 中 `/` 在 guard braces 内部（depth > 0），未被转换
+3. 选项中的文本分数：`dy/dx = 15x^2` 等含字母的分数未转换（当前仅处理 digit/digit）
+4. 三角函数比值：`sin(30°) = opposite / 10` 可考虑转为 `\frac{\text{opposite}}{10}`
+5. KaTeX 渲染验证：在浏览器中抽检 `\frac` 的视觉效果，确认嵌套分数无溢出
+
 ---
 
 ## 四、已知限制与技术债
@@ -158,10 +178,20 @@ Payhip ──Webhook HMAC──▶ /webhook/payhip.js ──▶ membership_statu
 
 ### P1 — 会员体系收尾
 
-- [ ] 账户设置页（修改邮箱/昵称/偏好语言）
+- [x] 账户设置页（修改邮箱/昵称/偏好语言）— commit ab48f5e
 - [ ] 双语文案补全（成就名称、等级名称、UI 提示等）
 - [ ] 成就 seed 数据审查（20 个定义的 criteria 阈值是否合理）
 - [ ] `weekly.js` 引入 `computeLevel` 统一等级计算（消除技术债 #2）
+
+### P1.5 — 练习题 LaTeX 数学渲染优化
+
+- [x] Phase 1: Unicode 上标/根号/希腊字母/反引号→LaTeX — commit bd78109
+- [x] Phase 2: 纯文本分数→`\frac{}{}`，带分数、数学模式内分数 — commit 731ad30
+- [ ] Phase 3: 括号分数 `$(12a^4) / (3a)$`→`$\frac{12a^4}{3a}$`（扩展解析器支持 `(...)` 分组）
+- [ ] Phase 3: guard braces 内分数 `${dy/dx = 0}$`（需在 guard 包裹前处理分数）
+- [ ] Phase 3: 字母分数 `dy/dx = 15x²`（选项文本中的非 digit/digit 分数）
+- [ ] Phase 4: KaTeX 浏览器端渲染验证（抽检嵌套分数、长分数无溢出）
+- [ ] Phase 4: 三角比值格式化 `opposite / adjacent`→`$\frac{\text{opposite}}{\text{adjacent}}$`
 
 ### P2 — Edexcel 4MA1 补齐
 
