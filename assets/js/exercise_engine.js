@@ -284,8 +284,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return value.replace(/\$([^$]+)\$/g, (match, content) => {
             const trimmed = String(content || '').trim();
             if (!trimmed) return match;
-            // Convert LaTeX-like $...$ to \( ... \) while ignoring currency-like values.
-            if (!/[\\^_{}]/.test(trimmed)) return match;
+            // Convert $...$ to \( ... \) for KaTeX rendering.
+            // Skip pure numeric values that look like currency (e.g. "$17").
+            if (/^\d+\.?\d*$/.test(trimmed)) return match;
             return `\\(${trimmed}\\)`;
         });
     }
