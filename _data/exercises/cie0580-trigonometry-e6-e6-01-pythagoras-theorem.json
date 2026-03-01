@@ -40,7 +40,7 @@
         "100"
       ],
       "correctAnswer": 0,
-      "explanation": "The change in x is 5 - (-1) = 6. The change in y is 6 - (-2) = 8. The distance is $\\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100}$ = 10."
+      "explanation": "The change in x is 5 - (-1) = 6. The change in y is 6 - (-2) = 8. The distance is $\\sqrt{6^2 + 8^2}$ = $\\sqrt{36 + 64} = \\sqrt{100}$ = 10."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "64 m"
       ],
       "correctAnswer": 0,
-      "explanation": "The ladder, wall, and ground form a right-angled triangle with the ladder as the hypotenuse. Let the height be h. Then $h^{2} + 6^2 = 10^2$. h² = 100 - 36 = 64. So, the height is $\\sqrt{64}$ = 8 m."
+      "explanation": "The ladder, wall, and ground form a right-angled triangle with the ladder as the hypotenuse. Let the height be h. Then $h^{2}$ + $6^2 = 10^2$. $h^{2}$ = 100 - 36 = 64. So, the height is $\\sqrt{64}$ = 8 m."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "$\\sqrt{41}$ cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The formula for the space diagonal (d) is $d^2$ = l² + $w^2$ + h². So, $d^2 = 3^2 + 4^2 + 5^2$ = 9 + 16 + 25 = 50. Therefore, d = $\\sqrt{50} = \\sqrt{25 * 2} = 5\\sqrt{2}$ cm. Option B is numerically correct but not in the simplest exact form."
+      "explanation": "The formula for the space diagonal (d) is $d^2$ = $l^{2}$ + $w^2$ + $h^{2}$. So, $d^2 = 3^2 + 4^2 + 5^2$ = 9 + 16 + 25 = 50. Therefore, d = $\\sqrt{50} = \\sqrt{25 * 2} = 5\\sqrt{2}$ cm. Option B is numerically correct but not in the simplest exact form."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "$\\sqrt{7}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The change in x is 3 - (-1) = 4. The change in y is -1 - (-4) = 3. The distance is $\\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25}$ = 5."
+      "explanation": "The change in x is 3 - (-1) = 4. The change in y is -1 - (-4) = 3. The distance is $\\sqrt{4^2 + 3^2}$ = $\\sqrt{16 + 9} = \\sqrt{25}$ = 5."
     },
     {
       "type": "multiple-choice",

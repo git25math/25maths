@@ -148,7 +148,7 @@
         "2 hours"
       ],
       "correctAnswer": 2,
-      "explanation": "Time = Distance / Speed. Time = 90 km / 60 km/h = 1.5 hours. This is equivalent to 1 hour and 30 minutes."
+      "explanation": "Time = Distance / Speed. Time = 90 km / 60 km/$h = 1.5$ hours. This is equivalent to 1 hour and 30 minutes."
     }
   ]
 }

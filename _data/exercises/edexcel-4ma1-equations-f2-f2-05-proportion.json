@@ -10,13 +10,13 @@
       "type": "multiple-choice",
       "questionText": "A recipe for 4 people requires 200g of flour. How much flour is needed for 6 people?",
       "options": [
-        "250g",
-        "300g",
-        "350g",
-        "400g"
+        "$250g$",
+        "$300g$",
+        "$350g$",
+        "$400g$"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the amount of flour for one person: $\\frac{200g}{4}$ = 50g. Then, multiply by the new number of people: 50g * 6 = 300g."
+      "explanation": "First, find the amount of flour for one person: 200g / 4 = 50g. Then, multiply by the new number of people: 50g * 6 = 300g."
     },
     {
       "type": "multiple-choice",
@@ -58,17 +58,17 @@
       "type": "multiple-choice",
       "questionText": "If 5 pencils cost 80p, what is the cost of 3 pencils?",
       "options": [
-        "40p",
-        "45p",
-        "48p",
-        "50p"
+        "$40p$",
+        "$45p$",
+        "$48p$",
+        "$50p$"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the cost of one pencil: $\\frac{80p}{5}$ = 16p. Then, find the cost of three pencils: 16p * 3 = 48p."
+      "explanation": "First, find the cost of one pencil: 80p / 5 = 16p. Then, find the cost of three pencils: 16p * 3 = 48p."
     },
     {
       "type": "multiple-choice",
-      "questionText": "y is directly proportional to x. When x = 10, y = 25. What is the value of y when x = 4?",
+      "questionText": "y is directly proportional to x. When $x = 10$, $y = 25$. What is the value of y when $x = 4$?",
       "options": [
         "8",
         "10",
@@ -76,7 +76,7 @@
         "62.5"
       ],
       "correctAnswer": 1,
-      "explanation": "The relationship is y = kx. First find the constant of proportionality, k. 25 = k * 10, so k = 2.5. Now find y when x = 4: y = 2.5 * 4 = 10."
+      "explanation": "The relationship is y = kx. First find the constant of proportionality, k. 25 = k * 10, so $k = 2.5$. Now find y when $x = 4$: $y = 2.5$ * 4 = 10."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "p is inversely proportional to q. When p = 6, q = 4. What is the value of p when q = 8?",
+      "questionText": "p is inversely proportional to q. When $p = 6$, $q = 4$. What is the value of p when $q = 8$?",
       "options": [
         "3",
         "4",
@@ -100,7 +100,7 @@
         "48"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is p = k/q. The constant of proportionality is k = p * q = 6 * 4 = 24. Now find p when q = 8: p = $\\frac{24}{8}$ = 3."
+      "explanation": "The relationship is p = k/q. The constant of proportionality is k = p * $q = 6$ * 4 = 24. Now find p when $q = 8$: p = $\\frac{24}{8}$ = 3."
     },
     {
       "type": "multiple-choice",
@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "The cost of a phone call is directly proportional to its length. A 5-minute call costs 40p. What is the cost of a 12-minute call?",
       "options": [
-        "80p",
-        "90p",
-        "96p",
+        "$80p$",
+        "$90p$",
+        "$96p$",
         "£1.00"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the cost per minute: $\\frac{40p}{5}$ minutes = 8p per minute. Then, calculate the cost for a 12-minute call: 8p * 12 = 96p."
+      "explanation": "First, find the cost per minute: 40p / 5 minutes = 8p per minute. Then, calculate the cost for a 12-minute call: 8p * 12 = 96p."
     }
   ]
 }

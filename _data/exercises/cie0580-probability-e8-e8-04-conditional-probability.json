@@ -112,7 +112,7 @@
         "$\\frac{3}{4}$"
       ],
       "correctAnswer": 2,
-      "explanation": "After drawing one green ball, there are 4 balls left: 2 green and 2 red. The probability of the second being green is $\\frac{2}{4} = \\frac{1}{2}$."
+      "explanation": "After drawing one green ball, there are 4 balls left: 2 green and 2 red. The probability of the second being green is $\\frac{2}{4}$ = $\\frac{1}{2}$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "0.8"
       ],
       "correctAnswer": 0,
-      "explanation": "P(Late and Miss) = 0.2 * 0.8 = 0.16. P(On time and Miss) = 0.8 * 0.1 = 0.08. P(Miss) = 0.16 + 0.08 = 0.24. We want P(Late|Miss) = P(Late and Miss) / P(Miss) = 0.$\\frac{16}{0}$.24 = $\\frac{16}{24} = \\frac{2}{3}$."
+      "explanation": "P(Late and Miss) = 0.2 * 0.8 = 0.16. P(On time and Miss) = 0.8 * 0.1 = 0.08. P(Miss) = 0.16 + 0.08 = 0.24. We want P(Late|Miss) = P(Late and Miss) / P(Miss) = 0.$\\frac{16}{0}$.24 = $\\frac{16}{24}$ = $\\frac{2}{3}$."
     },
     {
       "type": "multiple-choice",

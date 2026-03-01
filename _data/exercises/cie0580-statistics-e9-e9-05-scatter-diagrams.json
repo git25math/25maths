@@ -142,13 +142,13 @@
       "type": "multiple-choice",
       "questionText": "Which of these correlation coefficients (r) would represent the strongest negative correlation?",
       "options": [
-        "r = 0.8",
-        "r = -0.2",
-        "r = -0.9",
-        "r = 0.1"
+        "$r = 0.8$",
+        "$r = -0.2$",
+        "$r = -0.9$",
+        "$r = 0.1$"
       ],
       "correctAnswer": 2,
-      "explanation": "The strength of a correlation is determined by how close the coefficient is to 1 or -1. The value r = -0.9 is closest to -1, indicating the strongest negative correlation."
+      "explanation": "The strength of a correlation is determined by how close the coefficient is to 1 or -1. The value $r = -0.$9 is closest to -1, indicating the strongest negative correlation."
     }
   ]
 }

@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A length is measured as y = 8.4 cm, correct to one decimal place. What is the lower bound of the length?",
+      "questionText": "A length is measured as $y = 8.$4 cm, correct to one decimal place. What is the lower bound of the length?",
       "options": [
         "8.3 cm",
         "8.35 cm",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A length is measured as y = 8.4 cm, correct to one decimal place. What is the upper bound of the length?",
+      "questionText": "A length is measured as $y = 8.$4 cm, correct to one decimal place. What is the upper bound of the length?",
       "options": [
         "8.45 cm",
         "8.5 cm",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given a = 10 and b = 4, both correct to the nearest integer. What is the smallest possible value of a + b?",
+      "questionText": "Given $a = 10$ and $b = 4$, both correct to the nearest integer. What is the smallest possible value of a + b?",
       "options": [
         "14",
         "13.5",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given a = 10 and b = 4, both correct to the nearest integer. What is the largest possible value of a - b?",
+      "questionText": "Given $a = 10$ and $b = 4$, both correct to the nearest integer. What is the largest possible value of a - b?",
       "options": [
         "6",
         "6.5",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given a = 10 and b = 4, both correct to the nearest integer. What is the smallest possible value of a - b?",
+      "questionText": "Given $a = 10$ and $b = 4$, both correct to the nearest integer. What is the smallest possible value of a - b?",
       "options": [
         "5",
         "6",

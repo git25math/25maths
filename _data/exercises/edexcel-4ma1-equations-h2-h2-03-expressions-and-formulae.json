@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Given the formula P = 2l + 2w, find the value of P when l = 8 and w = 5.",
+      "questionText": "Given the formula $P = 2l + 2w$, find the value of P when $l = 8$ and $w = 5$.",
       "options": [
         "13",
         "21",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The formula for the area of a trapezium is A = ($\\frac{1}{2}$)(a+b)h. Find A when a = 5, b = 9, and h = 4.",
+      "questionText": "The formula for the area of a trapezium is A = ($\\frac{1}{2}$)(a+b)h. Find A when $a = 5$, $b = 9$, and $h = 4$.",
       "options": [
         "23",
         "28",
@@ -64,11 +64,11 @@
         "C = 1.50(m + 4)"
       ],
       "correctAnswer": 1,
-      "explanation": "The total cost (C) is the fixed fee (${4) plus the variable cost, which is the rate per mile (}$1.50) multiplied by the number of miles (m). So, C = 1.50m + 4."
+      "explanation": "The total cost (C) is the fixed fee (${4) plus the variable cost, which is the rate per mile (}$1.50) multiplied by the number of miles (m). So, $C = 1.50m + 4.$"
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given that s = ut + ($\\frac{1}{2}$)at^2, find s when u = 10, t = 4, and a = 3.",
+      "questionText": "Given that s = ut + ($\\frac{1}{2}$)at^2, find s when $u = 10$, $t = 4$, and $a = 3$.",
       "options": [
         "52",
         "64",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Make r the subject of the formula A = $\\pi r^{2}$.",
+      "questionText": "Make r the subject of the formula A = $\\pir^{2}$.",
       "options": [
         "r = A/$\\pi$",
         "r = $\\sqrt{A/$\\pi$}$",
@@ -88,7 +88,7 @@
         "r = A - $\\pi$"
       ],
       "correctAnswer": 1,
-      "explanation": "First, divide both sides by $\\pi$ to get A/$\\pi = r^{2}$. Then, take the square root of both sides to find r. So, r = $\\sqrt{A/$\\pi$}$."
+      "explanation": "First, divide both sides by $\\pi$ to get A/$\\pi$ = $r^{2}$. Then, take the square root of both sides to find r. So, r = $\\sqrt{A/$\\pi$}$."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "£260"
       ],
       "correctAnswer": 1,
-      "explanation": "The formula is C = 50 + 15h. Substitute h = 4: C = 50 + 15(4) = 50 + 60 = £110."
+      "explanation": "The formula is C = 50 + 15h. Substitute $h = 4$: C = 50 + 15(4) = 50 + 60 = £110."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given the formula T = 2$\\pi\\sqrt{L/g}$, find the value of T when L = 40 and g = 10, using $\\pi$ ≈ 3.14.",
+      "questionText": "Given the formula T = 2$\\pi\\sqrt{L/g}$, find the value of T when L = 40 and $g = 10$, using $\\pi$ ≈ 3.14.",
       "options": [
         "6.28",
         "12.56",

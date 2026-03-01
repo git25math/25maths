@@ -32,15 +32,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Rationalise the denominator of $\\frac{3}{\\sqrt{5}}$.",
+      "questionText": "Rationalise the denominator of $3/\\sqrt{5}$.",
       "options": [
-        "$3 \\frac{\\sqrt{5}}{5}$",
-        "$\\frac{\\sqrt{5}}{3}$",
+        "$3\\sqrt{5}/5$",
+        "$\\sqrt{5}/3$",
         "$3\\sqrt{5}$",
         "$\\frac{15}{5}$"
       ],
       "correctAnswer": 0,
-      "explanation": "To rationalise the denominator, multiply the numerator and the denominator by $\\sqrt{5}$. This gives (3 × $\\sqrt{5}$) / ($\\sqrt{5} \\times \\sqrt{5}$) = $3 \\frac{\\sqrt{5}}{5}$."
+      "explanation": "To rationalise the denominator, multiply the numerator and the denominator by $\\sqrt{5}$. This gives (3 × $\\sqrt{5}$) / ($\\sqrt{5} \\times \\sqrt{5}$) = $3\\sqrt{5}/5$."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "5 + $4\\sqrt{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the FOIL method: ($\\sqrt{3) + 2)(}$\\sqrt{3}${ + 2) = }$(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2${ = 3 + }$4\\sqrt{3}${ + 4 = 7 + }$4\\sqrt{3}$."
+      "explanation": "Use the FOIL method: ($\\sqrt{3}$ + 2)($\\sqrt{3}$ + 2) = $(\\sqrt{3})^2 + 2\\sqrt{3} + 2\\sqrt{3} + 2^2$ = 3 + $4\\sqrt{3}$ + 4 = 7 + $4\\sqrt{3}$."
     },
     {
       "type": "multiple-choice",

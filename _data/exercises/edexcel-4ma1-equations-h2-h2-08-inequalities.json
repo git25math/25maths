@@ -52,7 +52,7 @@
         "${x > 2}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Add 2 to both sides: $\\frac{x}{3} > 6$. Multiply both sides by 3: ${x > 18}$."
+      "explanation": "Add 2 to both sides: $\\frac{x}{3} > 6$. Multiply both sides by 3: $x > 18$."
     },
     {
       "type": "multiple-choice",

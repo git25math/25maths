@@ -118,10 +118,10 @@
       "type": "multiple-choice",
       "questionText": "A recipe requires 250g of flour. A baker increases all ingredients by 30%. How much flour is now needed?",
       "options": [
-        "75g",
-        "280g",
-        "300g",
-        "325g"
+        "$75g$",
+        "$280g$",
+        "$300g$",
+        "$325g$"
       ],
       "correctAnswer": 3,
       "explanation": "Find 30% of 250g. 0.30 × 250 = 75g. Add this to the original amount. 250g + 75g = 325g. Alternatively, find 130% of 250g. 1.30 × 250g = 325g."

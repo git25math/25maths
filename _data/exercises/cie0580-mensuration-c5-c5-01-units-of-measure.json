@@ -16,7 +16,7 @@
         "3500 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "To convert metres to centimetres, multiply by 100. So, 3.5 m = 3.5 × 100 = 350 cm."
+      "explanation": "To convert metres to centimetres, multiply by 100. So, 3.5 $m = 3.5$ × 100 = 350 cm."
     },
     {
       "type": "multiple-choice",

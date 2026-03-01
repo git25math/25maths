@@ -21,7 +21,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the 5th term of the sequence defined by the nth term rule 2n + 1.",
+      "questionText": "Find the 5th term of the sequence defined by the nth term rule $2n + 1$.",
       "options": [
         "7",
         "9",
@@ -41,11 +41,11 @@
         "n + 4"
       ],
       "correctAnswer": 1,
-      "explanation": "The common difference is 3, so the rule starts with 3n. For n=1, 3(1)+c = 5, so c=2. The rule is 3n + 2."
+      "explanation": "The common difference is 3, so the rule starts with 3n. For n=1, 3(1)+c = 5, so c=2. The rule is $3n + 2$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the 8th term in the sequence defined by the nth term rule 4n - 1?",
+      "questionText": "What is the 8th term in the sequence defined by the nth term rule $4n - 1$?",
       "options": [
         "30",
         "31",
@@ -93,7 +93,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the 10th term of the sequence with the nth term rule 3n - 2.",
+      "questionText": "Find the 10th term of the sequence with the nth term rule $3n - 2$.",
       "options": [
         "28",
         "29",

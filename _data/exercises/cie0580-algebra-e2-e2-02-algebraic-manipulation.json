@@ -10,10 +10,10 @@
       "type": "multiple-choice",
       "questionText": "Expand and simplify 5(3x - 2) - 2(x + 3).",
       "options": [
-        "13x - 16",
-        "13x - 4",
-        "17x - 16",
-        "13x + 1"
+        "$13x - 16$",
+        "$13x - 4$",
+        "$17x - 16$",
+        "$13x + 1$"
       ],
       "correctAnswer": 0,
       "explanation": "Expand the brackets first: 15x - 10 - 2x - 6. Then collect like terms: (15x - 2x) + (-10 - 6) = 13x - 16."
@@ -46,10 +46,10 @@
       "type": "multiple-choice",
       "questionText": "Factorise $x^2$ - 9x + 20.",
       "options": [
-        "(x - 4)(x - 5)",
-        "(x + 4)(x + 5)",
-        "(x - 10)(x + 1)",
-        "(x - 20)(x - 1)"
+        "$(x - 4)(x - 5)$",
+        "$(x + 4)(x + 5)$",
+        "$(x - 10)(x + 1)$",
+        "$(x - 20)(x - 1)$"
       ],
       "correctAnswer": 0,
       "explanation": "Look for two numbers that multiply to +20 and add to -9. These numbers are -4 and -5. So the factors are (x - 4)(x - 5)."
@@ -82,9 +82,9 @@
       "type": "multiple-choice",
       "questionText": "Factorise 9$a^2$ - 16.",
       "options": [
-        "(3a - 4)(3a + 4)",
+        "$(3a - 4)(3a + 4)$",
         "$(3a - 4)^2$",
-        "(9a - 4)(a + 4)",
+        "$(9a - 4)(a + 4)$",
         "$(3a + 4)^2$"
       ],
       "correctAnswer": 0,
@@ -97,7 +97,7 @@
         "9$x^2$ - 12x + 4",
         "9$x^2$ - 4",
         "9$x^2$ + 4",
-        "6x - 4"
+        "$6x - 4$"
       ],
       "correctAnswer": 0,
       "explanation": "$(3x - 2)^2$ is (3x - 2)(3x - 2). Using FOIL: (3x * 3x) + (3x * -2) + (-2 * 3x) + (-2 * -2) = 9$x^2$ - 6x - 6x + 4. Combine the middle terms to get 9$x^2$ - 12x + 4."
@@ -106,10 +106,10 @@
       "type": "multiple-choice",
       "questionText": "Factorise $x^2$ + 5x - 14.",
       "options": [
-        "(x + 7)(x - 2)",
-        "(x - 7)(x + 2)",
-        "(x + 14)(x - 1)",
-        "(x - 14)(x + 1)"
+        "$(x + 7)(x - 2)$",
+        "$(x - 7)(x + 2)$",
+        "$(x + 14)(x - 1)$",
+        "$(x - 14)(x + 1)$"
       ],
       "correctAnswer": 0,
       "explanation": "Look for two numbers that multiply to -14 and add to +5. These numbers are +7 and -2. So the factors are (x + 7)(x - 2)."
@@ -130,10 +130,10 @@
       "type": "multiple-choice",
       "questionText": "Simplify ($x^2$ - 9) / ($x^2$ + 2x - 15).",
       "options": [
-        "(x - 3) / (x + 5)",
-        "(x + 3) / (x + 5)",
-        "(x - 3) / (x - 5)",
-        "(x + 3) / (x - 5)"
+        "$(x - 3) / (x + 5)$",
+        "$(x + 3) / (x + 5)$",
+        "$(x - 3) / (x - 5)$",
+        "$(x + 3) / (x - 5)$"
       ],
       "correctAnswer": 1,
       "explanation": "Factorise the numerator (difference of squares): (x - 3)(x + 3). Factorise the denominator: (x + 5)(x - 3). The expression becomes [(x - 3)(x + 3)] / [(x + 5)(x - 3)]. Cancel the common factor (x - 3) to get (x + 3) / (x + 5)."
@@ -142,9 +142,9 @@
       "type": "multiple-choice",
       "questionText": "Factorise by grouping: xy + 3y + 2x + 6.",
       "options": [
-        "(x + 3)(y + 2)",
-        "(x + 2)(y + 3)",
-        "(x + 6)(y + 1)",
+        "$(x + 3)(y + 2)$",
+        "$(x + 2)(y + 3)$",
+        "$(x + 6)(y + 1)$",
         "Cannot be factorised"
       ],
       "correctAnswer": 1,

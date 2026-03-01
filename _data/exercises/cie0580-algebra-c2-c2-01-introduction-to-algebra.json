@@ -10,9 +10,9 @@
       "type": "multiple-choice",
       "questionText": "Simplify the expression ${4a + 5a - 2a}$.",
       "options": [
-        "7a",
-        "11a",
-        "9a - 2a",
+        "$7a$",
+        "$11a$",
+        "$9a - 2a$",
         "7"
       ],
       "correctAnswer": 0,
@@ -34,10 +34,10 @@
       "type": "multiple-choice",
       "questionText": "Simplify the expression ${6x + 4y - 2x + y}$.",
       "options": [
-        "8x + 5y",
-        "4x + 5y",
-        "4x + 3y",
-        "9xy"
+        "$8x + 5y$",
+        "$4x + 5y$",
+        "$4x + 3y$",
+        "$9xy$"
       ],
       "correctAnswer": 1,
       "explanation": "Group the like terms together. For ${x}$: ${6x - 2x = 4x}$. For ${y}$: ${4y + y = 5y}$. The result is ${4x + 5y}$."
@@ -58,9 +58,9 @@
       "type": "multiple-choice",
       "questionText": "Write an expression for the total cost of ${x}$ apples at ${0.50 each and }${y}${ bananas at }$0.40 each.",
       "options": [
-        "0.90(x + y)",
-        "x + y + 0.90",
-        "0.5x + 0.4y",
+        "$0.90(x + y)$",
+        "$x + y + 0.90$",
+        "$0.5x + 0.4y$",
         "xy + 0.90"
       ],
       "correctAnswer": 2,
@@ -70,10 +70,10 @@
       "type": "multiple-choice",
       "questionText": "Simplify the expression ${4 x 3m}$.",
       "options": [
-        "7m",
+        "$7m$",
         "12",
-        "12m",
-        "43m"
+        "$12m$",
+        "$43m$"
       ],
       "correctAnswer": 2,
       "explanation": "Multiply the numerical coefficients: ${4 * 3 = 12}$. The simplified expression is ${12m}$."
@@ -94,10 +94,10 @@
       "type": "multiple-choice",
       "questionText": "A boy has ${n}$ marbles. His sister has 5 fewer marbles than him. Write an expression for the total number of marbles they have together.",
       "options": [
-        "2n - 5",
-        "n - 5",
-        "2n + 5",
-        "5 - 2n"
+        "$2n - 5$",
+        "$n - 5$",
+        "$2n + 5$",
+        "$5 - 2n$"
       ],
       "correctAnswer": 0,
       "explanation": "The boy has ${n}$ marbles. The sister has ${n - 5}$ marbles. The total is ${n + (n - 5)}$, which simplifies to ${2n - 5}$."
@@ -106,10 +106,10 @@
       "type": "multiple-choice",
       "questionText": "Simplify ${4(2x + 3) - 5x}$.",
       "options": [
-        "3x + 3",
-        "8x + 3",
-        "3x + 12",
-        "15x"
+        "$3x + 3$",
+        "$8x + 3$",
+        "$3x + 12$",
+        "$15x$"
       ],
       "correctAnswer": 2,
       "explanation": "Expand the bracket first: ${4 * 2x = 8x}$ and ${4 * 3 = 12}$. The expression becomes ${8x + 12 - 5x}$. Combine like terms: ${8x - 5x = 3x}$. The result is ${3x + 12}$."
@@ -130,8 +130,8 @@
       "type": "multiple-choice",
       "questionText": "Simplify ${8p / 2}$.",
       "options": [
-        "6p",
-        "4p",
+        "$6p$",
+        "$4p$",
         "4",
         "8p/2"
       ],

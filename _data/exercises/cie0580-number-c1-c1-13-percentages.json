@@ -88,7 +88,7 @@
         "9.1%"
       ],
       "correctAnswer": 1,
-      "explanation": "The increase is ${55 - }$50 = $5. The percentage increase is ( \\frac{Increase}{Original} Price) * 100. So, ($\\frac{5}{50}$) * 100 = 10%."
+      "explanation": "The increase is ${55 - }$50 = $5. The percentage increase is (Increase / Original Price) * 100. So, ($\\frac{5}{50}$) * 100 = 10%."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "85%"
       ],
       "correctAnswer": 1,
-      "explanation": "The decrease in price is ${400 - }$340 = $60. The percentage decrease is ( \\frac{Decrease}{Original} Price) * 100. So, ($\\frac{60}{400}$) * 100 = 15%."
+      "explanation": "The decrease in price is ${400 - }$340 = $60. The percentage decrease is (Decrease / Original Price) * 100. So, ($\\frac{60}{400}$) * 100 = 15%."
     },
     {
       "type": "multiple-choice",

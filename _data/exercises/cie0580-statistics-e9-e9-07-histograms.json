@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A histogram bar for the class $30 $\\leq x < 40} has a frequency of 50. A bar for ${40 $\\leq${ x < 60}$ has a frequency of 80. Which bar is taller?",
+      "questionText": "A histogram bar for the class ${30 $\\leq$ x < 40}$ has a frequency of 50. A bar for ${40 $\\leq$ x < 60}$ has a frequency of 80. Which bar is taller?",
       "options": [
         "The bar for 30 $\\leq$ x < 40",
         "The bar for 40 $\\leq$ x < 60",

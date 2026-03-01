@@ -28,7 +28,7 @@
         "36 m"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a rectangle is calculated as length × width. So, the area is 9 m × 4 m = 36 $\\text{m}^2$."
+      "explanation": "The area of a rectangle is calculated as length × width. So, the area is 9 m × 4 $m = 36$ $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",

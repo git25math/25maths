@@ -28,7 +28,7 @@
         "2.30"
       ],
       "correctAnswer": 0,
-      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square$) to enter the power of 3. Then multiply the result by 0.45}. The full answer is $132.651 \\times 0.45 = 59.69295${, which rounds to $59.69$."
+      "explanation": "Input $5.1$, then use the power button (e.g., $x^y$ or $x^\\square${) to enter the power of 3. Then multiply the result by $0.45}$. The full answer is $132.651 \\times 0.45 = 59.69295${, which rounds to $59.69}$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "2.13"
       ],
       "correctAnswer": 0,
-      "explanation": "Input the mixed number $5\\frac{1}{4}$ using the fraction button, or convert it to the decimal 5.25. Then subtract 3.87. The calculation is ${5.25 - 3.87 = 1.38}$."
+      "explanation": "Input the mixed number $5\\frac{1}{4}$ using the fraction button, or convert it to the decimal 5.25. Then subtract 3.87. The calculation is $5.25 - 3.87 = 1.38$."
     },
     {
       "type": "multiple-choice",

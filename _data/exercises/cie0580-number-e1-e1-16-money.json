@@ -28,7 +28,7 @@
         "72.7%"
       ],
       "correctAnswer": 2,
-      "explanation": "Profit = Selling Price - Cost Price = ${110 - }$80 = $30. Percentage Profit = ( \\frac{Profit}{Cost} Price) * 100 = ($\\frac{30}{80}$) * 100 = 37.5%."
+      "explanation": "Profit = Selling Price - Cost Price = ${110 - }$80 = $30. Percentage Profit = (Profit / Cost Price) * 100 = ($\\frac{30}{80}$) * 100 = 37.5%."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "$6.40/kg"
       ],
       "correctAnswer": 3,
-      "explanation": "First, convert 750g to kg: 750g = 0.75kg. Then, calculate the price per kg: Price / Weight = ${4.80 / 0.75kg = }$6.40/kg."
+      "explanation": "First, convert 750g to kg: $750g = 0.$75kg. Then, calculate the price per kg: Price / Weight = ${4.80 / 0.75kg = }$6.40/kg."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "4%"
       ],
       "correctAnswer": 0,
-      "explanation": "The decrease in value is ${25,000 - }$21,000 = $4,000. The percentage decrease is ( \\frac{Decrease}{Original} Value) * 100 = ($\\frac{4000}{25000}$) * 100 = 16%."
+      "explanation": "The decrease in value is ${25,000 - }$21,000 = $4,000. The percentage decrease is (Decrease / Original Value) * 100 = ($\\frac{4000}{25000}$) * 100 = 16%."
     },
     {
       "type": "multiple-choice",

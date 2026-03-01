@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify $5^{7} \\times 5^{3}$.",
+      "questionText": "Simplify $5^{7}$ × $5^{3}$.",
       "options": [
         "$5^{21}$",
         "$5^{4}$",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify $10^{8} \\div 10^{2}$.",
+      "questionText": "Simplify $10^{8}$ ÷ $10^{2}$.",
       "options": [
         "$10^{6}$",
         "$10^{4}$",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate 5^-2.",
+      "questionText": "Evaluate $5^{-2}$.",
       "options": [
         "-10",
         "-25",
@@ -100,7 +100,7 @@
         "$\\frac{1}{10}$"
       ],
       "correctAnswer": 2,
-      "explanation": "A negative power indicates the reciprocal. So, 5^-2 = $\\frac{1}{5}$^2 = $\\frac{1}{25}$."
+      "explanation": "A negative power indicates the reciprocal. So, $5^{-2}$ = $\\frac{1}{5}$^2 = $\\frac{1}{25}$."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write 10^-3 as a decimal.",
+      "questionText": "Write $10^{-3}$ as a decimal.",
       "options": [
         "0.001",
         "-1000",
@@ -136,7 +136,7 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "10^-3 = $\\frac{1}{10}$^3 = $\\frac{1}{1000}$ = 0.001."
+      "explanation": "$10^{-3}$ = $\\frac{1}{10}$^3 = $\\frac{1}{1000}$ = 0.001."
     },
     {
       "type": "multiple-choice",

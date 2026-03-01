@@ -40,7 +40,7 @@
         "90°"
       ],
       "correctAnswer": 2,
-      "explanation": "Angles around a point sum to 360°. So, ${x + 2x + 3x = 360}$°, which means 6x = 360°. Therefore, x = 60°."
+      "explanation": "Angles around a point sum to 360°. So, x + $2x + 3x = 360$°, which means $6x = 360$°. Therefore, $x = 60$°."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "180°"
       ],
       "correctAnswer": 2,
-      "explanation": "The exterior angle of a triangle is equal to the sum of the two opposite interior angles. So, $\\angle ACD = \\angle ABC + \\angle BAC$ = 60° + 70° = 130°."
+      "explanation": "The exterior angle of a triangle is equal to the sum of the two opposite interior angles. So, $\\angle ACD$ = $\\angle ABC$ + $\\angle BAC$ = 60° + 70° = 130°."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "90°"
       ],
       "correctAnswer": 0,
-      "explanation": "The sum of interior angles in a quadrilateral is 360°. So, ${x + 2x + 3x + 4x = 360}$°, which means 10x = 360°. Therefore, x = 36°."
+      "explanation": "The sum of interior angles in a quadrilateral is 360°. So, x + $2x + 3x + 4x = 360$°, which means $10x = 360$°. Therefore, $x = 36$°."
     },
     {
       "type": "multiple-choice",
@@ -136,11 +136,11 @@
         "80°"
       ],
       "correctAnswer": 0,
-      "explanation": "$\\angle EXB$ = 70°. $\\angle AXY$ is vertically opposite to $\\angle EXB$, so $\\angle AXY$ = 70°. Since AB is parallel to CD, $\\angle XYD$ and $\\angle AXY$ are alternate interior angles, so $\\angle XYD$ = 70°. In triangle XYZ, YZ is a segment of line CD, so $\\angle XYZ$ (the angle at Y in the triangle) is 70°. We are given $\\angle XZY$ = 60°. The sum of angles in a triangle is 180°. Therefore, $\\angle YXZ$ = 180° - ($\\angle XYZ + \\angle XZY$) = 180° - (70° + 60°) = 180° - 130° = 50°."
+      "explanation": "$\\angle EXB$ = 70°. $\\angle AXY$ is vertically opposite to $\\angle EXB$, so $\\angle AXY$ = 70°. Since AB is parallel to CD, $\\angle XYD$ and $\\angle AXY$ are alternate interior angles, so $\\angle XYD$ = 70°. In triangle XYZ, YZ is a segment of line CD, so $\\angle XYZ$ (the angle at Y in the triangle) is 70°. We are given $\\angle XZY$ = 60°. The sum of angles in a triangle is 180°. Therefore, $\\angle YXZ$ = 180° - ($\\angle XYZ$ + $\\angle XZY$) = 180° - (70° + 60°) = 180° - 130° = 50°."
     },
     {
       "type": "multiple-choice",
-      "questionText": "In triangle ABC, angle A = (${2x + 10}$)°, angle B = (${3x - 5}$)°, and angle C = (${x + 25}$)°. Find the value of x.",
+      "questionText": "In triangle ABC, angle A = (2x + 10)°, angle B = (3x - 5)°, and angle C = (x + 25)°. Find the value of x.",
       "options": [
         "20",
         "25",
@@ -148,7 +148,7 @@
         "35"
       ],
       "correctAnswer": 1,
-      "explanation": "The sum of angles in a triangle is 180°. So, (${2x + 10}$) + (${3x - 5}$) + (${x + 25}$) = 180. Combining like terms: ${6x + 30 = 180}$. Subtract 30 from both sides: 6x = 150. Divide by 6: x = 25."
+      "explanation": "The sum of angles in a triangle is 180°. So, (2x + 10) + (3x - 5) + (x + 25) = 180. Combining like terms: $6x + 30 = 180$. Subtract 30 from both sides: $6x = 150$. Divide by 6: $x = 25$."
     }
   ]
 }

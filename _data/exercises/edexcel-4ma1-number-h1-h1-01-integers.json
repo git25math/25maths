@@ -100,7 +100,7 @@
         "60"
       ],
       "correctAnswer": 1,
-      "explanation": "The product of two numbers is equal to the product of their HCF and LCM. Let the other number be n. So, 18 × n = 6 × 90. 18n = 540. n = 540 ÷ 18 = 30."
+      "explanation": "The product of two numbers is equal to the product of their HCF and LCM. Let the other number be n. So, 18 × $n = 6$ × 90. $18n = 540$. $n = 540$ ÷ 18 = 30."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "10"
       ],
       "correctAnswer": 2,
-      "explanation": "First, find the prime factorisation of 180: 180 = 18 × 10 = (2 × $3^2$) × (2 × 5) = $2^2 \\times 3^2$ × 5. For a number to be a perfect square, all the powers in its prime factorisation must be even. The power of 5 is 1, so we need to multiply by 5 to make it $5^2$. Therefore, k = 5."
+      "explanation": "First, find the prime factorisation of 180: 180 = 18 × 10 = (2 × $3^2$) × (2 × 5) = $2^2 \\times 3^2$ × 5. For a number to be a perfect square, all the powers in its prime factorisation must be even. The power of 5 is 1, so we need to multiply by 5 to make it $5^2$. Therefore, $k = 5$."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "-5"
       ],
       "correctAnswer": 2,
-      "explanation": "Let the three consecutive odd integers be n, n+2, and n+4. Their sum is n + (n+2) + (n+4) = 3n + 6. We are given 3n + 6 = -27. Subtracting 6 from both sides gives 3n = -33. Dividing by 3 gives n = -11. The integers are -11, -9, and -7. The largest is -7."
+      "explanation": "Let the three consecutive odd integers be n, n+2, and n+4. Their sum is n + (n+2) + (n+4) = 3n + 6. We are given $3n + 6 = -27$. Subtracting 6 from both sides gives $3n = -33$. Dividing by 3 gives $n = -11$. The integers are -11, -9, and -7. The largest is -7."
     },
     {
       "type": "multiple-choice",

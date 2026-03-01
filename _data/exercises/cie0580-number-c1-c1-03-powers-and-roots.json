@@ -112,7 +112,7 @@
         "$\\frac{1}{8}$"
       ],
       "correctAnswer": 3,
-      "explanation": "A negative power indicates the reciprocal. So, $2^{-3} = 1/2^3 = \\frac{1}{8}$. The negative sign in the power does not make the result negative."
+      "explanation": "A negative power indicates the reciprocal. So, $2^{-3} = 1/2^3$ = $\\frac{1}{8}$. The negative sign in the power does not make the result negative."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "$10^{-3}$ is equal to $\\frac{1}{10} ^3$ or $\\frac{1}{1000}$. As a decimal, this is 0.001."
+      "explanation": "$10^{-3}$ is equal to $1/10^3$ or $\\frac{1}{1000}$. As a decimal, this is 0.001."
     },
     {
       "type": "multiple-choice",

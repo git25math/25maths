@@ -112,7 +112,7 @@
         "15 minutes"
       ],
       "correctAnswer": 0,
-      "explanation": "Actual distance = 7.5 cm × 100000 = 750000 cm = 7.5 km. Time = Distance / Speed = 7.5 km / 50 km/h = 0.15 hours. Convert to minutes: 0.15 × 60 = 9 minutes."
+      "explanation": "Actual distance = 7.5 cm × 100000 = 750000 cm = 7.5 km. Time = Distance / Speed = 7.5 km / 50 km/$h = 0.15$ hours. Convert to minutes: 0.15 × 60 = 9 minutes."
     },
     {
       "type": "multiple-choice",

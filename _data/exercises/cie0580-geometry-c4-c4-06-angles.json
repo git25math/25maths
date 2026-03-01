@@ -28,7 +28,7 @@
         "40°"
       ],
       "correctAnswer": 0,
-      "explanation": "Angles around a point add up to 360°. So, x = 360° - 110° - 150° = 100°."
+      "explanation": "Angles around a point add up to 360°. So, $x = 360$° - 110° - 150° = 100°."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "110°"
       ],
       "correctAnswer": 1,
-      "explanation": "The sum of angles in a triangle is 180°. Therefore, y = 180° - 50° - 60° = 70°."
+      "explanation": "The sum of angles in a triangle is 180°. Therefore, $y = 180$° - 50° - 60° = 70°."
     },
     {
       "type": "multiple-choice",

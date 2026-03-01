@@ -52,7 +52,7 @@
         "13 minutes"
       ],
       "correctAnswer": 2,
-      "explanation": "The lower quartile (Q1) is at the (n/4)th position, which is $\\frac{60}{4}$ = 15th position. The upper quartile (Q3) is at the ($\\frac{3n}{4}$)th position, which is 3 * $\\frac{60}{4}$ = 45th position. From the graph, estimate Q1 (e.g., 14 minutes) and Q3 (e.g., 24 minutes). Interquartile Range (IQR) = Q3 - Q1 = 24 - 14 = 10 minutes."
+      "explanation": "The lower quartile (Q1) is at the (n/4)th position, which is $\\frac{60}{4}$ = 15th position. The upper quartile (Q3) is at the (3n/4)th position, which is 3 * $\\frac{60}{4}$ = 45th position. From the graph, estimate Q1 (e.g., 14 minutes) and Q3 (e.g., 24 minutes). Interquartile Range (IQR) = Q3 - Q1 = 24 - 14 = 10 minutes."
     },
     {
       "type": "multiple-choice",

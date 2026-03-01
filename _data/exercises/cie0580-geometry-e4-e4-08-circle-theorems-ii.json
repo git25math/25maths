@@ -8,27 +8,27 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "In a cyclic quadrilateral, two opposite angles are (${x + 40}$)° and (${2x - 10}$)°. Find the value of x.",
+      "questionText": "In a cyclic quadrilateral, two opposite angles are (x + 40)° and (2x - 10)°. Find the value of x.",
       "options": [
-        "x = 50",
-        "x = 30",
-        "x = 63.3",
-        "x = -50"
+        "$x = 50$",
+        "$x = 30$",
+        "$x = 63.3$",
+        "$x = -50$"
       ],
       "correctAnswer": 0,
-      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. Therefore, (${x + 40}$) + (${2x - 10}$) = 180. This simplifies to ${3x + 30 = 180}$, so 3x = 150, and x = 50."
+      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. Therefore, (x + 40) + (2x - 10) = 180. This simplifies to $3x + 30 = 180$, so $3x = 150$, and $x = 50$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The angle subtended by an arc at the center of a circle is (${3x + 6}$)°, and the angle subtended at the circumference is (${x + 9}$)°. Find the value of x.",
+      "questionText": "The angle subtended by an arc at the center of a circle is (3x + 6)°, and the angle subtended at the circumference is (x + 9)°. Find the value of x.",
       "options": [
-        "x = 1.5",
-        "x = -3",
-        "x = 12",
-        "x = 3"
+        "$x = 1.5$",
+        "$x = -3$",
+        "$x = 12$",
+        "$x = 3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The angle at the center is double the angle at the circumference. So, ${3x + 6 = 2}$(${x + 9}$). Expanding gives ${3x + 6 = 2x + 18}$. Solving for x gives x = 12."
+      "explanation": "The angle at the center is double the angle at the circumference. So, $3x + 6 = 2$(x + 9). Expanding gives 3x + 6 = 2x + 18. Solving for x gives $x = 12$."
     },
     {
       "type": "multiple-choice",
@@ -44,15 +44,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Two tangents from an external point P touch a circle at points A and B. If PA = (${x + 3}$) cm and PB = (${2x - 5}$) cm, find the value of x.",
+      "questionText": "Two tangents from an external point P touch a circle at points A and B. If PA = (x + 3) cm and PB = (2x - 5) cm, find the value of x.",
       "options": [
-        "x = 8",
-        "x = 2",
-        "x = -8",
-        "x = 0.67"
+        "$x = 8$",
+        "$x = 2$",
+        "$x = -8$",
+        "$x = 0.67$"
       ],
       "correctAnswer": 0,
-      "explanation": "The lengths of two tangents from an external point to a circle are equal. Therefore, ${x + 3 = 2x - 5}$. Solving this equation gives x = 8."
+      "explanation": "The lengths of two tangents from an external point to a circle are equal. Therefore, $x + 3 = 2x - 5. Solving this equation gives $x = 8$."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In cyclic quadrilateral PQRS, angle P = (${2x + 10}$)° and angle R = (${3x - 20}$)°. Find the size of angle P.",
+      "questionText": "In cyclic quadrilateral PQRS, angle P = (2x + 10)° and angle R = (3x - 20)°. Find the size of angle P.",
       "options": [
         "38°",
         "86°",
@@ -148,7 +148,7 @@
         "102°"
       ],
       "correctAnswer": 1,
-      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. So, (${2x + 10}$) + (${3x - 20}$) = 180. This gives ${5x - 10 = 180}$, so 5x = 190, and x = 38. Angle P = 2(38) + 10 = 76 + 10 = 86°."
+      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. So, (2x + 10) + (3x - 20) = 180. This gives $5x - 10 = 180$, so $5x = 190$, and $x = 38$. Angle P = 2(38) + 10 = 76 + 10 = 86°."
     }
   ]
 }

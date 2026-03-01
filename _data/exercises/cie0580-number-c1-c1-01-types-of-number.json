@@ -46,10 +46,10 @@
       "type": "multiple-choice",
       "questionText": "What is the prime factorization of 90?",
       "options": [
-        "2 x $3^{2}$ x 5",
+        "$2 x 3^{2} x 5$",
         "2 x 3 x 15",
         "9 x 10",
-        "$2^{2}$ x 3 x 5"
+        "$2^{2} x 3 x 5$"
       ],
       "correctAnswer": 0,
       "explanation": "Prime factorization means writing a number as a product of its prime factors. 90 = 2 x 45 = 2 x 3 x 15 = 2 x 3 x 3 x 5 = 2 x $3^{2}$ x 5."

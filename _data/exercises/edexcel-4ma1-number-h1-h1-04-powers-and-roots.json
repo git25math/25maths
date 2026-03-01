@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Express 5^-2 as a fraction.",
+      "questionText": "Express $5^{-2}$ as a fraction.",
       "options": [
         "$\\frac{1}{25}$",
         "-10",
@@ -40,7 +40,7 @@
         "-25"
       ],
       "correctAnswer": 0,
-      "explanation": "A negative power indicates the reciprocal of the base raised to the positive power. So, 5^-2 = $\\frac{1}{5}$^2 = $\\frac{1}{25}$."
+      "explanation": "A negative power indicates the reciprocal of the base raised to the positive power. So, $5^{-2}$ = $\\frac{1}{5}$^2 = $\\frac{1}{25}$."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "x"
       ],
       "correctAnswer": 1,
-      "explanation": "First, write $\\sqrt{x}$ as x^($\\frac{1}{2}$). When multiplying terms with the same base, you add the powers. So, x^($\\frac{1}{2}$) * x^($\\frac{3}{2}$) = x^($\\frac{1}{2} + \\frac{3}{2}$) = x^($\\frac{4}{2}$) = $x^{2}$."
+      "explanation": "First, write $\\sqrt{x}$ as x^($\\frac{1}{2}$). When multiplying terms with the same base, you add the powers. So, x^($\\frac{1}{2}$) * x^($\\frac{3}{2}$) = x^($\\frac{1}{2}$ + $\\frac{3}{2}$) = x^($\\frac{4}{2}$) = $x^{2}$."
     },
     {
       "type": "multiple-choice",
@@ -68,15 +68,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify (8y^6)^($\\frac{1}{3}$).",
+      "questionText": "Simplify ($8y^{6}$)^($\\frac{1}{3}$).",
       "options": [
         "$2y^{2}$",
-        "($\\frac{8}{3}$)$y^{2}$",
+        "$(\\frac{8}{3})y^2$",
         "$2y^{3}$",
         "$8y^{2}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Apply the power to both the coefficient and the variable: 8^($\\frac{1}{3}$) and ($y^{6}$)^($\\frac{1}{3}$). The cube root of 8 is 2. For the variable, multiply the powers: y^(6 * $\\frac{1}{3}$) = $y^{2}$. The result is 2y^2."
+      "explanation": "Apply the power to both the coefficient and the variable: 8^($\\frac{1}{3}$) and ($y^{6}$)^($\\frac{1}{3}$). The cube root of 8 is 2. For the variable, multiply the powers: y^(6 * $\\frac{1}{3}$) = $y^{2}$. The result is $2y^{2}$."
     },
     {
       "type": "multiple-choice",
@@ -88,23 +88,23 @@
         "-$\\frac{5}{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The negative power means taking the reciprocal of the fraction, which is $\\frac{25}{9}$. The power of $\\frac{1}{2}$ means taking the square root. So, $\\sqrt{25/9} = \\sqrt{25}$ / $\\sqrt{9} = \\frac{5}{3}$."
+      "explanation": "The negative power means taking the reciprocal of the fraction, which is $\\frac{25}{9}$. The power of $\\frac{1}{2}$ means taking the square root. So, $\\sqrt{25/9} = \\sqrt{25}$ / $\\sqrt{9}$ = $\\frac{5}{3}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify ($2x^{3}$y)^4.",
+      "questionText": "Simplify (2x^3y)^4.",
       "options": [
-        "$8x^{12}$y^4",
-        "$16x^{7}$y^5",
-        "$16x^{12}$y^4",
-        "$2x^{12}$y^4"
+        "8x^$12y^{4}$",
+        "16x^$7y^{5}$",
+        "16x^$12y^{4}$",
+        "2x^$12y^{4}$"
       ],
       "correctAnswer": 2,
-      "explanation": "Apply the power of 4 to each factor inside the bracket: $2^{4}$ * ($x^{3}$)^4 * $y^{4}$. This gives 16 * x^(3*4) * $y^{4}$ = 16x^12y^4."
+      "explanation": "Apply the power of 4 to each factor inside the bracket: $2^{4}$ * ($x^{3}$)^4 * $y^{4}$. This gives 16 * x^(3*4) * $y^{4}$ = 16x^$12y^{4}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the value of x if 2^x = 32.",
+      "questionText": "Find the value of x if 2^$x = 32$.",
       "options": [
         "3",
         "4",
@@ -112,7 +112,7 @@
         "6"
       ],
       "correctAnswer": 2,
-      "explanation": "You need to find the power to which 2 must be raised to get 32. By calculation, $2^{5}$ = 32, so x = 5."
+      "explanation": "You need to find the power to which 2 must be raised to get 32. By calculation, $2^{5}$ = 32, so $x = 5$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "$4x^{4}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The fourth root of 16 is 2. The fourth root of $x^{8}$ is x^($\\frac{8}{4}$) = $x^{2}$. Combining these gives 2x^2."
+      "explanation": "The fourth root of 16 is 2. The fourth root of $x^{8}$ is x^($\\frac{8}{4}$) = $x^{2}$. Combining these gives $2x^{2}$."
     },
     {
       "type": "multiple-choice",

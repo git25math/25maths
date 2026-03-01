@@ -40,7 +40,7 @@
         "$\\frac{5}{36}$"
       ],
       "correctAnswer": 0,
-      "explanation": "There are 36 possible outcomes when rolling two dice. The combinations that sum to 7 are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). There are 6 such outcomes. Probability = $\\frac{6}{36} = \\frac{1}{6}$."
+      "explanation": "There are 36 possible outcomes when rolling two dice. The combinations that sum to 7 are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). There are 6 such outcomes. Probability = $\\frac{6}{36}$ = $\\frac{1}{6}$."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "$\\frac{9}{100}$"
       ],
       "correctAnswer": 0,
-      "explanation": "P(1st red) = $\\frac{6}{10} = \\frac{3}{5}$. Since the marble is replaced, the events are independent. P(2nd red) = $\\frac{6}{10} = \\frac{3}{5}$. P(both red) = P(1st red) * P(2nd red) = ($\\frac{3}{5}$) * ($\\frac{3}{5}$) = $\\frac{9}{25}$."
+      "explanation": "P(1st red) = $\\frac{6}{10}$ = $\\frac{3}{5}$. Since the marble is replaced, the events are independent. P(2nd red) = $\\frac{6}{10}$ = $\\frac{3}{5}$. P(both red) = P(1st red) * P(2nd red) = ($\\frac{3}{5}$) * ($\\frac{3}{5}$) = $\\frac{9}{25}$."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "$\\frac{3}{50}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Total counters = 10. P(1st green) = $\\frac{3}{10}$. After taking one green, 2 green and 9 total counters remain. P(2nd green | 1st green) = $\\frac{2}{9}$. P(both green) = ($\\frac{3}{10}$) * ($\\frac{2}{9}$) = $\\frac{6}{90} = \\frac{1}{15}$."
+      "explanation": "Total counters = 10. P(1st green) = $\\frac{3}{10}$. After taking one green, 2 green and 9 total counters remain. P(2nd green | 1st green) = $\\frac{2}{9}$. P(both green) = ($\\frac{3}{10}$) * ($\\frac{2}{9}$) = $\\frac{6}{90}$ = $\\frac{1}{15}$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "$\\frac{3}{5}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Total students = 25. P(1st boy) = $\\frac{15}{25} = \\frac{3}{5}$. After one boy is chosen, 14 boys and 24 total students remain. P(2nd boy | 1st boy) = $\\frac{14}{24} = \\frac{7}{12}$. P(both boys) = ($\\frac{3}{5}$) * ($\\frac{7}{12}$) = $\\frac{21}{60} = \\frac{7}{20}$."
+      "explanation": "Total students = 25. P(1st boy) = $\\frac{15}{25}$ = $\\frac{3}{5}$. After one boy is chosen, 14 boys and 24 total students remain. P(2nd boy | 1st boy) = $\\frac{14}{24}$ = $\\frac{7}{12}$. P(both boys) = ($\\frac{3}{5}$) * ($\\frac{7}{12}$) = $\\frac{21}{60}$ = $\\frac{7}{20}$."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "$\\frac{1}{2}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Total counters = 8. Different colours can be Red then Blue (RB) or Blue then Red (BR). P(RB) = ($\\frac{5}{8}$) * ($\\frac{3}{7}$) = $\\frac{15}{56}$. P(BR) = ($\\frac{3}{8}$) * ($\\frac{5}{7}$) = $\\frac{15}{56}$. P(different colours) = P(RB) + P(BR) = $\\frac{15}{56} + \\frac{15}{56} = \\frac{30}{56} = \\frac{15}{28}$."
+      "explanation": "Total counters = 8. Different colours can be Red then Blue (RB) or Blue then Red (BR). P(RB) = ($\\frac{5}{8}$) * ($\\frac{3}{7}$) = $\\frac{15}{56}$. P(BR) = ($\\frac{3}{8}$) * ($\\frac{5}{7}$) = $\\frac{15}{56}$. P(different colours) = P(RB) + P(BR) = $\\frac{15}{56}$ + $\\frac{15}{56}$ = $\\frac{30}{56}$ = $\\frac{15}{28}$."
     }
   ]
 }

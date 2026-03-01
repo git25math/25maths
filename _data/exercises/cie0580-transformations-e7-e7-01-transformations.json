@@ -22,10 +22,10 @@
       "type": "multiple-choice",
       "questionText": "A shape is rotated 90° clockwise about the origin. Which of the following describes the transformation of a point (x, y)?",
       "options": [
-        "(-y, x)",
-        "(-x, -y)",
-        "(y, -x)",
-        "(x, -y)"
+        "$(-y, x)$",
+        "$(-x, -y)$",
+        "$(y, -x)$",
+        "$(x, -y)$"
       ],
       "correctAnswer": 2,
       "explanation": "A rotation of 90° clockwise about the origin maps the point (x, y) to (y, -x). A 90° anti-clockwise rotation maps (x, y) to (-y, x)."
@@ -52,7 +52,7 @@
         "(2, 2)"
       ],
       "correctAnswer": 1,
-      "explanation": "To enlarge a point (x, y) about the origin by a scale factor 'k', multiply each coordinate by k. For point B(3, 1) with k = -2, the image B' is (3 × -2, 1 × -2) = (-6, -2)."
+      "explanation": "To enlarge a point (x, y) about the origin by a scale factor 'k', multiply each coordinate by k. For point B(3, 1) with $k = -2$, the image B' is (3 × -2, 1 × -2) = (-6, -2)."
     },
     {
       "type": "multiple-choice",
@@ -95,7 +95,7 @@
       "questionText": "Triangle A is mapped onto Triangle B by a reflection in the x-axis. Which property is NOT preserved?",
       "options": [
         "Area",
-        "angle sizes",
+        "Angle sizes",
         "Orientation",
         "Side lengths"
       ],
@@ -148,7 +148,7 @@
         "A translation"
       ],
       "correctAnswer": 3,
-      "explanation": "The mapping (x, y) to (x + a, y + b) represents a translation by the vector \\(\\begin{pmatrix} a \\\\ b \\end{pmatrix}\\). In this case, a = 5 and b = -2, so it is a translation."
+      "explanation": "The mapping (x, y) to (x + a, y + b) represents a translation by the vector \\(\\begin{pmatrix} a \\\\ b \\end{pmatrix}\\). In this case, $a = 5$ and $b = -2$, so it is a translation."
     }
   ]
 }

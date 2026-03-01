@@ -28,7 +28,7 @@
         "25 minutes"
       ],
       "correctAnswer": 0,
-      "explanation": "To estimate the mean, we first find the midpoint for each class interval:\n- 0 < t $\\leq$ 10: Midpoint = 5\n- 10 < t $\\leq$ 20: Midpoint = 15\n- 20 < t $\\leq$ 30: Midpoint = 25\n- 30 < t $\\leq$ 40: Midpoint = 35\n\nNow, calculate the sum of (midpoint * frequency) and the total frequency:\nΣfx = (5*5) + (15*15) + (25*20) + (35*10)\nΣfx = 25 + 225 + 500 + 350 = 1100\nΣf = 5 + 15 + 20 + 10 = 50\n\nEstimated mean = Σfx / Σf = $\\frac{1100}{50}$ = 22 minutes."
+      "explanation": "To estimate the mean, we first find the midpoint for each class interval:\n- 0 < t $\\leq$ 10: Midpoint = 5\n- 10 < t $\\leq$ 20: Midpoint = 15\n- 20 < t $\\leq$ 30: Midpoint = 25\n- 30 < t $\\leq$ 40: Midpoint = 35\n\nNow, calculate the sum of (midpoint * frequency) and the total frequency:\nΣfx = (5*5) + (15*15) + (25*20) + (35*10)\nΣfx = 25 + 225 + 500 + 350 = 1100\nΣ$f = 5$ + 15 + 20 + 10 = 50\n\nEstimated mean = Σfx / Σf = $\\frac{1100}{50}$ = 22 minutes."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "14"
       ],
       "correctAnswer": 0,
-      "explanation": "The sum of the five numbers is 18 * 5 = 90. The sum of the four known numbers is 12 + 25 + 17 + 20 = 74. Therefore, x = 90 - 74 = 16."
+      "explanation": "The sum of the five numbers is 18 * 5 = 90. The sum of the four known numbers is 12 + 25 + 17 + 20 = 74. Therefore, $x = 90$ - 74 = 16."
     },
     {
       "type": "multiple-choice",
@@ -58,10 +58,10 @@
       "type": "multiple-choice",
       "questionText": "The weights of two dogs are 15 kg and 25 kg. They are given food weighted in the ratio of their weights. If the total food is 400g, how much does the lighter dog get?",
       "options": [
-        "200g",
-        "150g",
-        "250g",
-        "160g"
+        "$200g$",
+        "$150g$",
+        "$250g$",
+        "$160g$"
       ],
       "correctAnswer": 1,
       "explanation": "The ratio of weights is 15:25, which simplifies to 3:5. The total parts are 3 + 5 = 8. The food for the lighter dog is ($\\frac{3}{8}$) * 400g = 150g."
@@ -124,7 +124,7 @@
         "2.2"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the mean, calculate Σfx / Σf.\nΣfx = (0*5) + (1*8) + (2*10) + (3*5) + (4*2)\nΣfx = 0 + 8 + 20 + 15 + 8 = 51\nΣf = 5 + 8 + 10 + 5 + 2 = 30\n\nMean = Σfx / Σf = $\\frac{51}{30}$ = 1.7."
+      "explanation": "To find the mean, calculate Σfx / Σf.\nΣfx = (0*5) + (1*8) + (2*10) + (3*5) + (4*2)\nΣfx = 0 + 8 + 20 + 15 + 8 = 51\nΣ$f = 5$ + 8 + 10 + 5 + 2 = 30\n\nMean = Σfx / Σf = $\\frac{51}{30}$ = 1.7."
     },
     {
       "type": "multiple-choice",

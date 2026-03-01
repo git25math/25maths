@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A point (2, -4) is reflected in the line y = 0. What are the coordinates of the image point?",
+      "questionText": "A point (2, -4) is reflected in the line $y = 0$. What are the coordinates of the image point?",
       "options": [
         "(2, 4)",
         "(-2, -4)",
@@ -136,7 +136,7 @@
         "It is doubled"
       ],
       "correctAnswer": 0,
-      "explanation": "When a shape is enlarged by a scale factor of k, its area is enlarged by a scale factor of $k^2$. If the scale factor is $\\frac{1}{2}$, the area is multiplied by $(1/2)^2 = \\frac{1}{4}$ (quartered)."
+      "explanation": "When a shape is enlarged by a scale factor of k, its area is enlarged by a scale factor of $k^2$. If the scale factor is $\\frac{1}{2}$, the area is multiplied by $(1/2)^2$ = $\\frac{1}{4}$ (quartered)."
     },
     {
       "type": "multiple-choice",

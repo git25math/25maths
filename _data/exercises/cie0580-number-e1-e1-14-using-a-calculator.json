@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate ($\\frac{3}{7} - \\frac{2}{9}$) using a calculator. Which of the following is the exact answer?",
+      "questionText": "Evaluate ($\\frac{3}{7}$ - $\\frac{2}{9}$) using a calculator. Which of the following is the exact answer?",
       "options": [
         "0.206",
         "$\\frac{13}{63}$",
@@ -148,7 +148,7 @@
         "0.206349"
       ],
       "correctAnswer": 1,
-      "explanation": "While a calculator gives a decimal approximation, the question asks for the exact answer. Using a common denominator: (3*9)/(7*9) - (2*7)/(9*7) = $\\frac{27}{63} - \\frac{14}{63} = \\frac{13}{63}$. Some calculators can perform this exact fraction arithmetic."
+      "explanation": "While a calculator gives a decimal approximation, the question asks for the exact answer. Using a common denominator: (3*9)/(7*9) - (2*7)/(9*7) = $\\frac{27}{63}$ - $\\frac{14}{63}$ = $\\frac{13}{63}$. Some calculators can perform this exact fraction arithmetic."
     }
   ]
 }

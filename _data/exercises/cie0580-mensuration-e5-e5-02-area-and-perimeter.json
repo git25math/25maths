@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use $\\pi = \\frac{22}{7}$.",
+      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use $\\pi$ = $\\frac{22}{7}$.",
       "options": [
         "22 cm",
         "44 cm",
@@ -64,7 +64,7 @@
         "630$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "The area of a sector is given by ($\\frac{\\theta}{360}$) * $\\pi r^2$. So, Area = ($\\frac{63}{360}$) * $\\pi$ * $10^2$ = ($\\frac{7}{40}$) * 100$\\pi$ = 17.5$\\pi$ $\\text{cm}^2$."
+      "explanation": "The area of a sector is given by ($\\theta/360$) * $\\pir^2$. So, Area = ($\\frac{63}{360}$) * $\\pi$ * $10^2$ = ($\\frac{7}{40}$) * 100$\\pi$ = 17.5$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "14 cm"
       ],
       "correctAnswer": 2,
-      "explanation": "The area of a circle is A = $\\pi r^2$. Given A = 49$\\pi$, we have $\\pi r^2$ = 49$\\pi$. Dividing both sides by $\\pi$ gives $r^2$ = 49. Taking the square root, the radius r = 7 cm."
+      "explanation": "The area of a circle is A = $\\pir^2$. Given A = 49$\\pi$, we have $\\pir^2$ = 49$\\pi$. Dividing both sides by $\\pi$ gives $r^2$ = 49. Taking the square root, the radius r = 7 cm."
     },
     {
       "type": "multiple-choice",

@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A point lies on the x-axis at x = -5. What are its coordinates?",
+      "questionText": "A point lies on the x-axis at $x = -5$. What are its coordinates?",
       "options": [
         "(-5, 5)",
         "(5, -5)",
@@ -100,7 +100,7 @@
         "(-5, 0)"
       ],
       "correctAnswer": 3,
-      "explanation": "Any point on the x-axis must have a y-coordinate of 0. Since x = -5, the coordinates are (-5, 0)."
+      "explanation": "Any point on the x-axis must have a y-coordinate of 0. Since $x = -5$, the coordinates are (-5, 0)."
     },
     {
       "type": "multiple-choice",

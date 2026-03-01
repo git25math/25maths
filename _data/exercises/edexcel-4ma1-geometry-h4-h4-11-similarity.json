@@ -84,11 +84,11 @@
       "options": [
         "60$\\pi$ $\\text{cm}^3$",
         "100$\\pi$ $\\text{cm}^3$",
-        "500$\\frac{\\pi}{3}$ $\\text{cm}^3$",
+        "500$\\pi/3$ $\\text{cm}^3$",
         "180$\\pi$ $\\text{cm}^3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The ratio of corresponding lengths (radii) is 3:5. The ratio of their volumes is $(3)^3$:$(5)^3$ = 27:125. Let the volume of the larger sphere be V. Then $\\frac{27}{125}$ = 36$\\pi$/V. So V = 36$\\pi$ × ($\\frac{125}{27}$) = (4$\\frac{\\pi}{3}$) × 125 = 500$\\frac{\\pi}{3}$ $\\text{cm}^3$."
+      "explanation": "The ratio of corresponding lengths (radii) is 3:5. The ratio of their volumes is $(3)^3$:$(5)^3$ = 27:125. Let the volume of the larger sphere be V. Then $\\frac{27}{125}$ = 36$\\pi$/V. So V = 36$\\pi$ × ($\\frac{125}{27}$) = (4$\\pi/3$) × 125 = 500$\\pi/3$ $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",

@@ -28,11 +28,11 @@
         "12.6 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the cosine ratio: ${cos(angle) = adjacent / hypotenuse}$. So, $cos(40°) = \\frac{adjacent}{15}$. Rearranging gives ${adjacent = 15 \\times cos(40°) ≈ 11.5 cm}$."
+      "explanation": "Use the cosine ratio: ${cos(angle) = adjacent / hypotenuse}$. So, ${cos(40°) = adjacent / 15}$. Rearranging gives ${adjacent = 15 \\times cos(40°) ≈ 11.5 cm}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve ${sin(}$\\theta) = 0.5} for ${0° ≤ $\\theta${ ≤ 180°}$.",
+      "questionText": "Solve ${sin($\\theta$) = 0.5}$ for ${0° ≤ $\\theta$ ≤ 180°}$.",
       "options": [
         "30° and 150°",
         "30° only",
@@ -40,11 +40,11 @@
         "60° and 300°"
       ],
       "correctAnswer": 0,
-      "explanation": "The principal value is $$\\theta = $sin^{-1}$(0.5) = 30°}. Since sin($\\theta${) is positive, the second solution in the range }${0° ≤ $\\theta$ ≤ 180°${ is found using the identity }$sin($\\theta{) = sin(180°-}\\theta$)${, which gives }${180° - 30° = 150°}$."
+      "explanation": "The principal value is ${$\\theta$ = sin⁻¹(0.5) = 30°}$. Since sin($\\theta$) is positive, the second solution in the range ${0° ≤ $\\theta$ ≤ 180°}$ is found using the identity ${sin($\\theta${) = sin(180°-}$\\theta$)}$, which gives ${180° - 30° = 150°}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A vertical flagpole of height 8 metres casts a shadow of length 12 metres. What is the angle of elevation of the sun, $\\theta$? Give your answer to the nearest degree.",
+      "questionText": "A vertical flagpole of height 8 metres casts a shadow of length 12 metres. What is the angle of elevation of the sun, ${$\\theta$}$? Give your answer to the nearest degree.",
       "options": [
         "34°",
         "56°",
@@ -52,7 +52,7 @@
         "48°"
       ],
       "correctAnswer": 0,
-      "explanation": "The angle of elevation $$\\theta} is found using the tangent ratio: ${tan($\\theta$) = opposite / adjacent = 8 / 12${. Thus, }$$\\theta = $tan^{-1}$( \\frac{8}{12} ) ≈ 33.7°}, which is ${34°$ to the nearest degree."
+      "explanation": "The angle of elevation ${$\\theta$}$ is found using the tangent ratio: ${tan($\\theta$) = opposite / adjacent = 8 / 12}$. Thus, ${$\\theta$ = tan⁻¹(8/12) ≈ 33.7°}$, which is ${34°}$ to the nearest degree."
     },
     {
       "type": "multiple-choice",
@@ -64,11 +64,11 @@
         "10.9 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the sine ratio: ${sin(x) = opposite / hypotenuse}$. Substitute the known values: $0.4 = \\frac{10}{hypotenuse}$. Rearrange to find the hypotenuse: ${hypotenuse = 10 / 0.4 = 25 cm}$."
+      "explanation": "Use the sine ratio: ${sin(x) = opposite / hypotenuse}$. Substitute the known values: ${0.4 = 10 / hypotenuse}$. Rearrange to find the hypotenuse: ${hypotenuse = 10 / 0.4 = 25 cm}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve ${cos(x) = -0.5}$ for $0° ≤ x \\leq 360°$.",
+      "questionText": "Solve ${cos(x) = -0.5}$ for ${0° ≤ x $\\leq$ 360°}$.",
       "options": [
         "120° and 240°",
         "60° and 300°",
@@ -88,11 +88,11 @@
         "45.3 m"
       ],
       "correctAnswer": 0,
-      "explanation": "The angle of depression to the boat is equal to the angle of elevation from the boat. Let ${d}$ be the distance. $tan(25°) = \\frac{opposite}{adjacent} = \\frac{50}{d}$. Rearranging gives ${d = 50 / tan(25°) ≈ 107 m}$."
+      "explanation": "The angle of depression to the boat is equal to the angle of elevation from the boat. Let ${d}$ be the distance. ${tan(25°) = opposite / adjacent = 50 / d}$. Rearranging gives ${d = 50 / tan(25°) ≈ 107 m}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "A right-angled triangle has sides of length 5 cm, 12 cm and 13 cm. If $$\\theta} is the angle opposite{ the 12 cm side, what is the value of }${cos($\\theta$)$?",
+      "questionText": "A right-angled triangle has sides of length 5 cm, 12 cm and 13 cm. If ${$\\theta$}$ is the angle opposite the 12 cm side, what is the value of ${cos($\\theta$)}$?",
       "options": [
         "$\\frac{5}{13}$",
         "$\\frac{12}{13}$",
@@ -100,11 +100,11 @@
         "$\\frac{5}{12}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The hypotenuse is the longest side, 13 cm. The side opposite $$\\theta} is 12 cm. The remaining side, 5 cm, is adjacent to ${$\\theta$${. By definition, }$cos(\\theta) = adjacent / hypotenuse = $\\frac{5}{13}$$."
+      "explanation": "The hypotenuse is the longest side, 13 cm. The side opposite ${$\\theta$}$ is 12 cm. The remaining side, 5 cm, is adjacent to ${$\\theta$}$. By definition, ${cos($\\theta$) = adjacent / hypotenuse = 5/13}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of the following trigonometric equations is impossible for any real angle $\\theta$?",
+      "questionText": "Which of the following trigonometric equations is impossible for any real angle ${$\\theta$}$?",
       "options": [
         "sin($\\theta$) = 1.1",
         "cos($\\theta$) = -0.9",
@@ -112,11 +112,11 @@
         "sin($\\theta$) = 0.1"
       ],
       "correctAnswer": 0,
-      "explanation": "The values of ${sin(}$\\theta)} and ${cos($\\theta${)}$ must be in the range ${[-1, 1]}$. The value ${sin(}$\\theta) = 1.1} is greater than 1, which is impossible. The ${tan($\\theta${)}$ function can take any real value."
+      "explanation": "The values of ${sin($\\theta$)}$ and ${cos($\\theta$)}$ must be in the range ${[-1, 1]}$. The value ${sin($\\theta$) = 1.1}$ is greater than 1, which is impossible. The ${tan($\\theta$)}$ function can take any real value."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve ${tan(x) = -\\sqrt{3}}$ for $0° ≤ x \\leq 360°$.",
+      "questionText": "Solve ${tan(x) = -\\sqrt{3}}$ for ${0° ≤ x $\\leq$ 360°}$.",
       "options": [
         "120° and 300°",
         "60° and 240°",
@@ -136,11 +136,11 @@
         "73.7°"
       ],
       "correctAnswer": 0,
-      "explanation": "Bisect the isosceles triangle to form two congruent right-angled triangles. Each has a hypotenuse of 10 cm and a base of 6 cm. For a base angle $$\\theta}, ${cos($\\theta$) = adjacent / hypotenuse = 6 / 10${. Therefore, }$\\theta = cos⁻¹(0.6) ≈ 53.1°$."
+      "explanation": "Bisect the isosceles triangle to form two congruent right-angled triangles. Each has a hypotenuse of 10 cm and a base of 6 cm. For a base angle ${$\\theta$}$, ${cos($\\theta$) = adjacent / hypotenuse = 6 / 10}$. Therefore, ${$\\theta$ = cos⁻¹(0.6) ≈ 53.1°}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which coordinate point is a maximum point on the graph of ${y = sin(x)}$ for $0° ≤ x \\leq 360°$?",
+      "questionText": "Which coordinate point is a maximum point on the graph of ${y = sin(x)}$ for ${0° ≤ x $\\leq$ 360°}$?",
       "options": [
         "(90°, 1)",
         "(270°, -1)",
@@ -148,7 +148,7 @@
         "(0°, 1)"
       ],
       "correctAnswer": 0,
-      "explanation": "The graph of ${y = sin(x)}$ has a maximum value of 1. In the range ${0° ≤ x }$\\leq 360°}, this maximum occurs at ${x = 90°$. Therefore, the coordinate of the maximum point is ${(90°, 1)}$."
+      "explanation": "The graph of ${y = sin(x)}$ has a maximum value of 1. In the range ${0° ≤ x $\\leq$ 360°}$, this maximum occurs at ${x = 90°}$. Therefore, the coordinate of the maximum point is ${(90°, 1)}$."
     }
   ]
 }

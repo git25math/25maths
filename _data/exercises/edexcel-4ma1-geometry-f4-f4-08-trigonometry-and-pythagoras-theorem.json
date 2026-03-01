@@ -28,7 +28,7 @@
         "16 metres"
       ],
       "correctAnswer": 1,
-      "explanation": "This forms a right-angled triangle. Let the height be h. By Pythagoras' theorem, $h^{2} + 3^2 = 5^2$. So, h² + 9 = 25. Subtracting 9 from both sides gives h² = 16. Therefore, h = $\\sqrt{16}$ = 4 metres."
+      "explanation": "This forms a right-angled triangle. Let the height be h. By Pythagoras' theorem, $h^{2}$ + $3^2 = 5^2$. So, $h^{2}$ + 9 = 25. Subtracting 9 from both sides gives $h^{2}$ = 16. Therefore, h = $\\sqrt{16}$ = 4 metres."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "17.1 m"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the height of the tree be h. We have the opposite side (h) and the adjacent side (shadow = 12m). So, tan(35°) = h / 12. Therefore, h = 12 × tan(35°). Using a calculator, h ≈ 12 × 0.7002 ≈ 8.4024, which is 8.4 m to one decimal place."
+      "explanation": "Let the height of the tree be h. We have the opposite side (h) and the adjacent side (shadow = 12m). So, tan(35°) = h / 12. Therefore, $h = 12$ × tan(35°). Using a calculator, h ≈ 12 × 0.7002 ≈ 8.4024, which is 8.4 m to one decimal place."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "10.0 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the side length of the square be 's'. The diagonal forms the hypotenuse of a right-angled triangle with two sides 's'. By Pythagoras' theorem, $s^{2} + s^{2} = 10^2$. So, 2s² = 100. This means s² = 50. Therefore, s = $\\sqrt{50}$ ≈ 7.071, which is 7.1 cm to one decimal place."
+      "explanation": "Let the side length of the square be 's'. The diagonal forms the hypotenuse of a right-angled triangle with two sides 's'. By Pythagoras' theorem, $s^{2}$ + $s^{2}$ = $10^2$. So, $2s^{2}$ = 100. This means $s^{2}$ = 50. Therefore, s = $\\sqrt{50}$ ≈ 7.071, which is 7.1 cm to one decimal place."
     },
     {
       "type": "multiple-choice",

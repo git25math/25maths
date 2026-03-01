@@ -64,7 +64,7 @@
         "$\\frac{44}{100}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Let x = 0.444... Multiply by 10 to get 10x = 4.444... Subtract the first equation from the second: ${10x - x = 4}$.444... - 0.444..., which simplifies to 9x = 4. Therefore, x = $\\frac{4}{9}$."
+      "explanation": "Let $x = 0.444$... Multiply by 10 to get $10x = 4.444$... Subtract the first equation from the second: 10x - $x = 4.444$... - 0.444..., which simplifies to $9x = 4$. Therefore, x = $\\frac{4}{9}$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "$\\frac{8}{49}$"
       ],
       "correctAnswer": 0,
-      "explanation": "Let x = 0.161616... Since two digits repeat, multiply by 100 to get 100x = 16.161616... Subtract the first equation from the second: ${100x - x = 16}$.161616... - 0.161616..., which gives 99x = 16. Therefore, x = $\\frac{16}{99}$."
+      "explanation": "Let $x = 0.161616$... Since two digits repeat, multiply by 100 to get $100x = 16.161616$... Subtract the first equation from the second: 100x - $x = 16.161616$... - 0.161616..., which gives $99x = 16$. Therefore, x = $\\frac{16}{99}$."
     },
     {
       "type": "multiple-choice",

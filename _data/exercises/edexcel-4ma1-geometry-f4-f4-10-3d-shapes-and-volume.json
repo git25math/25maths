@@ -40,7 +40,7 @@
         "90.0 $\\text{cm}^3$"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume of a cylinder = $\\pi r^2$h. So, Volume = 3.14 × $(3 cm)^2$ × 10 cm = 3.14 × 9 $\\text{cm}^2$ × 10 cm = 282.6 $\\text{cm}^3$."
+      "explanation": "Volume of a cylinder = $\\pir^2$h. So, Volume = 3.14 × $(3 cm)^2$ × 10 cm = 3.14 × 9 $\\text{cm}^2$ × 10 cm = 282.6 $\\text{cm}^3$."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "20 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume = $\\pi r^2$h. So, 400$\\pi = \\pi \\times (4)^2$ × h. 400$\\pi$ = 16$\\pi$h. h = 400$\\pi$ / 16$\\pi$ = 25 cm."
+      "explanation": "Volume = $\\pir^2$h. So, 400$\\pi = \\pi \\times (4)^2$ × h. 400$\\pi$ = 16$\\pi$h. $h = 400\\pi$ / 16$\\pi$ = 25 cm."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "1000000 litres"
       ],
       "correctAnswer": 2,
-      "explanation": "Volume of pool = 10 m × 5 m × 2 m = 100 $\\text{m}^3$. Litres = 100 $\\text{m}^3$ × 1000 litres/$\\text{m}^3$ = 100,000 litres."
+      "explanation": "Volume of pool = 10 m × 5 m × 2 $m = 100$ $\\text{m}^3$. Litres = 100 $\\text{m}^3$ × 1000 litres/$\\text{m}^3$ = 100,000 litres."
     },
     {
       "type": "multiple-choice",

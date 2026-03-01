@@ -10,10 +10,10 @@
       "type": "multiple-choice",
       "questionText": "Express 8,340,000 in standard form.",
       "options": [
-        "8.34 × $10^{6}$",
-        "83.4 × $10^{5}$",
-        "8.34 × $10^{5}$",
-        "0.834 × $10^{7}$"
+        "$8.34 × 10^{6}$",
+        "$83.4 × 10^{5}$",
+        "$8.34 × 10^{5}$",
+        "$0.834 × 10^{7}$"
       ],
       "correctAnswer": 0,
       "explanation": "To express a number in standard form, it must be in the form A × 10^n, where 1 $\\leq$ A < 10. The decimal point in 8,340,000 moves 6 places to the left to get 8.34. Therefore, the number in standard form is 8.34 × $10^{6}$."
@@ -22,13 +22,13 @@
       "type": "multiple-choice",
       "questionText": "Write 0.0000721 in standard form.",
       "options": [
-        "7.21 × 10^-4",
-        "7.21 × 10^-5",
-        "72.1 × 10^-6",
-        "7.21 × $10^{5}$"
+        "$7.21 × 10^{-4}$",
+        "$7.21 × 10^{-5}$",
+        "$72.1 × 10^{-6}$",
+        "$7.21 × 10^{5}$"
       ],
       "correctAnswer": 1,
-      "explanation": "The decimal point must move 5 places to the right to get 7.21, which is between 1 and 10. Since the movement is to the right for a number less than 1, the power of 10 is negative. So, it is 7.21 × 10^-5."
+      "explanation": "The decimal point must move 5 places to the right to get 7.21, which is between 1 and 10. Since the movement is to the right for a number less than 1, the power of 10 is negative. So, it is 7.21 × $10^{-5}$."
     },
     {
       "type": "multiple-choice",
@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Write 2.8 × 10^-3 as an ordinary number.",
+      "questionText": "Write 2.8 × $10^{-3}$ as an ordinary number.",
       "options": [
         "0.0028",
         "0.028",
@@ -58,10 +58,10 @@
       "type": "multiple-choice",
       "questionText": "Calculate (4 × $10^{5}$) × (2 × $10^{3}$), giving your answer in standard form.",
       "options": [
-        "8 × $10^{8}$",
-        "8 × $10^{15}$",
-        "6 × $10^{8}$",
-        "8 × $10^{2}$"
+        "$8 × 10^{8}$",
+        "$8 × 10^{15}$",
+        "$6 × 10^{8}$",
+        "$8 × 10^{2}$"
       ],
       "correctAnswer": 0,
       "explanation": "Multiply the numbers (4 × 2 = 8) and add the indices of 10 (5 + 3 = 8). The result is 8 × $10^{8}$."
@@ -70,10 +70,10 @@
       "type": "multiple-choice",
       "questionText": "Calculate (9 × $10^{7}$) ÷ (3 × $10^{2}$), giving your answer in standard form.",
       "options": [
-        "6 × $10^{5}$",
-        "3 × $10^{9}$",
-        "3 × $10^{5}$",
-        "3 × $10^{3}$.5"
+        "$6 × 10^{5}$",
+        "$3 × 10^{9}$",
+        "$3 × 10^{5}$",
+        "$3 × 10^{3}.5$"
       ],
       "correctAnswer": 2,
       "explanation": "Divide the numbers (9 ÷ 3 = 3) and subtract the indices of 10 (7 - 2 = 5). The result is 3 × $10^{5}$."
@@ -82,10 +82,10 @@
       "type": "multiple-choice",
       "questionText": "Calculate (4.5 × $10^{4}$) + (2.1 × $10^{4}$), giving your answer in standard form.",
       "options": [
-        "6.6 × $10^{8}$",
-        "6.6 × $10^{4}$",
-        "6.6 × $10^{0}$",
-        "0.66 × $10^{5}$"
+        "$6.6 × 10^{8}$",
+        "$6.6 × 10^{4}$",
+        "$6.6 × 10^{0}$",
+        "$0.66 × 10^{5}$"
       ],
       "correctAnswer": 1,
       "explanation": "Since the powers of 10 are the same, we can add the numbers directly: 4.5 + 2.1 = 6.6. The power of 10 remains the same. The result is 6.6 × $10^{4}$."
@@ -94,10 +94,10 @@
       "type": "multiple-choice",
       "questionText": "Calculate (7 × $10^{5}$) - (4 × $10^{4}$), giving your answer in standard form.",
       "options": [
-        "3 × $10^{1}$",
-        "6.6 × $10^{5}$",
-        "3 × $10^{5}$",
-        "7.4 × $10^{4}$"
+        "$3 × 10^{1}$",
+        "$6.6 × 10^{5}$",
+        "$3 × 10^{5}$",
+        "$7.4 × 10^{4}$"
       ],
       "correctAnswer": 1,
       "explanation": "To subtract, the powers of 10 must be the same. Convert 7 × $10^{5}$ to 70 × $10^{4}$. Then, (70 × $10^{4}$) - (4 × $10^{4}$) = 66 × $10^{4}$. In standard form, this is 6.6 × $10^{5}$."
@@ -106,10 +106,10 @@
       "type": "multiple-choice",
       "questionText": "Calculate (5 × $10^{3}$) × (7 × $10^{4}$), giving your answer in standard form.",
       "options": [
-        "35 × $10^{7}$",
-        "3.5 × $10^{7}$",
-        "3.5 × $10^{8}$",
-        "3.5 × $10^{12}$"
+        "$35 × 10^{7}$",
+        "$3.5 × 10^{7}$",
+        "$3.5 × 10^{8}$",
+        "$3.5 × 10^{12}$"
       ],
       "correctAnswer": 2,
       "explanation": "Multiply the numbers (5 × 7 = 35) and add the indices (3 + 4 = 7), giving 35 × $10^{7}$. To write this in standard form, 35 must become 3.5 × $10^{1}$. So, (3.5 × $10^{1}$) × $10^{7}$ = 3.5 × $10^{8}$."
@@ -118,34 +118,34 @@
       "type": "multiple-choice",
       "questionText": "Calculate (2 × $10^{3}$) ÷ (8 × $10^{5}$), giving your answer in standard form.",
       "options": [
-        "0.25 × 10^-2",
-        "2.5 × 10^-3",
-        "2.5 × 10^-2",
-        "4 × $10^{2}$"
+        "$0.25 × 10^{-2}$",
+        "$2.5 × 10^{-3}$",
+        "$2.5 × 10^{-2}$",
+        "$4 × 10^{2}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Divide the numbers (2 ÷ 8 = 0.25) and subtract the indices (3 - 5 = -2), giving 0.25 × 10^-2. To write this in standard form, 0.25 must become 2.5 × 10^-1. So, (2.5 × 10^-1) × 10^-2 = 2.5 × 10^-3."
+      "explanation": "Divide the numbers (2 ÷ 8 = 0.25) and subtract the indices (3 - 5 = -2), giving 0.25 × $10^{-2}$. To write this in standard form, 0.25 must become 2.5 × $10^{-1}$. So, (2.5 × $10^{-1}$) × $10^{-2}$ = 2.5 × $10^{-3}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "The mass of a dust particle is 7.5 × 10^-10 kg. What is the total mass of 500 such dust particles, in kg?",
+      "questionText": "The mass of a dust particle is 7.5 × $10^{-10}$ kg. What is the total mass of 500 such dust particles, in kg?",
       "options": [
-        "3.75 × 10^-8",
-        "3.75 × 10^-7",
-        "37.5 × 10^-8",
-        "3.75 × 10^-12"
+        "$3.75 × 10^{-8}$",
+        "$3.75 × 10^{-7}$",
+        "$37.5 × 10^{-8}$",
+        "$3.75 × 10^{-12}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Total mass = (7.5 × 10^-10) × 500. First, write 500 in standard form: 5 × $10^{2}$. Then multiply: (7.5 × 5) × (10^-10 × $10^{2}$) = 37.5 × 10^-8. In standard form, this is 3.75 × 10^-7 kg."
+      "explanation": "Total mass = (7.5 × $10^{-10}$) × 500. First, write 500 in standard form: 5 × $10^{2}$. Then multiply: (7.5 × 5) × ($10^{-10}$ × $10^{2}$) = 37.5 × $10^{-8}$. In standard form, this is 3.75 × $10^{-7}$ kg."
     },
     {
       "type": "multiple-choice",
       "questionText": "Which of the following values is the largest?",
       "options": [
-        "3.2 × $10^{5}$",
-        "32 × $10^{3}$",
+        "$3.2 × 10^{5}$",
+        "$32 × 10^{3}$",
         "330000",
-        "3.1 × $10^{6}$"
+        "$3.1 × 10^{6}$"
       ],
       "correctAnswer": 3,
       "explanation": "Convert all values to ordinary numbers to compare them. A) 3.2 × $10^{5}$ = 320,000. B) 32 × $10^{3}$ = 32,000. C) 330,000. D) 3.1 × $10^{6}$ = 3,100,000. The largest value is 3,100,000."

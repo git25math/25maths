@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The opposite angles of a cyclic quadrilateral are (${x + 20}$)° and 80°. Find the value of x.",
+      "questionText": "The opposite angles of a cyclic quadrilateral are (x + 20)° and 80°. Find the value of x.",
       "options": [
         "60",
         "80",
@@ -100,7 +100,7 @@
         "160"
       ],
       "correctAnswer": 1,
-      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. So, (${x + 20}$) + 80 = 180. This gives ${x + 100 = 180}$, so x = 80."
+      "explanation": "Opposite angles in a cyclic quadrilateral sum to 180°. So, (x + 20) + 80 = 180. This gives x + 100 = 180, so $x = 80$."
     },
     {
       "type": "multiple-choice",

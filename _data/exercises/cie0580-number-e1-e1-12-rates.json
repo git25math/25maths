@@ -40,7 +40,7 @@
         "3 hours 50 minutes"
       ],
       "correctAnswer": 2,
-      "explanation": "Use the formula Time = Distance / Speed. Time = 1400 km / 400 km/h = 3.5 hours. To convert 0.5 hours to minutes, multiply by 60: 0.5 × 60 = 30 minutes. The total time is 3 hours 30 minutes."
+      "explanation": "Use the formula Time = Distance / Speed. Time = 1400 km / 400 km/$h = 3.5$ hours. To convert 0.5 hours to minutes, multiply by 60: 0.5 × 60 = 30 minutes. The total time is 3 hours 30 minutes."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "13:20"
       ],
       "correctAnswer": 2,
-      "explanation": "First, calculate the duration of the journey: Time = Distance / Speed = 45 km / 18 km/h = 2.5 hours. 2.5 hours is equal to 2 hours and 30 minutes. Add this duration to the start time: 10:30 + 2 hours 30 minutes = 13:00."
+      "explanation": "First, calculate the duration of the journey: Time = Distance / Speed = 45 km / 18 km/$h = 2.5$ hours. 2.5 hours is equal to 2 hours and 30 minutes. Add this duration to the start time: 10:30 + 2 hours 30 minutes = 13:00."
     }
   ]
 }

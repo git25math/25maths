@@ -136,7 +136,7 @@
         "36 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Using the arc length formula, $2\\pi = \\frac{40}{360} \\times 2\\pi r$. This simplifies to $1 = \\frac{1}{9}r$. Therefore, the radius ${r = 9}$ cm."
+      "explanation": "Using the arc length formula, $2\\pi = \\frac{40}{360} \\times 2\\pi r$. This simplifies to $1 = \\frac{1}{9}r$. Therefore, the radius $r = 9$ cm."
     },
     {
       "type": "multiple-choice",

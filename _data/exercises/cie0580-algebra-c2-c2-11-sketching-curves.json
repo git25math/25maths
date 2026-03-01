@@ -28,31 +28,31 @@
         "3"
       ],
       "correctAnswer": 0,
-      "explanation": "The y-intercept is the point where the graph crosses the y-axis. This occurs when x = 0. Substituting x = 0 into the equation gives y = $0^2$ - 5(0) + 6 = 6."
+      "explanation": "The y-intercept is the point where the graph crosses the y-axis. This occurs when $x = 0$. Substituting $x = 0$ into the equation gives y = $0^2$ - 5(0) + 6 = 6."
     },
     {
       "type": "multiple-choice",
       "questionText": "For which equation does the parabola open downwards?",
       "options": [
-        "y = 2$x^2$",
+        "$y = 2x^2$",
         "y = $x^2$ - 4",
-        "y = -3$x^2$ + 1",
+        "$y = -3x^2$ + 1",
         "y = $(x - 1)^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "A parabola opens downwards when the coefficient of the $x^2$ term is negative. In the equation y = -3$x^2$ + 1, the coefficient is -3."
+      "explanation": "A parabola opens downwards when the coefficient of the $x^2$ term is negative. In the equation $y = -3x^2$ + 1, the coefficient is -3."
     },
     {
       "type": "multiple-choice",
       "questionText": "What are the roots (x-intercepts) of the equation y = $x^2$ - 9?",
       "options": [
-        "x = 9 and x = -9",
-        "x = 3 and x = -3",
-        "x = 3 only",
+        "$x = 9 and x = -9$",
+        "$x = 3 and x = -3$",
+        "$x = 3 only$",
         "The graph does not have roots."
       ],
       "correctAnswer": 1,
-      "explanation": "The roots are the values of x for which y = 0. We need to solve the equation $x^2$ - 9 = 0. This gives $x^2$ = 9, so x = 3 and x = -3."
+      "explanation": "The roots are the values of x for which $y = 0$. We need to solve the equation $x^2$ - 9 = 0. This gives $x^2$ = 9, so $x = 3$ and $x = -3$."
     },
     {
       "type": "multiple-choice",
@@ -64,11 +64,11 @@
         "(-4, -5)"
       ],
       "correctAnswer": 1,
-      "explanation": "For a quadratic in the form y = $(x - h)^2$ + k, the turning point (vertex) is at the point (h, k). In this case, h = 4 and k = 5."
+      "explanation": "For a quadratic in the form y = $(x - h)^2$ + k, the turning point (vertex) is at the point (h, k). In this case, $h = 4$ and $k = 5$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which of these points lies on the line ${y = 3x - 2}$?",
+      "questionText": "Which of these points lies on the line y = 3x - 2?",
       "options": [
         "(1, 1)",
         "(0, 2)",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the x-intercept of the line ${y = -2x + 8}$?",
+      "questionText": "What is the x-intercept of the line y = -2x + 8?",
       "options": [
         "8",
         "-2",
@@ -88,23 +88,23 @@
         "-4"
       ],
       "correctAnswer": 2,
-      "explanation": "The x-intercept is the point where y = 0. We solve the equation 0 = -2x + 8. This gives 2x = 8, so x = 4."
+      "explanation": "The x-intercept is the point where $y = 0$. We solve the equation 0 = -2x + 8. This gives $2x = 8$, so $x = 4$."
     },
     {
       "type": "multiple-choice",
       "questionText": "What is the axis of symmetry for the parabola y = $(x + 3)^2$ - 1?",
       "options": [
-        "x = 3",
-        "x = -3",
-        "y = -1",
-        "y = 3"
+        "$x = 3$",
+        "$x = -3$",
+        "$y = -1$",
+        "$y = 3$"
       ],
       "correctAnswer": 1,
-      "explanation": "The axis of symmetry for a parabola in the form y = $(x - h)^2$ + k is the vertical line x = h. For this equation, h = -3, so the axis of symmetry is x = -3."
+      "explanation": "The axis of symmetry for a parabola in the form y = $(x - h)^2$ + k is the vertical line x = h. For this equation, $h = -3$, so the axis of symmetry is $x = -3$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "How does the graph of y = 5$x^2$ compare to the graph of y = $x^2$?",
+      "questionText": "How does the graph of $y = 5x^2$ compare to the graph of y = $x^2$?",
       "options": [
         "It is wider.",
         "It is shifted 5 units up.",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "What are the coordinates of the y-intercept of the line ${y = 4x + 2}$?",
+      "questionText": "What are the coordinates of the y-intercept of the line y = 4x + 2?",
       "options": [
         "(0, 2)",
         "(2, 0)",
@@ -124,11 +124,11 @@
         "(-0.5, 0)"
       ],
       "correctAnswer": 0,
-      "explanation": "The y-intercept occurs when x = 0. Substituting x = 0 gives y = 4(0) + 2 = 2. The coordinates are (0, 2)."
+      "explanation": "The y-intercept occurs when $x = 0$. Substituting $x = 0$ gives y = 4(0) + 2 = 2. The coordinates are (0, 2)."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Which description matches the graph of ${y = -x + 5}$?",
+      "questionText": "Which description matches the graph of y = -x + 5?",
       "options": [
         "A straight line sloping upwards.",
         "A straight line sloping downwards.",

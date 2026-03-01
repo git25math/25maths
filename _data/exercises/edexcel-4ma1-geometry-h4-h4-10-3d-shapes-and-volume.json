@@ -88,7 +88,7 @@
         "25 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "Volume = $\\pi \\times r^2$ × h. So, 300$\\pi = \\pi \\times r^2$ × 12. 300 = 12$r^2$. $r^2 = \\frac{300}{12}$ = 25. r = $\\sqrt{25}$ = 5 cm."
+      "explanation": "Volume = $\\pi \\times r^2$ × h. So, 300$\\pi = \\pi \\times r^2$ × 12. 300 = 12$r^2$. $r^2$ = $\\frac{300}{12}$ = 25. r = $\\sqrt{25}$ = 5 cm."
     },
     {
       "type": "multiple-choice",

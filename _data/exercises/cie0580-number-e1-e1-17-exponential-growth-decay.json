@@ -52,7 +52,7 @@
         "$610"
       ],
       "correctAnswer": 1,
-      "explanation": "The value is calculated as Initial Value × (Multiplier)^n = 500 × (1.1)^2 = ${605. Simple interest would incorrectly give }$600."
+      "explanation": "The value is calculated as Initial Value × (Multiplier)^$n = 500$ × (1.1)^2 = ${605. Simple interest would incorrectly give }$600."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "$13000"
       ],
       "correctAnswer": 0,
-      "explanation": "The value is calculated as Initial Value × (Multiplier)^n = 20000 × (1 - 0.15)^3 = 20000 × (0.85)^3 ≈ $12283."
+      "explanation": "The value is calculated as Initial Value × (Multiplier)^$n = 20000$ × (1 - 0.15)^3 = 20000 × (0.85)^3 ≈ $12283."
     },
     {
       "type": "multiple-choice",

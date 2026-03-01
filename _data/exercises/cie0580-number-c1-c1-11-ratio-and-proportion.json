@@ -124,7 +124,7 @@
         "Cannot be determined"
       ],
       "correctAnswer": 0,
-      "explanation": "To compare, find the price per gram (or per 100g). For the 500g bag: ${3.00 / 500g = }$0.006 per gram. For the 750g bag: $\\frac{4.80}{750} g = $0.0064 per gram. Since ${0.006 is less than }$0.0064, the 500g bag is better value."
+      "explanation": "To compare, find the price per gram (or per 100g). For the 500g bag: ${3.00 / 500g = }$0.006 per gram. For the 750g bag: ${4.80 / 750g = }$0.0064 per gram. Since ${0.006 is less than }$0.0064, the 500g bag is better value."
     },
     {
       "type": "multiple-choice",

@@ -28,7 +28,7 @@
         "140°"
       ],
       "correctAnswer": 0,
-      "explanation": "Since PQ = PR, triangle PQR is an isosceles triangle. The base angles are equal, so $\\angle PQR = \\angle PRQ$. The sum of angles in a triangle is 180°. So, 2 * $\\angle PQR$ + 40° = 180°. 2 * $\\angle PQR$ = 140°, which means $\\angle PQR$ = 70°."
+      "explanation": "Since PQ = PR, triangle PQR is an isosceles triangle. The base angles are equal, so $\\angle PQR$ = $\\angle PRQ$. The sum of angles in a triangle is 180°. So, 2 * $\\angle PQR$ + 40° = 180°. 2 * $\\angle PQR$ = 140°, which means $\\angle PQR$ = 70°."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "200°"
       ],
       "correctAnswer": 0,
-      "explanation": "In a parallelogram, consecutive angles are supplementary. Therefore, $\\angle DAB + \\angle ABC$ = 180°. So, 100° + $\\angle ABC$ = 180°. $\\angle ABC$ = 180° - 100° = 80°."
+      "explanation": "In a parallelogram, consecutive angles are supplementary. Therefore, $\\angle DAB$ + $\\angle ABC$ = 180°. So, 100° + $\\angle ABC$ = 180°. $\\angle ABC$ = 180° - 100° = 80°."
     }
   ]
 }

@@ -16,7 +16,7 @@
         "6.53 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "Use the sine rule: a/sin(A) = b/sin(B). Rearranging gives a = b * sin(A) / sin(B). So, a = 10 * sin(40°) / sin(60°) = 7.422... cm."
+      "explanation": "Use the sine rule: a/sin(A) = b/sin(B). Rearranging gives a = b * sin(A) / sin(B). So, $a = 10$ * sin(40°) / sin(60°) = 7.422... cm."
     },
     {
       "type": "multiple-choice",

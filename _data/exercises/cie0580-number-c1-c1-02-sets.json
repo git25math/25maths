@@ -97,7 +97,7 @@
         "Every element of D is also in C",
         "C and D have no common elements",
         "Every element of C is also in D",
-        "n(C) > n(D)"
+        "$n(C) > n(D)$"
       ],
       "correctAnswer": 2,
       "explanation": "The symbol ⊂ means 'is a subset of'. This means that every element contained within set C must also be an element of set D."

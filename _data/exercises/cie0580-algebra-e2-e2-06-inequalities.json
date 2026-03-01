@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality ${3x - 4}$> 11.",
+      "questionText": "Solve the inequality 3x - 4 > 11.",
       "options": [
         "x > 5",
         "x < 5",
@@ -32,7 +32,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the largest integer value of x for which ${5x + 2}$< 28.",
+      "questionText": "Find the largest integer value of x for which 5x + 2 < 28.",
       "options": [
         "5",
         "6",
@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality 4(${x - 3}$) >= 8.",
+      "questionText": "Solve the inequality 4(x - 3) >= 8.",
       "options": [
         "x >= 5",
         "x >= 2",
@@ -52,7 +52,7 @@
         "x >= -1"
       ],
       "correctAnswer": 0,
-      "explanation": "Expand the bracket: ${4x - 12}$>= 8. Add 12 to both sides: 4x >= 20. Divide by 4: x >= 5."
+      "explanation": "Expand the bracket: 4x - 12 >= 8. Add 12 to both sides: 4x >= 20. Divide by 4: x >= 5."
     },
     {
       "type": "multiple-choice",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the compound inequality -1 < ${2x + 1}$<= 7.",
+      "questionText": "Solve the compound inequality -1 < 2x + 1 <= 7.",
       "options": [
         "-1 < x <= 3",
         "-1 <= x < 3",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the smallest integer value of x that satisfies ${7x - 5}$>= ${4x + 1}$.",
+      "questionText": "Find the smallest integer value of x that satisfies 7x - 5 >= 4x + 1.",
       "options": [
         "2",
         "3",
@@ -88,7 +88,7 @@
         "0"
       ],
       "correctAnswer": 0,
-      "explanation": "Subtract 4x from both sides: ${3x - 5}$>= 1. Add 5 to both sides: 3x >= 6. Divide by 3: x >= 2. The smallest integer value is 2."
+      "explanation": "Subtract 4x from both sides: 3x - 5 >= 1. Add 5 to both sides: 3x >= 6. Divide by 3: x >= 2. The smallest integer value is 2."
     },
     {
       "type": "multiple-choice",
@@ -112,11 +112,11 @@
         "-3 < x < 3"
       ],
       "correctAnswer": 1,
-      "explanation": "The critical values are the solutions to $x^2$ = 9, which are x = 3 and x = -3. Testing the regions outside these values (e.g., x=4 or x=-4) shows that the inequality holds for x > 3 or x < -3."
+      "explanation": "The critical values are the solutions to $x^2$ = 9, which are $x = 3$ and $x = -3$. Testing the regions outside these values (e.g., $x = 4$ or $x = -4$) shows that the inequality holds for x > 3 or x < -3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Solve the inequality (${x-1}$)(${x-4}$) < 0.",
+      "questionText": "Solve the inequality (x-1)(x-4) < 0.",
       "options": [
         "x < 1 or x > 4",
         "1 < x < 4",
@@ -124,7 +124,7 @@
         "-1 < x < -4"
       ],
       "correctAnswer": 1,
-      "explanation": "The critical values are x=1 and x=4. For the product to be negative, one factor must be positive and the other negative. This occurs when x is between 1 and 4."
+      "explanation": "The critical values are $x = 1$ and $x = 4$. For the product to be negative, one factor must be positive and the other negative. This occurs when x is between 1 and 4."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "-5 <= x <= 5"
       ],
       "correctAnswer": 3,
-      "explanation": "The critical values are x = 5 and x = -5. The inequality $x^2$ <= 25 holds for all values of x between and including -5 and 5."
+      "explanation": "The critical values are $x = 5$ and $x = -5$. The inequality $x^2$ <= 25 holds for all values of x between and including -5 and 5."
     }
   ]
 }

@@ -64,7 +64,7 @@
         "360°"
       ],
       "correctAnswer": 1,
-      "explanation": "The angle of rotation for a shape with order of rotational symmetry 'n' is 360°/n. For n=3, the angle is 360°/3 = 120°."
+      "explanation": "The angle of rotation for a shape with order of rotational symmetry 'n' is 360°/n. For $n = 3$, the angle is 360°/3 = 120°."
     },
     {
       "type": "multiple-choice",

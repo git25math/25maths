@@ -16,7 +16,7 @@
         "250°"
       ],
       "correctAnswer": 0,
-      "explanation": "Angles on a straight line add up to 180°. So, x = 180° - 110° = 70°."
+      "explanation": "Angles on a straight line add up to 180°. So, $x = 180$° - 110° = 70°."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "42°"
       ],
       "correctAnswer": 0,
-      "explanation": "Angle 'a' and the angle marked 48° are alternate interior angles. Alternate interior angles are equal when lines are parallel. So, a = 48°."
+      "explanation": "Angle 'a' and the angle marked 48° are alternate interior angles. Alternate interior angles are equal when lines are parallel. So, $a = 48$°."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "90°"
       ],
       "correctAnswer": 1,
-      "explanation": "Angle 'b' and the angle marked 118° are corresponding angles. Corresponding angles are equal when lines are parallel. So, b = 118°."
+      "explanation": "Angle 'b' and the angle marked 118° are corresponding angles. Corresponding angles are equal when lines are parallel. So, $b = 118$°."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "285°"
       ],
       "correctAnswer": 0,
-      "explanation": "Angle 'c' and an angle of 105° are allied (or co-interior) angles. Allied angles add up to 180°. So, c = 180° - 105° = 75°."
+      "explanation": "Angle 'c' and an angle of 105° are allied (or co-interior) angles. Allied angles add up to 180°. So, $c = 180$° - 105° = 75°."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "130°"
       ],
       "correctAnswer": 2,
-      "explanation": "The exterior angle of a triangle is equal to the sum of the two opposite interior angles. So, x = 50° + 60° = 110°."
+      "explanation": "The exterior angle of a triangle is equal to the sum of the two opposite interior angles. So, $x = 50$° + 60° = 110°."
     },
     {
       "type": "multiple-choice",

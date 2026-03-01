@@ -124,7 +124,7 @@
         "4 hours"
       ],
       "correctAnswer": 2,
-      "explanation": "Use Time = Distance / Speed. Time = 140 km / 40 km/h = 3.5 hours. 0.5 hours is equal to 30 minutes, so the total time is 3 hours and 30 minutes."
+      "explanation": "Use Time = Distance / Speed. Time = 140 km / 40 km/$h = 3.5$ hours. 0.5 hours is equal to 30 minutes, so the total time is 3 hours and 30 minutes."
     },
     {
       "type": "multiple-choice",

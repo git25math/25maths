@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given p = 4.5 (nearest 0.1) and q = 2.5 (nearest 0.1). What is the minimum value of p + q?",
+      "questionText": "Given $p = 4.5$ (nearest 0.1) and $q = 2.5$ (nearest 0.1). What is the minimum value of p + q?",
       "options": [
         "7.0",
         "6.8",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given a = 10 (nearest integer) and b = 3 (nearest integer). What is the maximum value of a - b?",
+      "questionText": "Given $a = 10$ (nearest integer) and $b = 3$ (nearest integer). What is the maximum value of a - b?",
       "options": [
         "7",
         "8",
@@ -104,7 +104,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given x = 20 and y = 5, both correct to the nearest integer. What is the lower bound for x / y?",
+      "questionText": "Given $x = 20$ and $y = 5$, both correct to the nearest integer. What is the lower bound for x / y?",
       "options": [
         "4",
         "3.545...",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given y = 100 correct to 1 significant figure. What is the upper bound for y?",
+      "questionText": "Given $y = 100$ correct to 1 significant figure. What is the upper bound for y?",
       "options": [
         "101",
         "105",

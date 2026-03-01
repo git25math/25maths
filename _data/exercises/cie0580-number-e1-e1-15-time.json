@@ -40,7 +40,7 @@
         "3.55 hours"
       ],
       "correctAnswer": 0,
-      "explanation": "Time = Distance / Speed. Time = 252 km / 72 km/h = 3.5 hours. 0.5 hours is equal to 0.5 * 60 = 30 minutes. So the total time is 3 hours and 30 minutes."
+      "explanation": "Time = Distance / Speed. Time = 252 km / 72 km/$h = 3.5$ hours. 0.5 hours is equal to 0.5 * 60 = 30 minutes. So the total time is 3 hours and 30 minutes."
     },
     {
       "type": "multiple-choice",

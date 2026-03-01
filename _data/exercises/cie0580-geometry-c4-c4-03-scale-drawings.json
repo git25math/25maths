@@ -40,7 +40,7 @@
         "1:2"
       ],
       "correctAnswer": 1,
-      "explanation": "First, convert both lengths to the same unit. 300 m = 300 × 100 = 30000 cm. The scale is Drawing:Actual = 15:30000. To get the form 1:n, divide both sides by 15. $\\frac{15}{15}$ : $\\frac{30000}{15}$ gives 1:2000."
+      "explanation": "First, convert both lengths to the same unit. 300 $m = 300$ × 100 = 30000 cm. The scale is Drawing:Actual = 15:30000. To get the form 1:n, divide both sides by 15. $\\frac{15}{15}$ : $\\frac{30000}{15}$ gives 1:2000."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "3000 $\\text{m}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Actual length = 6 cm × 100 = 600 cm = 6 m. Actual width = 5 cm × 100 = 500 cm = 5 m. Actual area = Actual length × Actual width = 6 m × 5 m = 30 $\\text{m}^2$."
+      "explanation": "Actual length = 6 cm × 100 = 600 cm = 6 m. Actual width = 5 cm × 100 = 500 cm = 5 m. Actual area = Actual length × Actual width = 6 m × 5 $m = 30$ $\\text{m}^2$."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "24 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "First, convert the actual length to cm. 120 m = 120 × 100 = 12000 cm. Drawing length = Actual length / Scale factor = 12000 cm / 2000 = 6 cm."
+      "explanation": "First, convert the actual length to cm. 120 $m = 120$ × 100 = 12000 cm. Drawing length = Actual length / Scale factor = 12000 cm / 2000 = 6 cm."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "20 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "First, convert the actual wingspan to cm. 36 m = 36 × 100 = 3600 cm. Model wingspan = Actual wingspan / Scale factor = 3600 cm / 72 = 50 cm."
+      "explanation": "First, convert the actual wingspan to cm. 36 $m = 36$ × 100 = 3600 cm. Model wingspan = Actual wingspan / Scale factor = 3600 cm / 72 = 50 cm."
     }
   ]
 }

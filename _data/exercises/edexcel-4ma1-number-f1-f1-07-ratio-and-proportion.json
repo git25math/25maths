@@ -58,10 +58,10 @@
       "type": "multiple-choice",
       "questionText": "A recipe for a fruit smoothie requires bananas and strawberries in the ratio 2 : 3. If 80g of banana is used, how much strawberry is needed?",
       "options": [
-        "120g",
-        "53g",
-        "240g",
-        "100g"
+        "$120g$",
+        "$53g$",
+        "$240g$",
+        "$100g$"
       ],
       "correctAnswer": 0,
       "explanation": "The ratio for bananas is 2 parts, which equals 80g. One part is 80g ÷ 2 = 40g. The ratio for strawberries is 3 parts. So, the amount of strawberry needed is 3 × 40g = 120g."

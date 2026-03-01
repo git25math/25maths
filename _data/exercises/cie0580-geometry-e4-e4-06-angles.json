@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a pair of parallel lines, two co-interior angles are given by the expressions (${3x + 10}$)° and (${2x + 20}$)°. Find the value of x.",
+      "questionText": "In a pair of parallel lines, two co-interior angles are given by the expressions (3x + 10)° and (2x + 20)°. Find the value of x.",
       "options": [
         "10",
         "15",
@@ -28,7 +28,7 @@
         "30"
       ],
       "correctAnswer": 3,
-      "explanation": "Co-interior angles between parallel lines add up to 180°. So, (${3x + 10}$) + (${2x + 20}$) = 180. This simplifies to ${5x + 30 = 180}$. Subtracting 30 from both sides gives 5x = 150. Dividing by 5 gives x = 30."
+      "explanation": "Co-interior angles between parallel lines add up to 180°. So, (3x + 10) + (2x + 20) = 180. This simplifies to $5x + 30 = 180$. Subtracting 30 from both sides gives $5x = 150$. Dividing by 5 gives $x = 30$."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "1260°"
       ],
       "correctAnswer": 2,
-      "explanation": "The formula for an interior angle of a regular n-sided polygon is ((n-2) * 180°) / n. For a nonagon (n=9), this is ((9-2) * 180°) / 9 = (7 * 180°) / 9 = 7 * 20° = 140°. Alternatively, the exterior angle is 360°/9 = 40°, so the interior angle is 180° - 40° = 140°."
+      "explanation": "The formula for an interior angle of a regular n-sided polygon is ((n-2) * 180°) / n. For a nonagon ($n = 9$), this is ((9-2) * 180°) / 9 = (7 * 180°) / 9 = 7 * 20° = 140°. Alternatively, the exterior angle is 360°/9 = 40°, so the interior angle is 180° - 40° = 140°."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Three angles around a point are x, (${2x + 30}$)°, and (${3x - 90}$)°. Find the value of x.",
+      "questionText": "Three angles around a point are x, (2x + 30)°, and (3x - 90)°. Find the value of x.",
       "options": [
         "60",
         "70",
@@ -100,7 +100,7 @@
         "90"
       ],
       "correctAnswer": 1,
-      "explanation": "Angles around a point sum to 360°. So, ${x +}$(${2x + 30}$) + (${3x - 90}$) = 360. This simplifies to ${6x - 60 = 360}$. Adding 60 to both sides gives 6x = 420. Dividing by 6 gives x = 70."
+      "explanation": "Angles around a point sum to 360°. So, x + (2x + 30) + (3x - 90) = 360. This simplifies to $6x - 60 = 360$. Adding 60 to both sides gives $6x = 420$. Dividing by 6 gives $x = 70$."
     },
     {
       "type": "multiple-choice",
@@ -112,11 +112,11 @@
         "14"
       ],
       "correctAnswer": 2,
-      "explanation": "The sum of interior angles is given by the formula (n-2) * 180°, where n is the number of sides. So, (n-2) * 180° = 1800°. Divide both sides by 180: n-2 = 10. Therefore, n = 12."
+      "explanation": "The sum of interior angles is given by the formula (n-2) * 180°, where n is the number of sides. So, (n-2) * 180° = 1800°. Divide both sides by 180: n-2 = 10. Therefore, $n = 12$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "In a pair of parallel lines, two alternate interior angles are expressed as (4y)° and (${y + 75}$)°. Find the value of y.",
+      "questionText": "In a pair of parallel lines, two alternate interior angles are expressed as (4y)° and (y + 75)°. Find the value of y.",
       "options": [
         "15",
         "25",
@@ -124,7 +124,7 @@
         "35"
       ],
       "correctAnswer": 1,
-      "explanation": "Alternate interior angles in parallel lines are equal. Therefore, 4y = ${y + 75}$. Subtracting y from both sides gives 3y = 75. Dividing by 3 gives y = 25."
+      "explanation": "Alternate interior angles in parallel lines are equal. Therefore, 4y = y + 75. Subtracting y from both sides gives $3y = 75$. Dividing by 3 gives $y = 25$."
     },
     {
       "type": "multiple-choice",

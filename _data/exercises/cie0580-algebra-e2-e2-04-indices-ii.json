@@ -59,12 +59,12 @@
       "questionText": "Write 5$x^{-2}$ with a positive index.",
       "options": [
         "1/(5$x^2$)",
-        "$\\frac{5}{x^2}$",
+        "$5/x^2$",
         "-5$x^2$",
         "-10x"
       ],
       "correctAnswer": 1,
-      "explanation": "A negative power indicates the reciprocal. $x^{-2}$ is $\\frac{1}{x^2}$. The coefficient 5 remains in the numerator. So, the expression is $\\frac{5}{x^2}$."
+      "explanation": "A negative power indicates the reciprocal. $x^{-2}$ is $1/x^2$. The coefficient 5 remains in the numerator. So, the expression is $5/x^2$."
     },
     {
       "type": "multiple-choice",
@@ -94,13 +94,13 @@
       "type": "multiple-choice",
       "questionText": "Solve the equation 3ⁿ⁺¹ = 81.",
       "options": [
-        "n = 2",
-        "n = 3",
-        "n = 4",
-        "n = 26"
+        "$n = 2$",
+        "$n = 3$",
+        "$n = 4$",
+        "$n = 26$"
       ],
       "correctAnswer": 1,
-      "explanation": "Express 81 as a power of 3: 81 = $3^4$. So, 3ⁿ⁺¹ = $3^4$. Equating the powers gives n + 1 = 4, which means n = 3."
+      "explanation": "Express 81 as a power of 3: 81 = $3^4$. So, 3ⁿ⁺¹ = $3^4$. Equating the powers gives n + 1 = 4, which means $n = 3$."
     },
     {
       "type": "multiple-choice",
@@ -112,11 +112,11 @@
         "m/$n^8$"
       ],
       "correctAnswer": 0,
-      "explanation": "Multiply each power inside the bracket by the power outside: 3 × (-2) = -6 and -4 × (-2) = 8. This results in m⁻⁶$n^8$."
+      "explanation": "Multiply each power inside the bracket by the power outside: 3 × (-2) = -6 and -4 × (-2) = 8. This results in $m^{-6}n^8$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Evaluate $( \\frac{9}{25} )^{-1}$/².",
+      "questionText": "Evaluate $(9/25)^{-1}$/².",
       "options": [
         "$\\frac{5}{3}$",
         "$\\frac{3}{5}$",
@@ -124,23 +124,23 @@
         "-$\\frac{18}{50}$"
       ],
       "correctAnswer": 0,
-      "explanation": "The negative power inverts the fraction to $\\frac{25}{9}$. The power of $\\frac{1}{2}$ means square root. $\\sqrt{25/9} = \\frac{5}{3}$."
+      "explanation": "The negative power inverts the fraction to $\\frac{25}{9}$. The power of $\\frac{1}{2}$ means square root. $\\sqrt{25/9}$ = $\\frac{5}{3}$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Given xᵃ / $x^4 = x^3$, find the value of a.",
       "options": [
-        "a = 12",
-        "a = 1",
-        "a = 7",
-        "a = -1"
+        "$a = 12$",
+        "$a = 1$",
+        "$a = 7$",
+        "$a = -1$"
       ],
       "correctAnswer": 2,
-      "explanation": "According to the division law of indices, a - 4 = 3. Therefore, a = 7."
+      "explanation": "According to the division law of indices, a - 4 = 3. Therefore, $a = 7$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify $\\sqrt{16x^{16}}$.",
+      "questionText": "Simplify √(16$x^{16}$).",
       "options": [
         "8$x^8$",
         "4$x^4$",

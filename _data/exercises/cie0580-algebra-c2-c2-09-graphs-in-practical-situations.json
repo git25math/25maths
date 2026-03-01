@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost, $C, to hire a plumber is modelled by the equation C = 50h + 40, where h is the number of hours. What does the number 40 represent in this equation?",
+      "questionText": "The cost, $C, to hire a plumber is modelled by the equation $C = 50h + 40$, where h is the number of hours. What does the number 40 represent in this equation?",
       "options": [
         "The cost per hour",
         "The total cost for 40 hours",
@@ -28,7 +28,7 @@
         "The number of hours worked"
       ],
       "correctAnswer": 2,
-      "explanation": "The value 40 is the y-intercept (when h=0), which represents the initial, fixed cost before any hours are worked. This is often called a call-out fee."
+      "explanation": "The value 40 is the y-intercept (when $h = 0$), which represents the initial, fixed cost before any hours are worked. This is often called a call-out fee."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "400 litres"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute t = 20 into the formula: V = 300 - 5(20) = 300 - 100 = 200 litres."
+      "explanation": "Substitute $t = 20$ into the formula: V = 300 - 5(20) = 300 - 100 = 200 litres."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "C = 10 - 3g"
       ],
       "correctAnswer": 1,
-      "explanation": "The cost is the fixed fee (${10) plus the variable fee (}$3 times the number of gigabytes, g). So, C = 3g + 10."
+      "explanation": "The cost is the fixed fee (${10) plus the variable fee (}$3 times the number of gigabytes, g). So, $C = 3g + 10.$"
     },
     {
       "type": "multiple-choice",
@@ -80,7 +80,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The cost, $C, for a taxi journey of d km is C = 1.5d + 2. How much would a journey of 8 km cost?",
+      "questionText": "The cost, $C, for a taxi journey of d km is C = 1.5d + 2$.$ How much would a journey of 8 km cost?",
       "options": [
         "$12",
         "$14",
@@ -88,7 +88,7 @@
         "$20"
       ],
       "correctAnswer": 1,
-      "explanation": "Substitute d = 8 into the formula: C = 1.5(8) + 2 = 12 + 2 = $14."
+      "explanation": "Substitute $d = 8$ into the formula: C = 1.5(8) + 2 = 12 + 2 = $14."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "4°C/h"
       ],
       "correctAnswer": 1,
-      "explanation": "The rate of change is the gradient. Change in temperature = 21 - 12 = 9°C. Change in time = 11:00 - 08:00 = 3 hours. Rate = 9°C / 3 h = 3°C/h."
+      "explanation": "The rate of change is the gradient. Change in temperature = 21 - 12 = 9°C. Change in time = 11:00 - 08:00 = 3 hours. Rate = 9°C / 3 $h = 3$°C/h."
     },
     {
       "type": "multiple-choice",
@@ -116,7 +116,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The electricity bill, B, is calculated as B = 0.2k + 15, where k is the number of units used. If a bill is $65, how many units were used?",
+      "questionText": "The electricity bill, B, is calculated as $B = 0.2k + 15$, where k is the number of units used. If a bill is $65, how many units were used?",
       "options": [
         "250",
         "400",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The equation of a line on a graph is y = -${4x + 80}$. In a practical context, this represents the amount of fuel y (litres) left in a car after driving x hours. What does the x-intercept represent?",
+      "questionText": "The equation of a line on a graph is y = -4x + 80. In a practical context, this represents the amount of fuel y (litres) left in a car after driving x hours. What does the x-intercept represent?",
       "options": [
         "The starting amount of fuel.",
         "The fuel consumption rate.",
@@ -136,7 +136,7 @@
         "The distance travelled."
       ],
       "correctAnswer": 2,
-      "explanation": "The x-intercept is where y = 0. In this context, y=0 means there is no fuel left. So, the x-intercept represents the time taken for the car to run out of fuel."
+      "explanation": "The x-intercept is where $y = 0$. In this context, $y = 0$ means there is no fuel left. So, the x-intercept represents the time taken for the car to run out of fuel."
     },
     {
       "type": "multiple-choice",

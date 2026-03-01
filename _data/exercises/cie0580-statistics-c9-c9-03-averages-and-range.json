@@ -76,7 +76,7 @@
         "20"
       ],
       "correctAnswer": 0,
-      "explanation": "The sum of the five numbers is mean × count = 5 × 5 = 25. The sum of the known numbers is 5 + 8 + 1 + 6 = 20. So, x = 25 - 20 = 5."
+      "explanation": "The sum of the five numbers is mean × count = 5 × 5 = 25. The sum of the known numbers is 5 + 8 + 1 + 6 = 20. So, $x = 25$ - 20 = 5."
     },
     {
       "type": "multiple-choice",

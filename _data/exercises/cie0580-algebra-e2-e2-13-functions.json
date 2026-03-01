@@ -16,7 +16,7 @@
         "16"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute x = -3 into the function: f(-3) = 2(-3) + 5 = -6 + 5 = -1."
+      "explanation": "Substitute $x = -3$ into the function: f(-3) = 2(-3) + 5 = -6 + 5 = -1."
     },
     {
       "type": "multiple-choice",
@@ -28,7 +28,7 @@
         "14"
       ],
       "correctAnswer": 1,
-      "explanation": "Substitute x = 5 into the function: g(5) = $5^2$ - 9 = 25 - 9 = 16."
+      "explanation": "Substitute $x = 5$ into the function: g(5) = $5^2$ - 9 = 25 - 9 = 16."
     },
     {
       "type": "multiple-choice",
@@ -40,35 +40,35 @@
         "1"
       ],
       "correctAnswer": 2,
-      "explanation": "Set the function equal to 11: 3x - 7 = 11. Add 7 to both sides: 3x = 18. Divide by 3: x = 6."
+      "explanation": "Set the function equal to 11: $3x - 7 = 11$. Add 7 to both sides: $3x = 18$. Divide by 3: $x = 6$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the inverse function, $f^{-1}$(x), of f(x) = x - 8.",
       "options": [
-        "x + 8",
-        "8 - x",
+        "$x + 8$",
+        "$8 - x$",
         "1/(x-8)",
-        "-x - 8"
+        "$-x - 8$"
       ],
       "correctAnswer": 0,
-      "explanation": "Let ${y = x - 8}$. To find the inverse, swap x and y: x = y - 8. Then solve for y: ${y = x + 8}$. So, $f^{-1}$(x) = x + 8."
+      "explanation": "Let y = x - 8. To find the inverse, swap x and y: $x = y - 8$. Then solve for y: $y = x + 8$. So, $f^{-1}$(x) = x + 8."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What is the inverse function, g⁻¹(x), of g(x) = 5x + 4?",
+      "questionText": "What is the inverse function, $g^{-1}$(x), of g(x) = 5x + 4?",
       "options": [
-        "5x - 4",
-        "(x + 4)/5",
-        "(x - 4)/5",
+        "$5x - 4$",
+        "$(x + 4)/5$",
+        "$(x - 4)/5$",
         "1/(5x+4)"
       ],
       "correctAnswer": 2,
-      "explanation": "Let ${y = 5x + 4}$. Swap x and y: x = 5y + 4. Solve for y: x - 4 = 5y, so y = (x - 4)/5. Thus, g⁻¹(x) = (x - 4)/5."
+      "explanation": "Let y = 5x + 4. Swap x and y: $x = 5y + 4$. Solve for y: x - 4 = 5y, so y = (x - 4)/5. Thus, $g^{-1}$(x) = (x - 4)/5."
     },
     {
       "type": "multiple-choice",
-      "questionText": "If h(x) = 2x - 3, find h⁻¹(15).",
+      "questionText": "If h(x) = 2x - 3, find $h^{-1}$(15).",
       "options": [
         "27",
         "$\\frac{1}{27}$",
@@ -76,16 +76,16 @@
         "24"
       ],
       "correctAnswer": 2,
-      "explanation": "To find h⁻¹(15), we need to find x such that h(x) = 15. So, 2x - 3 = 15. Add 3 to both sides: 2x = 18. Divide by 2: x = 9."
+      "explanation": "To find $h^{-1}$(15), we need to find x such that h(x) = 15. So, $2x - 3 = 15$. Add 3 to both sides: $2x = 18$. Divide by 2: $x = 9$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Let f(x) = x + 1 and g(x) = 4x. Find the composite function fg(x).",
       "options": [
-        "4x + 1",
-        "4(x + 1)",
+        "$4x + 1$",
+        "$4(x + 1)$",
         "4$x^2$ + 4x",
-        "5x + 1"
+        "$5x + 1$"
       ],
       "correctAnswer": 0,
       "explanation": "The composite function fg(x) means f(g(x)). Substitute g(x) into f(x): f(g(x)) = f(4x) = 4x + 1."
@@ -124,16 +124,16 @@
         "5"
       ],
       "correctAnswer": 3,
-      "explanation": "The function is undefined when the denominator is zero. Set the denominator to zero and solve: x - 5 = 0, which gives x = 5."
+      "explanation": "The function is undefined when the denominator is zero. Set the denominator to zero and solve: x - 5 = 0, which gives $x = 5$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Let f(x) = 2 - 3x. Find ff(x).",
       "options": [
-        "9x - 4",
-        "4 - 9x",
-        "6x - 4",
-        "4 - 6x"
+        "$9x - 4$",
+        "$4 - 9x$",
+        "$6x - 4$",
+        "$4 - 6x$"
       ],
       "correctAnswer": 0,
       "explanation": "ff(x) means f(f(x)). Substitute f(x) into itself: f(2 - 3x) = 2 - 3(2 - 3x) = 2 - 6 + 9x = 9x - 4."

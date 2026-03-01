@@ -16,7 +16,7 @@
         "$4.30"
       ],
       "correctAnswer": 1,
-      "explanation": "Substitute d = 10 into the formula: C = 2.50 + 1.80 * 10. This simplifies to C = 2.50 + 18.00, which equals $20.50."
+      "explanation": "Substitute $d = 10$ into the formula: C = 2.50 + 1.80 * 10. This simplifies to C = 2.50 + 18.00, which equals $20.50."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "620 litres"
       ],
       "correctAnswer": 0,
-      "explanation": "Substitute t = 15 into the formula: V = 500 - 8 * 15. This simplifies to V = 500 - 120, which equals 380 litres."
+      "explanation": "Substitute $t = 15$ into the formula: V = 500 - 8 * 15. This simplifies to V = 500 - 120, which equals 380 litres."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "50 minutes"
       ],
       "correctAnswer": 2,
-      "explanation": "Set V = 0: 0 = 500 - 8t. Add 8t to both sides: 8t = 500. Divide by 8: t = $\\frac{500}{8}$ = 62.5 minutes."
+      "explanation": "Set V = 0: 0 = 500 - 8t. Add 8t to both sides: $8t = 500$. Divide by 8: t = $\\frac{500}{8}$ = 62.5 minutes."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "$20.40"
       ],
       "correctAnswer": 1,
-      "explanation": "Substitute n = 800 into the formula: P = 20 + 0.05 * 800. This simplifies to P = 20 + 40, which equals $60."
+      "explanation": "Substitute $n = 800$ into the formula: P = 20 + 0.05 * 800. This simplifies to P = 20 + 40, which equals $60."
     },
     {
       "type": "multiple-choice",

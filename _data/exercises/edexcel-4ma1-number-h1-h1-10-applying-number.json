@@ -34,10 +34,10 @@
       "type": "multiple-choice",
       "questionText": "A recipe for a cake that serves 6 people requires 240g of flour. How much flour is needed for a cake that serves 9 people?",
       "options": [
-        "300g",
-        "320g",
-        "360g",
-        "480g"
+        "$300g$",
+        "$320g$",
+        "$360g$",
+        "$480g$"
       ],
       "correctAnswer": 2,
       "explanation": "First, find the amount of flour per person: 240g ÷ 6 = 40g. Then, multiply by the new number of people: 40g × 9 = 360g."

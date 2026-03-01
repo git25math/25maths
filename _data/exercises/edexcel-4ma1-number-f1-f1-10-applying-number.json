@@ -22,13 +22,13 @@
       "type": "multiple-choice",
       "questionText": "A recipe for 4 people requires 120g of flour. How much flour is needed for 10 people?",
       "options": [
-        "240g",
-        "300g",
-        "360g",
-        "480g"
+        "$240g$",
+        "$300g$",
+        "$360g$",
+        "$480g$"
       ],
       "correctAnswer": 1,
-      "explanation": "First, find the amount of flour for one person: $\\frac{120g}{4}$ = 30g. Then, multiply by the new number of people: 30g * 10 = 300g."
+      "explanation": "First, find the amount of flour for one person: 120g / 4 = 30g. Then, multiply by the new number of people: 30g * 10 = 300g."
     },
     {
       "type": "multiple-choice",

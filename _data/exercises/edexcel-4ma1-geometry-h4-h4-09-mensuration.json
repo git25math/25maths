@@ -28,7 +28,7 @@
         "4190 $\\text{cm}^3$"
       ],
       "correctAnswer": 0,
-      "explanation": "Radius r = diameter / 2 = $\\frac{10}{2}$ = 5 cm.  \nVolume of a sphere = ($\\frac{4}{3}$)$\\pi r^3$.  \nVolume = ($\\frac{4}{3}$) × $\\pi \\times 5^3$ = ($\\frac{4}{3}$) × $\\pi$ × 125 = 500$\\frac{\\pi}{3}$ ≈ 524 $\\text{cm}^3$ (3 s.f.)."
+      "explanation": "Radius r = diameter / 2 = $\\frac{10}{2}$ = 5 cm.  \nVolume of a sphere = ($\\frac{4}{3}$)$\\pir^3$.  \nVolume = ($\\frac{4}{3}$) × $\\pi \\times 5^3$ = ($\\frac{4}{3}$) × $\\pi$ × 125 = 500$\\pi/3$ ≈ 524 $\\text{cm}^3$ (3 s.f.)."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "180°"
       ],
       "correctAnswer": 3,
-      "explanation": "Area of sector = ($\\frac{\\theta}{360}$) × $\\pi r^2$.  \n18$\\pi$ = ($\\frac{\\theta}{360}$) × $\\pi \\times 6^2$.  \n18$\\pi$ = ($\\frac{\\theta}{360}$) × 36$\\pi$.  \n18 = ($\\frac{\\theta}{360}$) × 36.  \n$\\frac{18}{36} = \\theta/360$.  \n$\\frac{1}{2} = \\theta/360$.  \n$\\theta = \\frac{360}{2}$ = 180°."
+      "explanation": "Area of sector = ($\\theta/360$) × $\\pir^2$.  \n18$\\pi$ = ($\\theta/360$) × $\\pi \\times 6^2$.  \n18$\\pi$ = ($\\theta/360$) × 36$\\pi$.  \n18 = ($\\theta/360$) × 36.  \n$\\frac{18}{36}$ = $\\theta/360$.  \n$\\frac{1}{2}$ = $\\theta/360$.  \n$\\theta$ = $\\frac{360}{2}$ = 180°."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "$\\sqrt{34}$ cm"
       ],
       "correctAnswer": 2,
-      "explanation": "Using Pythagoras theorem: $h^{2} + r^2$ = l².  \nh² + $3^2 = 5^2$.  \nh² + 9 = 25.  \nh² = 16.  \nh = 4 cm."
+      "explanation": "Using Pythagoras theorem: $h^{2}$ + $r^2$ = $l^{2}$.  \n$h^{2}$ + $3^2 = 5^2$.  \n$h^{2}$ + 9 = 25.  \n$h^{2}$ = 16.  \nh = 4 cm."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "50$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Circumference C = 2$\\pi$r.  \n20$\\pi$ = 2$\\pi$r.  \nr = 10 cm.  \nArea A = $\\pi r^2$.  \nA = $\\pi \\times 10^2$ = 100$\\pi$ $\\text{cm}^2$."
+      "explanation": "Circumference C = 2$\\pi$r.  \n20$\\pi$ = 2$\\pi$r.  \nr = 10 cm.  \nArea A = $\\pir^2$.  \nA = $\\pi \\times 10^2$ = 100$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "301 $\\text{cm}^2$"
       ],
       "correctAnswer": 2,
-      "explanation": "Total surface area = 2$\\pi r^2$ + 2$\\pi$rh.  \nArea = 2$\\pi(4)^2$ + 2$\\pi$(4)(10).  \nArea = 32$\\pi$ + 80$\\pi$ = 112$\\pi$ ≈ 352 $\\text{cm}^2$ (3 s.f.)."
+      "explanation": "Total surface area = 2$\\pir^2$ + 2$\\pi$rh.  \nArea = 2$\\pi(4)^2$ + 2$\\pi$(4)(10).  \nArea = 32$\\pi$ + 80$\\pi$ = 112$\\pi$ ≈ 352 $\\text{cm}^2$ (3 s.f.)."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "8 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "Let side length be 's'. By Pythagoras, $s^{2} + s^{2} = 8^2$.  \n2s² = 64.  \ns² = 32.  \nArea of square = s² = 32 $\\text{cm}^2$."
+      "explanation": "Let side length be 's'. By Pythagoras, $s^{2}$ + $s^{2}$ = $8^2$.  \n$2s^{2}$ = 64.  \n$s^{2}$ = 32.  \nArea of square = $s^{2}$ = 32 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "45°"
       ],
       "correctAnswer": 1,
-      "explanation": "Arc length L = ($\\frac{\\theta}{360}$) × 2$\\pi$r.  \n4$\\pi$ = ($\\frac{\\theta}{360}$) × 2$\\pi$ × 8.  \n4$\\pi$ = ($\\frac{\\theta}{360}$) × 16$\\pi$.  \n4 = ($\\frac{\\theta}{360}$) × 16.  \n$\\frac{4}{16} = \\theta/360$.  \n$\\frac{1}{4} = \\theta/360$.  \n$\\theta = \\frac{360}{4}$ = 90°."
+      "explanation": "Arc length L = ($\\theta/360$) × 2$\\pi$r.  \n4$\\pi$ = ($\\theta/360$) × 2$\\pi$ × 8.  \n4$\\pi$ = ($\\theta/360$) × 16$\\pi$.  \n4 = ($\\theta/360$) × 16.  \n$\\frac{4}{16}$ = $\\theta/360$.  \n$\\frac{1}{4}$ = $\\theta/360$.  \n$\\theta$ = $\\frac{360}{4}$ = 90°."
     }
   ]
 }

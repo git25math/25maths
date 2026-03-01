@@ -40,7 +40,7 @@
         "$\\frac{2}{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The even numbers on a six-sided die are 2, 4, 6. There are 3 even numbers out of 6 possible outcomes. So, the probability is $\\frac{3}{6} = \\frac{1}{2}$."
+      "explanation": "The even numbers on a six-sided die are 2, 4, 6. There are 3 even numbers out of 6 possible outcomes. So, the probability is $\\frac{3}{6}$ = $\\frac{1}{2}$."
     },
     {
       "type": "multiple-choice",

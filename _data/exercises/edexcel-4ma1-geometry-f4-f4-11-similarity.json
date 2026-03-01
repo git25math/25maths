@@ -64,7 +64,7 @@
         "36 cm"
       ],
       "correctAnswer": 0,
-      "explanation": "The smallest side of the first triangle is 6 cm. The smallest side of the second triangle is 4 cm. The scale factor is $\\frac{4}{6} = \\frac{2}{3}$. The perimeter of the first triangle is 6 + 9 + 12 = 27 cm. The perimeter of the second triangle is 27 * ($\\frac{2}{3}$) = 18 cm."
+      "explanation": "The smallest side of the first triangle is 6 cm. The smallest side of the second triangle is 4 cm. The scale factor is $\\frac{4}{6}$ = $\\frac{2}{3}$. The perimeter of the first triangle is 6 + 9 + 12 = 27 cm. The perimeter of the second triangle is 27 * ($\\frac{2}{3}$) = 18 cm."
     },
     {
       "type": "multiple-choice",

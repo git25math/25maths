@@ -34,29 +34,29 @@
       "type": "multiple-choice",
       "questionText": "What is the nth term of the sequence: 2, 5, 8, 11, ...?",
       "options": [
-        "3n - 1",
-        "3n + 2",
-        "2n + 3",
-        "n + 3"
+        "$3n - 1$",
+        "$3n + 2$",
+        "$2n + 3$",
+        "$n + 3$"
       ],
       "correctAnswer": 0,
-      "explanation": "The common difference is 3, so the rule starts with 3n. The first term (n=1) is 3(1) = 3. To get to the actual first term of 2, we subtract 1. So the nth term is 3n - 1."
+      "explanation": "The common difference is 3, so the rule starts with 3n. The first term ($n = 1$) is 3(1) = 3. To get to the actual first term of 2, we subtract 1. So the nth term is $3n - 1$."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the nth term of the sequence: 1, 6, 11, 16, ...",
       "options": [
-        "5n + 1",
-        "n + 5",
-        "6n - 5",
-        "5n - 4"
+        "$5n + 1$",
+        "$n + 5$",
+        "$6n - 5$",
+        "$5n - 4$"
       ],
       "correctAnswer": 3,
-      "explanation": "The common difference is 5, so the rule starts with 5n. The first term (n=1) is 5(1) = 5. To get to the actual first term of 1, we subtract 4. So the nth term is 5n - 4."
+      "explanation": "The common difference is 5, so the rule starts with 5n. The first term ($n = 1$) is 5(1) = 5. To get to the actual first term of 1, we subtract 4. So the nth term is $5n - 4$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the 20th term of the sequence with the nth term rule 3n + 2.",
+      "questionText": "Find the 20th term of the sequence with the nth term rule $3n + 2$.",
       "options": [
         "60",
         "62",
@@ -64,23 +64,23 @@
         "25"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the 20th term, substitute n=20 into the rule: 3(20) + 2 = 60 + 2 = 62."
+      "explanation": "To find the 20th term, substitute $n = 20$ into the rule: 3(20) + 2 = 60 + 2 = 62."
     },
     {
       "type": "multiple-choice",
       "questionText": "The first three terms of a sequence are 3, 10, 17. What is the nth term rule?",
       "options": [
-        "n + 7",
-        "3n + 7",
-        "7n - 4",
-        "7n + 3"
+        "$n + 7$",
+        "$3n + 7$",
+        "$7n - 4$",
+        "$7n + 3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The common difference is 7, so the rule starts with 7n. For n=1, 7(1)=7. To get to the first term of 3, we subtract 4. The rule is 7n - 4."
+      "explanation": "The common difference is 7, so the rule starts with 7n. For $n = 1$, 7(1)=7. To get to the first term of 3, we subtract 4. The rule is $7n - 4$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "What are the first three terms of the sequence with the nth term rule 7n - 4?",
+      "questionText": "What are the first three terms of the sequence with the nth term rule $7n - 4$?",
       "options": [
         "7, 14, 21",
         "3, 10, 17",
@@ -88,19 +88,19 @@
         "-4, 3, 10"
       ],
       "correctAnswer": 1,
-      "explanation": "For n=1: 7(1)-4=3. For n=2: 7(2)-4=10. For n=3: 7(3)-4=17. The terms are 3, 10, 17."
+      "explanation": "For $n = 1$: 7(1)-4=3. For $n = 2$: 7(2)-4=10. For $n = 3$: 7(3)-4=17. The terms are 3, 10, 17."
     },
     {
       "type": "multiple-choice",
       "questionText": "Find the nth term of the sequence: 10, 7, 4, 1, ...",
       "options": [
-        "3n + 7",
-        "10 - 3n",
-        "-3n + 13",
-        "13n - 3"
+        "$3n + 7$",
+        "$10 - 3n$",
+        "$-3n + 13$",
+        "$13n - 3$"
       ],
       "correctAnswer": 2,
-      "explanation": "The common difference is -3, so the rule starts with -3n. For n=1, -3(1)=-3. To get to the first term of 10, we must add 13. The rule is -3n + 13."
+      "explanation": "The common difference is -3, so the rule starts with -3n. For $n = 1$, -3(1)=-3. To get to the first term of 10, we must add 13. The rule is $-3n + 13$."
     },
     {
       "type": "multiple-choice",
@@ -109,10 +109,10 @@
         "Yes, it is the 20th term.",
         "Yes, it is the 19th term.",
         "No, because 100 is an even number.",
-        "No, because solving 5n - 1 = 100 does not give an integer value for n."
+        "No, because solving $5n - 1 = 100$ does not give an integer value for n."
       ],
       "correctAnswer": 3,
-      "explanation": "The nth term is 5n - 1. Set this equal to 100: 5n - 1 = 100. This gives 5n = 101. n = $\\frac{101}{5}$ = 20.2. Since n is not an integer, 100 is not a term in the sequence."
+      "explanation": "The nth term is $5n - 1$. Set this equal to 100: $5n - 1 = 100$. This gives $5n = 101$. n = $\\frac{101}{5}$ = 20.2. Since n is not an integer, 100 is not a term in the sequence."
     },
     {
       "type": "multiple-choice",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Find the 10th term of the sequence with the nth term rule -3n + 13.",
+      "questionText": "Find the 10th term of the sequence with the nth term rule $-3n + 13$.",
       "options": [
         "-17",
         "43",
@@ -148,7 +148,7 @@
         "-27"
       ],
       "correctAnswer": 0,
-      "explanation": "To find the 10th term, substitute n=10 into the rule: -3(10) + 13 = -30 + 13 = -17."
+      "explanation": "To find the 10th term, substitute $n = 10$ into the rule: -3(10) + 13 = -30 + 13 = -17."
     }
   ]
 }

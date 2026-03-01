@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A cylinder has a radius of 4.5 cm and a height of 12 cm. Calculate its volume using the formula V = $\\pi r^2$h. Give your answer correct to 1 decimal place.",
+      "questionText": "A cylinder has a radius of 4.5 cm and a height of 12 cm. Calculate its volume using the formula V = $\\pir^2$h. Give your answer correct to 1 decimal place.",
       "options": [
         "763.4",
         "763.41",

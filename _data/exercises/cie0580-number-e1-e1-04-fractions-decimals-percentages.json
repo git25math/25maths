@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate $\\frac{3}{8} + \\frac{5}{16}$.",
+      "questionText": "Calculate $\\frac{3}{8}$ + $\\frac{5}{16}$.",
       "options": [
         "$\\frac{8}{24}$",
         "$\\frac{1}{3}$",
@@ -28,11 +28,11 @@
         "$\\frac{1}{2}$"
       ],
       "correctAnswer": 2,
-      "explanation": "To add the fractions, find a common denominator, which is 16. Convert $\\frac{3}{8}$ to $\\frac{6}{16}$. Then, add the numerators: $\\frac{6}{16} + \\frac{5}{16} = \\frac{11}{16}$."
+      "explanation": "To add the fractions, find a common denominator, which is 16. Convert $\\frac{3}{8}$ to $\\frac{6}{16}$. Then, add the numerators: $\\frac{6}{16}$ + $\\frac{5}{16}$ = $\\frac{11}{16}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate $\\frac{5}{6} - \\frac{1}{4}$.",
+      "questionText": "Calculate $\\frac{5}{6}$ - $\\frac{1}{4}$.",
       "options": [
         "$\\frac{4}{2}$",
         "1",
@@ -40,11 +40,11 @@
         "$\\frac{1}{3}$"
       ],
       "correctAnswer": 2,
-      "explanation": "The least common multiple of 6 and 4 is 12. Convert the fractions: $\\frac{5}{6} = \\frac{10}{12}$ and $\\frac{1}{4} = \\frac{3}{12}$. Subtract the new fractions: $\\frac{10}{12} - \\frac{3}{12} = \\frac{7}{12}$."
+      "explanation": "The least common multiple of 6 and 4 is 12. Convert the fractions: $\\frac{5}{6}$ = $\\frac{10}{12}$ and $\\frac{1}{4}$ = $\\frac{3}{12}$. Subtract the new fractions: $\\frac{10}{12}$ - $\\frac{3}{12}$ = $\\frac{7}{12}$."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate $\\frac{4}{9} \\times \\frac{15}{16}$.",
+      "questionText": "Calculate $\\frac{4}{9}$ × $\\frac{15}{16}$.",
       "options": [
         "$\\frac{5}{12}$",
         "$\\frac{19}{25}$",
@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Calculate $\\frac{7}{8} \\div \\frac{3}{4}$.",
+      "questionText": "Calculate $\\frac{7}{8}$ ÷ $\\frac{3}{4}$.",
       "options": [
         "$\\frac{21}{32}$",
         "$\\frac{6}{7}$",
@@ -64,7 +64,7 @@
         "2"
       ],
       "correctAnswer": 2,
-      "explanation": "To divide by a fraction, multiply by its reciprocal. $\\frac{7}{8} \\div \\frac{3}{4} = \\frac{7}{8} \\times \\frac{4}{3}$. Multiply the numerators and denominators: (7 × 4) / (8 × 3) = $\\frac{28}{24}$. Simplify the fraction by dividing both parts by 4, which gives $\\frac{7}{6}$."
+      "explanation": "To divide by a fraction, multiply by its reciprocal. $\\frac{7}{8}$ ÷ $\\frac{3}{4}$ = $\\frac{7}{8}$ × $\\frac{4}{3}$. Multiply the numerators and denominators: (7 × 4) / (8 × 3) = $\\frac{28}{24}$. Simplify the fraction by dividing both parts by 4, which gives $\\frac{7}{6}$."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "4 $\\frac{1}{7}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Convert the mixed numbers to improper fractions: 2 $\\frac{1}{3} = \\frac{7}{3}$ and 1 $\\frac{3}{4} = \\frac{7}{4}$. Find a common denominator, which is 12. $\\frac{7}{3} = \\frac{28}{12}$ and $\\frac{7}{4} = \\frac{21}{12}$. Add them: $\\frac{28}{12} + \\frac{21}{12} = \\frac{49}{12}$. Convert back to a mixed number: 49 ÷ 12 = 4 remainder 1. So, the answer is 4 $\\frac{1}{12}$."
+      "explanation": "Convert the mixed numbers to improper fractions: 2 $\\frac{1}{3}$ = $\\frac{7}{3}$ and 1 $\\frac{3}{4}$ = $\\frac{7}{4}$. Find a common denominator, which is 12. $\\frac{7}{3}$ = $\\frac{28}{12}$ and $\\frac{7}{4}$ = $\\frac{21}{12}$. Add them: $\\frac{28}{12}$ + $\\frac{21}{12}$ = $\\frac{49}{12}$. Convert back to a mixed number: 49 ÷ 12 = 4 remainder 1. So, the answer is 4 $\\frac{1}{12}$."
     },
     {
       "type": "multiple-choice",
@@ -112,7 +112,7 @@
         "2 $\\frac{1}{2}$"
       ],
       "correctAnswer": 1,
-      "explanation": "Convert to improper fractions: 5 $\\frac{1}{6} = \\frac{31}{6}$ and 2 $\\frac{3}{4} = \\frac{11}{4}$. The common denominator is 12. $\\frac{31}{6} = \\frac{62}{12}$ and $\\frac{11}{4} = \\frac{33}{12}$. Subtract: $\\frac{62}{12} - \\frac{33}{12} = \\frac{29}{12}$. Convert back to a mixed number: 29 ÷ 12 = 2 remainder 5. The result is 2 $\\frac{5}{12}$."
+      "explanation": "Convert to improper fractions: 5 $\\frac{1}{6}$ = $\\frac{31}{6}$ and 2 $\\frac{3}{4}$ = $\\frac{11}{4}$. The common denominator is 12. $\\frac{31}{6}$ = $\\frac{62}{12}$ and $\\frac{11}{4}$ = $\\frac{33}{12}$. Subtract: $\\frac{62}{12}$ - $\\frac{33}{12}$ = $\\frac{29}{12}$. Convert back to a mixed number: 29 ÷ 12 = 2 remainder 5. The result is 2 $\\frac{5}{12}$."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "36"
       ],
       "correctAnswer": 2,
-      "explanation": "To find the number of pieces, divide the total length by the length of one piece. Convert 8 $\\frac{1}{2}$ to an improper fraction: $\\frac{17}{2}$. Now calculate $\\frac{17}{2} \\div \\frac{1}{4}$. This is the same as $\\frac{17}{2} \\times \\frac{4}{1} = \\frac{68}{2}$ = 34. So, 34 pieces can be cut."
+      "explanation": "To find the number of pieces, divide the total length by the length of one piece. Convert 8 $\\frac{1}{2}$ to an improper fraction: $\\frac{17}{2}$. Now calculate $\\frac{17}{2}$ ÷ $\\frac{1}{4}$. This is the same as $\\frac{17}{2}$ × $\\frac{4}{1}$ = $\\frac{68}{2}$ = 34. So, 34 pieces can be cut."
     },
     {
       "type": "multiple-choice",

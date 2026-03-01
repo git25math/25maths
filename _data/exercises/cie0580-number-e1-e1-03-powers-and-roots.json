@@ -76,7 +76,7 @@
         "$\\frac{1}{16}$"
       ],
       "correctAnswer": 3,
-      "explanation": "A negative index indicates the reciprocal. So, $4^{-2} = 1/4^2 = \\frac{1}{16}$."
+      "explanation": "A negative index indicates the reciprocal. So, $4^{-2} = 1/4^2$ = $\\frac{1}{16}$."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "0.0001"
       ],
       "correctAnswer": 0,
-      "explanation": "$10^{-3}$ is equivalent to $1/10^3 = \\frac{1}{1000}$, which is 0.001 as a decimal."
+      "explanation": "$10^{-3}$ is equivalent to $1/10^3$ = $\\frac{1}{1000}$, which is 0.001 as a decimal."
     },
     {
       "type": "multiple-choice",

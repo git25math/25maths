@@ -40,7 +40,7 @@
         "180°"
       ],
       "correctAnswer": 0,
-      "explanation": "The sum of angles in any triangle is 180°. So, 50° + 70° + x° = 180°. This means 120° + x° = 180°, and x = 180° - 120° = 60°."
+      "explanation": "The sum of angles in any triangle is 180°. So, 50° + 70° + x° = 180°. This means 120° + x° = 180°, and $x = 180$° - 120° = 60°."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "90°"
       ],
       "correctAnswer": 1,
-      "explanation": "The sum of angles in a triangle is 180°. So, 90° + 35° + x° = 180°. This simplifies to 125° + x° = 180°, which means x = 180° - 125° = 55°."
+      "explanation": "The sum of angles in a triangle is 180°. So, 90° + 35° + x° = 180°. This simplifies to 125° + x° = 180°, which means $x = 180$° - 125° = 55°."
     },
     {
       "type": "multiple-choice",

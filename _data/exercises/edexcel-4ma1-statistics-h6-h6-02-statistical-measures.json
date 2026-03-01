@@ -136,7 +136,7 @@
         "0.8"
       ],
       "correctAnswer": 2,
-      "explanation": "The number of families owning 2 pets is 8. The total number of families is 30. Probability = $\\frac{8}{30} = \\frac{4}{15}$ = 0.2666... ≈ 0.267."
+      "explanation": "The number of families owning 2 pets is 8. The total number of families is 30. Probability = $\\frac{8}{30}$ = $\\frac{4}{15}$ = 0.2666... ≈ 0.267."
     },
     {
       "type": "multiple-choice",

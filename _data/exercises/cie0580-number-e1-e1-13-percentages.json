@@ -88,7 +88,7 @@
         "360"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the number be 'x'. The equation is 0.40 * x = 90. To find x, divide both sides by 0.40. So, x = $\\frac{90}{0}$.40 = 225."
+      "explanation": "Let the number be 'x'. The equation is 0.40 * $x = 90$. To find x, divide both sides by 0.40. So, x = $\\frac{90}{0}$.40 = 225."
     },
     {
       "type": "multiple-choice",

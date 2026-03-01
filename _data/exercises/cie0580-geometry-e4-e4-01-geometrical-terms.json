@@ -52,7 +52,7 @@
         "1080°"
       ],
       "correctAnswer": 2,
-      "explanation": "The sum of interior angles of a polygon with 'n' sides is given by the formula (n-2) × 180°. For a hexagon, n=6, so the sum is (6-2) × 180° = 4 × 180° = 720°."
+      "explanation": "The sum of interior angles of a polygon with 'n' sides is given by the formula (n-2) × 180°. For a hexagon, $n = 6$, so the sum is (6-2) × 180° = 4 × 180° = 720°."
     },
     {
       "type": "multiple-choice",
@@ -142,9 +142,9 @@
       "type": "multiple-choice",
       "questionText": "Two angles are complementary. If one angle is 'x', what is the expression for the other angle?",
       "options": [
-        "90 - x",
-        "${x - 90}$",
-        "180 - x",
+        "$90 - x$",
+        "$x - 90$",
+        "$180 - x$",
         "x"
       ],
       "correctAnswer": 0,

@@ -56,7 +56,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Simplify $3m^{5} \\times 4m^{2}$.",
+      "questionText": "Simplify $3m^{5}$ × $4m^{2}$.",
       "options": [
         "$12m^{7}$",
         "$7m^{7}$",
@@ -95,12 +95,12 @@
       "questionText": "Express $x^{-5}$ as a fraction.",
       "options": [
         "-$x^5$",
-        "$\\frac{1}{x^5}$",
+        "$1/x^5$",
         "x/5",
-        "$\\frac{1}{x^{-5}}$"
+        "$1/x^{-5}$"
       ],
       "correctAnswer": 1,
-      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, $x^{-5} = \\frac{1}{x^5}$."
+      "explanation": "A negative exponent means to take the reciprocal of the base raised to the positive exponent. So, $x^{-5} = 1/x^5$."
     },
     {
       "type": "multiple-choice",
@@ -145,7 +145,7 @@
         "8",
         "9",
         "11",
-        "8n"
+        "$8n$"
       ],
       "correctAnswer": 1,
       "explanation": "First, 8$n^0$ = 8 × 1 = 8. Second, $(3n)^0$ = 1, as the whole bracket is raised to the power of 0. Finally, 8 + 1 = 9."

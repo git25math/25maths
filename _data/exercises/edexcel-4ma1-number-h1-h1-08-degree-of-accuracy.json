@@ -44,7 +44,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "The capacity of a jug is c litres. c = 2.4 correct to 1 decimal place. Which of the following represents the error interval for c?",
+      "questionText": "The capacity of a jug is c litres. $c = 2.4$ correct to 1 decimal place. Which of the following represents the error interval for c?",
       "options": [
         "2.35 $\\leq$ c < 2.45",
         "2.3 $\\leq$ c < 2.5",
@@ -68,7 +68,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "a = 5.3 and b = 8.4, both correct to 1 decimal place. What is the upper bound for the sum a + b?",
+      "questionText": "$a = 5.3$ and $b = 8.4$, both correct to 1 decimal place. What is the upper bound for the sum a + b?",
       "options": [
         "13.7",
         "13.75",
@@ -76,11 +76,11 @@
         "13.85"
       ],
       "correctAnswer": 2,
-      "explanation": "To find the upper bound of a sum, we add the upper bounds of the individual numbers. Upper bound of a = 5.35. Upper bound of b = 8.45. Upper bound of (a + b) = 5.35 + 8.45 = 13.80."
+      "explanation": "To find the upper bound of a sum, we add the upper bounds of the individual numbers. Upper bound of $a = 5.35$. Upper bound of $b = 8.45$. Upper bound of (a + b) = 5.35 + 8.45 = 13.80."
     },
     {
       "type": "multiple-choice",
-      "questionText": "p = 12.5 correct to 3 significant figures. q = 4.2 correct to 2 significant figures. Calculate the lower bound of p - q.",
+      "questionText": "$p = 12.5$ correct to 3 significant figures. $q = 4.2$ correct to 2 significant figures. Calculate the lower bound of p - q.",
       "options": [
         "8.1",
         "8.15",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given v = u + at, where u = 10 m/s (to the nearest m/s), a = 4.2 m/$s^{2}$ (to 2 s.f.), and t = 3 s (to the nearest second). Find the upper bound of v.",
+      "questionText": "Given v = u + at, where u = 10 m/s (to the nearest m/s), $a = 4.$2 m/$s^{2}$ (to 2 s.f.), and $t = 3$ s (to the nearest second). Find the upper bound of v.",
       "options": [
         "22.6",
         "25.375",
@@ -148,7 +148,7 @@
         "$\\frac{380}{11}$"
       ],
       "correctAnswer": 1,
-      "explanation": "To find the lower bound of a division (m/n), we must divide the lower bound of m by the upper bound of n. Lower bound of m = 195. Upper bound of n = 5.5. So, the lower bound of m ÷ n is $\\frac{195}{5}$.5, which simplifies to $\\frac{1950}{55} = \\frac{390}{11}$."
+      "explanation": "To find the lower bound of a division (m/n), we must divide the lower bound of m by the upper bound of n. Lower bound of $m = 195$. Upper bound of $n = 5.5$. So, the lower bound of m ÷ n is $\\frac{195}{5}$.5, which simplifies to $\\frac{1950}{55}$ = $\\frac{390}{11}$."
     }
   ]
 }

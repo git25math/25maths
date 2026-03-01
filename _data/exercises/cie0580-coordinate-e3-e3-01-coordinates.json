@@ -76,7 +76,7 @@
         "(4, -2)"
       ],
       "correctAnswer": 1,
-      "explanation": "Let C=(x,y). (${x+6}$)/2 = 2 ⇒ ${x+6=4}$⇒ x=-2. (${y+4}$)/2 = 1 ⇒ ${y+4=2}$⇒ y=-2. So, C is (-2, -2)."
+      "explanation": "Let C=(x,y). (x+6)/2 = 2 ⇒ x+6=4 ⇒ $x = -2$. (y+4)/2 = 1 ⇒ y+4=2 ⇒ $y = -2$. So, C is (-2, -2)."
     },
     {
       "type": "multiple-choice",
@@ -100,19 +100,19 @@
         "<1, -7>"
       ],
       "correctAnswer": 1,
-      "explanation": "Let the vector be <x, y>. -3 + x = 4 ⇒ x = 7. 8 + y = 1 ⇒ y = -7. The vector is <7, -7>."
+      "explanation": "Let the vector be <x, y>. -3 + $x = 4$ ⇒ $x = 7$. 8 + $y = 1$ ⇒ $y = -7$. The vector is <7, -7>."
     },
     {
       "type": "multiple-choice",
       "questionText": "Point A(a, -4) is reflected in the y-axis to become point B(3, b). Find the values of a and b.",
       "options": [
-        "a = -3, b = 4",
-        "a = 3, b = -4",
-        "a = -3, b = -4",
-        "a = 3, b = 4"
+        "$a = -3, b = 4$",
+        "$a = 3, b = -4$",
+        "$a = -3, b = -4$",
+        "$a = 3, b = 4$"
       ],
       "correctAnswer": 2,
-      "explanation": "Reflection in the y-axis maps (x, y) to (-x, y). So, -a = 3 ⇒ a = -3. The y-coordinate is unchanged, so b = -4."
+      "explanation": "Reflection in the y-axis maps (x, y) to (-x, y). So, -$a = 3$ ⇒ $a = -3$. The y-coordinate is unchanged, so $b = -4$."
     },
     {
       "type": "multiple-choice",

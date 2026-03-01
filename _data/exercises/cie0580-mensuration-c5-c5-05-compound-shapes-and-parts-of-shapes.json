@@ -40,7 +40,7 @@
         "6$\\pi$ $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "The area of a full circle is $\\pi r^2$. The area of a semicircle is half of that. Area = ($\\frac{1}{2}$) × $\\pi \\times 6^2$ = ($\\frac{1}{2}$) × 36$\\pi$ = 18$\\pi$ $\\text{cm}^2$."
+      "explanation": "The area of a full circle is $\\pir^2$. The area of a semicircle is half of that. Area = ($\\frac{1}{2}$) × $\\pi \\times 6^2$ = ($\\frac{1}{2}$) × 36$\\pi$ = 18$\\pi$ $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "10$\\pi$ + 10 cm"
       ],
       "correctAnswer": 1,
-      "explanation": "The perimeter consists of the curved arc and the straight diameter. Arc length = ($\\frac{1}{2}$) × 2$\\pi$r = $\\pi$ × 5 = 5$\\pi$. Diameter = 2r = 10. Total perimeter = 5$\\pi$ + 10 cm."
+      "explanation": "The perimeter consists of the curved arc and the straight diameter. Arc length = ($\\frac{1}{2}$) × 2$\\pi$r = $\\pi$ × 5 = 5$\\pi$. Diameter = $2r = 10$. Total perimeter = 5$\\pi$ + 10 cm."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A shape is formed by a 14 cm by 10 cm rectangle and a semicircle. The diameter of the semicircle is 14 cm and it's attached to a 14 cm side of the rectangle. Calculate the total area. (Use $\\pi = \\frac{22}{7}$)",
+      "questionText": "A shape is formed by a 14 cm by 10 cm rectangle and a semicircle. The diameter of the semicircle is 14 cm and it's attached to a 14 cm side of the rectangle. Calculate the total area. (Use $\\pi$ = $\\frac{22}{7}$)",
       "options": [
         "140 $\\text{cm}^2$",
         "294 $\\text{cm}^2$",
@@ -140,7 +140,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A shape is formed by a 14 cm by 10 cm rectangle and a semicircle. The diameter of the semicircle is 14 cm and it's attached to a 14 cm side of the rectangle. Calculate the perimeter. (Use $\\pi = \\frac{22}{7}$)",
+      "questionText": "A shape is formed by a 14 cm by 10 cm rectangle and a semicircle. The diameter of the semicircle is 14 cm and it's attached to a 14 cm side of the rectangle. Calculate the perimeter. (Use $\\pi$ = $\\frac{22}{7}$)",
       "options": [
         "56 cm",
         "70 cm",

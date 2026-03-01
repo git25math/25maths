@@ -20,7 +20,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A sequence has an nth term given by 2n + 1. Which description correctly identifies the graph of this sequence?",
+      "questionText": "A sequence has an nth term given by $2n + 1$. Which description correctly identifies the graph of this sequence?",
       "options": [
         "A series of points forming a straight line passing through (0,1).",
         "A series of points forming a straight line.",
@@ -40,19 +40,19 @@
         "5"
       ],
       "correctAnswer": 1,
-      "explanation": "The 4th term corresponds to the point where the term number (x-coordinate) is 4. From the given points, when x=4, the y-coordinate (term value) is 13."
+      "explanation": "The 4th term corresponds to the point where the term number (x-coordinate) is 4. From the given points, when $x = 4$, the y-coordinate (term value) is 13."
     },
     {
       "type": "multiple-choice",
       "questionText": "The graph of a sequence shows points at (1, 5), (2, 7), (3, 9), (4, 11). What is the nth term rule for this sequence?",
       "options": [
-        "n + 4",
-        "2n + 3",
-        "3n + 2",
-        "n + 5"
+        "$n + 4$",
+        "$2n + 3$",
+        "$3n + 2$",
+        "$n + 5$"
       ],
       "correctAnswer": 1,
-      "explanation": "The sequence terms are 5, 7, 9, 11... The common difference is 2, so the nth term starts with 2n. For n=1, 2(1) = 2. To get 5, we add 3. So, the nth term is 2n + 3."
+      "explanation": "The sequence terms are 5, 7, 9, 11... The common difference is 2, so the nth term starts with 2n. For $n = 1$, 2(1) = 2. To get 5, we add 3. So, the nth term is $2n + 3$."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A graph of a sequence shows the 3rd term at y=12 and the 4th term at y=16. What is the common difference between these two consecutive terms?",
+      "questionText": "A graph of a sequence shows the 3rd term at $y = 12$ and the 4th term at $y = 16$. What is the common difference between these two consecutive terms?",
       "options": [
         "4",
         "3",
@@ -136,7 +136,7 @@
         "0"
       ],
       "correctAnswer": 1,
-      "explanation": "In a sequence graph, the x-coordinate represents the term number (n) and the y-coordinate represents the term value. The first point (1, 6) means that when n=1, the term value is 6. Therefore, the first term is 6."
+      "explanation": "In a sequence graph, the x-coordinate represents the term number (n) and the y-coordinate represents the term value. The first point (1, 6) means that when $n = 1$, the term value is 6. Therefore, the first term is 6."
     },
     {
       "type": "multiple-choice",

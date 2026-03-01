@@ -76,7 +76,7 @@
         "314 $\\text{cm}^2$"
       ],
       "correctAnswer": 1,
-      "explanation": "Radius = diameter / 2 = 10 cm / 2 = 5 cm. Area = $\\pi r^2$. Area = 3.14 × $(5 cm)^2$ = 3.14 × 25 $\\text{cm}^2$ = 78.5 $\\text{cm}^2$."
+      "explanation": "Radius = diameter / 2 = 10 cm / 2 = 5 cm. Area = $\\pir^2$. Area = 3.14 × $(5 cm)^2$ = 3.14 × 25 $\\text{cm}^2$ = 78.5 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",
@@ -92,7 +92,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "A semi-circle has a radius of 7 cm. What is its area? Use $\\pi = \\frac{22}{7}$.",
+      "questionText": "A semi-circle has a radius of 7 cm. What is its area? Use $\\pi$ = $\\frac{22}{7}$.",
       "options": [
         "77 $\\text{cm}^2$",
         "154 $\\text{cm}^2$",
@@ -100,7 +100,7 @@
         "22 $\\text{cm}^2$"
       ],
       "correctAnswer": 0,
-      "explanation": "Area of full circle = $\\pi r^2$ = ($\\frac{22}{7}$) × $7^2$ = 22 × 7 = 154 $\\text{cm}^2$. Area of semi-circle = ½ × 154 $\\text{cm}^2$ = 77 $\\text{cm}^2$."
+      "explanation": "Area of full circle = $\\pir^2$ = ($\\frac{22}{7}$) × $7^2$ = 22 × 7 = 154 $\\text{cm}^2$. Area of semi-circle = ½ × 154 $\\text{cm}^2$ = 77 $\\text{cm}^2$."
     },
     {
       "type": "multiple-choice",

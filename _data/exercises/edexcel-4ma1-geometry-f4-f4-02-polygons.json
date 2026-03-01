@@ -100,7 +100,7 @@
         "720°"
       ],
       "correctAnswer": 1,
-      "explanation": "For a quadrilateral, n=4. So, (4-2) × 180° = 2 × 180° = 360°."
+      "explanation": "For a quadrilateral, $n = 4$. So, (4-2) × 180° = 2 × 180° = 360°."
     },
     {
       "type": "multiple-choice",
@@ -136,7 +136,7 @@
         "Heptagon"
       ],
       "correctAnswer": 1,
-      "explanation": "Using the formula (n-2) × 180° = 540°. Dividing by 180° gives (n-2) = 3, so n = 5. A polygon with 5 sides is a pentagon."
+      "explanation": "Using the formula (n-2) × 180° = 540°. Dividing by 180° gives (n-2) = 3, so $n = 5$. A polygon with 5 sides is a pentagon."
     },
     {
       "type": "multiple-choice",

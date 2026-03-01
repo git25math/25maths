@@ -148,7 +148,7 @@
         "8"
       ],
       "correctAnswer": 2,
-      "explanation": "A set with n elements has 2^n subsets. For {p, q, r}, n=3, so there are $2^3$ = 8 subsets. A proper subset is any subset except the set itself. Therefore, there are 8 - 1 = 7 proper subsets."
+      "explanation": "A set with n elements has 2^n subsets. For {p, q, r}, $n = 3$, so there are $2^3$ = 8 subsets. A proper subset is any subset except the set itself. Therefore, there are 8 - 1 = 7 proper subsets."
     }
   ]
 }

@@ -28,7 +28,7 @@
         "10"
       ],
       "correctAnswer": 2,
-      "explanation": "The sum of the interior angles of an n-sided polygon is given by the formula (n-2) × 180°. So, (n-2) × 180° = 1260°. Dividing by 180° gives n-2 = 7. Therefore, n = 9 sides."
+      "explanation": "The sum of the interior angles of an n-sided polygon is given by the formula (n-2) × 180°. So, (n-2) × 180° = 1260°. Dividing by 180° gives n-2 = 7. Therefore, $n = 9$ sides."
     },
     {
       "type": "multiple-choice",
@@ -40,7 +40,7 @@
         "Decagon"
       ],
       "correctAnswer": 2,
-      "explanation": "For a regular polygon, the number of sides (n) = 360° / exterior angle. So, n = 360° / 45° = 8 sides. A polygon with 8 sides is an octagon."
+      "explanation": "For a regular polygon, the number of sides (n) = 360° / exterior angle. So, $n = 360$° / 45° = 8 sides. A polygon with 8 sides is an octagon."
     },
     {
       "type": "multiple-choice",
@@ -52,7 +52,7 @@
         "72°"
       ],
       "correctAnswer": 0,
-      "explanation": "For a regular decagon (n=10), each exterior angle = 360° / 10 = 36°. Each interior angle = 180° - exterior angle = 180° - 36° = 144°."
+      "explanation": "For a regular decagon ($n = 10$), each exterior angle = 360° / 10 = 36°. Each interior angle = 180° - exterior angle = 180° - 36° = 144°."
     },
     {
       "type": "multiple-choice",
@@ -64,7 +64,7 @@
         "115°"
       ],
       "correctAnswer": 0,
-      "explanation": "The sum of the interior angles of a quadrilateral (n=4) is (4-2) × 180° = 2 × 180° = 360°. The sum of the given angles is 75° + 90° + 110° = 275°. The fourth angle is 360° - 275° = 85°."
+      "explanation": "The sum of the interior angles of a quadrilateral ($n = 4$) is (4-2) × 180° = 2 × 180° = 360°. The sum of the given angles is 75° + 90° + 110° = 275°. The fourth angle is 360° - 275° = 85°."
     },
     {
       "type": "multiple-choice",
@@ -76,7 +76,7 @@
         "10"
       ],
       "correctAnswer": 3,
-      "explanation": "Interior angle + Exterior angle = 180°. So, ${4x + x = 180°}$, which means 5x = 180°}. Therefore, ${x = 36°$. The exterior angle is 36°. The number of sides = 360° / exterior angle = 360° / 36° = 10 sides."
+      "explanation": "Interior angle + Exterior angle = 180°. So, ${4x + x = 180°}${, which means $5x = 180°}$. Therefore, ${x = 36°}$. The exterior angle is 36°. The number of sides = 360° / exterior angle = 360° / 36° = 10 sides."
     },
     {
       "type": "multiple-choice",
@@ -88,7 +88,7 @@
         "6"
       ],
       "correctAnswer": 0,
-      "explanation": "Let the interior angle be 5k and the exterior angle be k. Since Interior + Exterior = 180°, we have 5k + k = 180°, so 6k = 180°. This means k = 30°. The exterior angle is 30°. Number of sides = 360° / 30° = 12 sides."
+      "explanation": "Let the interior angle be 5k and the exterior angle be k. Since Interior + Exterior = 180°, we have 5k + $k = 180$°, so $6k = 180$°. This means $k = 30$°. The exterior angle is 30°. Number of sides = 360° / 30° = 12 sides."
     },
     {
       "type": "multiple-choice",
@@ -100,7 +100,7 @@
         "1620°"
       ],
       "correctAnswer": 1,
-      "explanation": "The sum of interior angles of an n-sided polygon is (n-2) × 180°. For a 9-sided polygon (n=9), the sum is (9-2) × 180° = 7 × 180° = 1260°."
+      "explanation": "The sum of interior angles of an n-sided polygon is (n-2) × 180°. For a 9-sided polygon ($n = 9$), the sum is (9-2) × 180° = 7 × 180° = 1260°."
     },
     {
       "type": "multiple-choice",
@@ -124,7 +124,7 @@
         "36°"
       ],
       "correctAnswer": 1,
-      "explanation": "A pentagon has 5 sides (n=5). Each exterior angle of a regular polygon = 360° / n. So, for a regular pentagon, each exterior angle = 360° / 5 = 72°."
+      "explanation": "A pentagon has 5 sides ($n = 5$). Each exterior angle of a regular polygon = 360° / n. So, for a regular pentagon, each exterior angle = 360° / 5 = 72°."
     },
     {
       "type": "multiple-choice",

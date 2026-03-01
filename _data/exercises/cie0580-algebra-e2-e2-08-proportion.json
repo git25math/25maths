@@ -8,7 +8,7 @@
   "questions": [
     {
       "type": "multiple-choice",
-      "questionText": "y is directly proportional to x. Given y = 20 when x = 4. Find y when x = 7.",
+      "questionText": "y is directly proportional to x. Given $y = 20$ when $x = 4$. Find y when $x = 7$.",
       "options": [
         "35",
         "23",
@@ -16,11 +16,11 @@
         "1.4"
       ],
       "correctAnswer": 0,
-      "explanation": "Since y is directly proportional to x, we have y = kx. From the given values, 20 = k * 4, so k = 5. The relationship is y = 5x. When x = 7, y = 5 * 7 = 35."
+      "explanation": "Since y is directly proportional to x, we have y = kx. From the given values, 20 = k * 4, so $k = 5$. The relationship is y = 5x. When $x = 7$, $y = 5$ * 7 = 35."
     },
     {
       "type": "multiple-choice",
-      "questionText": "y is inversely proportional to x. Given y = 6 when x = 5. Find y when x = 10.",
+      "questionText": "y is inversely proportional to x. Given $y = 6$ when $x = 5$. Find y when $x = 10$.",
       "options": [
         "12",
         "3",
@@ -28,11 +28,11 @@
         "1"
       ],
       "correctAnswer": 1,
-      "explanation": "Since y is inversely proportional to x, y = k/x. From the given values, 6 = k/5, so k = 30. The relationship is y = 30/x. When x = 10, y = $\\frac{30}{10}$ = 3."
+      "explanation": "Since y is inversely proportional to x, y = k/x. From the given values, 6 = k/5, so $k = 30$. The relationship is $y = 30$/x. When $x = 10$, y = $\\frac{30}{10}$ = 3."
     },
     {
       "type": "multiple-choice",
-      "questionText": "y is directly proportional to the square of x. Given y = 72 when x = 3. Find the value of y when x = 5.",
+      "questionText": "y is directly proportional to the square of x. Given $y = 72$ when $x = 3$. Find the value of y when $x = 5$.",
       "options": [
         "120",
         "40",
@@ -40,7 +40,7 @@
         "12"
       ],
       "correctAnswer": 2,
-      "explanation": "y is proportional to $x^2$, so y = $kx^2$. Substitute the given values: 72 = k * ($3^2$), which means 72 = 9k. Solving for k gives k = 8. So the formula is y = 8$x^2$. When x = 5, y = 8 * ($5^2$) = 8 * 25 = 200."
+      "explanation": "y is proportional to $x^2$, so y = $kx^2$. Substitute the given values: 72 = k * ($3^2$), which means 72 = 9k. Solving for k gives $k = 8$. So the formula is $y = 8x^2$. When $x = 5$, $y = 8$ * ($5^2$) = 8 * 25 = 200."
     },
     {
       "type": "multiple-choice",
@@ -80,15 +80,15 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given y is directly proportional to x, and y = 18 when x = 12. Which equation represents the relationship between x and y?",
+      "questionText": "Given y is directly proportional to x, and $y = 18$ when $x = 12$. Which equation represents the relationship between x and y?",
       "options": [
-        "y = ${x + 6}$",
+        "y = x + 6",
         "xy = 216",
         "y = ($\\frac{2}{3}$)x",
-        "y = 1.5x"
+        "$y = 1.5x$"
       ],
       "correctAnswer": 3,
-      "explanation": "For direct proportion, y = kx. Using the given values, 18 = k * 12. Solving for k gives k = $\\frac{18}{12}$ = 1.5. Therefore, the equation is y = 1.5x."
+      "explanation": "For direct proportion, y = kx. Using the given values, 18 = k * 12. Solving for k gives k = $\\frac{18}{12}$ = 1.5. Therefore, the equation is $y = 1.$5x."
     },
     {
       "type": "multiple-choice",
@@ -100,11 +100,11 @@
         "6.25"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is T = k$\\sqrt{L}$. Substitute the given values: 4.8 = k$\\sqrt{36}$, so 4.8 = 6k, which gives k = 0.8. The formula is T = 0.$8\\sqrt{L}$. When L = 25, T = 0.$8\\sqrt{25}$ = 0.8 * 5 = 4.0."
+      "explanation": "The relationship is T = k$\\sqrt{L}$. Substitute the given values: 4.8 = k$\\sqrt{36}$, so 4.8 = 6k, which gives $k = 0.8$. The formula is T = 0.$8\\sqrt{L}$. When L = 25, T = 0.$8\\sqrt{25}$ = 0.8 * 5 = 4.0."
     },
     {
       "type": "multiple-choice",
-      "questionText": "Given that a:b = 5:6 and b:c = 9:4, find the ratio a:c in its simplest form.",
+      "questionText": "Given that a:$b = 5$:6 and b:$c = 9$:4, find the ratio a:c in its simplest form.",
       "options": [
         "5:4",
         "2:3",
@@ -112,7 +112,7 @@
         "7:5"
       ],
       "correctAnswer": 2,
-      "explanation": "To combine the ratios, make the value for 'b' the same in both. The LCM of 6 and 9 is 18. Convert the ratios: a:b = 5:6 = 15:18 and b:c = 9:4 = 18:8. Now, a:b:c = 15:18:8, so a:c = 15:8."
+      "explanation": "To combine the ratios, make the value for 'b' the same in both. The LCM of 6 and 9 is 18. Convert the ratios: a:$b = 5$:6 = 15:18 and b:$c = 9$:4 = 18:8. Now, a:b:$c = 15$:18:8, so a:$c = 15$:8."
     },
     {
       "type": "multiple-choice",
@@ -128,7 +128,7 @@
     },
     {
       "type": "multiple-choice",
-      "questionText": "M is directly proportional to the cube of r. If M = 135 when r = 3, find M when r = 4.",
+      "questionText": "M is directly proportional to the cube of r. If M = 135 when $r = 3$, find M when $r = 4$.",
       "options": [
         "320",
         "180",
@@ -136,7 +136,7 @@
         "20"
       ],
       "correctAnswer": 0,
-      "explanation": "The relationship is M = $kr^3$. Substitute the known values: 135 = k * $3^3$ = 27k. This gives k = 5. The formula is M = 5$r^3$. For r = 4, M = 5 * $4^3$ = 5 * 64 = 320."
+      "explanation": "The relationship is M = $kr^3$. Substitute the known values: 135 = k * $3^3$ = 27k. This gives $k = 5$. The formula is M = 5$r^3$. For $r = 4$, M = 5 * $4^3$ = 5 * 64 = 320."
     },
     {
       "type": "multiple-choice",
@@ -148,7 +148,7 @@
         "10"
       ],
       "correctAnswer": 3,
-      "explanation": "The relationship is I = k/$d^2$. Using the given data, 40 = k / $3^2$, so k = 40 * 9 = 360. The formula is I = $\\frac{360}{d^2}$. At a distance of 6m, the intensity is I = 360 / $6^2 = \\frac{360}{36}$ = 10."
+      "explanation": "The relationship is I = k/$d^2$. Using the given data, 40 = k / $3^2$, so $k = 40$ * 9 = 360. The formula is I = $360/d^2$. At a distance of 6m, the intensity is I = 360 / $6^2$ = $\\frac{360}{36}$ = 10."
     }
   ]
 }
