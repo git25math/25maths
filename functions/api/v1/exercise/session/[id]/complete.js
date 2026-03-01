@@ -11,8 +11,14 @@ import {
   listUserAchievements,
   listAchievementDefinitions,
   insertUserAchievement,
-  serviceHeaders,
+  listRecentSessions,
 } from '../../../../../_lib/supabase_server.js';
+import {
+  checkCriteria,
+  fetchSkillImprovementData,
+  fetchTotalCompletedSessions,
+  computeLevel,
+} from '../../../../../_lib/achievement_evaluator.js';
 
 function parseInteger(value) {
   const num = Number(value);
@@ -204,11 +210,12 @@ async function processEngagement(env, userId, sessionData) {
     });
   }
 
-  // 3. Evaluate achievements
-  const [xpRecord, existingAchievements, allDefinitions] = await Promise.all([
+  // 3. Evaluate achievements (full criteria coverage via shared module)
+  const [xpRecord, existingAchievements, allDefinitions, recentSessions] = await Promise.all([
     fetchUserXp(env, userId),
     listUserAchievements(env, userId),
     listAchievementDefinitions(env),
+    listRecentSessions(env, userId, { lookbackDays: 365, limit: 1000 }),
   ]);
 
   const existingIds = new Set(existingAchievements.map(a => a.achievement_id));
@@ -216,29 +223,47 @@ async function processEngagement(env, userId, sessionData) {
     ? Math.round((sessionData.score / sessionData.question_count) * 100)
     : 0;
 
-  // Lazy-fetch completed session count for volume achievements
-  let totalCompletedSessions = null;
+  const totalSessions = recentSessions.length;
+  const sessionTopics = new Set(recentSessions.map(s => String(s.exercise_slug || '')).filter(Boolean));
+
+  function sessionsAbovePct(minPct) {
+    return recentSessions.filter(s => {
+      if (!s.score || !s.question_count || s.question_count <= 0) return false;
+      return Math.round((s.score / s.question_count) * 100) >= minPct;
+    }).length;
+  }
+
+  // Lazy-fetch improvement data only when needed
+  const hasImprovementCriteria = allDefinitions.some(
+    d => !existingIds.has(d.id) && d.is_active && d.criteria?.type === 'improvement'
+  );
+  let improvementData = null;
+  if (hasImprovementCriteria) {
+    try {
+      improvementData = await fetchSkillImprovementData(env, userId);
+    } catch (_e) { /* best-effort */ }
+  }
+
+  // Lazy-fetch total completed sessions for volume achievements
   const hasVolumeCriteria = allDefinitions.some(
     d => !existingIds.has(d.id) && d.is_active && d.criteria?.type === 'volume'
   );
+  let volumeTotalSessions = totalSessions;
   if (hasVolumeCriteria) {
     try {
-      const countQuery = new URLSearchParams({
-        select: 'id',
-        user_id: `eq.${userId}`,
-        'completed_at': 'not.is.null',
-      });
-      const countUrl = `${env.SUPABASE_URL}/rest/v1/exercise_sessions?${countQuery.toString()}`;
-      const countResp = await fetch(countUrl, {
-        headers: { ...serviceHeaders(env), Prefer: 'count=exact' },
-      });
-      const range = countResp.headers.get('content-range') || '';
-      const match = range.match(/\/(\d+)$/);
-      totalCompletedSessions = match ? Number(match[1]) : null;
-    } catch (_e) {
-      // fall back to daily count if query fails
-    }
+      const count = await fetchTotalCompletedSessions(env, userId);
+      if (count != null) volumeTotalSessions = count;
+    } catch (_e) { /* fall back to recentSessions count */ }
   }
+
+  const evalContext = {
+    streak,
+    totalSessions: volumeTotalSessions,
+    distinctTopics: sessionTopics.size,
+    sessionsAbovePct,
+    sessionData: { ...sessionData, accuracy },
+    improvementData,
+  };
 
   let xpEarned = 10;
   if (accuracy === 100 && sessionData.question_count > 0) xpEarned += 25;
@@ -247,19 +272,8 @@ async function processEngagement(env, userId, sessionData) {
   const newlyUnlocked = [];
   for (const def of allDefinitions) {
     if (existingIds.has(def.id) || !def.is_active) continue;
-    if (!def.criteria || !def.criteria.type) continue;
 
-    let met = false;
-    if (def.criteria.type === 'streak') {
-      met = streak.current_streak >= (def.criteria.min_days || 0);
-    } else if (def.criteria.type === 'volume') {
-      const count = totalCompletedSessions != null
-        ? totalCompletedSessions
-        : (activity.sessions_completed || 0);
-      met = count >= (def.criteria.min_sessions || 0);
-    }
-    // Other criteria types require aggregate queries — skip for inline check
-
+    const met = checkCriteria(def.criteria, evalContext);
     if (met) {
       try {
         await insertUserAchievement(env, { user_id: userId, achievement_id: def.id });
@@ -280,12 +294,8 @@ async function processEngagement(env, userId, sessionData) {
   // 4. Update XP
   const previousXp = xpRecord?.total_xp || 0;
   const newTotalXp = previousXp + xpEarned;
-  const thresholds = [0, 50, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000];
-  let newLevel = 1;
-  for (let i = thresholds.length - 1; i >= 0; i--) {
-    if (newTotalXp >= thresholds[i]) { newLevel = i + 1; break; }
-  }
   const previousLevel = xpRecord?.level || 1;
+  const newLevel = computeLevel(newTotalXp);
   await upsertUserXp(env, { user_id: userId, total_xp: newTotalXp, level: newLevel });
 
   return {
