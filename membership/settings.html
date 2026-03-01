@@ -33,19 +33,19 @@ supabase: true
                 <h2 class="text-lg font-semibold text-gray-900 mb-4">Account Summary <span class="bilingual-support-only text-sm text-gray-500">/ 账户概要</span></h2>
                 <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div>
-                        <dt class="text-gray-500">Email</dt>
+                        <dt class="text-gray-500">Email <span class="bilingual-support-only text-xs">/ 邮箱</span></dt>
                         <dd id="summary-email" class="font-medium text-gray-900 mt-0.5">—</dd>
                     </div>
                     <div>
-                        <dt class="text-gray-500">Membership</dt>
+                        <dt class="text-gray-500">Membership <span class="bilingual-support-only text-xs">/ 会员状态</span></dt>
                         <dd id="summary-membership" class="font-medium text-gray-900 mt-0.5">—</dd>
                     </div>
                     <div>
-                        <dt class="text-gray-500">XP / Level</dt>
+                        <dt class="text-gray-500">XP / Level <span class="bilingual-support-only text-xs">/ 经验值与等级</span></dt>
                         <dd id="summary-xp" class="font-medium text-gray-900 mt-0.5">—</dd>
                     </div>
                     <div>
-                        <dt class="text-gray-500">Achievements Unlocked</dt>
+                        <dt class="text-gray-500">Achievements Unlocked <span class="bilingual-support-only text-xs">/ 已解锁成就</span></dt>
                         <dd id="summary-achievements" class="font-medium text-gray-900 mt-0.5">—</dd>
                     </div>
                 </dl>
@@ -56,14 +56,14 @@ supabase: true
                 <h2 class="text-lg font-semibold text-gray-900 mb-2">Profile <span class="bilingual-support-only text-sm text-gray-500">/ 个人资料</span></h2>
 
                 <div>
-                    <label for="field-display-name" class="block text-sm font-medium text-gray-700 mb-1">Display Name</label>
+                    <label for="field-display-name" class="block text-sm font-medium text-gray-700 mb-1">Display Name <span class="bilingual-support-only text-xs text-gray-500">/ 显示名称</span></label>
                     <input type="text" id="field-display-name" name="display_name" maxlength="50"
                         class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
                         placeholder="Your display name">
                 </div>
 
                 <div>
-                    <label for="field-target-board" class="block text-sm font-medium text-gray-700 mb-1">Target Exam Board</label>
+                    <label for="field-target-board" class="block text-sm font-medium text-gray-700 mb-1">Target Exam Board <span class="bilingual-support-only text-xs text-gray-500">/ 目标考试局</span></label>
                     <select id="field-target-board" name="target_board"
                         class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-white">
                         <option value="">— Select —</option>
@@ -73,7 +73,7 @@ supabase: true
                 </div>
 
                 <div>
-                    <label for="field-preferred-lang" class="block text-sm font-medium text-gray-700 mb-1">Preferred Language</label>
+                    <label for="field-preferred-lang" class="block text-sm font-medium text-gray-700 mb-1">Preferred Language <span class="bilingual-support-only text-xs text-gray-500">/ 首选语言</span></label>
                     <select id="field-preferred-lang" name="preferred_lang"
                         class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-white">
                         <option value="en">English</option>
@@ -84,7 +84,7 @@ supabase: true
                 <div class="flex items-center gap-3">
                     <input type="checkbox" id="field-weekly-report" name="weekly_report_enabled"
                         class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
-                    <label for="field-weekly-report" class="text-sm text-gray-700">Enable weekly progress report</label>
+                    <label for="field-weekly-report" class="text-sm text-gray-700">Enable weekly progress report <span class="bilingual-support-only text-xs text-gray-500">/ 启用每周进度报告</span></label>
                 </div>
 
                 <div class="flex items-center gap-3 pt-2">
@@ -98,11 +98,12 @@ supabase: true
 
             <!-- Danger Zone -->
             <div class="border border-red-200 rounded-2xl p-6">
-                <h2 class="text-lg font-semibold text-red-700 mb-3">Sign Out</h2>
+                <h2 class="text-lg font-semibold text-red-700 mb-3">Sign Out <span class="bilingual-support-only text-sm text-gray-500">/ 退出登录</span></h2>
                 <p class="text-sm text-gray-600 mb-4">Sign out of your account on this device.</p>
+                <p class="bilingual-support-only text-xs text-gray-400 -mt-3 mb-4">在此设备上退出账户</p>
                 <button id="settings-logout-btn"
                     class="px-4 py-2 text-sm font-semibold rounded-lg border border-red-300 text-red-700 hover:bg-red-50 transition">
-                    Sign Out
+                    Sign Out <span class="bilingual-support-only">/ 退出</span>
                 </button>
             </div>
 

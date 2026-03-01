@@ -12,6 +12,7 @@ supabase: true
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-semibold mb-2">Achievements</h1>
         <p class="text-lg text-amber-100">Track your learning milestones and collect badges.</p>
+        <p class="bilingual-support-only text-sm text-amber-200 mt-1">追踪学习里程碑，收集徽章。</p>
         <p class="bilingual-support-only mt-3 text-sm text-amber-200">成就系统 — 解锁学习里程碑</p>
     </div>
 </section>
@@ -35,7 +36,7 @@ supabase: true
             </div>
             <div class="text-center">
                 <div class="text-2xl font-semibold text-amber-600" id="ach-total-count">0</div>
-                <div class="text-xs text-gray-500">Unlocked</div>
+                <div class="text-xs text-gray-500">Unlocked <span class="bilingual-support-only">/ 已解锁</span></div>
             </div>
         </div>
     </div>
@@ -45,13 +46,13 @@ supabase: true
 <section class="py-4 bg-gray-50 border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap gap-2" id="category-filters">
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-900 text-white" data-filter="all">All</button>
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="streak" aria-label="Filter by Streak">🔥 Streak</button>
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="volume" aria-label="Filter by Volume">📚 Volume</button>
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="accuracy" aria-label="Filter by Accuracy">🎯 Accuracy</button>
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="explorer" aria-label="Filter by Explorer">🗺️ Explorer</button>
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="speed" aria-label="Filter by Speed">⚡ Speed</button>
-            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="improvement" aria-label="Filter by Improvement">📈 Improvement</button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-900 text-white" data-filter="all">All <span class="bilingual-support-only">全部</span></button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="streak" aria-label="Filter by Streak">🔥 Streak <span class="bilingual-support-only">连续</span></button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="volume" aria-label="Filter by Volume">📚 Volume <span class="bilingual-support-only">数量</span></button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="accuracy" aria-label="Filter by Accuracy">🎯 Accuracy <span class="bilingual-support-only">准确</span></button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="explorer" aria-label="Filter by Explorer">🗺️ Explorer <span class="bilingual-support-only">探索</span></button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="speed" aria-label="Filter by Speed">⚡ Speed <span class="bilingual-support-only">速度</span></button>
+            <button class="px-3 py-1.5 text-xs font-semibold rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-filter="improvement" aria-label="Filter by Improvement">📈 Improvement <span class="bilingual-support-only">进步</span></button>
         </div>
     </div>
 </section>
