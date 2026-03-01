@@ -7,7 +7,7 @@
 
 ---
 
-## 1) Project Status Snapshot (2026-02-27)
+## 1) Project Status Snapshot (2026-03-01)
 
 ### Architecture
 
@@ -15,7 +15,7 @@
 |-------|------|--------|
 | Static Site | Jekyll + Tailwind CSS CDN | Live |
 | Hosting | Cloudflare Pages | Live |
-| Payment | Payhip (5% fee) | Partial (free products live, subscription pending) |
+| Payment | Payhip (5% fee) | Live (free products + Term Practice Pass eN4l6 $24.99 + webhook) |
 | Identity | Supabase Auth | Code complete |
 | Database | Supabase Postgres + RLS | Schema complete |
 | API | Cloudflare Functions (19 files, ~3,200 LOC) | Code complete |
@@ -26,9 +26,9 @@
 | Gate | Status | Blocking Items |
 |------|--------|----------------|
 | **A (Free MVP)** | PASS | None |
-| **B (Paid MVP)** | IN PROGRESS | Payhip subscription product not created; Cloudflare env vars not set; `{PRODUCT_ID}` placeholders in 3 files |
-| **C (Personalization)** | IN PROGRESS | Recommendation weight tuning; course-pack mapping |
-| **D (Production Readiness)** | IN PROGRESS | E2E smoke test; rollback drill; exception injection |
+| **B (Paid MVP)** | **PASS** | ~~Payhip subscription product not created~~ eN4l6 live; ~~Cloudflare env vars not set~~ 7 vars configured; Worker proxy deployed; Account settings page live (ab48f5e) |
+| **C (Personalization)** | IN PROGRESS | Recommendation weight tuning; course-pack mapping; bilingual JS complete (269fe7f) |
+| **D (Production Readiness)** | **PARTIAL PASS** | ~~E2E smoke test~~ 26/26 PASS; rollback drill pending; exception injection pending |
 
 ### Workboard Status (from MEMBER-SYSTEM-WORKBOARD.md)
 
@@ -38,11 +38,11 @@
 | W1 Auth + Profile | DONE | Login, session, redirect all working |
 | W2 Exercise Telemetry | DONE | session/attempt/complete API live |
 | W3 Paid Model | DONE | membership_status/entitlements/RLS |
-| W4 Webhook Sync | IN PROGRESS | Code done, needs live Payhip events |
-| W5 Download Gateway | IN PROGRESS | Code done, needs live test |
+| W4 Webhook Sync | **DONE** | E2E verified: sale_completed → 24 entitlements (2026-02-28) |
+| W5 Download Gateway | **DONE** | E2E verified: 24/24 signed URLs → PDF bytes (2026-02-28) |
 | W6 Personalization | IN PROGRESS | First round done, weight tuning remaining |
 | W7 Benefits/Coupons | IN PROGRESS | Trigger engine done, skill-tag mapping pending |
-| W8 QA/Release Gate | IN PROGRESS | E2E script exists, full regression pending |
+| W8 QA/Release Gate | **DONE** | 26/26 E2E tests PASS, delivery log at `_ops/delivery-log/2026-02-28-last-mile.md` |
 
 ### Content Status
 

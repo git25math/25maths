@@ -44,33 +44,37 @@
 
 ## 2026-02-11 网站进展复盘 → 待办清单（按优先级）
 
-### P0+ 会员系统开发（新主线，2026-02-18 起）
-- [ ] **建立指挥中枢与执行标准**
+### P0+ 会员系统开发（✅ 全部完成，2026-02-18 → 03-01）
+- [x] **建立指挥中枢与执行标准**
   - 指挥文档：`plan/MEMBER-SYSTEM-COMMAND-CENTER.md`
   - 执行基线：`plan/MEMBER-LEARNING-PLATFORM-EXECUTION-PLAN.md`
   - 调度脚本：`scripts/member/dispatch_member_agents.sh`
-- [ ] **完成 Supabase 生产路径准备**
+- [x] **完成 Supabase 生产路径准备**
   - Auth 回调 URL 配置完成（本地 + 生产）
-  - 自定义 SMTP 接入完成（公开登录前必须）
-- [ ] **完成数据层与权限控制**
-  - 建表：`profiles`、`exercise_sessions`、`question_attempts`、`membership_status`、`entitlements`
-  - RLS：用户仅能读写本人数据
-- [ ] **Interactive Exercises 接入云端记录**
+  - OTP 登录上线（自定义 SMTP 未接入，使用 Supabase 默认）
+- [x] **完成数据层与权限控制**
+  - 18 张表：profiles、exercise_sessions、question_attempts、membership_status、entitlements + engagement 5 表 + B2B 6 表 + payhip_event_log + member_benefit_offers
+  - RLS：全部 18 表启用，用户仅能读写本人数据
+- [x] **Interactive Exercises 接入云端记录**
   - 保留匿名模式 + localStorage 回退
   - 登录用户写入 session 与 attempt 轨迹
-- [ ] **会员下载权限网关**
-  - Webhook：`POST /api/v1/membership/webhook/payhip`
-  - 下载：`GET /api/v1/download/:release_id`
-- [ ] **题库双渠道发布清单**
-  - 新增 `_data/releases.json`，统一支持 Payhip 上新和会员下载授权
+  - 完成时自动触发 engagement（streak + XP + 成就评估）
+- [x] **会员下载权限网关**
+  - Webhook：`POST /api/v1/membership/webhook/payhip` — E2E 验证通过（24 entitlements granted）
+  - 下载：`GET /api/v1/download/:release_id` — E2E 验证通过（24/24 签名 URL → PDF）
+  - Cloudflare Worker proxy 部署（`www.25maths.com/api/*` → Pages Functions）
+- [x] **题库双渠道发布清单**
+  - `_data/releases.json`（25 条）+ `release_registry.js` 同步
+  - Payhip 产品 eN4l6（$24.99 Term Practice Pass）上线
+  - Payhip webhook URL 已配置
 
 ### P0 直接影响收入与信任
-- [ ] **Payhip 付费产品上线**（获取 3 个付费产品 URL）
-- [ ] **替换付费产品购买链接**（Gumroad → Payhip，3 个产品页）
-- [ ] **Payhip 脚本加载**（产品页增加 `payhip: true` 或全站加载）
+- [x] **Payhip 付费产品上线** — Term Practice Pass eN4l6 ($24.99) 已上线
+- [ ] **替换付费产品购买链接**（Gumroad → Payhip，3 个产品页）— 3 个 Bundle 产品待上传
+- [x] **Payhip 脚本加载** — payhip.js 已全站加载
 - [ ] **全站价格统一为 $17/$17/$12**（产品页 + 产品列表 + 定价页）
 - [ ] **套餐价与折扣一致**（Complete Package、2-Bundle Deal 文案与价格）
-- [ ] **移除站内直链免费 PDF/ZIP**（避免绕过邮箱墙）
+- [x] **移除站内直链免费 PDF/ZIP** — 已改为 Payhip 邮箱墙
 
 ### P1 转化与一致性
 - [ ] **Gemini CLI 互动练习生成模块（当前优先开发）**
@@ -150,3 +154,14 @@
   - 页面：`/free-gift.html`、`/en/free-gift.html`、`/zh-cn/free-gift.html`
   - 感谢页：`/gift-thanks.html`、`/en/gift-thanks.html`、`/zh-cn/gift-thanks.html`
   - 入口替换：首页 + CIE/Edexcel 免费资源 CTA 改为问卷领取
+- [x] **会员系统全栈完成** (2026-03-01)
+  - 认证（OTP）+ 支付（Payhip webhook）+ 下载（签名 URL）+ 权益（24 entitlements）
+  - Engagement 系统（streak/XP/成就/排行榜/家长面板）
+  - 12 周下载 UI（member_downloads.js）
+  - Cloudflare Worker proxy 部署
+  - E2E 测试 26/26 项通过
+- [x] **账户设置页** (2026-03-01) — Profile CRUD API + settings.html (`ab48f5e`)
+- [x] **会员 JS/HTML 双语文案补全** (2026-03-01) — 6 文件 ~60 处翻译，isZh()+t() 模式 (`269fe7f`)
+- [x] **Hero 颜色修复** (2026-03-01) — text-gray-300/text-blue-300 品牌色覆盖 (`47bc9b9`)
+- [x] **LaTeX Phase 1** (2026-03-01) — Unicode 上标/根号/希腊字母→LaTeX，108 个 JSON (`bd78109`)
+- [x] **LaTeX Phase 2** (2026-03-01) — 纯文本分数→\frac{}{}，170 个 JSON (`731ad30`)

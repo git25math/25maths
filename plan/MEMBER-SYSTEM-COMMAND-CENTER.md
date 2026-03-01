@@ -123,23 +123,26 @@
 2. 异常分支有清晰报错与日志
 3. 回滚脚本与清单可执行
 
-## 7) Gate Status Snapshot (2026-02-18 UTC)
+## 7) Gate Status Snapshot (2026-03-01 UTC)
 
-1. Gate A (Free MVP): pass
+1. Gate A (Free MVP): **PASS**
 - 登录链路可用，回跳兼容 `access_token/code/token_hash`。
 - 免费会员 session/attempt/complete 记录链路可用。
 - 匿名练习仍可运行（云端失败不阻塞）。
 
-2. Gate B (Paid MVP): in_progress
+2. Gate B (Paid MVP): **PASS** (2026-02-28)
 - `membership_status`、`entitlements`、`benefits`、`download` API 已完成实现。
-- 待补：Payhip 实际事件到下载授权的生产链路实测证据。
+- ✅ Payhip `sale_completed` webhook → 24 entitlements 授权 → 签名 URL 下载 → PDF 字节确认。
+- ✅ Worker proxy 部署：`www.25maths.com/api/*` → Pages Functions。
+- ✅ 环境变量 7 个全部配置，Payhip webhook URL 已设置。
+- 证据：`_ops/delivery-log/2026-02-28-last-mile.md`
 
-3. Gate C (Personalization): in_progress
+3. Gate C (Personalization): **IN PROGRESS**
 - 已有错题聚类 + 推荐卡展示（含频次与近期窗口加权）。
 - 待补：推荐权重与课程包映射策略强化。
 
-4. Gate D (Production Readiness): in_progress
-- 已形成可重复 Gate 验证脚本与运行证据。
+4. Gate D (Production Readiness): **PARTIAL PASS** (2026-02-28)
+- ✅ E2E smoke test: 26/26 项通过（webhook/download/auth/CORS/idempotency）。
 - 待补：回滚演练与异常注入测试报告。
 
 ## 8) Evidence and Audit Trail

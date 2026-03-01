@@ -1,7 +1,7 @@
 # 25Maths Website - Project Plan
 
-> **Last Updated**: 2026-02-18
-> **Status**: DEPLOYED (Modular Restructure Complete)
+> **Last Updated**: 2026-03-01
+> **Status**: DEPLOYED (Member System E2E Verified)
 > **Website**: https://www.25maths.com (GitHub Pages + Jekyll)
 > **Tech Stack**: Jekyll + Tailwind CSS CDN + Google Fonts (Inter)
 > **Payment**: Payhip (5% fee, built-in email marketing)
@@ -174,18 +174,22 @@ active_global: about   # highlights in global-nav
 | 2026-02-11 | **Language simplification** — streamlined to EN + 简体双语站点 |
 | 2026-02-11 | **Scope change** — removed AMC8 and IAL modules from active site |
 | 2026-02-18 | **Member platform roadmap approved** — login, learning telemetry, membership entitlement gating, and dual-channel release registry |
+| 2026-02-27 | **Engagement system launched** — streak, XP, achievements (20 definitions), leaderboard, parent dashboard, B2B schema |
+| 2026-02-28 | **Last-mile member delivery** — releases.json data fix (22/24 payhip_product_id), member_downloads.js UI, Worker proxy for API Functions |
+| 2026-02-28 | **E2E verification complete** — Webhook → 24 entitlements → signed PDF download, all 26 test items PASS |
+| 2026-03-01 | **Payhip webhook configured** — `sale_completed` → `www.25maths.com/api/v1/membership/webhook/payhip` live |
 
 ## Next Steps
 
-### Track A (Current Priority): Member Platform + Learning Data
-1. **Freeze MVP scope and acceptance criteria** — Use `plan/MEMBER-LEARNING-PLATFORM-EXECUTION-PLAN.md` as the execution baseline.
-2. **Supabase Auth setup for production path** — Configure redirect URLs and custom SMTP before public login rollout.
-3. **Data model + RLS** — Implement `profiles`, `exercise_sessions`, `question_attempts`, `membership_status`, `entitlements`.
-4. **Interactive exercise telemetry** — Persist attempts and completion metrics from `assets/js/exercise_engine.js` without breaking anonymous usage.
-5. **Membership center data binding** — Replace static member cards with user-bound progress/mistake summaries.
-6. **Payhip webhook sync** — Update `membership_status` and entitlements from billing events.
-7. **Member-only download gateway** — Add `GET /api/v1/download/:release_id` with membership checks and short-lived links.
-8. **Release registry for dual-channel distribution** — Add `_data/releases.json` to support both Payhip launches and member-only downloads.
+### Track A: Member Platform + Learning Data — ✅ COMPLETE
+1. ~~**Freeze MVP scope and acceptance criteria**~~ — ✅ Done
+2. ~~**Supabase Auth setup for production path**~~ — ✅ Done (OTP login, redirect URLs configured)
+3. ~~**Data model + RLS**~~ — ✅ Done (18 tables, all RLS enabled)
+4. ~~**Interactive exercise telemetry**~~ — ✅ Done (session/attempt/complete API, anonymous fallback preserved)
+5. ~~**Membership center data binding**~~ — ✅ Done (streak, XP, achievements, learning snapshot, download cards)
+6. ~~**Payhip webhook sync**~~ — ✅ Done (E2E verified: sale_completed → 24 entitlements granted)
+7. ~~**Member-only download gateway**~~ — ✅ Done (E2E verified: 24/24 signed URLs → PDF bytes)
+8. ~~**Release registry for dual-channel distribution**~~ — ✅ Done (25 releases in releases.json + release_registry.js)
 
 ### Track B: Commercial and Content Continuity
 9. **Complete Payhip integration** — Upload 3 paid products, replace remaining Gumroad purchase links.

@@ -47,11 +47,24 @@
 
 ---
 
+## 2026-03-01 更新记录
+
+### 会员系统 E2E 打通（里程碑）
+- **Term Practice Pass**: $24.99 一次性购买（Payhip 产品 eN4l6），12 周访问期 + 永久 PDF 下载权
+- Payhip webhook → Supabase entitlements → 签名 URL 下载，全链路 E2E 验证通过
+- 24 个 PDF（12 周 × EN + Bilingual）在 Supabase Storage，通过下载网关授权
+- Cloudflare Worker proxy 部署（`www.25maths.com/api/*` → Pages Functions）
+- 会员面板：下载卡片 + Streak + XP + 成就 + 学习推荐
+
+### 模式演进：一次性购买 → 订阅制（未来）
+- 当前: $24.99 一次性购买 Term Practice Pass（12 周 CIE 0580 周练）
+- 未来: 按月订阅模式（当内容丰富度支撑后切换）
+
 ## 2026-02-11 更新记录
 
 ### 订阅制方向明确（核心收入模型）
 - 订阅节奏：每周 1 个专题变式练习包（含解析）
-- 价格：$9.99 / 月
+- 价格：$9.99 / 月（后调整为 $24.99 一次性购买）
 - 目的：稳定现金流 + 可持续交付
 
 ### 订阅入口与内容系统落地
@@ -77,6 +90,7 @@
 | **Number System Starter Pack** | $12 | 27 页：40+ 词汇卡 + 45+ 题 + 答案 | Year 10-11 入门级 | ✅ Live |
 | **CIE Free Resources** | $0 | 8 套词汇卡（邮箱收集） | 所有 CIE 学生 | ✅ Live |
 | **Edexcel Free Resources** | $0 | 6 套词汇卡（邮箱收集） | 所有 Edexcel 学生 | ✅ Live |
+| **CIE 0580 Term Practice Pass** | $24.99 | 12 周专题练习（24 PDF, EN+双语） | CIE 学生 | ✅ Live |
 
 ### 产品路线图（未来 6-12 个月）
 

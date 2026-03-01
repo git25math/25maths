@@ -6,6 +6,49 @@
 
 ---
 
+## 2026-02-28 ~ 03-01 | Last-Mile Member Delivery — 付款到下载全链路打通
+
+### 决策背景
+- 12-Week Term Practice Pass 内容已完成（24 PDFs 在 Supabase），后端代码已完成，支付页面已上线
+- 但用户付款后无法获得文件：releases.json 数据 bug + 无下载 UI + API Functions 未部署
+
+### 关键实施
+
+#### 1. 数据修复 (Workstream A)
+- `releases.json` 中 22/24 个 member release 的 `payhip_product_id` 为空 → 全部设为 `"eN4l6"`
+- `release_registry.js` 同步，三方交叉验证（JS/JSON/Registry）0 mismatch
+
+#### 2. 会员下载 UI (Workstream B)
+- 创建 `member_downloads.js`（130 行）：12 周下载卡片，EN + Bilingual 两个按钮
+- 遵循现有事件驱动架构（`member-dashboard-data` 事件）
+- 三态显示：guest → non-member → active member
+
+#### 3. 基础设施 (Workstream C)
+- **Cloudflare Worker proxy 部署**：`25maths-api-proxy-production` 路由 `www.25maths.com/api/*` → Pages Functions
+  - 解决方案：wrangler OAuth token 无 DNS 编辑权限，改用 Worker route 实现同等效果
+- **环境变量**：7 个必需变量已在 Cloudflare Pages 项目中预设
+- **Payhip webhook**：用户手动在 Payhip Dashboard 配置 webhook URL（API 不支持自动化）
+
+#### 4. E2E 测试 (Workstream D) — 26/26 PASS
+- D1: `sale_completed` webhook → HTTP 200, `entitlements_granted: 24`
+- D2: Reconcile → HTTP 200, status active
+- D4-D6: W01/W06/W12 下载 → 签名 URL → `%PDF-1.5` 字节确认
+- D-extra: 24/24 releases 全部可下载
+- D7/D8: 无 auth 拒绝 (401), 无效 token 拒绝 (401), 无效签名拒绝 (403)
+- CORS, 幂等性, 非存在 release (404) 全部通过
+
+### 决策理由
+- Worker proxy 而非 DNS 迁移：降低风险，不影响现有 GitHub Pages 托管
+- 一次性购买授予永久 entitlement（`expires_at: null`），12 周 membership period 仅影响 dashboard 显示
+- Payhip webhook 配置确认为 dashboard-only（无 API），已验证签名可通过
+
+### 影响范围
+- Gate B (Paid MVP): IN PROGRESS → **PASS**
+- Gate D (Production Readiness): IN PROGRESS → **PARTIAL PASS**（E2E 通过，回滚演练待做）
+- 完整交付日志：`_ops/delivery-log/2026-02-28-last-mile.md`
+
+---
+
 ## 2026-02-27 | Engagement 系统全链路实现 + B2B 教师工具
 
 ### 决策背景
