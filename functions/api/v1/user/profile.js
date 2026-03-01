@@ -10,7 +10,7 @@ import {
 
 const ALLOWED_FIELDS = ['display_name', 'preferred_lang', 'target_board', 'weekly_report_enabled'];
 const VALID_LANGS = ['en', 'zh-CN'];
-const VALID_BOARDS = ['CIE 0580', 'Edexcel 4MA1'];
+const VALID_BOARDS = ['cie0580', 'edexcel-4ma1'];
 
 function validateFields(body) {
   const cleaned = {};

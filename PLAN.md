@@ -1,6 +1,6 @@
 # 25maths.com 会员系统收尾计划
 
-> 生成日期: 2026-03-01 | 代码版本: `c40b494` + uncommitted | 总体完成度: ~65%
+> 生成日期: 2026-03-01 | 最后更新: 2026-03-01 | 代码版本: `fdede24` | 总体完成度: ~75%
 
 ---
 
@@ -33,9 +33,9 @@
 
 ---
 
-## Phase 1: 代码收尾
+## Phase 1: 代码收尾 (1.1 ✅ / 1.2 partial ✅ / 1.3 pending)
 
-### 1.1 前端 LEVEL_THRESHOLDS 硬编码消除
+### 1.1 前端 LEVEL_THRESHOLDS 硬编码消除 ✅
 
 **现状**: 5 处硬编码（后端已通过 `achievement_evaluator.js` 统一）
 
@@ -53,9 +53,9 @@
 
 **工作量**: ~30 分钟
 
-### 1.2 双语文案补全
+### 1.2 双语文案补全 (P0 ✅, 剩余 ~68 处)
 
-**现状**: 78 处英文 UI 文案缺少中文对照
+**现状**: 原 78 处，已完成 P0 10 处（commit `fdede24`），剩余 ~68 处
 
 | 文件 | 缺失数 | 优先级 |
 |------|--------|--------|
@@ -95,57 +95,43 @@
 
 ---
 
-## Phase 2: 测试用户与验证
+## Phase 2: 测试用户与验证 ✅
 
-### 2.1 环境准备
+> 完成日期: 2026-03-01
+
+### 2.1 环境准备 ✅
 
 | 项目 | 状态 |
 |------|------|
-| `.env` (SUPABASE_URL, keys, API_BASE_URL) | ✅ 已存在 |
-| `.claude/commands/test-setup.md` | ✅ 已存在（16 用户定义） |
-| `.claude/commands/test-verify.md` | ✅ 已存在 |
-| `.claude/commands/test-report.md` | ✅ 已存在 |
-| `scripts/test-users/` 目录 | ❌ 不存在，需创建 |
-| `scripts/test-users/users.json` | ❌ 不存在，需创建 |
-| `scripts/test-users/setup.js` | ❌ 不存在，需创建 |
-| `package.json` (node 依赖) | ❌ 不存在，需 `@supabase/supabase-js` |
+| `.env` (SUPABASE_URL, keys, API_BASE_URL, TEST_EMAIL_BASE) | ✅ |
+| `scripts/test-users/` 目录 | ✅ 已创建 |
+| `scripts/test-users/users.json` | ✅ 4 用户 + 24 CIE release_id |
+| `scripts/test-users/setup.js` | ✅ 创建用户 + 数据 + magic links |
+| `scripts/test-users/verify.js` | ✅ 15 DB + 5 API 检查/用户 |
+| `package.json` + `@supabase/supabase-js` | ✅ |
+| `.gitignore` 含 `scripts/test-users/reports/` | ✅ |
 
-### 2.2 创建 4 个核心测试用户
+### 2.2 创建 4 个核心测试用户 ✅
 
-| ID | alias | membership | board | 授权 | 特殊场景 |
-|----|-------|-----------|-------|------|----------|
-| T01 | Alice | active | CIE | 全授权 | 基准线，高活跃（25 sessions, 7-day streak, 2400 XP） |
-| T03 | Charlie | cancelled | CIE | 已失效 | period_end = 6 天前 |
-| T04 | Diana | — | — | 无 | 从未购买，低活跃 |
-| T08 | Henry | active | — | 全授权 | 零数据（测试 null 处理） |
+| ID | alias | membership | board | 授权 | 特殊场景 | 状态 |
+|----|-------|-----------|-------|------|----------|------|
+| T01 | Alice | active | CIE | 24 releases | 25 sessions, 7-day streak, 2400 XP | ✅ |
+| T03 | Charlie | cancelled | CIE | 24 releases (expired) | 15 sessions, 800 XP, period_end 6天前 | ✅ |
+| T04 | Diana | — | — | 无 | 零数据免费用户 | ✅ |
+| T08 | Henry | active | CIE | 24 releases | 零 sessions/streak/xp (null 处理) | ✅ |
 
-### 2.3 DB 层验证（每用户 15 项检查）
+### 2.3 DB 层验证 ✅ + 2.4 API 层验证 ✅
 
-- profiles 存在 + 字段正确
-- membership_status 状态一致
-- entitlements 数量正确
-- exercise_sessions 数量正确
-- question_attempts 存在
-- user_streaks current/best/freeze
-- user_xp total/level
-- user_achievements count
-- user_daily_activity 日期范围
-- 各表 user_id FK 一致性
-- T08: 所有表空记录验证
-- T03: expired entitlements 验证
-- T04: 无 membership 记录验证
+**结果: 65/73 PASS (89%)**
 
-### 2.4 API 层验证（每用户 5 个 endpoint）
+8 个 FAIL 均为已知原因：
+- 4× `profile.display_name=''` — profiles PK 修复尚未部署到 Cloudflare Workers
+- 2× XP 偏移 — verify 中 POST /check-achievements 触发了 XP 奖励（已修复为 GET）
+- 2× XP 非零 — 同上（Diana/Henry 各 +10 XP）
 
-| Endpoint | 验证点 |
-|----------|--------|
-| `GET /api/v1/user/profile` | 返回 display_name, preferred_lang, target_board |
-| `PATCH /api/v1/user/profile` | 保存并返回更新后数据 |
-| `GET /api/v1/engagement/streak` | current_streak, calendar, freeze_available |
-| `GET /api/v1/reports/weekly` | summary, xp.level 使用 computeLevel |
-| `POST /api/v1/engagement/check-achievements` | newly_unlocked, xp, streak 使用共享模块 |
-
-**工作量**: ~3-4 小时
+### 2.5 发现的额外 bug（已修复）
+- **target_board 约束不一致**: DB 只接受 `cie0580`/`edexcel-4ma1`，API 验证为 `CIE 0580`/`Edexcel 4MA1` → 方案 A 改代码对齐 DB
+- **verify.js 副作用**: POST /check-achievements 触发 XP 奖励 → 改为 GET /achievements
 
 ---
 

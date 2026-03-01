@@ -55,5 +55,8 @@ plan/member-agent-runs/
 # Week Pack build output
 build/
 
+# Test user reports
+scripts/test-users/reports/
+
 # Claude Code worktrees
 .claude/worktrees/

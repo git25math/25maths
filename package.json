@@ -1,0 +1,45 @@
+{
+  "name": "25maths-website",
+  "version": "1.0.0",
+  "description": "Premium bilingual IGCSE Mathematics resources website.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.98.0",
+    "detect-libc": "^2.1.2",
+    "dotenv": "^17.3.1",
+    "enhanced-resolve": "^5.19.0",
+    "graceful-fs": "^4.2.11",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "jiti": "^2.6.1",
+    "lightningcss": "^1.30.2",
+    "lightningcss-darwin-arm64": "^1.30.2",
+    "magic-string": "^0.30.21",
+    "mri": "^1.2.0",
+    "node-addon-api": "^7.1.1",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.3",
+    "source-map-js": "^1.2.1",
+    "tailwindcss": "^4.1.18",
+    "tapable": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git25math/25maths.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/git25math/25maths/issues"
+  },
+  "homepage": "https://github.com/git25math/25maths#readme"
+}
