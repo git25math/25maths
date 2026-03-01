@@ -1,233 +1,202 @@
 # 25maths.com 会员系统收尾计划
 
-> 生成日期: 2026-03-01 | 最后更新: 2026-03-01 | 代码版本: `fdede24` | 总体完成度: ~75%
+> 最后更新: 2026-03-01 | 总体完成度: ~80%
 
 ---
 
 ## 已完成 ✅
 
-### 技术债清理（本次会话）
+### R10 — 本轮会话 (3 commits)
 
-| # | 项目 | 文件 | 状态 |
-|---|------|------|------|
-| TD-2 | weekly.js 引入 `computeLevel` | `functions/api/v1/reports/weekly.js` | ✅ 删除本地 LEVEL_THRESHOLDS，import 共享模块 |
-| TD-7 | 提取 streak 更新逻辑 | `functions/_lib/streak_utils.js` (新建)，`complete.js`，`check-achievements.js` | ✅ 统一 freeze_used_at 和 || 0 防护 |
-| TD-8 | 提取日期工具函数 | `functions/_lib/date_utils.js` (新建)，5 个消费文件 | ✅ 消除 5 处重复定义 |
-| — | profiles 主键修复 | `functions/_lib/supabase_server.js` fetchProfile/upsertProfile | ✅ id → user_id (方案 B) |
-| — | 成就定义数据修正 | Supabase `achievement_definitions` 表 | ✅ 4 条 UPDATE (explorer-all/streak-7/streak-60/accuracy-100-5) |
-| — | Settings 入口 | `membership/index.html` hero 区域 | ✅ 添加 ⚙️ Settings / 设置 链接 |
+| commit | 内容 |
+|--------|------|
+| `b554b2b` | 技术债 TD-2/7/8 清理 + profiles PK 修复 + 成就定义修正 + Settings 入口 + PLAN.md |
+| `fdede24` | Phase 1: LEVEL_THRESHOLDS 统一 + P0 双语文案 10 处 |
+| `ede8b3f` | target_board 约束对齐 + 测试框架 scripts/test-users/ + verify.js 修复 |
+| (pending) | fix: 移除 root package.json 修复 Cloudflare Pages 部署失败 |
+
+#### 技术债清理
+
+| # | 项目 | 状态 |
+|---|------|------|
+| TD-2 | weekly.js import `computeLevel` | ✅ |
+| TD-7 | streak 逻辑提取至 `streak_utils.js` | ✅ |
+| TD-8 | 日期函数提取至 `date_utils.js` | ✅ |
+
+#### Bug 修复
+
+| 项目 | 状态 |
+|------|------|
+| profiles PK (`id` → `user_id`) | ✅ supabase_server.js fetchProfile/upsertProfile |
+| target_board 约束 (`CIE 0580` → `cie0580`) | ✅ profile.js VALID_BOARDS + settings.html option values |
+| 成就定义 4 条修正 (explorer-all/streak-7/streak-60/accuracy-100-5) | ✅ Supabase 直接 UPDATE |
+| titleCn 不一致 (实践者/IGCSE冠军) | ✅ streak_widget.js + zh-cn/parent-dashboard.html |
+
+#### Phase 1.1 LEVEL_THRESHOLDS 统一 ✅
+
+| 文件 | 改动 |
+|------|------|
+| `functions/api/v1/engagement/achievements.js` | import XP_THRESHOLDS 替代硬编码 |
+| `membership/achievements.html` | + sync 注释 |
+| `membership/parent-dashboard.html` | + sync 注释 |
+| `zh-cn/membership/parent-dashboard.html` | + sync 注释 + titleCn 修正 |
+| `assets/js/streak_widget.js` | + sync 注释 + titleCn 修正 |
+
+#### Phase 1.2 P0 双语 10 处 ✅
+
+| 文件 | 补全项 |
+|------|--------|
+| `membership/index.html` | 学习概况、每周练习包、高频错题集群、针对性练习计划、FAQ+3组Q&A |
+| `membership/settings.html` | 账户概要、个人资料、保存更改 |
+| `membership/parent-dashboard.html` | 登录查看学习进度 |
+| `membership/leaderboard.html` | 你的排名 |
+
+#### Phase 2 测试框架 ✅
+
+| 组件 | 状态 |
+|------|------|
+| `scripts/test-users/setup.js` | ✅ 4 用户创建 + magic links |
+| `scripts/test-users/verify.js` | ✅ 73 项检查 (65 PASS / 8 已知 FAIL) |
+| `scripts/test-users/users.json` | ✅ T01 Alice / T03 Charlie / T04 Diana / T08 Henry |
 
 ### 之前已完成（Round 1-9）
 
-| 轮次 | 内容 | 代表 commit |
-|------|------|-------------|
+| 轮次 | 内容 | commit |
+|------|------|--------|
 | R1 | Blog 系统 (16 篇 EN+ZH) | `b9f0420` |
-| R2 | SEO & 本地化 (hreflang, sitemap) | `9d45f43` |
+| R2 | SEO & 本地化 | `9d45f43` |
 | R3 | 设计一致性审计 | `3d7823d` |
 | R4 | 交叉链接 & 质量审计 | `20aa975` |
-| R5 | 性能 & SEO (defer, preconnect) | `d47cc8a` |
+| R5 | 性能 & SEO | `d47cc8a` |
 | R6 | 无障碍 & 安全审计 | `eaf4815` |
 | R7 | 练习题 LaTeX Phase 1-2 | `731ad30` |
-| R8 | 会员系统 last-mile (E2E 26/26 pass) | `f6bb787` |
+| R8 | 会员系统 last-mile (E2E 26/26) | `f6bb787` |
 | R9 | KaTeX Phase 3-4 (8,731 表达式) | `c40b494` |
 
 ---
 
-## Phase 1: 代码收尾 (1.1 ✅ / 1.2 partial ✅ / 1.3 pending)
+## 待完成任务
 
-### 1.1 前端 LEVEL_THRESHOLDS 硬编码消除 ✅
+### 优先级 P0 — 部署前必须完成
 
-**现状**: 5 处硬编码（后端已通过 `achievement_evaluator.js` 统一）
+#### 1. Cloudflare Pages 部署修复
 
-| 文件 | 行号 | 类型 | 说明 |
-|------|------|------|------|
-| `membership/achievements.html` | 74 | 简单数组 `[0,50,200,...]` | 前端计算 XP 进度条 |
-| `membership/parent-dashboard.html` | 181 | 对象数组 `[{xp,label}]` | 家长面板等级显示 |
-| `zh-cn/membership/parent-dashboard.html` | 168 | 对象数组 (中文版) | 同上中文版 |
-| `assets/js/streak_widget.js` | 4 | 对象数组 `[{xp,label}]` | 仪表盘等级条 |
-| `functions/api/v1/engagement/achievements.js` | 9 | 对象数组 | API 端点 |
+**状态**: 3 个 R10 commit 已推送，但 Cloudflare Pages 部署失败（root `package.json` 含 `lightningcss-darwin-arm64` 等 macOS 专有依赖，Linux 构建环境无法安装）
 
-**方案**:
-- 后端 `achievements.js` 直接 import `XP_THRESHOLDS` from `achievement_evaluator.js`（与 weekly.js 相同改法）
-- 前端 3 个文件：等级数据通过 API 返回（`/api/v1/engagement/achievements` 已返回 level 信息），前端仍需本地阈值做进度条计算。可接受保留但添加 `// Sync with functions/_lib/achievement_evaluator.js:XP_THRESHOLDS` 注释标记
+**根因**: `npm init -y && npm install @supabase/supabase-js dotenv` 在项目根目录创建了 `package.json`，Cloudflare Pages 检测到后执行 `npm install`，因平台不兼容导致构建失败。生产环境仍运行 `c40b494`（R10 之前的版本）。
 
-**工作量**: ~30 分钟
+**修复**: 移除 root `package.json`/`package-lock.json`，依赖迁移至 `scripts/test-users/package.json`
 
-### 1.2 双语文案补全 (P0 ✅, 剩余 ~68 处)
+**操作**:
+```
+git push origin main
+# 等待 Cloudflare Pages 重新部署
+node scripts/test-users/verify.js
+# 预期: profile.display_name 4个FAIL → 全部PASS
+```
 
-**现状**: 原 78 处，已完成 P0 10 处（commit `fdede24`），剩余 ~68 处
+#### 2. 测试用户 XP 数据已重置 ✅
 
-| 文件 | 缺失数 | 优先级 |
-|------|--------|--------|
-| `membership/index.html` | 22 | P0 — 会员中心首页 |
-| `membership/settings.html` | 18 | P0 — 设置页面 |
-| `membership/parent-dashboard.html` | 14 | P1 — 家长面板 |
-| `membership/leaderboard.html` | 11 | P1 — 排行榜 |
-| `membership/achievements.html` | 8 | P2 — 成就页 |
-| `assets/js/member_downloads.js` | 5 | P1 — 下载卡片 |
-
-**最高优先级 10 处**:
-
-1. `membership/index.html:113` — "Your Learning Snapshot" (主区块标题)
-2. `membership/index.html:206` — "Weekly Practice Packs" (主区块标题)
-3. `membership/settings.html:33` — "Account Summary" (设置页标题)
-4. `membership/settings.html:56` — "Profile" (表单标题)
-5. `membership/settings.html:93` — "Save Changes" (提交按钮)
-6. `membership/index.html:162` — "Top Mistake Clusters" (分析区标题)
-7. `membership/index.html:183` — "Targeted Practice Plan" (推荐区标题)
-8. `membership/index.html:248` — "FAQ" + 3 个问答 (帮助区)
-9. `membership/parent-dashboard.html:37` — "Sign in to view progress" (认证门)
-10. `membership/leaderboard.html:26` — "Your Rank" (排名卡)
-
-**ZH 页面差距**: `zh-cn/membership/` 仅有 `parent-dashboard.html`，缺失 `index.html`、`settings.html`、`achievements.html`、`leaderboard.html` 的中文版。但当前架构使用 bilingual-support-only CSS 类而非独立 ZH 页面，所以只需补全 `bilingual-support-only` 标签。
-
-**工作量**: ~2 小时
-
-### 1.3 其他遗留代码项
-
-| 项目 | 优先级 | 说明 |
-|------|--------|------|
-| KaTeX CSS 预加载 | P2 | `<link rel="preload" as="style">` 模式 |
-| sitemap.xml lastmod 自动化 | P3 | 可 hook 到 build 流程 |
-| CSP unsafe-inline 迁移 | P3 | 需 nonces/hashes，影响所有内联 script |
-| 练习筛选器缺 id | P3 | `<select>` 无障碍修复 |
-| ~86 KaTeX 边缘用例 | P3 | 负数 Unicode 上标、嵌套 sqrt 等 |
+setup.js 重新运行后基准数据已恢复，verify.js 不再调用 POST 端点。
 
 ---
 
-## Phase 2: 测试用户与验证 ✅
+### 优先级 P1 — 近期完成
 
-> 完成日期: 2026-03-01
+#### 3. 双语文案补全 (剩余 ~68 处)
 
-### 2.1 环境准备 ✅
+| 文件 | 剩余 | 优先级 |
+|------|------|--------|
+| `membership/index.html` | ~17 | P1 |
+| `membership/settings.html` | ~15 | P1 |
+| `membership/parent-dashboard.html` | ~13 | P1 |
+| `membership/leaderboard.html` | ~10 | P1 |
+| `membership/achievements.html` | ~8 | P2 |
+| `assets/js/member_downloads.js` | ~5 | P1 |
 
-| 项目 | 状态 |
+模式：`<span class="bilingual-support-only">中文</span>` 或 `<p class="bilingual-support-only text-sm text-gray-500">中文</p>`
+
+---
+
+### 优先级 P2 — 可选改进
+
+#### 4. 遗留代码项
+
+| 项目 | 说明 |
 |------|------|
-| `.env` (SUPABASE_URL, keys, API_BASE_URL, TEST_EMAIL_BASE) | ✅ |
-| `scripts/test-users/` 目录 | ✅ 已创建 |
-| `scripts/test-users/users.json` | ✅ 4 用户 + 24 CIE release_id |
-| `scripts/test-users/setup.js` | ✅ 创建用户 + 数据 + magic links |
-| `scripts/test-users/verify.js` | ✅ 15 DB + 5 API 检查/用户 |
-| `package.json` + `@supabase/supabase-js` | ✅ |
-| `.gitignore` 含 `scripts/test-users/reports/` | ✅ |
+| KaTeX CSS 预加载 | `<link rel="preload" as="style">` |
+| sitemap.xml lastmod 自动化 | hook 到 build 流程 |
+| ~86 KaTeX 边缘用例 | 负数上标、嵌套 sqrt 等 |
+| 练习筛选器缺 id | `<select>` 无障碍修复 |
 
-### 2.2 创建 4 个核心测试用户 ✅
+#### 5. CSP unsafe-inline 迁移
 
-| ID | alias | membership | board | 授权 | 特殊场景 | 状态 |
-|----|-------|-----------|-------|------|----------|------|
-| T01 | Alice | active | CIE | 24 releases | 25 sessions, 7-day streak, 2400 XP | ✅ |
-| T03 | Charlie | cancelled | CIE | 24 releases (expired) | 15 sessions, 800 XP, period_end 6天前 | ✅ |
-| T04 | Diana | — | — | 无 | 零数据免费用户 | ✅ |
-| T08 | Henry | active | CIE | 24 releases | 零 sessions/streak/xp (null 处理) | ✅ |
-
-### 2.3 DB 层验证 ✅ + 2.4 API 层验证 ✅
-
-**结果: 65/73 PASS (89%)**
-
-8 个 FAIL 均为已知原因：
-- 4× `profile.display_name=''` — profiles PK 修复尚未部署到 Cloudflare Workers
-- 2× XP 偏移 — verify 中 POST /check-achievements 触发了 XP 奖励（已修复为 GET）
-- 2× XP 非零 — 同上（Diana/Henry 各 +10 XP）
-
-### 2.5 发现的额外 bug（已修复）
-- **target_board 约束不一致**: DB 只接受 `cie0580`/`edexcel-4ma1`，API 验证为 `CIE 0580`/`Edexcel 4MA1` → 方案 A 改代码对齐 DB
-- **verify.js 副作用**: POST /check-achievements 触发 XP 奖励 → 改为 GET /achievements
+需 nonces/hashes，影响所有内联 `<script>`。工作量大，可后续专项处理。
 
 ---
 
-## Phase 3: Edexcel 补齐
+### 优先级 P3 — 远期规划
 
-### 3.1 差距清单
+#### 6. Edexcel 4MA1 补齐
 
 | 维度 | CIE 0580 | Edexcel 4MA1 | 差距 |
 |------|----------|--------------|------|
 | 练习题 JSON | 124 | 78 | -46 (37%) |
-| Payhip 产品页 | — | — | 均未上线 |
-| 独立 topic 覆盖 | ~70 | ~35 | 需评估目标 syllabus 差异 |
+| topic 覆盖 | ~70 | ~35 | 需 syllabus 分析 |
 
-### 3.2 任务清单
+任务：
+- [ ] 分析 4MA1 syllabus，确定缺失 topic
+- [ ] 批量生成练习题 JSON（复用 CIE 管道）
+- [ ] 产品页 + 转化漏斗
 
-- [ ] 分析 4MA1 syllabus，确定缺失 topic 列表
-- [ ] 批量生成缺失练习题 JSON（可复用 CIE 分析管道）
-- [ ] 产品页创建（如需 Payhip 上架）
-- [ ] 转化漏斗补全（landing page → exercises → membership）
+#### 7. 内容与增长
 
-**工作量**: ~1-2 周（取决于内容深度）
-
----
-
-## Phase 4: 内容与增长（仅列出）
-
-- [ ] Blog: 新增 IGCSE 备考系列文章（EN + ZH）
-- [ ] GA4: 事件追踪（session_complete, achievement_unlock, download）
-- [ ] SEO: 结构化数据 FAQ markup，练习页 breadcrumbs
-- [ ] Email: 周报邮件模板（配合 weekly_report_enabled）
+- [ ] Blog: IGCSE 备考系列
+- [ ] GA4: 事件追踪 (session_complete, achievement_unlock, download)
+- [ ] SEO: FAQ 结构化数据, breadcrumbs
+- [ ] Email: 周报模板 (weekly_report_enabled)
 
 ---
 
-## 依赖关系
+## 关键文件索引
 
-```
-Phase 1.1 (LEVEL_THRESHOLDS) ──── 可独立
-Phase 1.2 (双语补全) ─────────── 可独立
-Phase 1.3 (其他遗留) ─────────── 可独立
+### 新建文件 (R10)
+- `functions/_lib/date_utils.js` — formatDateStr, subtractDays
+- `functions/_lib/streak_utils.js` — updateStreak (统一 freeze + 防护)
+- `scripts/test-users/setup.js` — 测试用户创建
+- `scripts/test-users/verify.js` — DB + API 验证 (73 项)
+- `scripts/test-users/users.json` — 4 用户配置 + 24 CIE release_id
 
-Phase 2.1 (环境准备) ──┐
-                       ├─→ Phase 2.2 (创建用户) ──→ Phase 2.3 (DB 验证) ──→ Phase 2.4 (API 验证)
-Phase 1 (代码收尾) ────┘
-
-Phase 3 (Edexcel) ────────────── 可与 Phase 1-2 并行
-Phase 4 (增长) ───────────────── 可与所有 Phase 并行
-```
-
-**可并行**:
-- Phase 1.1 / 1.2 / 1.3 互相独立
-- Phase 3 与 Phase 1-2 独立
-- Phase 4 与所有 Phase 独立
-
-**必须串行**:
-- Phase 2 依赖 Phase 1 代码修复完成（否则验证结果不准确）
-- Phase 2.2 → 2.3 → 2.4 必须顺序执行
-
----
-
-## 风险项
-
-| 风险 | 影响 | 缓解 |
-|------|------|------|
-| profiles 修复后可能有旧数据残留 | 低 | profiles 表当前为空（0 行），修复后新数据直接写入 user_id |
-| LEVEL_THRESHOLDS 前后端不一致 | 中 | 已在后端统一；前端保留硬编码 + 注释标记，后续可通过 API 返回阈值配置 |
-| 测试用户可能写入生产库 | 高 | test-setup.md 已要求脚本检测 URL 含 "prod" 时拒绝执行；当前 URL 为 Supabase 托管 |
-| Edexcel 练习质量不均 | 中 | 78 题已有，优先覆盖核心 topic；复用 CIE 管道降低成本 |
-| KaTeX 86 个边缘用例 | 低 | 不影响主流程；可逐步手动修复 |
+### 修改文件 (R10)
+- `functions/_lib/supabase_server.js` — profiles PK (id → user_id)
+- `functions/api/v1/user/profile.js` — VALID_BOARDS 对齐 DB
+- `functions/api/v1/reports/weekly.js` — import computeLevel
+- `functions/api/v1/engagement/achievements.js` — import XP_THRESHOLDS
+- `functions/api/v1/engagement/check-achievements.js` — import streak_utils + date_utils
+- `functions/api/v1/engagement/streak.js` — import date_utils
+- `functions/api/v1/engagement/freeze.js` — import date_utils
+- `functions/api/v1/exercise/session/[id]/complete.js` — import streak_utils + date_utils
+- `membership/settings.html` — target_board values + 双语
+- `membership/index.html` — Settings 入口 + 双语
+- `membership/leaderboard.html` — 双语
+- `membership/parent-dashboard.html` — 双语
+- `membership/achievements.html` — sync 注释
+- `assets/js/streak_widget.js` — sync 注释 + titleCn
+- `zh-cn/membership/parent-dashboard.html` — sync 注释 + titleCn
 
 ---
 
 ## 当前 Git 状态
 
-### 未提交变更 (12 modified + 7 untracked)
-
-**Modified**:
-- `functions/_lib/supabase_server.js` — profiles PK 修复
-- `functions/api/v1/reports/weekly.js` — TD-2 computeLevel
-- `functions/api/v1/engagement/check-achievements.js` — TD-7/8 streak + date
-- `functions/api/v1/engagement/freeze.js` — TD-8 date_utils
-- `functions/api/v1/engagement/streak.js` — TD-8 date_utils
-- `functions/api/v1/exercise/session/[id]/complete.js` — TD-7/8 streak + date
-- `membership/index.html` — Settings 链接
-- 3 exercise JSON + exercise_engine.js — 之前的 KaTeX 修复残留
-- 2 .DS_Store
-
-**New files**:
-- `functions/_lib/date_utils.js` — 共享日期工具
-- `functions/_lib/streak_utils.js` — 共享 streak 逻辑
-
-### 最近 5 次 commit
+**Working tree**: clean
+**Branch**: main (ahead of origin by 3 commits)
 
 ```
+ede8b3f fix: profiles PK alignment, target_board constraint, test framework setup
+fdede24 Phase 1: LEVEL_THRESHOLDS统一 + P0双语文案补全10处
+b554b2b fix: profiles PK修复 + 成就定义数据修正 + 技术债TD-2/7/8清理 + Settings入口 + PLAN.md
 c40b494 docs: update changelog and decision log for LaTeX Phase 4
-121ccd9 fix: LaTeX Phase 4 — KaTeX quality assurance across 102 exercise JSON files
-3982506 fix: 修复练习题 KaTeX 渲染 — normalizeInlineMath 跳过简单数学表达式
-f411886 docs: 同步更新 LaTeX Phase 3 KaTeX 批量转换记录至所有项目文档
-3f1f420 docs: 同步 6 份项目文档至 2026-03-01 最新进度
 ```
+
+**Cloudflare Pages 部署**: `ede8b3f` 部署失败 (root package.json 问题)，生产仍为 `c40b494`
+**下一步**: 提交 package.json 修复 → `git push` → 等待 Cloudflare 重新部署 → `verify.js` 验证
