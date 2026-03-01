@@ -81,7 +81,24 @@ Zero-marker pages are concentrated in non-core categories:
   - Style consistency: `Failures: 0`
   - Jekyll build: success
 
-## 4) Recommended Next Wave (Optional)
+## 4) Member System Bilingual Update (2026-03-01)
+
+Commit 269fe7f added JS-level `t(en, zh)` bilingual support to 5 membership JS files and 1 HTML page:
+
+| File | Translation Count | Mechanism |
+| --- | --- | --- |
+| `member_center.js` | ~20 strings | `isZh()` + `t()` |
+| `member_recommendations.js` | ~12 strings | `isZh()` + `t()` |
+| `achievements.html` (inline JS) | ~7 strings + `LEVEL_TITLES_CN` | `isZh()` + `t()` |
+| `leaderboard.html` (inline JS) | ~8 strings | `isZh()` + `t()` |
+| `parent-dashboard.html` (inline JS) | ~15 strings + `titleCn` | `isZh()` + `t()` |
+| `membership/index.html` | 1 bilingual-support-only block | static HTML |
+
+**Note**: JS `t()` reads `<html lang="zh-cn">` (independent of toggle), while static `bilingual-support-only` blocks are controlled by the toggle CSS class. Both mechanisms now cover membership pages.
+
+Previously skipped files (already complete): `member_auth.js`, `streak_widget.js`, `achievement_toast.js`.
+
+## 5) Recommended Next Wave (Optional)
 
 1. Keep redirect stubs/template pages in expected-zero whitelist and fail only on unexpected zero-marker canonical pages.
 2. Raise low-density pages (currently `blog/index.html`, `404.html`, and utility pages) from 1-2 markers to 3+ if richer bilingual guidance is desired.

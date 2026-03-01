@@ -1,7 +1,7 @@
 # 25Maths 网站 — 项目交接文档
 
-> **最后更新**: 2026-02-10
-> **状态**: 已部署上线（模块化重构完成）
+> **最后更新**: 2026-03-01
+> **状态**: 已部署上线（会员系统 + Engagement + 双语补全）
 > **网站**: https://www.25maths.com
 
 ---
@@ -12,7 +12,10 @@
 规划 ████████████ 100%
 开发 ████████████ 100%  (初版 + Edexcel 资源 + 模块化重构)
 审计 ████████████ 100%  (3 轮审计 + 全部修复)
-部署 ████████████ 100%  (Jekyll 构建，GitHub Pages 上线)
+部署 ████████████ 100%  (Jekyll 构建，GitHub Pages + Cloudflare)
+会员 ██████████░░  90%  (认证/支付/Engagement/双语 — 剩余:成就审查+等级统一)
+双语 ████████████ 100%  (toggle 基础 + 静态覆盖 + JS t() 动态翻译)
+LaTeX ██████░░░░░░  60%  (Phase 1-2 完成，Phase 3-4 待做)
 ```
 
 ### Git 提交记录
@@ -27,6 +30,13 @@
 | `b96a178` | Revise refund policy for digital products |
 | `d67213c` | Replace 14-day refund policy with quality promise across all pages |
 | `5c25f20` | Convert GBP to USD, remove gumroad frontmatter, add private changelog |
+| `339f42a` | **会员成就系统 3 Bug 修复** — 等级阈值统一 + improvement 评估 + volume 累计 |
+| `f3739da` | **公共模块重构** — 提取 achievement_evaluator.js |
+| `bd78109` | **LaTeX Phase 1** — Unicode 上标/根号/希腊字母→LaTeX（108 个 JSON） |
+| `731ad30` | **LaTeX Phase 2** — 纯文本分数→`\frac{}{}`（170 个 JSON） |
+| `ab48f5e` | **账户设置页** — Profile CRUD API + settings.html |
+| `269fe7f` | **双语文案补全** — 6 个会员 JS/HTML 文件，~60 处中文翻译 |
+| `47bc9b9` | **Hero 颜色修复** — text-gray-300/text-blue-300 品牌色覆盖 |
 
 ---
 
@@ -119,57 +129,58 @@
 
 ## 三、下一步目标
 
-### 近期（优先）
+> 详细开发计划见 `docs/membership-status-2026-03-01.md` 第五节
 
-| # | 任务 | 说明 |
+### P1 — 会员体系收尾（90%，剩余 2 项）
+
+| # | 任务 | 状态 |
 |---|------|------|
-| 1 | **完成付费产品 Payhip 上传** | 3 个付费产品（$17/$17/$12），需创建 Payhip listing |
-| 2 | **网站付费链接更新** | 3 个产品页面 Gumroad → Payhip（待 URL） |
-| 3 | **Google Search Console** | 验证站点所有权，提交 sitemap.xml |
+| 1 | 成就 seed 数据审查（20 个定义的 criteria 阈值） | 待做 |
+| 2 | `weekly.js` 引入 `computeLevel` 统一等级计算 | 待做 |
 
-### 新增（2026-02-11 复盘）
+### P1.5 — LaTeX 数学渲染（Phase 3-4）
 
-| # | 任务 | 说明 |
+| # | 任务 | 状态 |
 |---|------|------|
-| 4 | **全站价格统一** | 产品页/列表/定价页全部 $17/$17/$12 |
-| 5 | **套餐价与折扣一致** | Complete Package / 2-Bundle Deal 文案与价格同步 |
-| 6 | **移除免费资源直链** | 删除或迁移 free PDF/ZIP，防绕过邮箱墙 |
-| 7 | **Payhip 脚本加载策略** | 产品页加 `payhip: true` 或改为全站加载 |
-| 8 | **admin 禁止索引** | robots 或 noindex |
-| 9 | **README 状态更新** | 纠正“Other pages creating…”等陈述 |
-| 10 | **订阅页面上线** | subscription.html + 邮件序列模板 |
+| 3 | 括号分数 `$(12a^4) / (3a)$` 转换 | 待做 |
+| 4 | guard braces 内分数 + 字母分数 | 待做 |
+| 5 | KaTeX 浏览器端渲染验证 | 待做 |
+
+### P2 — Edexcel 4MA1 补齐
+
+| # | 任务 | 状态 |
+|---|------|------|
+| 6 | 产品详情页 + CTA 优化 | 待做 |
+| 7 | Edexcel 练习 JSON 扩充（当前 202 题全是 CIE） | 待做 |
+
+### P3 — 内容与增长
+
+| # | 任务 | 状态 |
+|---|------|------|
+| 8 | 5 篇 Blog 文章（SEO 长尾词） | 待做 |
+| 9 | GA4 事件追踪 + Google Search Console | 待做 |
+
+### P4 — 未来 Feature
+
+| # | 任务 | 状态 |
+|---|------|------|
+| 10 | B2B 教师系统（5 张 DB 表已建，零 API） | 未开始 |
+| 11 | fill-in-the-blank 题型 | 未开始 |
+| 12 | 周报邮件推送 | 未开始 |
 
 ---
 
-## 2026-02-11 更新记录
+## 2026-02-11 ~ 03-01 已完成里程碑
 
-- ✅ 订阅页面上线（subscription.html）+ 8 周专题规划文档
-- ✅ CIE 产品页改为等待名单流程（表单 + thanks.html）
-- ✅ 会员入口加到全站导航与核心页面
-- ✅ 价格与文案一致性修订（$17/$17/$12，套餐 $29/$39）
-- ✅ 移除站内免费 PDF 直链（Payhip 继续作为邮箱墙）
-- ✅ 博客上线（/blog + 3 篇文章 + 留言表单）
-- ✅ 首页加入最新文章区块，导航加入 Blog 入口
-- ✅ 三语页面上线（EN/简体/繁體：首页、订阅、博客与文章）
-- ✅ 三语 About/Support/Terms/Privacy 上线
-- ✅ 移除 AMC8 / IAL P1 / IAL P2 模块
-
-### 中期
-
-| # | 任务 | 说明 |
-|---|------|------|
-| 4 | **Tailwind 构建优化** | 用 Tailwind CLI 替代 CDN，生产 CSS < 10KB（当前 CDN ~300KB） |
-| 5 | **AMC 8 内容上线** | 创建资源 → 在 _config.yml 改 status 为 active → 添加子页面 |
-| 6 | **IAL Pure 内容上线** | 同上 |
-| 7 | **生成 favicon.ico + apple-touch-icon.png** | 从 favicon.svg 转换，兼容旧浏览器和 iOS |
-
-### 长期
-
-| # | 任务 | 说明 |
-|---|------|------|
-| 8 | **订阅制** | 在 _config.yml 模块配置加 subscription_price 字段 |
-| 9 | **迁移托管** | 考虑 Cloudflare Pages / Netlify（支持 301 重定向、更快 CDN） |
-| 10 | **数据分析** | 添加 Plausible / Umami 等隐私友好的分析工具 |
+- ✅ 订阅页面上线 + CIE 产品等待名单流程 + 价格统一
+- ✅ 博客上线（/blog + 3 篇文章）
+- ✅ 双语架构重构（EN 为主 + bilingual toggle + Cloudflare 301 重定向）
+- ✅ 会员系统全栈（认证/Payhip 支付/仪表盘/下载/福利/推荐）
+- ✅ Engagement 系统（Streak/XP/成就/排行榜/家长视图/周报）
+- ✅ 练习引擎（202 题 + session/attempt API + 成就触发）
+- ✅ LaTeX 数学渲染 Phase 1-2（上标/根号/分数，278 个 JSON）
+- ✅ 会员 JS/HTML 双语文案补全（6 文件，~60 处翻译）
+- ✅ 账户设置页（Profile CRUD API）
 
 ---
 
