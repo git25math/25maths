@@ -68,21 +68,25 @@ lang_links:
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
                 <p class="text-sm text-gray-500">Sessions</p>
+                <p class="bilingual-support-only text-xs text-gray-400">练习次数</p>
                 <p id="stat-sessions" class="text-3xl font-semibold text-gray-900 mt-1">—</p>
                 <p id="stat-sessions-delta" class="text-xs text-gray-400 mt-1"></p>
             </div>
             <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
                 <p class="text-sm text-gray-500">Questions</p>
+                <p class="bilingual-support-only text-xs text-gray-400">题目数量</p>
                 <p id="stat-questions" class="text-3xl font-semibold text-gray-900 mt-1">—</p>
                 <p id="stat-questions-delta" class="text-xs text-gray-400 mt-1"></p>
             </div>
             <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
                 <p class="text-sm text-gray-500">Accuracy</p>
+                <p class="bilingual-support-only text-xs text-gray-400">正确率</p>
                 <p id="stat-accuracy" class="text-3xl font-semibold text-gray-900 mt-1">—</p>
                 <p id="stat-accuracy-delta" class="text-xs text-gray-400 mt-1"></p>
             </div>
             <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
                 <p class="text-sm text-gray-500">Streak</p>
+                <p class="bilingual-support-only text-xs text-gray-400">连续打卡</p>
                 <p id="stat-streak" class="text-3xl font-semibold text-gray-900 mt-1">—</p>
                 <p id="stat-streak-best" class="text-xs text-gray-400 mt-1"></p>
             </div>
@@ -110,7 +114,8 @@ lang_links:
 
         <!-- Topic Performance Table -->
         <div class="bg-white rounded-xl border border-gray-200 p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-4">Topic Performance</h3>
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Topic Performance</h3>
+            <p class="bilingual-support-only text-sm text-gray-500 mb-3">各主题表现</p>
             <div id="topic-table-container">
                 <table class="w-full text-sm">
                     <thead>
@@ -131,6 +136,7 @@ lang_links:
         <!-- Weak Areas -->
         <div class="bg-white rounded-xl border border-red-100 p-6">
             <h3 class="text-lg font-bold text-gray-900 mb-1">Areas Needing Attention</h3>
+            <p class="bilingual-support-only text-sm text-gray-500">需要关注的薄弱环节</p>
             <p class="text-sm text-gray-500 mb-4">Skills where your child made the most mistakes this week.</p>
             <div id="weak-areas-list" class="space-y-3">
                 <p class="text-sm text-gray-400">Loading...</p>
@@ -139,7 +145,8 @@ lang_links:
 
         <!-- Recent Achievements -->
         <div class="bg-white rounded-xl border border-gray-200 p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-4">Recent Achievements</h3>
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Recent Achievements</h3>
+            <p class="bilingual-support-only text-sm text-gray-500 mb-3">近期成就</p>
             <div id="parent-achievements" class="flex flex-wrap gap-3">
                 <p class="text-sm text-gray-400">Loading...</p>
             </div>
@@ -147,7 +154,8 @@ lang_links:
 
         <!-- Recommendations -->
         <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-100 p-6">
-            <h3 class="text-lg font-bold text-gray-900 mb-3">Recommended Next Steps</h3>
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Recommended Next Steps</h3>
+            <p class="bilingual-support-only text-sm text-gray-500 mb-2">建议下一步</p>
             <ul id="recommendations-list" class="space-y-2 text-sm text-gray-700">
                 <li class="flex items-start gap-2">
                     <span class="text-primary mt-0.5">&#9744;</span>
@@ -165,17 +173,22 @@ lang_links:
 (function () {
   'use strict';
 
+  function isZh() {
+    return String(document.documentElement.lang || '').toLowerCase() === 'zh-cn';
+  }
+  function t(en, zh) { return isZh() ? zh : en; }
+
   const LEVEL_THRESHOLDS = [
-    { level: 1, title: 'Beginner', xp: 0 },
-    { level: 2, title: 'Learner', xp: 50 },
-    { level: 3, title: 'Practitioner', xp: 200 },
-    { level: 4, title: 'Achiever', xp: 500 },
-    { level: 5, title: 'Scholar', xp: 1000 },
-    { level: 6, title: 'Expert', xp: 2000 },
-    { level: 7, title: 'Master', xp: 4000 },
-    { level: 8, title: 'Grandmaster', xp: 8000 },
-    { level: 9, title: 'Legend', xp: 16000 },
-    { level: 10, title: 'IGCSE Champion', xp: 32000 },
+    { level: 1, title: 'Beginner', titleCn: '初学者', xp: 0 },
+    { level: 2, title: 'Learner', titleCn: '学习者', xp: 50 },
+    { level: 3, title: 'Practitioner', titleCn: '练习者', xp: 200 },
+    { level: 4, title: 'Achiever', titleCn: '成就者', xp: 500 },
+    { level: 5, title: 'Scholar', titleCn: '学者', xp: 1000 },
+    { level: 6, title: 'Expert', titleCn: '专家', xp: 2000 },
+    { level: 7, title: 'Master', titleCn: '大师', xp: 4000 },
+    { level: 8, title: 'Grandmaster', titleCn: '宗师', xp: 8000 },
+    { level: 9, title: 'Legend', titleCn: '传奇', xp: 16000 },
+    { level: 10, title: 'IGCSE Champion', titleCn: 'IGCSE 冠军', xp: 32000 },
   ];
 
   function getLevelInfo(totalXp) {
@@ -191,7 +204,8 @@ lang_links:
     const xpInLevel = totalXp - current.xp;
     const xpForNext = next ? (next.xp - current.xp) : 0;
     const pct = next ? Math.min(100, Math.round((xpInLevel / xpForNext) * 100)) : 100;
-    return { level: current.level, title: current.title, totalXp, nextXp: next ? next.xp : current.xp, pct };
+    const title = isZh() ? (current.titleCn || current.title) : current.title;
+    return { level: current.level, title, totalXp, nextXp: next ? next.xp : current.xp, pct };
   }
 
   function capitalise(str) {
@@ -200,9 +214,9 @@ lang_links:
   }
 
   function deltaText(delta, suffix) {
-    if (delta > 0) return `+${delta}${suffix} vs last week`;
-    if (delta < 0) return `${delta}${suffix} vs last week`;
-    return `No change vs last week`;
+    if (delta > 0) return `+${delta}${suffix} ${t('vs last week', '较上周')}`;
+    if (delta < 0) return `${delta}${suffix} ${t('vs last week', '较上周')}`;
+    return t('No change vs last week', '较上周无变化');
   }
 
   function accuracyColor(pct) {
@@ -246,7 +260,7 @@ lang_links:
     if (tbody) {
       const topics = report.topic_performance || [];
       if (topics.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="4" class="py-6 text-center text-gray-400">No topic data this week</td></tr>';
+        tbody.innerHTML = `<tr><td colspan="4" class="py-6 text-center text-gray-400">${t('No topic data this week', '本周暂无主题数据')}</td></tr>`;
       } else {
         tbody.innerHTML = topics.map(t => `
           <tr class="border-b border-gray-50">
@@ -264,15 +278,15 @@ lang_links:
     if (weakList) {
       const mistakes = report.top_mistakes || [];
       if (mistakes.length === 0) {
-        weakList.innerHTML = '<p class="text-sm text-green-600 font-medium">No significant weak areas detected this week. Great work!</p>';
+        weakList.innerHTML = `<p class="text-sm text-green-600 font-medium">${t('No significant weak areas detected this week. Great work!', '本周未检测到明显薄弱环节，做得好！')}</p>`;
       } else {
         weakList.innerHTML = mistakes.map(m => `
           <div class="flex items-center justify-between bg-red-50 rounded-lg px-4 py-3">
             <div>
               <p class="font-medium text-gray-800">${capitalise(m.skill_tag.replace(/-/g, ' '))}</p>
-              <p class="text-xs text-gray-500">${m.count} mistake${m.count !== 1 ? 's' : ''} this week</p>
+              <p class="text-xs text-gray-500">${isZh() ? `本周 ${m.count} 次错误` : `${m.count} mistake${m.count !== 1 ? 's' : ''} this week`}</p>
             </div>
-            <a href="/exercises/?board=cie0580" class="text-xs bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition ui-focus-ring">Practice</a>
+            <a href="/exercises/?board=cie0580" class="text-xs bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition ui-focus-ring">${t('Practice', '练习')}</a>
           </div>
         `).join('');
       }
@@ -283,7 +297,7 @@ lang_links:
     if (achContainer) {
       const achievements = report.recent_achievements || [];
       if (achievements.length === 0) {
-        achContainer.innerHTML = '<p class="text-sm text-gray-400">No new achievements this week.</p>';
+        achContainer.innerHTML = `<p class="text-sm text-gray-400">${t('No new achievements this week.', '本周无新成就')}</p>`;
       } else {
         achContainer.innerHTML = achievements.map(a => {
           const tierColor = {
@@ -306,22 +320,29 @@ lang_links:
       const recs = [];
       const mistakes = report.top_mistakes || [];
       if (mistakes.length > 0) {
-        recs.push(`Focus on <strong>${capitalise(mistakes[0].skill_tag.replace(/-/g, ' '))}</strong> — ${mistakes[0].count} mistakes this week`);
+        const skillName = capitalise(mistakes[0].skill_tag.replace(/-/g, ' '));
+        recs.push(t(
+          `Focus on <strong>${skillName}</strong> — ${mistakes[0].count} mistakes this week`,
+          `重点关注 <strong>${skillName}</strong> — 本周 ${mistakes[0].count} 次错误`
+        ));
       }
       if (s.sessions < 5) {
-        recs.push('Aim for at least 5 practice sessions next week');
+        recs.push(t('Aim for at least 5 practice sessions next week', '下周争取完成至少 5 次练习'));
       }
       if (s.accuracy_pct < 70) {
-        recs.push('Review weak topics before attempting new ones');
+        recs.push(t('Review weak topics before attempting new ones', '先复习薄弱环节，再尝试新题目'));
       }
       if (report.streak.current >= 7) {
-        recs.push('Streak going strong! Keep the daily practice habit');
+        recs.push(t('Streak going strong! Keep the daily practice habit', '连续打卡势头很好！保持每日练习'));
       } else if (report.streak.current > 0) {
-        recs.push('Build consistency — aim for a 7-day streak');
+        recs.push(t('Build consistency — aim for a 7-day streak', '保持一致性 — 争取 7 天连续打卡'));
       } else {
-        recs.push('Start a streak — daily practice builds lasting knowledge');
+        recs.push(t('Start a streak — daily practice builds lasting knowledge', '开始打卡 — 每日练习积累扎实知识'));
       }
-      recs.push('Try a <a href="/exercises/?board=cie0580" class="text-primary underline">new interactive exercise</a> for variety');
+      recs.push(t(
+        'Try a <a href="/exercises/?board=cie0580" class="text-primary underline">new interactive exercise</a> for variety',
+        '尝试<a href="/exercises/?board=cie0580" class="text-primary underline">新的互动练习</a>增加多样性'
+      ));
 
       recList.innerHTML = recs.map(r => `
         <li class="flex items-start gap-2">
@@ -378,7 +399,7 @@ lang_links:
         const email = (emailInput.value || '').trim();
         if (!email) return;
 
-        msgEl.textContent = 'Sending login link...';
+        msgEl.textContent = t('Sending login link...', '正在发送登录链接...');
         msgEl.classList.remove('hidden', 'text-red-500');
         msgEl.classList.add('text-gray-500');
 
@@ -388,11 +409,11 @@ lang_links:
             options: { emailRedirectTo: window.location.href },
           });
           if (error) throw error;
-          msgEl.textContent = 'Check your email for the login link.';
+          msgEl.textContent = t('Check your email for the login link.', '请查收邮箱中的登录链接');
           msgEl.classList.add('text-green-600');
           msgEl.classList.remove('text-gray-500');
         } catch (err) {
-          msgEl.textContent = err.message || 'Failed to send login link.';
+          msgEl.textContent = err.message || t('Failed to send login link.', '发送登录链接失败');
           msgEl.classList.add('text-red-500');
           msgEl.classList.remove('text-gray-500');
         }
@@ -410,7 +431,7 @@ lang_links:
         report.student_name = session.user?.user_metadata?.display_name || session.user?.email?.split('@')[0] || 'Student';
         renderReport(report);
       } catch (err) {
-        document.getElementById('student-meta').textContent = 'Failed to load report. Please try again later.';
+        document.getElementById('student-meta').textContent = t('Failed to load report. Please try again later.', '加载报告失败，请稍后重试');
       }
     } else {
       showAuthGate();
@@ -425,7 +446,7 @@ lang_links:
           report.student_name = session.user?.user_metadata?.display_name || session.user?.email?.split('@')[0] || 'Student';
           renderReport(report);
         } catch (err) {
-          document.getElementById('student-meta').textContent = 'Failed to load report.';
+          document.getElementById('student-meta').textContent = t('Failed to load report.', '加载报告失败');
         }
       } else {
         showAuthGate();

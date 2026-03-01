@@ -60,7 +60,9 @@ supabase: true
 <section class="py-10 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div id="achievements-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <p class="col-span-full text-center text-gray-500 py-8" id="achievements-loading">Sign in to see your achievements.</p>
+            <p class="col-span-full text-center text-gray-500 py-8" id="achievements-loading">Sign in to see your achievements.
+                <span class="bilingual-support-only block mt-1">登录后查看你的成就</span>
+            </p>
         </div>
     </div>
 </section>
@@ -71,6 +73,7 @@ supabase: true
 
   const LEVEL_THRESHOLDS = [0, 50, 200, 500, 1000, 2000, 4000, 8000, 16000, 32000];
   const LEVEL_TITLES = ['Beginner','Learner','Practitioner','Achiever','Scholar','Expert','Master','Grandmaster','Legend','IGCSE Champion'];
+  const LEVEL_TITLES_CN = ['初学者','学习者','练习者','成就者','学者','专家','大师','宗师','传奇','IGCSE 冠军'];
   const TIER_COLORS = {
     bronze: { border: 'border-amber-600', bg: 'bg-amber-50', ring: 'ring-amber-300' },
     silver: { border: 'border-gray-400', bg: 'bg-gray-50', ring: 'ring-gray-300' },
@@ -81,6 +84,7 @@ supabase: true
   function isZh() {
     return String(document.documentElement.lang || '').toLowerCase() === 'zh-cn';
   }
+  function t(en, zh) { return isZh() ? zh : en; }
 
   let allAchievements = [];
   let currentFilter = 'all';
@@ -101,7 +105,7 @@ supabase: true
       <div class="text-[10px] text-gray-500 leading-tight mb-2">${desc || ''}</div>
       <div class="text-[10px] font-semibold uppercase tracking-wider ${
         unlocked ? 'text-green-600' : 'text-gray-400'
-      }">${unlocked ? 'Unlocked' : 'Locked'}</div>
+      }">${unlocked ? t('Unlocked', '已解锁') : t('Locked', '未解锁')}</div>
       ${unlocked && a.unlocked_at ? `<div class="text-[9px] text-gray-400 mt-1">${new Date(a.unlocked_at).toLocaleDateString()}</div>` : ''}
     </div>`;
   }
@@ -115,7 +119,7 @@ supabase: true
       : allAchievements.filter(a => a.category === currentFilter);
 
     if (!filtered.length) {
-      grid.innerHTML = '<p class="col-span-full text-center text-gray-500 py-8">No achievements in this category.</p>';
+      grid.innerHTML = `<p class="col-span-full text-center text-gray-500 py-8">${t('No achievements in this category.', '该分类暂无成就')}</p>`;
       return;
     }
 
@@ -142,7 +146,7 @@ supabase: true
 
     const el = (id) => document.getElementById(id);
     if (el('ach-level')) el('ach-level').textContent = String(level);
-    if (el('ach-level-title')) el('ach-level-title').textContent = LEVEL_TITLES[level - 1] || '';
+    if (el('ach-level-title')) el('ach-level-title').textContent = (isZh() ? LEVEL_TITLES_CN : LEVEL_TITLES)[level - 1] || '';
     if (el('ach-xp-current')) el('ach-xp-current').textContent = String(totalXp);
     if (el('ach-xp-next')) el('ach-xp-next').textContent = String(nextXp);
     if (el('ach-xp-bar')) el('ach-xp-bar').style.width = `${pct}%`;
@@ -205,12 +209,12 @@ supabase: true
     window.addEventListener('member-auth-change', (event) => {
       const user = event?.detail?.user || null;
       if (!user || !window.memberSupabase) {
-        document.getElementById('achievements-loading').textContent = 'Sign in to see your achievements.';
+        document.getElementById('achievements-loading').textContent = t('Sign in to see your achievements.', '登录后查看你的成就');
         return;
       }
-      document.getElementById('achievements-loading').textContent = 'Loading...';
+      document.getElementById('achievements-loading').textContent = t('Loading...', '加载中...');
       loadAchievements(window.memberSupabase, user.id).catch(() => {
-        document.getElementById('achievements-loading').textContent = 'Failed to load achievements.';
+        document.getElementById('achievements-loading').textContent = t('Failed to load achievements.', '加载成就失败');
       });
     });
 
@@ -218,7 +222,7 @@ supabase: true
       window.memberSupabase.auth.getSession().then(({ data }) => {
         const user = data?.session?.user || null;
         if (user) {
-          document.getElementById('achievements-loading').textContent = 'Loading...';
+          document.getElementById('achievements-loading').textContent = t('Loading...', '加载中...');
           return loadAchievements(window.memberSupabase, user.id);
         }
       }).catch(() => {});

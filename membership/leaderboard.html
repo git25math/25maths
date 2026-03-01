@@ -52,7 +52,9 @@ supabase: true
                         </tr>
                     </thead>
                     <tbody id="leaderboard-body">
-                        <tr><td colspan="6" class="py-12 text-center text-gray-400">Loading leaderboard...</td></tr>
+                        <tr><td colspan="6" class="py-12 text-center text-gray-400">Loading leaderboard...
+                            <span class="bilingual-support-only block mt-1">正在加载排行榜...</span>
+                        </td></tr>
                     </tbody>
                 </table>
             </div>
@@ -61,6 +63,7 @@ supabase: true
         <!-- Info -->
         <div class="mt-6 text-center">
             <p class="text-xs text-gray-400">Rankings are based on total XP. Practice more to climb the ranks!</p>
+            <p class="bilingual-support-only text-xs text-gray-400 mt-1">排名基于总经验值，多多练习提升排名！</p>
             <div class="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="/exercises/" class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition">Start Practising</a>
                 <a href="/membership/achievements.html" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition">View Achievements</a>
@@ -72,6 +75,11 @@ supabase: true
 <script>
 (function () {
   'use strict';
+
+  function isZh() {
+    return String(document.documentElement.lang || '').toLowerCase() === 'zh-cn';
+  }
+  function t(en, zh) { return isZh() ? zh : en; }
 
   function rankMedal(rank) {
     if (rank === 1) return '<span class="text-xl">&#129351;</span>';
@@ -88,18 +96,18 @@ supabase: true
     const yourRankXp = document.getElementById('your-rank-xp');
 
     if (weekLabel && data.week_start) {
-      weekLabel.textContent = 'Week of ' + data.week_start;
+      weekLabel.textContent = t('Week of ', '周始于 ') + data.week_start;
     }
 
     if (!data.leaderboard || data.leaderboard.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="6" class="py-12 text-center text-gray-400">No data yet. Be the first to practice!</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="6" class="py-12 text-center text-gray-400">' + t('No data yet. Be the first to practice!', '暂无数据，成为第一个练习的人吧！') + '</td></tr>';
       return;
     }
 
     const rows = data.leaderboard.map(function (entry) {
       const isYou = entry.is_you;
       const rowClass = isYou ? 'bg-yellow-50 font-semibold' : 'hover:bg-gray-50';
-      const nameTag = isYou ? entry.display_name + ' <span class="text-xs text-yellow-600 ml-1">(You)</span>' : entry.display_name;
+      const nameTag = isYou ? entry.display_name + ' <span class="text-xs text-yellow-600 ml-1">' + t('(You)', '(你)') + '</span>' : entry.display_name;
 
       return '<tr class="border-t border-gray-100 ' + rowClass + '">'
         + '<td class="py-3 px-4">' + rankMedal(entry.rank) + '</td>'
@@ -148,7 +156,7 @@ supabase: true
     } catch (_err) {
       var tbody = document.getElementById('leaderboard-body');
       if (tbody) {
-        tbody.innerHTML = '<tr><td colspan="6" class="py-12 text-center text-gray-400">Unable to load leaderboard. Please try again later.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6" class="py-12 text-center text-gray-400">' + t('Unable to load leaderboard. Please try again later.', '无法加载排行榜，请稍后重试') + '</td></tr>';
       }
     }
   }
