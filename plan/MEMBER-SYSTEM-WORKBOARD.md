@@ -1,7 +1,7 @@
 # Member System Workboard
 
-> Updated: 2026-02-27 (UTC)
-> Branch focus: `main` + `codex/member-system-dev`
+> Updated: 2026-03-01 (UTC)
+> Branch focus: `main`
 > Status: `todo` / `in_progress` / `blocked` / `done`
 
 ## Sprint Objective
@@ -20,11 +20,11 @@
 | W1 | 免费会员 Auth + Profile | Codex-Backend | done | W0 | 登录、会话、基础资料可用，重定向配置正确 |
 | W2 | 练习进度与错题数据链路 | Codex-Frontend | done | W1 | session/attempt 成功写入，匿名流程不受影响 |
 | W3 | 付费会员状态与权益模型 | Codex-Backend | done | W1 | membership_status/entitlements 与 RLS 完整 |
-| W4 | Payhip Webhook 同步 | Codex-Backend | in_progress | W3 | 订单事件可驱动会员状态与权益变更，幂等生效 |
-| W5 | 会员下载网关 | Codex-Backend | in_progress | W3, W4 | 非会员拒绝，会员签名链接可用且短时有效 |
+| W4 | Payhip Webhook 同步 | Codex-Backend | done | W3 | 订单事件可驱动会员状态与权益变更，幂等生效 |
+| W5 | 会员下载网关 | Codex-Backend | done | W3, W4 | 非会员拒绝，会员签名链接可用且短时有效 |
 | W6 | 个性化学习推荐 | Codex-Frontend + Gemini-Architect | in_progress | W2, W3 | 基于错题标签输出针对性学习计划 |
 | W7 | 优惠券与订阅优惠权益 | Codex-Backend + Codex-Frontend | in_progress | W3, W4 | 付费会员可见可用优惠策略，策略判定可追踪 |
-| W8 | QA 回归与发布闸门 | Gemini-QA + Commander | in_progress | W1-W7 | E2E 冒烟通过，回滚清单可执行 |
+| W8 | QA 回归与发布闸门 | Gemini-QA + Commander | done | W1-W7 | E2E 冒烟通过（26/26），回滚演练待做 |
 
 ## Current Iteration (Now)
 
@@ -101,6 +101,11 @@
 68. **已完成**: hreflang 标签 — `_includes/head.html` 添加双语页面 `<link rel="alternate" hreflang>` 标签，基于 `lang_links` 前置数据自动渲染。
 69. **已完成**: 机构页结构化数据 — `institution/index.html` 添加 `schema.org/SoftwareApplication` JSON-LD（含定价层级）。
 70. **已完成**: SEO 审计通过 — robots.txt、sitemap.xml（212 条 URL）、404.html 全部正确配置。
+71. **2026-03-01**: **账户设置页** — Profile CRUD API + `membership/settings.html`（commit ab48f5e）。
+72. **2026-03-01**: **会员 JS/HTML 双语文案补全** — 6 文件 ~60 处翻译，`isZh()`+`t()` 模式（commit 269fe7f）。
+73. **2026-03-01**: **Hero 颜色修复** — `text-gray-300`/`text-blue-300` 品牌色覆盖（commit 47bc9b9）。
+74. **2026-03-01**: **LaTeX Phase 1** — Unicode 上标/根号/希腊字母→LaTeX，108 个 JSON（commit bd78109）。
+75. **2026-03-01**: **LaTeX Phase 2** — 纯文本分数→`\frac{}{}`，170 个 JSON（commit 731ad30/19ce5de）。
 
 ## Stop-The-Line Triggers
 

@@ -61,20 +61,25 @@ Expected:
 
 ---
 
-## 📁 Current Status (2026-02-23)
+## 📁 Current Status (2026-03-01)
 
-- ✅ Portal + module architecture (Jekyll)
+- ✅ Portal + module architecture (Jekyll + Cloudflare Pages)
 - ✅ CIE 0580 + Edexcel 4MA1 bilingual worksheet content is fully indexed (202 active subtopics)
 - ✅ Kahoot + worksheet + section bundle + unit bundle link fields are complete for all active records
 - ✅ Legal pages + SEO + sitemap
+- ✅ Membership system (auth/payment/engagement/downloads) — 90% complete
+- ✅ Engagement system (streak/XP/achievements/leaderboard/parent dashboard)
+- ✅ Bilingual support: static toggle + JS t(en,zh) dynamic translations — 100% complete
+- ✅ LaTeX math rendering Phase 1-2 (superscripts/roots/fractions, 278 JSON files) — 60% overall
 - ⏳ Kahoot sellable readiness is **186 / 202** (`presale`/`live`), with 16 still `planned`
 
-## 🧾 Latest Updates (2026-02-23)
+## 🧾 Latest Updates (2026-03-01)
 
-- Synced latest L1 Payhip URLs and Kahoot challenge links into release registry data
-- Confirmed all active subtopics pass kahoot data integrity checks (0 failures / 0 warnings)
-- Generated funnel health snapshot showing board-level planned gaps (CIE: 8, Edexcel: 8)
-- Kept presale release-date metadata aligned across links and catalog (0 unit-date mismatches)
+- Account settings page with Profile CRUD API (ab48f5e)
+- Member JS/HTML bilingual completion: 6 files, ~60 Chinese translations using isZh()+t() (269fe7f)
+- Hero color override fix: text-gray-300/text-blue-300 mapped to brand colors (47bc9b9)
+- LaTeX Phase 1: Unicode superscripts/roots/Greek → LaTeX (108 JSON) (bd78109)
+- LaTeX Phase 2: Plain-text fractions → \frac{}{} (170 JSON) (731ad30)
 
 ---
 

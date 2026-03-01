@@ -30,3 +30,4 @@ Run the bilingual revamp under an isolated task tree with strict plan-first exec
 - Phase 4: SEO migration and stabilization - Completed
 - Phase 5: Cloudflare security hardening - Completed
 - Phase 6: Floating bilingual switch UX - Completed
+- Phase 7: Member system JS bilingual (isZh+t()) - Completed (2026-03-01, commit 269fe7f)

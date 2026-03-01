@@ -43,6 +43,9 @@
 | W6 Personalization | IN PROGRESS | First round done, weight tuning remaining |
 | W7 Benefits/Coupons | IN PROGRESS | Trigger engine done, skill-tag mapping pending |
 | W8 QA/Release Gate | **DONE** | 26/26 E2E tests PASS, delivery log at `_ops/delivery-log/2026-02-28-last-mile.md` |
+| W9 Account Settings | **DONE** | Profile CRUD API + settings.html (ab48f5e, 2026-03-01) |
+| W10 LaTeX Math Rendering | **Phase 1-2 DONE** | Unicode→LaTeX (108 JSON) + fractions→\frac (170 JSON); Phase 3-4 pending |
+| W11 Member Bilingual JS | **DONE** | 6 files, ~60 translations, isZh()+t() pattern (269fe7f, 2026-03-01) |
 
 ### Content Status
 
@@ -330,7 +333,7 @@ After each significant action:
 ```
 2026 Q1 (Now - Mar) — FOUNDATION
   [x] Free MVP (Gate A)
-  [ ] Paid MVP (Gate B)           <- CURRENT FOCUS (code done, pending Payhip + env vars)
+  [x] Paid MVP (Gate B)           — eN4l6 live, Worker proxy deployed, E2E 26/26 PASS
   [ ] First subscriber
   [ ] Week 1-4 content delivered
   [ ] 2 paid products on Payhip (Algebra $8.99, Number)
@@ -340,6 +343,9 @@ After each significant action:
   [x] Competitive intelligence report
   [x] Tutoring institution research
   [x] B2B pricing research
+  [x] Account settings page (Profile CRUD API)
+  [x] Member JS/HTML bilingual completion (6 files, ~60 translations)
+  [x] LaTeX Phase 1-2 (278 exercise JSON files converted)
 
 2026 Q2 (Apr - Jun) — INTELLIGENCE
   [ ] Gate C Personalization (partial: recommendation engine built, weight tuning remaining)
@@ -458,6 +464,16 @@ After each significant action:
 | 2026-02-27 | `functions/api/v1/reports/weekly.js` | Removed duplicate `serviceHeaders()` — now imports from `supabase_server.js` | Claude Code |
 | 2026-02-27 | `_includes/head.html` | Added hreflang alternate link tags for bilingual pages using `lang_links` frontmatter | Claude Code |
 | 2026-02-27 | `institution/index.html` | Added schema.org SoftwareApplication JSON-LD structured data with pricing tiers | Claude Code |
+| 2026-03-01 | `membership/settings.html` + `functions/api/v1/profile/*.js` | Account settings page with Profile CRUD API | Claude Code |
+| 2026-03-01 | `assets/js/member_center.js` | Added isZh()+t() bilingual helpers, ~20 Chinese translations | Claude Code |
+| 2026-03-01 | `assets/js/member_recommendations.js` | Added isZh()+t() bilingual helpers, ~12 Chinese translations | Claude Code |
+| 2026-03-01 | `membership/achievements.html` | Added t() function, LEVEL_TITLES_CN array, bilingual unlocked/locked labels | Claude Code |
+| 2026-03-01 | `membership/leaderboard.html` | Added isZh()+t(), ~8 translated strings, bilingual-support-only paragraphs | Claude Code |
+| 2026-03-01 | `membership/parent-dashboard.html` | Added isZh()+t(), titleCn in LEVEL_THRESHOLDS, ~15 translated strings, bilingual labels | Claude Code |
+| 2026-03-01 | `membership/index.html` | Added bilingual-support-only delivery policy paragraph | Claude Code |
+| 2026-03-01 | `_includes/head.html` | Fixed missing text-gray-300/text-blue-300 hero color overrides for CIE/EDX brand colors | Claude Code |
+| 2026-03-01 | `_data/exercises/*.json` (108 files) | LaTeX Phase 1 — Unicode superscripts/roots/Greek letters → LaTeX notation | Claude Code |
+| 2026-03-01 | `_data/exercises/*.json` (170 files) | LaTeX Phase 2 — Plain-text fractions → \frac{}{} notation | Claude Code |
 
 ---
 
