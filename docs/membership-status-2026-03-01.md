@@ -1,6 +1,6 @@
 # 25maths.com 会员系统状态报告
 
-> 日期：2026-03-01 | 代码库版本：f3739da | 总行数：7,133 行（31 个核心文件）
+> 日期：2026-03-01 | 代码库版本：47bc9b9 | 总行数：7,300+ 行（31 个核心文件 + 6 个双语更新）
 
 ---
 
@@ -157,6 +157,31 @@ Payhip ──Webhook HMAC──▶ /webhook/payhip.js ──▶ membership_statu
 4. 三角函数比值：`sin(30°) = opposite / 10` 可考虑转为 `\frac{\text{opposite}}{10}`
 5. KaTeX 渲染验证：在浏览器中抽检 `\frac` 的视觉效果，确认嵌套分数无溢出
 
+### Commit ab48f5e — 账户设置页
+
+**功能: 会员账户设置页面 + Profile CRUD API**
+- 新增 `membership/settings.html` — 修改昵称/偏好语言/目标考试板，已有 bilingual headers
+- 新增 `api/v1/membership/profile.js` — GET/PUT profile 操作
+- 与 `member_auth.js` 事件驱动集成
+
+### Commit 269fe7f — 会员系统双语文案补全
+
+**功能: 6 个文件约 60 处用户可见字符串的中文翻译**
+- `member_center.js` — 添加 `isZh()`+`t()`，翻译 20 处（状态徽章、加载提示、错题/会话空状态、会员状态等）
+- `member_recommendations.js` — 添加 `isZh()`+`t()`，翻译 12 处（时间戳、推荐、按钮、空状态）
+- `achievements.html` — 添加 `LEVEL_TITLES_CN` + `t()`，翻译等级名/已解锁/未解锁/空状态
+- `leaderboard.html` — 添加 `isZh()`+`t()`，翻译 8 处（周标签、排名、加载/错误状态）+ bilingual 静态段落
+- `parent-dashboard.html` — 添加 `isZh()`+`t()` + `titleCn`，翻译 15+ 处（deltaText、推荐语句、section 标签）
+- `membership/index.html` — 交付政策 bilingual-support-only 中文段落
+- 统计：6 文件，128 行新增，80 行替换
+
+### Commit 47bc9b9 — Hero 颜色覆盖修复
+
+**修复: CIE/EDX hero 区 `text-gray-300` / `text-blue-300` 未被品牌色覆盖**
+- 问题：`_includes/head.html` 中 hero 颜色覆盖仅覆盖到 `-200` 色阶，`-300` 落回 Tailwind 默认冷灰/浅蓝
+- 影响：四层体系描述段落在 CIE 暖色背景上显示冷灰色，EDX 青色背景上显示亮蓝色
+- 修复：`.cie-hero-gradient/soft .text-gray-300` → `var(--cie-igcse-600)`，`.edx-hero-gradient .text-blue-300/.text-gray-300` → `var(--edx-igcse-600)`
+
 ---
 
 ## 四、已知限制与技术债
@@ -176,10 +201,11 @@ Payhip ──Webhook HMAC──▶ /webhook/payhip.js ──▶ membership_statu
 
 ## 五、下一步计划（按优先级排序）
 
-### P1 — 会员体系收尾
+### P1 — 会员体系收尾 ✅ 基本完成
 
 - [x] 账户设置页（修改邮箱/昵称/偏好语言）— commit ab48f5e
-- [ ] 双语文案补全（成就名称、等级名称、UI 提示等）
+- [x] 双语文案补全（JS 动态内容 + HTML 静态标签）— commit 269fe7f（6 文件，~60 处翻译）
+- [x] Hero 颜色覆盖修复（`text-gray-300`/`text-blue-300` 品牌色对齐）— commit 47bc9b9
 - [ ] 成就 seed 数据审查（20 个定义的 criteria 阈值是否合理）
 - [ ] `weekly.js` 引入 `computeLevel` 统一等级计算（消除技术债 #2）
 
