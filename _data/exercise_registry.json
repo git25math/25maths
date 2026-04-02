@@ -7,7 +7,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-02-algebraic-manipulation",
@@ -17,7 +20,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-04-indices-ii",
@@ -27,7 +33,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-05-equations",
@@ -37,7 +46,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-06-inequalities",
@@ -47,7 +59,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-07-sequences",
@@ -57,7 +72,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-09-graphs-in-practical-situations",
@@ -67,7 +85,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-10-graphs-of-functions",
@@ -77,7 +98,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-c2-c2-11-sketching-curves",
@@ -87,7 +111,10 @@
     "tier": "Core",
     "domain": "algebra",
     "syllabusCode": "C2-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-01-introduction-to-algebra",
@@ -97,7 +124,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-02-algebraic-manipulation",
@@ -107,7 +137,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-03-algebraic-fractions",
@@ -117,7 +150,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-04-indices-ii",
@@ -127,7 +163,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-05-equations",
@@ -137,7 +176,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-06-inequalities",
@@ -147,7 +189,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-07-sequences",
@@ -157,7 +202,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-08-proportion",
@@ -167,7 +215,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-09-graphs-in-practical-situations",
@@ -177,7 +228,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-10-graphs-of-functions",
@@ -187,7 +241,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-11-sketching-curves",
@@ -197,7 +254,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-12-differentiation",
@@ -207,7 +267,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-12",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-algebra-e2-e2-13-functions",
@@ -217,7 +280,10 @@
     "tier": "Extended",
     "domain": "algebra",
     "syllabusCode": "E2-13",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-c3-c3-01-coordinates",
@@ -227,7 +293,10 @@
     "tier": "Core",
     "domain": "coordinate",
     "syllabusCode": "C3-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-c3-c3-02-drawing-linear-graphs",
@@ -237,7 +306,10 @@
     "tier": "Core",
     "domain": "coordinate",
     "syllabusCode": "C3-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-c3-c3-03-gradient-of-linear-graphs",
@@ -247,7 +319,10 @@
     "tier": "Core",
     "domain": "coordinate",
     "syllabusCode": "C3-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-c3-c3-05-equations-of-linear-graphs",
@@ -257,7 +332,10 @@
     "tier": "Core",
     "domain": "coordinate",
     "syllabusCode": "C3-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-c3-c3-06-parallel-lines",
@@ -267,7 +345,10 @@
     "tier": "Core",
     "domain": "coordinate",
     "syllabusCode": "C3-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-01-coordinates",
@@ -277,7 +358,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-02-drawing-linear-graphs",
@@ -287,7 +371,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-03-gradient-of-linear-graphs",
@@ -297,7 +384,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-04-length-and-midpoint",
@@ -307,7 +397,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-05-equations-of-linear-graphs",
@@ -317,7 +410,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-06-parallel-lines",
@@ -327,7 +423,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-coordinate-e3-e3-07-perpendicular-lines",
@@ -337,7 +436,10 @@
     "tier": "Extended",
     "domain": "coordinate",
     "syllabusCode": "E3-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-01-geometrical-terms",
@@ -347,7 +449,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-02-geometrical-constructions",
@@ -357,7 +462,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-03-scale-drawings",
@@ -367,7 +475,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-04-similarity",
@@ -377,7 +488,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-05-symmetry",
@@ -387,7 +501,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-06-angles",
@@ -397,7 +514,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-c4-c4-07-circle-theorems",
@@ -407,7 +527,10 @@
     "tier": "Core",
     "domain": "geometry",
     "syllabusCode": "C4-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-01-geometrical-terms",
@@ -417,7 +540,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-02-geometrical-constructions",
@@ -427,7 +553,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-03-scale-drawings",
@@ -437,7 +566,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-04-similarity",
@@ -447,7 +579,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-05-symmetry",
@@ -457,7 +592,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-06-angles",
@@ -467,7 +605,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-07-circle-theorems-i",
@@ -477,7 +618,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-geometry-e4-e4-08-circle-theorems-ii",
@@ -487,7 +631,10 @@
     "tier": "Extended",
     "domain": "geometry",
     "syllabusCode": "E4-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-c5-c5-01-units-of-measure",
@@ -497,7 +644,10 @@
     "tier": "Core",
     "domain": "mensuration",
     "syllabusCode": "C5-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-c5-c5-02-area-and-perimeter",
@@ -507,7 +657,10 @@
     "tier": "Core",
     "domain": "mensuration",
     "syllabusCode": "C5-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-c5-c5-03-circles-arcs-and-sectors",
@@ -517,7 +670,10 @@
     "tier": "Core",
     "domain": "mensuration",
     "syllabusCode": "C5-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-c5-c5-04-surface-area-and-volume",
@@ -527,7 +683,10 @@
     "tier": "Core",
     "domain": "mensuration",
     "syllabusCode": "C5-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-c5-c5-05-compound-shapes-and-parts-of-shapes",
@@ -537,7 +696,10 @@
     "tier": "Core",
     "domain": "mensuration",
     "syllabusCode": "C5-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-e5-e5-01-units-of-measure",
@@ -547,7 +709,10 @@
     "tier": "Extended",
     "domain": "mensuration",
     "syllabusCode": "E5-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-e5-e5-02-area-and-perimeter",
@@ -557,7 +722,10 @@
     "tier": "Extended",
     "domain": "mensuration",
     "syllabusCode": "E5-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-e5-e5-03-circles-arcs-and-sectors",
@@ -567,7 +735,10 @@
     "tier": "Extended",
     "domain": "mensuration",
     "syllabusCode": "E5-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-e5-e5-04-surface-area-and-volume",
@@ -577,7 +748,10 @@
     "tier": "Extended",
     "domain": "mensuration",
     "syllabusCode": "E5-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-mensuration-e5-e5-05-compound-shapes-and-parts-of-shapes",
@@ -587,7 +761,10 @@
     "tier": "Extended",
     "domain": "mensuration",
     "syllabusCode": "E5-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-01-types-of-number",
@@ -597,7 +774,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-02-sets",
@@ -607,7 +787,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-03-powers-and-roots",
@@ -617,7 +800,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-04-fractions-decimals-percentages",
@@ -627,7 +813,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-05-ordering",
@@ -637,7 +826,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-06-four-operations",
@@ -647,7 +839,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-07-indices-i",
@@ -657,7 +852,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-08-standard-form",
@@ -667,7 +865,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-09-estimation-and-approximation",
@@ -677,7 +878,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-10-limits-of-accuracy",
@@ -687,7 +891,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-11-ratio-and-proportion",
@@ -697,7 +904,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-12-rates",
@@ -707,7 +917,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-12",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-13-percentages",
@@ -717,7 +930,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-13",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-14-using-a-calculator",
@@ -727,7 +943,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-14",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-15-time",
@@ -737,7 +956,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-15",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-c1-c1-16-money",
@@ -747,7 +969,10 @@
     "tier": "Core",
     "domain": "number",
     "syllabusCode": "C1-16",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-01-types-of-number",
@@ -757,7 +982,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-02-sets",
@@ -767,7 +995,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-03-powers-and-roots",
@@ -777,7 +1008,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-04-fractions-decimals-percentages",
@@ -787,7 +1021,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-05-ordering",
@@ -797,7 +1034,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-06-four-operations",
@@ -807,7 +1047,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-07-indices-i",
@@ -817,7 +1060,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-08-standard-form",
@@ -827,7 +1073,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-09-estimation-and-approximation",
@@ -837,7 +1086,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-10-limits-of-accuracy",
@@ -847,7 +1099,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-11-ratio-and-proportion",
@@ -857,7 +1112,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-12-rates",
@@ -867,7 +1125,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-12",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-13-percentages",
@@ -877,7 +1138,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-13",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-14-using-a-calculator",
@@ -887,7 +1151,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-14",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-15-time",
@@ -897,7 +1164,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-15",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-16-money",
@@ -907,7 +1177,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-16",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-17-exponential-growth-decay",
@@ -917,7 +1190,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-17",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-number-e1-e1-18-surds",
@@ -927,7 +1203,10 @@
     "tier": "Extended",
     "domain": "number",
     "syllabusCode": "E1-18",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-c8-c8-01-introduction-to-probability",
@@ -937,7 +1216,10 @@
     "tier": "Core",
     "domain": "probability",
     "syllabusCode": "C8-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-c8-c8-02-relative-and-expected-frequencies",
@@ -947,7 +1229,10 @@
     "tier": "Core",
     "domain": "probability",
     "syllabusCode": "C8-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-c8-c8-03-probability-of-combined-events",
@@ -957,7 +1242,10 @@
     "tier": "Core",
     "domain": "probability",
     "syllabusCode": "C8-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-e8-e8-01-introduction-to-probability",
@@ -967,7 +1255,10 @@
     "tier": "Extended",
     "domain": "probability",
     "syllabusCode": "E8-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-e8-e8-02-relative-and-expected-frequencies",
@@ -977,7 +1268,10 @@
     "tier": "Extended",
     "domain": "probability",
     "syllabusCode": "E8-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-e8-e8-03-probability-of-combined-events",
@@ -987,7 +1281,10 @@
     "tier": "Extended",
     "domain": "probability",
     "syllabusCode": "E8-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-probability-e8-e8-04-conditional-probability",
@@ -997,7 +1294,10 @@
     "tier": "Extended",
     "domain": "probability",
     "syllabusCode": "E8-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-c9-c9-01-classifying-statistical-data",
@@ -1007,7 +1307,10 @@
     "tier": "Core",
     "domain": "statistics",
     "syllabusCode": "C9-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-c9-c9-02-interpreting-statistical-data",
@@ -1017,7 +1320,10 @@
     "tier": "Core",
     "domain": "statistics",
     "syllabusCode": "C9-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-c9-c9-03-averages-and-range",
@@ -1027,7 +1333,10 @@
     "tier": "Core",
     "domain": "statistics",
     "syllabusCode": "C9-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-c9-c9-04-statistical-charts-and-diagrams",
@@ -1037,7 +1346,10 @@
     "tier": "Core",
     "domain": "statistics",
     "syllabusCode": "C9-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-01-classifying-statistical-data",
@@ -1047,7 +1359,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-02-interpreting-statistical-data",
@@ -1057,7 +1372,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-03-averages-and-range",
@@ -1067,7 +1385,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-04-statistical-charts-and-diagrams",
@@ -1077,7 +1398,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-05-scatter-diagrams",
@@ -1087,7 +1411,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-06-cumulative-frequency-diagrams",
@@ -1097,7 +1424,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-statistics-e9-e9-07-histograms",
@@ -1107,7 +1437,10 @@
     "tier": "Extended",
     "domain": "statistics",
     "syllabusCode": "E9-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-transformations-c7-c7-01-transformations",
@@ -1117,7 +1450,10 @@
     "tier": "Core",
     "domain": "transformations",
     "syllabusCode": "C7-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-transformations-e7-e7-01-transformations",
@@ -1127,7 +1463,10 @@
     "tier": "Extended",
     "domain": "transformations",
     "syllabusCode": "E7-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-transformations-e7-e7-02-vectors-in-two-dimensions",
@@ -1137,7 +1476,10 @@
     "tier": "Extended",
     "domain": "transformations",
     "syllabusCode": "E7-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-transformations-e7-e7-03-magnitude-of-a-vector",
@@ -1147,7 +1489,10 @@
     "tier": "Extended",
     "domain": "transformations",
     "syllabusCode": "E7-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-transformations-e7-e7-04-vector-geometry",
@@ -1157,7 +1502,10 @@
     "tier": "Extended",
     "domain": "transformations",
     "syllabusCode": "E7-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-c6-c6-01-pythagoras-theorem",
@@ -1167,7 +1515,10 @@
     "tier": "Core",
     "domain": "trigonometry",
     "syllabusCode": "C6-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-c6-c6-02-right-angled-triangles",
@@ -1177,7 +1528,10 @@
     "tier": "Core",
     "domain": "trigonometry",
     "syllabusCode": "C6-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-e6-e6-01-pythagoras-theorem",
@@ -1187,7 +1541,10 @@
     "tier": "Extended",
     "domain": "trigonometry",
     "syllabusCode": "E6-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-e6-e6-02-right-angled-triangles",
@@ -1197,7 +1554,10 @@
     "tier": "Extended",
     "domain": "trigonometry",
     "syllabusCode": "E6-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-e6-e6-03-exact-trigonometric-values",
@@ -1207,7 +1567,10 @@
     "tier": "Extended",
     "domain": "trigonometry",
     "syllabusCode": "E6-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-e6-e6-04-trigonometric-functions",
@@ -1217,7 +1580,10 @@
     "tier": "Extended",
     "domain": "trigonometry",
     "syllabusCode": "E6-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-e6-e6-05-non-right-angled-triangles",
@@ -1227,7 +1593,10 @@
     "tier": "Extended",
     "domain": "trigonometry",
     "syllabusCode": "E6-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "cie0580-trigonometry-e6-e6-06-pythagoras-and-trigonometry-in-3d",
@@ -1237,7 +1606,10 @@
     "tier": "Extended",
     "domain": "trigonometry",
     "syllabusCode": "E6-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-01-use-of-symbols",
@@ -1247,7 +1619,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-02-algebraic-manipulation",
@@ -1257,7 +1632,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-03-expressions-and-formulae",
@@ -1267,7 +1645,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-04-linear-equations",
@@ -1277,7 +1658,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-05-proportion",
@@ -1287,7 +1671,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-06-simultaneous-linear-equations",
@@ -1297,7 +1684,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-07-quadratic-equations",
@@ -1307,7 +1697,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-f2-f2-08-inequalities",
@@ -1317,7 +1710,10 @@
     "tier": "Foundation",
     "domain": "equations",
     "syllabusCode": "F2-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-01-use-of-symbols",
@@ -1327,7 +1723,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-02-algebraic-manipulation",
@@ -1337,7 +1736,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-03-expressions-and-formulae",
@@ -1347,7 +1749,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-04-linear-equations",
@@ -1357,7 +1762,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-05-proportion",
@@ -1367,7 +1775,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-06-simultaneous-linear-equations",
@@ -1377,7 +1788,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-07-quadratic-equations",
@@ -1387,7 +1801,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-equations-h2-h2-08-inequalities",
@@ -1397,7 +1814,10 @@
     "tier": "Higher",
     "domain": "equations",
     "syllabusCode": "H2-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-01-angles-lines-and-triangles",
@@ -1407,7 +1827,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-02-polygons",
@@ -1417,7 +1840,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-03-symmetry",
@@ -1427,7 +1853,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-04-measures",
@@ -1437,7 +1866,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-05-construction",
@@ -1447,7 +1879,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-06-circle-properties",
@@ -1457,7 +1892,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-07-geometrical-reasoning",
@@ -1467,7 +1905,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-08-trigonometry-and-pythagoras-theorem",
@@ -1477,7 +1918,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-09-mensuration-of-2d-shapes",
@@ -1487,7 +1931,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-10-3d-shapes-and-volume",
@@ -1497,7 +1944,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-f4-f4-11-similarity",
@@ -1507,7 +1957,10 @@
     "tier": "Foundation",
     "domain": "geometry",
     "syllabusCode": "F4-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-01-angles-lines-and-triangles",
@@ -1517,7 +1970,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-02-polygons",
@@ -1527,7 +1983,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-03-symmetry",
@@ -1537,7 +1996,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-04-measures",
@@ -1547,7 +2009,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-05-construction",
@@ -1557,7 +2022,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-06-circle-properties",
@@ -1567,7 +2035,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-07-geometrical-reasoning",
@@ -1577,7 +2048,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-08-trigonometry-and-pythagoras-theorem",
@@ -1587,7 +2061,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-09-mensuration",
@@ -1597,7 +2074,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-10-3d-shapes-and-volume",
@@ -1607,7 +2087,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-geometry-h4-h4-11-similarity",
@@ -1617,7 +2100,10 @@
     "tier": "Higher",
     "domain": "geometry",
     "syllabusCode": "H4-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-01-integers",
@@ -1627,7 +2113,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-02-fractions",
@@ -1637,7 +2126,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-03-decimals",
@@ -1647,7 +2139,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-04-powers-and-roots",
@@ -1657,7 +2152,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-05-set-language-and-notation",
@@ -1667,7 +2165,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-06-percentages",
@@ -1677,7 +2178,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-07-ratio-and-proportion",
@@ -1687,7 +2191,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-08-degree-of-accuracy",
@@ -1697,7 +2204,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-09-standard-form",
@@ -1707,7 +2217,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-10-applying-number",
@@ -1717,7 +2230,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-f1-f1-11-electronic-calculators",
@@ -1727,7 +2243,10 @@
     "tier": "Foundation",
     "domain": "number",
     "syllabusCode": "F1-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-01-integers",
@@ -1737,7 +2256,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-02-fractions",
@@ -1747,7 +2269,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-03-decimals",
@@ -1757,7 +2282,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-04-powers-and-roots",
@@ -1767,7 +2295,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-05-set-language-and-notation",
@@ -1777,7 +2308,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-05",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-06-percentages",
@@ -1787,7 +2321,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-06",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-07-ratio-and-proportion",
@@ -1797,7 +2334,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-07",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-08-degree-of-accuracy",
@@ -1807,7 +2347,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-08",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-09-standard-form",
@@ -1817,7 +2360,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-09",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-10-applying-number",
@@ -1827,7 +2373,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-10",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-number-h1-h1-11-electronic-calculators",
@@ -1837,7 +2386,10 @@
     "tier": "Higher",
     "domain": "number",
     "syllabusCode": "H1-11",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-f3-f3-01-sequences",
@@ -1847,7 +2399,10 @@
     "tier": "Foundation",
     "domain": "sequences",
     "syllabusCode": "F3-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-f3-f3-02-function-notation",
@@ -1857,7 +2412,10 @@
     "tier": "Foundation",
     "domain": "sequences",
     "syllabusCode": "F3-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-f3-f3-03-graphs",
@@ -1867,7 +2425,10 @@
     "tier": "Foundation",
     "domain": "sequences",
     "syllabusCode": "F3-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-f3-f3-04-calculus",
@@ -1877,7 +2438,10 @@
     "tier": "Foundation",
     "domain": "sequences",
     "syllabusCode": "F3-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-h3-h3-01-sequences",
@@ -1887,7 +2451,10 @@
     "tier": "Higher",
     "domain": "sequences",
     "syllabusCode": "H3-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-h3-h3-02-function-notation",
@@ -1897,7 +2464,10 @@
     "tier": "Higher",
     "domain": "sequences",
     "syllabusCode": "H3-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-h3-h3-03-graphs",
@@ -1907,7 +2477,10 @@
     "tier": "Higher",
     "domain": "sequences",
     "syllabusCode": "H3-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-sequences-h3-h3-04-calculus",
@@ -1917,7 +2490,10 @@
     "tier": "Higher",
     "domain": "sequences",
     "syllabusCode": "H3-04",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-statistics-f6-f6-01-graphical-representation-of-data",
@@ -1927,7 +2503,10 @@
     "tier": "Foundation",
     "domain": "statistics",
     "syllabusCode": "F6-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-statistics-f6-f6-02-statistical-measures",
@@ -1937,7 +2516,10 @@
     "tier": "Foundation",
     "domain": "statistics",
     "syllabusCode": "F6-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-statistics-f6-f6-03-probability",
@@ -1947,7 +2529,10 @@
     "tier": "Foundation",
     "domain": "statistics",
     "syllabusCode": "F6-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-statistics-h6-h6-01-graphical-representation-of-data",
@@ -1957,7 +2542,10 @@
     "tier": "Higher",
     "domain": "statistics",
     "syllabusCode": "H6-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-statistics-h6-h6-02-statistical-measures",
@@ -1967,7 +2555,10 @@
     "tier": "Higher",
     "domain": "statistics",
     "syllabusCode": "H6-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-statistics-h6-h6-03-probability",
@@ -1977,7 +2568,10 @@
     "tier": "Higher",
     "domain": "statistics",
     "syllabusCode": "H6-03",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-vectors-f5-f5-01-vectors",
@@ -1987,7 +2581,10 @@
     "tier": "Foundation",
     "domain": "vectors",
     "syllabusCode": "F5-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-vectors-f5-f5-02-transformation-geometry",
@@ -1997,7 +2594,10 @@
     "tier": "Foundation",
     "domain": "vectors",
     "syllabusCode": "F5-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-vectors-h5-h5-01-vectors",
@@ -2007,7 +2607,10 @@
     "tier": "Higher",
     "domain": "vectors",
     "syllabusCode": "H5-01",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   },
   {
     "slug": "edexcel-4ma1-vectors-h5-h5-02-transformation-geometry",
@@ -2017,6 +2620,9 @@
     "tier": "Higher",
     "domain": "vectors",
     "syllabusCode": "H5-02",
-    "questionCount": 12
+    "status": "coming_soon",
+    "schemaVersion": 2,
+    "questionCount": 0,
+    "totalMarks": 0
   }
 ]
