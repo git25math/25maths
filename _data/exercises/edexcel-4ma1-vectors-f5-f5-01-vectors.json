@@ -8,8 +8,10 @@
   "schemaVersion": 2,
   "status": "coming_soon",
   "paperType": "mixed",
-  "calculator": null,
+  "calculator": true,
   "totalMarks": 0,
   "estimatedMinutes": 0,
-  "questions": []
+  "questions": [],
+  "_higherOnly": true,
+  "_note": "Vectors is Higher tier only in Edexcel 4MA1 spec. This Foundation file kept for structural completeness."
 }

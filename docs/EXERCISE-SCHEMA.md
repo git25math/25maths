@@ -1,14 +1,38 @@
-# Exercise JSON Schema — CIE 0580 Style
+# Exercise JSON Schema — CIE 0580 & Edexcel 4MA1 Unified
 
-> Version: 2.0 (replaces v1 MCQ-only format)
+> Version: 2.1 (supports both exam boards)
 > Created: 2026-04-02
+> Updated: 2026-04-02
 > Status: Active
 
 ## Overview
 
 All exercise JSON files in `_data/exercises/` follow this unified schema,
-supporting the full range of CIE 0580 (2025-2027 syllabus) question types:
-short-answer, structured multi-part, and legacy MCQ.
+supporting the full range of question types for both exam boards:
+
+- **CIE 0580** (2025-2027 syllabus): short-answer + structured + legacy MCQ
+- **Edexcel 4MA1** (Spec A): structured only (no MCQ, no standalone short-answer)
+
+## Board Comparison
+
+| Feature | CIE 0580 | Edexcel 4MA1 |
+|---------|----------|-------------|
+| Tiers | Core / Extended | Foundation / Higher |
+| Calculator | Paper 1,3 = No; Paper 2,4 = Yes | **Both papers = Yes** |
+| Question types | Short-answer + Structured | **Structured only** |
+| MCQ | None (removed 2025) | None |
+| Grades | C-G (Core) / A*-E (Ext) | 1-5 (F) / 4-9 (H) |
+| Papers per tier | 2 (80-100 marks each) | 2 (100 marks each) |
+| Mark types | M / A / B / E / SC | M / A / B (same system) |
+| Command words | Calculate, Show that, Explain | **Work out**, Show, Give a reason |
+| Calculus | No | **Higher only** (differentiation) |
+| Unique | Linear programming, set depth | Completing the square, calculus |
+
+### Edexcel Tier-Only Topics
+
+Some Edexcel sub-topics exist only at Higher tier:
+- **3.4 Calculus** — Higher only (F3-04 file kept for structural completeness, `_higherOnly: true`)
+- **5.1 Vectors** — Higher only (F5-01 file kept for structural completeness, `_higherOnly: true`)
 
 ## File-Level Schema
 

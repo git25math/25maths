@@ -8,7 +8,7 @@
   "schemaVersion": 2,
   "status": "coming_soon",
   "paperType": "mixed",
-  "calculator": null,
+  "calculator": true,
   "totalMarks": 0,
   "estimatedMinutes": 0,
   "questions": []
