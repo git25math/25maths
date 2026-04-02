@@ -6,10 +6,240 @@
   "tier": "Extended",
   "domain": "trigonometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
-  "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "calculator": true,
+  "totalMarks": 25,
+  "estimatedMinutes": 30,
+  "questions": [
+    {
+      "id": "E6-05-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "In triangle PQR, PQ = 12 cm, angle QPR = 35° and angle PQR = 80°.\nCalculate the length QR.",
+      "answerType": "numeric",
+      "correctAnswer": "7.15",
+      "tolerance": 0.05,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "Angle PRQ = 180 − 35 − 80 = 65° soi" },
+        { "mark": "M1", "desc": "QR/sin35 = 12/sin65 (sine rule)" },
+        { "mark": "A1", "desc": "7.15 or 7.148..." }
+      ],
+      "workingSteps": [
+        "Angle PRQ = 180° − 35° − 80° = 65°",
+        "QR / sin35° = 12 / sin65°",
+        "QR = 12 × sin35° / sin65° = 7.15 cm"
+      ],
+      "explanation": "Use the sine rule when you know two angles and a side."
+    },
+    {
+      "id": "E6-05-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "In triangle DEF, DE = 8 cm, EF = 11 cm and angle DEF = 64°.\nCalculate the length DF.",
+      "answerType": "numeric",
+      "correctAnswer": "10.2",
+      "tolerance": 0.1,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M2", "desc": "DF² = 8² + 11² − 2(8)(11)cos64° (cosine rule)" },
+        { "mark": "A1", "desc": "10.2 or 10.17 to 10.18" }
+      ],
+      "workingSteps": [
+        "DF² = 8² + 11² − 2(8)(11)cos64°",
+        "= 64 + 121 − 176 × 0.4384",
+        "= 185 − 77.2 = 107.8",
+        "DF = √107.8 = 10.2 cm"
+      ],
+      "explanation": "Use the cosine rule when you know two sides and the included angle."
+    },
+    {
+      "id": "E6-05-Q3",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "Calculate the area of triangle XYZ where XY = 10 cm, XZ = 6 cm and angle YXZ = 52°.",
+      "answerType": "numeric",
+      "correctAnswer": "23.6",
+      "tolerance": 0.1,
+      "unit": "cm²",
+      "markScheme": [
+        { "mark": "M1", "desc": "½ × 10 × 6 × sin52°" },
+        { "mark": "A1", "desc": "23.6 or 23.63..." }
+      ],
+      "workingSteps": [
+        "Area = ½ × XY × XZ × sin(YXZ)",
+        "= ½ × 10 × 6 × sin52° = 23.6 cm²"
+      ],
+      "explanation": "Area = ½absinC for non-right-angled triangles."
+    },
+    {
+      "id": "E6-05-Q4",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A ship sails from port A on a bearing of 060° for 15 km to point B.\nIt then sails on a bearing of 150° for 20 km to point C.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that angle ABC = 90°.",
+          "marks": 1,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "90",
+          "markScheme": [
+            { "mark": "B1", "desc": "150 − 60 = 90 or co-interior angles on parallel lines oe" }
+          ],
+          "workingSteps": [
+            "Bearing at A = 060°, bearing at B = 150°",
+            "Angle ABC = 150° − 60° = 90° (co-interior angles with North lines)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the distance AC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "25",
+          "tolerance": null,
+          "unit": "km",
+          "markScheme": [
+            { "mark": "M1", "desc": "AC² = 15² + 20² (Pythagoras since angle B = 90°)" },
+            { "mark": "M1", "desc": "√625" },
+            { "mark": "A1", "desc": "25" }
+          ],
+          "workingSteps": [
+            "AC² = 15² + 20² = 225 + 400 = 625",
+            "AC = 25 km"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the bearing of C from A.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "113",
+          "tolerance": 0.2,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "tan(BAC) = 20/15 oe" },
+            { "mark": "A1", "desc": "angle BAC = 53.1°" },
+            { "mark": "A1", "desc": "Bearing = 060 + 53.1 = 113° (3sf)" }
+          ],
+          "workingSteps": [
+            "tan(BAC) = BC/AB = 20/15",
+            "angle BAC = tan⁻¹(4/3) = 53.1°",
+            "Bearing of C from A = 060° + 53.1° = 113°"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Calculate the area of triangle ABC.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "150",
+          "tolerance": null,
+          "unit": "km²",
+          "markScheme": [
+            { "mark": "M1", "desc": "½ × 15 × 20 (since angle B = 90°)" },
+            { "mark": "A1", "desc": "150" }
+          ],
+          "workingSteps": [
+            "Area = ½ × AB × BC = ½ × 15 × 20 = 150 km²"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "The ship returns directly from C to A.\nCalculate the bearing of A from C.",
+          "marks": 1,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "293",
+          "tolerance": 0.2,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "B1", "desc": "113 + 180 = 293°" }
+          ],
+          "workingSteps": [
+            "Bearing of A from C = bearing of C from A + 180°",
+            "= 113° + 180° = 293°"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E6-05-Q5",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "In triangle ABC, AB = 9 cm, BC = 7 cm and angle BAC = 40°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate angle BCA.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "55.4",
+          "tolerance": 0.1,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "sinC/9 = sin40/7 (sine rule)" },
+            { "mark": "M1", "desc": "sinC = 9sin40/7" },
+            { "mark": "A1", "desc": "55.4° or 55.38° to 55.39°" }
+          ],
+          "workingSteps": [
+            "sinC / 9 = sin40° / 7",
+            "sinC = 9 × sin40° / 7 = 0.826",
+            "C = sin⁻¹(0.826) = 55.4°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Explain why angle BCA could also be 124.6°.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The ambiguous case of the sine rule",
+          "markScheme": [
+            { "mark": "E1", "desc": "sin(124.6°) = sin(55.4°) oe, or ambiguous case of sine rule" }
+          ],
+          "workingSteps": [
+            "sin(180° − 55.4°) = sin(124.6°) = 0.826 = sin(55.4°)",
+            "This is the ambiguous case of the sine rule"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "For the case where angle BCA is acute, calculate the area of triangle ABC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "25.9",
+          "tolerance": 0.1,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Angle B = 180 − 40 − 55.4 = 84.6° soi" },
+            { "mark": "M1", "desc": "½ × 9 × 7 × sin84.6° or ½ × AB × BC × sinB" },
+            { "mark": "A1", "desc": "25.9 or 31.35 × 0.826" }
+          ],
+          "workingSteps": [
+            "Angle B = 180° − 40° − 55.4° = 84.6°",
+            "Area = ½ × 9 × 7 × sin84.6° = 31.35 cm²"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,15 +1,197 @@
 {
-  "topic": "Trigonometry",
+  "topic": "Trigonometric functions",
   "board": "CIE 0580",
   "subtopicId": "cie0580:trigonometry-e6:e6-04-trigonometric-functions",
   "syllabusCode": "E6-04",
   "tier": "Extended",
   "domain": "trigonometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 19,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "E6-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "solve",
+      "difficulty": "medium",
+      "questionText": "Solve $\\sin x = 0.5$ for $0° \\leq x \\leq 360°$.",
+      "answerType": "numeric",
+      "correctAnswer": "30, 150",
+      "tolerance": null,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "B1", "desc": "30°" },
+        { "mark": "B1", "desc": "150°" }
+      ],
+      "workingSteps": [
+        "sin⁻¹(0.5) = 30°",
+        "Second solution: 180° − 30° = 150°",
+        "x = 30° or x = 150°"
+      ],
+      "explanation": "Sine is positive in Q1 and Q2. Second solution = 180° − first."
+    },
+    {
+      "id": "E6-04-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "solve",
+      "difficulty": "hard",
+      "questionText": "Solve $\\cos x = -0.6$ for $0° \\leq x \\leq 360°$.\nGive your answers correct to 1 decimal place.",
+      "answerType": "numeric",
+      "correctAnswer": "126.9, 233.1",
+      "tolerance": 0.1,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "cos⁻¹(0.6) = 53.13° soi (reference angle)" },
+        { "mark": "A1", "desc": "180° − 53.1° = 126.9°" },
+        { "mark": "A1", "desc": "180° + 53.1° = 233.1°" }
+      ],
+      "workingSteps": [
+        "Reference angle: cos⁻¹(0.6) = 53.1°",
+        "Cosine is negative in Q2 and Q3",
+        "x = 180° − 53.1° = 126.9°",
+        "x = 180° + 53.1° = 233.1°"
+      ],
+      "explanation": "Cosine is negative in quadrants 2 and 3."
+    },
+    {
+      "id": "E6-04-Q3",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "The graph shows $y = a + b\\sin(cx)$ for $0° \\leq x \\leq 360°$.\nThe curve has a maximum value of 5 and a minimum value of 1.\nThe curve completes exactly 2 full cycles in the range shown.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the value of $a$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "markScheme": [
+            { "mark": "B1", "desc": "3" }
+          ],
+          "workingSteps": [
+            "a = (max + min) / 2 = (5 + 1) / 2 = 3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the value of $b$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "markScheme": [
+            { "mark": "B1", "desc": "2" }
+          ],
+          "workingSteps": [
+            "b = (max − min) / 2 = (5 − 1) / 2 = 2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the value of $c$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "markScheme": [
+            { "mark": "B1", "desc": "2" }
+          ],
+          "workingSteps": [
+            "2 complete cycles in 360°, so period = 180°",
+            "c = 360° / period = 360° / 180° = 2"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Solve $a + b\\sin(cx) = 4$ for $0° \\leq x \\leq 180°$.",
+          "marks": 3,
+          "commandWord": "solve",
+          "answerType": "numeric",
+          "correctAnswer": "15, 75",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "3 + 2sin(2x) = 4 leading to sin(2x) = 0.5" },
+            { "mark": "A1", "desc": "2x = 30° or 150°, so x = 15°" },
+            { "mark": "A1", "desc": "x = 75°" }
+          ],
+          "workingSteps": [
+            "3 + 2sin(2x) = 4",
+            "2sin(2x) = 1",
+            "sin(2x) = 0.5",
+            "2x = 30° or 150°",
+            "x = 15° or 75°"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Write down the number of solutions of $a + b\\sin(cx) = 4$ for $0° \\leq x \\leq 360°$.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "4",
+          "markScheme": [
+            { "mark": "B2", "desc": "4 (B1 for 2 if only considering one cycle)" }
+          ],
+          "workingSteps": [
+            "In 0° to 360°, there are 2 complete cycles",
+            "Each cycle has 2 solutions where y = 4",
+            "Total = 4 solutions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E6-04-Q4",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "solve",
+      "difficulty": "hard",
+      "questionText": "Solve $2\\tan x + 3 = 0$ for $0° \\leq x \\leq 360°$.\nGive your answers correct to 1 decimal place.",
+      "answerType": "numeric",
+      "correctAnswer": "123.7, 303.7",
+      "tolerance": 0.1,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "tan x = −3/2 = −1.5" },
+        { "mark": "A1", "desc": "180° − 56.3° = 123.7°" },
+        { "mark": "A1", "desc": "360° − 56.3° = 303.7°" }
+      ],
+      "workingSteps": [
+        "2tan x = −3, tan x = −1.5",
+        "Reference angle: tan⁻¹(1.5) = 56.3°",
+        "Tan is negative in Q2 and Q4",
+        "x = 180° − 56.3° = 123.7°",
+        "x = 360° − 56.3° = 303.7°"
+      ],
+      "explanation": "Tangent is negative in quadrants 2 and 4."
+    },
+    {
+      "id": "E6-04-Q5",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The graph of $y = \\sin x$ is transformed to give the graph of $y = 3\\sin(x - 30°)$.\nDescribe the two transformations.",
+      "answerType": "explain",
+      "correctAnswer": "Vertical stretch factor 3, translation 30° right",
+      "markScheme": [
+        { "mark": "B1", "desc": "Vertical stretch / enlargement, scale factor 3 (in y-direction)" },
+        { "mark": "B1", "desc": "Translation of 30° to the right / in the positive x-direction" }
+      ],
+      "workingSteps": [
+        "The 3 in front of sin causes a vertical stretch, scale factor 3",
+        "The −30° inside the function causes a translation of 30° to the right"
+      ],
+      "explanation": "y = a sin(x − d): a gives vertical stretch, d gives horizontal translation."
+    }
+  ]
 }

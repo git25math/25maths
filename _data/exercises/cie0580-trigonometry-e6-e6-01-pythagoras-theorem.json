@@ -6,10 +6,185 @@
   "tier": "Extended",
   "domain": "trigonometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 25,
+  "questions": [
+    {
+      "id": "E6-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "The points A and B have coordinates (1, 3) and (7, 11).\nCalculate the distance AB.",
+      "answerType": "integer",
+      "correctAnswer": "10",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(7−1)² + (11−3)² or 36 + 64 soi" },
+        { "mark": "M1", "desc": "√100" },
+        { "mark": "A1", "desc": "10" }
+      ],
+      "workingSteps": [
+        "AB² = (7−1)² + (11−3)² = 6² + 8² = 36 + 64 = 100",
+        "AB = √100 = 10"
+      ],
+      "explanation": "Use the distance formula, which is Pythagoras in the coordinate plane."
+    },
+    {
+      "id": "E6-01-Q2",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "hard",
+      "context": "An isosceles triangle PQR has PQ = PR = 10 cm and QR = 12 cm.\nM is the midpoint of QR.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Explain why angle PMQ = 90°.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "PM is the perpendicular bisector of QR in an isosceles triangle",
+          "markScheme": [
+            { "mark": "E1", "desc": "PM is perpendicular bisector of base, or PQ = PR and M is midpoint so PM ⊥ QR" }
+          ],
+          "workingSteps": [
+            "In an isosceles triangle, the line from the apex to the midpoint of the base is perpendicular to the base"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the height PM.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "8",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "QM = 6 soi" },
+            { "mark": "M1", "desc": "PM² = 10² − 6² = 64" },
+            { "mark": "A1", "desc": "8" }
+          ],
+          "workingSteps": [
+            "QM = 12 ÷ 2 = 6 cm",
+            "PM² = PQ² − QM² = 100 − 36 = 64",
+            "PM = 8 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the area of triangle PQR.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "48",
+          "tolerance": null,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "½ × 12 × their 8" },
+            { "mark": "A1", "desc": "48" }
+          ],
+          "workingSteps": [
+            "Area = ½ × base × height = ½ × 12 × 8 = 48 cm²"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "A point S is on PM such that QS = RS = 8 cm.\nCalculate the length PS.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "2.73",
+          "tolerance": 0.01,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "SM² = 8² − 6² = 28 so SM = √28 soi" },
+            { "mark": "M1", "desc": "PS = PM − SM = 8 − √28" },
+            { "mark": "A1", "desc": "2.71 to 2.73" }
+          ],
+          "workingSteps": [
+            "In triangle QSM: SM² = QS² − QM² = 64 − 36 = 28",
+            "SM = √28 = 5.292",
+            "PS = PM − SM = 8 − 5.292 = 2.71 cm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E6-01-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A rectangular field ABCD has AB = 80 m and BC = 60 m.\nA path runs diagonally from A to C.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the length of the path AC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "100",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "80² + 60² soi" },
+            { "mark": "M1", "desc": "√10000" },
+            { "mark": "A1", "desc": "100" }
+          ],
+          "workingSteps": [
+            "AC² = 80² + 60² = 6400 + 3600 = 10000",
+            "AC = 100 m"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A person walks along the path from A to C at 1.5 m/s.\nAnother person walks from A to B to C at 2 m/s.\nWho arrives at C first? Show your working.",
+          "marks": 3,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "Path walker arrives first",
+          "markScheme": [
+            { "mark": "M1", "desc": "Time(diagonal) = 100/1.5 = 66.7s" },
+            { "mark": "M1", "desc": "Time(edges) = (80+60)/2 = 70s" },
+            { "mark": "A1", "desc": "Diagonal walker arrives first with correct comparison" }
+          ],
+          "workingSteps": [
+            "Diagonal: time = 100 ÷ 1.5 = 66.7 seconds",
+            "Edges: distance = 80 + 60 = 140 m, time = 140 ÷ 2 = 70 seconds",
+            "66.7 < 70 so the diagonal walker arrives first"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E6-01-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "show",
+      "difficulty": "hard",
+      "questionText": "A triangle has vertices at P(−2, 1), Q(2, 4) and R(5, 0).\nShow that triangle PQR is a right-angled isosceles triangle.",
+      "answerType": "show-that",
+      "correctAnswer": "PQ = QR = 5, PR = 5√2",
+      "markScheme": [
+        { "mark": "M1", "desc": "PQ² = 4² + 3² = 25, PQ = 5" },
+        { "mark": "M1", "desc": "QR² = 3² + 4² = 25, QR = 5" },
+        { "mark": "A1", "desc": "PQ = QR = 5 so isosceles" },
+        { "mark": "A1", "desc": "PR² = 7² + 1² = 50 = 25 + 25 = PQ² + QR², so right-angled" }
+      ],
+      "workingSteps": [
+        "PQ² = (2−(−2))² + (4−1)² = 16 + 9 = 25, PQ = 5",
+        "QR² = (5−2)² + (0−4)² = 9 + 16 = 25, QR = 5",
+        "PR² = (5−(−2))² + (0−1)² = 49 + 1 = 50",
+        "PQ = QR = 5, so isosceles",
+        "PQ² + QR² = 25 + 25 = 50 = PR², so right-angled at Q"
+      ],
+      "explanation": "Calculate all three side lengths, show two are equal (isosceles) and check Pythagoras (right-angled)."
+    }
+  ]
 }

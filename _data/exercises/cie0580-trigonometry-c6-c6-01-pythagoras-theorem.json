@@ -6,10 +6,162 @@
   "tier": "Core",
   "domain": "trigonometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 19,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "C6-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A right-angled triangle has shorter sides of length 6 cm and 8 cm.\nCalculate the length of the hypotenuse.",
+      "answerType": "integer",
+      "correctAnswer": "10",
+      "tolerance": null,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "6² + 8² or 36 + 64 soi" },
+        { "mark": "A1", "desc": "10" }
+      ],
+      "workingSteps": [
+        "c² = 6² + 8² = 36 + 64 = 100",
+        "c = √100 = 10 cm"
+      ],
+      "explanation": "Use Pythagoras: c² = a² + b²."
+    },
+    {
+      "id": "C6-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A right-angled triangle has hypotenuse 13 cm and one shorter side 5 cm.\nCalculate the length of the other shorter side.",
+      "answerType": "integer",
+      "correctAnswer": "12",
+      "tolerance": null,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "13² − 5² or 169 − 25 soi" },
+        { "mark": "M1", "desc": "√144" },
+        { "mark": "A1", "desc": "12" }
+      ],
+      "workingSteps": [
+        "a² = 13² − 5² = 169 − 25 = 144",
+        "a = √144 = 12 cm"
+      ],
+      "explanation": "Rearrange Pythagoras to find a shorter side: a² = c² − b²."
+    },
+    {
+      "id": "C6-01-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A rectangle has length 15 cm and width 8 cm.\nCalculate the length of a diagonal of the rectangle.",
+      "answerType": "integer",
+      "correctAnswer": "17",
+      "tolerance": null,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "15² + 8² soi" },
+        { "mark": "M1", "desc": "√(225 + 64) or √289" },
+        { "mark": "A1", "desc": "17" }
+      ],
+      "workingSteps": [
+        "d² = 15² + 8² = 225 + 64 = 289",
+        "d = √289 = 17 cm"
+      ],
+      "explanation": "The diagonal of a rectangle forms a right-angled triangle."
+    },
+    {
+      "id": "C6-01-Q4",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "Triangle ABC has angle B = 90°, AB = 9 cm and BC = 12 cm.\nM is the midpoint of AC.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the length of AC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "15",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "9² + 12² soi" },
+            { "mark": "M1", "desc": "√225" },
+            { "mark": "A1", "desc": "15" }
+          ],
+          "workingSteps": [
+            "AC² = 9² + 12² = 81 + 144 = 225",
+            "AC = 15 cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the length of AM.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "numeric",
+          "correctAnswer": "7.5",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "B1", "desc": "7.5" }
+          ],
+          "workingSteps": [
+            "AM = AC ÷ 2 = 15 ÷ 2 = 7.5 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The point D is on BC such that BD = 5 cm.\nCalculate the length AD.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "10.3",
+          "tolerance": 0.05,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "AD² = AB² + BD² = 9² + 5²" },
+            { "mark": "M1", "desc": "√106" },
+            { "mark": "A1", "desc": "10.3 or 10.30" }
+          ],
+          "workingSteps": [
+            "AD² = 9² + 5² = 81 + 25 = 106",
+            "AD = √106 = 10.3 cm (3sf)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C6-01-Q5",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "show",
+      "difficulty": "medium",
+      "questionText": "A triangle has sides of length 7 cm, 24 cm and 25 cm.\nShow that this triangle is right-angled.",
+      "answerType": "show-that",
+      "correctAnswer": "7² + 24² = 625 = 25²",
+      "markScheme": [
+        { "mark": "M1", "desc": "7² + 24² attempted" },
+        { "mark": "A1", "desc": "49 + 576 = 625" },
+        { "mark": "A1", "desc": "25² = 625" },
+        { "mark": "A1", "desc": "Conclusion: since a² + b² = c², triangle is right-angled" }
+      ],
+      "workingSteps": [
+        "7² + 24² = 49 + 576 = 625",
+        "25² = 625",
+        "Since 7² + 24² = 25², the triangle is right-angled by the converse of Pythagoras"
+      ],
+      "explanation": "To show a triangle is right-angled, verify a² + b² = c²."
+    }
+  ]
 }

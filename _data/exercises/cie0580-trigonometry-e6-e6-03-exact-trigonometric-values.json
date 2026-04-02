@@ -6,10 +6,150 @@
   "tier": "Extended",
   "domain": "trigonometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
-  "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "calculator": false,
+  "totalMarks": 16,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "E6-03-Q1",
+      "type": "short-answer",
+      "totalMarks": 1,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the exact value of $\\cos 60°$.",
+      "answerType": "fraction",
+      "correctAnswer": "1/2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "1/2 or 0.5" }
+      ],
+      "workingSteps": [],
+      "explanation": "This is one of the exact values you must know: cos60° = 1/2."
+    },
+    {
+      "id": "E6-03-Q2",
+      "type": "short-answer",
+      "totalMarks": 1,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the exact value of $\\tan 45°$.",
+      "answerType": "integer",
+      "correctAnswer": "1",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "1" }
+      ],
+      "workingSteps": [],
+      "explanation": "tan45° = sin45°/cos45° = 1."
+    },
+    {
+      "id": "E6-03-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Without using a calculator, find the exact value of $\\sin 60° \\times \\cos 30° + \\cos 60° \\times \\sin 30°$.",
+      "answerType": "integer",
+      "correctAnswer": "1",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Substitutes exact values: (√3/2)(√3/2) + (1/2)(1/2)" },
+        { "mark": "A1", "desc": "3/4 + 1/4" },
+        { "mark": "A1", "desc": "1" }
+      ],
+      "workingSteps": [
+        "sin60° × cos30° + cos60° × sin30°",
+        "= (√3/2)(√3/2) + (1/2)(1/2)",
+        "= 3/4 + 1/4 = 1"
+      ],
+      "explanation": "This equals sin(60° + 30°) = sin90° = 1, but full working with exact values is expected."
+    },
+    {
+      "id": "E6-03-Q4",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "An equilateral triangle has side length 6 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that the height of the triangle is $3\\sqrt{3}$ cm.",
+          "marks": 3,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "3√3",
+          "markScheme": [
+            { "mark": "M1", "desc": "h² = 6² − 3² or h = 6 × sin60°" },
+            { "mark": "A1", "desc": "h² = 36 − 9 = 27 or h = 6 × √3/2" },
+            { "mark": "A1", "desc": "h = √27 = 3√3 with no errors" }
+          ],
+          "workingSteps": [
+            "Split the equilateral triangle in half: base = 3, hypotenuse = 6",
+            "h² = 6² − 3² = 36 − 9 = 27",
+            "h = √27 = √(9 × 3) = 3√3 cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the exact area of the triangle.\nGive your answer in the form $a\\sqrt{3}$ where $a$ is an integer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "9√3",
+          "markScheme": [
+            { "mark": "M1", "desc": "½ × 6 × 3√3" },
+            { "mark": "A1", "desc": "9√3" }
+          ],
+          "workingSteps": [
+            "Area = ½ × base × height = ½ × 6 × 3√3 = 9√3 cm²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Using $\\sqrt{3} = 1.732$, calculate the area correct to 3 significant figures.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "15.6",
+          "tolerance": 0.05,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "9 × 1.732" },
+            { "mark": "A1", "desc": "15.6" }
+          ],
+          "workingSteps": [
+            "Area = 9 × 1.732 = 15.588 = 15.6 cm² (3sf)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E6-03-Q5",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "show",
+      "difficulty": "hard",
+      "questionText": "Without using a calculator, show that $\\dfrac{\\tan 60°}{\\sin 45°} = \\sqrt{6}$.",
+      "answerType": "show-that",
+      "correctAnswer": "√6",
+      "markScheme": [
+        { "mark": "M1", "desc": "tan60° = √3" },
+        { "mark": "M1", "desc": "sin45° = √2/2 or 1/√2" },
+        { "mark": "M1", "desc": "√3 ÷ (1/√2) = √3 × √2" },
+        { "mark": "A1", "desc": "= √6 with no errors in working" }
+      ],
+      "workingSteps": [
+        "tan60° = √3",
+        "sin45° = √2/2 = 1/√2",
+        "tan60° / sin45° = √3 / (1/√2) = √3 × √2 = √6"
+      ],
+      "explanation": "Substitute exact values and simplify using surd rules."
+    }
+  ]
 }
