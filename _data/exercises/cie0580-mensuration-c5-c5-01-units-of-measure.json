@@ -1,15 +1,185 @@
 {
-  "topic": "units of measure",
+  "topic": "Units of measure",
   "board": "CIE 0580",
   "subtopicId": "cie0580:mensuration-c5:c5-01-units-of-measure",
   "syllabusCode": "C5-01",
   "tier": "Core",
   "domain": "mensuration",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 15,
+  "questions": [
+    {
+      "id": "C5-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Convert 3.5 km to metres.",
+      "answerType": "integer",
+      "correctAnswer": "3500",
+      "tolerance": null,
+      "unit": "m",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "3.5 × 1000"
+        },
+        {
+          "mark": "A1",
+          "desc": "3500"
+        }
+      ],
+      "workingSteps": [
+        "3.5 km = 3.5 × 1000 = 3500 m"
+      ],
+      "explanation": "1 km = 1000 m."
+    },
+    {
+      "id": "C5-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Convert 45 000 cm² to m².",
+      "answerType": "numeric",
+      "correctAnswer": "4.5",
+      "tolerance": null,
+      "unit": "m²",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "÷ 10000 (since 1m² = 10000cm²)"
+        },
+        {
+          "mark": "A1",
+          "desc": "4.5"
+        }
+      ],
+      "workingSteps": [
+        "1 m² = 100 × 100 = 10000 cm²",
+        "45000 ÷ 10000 = 4.5 m²"
+      ],
+      "explanation": "For area, multiply the conversion factor by itself."
+    },
+    {
+      "id": "C5-01-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A field has area 2.4 hectares.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Convert 2.4 hectares to m².",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "24000",
+          "tolerance": null,
+          "unit": "m²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "2.4 × 10000"
+            },
+            {
+              "mark": "A1",
+              "desc": "24000"
+            }
+          ],
+          "workingSteps": [
+            "1 hectare = 10000 m²",
+            "2.4 × 10000 = 24000 m²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The field is rectangular with width 120 m.\nCalculate the length.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "200",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "24000 ÷ 120"
+            },
+            {
+              "mark": "A1",
+              "desc": "200"
+            }
+          ],
+          "workingSteps": [
+            "Length = area ÷ width = 24000 ÷ 120 = 200 m"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Convert the area to km².",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.024",
+          "tolerance": null,
+          "unit": "km²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "24000 ÷ 1000000 or 2.4 ÷ 100"
+            },
+            {
+              "mark": "A1",
+              "desc": "0.024"
+            }
+          ],
+          "workingSteps": [
+            "1 km² = 1000000 m²",
+            "24000 ÷ 1000000 = 0.024 km²"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C5-01-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A container holds 2.5 litres of water.\nThe water is poured into small cups, each holding 125 ml.\nCalculate the number of cups that can be filled.",
+      "answerType": "integer",
+      "correctAnswer": "20",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "2.5 litres = 2500 ml"
+        },
+        {
+          "mark": "M1",
+          "desc": "2500 ÷ 125"
+        },
+        {
+          "mark": "A1",
+          "desc": "20"
+        },
+        {
+          "mark": "B1",
+          "desc": "Correct unit conversion shown"
+        }
+      ],
+      "workingSteps": [
+        "2.5 litres = 2500 ml",
+        "2500 ÷ 125 = 20 cups"
+      ],
+      "explanation": "1 litre = 1000 ml."
+    }
+  ]
 }

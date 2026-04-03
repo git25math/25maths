@@ -1,15 +1,156 @@
 {
-  "topic": "units of measure",
+  "topic": "Units of measure",
   "board": "CIE 0580",
   "subtopicId": "cie0580:mensuration-e5:e5-01-units-of-measure",
   "syllabusCode": "E5-01",
   "tier": "Extended",
   "domain": "mensuration",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 15,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "E5-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A container has volume 0.5 m³.\nConvert this volume to cm³.",
+      "answerType": "integer",
+      "correctAnswer": "500000",
+      "tolerance": null,
+      "unit": "cm³",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "1 m = 100 cm"
+        },
+        {
+          "mark": "M1",
+          "desc": "1 m³ = 100³ = 1000000 cm³"
+        },
+        {
+          "mark": "A1",
+          "desc": "500000"
+        }
+      ],
+      "workingSteps": [
+        "1 m³ = 100³ cm³ = 1000000 cm³",
+        "0.5 × 1000000 = 500000 cm³"
+      ],
+      "explanation": "For volume, cube the linear conversion factor."
+    },
+    {
+      "id": "E5-01-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "A map has scale 1:25000.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Two towns are 8 cm apart on the map.\nCalculate the actual distance in km.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": "km",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "8 × 25000 = 200000 cm"
+            },
+            {
+              "mark": "M1",
+              "desc": "÷ 100000"
+            },
+            {
+              "mark": "A1",
+              "desc": "2 km"
+            }
+          ],
+          "workingSteps": [
+            "Actual = 8 × 25000 = 200000 cm = 2000 m = 2 km"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A lake on the map has area 3.2 cm².\nCalculate the actual area in km².",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "0.2",
+          "tolerance": null,
+          "unit": "km²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Area scale = 25000² = 625000000"
+            },
+            {
+              "mark": "M1",
+              "desc": "3.2 × 625000000 = 2000000000 cm²"
+            },
+            {
+              "mark": "M1",
+              "desc": "÷ 10000000000 (10¹⁰)"
+            },
+            {
+              "mark": "A1",
+              "desc": "0.2 km²"
+            }
+          ],
+          "workingSteps": [
+            "Area scale factor = 25000² = 6.25 × 10⁸",
+            "Actual area = 3.2 × 6.25 × 10⁸ = 2 × 10⁹ cm²",
+            "= 2 × 10⁹ ÷ 10¹⁰ km² = 0.2 km²"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E5-01-Q3",
+      "type": "short-answer",
+      "totalMarks": 5,
+      "commandWord": "calculate",
+      "difficulty": "hard",
+      "questionText": "A solid gold sphere has radius 2 cm and mass 644 g.\n(a) Calculate the volume of the sphere in cm³.\n(b) Hence calculate the density of gold in g/cm³.\nGive each answer correct to 3 significant figures.",
+      "answerType": "numeric",
+      "correctAnswer": "33.5, 19.2",
+      "tolerance": 0.1,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "(a) V = 4/3 × π × 2³"
+        },
+        {
+          "mark": "M1",
+          "desc": "= 32π/3"
+        },
+        {
+          "mark": "A1",
+          "desc": "33.5 cm³"
+        },
+        {
+          "mark": "M1",
+          "desc": "(b) density = 644/33.5"
+        },
+        {
+          "mark": "A1",
+          "desc": "19.2 g/cm³"
+        }
+      ],
+      "workingSteps": [
+        "(a) V = (4/3)πr³ = (4/3)π(8) = 32π/3 = 33.5 cm³",
+        "(b) Density = mass/volume = 644/33.5 = 19.2 g/cm³"
+      ],
+      "explanation": "Density = mass ÷ volume."
+    }
+  ]
 }

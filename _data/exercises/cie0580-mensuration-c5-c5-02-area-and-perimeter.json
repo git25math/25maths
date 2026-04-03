@@ -6,10 +6,196 @@
   "tier": "Core",
   "domain": "mensuration",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 16,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "C5-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A rectangle has length 12 cm and width 5 cm.\nCalculate the area.",
+      "answerType": "integer",
+      "correctAnswer": "60",
+      "tolerance": null,
+      "unit": "cm²",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "12 × 5"
+        },
+        {
+          "mark": "A1",
+          "desc": "60"
+        }
+      ],
+      "workingSteps": [
+        "Area = 12 × 5 = 60 cm²"
+      ],
+      "explanation": "Area of rectangle = length × width."
+    },
+    {
+      "id": "C5-02-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A trapezium has parallel sides of 8 cm and 14 cm, and height 6 cm.\nCalculate the area.",
+      "answerType": "integer",
+      "correctAnswer": "66",
+      "tolerance": null,
+      "unit": "cm²",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "½ × (8 + 14) × 6"
+        },
+        {
+          "mark": "M1",
+          "desc": "½ × 22 × 6"
+        },
+        {
+          "mark": "A1",
+          "desc": "66"
+        }
+      ],
+      "workingSteps": [
+        "Area = ½(a + b) × h = ½(8 + 14) × 6 = ½ × 22 × 6 = 66 cm²"
+      ],
+      "explanation": "Formula on the formula sheet."
+    },
+    {
+      "id": "C5-02-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A triangle has base 10 cm and height 8 cm.\nA rectangle has the same area as the triangle.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the area of the triangle.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "40",
+          "tolerance": null,
+          "unit": "cm²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "½ × 10 × 8"
+            },
+            {
+              "mark": "A1",
+              "desc": "40"
+            }
+          ],
+          "workingSteps": [
+            "Area = ½ × 10 × 8 = 40 cm²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The rectangle has width 5 cm.\nCalculate the length of the rectangle.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "8",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "40 ÷ 5"
+            },
+            {
+              "mark": "A1",
+              "desc": "8"
+            }
+          ],
+          "workingSteps": [
+            "Length = 40 ÷ 5 = 8 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the perimeter of the rectangle.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "26",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "2 × (8 + 5)"
+            },
+            {
+              "mark": "A1",
+              "desc": "26"
+            }
+          ],
+          "workingSteps": [
+            "Perimeter = 2(8 + 5) = 2 × 13 = 26 cm"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Explain why the triangle and the rectangle have different perimeters.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "Same area does not mean same perimeter — shapes with equal area can have different perimeters",
+          "markScheme": [
+            {
+              "mark": "E1",
+              "desc": "Area and perimeter are independent / different shapes with same area can have different perimeters"
+            }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "C5-02-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A parallelogram has base 9 cm and perpendicular height 7 cm.\nOne of the non-parallel sides is 8 cm.\n(a) Calculate the area.\n(b) Calculate the perimeter.",
+      "answerType": "numeric",
+      "correctAnswer": "63, 34",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "(a) 9 × 7"
+        },
+        {
+          "mark": "A1",
+          "desc": "63 cm²"
+        },
+        {
+          "mark": "M1",
+          "desc": "(b) 2(9 + 8)"
+        },
+        {
+          "mark": "A1",
+          "desc": "34 cm"
+        }
+      ],
+      "workingSteps": [
+        "(a) Area = base × height = 9 × 7 = 63 cm²",
+        "(b) Perimeter = 2(9 + 8) = 34 cm"
+      ],
+      "explanation": "Area uses perpendicular height, perimeter uses slant sides."
+    }
+  ]
 }

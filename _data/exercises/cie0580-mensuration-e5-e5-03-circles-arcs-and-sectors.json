@@ -1,15 +1,228 @@
 {
-  "topic": "circles arcs and sectors",
+  "topic": "Circles, arcs and sectors",
   "board": "CIE 0580",
   "subtopicId": "cie0580:mensuration-e5:e5-03-circles-arcs-and-sectors",
   "syllabusCode": "E5-03",
   "tier": "Extended",
   "domain": "mensuration",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
-  "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "calculator": true,
+  "totalMarks": 20,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "E5-03-Q1",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A sector OAB has radius 12 cm and angle AOB = 150°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the arc length AB.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "31.4",
+          "tolerance": 0.1,
+          "unit": "cm",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "150/360 × 2π × 12"
+            },
+            {
+              "mark": "M1",
+              "desc": "5/12 × 24π"
+            },
+            {
+              "mark": "A1",
+              "desc": "31.4"
+            }
+          ],
+          "workingSteps": [
+            "Arc = (150/360) × 2π × 12 = (5/12) × 24π = 10π = 31.4 cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the area of the sector.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "188",
+          "tolerance": 1,
+          "unit": "cm²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "150/360 × π × 144"
+            },
+            {
+              "mark": "M1",
+              "desc": "5/12 × 144π"
+            },
+            {
+              "mark": "A1",
+              "desc": "60π = 188"
+            }
+          ],
+          "workingSteps": [
+            "Area = (150/360) × π × 12² = (5/12) × 144π = 60π = 188 cm²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the area of the triangle OAB.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "36",
+          "tolerance": 0,
+          "unit": "cm²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "½ × 12 × 12 × sin150"
+            },
+            {
+              "mark": "A1",
+              "desc": "½ × 144 × 0.5 = 36"
+            }
+          ],
+          "workingSteps": [
+            "Area = ½r²sinθ = ½ × 12² × sin150° = ½ × 144 × 0.5 = 36 cm²"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Hence calculate the area of the segment (the region between the chord AB and the arc AB).",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "152",
+          "tolerance": 1,
+          "unit": "cm²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Sector − triangle"
+            },
+            {
+              "mark": "A1",
+              "desc": "188 − 36 = 152"
+            }
+          ],
+          "workingSteps": [
+            "Segment = sector − triangle = 188 − 36 = 152 cm²"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E5-03-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": "A circle has area 200 cm².",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the radius of the circle.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "7.98",
+          "tolerance": 0.01,
+          "unit": "cm",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "πr² = 200"
+            },
+            {
+              "mark": "M1",
+              "desc": "r² = 200/π = 63.66"
+            },
+            {
+              "mark": "A1",
+              "desc": "r = 7.98"
+            }
+          ],
+          "workingSteps": [
+            "πr² = 200",
+            "r² = 200/π = 63.66",
+            "r = 7.98 cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A sector of this circle has area 75 cm².\nCalculate the angle of the sector.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "135",
+          "tolerance": 0,
+          "unit": "°",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "75/200 × 360"
+            },
+            {
+              "mark": "M1",
+              "desc": "= 3/8 × 360"
+            },
+            {
+              "mark": "A1",
+              "desc": "135°"
+            }
+          ],
+          "workingSteps": [
+            "θ/360 = 75/200 = 3/8",
+            "θ = (3/8) × 360 = 135°"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E5-03-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "show",
+      "difficulty": "hard",
+      "questionText": "A sector has perimeter 20 cm and radius $r$ cm.\nThe angle of the sector is $\\theta$ degrees.\nShow that $\\theta = \\frac{360(20 - 2r)}{2\\pi r}$.",
+      "answerType": "show-that",
+      "correctAnswer": "θ = 360(20 − 2r)/(2πr)",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Perimeter = 2r + arc = 20"
+        },
+        {
+          "mark": "M1",
+          "desc": "Arc = 20 − 2r"
+        },
+        {
+          "mark": "M1",
+          "desc": "(θ/360) × 2πr = 20 − 2r"
+        },
+        {
+          "mark": "A1",
+          "desc": "θ = 360(20 − 2r)/(2πr) with no errors"
+        }
+      ],
+      "workingSteps": [
+        "Perimeter = 2r + arc length",
+        "20 = 2r + (θ/360) × 2πr",
+        "(θ/360) × 2πr = 20 − 2r",
+        "θ = 360(20 − 2r) / (2πr)"
+      ],
+      "explanation": "Express arc in terms of θ and r, then rearrange."
+    }
+  ]
 }
