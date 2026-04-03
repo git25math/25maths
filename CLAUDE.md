@@ -58,6 +58,8 @@
 | `docs/CONTRIBUTING.md` | **开发规范**（AI/人类通用唯一权威） | **必读** |
 | `docs/DEVELOPMENT-PLAN.md` | 版本历程 + 下一步规划 | **必读** |
 | `docs/BUG-POSTMORTEM.md` | Bug 根因分析 + 防范规则 | 高 |
+| `docs/EXERCISE-SCHEMA.md` | **练习 v2 schema 规范**（CIE + EDX 双 board） | **必读**（涉及练习时） |
+| `docs/examples/exercise-variants-showcase.json` | 9 种 CIE 风格变式题示例 | 高（填题时参考） |
 | `DECISIONS.md` | 决策日志 | 参考 |
 | `PLAN.md` | 会员系统收尾计划 | 参考 |
 | `HANDOFF.md` | 项目交接文档 | 参考 |
@@ -70,7 +72,8 @@
 | `_config.yml` | Jekyll 配置 + 模块定义 + Supabase 公钥 |
 | `functions/_lib/supabase_server.js` | **DB 操作入口**（700+ 行），理解表结构的入口 |
 | `functions/_lib/release_registry.js` | 产品元数据 + release_id 映射 |
-| `assets/js/exercise_engine.js` | 做题引擎 |
+| `_data/exercise_registry.json` | 202 练习元数据注册表（slug/board/tier/domain/status） |
+| `assets/js/exercise_engine.js` | 做题引擎（待适配 v2 schema） |
 | `assets/js/member_auth.js` | 认证客户端 |
 | `styles/site.tailwind.css` | Tailwind CSS 源文件 |
 
