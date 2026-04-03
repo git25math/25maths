@@ -6,10 +6,255 @@
   "tier": "Core",
   "domain": "probability",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 17,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "C8-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 1,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "A fair six-sided dice is rolled once.\nWrite down the probability of rolling a 4.",
+      "answerType": "fraction",
+      "correctAnswer": "1/6",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "1/6"
+        }
+      ],
+      "workingSteps": [
+        "P(4) = 1/6"
+      ],
+      "explanation": "One favourable outcome out of six equally likely outcomes."
+    },
+    {
+      "id": "C8-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A bag contains 3 red balls, 5 blue balls and 2 green balls.\nA ball is picked at random.\nFind the probability that the ball is blue.",
+      "answerType": "fraction",
+      "correctAnswer": "1/2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "5/10 or 5/(3+5+2)"
+        },
+        {
+          "mark": "A1",
+          "desc": "1/2 or 0.5"
+        }
+      ],
+      "workingSteps": [
+        "Total = 3 + 5 + 2 = 10",
+        "P(blue) = 5/10 = 1/2"
+      ],
+      "explanation": "P(event) = favourable outcomes / total outcomes."
+    },
+    {
+      "id": "C8-01-Q3",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "The probability that it rains tomorrow is 0.3.\nFind the probability that it does not rain tomorrow.",
+      "answerType": "numeric",
+      "correctAnswer": "0.7",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "1 − 0.3"
+        },
+        {
+          "mark": "A1",
+          "desc": "0.7"
+        }
+      ],
+      "workingSteps": [
+        "P(not rain) = 1 − P(rain) = 1 − 0.3 = 0.7"
+      ],
+      "explanation": "P(not A) = 1 − P(A)."
+    },
+    {
+      "id": "C8-01-Q4",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A spinner has 8 equal sections numbered 1 to 8.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the probability that the spinner lands on an even number.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "4/8 or 1/2"
+            }
+          ],
+          "workingSteps": [
+            "Even numbers: 2, 4, 6, 8 → 4 out of 8 = 1/2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the probability that the spinner lands on a prime number.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Primes: 2, 3, 5, 7 identified"
+            },
+            {
+              "mark": "A1",
+              "desc": "4/8 or 1/2"
+            }
+          ],
+          "workingSteps": [
+            "Primes in 1-8: 2, 3, 5, 7 → 4 numbers",
+            "P = 4/8 = 1/2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the probability that the spinner lands on a number greater than 6.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "2/8 or 1/4"
+            }
+          ],
+          "workingSteps": [
+            "Numbers > 6: 7, 8 → 2 out of 8 = 1/4"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "The spinner is spun 200 times.\nCalculate the expected number of times it lands on the number 3.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "200 × 1/8"
+            },
+            {
+              "mark": "A1",
+              "desc": "25"
+            }
+          ],
+          "workingSteps": [
+            "P(3) = 1/8",
+            "Expected = 200 × 1/8 = 25"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Give a reason why the spinner might not land on 3 exactly 25 times.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "Probability is theoretical; actual results vary due to randomness",
+          "markScheme": [
+            {
+              "mark": "E1",
+              "desc": "Probability is theoretical / experimental results vary / randomness oe"
+            }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "C8-01-Q5",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "A letter is chosen at random from the word MATHEMATICS.\nFind the probability that the letter is\n(a) M\n(b) a vowel.",
+      "answerType": "fraction",
+      "correctAnswer": "2/11, 4/11",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "Total letters = 11 soi"
+        },
+        {
+          "mark": "B1",
+          "desc": "(a) 2/11"
+        },
+        {
+          "mark": "B1",
+          "desc": "(b) 4/11 (A, E, A, I → 4 vowels)"
+        }
+      ],
+      "workingSteps": [
+        "MATHEMATICS has 11 letters",
+        "(a) M appears twice: P(M) = 2/11",
+        "(b) Vowels: A, A, E, I → 4 vowels: P(vowel) = 4/11"
+      ],
+      "explanation": "Count occurrences carefully — some letters repeat."
+    },
+    {
+      "id": "C8-01-Q6",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A bag contains only red and blue counters.\nThe probability of picking a red counter is 0.35.\nFind the probability of picking a blue counter.",
+      "answerType": "numeric",
+      "correctAnswer": "0.65",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "1 − 0.35"
+        },
+        {
+          "mark": "A1",
+          "desc": "0.65"
+        }
+      ],
+      "workingSteps": [
+        "P(blue) = 1 − P(red) = 1 − 0.35 = 0.65"
+      ],
+      "explanation": "When there are only two outcomes, their probabilities sum to 1."
+    }
+  ]
 }

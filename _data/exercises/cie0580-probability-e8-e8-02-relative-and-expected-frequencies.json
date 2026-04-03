@@ -6,10 +6,154 @@
   "tier": "Extended",
   "domain": "probability",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 17,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "E8-02-Q1",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "hard",
+      "context": "A spinner has three colours: red, blue and green.\nThe spinner is spun 500 times. The results are shown.\n\n| Colour | Red | Blue | Green |\n|---|---|---|---|\n| Frequency | 210 | 175 | 115 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the relative frequency of landing on blue.",
+          "marks": 1,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "0.35",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "175/500 = 0.35 or 7/20" }
+          ],
+          "workingSteps": ["Relative frequency = 175/500 = 0.35"]
+        },
+        {
+          "label": "b",
+          "questionText": "The spinner is spun once more.\nEstimate the probability of landing on green.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.23",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "115/500 = 0.23 or 23/100" }
+          ],
+          "workingSteps": ["P(green) ≈ 115/500 = 0.23"]
+        },
+        {
+          "label": "c",
+          "questionText": "If the spinner were fair, each colour would have equal probability.\nTest whether the results suggest the spinner is biased.\nYou must show your working.",
+          "marks": 4,
+          "commandWord": "show",
+          "answerType": "explain",
+          "correctAnswer": "The spinner appears biased",
+          "markScheme": [
+            { "mark": "M1", "desc": "Expected frequency for fair spinner = 500/3 ≈ 166.7 each" },
+            { "mark": "M1", "desc": "Compares observed vs expected for each colour" },
+            { "mark": "A1", "desc": "Red: 210 vs 167, Blue: 175 vs 167, Green: 115 vs 167" },
+            { "mark": "A1", "desc": "Conclusion: likely biased (green significantly below expected) with reason" }
+          ],
+          "workingSteps": [
+            "If fair: expected frequency = 500 ÷ 3 = 166.7 for each colour",
+            "Red: 210 (43 above expected)",
+            "Blue: 175 (8 above expected)",
+            "Green: 115 (52 below expected)",
+            "Green is significantly below expected, so the spinner appears biased"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "The spinner is to be spun 2000 more times.\nUsing the relative frequencies, estimate the number of times it will land on red.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "840",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(red) = 210/500 = 0.42 soi" },
+            { "mark": "M1", "desc": "2000 × 0.42" },
+            { "mark": "A1", "desc": "840" }
+          ],
+          "workingSteps": [
+            "P(red) ≈ 210/500 = 0.42",
+            "Expected reds = 2000 × 0.42 = 840"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-02-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "In a game, the probability of winning is $p$.\nAli plays 80 games and wins 28.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find an estimate for $p$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.35",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "28/80 = 0.35 or 7/20" }
+          ],
+          "workingSteps": ["p ≈ 28/80 = 0.35"]
+        },
+        {
+          "label": "b",
+          "questionText": "Ali plays 3 more games.\nUsing your estimate for $p$, calculate the probability that Ali wins exactly 2 of the 3 games.",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "0.239",
+          "tolerance": 0.001,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Identifies 3 arrangements: WWL, WLW, LWW" },
+            { "mark": "M1", "desc": "P(each) = 0.35² × 0.65 = 0.0796..." },
+            { "mark": "M1", "desc": "3 × 0.35² × 0.65" },
+            { "mark": "A1", "desc": "0.239 (3sf)" }
+          ],
+          "workingSteps": [
+            "P(exactly 2 wins) = 3 × p² × (1−p)",
+            "= 3 × 0.35² × 0.65",
+            "= 3 × 0.1225 × 0.65",
+            "= 3 × 0.07963 = 0.239"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the probability that Ali wins at least 1 of the 3 games.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "0.725",
+          "tolerance": 0.001,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(at least 1) = 1 − P(none)" },
+            { "mark": "M1", "desc": "P(none) = 0.65³ = 0.2746..." },
+            { "mark": "A1", "desc": "1 − 0.275 = 0.725" }
+          ],
+          "workingSteps": [
+            "P(no wins) = 0.65³ = 0.274625",
+            "P(at least 1 win) = 1 − 0.275 = 0.725"
+          ]
+        }
+      ]
+    }
+  ]
 }

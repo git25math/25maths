@@ -6,10 +6,176 @@
   "tier": "Extended",
   "domain": "probability",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 25,
+  "questions": [
+    {
+      "id": "E8-03-Q1",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A bag contains 5 red balls and 3 blue balls.\nTwo balls are taken at random without replacement.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the tree diagram showing the probabilities.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": ["5/8", "3/8", "4/7", "3/7", "5/7", "2/7"],
+          "markScheme": [
+            { "mark": "B1", "desc": "First pick: 5/8 (R), 3/8 (B)" },
+            { "mark": "B1", "desc": "Second pick: R→R 4/7, R→B 3/7; B→R 5/7, B→B 2/7" }
+          ],
+          "workingSteps": [
+            "Without replacement: after picking R, 4R and 3B remain (7 total)",
+            "After picking B, 5R and 2B remain (7 total)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the probability that both balls are the same colour.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "13/28",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(RR) = 5/8 × 4/7 = 20/56" },
+            { "mark": "M1", "desc": "P(BB) = 3/8 × 2/7 = 6/56" },
+            { "mark": "M1", "desc": "P(same) = 20/56 + 6/56" },
+            { "mark": "A1", "desc": "26/56 = 13/28" }
+          ],
+          "workingSteps": [
+            "P(RR) = 5/8 × 4/7 = 20/56",
+            "P(BB) = 3/8 × 2/7 = 6/56",
+            "P(same) = 20/56 + 6/56 = 26/56 = 13/28"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the probability that at least one ball is red.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "25/28",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(at least one R) = 1 − P(BB)" },
+            { "mark": "M1", "desc": "P(BB) = 3/8 × 2/7 = 6/56 = 3/28" },
+            { "mark": "M1", "desc": "1 − 3/28" },
+            { "mark": "A1", "desc": "25/28" }
+          ],
+          "workingSteps": [
+            "P(no red) = P(BB) = 3/8 × 2/7 = 6/56 = 3/28",
+            "P(at least one red) = 1 − 3/28 = 25/28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-03-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "The probability that it rains on any day is 0.3, independently.\nFind the probability that in a 3-day period:",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "it rains on all 3 days.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.027",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "0.3 × 0.3 × 0.3" },
+            { "mark": "A1", "desc": "0.027" }
+          ],
+          "workingSteps": ["P(RRR) = 0.3³ = 0.027"]
+        },
+        {
+          "label": "b",
+          "questionText": "it rains on exactly one day.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.441",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(one rain day) = 0.3 × 0.7 × 0.7 = 0.147" },
+            { "mark": "M1", "desc": "3 arrangements (RDD, DRD, DDR)" },
+            { "mark": "A1", "desc": "3 × 0.147 = 0.441" }
+          ],
+          "workingSteps": [
+            "P(rain exactly 1 day) = 3 × 0.3 × 0.7² = 3 × 0.147 = 0.441"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "it does not rain at all.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.343",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "0.7³ = 0.343" }
+          ],
+          "workingSteps": ["P(no rain) = 0.7³ = 0.343"]
+        },
+        {
+          "label": "d",
+          "questionText": "it rains on at least 2 days.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.216",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "1 − P(0 days) − P(1 day) = 1 − 0.343 − 0.441" },
+            { "mark": "A1", "desc": "0.216" }
+          ],
+          "workingSteps": [
+            "P(at least 2) = 1 − P(0) − P(1) = 1 − 0.343 − 0.441 = 0.216"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8-03-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Two fair dice are rolled. Find the probability that\n(a) the total is 7\n(b) the total is at least 10.",
+      "answerType": "fraction",
+      "correctAnswer": "1/6, 1/6",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(a) Pairs summing to 7: (1,6)(2,5)(3,4)(4,3)(5,2)(6,1) = 6 pairs" },
+        { "mark": "A1", "desc": "6/36 = 1/6" },
+        { "mark": "M1", "desc": "(b) Pairs with total ≥ 10: (4,6)(5,5)(5,6)(6,4)(6,5)(6,6) = 6 pairs" },
+        { "mark": "A1", "desc": "6/36 = 1/6" }
+      ],
+      "workingSteps": [
+        "Total outcomes = 6 × 6 = 36",
+        "(a) Sum = 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) → 6/36 = 1/6",
+        "(b) Sum ≥ 10: (4,6),(5,5),(5,6),(6,4),(6,5),(6,6) → 6/36 = 1/6"
+      ],
+      "explanation": "List all favourable outcomes systematically from the 6×6 grid."
+    }
+  ]
 }

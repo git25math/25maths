@@ -6,10 +6,214 @@
   "tier": "Core",
   "domain": "probability",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 16,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "C8-02-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "A biased coin is tossed 200 times. It lands on heads 130 times.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the relative frequency of heads.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "0.65",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "130/200"
+            },
+            {
+              "mark": "A1",
+              "desc": "0.65 or 13/20"
+            }
+          ],
+          "workingSteps": [
+            "Relative frequency = 130/200 = 0.65"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The coin is tossed 500 more times.\nEstimate the number of heads.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "325",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "500 × their 0.65"
+            },
+            {
+              "mark": "A1",
+              "desc": "325"
+            }
+          ],
+          "workingSteps": [
+            "Expected heads = 500 × 0.65 = 325"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Explain why the relative frequency is used instead of 0.5.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The coin is biased so P(H) ≠ 0.5",
+          "markScheme": [
+            {
+              "mark": "E1",
+              "desc": "The coin is biased / not fair oe"
+            }
+          ],
+          "workingSteps": []
+        },
+        {
+          "label": "d",
+          "questionText": "Another student tosses the same coin 1000 times and gets 640 heads.\nWhose estimate of the probability of heads is more reliable? Give a reason.",
+          "marks": 3,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The student with 1000 tosses, because more trials give a better estimate",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "The student with 1000 tosses"
+            },
+            {
+              "mark": "E1",
+              "desc": "More trials / larger sample"
+            },
+            {
+              "mark": "E1",
+              "desc": "Gives more reliable / accurate estimate oe"
+            }
+          ],
+          "workingSteps": [
+            "1000 tosses gives relative frequency = 640/1000 = 0.64",
+            "More trials → relative frequency closer to true probability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C8-02-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A dice is rolled 60 times. The results are shown in the table.\n\n| Score | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| Frequency | 8 | 12 | 9 | 11 | 10 | 10 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the relative frequency of scoring a 2.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "12/60 or 1/5 or 0.2"
+            }
+          ],
+          "workingSteps": [
+            "Relative frequency = 12/60 = 1/5"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Do you think this dice is fair? Give a reason for your answer.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "Yes, the frequencies are roughly equal",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Yes (accept No with valid justification)"
+            },
+            {
+              "mark": "E1",
+              "desc": "Frequencies are roughly equal / close to 10 each oe"
+            }
+          ],
+          "workingSteps": [
+            "Expected frequency for fair dice = 60/6 = 10 each",
+            "All frequencies are close to 10, so likely fair"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The dice is rolled 300 more times.\nEstimate the total number of times a 6 is scored in all 360 rolls.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "60",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "360 × (10/60) or 360 × 1/6"
+            },
+            {
+              "mark": "A1",
+              "desc": "60"
+            }
+          ],
+          "workingSteps": [
+            "Relative frequency of 6 = 10/60 = 1/6",
+            "Expected in 360 rolls = 360 × 1/6 = 60"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C8-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A factory produces light bulbs. In a sample of 400, 12 are defective.\n(a) Calculate the relative frequency of a defective bulb.\n(b) The factory produces 10 000 bulbs. Estimate the number that are defective.",
+      "answerType": "numeric",
+      "correctAnswer": "0.03, 300",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "(a) 12/400 = 0.03"
+        },
+        {
+          "mark": "M1",
+          "desc": "(b) 10000 × 0.03"
+        },
+        {
+          "mark": "A1",
+          "desc": "300"
+        }
+      ],
+      "workingSteps": [
+        "(a) Relative frequency = 12/400 = 0.03",
+        "(b) Expected defective = 10000 × 0.03 = 300"
+      ],
+      "explanation": "Use relative frequency as an estimate of probability for large samples."
+    }
+  ]
 }
