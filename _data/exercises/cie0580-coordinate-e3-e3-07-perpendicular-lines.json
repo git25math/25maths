@@ -6,10 +6,197 @@
   "tier": "Extended",
   "domain": "coordinate",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "E3-07-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Line L has equation $y = 2x + 1$.\nFind the equation of the line perpendicular to L that passes through (4, 3).",
+      "answerType": "expression",
+      "correctAnswer": "y = −x/2 + 5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Perpendicular gradient = −1/2"
+        },
+        {
+          "mark": "M1",
+          "desc": "3 = −½(4) + c → c = 5"
+        },
+        {
+          "mark": "A1",
+          "desc": "y = −x/2 + 5"
+        }
+      ],
+      "workingSteps": [
+        "L gradient = 2, perpendicular gradient = −1/2",
+        "y = −x/2 + c, (4,3): 3 = −2 + c, c = 5",
+        "y = −x/2 + 5"
+      ],
+      "explanation": "Perpendicular gradients multiply to −1."
+    },
+    {
+      "id": "E3-07-Q2",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "hard",
+      "context": "A(2, 1) and B(6, 9) are two points.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the gradient of AB.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(9−1)/(6−2) = 8/4"
+            },
+            {
+              "mark": "A1",
+              "desc": "2"
+            }
+          ],
+          "workingSteps": [
+            "m = 8/4 = 2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the midpoint M of AB.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(4, 5)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "x = 4"
+            },
+            {
+              "mark": "B1",
+              "desc": "y = 5"
+            }
+          ],
+          "workingSteps": [
+            "M = ((2+6)/2, (1+9)/2) = (4, 5)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the equation of the perpendicular bisector of AB.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "y = −x/2 + 7",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Perp gradient = −1/2"
+            },
+            {
+              "mark": "M1",
+              "desc": "Through M(4,5): 5 = −2 + c, c = 7"
+            },
+            {
+              "mark": "A1",
+              "desc": "y = −x/2 + 7"
+            }
+          ],
+          "workingSteps": [
+            "Perp gradient = −1/2",
+            "y = −x/2 + c, (4,5): 5 = −2 + c, c = 7",
+            "y = −x/2 + 7"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "The perpendicular bisector meets the x-axis at point P.\nFind the coordinates of P.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(14, 0)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "0 = −x/2 + 7 → x = 14"
+            },
+            {
+              "mark": "A1",
+              "desc": "P = (14, 0)"
+            }
+          ],
+          "workingSteps": [
+            "y = 0: 0 = −x/2 + 7, x/2 = 7, x = 14",
+            "P = (14, 0)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E3-07-Q3",
+      "type": "short-answer",
+      "totalMarks": 6,
+      "commandWord": "show",
+      "difficulty": "hard",
+      "questionText": "The lines $y = 2x$, $y = -\\frac{x}{2} + 5$ and $y = 3$ form a triangle.\n(a) Show that one angle of the triangle is 90°.\n(b) Find the area of the triangle.",
+      "answerType": "show-that",
+      "correctAnswer": "Area = 1.25",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Gradients: 2 and −1/2"
+        },
+        {
+          "mark": "A1",
+          "desc": "Product = 2 × (−1/2) = −1, so perpendicular at their intersection"
+        },
+        {
+          "mark": "M1",
+          "desc": "Intersection of y=2x and y=3: (1.5, 3)"
+        },
+        {
+          "mark": "M1",
+          "desc": "Intersection of y=−x/2+5 and y=3: (4, 3)"
+        },
+        {
+          "mark": "M1",
+          "desc": "Base = 4 − 1.5 = 2.5, height = 4 − 3 = 1"
+        },
+        {
+          "mark": "A1",
+          "desc": "Area = ½ × 2.5 × 1 = 1.25"
+        }
+      ],
+      "workingSteps": [
+        "Gradients of y=2x and y=−x/2+5: 2 × (−1/2) = −1 → perpendicular → right angle",
+        "Intersection of y=2x and y=−x/2+5: 2x = −x/2+5, 5x/2=5, x=2, y=4 → (2,4)",
+        "Intersection of y=2x and y=3: x=1.5 → (1.5, 3)",
+        "Intersection of y=−x/2+5 and y=3: x=4 → (4, 3)",
+        "Base on y=3: 4−1.5=2.5, height from (2,4) to y=3: 1",
+        "Area = ½ × 2.5 × 1 = 1.25"
+      ],
+      "explanation": "Two lines are perpendicular if product of gradients = −1."
+    }
+  ]
 }

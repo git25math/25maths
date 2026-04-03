@@ -1,15 +1,207 @@
 {
-  "topic": "drawing linear graphs",
+  "topic": "Drawing linear graphs",
   "board": "CIE 0580",
   "subtopicId": "cie0580:coordinate-c3:c3-02-drawing-linear-graphs",
   "syllabusCode": "C3-02",
   "tier": "Core",
   "domain": "coordinate",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 13,
+  "estimatedMinutes": 15,
+  "questions": [
+    {
+      "id": "C3-02-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "easy",
+      "context": "Complete the table for $y = 2x + 1$.\n\n| x | −2 | −1 | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|---|---|\n| y | | | | | | |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the table of values.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": [
+            -3,
+            -1,
+            1,
+            3,
+            5,
+            7
+          ],
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "At least 4 correct"
+            },
+            {
+              "mark": "B1",
+              "desc": "All 6 correct"
+            }
+          ],
+          "workingSteps": [
+            "x=−2: y=−3, x=−1: y=−1, x=0: y=1, x=1: y=3, x=2: y=5, x=3: y=7"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Draw the graph of $y = 2x + 1$ for $-2 \\leq x \\leq 3$.",
+          "marks": 2,
+          "commandWord": "plot",
+          "answerType": "draw",
+          "correctAnswer": "Straight line through plotted points",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Points correctly plotted"
+            },
+            {
+              "mark": "B1",
+              "desc": "Straight line drawn through all points"
+            }
+          ],
+          "workingSteps": [
+            "Plot the 6 points and draw a straight line through them"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Use your graph to find the value of $x$ when $y = 4$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "1.5",
+          "tolerance": 0.1,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "1.5 ± 0.1"
+            }
+          ],
+          "workingSteps": [
+            "Read from graph: when y = 4, x = 1.5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3-02-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "The line $y = 3 - x$ and the line $y = x + 1$ are drawn on the same grid.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the table for $y = 3 - x$.\n\n| x | −1 | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|---|\n| y | | | | | |",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": [
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "At least 3 correct"
+            },
+            {
+              "mark": "B1",
+              "desc": "All 5 correct"
+            }
+          ],
+          "workingSteps": [
+            "x=−1: y=4, x=0: y=3, x=1: y=2, x=2: y=1, x=3: y=0"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the coordinates where the two lines intersect.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "coordinate",
+          "correctAnswer": "(1, 2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "3−x = x+1 → 2 = 2x → x = 1"
+            },
+            {
+              "mark": "A1",
+              "desc": "(1, 2)"
+            }
+          ],
+          "workingSteps": [
+            "3 − x = x + 1",
+            "2 = 2x",
+            "x = 1, y = 2",
+            "Intersection at (1, 2)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the y-intercept of $y = 3 - x$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "3 or (0, 3)"
+            }
+          ],
+          "workingSteps": [
+            "When x = 0, y = 3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A straight line passes through the points (0, 5) and (3, 5).\n(a) Write down the equation of this line.\n(b) What can you say about this line?",
+      "answerType": "expression",
+      "correctAnswer": "y = 5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "(a) y = 5"
+        },
+        {
+          "mark": "B1",
+          "desc": "(b) Horizontal line"
+        },
+        {
+          "mark": "B1",
+          "desc": "Gradient = 0"
+        }
+      ],
+      "workingSteps": [
+        "All y-values are 5, so the equation is y = 5",
+        "It is a horizontal line with gradient 0"
+      ],
+      "explanation": "A horizontal line has equation y = constant."
+    }
+  ]
 }

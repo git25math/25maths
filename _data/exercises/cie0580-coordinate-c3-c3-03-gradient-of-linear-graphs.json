@@ -6,10 +6,182 @@
   "tier": "Core",
   "domain": "coordinate",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 15,
+  "questions": [
+    {
+      "id": "C3-03-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Find the gradient of the line passing through (1, 3) and (5, 11).",
+      "answerType": "integer",
+      "correctAnswer": "2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "(11−3)/(5−1) = 8/4"
+        },
+        {
+          "mark": "A1",
+          "desc": "2"
+        }
+      ],
+      "workingSteps": [
+        "Gradient = (y₂−y₁)/(x₂−x₁) = (11−3)/(5−1) = 8/4 = 2"
+      ],
+      "explanation": "Gradient = rise/run."
+    },
+    {
+      "id": "C3-03-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "A line has equation $y = 3x - 7$.\n(a) Write down the gradient.\n(b) Write down the y-intercept.\n(c) Does the point (4, 5) lie on this line?",
+      "answerType": "numeric",
+      "correctAnswer": "3, −7, yes",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "(a) 3"
+        },
+        {
+          "mark": "B1",
+          "desc": "(b) −7"
+        },
+        {
+          "mark": "B1",
+          "desc": "(c) Yes: 3(4)−7 = 5 ✓"
+        }
+      ],
+      "workingSteps": [
+        "(a) gradient = 3 (coefficient of x)",
+        "(b) y-intercept = −7",
+        "(c) When x=4: y = 12−7 = 5. Yes, (4,5) lies on the line."
+      ],
+      "explanation": "For y = mx + c: m is gradient, c is y-intercept."
+    },
+    {
+      "id": "C3-03-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "Line L passes through (0, 2) and (6, 5).",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the gradient of line L.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(5−2)/(6−0) = 3/6"
+            },
+            {
+              "mark": "A1",
+              "desc": "1/2"
+            }
+          ],
+          "workingSteps": [
+            "Gradient = (5−2)/(6−0) = 3/6 = 1/2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the equation of line L.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "y = x/2 + 2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "y = ½x + 2 or y = 0.5x + 2"
+            }
+          ],
+          "workingSteps": [
+            "y = mx + c = ½x + 2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "A second line is parallel to L and passes through (0, −1).\nWrite down the equation of this line.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "y = x/2 − 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Gradient = ½ (parallel → same gradient)"
+            },
+            {
+              "mark": "B1",
+              "desc": "y = ½x − 1"
+            }
+          ],
+          "workingSteps": [
+            "Parallel → same gradient = ½",
+            "Passes through (0, −1) → c = −1",
+            "y = ½x − 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3-03-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The line joining (2, k) and (6, 3k) has gradient 2.\nFind the value of k.",
+      "answerType": "integer",
+      "correctAnswer": "2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "(3k − k)/(6 − 2) = 2"
+        },
+        {
+          "mark": "M1",
+          "desc": "2k/4 = 2"
+        },
+        {
+          "mark": "M1",
+          "desc": "2k = 8"
+        },
+        {
+          "mark": "A1",
+          "desc": "k = 4"
+        }
+      ],
+      "workingSteps": [
+        "Gradient = (3k − k)/(6 − 2) = 2k/4 = k/2",
+        "k/2 = 2",
+        "k = 4"
+      ],
+      "explanation": "Set up gradient formula = given gradient and solve for k."
+    }
+  ]
 }

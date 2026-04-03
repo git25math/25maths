@@ -6,10 +6,175 @@
   "tier": "Core",
   "domain": "coordinate",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 15,
+  "questions": [
+    {
+      "id": "C3-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the coordinates of the midpoint of the line segment joining (2, 6) and (8, 10).",
+      "answerType": "coordinate",
+      "correctAnswer": "(5, 8)",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "x = (2+8)/2 = 5"
+        },
+        {
+          "mark": "B1",
+          "desc": "y = (6+10)/2 = 8"
+        }
+      ],
+      "workingSteps": [
+        "Midpoint = ((2+8)/2, (6+10)/2) = (5, 8)"
+      ],
+      "explanation": "Midpoint = average of x-coords and average of y-coords."
+    },
+    {
+      "id": "C3-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Plot the points A(1, 3), B(5, 3), C(5, 7) and D(1, 7).\nWhat shape is ABCD?",
+      "answerType": "explain",
+      "correctAnswer": "Square",
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "All 4 points correctly plotted"
+        },
+        {
+          "mark": "B1",
+          "desc": "Square"
+        }
+      ],
+      "workingSteps": [
+        "AB = 4, BC = 4, all sides equal, all angles 90° → square"
+      ],
+      "explanation": "Check side lengths and angles."
+    },
+    {
+      "id": "C3-01-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A triangle has vertices at P(1, 1), Q(7, 1) and R(4, 5).",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the length PQ.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "7 − 1 = 6"
+            }
+          ],
+          "workingSteps": [
+            "PQ = 7 − 1 = 6 (horizontal line)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the midpoint of PQ.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(4, 1)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "(4, 1)"
+            }
+          ],
+          "workingSteps": [
+            "Midpoint = ((1+7)/2, (1+1)/2) = (4, 1)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that the triangle is isosceles.",
+          "marks": 4,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "PR = QR = 5",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "PR² = (4−1)² + (5−1)² = 9+16 = 25"
+            },
+            {
+              "mark": "A1",
+              "desc": "PR = 5"
+            },
+            {
+              "mark": "M1",
+              "desc": "QR² = (7−4)² + (1−5)² = 9+16 = 25"
+            },
+            {
+              "mark": "A1",
+              "desc": "QR = 5, so PR = QR, isosceles"
+            }
+          ],
+          "workingSteps": [
+            "PR² = 3² + 4² = 25, PR = 5",
+            "QR² = 3² + 4² = 25, QR = 5",
+            "PR = QR = 5, so isosceles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3-01-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The points A(−2, 3) and B(4, −1) are the ends of a diameter of a circle.\n(a) Find the coordinates of the centre of the circle.\n(b) Find the radius of the circle.",
+      "answerType": "coordinate",
+      "correctAnswer": "(1, 1), √13",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "(a) Centre = ((−2+4)/2, (3−1)/2) = (1, 1)"
+        },
+        {
+          "mark": "M1",
+          "desc": "(b) r² = (4−1)² + (−1−1)² = 9+4"
+        },
+        {
+          "mark": "M1",
+          "desc": "r² = 13"
+        },
+        {
+          "mark": "A1",
+          "desc": "r = √13 = 3.61"
+        }
+      ],
+      "workingSteps": [
+        "(a) Centre = midpoint = (1, 1)",
+        "(b) r = distance from centre to A = √(3²+2²) = √13 = 3.61"
+      ],
+      "explanation": "Centre of circle = midpoint of diameter. Radius = half the diameter."
+    }
+  ]
 }

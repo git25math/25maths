@@ -6,10 +6,171 @@
   "tier": "Extended",
   "domain": "coordinate",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 16,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "E3-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate the distance between A(2, 3) and B(8, 11).",
+      "answerType": "integer",
+      "correctAnswer": "10",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "(8−2)² + (11−3)² = 36 + 64"
+        },
+        {
+          "mark": "M1",
+          "desc": "√100"
+        },
+        {
+          "mark": "A1",
+          "desc": "10"
+        }
+      ],
+      "workingSteps": [
+        "AB² = 6² + 8² = 36 + 64 = 100",
+        "AB = 10"
+      ],
+      "explanation": "Distance formula = Pythagoras on coordinates."
+    },
+    {
+      "id": "E3-04-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "M(3, 5) is the midpoint of line segment PQ where P is (−1, 2).",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the coordinates of Q.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(7, 8)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(−1+x)/2 = 3 → x = 7"
+            },
+            {
+              "mark": "M1",
+              "desc": "(2+y)/2 = 5 → y = 8"
+            },
+            {
+              "mark": "A1",
+              "desc": "Q = (7, 8)"
+            }
+          ],
+          "workingSteps": [
+            "(−1 + x)/2 = 3 → x = 7",
+            "(2 + y)/2 = 5 → y = 8",
+            "Q = (7, 8)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the length PQ.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "10",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "PQ² = (7−(−1))² + (8−2)² = 64 + 36"
+            },
+            {
+              "mark": "M1",
+              "desc": "√100"
+            },
+            {
+              "mark": "A1",
+              "desc": "10"
+            }
+          ],
+          "workingSteps": [
+            "PQ² = 8² + 6² = 64 + 36 = 100",
+            "PQ = 10"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Hence write down the distance PM.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "5 (half of 10)"
+            }
+          ],
+          "workingSteps": [
+            "PM = PQ/2 = 10/2 = 5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E3-04-Q3",
+      "type": "short-answer",
+      "totalMarks": 6,
+      "commandWord": "show",
+      "difficulty": "hard",
+      "questionText": "Show that the triangle with vertices A(1, 1), B(4, 5) and C(8, 2) is isosceles.\nState which two sides are equal.",
+      "answerType": "show-that",
+      "correctAnswer": "AB = BC = 5",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "AB² = 3² + 4² = 25, AB = 5"
+        },
+        {
+          "mark": "M1",
+          "desc": "BC² = 4² + 3² = 25, BC = 5"
+        },
+        {
+          "mark": "M1",
+          "desc": "AC² = 7² + 1² = 50, AC = √50"
+        },
+        {
+          "mark": "A1",
+          "desc": "AB = BC = 5"
+        },
+        {
+          "mark": "A1",
+          "desc": "AB and BC are equal"
+        },
+        {
+          "mark": "B1",
+          "desc": "Therefore isosceles"
+        }
+      ],
+      "workingSteps": [
+        "AB² = (4−1)² + (5−1)² = 9 + 16 = 25, AB = 5",
+        "BC² = (8−4)² + (2−5)² = 16 + 9 = 25, BC = 5",
+        "AC² = (8−1)² + (2−1)² = 49 + 1 = 50, AC = √50 ≈ 7.07",
+        "AB = BC = 5, so triangle is isosceles"
+      ],
+      "explanation": "Calculate all three side lengths and identify which two are equal."
+    }
+  ]
 }

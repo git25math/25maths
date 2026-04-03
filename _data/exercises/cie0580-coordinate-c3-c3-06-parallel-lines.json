@@ -6,10 +6,153 @@
   "tier": "Core",
   "domain": "coordinate",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 12,
+  "estimatedMinutes": 13,
+  "questions": [
+    {
+      "id": "C3-06-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "explain",
+      "difficulty": "easy",
+      "questionText": "Explain how you can tell from their equations that $y = 3x + 2$ and $y = 3x - 5$ are parallel.",
+      "answerType": "explain",
+      "correctAnswer": "Same gradient (3)",
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "Both have gradient 3"
+        },
+        {
+          "mark": "B1",
+          "desc": "Parallel lines have equal gradients"
+        }
+      ],
+      "workingSteps": [
+        "Both lines have gradient 3",
+        "Lines with equal gradients are parallel"
+      ],
+      "explanation": "Parallel lines have the same gradient but different y-intercepts."
+    },
+    {
+      "id": "C3-06-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Line L has equation $y = 4x + 1$.\nFind the equation of the line parallel to L that passes through (3, 5).",
+      "answerType": "expression",
+      "correctAnswer": "y = 4x − 7",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Parallel → gradient = 4"
+        },
+        {
+          "mark": "M1",
+          "desc": "5 = 4(3) + c → c = −7"
+        },
+        {
+          "mark": "A1",
+          "desc": "y = 4x − 7"
+        }
+      ],
+      "workingSteps": [
+        "Parallel → same gradient = 4",
+        "y = 4x + c, sub (3,5): 5 = 12 + c, c = −7",
+        "y = 4x − 7"
+      ],
+      "explanation": "Parallel means same gradient, then use the point to find c."
+    },
+    {
+      "id": "C3-06-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A(2, 1), B(6, 3) and C(4, 7) are three vertices of a parallelogram ABCD.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the gradient of AB.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(3−1)/(6−2)"
+            },
+            {
+              "mark": "A1",
+              "desc": "2/4 = 1/2"
+            }
+          ],
+          "workingSteps": [
+            "Gradient AB = (3−1)/(6−2) = 2/4 = 1/2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the equation of the line through C parallel to AB.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "y = x/2 + 5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Gradient = 1/2 (parallel to AB)"
+            },
+            {
+              "mark": "M1",
+              "desc": "7 = ½(4) + c → c = 5"
+            },
+            {
+              "mark": "A1",
+              "desc": "y = ½x + 5"
+            }
+          ],
+          "workingSteps": [
+            "Parallel to AB → gradient = 1/2",
+            "y = ½x + c, sub C(4,7): 7 = 2 + c, c = 5",
+            "y = ½x + 5"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the coordinates of D.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(0, 5)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "D = A + C − B or vector method"
+            },
+            {
+              "mark": "A1",
+              "desc": "(0, 5)"
+            }
+          ],
+          "workingSteps": [
+            "In parallelogram ABCD: D = A + C − B = (2+4−6, 1+7−3) = (0, 5)"
+          ]
+        }
+      ]
+    }
+  ]
 }
