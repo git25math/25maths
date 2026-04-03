@@ -1,154 +1,185 @@
 {
-  "topic": "units of measure",
+  "topic": "Units of measure",
   "board": "CIE 0580",
   "subtopicId": "cie0580:mensuration-c5:c5-01-units-of-measure",
   "syllabusCode": "C5-01",
   "tier": "Core",
   "domain": "mensuration",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": null,
+  "totalMarks": 14,
+  "estimatedMinutes": 15,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "Convert 3.5 metres to centimetres.",
-      "options": [
-        "35 cm",
-        "350 cm",
-        "0.35 cm",
-        "3500 cm"
+      "id": "C5-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Convert 3.5 km to metres.",
+      "answerType": "integer",
+      "correctAnswer": "3500",
+      "tolerance": null,
+      "unit": "m",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "3.5 × 1000"
+        },
+        {
+          "mark": "A1",
+          "desc": "3500"
+        }
       ],
-      "correctAnswer": 1,
-      "explanation": "To convert metres to centimetres, multiply by 100. So, 3.5 $m = 3.5$ × 100 = 350 cm."
+      "workingSteps": [
+        "3.5 km = 3.5 × 1000 = 3500 m"
+      ],
+      "explanation": "1 km = 1000 m."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "Convert 4200 millimetres to metres.",
-      "options": [
-        "420 m",
-        "42 m",
-        "4.2 m",
-        "0.42 m"
+      "id": "C5-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Convert 45 000 cm² to m².",
+      "answerType": "numeric",
+      "correctAnswer": "4.5",
+      "tolerance": null,
+      "unit": "m²",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "÷ 10000 (since 1m² = 10000cm²)"
+        },
+        {
+          "mark": "A1",
+          "desc": "4.5"
+        }
       ],
-      "correctAnswer": 2,
-      "explanation": "To convert millimetres to metres, divide by 1000. So, 4200 mm = 4200 ÷ 1000 = 4.2 m."
+      "workingSteps": [
+        "1 m² = 100 × 100 = 10000 cm²",
+        "45000 ÷ 10000 = 4.5 m²"
+      ],
+      "explanation": "For area, multiply the conversion factor by itself."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "Convert 2.8 kilograms to grams.",
-      "options": [
-        "280 g",
-        "28 g",
-        "28000 g",
-        "2800 g"
-      ],
-      "correctAnswer": 3,
-      "explanation": "To convert kilograms to grams, multiply by 1000. So, 2.8 kg = 2.8 × 1000 = 2800 g."
+      "id": "C5-01-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A field has area 2.4 hectares.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Convert 2.4 hectares to m².",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "24000",
+          "tolerance": null,
+          "unit": "m²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "2.4 × 10000"
+            },
+            {
+              "mark": "A1",
+              "desc": "24000"
+            }
+          ],
+          "workingSteps": [
+            "1 hectare = 10000 m²",
+            "2.4 × 10000 = 24000 m²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The field is rectangular with width 120 m.\nCalculate the length.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "200",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "24000 ÷ 120"
+            },
+            {
+              "mark": "A1",
+              "desc": "200"
+            }
+          ],
+          "workingSteps": [
+            "Length = area ÷ width = 24000 ÷ 120 = 200 m"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Convert the area to km².",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.024",
+          "tolerance": null,
+          "unit": "km²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "24000 ÷ 1000000 or 2.4 ÷ 100"
+            },
+            {
+              "mark": "A1",
+              "desc": "0.024"
+            }
+          ],
+          "workingSteps": [
+            "1 km² = 1000000 m²",
+            "24000 ÷ 1000000 = 0.024 km²"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "Convert 750 millilitres to litres.",
-      "options": [
-        "0.75 litres",
-        "7.5 litres",
-        "75 litres",
-        "0.075 litres"
+      "id": "C5-01-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A container holds 2.5 litres of water.\nThe water is poured into small cups, each holding 125 ml.\nCalculate the number of cups that can be filled.",
+      "answerType": "integer",
+      "correctAnswer": "20",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "2.5 litres = 2500 ml"
+        },
+        {
+          "mark": "M1",
+          "desc": "2500 ÷ 125"
+        },
+        {
+          "mark": "A1",
+          "desc": "20"
+        },
+        {
+          "mark": "B1",
+          "desc": "Correct unit conversion shown"
+        }
       ],
-      "correctAnswer": 0,
-      "explanation": "To convert millilitres to litres, divide by 1000. So, 750 ml = 750 ÷ 1000 = 0.75 litres."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Convert 0.06 kilometres to metres.",
-      "options": [
-        "6 m",
-        "600 m",
-        "60 m",
-        "0.6 m"
+      "workingSteps": [
+        "2.5 litres = 2500 ml",
+        "2500 ÷ 125 = 20 cups"
       ],
-      "correctAnswer": 2,
-      "explanation": "To convert kilometres to metres, multiply by 1000. So, 0.06 km = 0.06 × 1000 = 60 m."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Convert 5.4 $\\text{m}^2$ to $\\text{cm}^2$.",
-      "options": [
-        "540 $\\text{cm}^2$",
-        "5400 $\\text{cm}^2$",
-        "54000 $\\text{cm}^2$",
-        "54 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "To convert square metres to square centimetres, you must multiply by $100^2$. So, 5.4 $\\text{m}^2$ = 5.4 × 100 × 100 = 54000 $\\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Convert 320,000 $\\text{cm}^3$ to $\\text{m}^3$.",
-      "options": [
-        "32 $\\text{m}^3$",
-        "3.2 $\\text{m}^3$",
-        "0.32 $\\text{m}^3$",
-        "0.032 $\\text{m}^3$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "To convert cubic centimetres to cubic metres, you must divide by $100^3$. So, 320,000 $\\text{cm}^3$ = 320,000 ÷ (100 × 100 × 100) = 0.32 $\\text{m}^3$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Convert 2 hours and 35 minutes into minutes.",
-      "options": [
-        "155 minutes",
-        "235 minutes",
-        "145 minutes",
-        "57 minutes"
-      ],
-      "correctAnswer": 0,
-      "explanation": "First, convert the hours to minutes: 2 hours × 60 minutes/hour = 120 minutes. Then, add the remaining minutes: 120 + 35 = 155 minutes."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A car travels 150 km in 2.5 hours. Find the average speed in km/h.",
-      "options": [
-        "375 km/h",
-        "60 km/h",
-        "50 km/h",
-        "65 km/h"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Average speed is calculated by dividing the total distance by the total time. Speed = 150 km / 2.5 h = 60 km/h."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Convert a speed of 72 km/h into m/s.",
-      "options": [
-        "25 m/s",
-        "20 m/s",
-        "1200 m/s",
-        "25.92 m/s"
-      ],
-      "correctAnswer": 1,
-      "explanation": "To convert km/h to m/s, multiply by 1000 (for metres) and divide by 3600 (for seconds). 72 km/h = (72 × 1000) / 3600 = 20 m/s."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A jug contains 2 litres of water. If 450 ml is poured out, how much water is left in the jug in ml?",
-      "options": [
-        "1550 ml",
-        "1.55 ml",
-        "1650 ml",
-        "2450 ml"
-      ],
-      "correctAnswer": 0,
-      "explanation": "First, convert the initial volume to millilitres: 2 litres = 2000 ml. Then, subtract the amount poured out: 2000 ml - 450 ml = 1550 ml."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Change 45 cents to dollars.",
-      "options": [
-        "$45",
-        "$4.50",
-        "$0.45",
-        "$0.045"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Since there are 100 cents in a dollar, divide the number of cents by 100 to convert to dollars. 45 ÷ 100 = $0.45."
+      "explanation": "1 litre = 1000 ml."
     }
   ]
 }

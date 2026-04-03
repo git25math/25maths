@@ -1,154 +1,231 @@
 {
-  "topic": "area and perimeter",
+  "topic": "Area and perimeter",
   "board": "CIE 0580",
   "subtopicId": "cie0580:mensuration-e5:e5-02-area-and-perimeter",
   "syllabusCode": "E5-02",
   "tier": "Extended",
   "domain": "mensuration",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": true,
+  "totalMarks": 20,
+  "estimatedMinutes": 22,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "Find the area of a trapezium with parallel sides 10 cm and 16 cm, and a perpendicular height of 8 cm.",
-      "options": [
-        "104 $\\text{cm}^2$",
-        "208 $\\text{cm}^2$",
-        "80 $\\text{cm}^2$",
-        "128 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The area of a trapezium is given by the formula Area = ($\\frac{1}{2}$) * (a + b) * h, where 'a' and 'b' are the lengths of the parallel sides and 'h' is the perpendicular height. So, Area = ($\\frac{1}{2}$) * (10 + 16) * 8 = 104 $\\text{cm}^2$."
+      "id": "E5-02-Q1",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A rectangular garden is 20 m long and 12 m wide.\nA circular pond of radius 3 m is in the centre.\nA path of width 1.5 m surrounds the garden.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the area of the garden excluding the pond.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "212",
+          "tolerance": 1,
+          "unit": "m²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Rectangle = 20 × 12 = 240"
+            },
+            {
+              "mark": "M1",
+              "desc": "Pond = π × 9 = 28.3"
+            },
+            {
+              "mark": "A1",
+              "desc": "240 − 28.3 = 212 m² (3sf)"
+            }
+          ],
+          "workingSteps": [
+            "Garden = 240 m²",
+            "Pond = π × 3² = 28.3 m²",
+            "Garden minus pond = 211.7 ≈ 212 m²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the area of the path.",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "102",
+          "tolerance": 1,
+          "unit": "m²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Outer dimensions: (20+3) × (12+3) = 23 × 15"
+            },
+            {
+              "mark": "M1",
+              "desc": "Outer area = 345"
+            },
+            {
+              "mark": "M1",
+              "desc": "Path area = 345 − 240"
+            },
+            {
+              "mark": "A1",
+              "desc": "105"
+            }
+          ],
+          "workingSteps": [
+            "Outer: (20+2×1.5) × (12+2×1.5) = 23 × 15 = 345 m²",
+            "Path = 345 − 240 = 105 m²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Gravel for the path costs $4.50 per m².\nCalculate the total cost of gravel.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "473",
+          "tolerance": 5,
+          "unit": "$",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "their path area × 4.50"
+            },
+            {
+              "mark": "A1",
+              "desc": "$473 (ft)"
+            },
+            {
+              "mark": "B1",
+              "desc": "Correct currency"
+            }
+          ],
+          "workingSteps": [
+            "Cost = 105 × 4.50 = $472.50 ≈ $473"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A kite has diagonals of length 14 cm and 20 cm. What is its area?",
-      "options": [
-        "280 $\\text{cm}^2$",
-        "70 $\\text{cm}^2$",
-        "140 $\\text{cm}^2$",
-        "34 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The area of a kite is calculated as half the product of its diagonals. Area = ($\\frac{1}{2}$) * d1 * d2 = ($\\frac{1}{2}$) * 14 * 20 = 140 $\\text{cm}^2$."
+      "id": "E5-02-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A rhombus has diagonals of length 10 cm and 24 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the area of the rhombus.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "120",
+          "tolerance": null,
+          "unit": "cm²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "½ × 10 × 24"
+            },
+            {
+              "mark": "A1",
+              "desc": "120"
+            }
+          ],
+          "workingSteps": [
+            "Area = ½ × d₁ × d₂ = ½ × 10 × 24 = 120 cm²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the length of one side of the rhombus.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "13",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Half diagonals: 5 and 12"
+            },
+            {
+              "mark": "M1",
+              "desc": "s² = 5² + 12² = 169"
+            },
+            {
+              "mark": "A1",
+              "desc": "13"
+            }
+          ],
+          "workingSteps": [
+            "Diagonals bisect at right angles: half-diags = 5 and 12",
+            "Side² = 5² + 12² = 25 + 144 = 169",
+            "Side = 13 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the perimeter of the rhombus.",
+          "marks": 1,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "52",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "4 × 13 = 52"
+            }
+          ],
+          "workingSteps": [
+            "Perimeter = 4 × 13 = 52 cm"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A parallelogram has an area of 96 $\\text{cm}^2$ and a base of 12 cm. What is its perpendicular height?",
-      "options": [
-        "1152 cm",
-        "8 cm",
-        "4 cm",
-        "12 cm"
+      "id": "E5-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "calculate",
+      "difficulty": "hard",
+      "questionText": "A regular hexagon has side length 6 cm.\nCalculate its area.\nGive your answer correct to 3 significant figures.",
+      "answerType": "numeric",
+      "correctAnswer": "93.5",
+      "tolerance": 0.1,
+      "unit": "cm²",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "6 equilateral triangles, each side 6"
+        },
+        {
+          "mark": "M1",
+          "desc": "Each triangle: ½ × 6 × 6 × sin60"
+        },
+        {
+          "mark": "M1",
+          "desc": "= 15.59"
+        },
+        {
+          "mark": "A1",
+          "desc": "6 × 15.59 = 93.5"
+        }
       ],
-      "correctAnswer": 1,
-      "explanation": "The area of a parallelogram is Area = base * height. To find the height, rearrange the formula: height = Area / base. So, height = $\\frac{96}{12}$ = 8 cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Calculate the perimeter of a semicircle with a radius of 7 cm. Use $\\pi$ = $\\frac{22}{7}$.",
-      "options": [
-        "22 cm",
-        "44 cm",
-        "49 cm",
-        "36 cm"
+      "workingSteps": [
+        "A regular hexagon = 6 equilateral triangles",
+        "Each: ½ × 6 × 6 × sin60° = 18 × (√3/2) = 9√3 = 15.59 cm²",
+        "Total = 6 × 15.59 = 93.5 cm²"
       ],
-      "correctAnswer": 3,
-      "explanation": "The perimeter of a semicircle consists of the curved arc ($\\pi r$) and the diameter (2r). Arc length = ($\\frac{22}{7}$) * 7 = 22 cm. Diameter = 2 * 7 = 14 cm. Total perimeter = 22 + 14 = 36 cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the area of a sector with a radius of 10 cm and an angle of 63 degrees. Give your answer in terms $of \\pi .$",
-      "options": [
-        "17.$5\\pi \\text{cm}^2$",
-        "$35\\pi \\text{cm}^2$",
-        "3.$5\\pi \\text{cm}^2$",
-        "$630\\pi \\text{cm}^2$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The area of a sector is given by ($\\theta/360$) * $\\pir^2$. So, Area = ($\\frac{63}{360}$) * $\\pi$ * $10^2$ = ($\\frac{7}{40}$) * $100\\pi$ = 17.$5\\pi \\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The perimeter of a rectangle is 54 cm. If its length is 15 cm, what is its width?",
-      "options": [
-        "39 cm",
-        "12 cm",
-        "24 cm",
-        "13.5 cm"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The formula for the perimeter of a rectangle is P = 2(l + w). Substitute the given values: 54 = 2(15 + w). Divide by 2: 27 = 15 + w. Subtract 15 to find the width: w = 12 cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A circle has an area of $49\\pi \\text{cm}^2$. What is its radius?",
-      "options": [
-        "49 cm",
-        "24.5 cm",
-        "7 cm",
-        "14 cm"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The area of a circle is A = $\\pir^2$. Given A = $49\\pi$, we have $\\pir^2$ = $49 \\pi .$ Dividing both sides $by \\pi gives r^2$ = 49. Taking the square root, the radius r = 7 cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A shape is formed by a rectangle and a triangle. The rectangle has dimensions 10m by 6m. The triangle is attached to one of the 6m sides and has a perpendicular height of 5m from that side. What is the total area of the shape?",
-      "options": [
-        "90 $\\text{m}^2$",
-        "60 $\\text{m}^2$",
-        "70 $\\text{m}^2$",
-        "75 $\\text{m}^2$"
-      ],
-      "correctAnswer": 3,
-      "explanation": "The total area is the sum of the area of the rectangle and the area of the triangle. Area of rectangle = 10 * 6 = 60 $\\text{m}^2$. Area of triangle = ($\\frac{1}{2}$) * base * height = ($\\frac{1}{2}$) * 6 * 5 = 15 $\\text{m}^2$. Total Area = 60 + 15 = 75 $\\text{m}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the area of the region between two concentric circles with radii 9 cm and 5 cm. Give your answer in terms $of \\pi .$",
-      "options": [
-        "$56\\pi \\text{cm}^2$",
-        "$4\\pi \\text{cm}^2$",
-        "$106\\pi \\text{cm}^2$",
-        "$16\\pi \\text{cm}^2$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The area of the region (annulus) is the area of the larger circle minus the area of the smaller circle: Area = $\\piR^2 - \\pir^2 = \\pi$($9^2 - 5^2$) = $\\pi$(81 - 25) = $56\\pi \\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A rhombus has a side length of 10 cm and one of its diagonals is 12 cm. What is its area?",
-      "options": [
-        "120 $\\text{cm}^2$",
-        "96 $\\text{cm}^2$",
-        "60 $\\text{cm}^2$",
-        "192 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The diagonals of a rhombus bisect at right angles. Using Pythagoras' theorem on a quadrant of the rhombus, half of the second diagonal is $\\sqrt{10^2 - 6^2}$ = 8 cm. So the full diagonal is 16 cm. The area is ($\\frac{1}{2}$) * d1 * d2 = ($\\frac{1}{2}$) * 12 * 16 = 96 $\\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The area of a trapezium is 120 $\\text{cm}^2$. Its parallel sides are 12 cm and 18 cm. Find the perpendicular distance between the parallel sides.",
-      "options": [
-        "4 cm",
-        "10 cm",
-        "8 cm",
-        "6.67 cm"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Use the formula Area = ($\\frac{1}{2}$)(a+b)h. We have 120 = ($\\frac{1}{2}$)(12 + 18)h. This simplifies to 120 = 15h. Dividing by 15 gives the height h = 8 cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A shape is made from a square of side 8 cm with four identical semicircles attached to each of its four sides. What is the perimeter of this new shape?",
-      "options": [
-        "$32 \\pi cm$",
-        "$8 \\pi cm$",
-        "$16\\pi$ + 32 cm",
-        "$16 \\pi cm$"
-      ],
-      "correctAnswer": 3,
-      "explanation": "The perimeter of the shape is formed by the four semicircular arcs. The internal sides of the square are not part of the perimeter. The diameter of each semicircle is 8 cm. The length of one arc is ($\\frac{1}{2}$)$\\pi d$ = ($\\frac{1}{2}$)$\\pi * 8 = 4 \\pi cm.$ Since there are four such arcs, the total perimeter is 4 * $4\\pi$ = $16 \\pi cm.$"
+      "explanation": "Split regular hexagon into 6 equilateral triangles."
     }
   ]
 }

@@ -1,154 +1,17 @@
 {
-  "topic": "vectors",
+  "topic": "Vectors",
   "board": "Edexcel 4MA1",
   "subtopicId": "edexcel-4ma1:vectors-f5:f5-01-vectors",
   "syllabusCode": "F5-01",
   "tier": "Foundation",
   "domain": "vectors",
-  "questions": [
-    {
-      "type": "multiple-choice",
-      "questionText": "Which of these quantities is a vector?",
-      "options": [
-        "Mass of 5 kg",
-        "Displacement of 10 m East",
-        "Time of 30 seconds",
-        "Temperature of 25°C"
-      ],
-      "correctAnswer": 1,
-      "explanation": "A vector quantity has both magnitude and direction. Displacement (10 m East) specifies both distance (magnitude) and direction."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "If $\\mathbf{a} = \\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$, calculate $\\mathbf{a} + \\mathbf{b}$.",
-      "options": [
-        "$\\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 1 \\\\ 5 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 3 \\\\ 5 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "To add vectors, add their corresponding components: $\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} 2+1 \\\\ 3+(-2) \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "If $\\mathbf{p} = \\begin{pmatrix} 5 \\\\ 0 \\end{pmatrix}$ and $\\mathbf{q} = \\begin{pmatrix} -2 \\\\ 4 \\end{pmatrix}$, calculate $\\mathbf{p} - \\mathbf{q}$.",
-      "options": [
-        "$\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 7 \\\\ -4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 7 \\\\ 4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "To subtract vectors, subtract their corresponding components: $\\mathbf{p} - \\mathbf{q} = \\begin{pmatrix} 5 - (-2) \\\\ 0 - 4 \\end{pmatrix} = \\begin{pmatrix} 7 \\\\ -4 \\end{pmatrix}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Given the vector $\\mathbf{v} = \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$, find $3\\mathbf{v}$.",
-      "options": [
-        "$\\begin{pmatrix} 7 \\\\ 2 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 12 \\\\ -1 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 12 \\\\ -3 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 4 \\\\ -3 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "To multiply a vector by a scalar, multiply each component by the scalar: $3\\mathbf{v} = 3 \\times \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 3 \\times 4 \\\\ 3 \\times (-1) \\end{pmatrix} = \\begin{pmatrix} 12 \\\\ -3 \\end{pmatrix}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "If $\\mathbf{x} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$ and $\\mathbf{y} = \\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$, calculate $2\\mathbf{x} + \\mathbf{y}$.",
-      "options": [
-        "$\\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 5 \\\\ 4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "First, calculate $2\\mathbf{x} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$. Then, $2\\mathbf{x} + \\mathbf{y} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} + \\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 2 + (-3) \\\\ 4 + 0 \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 4 \\end{pmatrix}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The coordinates of point A are (4, 7). Write down the position vector $\\vec{OA}$.",
-      "options": [
-        "$\\begin{pmatrix} 7 \\\\ 4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}$",
-        "$\\begin{pmatrix} -4 \\\\ -7 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 4 \\\\ -7 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The position vector $\\vec{OA}$ for a point A(x, y) is written as $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$. So for A(4, 7), $\\vec{OA} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Point P has position vector $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ and point Q has position vector $\\begin{pmatrix} 5 \\\\ 3 \\end{pmatrix}$. Find the vector $\\vec{PQ}$.",
-      "options": [
-        "$\\begin{pmatrix} 7 \\\\ 4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$",
-        "$\\begin{pmatrix} -3 \\\\ -2 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "To find the vector $\\vec{PQ}$, subtract the position vector of P from the position vector of Q: $\\vec{PQ} = \\vec{OQ} - \\vec{OP} = \\begin{pmatrix} 5 \\\\ 3 \\end{pmatrix} - \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 5-2 \\\\ 3-1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Which of the following vectors is parallel to $\\begin{pmatrix} 6 \\\\ -2 \\end{pmatrix}$?",
-      "options": [
-        "$\\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$",
-        "$\\begin{pmatrix} -12 \\\\ 4 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 6 \\\\ 2 \\end{pmatrix}$",
-        "$\\begin{pmatrix} 2 \\\\ -6 \\end{pmatrix}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Vectors are parallel if one is a scalar multiple of the other. $\\begin{pmatrix} -12 \\\\ 4 \\end{pmatrix} = -2 \\times \\begin{pmatrix} 6 \\\\ -2 \\end{pmatrix}$, so they are parallel."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the magnitude of the vector $\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}$.",
-      "options": [
-        "1",
-        "5",
-        "7",
-        "25"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The magnitude of a vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ is $\\sqrt{x^2 + y^2}$. So, for $\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}$, the magnitude is $\\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In a diagram, $\\vec{AB} = \\mathbf{a}$ and $\\vec{BC} = \\mathbf{b}$. Express $\\vec{AC}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
-      "options": [
-        "$\\mathbf{a} - \\mathbf{b}$",
-        "$\\mathbf{b} - \\mathbf{a}$",
-        "$\\mathbf{a} + \\mathbf{b}$",
-        "$2\\mathbf{a} + \\mathbf{b}$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "According to the triangle rule for vector addition, $\\vec{AC} = \\vec{AB} + \\vec{BC}$. Therefore, $\\vec{AC} = \\mathbf{a} + \\mathbf{b}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "O is the origin. A has position vector $\\mathbf{a}$ and B has position vector $\\mathbf{b}$. M is the midpoint of AB. Find $\\vec{OM}$.",
-      "options": [
-        "$\\mathbf{b} - \\mathbf{a}$",
-        "$\\frac{1}{2}(\\mathbf{b} - \\mathbf{a})$",
-        "$\\mathbf{a} + \\mathbf{b}$",
-        "$\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$"
-      ],
-      "correctAnswer": 3,
-      "explanation": "The position vector of the midpoint M of a line segment AB is the average of the position vectors of A and B. So, $\\vec{OM} = \\frac{1}{2}(\\vec{OA} + \\vec{OB}) = \\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "O is the origin. $\\vec{OA} = \\mathbf{a}$ and $\\vec{OB} = \\mathbf{b}$. Point P lies on AB such that AP:PB = 1:2. Find $\\vec{OP}$.",
-      "options": [
-        "$\\frac{1}{3}\\mathbf{a} + \\frac{2}{3}\\mathbf{b}$",
-        "$\\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b}$",
-        "$\\frac{1}{2}\\mathbf{a} + \\frac{1}{2}\\mathbf{b}$",
-        "$\\mathbf{a} + \\frac{1}{3}\\mathbf{b}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "If P divides AB in the ratio m:n, then $\\vec{OP} = \\frac{n\\vec{OA} + m\\vec{OB}}{m+n}$. Here, $m = 1$, $n = 2$, so $\\vec{OP} = \\frac{2\\mathbf{a} + 1\\mathbf{b}}{1+2} = \\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b}$."
-    }
-  ]
+  "schemaVersion": 2,
+  "status": "coming_soon",
+  "paperType": "mixed",
+  "calculator": true,
+  "totalMarks": 0,
+  "estimatedMinutes": 0,
+  "questions": [],
+  "_higherOnly": true,
+  "_note": "Vectors is Higher tier only in Edexcel 4MA1 spec. This Foundation file kept for structural completeness."
 }

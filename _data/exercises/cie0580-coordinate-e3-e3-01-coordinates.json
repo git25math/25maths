@@ -5,150 +5,192 @@
   "syllabusCode": "E3-01",
   "tier": "Extended",
   "domain": "coordinate",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": null,
+  "totalMarks": 16,
+  "estimatedMinutes": 18,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "In which quadrant does the point (-5, 7) lie?",
-      "options": [
-        "Quadrant I",
-        "Quadrant II",
-        "Quadrant III",
-        "Quadrant IV"
-      ],
-      "correctAnswer": 1,
-      "explanation": "A point (x, y) with a negative x-coordinate and a positive y-coordinate is in Quadrant II."
+      "id": "E3-01-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "A(0, 0), B(6, 0) and C(0, 8) are vertices of a triangle.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the length of BC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "10",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "BC² = 6² + 8² = 100"
+            },
+            {
+              "mark": "M1",
+              "desc": "√100"
+            },
+            {
+              "mark": "A1",
+              "desc": "10"
+            }
+          ],
+          "workingSteps": [
+            "BC² = (6-0)² + (0-8)² = 36 + 64 = 100",
+            "BC = 10"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Show that angle BAC = 90°.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "AB² + AC² = BC²",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "AB² + AC² = 36 + 64 = 100"
+            },
+            {
+              "mark": "A1",
+              "desc": "= BC² = 100, so right angle at A"
+            }
+          ],
+          "workingSteps": [
+            "AB = 6, AC = 8, BC = 10",
+            "AB² + AC² = 36 + 64 = 100 = BC²",
+            "By converse of Pythagoras, angle A = 90°"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the equation of the line BC.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "y = −4x/3 + 8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "m = (0−8)/(6−0) = −4/3"
+            },
+            {
+              "mark": "M1",
+              "desc": "c = 8 (passes through (0,8))"
+            },
+            {
+              "mark": "A1",
+              "desc": "y = −4x/3 + 8"
+            }
+          ],
+          "workingSteps": [
+            "m = (0−8)/(6−0) = −8/6 = −4/3",
+            "Passes through C(0,8) so c = 8",
+            "y = −4x/3 + 8"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A point P(4, -3) is reflected in the y-axis. What are the coordinates of the image of P?",
-      "options": [
-        "(4, 3)",
-        "(-4, 3)",
-        "(-4, -3)",
-        "(-3, 4)"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Reflection in the y-axis changes the sign of the x-coordinate. So, (x, y) becomes (-x, y)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the midpoint of the line segment joining the points A(-2, 5) and B(4, -1).",
-      "options": [
-        "(1, 2)",
-        "(2, 4)",
-        "(3, 2)",
-        "(-3, 3)"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The midpoint formula is ((x₁+x₂)/2, (y₁+y₂)/2). So, ((-2+4)/2, (5-1)/2) = ($\\frac{2}{2}$, $\\frac{4}{2}$) = (1, 2)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The point (2, 3) is translated by the vector (-4, 5). What are the coordinates of the resulting point?",
-      "options": [
-        "(6, 8)",
-        "(-2, -2)",
-        "(2, 8)",
-        "(-2, 8)"
-      ],
-      "correctAnswer": 3,
-      "explanation": "To translate a point by a vector, add the corresponding components: (2 + (-4), 3 + 5) = (-2, 8)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A point Q(6, -1) is reflected in the x-axis. What are the coordinates of the image of Q?",
-      "options": [
-        "(-6, -1)",
-        "(-6, 1)",
-        "(6, 1)",
-        "(1, -6)"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Reflection in the x-axis changes the sign of the y-coordinate. So, (x, y) becomes (x, -y)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The midpoint of the line segment joining C and D(6, 4) is M(2, 1). What are the coordinates of point C?",
-      "options": [
-        "(4, 2.5)",
-        "(-2, -2)",
-        "(8, 5)",
-        "(4, -2)"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Let C=(x,y). (x+6)/2 = 2 ⇒ x+6=4 ⇒ $x = -2$. (y+4)/2 = 1 ⇒ y+4=2 ⇒ $y = -2$. So, C is (-2, -2)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A point lies on the x-axis, 8 units to the left of the origin. What are its coordinates?",
-      "options": [
-        "(8, 0)",
-        "(0, 8)",
-        "(-8, 0)",
-        "(0, -8)"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Points on the x-axis have a y-coordinate of 0. 'Left of the origin' means the x-coordinate is negative."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The point P(-3, 8) is translated to the point P'(4, 1). Find the translation vector.",
-      "options": [
-        "<1, 9>",
-        "<7, -7>",
-        "<-7, 7>",
-        "<1, -7>"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Let the vector be <x, y>. -3 + $x = 4$ ⇒ $x = 7$. 8 + $y = 1$ ⇒ $y = -7$. The vector is <7, -7>."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Point A(a, -4) is reflected in the y-axis to become point B(3, b). Find the values of a and b.",
-      "options": [
-        "$a = -3, b = 4$",
-        "$a = 3, b = -4$",
-        "$a = -3, b = -4$",
-        "$a = 3, b = 4$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Reflection in the y-axis maps (x, y) to (-x, y). So, -$a = 3$ ⇒ $a = -3$. The y-coordinate is unchanged, so $b = -4$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A point is in Quadrant IV. Which of the following must be true about its coordinates (x, y)?",
-      "options": [
-        "x > 0 and y > 0",
-        "x < 0 and y > 0",
-        "x < 0 and y < 0",
-        "x > 0 and y < 0"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Quadrant IV is the bottom-right quadrant, where x-coordinates are positive and y-coordinates are negative."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the midpoint of the line segment joining P(-1.5, 4) and Q(2.5, -2).",
-      "options": [
-        "(1, 1)",
-        "(0.5, 1)",
-        "(2, 1)",
-        "(0.5, 3)"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Midpoint = ((-1.5+2.5)/2, (4-2)/2) = ($\\frac{1}{2}$, $\\frac{2}{2}$) = (0.5, 1)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Point R(5, -2) is reflected in the x-axis to get R'. R' is then translated by the vector <-3, 1>. What are the final coordinates?",
-      "options": [
-        "(2, -1)",
-        "(-8, 3)",
-        "(2, 3)",
-        "(-2, -3)"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Reflecting R(5, -2) in the x-axis gives R'(5, 2). Translating R' by <-3, 1> gives (5-3, 2+1) = (2, 3)."
+      "id": "E3-01-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "P(1, 5) and Q(7, −3) are the ends of a diameter of a circle.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the centre and radius of the circle.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(4, 1), r = 5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Centre = (4, 1)"
+            },
+            {
+              "mark": "M1",
+              "desc": "r² = (7−4)² + (−3−1)² = 9 + 16"
+            },
+            {
+              "mark": "M1",
+              "desc": "r² = 25"
+            },
+            {
+              "mark": "A1",
+              "desc": "r = 5"
+            }
+          ],
+          "workingSteps": [
+            "Centre = midpoint = ((1+7)/2, (5−3)/2) = (4, 1)",
+            "r² = 3² + 4² = 25",
+            "r = 5"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Show that the point R(6, 5) does not lie on the circle.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "Distance from centre ≠ radius",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "dist(centre, R)² = (6−4)² + (5−1)² = 4+16 = 20"
+            },
+            {
+              "mark": "A1",
+              "desc": "√20 ≈ 4.47 ≠ 5, so R is not on the circle"
+            }
+          ],
+          "workingSteps": [
+            "Distance from (4,1) to (6,5) = √(4+16) = √20 = 4.47",
+            "4.47 ≠ 5 (radius), so R is not on the circle"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the equation of the tangent to the circle at P.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "y = 3x/4 + 17/4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Gradient CP = (5−1)/(1−4) = −4/3, tangent gradient = 3/4"
+            },
+            {
+              "mark": "A1",
+              "desc": "y − 5 = 3/4(x − 1) → y = 3x/4 + 17/4"
+            }
+          ],
+          "workingSteps": [
+            "Gradient of radius CP = (5−1)/(1−4) = 4/(−3) = −4/3",
+            "Tangent ⊥ radius, so tangent gradient = 3/4",
+            "y − 5 = ¾(x − 1) → y = ¾x + 17/4"
+          ]
+        }
+      ]
     }
   ]
 }

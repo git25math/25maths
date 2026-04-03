@@ -6,6 +6,55 @@
 
 ---
 
+## 2026-04-03 | 练习系统 v2 Schema 迁移 + 组卷模块重构
+
+### 决策背景
+- 原有 202 个练习文件全部是 AI 生成的 MCQ 占位题 (v1 schema)，质量差，与 CIE/EDX 真题风格不匹配
+- CIE 0580 自 2025 大纲起取消 Paper 1 MCQ，改为 Short-answer + Structured 两种题型
+- Edexcel 4MA1 从未有 MCQ，全部是 Structured questions
+- B2B 教师组卷页面只有 18 个硬编码 CIE 主题，无法使用全部 202 个练习
+
+### 关键决策
+
+#### 1. v2 Schema 设计
+- 废弃 v1 MCQ-only 格式，设计统一 schema 支持 3 种题型 (short-answer / structured / mcq)
+- 每道 Structured 题支持最深 3 级嵌套 (question → part → subpart)
+- 完整 CIE Mark Scheme 体系 (M/A/B/E/SC marks + ft/cao/dep 规则)
+- 12 种 answerType 覆盖数值/表达式/坐标/show-that/explain 等
+- 文件级 status 生命周期: coming_soon → draft → review → live
+
+#### 2. CIE 与 EDX 差异处理
+- CIE: calculator=null (混合)，paperType="mixed" (short-answer + structured)
+- EDX: calculator=true (两张卷都允许)，paperType 应以 structured 为主
+- EDX Higher-only topics (F3-04 Calculus, F5-01 Vectors) 标记 `_higherOnly: true`
+- EDX 32 个文件 topic 修正为 Pearson 官方考纲名称
+
+#### 3. 组卷模块三步流程
+- Step 1: 8 个预设模板 (自定义/代数/几何/数运/统计概率/3 个 Mock)
+- Step 2: 动态练习选择器 (Board/Tier/Domain 三级联动 + 搜索 + 已选面板)
+- Step 3: 作业参数 (班级/难度/截止/重试/答案可见性)
+
+#### 4. 样板题填充策略
+- Core: 2-3 道 short-answer (1-3分) + 1-2 道简单 structured (4-7分)
+- Extended: 1-2 道 short-answer (2-4分) + 1-2 道复杂 structured (6-10分, 含 show-that/hence)
+- 按 domain 大小排序填充：小 domain 先打样验证，大 domain 后批量处理
+- 每道题数学运算预先用 Python 验证
+
+### 结果
+- **Schema**: v2.1 (docs/EXERCISE-SCHEMA.md)
+- **迁移**: 202 文件 (29,764 行 MCQ 删除 → v2 框架)
+- **已填题**: 37/202 文件 (Trig 8 + Prob 7 + Mens 10 + Coord 12)，133 题 655 分
+- **待填题**: 165 文件 (coming_soon)，按 8 个 domain 逐步推进
+- **新增文档**: EXERCISE-SCHEMA.md, exercise-variants-showcase.json, exercise_registry.json
+- **Commits**: 8 个 (7476cb9 → 6eb87ea)
+
+### 决策理由
+- v1 MCQ 占位题无法体现 CIE/EDX 真题风格，必须推倒重建
+- 统一 schema 支持双 board，避免未来再次重构
+- 先迁移框架再逐步填题，比等所有题目就绪后一次性上线风险更低
+
+---
+
 ## 2026-03-01 | LaTeX Phase 4 — KaTeX 质量保证（~1,094 处修复）
 
 ### 决策背景

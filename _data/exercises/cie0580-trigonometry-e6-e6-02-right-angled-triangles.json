@@ -1,154 +1,205 @@
 {
-  "topic": "right angled triangles",
+  "topic": "Right-angled triangles",
   "board": "CIE 0580",
   "subtopicId": "cie0580:trigonometry-e6:e6-02-right-angled-triangles",
   "syllabusCode": "E6-02",
   "tier": "Extended",
   "domain": "trigonometry",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": null,
+  "totalMarks": 23,
+  "estimatedMinutes": 26,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the angle is 40° and the hypotenuse is 15 cm. What is the length of the side opposite the angle, correct to 2 decimal places?",
-      "options": [
-        "9.64 cm",
-        "11.49 cm",
-        "12.59 cm",
-        "23.33 cm"
+      "id": "E6-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A vertical flagpole is 12 m tall.\nA wire runs from the top of the flagpole to a point on the ground 9 m from the base.\nCalculate the angle the wire makes with the ground.",
+      "answerType": "numeric",
+      "correctAnswer": "53.1",
+      "tolerance": 0.1,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "tan θ = 12/9 oe" },
+        { "mark": "M1", "desc": "tan⁻¹(12/9)" },
+        { "mark": "A1", "desc": "53.1° or 53.13°" }
       ],
-      "correctAnswer": 0,
-      "explanation": "Use the sine ratio: sin($\\theta$) = Opposite / Hypotenuse. So, Opposite = Hypotenuse × sin($\\theta$) = 15 × sin(40°) ≈ 9.64 cm."
+      "workingSteps": [
+        "tan θ = opposite/adjacent = 12/9",
+        "θ = tan⁻¹(4/3) = 53.1°"
+      ],
+      "explanation": "Use tan and inverse tan for angle from opposite and adjacent."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A right-angled triangle has an angle of 55° and the hypotenuse is 20 cm. Calculate the length of the adjacent side, correct to 2 decimal places.",
-      "options": [
-        "16.38 cm",
-        "11.47 cm",
-        "28.56 cm",
-        "34.87 cm"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Use the cosine ratio: cos($\\theta$) = Adjacent / Hypotenuse. So, Adjacent = Hypotenuse × cos($\\theta$) = 20 × cos(55°) ≈ 11.47 cm."
+      "id": "E6-02-Q2",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "The diagram shows a trapezium ABCD where AB is parallel to DC.\nAB = 14 cm, DC = 8 cm, angle DAB = 90° and angle ABC = 65°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that the height AD of the trapezium is 12.9 cm, correct to 3 significant figures.",
+          "marks": 3,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "12.9",
+          "markScheme": [
+            { "mark": "M1", "desc": "Drops perpendicular from C or D, identifies the 6 cm base" },
+            { "mark": "M1", "desc": "AD = (14−8) × tan65 or 6 × tan65" },
+            { "mark": "A1", "desc": "12.86... → 12.9 (3sf) with no errors" }
+          ],
+          "workingSteps": [
+            "Drop perpendicular from C to AB at point E, then BE = DC = 8 cm",
+            "AE = AB − DC = 14 − 8 = 6 cm",
+            "AD = AE × tan65° = 6 × 2.145 = 12.87 cm ≈ 12.9 cm (3sf)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the length of BC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "14.2",
+          "tolerance": 0.1,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "cos65 = 6/BC or sin65 = 12.9/BC oe" },
+            { "mark": "M1", "desc": "BC = 6/cos65 or BC = 12.9/sin65" },
+            { "mark": "A1", "desc": "14.2 or 14.19 to 14.20" }
+          ],
+          "workingSteps": [
+            "cos65° = 6/BC",
+            "BC = 6 / cos65° = 6 / 0.4226 = 14.2 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the area of the trapezium.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "142",
+          "tolerance": 1,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "½ × (14 + 8) × their 12.9" },
+            { "mark": "A1", "desc": "141 to 142" }
+          ],
+          "workingSteps": [
+            "Area = ½ × (AB + DC) × AD = ½ × (14 + 8) × 12.9",
+            "= ½ × 22 × 12.9 = 141.9 cm²"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Calculate angle ACD.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "58.2",
+          "tolerance": 0.1,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "tan(ACD) = 12.9/8 oe" },
+            { "mark": "A1", "desc": "58.2° or 58.17° to 58.18°" }
+          ],
+          "workingSteps": [
+            "In triangle ACD: AD = 12.9, DC = 8, angle ADC = 90°",
+            "tan(ACD) = AD/DC = 12.9/8 = 1.6125",
+            "Angle ACD = tan⁻¹(1.6125) = 58.2°"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, an angle is 32°. The side adjacent to this angle is 18 cm long. Find the length of the opposite side, correct to 2 decimal places.",
-      "options": [
-        "9.54 cm",
-        "15.26 cm",
-        "11.25 cm",
-        "28.81 cm"
+      "id": "E6-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "From the top of a cliff 45 m high, the angle of depression to a boat at sea is 28°.\nCalculate the horizontal distance from the base of the cliff to the boat.",
+      "answerType": "numeric",
+      "correctAnswer": "84.6",
+      "tolerance": 0.1,
+      "unit": "m",
+      "markScheme": [
+        { "mark": "M1", "desc": "tan28 = 45/d oe" },
+        { "mark": "M1", "desc": "d = 45/tan28" },
+        { "mark": "A1", "desc": "84.6 or 84.63" }
       ],
-      "correctAnswer": 2,
-      "explanation": "Use the tangent ratio: tan($\\theta$) = Opposite / Adjacent. So, Opposite = Adjacent × tan($\\theta$) = 18 × tan(32°) ≈ 11.25 cm."
+      "workingSteps": [
+        "tan28° = 45/d (angle of depression = angle of elevation)",
+        "d = 45 / tan28° = 45 / 0.5317 = 84.6 m"
+      ],
+      "explanation": "Angle of depression from top = angle of elevation from boat (alternate angles)."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite an angle of 25° is 8 m long. What is the length of the hypotenuse, correct to 2 decimal places?",
-      "options": [
-        "3.38 m",
-        "8.83 m",
-        "17.16 m",
-        "18.93 m"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Use the sine ratio: sin($\\theta$) = Opposite / Hypotenuse. So, Hypotenuse = Opposite / sin($\\theta$) = 8 / sin(25°) ≈ 18.93 m."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the side opposite an $angle \\theta is$ 10 cm and the side adjacent to it is 15 cm. Calculate the size of angle $\\theta$, correct to 1 decimal place.",
-      "options": [
-        "33.7°",
-        "56.3°",
-        "48.2°",
-        "41.8°"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Use the tangent ratio: tan($\\theta$) = Opposite / Adjacent. So, $\\theta$ = arctan(Opposite / Adjacent) = arctan($\\frac{10}{15}$) ≈ 33.7°."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A ladder of length 12 m leans against a vertical wall. Its foot is 5 m from the base of the wall on horizontal ground. What is the angle the ladder makes with the ground, correct to 1 decimal place?",
-      "options": [
-        "24.6°",
-        "65.4°",
-        "22.6°",
-        "67.4°"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The ladder is the hypotenuse (12 m) and the distance from the wall is the adjacent side (5 m). Use the cosine ratio: cos($\\theta$) = Adjacent / Hypotenuse. So, $\\theta$ = arccos($\\frac{5}{12}$) ≈ 65.4°."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "From the top of a 50 m high cliff, the angle of depression to a boat at sea is 15°. How far is the boat from the base of the cliff, correct to the nearest metre?",
-      "options": [
-        "13 m",
-        "52 m",
-        "187 m",
-        "193 m"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The angle of elevation from the boat to the cliff top is also 15°. The cliff height is the opposite side. Use the tangent ratio: tan(15°) = Opposite / Adjacent = 50 / distance. So, distance = 50 / tan(15°) ≈ 187 m."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A vertical pole of height 8 m casts a shadow of length 12 m. What is the angle of elevation of the sun, correct to 1 decimal place?",
-      "options": [
-        "56.3°",
-        "41.8°",
-        "48.2°",
-        "33.7°"
-      ],
-      "correctAnswer": 3,
-      "explanation": "The pole is the opposite side (8 m) and the shadow is the adjacent side (12 m). Use the tangent ratio: tan($\\theta$) = Opposite / Adjacent. So, $\\theta$ = arctan($\\frac{8}{12}$) ≈ 33.7°."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "An aircraft flies 120 km on a bearing of 060°. How far east has it travelled from its starting point, correct to the nearest km?",
-      "options": [
-        "104 km",
-        "60 km",
-        "139 km",
-        "208 km"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The bearing of 060° creates a 60° angle with the North line. The distance travelled east is the side opposite this angle in the right-angled triangle. Use sine: East = 120 × sin(60°) ≈ 104 km."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In a right-angled triangle, the two shorter sides are 7 cm and 24 cm. What is the sine of the smallest angle?",
-      "options": [
-        "$\\frac{7}{24}$",
-        "$\\frac{7}{25}$",
-        "$\\frac{24}{25}$",
-        "$\\frac{25}{24}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "First, find the hypotenuse using Pythagoras' theorem: $\\sqrt{7^2 + 24^2}$ = 25 cm. The smallest angle is opposite the shortest side (7 cm). The sine of an angle is Opposite / Hypotenuse. So, sin($\\theta$) = $\\frac{7}{25}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In a right-angled triangle PQR where the right angle is at Q, PQ = 10 cm and $\\angle PRQ$ = 42°. Find the length of QR, correct to 2 decimal places.",
-      "options": [
-        "9.00 cm",
-        "14.94 cm",
-        "11.11 cm",
-        "6.69 cm"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Angle R is 42°, the opposite side is PQ = 10 cm, and the adjacent side is QR. Use the tangent ratio: tan(42°) = Opposite / Adjacent = 10 / QR. Rearranging gives QR = 10 / tan(42°) ≈ 11.11 cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In triangle ABC, angle B = 90°, AC = 18 cm, and BC = 11 cm. What is the size of $\\angle BAC$, correct to 1 decimal place?",
-      "options": [
-        "31.4°",
-        "52.3°",
-        "59.0°",
-        "37.7°"
-      ],
-      "correctAnswer": 3,
-      "explanation": "$\\angle BAC$ is the angle at vertex A. The opposite side is BC (11 cm) and the hypotenuse is AC (18 cm). Use the sine ratio: sin(A) = Opposite / Hypotenuse = $\\frac{11}{18}$. So, A = arcsin($\\frac{11}{18}$) ≈ 37.7°."
+      "id": "E6-02-Q4",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "Two buildings P and Q are on level ground, 50 m apart.\nBuilding P is 35 m tall and building Q is 20 m tall.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the angle of elevation from the top of building Q to the top of building P.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "16.7",
+          "tolerance": 0.1,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "Height difference = 35 − 20 = 15 soi" },
+            { "mark": "M1", "desc": "tan θ = 15/50" },
+            { "mark": "A1", "desc": "16.7° or 16.70°" }
+          ],
+          "workingSteps": [
+            "Height difference = 35 − 20 = 15 m",
+            "tan θ = 15/50 = 0.3",
+            "θ = tan⁻¹(0.3) = 16.7°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A tightrope is stretched from the top of P to the top of Q.\nCalculate the length of the tightrope.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "52.2",
+          "tolerance": 0.1,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "15² + 50² soi" },
+            { "mark": "M1", "desc": "√(225 + 2500) or √2725" },
+            { "mark": "A1", "desc": "52.2 or 52.20" }
+          ],
+          "workingSteps": [
+            "L² = 15² + 50² = 225 + 2500 = 2725",
+            "L = √2725 = 52.2 m"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Give a reason why the actual tightrope would need to be longer than your answer to part (b).",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The tightrope would sag under its own weight",
+          "markScheme": [
+            { "mark": "B1", "desc": "Sag / not taut / weight oe" }
+          ],
+          "workingSteps": []
+        }
+      ]
     }
   ]
 }

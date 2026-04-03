@@ -1,154 +1,207 @@
 {
-  "topic": "drawing linear graphs",
+  "topic": "Drawing linear graphs",
   "board": "CIE 0580",
   "subtopicId": "cie0580:coordinate-c3:c3-02-drawing-linear-graphs",
   "syllabusCode": "C3-02",
   "tier": "Core",
   "domain": "coordinate",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": null,
+  "totalMarks": 13,
+  "estimatedMinutes": 15,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "For the line with equation y = 2x + 5, what is the value of y when $x = 3$?",
-      "options": [
-        "11",
-        "10",
-        "13",
-        "1"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Substitute $x = 3$ into the equation: y = 2(3) + 5 = 6 + 5 = 11."
+      "id": "C3-02-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "easy",
+      "context": "Complete the table for $y = 2x + 1$.\n\n| x | −2 | −1 | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|---|---|\n| y | | | | | | |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the table of values.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": [
+            -3,
+            -1,
+            1,
+            3,
+            5,
+            7
+          ],
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "At least 4 correct"
+            },
+            {
+              "mark": "B1",
+              "desc": "All 6 correct"
+            }
+          ],
+          "workingSteps": [
+            "x=−2: y=−3, x=−1: y=−1, x=0: y=1, x=1: y=3, x=2: y=5, x=3: y=7"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Draw the graph of $y = 2x + 1$ for $-2 \\leq x \\leq 3$.",
+          "marks": 2,
+          "commandWord": "plot",
+          "answerType": "draw",
+          "correctAnswer": "Straight line through plotted points",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Points correctly plotted"
+            },
+            {
+              "mark": "B1",
+              "desc": "Straight line drawn through all points"
+            }
+          ],
+          "workingSteps": [
+            "Plot the 6 points and draw a straight line through them"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Use your graph to find the value of $x$ when $y = 4$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "1.5",
+          "tolerance": 0.1,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "1.5 ± 0.1"
+            }
+          ],
+          "workingSteps": [
+            "Read from graph: when y = 4, x = 1.5"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A straight line has the equation y = -3x + 1. What is the value of y when $x = 2$?",
-      "options": [
-        "-5",
-        "-6",
-        "7",
-        "1"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Substitute $x = 2$ into y = -3x + 1 to get y = -3(2) + 1 = -6 + 1 = -5."
+      "id": "C3-02-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "The line $y = 3 - x$ and the line $y = x + 1$ are drawn on the same grid.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the table for $y = 3 - x$.\n\n| x | −1 | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|---|\n| y | | | | | |",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": [
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "At least 3 correct"
+            },
+            {
+              "mark": "B1",
+              "desc": "All 5 correct"
+            }
+          ],
+          "workingSteps": [
+            "x=−1: y=4, x=0: y=3, x=1: y=2, x=2: y=1, x=3: y=0"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the coordinates where the two lines intersect.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "coordinate",
+          "correctAnswer": "(1, 2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "3−x = x+1 → 2 = 2x → x = 1"
+            },
+            {
+              "mark": "A1",
+              "desc": "(1, 2)"
+            }
+          ],
+          "workingSteps": [
+            "3 − x = x + 1",
+            "2 = 2x",
+            "x = 1, y = 2",
+            "Intersection at (1, 2)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the y-intercept of $y = 3 - x$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "3 or (0, 3)"
+            }
+          ],
+          "workingSteps": [
+            "When x = 0, y = 3"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A point on the line y = 4x - 7 has a y-coordinate of 5. What is its x-coordinate?",
-      "options": [
-        "3",
-        "12",
-        "-0.5",
-        "0.5"
+      "id": "C3-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A straight line passes through the points (0, 5) and (3, 5).\n(a) Write down the equation of this line.\n(b) What can you say about this line?",
+      "answerType": "expression",
+      "correctAnswer": "y = 5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "(a) y = 5"
+        },
+        {
+          "mark": "B1",
+          "desc": "(b) Horizontal line"
+        },
+        {
+          "mark": "B1",
+          "desc": "Gradient = 0"
+        }
       ],
-      "correctAnswer": 0,
-      "explanation": "Substitute $y = 5$ into the equation: 5 = 4x - 7. Add 7 to both sides to get 12 = 4x. Divide by 4 to find $x = 3$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Which of these points lies on the line with equation y = 3x - 2?",
-      "options": [
-        "(3, 7)",
-        "(2, 3)",
-        "(4, 8)",
-        "(1, 0)"
+      "workingSteps": [
+        "All y-values are 5, so the equation is y = 5",
+        "It is a horizontal line with gradient 0"
       ],
-      "correctAnswer": 0,
-      "explanation": "Check the point (3, 7). Substitute $x = 3$ into the equation: y = 3(3) - 2 = 9 - 2 = 7. The point lies on the line."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What are the coordinates of the y-intercept of the line y = 5x + 8?",
-      "options": [
-        "(0, 8)",
-        "(0, 5)",
-        "(8, 0)",
-        "(0, -8)"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The y-intercept is the point where the line crosses the y-axis, which is where $x = 0$. Substituting $x = 0$ gives y = 5(0) + 8 = 8. The coordinate is (0, 8)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What are the coordinates of the x-intercept of the line y = 2x - 10?",
-      "options": [
-        "(5, 0)",
-        "(-5, 0)",
-        "(0, 10)",
-        "(10, 0)"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The x-intercept is where the line crosses the x-axis, so $y = 0$. Set 0 = 2x - 10. Add 10 to both sides: 10 = 2x. Divide by 2: $x = 5$. The coordinate is (5, 0)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What is the equation of the horizontal line that passes through the point (3, 4)?",
-      "options": [
-        "$y = 4$",
-        "$x = 3$",
-        "$y = 3$",
-        "$x = 4$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "A horizontal line has a constant y-value. Since the line passes through (3, 4), the y-value for every point on the line must be 4. The equation is $y = 4$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What is the equation of the vertical line that passes through the point (-2, 5)?",
-      "options": [
-        "$x = -2$",
-        "$y = 5$",
-        "$x = 5$",
-        "$y = -2$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "A vertical line has a constant x-value. Since the line passes through (-2, 5), the x-value for every point on the line must be -2. The equation is $x = -2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "You are given the equation y = x - 3. Find the value of y when $x = -1$.",
-      "options": [
-        "-4",
-        "-2",
-        "2",
-        "4"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Substitute $x = -1$ into the equation: y = (-1) - 3 = -4."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "For the line y = 2x + 1, what is the value of y when $x = -2$?",
-      "options": [
-        "-3",
-        "-4",
-        "5",
-        "-5"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Substitute $x = -2$ into the equation: y = 2(-2) + 1 = -4 + 1 = -3."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Does the point (-1, 5) lie on the line y = -x + 4?",
-      "options": [
-        "Yes, because 5 = -(-1) + 4.",
-        "No, because 5 is not -1 + 4.",
-        "Yes, because the coordinates are opposites.",
-        "No, because the line has a negative slope."
-      ],
-      "correctAnswer": 0,
-      "explanation": "To check if the point is on the line, substitute its coordinates into the equation. Let $x = -1$ and $y = 5$. The equation becomes 5 = -(-1) + 4, which simplifies to 5 = 1 + 4, or 5 = 5. Since this is true, the point lies on the line."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Which pair of points both lie on the line y = x + 2?",
-      "options": [
-        "$(0, 2) and (1, 3)$",
-        "$(0, 2) and (2, 2)$",
-        "$(1, 3) and (3, 1)$",
-        "$(2, 0) and (3, 1)$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Check both points. For (0, 2): 2 = 0 + 2 is true. For (1, 3): 3 = 1 + 2 is true. Both points satisfy the equation."
+      "explanation": "A horizontal line has equation y = constant."
     }
   ]
 }

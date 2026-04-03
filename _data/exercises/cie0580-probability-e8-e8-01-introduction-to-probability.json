@@ -5,150 +5,176 @@
   "syllabusCode": "E8-01",
   "tier": "Extended",
   "domain": "probability",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": null,
+  "totalMarks": 19,
+  "estimatedMinutes": 22,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "Given that P(A) = 0.43, what is P(A')?",
-      "options": [
-        "0.43",
-        "0.57",
-        "1",
-        "1.43"
+      "id": "E8-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "A box contains $n$ red sweets, 4 blue sweets and 2 green sweets.\nThe probability of picking a red sweet at random is $\\frac{1}{3}$.\nFind the value of $n$.",
+      "answerType": "integer",
+      "correctAnswer": "3",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "n / (n + 4 + 2) = 1/3" },
+        { "mark": "M1", "desc": "3n = n + 6 leading to 2n = 6" },
+        { "mark": "A1", "desc": "n = 3" }
       ],
-      "correctAnswer": 1,
-      "explanation": "The probability of the complement of an event is P(A') = 1 - P(A). Therefore, P(A') = 1 - 0.43 = 0.57."
+      "workingSteps": [
+        "Total sweets = n + 4 + 2 = n + 6",
+        "n / (n + 6) = 1/3",
+        "3n = n + 6",
+        "2n = 6",
+        "n = 3"
+      ],
+      "explanation": "Set up an equation using the probability formula and solve for n."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A bag contains 5 red balls and 7 blue balls. A ball is picked at random. What is the probability of picking a red ball?",
-      "options": [
-        "$\\frac{5}{7}$",
-        "$\\frac{7}{12}$",
-        "$\\frac{5}{12}$",
-        "$\\frac{1}{5}$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "There are 5 red balls and a total of 5 + 7 = 12 balls. The probability of picking a red ball is the number of red balls divided by the total number of balls, which is $\\frac{5}{12}$."
+      "id": "E8-01-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "The Venn diagram shows the number of students who study French (F) and German (G) in a class of 30 students.\n12 study French, 15 study German and 5 study both.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the number of students who study neither French nor German.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "F only = 7, G only = 10, Both = 5 → total in F∪G = 22" },
+            { "mark": "A1", "desc": "30 − 22 = 8" }
+          ],
+          "workingSteps": [
+            "F only = 12 − 5 = 7",
+            "G only = 15 − 5 = 10",
+            "F ∪ G = 7 + 5 + 10 = 22",
+            "Neither = 30 − 22 = 8"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A student is chosen at random.\nFind the probability that the student studies French but not German.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "7/30",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "F only = 12 − 5 = 7 soi" },
+            { "mark": "A1", "desc": "7/30" }
+          ],
+          "workingSteps": [
+            "F only = 12 − 5 = 7",
+            "P(F but not G) = 7/30"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Two students are chosen at random.\nFind the probability that both study German.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "7/29",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(1st G) = 15/30" },
+            { "mark": "M1", "desc": "P(2nd G | 1st G) = 14/29 (without replacement)" },
+            { "mark": "M1", "desc": "15/30 × 14/29" },
+            { "mark": "A1", "desc": "210/870 = 7/29" }
+          ],
+          "workingSteps": [
+            "P(both G) = 15/30 × 14/29 = 210/870 = 7/29"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "A fair six-sided die is rolled. What is the probability of rolling a prime number?",
-      "options": [
-        "$\\frac{1}{3}$",
-        "$\\frac{1}{2}$",
-        "$\\frac{2}{3}$",
-        "$\\frac{1}{6}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The prime numbers on a standard die are 2, 3, and 5. There are 3 prime numbers out of 6 possible outcomes. So, the probability is $\\frac{3}{6}$, which simplifies to $\\frac{1}{2}$."
+      "id": "E8-01-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "hard",
+      "context": "A bag contains 3 red marbles and $n$ blue marbles.\nTwo marbles are taken at random without replacement.\nThe probability that both marbles are blue is $\\frac{5}{14}$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that $3n^2 - 13n - 10 = 0$.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "3n² − 13n − 10 = 0",
+          "markScheme": [
+            { "mark": "M1", "desc": "n/(n+3) × (n−1)/(n+2) = 5/14" },
+            { "mark": "A1", "desc": "14n(n−1) = 5(n+3)(n+2) → 14n²−14n = 5n²+25n+30 → 3n²−13n−10 = 0 with no errors" }
+          ],
+          "workingSteps": [
+            "P(BB) = n/(n+3) × (n−1)/(n+2) = 5/14",
+            "14n(n−1) = 5(n+3)(n+2)",
+            "14n² − 14n = 5n² + 25n + 30",
+            "9n² − 39n − 30 = 0",
+            "3n² − 13n − 10 = 0"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Solve $3n^2 - 13n - 10 = 0$ and hence find the number of blue marbles.",
+          "marks": 2,
+          "commandWord": "solve",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "(3n+2)(n−5) = 0" },
+            { "mark": "A1", "desc": "n = 5 (rejecting n = −2/3 as n must be a positive integer)" }
+          ],
+          "workingSteps": [
+            "(3n + 2)(n − 5) = 0",
+            "n = −2/3 or n = 5",
+            "n must be a positive integer, so n = 5"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "If P(not B) = 0.19, what is P(B)?",
-      "options": [
-        "0.19",
-        "0.81",
-        "1.19",
-        "0.91"
+      "id": "E8-01-Q4",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Events A and B are such that $P(A) = 0.4$, $P(B) = 0.5$ and $P(A \\cup B) = 0.7$.\nCalculate\n(a) $P(A \\cap B)$\n(b) whether A and B are independent.",
+      "answerType": "numeric",
+      "correctAnswer": "0.2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "P(A∪B) = P(A) + P(B) − P(A∩B)" },
+        { "mark": "A1", "desc": "(a) P(A∩B) = 0.4 + 0.5 − 0.7 = 0.2" },
+        { "mark": "M1", "desc": "(b) P(A) × P(B) = 0.4 × 0.5 = 0.2" },
+        { "mark": "A1", "desc": "P(A∩B) = P(A)×P(B), so A and B are independent" }
       ],
-      "correctAnswer": 1,
-      "explanation": "P(B) and P(not B) are complementary events, so their probabilities must sum to 1. P(B) = 1 - P(not B) = 1 - 0.19 = 0.81."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Which of the following values cannot represent the probability of an event?",
-      "options": [
-        "0.99",
-        "0",
-        "1.01",
-        "$\\frac{2}{3}$"
+      "workingSteps": [
+        "(a) P(A∩B) = P(A) + P(B) − P(A∪B) = 0.4 + 0.5 − 0.7 = 0.2",
+        "(b) P(A) × P(B) = 0.4 × 0.5 = 0.2 = P(A∩B)",
+        "Since P(A∩B) = P(A) × P(B), A and B are independent"
       ],
-      "correctAnswer": 2,
-      "explanation": "The probability of an event must be a value between 0 and 1, inclusive. A value of 1.01 is greater than 1 and is therefore not a valid probability."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A fair spinner has 8 equal sectors. What is the probability of NOT landing on a specific sector?",
-      "options": [
-        "$\\frac{1}{8}$",
-        "8",
-        "1",
-        "$\\frac{7}{8}$"
-      ],
-      "correctAnswer": 3,
-      "explanation": "If there is 1 specific sector to avoid, there are 7 other sectors that are favorable outcomes out of 8 total sectors. So the probability is $\\frac{7}{8}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "An integer is chosen at random from the numbers 1 to 20 inclusive. What is the probability that it is a multiple of 4?",
-      "options": [
-        "$\\frac{1}{4}$",
-        "$\\frac{1}{5}$",
-        "$\\frac{4}{20}$",
-        "$\\frac{5}{20}$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "The multiples of 4 between 1 and 20 are 4, 8, 12, 16, 20. There are 5 favorable outcomes out of 20 total numbers. The probability is $\\frac{5}{20}$, which simplifies to $\\frac{1}{4}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The probability that it will rain tomorrow is 0.6. What is the probability that it will not rain tomorrow?",
-      "options": [
-        "0.6",
-        "1",
-        "0.4",
-        "-0.6"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The events 'rain' and 'not rain' are complementary. Their probabilities sum to 1. So, P(not rain) = 1 - P(rain) = 1 - 0.6 = 0.4."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A letter is chosen at random from the word 'PROBABILITY'. What is P(B)?",
-      "options": [
-        "$\\frac{1}{11}$",
-        "$\\frac{2}{11}$",
-        "$\\frac{9}{11}$",
-        "B"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The word 'PROBABILITY' has 11 letters in total. The letter 'B' appears twice. Therefore, the probability of choosing a 'B' is $\\frac{2}{11}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What is the probability of an event that is impossible?",
-      "options": [
-        "1",
-        "-1",
-        "0.5",
-        "0"
-      ],
-      "correctAnswer": 3,
-      "explanation": "An impossible event has zero chance of occurring, so its probability is 0. The probability scale ranges from 0 (impossible) to 1 (certain)."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The probability of a biased coin landing on heads is 0.3. What is the probability of it landing on tails?",
-      "options": [
-        "0.3",
-        "0.7",
-        "$\\frac{1}{2}$",
-        "$\\frac{1}{0}$.3"
-      ],
-      "correctAnswer": 1,
-      "explanation": "A coin can only land on heads or tails. These are complementary events. So, P(Tails) = 1 - P(Heads) = 1 - 0.3 = 0.7."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In a group of 40 students, 25 are right-handed. A student is chosen at random. What is the probability that they are left-handed?",
-      "options": [
-        "$\\frac{5}{8}$",
-        "$\\frac{3}{8}$",
-        "$\\frac{15}{40}$",
-        "$\\frac{25}{15}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "If 25 students are right-handed, then 40 - 25 = 15 students are left-handed. The probability of choosing a left-handed student is $\\frac{15}{40}$, which simplifies to $\\frac{3}{8}$."
+      "explanation": "Use the addition rule, then check the independence condition."
     }
   ]
 }

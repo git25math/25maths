@@ -5,150 +5,241 @@
   "syllabusCode": "E6-05",
   "tier": "Extended",
   "domain": "trigonometry",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": true,
+  "totalMarks": 25,
+  "estimatedMinutes": 30,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "In triangle ABC, angle A = 40°, angle B = 60°, and side b = 10 cm. Find the length of side a, correct to 3 significant figures.",
-      "options": [
-        "7.42 cm",
-        "13.5 cm",
-        "8.39 cm",
-        "6.53 cm"
+      "id": "E6-05-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "In triangle PQR, PQ = 12 cm, angle QPR = 35° and angle PQR = 80°.\nCalculate the length QR.",
+      "answerType": "numeric",
+      "correctAnswer": "7.15",
+      "tolerance": 0.05,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "Angle PRQ = 180 − 35 − 80 = 65° soi" },
+        { "mark": "M1", "desc": "QR/sin35 = 12/sin65 (sine rule)" },
+        { "mark": "A1", "desc": "7.15 or 7.148..." }
       ],
-      "correctAnswer": 0,
-      "explanation": "Use the sine rule: a/sin(A) = b/sin(B). Rearranging gives a = b * sin(A) / sin(B). So, $a = 10$ * sin(40°) / sin(60°) = 7.422... cm."
+      "workingSteps": [
+        "Angle PRQ = 180° − 35° − 80° = 65°",
+        "QR / sin35° = 12 / sin65°",
+        "QR = 12 × sin35° / sin65° = 7.15 cm"
+      ],
+      "explanation": "Use the sine rule when you know two angles and a side."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "In triangle PQR, side p = 8 cm, side q = 10 cm, and angle Q = 50°. Find the size of angle P, correct to 1 decimal place.",
-      "options": [
-        "73.2°",
-        "37.8°",
-        "60.0°",
-        "38.7°"
+      "id": "E6-05-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "In triangle DEF, DE = 8 cm, EF = 11 cm and angle DEF = 64°.\nCalculate the length DF.",
+      "answerType": "numeric",
+      "correctAnswer": "10.2",
+      "tolerance": 0.1,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M2", "desc": "DF² = 8² + 11² − 2(8)(11)cos64° (cosine rule)" },
+        { "mark": "A1", "desc": "10.2 or 10.17 to 10.18" }
       ],
-      "correctAnswer": 1,
-      "explanation": "Use the sine rule: sin(P)/p = sin(Q)/q. Rearranging gives sin(P) = p * sin(Q) / q. So, sin(P) = 8 * sin(50°) / 10 = 0.6128... Angle P = arcsin(0.6128...) = 37.79...°."
+      "workingSteps": [
+        "DF² = 8² + 11² − 2(8)(11)cos64°",
+        "= 64 + 121 − 176 × 0.4384",
+        "= 185 − 77.2 = 107.8",
+        "DF = √107.8 = 10.2 cm"
+      ],
+      "explanation": "Use the cosine rule when you know two sides and the included angle."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "In triangle XYZ, side x = 5 cm, side y = 7 cm, and the included angle Z = 65°. Find the length of side z, correct to 3 significant figures.",
-      "options": [
-        "10.2 cm",
-        "3.25 cm",
-        "6.66 cm",
-        "44.4 cm"
+      "id": "E6-05-Q3",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "Calculate the area of triangle XYZ where XY = 10 cm, XZ = 6 cm and angle YXZ = 52°.",
+      "answerType": "numeric",
+      "correctAnswer": "23.6",
+      "tolerance": 0.1,
+      "unit": "cm²",
+      "markScheme": [
+        { "mark": "M1", "desc": "½ × 10 × 6 × sin52°" },
+        { "mark": "A1", "desc": "23.6 or 23.63..." }
       ],
-      "correctAnswer": 2,
-      "explanation": "Use the cosine rule: $z^2 = x^2 + y^2$ - 2xy*cos(Z). So, $z^2 = 5^2 + 7^2$ - 2(5)(7)cos(65°) = 25 + 49 - 29.58... = 44.41... Side z = sqrt(44.41...) = 6.664... cm."
+      "workingSteps": [
+        "Area = ½ × XY × XZ × sin(YXZ)",
+        "= ½ × 10 × 6 × sin52° = 23.6 cm²"
+      ],
+      "explanation": "Area = ½absinC for non-right-angled triangles."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "In triangle ABC, side a = 6 cm, side b = 7 cm, and side c = 8 cm. Find the size of angle A, correct to 1 decimal place.",
-      "options": [
-        "57.9°",
-        "75.5°",
-        "46.6°",
-        "82.8°"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Use the cosine rule for finding an angle: cos(A) = ($b^2 + c^2 - a^2$) / 2bc. So, cos(A) = ($7^2 + 8^2 - 6^2$) / (2 * 7 * 8) = (49 + 64 - 36) / 112 = $\\frac{77}{112}$. Angle A = arccos($\\frac{77}{112}$) = 46.56...°."
+      "id": "E6-05-Q4",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A ship sails from port A on a bearing of 060° for 15 km to point B.\nIt then sails on a bearing of 150° for 20 km to point C.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that angle ABC = 90°.",
+          "marks": 1,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "90",
+          "markScheme": [
+            { "mark": "B1", "desc": "150 − 60 = 90 or co-interior angles on parallel lines oe" }
+          ],
+          "workingSteps": [
+            "Bearing at A = 060°, bearing at B = 150°",
+            "Angle ABC = 150° − 60° = 90° (co-interior angles with North lines)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the distance AC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "25",
+          "tolerance": null,
+          "unit": "km",
+          "markScheme": [
+            { "mark": "M1", "desc": "AC² = 15² + 20² (Pythagoras since angle B = 90°)" },
+            { "mark": "M1", "desc": "√625" },
+            { "mark": "A1", "desc": "25" }
+          ],
+          "workingSteps": [
+            "AC² = 15² + 20² = 225 + 400 = 625",
+            "AC = 25 km"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the bearing of C from A.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "113",
+          "tolerance": 0.2,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "tan(BAC) = 20/15 oe" },
+            { "mark": "A1", "desc": "angle BAC = 53.1°" },
+            { "mark": "A1", "desc": "Bearing = 060 + 53.1 = 113° (3sf)" }
+          ],
+          "workingSteps": [
+            "tan(BAC) = BC/AB = 20/15",
+            "angle BAC = tan⁻¹(4/3) = 53.1°",
+            "Bearing of C from A = 060° + 53.1° = 113°"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Calculate the area of triangle ABC.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "150",
+          "tolerance": null,
+          "unit": "km²",
+          "markScheme": [
+            { "mark": "M1", "desc": "½ × 15 × 20 (since angle B = 90°)" },
+            { "mark": "A1", "desc": "150" }
+          ],
+          "workingSteps": [
+            "Area = ½ × AB × BC = ½ × 15 × 20 = 150 km²"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "The ship returns directly from C to A.\nCalculate the bearing of A from C.",
+          "marks": 1,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "293",
+          "tolerance": 0.2,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "B1", "desc": "113 + 180 = 293°" }
+          ],
+          "workingSteps": [
+            "Bearing of A from C = bearing of C from A + 180°",
+            "= 113° + 180° = 293°"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "Find the area of triangle LMN if side l = 9 cm, side m = 12 cm, and the included angle N = 48°. Give your answer correct to 3 significant figures.",
-      "options": [
-        "80.3 $\\text{cm}^2$",
-        "36.1 $\\text{cm}^2$",
-        "40.1 $\\text{cm}^2$",
-        "54.0 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Use the area formula: Area = 0.5 * l * m * sin(N). So, Area = 0.5 * 9 * 12 * sin(48°) = 54 * 0.7431... = 40.12... $\\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In triangle ABC, angle A = 30°, side a = 6 cm and side b = 10 cm. Given that angle B is obtuse, find its size correct to 1 decimal place.",
-      "options": [
-        "56.4°",
-        "123.6°",
-        "96.4°",
-        "142.2°"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Using the sine rule, sin(B)/b = sin(A)/a gives sin(B) = 10 * sin(30°)/6 = $\\frac{5}{6}$. The principal value for B is arcsin($\\frac{5}{6}$) = 56.4°. Since B is obtuse, B = 180° - 56.4° = 123.6°."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In triangle PQR, side p = 10 cm, side q = 15 cm, and the included angle R = 110°. Find the length of side r, correct to 3 significant figures.",
-      "options": [
-        "20.7 cm",
-        "14.9 cm",
-        "6.57 cm",
-        "18.0 cm"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Use the cosine rule: $r^2 = p^2 + q^2$ - 2pq*cos(R). $r^2 = 10^2 + 15^2$ - 2(10)(15)cos(110°) = 100 + 225 - 300(-0.342...) = 325 + 102.6... = 427.6... Side r = sqrt(427.6...) = 20.67... cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In triangle ABC, angle A = 50°, side a = 10 cm, and side b = 8 cm. Find the area of the triangle, correct to 1 decimal place.",
-      "options": [
-        "30.6 $\\text{cm}^2$",
-        "24.5 $\\text{cm}^2$",
-        "40.0 $\\text{cm}^2$",
-        "39.4 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "First, find angle B using the sine rule: sin(B)/8 = sin(50°)/10, so sin(B) = 0.6128... and B = 37.799...°. Then find angle C = 180° - 50° - 37.799...° = 92.200...°. Finally, use the area formula Area = 0.5 * a * b * sin(C) = 0.5 * 10 * 8 * sin(92.200...°) = 39.969... $\\text{cm}^2$. Rounded to one decimal place, the area is 40.0 $\\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A triangle has sides of length 5 cm, 8 cm, and 11 cm. Find the size of its largest angle, correct to 1 decimal place.",
-      "options": [
-        "81.8°",
-        "113.6°",
-        "66.4°",
-        "108.2°"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The largest angle is opposite the longest side (11 cm). Use the cosine rule: cos(C) = ($5^2 + 8^2 - 11^2$) / (2*5*8) = (25 + 64 - 121) / 80 = -$\\frac{32}{80}$ = -0.4. Angle C = arccos(-0.4) = 113.57...°."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "In triangle JKL, angle J = 70°, angle K = 50°, and side l = 15 cm. Find the length of side j, correct to 3 significant figures.",
-      "options": [
-        "18.4 cm",
-        "13.3 cm",
-        "16.3 cm",
-        "12.9 cm"
-      ],
-      "correctAnswer": 2,
-      "explanation": "First, find angle L = 180° - 70° - 50° = 60°. Then use the sine rule: j/sin(J) = l/sin(L). So j = l * sin(J) / sin(L) = 15 * sin(70°) / sin(60°) = 16.28... cm."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the area of a triangle with side lengths 7 cm, 8 cm, and 9 cm. Give your answer correct to 3 significant figures.",
-      "options": [
-        "26.8 $\\text{cm}^2$",
-        "8.00 $\\text{cm}^2$",
-        "28.0 $\\text{cm}^2$",
-        "53.7 $\\text{cm}^2$"
-      ],
-      "correctAnswer": 0,
-      "explanation": "First, find an angle using the cosine rule. Let C be opposite side 9. cos(C) = ($7^2 + 8^2 - 9^2$)/(2*7*8) = $\\frac{32}{112}$. C = 73.4°. Then use the area formula: Area = 0.5 * 7 * 8 * sin(73.4°) = 26.83... $\\text{cm}^2$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Two ships leave a port at the same time. One sails 24 km on a bearing of 040°. The other sails 30 km on a bearing of 150°. How far apart are the ships, correct to 3 significant figures?",
-      "options": [
-        "54.0 km",
-        "31.4 km",
-        "44.4 km",
-        "38.4 km"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The angle between the ships' paths is 150° - 40° = 110°. Use the cosine rule: $d^2 = 24^2 + 30^2$ - 2(24)(30)cos(110°) = 576 + 900 - 1440(-0.342...) = 1968.5... The distance d = sqrt(1968.5...) = 44.36... km."
+      "id": "E6-05-Q5",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "In triangle ABC, AB = 9 cm, BC = 7 cm and angle BAC = 40°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate angle BCA.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "55.4",
+          "tolerance": 0.1,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "sinC/9 = sin40/7 (sine rule)" },
+            { "mark": "M1", "desc": "sinC = 9sin40/7" },
+            { "mark": "A1", "desc": "55.4° or 55.38° to 55.39°" }
+          ],
+          "workingSteps": [
+            "sinC / 9 = sin40° / 7",
+            "sinC = 9 × sin40° / 7 = 0.826",
+            "C = sin⁻¹(0.826) = 55.4°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Explain why angle BCA could also be 124.6°.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The ambiguous case of the sine rule",
+          "markScheme": [
+            { "mark": "E1", "desc": "sin(124.6°) = sin(55.4°) oe, or ambiguous case of sine rule" }
+          ],
+          "workingSteps": [
+            "sin(180° − 55.4°) = sin(124.6°) = 0.826 = sin(55.4°)",
+            "This is the ambiguous case of the sine rule"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "For the case where angle BCA is acute, calculate the area of triangle ABC.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "25.9",
+          "tolerance": 0.1,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Angle B = 180 − 40 − 55.4 = 84.6° soi" },
+            { "mark": "M1", "desc": "½ × 9 × 7 × sin84.6° or ½ × AB × BC × sinB" },
+            { "mark": "A1", "desc": "25.9 or 31.35 × 0.826" }
+          ],
+          "workingSteps": [
+            "Angle B = 180° − 40° − 55.4° = 84.6°",
+            "Area = ½ × 9 × 7 × sin84.6° = 31.35 cm²"
+          ]
+        }
+      ]
     }
   ]
 }

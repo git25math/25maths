@@ -5,150 +5,183 @@
   "syllabusCode": "E3-03",
   "tier": "Extended",
   "domain": "coordinate",
+  "schemaVersion": 2,
+  "status": "draft",
+  "paperType": "mixed",
+  "calculator": null,
+  "totalMarks": 15,
+  "estimatedMinutes": 16,
   "questions": [
     {
-      "type": "multiple-choice",
-      "questionText": "What is the gradient of the line passing through the points (2, 5) and (4, 11)?",
-      "options": [
-        "3",
-        "$\\frac{1}{3}$",
-        "2",
-        "$\\frac{1}{2}$"
+      "id": "E3-03-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The line $2y + 3x = 8$ crosses the x-axis at A and the y-axis at B.\nFind the gradient of AB.",
+      "answerType": "fraction",
+      "correctAnswer": "−3/2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Rearrange: y = −3x/2 + 4"
+        },
+        {
+          "mark": "A1",
+          "desc": "Gradient = −3/2"
+        },
+        {
+          "mark": "B1",
+          "desc": "Or: A(8/3, 0), B(0, 4), m = (4−0)/(0−8/3) = −3/2"
+        }
       ],
-      "correctAnswer": 0,
-      "explanation": "The gradient m is calculated as the change in y divided by the change in x: $m = \\frac{11 - 5}{4 - 2}$ = $\\frac{6}{2}$ = 3."
+      "workingSteps": [
+        "2y = −3x + 8",
+        "y = −3x/2 + 4",
+        "Gradient = −3/2"
+      ],
+      "explanation": "Rearrange into y = mx + c form."
     },
     {
-      "type": "multiple-choice",
-      "questionText": "Find the gradient of the line passing through (-1, 8) and (3, -4).",
-      "options": [
-        "3",
-        "-3",
-        "$\\frac{1}{3}$",
-        "-$\\frac{1}{3}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The gradient m is calculated as the change in y divided by the change in x: $m = \\frac{-4 - 8}{3 - (-1}$) = -$\\frac{12}{4}$ = -3."
+      "id": "E3-03-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "The points A(1, 2), B(5, 4) and C(3, 8) form a triangle.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the gradient of AB.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(4−2)/(5−1)"
+            },
+            {
+              "mark": "A1",
+              "desc": "2/4 = 1/2"
+            }
+          ],
+          "workingSteps": [
+            "m_AB = (4−2)/(5−1) = 2/4 = 1/2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the gradient of AC.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(8−2)/(3−1)"
+            },
+            {
+              "mark": "A1",
+              "desc": "6/2 = 3"
+            }
+          ],
+          "workingSteps": [
+            "m_AC = (8−2)/(3−1) = 6/2 = 3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that AB is not perpendicular to AC.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "Product of gradients ≠ −1",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Product = 1/2 × 3 = 3/2"
+            },
+            {
+              "mark": "A1",
+              "desc": "3/2 ≠ −1, so not perpendicular"
+            }
+          ],
+          "workingSteps": [
+            "Product of gradients = ½ × 3 = 3/2",
+            "For perpendicular lines, product = −1",
+            "3/2 ≠ −1, so not perpendicular"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Find the gradient of BC.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "-2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(8−4)/(3−5)"
+            },
+            {
+              "mark": "A1",
+              "desc": "4/(−2) = −2"
+            }
+          ],
+          "workingSteps": [
+            "m_BC = (8−4)/(3−5) = 4/(−2) = −2"
+          ]
+        }
+      ]
     },
     {
-      "type": "multiple-choice",
-      "questionText": "What is the gradient of the line with the equation y = -5x + 2?",
-      "options": [
-        "2",
-        "5",
-        "-5",
-        "-$\\frac{1}{5}$"
+      "id": "E3-03-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "The line through $(a, 3)$ and $(4, a+1)$ has gradient 1.\nFind the value of $a$.",
+      "answerType": "integer",
+      "correctAnswer": "3",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "(a+1−3)/(4−a) = 1"
+        },
+        {
+          "mark": "M1",
+          "desc": "a − 2 = 4 − a"
+        },
+        {
+          "mark": "M1",
+          "desc": "2a = 6"
+        },
+        {
+          "mark": "A1",
+          "desc": "a = 3"
+        }
       ],
-      "correctAnswer": 2,
-      "explanation": "The equation is in the form y = mx + c, where m is the gradient. Therefore, the gradient is -5."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A straight line passes through (0, 6) and (7, 6). What is its gradient?",
-      "options": [
-        "0",
-        "Undefined",
-        "1",
-        "$\\frac{6}{7}$"
+      "workingSteps": [
+        "(a+1−3)/(4−a) = 1",
+        "(a−2)/(4−a) = 1",
+        "a − 2 = 4 − a",
+        "2a = 6, a = 3"
       ],
-      "correctAnswer": 0,
-      "explanation": "The y-coordinates are the same, which means it is a horizontal line. The gradient of any horizontal line is 0. $m = \\frac{6 - 6}{7 - 0}$ = $\\frac{0}{7}$ = 0."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What is the gradient of the line that passes through (4, -2) and (4, 9)?",
-      "options": [
-        "0",
-        "11",
-        "Undefined",
-        "1"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The x-coordinates are the same, indicating a vertical line. The gradient of a vertical line is undefined because the change in x is 0, which would lead to division by zero."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "The gradient of the line with equation 3y = 6x - 5 is:",
-      "options": [
-        "6",
-        "2",
-        "-$\\frac{5}{3}$",
-        "3"
-      ],
-      "correctAnswer": 1,
-      "explanation": "First, rearrange the equation into the form y = mx + c. Divide the entire equation by 3: y = 2x - $\\frac{5}{3}$. The gradient (m) is 2."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A line has a gradient of 4 and passes through the point (1, 5). What is the value of y when $x = 3$?",
-      "options": [
-        "13",
-        "9",
-        "12",
-        "20"
-      ],
-      "correctAnswer": 0,
-      "explanation": "For every 1 unit increase in x, y increases by 4. The change in x from 1 to 3 is 2. So the change in y is 4 * 2 = 8. The new y value is 5 + 8 = 13."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the gradient of the line passing through the points (1, 9) and (5, 3).",
-      "options": [
-        "$\\frac{3}{2}$",
-        "-$\\frac{3}{2}$",
-        "$\\frac{2}{3}$",
-        "-$\\frac{2}{3}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The gradient m is calculated as the change in y divided by the change in x: $m = \\frac{3 - 9}{5 - 1}$ = -$\\frac{6}{4}$ = -$\\frac{3}{2}$."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "A line's gradient is described as 'for every 2 units increase in x, the y-value decreases by 10'. What is the gradient?",
-      "options": [
-        "5",
-        "$\\frac{1}{5}$",
-        "-5",
-        "-$\\frac{1}{5}$"
-      ],
-      "correctAnswer": 2,
-      "explanation": "The gradient is the change in y divided by the change in x. Change in y is -10, and change in x is +2. So, m = -$\\frac{10}{2}$ = -5."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "What is the gradient of the line with equation $4x + 2y = 10$?",
-      "options": [
-        "2",
-        "4",
-        "-4",
-        "-2"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Rearrange to y = mx + c form. 2y = -4x + 10. Then divide by 2: $y = -2x + 5$. The gradient (m) is -2."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Which of these lines has the steepest gradient?",
-      "options": [
-        "$y = 2x + 10$",
-        "$y = -3x + 1$",
-        "$y = 0.5x - 4$",
-        "2y = 5x + 6"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Steepness is determined by the absolute value of the gradient. The gradients are 2, -3, 0.5, and 2.5 (from $y = 2.$5x + 3). The absolute values are 2, 3, 0.5, and 2.5. The largest absolute value is 3."
-    },
-    {
-      "type": "multiple-choice",
-      "questionText": "Find the gradient of the line passing through ($\\frac{1}{2}$, 3) and ($\\frac{3}{2}$, 7).",
-      "options": [
-        "$\\frac{1}{4}$",
-        "4",
-        "2",
-        "$\\frac{1}{2}$"
-      ],
-      "correctAnswer": 1,
-      "explanation": "The gradient m is (7 - 3) / ($\\frac{3}{2}$ - $\\frac{1}{2}$) = $\\frac{4}{1}$ = 4."
+      "explanation": "Set up gradient formula and solve the resulting equation."
     }
   ]
 }
