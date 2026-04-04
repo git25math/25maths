@@ -6,10 +6,84 @@
   "tier": "Core",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "C1-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write each of the following as a fraction in its simplest form.\n(a) 0.6\n(b) 35%\n(c) 0.125",
+      "answerType": "fraction",
+      "correctAnswer": "(a) 3/5  (b) 7/20  (c) 1/8",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "$\\frac{3}{5}$" },
+        { "mark": "B1", "desc": "$\\frac{7}{20}$" },
+        { "mark": "B1", "desc": "$\\frac{1}{8}$" }
+      ],
+      "workingSteps": [
+        "0.6 = 6/10 = 3/5",
+        "35% = 35/100 = 7/20",
+        "0.125 = 125/1000 = 1/8"
+      ],
+      "explanation": "Write as a fraction with denominator 10, 100 or 1000, then simplify."
+    },
+    {
+      "id": "C1-04-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate $\\dfrac{3}{4} + \\dfrac{5}{6}$. Give your answer as a mixed number.",
+      "answerType": "fraction",
+      "correctAnswer": "1 7/12",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Common denominator of 12 used: 9/12 + 10/12" },
+        { "mark": "A1", "desc": "19/12" },
+        { "mark": "A1", "desc": "$1\\frac{7}{12}$ cao" }
+      ],
+      "workingSteps": [
+        "LCM of 4 and 6 is 12",
+        "3/4 = 9/12",
+        "5/6 = 10/12",
+        "9/12 + 10/12 = 19/12 = 1 7/12"
+      ],
+      "explanation": "Find a common denominator, add numerators, then convert to mixed number."
+    },
+    {
+      "id": "C1-04-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "write-down",
+      "difficulty": "medium",
+      "questionText": "Write these numbers in order, from smallest to largest.\n$$\\frac{3}{5} \\qquad 0.58 \\qquad 62\\% \\qquad \\frac{7}{12}$$",
+      "answerType": "expression",
+      "correctAnswer": "0.58, 7/12, 3/5, 62%",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Converts all to decimals or common denominator" },
+        { "mark": "M1", "desc": "Correct decimal equivalents: 0.6, 0.58, 0.62, 0.583..." },
+        { "mark": "A1", "desc": "Correct order: 0.58, 7/12, 3/5, 62%" },
+        { "mark": "A1", "desc": "All four values in correct positions" }
+      ],
+      "workingSteps": [
+        "3/5 = 0.6",
+        "0.58 = 0.58",
+        "62% = 0.62",
+        "7/12 = 0.5833...",
+        "Order: 0.58 < 0.5833... < 0.6 < 0.62"
+      ],
+      "explanation": "Convert all to decimals for easy comparison."
+    }
+  ]
 }

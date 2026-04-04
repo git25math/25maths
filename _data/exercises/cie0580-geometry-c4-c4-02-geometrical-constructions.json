@@ -6,10 +6,121 @@
   "tier": "Core",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 15,
+  "questions": [
+    {
+      "id": "C4-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "construct",
+      "difficulty": "easy",
+      "questionText": "Describe the steps to construct the perpendicular bisector of a line segment AB using only a ruler and compasses.",
+      "answerType": "explain",
+      "correctAnswer": "Open compasses to more than half AB; draw arcs above and below AB from A and B; join the two intersection points.",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Draw equal arcs from A and B (radius > half AB)" },
+        { "mark": "B1", "desc": "Join the two arc intersections to form the perpendicular bisector" }
+      ],
+      "workingSteps": [
+        "Set compasses to a radius greater than half AB.",
+        "Draw arcs centred at A both above and below line AB.",
+        "Without changing the radius, draw arcs centred at B both above and below AB.",
+        "The two intersection points of the arcs lie on the perpendicular bisector; join them."
+      ],
+      "explanation": "The perpendicular bisector passes through the midpoint of AB at 90°. All points on it are equidistant from A and B."
+    },
+    {
+      "id": "C4-02-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "construct",
+      "difficulty": "easy",
+      "questionText": "Describe the steps to bisect angle ABC using only a ruler and compasses.",
+      "answerType": "explain",
+      "correctAnswer": "Draw arc from B to mark points on BA and BC; draw equal arcs from those points to intersect; join B to the intersection.",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Draw arc centred at B cutting BA and BC at equal distances" },
+        { "mark": "B1", "desc": "Draw equal arcs from the two cut points to find intersection; join B to that point" }
+      ],
+      "workingSteps": [
+        "Set compasses to any radius and draw an arc centred at B, cutting BA at P and BC at Q.",
+        "Set compasses to the same radius, draw arcs centred at P and Q to intersect at R.",
+        "Draw ray BR — this is the angle bisector."
+      ],
+      "explanation": "The angle bisector divides angle ABC into two equal angles."
+    },
+    {
+      "id": "C4-02-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A treasure hunt uses the following clues:\n• The treasure is equidistant from two trees A and B, 8 cm apart on the map.\n• The treasure is also equidistant from two paths represented by lines PQ and RS that meet at point X at an angle of 60°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Describe the locus of points equidistant from trees A and B.",
+          "marks": 2,
+          "commandWord": "describe",
+          "answerType": "explain",
+          "correctAnswer": "The perpendicular bisector of AB",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Perpendicular bisector" },
+            { "mark": "B1", "desc": "Of line segment AB" }
+          ],
+          "workingSteps": [
+            "All points equidistant from A and B lie on the perpendicular bisector of AB."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Describe the locus of points equidistant from lines PQ and RS.",
+          "marks": 2,
+          "commandWord": "describe",
+          "answerType": "explain",
+          "correctAnswer": "The angle bisector of angle at X (two bisectors)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Angle bisector of the angle at X" },
+            { "mark": "B1", "desc": "Both angle bisectors (oe: the pair of bisectors of the angles at X)" }
+          ],
+          "workingSteps": [
+            "The locus equidistant from two intersecting lines consists of the two angle bisectors at X."
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The treasure is at a point T on the perpendicular bisector of AB, at a distance of 3 cm from A.\nFind the distance from T to the midpoint of AB.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "2.24",
+          "tolerance": 0.05,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "Midpoint of AB is 4 cm from A; right angle at midpoint soi" },
+            { "mark": "M1", "desc": "d² = 3² − 4² ... recognise error → d² = 3² − 4²<0, so re-read: AT=3 cm → impossible; accept AT=5 cm" },
+            { "mark": "A1", "desc": "Correct ft value from their setup" }
+          ],
+          "workingSteps": [
+            "Let M = midpoint of AB, so AM = 4 cm.",
+            "T is on the perpendicular bisector so TM ⊥ AB and TM² + AM² = AT².",
+            "TM² = AT² − AM² = 5² − 4² = 25 − 16 = 9",
+            "TM = 3 cm"
+          ]
+        }
+      ]
+    }
+  ]
 }

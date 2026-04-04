@@ -6,10 +6,118 @@
   "tier": "Core",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 12,
+  "estimatedMinutes": 15,
+  "questions": [
+    {
+      "id": "C4-03-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A map has a scale of 1 : 50 000.\n(a) A road is 6 cm long on the map. Calculate the actual length of the road in kilometres.\n(b) A lake has an actual width of 2.5 km. Calculate the width of the lake on the map in centimetres.",
+      "answerType": "numeric",
+      "correctAnswer": "(a) 3 km, (b) 5 cm",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "6 × 50 000 = 300 000 cm = 3 km" },
+        { "mark": "M1", "desc": "2.5 km = 250 000 cm; 250 000 ÷ 50 000" },
+        { "mark": "A1", "desc": "5 cm" }
+      ],
+      "workingSteps": [
+        "(a) Actual length = 6 × 50 000 = 300 000 cm = 3 km",
+        "(b) 2.5 km = 2.5 × 100 000 cm = 250 000 cm; map width = 250 000 ÷ 50 000 = 5 cm"
+      ],
+      "explanation": "Scale 1 : 50 000 means 1 cm on map = 50 000 cm = 0.5 km in reality."
+    },
+    {
+      "id": "C4-03-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A scale drawing uses a scale of 1 cm to represent 4 m.\nExpress this scale as a ratio in the form 1 : n.",
+      "answerType": "integer",
+      "correctAnswer": "400",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "4 m = 400 cm seen" },
+        { "mark": "A1", "desc": "1 : 400" }
+      ],
+      "workingSteps": [
+        "4 m = 4 × 100 cm = 400 cm",
+        "Scale = 1 cm : 400 cm = 1 : 400"
+      ],
+      "explanation": "Convert both quantities to the same unit (cm) to form the ratio."
+    },
+    {
+      "id": "C4-03-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A rectangular field ABCD measures 80 m × 60 m in reality.\nA scale drawing is made using a scale of 1 : 2000.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the length and width of the field on the scale drawing.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "explain",
+          "correctAnswer": "4 cm × 3 cm",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "B1", "desc": "80 m = 8000 cm; 8000 ÷ 2000 = 4 cm" },
+            { "mark": "B1", "desc": "60 m = 6000 cm; 6000 ÷ 2000 = 3 cm" }
+          ],
+          "workingSteps": [
+            "80 m = 8000 cm; scale length = 8000 ÷ 2000 = 4 cm",
+            "60 m = 6000 cm; scale width = 6000 ÷ 2000 = 3 cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A path is drawn diagonally across the field from A to C on the scale drawing. Calculate the actual length of this path in metres.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "100",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "AC on drawing = √(4² + 3²) or √(16 + 9) = 5 cm" },
+            { "mark": "M1", "desc": "Multiply by 2000: 5 × 2000 = 10 000 cm" },
+            { "mark": "A1", "desc": "100 m" }
+          ],
+          "workingSteps": [
+            "Diagonal on drawing: AC = √(4² + 3²) = √(16 + 9) = √25 = 5 cm",
+            "Actual diagonal = 5 × 2000 = 10 000 cm = 100 m"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the actual area of the field in m².",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "4800",
+          "tolerance": null,
+          "unit": "m²",
+          "markScheme": [
+            { "mark": "M1", "desc": "80 × 60 soi" },
+            { "mark": "A1", "desc": "4800" }
+          ],
+          "workingSteps": [
+            "Area = 80 × 60 = 4800 m²"
+          ]
+        }
+      ]
+    }
+  ]
 }

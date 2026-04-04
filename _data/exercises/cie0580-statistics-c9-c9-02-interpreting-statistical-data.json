@@ -1,15 +1,148 @@
 {
-  "topic": "interpreting statistical data",
+  "topic": "Interpreting statistical data",
   "board": "CIE 0580",
   "subtopicId": "cie0580:statistics-c9:c9-02-interpreting-statistical-data",
   "syllabusCode": "C9-02",
   "tier": "Core",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 16,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "C9-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "The ages of seven students are:\n15, 14, 16, 15, 17, 14, 15\n\nFind\n(a) the mode,\n(b) the median,\n(c) the range.",
+      "answerType": "integer",
+      "correctAnswer": "(a) 15, (b) 15, (c) 3",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) 15" },
+        { "mark": "B1", "desc": "(b) 15 (ordered: 14, 14, 15, 15, 15, 16, 17 → 4th value)" },
+        { "mark": "B1", "desc": "(c) 17 − 14 = 3" }
+      ],
+      "workingSteps": [
+        "(a) 15 appears 3 times — most frequent → mode = 15",
+        "(b) Ordered: 14, 14, 15, 15, 15, 16, 17. Middle (4th of 7) = 15",
+        "(c) Range = 17 − 14 = 3"
+      ],
+      "explanation": "Order the data first. Median is the middle value; range is max − min."
+    },
+    {
+      "id": "C9-02-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "The table shows the number of hours of sunshine per day over 10 days.\n\n| Day | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|-----|---|---|---|---|---|---|---|---|---|----|\n| Hours | 3 | 7 | 5 | 6 | 4 | 8 | 5 | 9 | 6 | 7 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the range of the hours of sunshine.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "B1", "desc": "9 − 3 = 6" }
+          ],
+          "workingSteps": [
+            "Maximum = 9, Minimum = 3",
+            "Range = 9 − 3 = 6"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the median number of hours of sunshine.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "M1", "desc": "Ordered list seen or 5th and 6th values identified" },
+            { "mark": "A1", "desc": "(6 + 6) ÷ 2 = 6" }
+          ],
+          "workingSteps": [
+            "Ordered: 3, 4, 5, 5, 6, 6, 7, 7, 8, 9",
+            "10 values → median = average of 5th and 6th",
+            "5th = 6, 6th = 6 → median = 6"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the mean number of hours of sunshine per day.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "6",
+          "tolerance": 0.01,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "M1", "desc": "Sum of all values attempted" },
+            { "mark": "M1", "desc": "Sum = 60 seen" },
+            { "mark": "A1", "desc": "60 ÷ 10 = 6" }
+          ],
+          "workingSteps": [
+            "Sum = 3 + 7 + 5 + 6 + 4 + 8 + 5 + 9 + 6 + 7",
+            "Sum = 60",
+            "Mean = 60 ÷ 10 = 6"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "On how many days was the sunshine above the mean?",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "4",
+          "tolerance": null,
+          "unit": "days",
+          "markScheme": [
+            { "mark": "M1", "desc": "Compares each value to their mean (ft)" },
+            { "mark": "A1", "desc": "4 days (values 7, 8, 9, 7 are above 6)" }
+          ],
+          "workingSteps": [
+            "Mean = 6",
+            "Values above 6: day 2 (7), day 6 (8), day 8 (9), day 10 (7)",
+            "4 days"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C9-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 5,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The stem-and-leaf diagram shows the test scores (out of 50) for 11 students.\n\n| Stem | Leaf |\n|------|------|\n| 2 | 3 5 8 |\n| 3 | 1 4 4 7 |\n| 4 | 0 2 6 9 |\n\nKey: 2 | 3 means 23\n\nFind\n(a) the mode,\n(b) the median,\n(c) the range.",
+      "answerType": "integer",
+      "correctAnswer": "(a) 34, (b) 34, (c) 26",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B2", "desc": "(a) 34 (the only repeated value)" },
+        { "mark": "B2", "desc": "(b) 34 (6th value out of 11)" },
+        { "mark": "B1", "desc": "(c) 49 − 23 = 26" }
+      ],
+      "workingSteps": [
+        "Data in order: 23, 25, 28, 31, 34, 34, 37, 40, 42, 46, 49",
+        "(a) 34 appears twice — most frequent → mode = 34",
+        "(b) 11 values → median is 6th = 34",
+        "(c) Range = 49 − 23 = 26"
+      ],
+      "explanation": "Read a stem-and-leaf diagram left to right; the data is already in order."
+    }
+  ]
 }
