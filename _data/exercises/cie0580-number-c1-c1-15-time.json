@@ -6,10 +6,102 @@
   "tier": "Core",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "C1-15-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write $14\\text{:}35$ in 12-hour clock format.",
+      "answerType": "expression",
+      "correctAnswer": "2:35 pm",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "$14 - 12 = 2$" },
+        { "mark": "B1", "desc": "$2\\text{:}35$ pm cao" }
+      ],
+      "workingSteps": [
+        "$14\\text{:}35$ — since $14 > 12$, subtract 12: $14 - 12 = 2$",
+        "Answer: $2\\text{:}35$ pm"
+      ],
+      "explanation": "Times after 12:00 noon are pm. Subtract 12 from the hour."
+    },
+    {
+      "id": "C1-15-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A film starts at $7\\text{:}45$ pm and lasts $1$ hour $55$ minutes.\nAt what time does it end? Give your answer using the 24-hour clock.",
+      "answerType": "expression",
+      "correctAnswer": "21:40",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$7\\text{:}45$ pm $= 19\\text{:}45$" },
+        { "mark": "M1", "desc": "$19\\text{:}45 + 1\\text{h }55\\text{min}$" },
+        { "mark": "A1", "desc": "$21\\text{:}40$ cao" }
+      ],
+      "workingSteps": [
+        "$7\\text{:}45$ pm $= 19\\text{:}45$ (24-hr)",
+        "$19\\text{:}45 + 1\\text{h} = 20\\text{:}45$",
+        "$20\\text{:}45 + 55\\text{min} = 21\\text{:}40$"
+      ],
+      "explanation": "Add 12 to convert pm to 24-hr, then add the duration carefully."
+    },
+    {
+      "id": "C1-15-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A bus timetable shows:\n| Stop | Bus A | Bus B |\n|------|-------|-------|\n| Town Centre | 08:15 | 09:00 |\n| Park | 08:32 | 09:17 |\n| Library | 08:50 | 09:35 |\n| Station | 09:10 | 09:55 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "How long does Bus A take to travel from Town Centre to Station?",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "expression",
+          "correctAnswer": "55 minutes",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$09\\text{:}10 - 08\\text{:}15$" },
+            { "mark": "A1", "desc": "$55$ minutes cao" }
+          ],
+          "workingSteps": [
+            "$09\\text{:}10 - 08\\text{:}15 = 55$ minutes"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Mia arrives at the Park stop at $08\\text{:}40$.\nWhich bus can she catch and how long does she wait?",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "explain",
+          "correctAnswer": "Bus B; waits 37 minutes",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Bus A departs Park at $08\\text{:}32$ — already gone" },
+            { "mark": "B1", "desc": "She catches Bus B at $09\\text{:}17$" },
+            { "mark": "B1", "desc": "Wait $= 09\\text{:}17 - 08\\text{:}40 = 37$ minutes" }
+          ],
+          "workingSteps": [
+            "Bus A departs Park at $08\\text{:}32$, which is before $08\\text{:}40$ — missed",
+            "Bus B departs Park at $09\\text{:}17$",
+            "Wait $= 09\\text{:}17 - 08\\text{:}40 = 37$ minutes"
+          ]
+        }
+      ]
+    }
+  ]
 }

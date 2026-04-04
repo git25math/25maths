@@ -1,15 +1,149 @@
 {
-  "topic": "scatter diagrams",
+  "topic": "Scatter diagrams",
   "board": "CIE 0580",
   "subtopicId": "cie0580:statistics-e9:e9-05-scatter-diagrams",
   "syllabusCode": "E9-05",
   "tier": "Extended",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "E9-05-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "describe",
+      "difficulty": "easy",
+      "questionText": "A scatter diagram is plotted showing the number of hours of sunshine per day and the number of ice-creams sold at a beach kiosk.\nThe points form a pattern going from the lower left to the upper right of the diagram.\n\n(a) Describe the correlation shown.\n(b) Describe the relationship between sunshine hours and ice-cream sales in context.",
+      "answerType": "explain",
+      "correctAnswer": "(a) positive correlation, (b) as hours of sunshine increase, ice-cream sales tend to increase",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) Positive (correlation)" },
+        { "mark": "B1", "desc": "(a) Strong positive correlation if appropriate description included" },
+        { "mark": "E1", "desc": "(b) As sunshine hours increase, ice-cream sales increase oe" },
+        { "mark": "E1", "desc": "(b) Correct contextual description (do not accept 'one causes the other')" }
+      ],
+      "workingSteps": [
+        "(a) Points go from lower-left to upper-right → positive correlation",
+        "(b) More sunshine is associated with more ice-cream sales"
+      ],
+      "explanation": "Positive correlation: as x increases, y increases. Negative: as x increases, y decreases."
+    },
+    {
+      "id": "E9-05-Q2",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "medium",
+      "context": "The table shows the revision time (hours) and exam score (%) for 8 students.\n\n| Revision time (h) | 2  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |\n|-------------------|----|----|----|----|----|----|----|----|----|\n| Exam score (%)    | 35 | 48 | 55 | 60 | 65 | 72 | 78 | 82 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Describe the type of correlation shown in this data.",
+          "marks": 1,
+          "commandWord": "describe",
+          "answerType": "explain",
+          "correctAnswer": "Strong positive correlation",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Positive (strong positive correlation)" }
+          ],
+          "workingSteps": [
+            "As revision time increases, exam score increases → positive correlation"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the mean revision time and the mean exam score.\nHence find the coordinates of the mean point $\\overline{(x, y)}$.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "coordinate",
+          "correctAnswer": "(6.375, 61.875)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Mean revision = (2+4+5+6+7+8+9+10) ÷ 8 = 51 ÷ 8 = 6.375" },
+            { "mark": "M1", "desc": "Mean score = (35+48+55+60+65+72+78+82) ÷ 8 = 495 ÷ 8 = 61.875" },
+            { "mark": "A1", "desc": "(6.375, 61.875) or (6.38, 61.9) to 3 sf" }
+          ],
+          "workingSteps": [
+            "Sum of revision times = 2+4+5+6+7+8+9+10 = 51",
+            "Mean x = 51 ÷ 8 = 6.375 h",
+            "Sum of scores = 35+48+55+60+65+72+78+82 = 495",
+            "Mean y = 495 ÷ 8 = 61.875%",
+            "Mean point = (6.375, 61.875)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "A line of best fit passes through the mean point and through the point (2, 35).\nFind the equation of the line of best fit in the form $y = mx + c$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "y = 6.09x + 20.7",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Gradient = (61.875 − 35) ÷ (6.375 − 2)" },
+            { "mark": "M1", "desc": "= 26.875 ÷ 4.375 = 6.143..." },
+            { "mark": "M1", "desc": "Uses y − 35 = m(x − 2) or y = mx + c with point substituted" },
+            { "mark": "A1", "desc": "y = 6.14x + 22.7 or equivalent (accept answers in range y = 6x + 23 ± 1)" }
+          ],
+          "workingSteps": [
+            "Gradient m = (61.875 − 35) ÷ (6.375 − 2) = 26.875 ÷ 4.375 = 6.143",
+            "Using point (2, 35): 35 = 6.143 × 2 + c → c = 35 − 12.286 = 22.71",
+            "Equation: y = 6.14x + 22.7 (3 sf)"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Use your line of best fit to estimate the exam score for a student who revised for 11 hours.\nState whether this is interpolation or extrapolation.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "About 90% (ft); extrapolation",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "y = 6.14×11 + 22.7 = 90.2 (ft their equation, accept ± 3)" },
+            { "mark": "B1", "desc": "Extrapolation (11 h is outside the data range)" }
+          ],
+          "workingSteps": [
+            "y = 6.14 × 11 + 22.7 = 67.54 + 22.7 = 90.2%",
+            "11 h is outside the range 2–10 h → extrapolation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E9-05-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "explain",
+      "difficulty": "hard",
+      "questionText": "A scatter diagram shows a strong positive correlation between the number of fire engines attending a fire and the damage caused.\n\n(a) Describe the correlation.\n(b) A newspaper reports: 'More fire engines cause more damage.' \n    Explain why this conclusion is incorrect.",
+      "answerType": "explain",
+      "correctAnswer": "(a) Strong positive correlation. (b) Correlation does not imply causation; bigger fires need more engines and also cause more damage.",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) Strong positive correlation" },
+        { "mark": "E1", "desc": "(b) Correlation does not imply causation oe" },
+        { "mark": "E1", "desc": "(b) Both variables are influenced by a third variable: the size of the fire oe" },
+        { "mark": "B1", "desc": "(b) Larger fires require more engines AND cause more damage oe" }
+      ],
+      "workingSteps": [
+        "(a) Points form a strong upward trend → strong positive correlation",
+        "(b) The size of fire is a confounding variable; bigger fires need more engines and also cause more damage"
+      ],
+      "explanation": "Correlation shows association, not causation. Always consider whether a third variable might explain both."
+    }
+  ]
 }

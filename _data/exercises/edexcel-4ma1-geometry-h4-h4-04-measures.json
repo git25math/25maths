@@ -6,10 +6,124 @@
   "tier": "Higher",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 13,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "H4-04-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A map uses a scale of 1 : 25 000.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Two points are 4.6 cm apart on the map.\nWork out the actual distance in km.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "1.15",
+          "tolerance": 0.005,
+          "unit": "km",
+          "markScheme": [
+            { "mark": "M1", "desc": "4.6 × 25 000 = 115 000 cm" },
+            { "mark": "A1", "desc": "115 000 ÷ 100 000 = 1.15 km" }
+          ],
+          "workingSteps": [
+            "Actual distance = 4.6 × 25 000 = 115 000 cm",
+            "= 115 000 ÷ 100 000 = 1.15 km"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A lake has an area of 3 cm² on the map.\nWork out the actual area of the lake in km².",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.1875",
+          "tolerance": 0.001,
+          "unit": "km²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area scale factor = 25 000² = 6.25 × 10⁸" },
+            { "mark": "M1", "desc": "Actual area = 3 × 6.25 × 10⁸ cm² = 18.75 × 10⁸ cm²" },
+            { "mark": "A1", "desc": "18.75 × 10⁸ ÷ 10¹⁰ = 0.1875 km²" }
+          ],
+          "workingSteps": [
+            "1 km = 100 000 cm, so 1 km² = (10⁵)² = 10¹⁰ cm²",
+            "Actual area = 3 × 25 000² = 3 × 6.25 × 10⁸ = 18.75 × 10⁸ cm²",
+            "= 18.75 × 10⁸ ÷ 10¹⁰ km² = 0.1875 km²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "A measurement on a map is given as 6.4 cm, correct to 1 decimal place.\nWork out the upper and lower bounds for the actual distance.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Lower bound = 1.5875 km, Upper bound = 1.6125 km",
+          "markScheme": [
+            { "mark": "M1", "desc": "Map bounds: 6.35 cm to 6.45 cm" },
+            { "mark": "A1", "desc": "Actual: 6.35 × 25000 = 158750 cm = 1.5875 km; 6.45 × 25000 = 161250 cm = 1.6125 km" }
+          ],
+          "workingSteps": [
+            "Map measurement: 6.35 ≤ d < 6.45 cm (1dp rounding)",
+            "Lower bound: 6.35 × 25 000 = 158 750 cm = 1.5875 km",
+            "Upper bound: 6.45 × 25 000 = 161 250 cm = 1.6125 km"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H4-04-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": "A particle travels 200 m in 8.5 seconds, both measured to 2 significant figures.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the upper bound for the speed of the particle.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "24.7",
+          "tolerance": 0.1,
+          "unit": "m/s",
+          "markScheme": [
+            { "mark": "M1", "desc": "Upper bound for distance = 205 m (200 to 2sf)" },
+            { "mark": "M1", "desc": "Lower bound for time = 8.45 s" },
+            { "mark": "A1", "desc": "205 ÷ 8.45 = 24.26... ≈ 24.3 m/s" }
+          ],
+          "workingSteps": [
+            "200 to 2sf: bounds are 195 m to 205 m",
+            "8.5 to 2sf: bounds are 8.45 s to 8.55 s",
+            "Upper bound of speed = max distance ÷ min time = 205 ÷ 8.45 = 24.26 m/s"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the lower bound for the speed.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "22.8",
+          "tolerance": 0.1,
+          "unit": "m/s",
+          "markScheme": [
+            { "mark": "M1", "desc": "Lower bound for distance = 195 m" },
+            { "mark": "M1", "desc": "Upper bound for time = 8.55 s" },
+            { "mark": "A1", "desc": "195 ÷ 8.55 = 22.80... ≈ 22.8 m/s" }
+          ],
+          "workingSteps": [
+            "Lower bound of speed = min distance ÷ max time = 195 ÷ 8.55 = 22.807... ≈ 22.8 m/s"
+          ]
+        }
+      ]
+    }
+  ]
 }

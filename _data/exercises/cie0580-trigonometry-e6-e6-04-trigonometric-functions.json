@@ -9,7 +9,7 @@
   "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 19,
+  "totalMarks": 18,
   "estimatedMinutes": 22,
   "questions": [
     {
@@ -24,8 +24,14 @@
       "tolerance": null,
       "unit": "°",
       "markScheme": [
-        { "mark": "B1", "desc": "30°" },
-        { "mark": "B1", "desc": "150°" }
+        {
+          "mark": "B1",
+          "desc": "30°"
+        },
+        {
+          "mark": "B1",
+          "desc": "150°"
+        }
       ],
       "workingSteps": [
         "sin⁻¹(0.5) = 30°",
@@ -46,9 +52,18 @@
       "tolerance": 0.1,
       "unit": "°",
       "markScheme": [
-        { "mark": "M1", "desc": "cos⁻¹(0.6) = 53.13° soi (reference angle)" },
-        { "mark": "A1", "desc": "180° − 53.1° = 126.9°" },
-        { "mark": "A1", "desc": "180° + 53.1° = 233.1°" }
+        {
+          "mark": "M1",
+          "desc": "cos⁻¹(0.6) = 53.13° soi (reference angle)"
+        },
+        {
+          "mark": "A1",
+          "desc": "180° − 53.1° = 126.9°"
+        },
+        {
+          "mark": "A1",
+          "desc": "180° + 53.1° = 233.1°"
+        }
       ],
       "workingSteps": [
         "Reference angle: cos⁻¹(0.6) = 53.1°",
@@ -74,7 +89,10 @@
           "answerType": "integer",
           "correctAnswer": "3",
           "markScheme": [
-            { "mark": "B1", "desc": "3" }
+            {
+              "mark": "B1",
+              "desc": "3"
+            }
           ],
           "workingSteps": [
             "a = (max + min) / 2 = (5 + 1) / 2 = 3"
@@ -88,7 +106,10 @@
           "answerType": "integer",
           "correctAnswer": "2",
           "markScheme": [
-            { "mark": "B1", "desc": "2" }
+            {
+              "mark": "B1",
+              "desc": "2"
+            }
           ],
           "workingSteps": [
             "b = (max − min) / 2 = (5 − 1) / 2 = 2"
@@ -102,7 +123,10 @@
           "answerType": "integer",
           "correctAnswer": "2",
           "markScheme": [
-            { "mark": "B1", "desc": "2" }
+            {
+              "mark": "B1",
+              "desc": "2"
+            }
           ],
           "workingSteps": [
             "2 complete cycles in 360°, so period = 180°",
@@ -119,9 +143,18 @@
           "tolerance": null,
           "unit": "°",
           "markScheme": [
-            { "mark": "M1", "desc": "3 + 2sin(2x) = 4 leading to sin(2x) = 0.5" },
-            { "mark": "A1", "desc": "2x = 30° or 150°, so x = 15°" },
-            { "mark": "A1", "desc": "x = 75°" }
+            {
+              "mark": "M1",
+              "desc": "3 + 2sin(2x) = 4 leading to sin(2x) = 0.5"
+            },
+            {
+              "mark": "A1",
+              "desc": "2x = 30° or 150°, so x = 15°"
+            },
+            {
+              "mark": "A1",
+              "desc": "x = 75°"
+            }
           ],
           "workingSteps": [
             "3 + 2sin(2x) = 4",
@@ -139,7 +172,10 @@
           "answerType": "integer",
           "correctAnswer": "4",
           "markScheme": [
-            { "mark": "B2", "desc": "4 (B1 for 2 if only considering one cycle)" }
+            {
+              "mark": "B2",
+              "desc": "4 (B1 for 2 if only considering one cycle)"
+            }
           ],
           "workingSteps": [
             "In 0° to 360°, there are 2 complete cycles",
@@ -161,9 +197,18 @@
       "tolerance": 0.1,
       "unit": "°",
       "markScheme": [
-        { "mark": "M1", "desc": "tan x = −3/2 = −1.5" },
-        { "mark": "A1", "desc": "180° − 56.3° = 123.7°" },
-        { "mark": "A1", "desc": "360° − 56.3° = 303.7°" }
+        {
+          "mark": "M1",
+          "desc": "tan x = −3/2 = −1.5"
+        },
+        {
+          "mark": "A1",
+          "desc": "180° − 56.3° = 123.7°"
+        },
+        {
+          "mark": "A1",
+          "desc": "360° − 56.3° = 303.7°"
+        }
       ],
       "workingSteps": [
         "2tan x = −3, tan x = −1.5",
@@ -184,8 +229,14 @@
       "answerType": "explain",
       "correctAnswer": "Vertical stretch factor 3, translation 30° right",
       "markScheme": [
-        { "mark": "B1", "desc": "Vertical stretch / enlargement, scale factor 3 (in y-direction)" },
-        { "mark": "B1", "desc": "Translation of 30° to the right / in the positive x-direction" }
+        {
+          "mark": "B1",
+          "desc": "Vertical stretch / enlargement, scale factor 3 (in y-direction)"
+        },
+        {
+          "mark": "B1",
+          "desc": "Translation of 30° to the right / in the positive x-direction"
+        }
       ],
       "workingSteps": [
         "The 3 in front of sin causes a vertical stretch, scale factor 3",

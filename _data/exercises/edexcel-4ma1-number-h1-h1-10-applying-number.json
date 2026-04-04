@@ -6,10 +6,108 @@
   "tier": "Higher",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "H1-10-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": "A company's revenue was $\\$480000$ in 2022.\nIn 2023 it increased by $15\\%$.\nIn 2024 it decreased by $8\\%$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the revenue in 2024.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "507840",
+          "tolerance": 100,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "2023: $480000 \\times 1.15 = 552000$" },
+            { "mark": "M1", "desc": "2024: $552000 \\times 0.92$" },
+            { "mark": "M1", "desc": "Correct multiplication" },
+            { "mark": "A1", "desc": "$552000 \\times 0.92 = \\$507840$" }
+          ],
+          "workingSteps": [
+            "2023 revenue: $480000 \\times 1.15 = \\$552000$",
+            "2024 revenue: $552000 \\times 0.92 = \\$507840$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the overall percentage change from 2022 to 2024.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "5.8",
+          "tolerance": 0.2,
+          "unit": "%",
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{507840 - 480000}{480000} \\times 100$" },
+            { "mark": "A1", "desc": "$\\dfrac{27840}{480000} \\times 100 = 5.8\\%$ increase" }
+          ],
+          "workingSteps": [
+            "Change $= \\$507840 - \\$480000 = \\$27840$",
+            "Percentage change $= \\dfrac{27840}{480000} \\times 100 = 5.8\\%$ increase"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H1-10-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "hard",
+      "context": "A tank contains $600$ litres of water.\nWater leaks out at a rate of $12$ litres per hour.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "How many complete hours until the tank is less than half full?",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "25",
+          "tolerance": null,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "M1", "desc": "Half full $= 300$ litres; need to lose $300$ litres" },
+            { "mark": "M1", "desc": "$300 \\div 12 = 25$" },
+            { "mark": "A1", "desc": "$25$ complete hours (at exactly 25 h the tank has $600 - 12 \\times 25 = 300$ litres, still half full; after 25 complete hours = $\\mathbf{25}$ h it equals half full)" }
+          ],
+          "workingSteps": [
+            "Half full $= 300$ litres",
+            "Need to lose: $600 - 300 = 300$ litres",
+            "Time $= 300 \\div 12 = 25$ hours",
+            "At $t = 25$ h: $600 - 12 \\times 25 = 300$ litres (exactly half)",
+            "After $25$ complete hours the tank first drops below half full at $t > 25$ h → at 26th hour it falls below"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A pump refills the tank at $30$ litres per hour.\nAt $t = 0$, both the leak and the pump are running.\nAt what rate is the tank filling (net)?",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "18",
+          "tolerance": null,
+          "unit": "litres/hour",
+          "markScheme": [
+            { "mark": "M1", "desc": "Net rate $= 30 - 12$" },
+            { "mark": "A1", "desc": "$18$ litres/hour cao" }
+          ],
+          "workingSteps": [
+            "Net rate $= 30 - 12 = 18$ litres/hour (filling)"
+          ]
+        }
+      ]
+    }
+  ]
 }

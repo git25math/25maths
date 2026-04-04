@@ -6,10 +6,125 @@
   "tier": "Foundation",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 12,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "F4-04-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Convert 3.5 km to metres.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "3500",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "B1", "desc": "3500 m" }
+          ],
+          "workingSteps": [
+            "1 km = 1000 m",
+            "3.5 × 1000 = 3500 m"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Convert 240 cm² to mm².",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "24000",
+          "tolerance": null,
+          "unit": "mm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "1 cm² = 100 mm²" },
+            { "mark": "A1", "desc": "240 × 100 = 24 000 mm²" }
+          ],
+          "workingSteps": [
+            "1 cm = 10 mm, so 1 cm² = 10² mm² = 100 mm²",
+            "240 cm² = 240 × 100 = 24 000 mm²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "A runner completes a 10 km race in 45 minutes.\nWork out the runner's average speed in km/h.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "13.33",
+          "tolerance": 0.05,
+          "unit": "km/h",
+          "markScheme": [
+            { "mark": "M1", "desc": "Speed = distance ÷ time" },
+            { "mark": "M1", "desc": "Time = 45/60 = 0.75 hours" },
+            { "mark": "A1", "desc": "10 ÷ 0.75 = 13.3 km/h (3sf)" }
+          ],
+          "workingSteps": [
+            "Convert time: 45 min = 45/60 h = 0.75 h",
+            "Speed = distance ÷ time = 10 ÷ 0.75 = 13.3̄ km/h"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4-04-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A car travels 150 km at an average speed of 60 km/h, then a further 80 km at 40 km/h.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the total time for the journey.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "4.5",
+          "tolerance": 0,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "M1", "desc": "Time = distance ÷ speed" },
+            { "mark": "M1", "desc": "150/60 + 80/40 = 2.5 + 2" },
+            { "mark": "A1", "desc": "4.5 hours" }
+          ],
+          "workingSteps": [
+            "Time 1 = 150 ÷ 60 = 2.5 hours",
+            "Time 2 = 80 ÷ 40 = 2 hours",
+            "Total time = 2.5 + 2 = 4.5 hours"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the average speed for the whole journey.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "51.11",
+          "tolerance": 0.1,
+          "unit": "km/h",
+          "markScheme": [
+            { "mark": "M1", "desc": "Total distance = 150 + 80 = 230 km" },
+            { "mark": "M1", "desc": "Average speed = 230 ÷ 4.5" },
+            { "mark": "A1", "desc": "51.1 km/h (3sf)" }
+          ],
+          "workingSteps": [
+            "Total distance = 150 + 80 = 230 km",
+            "Total time = 4.5 hours",
+            "Average speed = 230 ÷ 4.5 = 51.1 km/h (3sf)"
+          ]
+        }
+      ]
+    }
+  ]
 }

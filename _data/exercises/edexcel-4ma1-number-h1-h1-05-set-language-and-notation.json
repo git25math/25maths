@@ -6,10 +6,107 @@
   "tier": "Higher",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "H1-05-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "$\\mathcal{E} = \\{$ integers from 1 to 20 inclusive $\\}$\n$P = \\{$ prime numbers $\\}$\n$Q = \\{$ multiples of 3 $\\}$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "List the members of $P \\cap Q$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "set-notation",
+          "correctAnswer": "{3}",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Primes: $2,3,5,7,11,13,17,19$; multiples of 3: $3,6,9,12,15,18$" },
+            { "mark": "A1", "desc": "$P \\cap Q = \\{3\\}$ cao" }
+          ],
+          "workingSteps": [
+            "Primes in $\\mathcal{E}$: $\\{2, 3, 5, 7, 11, 13, 17, 19\\}$",
+            "Multiples of 3 in $\\mathcal{E}$: $\\{3, 6, 9, 12, 15, 18\\}$",
+            "Intersection: $\\{3\\}$ (only prime that is a multiple of 3)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find $n(P \\cup Q)$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "13",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$n(P) = 8$; $n(Q) = 6$; $n(P \\cap Q) = 1$" },
+            { "mark": "M1", "desc": "$n(P \\cup Q) = 8 + 6 - 1$" },
+            { "mark": "A1", "desc": "$13$ cao" }
+          ],
+          "workingSteps": [
+            "$n(P) = 8$, $n(Q) = 6$, $n(P \\cap Q) = 1$",
+            "$n(P \\cup Q) = 8 + 6 - 1 = 13$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H1-05-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": "In a survey of 100 people:\n- 45 own a dog ($D$)\n- 30 own a cat ($C$)\n- 15 own both a dog and a cat\n- $x$ own neither",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the value of $x$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "40",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$n(D \\cup C) = 45 + 30 - 15 = 60$" },
+            { "mark": "M1", "desc": "$x = 100 - 60$" },
+            { "mark": "A1", "desc": "$x = 40$ cao" }
+          ],
+          "workingSteps": [
+            "$n(D \\cup C) = n(D) + n(C) - n(D \\cap C) = 45 + 30 - 15 = 60$",
+            "Neither $= 100 - 60 = 40$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A person is selected at random.\nWork out $P(D' \\cap C)$ — the probability they own a cat but not a dog.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "3/20",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Cat only: $30 - 15 = 15$" },
+            { "mark": "M1", "desc": "$P = \\dfrac{15}{100}$" },
+            { "mark": "A1", "desc": "$\\dfrac{3}{20}$ cao" }
+          ],
+          "workingSteps": [
+            "Cat only (not dog): $30 - 15 = 15$",
+            "$P(D' \\cap C) = \\dfrac{15}{100} = \\dfrac{3}{20}$"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,101 @@
   "tier": "Core",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 9,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "C1-08-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write $45000$ in standard form.",
+      "answerType": "expression",
+      "correctAnswer": "$4.5 \\times 10^4$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "$4.5$" },
+        { "mark": "B1", "desc": "$\\times 10^4$ cao" }
+      ],
+      "workingSteps": [
+        "$45000 = 4.5 \\times 10000 = 4.5 \\times 10^4$"
+      ],
+      "explanation": "Standard form: $a \\times 10^n$ where $1 \\leq a < 10$."
+    },
+    {
+      "id": "C1-08-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write $3.2 \\times 10^{-3}$ as an ordinary number.",
+      "answerType": "decimal-exact",
+      "correctAnswer": "0.0032",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Moves decimal point 3 places left" },
+        { "mark": "B1", "desc": "$0.0032$ cao" }
+      ],
+      "workingSteps": [
+        "$3.2 \\times 10^{-3}$: move the decimal point 3 places to the left",
+        "$= 0.0032$"
+      ],
+      "explanation": "A negative power of 10 means a small number less than 1."
+    },
+    {
+      "id": "C1-08-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "The mass of an electron is $9.11 \\times 10^{-31}$ kg.\nThe mass of a proton is $1.67 \\times 10^{-27}$ kg.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the mass of the proton as an ordinary number.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "$0.00000000000000000000000000167$",
+          "tolerance": null,
+          "unit": "kg",
+          "markScheme": [
+            { "mark": "B1", "desc": "$0.00000000000000000000000000167$ or correct 27 decimal places" }
+          ],
+          "workingSteps": [
+            "Move decimal 27 places left: $0.00000000000000000000000000167$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the ratio $\\dfrac{\\text{mass of proton}}{\\text{mass of electron}}$.\nGive your answer in standard form, correct to 3 significant figures.",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "expression",
+          "correctAnswer": "$1.83 \\times 10^3$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{1.67 \\times 10^{-27}}{9.11 \\times 10^{-31}}$" },
+            { "mark": "M1", "desc": "$\\dfrac{1.67}{9.11} \\times 10^{-27-(-31)} = 0.1833... \\times 10^4$" },
+            { "mark": "A1", "desc": "$1833...$ or $1.833... \\times 10^3$" },
+            { "mark": "A1", "desc": "$1.83 \\times 10^3$ (3 sf)" }
+          ],
+          "workingSteps": [
+            "$\\dfrac{1.67 \\times 10^{-27}}{9.11 \\times 10^{-31}}$",
+            "$= \\dfrac{1.67}{9.11} \\times 10^{-27+31}$",
+            "$= 0.18332... \\times 10^4$",
+            "$= 1.833... \\times 10^3$",
+            "$\\approx 1.83 \\times 10^3$ (3 sf)"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,86 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 9,
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "id": "E1-14-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Use a calculator to find $\\dfrac{\\sqrt{3.45^2 + 2.78^2}}{1.9}$.\nGive your answer correct to 3 significant figures.",
+      "answerType": "numeric",
+      "correctAnswer": "2.33",
+      "tolerance": 0.005,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$3.45^2 = 11.9025$; $2.78^2 = 7.7284$; sum $= 19.6309$" },
+        { "mark": "M1", "desc": "$\\sqrt{19.6309} = 4.4306...$; then $\\div 1.9$" },
+        { "mark": "A1", "desc": "$4.4306... \\div 1.9 = 2.332... \\approx 2.33$ (3 sf)" }
+      ],
+      "workingSteps": [
+        "$3.45^2 = 11.9025$",
+        "$2.78^2 = 7.7284$",
+        "$11.9025 + 7.7284 = 19.6309$",
+        "$\\sqrt{19.6309} = 4.4306...$",
+        "$4.4306... \\div 1.9 = 2.332...$",
+        "$\\approx 2.33$ (3 sf)"
+      ],
+      "explanation": "Enter the full expression using brackets: $\\sqrt{(3.45^2 + 2.78^2)} \\div 1.9$."
+    },
+    {
+      "id": "E1-14-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "hard",
+      "questionText": "Use a calculator to find $\\tan(54°) \\times \\dfrac{3.6}{\\cos(27°)}$.\nGive your answer correct to 4 significant figures.",
+      "answerType": "numeric",
+      "correctAnswer": "5.531",
+      "tolerance": 0.001,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$\\tan(54°) = 1.37638...$; $\\cos(27°) = 0.89101...$" },
+        { "mark": "M1", "desc": "$\\dfrac{3.6}{0.89101...} = 4.0403...$; then $1.37638... \\times 4.0403...$" },
+        { "mark": "A1", "desc": "$= 5.5633... \\approx 5.563$ (4 sf)" }
+      ],
+      "workingSteps": [
+        "$\\tan(54°) = 1.376381...$",
+        "$\\cos(27°) = 0.891006...$",
+        "$\\dfrac{3.6}{0.891006} = 4.04040...$",
+        "$1.376381 \\times 4.04040 = 5.5634...$",
+        "$\\approx 5.563$ (4 sf)"
+      ],
+      "explanation": "Make sure calculator is set to degrees mode."
+    },
+    {
+      "id": "E1-14-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "hard",
+      "questionText": "The formula $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$ gives the period of a pendulum.\nGiven $l = 0.64$ and $g = 9.81$, calculate $T$.\nGive your answer correct to 3 decimal places.",
+      "answerType": "numeric",
+      "correctAnswer": "1.605",
+      "tolerance": 0.001,
+      "unit": "s",
+      "markScheme": [
+        { "mark": "M1", "desc": "$\\dfrac{0.64}{9.81} = 0.065239...$" },
+        { "mark": "M1", "desc": "$\\sqrt{0.065239...} = 0.25541...$; then $\\times 2\\pi$" },
+        { "mark": "A1", "desc": "$2\\pi \\times 0.25541... = 1.60477... \\approx 1.605$ (3 dp)" }
+      ],
+      "workingSteps": [
+        "$l/g = 0.64/9.81 = 0.065239...$",
+        "$\\sqrt{0.065239} = 0.255420...$",
+        "$T = 2\\pi \\times 0.255420 = 1.60477...$",
+        "$\\approx 1.605$ s (3 dp)"
+      ],
+      "explanation": "Use the memory function to store intermediate results."
+    }
+  ]
 }

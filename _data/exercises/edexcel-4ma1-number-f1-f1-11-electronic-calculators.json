@@ -6,10 +6,110 @@
   "tier": "Foundation",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 9,
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "id": "F1-11-Q1",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Use your calculator to work out $\\sqrt{17.64}$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "decimal-exact",
+          "correctAnswer": "4.2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$4.2$ cao" }
+          ],
+          "workingSteps": [
+            "$\\sqrt{17.64} = 4.2$ (since $4.2^2 = 17.64$)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Use your calculator to work out $\\dfrac{8.4^2 - 3.6}{1.4 + 2.7}$.\nGive your answer correct to 2 decimal places.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "16.33",
+          "tolerance": 0.005,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Numerator: $8.4^2 - 3.6 = 70.56 - 3.6 = 66.96$" },
+            { "mark": "M1", "desc": "Denominator: $1.4 + 2.7 = 4.1$; then $66.96 \\div 4.1$" },
+            { "mark": "A1", "desc": "$66.96 \\div 4.1 = 16.331...$ → $16.33$ (2 dp)" }
+          ],
+          "workingSteps": [
+            "$8.4^2 = 70.56$",
+            "Numerator: $70.56 - 3.6 = 66.96$",
+            "Denominator: $1.4 + 2.7 = 4.1$",
+            "$66.96 \\div 4.1 = 16.331...$",
+            "$\\approx 16.33$ (2 dp)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F1-11-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Use your calculator to work out $(3.5 + 1.8)^3 \\times 0.04$.\nGive your answer correct to 3 significant figures.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "5.96",
+          "tolerance": 0.005,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$3.5 + 1.8 = 5.3$" },
+            { "mark": "M1", "desc": "$5.3^3 = 148.877$; then $\\times 0.04$" },
+            { "mark": "A1", "desc": "$148.877 \\times 0.04 = 5.9550... \\approx 5.96$ (3 sf)" }
+          ],
+          "workingSteps": [
+            "$3.5 + 1.8 = 5.3$",
+            "$5.3^3 = 5.3 \\times 5.3 \\times 5.3 = 148.877$",
+            "$148.877 \\times 0.04 = 5.95508$",
+            "$\\approx 5.96$ (3 sf)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Without a calculator, use estimation to check your answer to (a).",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "explain",
+          "correctAnswer": "Approximately (3+2)^3 × 0.04 = 125 × 0.04 = 5; consistent with 5.96",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Rounds: $3.5 + 1.8 \\approx 5$; $5^3 = 125$; $125 \\times 0.04 = 5$" },
+            { "mark": "A1", "desc": "Estimate $\\approx 5$, consistent with $5.96$" }
+          ],
+          "workingSteps": [
+            "$3.5 + 1.8 \\approx 5$",
+            "$5^3 = 125$",
+            "$125 \\times 0.04 = 5$",
+            "Estimate $\\approx 5$, close to calculator answer $5.96$ ✓"
+          ]
+        }
+      ]
+    }
+  ]
 }

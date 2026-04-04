@@ -6,10 +6,126 @@
   "tier": "Foundation",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 12,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "F4-07-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": "ABCD is a quadrilateral with angle A = 95°, angle B = 110° and angle C = 82°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out angle D.\nGive a reason for your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "73",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "Angles in a quadrilateral sum to 360°" },
+            { "mark": "M1", "desc": "360 − 95 − 110 − 82" },
+            { "mark": "A1", "desc": "73°" }
+          ],
+          "workingSteps": [
+            "Angles in a quadrilateral sum to 360°.",
+            "Angle D = 360° − 95° − 110° − 82° = 360° − 287° = 73°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "PQR is a straight line. Angle TQP = 68° and angle TQR = (3x + 10)°.\nWork out the value of x.\nGive a reason for your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "34",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Angles on a straight line sum to 180°" },
+            { "mark": "M1", "desc": "68 + 3x + 10 = 180 → 3x = 102" },
+            { "mark": "A1", "desc": "x = 34" }
+          ],
+          "workingSteps": [
+            "Angles on a straight line sum to 180° (PQR is a straight line)",
+            "68 + (3x + 10) = 180",
+            "3x + 78 = 180",
+            "3x = 102",
+            "x = 34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4-07-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "Lines AB and CD are parallel. EF is a transversal cutting AB at P and CD at Q.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Angle APQ = (4x − 5)° and angle PQC = (2x + 35)°.\nThese are co-interior angles.\nWork out the value of x.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Co-interior angles sum to 180°" },
+            { "mark": "M1", "desc": "(4x − 5) + (2x + 35) = 180 → 6x + 30 = 180" },
+            { "mark": "A1", "desc": "x = 25" }
+          ],
+          "workingSteps": [
+            "Co-interior angles sum to 180°",
+            "(4x − 5) + (2x + 35) = 180",
+            "6x + 30 = 180",
+            "6x = 150",
+            "x = 25"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out angle APQ.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "95",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "B1", "desc": "4(25) − 5 = 95°" }
+          ],
+          "workingSteps": [
+            "Angle APQ = 4(25) − 5 = 100 − 5 = 95°"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Give a reason why angle BPQ = 85°.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "APQ and BPQ are supplementary (angles on a straight line); 180 − 95 = 85°.",
+          "markScheme": [
+            { "mark": "B1", "desc": "Angles on a straight line / APQ + BPQ = 180°" },
+            { "mark": "B1", "desc": "BPQ = 180 − 95 = 85°" }
+          ],
+          "workingSteps": [
+            "AB is a straight line, so APQ + BPQ = 180°",
+            "BPQ = 180° − 95° = 85°"
+          ]
+        }
+      ]
+    }
+  ]
 }

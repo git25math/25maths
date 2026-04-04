@@ -6,10 +6,122 @@
   "tier": "Foundation",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "F1-05-Q1",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "easy",
+      "context": "$\\mathcal{E} = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$\n$A = \\{\\text{even numbers}\\}$\n$B = \\{\\text{multiples of 3}\\}$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "List the members of set $A$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "set-notation",
+          "correctAnswer": "{2, 4, 6, 8, 10}",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$\\{2, 4, 6, 8, 10\\}$ cao" }
+          ],
+          "workingSteps": [
+            "Even numbers in $\\mathcal{E}$: $2, 4, 6, 8, 10$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find $A \\cap B$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "set-notation",
+          "correctAnswer": "{6}",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$\\{6\\}$ cao" }
+          ],
+          "workingSteps": [
+            "Multiples of 3 in $\\mathcal{E}$: $3, 6, 9$",
+            "Even multiples of 3: $\\{6\\}$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find $A \\cup B$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "set-notation",
+          "correctAnswer": "{2, 3, 4, 6, 8, 9, 10}",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Combines all elements of A and B without repetition" },
+            { "mark": "A1", "desc": "$\\{2, 3, 4, 6, 8, 9, 10\\}$ cao" }
+          ],
+          "workingSteps": [
+            "$A = \\{2, 4, 6, 8, 10\\}$; $B = \\{3, 6, 9\\}$",
+            "$A \\cup B = \\{2, 3, 4, 6, 8, 9, 10\\}$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F1-05-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "In a class of 30 students:\n- 18 play football ($F$)\n- 14 play basketball ($B$)\n- 5 play neither sport",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the number of students who play both football and basketball.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "7",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Students who play at least one sport: $30 - 5 = 25$" },
+            { "mark": "M1", "desc": "$n(F \\cup B) = n(F) + n(B) - n(F \\cap B)$; $25 = 18 + 14 - n(F \\cap B)$" },
+            { "mark": "A1", "desc": "$n(F \\cap B) = 32 - 25 = 7$ cao" }
+          ],
+          "workingSteps": [
+            "Students playing at least one sport: $30 - 5 = 25$",
+            "$n(F \\cup B) = n(F) + n(B) - n(F \\cap B)$",
+            "$25 = 18 + 14 - n(F \\cap B)$",
+            "$n(F \\cap B) = 32 - 25 = 7$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A student is chosen at random.\nWork out the probability that this student plays football only.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "11/30",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Football only $= 18 - 7 = 11$" },
+            { "mark": "M1", "desc": "$P = \\dfrac{11}{30}$" },
+            { "mark": "A1", "desc": "$\\dfrac{11}{30}$ cao" }
+          ],
+          "workingSteps": [
+            "Football only (not basketball): $18 - 7 = 11$",
+            "$P(\\text{football only}) = \\dfrac{11}{30}$"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,143 @@
   "tier": "Extended",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 19,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "E9-07-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A histogram uses frequency density on the vertical axis.\nThe class 20 ≤ t < 30 has a frequency density of 3.5 and a class width of 10.\nThe class 30 ≤ t < 50 has a frequency density of 2 and a class width of 20.\n\n(a) Calculate the frequency for the class 20 ≤ t < 30.\n(b) Calculate the frequency for the class 30 ≤ t < 50.",
+      "answerType": "integer",
+      "correctAnswer": "(a) 35, (b) 40",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(a) 3.5 × 10" },
+        { "mark": "A1", "desc": "(a) 35" },
+        { "mark": "M1", "desc": "(b) 2 × 20" },
+        { "mark": "A1", "desc": "(b) 40" }
+      ],
+      "workingSteps": [
+        "(a) Frequency = frequency density × class width = 3.5 × 10 = 35",
+        "(b) Frequency = 2 × 20 = 40"
+      ],
+      "explanation": "Frequency = frequency density × class width. Area of bar = frequency."
+    },
+    {
+      "id": "E9-07-Q2",
+      "type": "structured",
+      "totalMarks": 11,
+      "difficulty": "medium",
+      "context": "The table shows the lengths (cm) of 80 leaves collected from a tree.\n\n| Length (cm)   | Frequency |\n|---------------|-----------|\n| 0 < l ≤ 5    | 10        |\n| 5 < l ≤ 10   | 24        |\n| 10 < l ≤ 15  | 28        |\n| 15 < l ≤ 25  | 12        |\n| 25 < l ≤ 35  | 6         |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the frequency density for each class.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "table-fill",
+          "correctAnswer": "[2, 4.8, 5.6, 1.2, 0.6]",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Frequency density = frequency ÷ class width used for at least one" },
+            { "mark": "B1", "desc": "0<l≤5: 10÷5=2; 5<l≤10: 24÷5=4.8; 10<l≤15: 28÷5=5.6" },
+            { "mark": "B1", "desc": "15<l≤25: 12÷10=1.2; 25<l≤35: 6÷10=0.6" }
+          ],
+          "workingSteps": [
+            "0<l≤5:  class width=5, fd=10÷5=2",
+            "5<l≤10: class width=5, fd=24÷5=4.8",
+            "10<l≤15: class width=5, fd=28÷5=5.6",
+            "15<l≤25: class width=10, fd=12÷10=1.2",
+            "25<l≤35: class width=10, fd=6÷10=0.6"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Show that the total number of leaves is 80.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "80",
+          "markScheme": [
+            { "mark": "M1", "desc": "Calculates frequency for the two wider classes: 1.2×10=12 and 0.6×10=6" },
+            { "mark": "A1", "desc": "10+24+28+12+6 = 80 ✓" }
+          ],
+          "workingSteps": [
+            "Frequencies: 2×5=10, 4.8×5=24, 5.6×5=28, 1.2×10=12, 0.6×10=6",
+            "Total = 10+24+28+12+6 = 80 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate an estimate of the mean leaf length.",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "12.5",
+          "tolerance": 0.2,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "Uses midpoints: 2.5, 7.5, 12.5, 20, 30" },
+            { "mark": "M1", "desc": "Σfx = 10×2.5 + 24×7.5 + 28×12.5 + 12×20 + 6×30" },
+            { "mark": "M1", "desc": "Σfx = 25 + 180 + 350 + 240 + 180 = 975" },
+            { "mark": "A1", "desc": "975 ÷ 80 = 12.1875, accept 12.2 cm" }
+          ],
+          "workingSteps": [
+            "Midpoints: 2.5, 7.5, 12.5, 20, 30",
+            "Σfx = 10×2.5 + 24×7.5 + 28×12.5 + 12×20 + 6×30",
+            "Σfx = 25 + 180 + 350 + 240 + 180 = 975",
+            "Mean = 975 ÷ 80 = 12.1875 ≈ 12.2 cm"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Explain why a histogram with frequency density on the vertical axis, rather than frequency, is more appropriate when class widths are unequal.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "When class widths are unequal, frequency density ensures the area of each bar represents frequency, so bars with wider classes are not misleadingly tall",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "E1", "desc": "Area of bar = frequency / bars would be misleading if frequency were used with unequal class widths oe" },
+            { "mark": "E1", "desc": "Wider class bars would appear to have more data / frequency density adjusts for class width oe" }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "E9-07-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "A histogram shows the waiting times (minutes) at a clinic for 60 patients.\n\n| Waiting time (min) | Freq. density |\n|--------------------|---------------|\n| 0 < t ≤ 4         | 3             |\n| 4 < t ≤ 8         | 5             |\n| 8 < t ≤ 12        | 4.5           |\n| 12 < t ≤ 20       | 1.25          |\n\n(a) Show that the total number of patients is 60.\n(b) Find the probability that a randomly chosen patient waited more than 8 minutes.",
+      "answerType": "fraction",
+      "correctAnswer": "(a) shown, (b) 28/60",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(a) Frequencies: 3×4=12, 5×4=20, 4.5×4=18, 1.25×8=10" },
+        { "mark": "A1", "desc": "(a) 12+20+18+10 = 60 ✓" },
+        { "mark": "M1", "desc": "(b) Patients waiting > 8 min: 18 + 10 = 28" },
+        { "mark": "A1", "desc": "(b) 28/60 = 7/15 oe" }
+      ],
+      "workingSteps": [
+        "Frequencies: 0<t≤4: 3×4=12, 4<t≤8: 5×4=20, 8<t≤12: 4.5×4=18, 12<t≤20: 1.25×8=10",
+        "Total = 12+20+18+10 = 60 ✓",
+        "(b) P(t > 8) = (18+10)/60 = 28/60 = 7/15"
+      ],
+      "explanation": "Frequency = frequency density × class width. P = favourable / total."
+    }
+  ]
 }

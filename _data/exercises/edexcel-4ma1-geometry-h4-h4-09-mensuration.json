@@ -6,10 +6,131 @@
   "tier": "Higher",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 15,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "H4-09-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "A sector of a circle has radius 12 cm and arc length 15 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the angle of the sector in radians.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "1.25",
+          "tolerance": 0.01,
+          "unit": "radians",
+          "markScheme": [
+            { "mark": "M1", "desc": "Arc length = rθ → θ = arc/r" },
+            { "mark": "A1", "desc": "θ = 15/12 = 1.25 rad" }
+          ],
+          "workingSteps": [
+            "Arc length = rθ",
+            "θ = arc length ÷ r = 15 ÷ 12 = 1.25 radians"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the area of the sector.\nGive your answer correct to 3 significant figures.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "90.0",
+          "tolerance": 0.5,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area = (1/2)r²θ" },
+            { "mark": "M1", "desc": "= (1/2) × 144 × 1.25" },
+            { "mark": "A1", "desc": "= 90.0 cm²" }
+          ],
+          "workingSteps": [
+            "Area of sector = (1/2)r²θ = (1/2) × 12² × 1.25",
+            "= (1/2) × 144 × 1.25 = 90 cm²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the area of the triangle formed by joining the two radii of the sector.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "68.3",
+          "tolerance": 0.5,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area of triangle = (1/2)r²sin θ" },
+            { "mark": "M1", "desc": "= (1/2) × 144 × sin(1.25 rad)" },
+            { "mark": "A1", "desc": "= 72 × 0.9490 = 68.3 cm²" }
+          ],
+          "workingSteps": [
+            "Area of triangle = (1/2) × r × r × sin(θ) = (1/2) × 12 × 12 × sin(1.25)",
+            "sin(1.25 rad) = 0.9490",
+            "Area = 72 × 0.9490 = 68.3 cm²"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H4-09-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "A composite shape consists of a rectangle 16 cm by 10 cm with a semicircle removed from one of the longer sides.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the area of the composite shape.\nGive your answer correct to 3 significant figures.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "121",
+          "tolerance": 2,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area of rectangle = 16 × 10 = 160 cm²" },
+            { "mark": "M1", "desc": "Semicircle radius = 5 cm; area = (1/2)π(5²) = 12.5π" },
+            { "mark": "M1", "desc": "Composite area = 160 − 12.5π" },
+            { "mark": "A1", "desc": "= 160 − 39.27 = 120.7 ≈ 121 cm²" }
+          ],
+          "workingSteps": [
+            "Area of rectangle = 16 × 10 = 160 cm²",
+            "Semicircle diameter = 10 cm, so radius = 5 cm",
+            "Area of semicircle = (1/2)π(5²) = 12.5π = 39.27 cm²",
+            "Composite area = 160 − 39.27 = 120.73 ≈ 121 cm²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the perimeter of the composite shape.\nGive your answer correct to 3 significant figures.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "51.7",
+          "tolerance": 0.5,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "Perimeter includes: 2 short sides + 1 long side + semicircle arc" },
+            { "mark": "M1", "desc": "= 2(10) + 16 + π(5) (semicircle circumference = πr)" },
+            { "mark": "A1", "desc": "= 20 + 16 + 15.71 = 51.71... ≈ 51.7 cm" }
+          ],
+          "workingSteps": [
+            "Perimeter = two widths (10 cm each) + one length (16 cm) + semicircle arc (πr = 5π)",
+            "= 10 + 10 + 16 + 5π",
+            "= 36 + 15.708",
+            "= 51.7 cm (3sf)"
+          ]
+        }
+      ]
+    }
+  ]
 }

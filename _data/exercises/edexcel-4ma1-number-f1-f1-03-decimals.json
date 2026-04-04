@@ -6,10 +6,103 @@
   "tier": "Foundation",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 9,
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "id": "F1-03-Q1",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $3.7 \\times 0.4$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "decimal-exact",
+          "correctAnswer": "1.48",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$37 \\times 4 = 148$; 2 decimal places" },
+            { "mark": "A1", "desc": "$1.48$ cao" }
+          ],
+          "workingSteps": [
+            "$37 \\times 4 = 148$",
+            "Two decimal places: $1.48$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $7.2 \\div 0.09$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "80",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$7.2 \\div 0.09 = 720 \\div 9$" },
+            { "mark": "A1", "desc": "$80$ cao" }
+          ],
+          "workingSteps": [
+            "$7.2 \\div 0.09 = 7.2 \\times \\dfrac{1}{0.09} = 7.2 \\times \\dfrac{100}{9} = 720 \\div 9 = 80$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F1-03-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A shop sells fabric at $\\$4.85$ per metre.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the cost of $2.4$ metres of fabric.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "11.64",
+          "tolerance": 0.01,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "$4.85 \\times 2.4$" },
+            { "mark": "A1", "desc": "$\\$11.64$ cao" }
+          ],
+          "workingSteps": [
+            "$4.85 \\times 2.4 = 4.85 \\times 2 + 4.85 \\times 0.4 = 9.70 + 1.94 = \\$11.64$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Mia has $\\$20$.\nWork out the maximum number of complete metres she can buy.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "4",
+          "tolerance": null,
+          "unit": "metres",
+          "markScheme": [
+            { "mark": "M1", "desc": "$20 \\div 4.85 = 4.123...$" },
+            { "mark": "M1", "desc": "Takes floor (rounds down)" },
+            { "mark": "A1", "desc": "$4$ metres cao" }
+          ],
+          "workingSteps": [
+            "$20 \\div 4.85 = 4.123...$",
+            "Maximum complete metres $= 4$",
+            "Check: $4 \\times 4.85 = \\$19.40 \\leq \\$20$ ✓; $5 \\times 4.85 = \\$24.25 > \\$20$ ✗"
+          ]
+        }
+      ]
+    }
+  ]
 }

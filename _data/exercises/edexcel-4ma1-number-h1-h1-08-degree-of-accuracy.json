@@ -6,10 +6,110 @@
   "tier": "Higher",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "H1-08-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A sphere has radius $r = 4.7$ cm, measured to 1 decimal place.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the upper and lower bounds of $r$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": ["4.65", "4.75"],
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "B1", "desc": "Lower bound $= 4.65$ cm" },
+            { "mark": "B1", "desc": "Upper bound $= 4.75$ cm" }
+          ],
+          "workingSteps": [
+            "Lower bound: $4.7 - 0.05 = 4.65$ cm",
+            "Upper bound: $4.7 + 0.05 = 4.75$ cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the upper bound of the volume of the sphere.\nUse $V = \\dfrac{4}{3}\\pi r^3$.\nGive your answer correct to 3 significant figures.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "448",
+          "tolerance": 1,
+          "unit": "cm³",
+          "markScheme": [
+            { "mark": "M1", "desc": "Uses $r = 4.75$ cm" },
+            { "mark": "M1", "desc": "$V = \\dfrac{4}{3} \\pi \\times 4.75^3$" },
+            { "mark": "A1", "desc": "$V = \\dfrac{4}{3} \\pi \\times 107.171875 = 448.34...\\approx 448$ cm³ (3 sf)" }
+          ],
+          "workingSteps": [
+            "$r_{\\text{max}} = 4.75$ cm",
+            "$4.75^3 = 107.171875$",
+            "$V = \\dfrac{4}{3} \\times \\pi \\times 107.171875 = 448.34...$ cm³",
+            "$\\approx 448$ cm³ (3 sf)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H1-08-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "hard",
+      "context": "Two lengths: $a = 7.3$ cm and $b = 2.8$ cm, both measured to 1 dp.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the lower bound of $\\dfrac{a}{b}$.\nGive your answer correct to 2 decimal places.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "2.54",
+          "tolerance": 0.01,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Lower bound of $a = 7.25$; upper bound of $b = 2.85$" },
+            { "mark": "M1", "desc": "$\\dfrac{7.25}{2.85}$" },
+            { "mark": "A1", "desc": "$2.543... \\approx 2.54$ (2 dp)" }
+          ],
+          "workingSteps": [
+            "Lower bound of $a$: $7.3 - 0.05 = 7.25$",
+            "Upper bound of $b$: $2.8 + 0.05 = 2.85$",
+            "Lower bound of $a/b = 7.25 \\div 2.85 = 2.543...$",
+            "$\\approx 2.54$ (2 dp)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Explain why it is appropriate to use lower bound of $a$ and upper bound of $b$ in part (a).",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "To minimise a fraction, use the smallest numerator and largest denominator.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Minimising $a/b$ requires the smallest $a$" },
+            { "mark": "B1", "desc": "And the largest $b$: dividing by a larger number gives a smaller result" }
+          ],
+          "workingSteps": [
+            "To get the minimum of $a \\div b$:",
+            "Minimise the numerator: use lower bound of $a$",
+            "Maximise the denominator: use upper bound of $b$"
+          ]
+        }
+      ]
+    }
+  ]
 }

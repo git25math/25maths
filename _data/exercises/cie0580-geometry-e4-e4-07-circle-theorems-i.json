@@ -6,10 +6,125 @@
   "tier": "Extended",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 15,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "E4-07-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "O is the centre of a circle. Points A, B and C are on the circumference.\nAngle AOC = 130°.\nFind angle ABC, giving a reason.",
+      "answerType": "integer",
+      "correctAnswer": "65",
+      "tolerance": null,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "Angle at centre = 2 × angle at circumference (same arc AC)" },
+        { "mark": "A1", "desc": "Angle ABC = 130 ÷ 2 = 65°" },
+        { "mark": "B1", "desc": "Reason stated: angle at centre is twice angle at circumference" }
+      ],
+      "workingSteps": [
+        "The angle at the centre is twice the angle at the circumference subtended by the same arc.",
+        "Angle ABC = Angle AOC ÷ 2 = 130° ÷ 2 = 65°"
+      ],
+      "explanation": "Angle at centre = 2 × angle at circumference (same arc)."
+    },
+    {
+      "id": "E4-07-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "A, B, C and D are points on a circle.\nAngle ABD = 35° and angle DBC = 40°.\nFind angle ACD, giving reasons.",
+      "answerType": "integer",
+      "correctAnswer": "35",
+      "tolerance": null,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "Angles in the same segment are equal" },
+        { "mark": "M1", "desc": "Angle ACD = angle ABD (same arc AD)" },
+        { "mark": "A1", "desc": "Angle ACD = 35°" },
+        { "mark": "B1", "desc": "Angles in the same segment are equal oe" }
+      ],
+      "workingSteps": [
+        "ACD and ABD are both inscribed angles subtended by arc AD",
+        "Angles in the same segment are equal",
+        "Angle ACD = angle ABD = 35°"
+      ],
+      "explanation": "Angles in the same segment (subtended by the same arc) are equal."
+    },
+    {
+      "id": "E4-07-Q3",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "ABCD is a cyclic quadrilateral. Angle DAB = (2x + 10)°, angle BCD = (3x − 20)°, angle ABC = 95°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the value of x, giving a reason.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "38",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Opposite angles of cyclic quadrilateral sum to 180°" },
+            { "mark": "M1", "desc": "(2x + 10) + (3x − 20) = 180" },
+            { "mark": "A1", "desc": "5x − 10 = 180, 5x = 190, x = 38" }
+          ],
+          "workingSteps": [
+            "DAB + BCD = 180° (opposite angles of cyclic quadrilateral)",
+            "(2x + 10) + (3x − 20) = 180",
+            "5x − 10 = 180",
+            "5x = 190",
+            "x = 38"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find angle DAB and angle BCD.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "DAB = 86°, BCD = 94°",
+          "markScheme": [
+            { "mark": "B1", "desc": "DAB = 2(38) + 10 = 86°" },
+            { "mark": "B1", "desc": "BCD = 3(38) − 20 = 94°" }
+          ],
+          "workingSteps": [
+            "DAB = 2(38) + 10 = 76 + 10 = 86°",
+            "BCD = 3(38) − 20 = 114 − 20 = 94°",
+            "Check: 86 + 94 = 180 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find angle ADC.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "85",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "Opposite angles sum to 180°: ADC + ABC = 180°" },
+            { "mark": "M1", "desc": "ADC = 180 − 95" },
+            { "mark": "A1", "desc": "ADC = 85°" }
+          ],
+          "workingSteps": [
+            "ADC + ABC = 180° (opposite angles of cyclic quadrilateral)",
+            "ADC = 180° − 95° = 85°"
+          ]
+        }
+      ]
+    }
+  ]
 }

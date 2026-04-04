@@ -1,15 +1,168 @@
 {
-  "topic": "averages and range",
+  "topic": "Averages and range",
   "board": "CIE 0580",
   "subtopicId": "cie0580:statistics-e9:e9-03-averages-and-range",
   "syllabusCode": "E9-03",
   "tier": "Extended",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 19,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "E9-03-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "The frequency table shows the number of hours students spent studying last week.\n\n| Hours | Frequency |\n|-------|-----------|\n| 1     | 4         |\n| 2     | 6         |\n| 3     | 5         |\n| 4     | 3         |\n| 5     | 2         |\n\nCalculate the mean number of hours studied.",
+      "answerType": "numeric",
+      "correctAnswer": "2.65",
+      "tolerance": 0.05,
+      "unit": "hours",
+      "markScheme": [
+        { "mark": "M1", "desc": "Σfx = 1×4 + 2×6 + 3×5 + 4×3 + 5×2 = 4+12+15+12+10 = 53" },
+        { "mark": "M1", "desc": "Σf = 4+6+5+3+2 = 20 soi" },
+        { "mark": "A1", "desc": "53 ÷ 20 = 2.65 cao" }
+      ],
+      "workingSteps": [
+        "Σfx = 1×4 + 2×6 + 3×5 + 4×3 + 5×2",
+        "Σfx = 4 + 12 + 15 + 12 + 10 = 53",
+        "Σf = 4 + 6 + 5 + 3 + 2 = 20",
+        "Mean = 53 ÷ 20 = 2.65"
+      ],
+      "explanation": "Mean from frequency table: Σfx ÷ Σf."
+    },
+    {
+      "id": "E9-03-Q2",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "medium",
+      "context": "The grouped frequency table shows the masses (in kg) of 40 parcels.\n\n| Mass (kg) | Frequency |\n|-----------|----------|\n| 0 < m ≤ 2 | 6        |\n| 2 < m ≤ 4 | 14       |\n| 4 < m ≤ 6 | 12       |\n| 6 < m ≤ 8 | 5        |\n| 8 < m ≤ 10| 3        |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the modal class.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "explain",
+          "correctAnswer": "2 < m ≤ 4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "2 < m ≤ 4 (frequency 14)" }
+          ],
+          "workingSteps": [
+            "Highest frequency = 14, in class 2 < m ≤ 4"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate an estimate of the mean mass.",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "4.35",
+          "tolerance": 0.05,
+          "unit": "kg",
+          "markScheme": [
+            { "mark": "M1", "desc": "Uses midpoints 1, 3, 5, 7, 9" },
+            { "mark": "M1", "desc": "Σfx = 6×1 + 14×3 + 12×5 + 5×7 + 3×9" },
+            { "mark": "M1", "desc": "Σfx = 6 + 42 + 60 + 35 + 27 = 170" },
+            { "mark": "A1", "desc": "170 ÷ 40 = 4.25 cao" }
+          ],
+          "workingSteps": [
+            "Midpoints: 1, 3, 5, 7, 9",
+            "Σfx = 6×1 + 14×3 + 12×5 + 5×7 + 3×9",
+            "Σfx = 6 + 42 + 60 + 35 + 27 = 170",
+            "Mean = 170 ÷ 40 = 4.25 kg"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that the class containing the median is 2 < m ≤ 4.\n\n**Note**: Use the cumulative frequency approach to identify which class the 20th and 21st values fall in.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "2 < m ≤ 4",
+          "markScheme": [
+            { "mark": "M1", "desc": "Median between 20th and 21st values (40 values total)" },
+            { "mark": "A1", "desc": "Cumulative: ≤2: 6, ≤4: 20; 20th value is the last in 2<m≤4; 21st value is first in 4<m≤6; median lies in 2<m≤4 using convention that 20th is within this class ✓" }
+          ],
+          "workingSteps": [
+            "40 values → median between 20th and 21st",
+            "Cumulative frequencies: ≤2: 6; ≤4: 6+14=20; ≤6: 20+12=32",
+            "20th value falls at the upper boundary of 2<m≤4 (cumulative = 20)",
+            "21st value falls in 4<m≤6",
+            "The median = (20th+21st)/2 so the median class is given as 2<m≤4 since the 20th value is in that class"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "A parcel is chosen at random.\nFind the probability that its mass is more than 6 kg.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "8/40",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "5 + 3 = 8 parcels with mass > 6 kg" },
+            { "mark": "A1", "desc": "8/40 or 1/5 or 0.2" }
+          ],
+          "workingSteps": [
+            "Parcels with mass > 6 kg: 5 + 3 = 8",
+            "P(mass > 6) = 8/40 = 1/5"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Explain why the mean calculated in part (b) is only an estimate.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The exact values within each class are unknown; midpoints are used as approximations",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "E1", "desc": "Individual values not known; midpoints are used as an approximation oe" }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "E9-03-Q3",
+      "type": "short-answer",
+      "totalMarks": 6,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "The mean of six values is 14. The values are:\n$$x, \\ x+2, \\ x+5, \\ 18, \\ 21, \\ 23$$\n\n(a) Show that $3x + 69 = 84$.\n(b) Hence find the value of $x$.\n(c) Find the median of the six values when $x = 5$.",
+      "answerType": "numeric",
+      "correctAnswer": "(a) shown, (b) x = 5, (c) 13.5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(a) Sum = 6 × 14 = 84 stated" },
+        { "mark": "M1", "desc": "(a) x + x+2 + x+5 + 18 + 21 + 23 = 84 → 3x + 69 = 84" },
+        { "mark": "A1", "desc": "(a) Correct simplification to 3x + 69 = 84 shown" },
+        { "mark": "M1", "desc": "(b) 3x = 84 − 69 = 15" },
+        { "mark": "A1", "desc": "(b) x = 5" },
+        { "mark": "A1", "desc": "(c) Values: 5, 7, 10, 18, 21, 23 → median = (10+18)/2 = 14" }
+      ],
+      "workingSteps": [
+        "(a) Sum = mean × n = 14 × 6 = 84",
+        "x + (x+2) + (x+5) + 18 + 21 + 23 = 84",
+        "3x + 69 = 84 ✓",
+        "(b) 3x = 15 → x = 5",
+        "(c) Values with x=5: 5, 7, 10, 18, 21, 23",
+        "6 values → median = (3rd + 4th)/2 = (10 + 18)/2 = 14"
+      ],
+      "explanation": "Use mean × n to find total sum, then form and solve an equation."
+    }
+  ]
 }

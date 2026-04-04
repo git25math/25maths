@@ -6,10 +6,147 @@
   "tier": "Core",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "C9-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "For each of the following, write down whether the data is **discrete** or **continuous**.\n(a) The number of books on a shelf.\n(b) The mass of a puppy.\n(c) The number of goals scored in a match.\n(d) The time taken to run 100 metres.",
+      "answerType": "explain",
+      "correctAnswer": "(a) discrete, (b) continuous, (c) discrete, (d) continuous",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) discrete" },
+        { "mark": "B1", "desc": "(b) continuous" },
+        { "mark": "B1", "desc": "(c) discrete" },
+        { "mark": "B1", "desc": "(d) continuous" }
+      ],
+      "workingSteps": [
+        "(a) Books can only be counted in whole numbers → discrete",
+        "(b) Mass can take any value → continuous",
+        "(c) Goals are counted in whole numbers → discrete",
+        "(d) Time can take any value → continuous"
+      ],
+      "explanation": "Discrete data can only take specific values (usually whole numbers). Continuous data can take any value within a range."
+    },
+    {
+      "id": "C9-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down whether each variable is **qualitative** (categorical) or **quantitative** (numerical).\n(a) The colour of a car.\n(b) The height of a student.",
+      "answerType": "explain",
+      "correctAnswer": "(a) qualitative, (b) quantitative",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) qualitative / categorical" },
+        { "mark": "B1", "desc": "(b) quantitative / numerical" }
+      ],
+      "workingSteps": [
+        "(a) Colour describes a category, not a number → qualitative",
+        "(b) Height is measured as a number → quantitative"
+      ],
+      "explanation": "Qualitative data is descriptive (categories). Quantitative data is numerical."
+    },
+    {
+      "id": "C9-01-Q3",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "A class of 30 students was asked about their favourite subject. The results are shown below.\n\n| Subject | Frequency |\n|---------|----------|\n| Maths | 9 |\n| English | 7 |\n| Science | 8 |\n| Art | 4 |\n| PE | 2 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the modal subject.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "explain",
+          "correctAnswer": "Maths",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Maths" }
+          ],
+          "workingSteps": [
+            "The highest frequency is 9, which corresponds to Maths."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the relative frequency of students who chose Science.\nGive your answer as a decimal.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "0.267",
+          "tolerance": 0.005,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "8 ÷ 30" },
+            { "mark": "A1", "desc": "0.267 or 4/15 or better" }
+          ],
+          "workingSteps": [
+            "Relative frequency = 8 ÷ 30 = 0.2666... ≈ 0.267"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Explain why subject is qualitative data.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "Subject names are categories, not numbers",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "E1", "desc": "Subject names are categories / cannot be measured numerically oe" }
+          ],
+          "workingSteps": []
+        },
+        {
+          "label": "d",
+          "questionText": "A student says: 'The frequency data in this table is discrete.' \nDo you agree? Give a reason for your answer.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "Yes — frequencies are counted in whole numbers so they are discrete",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Yes" },
+            { "mark": "E1", "desc": "Frequencies are whole number counts / cannot take fractional values oe" }
+          ],
+          "workingSteps": []
+        },
+        {
+          "label": "e",
+          "questionText": "Another student records the time (in minutes) each student spends on homework each evening.\nWrite down the type of data this represents.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "explain",
+          "correctAnswer": "Quantitative and continuous",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Quantitative / numerical" },
+            { "mark": "B1", "desc": "Continuous" }
+          ],
+          "workingSteps": [
+            "Time is measured numerically → quantitative",
+            "Time can take any value → continuous"
+          ]
+        }
+      ]
+    }
+  ]
 }

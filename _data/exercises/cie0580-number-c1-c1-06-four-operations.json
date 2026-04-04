@@ -6,10 +6,100 @@
   "tier": "Core",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 9,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "C1-06-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "Calculate $(-4) \\times 6 + 3$.",
+      "answerType": "integer",
+      "correctAnswer": "-21",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$(-4) \\times 6 = -24$ seen" },
+        { "mark": "A1", "desc": "$-21$ cao" }
+      ],
+      "workingSteps": [
+        "$(-4) \\times 6 = -24$",
+        "$-24 + 3 = -21$"
+      ],
+      "explanation": "Multiplication before addition (BIDMAS). Negative × positive = negative."
+    },
+    {
+      "id": "C1-06-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate $\\dfrac{(8 + 4) \\times 3}{2^2 - 1}$.",
+      "answerType": "integer",
+      "correctAnswer": "12",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Numerator: $(8 + 4) \\times 3 = 36$" },
+        { "mark": "M1", "desc": "Denominator: $2^2 - 1 = 3$" },
+        { "mark": "A1", "desc": "$36 \\div 3 = 12$ cao" }
+      ],
+      "workingSteps": [
+        "Bracket first: $8 + 4 = 12$",
+        "Numerator: $12 \\times 3 = 36$",
+        "Denominator: $2^2 - 1 = 4 - 1 = 3$",
+        "$36 \\div 3 = 12$"
+      ],
+      "explanation": "Evaluate brackets and indices before multiplication/division."
+    },
+    {
+      "id": "C1-06-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "medium",
+      "context": "A school buys 24 boxes of pencils. Each box contains 12 pencils.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the total number of pencils.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "288",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$24 \\times 12$" },
+            { "mark": "A1", "desc": "$288$ cao" }
+          ],
+          "workingSteps": [
+            "$24 \\times 12 = 288$ pencils"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The pencils are shared equally among 9 classes.\nCalculate the number of pencils each class receives.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "32",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$288 \\div 9$ or ft their (a)" },
+            { "mark": "A1", "desc": "$32$ cao" }
+          ],
+          "workingSteps": [
+            "$288 \\div 9 = 32$ pencils per class"
+          ]
+        }
+      ]
+    }
+  ]
 }

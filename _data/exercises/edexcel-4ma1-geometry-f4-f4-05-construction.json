@@ -6,10 +6,112 @@
   "tier": "Foundation",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "F4-05-Q1",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Describe the steps to construct the perpendicular bisector of a line segment PQ.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Open compass > half PQ; arcs from P and Q; join intersections.",
+          "markScheme": [
+            { "mark": "B1", "desc": "Set compass to more than half PQ; draw arcs from P and from Q" },
+            { "mark": "B1", "desc": "Join the two arc intersections to give the perpendicular bisector" }
+          ],
+          "workingSteps": [
+            "1. Open compass to radius greater than half the length of PQ.",
+            "2. Draw arcs above and below PQ from centre P, then from centre Q.",
+            "3. Join the two intersection points of the arcs — this is the perpendicular bisector."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The perpendicular bisector of PQ passes through all points that are equidistant from P and Q.\nDescribe the locus of points equidistant from two fixed points A and B.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "The perpendicular bisector of AB",
+          "markScheme": [
+            { "mark": "B1", "desc": "Straight line" },
+            { "mark": "B1", "desc": "Perpendicular bisector of AB oe" }
+          ],
+          "workingSteps": [
+            "The locus is the perpendicular bisector of the line segment AB.",
+            "It passes through the midpoint of AB at right angles to AB."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4-05-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A region R is described as: more than 3 cm from a fixed point P, and closer to point A than to point B.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Describe the boundary for 'more than 3 cm from P'.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "A circle with centre P and radius 3 cm; the region is outside this circle.",
+          "markScheme": [
+            { "mark": "B1", "desc": "Circle with centre P, radius 3 cm" },
+            { "mark": "B1", "desc": "Region R is outside this circle" }
+          ],
+          "workingSteps": [
+            "Points exactly 3 cm from P form a circle (centre P, radius 3 cm).",
+            "More than 3 cm from P means outside this circle."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Describe the boundary for 'closer to A than to B'.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "The perpendicular bisector of AB; closer to A is the half-plane containing A.",
+          "markScheme": [
+            { "mark": "B1", "desc": "Perpendicular bisector of AB is the boundary" },
+            { "mark": "B1", "desc": "Region is the half-plane on the same side as A" }
+          ],
+          "workingSteps": [
+            "Points equidistant from A and B lie on the perpendicular bisector of AB.",
+            "Closer to A than B means on the A-side of this bisector."
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Give a reason why you would use a compass rather than a protractor to construct a perpendicular bisector.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "A compass gives exact equal distances from both endpoints without measuring angles.",
+          "markScheme": [
+            { "mark": "B1", "desc": "Compass maintains equal distance from each endpoint" },
+            { "mark": "B1", "desc": "Avoids measuring error / more accurate construction oe" }
+          ],
+          "workingSteps": [
+            "A compass ensures that arcs are drawn at exactly equal radii from each endpoint.",
+            "This guarantees the construction is accurate without needing to measure angles."
+          ]
+        }
+      ]
+    }
+  ]
 }

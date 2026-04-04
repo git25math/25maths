@@ -6,10 +6,103 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "E1-17-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A population of bacteria doubles every 3 hours.\nThe initial population is $500$.\nCalculate the population after 12 hours.",
+      "answerType": "integer",
+      "correctAnswer": "8000",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Number of doublings $= 12 \\div 3 = 4$" },
+        { "mark": "M1", "desc": "Population $= 500 \\times 2^4$" },
+        { "mark": "A1", "desc": "$500 \\times 16 = 8000$ cao" }
+      ],
+      "workingSteps": [
+        "Doublings in 12 hours: $12 \\div 3 = 4$",
+        "Population $= 500 \\times 2^4 = 500 \\times 16 = 8000$"
+      ],
+      "explanation": "Exponential growth: $P = P_0 \\times r^t$ where $r$ is the growth factor."
+    },
+    {
+      "id": "E1-17-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "A car is bought for $\\$25000$.\nIts value depreciates by $18\\%$ each year.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the value of the car after 3 years.\nGive your answer correct to the nearest dollar.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "13784",
+          "tolerance": 1,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "Depreciation multiplier: $1 - 0.18 = 0.82$" },
+            { "mark": "M1", "desc": "$25000 \\times 0.82^3$" },
+            { "mark": "A1", "desc": "$25000 \\times 0.551368 = \\$13784.20 \\approx \\$13784$ cao" }
+          ],
+          "workingSteps": [
+            "Multiplier per year: $1 - 0.18 = 0.82$",
+            "$V = 25000 \\times 0.82^3$",
+            "$0.82^3 = 0.82 \\times 0.82 \\times 0.82 = 0.551368$",
+            "$V = 25000 \\times 0.551368 = \\$13784.20$",
+            "To nearest dollar: $\\$13784$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "After how many complete years will the car's value first fall below $\\$10000$?",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": "years",
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets up $25000 \\times 0.82^n < 10000$" },
+            { "mark": "M1", "desc": "Trials: $n=4$: $25000 \\times 0.82^4 = 11303$; $n=5$: $25000 \\times 0.82^5 = 9268$" },
+            { "mark": "A1", "desc": "$n = 5$ cao" }
+          ],
+          "workingSteps": [
+            "$n = 4$: $25000 \\times 0.82^4 = 25000 \\times 0.45212 = \\$11303 > \\$10000$",
+            "$n = 5$: $25000 \\times 0.82^5 = 25000 \\times 0.37074 = \\$9268 < \\$10000$",
+            "Answer: 5 years"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that the formula $V = 25000 \\times 0.82^n$ models exponential decay.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The multiplier 0.82 < 1 so V decreases by a constant percentage (18%) each year.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "The multiplier $0.82 < 1$, so the value decreases each year" },
+            { "mark": "B1", "desc": "Each year the value is multiplied by the same factor (constant percentage decrease = exponential decay)" }
+          ],
+          "workingSteps": [
+            "Multiplier $= 0.82 < 1$ → value decreases",
+            "Same multiplier each year → constant percentage decrease → exponential decay"
+          ]
+        }
+      ]
+    }
+  ]
 }

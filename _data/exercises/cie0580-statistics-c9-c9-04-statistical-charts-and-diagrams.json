@@ -6,10 +6,154 @@
   "tier": "Core",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 17,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "C9-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A pie chart shows the favourite sports of 120 students.\nThe angle for Football is 135°.\nThe angle for Basketball is 90°.\nThe angle for Tennis is 60°.\nThe remaining students chose Swimming.\n\n(a) Find the number of students who chose Football.\n(b) Find the angle for Swimming.",
+      "answerType": "numeric",
+      "correctAnswer": "(a) 45, (b) 75",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(a) 135/360 × 120" },
+        { "mark": "A1", "desc": "(a) 45" },
+        { "mark": "M1", "desc": "(b) 360 − 135 − 90 − 60" },
+        { "mark": "A1", "desc": "(b) 75°" }
+      ],
+      "workingSteps": [
+        "(a) 135 ÷ 360 × 120 = 0.375 × 120 = 45 students",
+        "(b) Swimming angle = 360 − 135 − 90 − 60 = 75°"
+      ],
+      "explanation": "Fraction of circle = angle ÷ 360. Number = fraction × total."
+    },
+    {
+      "id": "C9-04-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "The table shows the number of books read by 25 students during one term.\n\n| Number of books | 0 | 1 | 2 | 3 | 4 | 5 |\n|-----------------|---|---|---|---|---|---|\n| Frequency       | 3 | 5 | 7 | 6 | 3 | 1 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the modal number of books.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "2 (highest frequency = 7)" }
+          ],
+          "workingSteps": [
+            "Highest frequency is 7, corresponding to 2 books → mode = 2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A bar chart is drawn for this data.\nFind the height of the bar for 3 books.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "6" }
+          ],
+          "workingSteps": [
+            "Frequency for 3 books = 6, so bar height = 6"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the angle in a pie chart that would represent students who read 2 books.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "100.8",
+          "tolerance": 0.5,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "7/25 × 360" },
+            { "mark": "A1", "desc": "100.8°" }
+          ],
+          "workingSteps": [
+            "Angle = (7 ÷ 25) × 360 = 0.28 × 360 = 100.8°"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Calculate the mean number of books read.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "2.12",
+          "tolerance": 0.05,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Σfx attempted: at least 3 correct products" },
+            { "mark": "M1", "desc": "Σfx = 0+5+14+18+12+5 = 53" },
+            { "mark": "A1", "desc": "53 ÷ 25 = 2.12" }
+          ],
+          "workingSteps": [
+            "Σfx = 0×3 + 1×5 + 2×7 + 3×6 + 4×3 + 5×1",
+            "Σfx = 0 + 5 + 14 + 18 + 12 + 5 = 53",
+            "Mean = 53 ÷ 25 = 2.12"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Explain why a bar chart is more suitable than a pie chart for comparing the frequencies of each number of books.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "A bar chart shows the actual frequencies so it is easier to compare values directly",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "E1", "desc": "Bar chart shows exact frequencies / easier to read off individual values / pie chart only shows proportions oe" }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "C9-04-Q3",
+      "type": "short-answer",
+      "totalMarks": 5,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "A frequency polygon is drawn for the heights of 40 plants.\nThe midpoints and frequencies are shown.\n\n| Midpoint (cm) | 10 | 20 | 30 | 40 | 50 |\n|--------------|----|----|----|----|----|\n| Frequency    | 4  | 10 | 14 | 8  | 4  |\n\n(a) Find the class width used.\n(b) Find the total number of plants.\n(c) Calculate an estimate of the mean height.",
+      "answerType": "numeric",
+      "correctAnswer": "(a) 10, (b) 40, (c) 30",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) 10 cm" },
+        { "mark": "B1", "desc": "(b) 4+10+14+8+4 = 40" },
+        { "mark": "M1", "desc": "(c) Σfx = 40+200+420+320+200 = 1180" },
+        { "mark": "M1", "desc": "Divides by 40" },
+        { "mark": "A1", "desc": "(c) 1180 ÷ 40 = 29.5, accept 29.5 or 30" }
+      ],
+      "workingSteps": [
+        "(a) Difference between midpoints = 20 − 10 = 10 cm",
+        "(b) Total = 4 + 10 + 14 + 8 + 4 = 40",
+        "(c) Σfx = 10×4 + 20×10 + 30×14 + 40×8 + 50×4",
+        "Σfx = 40 + 200 + 420 + 320 + 200 = 1180",
+        "Mean = 1180 ÷ 40 = 29.5 cm"
+      ],
+      "explanation": "For grouped data, use midpoints to estimate the mean."
+    }
+  ]
 }

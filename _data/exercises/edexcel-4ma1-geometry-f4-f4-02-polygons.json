@@ -6,10 +6,136 @@
   "tier": "Foundation",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 12,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "F4-02-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the sum of the interior angles of a hexagon.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "720",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "(6 − 2) × 180" },
+            { "mark": "A1", "desc": "720°" }
+          ],
+          "workingSteps": [
+            "Sum of interior angles = (n − 2) × 180°",
+            "= (6 − 2) × 180° = 4 × 180° = 720°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the interior angle of a regular hexagon.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "120",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "720 ÷ 6" },
+            { "mark": "A1", "desc": "120°" }
+          ],
+          "workingSteps": [
+            "Each interior angle = 720° ÷ 6 = 120°"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the exterior angle of a regular hexagon.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "60",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "180 − 120 or 360 ÷ 6" },
+            { "mark": "A1", "desc": "60°" }
+          ],
+          "workingSteps": [
+            "Exterior angle = 180° − 120° = 60°",
+            "Or: 360° ÷ 6 = 60°"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4-02-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A regular polygon has an exterior angle of 40°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the number of sides of the polygon.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "9",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "360 ÷ 40" },
+            { "mark": "A1", "desc": "9" }
+          ],
+          "workingSteps": [
+            "Number of sides = 360° ÷ exterior angle = 360° ÷ 40° = 9"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the interior angle of this polygon.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "140",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "180 − 40" },
+            { "mark": "A1", "desc": "140°" }
+          ],
+          "workingSteps": [
+            "Interior angle = 180° − 40° = 140°"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the sum of all the interior angles of this polygon.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "1260",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "(9 − 2) × 180 or 140 × 9" },
+            { "mark": "A1", "desc": "1260°" }
+          ],
+          "workingSteps": [
+            "Sum = (9 − 2) × 180° = 7 × 180° = 1260°",
+            "Or: 140° × 9 = 1260°"
+          ]
+        }
+      ]
+    }
+  ]
 }
