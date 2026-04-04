@@ -1,7 +1,7 @@
 # 25Maths 网站 — 项目交接文档
 
-> **最后更新**: 2026-03-01
-> **状态**: 已部署上线（会员系统 E2E 验证通过 + Engagement + 双语补全）
+> **最后更新**: 2026-04-04
+> **状态**: 已部署上线 | 练习 v2 schema 202/202 填充完成 | B2B 组卷 UI 完成
 > **网站**: https://www.25maths.com
 
 ---
@@ -10,13 +10,45 @@
 
 ```
 规划 ████████████ 100%
-开发 ████████████ 100%  (初版 + Edexcel 资源 + 模块化重构)
+开发 ████████████ 100%  (初版 + Edexcel + 模块化重构)
 审计 ████████████ 100%  (3 轮审计 + 全部修复)
-部署 ████████████ 100%  (Jekyll 构建，GitHub Pages + Cloudflare)
-会员 ████████████  98%  (认证/支付/下载/Engagement/双语/E2E — 剩余:成就阈值审查+等级统一)
-双语 ████████████ 100%  (toggle 基础 + 静态覆盖 + JS t() 动态翻译)
-LaTeX ████████████  99%  (Phase 1-4 完成，仅剩浏览器端渲染验证)
+部署 ████████████ 100%  (Jekyll → Cloudflare Pages)
+会员 ████████████  98%  (认证/支付/下载/Engagement/双语)
+练习 v2 ████████████ 100%  (202 files, 613q, 3203m, CIE+EDX 双 board)
+B2B 组卷 ████░░░░░░░░  35%  (UI 完成, API 待开发)
+双语 ██████████░░  85%  (Kahoot Hub 零中文 + JS ~8 处)
+LaTeX ████████████  99%  (Phase 1-4 完成)
 ```
+
+### 最近重大变更 (Round 11, 2026-04)
+
+| 变更 | 说明 |
+|------|------|
+| **练习 v2 schema 迁移** | 202 个 JSON 从 MCQ-only → CIE/EDX 真题风格 (short-answer + structured) |
+| **组卷模块重构** | `institution/assignments.html` — 8 个预设模板 + 三级筛选 + 已选面板 |
+| **EXERCISE-SCHEMA.md** | v2.1 统一 schema 规范，支持 CIE 0580 + Edexcel 4MA1 |
+| **exercise_registry.json** | 202 练习元数据注册表 |
+| **EDX 元数据修正** | 32 topic 修正 + 78 calculator=true + 2 _higherOnly |
+
+### 下一步 (P0 待开发)
+
+| 任务 | 说明 |
+|------|------|
+| `exercise_engine.js` 适配 v2 | 当前只能渲染 MCQ，需要支持 short-answer + structured |
+| B2B 组卷 API | `POST /api/v1/institution/assignments` — UI 已就绪，缺后端 |
+| `exercise_registry.json` 最终更新 | 0c 任务：质量审查后更新 status: draft → live |
+
+### 关键文档索引（接手必读）
+
+| 文档 | 用途 | 位置 |
+|------|------|------|
+| `CLAUDE.md` | Claude Code 启动协议 + 文件地图 | 根目录 |
+| `docs/CONTRIBUTING.md` | 开发规范（619 行，AI/人类通用） | docs/ |
+| `docs/DEVELOPMENT-PLAN.md` | 版本历程 + 当前状态 + 任务列表 | docs/ |
+| `docs/EXERCISE-SCHEMA.md` | **练习 v2 schema 规范**（273 行） | docs/ |
+| `docs/examples/exercise-variants-showcase.json` | 9 种变式题风格示例 | docs/examples/ |
+| `DECISIONS.md` | 决策日志（含 v2 迁移 4 个关键决策） | 根目录 |
+| `_data/exercise_registry.json` | 202 练习元数据注册表 | _data/ |
 
 ### Git 提交记录
 
