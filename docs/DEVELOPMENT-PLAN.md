@@ -40,6 +40,7 @@
 | `ad4ccb9` | feat: Phase 3 — Mensuration 10 文件 (35题/181分) |
 | `6eb87ea` | feat: Phase 4 — Coordinate 12 文件 (37题/178分) |
 | `c1576f1` | feat: Phase 5-6 — Transformations 9 + Algebra 22 文件 (125题/672分) |
+| `d2e7138` | feat: Phase 7-8 — EDX Equations 16 + Sequences 8 文件 (73题/530分) |
 
 **关键成果**:
 - 组卷页面从零重建：8 个预设模板 + Board/Tier/Domain 三级筛选 + 关键词搜索
@@ -47,8 +48,8 @@
 - 新增 `docs/EXERCISE-SCHEMA.md` — 统一 schema 规范 (v2.1, 支持 CIE + EDX 双 board)
 - 新增 `_data/exercise_registry.json` — 202 练习元数据注册表
 - EDX 元数据修正：32 个 topic 修正 + 78 个 calculator=true + 2 个 _higherOnly 标记
-- 6 个 domain 已填充样板题：Trig + Probability + Mensuration + Coordinate + Transformations + Algebra
-- 当前：68/202 文件已填题 (281 题, 1483 分)，134 文件待填充
+- 8 个 domain 已填充样板题：Trig + Probability + Mensuration + Coordinate + Transformations + Algebra + Equations(EDX) + Sequences(EDX)
+- 当前：92/202 文件已填题 (354 题, 2013 分)，110 文件待填充
 
 ### Round 10 — 会员系统收尾 + 双语补全 (2026-03-01)
 
@@ -126,7 +127,7 @@
 
 ```
 Jekyll 架构        ████████████  100%
-互动练习 (v2)      ████░░░░░░░░   34%  (68/202 已填 CIE 风格题, 281q/1483m)
+互动练习 (v2)      ██████░░░░░░   46%  (92/202 已填题, 354q/2013m)
 博客系统           ████████████  100%  (8 EN + 8 ZH)
 双语支持           ██████████░░   85%  ← R11b 修正: Kahoot Hub 零中文 + JS ~8 处未 i18n
 会员认证/支付       ████████████  100%  (Supabase Auth + Payhip Webhook)
@@ -154,8 +155,8 @@ CI/CD             ████████████  100%  (2 workflows + 视
 | 维度 | 数量 |
 |------|------|
 | 练习 JSON | 202 个（CIE 124 + EDX 78），v2 schema |
-| 已填 CIE 风格题 | 68 文件, 281 题, 1483 分 |
-| 待填题文件 | 134 个 (status: coming_soon) |
+| 已填题 | 92 文件, 354 题, 2013 分 |
+| 待填题文件 | 110 个 (status: coming_soon) |
 | 博客文章 | 16 (8 EN + 8 ZH) |
 | API 端点 | 14 |
 | DB 表 | 18 (public) |
@@ -171,7 +172,7 @@ CI/CD             ████████████  100%  (2 workflows + 视
 
 | # | 任务 | 状态 | 说明 |
 |---|------|------|------|
-| 0a | **练习 v2 样板题填充** — 剩余 6 个 domain | 进行中 | ~~Transformations(9)~~ ~~Algebra(22)~~ → Equations(16) → Sequences(8) → Statistics(17) → Geometry(37) → Number(56) = 134 files |
+| 0a | **练习 v2 样板题填充** — 剩余 3 个 domain | 进行中 | ~~Trig~~ ~~Prob~~ ~~Mens~~ ~~Coord~~ ~~Trans~~ ~~Algebra~~ ~~Equations~~ ~~Sequences~~ → Statistics(17) → Geometry(37) → Number(56) = 110 files |
 | 0b | **exercise_engine.js 适配 v2 schema** | 待开发 | 渲染 short-answer + structured 题型 |
 | 0c | **exercise_registry.json 最终更新** | 待开发 | 所有文件填完后重新生成 |
 | 0d | **B2B 组卷 API 端点** | 待开发 | POST /api/v1/institution/assignments |
