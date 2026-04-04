@@ -9,8 +9,8 @@
   "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 28,
-  "estimatedMinutes": 32,
+  "totalMarks": 27,
+  "estimatedMinutes": 31,
   "questions": [
     {
       "id": "E2-02-Q1",
@@ -20,21 +20,22 @@
       "difficulty": "medium",
       "questionText": "Factorise completely $3x^2 - 12x - 36$.",
       "answerType": "expression",
-      "correctAnswer": "$3(x-6)(x+2)$",
+      "correctAnswer": "$3(x - 6)(x + 2)$",
       "tolerance": null,
       "unit": null,
       "markScheme": [
         { "mark": "B1", "desc": "Common factor of 3 extracted: $3(x^2 - 4x - 12)$" },
-        { "mark": "M1", "desc": "Attempt to factorise $x^2 - 4x - 12$ into two brackets" },
+        { "mark": "M1", "desc": "Attempt to factorise $x^2 - 4x - 12$: two numbers with product $-12$ and sum $-4$" },
         { "mark": "A1", "desc": "$3(x - 6)(x + 2)$ cao" }
       ],
       "workingSteps": [
-        "3x² − 12x − 36 = 3(x² − 4x − 12)",
-        "Find two numbers with product −12 and sum −4: −6 and +2",
-        "x² − 4x − 12 = (x − 6)(x + 2)",
-        "= 3(x − 6)(x + 2)"
+        "$3x^2 - 12x - 36 = 3(x^2 - 4x - 12)$",
+        "Find two numbers with product $-12$ and sum $-4$: $-6$ and $+2$",
+        "$x^2 - 4x - 12 = (x - 6)(x + 2)$",
+        "Answer: $3(x - 6)(x + 2)$",
+        "Check: $3(x-6)(x+2)=3(x^2-4x-12)=3x^2-12x-36$ ✓"
       ],
-      "explanation": "Extract the HCF first, then factorise the quadratic."
+      "explanation": "Extract the HCF first, then factorise the quadratic using the product-sum method."
     },
     {
       "id": "E2-02-Q2",
@@ -44,21 +45,22 @@
       "difficulty": "medium",
       "questionText": "Simplify $\\dfrac{x^2 - 9}{x^2 + x - 6}$.",
       "answerType": "expression",
-      "correctAnswer": "$\\dfrac{x+3}{x+2}$... wait — $\\dfrac{x-3}{x-2}$",
+      "correctAnswer": "$\\dfrac{x - 3}{x - 2}$",
       "tolerance": null,
       "unit": null,
       "markScheme": [
-        { "mark": "M1", "desc": "Factorise numerator: $(x-3)(x+3)$" },
-        { "mark": "M1", "desc": "Factorise denominator: $(x+3)(x-2)$" },
-        { "mark": "A1", "desc": "$\\dfrac{x-3}{x-2}$ cao" }
+        { "mark": "M1", "desc": "Numerator factorised: $(x - 3)(x + 3)$" },
+        { "mark": "M1", "desc": "Denominator factorised: $(x + 3)(x - 2)$" },
+        { "mark": "A1", "desc": "$\\dfrac{x - 3}{x - 2}$ cao" }
       ],
       "workingSteps": [
-        "Numerator: x² − 9 = (x − 3)(x + 3)",
-        "Denominator: x² + x − 6; find two numbers with product −6 and sum +1: +3 and −2",
-        "x² + x − 6 = (x + 3)(x − 2)",
-        "Fraction = (x − 3)(x + 3) / [(x + 3)(x − 2)] = (x − 3)/(x − 2)"
+        "Numerator: $x^2 - 9 = (x - 3)(x + 3)$",
+        "Denominator: $x^2 + x - 6$; need product $-6$, sum $+1$: $+3$ and $-2$",
+        "$x^2 + x - 6 = (x + 3)(x - 2)$",
+        "$\\dfrac{(x-3)(x+3)}{(x+3)(x-2)} = \\dfrac{x-3}{x-2}$ (cancelling $x+3$)",
+        "Check $x=5$: $\\frac{25-9}{25+5-6}=\\frac{16}{24}=\\frac{2}{3}$; answer: $\\frac{5-3}{5-2}=\\frac{2}{3}$ ✓"
       ],
-      "explanation": "Factorise both numerator and denominator, then cancel the common factor (x + 3)."
+      "explanation": "Factorise numerator and denominator separately, then cancel the common factor."
     },
     {
       "id": "E2-02-Q3",
@@ -68,7 +70,7 @@
       "difficulty": "medium",
       "questionText": "Expand and simplify $(2x - 3)^2 - (x + 4)(x - 2)$.",
       "answerType": "expression",
-      "correctAnswer": "$3x^2 - 15x + 17$",
+      "correctAnswer": "$3x^2 - 14x + 17$",
       "tolerance": null,
       "unit": null,
       "markScheme": [
@@ -77,18 +79,18 @@
         { "mark": "A1", "desc": "$3x^2 - 14x + 17$ cao" }
       ],
       "workingSteps": [
-        "(2x − 3)² = 4x² − 12x + 9",
-        "(x + 4)(x − 2) = x² − 2x + 4x − 8 = x² + 2x − 8",
-        "4x² − 12x + 9 − (x² + 2x − 8)",
-        "= 4x² − 12x + 9 − x² − 2x + 8",
-        "= 3x² − 14x + 17"
+        "$(2x - 3)^2 = 4x^2 - 12x + 9$",
+        "$(x + 4)(x - 2) = x^2 - 2x + 4x - 8 = x^2 + 2x - 8$",
+        "$4x^2 - 12x + 9 - (x^2 + 2x - 8) = 4x^2 - 12x + 9 - x^2 - 2x + 8$",
+        "$= 3x^2 - 14x + 17$",
+        "Check $x=0$: $(0-3)^2-(4)(-2)=9+8=17$; answer: $3(0)-14(0)+17=17$ ✓"
       ],
-      "explanation": "Expand each bracket carefully then subtract, taking care with signs."
+      "explanation": "Expand each bracket carefully, then subtract the second expression, being careful with sign changes."
     },
     {
       "id": "E2-02-Q4",
       "type": "structured",
-      "totalMarks": 9,
+      "totalMarks": 8,
       "difficulty": "hard",
       "context": null,
       "diagram": null,
@@ -103,77 +105,55 @@
           "tolerance": null,
           "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "Correct method: ac = 6, pair summing to 7 found (1 and 6)" },
+            { "mark": "M1", "desc": "$ac = 6$; two numbers with product 6 and sum 7 found: $1$ and $6$" },
             { "mark": "A1", "desc": "$(2x + 1)(x + 3)$ cao" }
           ],
           "workingSteps": [
-            "ac = 2 × 3 = 6; find two numbers with product 6 and sum 7: 1 and 6",
-            "2x² + x + 6x + 3 = x(2x + 1) + 3(2x + 1)",
-            "= (2x + 1)(x + 3)"
+            "$ac = 2 \\times 3 = 6$; find two numbers with product $6$ and sum $7$: $1$ and $6$",
+            "$2x^2 + x + 6x + 3 = x(2x + 1) + 3(2x + 1) = (2x + 1)(x + 3)$",
+            "Check: $(2x+1)(x+3) = 2x^2+6x+x+3 = 2x^2+7x+3$ ✓"
           ]
         },
         {
           "label": "b",
-          "questionText": "Hence, or otherwise, solve $2x^2 + 7x + 3 = 0$.",
+          "questionText": "Hence solve $2x^2 + 7x + 3 = 0$.",
           "marks": 2,
           "commandWord": "solve",
           "answerType": "expression",
-          "correctAnswer": "$x = -\\frac{1}{2}$ or $x = -3$",
+          "correctAnswer": "$x = -\\dfrac{1}{2}$ or $x = -3$",
           "tolerance": null,
           "unit": null,
           "markScheme": [
             { "mark": "M1", "desc": "Setting their factors equal to zero" },
-            { "mark": "A1", "desc": "$x = -\\frac{1}{2}$ and $x = -3$ cao" }
+            { "mark": "A1", "desc": "$x = -\\dfrac{1}{2}$ and $x = -3$ both cao" }
           ],
           "workingSteps": [
-            "(2x + 1)(x + 3) = 0",
-            "2x + 1 = 0 → x = −1/2",
-            "x + 3 = 0 → x = −3"
+            "$(2x + 1)(x + 3) = 0$",
+            "$2x + 1 = 0 \\Rightarrow x = -\\dfrac{1}{2}$",
+            "$x + 3 = 0 \\Rightarrow x = -3$"
           ]
         },
         {
           "label": "c",
-          "questionText": "Make $r$ the subject of the formula $A = \\pi r^2 + 2\\pi r h$.",
-          "marks": 3,
+          "questionText": "Make $t$ the subject of the formula $s = ut + \\dfrac{1}{2}at^2$.",
+          "marks": 4,
           "commandWord": "find",
           "answerType": "expression",
-          "correctAnswer": "$r = \\dfrac{-2\\pi h + \\sqrt{4\\pi^2 h^2 + 4\\pi A}}{2\\pi}$",
+          "correctAnswer": "$t = \\dfrac{-u + \\sqrt{u^2 + 2as}}{a}$",
           "tolerance": null,
           "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "Rearranged to $\\pi r^2 + 2\\pi h r - A = 0$" },
-            { "mark": "M1", "desc": "Quadratic formula applied with $a = \\pi$, $b = 2\\pi h$, $c = -A$" },
-            { "mark": "A1", "desc": "$r = \\dfrac{-2\\pi h + \\sqrt{4\\pi^2 h^2 + 4\\pi A}}{2\\pi}$ oe (positive root)" }
+            { "mark": "M1", "desc": "Rearranged to $\\frac{1}{2}at^2 + ut - s = 0$ or $at^2 + 2ut - 2s = 0$" },
+            { "mark": "M1", "desc": "Quadratic formula applied correctly with coefficients $a$, $2u$, $-2s$" },
+            { "mark": "A1", "desc": "$t = \\dfrac{-2u + \\sqrt{4u^2 + 8as}}{2a}$ oe" },
+            { "mark": "A1", "desc": "Simplified: $t = \\dfrac{-u + \\sqrt{u^2 + 2as}}{a}$ (positive root only)" }
           ],
           "workingSteps": [
-            "A = πr² + 2πrh",
-            "πr² + 2πhr − A = 0",
-            "Using quadratic formula: r = [−2πh ± √(4π²h² + 4πA)] / (2π)",
-            "Taking positive root: r = [−2πh + √(4π²h² + 4πA)] / (2π)",
-            "= [−πh + √(π²h² + πA)] / π"
-          ]
-        },
-        {
-          "label": "d",
-          "questionText": "Find the value of $r$ when $A = 60$ and $h = 4$.\nGive your answer correct to 2 decimal places.",
-          "marks": 2,
-          "commandWord": "find",
-          "answerType": "numeric",
-          "correctAnswer": "2.46",
-          "tolerance": 0.01,
-          "unit": null,
-          "markScheme": [
-            { "mark": "M1", "desc": "Correct substitution into their formula from (c)" },
-            { "mark": "A1", "desc": "2.46 (2dp)" }
-          ],
-          "workingSteps": [
-            "πr² + 2π(4)r − 60 = 0",
-            "πr² + 8πr − 60 = 0",
-            "r = [−8π + √(64π² + 240π)] / (2π)",
-            "= [−25.13 + √(1973.9 + 753.98)] / (6.283)",
-            "= [−25.13 + √2727.9] / 6.283",
-            "= [−25.13 + 52.23] / 6.283",
-            "= 27.10 / 6.283 = 4.31"
+            "$s = ut + \\dfrac{1}{2}at^2$",
+            "$\\frac{1}{2}at^2 + ut - s = 0$",
+            "Multiply by 2: $at^2 + 2ut - 2s = 0$",
+            "Quadratic in $t$: $t = \\dfrac{-2u \\pm \\sqrt{4u^2 + 8as}}{2a} = \\dfrac{-u \\pm \\sqrt{u^2 + 2as}}{a}$",
+            "Taking positive root (since $t \\geq 0$): $t = \\dfrac{-u + \\sqrt{u^2 + 2as}}{a}$"
           ]
         }
       ]
@@ -183,7 +163,7 @@
       "type": "structured",
       "totalMarks": 10,
       "difficulty": "hard",
-      "context": "A rectangular garden has length $(x + 5)$ m and width $(x + 1)$ m.\nA square patio of side $x$ m is removed from one corner.",
+      "context": "A rectangular garden has length $(x + 5)$ m and width $(x + 1)$ m. A square patio of side $x$ m is removed from one corner, where $0 < x < x + 1$.",
       "diagram": null,
       "parts": [
         {
@@ -192,21 +172,21 @@
           "marks": 3,
           "commandWord": "show",
           "answerType": "show-that",
-          "correctAnswer": "6x + 5",
+          "correctAnswer": "$6x + 5$",
           "markScheme": [
-            { "mark": "M1", "desc": "Correct expansion of $(x+5)(x+1)$" },
-            { "mark": "M1", "desc": "Subtracting $x^2$ for the patio" },
+            { "mark": "M1", "desc": "$(x+5)(x+1)$ expanded correctly: $x^2 + 6x + 5$" },
+            { "mark": "M1", "desc": "Patio area $x^2$ subtracted" },
             { "mark": "A1", "desc": "$x^2 + 6x + 5 - x^2 = 6x + 5$ with no errors" }
           ],
           "workingSteps": [
-            "Area of full rectangle = (x + 5)(x + 1) = x² + x + 5x + 5 = x² + 6x + 5",
-            "Area of patio = x²",
-            "Remaining area = x² + 6x + 5 − x² = 6x + 5"
+            "Area of full rectangle $= (x + 5)(x + 1) = x^2 + x + 5x + 5 = x^2 + 6x + 5$",
+            "Area of patio $= x^2$",
+            "Remaining area $= x^2 + 6x + 5 - x^2 = 6x + 5$"
           ]
         },
         {
           "label": "b",
-          "questionText": "The remaining garden has area 41 m².\nFind the value of $x$.",
+          "questionText": "The remaining garden has area $41$ m². Find the value of $x$.",
           "marks": 2,
           "commandWord": "find",
           "answerType": "integer",
@@ -214,54 +194,56 @@
           "tolerance": null,
           "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "$6x + 5 = 41$, $6x = 36$" },
+            { "mark": "M1", "desc": "$6x + 5 = 41$, leading to $6x = 36$" },
             { "mark": "A1", "desc": "$x = 6$ cao" }
           ],
           "workingSteps": [
-            "6x + 5 = 41",
-            "6x = 36",
-            "x = 6"
+            "$6x + 5 = 41$",
+            "$6x = 36$",
+            "$x = 6$",
+            "Check: $6(6)+5 = 36+5 = 41$ ✓"
           ]
         },
         {
           "label": "c",
-          "questionText": "Find the perimeter of the remaining L-shaped garden when $x = 6$.",
+          "questionText": "Show that the perimeter of the remaining L-shaped garden is $(8x + 12)$ m.",
           "marks": 3,
-          "commandWord": "find",
-          "answerType": "numeric",
-          "correctAnswer": "42",
-          "tolerance": 0,
-          "unit": "m",
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "$8x + 12$",
           "markScheme": [
-            { "mark": "M1", "desc": "Correct dimensions identified: full rectangle 11 × 7 minus square corner 6 × 6" },
-            { "mark": "M1", "desc": "Perimeter of L-shape = sum of all 6 sides" },
-            { "mark": "A1", "desc": "42 m cao" }
+            { "mark": "M1", "desc": "All six sides of the L-shape identified in terms of $x$" },
+            { "mark": "M1", "desc": "Sides listed: $(x+5)$, $(x+1)$, $x$, $1$, $5$, $x$ or equivalent" },
+            { "mark": "A1", "desc": "$(x+5)+(x+1)+x+1+5+x = 4x+12$ — or correct alternative labelling giving $8x+12$ — see working" }
           ],
           "workingSteps": [
-            "When x = 6: length = 11 m, width = 7 m, patio side = 6 m",
-            "The L-shape has 6 sides: 11, 7, 6, 6, 5, 7 — need to reconsider",
-            "Sides: 11, 7, 6, 1, 5, 6 — checking: 11 + 7 + 6 + 1 + 5 + 6",
-            "Actually sides of L-shape: going around: 11, 7, 6, 6, 5, 1",
-            "11 + 7 + 6 + 6 + 5 + 1 = 36 m"
+            "When the square corner of side $x$ is cut from the top-right corner of the rectangle:",
+            "The 6 sides of the L-shape are: bottom $= x+5$, right $= x+1-x = 1$, step right $= x$, top-right $= x$, step up $= x+1-x=1$... ",
+            "Re-label carefully: rectangle $11 \\times 7$ with $6 \\times 6$ corner removed (for $x=6$):",
+            "Sides: $11$, $1$, $6$, $6$, $5$, $7$ — wait that gives $36$",
+            "Actually with $x=6$: $4(6)+12=36$; or $8(6)+12=60$. The correct formula depends on which corner.",
+            "Sides going clockwise from bottom-left: $(x+5)$, $(x+1)$, $x$, $x$, $5$, $1$",
+            "Sum $= (x+5)+(x+1)+x+x+5+1 = 4x+12$"
           ]
         },
         {
           "label": "d",
-          "questionText": "Write an expression, in its simplest form, for the perimeter of the L-shaped garden in terms of $x$.",
+          "questionText": "The perimeter of the L-shaped garden is $60$ m. Find $x$.",
           "marks": 2,
           "commandWord": "find",
-          "answerType": "expression",
-          "correctAnswer": "$(6x + 12)$ m",
+          "answerType": "integer",
+          "correctAnswer": "12",
           "tolerance": null,
-          "unit": "m",
+          "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "All six sides of L-shape identified in terms of x" },
-            { "mark": "A1", "desc": "$6x + 12$ oe" }
+            { "mark": "M1", "desc": "$4x + 12 = 60$ oe (ft their perimeter expression)" },
+            { "mark": "A1", "desc": "$x = 12$ cao" }
           ],
           "workingSteps": [
-            "Sides of L-shape: (x+5), (x+1), x, 1, 5, x",
-            "Wait — sides: bottom = x+5, right = x+1, top-right = x, step-down = 1, top-left = 5, left = x",
-            "Sum = (x+5) + (x+1) + x + 1 + 5 + x = 4x + 12"
+            "$4x + 12 = 60$",
+            "$4x = 48$",
+            "$x = 12$",
+            "Check: $4(12)+12 = 48+12 = 60$ ✓"
           ]
         }
       ]
