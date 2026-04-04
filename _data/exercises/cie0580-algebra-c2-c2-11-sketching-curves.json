@@ -6,10 +6,175 @@
   "tier": "Core",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "C2-11-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the coordinates of the point where the curve $y = x^2 + 3$ crosses the $y$-axis.",
+      "answerType": "coordinate",
+      "correctAnswer": "(0, 3)",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "x = 0 gives y = 3" },
+        { "mark": "B1", "desc": "(0, 3) cao" }
+      ],
+      "workingSteps": [
+        "At the y-axis, x = 0",
+        "y = (0)² + 3 = 3",
+        "Coordinates: (0, 3)"
+      ],
+      "explanation": "Substitute x = 0 to find where the curve crosses the y-axis."
+    },
+    {
+      "id": "C2-11-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "For the curve $y = x^2 - 4$:\n\n(a) Write down the $y$-intercept.\n\n(b) Find the $x$-intercepts.\n\n(c) Write down the equation of the line of symmetry.",
+      "answerType": "expression",
+      "correctAnswer": "$x = 0$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) y-intercept = -4" },
+        { "mark": "B1", "desc": "(b) x = 2 and x = -2 (both required)" },
+        { "mark": "B1", "desc": "(c) x = 0" }
+      ],
+      "workingSteps": [
+        "(a) x = 0: y = 0 - 4 = -4  →  y-intercept = -4",
+        "(b) Set y = 0: x² - 4 = 0 → x² = 4 → x = ±2",
+        "    x-intercepts: x = 2 and x = -2",
+        "(c) The parabola y = x² - 4 is symmetric about x = 0"
+      ],
+      "explanation": "The parabola y = x² + c has vertex at (0, c) and line of symmetry x = 0."
+    },
+    {
+      "id": "C2-11-Q3",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "explain",
+      "difficulty": "easy",
+      "questionText": "A curve has equation $y = x^2$.\nDescribe the shape of this curve and state the coordinates of its turning point.",
+      "answerType": "explain",
+      "correctAnswer": "U-shaped parabola with turning point (minimum) at (0, 0).",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "E1", "desc": "U-shaped (upward opening) parabola" },
+        { "mark": "B1", "desc": "Turning point at origin (0, 0)" }
+      ],
+      "workingSteps": [
+        "y = x² is a parabola opening upwards (positive coefficient of x²)",
+        "Minimum value is y = 0 when x = 0",
+        "Turning point (minimum): (0, 0)"
+      ],
+      "explanation": "For y = x², the graph is a U-shape symmetric about the y-axis."
+    },
+    {
+      "id": "C2-11-Q4",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the $x$-intercepts and $y$-intercept of the curve $y = (x - 1)(x + 3)$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(-3, 0), (1, 0), (0, -3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "x-intercepts: x = 1 and x = -3" },
+            { "mark": "B1", "desc": "y-intercept: x = 0 → y = (0-1)(0+3) = (-1)(3) = -3" },
+            { "mark": "B1", "desc": "All three intercepts stated as coordinates" }
+          ],
+          "workingSteps": [
+            "x-intercepts: set y = 0",
+            "(x - 1)(x + 3) = 0",
+            "x = 1 or x = -3",
+            "y-intercept: set x = 0",
+            "y = (0 - 1)(0 + 3) = (-1)(3) = -3",
+            "Intercepts: (-3, 0), (1, 0), (0, -3)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the equation of the line of symmetry of the curve $y = (x-1)(x+3)$.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "$x = -1$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Midpoint of x-intercepts: (-3 + 1)/2 = -1" },
+            { "mark": "A1", "desc": "x = -1" }
+          ],
+          "workingSteps": [
+            "Line of symmetry is halfway between the x-intercepts",
+            "Midpoint: (-3 + 1) ÷ 2 = -2 ÷ 2 = -1",
+            "Line of symmetry: x = -1"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the coordinates of the minimum point of the curve $y = (x-1)(x+3)$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(-1, -4)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "x = -1 from line of symmetry (ft their b)" },
+            { "mark": "M1", "desc": "y = (-1-1)(-1+3) = (-2)(2)" },
+            { "mark": "A1", "desc": "(-1, -4)" }
+          ],
+          "workingSteps": [
+            "At line of symmetry x = -1:",
+            "y = (-1 - 1)(-1 + 3) = (-2)(2) = -4",
+            "Minimum point: (-1, -4)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2-11-Q5",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "sketch",
+      "difficulty": "medium",
+      "questionText": "Sketch the curve $y = x^2 - 9$, labelling clearly:\n(a) the coordinates of the $y$-intercept,\n(b) the coordinates of the $x$-intercepts,\n(c) the minimum point.",
+      "answerType": "draw",
+      "correctAnswer": "U-shaped parabola, y-intercept (0,-9), x-intercepts (-3,0) and (3,0), minimum (0,-9)",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "y-intercept (0, -9) correctly marked" },
+        { "mark": "B1", "desc": "x-intercepts (-3, 0) and (3, 0) correctly marked" },
+        { "mark": "B1", "desc": "Correct U-shape with minimum at (0, -9); smooth curve through intercepts" }
+      ],
+      "workingSteps": [
+        "y-intercept: x = 0 → y = 0 - 9 = -9 → point (0, -9)",
+        "x-intercepts: y = 0 → x² - 9 = 0 → x² = 9 → x = ±3 → points (-3, 0) and (3, 0)",
+        "Minimum: vertex at (0, -9) since the parabola opens upward",
+        "Sketch: U-shape symmetric about x = 0, minimum at (0,-9)"
+      ],
+      "explanation": "y = x² + c shifts the standard parabola y = x² vertically by c units."
+    }
+  ]
 }
