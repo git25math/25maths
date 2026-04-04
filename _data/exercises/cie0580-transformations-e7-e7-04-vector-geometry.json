@@ -6,10 +6,248 @@
   "tier": "Extended",
   "domain": "transformations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 20,
+  "estimatedMinutes": 23,
+  "questions": [
+    {
+      "id": "E7-04-Q1",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "In triangle OAB, $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$.\nM is the midpoint of OA and N is the midpoint of OB.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Express $\\overrightarrow{AB}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "b − a",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "b − a or −a + b"
+            }
+          ],
+          "workingSteps": [
+            "AB = AO + OB = −a + b = b − a"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Express $\\overrightarrow{MN}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(b − a)/2",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "OM = a/2, ON = b/2"
+            },
+            {
+              "mark": "M1",
+              "desc": "MN = ON − OM = b/2 − a/2"
+            },
+            {
+              "mark": "A1",
+              "desc": "(b − a)/2 or ½(b − a)"
+            }
+          ],
+          "workingSteps": [
+            "MN = ON − OM = b/2 − a/2 = (b − a)/2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Hence show that MN is parallel to AB and state the ratio MN:AB.",
+          "marks": 3,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "MN = ½AB, ratio 1:2",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "MN = ½(b − a)"
+            },
+            {
+              "mark": "A1",
+              "desc": "AB = b − a, so MN = ½ AB"
+            },
+            {
+              "mark": "A1",
+              "desc": "MN is a scalar multiple of AB → parallel. Ratio MN:AB = 1:2"
+            }
+          ],
+          "workingSteps": [
+            "MN = (b−a)/2 = ½ × AB",
+            "MN is a scalar multiple of AB, so parallel",
+            "MN:AB = 1:2 (midpoint theorem)"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "P is the point on OB such that OP:PB = 2:1.\nExpress $\\overrightarrow{AP}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "−a + 2b/3",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "OP = 2/3 × b"
+            },
+            {
+              "mark": "M1",
+              "desc": "AP = AO + OP = −a + 2b/3"
+            },
+            {
+              "mark": "A1",
+              "desc": "2b/3 − a"
+            }
+          ],
+          "workingSteps": [
+            "OP = (2/3)b",
+            "AP = AO + OP = −a + 2b/3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E7-04-Q2",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "OABC is a parallelogram where $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OC} = \\mathbf{c}$.\nD is the midpoint of BC. E is the point on OC such that OE:EC = 3:1.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Express $\\overrightarrow{OB}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "a + c",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "a + c"
+            }
+          ],
+          "workingSteps": [
+            "OB = OA + AB = a + c"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Express $\\overrightarrow{OD}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "a/2 + c",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "D midpoint of BC, BC goes from B(a+c) to C(c)... wait. B=a+c, C=c. Midpoint = (a+c+c)/2 = (a+2c)/2 = a/2+c"
+            },
+            {
+              "mark": "A1",
+              "desc": "a/2 + c"
+            }
+          ],
+          "workingSteps": [
+            "B is at position a+c, C is at position c",
+            "D = midpoint of BC = (a+c+c)/2 = a/2 + c",
+            "Or: OD = OB + BD = (a+c) + ½BC = (a+c) + ½(c−(a+c)) = (a+c) + ½(−a) = a/2 + c"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Express $\\overrightarrow{OE}$ in terms of $\\mathbf{c}$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3c/4",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "3c/4 or ¾c"
+            }
+          ],
+          "workingSteps": [
+            "OE:EC = 3:1, so OE = 3/4 × OC = 3c/4"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Express $\\overrightarrow{DE}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "−a/2 − c/4",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "DE = OE − OD"
+            },
+            {
+              "mark": "A1",
+              "desc": "3c/4 − (a/2 + c) = −a/2 − c/4"
+            }
+          ],
+          "workingSteps": [
+            "DE = OE − OD = 3c/4 − a/2 − c = −a/2 − c/4"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Express $\\overrightarrow{DA}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "a/2 − c",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "DA = OA − OD"
+            },
+            {
+              "mark": "A1",
+              "desc": "a − (a/2 + c) = a/2 − c"
+            }
+          ],
+          "workingSteps": [
+            "DA = OA − OD = a − a/2 − c = a/2 − c"
+          ]
+        },
+        {
+          "label": "f",
+          "questionText": "Show that D, E and A are not collinear.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "DE is not a scalar multiple of DA",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "DE = −a/2 − c/4, DA = a/2 − c"
+            },
+            {
+              "mark": "A1",
+              "desc": "If DE = k × DA then −1/2 = k/2 and −1/4 = −k, giving k = −1 and k = 1/4, contradiction. So not collinear."
+            }
+          ],
+          "workingSteps": [
+            "If DE = k × DA: from a-component: −1/2 = k × 1/2, so k = −1",
+            "From c-component: −1/4 = k × (−1), so k = 1/4",
+            "k = −1 ≠ 1/4, contradiction → not collinear"
+          ]
+        }
+      ]
+    }
+  ]
 }
