@@ -6,10 +6,270 @@
   "tier": "Higher",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 30,
+  "estimatedMinutes": 32,
+  "questions": [
+    {
+      "id": "H3-01-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "Here are the first five terms of a quadratic sequence.\n$$3, \\ 8, \\ 15, \\ 24, \\ 35$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that the $n$th term of the sequence is $n^2 + 2n$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "n² + 2n",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "First differences: 5, 7, 9, 11 (arithmetic); second differences: 2, 2, 2 → coefficient of n² is 2/2 = 1" },
+            { "mark": "M1", "desc": "Subtracts n² from each term: 3−1=2, 8−4=4, 15−9=6, … → linear sequence 2n" },
+            { "mark": "A1", "desc": "Concludes nth term = n² + 2n and verifies at least one term" }
+          ],
+          "workingSteps": [
+            "First differences: 8−3=5, 15−8=7, 24−15=9, 35−24=11",
+            "Second differences: 7−5=2, 9−7=2, 11−9=2 (constant = 2)",
+            "Coefficient of n² = 2 ÷ 2 = 1",
+            "Subtract n² from each term: 3−1=2, 8−4=4, 15−9=6, 24−16=8, 35−25=10",
+            "Remainder sequence: 2, 4, 6, 8, 10 → nth term is 2n",
+            "Full nth term: n² + 2n",
+            "Check n=1: 1+2=3 ✓, n=3: 9+6=15 ✓, n=5: 25+10=35 ✓"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the 10th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "120",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes n = 10 into n² + 2n" },
+            { "mark": "A1", "desc": "120 cao" }
+          ],
+          "workingSteps": [
+            "n = 10: 10² + 2(10) = 100 + 20 = 120"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Is 288 a term in this sequence? Give a reason for your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Yes — n² + 2n = 288 gives n = 16 (a positive integer), so 288 is the 16th term.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets n² + 2n = 288 → n² + 2n − 288 = 0" },
+            { "mark": "M1", "desc": "Solves: (n + 18)(n − 16) = 0 or quadratic formula; selects positive root" },
+            { "mark": "A1", "desc": "n = 16 (a positive integer), so 288 is a term cao" }
+          ],
+          "workingSteps": [
+            "n² + 2n = 288",
+            "n² + 2n − 288 = 0",
+            "(n + 18)(n − 16) = 0",
+            "n = −18 or n = 16",
+            "n must be a positive integer, so n = 16",
+            "288 is the 16th term of the sequence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H3-01-Q2",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "hard",
+      "context": "The first term of a geometric sequence is 4.\nThe common ratio is 3.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the first four terms of the sequence.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "table-fill",
+          "correctAnswer": ["4", "12", "36", "108"],
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "4 and 12" },
+            { "mark": "B1", "desc": "36 and 108" }
+          ],
+          "workingSteps": [
+            "Term 1 = 4",
+            "Term 2 = 4 × 3 = 12",
+            "Term 3 = 12 × 3 = 36",
+            "Term 4 = 36 × 3 = 108"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the $n$th term of the geometric sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "4 × 3^(n−1)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Uses nth term formula for geometric: a × rⁿ⁻¹" },
+            { "mark": "A1", "desc": "4 × 3ⁿ⁻¹ cao" }
+          ],
+          "workingSteps": [
+            "For a geometric sequence: nth term = a × rⁿ⁻¹",
+            "a = 4, r = 3",
+            "nth term = 4 × 3ⁿ⁻¹"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the sum of the first 5 terms of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "484",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Adds five terms: 4 + 12 + 36 + 108 + 324 or uses sum formula" },
+            { "mark": "A1", "desc": "484 cao" }
+          ],
+          "workingSteps": [
+            "Term 5 = 4 × 3⁴ = 4 × 81 = 324",
+            "Sum = 4 + 12 + 36 + 108 + 324 = 484"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Which term of the sequence is the first to exceed 10 000?",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "7",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 4 × 3ⁿ⁻¹ > 10 000 → 3ⁿ⁻¹ > 2500, and trials or uses logarithms" },
+            { "mark": "M1", "desc": "Correctly evaluates: n=8 → 4×3⁷ = 8748 < 10000; n=9 → 4×3⁸ = 26244 > 10000" },
+            { "mark": "A1", "desc": "n = 9 (the 9th term = 26 244) cao" }
+          ],
+          "workingSteps": [
+            "4 × 3ⁿ⁻¹ > 10 000",
+            "3ⁿ⁻¹ > 2500",
+            "Trial: n=7 → 4×3⁶ = 4×729 = 2916; n=8 → 4×3⁷ = 4×2187 = 8748; n=9 → 4×3⁸ = 4×6561 = 26244",
+            "26244 > 10000, so the 9th term is the first to exceed 10000"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H3-01-Q3",
+      "type": "structured",
+      "totalMarks": 13,
+      "difficulty": "hard",
+      "context": "Here are the first five terms of a quadratic sequence.\n$$2, \\ 9, \\ 20, \\ 35, \\ 54$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the $n$th term of the sequence.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "2n² + n − 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "First differences: 7, 11, 15, 19; second differences: 4, 4, 4 → coefficient of n² is 4÷2 = 2" },
+            { "mark": "M1", "desc": "Subtracts 2n² from each term: remainders 0, 1, 2, 3, 4 → linear part is n − 1" },
+            { "mark": "A1", "desc": "Combines to give 2n² + n − 1" },
+            { "mark": "A1", "desc": "Verifies: n=1 → 2+1−1=2 ✓, n=2 → 8+2−1=9 ✓, n=5 → 50+5−1=54 ✓" }
+          ],
+          "workingSteps": [
+            "First differences: 9−2=7, 20−9=11, 35−20=15, 54−35=19",
+            "Second differences: 11−7=4, 15−11=4, 19−15=4 (constant = 4)",
+            "Coefficient of n² = 4 ÷ 2 = 2",
+            "2n² values: 2, 8, 18, 32, 50",
+            "Remainders: 2−2=0, 9−8=1, 20−18=2, 35−32=3, 54−50=4 → nth part = n−1",
+            "nth term = 2n² + (n − 1) = 2n² + n − 1",
+            "Check: n=1: 2+1−1=2 ✓, n=3: 18+3−1=20 ✓, n=5: 50+5−1=54 ✓"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the 20th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "819",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes n = 20 into 2n² + n − 1" },
+            { "mark": "A1", "desc": "819 cao" }
+          ],
+          "workingSteps": [
+            "nth term = 2n² + n − 1",
+            "n = 20: 2(400) + 20 − 1 = 800 + 19 = 819"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the value of $n$ for which the $n$th term equals 299.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "12",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 2n² + n − 1 = 299 → 2n² + n − 300 = 0" },
+            { "mark": "M1", "desc": "Applies quadratic formula or factorises; discriminant = 1 + 2400 = 2401 = 49²" },
+            { "mark": "A1", "desc": "n = (−1 + 49) ÷ 4 = 12; selects positive root" },
+            { "mark": "A1", "desc": "n = 12 cao" }
+          ],
+          "workingSteps": [
+            "2n² + n − 1 = 299",
+            "2n² + n − 300 = 0",
+            "Discriminant = 1² + 4(2)(300) = 1 + 2400 = 2401 = 49²",
+            "n = (−1 ± 49) / (2 × 2) = (−1 ± 49) / 4",
+            "n = 48/4 = 12 (taking positive root)",
+            "Check: 2(144) + 12 − 1 = 288 + 11 = 299 ✓"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Work out the difference between the 6th and 7th terms.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "27",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Works out 6th term: 2(36)+6−1 = 77" },
+            { "mark": "M1", "desc": "Works out 7th term: 2(49)+7−1 = 104" },
+            { "mark": "A1", "desc": "104 − 77 = 27 cao" }
+          ],
+          "workingSteps": [
+            "6th term = 2(6²) + 6 − 1 = 72 + 5 = 77",
+            "7th term = 2(7²) + 7 − 1 = 98 + 6 = 104",
+            "Difference = 104 − 77 = 27"
+          ]
+        }
+      ]
+    }
+  ]
 }

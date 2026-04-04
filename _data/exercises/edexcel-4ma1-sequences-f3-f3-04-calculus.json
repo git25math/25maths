@@ -6,12 +6,236 @@
   "tier": "Foundation",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": [],
+  "totalMarks": 22,
+  "estimatedMinutes": 25,
   "_higherOnly": true,
-  "_note": "Calculus is Higher tier only in Edexcel 4MA1 spec. This Foundation file kept for structural completeness."
+  "_note": "Calculus is Higher tier only in Edexcel 4MA1 spec. This Foundation file kept for structural completeness.",
+  "questions": [
+    {
+      "id": "F3-04-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "$y = x^3 - 6x^2 + 9x$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $\\dfrac{dy}{dx}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3x² − 12x + 9",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Differentiates at least one term correctly using power rule" },
+            { "mark": "A1", "desc": "3x² − 12x seen" },
+            { "mark": "A1", "desc": "3x² − 12x + 9 cao" }
+          ],
+          "workingSteps": [
+            "Differentiate term by term using the power rule d/dx(xⁿ) = nxⁿ⁻¹",
+            "d/dx(x³) = 3x²",
+            "d/dx(−6x²) = −12x",
+            "d/dx(9x) = 9",
+            "dy/dx = 3x² − 12x + 9"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the gradient of the curve at the point where $x = 2$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "-3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 2 into their dy/dx" },
+            { "mark": "A1", "desc": "−3 cao" }
+          ],
+          "workingSteps": [
+            "dy/dx at x = 2: 3(2²) − 12(2) + 9 = 12 − 24 + 9 = −3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the $x$-coordinates of the turning points of the curve.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 1 and x = 3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets their dy/dx = 0: 3x² − 12x + 9 = 0 → x² − 4x + 3 = 0" },
+            { "mark": "A1", "desc": "(x − 1)(x − 3) = 0; x = 1 and x = 3 cao" }
+          ],
+          "workingSteps": [
+            "Set dy/dx = 0: 3x² − 12x + 9 = 0",
+            "Divide by 3: x² − 4x + 3 = 0",
+            "Factorise: (x − 1)(x − 3) = 0",
+            "x = 1 or x = 3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-04-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "$y = 2x^2 - 8x + 3$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $\\dfrac{dy}{dx}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "4x − 8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Attempts to differentiate: 4x ± k seen" },
+            { "mark": "A1", "desc": "4x − 8 cao" }
+          ],
+          "workingSteps": [
+            "d/dx(2x²) = 4x",
+            "d/dx(−8x) = −8",
+            "d/dx(3) = 0",
+            "dy/dx = 4x − 8"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the $x$-coordinate of the turning point of the curve.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets their dy/dx = 0: 4x − 8 = 0" },
+            { "mark": "A1", "desc": "x = 2 cao" }
+          ],
+          "workingSteps": [
+            "4x − 8 = 0",
+            "4x = 8",
+            "x = 2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the $y$-coordinate of the turning point.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "-5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes their x = 2 into y = 2x² − 8x + 3" },
+            { "mark": "A1", "desc": "y = −5 cao" }
+          ],
+          "workingSteps": [
+            "y = 2(2²) − 8(2) + 3 = 8 − 16 + 3 = −5"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Give a reason why this turning point is a minimum.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "The coefficient of x² is positive (2 > 0), so the parabola opens upward, giving a minimum turning point.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "States the coefficient of x² is positive oe" },
+            { "mark": "B1", "desc": "Concludes the curve is U-shaped / has a minimum oe" }
+          ],
+          "workingSteps": [
+            "The coefficient of x² in y = 2x² − 8x + 3 is +2, which is positive",
+            "A positive coefficient of x² means the parabola opens upwards",
+            "Therefore the turning point is a minimum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-04-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "A particle moves along a straight line.\nThe displacement, $s$ metres, of the particle from a fixed point $O$ at time $t$ seconds is given by\n$$s = t^3 - 9t^2 + 24t$$\nwhere $t \\geq 0$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the velocity of the particle at time $t$ seconds.\n(Velocity = $\\dfrac{ds}{dt}$)",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3t² − 18t + 24",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Differentiates at least one term correctly" },
+            { "mark": "A1", "desc": "3t² − 18t seen" },
+            { "mark": "A1", "desc": "3t² − 18t + 24 cao" }
+          ],
+          "workingSteps": [
+            "v = ds/dt",
+            "d/dt(t³) = 3t²",
+            "d/dt(−9t²) = −18t",
+            "d/dt(24t) = 24",
+            "v = 3t² − 18t + 24"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the times when the particle is momentarily at rest.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "t = 2 and t = 4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets v = 0: 3t² − 18t + 24 = 0 → t² − 6t + 8 = 0; attempts to factorise" },
+            { "mark": "A1", "desc": "(t − 2)(t − 4) = 0; t = 2 and t = 4 cao" }
+          ],
+          "workingSteps": [
+            "Set v = 0: 3t² − 18t + 24 = 0",
+            "Divide by 3: t² − 6t + 8 = 0",
+            "Factorise: (t − 2)(t − 4) = 0",
+            "t = 2 or t = 4"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the displacement of the particle when $t = 2$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "20",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes t = 2 into s = t³ − 9t² + 24t" },
+            { "mark": "A1", "desc": "20 m cao" }
+          ],
+          "workingSteps": [
+            "s = (2³) − 9(2²) + 24(2) = 8 − 36 + 48 = 20 m"
+          ]
+        }
+      ]
+    }
+  ]
 }

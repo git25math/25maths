@@ -6,10 +6,220 @@
   "tier": "Higher",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "H2-04-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve $\\dfrac{3x + 1}{4} - \\dfrac{x - 2}{3} = 2$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "2.6",
+          "tolerance": 0.05,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiplies through by 12: 3(3x+1) − 4(x−2) = 24" },
+            { "mark": "M1", "desc": "Expands: 9x + 3 − 4x + 8 = 24" },
+            { "mark": "M1", "desc": "5x + 11 = 24 → 5x = 13" },
+            { "mark": "A1", "desc": "x = 13/5 = 2.6 cao" }
+          ],
+          "workingSteps": [
+            "Multiply through by 12 (LCM of 4 and 3):",
+            "3(3x+1) − 4(x−2) = 24",
+            "9x + 3 − 4x + 8 = 24",
+            "5x + 11 = 24",
+            "5x = 13",
+            "x = 13/5 = 2.6"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Solve $\\dfrac{5}{2x - 1} = \\dfrac{3}{x + 2}$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "13",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Cross-multiplies: 5(x+2) = 3(2x−1)" },
+            { "mark": "M1", "desc": "5x + 10 = 6x − 3" },
+            { "mark": "M1", "desc": "Collects: 13 = x" },
+            { "mark": "A1", "desc": "x = 13 cao" }
+          ],
+          "workingSteps": [
+            "Cross-multiply: 5(x+2) = 3(2x−1)",
+            "5x + 10 = 6x − 3",
+            "10 + 3 = 6x − 5x",
+            "x = 13",
+            "Check: 5/(26−1) = 5/25 = 1/5; 3/(13+2) = 3/15 = 1/5 ✓"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-04-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "A school sells adult tickets for a concert at $£(3n + 2)$ and child tickets at $£(n + 1)$.\nThey sell 4 adult tickets and 6 child tickets.\nThe total ticket revenue is £68.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that $18n + 14 = 68$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "4(3n+2) + 6(n+1) = 68 → 12n + 8 + 6n + 6 = 68 → 18n + 14 = 68",
+          "markScheme": [
+            { "mark": "M1", "desc": "4(3n+2) + 6(n+1) = 68 set up and expanded" },
+            { "mark": "A1", "desc": "18n + 14 = 68 shown with all working" }
+          ],
+          "workingSteps": [
+            "Revenue = 4 × (3n+2) + 6 × (n+1)",
+            "= 12n + 8 + 6n + 6",
+            "= 18n + 14 = 68"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Solve $18n + 14 = 68$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "18n = 54" },
+            { "mark": "A1", "desc": "n = 3 cao" }
+          ],
+          "workingSteps": [
+            "18n = 68 − 14 = 54",
+            "n = 54 ÷ 18 = 3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the price of an adult ticket and the price of a child ticket.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Adult: £11, Child: £4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Adult = 3(3) + 2 = £11 ft their n" },
+            { "mark": "B1", "desc": "Child = 3 + 1 = £4 ft their n" }
+          ],
+          "workingSteps": [
+            "Adult = 3(3) + 2 = 9 + 2 = £11",
+            "Child = 3 + 1 = £4",
+            "Check: 4 × 11 + 6 × 4 = 44 + 24 = £68 ✓"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Hence work out the ratio of the adult ticket price to the child ticket price.\nGive your answer in its simplest form.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "11:4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "11 : 4 cao (cannot be simplified further)" }
+          ],
+          "workingSteps": [
+            "Adult : Child = 11 : 4",
+            "HCF(11, 4) = 1, already in simplest form"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-04-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "A shop increases all prices by 15%.\nAfter the increase, a jacket costs £69.\nWork out the original price of the jacket.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "60",
+          "tolerance": null,
+          "unit": "£",
+          "markScheme": [
+            { "mark": "M1", "desc": "1.15x = 69 → x = 69 ÷ 1.15" },
+            { "mark": "A1", "desc": "x = £60 cao" }
+          ],
+          "workingSteps": [
+            "Let original price = £x",
+            "1.15x = 69",
+            "x = 69 ÷ 1.15 = 60",
+            "Original price = £60"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Prices are reduced by 20% and then reduced by a further 10%.\nShow that this is not the same as a single reduction of 30%.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "0.8 × 0.9 = 0.72, giving 28% reduction, not 30%",
+          "markScheme": [
+            { "mark": "M1", "desc": "Combined multiplier = 0.8 × 0.9 = 0.72" },
+            { "mark": "A1", "desc": "28% reduction ≠ 30%; 30% reduction gives 0.70 ≠ 0.72, shown" }
+          ],
+          "workingSteps": [
+            "After 20% off: multiply by 0.80",
+            "After further 10% off: multiply by 0.90",
+            "Combined: 0.80 × 0.90 = 0.72",
+            "Reduction = 1 − 0.72 = 28%, not 30%",
+            "30% reduction gives multiplier 0.70 ≠ 0.72"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Solve $5(x - 2) = 2x + 3(x + 4)$.\nComment on the number of solutions.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "No solution: equation is inconsistent (−10 = 12 is never true)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Expands LHS: 5x − 10; expands RHS: 2x + 3x + 12 = 5x + 12" },
+            { "mark": "M1", "desc": "5x − 10 = 5x + 12 → −10 = 12" },
+            { "mark": "A1", "desc": "Contradiction; no solution; equation has no solution for any value of x" }
+          ],
+          "workingSteps": [
+            "5(x − 2) = 2x + 3(x + 4)",
+            "5x − 10 = 2x + 3x + 12",
+            "5x − 10 = 5x + 12",
+            "−10 = 12 (contradiction — impossible)",
+            "No solution exists"
+          ]
+        }
+      ]
+    }
+  ]
 }

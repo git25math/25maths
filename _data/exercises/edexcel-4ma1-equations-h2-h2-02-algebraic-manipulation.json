@@ -6,10 +6,202 @@
   "tier": "Higher",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "H2-02-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Expand and simplify $(2x + 3)^2 - (x - 1)^2$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3x^2 + 14x + 8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Expands (2x+3)² = 4x² + 12x + 9" },
+            { "mark": "M1", "desc": "Expands (x−1)² = x² − 2x + 1; subtracts" },
+            { "mark": "A1", "desc": "3x² + 14x + 8 cao" }
+          ],
+          "workingSteps": [
+            "(2x+3)² = 4x² + 12x + 9",
+            "(x−1)² = x² − 2x + 1",
+            "Difference = (4x² + 12x + 9) − (x² − 2x + 1)",
+            "= 3x² + 14x + 8"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Factorise fully $6x^2 y - 9xy^2$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3xy(2x - 3y)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Identifies HCF as 3xy" },
+            { "mark": "A1", "desc": "3xy(2x − 3y) cao" }
+          ],
+          "workingSteps": [
+            "HCF of 6x²y and 9xy² = 3xy",
+            "6x²y ÷ 3xy = 2x, 9xy² ÷ 3xy = 3y",
+            "Answer: 3xy(2x − 3y)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Simplify $\\dfrac{x^2 - 4}{x^2 + 4x + 4}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(x - 2) / (x + 2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Factorises numerator: (x+2)(x−2)" },
+            { "mark": "M1", "desc": "Factorises denominator: (x+2)²" },
+            { "mark": "A1", "desc": "(x−2)/(x+2) cao" }
+          ],
+          "workingSteps": [
+            "Numerator: x² − 4 = (x+2)(x−2)",
+            "Denominator: x² + 4x + 4 = (x+2)²",
+            "Simplify: (x+2)(x−2) / (x+2)² = (x−2)/(x+2)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-02-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Express $\\dfrac{3}{x+2} - \\dfrac{2}{x-1}$ as a single fraction in its simplest form.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(x - 7) / ((x+2)(x-1))",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Common denominator (x+2)(x−1)" },
+            { "mark": "M1", "desc": "Numerator: 3(x−1) − 2(x+2) = 3x − 3 − 2x − 4" },
+            { "mark": "A1", "desc": "(x − 7) / [(x+2)(x−1)] cao" }
+          ],
+          "workingSteps": [
+            "LCD = (x+2)(x−1)",
+            "3/(x+2) = 3(x−1)/[(x+2)(x−1)]",
+            "2/(x−1) = 2(x+2)/[(x+2)(x−1)]",
+            "Difference = [3(x−1) − 2(x+2)] / [(x+2)(x−1)]",
+            "= (3x − 3 − 2x − 4) / [(x+2)(x−1)]",
+            "= (x − 7) / [(x+2)(x−1)]"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Simplify $\\dfrac{2x^2 + 5x - 3}{x^2 - 9}$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(2x - 1) / (x - 3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Factorises numerator: (2x − 1)(x + 3)" },
+            { "mark": "M1", "desc": "Factorises denominator: (x + 3)(x − 3)" },
+            { "mark": "A1", "desc": "Cancels (x+3)" },
+            { "mark": "A1", "desc": "(2x−1)/(x−3) cao" }
+          ],
+          "workingSteps": [
+            "Numerator: 2x² + 5x − 3; try (2x−1)(x+3) = 2x²+6x−x−3 = 2x²+5x−3 ✓",
+            "Denominator: x² − 9 = (x+3)(x−3)",
+            "Simplify: (2x−1)(x+3) / [(x+3)(x−3)] = (2x−1)/(x−3)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-02-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Expand and simplify $(x + y)^3$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x^3 + 3x^2y + 3xy^2 + y^3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "(x+y)² = x² + 2xy + y² used" },
+            { "mark": "M1", "desc": "Multiplies by (x+y): x³ + 2x²y + xy² + x²y + 2xy² + y³" },
+            { "mark": "A1", "desc": "x³ + 3x²y + 3xy² + y³ cao" }
+          ],
+          "workingSteps": [
+            "(x+y)³ = (x+y)² × (x+y)",
+            "= (x² + 2xy + y²)(x+y)",
+            "= x³ + x²y + 2x²y + 2xy² + xy² + y³",
+            "= x³ + 3x²y + 3xy² + y³"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Hence work out $11^3$ without a calculator, using $x = 10$ and $y = 1$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "1331",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "10³ + 3(10²)(1) + 3(10)(1²) + 1³" },
+            { "mark": "A1", "desc": "1000 + 300 + 30 + 1 = 1331 cao" }
+          ],
+          "workingSteps": [
+            "11³ = (10+1)³ = 10³ + 3(10²)(1) + 3(10)(1²) + 1³",
+            "= 1000 + 300 + 30 + 1 = 1331"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that $(a - b)(a^2 + ab + b^2) = a^3 - b^3$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "a³ + a²b + ab² − a²b − ab² − b³ = a³ − b³",
+          "markScheme": [
+            { "mark": "M1", "desc": "Expands: a³ + a²b + ab² − a²b − ab² − b³" },
+            { "mark": "A1", "desc": "Middle terms cancel to give a³ − b³ with full working shown" }
+          ],
+          "workingSteps": [
+            "(a−b)(a²+ab+b²)",
+            "= a(a²+ab+b²) − b(a²+ab+b²)",
+            "= a³ + a²b + ab² − a²b − ab² − b³",
+            "= a³ − b³ ✓ (middle terms cancel)"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,193 @@
   "tier": "Foundation",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "F2-06-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve the simultaneous equations:\n$$x + y = 10$$\n$$x - y = 4$$",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(7, 3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Adds equations to eliminate y: 2x = 14" },
+            { "mark": "A1", "desc": "x = 7" },
+            { "mark": "A1", "desc": "y = 3 (by substitution)" }
+          ],
+          "workingSteps": [
+            "Add equations: (x + y) + (x − y) = 10 + 4",
+            "2x = 14, so x = 7",
+            "Substitute into eq 1: 7 + y = 10, so y = 3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Check your answers by substituting into both original equations.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "7 + 3 = 10 and 7 − 3 = 4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Both equations verified with x = 7, y = 3" }
+          ],
+          "workingSteps": [
+            "Equation 1: 7 + 3 = 10 ✓",
+            "Equation 2: 7 − 3 = 4 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Solve the simultaneous equations:\n$$2x + 3y = 12$$\n$$x + y = 5$$",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(3, 2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiplies eq 2 by 2 to get 2x + 2y = 10; subtracts from eq 1" },
+            { "mark": "A1", "desc": "y = 2" },
+            { "mark": "A1", "desc": "x = 3" }
+          ],
+          "workingSteps": [
+            "Multiply eq 2 by 2: 2x + 2y = 10",
+            "Subtract from eq 1: (2x + 3y) − (2x + 2y) = 12 − 10",
+            "y = 2",
+            "Substitute into eq 2: x + 2 = 5, x = 3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2-06-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "At a market stall, 3 sandwiches and 2 drinks cost £10.00.\n1 sandwich and 4 drinks cost £8.00.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Let $s$ be the price of a sandwich and $d$ be the price of a drink.\nWrite down two equations in $s$ and $d$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3s + 2d = 10 and s + 4d = 8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "3s + 2d = 10 oe" },
+            { "mark": "B1", "desc": "s + 4d = 8 oe" }
+          ],
+          "workingSteps": [
+            "3 sandwiches + 2 drinks = £10.00 → 3s + 2d = 10",
+            "1 sandwich + 4 drinks = £8.00 → s + 4d = 8"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Solve your equations to find the price of a sandwich and the price of a drink.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "sandwich = £2.40, drink = £1.40",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiplies eq 2 by 3: 3s + 12d = 24; subtracts eq 1" },
+            { "mark": "A1", "desc": "d = 1.40" },
+            { "mark": "A1", "desc": "s = 2.40" }
+          ],
+          "workingSteps": [
+            "Multiply eq 2 by 3: 3s + 12d = 24",
+            "Subtract eq 1: 10d = 14",
+            "d = 1.40",
+            "Substitute into eq 2: s + 4 × 1.40 = 8 → s + 5.60 = 8 → s = 2.40"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the total cost of 2 sandwiches and 3 drinks.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "9.00",
+          "tolerance": 0.01,
+          "unit": "£",
+          "markScheme": [
+            { "mark": "B1", "desc": "2 × 2.40 + 3 × 1.40 = 4.80 + 4.20 = £9.00 ft their values" }
+          ],
+          "workingSteps": [
+            "2 × 2.40 = 4.80",
+            "3 × 1.40 = 4.20",
+            "Total = 4.80 + 4.20 = £9.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2-06-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve the simultaneous equations:\n$$3x + 2y = 16$$\n$$5x - y = 18$$",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(4, 2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiplies eq 2 by 2: 10x − 2y = 36; adds to eq 1" },
+            { "mark": "M1", "desc": "13x = 52" },
+            { "mark": "A1", "desc": "x = 4" },
+            { "mark": "A1", "desc": "y = 2" }
+          ],
+          "workingSteps": [
+            "Multiply eq 2 by 2: 10x − 2y = 36",
+            "Add to eq 1: (3x + 2y) + (10x − 2y) = 16 + 36",
+            "13x = 52, x = 4",
+            "Substitute into eq 2: 5 × 4 − y = 18 → 20 − y = 18 → y = 2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Show that your solution satisfies both original equations.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "3(4) + 2(2) = 16 and 5(4) − 2 = 18",
+          "markScheme": [
+            { "mark": "B1", "desc": "Both: 3×4 + 2×2 = 16 ✓ and 5×4 − 2 = 18 ✓ shown" }
+          ],
+          "workingSteps": [
+            "Eq 1: 3 × 4 + 2 × 2 = 12 + 4 = 16 ✓",
+            "Eq 2: 5 × 4 − 2 = 20 − 2 = 18 ✓"
+          ]
+        }
+      ]
+    }
+  ]
 }
