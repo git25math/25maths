@@ -6,10 +6,198 @@
   "tier": "Core",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 21,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "C2-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "expand",
+      "difficulty": "easy",
+      "questionText": "Expand $3(2x - 5)$.",
+      "answerType": "expression",
+      "correctAnswer": "$6x - 15$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Multiplying bracket: 3 × 2x and 3 × (−5) attempted" },
+        { "mark": "A1", "desc": "$6x − 15$ cao" }
+      ],
+      "workingSteps": [
+        "3 × 2x = 6x",
+        "3 × (−5) = −15",
+        "Answer: 6x − 15"
+      ],
+      "explanation": "Multiply each term inside the bracket by 3."
+    },
+    {
+      "id": "C2-02-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "factorise",
+      "difficulty": "easy",
+      "questionText": "Factorise $8a + 12$.",
+      "answerType": "expression",
+      "correctAnswer": "$4(2a + 3)$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Identifying common factor of 4" },
+        { "mark": "A1", "desc": "$4(2a + 3)$ cao" }
+      ],
+      "workingSteps": [
+        "HCF of 8 and 12 is 4",
+        "8a = 4 × 2a",
+        "12 = 4 × 3",
+        "Answer: 4(2a + 3)",
+        "Check: 4(2a + 3) = 8a + 12 ✓"
+      ],
+      "explanation": "Find the highest common factor of the coefficients and place it outside the bracket."
+    },
+    {
+      "id": "C2-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "simplify",
+      "difficulty": "medium",
+      "questionText": "Simplify $\\dfrac{3x^2 \\times 4x^3}{6x}$.",
+      "answerType": "expression",
+      "correctAnswer": "$2x^4$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Numerator: 3x² × 4x³ = 12x⁵" },
+        { "mark": "M1", "desc": "Dividing: 12x⁵ ÷ 6x" },
+        { "mark": "A1", "desc": "$2x^4$ cao" }
+      ],
+      "workingSteps": [
+        "Numerator: 3x² × 4x³ = 12x^(2+3) = 12x⁵",
+        "Divide: 12x⁵ ÷ 6x = (12÷6) × x^(5−1) = 2x⁴"
+      ],
+      "explanation": "Multiply the numerator first, then divide using index laws."
+    },
+    {
+      "id": "C2-02-Q4",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Expand and simplify $(x + 4)(x + 3)$.",
+          "marks": 3,
+          "commandWord": "expand",
+          "answerType": "expression",
+          "correctAnswer": "$x^2 + 7x + 12$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Four correct products attempted: x², 3x, 4x, 12" },
+            { "mark": "M1", "desc": "Collection of like terms" },
+            { "mark": "A1", "desc": "$x^2 + 7x + 12$ cao" }
+          ],
+          "workingSteps": [
+            "(x + 4)(x + 3)",
+            "= x² + 3x + 4x + 12",
+            "= x² + 7x + 12",
+            "Check coefficients: 3 + 4 = 7 ✓, 4 × 3 = 12 ✓"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Factorise $x^2 + 9x + 20$.",
+          "marks": 2,
+          "commandWord": "factorise",
+          "answerType": "expression",
+          "correctAnswer": "$(x + 4)(x + 5)$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Pair of factors of 20 that add to 9 identified: 4 and 5" },
+            { "mark": "A1", "desc": "$(x + 4)(x + 5)$ cao" }
+          ],
+          "workingSteps": [
+            "Need two numbers that multiply to 20 and add to 9",
+            "4 × 5 = 20, 4 + 5 = 9 ✓",
+            "Answer: (x + 4)(x + 5)",
+            "Check: (x+4)(x+5) = x² + 5x + 4x + 20 = x² + 9x + 20 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Factorise completely $6y^2 - 9y$.",
+          "marks": 3,
+          "commandWord": "factorise",
+          "answerType": "expression",
+          "correctAnswer": "$3y(2y - 3)$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Identifying common factor of 3y" },
+            { "mark": "M1", "desc": "6y² ÷ 3y = 2y and 9y ÷ 3y = 3" },
+            { "mark": "A1", "desc": "$3y(2y − 3)$ cao" }
+          ],
+          "workingSteps": [
+            "HCF of 6y² and 9y is 3y",
+            "6y² ÷ 3y = 2y",
+            "9y ÷ 3y = 3",
+            "Answer: 3y(2y − 3)",
+            "Check: 3y(2y − 3) = 6y² − 9y ✓"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2-02-Q5",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "simplify",
+      "difficulty": "medium",
+      "questionText": "Simplify $\\dfrac{4x + 8}{4}$.",
+      "answerType": "expression",
+      "correctAnswer": "$x + 2$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Factorising numerator: 4(x + 2) or dividing each term" },
+        { "mark": "M1", "desc": "Dividing by 4" },
+        { "mark": "A1", "desc": "$x + 2$ cao" }
+      ],
+      "workingSteps": [
+        "Numerator: 4x + 8 = 4(x + 2)",
+        "Divide by 4: (4x + 8) / 4 = x + 2"
+      ],
+      "explanation": "Either factorise the numerator first, or divide each term in the numerator by 4."
+    },
+    {
+      "id": "C2-02-Q6",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "expand",
+      "difficulty": "medium",
+      "questionText": "Expand and simplify $2(3x + 1) - 3(x - 4)$.",
+      "answerType": "expression",
+      "correctAnswer": "$3x + 14$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$6x + 2$ from first bracket" },
+        { "mark": "M1", "desc": "$-3x + 12$ from second bracket (sign handled correctly)" },
+        { "mark": "A1", "desc": "$3x + 14$ cao" }
+      ],
+      "workingSteps": [
+        "2(3x + 1) = 6x + 2",
+        "−3(x − 4) = −3x + 12",
+        "6x + 2 − 3x + 12 = 3x + 14",
+        "Check: x terms: 6x − 3x = 3x; constants: 2 + 12 = 14 ✓"
+      ],
+      "explanation": "Expand each bracket carefully, paying attention to the negative sign, then collect like terms."
+    }
+  ]
 }

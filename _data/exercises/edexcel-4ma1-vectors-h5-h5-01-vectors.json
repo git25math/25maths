@@ -6,10 +6,227 @@
   "tier": "Higher",
   "domain": "vectors",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 20,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "H5-01-Q1",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "In triangle OPQ, $\\overrightarrow{OP} = \\mathbf{p}$ and $\\overrightarrow{OQ} = \\mathbf{q}$.\nR is the midpoint of PQ.\nS is the point on OR such that OS:SR = 2:1.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $\\overrightarrow{OR}$ in terms of $\\mathbf{p}$ and $\\mathbf{q}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(p + q)/2",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "OR = OP + PR = p + ½(q − p)"
+            },
+            {
+              "mark": "A1",
+              "desc": "(p + q)/2 or ½p + ½q"
+            }
+          ],
+          "workingSteps": [
+            "R midpoint of PQ: OR = ½(OP + OQ) = (p + q)/2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $\\overrightarrow{OS}$ in terms of $\\mathbf{p}$ and $\\mathbf{q}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(p + q)/3",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "OS = 2/3 × OR"
+            },
+            {
+              "mark": "A1",
+              "desc": "2/3 × (p+q)/2 = (p+q)/3"
+            }
+          ],
+          "workingSteps": [
+            "OS:SR = 2:1 → OS = 2/3 × OR",
+            "OS = 2/3 × (p+q)/2 = (p+q)/3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out $\\overrightarrow{PS}$ in terms of $\\mathbf{p}$ and $\\mathbf{q}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "−2p/3 + q/3",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "PS = OS − OP"
+            },
+            {
+              "mark": "M1",
+              "desc": "(p+q)/3 − p"
+            },
+            {
+              "mark": "A1",
+              "desc": "−2p/3 + q/3 or (q − 2p)/3"
+            }
+          ],
+          "workingSteps": [
+            "PS = OS − OP = (p+q)/3 − p = p/3 + q/3 − p = −2p/3 + q/3"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Work out $\\overrightarrow{QS}$ in terms of $\\mathbf{p}$ and $\\mathbf{q}$.\nSimplify your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "p/3 − 2q/3",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "QS = OS − OQ"
+            },
+            {
+              "mark": "M1",
+              "desc": "(p+q)/3 − q"
+            },
+            {
+              "mark": "A1",
+              "desc": "p/3 − 2q/3 or (p − 2q)/3"
+            }
+          ],
+          "workingSteps": [
+            "QS = OS − OQ = (p+q)/3 − q = p/3 + q/3 − q = p/3 − 2q/3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H5-01-Q2",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "$\\mathbf{a} = \\begin{pmatrix} 4 \\\\ -3 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $3\\mathbf{a} - 2\\mathbf{b}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "vector",
+          "correctAnswer": "(8, −11)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "3a = (12,−9), 2b = (4,2)"
+            },
+            {
+              "mark": "A1",
+              "desc": "(8, −11)"
+            }
+          ],
+          "workingSteps": [
+            "3a − 2b = (12−4, −9−2) = (8, −11)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $|\\mathbf{a}|$. Give your answer as a surd.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "√(16+9) = √25"
+            },
+            {
+              "mark": "A1",
+              "desc": "5"
+            }
+          ],
+          "workingSteps": [
+            "|a| = √(16+9) = √25 = 5"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the unit vector in the direction of $\\mathbf{a}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "vector",
+          "correctAnswer": "(4/5, −3/5)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "a / |a| = (4,−3)/5"
+            },
+            {
+              "mark": "A1",
+              "desc": "(4/5, −3/5) or (0.8, −0.6)"
+            }
+          ],
+          "workingSteps": [
+            "Unit = a/|a| = (4, −3)/5 = (4/5, −3/5)"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Find the value of $k$ such that $\\mathbf{a} + k\\mathbf{b}$ is parallel to $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "a + kb = (4+2k, −3+k)"
+            },
+            {
+              "mark": "M1",
+              "desc": "Parallel to (1,0) means y-component = 0"
+            },
+            {
+              "mark": "M1",
+              "desc": "−3 + k = 0"
+            },
+            {
+              "mark": "A1",
+              "desc": "k = 3"
+            }
+          ],
+          "workingSteps": [
+            "a + kb = (4+2k, −3+k)",
+            "For parallel to (1,0): y = 0",
+            "−3 + k = 0, k = 3",
+            "Check: a + 3b = (10, 0) ✓ parallel to (1,0)"
+          ]
+        }
+      ]
+    }
+  ]
 }

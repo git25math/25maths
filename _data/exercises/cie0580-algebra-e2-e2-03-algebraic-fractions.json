@@ -6,10 +6,236 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 28,
+  "questions": [
+    {
+      "id": "E2-03-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "simplify",
+      "difficulty": "medium",
+      "questionText": "Simplify $\\dfrac{3x^2 - 12}{x^2 - x - 6}$.",
+      "answerType": "expression",
+      "correctAnswer": "$\\dfrac{3(x - 2)}{x - 3}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Numerator factorised: $3(x-2)(x+2)$"
+        },
+        {
+          "mark": "M1",
+          "desc": "Denominator factorised: $(x-3)(x+2)$"
+        },
+        {
+          "mark": "A1",
+          "desc": "$\\dfrac{3(x-2)}{x-3}$ cao"
+        }
+      ],
+      "workingSteps": [
+        "Numerator: $3x^2-12 = 3(x^2-4) = 3(x-2)(x+2)$",
+        "Denominator: $x^2-x-6$; need product $-6$, sum $-1$: $-3$ and $+2$",
+        "$x^2-x-6 = (x-3)(x+2)$",
+        "$\\dfrac{3(x-2)(x+2)}{(x-3)(x+2)} = \\dfrac{3(x-2)}{x-3}$",
+        "Verify $x=4$: $\\frac{3(16)-12}{16-4-6}=\\frac{36}{6}=6$; result: $\\frac{3(2)}{1}=6$ ✓"
+      ],
+      "explanation": "Factorise numerator and denominator fully, then cancel the common factor $(x+2)$."
+    },
+    {
+      "id": "E2-03-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "simplify",
+      "difficulty": "medium",
+      "questionText": "Write as a single fraction in its simplest form: $\\dfrac{3}{x+2} - \\dfrac{2}{x-1}$.",
+      "answerType": "expression",
+      "correctAnswer": "$\\dfrac{x-7}{(x+2)(x-1)}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Common denominator $(x+2)(x-1)$ identified"
+        },
+        {
+          "mark": "M1",
+          "desc": "$3(x-1) - 2(x+2)$ in numerator"
+        },
+        {
+          "mark": "A1",
+          "desc": "Numerator: $3x-3-2x-4 = x-7$"
+        },
+        {
+          "mark": "A1",
+          "desc": "$\\dfrac{x-7}{(x+2)(x-1)}$ cao"
+        }
+      ],
+      "workingSteps": [
+        "Common denominator: $(x+2)(x-1)$",
+        "$\\dfrac{3(x-1) - 2(x+2)}{(x+2)(x-1)}$",
+        "Numerator: $3x-3-2x-4 = x-7$",
+        "Answer: $\\dfrac{x-7}{(x+2)(x-1)}$",
+        "Verify $x=3$: $\\frac{3}{5}-\\frac{2}{2}=\\frac{3}{5}-1=-\\frac{2}{5}$; result: $\\frac{3-7}{(5)(2)}=\\frac{-4}{10}=-\\frac{2}{5}$ ✓"
+      ],
+      "explanation": "Use common denominator, rewrite each fraction, combine and simplify the numerator."
+    },
+    {
+      "id": "E2-03-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "solve",
+      "difficulty": "medium",
+      "questionText": "Solve $\\dfrac{5}{x+1} = \\dfrac{3}{x-2}$.",
+      "answerType": "numeric",
+      "correctAnswer": "6.5",
+      "tolerance": 0.05,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Cross-multiplying: $5(x-2) = 3(x+1)$"
+        },
+        {
+          "mark": "M1",
+          "desc": "$5x-10 = 3x+3 \\Rightarrow 2x = 13$"
+        },
+        {
+          "mark": "A1",
+          "desc": "$x = 6.5$ cao"
+        }
+      ],
+      "workingSteps": [
+        "Cross-multiply: $5(x-2) = 3(x+1)$",
+        "$5x-10 = 3x+3$",
+        "$2x = 13$",
+        "$x = 6.5$",
+        "Verify: $\\frac{5}{7.5}=\\frac{2}{3}$; $\\frac{3}{4.5}=\\frac{2}{3}$ ✓"
+      ],
+      "explanation": "Cross-multiply to clear denominators, then solve the resulting linear equation."
+    },
+    {
+      "id": "E2-03-Q4",
+      "type": "structured",
+      "totalMarks": 14,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Simplify $\\dfrac{2x^2+5x+3}{2x^2-x-3}$.",
+          "marks": 4,
+          "commandWord": "simplify",
+          "answerType": "expression",
+          "correctAnswer": "$\\dfrac{2x+3}{2x-3}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Numerator factorised: $(2x+3)(x+1)$"
+            },
+            {
+              "mark": "M1",
+              "desc": "Denominator factorised: $(2x-3)(x+1)$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$(x+1)$ cancelled"
+            },
+            {
+              "mark": "A1",
+              "desc": "$\\dfrac{2x+3}{2x-3}$ cao"
+            }
+          ],
+          "workingSteps": [
+            "Numerator $2x^2+5x+3$: $ac=6$, sum $5$: $2$ and $3$; $\\Rightarrow (2x+3)(x+1)$",
+            "Check: $(2x+3)(x+1)=2x^2+2x+3x+3=2x^2+5x+3$ ✓",
+            "Denominator $2x^2-x-3$: $ac=-6$, sum $-1$: $-3$ and $2$; $\\Rightarrow (2x-3)(x+1)$",
+            "Check: $(2x-3)(x+1)=2x^2+2x-3x-3=2x^2-x-3$ ✓",
+            "$\\dfrac{(2x+3)(x+1)}{(2x-3)(x+1)} = \\dfrac{2x+3}{2x-3}$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write as a single fraction in its simplest form: $\\dfrac{x+1}{x-3} + \\dfrac{2x-1}{x+2}$.",
+          "marks": 4,
+          "commandWord": "simplify",
+          "answerType": "expression",
+          "correctAnswer": "$\\dfrac{3x^2-4x+5}{(x-3)(x+2)}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Common denominator $(x-3)(x+2)$ used"
+            },
+            {
+              "mark": "M1",
+              "desc": "$(x+1)(x+2)+(2x-1)(x-3)$ in numerator"
+            },
+            {
+              "mark": "A1",
+              "desc": "Each product expanded correctly"
+            },
+            {
+              "mark": "A1",
+              "desc": "$\\dfrac{3x^2-4x+5}{(x-3)(x+2)}$ cao"
+            }
+          ],
+          "workingSteps": [
+            "Common denominator: $(x-3)(x+2)$",
+            "$(x+1)(x+2) = x^2+3x+2$",
+            "$(2x-1)(x-3) = 2x^2-6x-x+3 = 2x^2-7x+3$",
+            "Sum: $x^2+3x+2+2x^2-7x+3 = 3x^2-4x+5$",
+            "Answer: $\\dfrac{3x^2-4x+5}{(x-3)(x+2)}$",
+            "Verify $x=4$: $\\frac{5}{1}+\\frac{7}{6}=\\frac{37}{6}$; result: $\\frac{48-16+5}{(1)(6)}=\\frac{37}{6}$ ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Solve $\\dfrac{x+1}{x-2} - \\dfrac{x-1}{x+2} = 1$. Give your answers correct to 2 decimal places.",
+          "marks": 4,
+          "commandWord": "solve",
+          "answerType": "expression",
+          "correctAnswer": "$x = 6.61$ or $x = -0.61$",
+          "tolerance": 0.01,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Common denominator $(x-2)(x+2)$ used"
+            },
+            {
+              "mark": "M1",
+              "desc": "Numerator simplified to $6x$; equation becomes $6x = x^2-4$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$x^2-6x-4 = 0$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$x = 3 \\pm \\sqrt{13} = 6.61$ or $-0.61$ (2dp)"
+            }
+          ],
+          "workingSteps": [
+            "$\\dfrac{(x+1)(x+2)-(x-1)(x-2)}{(x-2)(x+2)} = 1$",
+            "$(x+1)(x+2) = x^2+3x+2$",
+            "$(x-1)(x-2) = x^2-3x+2$",
+            "Numerator: $(x^2+3x+2)-(x^2-3x+2) = 6x$",
+            "$\\dfrac{6x}{x^2-4}=1 \\Rightarrow 6x = x^2-4$",
+            "$x^2-6x-4=0$",
+            "$x = \\dfrac{6 \\pm \\sqrt{36+16}}{2} = \\dfrac{6 \\pm \\sqrt{52}}{2} = 3 \\pm \\sqrt{13}$",
+            "$x = 3+3.606=6.61$ or $x=3-3.606=-0.61$ (2dp)"
+          ]
+        }
+      ]
+    }
+  ]
 }

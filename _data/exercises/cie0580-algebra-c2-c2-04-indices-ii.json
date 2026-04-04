@@ -6,10 +6,180 @@
   "tier": "Core",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "C2-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the value of each of the following.\n\n(a) $5^0$\n\n(b) $4^{-1}$\n\n(c) $9^{1/2}$",
+      "answerType": "numeric",
+      "correctAnswer": "3",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) 1" },
+        { "mark": "B1", "desc": "(b) 1/4 or 0.25" },
+        { "mark": "B1", "desc": "(c) 3" }
+      ],
+      "workingSteps": [
+        "(a) Any number to the power 0 = 1",
+        "(b) 4⁻¹ = 1/4 = 0.25",
+        "(c) 9^(1/2) = √9 = 3"
+      ],
+      "explanation": "Use index laws: a⁰ = 1, a⁻¹ = 1/a, a^(1/2) = √a."
+    },
+    {
+      "id": "C2-04-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "simplify",
+      "difficulty": "easy",
+      "questionText": "Simplify each expression.\n\n(a) $x^5 \\times x^3$\n\n(b) $y^8 \\div y^2$\n\n(c) $(z^3)^4$",
+      "answerType": "expression",
+      "correctAnswer": "$z^{12}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) x⁸" },
+        { "mark": "B1", "desc": "(b) y⁶" },
+        { "mark": "B1", "desc": "(c) z¹²" }
+      ],
+      "workingSteps": [
+        "(a) x⁵ × x³ = x^(5+3) = x⁸",
+        "(b) y⁸ ÷ y² = y^(8−2) = y⁶",
+        "(c) (z³)⁴ = z^(3×4) = z¹²"
+      ],
+      "explanation": "Index laws: multiply → add powers; divide → subtract powers; power of a power → multiply powers."
+    },
+    {
+      "id": "C2-04-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate.\n\n(a) $27^{1/3}$\n\n(b) $2^{-3}$\n\n(c) $16^{3/4}$",
+      "answerType": "numeric",
+      "correctAnswer": "8",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) 3" },
+        { "mark": "B1", "desc": "(b) 1/8 or 0.125" },
+        { "mark": "B1", "desc": "(c) 8" }
+      ],
+      "workingSteps": [
+        "(a) 27^(1/3) = ∛27 = 3  (since 3³ = 27)",
+        "(b) 2⁻³ = 1/2³ = 1/8 = 0.125",
+        "(c) 16^(3/4) = (16^(1/4))³ = 2³ = 8  (since 2⁴ = 16)"
+      ],
+      "explanation": "For fractional indices: a^(m/n) = (ⁿ√a)ᵐ."
+    },
+    {
+      "id": "C2-04-Q4",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Simplify $\\dfrac{x^6 \\times x^2}{x^4}$.",
+          "marks": 2,
+          "commandWord": "simplify",
+          "answerType": "expression",
+          "correctAnswer": "$x^4$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Numerator: x^(6+2) = x⁸" },
+            { "mark": "A1", "desc": "x⁸ ÷ x⁴ = x⁴" }
+          ],
+          "workingSteps": [
+            "Numerator: x⁶ × x² = x^(6+2) = x⁸",
+            "x⁸ ÷ x⁴ = x^(8−4) = x⁴"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write $\\dfrac{1}{x^3}$ as a power of $x$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "$x^{-3}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$x^{-3}$" }
+          ],
+          "workingSteps": [
+            "1/x³ = x⁻³ (negative index law)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that $(2x^2)^3 = 8x^6$.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "8x^6",
+          "markScheme": [
+            { "mark": "M1", "desc": "2³ = 8 and (x²)³ = x⁶ shown separately" },
+            { "mark": "A1", "desc": "8x⁶ with clear working" }
+          ],
+          "workingSteps": [
+            "(2x²)³ = 2³ × (x²)³",
+            "= 8 × x^(2×3)",
+            "= 8x⁶"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Find the value of $n$ such that $4^n = 64$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "64 expressed as a power of 4: 4¹ = 4, 4² = 16, 4³ = 64" },
+            { "mark": "A1", "desc": "n = 3" }
+          ],
+          "workingSteps": [
+            "4¹ = 4",
+            "4² = 16",
+            "4³ = 64 ✓",
+            "So n = 3"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Find the value of $125^{2/3}$.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "125^(1/3) = 5 seen" },
+            { "mark": "A1", "desc": "5² = 25" }
+          ],
+          "workingSteps": [
+            "125^(2/3) = (125^(1/3))²",
+            "125^(1/3) = ∛125 = 5  (since 5³ = 125)",
+            "5² = 25"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,203 @@
   "tier": "Core",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 20,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "C2-09-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A straight-line graph passes through the points $(0, 3)$ and $(4, 11)$.\nFind the gradient of the line.",
+      "answerType": "integer",
+      "correctAnswer": "2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(11 - 3) ÷ (4 - 0) oe" },
+        { "mark": "A1", "desc": "2 cao" }
+      ],
+      "workingSteps": [
+        "Gradient = (change in y) ÷ (change in x)",
+        "= (11 - 3) ÷ (4 - 0)",
+        "= 8 ÷ 4 = 2"
+      ],
+      "explanation": "Gradient = rise ÷ run."
+    },
+    {
+      "id": "C2-09-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A taxi charges a fixed hire fee of $£2$ plus $£1.50$ per kilometre.\n\n(a) Write down the equation for the total cost $C$ (in £) for a journey of $d$ km.\n\n(b) Find the cost of a 10 km journey.",
+      "answerType": "numeric",
+      "correctAnswer": "17",
+      "tolerance": null,
+      "unit": "£",
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) C = 2 + 1.5d oe" },
+        { "mark": "M1", "desc": "(b) C = 2 + 1.5(10)" },
+        { "mark": "A1", "desc": "(b) £17 cao" }
+      ],
+      "workingSteps": [
+        "(a) C = 2 + 1.5d",
+        "(b) C = 2 + 1.5 × 10 = 2 + 15 = 17",
+        "Cost = £17",
+        "Check: fixed fee £2 + 10 × £1.50 = £2 + £15 = £17 ✓"
+      ],
+      "explanation": "The graph of C against d is a straight line with gradient 1.5 and y-intercept 2."
+    },
+    {
+      "id": "C2-09-Q3",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "medium",
+      "context": "The graph below shows the distance (in km) of a cyclist from home over a 3-hour journey.\n\nThe cyclist leaves home, rides to a café, stops, then returns home.\n\nFrom the graph:\n- 0 to 1 hour: rides 20 km to the café\n- 1 to 1.5 hours: stops at the café (distance stays at 20 km)\n- 1.5 to 3 hours: rides back home (20 km in 1.5 hours)",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the speed of the cyclist on the way to the café.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "20",
+          "tolerance": null,
+          "unit": "km/h",
+          "markScheme": [
+            { "mark": "M1", "desc": "Speed = distance ÷ time = 20 ÷ 1" },
+            { "mark": "A1", "desc": "20 km/h" }
+          ],
+          "workingSteps": [
+            "Distance = 20 km, Time = 1 hour",
+            "Speed = 20 ÷ 1 = 20 km/h"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down how long the cyclist stops at the café.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "numeric",
+          "correctAnswer": "0.5",
+          "tolerance": null,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "B1", "desc": "0.5 hours or 30 minutes" }
+          ],
+          "workingSteps": [
+            "The flat section lasts from t = 1 to t = 1.5",
+            "Duration = 1.5 - 1 = 0.5 hours"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Calculate the average speed of the cyclist on the return journey.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "13.3",
+          "tolerance": 0.1,
+          "unit": "km/h",
+          "markScheme": [
+            { "mark": "M1", "desc": "Time for return = 3 - 1.5 = 1.5 hours" },
+            { "mark": "M1", "desc": "Speed = 20 ÷ 1.5" },
+            { "mark": "A1", "desc": "13.3 or 13⅓ km/h" }
+          ],
+          "workingSteps": [
+            "Return distance = 20 km",
+            "Return time = 3 - 1.5 = 1.5 hours",
+            "Speed = 20 ÷ 1.5 = 13.3 km/h (3sf)"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Calculate the total distance travelled by the cyclist.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "40",
+          "tolerance": null,
+          "unit": "km",
+          "markScheme": [
+            { "mark": "M1", "desc": "20 + 20 oe" },
+            { "mark": "A1", "desc": "40 km" }
+          ],
+          "workingSteps": [
+            "Distance to café: 20 km",
+            "Distance back: 20 km",
+            "Total = 20 + 20 = 40 km"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Explain what the gradient of the line on a distance-time graph represents.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The gradient of a distance-time graph represents the speed of the object.",
+          "markScheme": [
+            { "mark": "E1", "desc": "Gradient = speed oe" },
+            { "mark": "E1", "desc": "Steeper gradient means faster speed oe" }
+          ],
+          "workingSteps": [
+            "Gradient = change in distance ÷ change in time = speed",
+            "A steeper line means greater speed; a horizontal line means stationary"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2-09-Q4",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Water flows into a tank at a constant rate.\nAfter 2 minutes the tank contains 10 litres.\nAfter 5 minutes the tank contains 25 litres.\n\nFind the rate at which water flows into the tank.",
+      "answerType": "integer",
+      "correctAnswer": "5",
+      "tolerance": null,
+      "unit": "litres per minute",
+      "markScheme": [
+        { "mark": "M1", "desc": "Change in volume = 25 - 10 = 15 litres over 3 minutes" },
+        { "mark": "M1", "desc": "Rate = 15 ÷ 3" },
+        { "mark": "A1", "desc": "5 litres per minute" }
+      ],
+      "workingSteps": [
+        "Change in volume = 25 - 10 = 15 litres",
+        "Change in time = 5 - 2 = 3 minutes",
+        "Rate = 15 ÷ 3 = 5 litres per minute",
+        "Check: 2 min → 10 L implies 0 min → 0 L; at 5 min: 5×5=25 ✓"
+      ],
+      "explanation": "On a volume-time graph, the gradient gives the flow rate."
+    },
+    {
+      "id": "C2-09-Q5",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "A straight-line graph has equation $y = 3x - 4$.\n\n(a) Write down the gradient of the line.\n\n(b) Write down the $y$-intercept of the line.",
+      "answerType": "integer",
+      "correctAnswer": "-4",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) gradient = 3" },
+        { "mark": "B1", "desc": "(b) y-intercept = -4" }
+      ],
+      "workingSteps": [
+        "y = mx + c form: y = 3x - 4",
+        "(a) gradient m = 3",
+        "(b) y-intercept c = -4"
+      ],
+      "explanation": "In y = mx + c, m is the gradient and c is the y-intercept."
+    }
+  ]
 }

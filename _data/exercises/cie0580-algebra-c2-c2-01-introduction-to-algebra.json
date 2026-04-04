@@ -6,10 +6,190 @@
   "tier": "Core",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
-  "calculator": false,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "calculator": null,
+  "totalMarks": 20,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "C2-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the value of each expression when $a = 3$ and $b = 4$.\n\n(a) $2a + b$\n\n(b) $ab - 5$",
+      "answerType": "integer",
+      "correctAnswer": "10",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) 2(3) + 4 = 10" },
+        { "mark": "B1", "desc": "(b) 3 × 4 − 5 = 7" }
+      ],
+      "workingSteps": [
+        "(a) 2a + b = 2(3) + 4 = 6 + 4 = 10",
+        "(b) ab − 5 = 3 × 4 − 5 = 12 − 5 = 7"
+      ],
+      "explanation": "Substitute the given values directly into each expression."
+    },
+    {
+      "id": "C2-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "simplify",
+      "difficulty": "easy",
+      "questionText": "Simplify $5x + 3y - 2x + y$.",
+      "answerType": "expression",
+      "correctAnswer": "$3x + 4y$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Collecting x terms: 5x − 2x = 3x" },
+        { "mark": "A1", "desc": "$3x + 4y$ cao" }
+      ],
+      "workingSteps": [
+        "x terms: 5x − 2x = 3x",
+        "y terms: 3y + y = 4y",
+        "Answer: 3x + 4y"
+      ],
+      "explanation": "Group like terms: collect x terms and y terms separately."
+    },
+    {
+      "id": "C2-01-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Find the value of $3p^2 - q$ when $p = 2$ and $q = 7$.",
+      "answerType": "integer",
+      "correctAnswer": "5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Substituting p = 2: 3(2²) = 3 × 4 = 12" },
+        { "mark": "M1", "desc": "Subtracting q = 7: 12 − 7" },
+        { "mark": "A1", "desc": "5 cao" }
+      ],
+      "workingSteps": [
+        "p² = 2² = 4",
+        "3p² = 3 × 4 = 12",
+        "3p² − q = 12 − 7 = 5"
+      ],
+      "explanation": "Evaluate the power first (p² = 4), multiply by 3, then subtract q."
+    },
+    {
+      "id": "C2-01-Q4",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A hire company charges a fixed fee of $£8$ plus $£3$ per hour to rent a bicycle.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write a formula for the total cost $C$ (in £) to hire the bicycle for $h$ hours.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "$C = 8 + 3h$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "C = 8 + 3h oe" },
+            { "mark": "B1", "desc": "Correct formula with C as subject" }
+          ],
+          "workingSteps": [
+            "Fixed fee: £8",
+            "Cost per hour: £3, for h hours = 3h",
+            "Total: C = 8 + 3h"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the cost to hire the bicycle for 5 hours.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "23",
+          "tolerance": null,
+          "unit": "£",
+          "markScheme": [
+            { "mark": "M1", "desc": "Substituting h = 5 into their formula: 8 + 3(5)" },
+            { "mark": "A1", "desc": "£23" }
+          ],
+          "workingSteps": [
+            "C = 8 + 3(5) = 8 + 15 = 23",
+            "Cost = £23"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Tom pays £32 to hire the bicycle.\nFind the number of hours Tom hired the bicycle.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "8",
+          "tolerance": null,
+          "unit": "hours",
+          "markScheme": [
+            { "mark": "M1", "desc": "32 = 8 + 3h oe" },
+            { "mark": "M1", "desc": "3h = 24" },
+            { "mark": "A1", "desc": "h = 8" }
+          ],
+          "workingSteps": [
+            "32 = 8 + 3h",
+            "3h = 32 − 8 = 24",
+            "h = 24 ÷ 3 = 8 hours",
+            "Check: 8 + 3(8) = 8 + 24 = 32 ✓"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2-01-Q5",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Find the value of $\\dfrac{5m + n}{2}$ when $m = 4$ and $n = 6$.",
+      "answerType": "integer",
+      "correctAnswer": "13",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "5(4) + 6 = 26 in numerator" },
+        { "mark": "M1", "desc": "Dividing by 2" },
+        { "mark": "A1", "desc": "13 cao" }
+      ],
+      "workingSteps": [
+        "Numerator: 5(4) + 6 = 20 + 6 = 26",
+        "Divide by 2: 26 ÷ 2 = 13"
+      ],
+      "explanation": "Evaluate the numerator completely before dividing."
+    },
+    {
+      "id": "C2-01-Q6",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "simplify",
+      "difficulty": "medium",
+      "questionText": "Simplify.\n\n(a) $4 \\times 3k$\n\n(b) $\\dfrac{12p}{3}$\n\n(c) $t^3 \\times t^4$",
+      "answerType": "expression",
+      "correctAnswer": "$t^7$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) 12k" },
+        { "mark": "B1", "desc": "(b) 4p" },
+        { "mark": "B1", "desc": "(c) t⁷" }
+      ],
+      "workingSteps": [
+        "(a) 4 × 3k = 12k",
+        "(b) 12p ÷ 3 = 4p",
+        "(c) t³ × t⁴ = t^(3+4) = t⁷ (add indices when multiplying same base)"
+      ],
+      "explanation": "For (c), use the index law: aᵐ × aⁿ = aᵐ⁺ⁿ."
+    }
+  ]
 }

@@ -6,10 +6,186 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 25,
+  "estimatedMinutes": 29,
+  "questions": [
+    {
+      "id": "E2-06-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "solve",
+      "difficulty": "easy",
+      "questionText": "Solve the inequality $3x - 2 > 4x + 5$.",
+      "answerType": "inequality",
+      "correctAnswer": "$x < -7$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Correct rearrangement: $-x > 7$ or $3x-4x > 5+2$" },
+        { "mark": "A1", "desc": "$x < -7$ cao (inequality direction reversed when dividing by $-1$)" },
+        { "mark": "B1", "desc": "Correct inequality sign" }
+      ],
+      "workingSteps": [
+        "$3x-2 > 4x+5$",
+        "$3x-4x > 5+2$",
+        "$-x > 7$",
+        "$x < -7$ (dividing by $-1$ reverses the inequality)",
+        "Check: $x=-8$: $3(-8)-2=−26$; $4(-8)+5=-27$; $-26>-27$ ✓"
+      ],
+      "explanation": "When multiplying or dividing an inequality by a negative number, reverse the inequality sign."
+    },
+    {
+      "id": "E2-06-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Find the integer values of $n$ that satisfy $-3 < 2n - 1 \\leq 7$.",
+      "answerType": "set-notation",
+      "correctAnswer": "$\\{0, 1, 2, 3, 4\\}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Correct solving of both inequalities: $-2 < 2n \\leq 8$, giving $-1 < n \\leq 4$" },
+        { "mark": "A1", "desc": "$-1 < n \\leq 4$" },
+        { "mark": "A1", "desc": "Integer values: $0, 1, 2, 3, 4$ cao" }
+      ],
+      "workingSteps": [
+        "$-3 < 2n-1 \\leq 7$",
+        "Add 1 throughout: $-2 < 2n \\leq 8$",
+        "Divide by 2: $-1 < n \\leq 4$",
+        "Integer values of $n$: $0, 1, 2, 3, 4$"
+      ],
+      "explanation": "Solve the compound inequality as two separate inequalities, then list the integers in the solution set."
+    },
+    {
+      "id": "E2-06-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "solve",
+      "difficulty": "hard",
+      "questionText": "Solve the inequality $x^2 - x - 6 < 0$.",
+      "answerType": "inequality",
+      "correctAnswer": "$-2 < x < 3$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Factorise: $(x-3)(x+2) = 0$" },
+        { "mark": "A1", "desc": "Critical values $x=3$ and $x=-2$" },
+        { "mark": "M1", "desc": "Correct reasoning about sign of quadratic between and outside roots" },
+        { "mark": "A1", "desc": "$-2 < x < 3$ cao" }
+      ],
+      "workingSteps": [
+        "Solve $x^2-x-6=0$: $(x-3)(x+2)=0$",
+        "Roots: $x=3$ and $x=-2$",
+        "The parabola $y=x^2-x-6$ opens upward, so $y<0$ between the roots",
+        "Solution: $-2 < x < 3$",
+        "Check $x=0$: $0-0-6=-6<0$ ✓; check $x=4$: $16-4-6=6>0$ ✓"
+      ],
+      "explanation": "Find the roots of the corresponding equation, then use the shape of the parabola to identify where the quadratic is negative."
+    },
+    {
+      "id": "E2-06-Q4",
+      "type": "structured",
+      "totalMarks": 15,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve the inequality $\\dfrac{3x+1}{2} \\geq 5x - 4$.",
+          "marks": 3,
+          "commandWord": "solve",
+          "answerType": "inequality",
+          "correctAnswer": "$x \\leq 1$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiply by 2: $3x+1 \\geq 10x-8$" },
+            { "mark": "M1", "desc": "$9 \\geq 7x$, i.e. $7x \\leq 9$" },
+            { "mark": "A1", "desc": "$x \\leq \\dfrac{9}{7}$ cao (accept $x \\leq 1.29$)" }
+          ],
+          "workingSteps": [
+            "Multiply by 2: $3x+1 \\geq 10x-8$",
+            "$1+8 \\geq 10x-3x$",
+            "$9 \\geq 7x$",
+            "$x \\leq \\dfrac{9}{7}$",
+            "Check $x=1$: $\\frac{4}{2}=2$; $5(1)-4=1$; $2\\geq1$ ✓"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "List all the integer values of $x$ that satisfy both:\n$$2x + 3 > 1 \\quad \\text{and} \\quad 3x - 1 \\leq 14$$",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "set-notation",
+          "correctAnswer": "$\\{-0, 1, 2, 3, 4, 5\\}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$2x>-2 \\Rightarrow x>-1$ from first inequality" },
+            { "mark": "A1", "desc": "$3x \\leq 15 \\Rightarrow x \\leq 5$ from second inequality" },
+            { "mark": "M1", "desc": "$-1 < x \\leq 5$" },
+            { "mark": "A1", "desc": "Integer values: $0, 1, 2, 3, 4, 5$ cao" }
+          ],
+          "workingSteps": [
+            "$2x+3>1 \\Rightarrow 2x>-2 \\Rightarrow x>-1$",
+            "$3x-1\\leq14 \\Rightarrow 3x\\leq15 \\Rightarrow x\\leq5$",
+            "Combined: $-1 < x \\leq 5$",
+            "Integer values: $0, 1, 2, 3, 4, 5$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Solve the inequality $2x^2 - 7x + 3 > 0$.",
+          "marks": 4,
+          "commandWord": "solve",
+          "answerType": "inequality",
+          "correctAnswer": "$x < \\dfrac{1}{2}$ or $x > 3$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Factorise: $(2x-1)(x-3) = 0$" },
+            { "mark": "A1", "desc": "Roots: $x = \\frac{1}{2}$ and $x = 3$" },
+            { "mark": "M1", "desc": "Correct sign analysis for upward parabola" },
+            { "mark": "A1", "desc": "$x < \\frac{1}{2}$ or $x > 3$ cao" }
+          ],
+          "workingSteps": [
+            "Solve $2x^2-7x+3=0$: $(2x-1)(x-3)=0$",
+            "Check: $(2x-1)(x-3)=2x^2-6x-x+3=2x^2-7x+3$ ✓",
+            "Roots: $x=\\frac{1}{2}$ and $x=3$",
+            "Upward parabola is positive outside the roots",
+            "Solution: $x < \\dfrac{1}{2}$ or $x > 3$",
+            "Check $x=0$: $2(0)-0+3=3>0$ ✓; $x=1$: $2-7+3=-2<0$ ✓"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "On a number line, represent the solution to $|2x - 3| < 5$.",
+          "marks": 4,
+          "commandWord": "solve",
+          "answerType": "inequality",
+          "correctAnswer": "$-1 < x < 4$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$-5 < 2x-3 < 5$" },
+            { "mark": "M1", "desc": "$-2 < 2x < 8$" },
+            { "mark": "A1", "desc": "$-1 < x < 4$" },
+            { "mark": "A1", "desc": "Open circles at $-1$ and $4$ on number line" }
+          ],
+          "workingSteps": [
+            "$|2x-3| < 5$ means $-5 < 2x-3 < 5$",
+            "Add 3: $-2 < 2x < 8$",
+            "Divide by 2: $-1 < x < 4$",
+            "Check $x=0$: $|2(0)-3|=3<5$ ✓; $x=4$: $|8-3|=5$ not $<5$, excluded ✓"
+          ]
+        }
+      ]
+    }
+  ]
 }

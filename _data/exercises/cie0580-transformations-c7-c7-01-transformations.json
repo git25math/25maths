@@ -6,10 +6,214 @@
   "tier": "Core",
   "domain": "transformations",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "C7-01-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "Triangle A has vertices at (1, 1), (3, 1) and (1, 4).",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Reflect triangle A in the y-axis.\nWrite down the coordinates of the vertices of the image.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(−1,1),(−3,1),(−1,4)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "x-coordinates negated"
+            },
+            {
+              "mark": "B1",
+              "desc": "All three vertices correct"
+            }
+          ],
+          "workingSteps": [
+            "Reflection in y-axis: (x,y) → (−x,y)",
+            "(1,1)→(−1,1), (3,1)→(−3,1), (1,4)→(−1,4)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Rotate triangle A 90° clockwise about the origin.\nWrite down the coordinates of the vertices of the image.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(1,−1),(1,−3),(4,−1)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "90° CW rule: (x,y) → (y,−x)"
+            },
+            {
+              "mark": "A1",
+              "desc": "At least 2 vertices correct"
+            },
+            {
+              "mark": "A1",
+              "desc": "All 3 correct"
+            }
+          ],
+          "workingSteps": [
+            "90° CW about origin: (x,y) → (y,−x)",
+            "(1,1)→(1,−1), (3,1)→(1,−3), (1,4)→(4,−1)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Translate triangle A by the vector $\\begin{pmatrix} 4 \\\\ -2 \\end{pmatrix}$.\nWrite down the coordinates of the vertices of the image.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(5,−1),(7,−1),(5,2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Add (4,−2) to each vertex"
+            },
+            {
+              "mark": "A1",
+              "desc": "At least 2 correct"
+            },
+            {
+              "mark": "A1",
+              "desc": "All 3 correct"
+            }
+          ],
+          "workingSteps": [
+            "(1,1)+(4,−2)=(5,−1)",
+            "(3,1)+(4,−2)=(7,−1)",
+            "(1,4)+(4,−2)=(5,2)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C7-01-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "Shape P is mapped to shape Q by a single transformation.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Shape P has vertices (2,1),(4,1),(4,3),(2,3).\nShape Q has vertices (4,2),(8,2),(8,6),(4,6).\nDescribe fully the single transformation that maps P to Q.",
+          "marks": 3,
+          "commandWord": "describe",
+          "answerType": "explain",
+          "correctAnswer": "Enlargement, scale factor 2, centre (0, 0)",
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Enlargement"
+            },
+            {
+              "mark": "B1",
+              "desc": "Scale factor 2"
+            },
+            {
+              "mark": "B1",
+              "desc": "Centre (0, 0)"
+            }
+          ],
+          "workingSteps": [
+            "Each coordinate is doubled: (2,1)→(4,2), (4,1)→(8,2), etc.",
+            "Scale factor = 2, centre = origin"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the ratio of the area of P to the area of Q.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Area ratio = (scale factor)² = 4"
+            },
+            {
+              "mark": "A1",
+              "desc": "1:4 or 1/4"
+            }
+          ],
+          "workingSteps": [
+            "Area P = 2×2 = 4, Area Q = 4×4 = 16",
+            "Ratio = 4:16 = 1:4"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the scale factor of the enlargement that maps Q back to P.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "1/2 or 0.5"
+            }
+          ],
+          "workingSteps": [
+            "Inverse scale factor = 1/2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C7-01-Q3",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "describe",
+      "difficulty": "medium",
+      "questionText": "Triangle T has vertices (1, 2), (3, 2) and (3, 5).\nTriangle T is reflected to give triangle U with vertices (1, −2), (3, −2) and (3, −5).\nDescribe fully the single transformation that maps T to U.",
+      "answerType": "explain",
+      "correctAnswer": "Reflection in the x-axis",
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "Reflection"
+        },
+        {
+          "mark": "B1",
+          "desc": "In the x-axis (or y = 0)"
+        },
+        {
+          "mark": "B1",
+          "desc": "y-coordinates negated"
+        },
+        {
+          "mark": "B1",
+          "desc": "x-coordinates unchanged"
+        }
+      ],
+      "workingSteps": [
+        "(x,y) → (x,−y) for all vertices",
+        "This is a reflection in the x-axis (line y = 0)"
+      ],
+      "explanation": "When y-coords are negated and x-coords stay the same → reflection in x-axis."
+    }
+  ]
 }

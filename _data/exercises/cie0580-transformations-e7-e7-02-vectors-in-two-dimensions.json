@@ -6,10 +6,186 @@
   "tier": "Extended",
   "domain": "transformations",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 16,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "E7-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "$\\mathbf{a} = \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -2 \\\\ 5 \\end{pmatrix}$.\nFind $2\\mathbf{a} + \\mathbf{b}$.",
+      "answerType": "vector",
+      "correctAnswer": "(4, 3)",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "2a = (6, −2)"
+        },
+        {
+          "mark": "M1",
+          "desc": "(6,−2) + (−2,5)"
+        },
+        {
+          "mark": "A1",
+          "desc": "(4, 3)"
+        }
+      ],
+      "workingSteps": [
+        "2a = (6, −2)",
+        "2a + b = (6−2, −2+5) = (4, 3)"
+      ],
+      "explanation": "Scalar multiplication then addition, component by component."
+    },
+    {
+      "id": "E7-02-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "A = (1, 3) and B = (5, 1).",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write $\\overrightarrow{AB}$ as a column vector.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "vector",
+          "correctAnswer": "(4, −2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "B − A"
+            },
+            {
+              "mark": "A1",
+              "desc": "(4, −2)"
+            }
+          ],
+          "workingSteps": [
+            "AB = B − A = (5−1, 1−3) = (4, −2)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "M is the midpoint of AB.\nFind the position vector of M.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "vector",
+          "correctAnswer": "(3, 2)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "(A + B)/2"
+            },
+            {
+              "mark": "A1",
+              "desc": "(3, 2)"
+            }
+          ],
+          "workingSteps": [
+            "M = ((1+5)/2, (3+1)/2) = (3, 2)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "C is a point such that $\\overrightarrow{AC} = 3\\overrightarrow{AB}$.\nFind the coordinates of C.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(13, −3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "3 × AB = 3(4,−2) = (12,−6)"
+            },
+            {
+              "mark": "M1",
+              "desc": "C = A + 3AB = (1,3) + (12,−6)"
+            },
+            {
+              "mark": "A1",
+              "desc": "(13, −3)"
+            }
+          ],
+          "workingSteps": [
+            "AC = 3AB = (12, −6)",
+            "C = A + AC = (1+12, 3−6) = (13, −3)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E7-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "$\\mathbf{p} = \\begin{pmatrix} 4 \\\\ -3 \\end{pmatrix}$ and $\\mathbf{q} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$.\nFind the vector $\\mathbf{r}$ such that $\\mathbf{p} + 2\\mathbf{r} = \\mathbf{q}$.",
+      "answerType": "vector",
+      "correctAnswer": "(−3/2, 5/2)",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "2r = q − p = (1−4, 2−(−3)) = (−3, 5)"
+        },
+        {
+          "mark": "M1",
+          "desc": "r = (−3/2, 5/2)"
+        },
+        {
+          "mark": "A1",
+          "desc": "(−1.5, 2.5)"
+        }
+      ],
+      "workingSteps": [
+        "2r = q − p = (−3, 5)",
+        "r = (−3/2, 5/2) = (−1.5, 2.5)"
+      ],
+      "explanation": "Rearrange to isolate r, then divide by 2."
+    },
+    {
+      "id": "E7-02-Q4",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "show",
+      "difficulty": "medium",
+      "questionText": "$\\mathbf{a} = \\begin{pmatrix} 2 \\\\ 6 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -3 \\\\ -9 \\end{pmatrix}$.\nShow that $\\mathbf{a}$ and $\\mathbf{b}$ are parallel.",
+      "answerType": "show-that",
+      "correctAnswer": "b = −3/2 × a",
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "b = k × a for some scalar k"
+        },
+        {
+          "mark": "M1",
+          "desc": "−3/2 = −3/2 and −9/6 = −3/2"
+        },
+        {
+          "mark": "A1",
+          "desc": "b = −3/2 × a, so parallel"
+        }
+      ],
+      "workingSteps": [
+        "b = (−3, −9) = −3/2 × (2, 6) = −3/2 × a",
+        "Since b is a scalar multiple of a, they are parallel"
+      ],
+      "explanation": "Two vectors are parallel if one is a scalar multiple of the other."
+    }
+  ]
 }
