@@ -6,10 +6,196 @@
   "tier": "Foundation",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "F2-02-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Simplify $5p + 3q - 2p + q$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3p + 4q",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Collects p terms: 5p − 2p = 3p" },
+            { "mark": "A1", "desc": "3p + 4q cao" }
+          ],
+          "workingSteps": [
+            "p terms: 5p − 2p = 3p",
+            "q terms: 3q + q = 4q",
+            "Answer: 3p + 4q"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Expand $4(3x - 2)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "12x - 8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "4 × 3x = 12x seen" },
+            { "mark": "A1", "desc": "12x − 8 cao" }
+          ],
+          "workingSteps": [
+            "4 × 3x = 12x",
+            "4 × (−2) = −8",
+            "Answer: 12x − 8"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Factorise $6y + 10$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "2(3y + 5)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Factor of 2 identified" },
+            { "mark": "B1", "desc": "2(3y + 5) cao" }
+          ],
+          "workingSteps": [
+            "HCF of 6 and 10 is 2",
+            "6y + 10 = 2(3y + 5)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2-02-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Expand and simplify $(x + 3)(x + 5)$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x^2 + 8x + 15",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Four terms seen from correct expansion: x² + 5x + 3x + 15" },
+            { "mark": "A1", "desc": "x² + 8x seen" },
+            { "mark": "A1", "desc": "x² + 8x + 15 cao" }
+          ],
+          "workingSteps": [
+            "x × x = x²",
+            "x × 5 = 5x",
+            "3 × x = 3x",
+            "3 × 5 = 15",
+            "x² + 5x + 3x + 15 = x² + 8x + 15"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Factorise $x^2 + 7x + 12$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(x + 3)(x + 4)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Finds two numbers with product 12 and sum 7" },
+            { "mark": "A1", "desc": "3 and 4 identified" },
+            { "mark": "A1", "desc": "(x + 3)(x + 4) or (x + 4)(x + 3) cao" }
+          ],
+          "workingSteps": [
+            "Need two numbers: product = 12, sum = 7",
+            "3 × 4 = 12, 3 + 4 = 7 ✓",
+            "Answer: (x + 3)(x + 4)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2-02-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Simplify $\\dfrac{12x^3}{4x}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3x^2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "12 ÷ 4 = 3 and x³ ÷ x = x²" },
+            { "mark": "A1", "desc": "3x² cao" }
+          ],
+          "workingSteps": [
+            "12 ÷ 4 = 3",
+            "x³ ÷ x = x²",
+            "Answer: 3x²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Simplify $\\dfrac{x^2 - 9}{x + 3}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x - 3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Factorises numerator: (x + 3)(x − 3)" },
+            { "mark": "A1", "desc": "x − 3 cao (with x ≠ −3)" }
+          ],
+          "workingSteps": [
+            "x² − 9 = (x + 3)(x − 3)  [difference of two squares]",
+            "(x + 3)(x − 3) ÷ (x + 3) = x − 3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write $\\dfrac{2}{x} + \\dfrac{3}{x+1}$ as a single fraction.\nSimplify your answer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(5x + 2) / (x(x+1))",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Common denominator x(x+1) used: 2(x+1) + 3x" },
+            { "mark": "A1", "desc": "(5x + 2) / (x(x + 1)) cao" }
+          ],
+          "workingSteps": [
+            "Common denominator: x(x + 1)",
+            "2/x = 2(x+1) / [x(x+1)]",
+            "3/(x+1) = 3x / [x(x+1)]",
+            "Sum = (2x + 2 + 3x) / [x(x+1)] = (5x + 2) / [x(x+1)]"
+          ]
+        }
+      ]
+    }
+  ]
 }

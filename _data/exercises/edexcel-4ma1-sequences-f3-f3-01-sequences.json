@@ -6,10 +6,350 @@
   "tier": "Foundation",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 28,
+  "estimatedMinutes": 30,
+  "questions": [
+    {
+      "id": "F3-01-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "easy",
+      "context": "Here are the first five terms of a sequence.\n$$3, \\ 7, \\ 11, \\ 15, \\ 19$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the next term of the sequence.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "23",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "23" }
+          ],
+          "workingSteps": [
+            "Common difference = 7 − 3 = 4",
+            "Next term = 19 + 4 = 23"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the $n$th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "4n − 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Identifies common difference as 4; writes 4n ± k" },
+            { "mark": "A1", "desc": "4n − 1 cao" }
+          ],
+          "workingSteps": [
+            "Common difference = 4, so nth term starts as 4n",
+            "When n = 1: 4(1) = 4, but first term is 3, so adjust by −1",
+            "nth term = 4n − 1",
+            "Check: n = 1 → 3 ✓, n = 2 → 7 ✓, n = 5 → 19 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the 20th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "79",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes n = 20 into their nth term expression" },
+            { "mark": "A1", "desc": "79 cao" }
+          ],
+          "workingSteps": [
+            "nth term = 4n − 1",
+            "20th term = 4(20) − 1 = 80 − 1 = 79"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Is 100 a term in this sequence? Give a reason for your answer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "No — 4n − 1 = 100 gives n = 25.25, which is not a whole number",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 4n − 1 = 100 and attempts to solve" },
+            { "mark": "A1", "desc": "n = 25.25 (or 101/4), concludes No with valid reason" }
+          ],
+          "workingSteps": [
+            "4n − 1 = 100",
+            "4n = 101",
+            "n = 101/4 = 25.25",
+            "n is not a whole number, so 100 is not in the sequence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-01-Q2",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "easy",
+      "context": "Here are the first four terms of an arithmetic sequence.\n$$5, \\ 12, \\ 19, \\ 26$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the common difference of the sequence.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "7",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "7" }
+          ],
+          "workingSteps": [
+            "12 − 5 = 7"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the $n$th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "7n − 2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "7n ± k seen" },
+            { "mark": "A1", "desc": "7n − 2 cao" }
+          ],
+          "workingSteps": [
+            "Common difference = 7, so nth term is 7n + k",
+            "When n = 1: 7(1) + k = 5, so k = −2",
+            "nth term = 7n − 2",
+            "Check: n = 2 → 12 ✓, n = 4 → 26 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the 15th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "103",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes n = 15 into their nth term" },
+            { "mark": "A1", "desc": "103 cao" }
+          ],
+          "workingSteps": [
+            "15th term = 7(15) − 2 = 105 − 2 = 103"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "James says that 200 is a term in this sequence.\nIs James correct? Give a reason for your answer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "No — 7n − 2 = 200 gives n = 202/7 = 28.857…, not a whole number",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 7n − 2 = 200 and attempts to solve" },
+            { "mark": "A1", "desc": "n = 202/7 ≈ 28.86, not an integer, concludes No with valid reason" }
+          ],
+          "workingSteps": [
+            "7n − 2 = 200",
+            "7n = 202",
+            "n = 202/7 ≈ 28.857",
+            "Not a whole number, so 200 is not in the sequence"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Work out the first term in the sequence that is greater than 300.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "306",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 7n − 2 > 300, obtains n > 43.14…" },
+            { "mark": "A1", "desc": "306 (the n = 44 term) cao" }
+          ],
+          "workingSteps": [
+            "7n − 2 > 300",
+            "7n > 302",
+            "n > 43.14…",
+            "Smallest integer n = 44",
+            "44th term = 7(44) − 2 = 308 − 2 = 306"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-01-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A sequence has $n$th term $T(n) = 5n + 3$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the first three terms of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": ["8", "13", "18"],
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "T(1) = 8 and T(2) = 13" },
+            { "mark": "B1", "desc": "T(3) = 18" }
+          ],
+          "workingSteps": [
+            "T(1) = 5(1) + 3 = 8",
+            "T(2) = 5(2) + 3 = 13",
+            "T(3) = 5(3) + 3 = 18"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the common difference of the sequence.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "5" }
+          ],
+          "workingSteps": [
+            "The coefficient of n in 5n + 3 is 5, which is the common difference"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the value of $n$ for which $T(n) = 98$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "19",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "5n + 3 = 98 → 5n = 95" },
+            { "mark": "A1", "desc": "n = 19 cao" }
+          ],
+          "workingSteps": [
+            "5n + 3 = 98",
+            "5n = 95",
+            "n = 19"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Explain why no term in the sequence is a multiple of 5.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "5n is always a multiple of 5; adding 3 makes it 3 more than a multiple of 5, never divisible by 5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "States 5n is a multiple of 5 (or T(n) = 5n + 3)" },
+            { "mark": "B1", "desc": "5n + 3 always leaves remainder 3 when divided by 5, so never a multiple of 5" }
+          ],
+          "workingSteps": [
+            "T(n) = 5n + 3",
+            "5n is divisible by 5 for all integers n",
+            "Adding 3 always gives a remainder of 3 when divided by 5",
+            "So T(n) is never a multiple of 5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-01-Q4",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "Squares are arranged in a pattern as shown below.\n\nPattern 1: 1 square\nPattern 2: 4 squares\nPattern 3: 7 squares\nPattern 4: 10 squares",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the number of squares in Pattern 5.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "13",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "13" }
+          ],
+          "workingSteps": [
+            "Common difference = 3",
+            "Pattern 5 = 10 + 3 = 13"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out an expression, in terms of $n$, for the number of squares in Pattern $n$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3n − 2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "3n ± k seen" },
+            { "mark": "A1", "desc": "3n − 2 cao" }
+          ],
+          "workingSteps": [
+            "Sequence: 1, 4, 7, 10 — common difference 3",
+            "nth term = 3n + k",
+            "n = 1: 3(1) + k = 1 → k = −2",
+            "nth term = 3n − 2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Which pattern number contains exactly 52 squares?",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "18",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "3n − 2 = 52 → 3n = 54" },
+            { "mark": "A1", "desc": "n = 18 cao" }
+          ],
+          "workingSteps": [
+            "3n − 2 = 52",
+            "3n = 54",
+            "n = 18"
+          ]
+        }
+      ]
+    }
+  ]
 }

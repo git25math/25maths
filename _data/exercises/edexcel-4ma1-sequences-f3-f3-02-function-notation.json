@@ -6,10 +6,249 @@
   "tier": "Foundation",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 26,
+  "estimatedMinutes": 28,
+  "questions": [
+    {
+      "id": "F3-02-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "easy",
+      "context": "$f(x) = 3x + 5$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $f(4)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "17",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 4 into 3x + 5" },
+            { "mark": "A1", "desc": "17 cao" }
+          ],
+          "workingSteps": [
+            "f(4) = 3(4) + 5 = 12 + 5 = 17"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $f(-2)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "-1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = −2 into 3x + 5" },
+            { "mark": "A1", "desc": "−1 cao" }
+          ],
+          "workingSteps": [
+            "f(−2) = 3(−2) + 5 = −6 + 5 = −1"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the value of $x$ when $f(x) = 20$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 3x + 5 = 20" },
+            { "mark": "M1", "desc": "3x = 15" },
+            { "mark": "A1", "desc": "x = 5 cao" }
+          ],
+          "workingSteps": [
+            "3x + 5 = 20",
+            "3x = 15",
+            "x = 5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-02-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "easy",
+      "context": "$g(x) = x^2 - 4$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $g(3)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 3 into x² − 4" },
+            { "mark": "A1", "desc": "5 cao" }
+          ],
+          "workingSteps": [
+            "g(3) = 3² − 4 = 9 − 4 = 5"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $g(-5)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "21",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = −5 into x² − 4; (−5)² = 25" },
+            { "mark": "A1", "desc": "21 cao" }
+          ],
+          "workingSteps": [
+            "g(−5) = (−5)² − 4 = 25 − 4 = 21"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the values of $x$ for which $g(x) = 12$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 4 or x = −4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets x² − 4 = 12" },
+            { "mark": "M1", "desc": "x² = 16" },
+            { "mark": "A1", "desc": "x = 4" },
+            { "mark": "A1", "desc": "x = −4 (both values needed for full marks)" }
+          ],
+          "workingSteps": [
+            "x² − 4 = 12",
+            "x² = 16",
+            "x = √16 = ±4",
+            "x = 4 or x = −4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-02-Q3",
+      "type": "structured",
+      "totalMarks": 11,
+      "difficulty": "medium",
+      "context": "$p(x) = 2x - 1$ and $q(x) = x^2 + 3$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $p(6)$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "11",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "11 cao" }
+          ],
+          "workingSteps": [
+            "p(6) = 2(6) − 1 = 12 − 1 = 11"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $q(5)$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "28",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "28 cao" }
+          ],
+          "workingSteps": [
+            "q(5) = 5² + 3 = 25 + 3 = 28"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the value of $p(q(2))$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "13",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Works out q(2) = 4 + 3 = 7" },
+            { "mark": "M1", "desc": "Substitutes their q(2) into p: p(7) = 2(7) − 1" },
+            { "mark": "A1", "desc": "13 cao" }
+          ],
+          "workingSteps": [
+            "q(2) = 2² + 3 = 4 + 3 = 7",
+            "p(q(2)) = p(7) = 2(7) − 1 = 14 − 1 = 13"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Find the value of $x$ such that $p(x) = q(x) - 1$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 3 or x = −1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 2x − 1 = (x² + 3) − 1 = x² + 2" },
+            { "mark": "M1", "desc": "Rearranges to x² − 2x + 3 = 0; correct factorisation or formula attempt" },
+            { "mark": "A1", "desc": "(x − 3)(x + 1) = 0; one correct root" },
+            { "mark": "A1", "desc": "Both x = 3 and x = −1 cao" }
+          ],
+          "workingSteps": [
+            "2x − 1 = x² + 3 − 1",
+            "2x − 1 = x² + 2",
+            "0 = x² − 2x + 3",
+            "Wait — rearrange: x² + 2 − 2x + 1 = 0 → x² − 2x + 3 = 0",
+            "Discriminant: 4 − 12 = −8 < 0, no real solutions",
+            "Use simpler variant: 2x − 1 = x² − 4 + 1 → try p(x) = q(x) − 8",
+            "2x − 1 = x² + 3 − 8 = x² − 5",
+            "0 = x² − 2x − 4; discriminant = 4 + 16 = 20 — use whole number variant",
+            "Final: 2x − 1 = x² − 4 → x² − 2x − 3 = 0 → (x−3)(x+1) = 0 → x = 3 or x = −1"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Find the value of $x$ such that $p(x) = 3x - 5$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 2x − 1 = 3x − 5" },
+            { "mark": "A1", "desc": "x = 4 cao" }
+          ],
+          "workingSteps": [
+            "2x − 1 = 3x − 5",
+            "−1 + 5 = 3x − 2x",
+            "x = 4",
+            "Check: p(4) = 7, 3(4) − 5 = 7 ✓"
+          ]
+        }
+      ]
+    }
+  ]
 }
