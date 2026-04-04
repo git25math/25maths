@@ -6,10 +6,123 @@
   "tier": "Higher",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "H1-06-Q1",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "After a $15\\%$ decrease, a price becomes $\\$340$.\nWork out the original price.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "400",
+          "tolerance": null,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "Original $\\times 0.85 = 340$; original $= 340 \\div 0.85$" },
+            { "mark": "A1", "desc": "$\\$400$ cao" }
+          ],
+          "workingSteps": [
+            "After 15% decrease: original $\\times (1 - 0.15) = $ original $\\times 0.85 = 340$",
+            "Original $= 340 \\div 0.85 = \\$400$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A house was worth $\\$180000$ in 2020.\nBy 2024 its value had increased by $22\\%$.\nWork out its value in 2024.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "219600",
+          "tolerance": null,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "$180000 \\times 1.22$" },
+            { "mark": "A1", "desc": "$\\$219600$ cao" }
+          ],
+          "workingSteps": [
+            "$180000 \\times 1.22 = \\$219600$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H1-06-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "An investment of $\\$10000$ earns $3.5\\%$ compound interest per year.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the value of the investment after 5 years.\nGive your answer correct to the nearest dollar.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "11877",
+          "tolerance": 1,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "$10000 \\times 1.035^5$" },
+            { "mark": "M1", "desc": "$1.035^5 = 1.18769...$" },
+            { "mark": "A1", "desc": "$10000 \\times 1.18769 = \\$11876.9... \\approx \\$11877$" }
+          ],
+          "workingSteps": [
+            "$V = 10000 \\times 1.035^5$",
+            "$1.035^5 = 1.187686...$",
+            "$V = 10000 \\times 1.187686 = \\$11876.86 \\approx \\$11877$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the percentage increase over 5 years.\nGive your answer correct to 1 decimal place.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "18.8",
+          "tolerance": 0.1,
+          "unit": "%",
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{1877}{10000} \\times 100$ or $1.035^5 - 1$ as a percentage" },
+            { "mark": "A1", "desc": "$18.8\\%$ (1 dp)" }
+          ],
+          "workingSteps": [
+            "Increase $= \\$11877 - \\$10000 = \\$1877$",
+            "Percentage increase $= \\dfrac{1877}{10000} \\times 100 = 18.77...\\% \\approx 18.8\\%$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "After how many complete years will the investment first exceed $\\$13000$?\nShow your working.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "8",
+          "tolerance": null,
+          "unit": "years",
+          "markScheme": [
+            { "mark": "M1", "desc": "Trials: $n = 7$: $10000 \\times 1.035^7 = 12722 < 13000$; $n = 8$: $10000 \\times 1.035^8 = 13168 > 13000$" },
+            { "mark": "A1", "desc": "$n = 8$ years cao" }
+          ],
+          "workingSteps": [
+            "$n = 7$: $10000 \\times 1.035^7 = 10000 \\times 1.2722 = \\$12722 < \\$13000$",
+            "$n = 8$: $10000 \\times 1.035^8 = 10000 \\times 1.3168 = \\$13168 > \\$13000$",
+            "Answer: 8 complete years"
+          ]
+        }
+      ]
+    }
+  ]
 }

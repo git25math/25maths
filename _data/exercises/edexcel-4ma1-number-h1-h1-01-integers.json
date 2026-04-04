@@ -6,10 +6,112 @@
   "tier": "Higher",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "H1-01-Q1",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Express $360$ as a product of its prime factors.\nWrite your answer in index form.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$2^3 \\times 3^2 \\times 5$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Systematic factor tree or division" },
+            { "mark": "M1", "desc": "At least three distinct prime factors identified" },
+            { "mark": "A1", "desc": "$2^3 \\times 3^2 \\times 5$ cao" }
+          ],
+          "workingSteps": [
+            "$360 \\div 2 = 180$",
+            "$180 \\div 2 = 90$",
+            "$90 \\div 2 = 45$",
+            "$45 \\div 3 = 15$",
+            "$15 \\div 3 = 5$",
+            "$360 = 2^3 \\times 3^2 \\times 5$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Use your answer to find the HCF of $360$ and $252$.\nShow your working.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "36",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$252 = 2^2 \\times 3^2 \\times 7$; HCF $= 2^2 \\times 3^2 = 36$" }
+          ],
+          "workingSteps": [
+            "$252 = 2^2 \\times 3^2 \\times 7$",
+            "Common factors: $2^2$ and $3^2$",
+            "HCF $= 2^2 \\times 3^2 = 4 \\times 9 = 36$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H1-01-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the LCM of $84$ and $126$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "252",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$84 = 2^2 \\times 3 \\times 7$; $126 = 2 \\times 3^2 \\times 7$" },
+            { "mark": "M1", "desc": "LCM: highest powers: $2^2 \\times 3^2 \\times 7$" },
+            { "mark": "A1", "desc": "$4 \\times 9 \\times 7 = 252$ cao" }
+          ],
+          "workingSteps": [
+            "$84 = 2^2 \\times 3 \\times 7$",
+            "$126 = 2 \\times 3^2 \\times 7$",
+            "LCM $= 2^2 \\times 3^2 \\times 7 = 4 \\times 9 \\times 7 = 252$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Two machines beep at regular intervals. Machine A beeps every $84$ seconds and Machine B every $126$ seconds. They both beep at time $t = 0$.\nWork out the next time they both beep together.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$t = 252$ seconds (4 min 12 sec)",
+          "tolerance": null,
+          "unit": "seconds",
+          "markScheme": [
+            { "mark": "M1", "desc": "Recognises need for LCM" },
+            { "mark": "M1", "desc": "Uses LCM of 84 and 126" },
+            { "mark": "A1", "desc": "$252$ seconds (or $4$ min $12$ s)" }
+          ],
+          "workingSteps": [
+            "They beep together at multiples of both 84 and 126",
+            "LCM(84, 126) = 252 seconds",
+            "$252$ s $= 4$ min $12$ s"
+          ]
+        }
+      ]
+    }
+  ]
 }

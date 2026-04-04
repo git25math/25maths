@@ -6,10 +6,144 @@
   "tier": "Higher",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 15,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "H4-11-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "In triangle PQR, a line XY is drawn parallel to QR with X on PQ and Y on PR. PX = 5 cm, XQ = 3 cm and QR = 12 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that triangles PXY and PQR are similar.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "AA similarity: shared angle P; XY ∥ QR gives equal corresponding angles.",
+          "markScheme": [
+            { "mark": "M1", "desc": "Angle P is common to both triangles" },
+            { "mark": "A1", "desc": "XY ∥ QR gives angle PXY = angle PQR and angle PYX = angle PRQ (corresponding angles); AA similarity" }
+          ],
+          "workingSteps": [
+            "Angle XPY = angle QPR (common angle at P)",
+            "Angle PXY = angle PQR (corresponding angles, XY ∥ QR)",
+            "By AA: triangles PXY and PQR are similar"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the length XY.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "7.5",
+          "tolerance": 0,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "PQ = PX + XQ = 5 + 3 = 8; scale factor = PX/PQ = 5/8" },
+            { "mark": "A1", "desc": "XY = QR × 5/8 = 12 × 5/8 = 7.5 cm" }
+          ],
+          "workingSteps": [
+            "PQ = PX + XQ = 5 + 3 = 8 cm",
+            "Scale factor PXY to PQR = PQ/PX = 8/5",
+            "Scale factor PXY from PQR: PX/PQ = 5/8",
+            "XY = QR × (5/8) = 12 × 5/8 = 7.5 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The area of triangle PXY is 25 cm².\nWork out the area of trapezium XYRQ.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "39",
+          "tolerance": 0.5,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area scale factor = (PQ/PX)² = (8/5)² = 64/25" },
+            { "mark": "M1", "desc": "Area of PQR = 25 × 64/25 = 64 cm²" },
+            { "mark": "M1", "desc": "Area of trapezium = Area PQR − Area PXY" },
+            { "mark": "A1", "desc": "= 64 − 25 = 39 cm²" }
+          ],
+          "workingSteps": [
+            "Area scale factor (PXY to PQR) = (PQ/PX)² = (8/5)² = 64/25",
+            "Area of PQR = 25 × 64/25 = 64 cm²",
+            "Area of trapezium XYRQ = Area of PQR − Area of PXY = 64 − 25 = 39 cm²"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H4-11-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "Two similar spheres A and B have radii in the ratio 2 : 5.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the ratio of their surface areas.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "4/25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Surface area ratio = (2/5)² = 4/25" },
+            { "mark": "A1", "desc": "4 : 25" }
+          ],
+          "workingSteps": [
+            "Surface area ratio = (length scale factor)² = (2/5)² = 4/25",
+            "Ratio A : B = 4 : 25"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the ratio of their volumes.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "8/125",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Volume ratio = (2/5)³ = 8/125" },
+            { "mark": "A1", "desc": "8 : 125" }
+          ],
+          "workingSteps": [
+            "Volume ratio = (length scale factor)³ = (2/5)³ = 8/125",
+            "Ratio A : B = 8 : 125"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The surface area of sphere B is 500π cm².\nWork out the surface area of sphere A.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "80π",
+          "tolerance": null,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Surface area ratio A : B = 4 : 25" },
+            { "mark": "M1", "desc": "Surface area A = 500π × 4/25" },
+            { "mark": "A1", "desc": "= 80π cm²" }
+          ],
+          "workingSteps": [
+            "Surface area A : B = 4 : 25",
+            "Surface area A = 500π × (4/25) = 20π × 4 = 80π cm²"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,106 @@
   "tier": "Foundation",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "F1-07-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "easy",
+      "context": "A smoothie is made from mango and orange juice in the ratio $3 : 2$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the amount of mango needed to make $500$ ml of smoothie.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "300",
+          "tolerance": null,
+          "unit": "ml",
+          "markScheme": [
+            { "mark": "M1", "desc": "Total parts: $3 + 2 = 5$" },
+            { "mark": "M1", "desc": "One part: $500 \\div 5 = 100$ ml" },
+            { "mark": "A1", "desc": "Mango: $3 \\times 100 = 300$ ml cao" }
+          ],
+          "workingSteps": [
+            "Total parts: $3 + 2 = 5$",
+            "One part $= 500 \\div 5 = 100$ ml",
+            "Mango $= 3 \\times 100 = 300$ ml"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the amount of orange juice in a $750$ ml smoothie.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "300",
+          "tolerance": null,
+          "unit": "ml",
+          "markScheme": [
+            { "mark": "M1", "desc": "One part $= 750 \\div 5 = 150$ ml" },
+            { "mark": "A1", "desc": "Orange $= 2 \\times 150 = 300$ ml cao" }
+          ],
+          "workingSteps": [
+            "One part $= 750 \\div 5 = 150$ ml",
+            "Orange juice $= 2 \\times 150 = 300$ ml"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F1-07-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "5 identical pens cost $\\$3.25$.\nWork out the cost of 8 of these pens.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "5.20",
+          "tolerance": 0.01,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "Cost of one pen: $3.25 \\div 5 = \\$0.65$" },
+            { "mark": "M1", "desc": "$0.65 \\times 8$" },
+            { "mark": "A1", "desc": "$\\$5.20$ cao" }
+          ],
+          "workingSteps": [
+            "1 pen $= 3.25 \\div 5 = \\$0.65$",
+            "8 pens $= 8 \\times 0.65 = \\$5.20$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Give a reason why your answer to (a) used direct proportion.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "As the number of pens increases, the total cost increases by the same factor.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "More pens → higher cost" },
+            { "mark": "B1", "desc": "The ratio (cost per pen) remains constant at $\\$0.65$ per pen" }
+          ],
+          "workingSteps": [
+            "Cost is directly proportional to number of pens",
+            "If number doubles, cost doubles — same constant ratio"
+          ]
+        }
+      ]
+    }
+  ]
 }

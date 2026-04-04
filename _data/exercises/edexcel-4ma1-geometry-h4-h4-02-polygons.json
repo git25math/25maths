@@ -6,10 +6,128 @@
   "tier": "Higher",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "H4-02-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A regular polygon has n sides. Its interior angle is (2n − 4) × 90° ÷ n degrees.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "The interior angle of a regular polygon is 156°.\nWork out the number of sides.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "15",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Exterior angle = 180 − 156 = 24°" },
+            { "mark": "M1", "desc": "Number of sides = 360 ÷ 24" },
+            { "mark": "A1", "desc": "15" }
+          ],
+          "workingSteps": [
+            "Exterior angle = 180° − 156° = 24°",
+            "Number of sides = 360° ÷ 24° = 15"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Two of these regular 15-sided polygons are placed side by side sharing a common edge.\nWork out the angle between the two outer edges at their shared vertex.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "48",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "Angle at the shared vertex involves two interior angles and the gap" },
+            { "mark": "M1", "desc": "Angles around a point sum to 360°" },
+            { "mark": "M1", "desc": "360 − 156 − 156" },
+            { "mark": "A1", "desc": "48°" }
+          ],
+          "workingSteps": [
+            "At the shared vertex, there are two interior angles of 156° each from the two polygons",
+            "Remaining angle = 360° − 156° − 156° = 48°"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H4-02-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "ABCDEF is a regular hexagon with centre O. M is the midpoint of AB.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that triangle OAB is equilateral.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "OA = OB = AB; angle AOB = 60°, isosceles with 60° apex gives all angles 60°.",
+          "markScheme": [
+            { "mark": "M1", "desc": "OA = OB (radii of circumscribed circle)" },
+            { "mark": "M1", "desc": "Angle AOB = 360°/6 = 60°" },
+            { "mark": "A1", "desc": "Isosceles with apex 60°: base angles = 60°; all angles 60°, so equilateral" }
+          ],
+          "workingSteps": [
+            "OA = OB (both radii of the circle circumscribing the regular hexagon)",
+            "Angle AOB = 360° ÷ 6 = 60°",
+            "Triangle OAB is isosceles with apex angle 60°",
+            "Base angles = (180° − 60°)/2 = 60°",
+            "All angles 60°, so all sides equal: OA = OB = AB — equilateral"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the distance OM, where M is the midpoint of AB.\nGive your answer in terms of the side length s.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "s√3/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "OM² = OA² − AM² = s² − (s/2)²  = s² − s²/4 = 3s²/4" },
+            { "mark": "A1", "desc": "OM = s√3/2" }
+          ],
+          "workingSteps": [
+            "Since triangle OAB is equilateral with side s, OA = s and AM = s/2",
+            "OM² = OA² − AM² = s² − (s/2)² = s² − s²/4 = 3s²/4",
+            "OM = s√3/2"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the area of the regular hexagon in terms of s.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3s²√3/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Area of equilateral triangle OAB = (1/2) × s × (s√3/2) = s²√3/4" },
+            { "mark": "A1", "desc": "Area of hexagon = 6 × s²√3/4 = 3s²√3/2" }
+          ],
+          "workingSteps": [
+            "Area of one equilateral triangle = (1/2) × base × height = (1/2) × s × (s√3/2) = s²√3/4",
+            "Hexagon = 6 equilateral triangles",
+            "Area = 6 × s²√3/4 = 3s²√3/2"
+          ]
+        }
+      ]
+    }
+  ]
 }

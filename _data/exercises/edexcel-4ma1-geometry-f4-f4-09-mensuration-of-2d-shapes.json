@@ -9,7 +9,7 @@
   "status": "draft",
   "paperType": "structured",
   "calculator": true,
-  "totalMarks": 14,
+  "totalMarks": 13,
   "estimatedMinutes": 18,
   "questions": [
     {
@@ -30,7 +30,10 @@
           "tolerance": null,
           "unit": "cm²",
           "markScheme": [
-            { "mark": "B1", "desc": "10 × 6 = 60 cm²" }
+            {
+              "mark": "B1",
+              "desc": "10 × 6 = 60 cm²"
+            }
           ],
           "workingSteps": [
             "Area = length × width = 10 × 6 = 60 cm²"
@@ -46,9 +49,18 @@
           "tolerance": 0.01,
           "unit": "cm²",
           "markScheme": [
-            { "mark": "M1", "desc": "Radius = 3 cm; area of full circle = π × 3²" },
-            { "mark": "M1", "desc": "Area of semicircle = (1/2) × π × 9" },
-            { "mark": "A1", "desc": "14.14 cm² (2dp)" }
+            {
+              "mark": "M1",
+              "desc": "Radius = 3 cm; area of full circle = π × 3²"
+            },
+            {
+              "mark": "M1",
+              "desc": "Area of semicircle = (1/2) × π × 9"
+            },
+            {
+              "mark": "A1",
+              "desc": "14.14 cm² (2dp)"
+            }
           ],
           "workingSteps": [
             "Diameter = 6 cm, so radius = 3 cm",
@@ -65,8 +77,14 @@
           "tolerance": 0.05,
           "unit": "cm²",
           "markScheme": [
-            { "mark": "M1", "desc": "60 + their semicircle area" },
-            { "mark": "A1", "desc": "74.14 cm² ft" }
+            {
+              "mark": "M1",
+              "desc": "60 + their semicircle area"
+            },
+            {
+              "mark": "A1",
+              "desc": "74.14 cm² ft"
+            }
           ],
           "workingSteps": [
             "Total area = 60 + 14.14 = 74.14 cm²"
@@ -92,9 +110,18 @@
           "tolerance": null,
           "unit": "cm²",
           "markScheme": [
-            { "mark": "M1", "desc": "Area = (1/2)(a + b)h" },
-            { "mark": "M1", "desc": "(1/2)(8 + 14) × 5 = (1/2) × 22 × 5" },
-            { "mark": "A1", "desc": "55 cm²" }
+            {
+              "mark": "M1",
+              "desc": "Area = (1/2)(a + b)h"
+            },
+            {
+              "mark": "M1",
+              "desc": "(1/2)(8 + 14) × 5 = (1/2) × 22 × 5"
+            },
+            {
+              "mark": "A1",
+              "desc": "55 cm²"
+            }
           ],
           "workingSteps": [
             "Area of trapezium = (1/2)(a + b)h",
@@ -113,8 +140,14 @@
           "tolerance": null,
           "unit": "cm³",
           "markScheme": [
-            { "mark": "M1", "desc": "Volume = cross-sectional area × length = 55 × 12" },
-            { "mark": "A1", "desc": "660 cm³" }
+            {
+              "mark": "M1",
+              "desc": "Volume = cross-sectional area × length = 55 × 12"
+            },
+            {
+              "mark": "A1",
+              "desc": "660 cm³"
+            }
           ],
           "workingSteps": [
             "Volume = area of cross-section × length",
@@ -131,8 +164,14 @@
           "tolerance": 0,
           "unit": "cm",
           "markScheme": [
-            { "mark": "M1", "desc": "8 + 14 + 5.4 + 5.4" },
-            { "mark": "A1", "desc": "32.8 cm" }
+            {
+              "mark": "M1",
+              "desc": "8 + 14 + 5.4 + 5.4"
+            },
+            {
+              "mark": "A1",
+              "desc": "32.8 cm"
+            }
           ],
           "workingSteps": [
             "Perimeter = 8 + 14 + 5.4 + 5.4 = 32.8 cm"

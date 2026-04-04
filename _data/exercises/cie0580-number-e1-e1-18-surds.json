@@ -6,10 +6,103 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "E1-18-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "simplify",
+      "difficulty": "easy",
+      "questionText": "Simplify $\\sqrt{48}$.",
+      "answerType": "expression",
+      "correctAnswer": "$4\\sqrt{3}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$\\sqrt{48} = \\sqrt{16 \\times 3} = \\sqrt{16} \\times \\sqrt{3}$" },
+        { "mark": "A1", "desc": "$4\\sqrt{3}$ cao" }
+      ],
+      "workingSteps": [
+        "$48 = 16 \\times 3$",
+        "$\\sqrt{48} = \\sqrt{16 \\times 3} = \\sqrt{16} \\times \\sqrt{3} = 4\\sqrt{3}$"
+      ],
+      "explanation": "Find the largest perfect square factor of 48."
+    },
+    {
+      "id": "E1-18-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "simplify",
+      "difficulty": "medium",
+      "questionText": "Simplify $(3 + \\sqrt{5})(3 - \\sqrt{5})$.",
+      "answerType": "integer",
+      "correctAnswer": "4",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Uses difference of squares: $(a+b)(a-b) = a^2 - b^2$" },
+        { "mark": "M1", "desc": "$3^2 - (\\sqrt{5})^2 = 9 - 5$" },
+        { "mark": "A1", "desc": "$4$ cao" }
+      ],
+      "workingSteps": [
+        "$(3 + \\sqrt{5})(3 - \\sqrt{5}) = 3^2 - (\\sqrt{5})^2$",
+        "$= 9 - 5 = 4$"
+      ],
+      "explanation": "$(a+b)(a-b) = a^2 - b^2$. The surds cancel."
+    },
+    {
+      "id": "E1-18-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Rationalise the denominator of $\\dfrac{6}{\\sqrt{3}}$.",
+          "marks": 2,
+          "commandWord": "simplify",
+          "answerType": "expression",
+          "correctAnswer": "$2\\sqrt{3}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{6}{\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3}$" },
+            { "mark": "A1", "desc": "$2\\sqrt{3}$ cao" }
+          ],
+          "workingSteps": [
+            "$\\dfrac{6}{\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3} = 2\\sqrt{3}$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Rationalise the denominator of $\\dfrac{5}{3 - \\sqrt{2}}$.\nGive your answer in the form $a + b\\sqrt{2}$ where $a$ and $b$ are integers.",
+          "marks": 4,
+          "commandWord": "simplify",
+          "answerType": "expression",
+          "correctAnswer": "$\\dfrac{15 + 5\\sqrt{2}}{7}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiply by conjugate: $\\dfrac{5}{3-\\sqrt{2}} \\times \\dfrac{3+\\sqrt{2}}{3+\\sqrt{2}}$" },
+            { "mark": "M1", "desc": "Denominator: $(3)^2 - (\\sqrt{2})^2 = 9 - 2 = 7$" },
+            { "mark": "M1", "desc": "Numerator: $5(3 + \\sqrt{2}) = 15 + 5\\sqrt{2}$" },
+            { "mark": "A1", "desc": "$\\dfrac{15 + 5\\sqrt{2}}{7}$ cao" }
+          ],
+          "workingSteps": [
+            "$\\dfrac{5}{3-\\sqrt{2}} \\times \\dfrac{3+\\sqrt{2}}{3+\\sqrt{2}}$",
+            "Denominator: $(3-\\sqrt{2})(3+\\sqrt{2}) = 9 - 2 = 7$",
+            "Numerator: $5 \\times (3+\\sqrt{2}) = 15 + 5\\sqrt{2}$",
+            "Result: $\\dfrac{15 + 5\\sqrt{2}}{7}$"
+          ]
+        }
+      ]
+    }
+  ]
 }

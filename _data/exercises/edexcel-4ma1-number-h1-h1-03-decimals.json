@@ -6,10 +6,103 @@
   "tier": "Higher",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "H1-03-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Without a calculator, work out $0.36 \\times 0.025$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "decimal-exact",
+          "correctAnswer": "0.009",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$36 \\times 25 = 900$; 5 decimal places in total" },
+            { "mark": "A1", "desc": "$0.00900 = 0.009$ cao" }
+          ],
+          "workingSteps": [
+            "$36 \\times 25 = 900$",
+            "Count decimal places: $0.36$ has 2, $0.025$ has 3; total = 5",
+            "$0.36 \\times 0.025 = 0.00900 = 0.009$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $\\dfrac{0.48}{0.006}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "80",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiplies both by 1000: $\\dfrac{480}{6}$" },
+            { "mark": "M1", "desc": "Correct cancellation" },
+            { "mark": "A1", "desc": "$80$ cao" }
+          ],
+          "workingSteps": [
+            "$\\dfrac{0.48}{0.006} = \\dfrac{480}{6} = 80$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H1-03-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "hard",
+      "context": "A chemical solution has concentration $0.0084$ grams per ml.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the mass of chemical in $250$ ml of solution.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "decimal-exact",
+          "correctAnswer": "2.1",
+          "tolerance": null,
+          "unit": "g",
+          "markScheme": [
+            { "mark": "M1", "desc": "$0.0084 \\times 250$" },
+            { "mark": "A1", "desc": "$2.1$ g cao" }
+          ],
+          "workingSteps": [
+            "$0.0084 \\times 250 = 2.1$ g"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A different solution contains $0.63$ grams in $75$ ml.\nWork out its concentration in grams per ml.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "decimal-exact",
+          "correctAnswer": "0.0084",
+          "tolerance": null,
+          "unit": "g/ml",
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{0.63}{75}$" },
+            { "mark": "M1", "desc": "Correct division" },
+            { "mark": "A1", "desc": "$0.0084$ g/ml cao" }
+          ],
+          "workingSteps": [
+            "Concentration $= \\dfrac{0.63}{75} = 0.0084$ g/ml"
+          ]
+        }
+      ]
+    }
+  ]
 }

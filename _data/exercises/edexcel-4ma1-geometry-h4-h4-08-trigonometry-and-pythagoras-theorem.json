@@ -6,10 +6,149 @@
   "tier": "Higher",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 16,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "H4-08-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "Triangle ABC has AB = 7 cm, BC = 9 cm and angle ABC = 115°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the length AC.\nGive your answer correct to 3 significant figures.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "13.5",
+          "tolerance": 0.1,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "Cosine rule: AC² = AB² + BC² − 2·AB·BC·cos(ABC)" },
+            { "mark": "M1", "desc": "= 49 + 81 − 2(7)(9)cos(115°)" },
+            { "mark": "M1", "desc": "= 130 − 126 × (−0.4226) = 130 + 53.25 = 183.25" },
+            { "mark": "A1", "desc": "AC = √183.25 = 13.5 cm (3sf)" }
+          ],
+          "workingSteps": [
+            "Cosine rule: AC² = AB² + BC² − 2·AB·BC·cos(∠ABC)",
+            "= 7² + 9² − 2(7)(9)cos(115°)",
+            "= 49 + 81 − 126 × (−0.42262)",
+            "= 130 + 53.25 = 183.25",
+            "AC = √183.25 = 13.537... ≈ 13.5 cm"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the area of triangle ABC.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "28.5",
+          "tolerance": 0.5,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area = (1/2) × AB × BC × sin(ABC)" },
+            { "mark": "M1", "desc": "= (1/2) × 7 × 9 × sin(115°)" },
+            { "mark": "A1", "desc": "= 31.5 × 0.9063 = 28.5 cm² (3sf)" }
+          ],
+          "workingSteps": [
+            "Area = (1/2) × AB × BC × sin(∠ABC)",
+            "= (1/2) × 7 × 9 × sin(115°)",
+            "= 31.5 × 0.90631",
+            "= 28.5 cm² (3sf)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out angle BAC.\nGive your answer correct to 1 decimal place.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "37.2",
+          "tolerance": 0.5,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "B1", "desc": "sin(BAC)/BC = sin(ABC)/AC → sin(BAC) = 9 sin(115°)/13.5 → 36.9° ft" }
+          ],
+          "workingSteps": [
+            "Sine rule: sin(BAC)/BC = sin(ABC)/AC",
+            "sin(BAC) = 9 × sin(115°)/13.537 = 9 × 0.9063/13.537 = 0.6024",
+            "BAC = arcsin(0.6024) = 37.1° ≈ 37.2°"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H4-08-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "A vertical mast PQ stands on horizontal ground. From point A on the ground, the angle of elevation of the top Q is 38°. From point B, 20 m further from the mast on the same line, the angle of elevation of Q is 24°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Let AP = d metres. Write two equations in d and the height h of the mast.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "tan 38° = h/d and tan 24° = h/(d+20)",
+          "markScheme": [
+            { "mark": "B1", "desc": "h = d tan 38°" },
+            { "mark": "B1", "desc": "h = (d + 20) tan 24°" }
+          ],
+          "workingSteps": [
+            "From A: tan 38° = h/d → h = d tan 38°",
+            "From B: tan 24° = h/(d + 20) → h = (d + 20) tan 24°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the height h of the mast.\nGive your answer correct to 3 significant figures.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "20.7",
+          "tolerance": 0.3,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "d tan 38° = (d + 20) tan 24°" },
+            { "mark": "M1", "desc": "d(tan 38° − tan 24°) = 20 tan 24°" },
+            { "mark": "M1", "desc": "d = 20 tan 24° / (tan 38° − tan 24°) = 26.49 m" },
+            { "mark": "A1", "desc": "h = 26.49 × tan 38° = 20.7 m (3sf)" }
+          ],
+          "workingSteps": [
+            "d tan 38° = (d + 20) tan 24°",
+            "d × 0.7813 = (d + 20) × 0.4452",
+            "0.7813d = 0.4452d + 8.904",
+            "0.3361d = 8.904",
+            "d = 26.49 m",
+            "h = 26.49 × tan 38° = 26.49 × 0.7813 = 20.7 m"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the distance AB.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "20",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "B2", "desc": "20 m (given in the question context)" }
+          ],
+          "workingSteps": [
+            "AB = 20 m (given in the problem)"
+          ]
+        }
+      ]
+    }
+  ]
 }

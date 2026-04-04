@@ -6,10 +6,103 @@
   "tier": "Foundation",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "F1-10-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "easy",
+      "context": "Tanya earns $\\$14.50$ per hour.\nShe works $8$ hours on Monday and $6$ hours on Tuesday.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out her total earnings for these two days.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "203.00",
+          "tolerance": 0.01,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "Total hours: $8 + 6 = 14$" },
+            { "mark": "M1", "desc": "$14 \\times 14.50$" },
+            { "mark": "A1", "desc": "$\\$203.00$ cao" }
+          ],
+          "workingSteps": [
+            "Total hours $= 8 + 6 = 14$",
+            "Earnings $= 14 \\times \\$14.50 = \\$203.00$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Tax is deducted at $20\\%$.\nWork out her take-home pay for these two days.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "162.40",
+          "tolerance": 0.01,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "$203 \\times 0.80$ or $203 - 0.20 \\times 203$" },
+            { "mark": "A1", "desc": "$\\$162.40$ cao" }
+          ],
+          "workingSteps": [
+            "Tax $= 20\\% \\times 203 = \\$40.60$",
+            "Take-home $= 203 - 40.60 = \\$162.40$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F1-10-Q2",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A rectangular garden measures $12$ m by $8$ m.\nFencing costs $\\$15.50$ per metre.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the perimeter of the garden.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "40",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "$2 \\times (12 + 8)$" },
+            { "mark": "A1", "desc": "$40$ m cao" }
+          ],
+          "workingSteps": [
+            "Perimeter $= 2 \\times (12 + 8) = 2 \\times 20 = 40$ m"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the total cost of fencing the garden.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "620",
+          "tolerance": null,
+          "unit": "$",
+          "markScheme": [
+            { "mark": "M1", "desc": "$40 \\times 15.50$" },
+            { "mark": "M1", "desc": "Correct multiplication" },
+            { "mark": "A1", "desc": "$\\$620$ cao" }
+          ],
+          "workingSteps": [
+            "Cost $= 40 \\times \\$15.50 = \\$620$"
+          ]
+        }
+      ]
+    }
+  ]
 }
