@@ -6,10 +6,228 @@
   "tier": "Foundation",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 24,
+  "estimatedMinutes": 26,
+  "questions": [
+    {
+      "id": "F3-02-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "easy",
+      "context": "$f(x) = 4x - 3$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $f(5)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "17",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 5 into 4x − 3" },
+            { "mark": "A1", "desc": "17 cao" }
+          ],
+          "workingSteps": [
+            "f(5) = 4(5) − 3 = 20 − 3 = 17"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $f(-3)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "-15",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = −3 into 4x − 3" },
+            { "mark": "A1", "desc": "−15 cao" }
+          ],
+          "workingSteps": [
+            "f(−3) = 4(−3) − 3 = −12 − 3 = −15"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the value of $x$ when $f(x) = 25$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "7",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 4x − 3 = 25" },
+            { "mark": "M1", "desc": "4x = 28" },
+            { "mark": "A1", "desc": "x = 7 cao" }
+          ],
+          "workingSteps": [
+            "4x − 3 = 25",
+            "4x = 28",
+            "x = 7",
+            "Check: f(7) = 4(7) − 3 = 28 − 3 = 25 ✓"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-02-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "easy",
+      "context": "$h(x) = x^2 + 2x$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $h(4)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "24",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 4 into x² + 2x" },
+            { "mark": "A1", "desc": "24 cao" }
+          ],
+          "workingSteps": [
+            "h(4) = 4² + 2(4) = 16 + 8 = 24"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $h(-3)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = −3 into x² + 2x; (−3)² = 9" },
+            { "mark": "A1", "desc": "3 cao" }
+          ],
+          "workingSteps": [
+            "h(−3) = (−3)² + 2(−3) = 9 − 6 = 3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the value of $x$ for which $h(x) = 0$ and $x \\neq 0$.",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "-2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets x² + 2x = 0" },
+            { "mark": "M1", "desc": "Factorises: x(x + 2) = 0" },
+            { "mark": "A1", "desc": "x = 0 or x = −2 identified" },
+            { "mark": "A1", "desc": "x = −2 selected (since x ≠ 0) cao" }
+          ],
+          "workingSteps": [
+            "x² + 2x = 0",
+            "x(x + 2) = 0",
+            "x = 0 or x = −2",
+            "Since x ≠ 0, answer is x = −2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-02-Q3",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "medium",
+      "context": "$f(x) = 3x + 2$ and $g(x) = x^2 - 5$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $f(0)$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "2 cao" }
+          ],
+          "workingSteps": [
+            "f(0) = 3(0) + 2 = 2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out $g(-4)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "11",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = −4 into x² − 5; (−4)² = 16" },
+            { "mark": "A1", "desc": "11 cao" }
+          ],
+          "workingSteps": [
+            "g(−4) = (−4)² − 5 = 16 − 5 = 11"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out $f(g(3))$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "14",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Works out g(3) = 9 − 5 = 4" },
+            { "mark": "M1", "desc": "Substitutes their g(3) into f: f(4) = 3(4) + 2" },
+            { "mark": "A1", "desc": "14 cao" }
+          ],
+          "workingSteps": [
+            "g(3) = 3² − 5 = 9 − 5 = 4",
+            "f(g(3)) = f(4) = 3(4) + 2 = 12 + 2 = 14"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Find the value of $x$ for which $f(x) = g(x) + 3$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 4 or x = −1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 3x + 2 = (x² − 5) + 3, i.e. 3x + 2 = x² − 2" },
+            { "mark": "M1", "desc": "Rearranges to x² − 3x − 4 = 0; attempts factorisation" },
+            { "mark": "A1", "desc": "(x − 4)(x + 1) = 0; both x = 4 and x = −1 cao" }
+          ],
+          "workingSteps": [
+            "3x + 2 = x² − 5 + 3",
+            "3x + 2 = x² − 2",
+            "0 = x² − 3x − 4",
+            "(x − 4)(x + 1) = 0",
+            "x = 4 or x = −1",
+            "Check x = 4: f(4) = 14, g(4) + 3 = 11 + 3 = 14 ✓",
+            "Check x = −1: f(−1) = −1, g(−1) + 3 = (1 − 5) + 3 = −1 ✓"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,283 @@
   "tier": "Higher",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 29,
+  "estimatedMinutes": 32,
+  "questions": [
+    {
+      "id": "H3-04-Q1",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "medium",
+      "context": "$y = 3x^4 - 8x^3 + 6x^2$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $\\dfrac{dy}{dx}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "12x³ − 24x² + 12x",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Differentiates at least two terms correctly" },
+            { "mark": "A1", "desc": "12x³ − 24x² seen" },
+            { "mark": "A1", "desc": "12x³ − 24x² + 12x cao" }
+          ],
+          "workingSteps": [
+            "d/dx(3x⁴) = 12x³",
+            "d/dx(−8x³) = −24x²",
+            "d/dx(6x²) = 12x",
+            "dy/dx = 12x³ − 24x² + 12x"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the gradient of the curve at the point where $x = 1$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "0",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 1 into their dy/dx" },
+            { "mark": "A1", "desc": "0 cao" }
+          ],
+          "workingSteps": [
+            "dy/dx at x = 1: 12(1)³ − 24(1)² + 12(1) = 12 − 24 + 12 = 0"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the $x$-coordinates of the turning points of the curve.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 0 and x = 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets dy/dx = 0: 12x³ − 24x² + 12x = 0 → 12x(x² − 2x + 1) = 0" },
+            { "mark": "M1", "desc": "Factorises: 12x(x − 1)² = 0" },
+            { "mark": "A1", "desc": "x = 0 and x = 1 cao" }
+          ],
+          "workingSteps": [
+            "12x³ − 24x² + 12x = 0",
+            "12x(x² − 2x + 1) = 0",
+            "12x(x − 1)² = 0",
+            "x = 0 or x = 1"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Work out the $y$-coordinate of the turning point at $x = 0$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "0",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = 0 into y = 3x⁴ − 8x³ + 6x²" },
+            { "mark": "A1", "desc": "y = 0 cao" }
+          ],
+          "workingSteps": [
+            "y = 3(0)⁴ − 8(0)³ + 6(0)² = 0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H3-04-Q2",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A curve has equation $y = x^3 - 3x^2 - 9x + 5$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find $\\dfrac{dy}{dx}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "3x² − 6x − 9",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Differentiates, obtaining 3x² ± 6x seen" },
+            { "mark": "A1", "desc": "3x² − 6x − 9 cao" }
+          ],
+          "workingSteps": [
+            "dy/dx = 3x² − 6x − 9"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the $x$-coordinates of the two turning points of the curve.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = −1 and x = 3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 3x² − 6x − 9 = 0 → x² − 2x − 3 = 0" },
+            { "mark": "M1", "desc": "Factorises: (x − 3)(x + 1) = 0" },
+            { "mark": "A1", "desc": "x = 3 and x = −1 cao" }
+          ],
+          "workingSteps": [
+            "3x² − 6x − 9 = 0",
+            "x² − 2x − 3 = 0",
+            "(x − 3)(x + 1) = 0",
+            "x = 3 or x = −1"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the $y$-coordinates of the two turning points.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = −1 gives y = 10; x = 3 gives y = −22",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes x = −1 into y: −1 − 3 + 9 + 5 = 10" },
+            { "mark": "A1", "desc": "y = 10 at x = −1" },
+            { "mark": "A1", "desc": "y = −22 at x = 3; y = 27 − 27 − 27 + 5 = −22" }
+          ],
+          "workingSteps": [
+            "At x = −1: y = (−1)³ − 3(−1)² − 9(−1) + 5 = −1 − 3 + 9 + 5 = 10",
+            "At x = 3: y = 27 − 27 − 27 + 5 = −22"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Determine which turning point is a local maximum and which is a local minimum.\nGive a reason for each answer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "x = −1 is a local maximum (gradient changes from + to −); x = 3 is a local minimum (gradient changes from − to +).",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "x = −1 is a maximum with valid reason (e.g. d²y/dx² = 6x−6; at x=−1: −12 < 0 oe)" },
+            { "mark": "B1", "desc": "x = 3 is a minimum with valid reason (e.g. at x=3: d²y/dx² = 12 > 0 oe)" }
+          ],
+          "workingSteps": [
+            "Second derivative: d²y/dx² = 6x − 6",
+            "At x = −1: d²y/dx² = 6(−1) − 6 = −12 < 0 → local maximum",
+            "At x = 3: d²y/dx² = 6(3) − 6 = 12 > 0 → local minimum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H3-04-Q3",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "hard",
+      "context": "A farmer has 60 m of fencing and wants to enclose a rectangular area against a straight wall.\nThe wall forms one side of the rectangle, so only three sides need fencing.\nLet $x$ metres be the length of each of the two sides perpendicular to the wall.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that the area, $A$ m², of the enclosed rectangle is $A = 60x - 2x^2$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "A = x(60 − 2x) = 60x − 2x²",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Side parallel to wall = 60 − 2x" },
+            { "mark": "A1", "desc": "A = x(60 − 2x) = 60x − 2x² shown" }
+          ],
+          "workingSteps": [
+            "Total fencing: x + x + side parallel to wall = 60",
+            "Side parallel to wall = 60 − 2x",
+            "Area = length × width = x(60 − 2x) = 60x − 2x²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find $\\dfrac{dA}{dx}$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "60 − 4x",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Differentiates: 60 ± 4x seen" },
+            { "mark": "A1", "desc": "60 − 4x cao" }
+          ],
+          "workingSteps": [
+            "A = 60x − 2x²",
+            "dA/dx = 60 − 4x"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the value of $x$ that gives the maximum area.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "15",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets dA/dx = 0: 60 − 4x = 0" },
+            { "mark": "A1", "desc": "x = 15 cao" }
+          ],
+          "workingSteps": [
+            "60 − 4x = 0",
+            "4x = 60",
+            "x = 15"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Work out the maximum area of the rectangle.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "450",
+          "tolerance": null,
+          "unit": "m²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes their x = 15 into A = 60x − 2x²" },
+            { "mark": "A1", "desc": "450 m² cao" }
+          ],
+          "workingSteps": [
+            "A = 60(15) − 2(15)² = 900 − 2(225) = 900 − 450 = 450 m²"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Show that this value of $x$ gives a maximum area, not a minimum.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "d²A/dx² = −4 < 0, confirming a maximum.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "d²A/dx² = −4 < 0 stated, therefore maximum oe" }
+          ],
+          "workingSteps": [
+            "d²A/dx² = −4",
+            "Since −4 < 0, the turning point is a maximum"
+          ]
+        }
+      ]
+    }
+  ]
 }

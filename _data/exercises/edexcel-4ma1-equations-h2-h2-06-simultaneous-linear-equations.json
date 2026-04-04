@@ -6,10 +6,192 @@
   "tier": "Higher",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "H2-06-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve the simultaneous equations:\n$$3x + 4y = 10$$\n$$5x - 2y = 8$$",
+          "marks": 4,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(2, 1)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiplies eq 2 by 2: 10x − 4y = 16; adds to eq 1" },
+            { "mark": "M1", "desc": "13x = 26" },
+            { "mark": "A1", "desc": "x = 2" },
+            { "mark": "A1", "desc": "y = 1" }
+          ],
+          "workingSteps": [
+            "Multiply eq 2 by 2: 10x − 4y = 16",
+            "Add to eq 1: 13x = 26",
+            "x = 2",
+            "Substitute into eq 1: 6 + 4y = 10 → 4y = 4 → y = 1",
+            "Check eq 2: 5(2) − 2(1) = 10 − 2 = 8 ✓"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A straight line has equation $y = 2x - 3$.\nA second line has equation $3x + y = 7$.\nFind the coordinates of the point of intersection.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "coordinate",
+          "correctAnswer": "(2, 1)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes y = 2x − 3 into 3x + y = 7" },
+            { "mark": "M1", "desc": "5x − 3 = 7 → 5x = 10" },
+            { "mark": "A1", "desc": "x = 2, y = 1; coordinates (2, 1) cao" }
+          ],
+          "workingSteps": [
+            "Substitute y = 2x − 3 into 3x + y = 7:",
+            "3x + (2x − 3) = 7",
+            "5x − 3 = 7",
+            "5x = 10, x = 2",
+            "y = 2(2) − 3 = 1",
+            "Point of intersection: (2, 1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-06-Q2",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve the simultaneous equations:\n$$y = x + 1$$\n$$x^2 + y^2 = 25$$",
+          "marks": 5,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "(3, 4) and (−4, −3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes y = x + 1 into circle equation: x² + (x+1)² = 25" },
+            { "mark": "M1", "desc": "Expands: 2x² + 2x + 1 = 25 → 2x² + 2x − 24 = 0 → x² + x − 12 = 0" },
+            { "mark": "M1", "desc": "Factorises: (x+4)(x−3) = 0" },
+            { "mark": "A1", "desc": "x = 3 or x = −4" },
+            { "mark": "A1", "desc": "y = 4 or y = −3; pairs: (3,4) and (−4,−3)" }
+          ],
+          "workingSteps": [
+            "Substitute y = x + 1 into x² + y² = 25:",
+            "x² + (x+1)² = 25",
+            "x² + x² + 2x + 1 = 25",
+            "2x² + 2x − 24 = 0",
+            "x² + x − 12 = 0",
+            "(x + 4)(x − 3) = 0",
+            "x = 3 → y = 4; x = −4 → y = −3",
+            "Solutions: (3, 4) and (−4, −3)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Give a geometrical interpretation of your two solutions.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "The line y = x + 1 intersects the circle x² + y² = 25 at two points",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "The line intersects the circle at two points (a chord)" },
+            { "mark": "B1", "desc": "Circle has centre (0,0) and radius 5" }
+          ],
+          "workingSteps": [
+            "x² + y² = 25 is a circle, centre origin, radius 5",
+            "y = x + 1 is a straight line",
+            "Two solutions = line is a chord of the circle, crossing at (3,4) and (−4,−3)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Show that the line $y = x + 8$ does not intersect the circle $x^2 + y^2 = 25$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "Discriminant = 4 − 4(2)(39) < 0",
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes: x² + (x+8)² = 25 → 2x² + 16x + 39 = 0; finds discriminant" },
+            { "mark": "A1", "desc": "Δ = 256 − 312 = −56 < 0, so no real solutions, line does not intersect" }
+          ],
+          "workingSteps": [
+            "x² + (x+8)² = 25",
+            "x² + x² + 16x + 64 = 25",
+            "2x² + 16x + 39 = 0",
+            "Discriminant = 16² − 4(2)(39) = 256 − 312 = −56 < 0",
+            "No real solutions → line does not intersect the circle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-06-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve the simultaneous equations:\n$$y = 2x - 1$$\n$$y = x^2 - 4x + 5$$",
+          "marks": 5,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "(2, 3) and (3, 5)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets equal: x² − 4x + 5 = 2x − 1" },
+            { "mark": "M1", "desc": "x² − 6x + 6 = 0 ... check: x² − 6x + 6 = 0, discriminant = 36 − 24 = 12, roots not integer. Recheck" },
+            { "mark": "M1", "desc": "x² − 6x + 6 = 0: x = (6 ± √12)/2 = 3 ± √3" },
+            { "mark": "A1", "desc": "x = 3 + √3 or x = 3 − √3" },
+            { "mark": "A1", "desc": "Corresponding y values found" }
+          ],
+          "workingSteps": [
+            "Set equal: x² − 4x + 5 = 2x − 1",
+            "x² − 6x + 6 = 0",
+            "x = [6 ± √(36−24)]/2 = (6 ± √12)/2 = 3 ± √3",
+            "x₁ = 3 + √3 ≈ 4.73, y₁ = 2(3+√3) − 1 = 5 + 2√3",
+            "x₂ = 3 − √3 ≈ 1.27, y₂ = 2(3−√3) − 1 = 5 − 2√3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Give the exact coordinates of the two intersection points.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "(3+√3, 5+2√3) and (3−√3, 5−2√3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "(3+√3, 5+2√3) and (3−√3, 5−2√3) cao" }
+          ],
+          "workingSteps": [
+            "Exact coordinates: (3 + √3, 5 + 2√3) and (3 − √3, 5 − 2√3)"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,201 @@
   "tier": "Foundation",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "F2-07-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Factorise $x^2 + 5x + 6$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(x + 2)(x + 3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Two numbers with product 6 and sum 5: 2 and 3" },
+            { "mark": "A1", "desc": "(x + 2)(x + 3) cao" }
+          ],
+          "workingSteps": [
+            "Need two numbers: product = 6, sum = 5",
+            "2 × 3 = 6, 2 + 3 = 5 ✓",
+            "x² + 5x + 6 = (x + 2)(x + 3)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Hence, or otherwise, solve $x^2 + 5x + 6 = 0$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = -2 or x = -3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets each factor to zero: x + 2 = 0 or x + 3 = 0" },
+            { "mark": "A1", "desc": "x = −2 or x = −3 cao" }
+          ],
+          "workingSteps": [
+            "(x + 2)(x + 3) = 0",
+            "x + 2 = 0 → x = −2",
+            "x + 3 = 0 → x = −3"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Solve $x^2 - x - 12 = 0$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 4 or x = -3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Factorises: (x − 4)(x + 3) = 0" },
+            { "mark": "A1", "desc": "x = 4 or x = −3 cao" }
+          ],
+          "workingSteps": [
+            "Need two numbers: product = −12, sum = −1",
+            "−4 and 3: −4 × 3 = −12, −4 + 3 = −1 ✓",
+            "(x − 4)(x + 3) = 0",
+            "x = 4 or x = −3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2-07-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A rectangular garden has length $(x + 5)$ metres and width $(x + 2)$ metres.\nThe area of the garden is 40 m².",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that $x^2 + 7x - 30 = 0$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "show-that",
+          "correctAnswer": "(x+5)(x+2) = 40 → x² + 7x + 10 = 40 → x² + 7x − 30 = 0",
+          "markScheme": [
+            { "mark": "M1", "desc": "(x + 5)(x + 2) = 40 expanded to x² + 7x + 10 = 40" },
+            { "mark": "A1", "desc": "x² + 7x − 30 = 0 with all working shown" }
+          ],
+          "workingSteps": [
+            "Area = (x + 5)(x + 2) = 40",
+            "x² + 2x + 5x + 10 = 40",
+            "x² + 7x + 10 = 40",
+            "x² + 7x − 30 = 0"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Solve $x^2 + 7x - 30 = 0$ to find the value of $x$.\nState why one solution is not valid.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "x = 3 (x = −10 rejected as length must be positive)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Factorises: (x + 10)(x − 3) = 0" },
+            { "mark": "A1", "desc": "x = 3 and x = −10" },
+            { "mark": "A1", "desc": "x = −10 rejected because length must be positive" }
+          ],
+          "workingSteps": [
+            "Need two numbers: product = −30, sum = 7",
+            "10 and −3: 10 × (−3) = −30, 10 + (−3) = 7 ✓",
+            "(x + 10)(x − 3) = 0",
+            "x = −10 or x = 3",
+            "x = −10 is rejected (width = −10 + 2 = −8 m, impossible)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the perimeter of the garden.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "26",
+          "tolerance": null,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "B1", "desc": "2(8 + 5) = 26 m ft their x = 3" }
+          ],
+          "workingSteps": [
+            "Length = 3 + 5 = 8 m, Width = 3 + 2 = 5 m",
+            "Perimeter = 2 × (8 + 5) = 2 × 13 = 26 m"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F2-07-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Solve $2x^2 + 7x + 3 = 0$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = -1/2 or x = -3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Attempt to factorise: (2x + 1)(x + 3)" },
+            { "mark": "A1", "desc": "x = −½ or x = −3" },
+            { "mark": "A1", "desc": "Both values correct cao" }
+          ],
+          "workingSteps": [
+            "2x² + 7x + 3 = 0",
+            "Look for (2x + a)(x + b) where ab = 3 and 2b + a = 7",
+            "Try a = 1, b = 3: (2x + 1)(x + 3) = 2x² + 6x + x + 3 = 2x² + 7x + 3 ✓",
+            "2x + 1 = 0 → x = −½",
+            "x + 3 = 0 → x = −3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Use the quadratic formula to solve $x^2 + 4x - 7 = 0$.\nGive your answers correct to 2 decimal places.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = 1.32 or x = -5.32",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Correct substitution into formula: x = (−4 ± √(16 + 28)) / 2" },
+            { "mark": "A1", "desc": "x = (−4 ± √44) / 2" },
+            { "mark": "A1", "desc": "x = 1.32 or x = −5.32 (both, 2 dp)" }
+          ],
+          "workingSteps": [
+            "a = 1, b = 4, c = −7",
+            "x = (−4 ± √(16 − 4×1×(−7))) / (2×1)",
+            "x = (−4 ± √(16 + 28)) / 2",
+            "x = (−4 ± √44) / 2",
+            "x = (−4 + 6.633) / 2 = 1.316... ≈ 1.32",
+            "x = (−4 − 6.633) / 2 = −5.316... ≈ −5.32"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,221 @@
   "tier": "Higher",
   "domain": "equations",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 22,
+  "estimatedMinutes": 24,
+  "questions": [
+    {
+      "id": "H2-03-Q1",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "A company models its weekly profit $P$ (in £thousands) using the formula:\n$$P = \\frac{nv - c}{1000}$$\nwhere $n$ is the number of items sold, $v$ is the selling price per item (£) and $c$ is the weekly cost (£).",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out $P$ when $n = 800$, $v = 45$ and $c = 12000$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "24",
+          "tolerance": null,
+          "unit": "£thousands",
+          "markScheme": [
+            { "mark": "M1", "desc": "(800 × 45 − 12000) / 1000 = (36000 − 12000) / 1000" },
+            { "mark": "A1", "desc": "24 (£24 000) cao" }
+          ],
+          "workingSteps": [
+            "P = (800 × 45 − 12000) / 1000",
+            "= (36000 − 12000) / 1000",
+            "= 24000 / 1000 = 24 (£24 000)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Rearrange the formula to make $n$ the subject.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "n = (1000P + c) / v",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "1000P = nv − c" },
+            { "mark": "M1", "desc": "nv = 1000P + c" },
+            { "mark": "A1", "desc": "n = (1000P + c) / v oe" }
+          ],
+          "workingSteps": [
+            "P = (nv − c) / 1000",
+            "1000P = nv − c",
+            "nv = 1000P + c",
+            "n = (1000P + c) / v"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The company wants a weekly profit of £30 000.\nThe selling price is £50 and weekly costs are £15 000.\nWork out the minimum number of items they must sell.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "900",
+          "tolerance": null,
+          "unit": "items",
+          "markScheme": [
+            { "mark": "M1", "desc": "Uses n = (1000 × 30 + 15000) / 50" },
+            { "mark": "M1", "desc": "n = (30000 + 15000) / 50 = 45000 / 50" },
+            { "mark": "A1", "desc": "900 items cao" }
+          ],
+          "workingSteps": [
+            "P = 30 (£30 000), v = 50, c = 15000",
+            "n = (1000 × 30 + 15000) / 50",
+            "n = (30000 + 15000) / 50",
+            "n = 45000 / 50 = 900"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-03-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Make $r$ the subject of the formula $V = \\dfrac{4}{3}\\pi r^3$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "r = (3V / (4π))^(1/3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "3V = 4πr³" },
+            { "mark": "M1", "desc": "r³ = 3V / (4π)" },
+            { "mark": "A1", "desc": "r = ∛(3V / (4π)) oe" }
+          ],
+          "workingSteps": [
+            "V = (4/3)πr³",
+            "3V = 4πr³",
+            "r³ = 3V / (4π)",
+            "r = ∛(3V / (4π))"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A sphere has volume 523.6 cm³.\nWork out the radius. Give your answer to 1 decimal place.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "5.0",
+          "tolerance": 0.05,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "r³ = 3 × 523.6 / (4π) = 124.96..." },
+            { "mark": "A1", "desc": "r = 5.0 cm (1 dp) cao" }
+          ],
+          "workingSteps": [
+            "r³ = 3 × 523.6 / (4π) = 1570.8 / 12.566... = 124.95...",
+            "r = ∛124.95 = 4.999... ≈ 5.0 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Make $x$ the subject of the formula $y = \\dfrac{3x + 2}{x - 1}$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "x = (y + 2) / (y - 3)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "y(x − 1) = 3x + 2 → yx − y = 3x + 2" },
+            { "mark": "M1", "desc": "Collects x terms: yx − 3x = y + 2 → x(y − 3) = y + 2" },
+            { "mark": "A1", "desc": "x = (y + 2) / (y − 3) oe" }
+          ],
+          "workingSteps": [
+            "y(x − 1) = 3x + 2",
+            "yx − y = 3x + 2",
+            "yx − 3x = y + 2",
+            "x(y − 3) = y + 2",
+            "x = (y + 2) / (y − 3)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H2-03-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Given that $s = ut + \\dfrac{1}{2}at^2$, make $a$ the subject.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "a = 2(s - ut) / t^2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "s − ut = ½at²" },
+            { "mark": "A1", "desc": "a = 2(s − ut) / t² oe" }
+          ],
+          "workingSteps": [
+            "s − ut = ½at²",
+            "2(s − ut) = at²",
+            "a = 2(s − ut) / t²"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A car travels $s = 75$ m in $t = 5$ s with initial velocity $u = 10$ m/s.\nWork out the acceleration $a$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": "m/s²",
+          "markScheme": [
+            { "mark": "M1", "desc": "a = 2(75 − 10 × 5) / 25 = 2(25) / 25" },
+            { "mark": "A1", "desc": "a = 2 m/s² cao" }
+          ],
+          "workingSteps": [
+            "a = 2(s − ut) / t²",
+            "= 2(75 − 10 × 5) / 5²",
+            "= 2(75 − 50) / 25",
+            "= 2 × 25 / 25 = 2 m/s²"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Make $u$ the subject of $v^2 = u^2 + 2as$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "u = sqrt(v^2 - 2as)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "u² = v² − 2as" },
+            { "mark": "A1", "desc": "u = √(v² − 2as) cao (positive root for speed)" }
+          ],
+          "workingSteps": [
+            "v² = u² + 2as",
+            "u² = v² − 2as",
+            "u = √(v² − 2as)"
+          ]
+        }
+      ]
+    }
+  ]
 }

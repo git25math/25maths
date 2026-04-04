@@ -6,10 +6,311 @@
   "tier": "Foundation",
   "domain": "sequences",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 25,
+  "estimatedMinutes": 28,
+  "questions": [
+    {
+      "id": "F3-01-Q1",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "easy",
+      "context": "Here are the first five terms of an arithmetic sequence.\n$$6, \\ 11, \\ 16, \\ 21, \\ 26$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the next term of the sequence.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "31",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "31" }
+          ],
+          "workingSteps": [
+            "Common difference = 11 − 6 = 5",
+            "Next term = 26 + 5 = 31"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the $n$th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "5n + 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Common difference = 5 identified; 5n ± k seen" },
+            { "mark": "A1", "desc": "5n + 1 cao" }
+          ],
+          "workingSteps": [
+            "Common difference = 5, so nth term starts as 5n",
+            "When n = 1: 5(1) = 5, but first term is 6, so adjust by +1",
+            "nth term = 5n + 1",
+            "Check: n = 1 → 6 ✓, n = 3 → 16 ✓, n = 5 → 26 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the 30th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "151",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes n = 30 into their nth term expression" },
+            { "mark": "A1", "desc": "151 cao" }
+          ],
+          "workingSteps": [
+            "nth term = 5n + 1",
+            "30th term = 5(30) + 1 = 150 + 1 = 151"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Is 97 a term in this sequence? Give a reason for your answer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Yes — 5n + 1 = 97 gives n = 19.2, which is not a whole number, so 97 is NOT in the sequence",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 5n + 1 = 97 and attempts to solve" },
+            { "mark": "A1", "desc": "n = 96/5 = 19.2, not an integer; concludes No with valid reason" }
+          ],
+          "workingSteps": [
+            "5n + 1 = 97",
+            "5n = 96",
+            "n = 96/5 = 19.2",
+            "n is not a whole number, so 97 is not in the sequence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-01-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "easy",
+      "context": "Here are the first four terms of an arithmetic sequence.\n$$8, \\ 14, \\ 20, \\ 26$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the common difference of the sequence.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "6" }
+          ],
+          "workingSteps": [
+            "14 − 8 = 6"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the $n$th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "6n + 2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "6n ± k seen" },
+            { "mark": "A1", "desc": "6n + 2 cao" }
+          ],
+          "workingSteps": [
+            "Common difference = 6, so nth term is 6n + k",
+            "When n = 1: 6(1) + k = 8, so k = 2",
+            "nth term = 6n + 2",
+            "Check: n = 2 → 14 ✓, n = 4 → 26 ✓"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the 12th term of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "74",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substitutes n = 12 into their nth term" },
+            { "mark": "A1", "desc": "74 cao" }
+          ],
+          "workingSteps": [
+            "12th term = 6(12) + 2 = 72 + 2 = 74"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Mia says that 100 is a term in this sequence.\nIs Mia correct? Give a reason for your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Yes — 6n + 2 = 100 gives n = 98/6 ≈ 16.33, not an integer, so 100 is NOT in the sequence. Mia is wrong.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Sets 6n + 2 = 100 and attempts to solve" },
+            { "mark": "A1", "desc": "n = 98/6 ≈ 16.33, not a whole number" },
+            { "mark": "A1", "desc": "Concludes Mia is wrong with valid reason" }
+          ],
+          "workingSteps": [
+            "6n + 2 = 100",
+            "6n = 98",
+            "n = 98/6 = 16.33...",
+            "Not a whole number, so 100 is not in the sequence",
+            "Mia is not correct"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-01-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "Tiles are arranged to make a sequence of patterns.\n\nPattern 1: 5 tiles\nPattern 2: 9 tiles\nPattern 3: 13 tiles\nPattern 4: 17 tiles",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the number of tiles in Pattern 5.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "21",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "21" }
+          ],
+          "workingSteps": [
+            "Common difference = 4",
+            "Pattern 5 = 17 + 4 = 21"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out an expression, in terms of $n$, for the number of tiles in Pattern $n$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "4n + 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "4n ± k seen" },
+            { "mark": "A1", "desc": "4n + 1 cao" }
+          ],
+          "workingSteps": [
+            "Sequence: 5, 9, 13, 17 — common difference 4",
+            "nth term = 4n + k",
+            "n = 1: 4(1) + k = 5 → k = 1",
+            "nth term = 4n + 1"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Which pattern number uses exactly 61 tiles?",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "15",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "4n + 1 = 61 → 4n = 60" },
+            { "mark": "A1", "desc": "n = 15 cao" }
+          ],
+          "workingSteps": [
+            "4n + 1 = 61",
+            "4n = 60",
+            "n = 15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F3-01-Q4",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A sequence has $n$th term $T(n) = 6n - 4$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the first three terms of the sequence.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": ["2", "8", "14"],
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "T(1) = 2 and T(2) = 8" },
+            { "mark": "B1", "desc": "T(3) = 14" }
+          ],
+          "workingSteps": [
+            "T(1) = 6(1) − 4 = 2",
+            "T(2) = 6(2) − 4 = 8",
+            "T(3) = 6(3) − 4 = 14"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down the common difference of the sequence.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "6" }
+          ],
+          "workingSteps": [
+            "The coefficient of n in 6n − 4 is 6, which is the common difference"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the value of $n$ for which $T(n) = 68$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "12",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "6n − 4 = 68 → 6n = 72" },
+            { "mark": "A1", "desc": "n = 12 cao" }
+          ],
+          "workingSteps": [
+            "6n − 4 = 68",
+            "6n = 72",
+            "n = 12"
+          ]
+        }
+      ]
+    }
+  ]
 }
