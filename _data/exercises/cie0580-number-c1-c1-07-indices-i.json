@@ -6,10 +6,110 @@
   "tier": "Core",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 8,
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "id": "C1-07-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "Calculate $5^3$.",
+      "answerType": "integer",
+      "correctAnswer": "125",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$5 \\times 5 \\times 5$" },
+        { "mark": "A1", "desc": "$125$ cao" }
+      ],
+      "workingSteps": [
+        "$5^3 = 5 \\times 5 \\times 5 = 125$"
+      ],
+      "explanation": "$5^3$ means 5 multiplied by itself 3 times."
+    },
+    {
+      "id": "C1-07-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Write $2^3 \\times 2^4$ as a single power of 2.",
+      "answerType": "expression",
+      "correctAnswer": "$2^7$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Index law: add the powers" },
+        { "mark": "B1", "desc": "$2^7$ cao" }
+      ],
+      "workingSteps": [
+        "$2^3 \\times 2^4 = 2^{3+4} = 2^7$"
+      ],
+      "explanation": "When multiplying powers with the same base, add the indices."
+    },
+    {
+      "id": "C1-07-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the value of $4^0$.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$1$ cao" }
+          ],
+          "workingSteps": [
+            "Any non-zero number to the power 0 equals 1."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Simplify $\\dfrac{3^6}{3^2}$, giving your answer as a single power of 3.",
+          "marks": 2,
+          "commandWord": "simplify",
+          "answerType": "expression",
+          "correctAnswer": "$3^4$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Index law: subtract the powers $6 - 2$" },
+            { "mark": "A1", "desc": "$3^4$ cao" }
+          ],
+          "workingSteps": [
+            "$\\dfrac{3^6}{3^2} = 3^{6-2} = 3^4$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the value of $3^4$.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "81",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$81$ cao" }
+          ],
+          "workingSteps": [
+            "$3^4 = 3 \\times 3 \\times 3 \\times 3 = 81$"
+          ]
+        }
+      ]
+    }
+  ]
 }

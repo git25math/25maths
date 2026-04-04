@@ -6,10 +6,136 @@
   "tier": "Core",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 13,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "C4-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Triangle PQR is similar to triangle XYZ.\nPQ = 6 cm, QR = 9 cm, and XY = 10 cm.\nFind the length of YZ.",
+      "answerType": "numeric",
+      "correctAnswer": "15",
+      "tolerance": 0,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "Scale factor = XY/PQ = 10/6 = 5/3 soi" },
+        { "mark": "A1", "desc": "YZ = 9 × 5/3 = 15" }
+      ],
+      "workingSteps": [
+        "Scale factor = XY ÷ PQ = 10 ÷ 6 = 5/3",
+        "YZ = QR × 5/3 = 9 × 5/3 = 15 cm"
+      ],
+      "explanation": "Corresponding sides of similar triangles are in the same ratio."
+    },
+    {
+      "id": "C4-04-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Two similar shapes have corresponding lengths in the ratio 3 : 5.\nThe area of the smaller shape is 27 cm².\nCalculate the area of the larger shape.",
+      "answerType": "numeric",
+      "correctAnswer": "75",
+      "tolerance": 0,
+      "unit": "cm²",
+      "markScheme": [
+        { "mark": "M1", "desc": "Area scale factor = (5/3)² soi" },
+        { "mark": "M1", "desc": "= 25/9" },
+        { "mark": "A1", "desc": "27 × 25/9 = 75" }
+      ],
+      "workingSteps": [
+        "Length scale factor = 5/3",
+        "Area scale factor = (5/3)² = 25/9",
+        "Area of larger shape = 27 × 25/9 = 75 cm²"
+      ],
+      "explanation": "Area scale factor = (length scale factor)²."
+    },
+    {
+      "id": "C4-04-Q3",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "Triangles ABC and DEF are similar with AB corresponding to DE.\nAB = 4 cm, BC = 6 cm, AC = 5 cm, and DE = 10 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the scale factor from triangle ABC to triangle DEF.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "fraction",
+          "correctAnswer": "5/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "2.5 or 5/2 oe" }
+          ],
+          "workingSteps": [
+            "Scale factor = DE ÷ AB = 10 ÷ 4 = 2.5"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the lengths of EF and DF.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "15",
+          "tolerance": 0,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "B1", "desc": "EF = 6 × 2.5 = 15" },
+            { "mark": "B1", "desc": "DF = 5 × 2.5 = 12.5" }
+          ],
+          "workingSteps": [
+            "EF = BC × 2.5 = 6 × 2.5 = 15 cm",
+            "DF = AC × 2.5 = 5 × 2.5 = 12.5 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The area of triangle ABC is 9.2 cm².\nCalculate the area of triangle DEF.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "57.5",
+          "tolerance": 0.1,
+          "unit": "cm²",
+          "markScheme": [
+            { "mark": "M1", "desc": "Area scale factor = 2.5² = 6.25 soi" },
+            { "mark": "M1", "desc": "9.2 × 6.25" },
+            { "mark": "A1", "desc": "57.5" }
+          ],
+          "workingSteps": [
+            "Area scale factor = 2.5² = 6.25",
+            "Area of DEF = 9.2 × 6.25 = 57.5 cm²"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Write down the ratio of the perimeter of triangle ABC to the perimeter of triangle DEF.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "fraction",
+          "correctAnswer": "2/5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Perimeter ratio equals length scale factor oe" },
+            { "mark": "B1", "desc": "2 : 5 oe" }
+          ],
+          "workingSteps": [
+            "Perimeter ratio = length scale factor = 4/10 = 2/5",
+            "Ratio ABC : DEF = 2 : 5"
+          ]
+        }
+      ]
+    }
+  ]
 }

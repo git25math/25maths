@@ -6,10 +6,137 @@
   "tier": "Foundation",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 12,
+  "estimatedMinutes": 16,
+  "questions": [
+    {
+      "id": "F4-11-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": "Triangles ABC and PQR are similar. AB = 6 cm, BC = 9 cm, AC = 7.5 cm and PQ = 4 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the scale factor from triangle ABC to triangle PQR.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "2/3",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "PQ/AB = 4/6 = 2/3 oe" }
+          ],
+          "workingSteps": [
+            "Scale factor = PQ ÷ AB = 4 ÷ 6 = 2/3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the lengths QR and PR.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "QR = 6 cm, PR = 5 cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "Multiply BC and AC by scale factor 2/3" },
+            { "mark": "A1", "desc": "QR = 9 × 2/3 = 6 cm" },
+            { "mark": "A1", "desc": "PR = 7.5 × 2/3 = 5 cm" }
+          ],
+          "workingSteps": [
+            "QR = BC × (2/3) = 9 × 2/3 = 6 cm",
+            "PR = AC × (2/3) = 7.5 × 2/3 = 5 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the ratio of the area of triangle ABC to the area of triangle PQR.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "9/4",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Area ratio = (3/2)² = 9/4 (ratio ABC to PQR)" },
+            { "mark": "A1", "desc": "9 : 4 oe" }
+          ],
+          "workingSteps": [
+            "Length scale factor ABC to PQR = 3/2 (inverse of 2/3)",
+            "Area scale factor = (3/2)² = 9/4",
+            "Ratio of areas ABC : PQR = 9 : 4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F4-11-Q2",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "Two similar cylinders A and B have radii in the ratio 3 : 5.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the ratio of their curved surface areas.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "9/25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Area ratio = (3/5)² = 9/25" },
+            { "mark": "A1", "desc": "9 : 25" }
+          ],
+          "workingSteps": [
+            "Area scale factor = (length scale factor)² = (3/5)² = 9/25",
+            "Ratio of curved surface areas = 9 : 25"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the ratio of their volumes.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "27/125",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Volume ratio = (3/5)³ = 27/125" },
+            { "mark": "A1", "desc": "27 : 125" }
+          ],
+          "workingSteps": [
+            "Volume scale factor = (length scale factor)³ = (3/5)³ = 27/125",
+            "Ratio of volumes = 27 : 125"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Cylinder A has volume 270 cm³.\nWork out the volume of cylinder B.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "1250",
+          "tolerance": 0,
+          "unit": "cm³",
+          "markScheme": [
+            { "mark": "M1", "desc": "270 × (125/27)" },
+            { "mark": "A1", "desc": "1250 cm³" }
+          ],
+          "workingSteps": [
+            "Volume B = Volume A × (125/27)",
+            "= 270 × (125/27) = 10 × 125 = 1250 cm³"
+          ]
+        }
+      ]
+    }
+  ]
 }

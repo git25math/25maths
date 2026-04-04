@@ -6,10 +6,135 @@
   "tier": "Core",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 13,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "C4-07-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "O is the centre of a circle. A and B are points on the circumference.\nThe angle AOB = 112°.\nFind the angle ACB where C is another point on the major arc.",
+      "answerType": "integer",
+      "correctAnswer": "56",
+      "tolerance": null,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "Angle at centre = 2 × angle at circumference" },
+        { "mark": "A1", "desc": "112 ÷ 2 = 56" }
+      ],
+      "workingSteps": [
+        "Angle at centre = 2 × angle at circumference (same arc)",
+        "Angle ACB = 112° ÷ 2 = 56°"
+      ],
+      "explanation": "The angle at the centre is twice the angle at the circumference subtended by the same arc."
+    },
+    {
+      "id": "C4-07-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "ABCD is a cyclic quadrilateral.\nAngle ABC = 108° and angle BCD = 75°.\nFind angles ADC and DAB, giving reasons.",
+      "answerType": "explain",
+      "correctAnswer": "ADC = 72°, DAB = 105°",
+      "markScheme": [
+        { "mark": "M1", "desc": "Opposite angles of a cyclic quadrilateral sum to 180°" },
+        { "mark": "A1", "desc": "ADC = 180° − 108° = 72°" },
+        { "mark": "A1", "desc": "DAB = 180° − 75° = 105°" }
+      ],
+      "workingSteps": [
+        "Opposite angles of a cyclic quadrilateral are supplementary (sum to 180°)",
+        "ADC = 180° − ABC = 180° − 108° = 72°",
+        "DAB = 180° − BCD = 180° − 75° = 105°"
+      ],
+      "explanation": "Opposite angles of a cyclic quadrilateral add up to 180°."
+    },
+    {
+      "id": "C4-07-Q3",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "medium",
+      "context": "O is the centre of a circle. T is a point outside the circle.\nTA and TB are tangents from T to the circle.\nOA = 5 cm and TA = 12 cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Explain why angle OAT = 90°.",
+          "marks": 1,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The tangent to a circle is perpendicular to the radius at the point of contact.",
+          "markScheme": [
+            { "mark": "B1", "desc": "Tangent is perpendicular to radius at point of contact oe" }
+          ],
+          "workingSteps": [
+            "A tangent meets the radius at right angles at the point of tangency."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the length OT.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "13",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "OT² = OA² + TA²" },
+            { "mark": "M1", "desc": "= 25 + 144 = 169" },
+            { "mark": "A1", "desc": "OT = 13" }
+          ],
+          "workingSteps": [
+            "Triangle OAT is right-angled at A",
+            "OT² = OA² + TA² = 5² + 12² = 25 + 144 = 169",
+            "OT = √169 = 13 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the length TB, giving a reason.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "12",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "B1", "desc": "12" },
+            { "mark": "B1", "desc": "Tangents from an external point are equal in length oe" }
+          ],
+          "workingSteps": [
+            "Tangents drawn from an external point are equal in length",
+            "TB = TA = 12 cm"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Find the angle AOB.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "134.8",
+          "tolerance": 0.2,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "cos(angle AOT) = OA/OT = 5/13, so angle AOT = 67.38..." },
+            { "mark": "A1", "desc": "Angle AOB = 2 × 67.38... = 134.8° (1dp)" }
+          ],
+          "workingSteps": [
+            "In right triangle OAT: cos(AOT) = OA/OT = 5/13",
+            "Angle AOT = arccos(5/13) = 67.38°",
+            "By symmetry, angle BOT = 67.38°",
+            "Angle AOB = 67.38° + 67.38° = 134.8° (1dp)"
+          ]
+        }
+      ]
+    }
+  ]
 }

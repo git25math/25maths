@@ -6,10 +6,102 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "E1-12-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A cyclist travels at an average speed of $18$ km/h.\nCalculate how far she travels in $2$ hours $30$ minutes.",
+      "answerType": "integer",
+      "correctAnswer": "45",
+      "tolerance": null,
+      "unit": "km",
+      "markScheme": [
+        { "mark": "M1", "desc": "Converts time: $2$ h $30$ min $= 2.5$ h" },
+        { "mark": "M1", "desc": "Distance $= 18 \\times 2.5$" },
+        { "mark": "A1", "desc": "$45$ km cao" }
+      ],
+      "workingSteps": [
+        "Time $= 2$ hours $30$ min $= 2.5$ h",
+        "Distance $= 18 \\times 2.5 = 45$ km"
+      ],
+      "explanation": "Distance = Speed × Time."
+    },
+    {
+      "id": "E1-12-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Water flows from a reservoir at $250$ litres per minute.\nCalculate the time, in hours and minutes, to empty a $90000$-litre reservoir.",
+      "answerType": "expression",
+      "correctAnswer": "6 hours",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Time $= 90000 \\div 250 = 360$ minutes" },
+        { "mark": "M1", "desc": "Convert: $360 \\div 60 = 6$ hours" },
+        { "mark": "A1", "desc": "$6$ hours cao" }
+      ],
+      "workingSteps": [
+        "Time $= 90000 \\div 250 = 360$ minutes",
+        "$360 \\div 60 = 6$ hours"
+      ],
+      "explanation": "Time = Amount ÷ Rate."
+    },
+    {
+      "id": "E1-12-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "hard",
+      "context": "Petrol costs $\\$1.45$ per litre in Country A and $€1.20$ per litre in Country B.\nThe exchange rate is $\\$1 = €0.88$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Convert the price in Country B to dollars per litre.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "1.36",
+          "tolerance": 0.01,
+          "unit": "$/litre",
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\$1 = €0.88 \\Rightarrow €1 = \\$\\dfrac{1}{0.88}$; price in $ $= 1.20 \\div 0.88$" },
+            { "mark": "A1", "desc": "$\\$1.364...$ per litre, accept $\\$1.36$ (3 sf)" }
+          ],
+          "workingSteps": [
+            "$€1 = \\dfrac{1}{0.88}$ dollars $= \\$1.1364...$",
+            "Price in $ $= €1.20 \\div 0.88 = \\$1.3636...$ per litre $\\approx \\$1.36$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "In which country is petrol cheaper? Show working.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "explain",
+          "correctAnswer": "Country B (≈$1.36/L < $1.45/L in Country A)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Compares $1.45 with their converted price" },
+            { "mark": "A1", "desc": "Country B is cheaper: $\\$1.36 < \\$1.45$" }
+          ],
+          "workingSteps": [
+            "Country A: $\\$1.45$/litre",
+            "Country B: $\\$1.36$/litre",
+            "$1.36 < 1.45$, so Country B is cheaper"
+          ]
+        }
+      ]
+    }
+  ]
 }

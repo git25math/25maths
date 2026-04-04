@@ -6,10 +6,123 @@
   "tier": "Core",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 18,
+  "questions": [
+    {
+      "id": "C4-06-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "AB and CD are parallel lines.\nA transversal crosses AB at point P and CD at point Q.\nThe angle APQ = 65°.\nCalculate the value of the co-interior angle PQD.",
+      "answerType": "integer",
+      "correctAnswer": "115",
+      "tolerance": null,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "Co-interior angles add up to 180°" },
+        { "mark": "M1", "desc": "180 − 65" },
+        { "mark": "A1", "desc": "115" }
+      ],
+      "workingSteps": [
+        "Co-interior angles (same-side interior angles) sum to 180°",
+        "PQD = 180° − 65° = 115°"
+      ],
+      "explanation": "Co-interior angles between parallel lines add up to 180°."
+    },
+    {
+      "id": "C4-06-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "Calculate the interior angle of a regular octagon.",
+      "answerType": "integer",
+      "correctAnswer": "135",
+      "tolerance": null,
+      "unit": "°",
+      "markScheme": [
+        { "mark": "M1", "desc": "Sum of interior angles = (8 − 2) × 180 = 1080° or exterior angle = 360/8 = 45°" },
+        { "mark": "A1", "desc": "1080 ÷ 8 = 135 or 180 − 45 = 135" }
+      ],
+      "workingSteps": [
+        "Sum of interior angles = (8 − 2) × 180° = 6 × 180° = 1080°",
+        "Each interior angle = 1080° ÷ 8 = 135°"
+      ],
+      "explanation": "Sum of interior angles of n-sided polygon = (n − 2) × 180°."
+    },
+    {
+      "id": "C4-06-Q3",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "medium",
+      "context": "PQ and RS are parallel lines. T is a point between the two lines.\nAngle QPT = 48° and angle RST = 73°.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Draw a line through T parallel to PQ.\nUse alternate angles to find angle PTR, giving reasons for your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "121",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "Draw line through T parallel to PQ and RS" },
+            { "mark": "M1", "desc": "Alternate angle with QPT = 48°; alternate angle with RST = 73°" },
+            { "mark": "A1", "desc": "Angle PTR = 48° + 73° = 121°" }
+          ],
+          "workingSteps": [
+            "Draw line XY through T parallel to PQ and RS",
+            "Angle PTX = 48° (alternate angles, XY ∥ PQ)",
+            "Angle XTR = 73° (alternate angles, XY ∥ RS)",
+            "Angle PTR = 48° + 73° = 121°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The exterior angle of a regular polygon is 24°.\nCalculate the number of sides of the polygon.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "15",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Number of sides = 360 ÷ exterior angle" },
+            { "mark": "M1", "desc": "360 ÷ 24" },
+            { "mark": "A1", "desc": "15" }
+          ],
+          "workingSteps": [
+            "Sum of exterior angles = 360°",
+            "Number of sides = 360° ÷ 24° = 15"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the interior angle of the polygon in part (b).",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "156",
+          "tolerance": null,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "Interior + exterior = 180°" },
+            { "mark": "M1", "desc": "180 − 24" },
+            { "mark": "A1", "desc": "156°" }
+          ],
+          "workingSteps": [
+            "Interior angle = 180° − exterior angle",
+            "= 180° − 24° = 156°"
+          ]
+        }
+      ]
+    }
+  ]
 }

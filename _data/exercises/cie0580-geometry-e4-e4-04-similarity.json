@@ -6,10 +6,122 @@
   "tier": "Extended",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 14,
+  "estimatedMinutes": 20,
+  "questions": [
+    {
+      "id": "E4-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Two similar cones have volumes 54 cm³ and 128 cm³.\nThe height of the smaller cone is 9 cm.\nFind the height of the larger cone.",
+      "answerType": "numeric",
+      "correctAnswer": "12",
+      "tolerance": 0,
+      "unit": "cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "Volume scale factor = 128/54 = 64/27" },
+        { "mark": "M1", "desc": "Length scale factor = ∛(64/27) = 4/3" },
+        { "mark": "A1", "desc": "Height = 9 × 4/3 = 12 cm" }
+      ],
+      "workingSteps": [
+        "Volume ratio = 128/54 = 64/27",
+        "Length ratio = ∛(64/27) = 4/3",
+        "Height of larger cone = 9 × 4/3 = 12 cm"
+      ],
+      "explanation": "Volume scale factor = (length scale factor)³. Take cube root to find length ratio."
+    },
+    {
+      "id": "E4-04-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "show",
+      "difficulty": "hard",
+      "questionText": "In triangle PQR, a line XY is drawn parallel to QR with X on PQ and Y on PR.\nPX = 4 cm, XQ = 6 cm and XY = 8 cm.\nShow that QR = 20 cm.",
+      "answerType": "show-that",
+      "correctAnswer": "QR = 20 cm",
+      "markScheme": [
+        { "mark": "M1", "desc": "Triangles PXY and PQR are similar (XY ∥ QR, AA)" },
+        { "mark": "M1", "desc": "PQ = PX + XQ = 4 + 6 = 10" },
+        { "mark": "M1", "desc": "Scale factor = PQ/PX = 10/4 = 5/2" },
+        { "mark": "A1", "desc": "QR = XY × 5/2 = 8 × 5/2 = 20 cm" }
+      ],
+      "workingSteps": [
+        "Since XY ∥ QR, triangles PXY and PQR are similar (AA: shared angle at P, corresponding angles equal)",
+        "PQ = PX + XQ = 4 + 6 = 10 cm",
+        "Scale factor = PQ/PX = 10/4 = 5/2",
+        "QR = XY × (5/2) = 8 × 5/2 = 20 cm"
+      ],
+      "explanation": "When a line is parallel to one side of a triangle, it creates a smaller similar triangle."
+    },
+    {
+      "id": "E4-04-Q3",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "hard",
+      "context": "Two similar pyramids A and B have surface areas 150 cm² and 600 cm² respectively.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the ratio of their corresponding lengths.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "1/2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Area ratio = 150/600 = 1/4" },
+            { "mark": "A1", "desc": "Length ratio = √(1/4) = 1/2" }
+          ],
+          "workingSteps": [
+            "Area scale factor = 150/600 = 1/4",
+            "Length scale factor = √(1/4) = 1/2",
+            "Ratio of lengths A : B = 1 : 2"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The volume of pyramid B is 960 cm³.\nCalculate the volume of pyramid A.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "120",
+          "tolerance": null,
+          "unit": "cm³",
+          "markScheme": [
+            { "mark": "M1", "desc": "Volume ratio = (1/2)³ = 1/8" },
+            { "mark": "M1", "desc": "Volume A = 960 × 1/8" },
+            { "mark": "A1", "desc": "120 cm³" }
+          ],
+          "workingSteps": [
+            "Volume scale factor = (1/2)³ = 1/8",
+            "Volume A = 960 × 1/8 = 120 cm³"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the ratio of the volume of pyramid A to the volume of pyramid B.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "fraction",
+          "correctAnswer": "1/8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "1 : 8 oe" },
+            { "mark": "B1", "desc": "or 120 : 960 simplified" }
+          ],
+          "workingSteps": [
+            "Volume A : Volume B = 120 : 960 = 1 : 8"
+          ]
+        }
+      ]
+    }
+  ]
 }

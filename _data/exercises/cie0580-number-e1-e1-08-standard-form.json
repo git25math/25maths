@@ -6,10 +6,102 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "E1-08-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate $(3.6 \\times 10^5) \\times (2.5 \\times 10^{-3})$.\nGive your answer in standard form.",
+      "answerType": "expression",
+      "correctAnswer": "$9 \\times 10^2$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$3.6 \\times 2.5 = 9$" },
+        { "mark": "M1", "desc": "$10^5 \\times 10^{-3} = 10^{5+(-3)} = 10^2$" },
+        { "mark": "A1", "desc": "$9 \\times 10^2$ cao" }
+      ],
+      "workingSteps": [
+        "$(3.6 \\times 2.5) = 9$",
+        "$10^5 \\times 10^{-3} = 10^{5-3} = 10^2$",
+        "Answer: $9 \\times 10^2$"
+      ],
+      "explanation": "Multiply the decimal parts, then add the powers of 10."
+    },
+    {
+      "id": "E1-08-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate $\\dfrac{8.4 \\times 10^7}{2.1 \\times 10^4}$.\nGive your answer in standard form.",
+      "answerType": "expression",
+      "correctAnswer": "$4 \\times 10^3$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$8.4 \\div 2.1 = 4$" },
+        { "mark": "M1", "desc": "$10^7 \\div 10^4 = 10^{7-4} = 10^3$" },
+        { "mark": "A1", "desc": "$4 \\times 10^3$ cao" }
+      ],
+      "workingSteps": [
+        "$8.4 \\div 2.1 = 4$",
+        "$10^7 \\div 10^4 = 10^3$",
+        "Answer: $4 \\times 10^3$"
+      ],
+      "explanation": "Divide the decimal parts; subtract the powers of 10."
+    },
+    {
+      "id": "E1-08-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "hard",
+      "context": "The speed of light is approximately $3 \\times 10^8$ m/s.\nThe distance from the Sun to Earth is $1.5 \\times 10^{11}$ m.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the time, in seconds, for light to travel from the Sun to Earth.\nGive your answer in standard form.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "expression",
+          "correctAnswer": "$5 \\times 10^2$",
+          "tolerance": null,
+          "unit": "s",
+          "markScheme": [
+            { "mark": "M1", "desc": "Time $= \\dfrac{1.5 \\times 10^{11}}{3 \\times 10^8}$" },
+            { "mark": "A1", "desc": "$5 \\times 10^2$ s cao" }
+          ],
+          "workingSteps": [
+            "Time $= \\dfrac{1.5 \\times 10^{11}}{3 \\times 10^8} = \\dfrac{1.5}{3} \\times 10^{11-8} = 0.5 \\times 10^3 = 5 \\times 10^2$ s"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Convert your answer to minutes. Give your answer correct to 1 decimal place.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "8.3",
+          "tolerance": 0.1,
+          "unit": "minutes",
+          "markScheme": [
+            { "mark": "M1", "desc": "$500 \\div 60$" },
+            { "mark": "A1", "desc": "$8.3$ minutes (1 dp)" }
+          ],
+          "workingSteps": [
+            "$5 \\times 10^2 = 500$ seconds",
+            "$500 \\div 60 = 8.3\\overline{3}$ minutes $\\approx 8.3$ min (1 dp)"
+          ]
+        }
+      ]
+    }
+  ]
 }

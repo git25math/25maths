@@ -6,10 +6,239 @@
   "tier": "Foundation",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "F6-01-Q1",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "easy",
+      "context": "30 students were asked to choose their favourite type of film.\nThe results are shown in the table.\n\n| Type of film | Frequency |\n|--------------|----------|\n| Action       | 9        |\n| Comedy       | 6        |\n| Drama        | 5        |\n| Horror       | 7        |\n| Animation    | 3        |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the angle needed to represent 'Action' in a pie chart.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "108",
+          "tolerance": 0.5,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "9/30 × 360 or 9 × 12" },
+            { "mark": "A1", "desc": "108°" }
+          ],
+          "workingSteps": [
+            "Angle = (9 ÷ 30) × 360 = 0.3 × 360 = 108°"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the angle needed to represent 'Animation' in the pie chart.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "36",
+          "tolerance": 0.5,
+          "unit": "°",
+          "markScheme": [
+            { "mark": "M1", "desc": "3/30 × 360 or 3 × 12" },
+            { "mark": "A1", "desc": "36°" }
+          ],
+          "workingSteps": [
+            "Angle = (3 ÷ 30) × 360 = 0.1 × 360 = 36°"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Give a reason why a pie chart is suitable for displaying this data.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "It shows proportions of each category out of the whole",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Shows proportions / parts of a whole / easy to compare categories oe" }
+          ],
+          "workingSteps": []
+        },
+        {
+          "label": "d",
+          "questionText": "A student says: 'More than half of the students chose Action or Comedy.'\nIs the student correct? Give a reason for your answer.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "Yes — 9+6=15 students which is exactly half, so the statement is incorrect",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "No — 9+6=15 which is exactly half (not more than half) oe" }
+          ],
+          "workingSteps": [
+            "Action + Comedy = 9 + 6 = 15 = 15/30 = exactly half, not more than half"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F6-01-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "The bar chart shows the number of cars sold by a dealership each month for five months.\n\n| Month    | Cars sold |\n|----------|-----------|\n| January  | 14        |\n| February | 10        |\n| March    | 18        |\n| April    | 22        |\n| May      | 16        |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the total number of cars sold over the five months.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "80",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "14+10+18+22+16 = 80" }
+          ],
+          "workingSteps": [
+            "Total = 14+10+18+22+16 = 80"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the mean number of cars sold per month.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "16",
+          "tolerance": 0.1,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "their total ÷ 5" },
+            { "mark": "A1", "desc": "80 ÷ 5 = 16" }
+          ],
+          "workingSteps": [
+            "Mean = 80 ÷ 5 = 16 cars per month"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "In June, the dealership sold 25 cars.\nDescribe how this would affect the mean.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "The mean would increase because 25 is greater than the current mean of 16",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "New mean = (80+25)/6 = 105/6 = 17.5" },
+            { "mark": "A1", "desc": "Mean increases from 16 to 17.5 with correct working" }
+          ],
+          "workingSteps": [
+            "New total = 80 + 25 = 105",
+            "New mean = 105 ÷ 6 = 17.5",
+            "Mean increases from 16 to 17.5"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Give a reason why a bar chart is appropriate for displaying monthly car sales.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "A bar chart clearly shows and compares discrete data across different categories (months)",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "Shows discrete data / easy to compare values across different months oe" }
+          ],
+          "workingSteps": []
+        },
+        {
+          "label": "e",
+          "questionText": "Work out the range of the monthly car sales.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "12",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "22 − 10 = 12" }
+          ],
+          "workingSteps": [
+            "Range = 22 − 10 = 12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F6-01-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "medium",
+      "context": "A frequency polygon is drawn showing the heights (cm) of 40 plants.\nThe points are plotted at midpoints 15, 25, 35, 45, 55 with frequencies 4, 9, 14, 10, 3.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the total number of plants.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "40",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "4+9+14+10+3 = 40" }
+          ],
+          "workingSteps": [
+            "Total = 4+9+14+10+3 = 40"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out an estimate for the mean height.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "35",
+          "tolerance": 0.5,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "Σfx = 4×15 + 9×25 + 14×35 + 10×45 + 3×55" },
+            { "mark": "M1", "desc": "Σfx = 60+225+490+450+165 = 1390" },
+            { "mark": "A1", "desc": "1390 ÷ 40 = 34.75 cm, accept 34.75 or 34.8" }
+          ],
+          "workingSteps": [
+            "Σfx = 4×15 + 9×25 + 14×35 + 10×45 + 3×55",
+            "Σfx = 60 + 225 + 490 + 450 + 165 = 1390",
+            "Mean = 1390 ÷ 40 = 34.75 cm"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the modal class.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "30 < h ≤ 40",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "30 < h ≤ 40 (midpoint 35, highest frequency 14)" }
+          ],
+          "workingSteps": [
+            "Highest frequency = 14 at midpoint 35, so modal class is 30 < h ≤ 40"
+          ]
+        }
+      ]
+    }
+  ]
 }

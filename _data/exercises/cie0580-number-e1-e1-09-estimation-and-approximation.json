@@ -6,10 +6,106 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "E1-09-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "By rounding each number to 1 significant figure, estimate:\n$$\\dfrac{\\sqrt{24.5} \\times 3.87^2}{0.512}$$",
+      "answerType": "integer",
+      "correctAnswer": "200",
+      "tolerance": 0,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$\\sqrt{24.5} \\approx \\sqrt{25} = 5$; $3.87^2 \\approx 4^2 = 16$; $0.512 \\approx 0.5$" },
+        { "mark": "M1", "desc": "$\\dfrac{5 \\times 16}{0.5}$" },
+        { "mark": "A1", "desc": "$200$ cao" }
+      ],
+      "workingSteps": [
+        "$\\sqrt{24.5} \\approx \\sqrt{25} = 5$ (1 sf of 24.5 is 20, but $\\sqrt{25}$ is more useful)",
+        "$3.87^2 \\approx 4^2 = 16$",
+        "$0.512 \\approx 0.5$",
+        "$\\dfrac{5 \\times 16}{0.5} = \\dfrac{80}{0.5} = 160$"
+      ],
+      "explanation": "Round to 1 sf to simplify the calculation; exact estimation may vary."
+    },
+    {
+      "id": "E1-09-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "The exact answer to a calculation is $47.826$.\nWrite this correct to:\n(a) 3 significant figures\n(b) 2 decimal places\n(c) the nearest integer",
+      "answerType": "table-fill",
+      "correctAnswer": ["47.8", "47.83", "48"],
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) $47.8$" },
+        { "mark": "B1", "desc": "(b) $47.83$" },
+        { "mark": "B1", "desc": "(c) $48$" }
+      ],
+      "workingSteps": [
+        "(a) 3 sf: first 3 significant digits are 4, 7, 8; next digit is 2 → $47.8$",
+        "(b) 2 dp: look at 3rd dp = 6 ≥ 5, round up → $47.83$",
+        "(c) Nearest integer: 0.826 ≥ 0.5, round up → $48$"
+      ],
+      "explanation": "Count significant figures from the first non-zero digit."
+    },
+    {
+      "id": "E1-09-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write $0.003672$ correct to 2 significant figures.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "decimal-exact",
+          "correctAnswer": "0.0037",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "First sf is 3, second is 6; next digit is 7 ≥ 5 → round up 6 to 7" },
+            { "mark": "A1", "desc": "$0.0037$ cao" }
+          ],
+          "workingSteps": [
+            "First non-zero digit: 3 (1st sf), next is 6 (2nd sf)",
+            "3rd sf digit is 7 ≥ 5, so round up the 6",
+            "$0.003672 \\approx 0.0037$ (2 sf)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A student writes $\\dfrac{1}{3} \\approx 0.333$.\nFind the percentage error in this approximation.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "0.1",
+          "tolerance": 0.05,
+          "unit": "%",
+          "markScheme": [
+            { "mark": "M1", "desc": "Error $= \\dfrac{1}{3} - 0.333 = 0.000\\overline{3}$; percentage error $= \\dfrac{0.000\\overline{3}}{1/3} \\times 100$" },
+            { "mark": "A1", "desc": "$0.1\\%$ cao" }
+          ],
+          "workingSteps": [
+            "Exact: $\\dfrac{1}{3} = 0.3\\overline{3}$",
+            "Error $= 0.3\\overline{3} - 0.333 = 0.000\\overline{3}$",
+            "Percentage error $= \\dfrac{0.000\\overline{3}}{1/3} \\times 100 = 0.001 \\times 100 = 0.1\\%$"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,98 @@
   "tier": "Core",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "C1-12-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "easy",
+      "questionText": "A car travels $180$ km in $2.5$ hours.\nCalculate the average speed in km/h.",
+      "answerType": "integer",
+      "correctAnswer": "72",
+      "tolerance": null,
+      "unit": "km/h",
+      "markScheme": [
+        { "mark": "M1", "desc": "Speed $= \\dfrac{\\text{distance}}{\\text{time}}$" },
+        { "mark": "M1", "desc": "$180 \\div 2.5$" },
+        { "mark": "A1", "desc": "$72$ km/h cao" }
+      ],
+      "workingSteps": [
+        "Speed $= \\dfrac{\\text{distance}}{\\text{time}} = \\dfrac{180}{2.5} = 72$ km/h"
+      ],
+      "explanation": "Speed = Distance ÷ Time."
+    },
+    {
+      "id": "C1-12-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "A tap fills a 45-litre tank at a rate of $3$ litres per minute.\nHow long does it take to fill the tank? Give your answer in minutes.",
+      "answerType": "integer",
+      "correctAnswer": "15",
+      "tolerance": null,
+      "unit": "minutes",
+      "markScheme": [
+        { "mark": "M1", "desc": "Time $= \\dfrac{\\text{volume}}{\\text{rate}}$" },
+        { "mark": "M1", "desc": "$45 \\div 3$" },
+        { "mark": "A1", "desc": "$15$ minutes cao" }
+      ],
+      "workingSteps": [
+        "Time $= \\dfrac{45}{3} = 15$ minutes"
+      ],
+      "explanation": "Rate = Amount ÷ Time, so Time = Amount ÷ Rate."
+    },
+    {
+      "id": "C1-12-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "medium",
+      "context": "A train leaves town A at 09:45 and arrives at town B at 11:15.\nThe distance from A to B is $120$ km.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Calculate the time taken for the journey in minutes.",
+          "marks": 1,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "90",
+          "tolerance": null,
+          "unit": "minutes",
+          "markScheme": [
+            { "mark": "B1", "desc": "$90$ minutes cao" }
+          ],
+          "workingSteps": [
+            "From 09:45 to 11:15 = 1 hour 30 minutes = 90 minutes"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate the average speed of the train in km/h.",
+          "marks": 3,
+          "commandWord": "calculate",
+          "answerType": "integer",
+          "correctAnswer": "80",
+          "tolerance": null,
+          "unit": "km/h",
+          "markScheme": [
+            { "mark": "M1", "desc": "Convert time: $90$ min $= 1.5$ h" },
+            { "mark": "M1", "desc": "$120 \\div 1.5$" },
+            { "mark": "A1", "desc": "$80$ km/h cao" }
+          ],
+          "workingSteps": [
+            "Time $= 90$ min $= 1.5$ h",
+            "Speed $= 120 \\div 1.5 = 80$ km/h"
+          ]
+        }
+      ]
+    }
+  ]
 }

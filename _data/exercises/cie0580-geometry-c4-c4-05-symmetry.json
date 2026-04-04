@@ -6,10 +6,110 @@
   "tier": "Core",
   "domain": "geometry",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "C4-05-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the number of lines of symmetry of a regular hexagon.",
+      "answerType": "integer",
+      "correctAnswer": "6",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B2", "desc": "6 cao" }
+      ],
+      "workingSteps": [
+        "A regular hexagon has 6 lines of symmetry: 3 through opposite vertices and 3 through midpoints of opposite sides."
+      ],
+      "explanation": "A regular polygon with n sides has n lines of symmetry."
+    },
+    {
+      "id": "C4-05-Q2",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write down the order of rotational symmetry of a rectangle.",
+      "answerType": "integer",
+      "correctAnswer": "2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B2", "desc": "2 cao" }
+      ],
+      "workingSteps": [
+        "A rectangle maps onto itself after rotations of 180° and 360°.",
+        "Order of rotational symmetry = 2."
+      ],
+      "explanation": "The order of rotational symmetry is the number of times a shape looks the same in one full turn."
+    },
+    {
+      "id": "C4-05-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "A shape has exactly 4 lines of symmetry and order of rotational symmetry 4.\nWrite down the name of one such shape.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "explain",
+          "correctAnswer": "Square",
+          "markScheme": [
+            { "mark": "B1", "desc": "Square oe" }
+          ],
+          "workingSteps": [
+            "A square has 4 lines of symmetry and rotational symmetry of order 4."
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A parallelogram (that is not a rectangle) has no lines of symmetry.\nWrite down the order of rotational symmetry of a parallelogram.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "2",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "2" }
+          ],
+          "workingSteps": [
+            "A parallelogram maps onto itself after 180° rotation, so order = 2."
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Complete the table by writing the number of lines of symmetry and the order of rotational symmetry for each shape.",
+          "marks": 4,
+          "commandWord": "write-down",
+          "answerType": "table-fill",
+          "correctAnswer": ["equilateral triangle: 3 lines, order 3", "isosceles triangle: 1 line, order 1", "rhombus: 2 lines, order 2", "regular pentagon: 5 lines, order 5"],
+          "markScheme": [
+            { "mark": "B1", "desc": "Equilateral triangle: 3 lines, order 3" },
+            { "mark": "B1", "desc": "Isosceles triangle: 1 line, order 1" },
+            { "mark": "B1", "desc": "Rhombus: 2 lines, order 2" },
+            { "mark": "B1", "desc": "Regular pentagon: 5 lines, order 5" }
+          ],
+          "workingSteps": [
+            "Equilateral triangle: 3 lines of symmetry, rotational order 3",
+            "Isosceles triangle: 1 line of symmetry, rotational order 1",
+            "Rhombus: 2 lines of symmetry, rotational order 2",
+            "Regular pentagon: 5 lines of symmetry, rotational order 5"
+          ]
+        }
+      ]
+    }
+  ]
 }

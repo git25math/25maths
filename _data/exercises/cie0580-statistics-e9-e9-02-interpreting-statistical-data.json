@@ -6,10 +6,144 @@
   "tier": "Extended",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 19,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "E9-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "The back-to-back stem-and-leaf diagram shows the ages of members of two sports clubs.\n\n```\n         Club A  | Stem |  Club B\n           8 5 1 |  1   |  2 4 6\n       9 7 4 2 0 |  2   |  1 3 5 8\n         6 3 1 1 |  3   |  0 2 7\n             5 2 |  4   |  1\n```\nKey: 1 | 2 | 4 means 21 in Club A and 24 in Club B.\n\nFor Club B, find\n(a) the mode,\n(b) the median age,\n(c) the range.",
+      "answerType": "integer",
+      "correctAnswer": "(a) no mode, (b) 25, (c) 29",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) No mode (all values appear once) or 'none'" },
+        { "mark": "B2", "desc": "(b) Club B ordered: 12,14,16,21,23,25,28,30,32,37,41 → 6th of 11 = 25" },
+        { "mark": "B1", "desc": "(c) 41 − 12 = 29" }
+      ],
+      "workingSteps": [
+        "Club B data in order: 12, 14, 16, 21, 23, 25, 28, 30, 32, 37, 41",
+        "(a) No value repeats → no mode",
+        "(b) 11 values → median is 6th = 25",
+        "(c) Range = 41 − 12 = 29"
+      ],
+      "explanation": "Read the right-hand side left-to-right for Club B. Order the values to find median."
+    },
+    {
+      "id": "E9-02-Q2",
+      "type": "structured",
+      "totalMarks": 9,
+      "difficulty": "medium",
+      "context": "The table shows the distribution of test scores (out of 60) for 30 students.\n\n| Score | Frequency |\n|-------|-----------|\n| 21–30 | 3         |\n| 31–40 | 8         |\n| 41–50 | 13        |\n| 51–60 | 6         |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the modal class.",
+          "marks": 1,
+          "commandWord": "write-down",
+          "answerType": "explain",
+          "correctAnswer": "41–50",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "41–50 (highest frequency = 13)" }
+          ],
+          "workingSteps": [
+            "Highest frequency = 13, in the class 41–50"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate an estimate of the mean score.",
+          "marks": 4,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "44",
+          "tolerance": 0.5,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Uses midpoints: 25.5, 35.5, 45.5, 55.5" },
+            { "mark": "M1", "desc": "Σfx = 3×25.5 + 8×35.5 + 13×45.5 + 6×55.5" },
+            { "mark": "M1", "desc": "Σfx = 76.5 + 284 + 591.5 + 333 = 1285" },
+            { "mark": "A1", "desc": "1285 ÷ 30 = 42.83... accept 42.8 or better" }
+          ],
+          "workingSteps": [
+            "Midpoints: 25.5, 35.5, 45.5, 55.5",
+            "Σfx = 3×25.5 + 8×35.5 + 13×45.5 + 6×55.5",
+            "Σfx = 76.5 + 284 + 591.5 + 333 = 1285",
+            "Mean = 1285 ÷ 30 = 42.83..."
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Write down the class that contains the median.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "41–50",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Median is between 15th and 16th values" },
+            { "mark": "A1", "desc": "41–50 (cumulative frequencies: 3, 11, 24, 30; both 15th and 16th are in 41–50)" }
+          ],
+          "workingSteps": [
+            "30 values → median between 15th and 16th",
+            "Cumulative: ≤30: 3, ≤40: 11, ≤50: 24, ≤60: 30",
+            "15th and 16th both fall in 41–50"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "A student says the mean score is exactly 44. Explain why this cannot be verified from the grouped data.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "Individual values are unknown; we only know the class intervals, so the mean can only be estimated using midpoints",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "E1", "desc": "Individual values not known / data is grouped" },
+            { "mark": "E1", "desc": "Mean can only be estimated using midpoints oe" }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "E9-02-Q3",
+      "type": "short-answer",
+      "totalMarks": 6,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "Two data sets each have 10 values.\n\nData set P: mean = 15, range = 8\nData set Q: mean = 15, range = 20\n\n(a) Find the sum of the values in Data set P.\n(b) Explain what the difference in range tells you about the two data sets.\n(c) A value of 28 is added to Data set P.\n    Find the new mean of Data set P.\n    Give your answer correct to 3 significant figures.",
+      "answerType": "numeric",
+      "correctAnswer": "(a) 150, (b) Q is more spread out, (c) 16.2",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "(a) 15 × 10" },
+        { "mark": "A1", "desc": "(a) 150" },
+        { "mark": "E1", "desc": "(b) Data set Q is more spread out / has greater variability than P oe" },
+        { "mark": "E1", "desc": "(b) Both have same mean but Q's values are more dispersed oe" },
+        { "mark": "M1", "desc": "(c) (150 + 28) ÷ 11" },
+        { "mark": "A1", "desc": "(c) 178 ÷ 11 = 16.181... = 16.2 (3 sf)" }
+      ],
+      "workingSteps": [
+        "(a) Sum = mean × n = 15 × 10 = 150",
+        "(b) Q has range 20 vs P's range 8 → Q is more spread out",
+        "(c) New sum = 150 + 28 = 178; new count = 11",
+        "New mean = 178 ÷ 11 = 16.18... ≈ 16.2 (3 sf)"
+      ],
+      "explanation": "Range measures spread. Adding one value changes both sum and count."
+    }
+  ]
 }

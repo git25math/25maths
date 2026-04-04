@@ -6,10 +6,107 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "E1-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Find the highest common factor (HCF) and lowest common multiple (LCM) of $36$ and $48$.",
+      "answerType": "table-fill",
+      "correctAnswer": ["12", "144"],
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Prime factor decomposition: $36 = 2^2 \\times 3^2$, $48 = 2^4 \\times 3$" },
+        { "mark": "A1", "desc": "HCF $= 2^2 \\times 3 = 12$" },
+        { "mark": "A1", "desc": "LCM $= 2^4 \\times 3^2 = 144$" }
+      ],
+      "workingSteps": [
+        "$36 = 2^2 \\times 3^2$",
+        "$48 = 2^4 \\times 3$",
+        "HCF: lowest powers common to both: $2^2 \\times 3^1 = 12$",
+        "LCM: highest powers: $2^4 \\times 3^2 = 16 \\times 9 = 144$"
+      ],
+      "explanation": "Use prime factorisation to find HCF (shared factors) and LCM (all factors)."
+    },
+    {
+      "id": "E1-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "Write $180$ as a product of its prime factors.",
+      "answerType": "expression",
+      "correctAnswer": "$2^2 \\times 3^2 \\times 5$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Systematic division by prime factors" },
+        { "mark": "M1", "desc": "At least two correct prime factors identified" },
+        { "mark": "A1", "desc": "$2^2 \\times 3^2 \\times 5$ cao" }
+      ],
+      "workingSteps": [
+        "$180 \\div 2 = 90$",
+        "$90 \\div 2 = 45$",
+        "$45 \\div 3 = 15$",
+        "$15 \\div 3 = 5$",
+        "$5 \\div 5 = 1$",
+        "$180 = 2^2 \\times 3^2 \\times 5$"
+      ],
+      "explanation": "Divide repeatedly by the smallest prime factor until you reach 1."
+    },
+    {
+      "id": "E1-01-Q3",
+      "type": "structured",
+      "totalMarks": 4,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Explain why $\\sqrt{16}$ is a rational number.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "$\\sqrt{16} = 4$, which can be written as $4/1$, a ratio of two integers.",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$\\sqrt{16} = 4$" },
+            { "mark": "B1", "desc": "4 is rational because it can be expressed as a fraction $\\frac{4}{1}$ (ratio of integers)" }
+          ],
+          "workingSteps": [
+            "$\\sqrt{16} = 4$",
+            "4 is an integer and all integers are rational numbers (of the form $p/q$, $q \\neq 0$)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Write down a prime number between 30 and 40.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "integer",
+          "correctAnswer": "31",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B2", "desc": "Any one of: 31, 37" }
+          ],
+          "workingSteps": [
+            "Check 31: not divisible by 2, 3, 5 — prime",
+            "Check 37: not divisible by 2, 3, 5 — prime",
+            "32, 33, 34, 35, 36, 38, 39 are all composite"
+          ]
+        }
+      ]
+    }
+  ]
 }

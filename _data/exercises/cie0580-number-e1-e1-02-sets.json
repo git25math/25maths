@@ -6,10 +6,100 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 11,
+  "estimatedMinutes": 14,
+  "questions": [
+    {
+      "id": "E1-02-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "$A = \\{2, 4, 6, 8, 10\\}$ and $B = \\{1, 2, 3, 4, 5\\}$.\nFind:\n(a) $A \\cap B$\n(b) $A \\cup B$",
+      "answerType": "table-fill",
+      "correctAnswer": ["{2, 4}", "{1, 2, 3, 4, 5, 6, 8, 10}"],
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) $A \\cap B = \\{2, 4\\}$" },
+        { "mark": "B2", "desc": "(b) $A \\cup B = \\{1, 2, 3, 4, 5, 6, 8, 10\\}$ (B1 for 5 or more correct elements)" }
+      ],
+      "workingSteps": [
+        "(a) Elements in both A and B: 2, 4 → $A \\cap B = \\{2, 4\\}$",
+        "(b) All elements from both sets (no duplicates): $\\{1, 2, 3, 4, 5, 6, 8, 10\\}$"
+      ],
+      "explanation": "Intersection (∩): elements in both sets. Union (∪): all elements from either set."
+    },
+    {
+      "id": "E1-02-Q2",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "In a group of 50 students:\n- 30 study French ($F$)\n- 25 study Spanish ($S$)\n- 10 study both French and Spanish",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the Venn diagram by writing the number of students in each region.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": ["20", "10", "15", "5"],
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "French only: $30 - 10 = 20$" },
+            { "mark": "M1", "desc": "Spanish only: $25 - 10 = 15$" },
+            { "mark": "A1", "desc": "Neither: $50 - 20 - 10 - 15 = 5$" }
+          ],
+          "workingSteps": [
+            "French only (not Spanish): $30 - 10 = 20$",
+            "Spanish only (not French): $25 - 10 = 15$",
+            "Both: $10$",
+            "Neither: $50 - 20 - 10 - 15 = 5$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A student is chosen at random.\nFind the probability that the student studies French but not Spanish.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "2/5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{20}{50}$" },
+            { "mark": "A1", "desc": "$\\dfrac{2}{5}$ or $0.4$ or $40\\%$" }
+          ],
+          "workingSteps": [
+            "French only $= 20$ students",
+            "P(French only) $= \\dfrac{20}{50} = \\dfrac{2}{5}$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find $n(F \\cup S)'$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$n(F \\cup S) = 20 + 10 + 15 = 45$" },
+            { "mark": "M1", "desc": "$(F \\cup S)' = $ elements not in $F \\cup S$" },
+            { "mark": "A1", "desc": "$n(F \\cup S)' = 50 - 45 = 5$" }
+          ],
+          "workingSteps": [
+            "$n(F \\cup S) = 20 + 10 + 15 = 45$",
+            "$n(F \\cup S)' = 50 - 45 = 5$"
+          ]
+        }
+      ]
+    }
+  ]
 }

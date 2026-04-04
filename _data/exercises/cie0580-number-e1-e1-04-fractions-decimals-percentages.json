@@ -6,10 +6,105 @@
   "tier": "Extended",
   "domain": "number",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 10,
+  "estimatedMinutes": 12,
+  "questions": [
+    {
+      "id": "E1-04-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "write-down",
+      "difficulty": "easy",
+      "questionText": "Write $\\dfrac{7}{8}$ as a decimal and as a percentage.",
+      "answerType": "table-fill",
+      "correctAnswer": ["0.875", "87.5%"],
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "$0.875$" },
+        { "mark": "B1", "desc": "$87.5\\%$" }
+      ],
+      "workingSteps": [
+        "$7 \\div 8 = 0.875$",
+        "$0.875 \\times 100 = 87.5\\%$"
+      ],
+      "explanation": "Divide numerator by denominator to get the decimal, then multiply by 100 for %."
+    },
+    {
+      "id": "E1-04-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "calculate",
+      "difficulty": "medium",
+      "questionText": "Calculate $2\\dfrac{3}{5} + 1\\dfrac{7}{10}$, giving your answer as a mixed number.",
+      "answerType": "expression",
+      "correctAnswer": "$4\\dfrac{3}{10}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Converts to improper fractions: $\\dfrac{13}{5} + \\dfrac{17}{10}$" },
+        { "mark": "M1", "desc": "Common denominator: $\\dfrac{26}{10} + \\dfrac{17}{10} = \\dfrac{43}{10}$" },
+        { "mark": "A1", "desc": "$4\\dfrac{3}{10}$ cao" }
+      ],
+      "workingSteps": [
+        "$2\\dfrac{3}{5} = \\dfrac{13}{5} = \\dfrac{26}{10}$",
+        "$1\\dfrac{7}{10} = \\dfrac{17}{10}$",
+        "$\\dfrac{26}{10} + \\dfrac{17}{10} = \\dfrac{43}{10} = 4\\dfrac{3}{10}$"
+      ],
+      "explanation": "Convert to improper fractions with a common denominator, then add."
+    },
+    {
+      "id": "E1-04-Q3",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that the recurring decimal $0.\\overline{27} = \\dfrac{3}{11}$.",
+          "marks": 3,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "3/11",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Let $x = 0.272727...$" },
+            { "mark": "M1", "desc": "$100x = 27.2727...$; then $100x - x = 27$" },
+            { "mark": "A1", "desc": "$99x = 27$, so $x = \\dfrac{27}{99} = \\dfrac{3}{11}$" }
+          ],
+          "workingSteps": [
+            "Let $x = 0.272727...$",
+            "$100x = 27.272727...$",
+            "$100x - x = 27.272727... - 0.272727... = 27$",
+            "$99x = 27$",
+            "$x = \\dfrac{27}{99} = \\dfrac{3}{11}$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Without a calculator, calculate $\\dfrac{3}{4} \\times \\dfrac{8}{15}$.\nSimplify your answer.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "fraction",
+          "correctAnswer": "2/5",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\dfrac{3 \\times 8}{4 \\times 15} = \\dfrac{24}{60}$" },
+            { "mark": "A1", "desc": "$\\dfrac{2}{5}$ cao (or equivalent simplification)" }
+          ],
+          "workingSteps": [
+            "$\\dfrac{3}{4} \\times \\dfrac{8}{15} = \\dfrac{3 \\times 8}{4 \\times 15} = \\dfrac{24}{60}$",
+            "Simplify: $\\dfrac{24}{60} = \\dfrac{2}{5}$"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -6,10 +6,201 @@
   "tier": "Foundation",
   "domain": "statistics",
   "schemaVersion": 2,
-  "status": "coming_soon",
-  "paperType": "mixed",
+  "status": "draft",
+  "paperType": "structured",
   "calculator": true,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 18,
+  "estimatedMinutes": 22,
+  "questions": [
+    {
+      "id": "F6-03-Q1",
+      "type": "structured",
+      "totalMarks": 5,
+      "difficulty": "easy",
+      "context": "A bag contains 4 red counters, 3 blue counters and 5 green counters.\nA counter is picked at random.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the probability of picking a red counter.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "4/12",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "4/(4+3+5) = 4/12" },
+            { "mark": "A1", "desc": "4/12 or 1/3 or 0.333..." }
+          ],
+          "workingSteps": [
+            "Total = 4+3+5 = 12",
+            "P(red) = 4/12 = 1/3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the probability of not picking a green counter.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "7/12",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "1 − 5/12 or (4+3)/12" },
+            { "mark": "A1", "desc": "7/12" }
+          ],
+          "workingSteps": [
+            "P(not green) = 1 − P(green) = 1 − 5/12 = 7/12",
+            "Or: P(not green) = (4+3)/12 = 7/12"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The bag contains only red, blue and green counters. Give a reason why the probabilities of the three colours must sum to 1.",
+          "marks": 1,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "These are all the possible outcomes, so their probabilities must sum to 1",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "They cover all possible outcomes / mutually exclusive and exhaustive oe" }
+          ],
+          "workingSteps": []
+        }
+      ]
+    },
+    {
+      "id": "F6-03-Q2",
+      "type": "structured",
+      "totalMarks": 7,
+      "difficulty": "medium",
+      "context": "A fair spinner has 5 equal sections numbered 1 to 5.\nThe spinner is spun twice.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Complete the tree diagram to show all possible outcomes for the two spins.\n(First spin branches: 'odd' and 'even'. Second spin branches: 'odd' and 'even' from each.)\n\nP(odd on one spin) = 3/5 and P(even on one spin) = 2/5.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "table-fill",
+          "correctAnswer": "P(odd)=3/5, P(even)=2/5 for both spins",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "First spin: P(odd)=3/5, P(even)=2/5 correctly placed" },
+            { "mark": "B1", "desc": "Second spin: both sets of branches show P(odd)=3/5, P(even)=2/5" }
+          ],
+          "workingSteps": [
+            "Odd numbers on 1–5: 1,3,5 → P(odd)=3/5",
+            "Even numbers on 1–5: 2,4 → P(even)=2/5"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Work out the probability that both spins land on odd numbers.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "9/25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "3/5 × 3/5" },
+            { "mark": "A1", "desc": "9/25" }
+          ],
+          "workingSteps": [
+            "P(odd and odd) = 3/5 × 3/5 = 9/25"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Work out the probability that the two spins give different types (one odd and one even).",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "12/25",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(odd then even) + P(even then odd)" },
+            { "mark": "M1", "desc": "3/5 × 2/5 + 2/5 × 3/5 = 6/25 + 6/25" },
+            { "mark": "A1", "desc": "12/25" }
+          ],
+          "workingSteps": [
+            "P(odd then even) = 3/5 × 2/5 = 6/25",
+            "P(even then odd) = 2/5 × 3/5 = 6/25",
+            "P(different) = 6/25 + 6/25 = 12/25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F6-03-Q3",
+      "type": "structured",
+      "totalMarks": 6,
+      "difficulty": "medium",
+      "context": "A school survey of 120 students records whether each student has a pet and whether they have a sibling.\n\n| | Has a sibling | No sibling | Total |\n|--|--------------|------------|-------|\n| Has a pet     | 28 | 32 | 60 |\n| No pet        | 36 | 24 | 60 |\n| Total         | 64 | 56 | 120 |",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Work out the probability that a randomly chosen student has both a pet and a sibling.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "28/120",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "28/120" },
+            { "mark": "A1", "desc": "28/120 = 7/30" }
+          ],
+          "workingSteps": [
+            "P(pet and sibling) = 28/120 = 7/30"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "A student is chosen at random from those who have a pet.\nWork out the probability that this student has a sibling.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "fraction",
+          "correctAnswer": "28/60",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "28/60 (restricts to pet owners)" },
+            { "mark": "A1", "desc": "28/60 = 7/15" }
+          ],
+          "workingSteps": [
+            "There are 60 students with a pet",
+            "Of these, 28 have a sibling",
+            "P(sibling | pet) = 28/60 = 7/15"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Give a reason why having a pet and having a sibling appear to be independent in this data.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "explain",
+          "correctAnswer": "P(pet) = 60/120 = 1/2 and P(pet | sibling) = 28/64 ≈ 0.4375, which are not equal, so they are not independent",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "P(pet) = 60/120 = 0.5 and P(pet | sibling) = 28/64 = 0.4375" },
+            { "mark": "A1", "desc": "These are not equal, so having a pet and having a sibling are NOT independent" }
+          ],
+          "workingSteps": [
+            "P(pet) = 60/120 = 0.5",
+            "P(pet | sibling) = 28/64 = 0.4375",
+            "Since 0.5 ≠ 0.4375, pet and sibling are not independent"
+          ]
+        }
+      ]
+    }
+  ]
 }
