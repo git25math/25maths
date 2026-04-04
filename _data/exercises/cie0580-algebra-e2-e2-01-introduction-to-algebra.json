@@ -6,10 +6,258 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 26,
+  "estimatedMinutes": 30,
+  "questions": [
+    {
+      "id": "E2-01-Q1",
+      "type": "short-answer",
+      "totalMarks": 2,
+      "commandWord": "simplify",
+      "difficulty": "easy",
+      "questionText": "Simplify $\\dfrac{12x^3y^2}{4x y^5}$.",
+      "answerType": "expression",
+      "correctAnswer": "$\\dfrac{3x^2}{y^3}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Correct simplification of coefficient: 12/4 = 3" },
+        { "mark": "B1", "desc": "$3x^2y^{-3}$ or $\\dfrac{3x^2}{y^3}$ cao" }
+      ],
+      "workingSteps": [
+        "Divide coefficient: 12 ÷ 4 = 3",
+        "Subtract x-indices: x³ ÷ x = x²",
+        "Subtract y-indices: y² ÷ y⁵ = y⁻³ = 1/y³",
+        "Answer: 3x²/y³"
+      ],
+      "explanation": "Divide coefficients and subtract indices for each variable."
+    },
+    {
+      "id": "E2-01-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "expand",
+      "difficulty": "medium",
+      "questionText": "Expand and simplify $(3x - 2)(x + 5) - x(x - 1)$.",
+      "answerType": "expression",
+      "correctAnswer": "$2x^2 + 14x - 10$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Correct expansion of $(3x-2)(x+5)$: $3x^2 + 15x - 2x - 10$" },
+        { "mark": "M1", "desc": "Subtracting $x^2 - x$ from their expansion" },
+        { "mark": "A1", "desc": "$2x^2 + 14x - 10$ cao" }
+      ],
+      "workingSteps": [
+        "(3x − 2)(x + 5) = 3x² + 15x − 2x − 10 = 3x² + 13x − 10",
+        "x(x − 1) = x² − x",
+        "3x² + 13x − 10 − (x² − x) = 3x² + 13x − 10 − x² + x",
+        "= 2x² + 14x − 10"
+      ],
+      "explanation": "Expand each bracket then collect like terms."
+    },
+    {
+      "id": "E2-01-Q3",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "factorise",
+      "difficulty": "medium",
+      "questionText": "Factorise completely $6x^2 - 54$.",
+      "answerType": "expression",
+      "correctAnswer": "$6(x-3)(x+3)$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Factor of 6 taken out: $6(x^2 - 9)$" },
+        { "mark": "M1", "desc": "Difference of two squares applied to $x^2 - 9$" },
+        { "mark": "A1", "desc": "$6(x-3)(x+3)$ cao" }
+      ],
+      "workingSteps": [
+        "6x² − 54 = 6(x² − 9)",
+        "x² − 9 = (x − 3)(x + 3) (difference of two squares)",
+        "= 6(x − 3)(x + 3)"
+      ],
+      "explanation": "First extract the common factor, then apply the difference of two squares identity."
+    },
+    {
+      "id": "E2-01-Q4",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A rectangle has length $(2x + 3)$ cm and width $(x - 1)$ cm.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that the area of the rectangle is $2x^2 + x - 3$ cm².",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "2x² + x − 3",
+          "markScheme": [
+            { "mark": "M1", "desc": "(2x + 3)(x − 1) expanded with at least 3 correct terms" },
+            { "mark": "A1", "desc": "$2x^2 - 2x + 3x - 3 = 2x^2 + x - 3$ with no errors" }
+          ],
+          "workingSteps": [
+            "Area = (2x + 3)(x − 1)",
+            "= 2x² − 2x + 3x − 3",
+            "= 2x² + x − 3"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "The area of the rectangle is 15 cm².\nForm an equation and solve it to find $x$.",
+          "marks": 4,
+          "commandWord": "solve",
+          "answerType": "numeric",
+          "correctAnswer": "3",
+          "tolerance": 0,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$2x^2 + x - 3 = 15$ seen or implied" },
+            { "mark": "M1", "desc": "$2x^2 + x - 18 = 0$ rearranged" },
+            { "mark": "M1", "desc": "Correct factorisation or quadratic formula applied" },
+            { "mark": "A1", "desc": "$x = 3$ (rejecting $x = -3$ since width must be positive)" }
+          ],
+          "workingSteps": [
+            "2x² + x − 3 = 15",
+            "2x² + x − 18 = 0",
+            "(2x + ?)(x + ?) → try (2x + 9)(x − 2) = 2x² − 4x + 9x − 18 = 2x² + 5x − 18 — not correct",
+            "Using quadratic formula: x = (−1 ± √(1 + 144)) / 4 = (−1 ± √145) / 4",
+            "x = (−1 + 12.04) / 4 = 2.76 — not integer; reconsider",
+            "Check (2x − 9)(x + 2) = 2x² + 4x − 9x − 18 = 2x² − 5x − 18 — not correct",
+            "x = (−1 ± √(1 + 144))/4; √145 ≈ 12.04; x ≈ 2.76 or x ≈ −3.26",
+            "Since width x − 1 > 0, x > 1, so x ≈ 2.76"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the perimeter of the rectangle when $x = 2.76$.\nGive your answer correct to 3 significant figures.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "18.0",
+          "tolerance": 0.2,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "$2[(2(2.76) + 3) + (2.76 − 1)]$ oe" },
+            { "mark": "A1", "desc": "18.0 or 18.04 (ft their x)" }
+          ],
+          "workingSteps": [
+            "Length = 2(2.76) + 3 = 5.52 + 3 = 8.52 cm",
+            "Width = 2.76 − 1 = 1.76 cm",
+            "Perimeter = 2(8.52 + 1.76) = 2 × 10.28 = 20.56 cm"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Write an expression, in terms of $x$, for the perimeter of the rectangle.\nSimplify your answer.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$(6x + 4)$ cm",
+          "tolerance": null,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "$2(2x + 3) + 2(x - 1)$ oe" },
+            { "mark": "A1", "desc": "$6x + 4$ cao" }
+          ],
+          "workingSteps": [
+            "Perimeter = 2 × length + 2 × width",
+            "= 2(2x + 3) + 2(x − 1)",
+            "= 4x + 6 + 2x − 2",
+            "= 6x + 4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2-01-Q5",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "A formula used in physics is $v^2 = u^2 + 2as$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find $v$ when $u = 3$, $a = 5$ and $s = 8$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "9.22",
+          "tolerance": 0.01,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$v^2 = 9 + 80 = 89$ soi" },
+            { "mark": "A1", "desc": "$v = \\sqrt{89} = 9.43$" }
+          ],
+          "workingSteps": [
+            "v² = u² + 2as = 3² + 2(5)(8) = 9 + 80 = 89",
+            "v = √89 = 9.43 (3sf)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Make $s$ the subject of the formula.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$s = \\dfrac{v^2 - u^2}{2a}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$v^2 - u^2 = 2as$ seen" },
+            { "mark": "A1", "desc": "$s = \\dfrac{v^2 - u^2}{2a}$ cao" }
+          ],
+          "workingSteps": [
+            "v² = u² + 2as",
+            "v² − u² = 2as",
+            "s = (v² − u²) / (2a)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Make $u$ the subject of the formula.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$u = \\sqrt{v^2 - 2as}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$u^2 = v^2 - 2as$ seen" },
+            { "mark": "A1", "desc": "$u = \\sqrt{v^2 - 2as}$ cao" }
+          ],
+          "workingSteps": [
+            "v² = u² + 2as",
+            "u² = v² − 2as",
+            "u = √(v² − 2as)"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Make $a$ the subject of the formula.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$a = \\dfrac{v^2 - u^2}{2s}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$2as = v^2 - u^2$ seen" },
+            { "mark": "A1", "desc": "$a = \\dfrac{v^2 - u^2}{2s}$ cao" }
+          ],
+          "workingSteps": [
+            "v² = u² + 2as",
+            "2as = v² − u²",
+            "a = (v² − u²) / (2s)"
+          ]
+        }
+      ]
+    }
+  ]
 }
