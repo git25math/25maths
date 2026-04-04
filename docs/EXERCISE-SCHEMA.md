@@ -260,10 +260,102 @@ Suffix conventions:
 coming_soon → draft → review → live
 ```
 
-- `coming_soon`: Metadata only, `questions: []`, shown as "Coming Soon" on site
-- `draft`: Questions being authored, not visible to students
-- `review`: Quality review pending
-- `live`: Published and available to students
+| Status | 含义 | 入口条件 | 出口条件（晋级金标准） |
+|--------|------|----------|----------------------|
+| `coming_soon` | 仅元数据，`questions: []` | 文件创建时 | 填入 ≥3 道题 + markScheme |
+| `draft` | 题目已填，未经人工审查 | 自动化填充后 | 通过下方 **Review Checklist** 全部项 |
+| `review` | 人工审查中 | 审查者标记 | 审查者确认签字 |
+| `live` | 已发布，学生可见 | 审查通过 | — |
+
+## Quality Gate: Draft → Review Checklist
+
+每个文件从 `draft` 晋级 `review` 前，**必须**通过以下全部检查：
+
+### A. 数学正确性（最高优先级）
+
+- [ ] **算术验证**: 每道题的 correctAnswer 已用计算器/Python 反向验算
+- [ ] **"show that" 验证**: 每步推导无跳跃、无错误，最终等式确实成立
+- [ ] **单位一致**: 题目要求的单位与 correctAnswer 的单位匹配
+- [ ] **容差合理**: numeric 类型的 tolerance 与 "3sf" / "1dp" 等精度要求吻合
+- [ ] **整数/分数检查**: integer 类型答案确实为整数，fraction 确实为最简分数
+
+### B. Mark Scheme 合规
+
+- [ ] **分值总和**: 各 part marks 之和 = question totalMarks = file totalMarks
+- [ ] **Mark 类型正确**: M mark 用于方法、A mark 依赖 M mark、B mark 独立
+- [ ] **ft/cao 标注**: 需要 follow-through 的标了 ft，不允许的标了 cao
+- [ ] **与真题一致**: mark 分配模式参照 CIE/EDX 真题 mark scheme 风格
+
+### C. 题目风格
+
+- [ ] **Board 匹配**: CIE 用 "Calculate/Find/Show that"，EDX 用 "Work out/Give a reason"
+- [ ] **Tier 难度**: Core/Foundation 不含 Extended/Higher-only 内容（如微积分、向量几何证明）
+- [ ] **题型覆盖**: 每个文件至少包含 1 道 structured 多部分题
+- [ ] **情境合理**: 实际场景题的数字和设定符合常识（如速度、距离、货币）
+
+### D. Schema 合规
+
+- [ ] **JSON 有效**: `JSON.parse()` 无错误
+- [ ] **必填字段**: 每道题有 id, type, totalMarks, markScheme, workingSteps
+- [ ] **Structured 题**: 每个 part 有 label, questionText, marks, answerType
+- [ ] **Status**: 标记为 `review`（表示已提交审查）
+
+## Exercise Authoring Workflow
+
+填充或更新练习题的标准工作流程：
+
+### Phase A: 准备
+
+1. 读取 `docs/EXERCISE-SCHEMA.md`（本文档）了解 schema
+2. 读取 `docs/examples/exercise-variants-showcase.json` 了解 9 种变式风格
+3. 确认目标文件的 board/tier/domain/topic 元数据
+4. 查阅真题 mark scheme 了解该知识点的典型出题方式
+
+### Phase B: 填充
+
+1. 每个文件填入 3-5 道题，混合 short-answer + structured
+2. Core/Foundation: 简单题为主（1-3 分 short-answer + 4-7 分 structured）
+3. Extended/Higher: 复杂题为主（2-4 分 short-answer + 6-10 分 structured，含 show-that/hence）
+4. **用 Python/计算器验证所有算术**
+5. 设置 `totalMarks` = 所有题目分值之和
+6. 设置 `status: "draft"`
+
+### Phase C: 验证 → 提交 → 合并
+
+1. **验证**: 运行 mark total 校验脚本，确认 0 mismatches
+2. **提交**: `git commit` with descriptive message（含文件数 + 题数 + 分值）
+3. **推送**: `git push` to feature branch
+4. **PR**: 创建 Pull Request with summary table
+5. **合并**: Squash merge to main
+6. **文档**: 更新 `DEVELOPMENT-PLAN.md` 进度 + `exercise_registry.json`
+
+### Phase D: 质量审查（draft → review → live）
+
+1. 人工逐题审查（按上方 Review Checklist）
+2. 修正发现的问题
+3. 标记 `status: "review"` → 二次确认 → `status: "live"`
+4. 重新生成 `exercise_registry.json`
+
+## Mark Total Validation Script
+
+快速验证所有文件 mark totals 的脚本：
+
+```python
+import json, os
+for f in sorted(os.listdir('_data/exercises')):
+    if not f.endswith('.json'): continue
+    with open(f'_data/exercises/{f}') as fh: d = json.load(fh)
+    nq = len(d.get('questions', []))
+    if nq == 0: continue
+    calc = sum(
+        q['totalMarks'] if q['type'] != 'structured'
+        else sum(p['marks'] for p in q.get('parts', []))
+        for q in d['questions']
+    )
+    stated = d.get('totalMarks', 0)
+    if calc != stated:
+        print(f"MISMATCH {d['syllabusCode']}: stated={stated}, calc={calc}")
+```
 
 ## Migration Notes (v1 → v2)
 
@@ -271,3 +363,4 @@ coming_soon → draft → review → live
 - v1 `questions[].type` was always `"multiple-choice"` → rename to `"mcq"`
 - v1 had no mark schemes or working steps
 - All 202 files batch-migrated to v2 with `status: "coming_soon"` and `questions: []`
+- Round 11 (2026-04): All 202 files filled with sample questions, status: `draft`
