@@ -6,10 +6,225 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 28,
+  "estimatedMinutes": 32,
+  "questions": [
+    {
+      "id": "E2-12-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "Find $\\dfrac{dy}{dx}$ for each of the following.\n\n(a) $y = 5x^3 - 4x^2 + 7x - 2$\n(b) $y = \\dfrac{x^3}{3} - \\dfrac{1}{x^2}$",
+      "answerType": "expression",
+      "correctAnswer": "(a) $15x^2-8x+7$, (b) $x^2+\\dfrac{2}{x^3}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) $15x^2$ term correct" },
+        { "mark": "B1", "desc": "(a) $-8x+7$ terms correct; constant vanishes" },
+        { "mark": "M1", "desc": "(b) $\\frac{1}{x^2} = x^{-2}$ rewritten; $\\frac{d}{dx}(x^{-2}) = -2x^{-3}$" },
+        { "mark": "A1", "desc": "(b) $x^2+2x^{-3}$ or $x^2+\\frac{2}{x^3}$ cao" }
+      ],
+      "workingSteps": [
+        "(a) $\\frac{d}{dx}(5x^3)=15x^2$; $\\frac{d}{dx}(-4x^2)=-8x$; $\\frac{d}{dx}(7x)=7$; constant $\\to0$",
+        "$\\frac{dy}{dx} = 15x^2-8x+7$",
+        "(b) $y=\\frac{x^3}{3}-x^{-2}$",
+        "$\\frac{dy}{dx}=\\frac{3x^2}{3}-(-2)x^{-3}=x^2+2x^{-3}=x^2+\\frac{2}{x^3}$"
+      ],
+      "explanation": "Use the power rule: $\\frac{d}{dx}(x^n) = nx^{n-1}$; rewrite negative powers first."
+    },
+    {
+      "id": "E2-12-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The curve $y = 2x^2 - 7x + 3$ has a tangent at the point where $x = 2$.\n\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Find the gradient of the tangent at $x = 2$.\n(c) Find the equation of the tangent at $x = 2$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) $4x-7$, (b) $1$, (c) $y = x - 5$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) $\\frac{dy}{dx} = 4x-7$" },
+        { "mark": "B1", "desc": "(b) Gradient $= 4(2)-7 = 1$" },
+        { "mark": "M1", "desc": "(c) $y$-coordinate: $2(4)-14+3=-3$; tangent through $(2,-3)$ with gradient 1" },
+        { "mark": "A1", "desc": "(c) $y = x-5$ cao" }
+      ],
+      "workingSteps": [
+        "(a) $\\frac{dy}{dx} = 4x-7$",
+        "(b) At $x=2$: gradient $= 4(2)-7 = 1$",
+        "(c) $y$-coordinate at $x=2$: $y=2(4)-7(2)+3=8-14+3=-3$",
+        "Tangent: $y-(-3)=1(x-2) \\Rightarrow y=x-5$",
+        "Check: at $x=2$: $y=2-5=-3$ ✓"
+      ],
+      "explanation": "Differentiate to find the gradient function, evaluate at the given $x$, then use point-gradient form."
+    },
+    {
+      "id": "E2-12-Q3",
+      "type": "structured",
+      "totalMarks": 12,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the coordinates of the turning points of $y = x^3 - 6x^2 + 9x + 2$ and determine their nature.",
+          "marks": 7,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "Local maximum $(1, 6)$; local minimum $(3, 2)$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\frac{dy}{dx} = 3x^2-12x+9$ found" },
+            { "mark": "M1", "desc": "Set $\\frac{dy}{dx}=0$: $3(x^2-4x+3)=0$" },
+            { "mark": "A1", "desc": "$(x-1)(x-3)=0 \\Rightarrow x=1$ and $x=3$" },
+            { "mark": "A1", "desc": "$y(1) = 1-6+9+2 = 6$; point $(1,6)$" },
+            { "mark": "A1", "desc": "$y(3) = 27-54+27+2 = 2$; point $(3,2)$" },
+            { "mark": "M1", "desc": "$\\frac{d^2y}{dx^2} = 6x-12$ evaluated at each turning point" },
+            { "mark": "A1", "desc": "At $x=1$: $\\frac{d^2y}{dx^2}=-6<0$ (maximum); at $x=3$: $=6>0$ (minimum)" }
+          ],
+          "workingSteps": [
+            "$\\frac{dy}{dx} = 3x^2-12x+9$",
+            "Set to zero: $3x^2-12x+9=0 \\Rightarrow x^2-4x+3=0 \\Rightarrow (x-1)(x-3)=0$",
+            "$x=1$: $y=1-6+9+2=6$; point $(1,6)$",
+            "$x=3$: $y=27-54+27+2=2$; point $(3,2)$",
+            "$\\frac{d^2y}{dx^2}=6x-12$",
+            "At $x=1$: $6-12=-6<0$ → maximum $(1,6)$",
+            "At $x=3$: $18-12=6>0$ → minimum $(3,2)$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the range of values of $x$ for which $y = x^3-6x^2+9x+2$ is increasing.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "inequality",
+          "correctAnswer": "$x < 1$ or $x > 3$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\frac{dy}{dx} = 3x^2-12x+9 > 0$" },
+            { "mark": "M1", "desc": "$(x-1)(x-3)>0$" },
+            { "mark": "A1", "desc": "$x<1$ or $x>3$" }
+          ],
+          "workingSteps": [
+            "$\\frac{dy}{dx}>0$: $3(x-1)(x-3)>0$",
+            "This holds when both factors positive ($x>3$) or both negative ($x<1$)",
+            "Answer: $x<1$ or $x>3$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the equation of the normal to the curve $y = x^3-6x^2+9x+2$ at the point $(1, 6)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$x = 1$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Gradient of tangent $= 0$ at $(1,6)$ (turning point)" },
+            { "mark": "A1", "desc": "Normal is vertical: $x=1$" }
+          ],
+          "workingSteps": [
+            "At the turning point $(1,6)$, $\\frac{dy}{dx}=0$",
+            "The tangent is horizontal; the normal is therefore vertical",
+            "Equation of normal: $x=1$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2-12-Q4",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "A rectangular box, open at the top, is made from a sheet of card. The base measures $x$ cm by $2x$ cm and the height is $h$ cm. The total surface area of the box is $300$ cm².",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Show that $h = \\dfrac{300 - 2x^2}{6x}$.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "$h = \\dfrac{300-2x^2}{6x}$",
+          "markScheme": [
+            { "mark": "M1", "desc": "Surface area $= 2x^2 + 2xh + 4xh = 2x^2+6xh = 300$ oe" },
+            { "mark": "A1", "desc": "$h=\\frac{300-2x^2}{6x}$ with no errors" }
+          ],
+          "workingSteps": [
+            "Base area $= x \\times 2x = 2x^2$",
+            "Two sides of width $x$: area $= 2(xh)$; two sides of width $2x$: area $= 2(2xh)$",
+            "Total SA: $2x^2+2xh+4xh = 2x^2+6xh = 300$",
+            "$6xh = 300-2x^2$",
+            "$h = \\dfrac{300-2x^2}{6x}$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Show that the volume of the box is $V = 100x - \\dfrac{x^3}{3}$.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "$V = 100x - \\dfrac{x^3}{3}$",
+          "markScheme": [
+            { "mark": "M1", "desc": "$V = 2x^2 \\times h = 2x^2 \\times \\frac{300-2x^2}{6x}$" },
+            { "mark": "A1", "desc": "$V = \\frac{2x(300-2x^2)}{6} = \\frac{600x-4x^3}{6} = 100x-\\frac{2x^3}{3}$... check" }
+          ],
+          "workingSteps": [
+            "$V = \\text{base area} \\times h = 2x^2 \\times \\dfrac{300-2x^2}{6x}$",
+            "$= \\dfrac{2x^2(300-2x^2)}{6x} = \\dfrac{x(300-2x^2)}{3}$",
+            "$= \\dfrac{300x-2x^3}{3} = 100x-\\dfrac{2x^3}{3}$",
+            "Note: the answer should be $100x-\\frac{2x^3}{3}$, not $100x-\\frac{x^3}{3}$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find $\\dfrac{dV}{dx}$ and hence find the value of $x$ that maximises the volume.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "10",
+          "tolerance": 0,
+          "unit": "cm",
+          "markScheme": [
+            { "mark": "M1", "desc": "$\\frac{dV}{dx} = 100-2x^2$ (ft their volume expression)" },
+            { "mark": "M1", "desc": "Set $\\frac{dV}{dx}=0$: $100=2x^2 \\Rightarrow x^2=50$" },
+            { "mark": "A1", "desc": "$x=\\sqrt{50}=5\\sqrt{2}\\approx7.07$ cm" }
+          ],
+          "workingSteps": [
+            "$V=100x-\\frac{2x^3}{3}$",
+            "$\\frac{dV}{dx}=100-2x^2$",
+            "Set $\\frac{dV}{dx}=0$: $100=2x^2 \\Rightarrow x^2=50 \\Rightarrow x=5\\sqrt{2}\\approx7.07$ cm",
+            "$\\frac{d^2V}{dx^2}=-4x<0$ at $x=5\\sqrt{2}$ ✓ (maximum)"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Calculate the maximum volume.",
+          "marks": 1,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "471",
+          "tolerance": 2,
+          "unit": "cm³",
+          "markScheme": [
+            { "mark": "A1", "desc": "$V=100(5\\sqrt{2})-\\frac{2(5\\sqrt{2})^3}{3}=500\\sqrt{2}-\\frac{2(250\\sqrt{2})}{3}=500\\sqrt{2}-\\frac{500\\sqrt{2}}{3}=\\frac{1000\\sqrt{2}}{3}\\approx471$ cm³" }
+          ],
+          "workingSteps": [
+            "$x=5\\sqrt{2}$: $V=100(5\\sqrt{2})-\\frac{2(5\\sqrt{2})^3}{3}$",
+            "$(5\\sqrt{2})^3=125\\times2\\sqrt{2}=250\\sqrt{2}$",
+            "$V=500\\sqrt{2}-\\frac{500\\sqrt{2}}{3}=500\\sqrt{2}\\left(1-\\frac{1}{3}\\right)=\\frac{1000\\sqrt{2}}{3}\\approx471$ cm³"
+          ]
+        }
+      ]
+    }
+  ]
 }

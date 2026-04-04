@@ -6,10 +6,213 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 26,
+  "estimatedMinutes": 30,
+  "questions": [
+    {
+      "id": "E2-08-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "$y$ is directly proportional to $x^2$. When $x = 3$, $y = 36$.\n\n(a) Find the formula for $y$ in terms of $x$.\n(b) Find $y$ when $x = 5$.\n(c) Find $x$ when $y = 100$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) $y = 4x^2$, (b) 100, (c) 5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$y = kx^2$; $36 = k(9) \\Rightarrow k = 4$" },
+        { "mark": "A1", "desc": "(a) $y = 4x^2$ cao" },
+        { "mark": "B1", "desc": "(b) $y = 4(25) = 100$" },
+        { "mark": "B1", "desc": "(c) $100 = 4x^2 \\Rightarrow x^2=25 \\Rightarrow x=5$" }
+      ],
+      "workingSteps": [
+        "(a) $y = kx^2$; sub $x=3$, $y=36$: $36=9k \\Rightarrow k=4$; formula: $y=4x^2$",
+        "(b) $y=4(5)^2=4(25)=100$",
+        "(c) $100=4x^2 \\Rightarrow x^2=25 \\Rightarrow x=5$ (taking positive value)"
+      ],
+      "explanation": "Write $y = kx^2$, find $k$ from the given values, then use the formula."
+    },
+    {
+      "id": "E2-08-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "$y$ is inversely proportional to $x$. When $x = 4$, $y = 6$.\n\n(a) Find the formula for $y$ in terms of $x$.\n(b) Find $y$ when $x = 8$.\n(c) Find $x$ when $y = 16$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) $y = \\dfrac{24}{x}$, (b) 3, (c) 1.5",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$y = \\frac{k}{x}$; $6 = \\frac{k}{4} \\Rightarrow k = 24$" },
+        { "mark": "A1", "desc": "(a) $y = \\frac{24}{x}$ cao" },
+        { "mark": "B1", "desc": "(b) $y = \\frac{24}{8} = 3$" },
+        { "mark": "B1", "desc": "(c) $16 = \\frac{24}{x} \\Rightarrow x = 1.5$" }
+      ],
+      "workingSteps": [
+        "(a) $y=\\frac{k}{x}$; sub $x=4$, $y=6$: $6=\\frac{k}{4} \\Rightarrow k=24$; formula: $y=\\frac{24}{x}$",
+        "(b) $y=\\frac{24}{8}=3$",
+        "(c) $16=\\frac{24}{x} \\Rightarrow x=\\frac{24}{16}=1.5$"
+      ],
+      "explanation": "Write $y = \\frac{k}{x}$, find $k$, then use the formula to answer each part."
+    },
+    {
+      "id": "E2-08-Q3",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "$T$ is directly proportional to $\\sqrt{L}$.\nWhen $L = 9$, $T = 6$.\nFind the value of $T$ when $L = 25$.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "10",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$T = k\\sqrt{L}$; $6 = k\\sqrt{9} = 3k \\Rightarrow k=2$" },
+            { "mark": "A1", "desc": "$T = 2\\sqrt{L}$" },
+            { "mark": "A1", "desc": "$T = 2\\sqrt{25} = 2 \\times 5 = 10$" }
+          ],
+          "workingSteps": [
+            "$T = k\\sqrt{L}$",
+            "Sub $L=9$, $T=6$: $6=k\\sqrt{9}=3k \\Rightarrow k=2$",
+            "Formula: $T=2\\sqrt{L}$",
+            "$T=2\\sqrt{25}=2 \\times 5=10$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "$P$ is inversely proportional to $d^2$.\nWhen $d = 3$, $P = 8$.\n\n(i) Find the formula for $P$ in terms of $d$.\n(ii) Find $P$ when $d = 6$.\n(iii) Find $d$ when $P = 2$.",
+          "marks": 5,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "(i) $P = \\frac{72}{d^2}$, (ii) 2, (iii) 6",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$P = \\frac{k}{d^2}$; $8=\\frac{k}{9} \\Rightarrow k=72$" },
+            { "mark": "A1", "desc": "(i) $P = \\frac{72}{d^2}$ cao" },
+            { "mark": "A1", "desc": "(ii) $P = \\frac{72}{36} = 2$" },
+            { "mark": "M1", "desc": "(iii) $2 = \\frac{72}{d^2} \\Rightarrow d^2=36$" },
+            { "mark": "A1", "desc": "(iii) $d = 6$" }
+          ],
+          "workingSteps": [
+            "(i) $P=\\frac{k}{d^2}$; sub $d=3$, $P=8$: $8=\\frac{k}{9} \\Rightarrow k=72$; $P=\\frac{72}{d^2}$",
+            "(ii) $P=\\frac{72}{36}=2$",
+            "(iii) $2=\\frac{72}{d^2} \\Rightarrow d^2=36 \\Rightarrow d=6$ (positive)"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "$y$ is directly proportional to $x^3$. When $x$ doubles, find the factor by which $y$ increases.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "8",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$y = kx^3$; new $y = k(2x)^3 = 8kx^3$" },
+            { "mark": "A1", "desc": "$y$ increases by factor 8" }
+          ],
+          "workingSteps": [
+            "$y = kx^3$",
+            "When $x$ doubles: new $y = k(2x)^3 = k \\cdot 8x^3 = 8(kx^3) = 8y$",
+            "So $y$ increases by a factor of 8."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2-08-Q4",
+      "type": "structured",
+      "totalMarks": 8,
+      "difficulty": "hard",
+      "context": "The time $T$ seconds for a pendulum to swing once is directly proportional to $\\sqrt{L}$, where $L$ is the length of the pendulum in metres.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "When $L = 1$, $T = 2$.\nFind the formula for $T$ in terms of $L$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$T = 2\\sqrt{L}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$T = k\\sqrt{L}$; $2 = k\\sqrt{1} = k$" },
+            { "mark": "A1", "desc": "$T = 2\\sqrt{L}$ cao" }
+          ],
+          "workingSteps": [
+            "$T = k\\sqrt{L}$",
+            "Sub $L=1$, $T=2$: $2=k(1) \\Rightarrow k=2$",
+            "Formula: $T = 2\\sqrt{L}$"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Calculate $T$ when $L = 2.25$.",
+          "marks": 2,
+          "commandWord": "calculate",
+          "answerType": "numeric",
+          "correctAnswer": "3",
+          "tolerance": 0,
+          "unit": "s",
+          "markScheme": [
+            { "mark": "M1", "desc": "$T = 2\\sqrt{2.25}$" },
+            { "mark": "A1", "desc": "$T = 2 \\times 1.5 = 3$ s" }
+          ],
+          "workingSteps": [
+            "$T = 2\\sqrt{2.25} = 2 \\times 1.5 = 3$ s"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find the length of a pendulum that takes 5 seconds to swing once.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "6.25",
+          "tolerance": 0.01,
+          "unit": "m",
+          "markScheme": [
+            { "mark": "M1", "desc": "$5 = 2\\sqrt{L} \\Rightarrow \\sqrt{L} = 2.5$" },
+            { "mark": "A1", "desc": "$L = 6.25$ m" }
+          ],
+          "workingSteps": [
+            "$5 = 2\\sqrt{L}$",
+            "$\\sqrt{L} = 2.5$",
+            "$L = 2.5^2 = 6.25$ m"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Show that if the length is increased by 44%, the time increases by approximately 20%.",
+          "marks": 2,
+          "commandWord": "show",
+          "answerType": "show-that",
+          "correctAnswer": "20% increase",
+          "markScheme": [
+            { "mark": "M1", "desc": "New $T = 2\\sqrt{1.44L} = 2 \\times 1.2\\sqrt{L} = 1.2T$" },
+            { "mark": "A1", "desc": "$1.2T$ is a 20% increase in $T$, with no errors" }
+          ],
+          "workingSteps": [
+            "New length $= 1.44L$",
+            "New $T = 2\\sqrt{1.44L} = 2 \\times \\sqrt{1.44} \\times \\sqrt{L} = 2 \\times 1.2 \\times \\sqrt{L} = 1.2 \\times 2\\sqrt{L} = 1.2T$",
+            "Increase $= 20\\%$ ✓"
+          ]
+        }
+      ]
+    }
+  ]
 }

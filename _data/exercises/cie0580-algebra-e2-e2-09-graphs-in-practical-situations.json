@@ -6,10 +6,319 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 26,
+  "estimatedMinutes": 32,
+  "questions": [
+    {
+      "id": "E2-09-Q1",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "A straight-line graph passes through the points $(2, 5)$ and $(6, 13)$.\n\n(a) Find the gradient of the line.\n(b) Find the equation of the line.",
+      "answerType": "expression",
+      "correctAnswer": "(a) 2, (b) $y = 2x + 1$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "M1",
+          "desc": "Gradient $= \\dfrac{13-5}{6-2} = \\dfrac{8}{4} = 2$"
+        },
+        {
+          "mark": "A1",
+          "desc": "(a) Gradient $= 2$"
+        },
+        {
+          "mark": "A1",
+          "desc": "(b) $y = 2x+1$ cao (using $y-5=2(x-2)$)"
+        }
+      ],
+      "workingSteps": [
+        "(a) Gradient $= \\dfrac{13-5}{6-2} = \\dfrac{8}{4} = 2$",
+        "(b) $y-5 = 2(x-2) \\Rightarrow y = 2x-4+5 = 2x+1$",
+        "Check $(6,13)$: $2(6)+1=13$ ✓"
+      ],
+      "explanation": "Use gradient formula then substitute a point to find the $y$-intercept."
+    },
+    {
+      "id": "E2-09-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The graph of $y = mx + c$ passes through $(0, -3)$ and is parallel to the line $y = 4x + 7$.\n\n(a) Write down the gradient.\n(b) Write down the $y$-intercept.\n(c) Find the $x$-coordinate of the point where the line crosses the $x$-axis.\n(d) Find where the line $y = mx + c$ intersects the line $y = -x + 9$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) 4, (b) -3, (c) 0.75, (d) (2.4, 6.6)",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        {
+          "mark": "B1",
+          "desc": "(a) Gradient $= 4$ (parallel lines have equal gradients)"
+        },
+        {
+          "mark": "B1",
+          "desc": "(b) $y$-intercept $= -3$"
+        },
+        {
+          "mark": "M1",
+          "desc": "(c) $0 = 4x-3 \\Rightarrow x = 0.75$"
+        },
+        {
+          "mark": "A1",
+          "desc": "(d) $4x-3=-x+9 \\Rightarrow 5x=12 \\Rightarrow x=2.4$; $y=6.6$"
+        }
+      ],
+      "workingSteps": [
+        "(a) Parallel to $y=4x+7$, so gradient $=4$; equation: $y=4x-3$",
+        "(b) Passes through $(0,-3)$, so $y$-intercept $=-3$",
+        "(c) Set $y=0$: $4x-3=0 \\Rightarrow x=\\frac{3}{4}=0.75$",
+        "(d) $4x-3=-x+9 \\Rightarrow 5x=12 \\Rightarrow x=2.4$; $y=-2.4+9=6.6$"
+      ],
+      "explanation": "Parallel lines share the same gradient; use the given point to determine $c$."
+    },
+    {
+      "id": "E2-09-Q3",
+      "type": "structured",
+      "totalMarks": 11,
+      "difficulty": "hard",
+      "context": "A taxi company charges a fixed amount plus a cost per kilometre.\nThe total cost, $C$ dollars, for a journey of $d$ km is given by $C = 0.5d + 3$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Write down the fixed charge and the cost per kilometre.",
+          "marks": 2,
+          "commandWord": "write-down",
+          "answerType": "expression",
+          "correctAnswer": "Fixed charge = $3; Cost per km = $0.50",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Fixed charge = $3 (the constant term)"
+            },
+            {
+              "mark": "B1",
+              "desc": "Cost per km = $0.50 (the gradient)"
+            }
+          ],
+          "workingSteps": [
+            "In $C = 0.5d + 3$: gradient $= 0.5$ (cost per km), $y$-intercept $= 3$ (fixed charge)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the cost of a journey of 14 km.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "10",
+          "tolerance": 0,
+          "unit": "$",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "$C = 0.5(14) + 3$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$C = 7+3 = \\$10$"
+            }
+          ],
+          "workingSteps": [
+            "$C = 0.5(14)+3 = 7+3 = \\$10$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "A journey costs $\\$18.50$. Find the distance.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "31",
+          "tolerance": 0,
+          "unit": "km",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "$18.50 = 0.5d+3 \\Rightarrow 0.5d=15.50$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$d = 31$ km"
+            }
+          ],
+          "workingSteps": [
+            "$18.50 = 0.5d+3$",
+            "$0.5d = 15.50$",
+            "$d = 31$ km"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "A rival company charges $C_2 = 0.8d + 1$.\nFind the distance at which both companies charge the same amount.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "numeric",
+          "correctAnswer": "6.67",
+          "tolerance": 0.05,
+          "unit": "km",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "$0.5d+3 = 0.8d+1$"
+            },
+            {
+              "mark": "M1",
+              "desc": "$2 = 0.3d$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$d = \\frac{20}{3} \\approx 6.67$ km (accept $6\\frac{2}{3}$)"
+            }
+          ],
+          "workingSteps": [
+            "$0.5d+3 = 0.8d+1$",
+            "$3-1 = 0.8d-0.5d$",
+            "$2 = 0.3d$",
+            "$d = \\frac{2}{0.3} = \\frac{20}{3} \\approx 6.67$ km",
+            "Check: $C_1 = 0.5(\\frac{20}{3})+3=\\frac{10}{3}+3=\\frac{19}{3}$; $C_2=0.8(\\frac{20}{3})+1=\\frac{16}{3}+1=\\frac{19}{3}$ ✓"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Explain which company is cheaper for a 20 km journey.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "The first company is cheaper: $\\$13 vs \\$17.",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "Both costs calculated for $d=20$"
+            },
+            {
+              "mark": "E1",
+              "desc": "$C_1=\\$13$ and $C_2=\\$17$, so the first company is cheaper by $\\$4$"
+            }
+          ],
+          "workingSteps": [
+            "$C_1 = 0.5(20)+3 = 13$",
+            "$C_2 = 0.8(20)+1 = 17$",
+            "The first company ($\\$13$) is cheaper for a 20 km journey."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2-09-Q4",
+      "type": "structured",
+      "totalMarks": 10,
+      "difficulty": "hard",
+      "context": "A car depreciates in value. The value, $V$ dollars, after $t$ years is modelled by $V = 12000 - 1500t$ for $0 \\leq t \\leq 8$.",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find the initial value of the car and the annual decrease in value.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "Initial value $= \\$12000$; annual decrease $= \\$1500$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            {
+              "mark": "B1",
+              "desc": "Initial value $= \\$12000$ (when $t=0$)"
+            },
+            {
+              "mark": "B1",
+              "desc": "Annual decrease $= \\$1500$ (gradient magnitude)"
+            }
+          ],
+          "workingSteps": [
+            "When $t=0$: $V=12000$ (initial value)",
+            "Gradient $= -1500$ (value decreases by $\\$1500$ per year)"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find the value of the car after 5 years.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "4500",
+          "tolerance": null,
+          "unit": "$",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "$V = 12000-1500(5)$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$V = \\$4500$"
+            }
+          ],
+          "workingSteps": [
+            "$V = 12000-1500(5) = 12000-7500 = \\$4500$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "After how many years is the car worth $\\$3000$?",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "integer",
+          "correctAnswer": "6",
+          "tolerance": null,
+          "unit": "years",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "$3000 = 12000-1500t \\Rightarrow 1500t=9000$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$t = 6$ years"
+            }
+          ],
+          "workingSteps": [
+            "$3000 = 12000-1500t$",
+            "$1500t = 9000$",
+            "$t = 6$ years"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Explain the significance of the value $t = 8$ in this model.",
+          "marks": 2,
+          "commandWord": "explain",
+          "answerType": "explain",
+          "correctAnswer": "At $t=8$, $V=0$: the model predicts the car has no value after 8 years.",
+          "markScheme": [
+            {
+              "mark": "M1",
+              "desc": "$V = 12000-1500(8) = 12000-12000 = 0$ evaluated"
+            },
+            {
+              "mark": "E1",
+              "desc": "The car reaches zero value / is written off at $t=8$; the model is not valid beyond this point"
+            }
+          ],
+          "workingSteps": [
+            "$V = 12000-1500(8) = 12000-12000 = 0$",
+            "The car has zero value after 8 years; the linear model cannot give negative values in a realistic context."
+          ]
+        }
+      ]
+    }
+  ]
 }

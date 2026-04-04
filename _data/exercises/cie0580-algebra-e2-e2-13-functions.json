@@ -6,10 +6,211 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 28,
+  "estimatedMinutes": 32,
+  "questions": [
+    {
+      "id": "E2-13-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "easy",
+      "questionText": "The functions $f$ and $g$ are defined as:\n$$f(x) = 3x - 1 \\quad \\text{and} \\quad g(x) = x^2 + 4$$\n\n(a) Find $f(5)$.\n(b) Find $g(-3)$.\n(c) Find $fg(2)$.\n(d) Find $gf(2)$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) 14, (b) 13, (c) 23, (d) 29",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "(a) $f(5)=3(5)-1=14$" },
+        { "mark": "B1", "desc": "(b) $g(-3)=9+4=13$" },
+        { "mark": "B1", "desc": "(c) $fg(2)=f(8)=3(8)-1=23$" },
+        { "mark": "B1", "desc": "(d) $gf(2)=g(5)=25+4=29$" }
+      ],
+      "workingSteps": [
+        "(a) $f(5)=3(5)-1=15-1=14$",
+        "(b) $g(-3)=(-3)^2+4=9+4=13$",
+        "(c) $g(2)=4+4=8$; $fg(2)=f(8)=3(8)-1=23$",
+        "(d) $f(2)=3(2)-1=5$; $gf(2)=g(5)=25+4=29$"
+      ],
+      "explanation": "$fg(x)$ means apply $g$ first, then $f$; $gf(x)$ means apply $f$ first, then $g$."
+    },
+    {
+      "id": "E2-13-Q2",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "find",
+      "difficulty": "medium",
+      "questionText": "The function $h(x) = \\dfrac{2x+1}{x-3}$ for $x \\neq 3$.\n\n(a) Find $h^{-1}(x)$.\n(b) Verify that $h(h^{-1}(x)) = x$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) $h^{-1}(x) = \\dfrac{3x+1}{x-2}$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Let $y=\\frac{2x+1}{x-3}$; rearrange: $y(x-3)=2x+1$" },
+        { "mark": "M1", "desc": "$xy-3y=2x+1 \\Rightarrow xy-2x=3y+1 \\Rightarrow x(y-2)=3y+1$" },
+        { "mark": "A1", "desc": "$x=\\frac{3y+1}{y-2}$, so $h^{-1}(x)=\\frac{3x+1}{x-2}$ cao" },
+        { "mark": "A1", "desc": "Verification: $h\\left(\\frac{3x+1}{x-2}\\right)$ simplified to $x$" }
+      ],
+      "workingSteps": [
+        "Let $y=\\frac{2x+1}{x-3}$",
+        "$y(x-3)=2x+1$",
+        "$xy-3y=2x+1$",
+        "$xy-2x=3y+1$",
+        "$x(y-2)=3y+1$",
+        "$x=\\frac{3y+1}{y-2}$",
+        "So $h^{-1}(x)=\\frac{3x+1}{x-2}$",
+        "Verify: $h\\left(\\frac{3x+1}{x-2}\\right)=\\frac{2\\cdot\\frac{3x+1}{x-2}+1}{\\frac{3x+1}{x-2}-3}=\\frac{\\frac{6x+2+x-2}{x-2}}{\\frac{3x+1-3x+6}{x-2}}=\\frac{7x}{7}=x$ ✓"
+      ],
+      "explanation": "To find the inverse: swap $x$ and $y$ (or solve for $x$ in terms of $y$), then relabel."
+    },
+    {
+      "id": "E2-13-Q3",
+      "type": "structured",
+      "totalMarks": 14,
+      "difficulty": "hard",
+      "context": "The functions $f$, $g$ and $h$ are defined as:\n$$f(x) = 2x - 3 \\quad g(x) = \\dfrac{1}{x+1}, \\; x\\neq-1 \\quad h(x) = x^2 - 5$$",
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Find $f^{-1}(x)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$f^{-1}(x) = \\dfrac{x+3}{2}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$y=2x-3 \\Rightarrow x=\\frac{y+3}{2}$" },
+            { "mark": "A1", "desc": "$f^{-1}(x)=\\frac{x+3}{2}$ cao" }
+          ],
+          "workingSteps": [
+            "$y=2x-3$",
+            "$y+3=2x$",
+            "$x=\\frac{y+3}{2}$",
+            "$f^{-1}(x)=\\frac{x+3}{2}$",
+            "Check: $f(f^{-1}(x))=2\\cdot\\frac{x+3}{2}-3=x+3-3=x$ ✓"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Find $g^{-1}(x)$.",
+          "marks": 2,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$g^{-1}(x) = \\dfrac{1}{x} - 1$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$y=\\frac{1}{x+1} \\Rightarrow x+1=\\frac{1}{y}$" },
+            { "mark": "A1", "desc": "$g^{-1}(x)=\\frac{1}{x}-1$ cao" }
+          ],
+          "workingSteps": [
+            "$y=\\frac{1}{x+1}$",
+            "$x+1=\\frac{1}{y}$",
+            "$x=\\frac{1}{y}-1$",
+            "$g^{-1}(x)=\\frac{1}{x}-1$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "Find an expression for $fg(x)$, simplifying your answer.",
+          "marks": 3,
+          "commandWord": "find",
+          "answerType": "expression",
+          "correctAnswer": "$\\dfrac{1-3x-3}{x+1} = \\dfrac{-1-3x}{x+1}$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$fg(x) = f\\left(\\frac{1}{x+1}\\right)$" },
+            { "mark": "M1", "desc": "$= 2\\cdot\\frac{1}{x+1}-3$" },
+            { "mark": "A1", "desc": "$= \\dfrac{2}{x+1}-3 = \\dfrac{2-3(x+1)}{x+1} = \\dfrac{-3x-1}{x+1}$ cao" }
+          ],
+          "workingSteps": [
+            "$fg(x) = f\\left(\\frac{1}{x+1}\\right) = 2\\cdot\\frac{1}{x+1}-3$",
+            "$= \\frac{2}{x+1}-\\frac{3(x+1)}{x+1} = \\frac{2-3x-3}{x+1} = \\frac{-3x-1}{x+1}$",
+            "Check $x=0$: $fg(0)=f(1)=2(1)-3=-1$; $\\frac{-1}{1}=-1$ ✓"
+          ]
+        },
+        {
+          "label": "d",
+          "questionText": "Solve $h(x) = 11$.",
+          "marks": 2,
+          "commandWord": "solve",
+          "answerType": "expression",
+          "correctAnswer": "$x = 4$ or $x = -4$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$x^2-5=11 \\Rightarrow x^2=16$" },
+            { "mark": "A1", "desc": "$x=4$ and $x=-4$ cao" }
+          ],
+          "workingSteps": [
+            "$x^2-5=11$",
+            "$x^2=16$",
+            "$x=\\pm4$"
+          ]
+        },
+        {
+          "label": "e",
+          "questionText": "Solve $f(x) = g(x)$, giving your answers correct to 2 decimal places.",
+          "marks": 5,
+          "commandWord": "solve",
+          "answerType": "expression",
+          "correctAnswer": "$x = 1.77$ or $x = -1.27$",
+          "tolerance": 0.01,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "$2x-3=\\frac{1}{x+1}$" },
+            { "mark": "M1", "desc": "$(2x-3)(x+1)=1$, expand: $2x^2-x-3=1$" },
+            { "mark": "M1", "desc": "$2x^2-x-4=0$" },
+            { "mark": "A1", "desc": "$x=\\frac{1+\\sqrt{33}}{4}=1.69$..." },
+            { "mark": "A1", "desc": "$x=1.69$ (2dp) and $x=-1.19$ (2dp) — or exact values" }
+          ],
+          "workingSteps": [
+            "$2x-3=\\frac{1}{x+1}$",
+            "$(2x-3)(x+1)=1$",
+            "$2x^2+2x-3x-3=1$",
+            "$2x^2-x-4=0$",
+            "$x=\\frac{1\\pm\\sqrt{1+32}}{4}=\\frac{1\\pm\\sqrt{33}}{4}$",
+            "$\\sqrt{33}=5.745$",
+            "$x=\\frac{1+5.745}{4}=1.69$ or $x=\\frac{1-5.745}{4}=-1.19$ (2dp)",
+            "Check $x=1.69$: $f(1.69)=2(1.69)-3=0.38$; $g(1.69)=\\frac{1}{2.69}=0.372\\approx0.38$ ✓"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2-13-Q4",
+      "type": "short-answer",
+      "totalMarks": 6,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "$p(x) = x^2 + 2x - 8$ and $q(x) = x + 6$.\n\n(a) Find $pq(x)$ and simplify your answer.\n(b) Solve $pq(x) = 0$.",
+      "answerType": "expression",
+      "correctAnswer": "(a) $x^2+14x+40$, (b) $x=-4$ or $x=-10$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "$pq(x)=p(x+6)=(x+6)^2+2(x+6)-8$" },
+        { "mark": "M1", "desc": "$=x^2+12x+36+2x+12-8$" },
+        { "mark": "A1", "desc": "(a) $x^2+14x+40$ cao" },
+        { "mark": "M1", "desc": "$(x+4)(x+10)=0$" },
+        { "mark": "A1", "desc": "(b) $x=-4$ and $x=-10$" }
+      ],
+      "workingSteps": [
+        "(a) $pq(x)=p(q(x))=p(x+6)=(x+6)^2+2(x+6)-8$",
+        "$=(x^2+12x+36)+(2x+12)-8$",
+        "$=x^2+14x+40$",
+        "(b) $x^2+14x+40=0$",
+        "$(x+4)(x+10)=0$",
+        "Check: $(x+4)(x+10)=x^2+14x+40$ ✓",
+        "$x=-4$ or $x=-10$"
+      ],
+      "explanation": "For composite functions, substitute the inner function into the outer function and expand."
+    }
+  ]
 }

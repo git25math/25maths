@@ -6,10 +6,163 @@
   "tier": "Extended",
   "domain": "algebra",
   "schemaVersion": 2,
-  "status": "coming_soon",
+  "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 0,
-  "estimatedMinutes": 0,
-  "questions": []
+  "totalMarks": 26,
+  "estimatedMinutes": 30,
+  "questions": [
+    {
+      "id": "E2-11-Q1",
+      "type": "short-answer",
+      "totalMarks": 4,
+      "commandWord": "sketch",
+      "difficulty": "medium",
+      "questionText": "Sketch the curve $y = x^2 - 4x - 5$.\nOn your sketch, label:\n(a) the coordinates of the $y$-intercept,\n(b) the coordinates of the $x$-intercepts (roots),\n(c) the coordinates of the turning point.",
+      "answerType": "draw",
+      "correctAnswer": "$y$-int: $(0,-5)$; roots: $(5,0)$ and $(-1,0)$; turning point: $(2,-9)$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "$y$-intercept $(0,-5)$" },
+        { "mark": "B1", "desc": "Roots $(-1,0)$ and $(5,0)$" },
+        { "mark": "M1", "desc": "Turning point $x = \\frac{-1+5}{2} = 2$" },
+        { "mark": "A1", "desc": "Turning point $(2,-9)$; upward parabola shape" }
+      ],
+      "workingSteps": [
+        "(a) $y$-intercept: set $x=0$: $y=-5$; point $(0,-5)$",
+        "(b) Roots: $x^2-4x-5=0 \\Rightarrow (x-5)(x+1)=0 \\Rightarrow x=5$ or $x=-1$",
+        "(c) Turning point: $x = \\frac{-(-4)}{2(1)} = \\frac{4}{2} = 2$; $y=4-8-5=-9$; point $(2,-9)$",
+        "Check factorisation: $(x-5)(x+1)=x^2-4x-5$ ✓"
+      ],
+      "explanation": "For $y=ax^2+bx+c$: $y$-int at $(0,c)$; roots by factorisation or formula; vertex at $x=-b/(2a)$."
+    },
+    {
+      "id": "E2-11-Q2",
+      "type": "short-answer",
+      "totalMarks": 3,
+      "commandWord": "sketch",
+      "difficulty": "medium",
+      "questionText": "Sketch the curve $y = \\dfrac{4}{x}$ for $x > 0$ and $x < 0$.\nDescribe the behaviour of the curve as $x \\to 0^+$ and as $x \\to +\\infty$.",
+      "answerType": "explain",
+      "correctAnswer": "As $x \\to 0^+$, $y \\to +\\infty$; as $x \\to +\\infty$, $y \\to 0^+$.",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "B1", "desc": "Correct shape in both quadrants (reciprocal curve)" },
+        { "mark": "B1", "desc": "As $x\\to0^+$, $y\\to+\\infty$ stated" },
+        { "mark": "B1", "desc": "As $x\\to+\\infty$, $y\\to0$ (approaches but never reaches $x$-axis)" }
+      ],
+      "workingSteps": [
+        "$y=4/x$: as $x$ increases from 0, $y$ decreases from $\\infty$ towards 0",
+        "For $x<0$: as $x$ decreases from 0, $y$ increases from $-\\infty$ towards 0",
+        "Asymptotes: $x=0$ (vertical) and $y=0$ (horizontal)"
+      ],
+      "explanation": "The reciprocal function $y=k/x$ has two branches in opposite quadrants, with asymptotes at both axes."
+    },
+    {
+      "id": "E2-11-Q3",
+      "type": "structured",
+      "totalMarks": 12,
+      "difficulty": "hard",
+      "context": null,
+      "diagram": null,
+      "parts": [
+        {
+          "label": "a",
+          "questionText": "Sketch the curve $y = (x-2)(x+1)(x-3)$.\nLabel the $x$-intercepts and the $y$-intercept.",
+          "marks": 4,
+          "commandWord": "sketch",
+          "answerType": "draw",
+          "correctAnswer": "$x$-intercepts: $(-1,0)$, $(2,0)$, $(3,0)$; $y$-intercept: $(0,6)$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$x$-intercepts $x=-1$, $x=2$, $x=3$" },
+            { "mark": "B1", "desc": "$y$-intercept $(0,6)$" },
+            { "mark": "B1", "desc": "Correct overall shape: cubic with positive leading coefficient" },
+            { "mark": "B1", "desc": "Curve crosses at each root (not tangent unless repeated root)" }
+          ],
+          "workingSteps": [
+            "$x$-intercepts: $x-2=0 \\Rightarrow x=2$; $x+1=0 \\Rightarrow x=-1$; $x-3=0 \\Rightarrow x=3$",
+            "$y$-intercept: $x=0$: $(-2)(1)(-3)=6$; point $(0,6)$",
+            "Leading term: $x^3$ (positive), so curve goes from bottom-left to top-right",
+            "At each root the curve crosses the $x$-axis"
+          ]
+        },
+        {
+          "label": "b",
+          "questionText": "Sketch the curve $y = 2^x$.\nLabel the $y$-intercept and the asymptote.",
+          "marks": 3,
+          "commandWord": "sketch",
+          "answerType": "draw",
+          "correctAnswer": "$y$-intercept $(0,1)$; asymptote $y=0$; increasing exponential",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "B1", "desc": "$y$-intercept $(0,1)$ labelled" },
+            { "mark": "B1", "desc": "Horizontal asymptote $y=0$ as $x\\to-\\infty$" },
+            { "mark": "B1", "desc": "Correct shape: always positive, increasing, passes through $(1,2)$" }
+          ],
+          "workingSteps": [
+            "$y=2^x$: when $x=0$, $y=2^0=1$; when $x=1$, $y=2$; when $x=-1$, $y=0.5$",
+            "As $x\\to-\\infty$: $y\\to0$ (never reaches 0)",
+            "As $x\\to+\\infty$: $y\\to+\\infty$"
+          ]
+        },
+        {
+          "label": "c",
+          "questionText": "The equation $x^3 - 3x^2 - x + 3 = 0$ has three real roots.\nShow that $(x-1)$ is a factor and find all three roots.",
+          "marks": 5,
+          "commandWord": "show",
+          "answerType": "expression",
+          "correctAnswer": "$x = 1$, $x = 3$, $x = -1$",
+          "tolerance": null,
+          "unit": null,
+          "markScheme": [
+            { "mark": "M1", "desc": "Substituting $x=1$: $1-3-1+3=0$ shown" },
+            { "mark": "M1", "desc": "Polynomial division or factorisation by $(x-1)$" },
+            { "mark": "A1", "desc": "$(x-1)(x^2-2x-3)$" },
+            { "mark": "A1", "desc": "$(x-1)(x-3)(x+1)=0$" },
+            { "mark": "A1", "desc": "All three roots: $x=1$, $x=3$, $x=-1$" }
+          ],
+          "workingSteps": [
+            "Test $x=1$: $1^3-3(1)^2-1+3=1-3-1+3=0$ ✓, so $(x-1)$ is a factor",
+            "Divide: $x^3-3x^2-x+3 = (x-1)(x^2+ax-3)$",
+            "Expanding: $(x-1)(x^2+ax-3)=x^3+ax^2-3x-x^2-ax+3=x^3+(a-1)x^2-(a+3)x+3$",
+            "Match coefficients: $a-1=-3 \\Rightarrow a=-2$; check: $-(a+3)=1$ ✓",
+            "$(x-1)(x^2-2x-3) = (x-1)(x-3)(x+1)$",
+            "Roots: $x=1$, $x=3$, $x=-1$"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2-11-Q4",
+      "type": "short-answer",
+      "totalMarks": 7,
+      "commandWord": "find",
+      "difficulty": "hard",
+      "questionText": "A curve has equation $y = x^2 - 6x + 8$.\n\n(a) Write $y$ in the form $(x-a)^2 + b$.\n(b) State the coordinates of the turning point.\n(c) State the equation of the line of symmetry.\n(d) Find the $x$-intercepts.",
+      "answerType": "expression",
+      "correctAnswer": "(a) $(x-3)^2-1$, (b) $(3,-1)$, (c) $x=3$, (d) $x=2$ and $x=4$",
+      "tolerance": null,
+      "unit": null,
+      "markScheme": [
+        { "mark": "M1", "desc": "Completing the square: $(x-3)^2-9+8$" },
+        { "mark": "A1", "desc": "(a) $(x-3)^2-1$" },
+        { "mark": "B1", "desc": "(b) Turning point $(3,-1)$" },
+        { "mark": "B1", "desc": "(c) $x=3$" },
+        { "mark": "M1", "desc": "(d) $(x-3)^2=1 \\Rightarrow x-3=\\pm1$" },
+        { "mark": "A1", "desc": "(d) $x=2$ and $x=4$" }
+      ],
+      "workingSteps": [
+        "(a) $y=x^2-6x+8=(x-3)^2-9+8=(x-3)^2-1$",
+        "(b) Turning point at $(3,-1)$ (minimum since coefficient of $x^2$ is positive)",
+        "(c) Line of symmetry: $x=3$",
+        "(d) $(x-3)^2-1=0 \\Rightarrow (x-3)^2=1 \\Rightarrow x-3=\\pm1$; $x=4$ or $x=2$"
+      ],
+      "explanation": "Completing the square reveals the vertex form, turning point and symmetry axis directly."
+    }
+  ]
 }

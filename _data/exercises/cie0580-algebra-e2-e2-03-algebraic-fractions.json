@@ -9,7 +9,7 @@
   "status": "draft",
   "paperType": "mixed",
   "calculator": null,
-  "totalMarks": 24,
+  "totalMarks": 22,
   "estimatedMinutes": 28,
   "questions": [
     {
@@ -24,9 +24,18 @@
       "tolerance": null,
       "unit": null,
       "markScheme": [
-        { "mark": "M1", "desc": "Numerator factorised: $3(x-2)(x+2)$" },
-        { "mark": "M1", "desc": "Denominator factorised: $(x-3)(x+2)$" },
-        { "mark": "A1", "desc": "$\\dfrac{3(x-2)}{x-3}$ cao" }
+        {
+          "mark": "M1",
+          "desc": "Numerator factorised: $3(x-2)(x+2)$"
+        },
+        {
+          "mark": "M1",
+          "desc": "Denominator factorised: $(x-3)(x+2)$"
+        },
+        {
+          "mark": "A1",
+          "desc": "$\\dfrac{3(x-2)}{x-3}$ cao"
+        }
       ],
       "workingSteps": [
         "Numerator: $3x^2-12 = 3(x^2-4) = 3(x-2)(x+2)$",
@@ -49,10 +58,22 @@
       "tolerance": null,
       "unit": null,
       "markScheme": [
-        { "mark": "M1", "desc": "Common denominator $(x+2)(x-1)$ identified" },
-        { "mark": "M1", "desc": "$3(x-1) - 2(x+2)$ in numerator" },
-        { "mark": "A1", "desc": "Numerator: $3x-3-2x-4 = x-7$" },
-        { "mark": "A1", "desc": "$\\dfrac{x-7}{(x+2)(x-1)}$ cao" }
+        {
+          "mark": "M1",
+          "desc": "Common denominator $(x+2)(x-1)$ identified"
+        },
+        {
+          "mark": "M1",
+          "desc": "$3(x-1) - 2(x+2)$ in numerator"
+        },
+        {
+          "mark": "A1",
+          "desc": "Numerator: $3x-3-2x-4 = x-7$"
+        },
+        {
+          "mark": "A1",
+          "desc": "$\\dfrac{x-7}{(x+2)(x-1)}$ cao"
+        }
       ],
       "workingSteps": [
         "Common denominator: $(x+2)(x-1)$",
@@ -75,9 +96,18 @@
       "tolerance": 0.05,
       "unit": null,
       "markScheme": [
-        { "mark": "M1", "desc": "Cross-multiplying: $5(x-2) = 3(x+1)$" },
-        { "mark": "M1", "desc": "$5x-10 = 3x+3 \\Rightarrow 2x = 13$" },
-        { "mark": "A1", "desc": "$x = 6.5$ cao" }
+        {
+          "mark": "M1",
+          "desc": "Cross-multiplying: $5(x-2) = 3(x+1)$"
+        },
+        {
+          "mark": "M1",
+          "desc": "$5x-10 = 3x+3 \\Rightarrow 2x = 13$"
+        },
+        {
+          "mark": "A1",
+          "desc": "$x = 6.5$ cao"
+        }
       ],
       "workingSteps": [
         "Cross-multiply: $5(x-2) = 3(x+1)$",
@@ -106,10 +136,22 @@
           "tolerance": null,
           "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "Numerator factorised: $(2x+3)(x+1)$" },
-            { "mark": "M1", "desc": "Denominator factorised: $(2x-3)(x+1)$" },
-            { "mark": "A1", "desc": "$(x+1)$ cancelled" },
-            { "mark": "A1", "desc": "$\\dfrac{2x+3}{2x-3}$ cao" }
+            {
+              "mark": "M1",
+              "desc": "Numerator factorised: $(2x+3)(x+1)$"
+            },
+            {
+              "mark": "M1",
+              "desc": "Denominator factorised: $(2x-3)(x+1)$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$(x+1)$ cancelled"
+            },
+            {
+              "mark": "A1",
+              "desc": "$\\dfrac{2x+3}{2x-3}$ cao"
+            }
           ],
           "workingSteps": [
             "Numerator $2x^2+5x+3$: $ac=6$, sum $5$: $2$ and $3$; $\\Rightarrow (2x+3)(x+1)$",
@@ -129,10 +171,22 @@
           "tolerance": null,
           "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "Common denominator $(x-3)(x+2)$ used" },
-            { "mark": "M1", "desc": "$(x+1)(x+2)+(2x-1)(x-3)$ in numerator" },
-            { "mark": "A1", "desc": "Each product expanded correctly" },
-            { "mark": "A1", "desc": "$\\dfrac{3x^2-4x+5}{(x-3)(x+2)}$ cao" }
+            {
+              "mark": "M1",
+              "desc": "Common denominator $(x-3)(x+2)$ used"
+            },
+            {
+              "mark": "M1",
+              "desc": "$(x+1)(x+2)+(2x-1)(x-3)$ in numerator"
+            },
+            {
+              "mark": "A1",
+              "desc": "Each product expanded correctly"
+            },
+            {
+              "mark": "A1",
+              "desc": "$\\dfrac{3x^2-4x+5}{(x-3)(x+2)}$ cao"
+            }
           ],
           "workingSteps": [
             "Common denominator: $(x-3)(x+2)$",
@@ -153,10 +207,22 @@
           "tolerance": 0.01,
           "unit": null,
           "markScheme": [
-            { "mark": "M1", "desc": "Common denominator $(x-2)(x+2)$ used" },
-            { "mark": "M1", "desc": "Numerator simplified to $6x$; equation becomes $6x = x^2-4$" },
-            { "mark": "A1", "desc": "$x^2-6x-4 = 0$" },
-            { "mark": "A1", "desc": "$x = 3 \\pm \\sqrt{13} = 6.61$ or $-0.61$ (2dp)" }
+            {
+              "mark": "M1",
+              "desc": "Common denominator $(x-2)(x+2)$ used"
+            },
+            {
+              "mark": "M1",
+              "desc": "Numerator simplified to $6x$; equation becomes $6x = x^2-4$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$x^2-6x-4 = 0$"
+            },
+            {
+              "mark": "A1",
+              "desc": "$x = 3 \\pm \\sqrt{13} = 6.61$ or $-0.61$ (2dp)"
+            }
           ],
           "workingSteps": [
             "$\\dfrac{(x+1)(x+2)-(x-1)(x-2)}{(x-2)(x+2)} = 1$",
