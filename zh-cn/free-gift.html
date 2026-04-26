@@ -1,7 +1,7 @@
 ---
 layout: global
 title: 免费赠品领取
-description: "填写简短问卷，免费领取 CIE 0580 + Edexcel 4MA1 词汇资料。"
+description: "填写简短问卷，免费领取 CIE 0580 词汇资料。"
 lang: zh-CN
 lang_links:
   - code: en
@@ -15,8 +15,8 @@ lang_links:
 <section class="bg-gray-900 text-white py-16">
     <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
         <p class="text-xs tracking-widest uppercase text-gray-400 mb-6">Free Resources</p>
-        <h1 class="text-4xl md:text-5xl font-semibold mb-4">免费赠品：CIE + Edexcel 词汇资料</h1>
-        <p class="text-lg md:text-xl text-gray-100">填写 30 秒问卷，即可立即领取两套免费资料。</p>
+        <h1 class="text-4xl md:text-5xl font-semibold mb-4">免费赠品：CIE 0580 词汇资料</h1>
+        <p class="text-lg md:text-xl text-gray-100">填写 30 秒问卷，即可立即领取免费资料。</p>
     </div>
 </section>
 
@@ -28,7 +28,7 @@ lang_links:
             <form action="{{ site.waitlist.endpoint }}" method="POST" class="space-y-5">
                 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <input type="hidden" name="topic" value="Free Gift Pack">
-                <input type="hidden" name="module" value="CIE 0580 + Edexcel 4MA1">
+                <input type="hidden" name="module" value="CIE 0580">
                 <input type="hidden" name="lang" value="zh-CN">
                 <input type="hidden" name="source_page" value="{{ page.url }}">
                 <input type="hidden" name="entry_point" value="free_gift_survey">
@@ -61,8 +61,6 @@ lang_links:
                     <select id="exam_board_interest" name="exam_board_interest" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-400">
                         <option value="">请选择</option>
                         <option value="CIE 0580">CIE 0580</option>
-                        <option value="Edexcel 4MA1">Edexcel 4MA1</option>
-                        <option value="Both">Both</option>
                     </select>
                 </div>
 
