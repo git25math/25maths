@@ -15,6 +15,18 @@ noindex: true
             Your hub for Layers 3 & 4 of the 25Maths system — stable output training and exam rhythm. Pass holders receive all weekly practice packs released during their 12-week term.
         </p>
         {% include bilingual/inline-note.html note="会员资源中心：开启双语支持后可显示中文流程提示，资源名称仍保留英文。" class="text-sm text-gray-100 mt-3 opacity-90 max-w-3xl" %}
+
+        <!-- F1 fix · ADR-0070 · Hero login anchor (member_auth.js toggles visibility) -->
+        <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-3">
+            <p class="text-sm text-gray-200" data-member-login-prompt>Already a Term Pass member? Sign in to access your packs.<span class="bilingual-support-only block text-xs text-gray-400 mt-1">已购买学期通行证？登录后即可使用资料包。</span></p>
+            <button type="button" data-member-login class="inline-flex items-center justify-center rounded-lg bg-white px-5 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-100 transition ui-focus-ring">
+                Log in<span class="bilingual-support-only ml-1">/ 登录</span>
+            </button>
+            <button type="button" data-member-logout class="hidden inline-flex items-center justify-center rounded-lg border border-gray-500 px-4 py-1.5 text-xs font-semibold text-gray-200 hover:bg-gray-800 transition">
+                Log out<span class="bilingual-support-only ml-1">/ 退出</span>
+            </button>
+        </div>
+
         <a href="/membership/settings.html" class="inline-block mt-4 text-sm text-gray-400 hover:text-white transition">⚙️ Settings<span class="bilingual-support-only ml-1">/ 设置</span></a>
     </div>
 </section>
@@ -122,9 +134,9 @@ noindex: true
                 <button
                     type="button"
                     data-member-login
-                    class="inline-flex items-center rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition"
+                    class="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition ui-focus-ring"
                 >
-                    Log in
+                    Log in<span class="bilingual-support-only ml-1">/ 登录</span>
                 </button>
                 <button
                     type="button"
@@ -220,6 +232,7 @@ noindex: true
         <div id="weekly-releases-grid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <article class="sm:col-span-2 md:col-span-3 lg:col-span-4 bg-gray-50 border border-gray-200 rounded-2xl p-8 text-center">
                 <p class="text-gray-500 text-sm">Sign in with your Term Practice Pass email to access your weekly practice packs.</p>
+                <p class="text-gray-400 text-xs mt-2">Already a member? Use the <strong>Log in</strong> button above.<span class="bilingual-support-only block">已经是会员？请使用上方的<strong>登录</strong>按钮。</span></p>
                 <a href="/subscription.html" class="inline-block mt-4 bg-gray-900 text-white px-5 py-2 rounded-lg font-semibold text-sm hover:bg-gray-700 transition ui-focus-ring">Get Term Pass</a>
             </article>
         </div>
