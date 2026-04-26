@@ -57,15 +57,16 @@ modules:
     description: "Premium exam-aligned resources for Cambridge IGCSE 0580"
     free_count: 8
     product_count: 9
-  - key: edx4ma1
-    name: Edexcel 4MA1
-    full_name: Pearson Edexcel IGCSE Mathematics 4MA1
-    path: /edx4ma1/
-    status: active
-    color: secondary
-    description: "Exam-aligned resources for Edexcel IGCSE 4MA1"
-    free_count: 6
-    product_count: 6
+  # ADR-0070 · EDX 全线推迟 · module entry commented out
+  # - key: edx4ma1
+  #   name: Edexcel 4MA1
+  #   full_name: Pearson Edexcel IGCSE Mathematics 4MA1
+  #   path: /edx4ma1/
+  #   status: active
+  #   color: secondary
+  #   description: "Exam-aligned resources for Edexcel IGCSE 4MA1"
+  #   free_count: 6
+  #   product_count: 6
 
 # Exclude from build
 exclude:
