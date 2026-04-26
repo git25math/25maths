@@ -80,7 +80,7 @@ We do NOT share with: advertisers, brokers, school administrators (unless legall
 - We will never knowingly collect data from children under 14 without verified parental consent
 
 ### 9. Contact
-- Privacy Officer / 隐私负责人: NZH (privacy@25maths.com — pending creation)
+- Privacy Officer / 隐私负责人: NZH (support@25maths.com)
 - Response SLA: 7 days
 
 ### 10. Changes
@@ -151,7 +151,7 @@ We will notify users of material changes via in-app banner + email at least 14 d
 - 永不在未经家长验证同意的情况下知情收集 14 岁以下儿童数据
 
 ### 9. 联系方式
-- 隐私负责人:NZH(privacy@25maths.com — 待创建)
+- 隐私负责人:NZH(support@25maths.com)
 - 响应 SLA:7 日
 
 ### 10. 变更
