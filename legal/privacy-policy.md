@@ -49,7 +49,13 @@ We **never** use student data for: advertising profiling, sale to third parties,
 
 ### 4. Data Storage & Cross-Border
 - Backend: Supabase (project ref `jjjigohjvmyewasmmmyf`)
-- Primary storage region: TBD-NZH-decides(若选择中国境内 → 满足 PIPL 数据本地化 · 若选境外 → 需补 PIPL 跨境合规说明)
+- Primary storage region: **境外**(per NZH 2026-04-26 decision)
+- **Cross-border data transfer / PIPL Article 38 compliance**:
+  - Legal basis: Standard Contractual Clauses (SCC) — see DPA Schedule A
+  - Data minimization (privacy § 2):no real names / no national ID / no payment / no surveillance
+  - Sensitive personal information of minors:never collected (privacy § 8)
+  - Subject rights mirror local execution:export / correction / deletion processed on Supabase backend within SLA
+  - PIPL 安全评估申报:Beta 期免(< 100 万人脸 / < 10 万一般个人信息门槛)· 规模触线时启动申报
 - Backups: encrypted at rest + isolated geo-region
 
 ### 5. Your Rights (GDPR + PIPL)
@@ -120,7 +126,13 @@ We will notify users of material changes via in-app banner + email at least 14 d
 
 ### 4. 数据存储与跨境
 - 后端:Supabase(项目 ref `jjjigohjvmyewasmmmyf`)
-- 主存储区域:**待 NZH 决定**(若选境内 → 满足 PIPL 数据本地化 · 若选境外 → 需补 PIPL 跨境合规说明)
+- 主存储区域:**境外**(NZH 2026-04-26 决策)
+- **跨境数据传输 / PIPL 第 38 条合规**:
+  - 法律基础:标准合同条款(SCC)— 详见 DPA 附件 A
+  - 数据最小化(隐私 § 2):不收真名 / 不收身份证 / 不收支付 / 不行为监控
+  - 未成年人敏感个人信息:永不收集(隐私 § 8)
+  - 主体权利等效执行:Supabase 后端 SLA 内处理导出 / 更正 / 删除
+  - PIPL 安全评估申报:Beta 期免(< 100 万人脸 / < 10 万一般个人信息门槛)· 规模触线时启动申报
 - 备份:静态加密 + 地理隔离
 
 ### 5. 您的权利(GDPR + PIPL)

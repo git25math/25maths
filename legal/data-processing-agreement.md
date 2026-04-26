@@ -49,10 +49,12 @@ noindex: false
 ### 6. Sub-processor List
 | Sub-processor | Service | Region | Purpose |
 |---|---|---|---|
-| Supabase Inc. | Database / Auth | TBD-NZH-decides | Primary backend |
+| Supabase Inc. | Database / Auth | 境外 | Primary backend |
 | Cloudflare Inc. | CDN / Workers | Global edge | Static delivery + serverless |
 
 Adding a sub-processor requires 30 days advance written notice + Controller's right to object.
+
+**Cross-border note**:Per NZH 2026-04-26 decision, primary storage is offshore. Compliance via PIPL Article 38 SCC (Schedule A) + data minimization. PIPL security assessment filing not required at current scale (< 100K general PI / < 1M facial). Filing triggered automatically when scale crosses threshold.
 
 ### 7. Security Measures
 - Encryption at rest (Supabase native)
@@ -127,10 +129,12 @@ TBD-NZH(Beta 期免费 · 商业产品启动后需重审)
 ### 6. 次级处理者清单
 | 次级处理者 | 服务 | 区域 | 用途 |
 |---|---|---|---|
-| Supabase Inc. | 数据库 / Auth | 待 NZH 定 | 主后端 |
+| Supabase Inc. | 数据库 / Auth | 境外 | 主后端 |
 | Cloudflare Inc. | CDN / Workers | 全球 edge | 静态分发 + serverless |
 
 新增次级处理者须 30 日前书面通知 + 控制者有权反对。
+
+**跨境提示**:NZH 2026-04-26 决策主存储境外。合规路径走 PIPL 第 38 条 SCC(附件 A)+ 数据最小化。当前规模无须 PIPL 安全评估申报(< 10 万一般个人信息 / < 100 万人脸阈值)· 规模触线时自动启动申报。
 
 ### 7. 安全措施
 - 静态加密(Supabase 原生)
