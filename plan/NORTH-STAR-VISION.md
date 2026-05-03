@@ -47,14 +47,14 @@
 | **NZH-MathPrep LaTeX framework** | Zero-marginal-cost content production | High — proprietary toolchain |
 | **Exam frequency analysis** | 793+ real exam questions analyzed for priority weighting | Medium — data advantage compounds over time |
 | **Multi-AI orchestration** | Claude + Codex + Gemini working in parallel | Medium — execution speed advantage |
-| **Micro-topic exercise engine** | 202 subtopics with interactive practice | Medium — grows with content |
+| **Board-aligned resource system** | CIE/Edexcel worksheet, Kahoot, and future question-bank metadata can share topic structure | Medium — grows with cleaned content |
 | **Full-stack member system** | Auth + telemetry + webhook + entitlements already built | High — 1,918 LOC production-ready API |
 
 ### What We Must Build
 
 | Capability | Why Critical | Competitor Benchmark |
 |------------|-------------|---------------------|
-| **Adaptive difficulty engine** | Adjusts question difficulty based on performance | Seneca, Dr Frost |
+| **Future adaptive question layer** | Requires a new question-bank architecture, not the retired website exercise implementation | Seneca, Dr Frost |
 | **Parent dashboard** | Chinese parents are the decision-makers and payers | No competitor does this in CN |
 | **Spaced repetition system** | Proven to improve retention 2-3x | Anki-style, no IGCSE-specific exists |
 | **Printable progress reports** | Schools and tutors need paper artifacts | Save My Exams has basic version |
@@ -363,4 +363,4 @@ The bilingual angle is the **wedge**: no competitor serves Chinese-speaking IGCS
 
 ---
 
-*This document defines where we're going. CHIEF-ENGINEER-OPS-PLAN.md defines how we get there step by step. Both are living documents updated as we learn.*
+*This document defines the broad direction. `docs/DEVELOPMENT-PLAN.md` is the current implementation source; `plan/CHIEF-ENGINEER-OPS-PLAN.md` is now a compact historical snapshot after the website exercise product line retirement.*

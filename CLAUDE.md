@@ -107,7 +107,7 @@
 | `docs/CONTRIBUTING.md` | **开发规范**（AI/人类通用唯一权威） | **必读** |
 | `docs/DEVELOPMENT-PLAN.md` | **愿景 + 进度 + 任务 + 工作流 + 金标准** | **必读** |
 | `docs/BUG-POSTMORTEM.md` | Bug 根因分析 + 防范规则 | 高 |
-| `docs/ECOSYSTEM-ANALYSIS.md` | 生态系统 5 项目集成分析 | 参考 |
+| `docs/ECOSYSTEM-ANALYSIS.md` | retired 生态系统旧快照；不要作为实现输入 | 历史 |
 | `DECISIONS.md` | 决策日志 | 参考 |
 | `HANDOFF.md` | 项目交接文档（非 Claude Code 用户入口） | 参考 |
 
