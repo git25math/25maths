@@ -76,6 +76,29 @@ SKIP_PATH_PREFIXES = {
     "supabase/migrations/",
 }
 
+RETIRE_MIGRATION = "20260503080000_retire_exercise_schema.sql"
+RETIRE_PREFIX = RETIRE_MIGRATION.split("_", 1)[0]
+RETIRED_TABLES = [
+    "assignment_submissions",
+    "assignments",
+    "question_attempts",
+    "exercise_sessions",
+]
+POST_RETIRE_MIGRATION_MARKERS = [
+    "exercise_slug",
+    "exercise_slugs",
+]
+for table in RETIRED_TABLES:
+    POST_RETIRE_MIGRATION_MARKERS.extend(
+        [
+            f"create table public.{table}",
+            f"create table if not exists public.{table}",
+            f"alter table public.{table}",
+            f"references public.{table}",
+            f"on public.{table}",
+        ]
+    )
+
 FORBIDDEN_MARKERS = [
     "/exercises/",
     "site.exercises",
@@ -183,11 +206,41 @@ def check_public_references() -> None:
                 fail(f"{rel(path)} contains retired exercise marker: {marker}")
 
 
+def check_supabase_migrations() -> None:
+    migrations_dir = ROOT / "supabase" / "migrations"
+    retire_migration = migrations_dir / RETIRE_MIGRATION
+    if not retire_migration.exists():
+        fail(f"Supabase retirement migration missing: supabase/migrations/{RETIRE_MIGRATION}")
+        return
+
+    retire_text = " ".join(retire_migration.read_text(encoding="utf-8").lower().split())
+    for table in RETIRED_TABLES:
+        marker = f"drop table if exists public.{table}"
+        if marker in retire_text:
+            pass_msg(f"Retirement migration drops public.{table}")
+        else:
+            fail(f"Retirement migration does not drop public.{table}")
+
+    migration_failures_before = failures
+    for path in sorted(migrations_dir.glob("*.sql")):
+        prefix = path.name.split("_", 1)[0]
+        if prefix <= RETIRE_PREFIX:
+            continue
+        text = " ".join(path.read_text(encoding="utf-8").lower().split())
+        for marker in POST_RETIRE_MIGRATION_MARKERS:
+            if marker in text:
+                fail(f"{rel(path)} reintroduces retired exercise schema marker: {marker}")
+
+    if failures == migration_failures_before:
+        pass_msg("No post-retirement migration reintroduces retired exercise schema")
+
+
 def main() -> int:
     print("== Exercise Product Line Retirement Guard ==")
     check_removed_paths()
     check_config()
     check_public_references()
+    check_supabase_migrations()
 
     print("== Summary ==")
     print(f"Failures: {failures}")
