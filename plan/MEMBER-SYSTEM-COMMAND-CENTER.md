@@ -1,6 +1,7 @@
 # Member System Command Center
 
 > Updated: 2026-02-18 (UTC)
+> 2026-05-03 update: exercise telemetry and exercise-catalog assignments are retired; active member scope uses auth, entitlements, downloads, resource signals, and `user_daily_activity`.
 > Branch baseline: `main` + `codex/member-system-dev`
 > Commander: Codex
 
@@ -12,13 +13,13 @@
 
 1. 免费会员（Free）
 - 邮箱登录与账号身份
-- 互动练习进度记录
-- 做题轨迹和错题记录
+- 资源访问与学习活动摘要
+- worksheet / Kahoot / bundle 路径建议
 - 个人学习仪表盘基础视图
 
 2. 付费会员（Paid）
-- 基于错题标签的针对性学习计划推荐
-- 个性化薄弱环节强化路径
+- 基于资源与目标模块的学习计划推荐
+- 个性化复习路径强化
 - 订阅优惠权益
 - 课程包优惠券权益
 
@@ -64,7 +65,7 @@
 - 输出：可运行代码 + 验证脚本 + 风险说明。
 
 ## Agent-Codex-Frontend
-- 负责登录体验、练习数据上报、会员中心可视化。
+- 负责登录体验、资源路径体验、会员中心可视化。
 - 输出：前端交互与兼容性验证结果。
 
 ## Agent-Gemini-Architect
@@ -82,7 +83,7 @@
 - 失败即停 + 自动修复回写 + 单项重试
 
 2. S1: 身份与基础数据层（Free 基础）
-- Auth 登录、profiles、exercise_sessions、question_attempts
+- Auth 登录、profiles、user_daily_activity
 
 3. S2: 会员权益层（Paid 能力）
 - membership_status、entitlements、升级判定
@@ -92,7 +93,7 @@
 - 会员下载网关
 
 5. S4: 学习体验层
-- 错题聚类
+- 资源访问与学习活动聚合
 - 针对性推荐学习计划
 - 优惠券/订阅优惠展示与触发
 
@@ -104,9 +105,9 @@
 
 ## Gate A (Free MVP)
 1. 登录可用
-2. 练习进度可记录
-3. 错题可追踪
-4. 匿名流程不退化
+2. 会员资源状态可见
+3. 学习活动摘要可见
+4. 公共资源流程不依赖云端写入
 
 ## Gate B (Paid MVP)
 1. 支付后会员状态更新成功

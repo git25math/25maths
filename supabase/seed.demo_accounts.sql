@@ -22,14 +22,10 @@ declare
   v_teacher_id uuid := '00000000-0000-0000-0000-000000000002'; -- REPLACE with real UUID
   v_institution_id uuid;
   v_class_id uuid;
-  v_session_id uuid;
   v_day_offset integer;
-  v_score integer;
   v_qcount integer;
+  v_correct integer;
   v_duration integer;
-  v_is_correct boolean;
-  v_exercise text;
-  v_board text;
   v_skill text;
 begin
 
@@ -77,69 +73,42 @@ insert into public.class_students (class_id, student_id)
 values (v_class_id, v_student_id);
 
 -- ============================================================
--- STEP 4: Generate 30 days of exercise sessions for student
+-- STEP 4: Generate 30 days of resource-based learning activity
 -- ============================================================
 
 for v_day_offset in 0..29 loop
-  -- Random exercise from pool
-  v_exercise := (array[
-    'cie0580-algebra-c2-c2-01-introduction-to-algebra',
-    'cie0580-algebra-c2-c2-02-algebraic-manipulation',
-    'cie0580-algebra-c2-c2-03-equations',
-    'cie0580-number-c1-c1-01-types-of-number',
-    'cie0580-number-c1-c1-02-fractions-decimals-percentages',
-    'cie0580-geometry-c4-c4-01-angles',
-    'cie0580-trigonometry-c6-c6-01-trigonometric-ratios',
-    'cie0580-statistics-c8-c8-01-data-collection'
+  v_skill := (array[
+    'C1-04',
+    'C1-13',
+    'C2-05',
+    'C3-03',
+    'C4-06',
+    'C5-04',
+    'E6-05',
+    'E8-04'
   ])[1 + floor(random() * 8)::int];
 
-  v_board := 'cie0580';
   v_qcount := 8 + floor(random() * 5)::int; -- 8-12 questions
-  v_score := floor(v_qcount * (0.55 + random() * 0.40))::int; -- 55-95% accuracy
+  v_correct := floor(v_qcount * (0.55 + random() * 0.40))::int; -- 55-95% accuracy
   v_duration := 180 + floor(random() * 420)::int; -- 3-10 minutes
 
-  insert into public.exercise_sessions
-    (id, user_id, exercise_slug, board, tier, syllabus_code, started_at, completed_at, score, question_count, duration_seconds)
+  insert into public.user_daily_activity
+    (user_id, activity_date, sessions_completed, questions_answered, correct_answers, total_time_seconds, skills_practiced)
   values (
-    gen_random_uuid(),
     v_student_id,
-    v_exercise,
-    v_board,
-    'Extended',
-    split_part(split_part(v_exercise, '-c', 2), '-', 2),
-    now() - (v_day_offset || ' days')::interval - (floor(random()*8) || ' hours')::interval,
-    now() - (v_day_offset || ' days')::interval - (floor(random()*7) || ' hours')::interval,
-    v_score,
+    current_date - v_day_offset,
+    1,
     v_qcount,
-    v_duration
+    v_correct,
+    v_duration,
+    array[v_skill]
   )
-  returning id into v_session_id;
-
-  -- Generate question attempts for this session
-  for i in 0..(v_qcount - 1) loop
-    -- Distribute mistakes: more on trig and geometry
-    if v_exercise like '%trigonometry%' then
-      v_is_correct := random() > 0.45; -- ~55% accuracy (weak)
-    elsif v_exercise like '%geometry%' then
-      v_is_correct := random() > 0.35; -- ~65% accuracy (moderate)
-    else
-      v_is_correct := random() > 0.20; -- ~80% accuracy (strong)
-    end if;
-
-    v_skill := split_part(split_part(v_exercise, '-c', 2), '-', 2);
-
-    insert into public.question_attempts
-      (session_id, user_id, question_index, is_correct, selected_answer, correct_answer, skill_tag)
-    values (
-      v_session_id,
-      v_student_id,
-      i,
-      v_is_correct,
-      case when v_is_correct then 0 else 1 + floor(random() * 3)::int end,
-      0,
-      v_skill
-    );
-  end loop;
+  on conflict (user_id, activity_date) do update set
+    sessions_completed = excluded.sessions_completed,
+    questions_answered = excluded.questions_answered,
+    correct_answers = excluded.correct_answers,
+    total_time_seconds = excluded.total_time_seconds,
+    skills_practiced = excluded.skills_practiced;
 end loop;
 
 -- ============================================================
@@ -150,21 +119,6 @@ insert into public.user_streaks (user_id, current_streak, best_streak, last_acti
 values (v_student_id, 12, 18, current_date - 1, 25)
 on conflict (user_id) do update set
   current_streak = 12, best_streak = 18, last_active_date = current_date - 1, total_active_days = 25;
-
--- Daily activity for last 14 days
-for v_day_offset in 0..13 loop
-  insert into public.user_daily_activity
-    (user_id, activity_date, sessions_completed, questions_answered, correct_answers, total_time_seconds)
-  values (
-    v_student_id,
-    current_date - v_day_offset,
-    1 + floor(random() * 3)::int,
-    8 + floor(random() * 20)::int,
-    6 + floor(random() * 15)::int,
-    300 + floor(random() * 600)::int
-  )
-  on conflict (user_id, activity_date) do nothing;
-end loop;
 
 -- ============================================================
 -- STEP 6: XP and achievements for student
@@ -183,23 +137,6 @@ values
   (v_student_id, 'accuracy-80-5', now() - interval '5 days', true),
   (v_student_id, 'explorer-5', now() - interval '3 days', true)
 on conflict (user_id, achievement_id) do nothing;
-
--- ============================================================
--- STEP 7: Assignment from teacher
--- ============================================================
-
-insert into public.assignments
-  (institution_id, teacher_id, class_id, title, description, exercise_slugs, due_at, status)
-values (
-  v_institution_id,
-  v_teacher_id,
-  v_class_id,
-  'Algebra Chapter 2 Weekly Practice',
-  'Complete all questions in C2-01 and C2-02. Focus on sign errors when expanding brackets.',
-  array['cie0580-algebra-c2-c2-01-introduction-to-algebra', 'cie0580-algebra-c2-c2-02-algebraic-manipulation'],
-  now() + interval '7 days',
-  'active'
-);
 
 raise notice 'Demo data seeded successfully!';
 raise notice 'Student UUID: %', v_student_id;

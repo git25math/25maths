@@ -22,9 +22,10 @@ REMOVED_PATHS = [
     "functions/api/v1/exercise",
     "functions/api/v1/engagement/check-achievements.js",
     "institution/assignments.html",
+    "plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md",
 ]
 
-SCAN_SUFFIXES = {".html", ".md", ".js", ".json", ".xml", ".yml", ".yaml", ".txt", ".sh", ".py", ".mjs"}
+SCAN_SUFFIXES = {".html", ".md", ".js", ".json", ".xml", ".yml", ".yaml", ".txt", ".sh", ".py", ".mjs", ".sql"}
 SCAN_ROOTS = {
     "_includes",
     "_layouts",
@@ -36,9 +37,11 @@ SCAN_ROOTS = {
     "edx4ma1",
     "en",
     "functions",
+    "institution",
     "kahoot",
     "membership",
     "start",
+    "supabase",
     "tests",
     "tools",
     "zh-cn",
@@ -65,6 +68,10 @@ ALLOWED_FILES = {
     ".github/workflows/ci.yml",
     ".github/workflows/site-health-check.yml",
     "scripts/health/check_exercise_data.py",
+    "supabase/README.md",
+}
+SKIP_PATH_PREFIXES = {
+    "supabase/migrations/",
 }
 
 FORBIDDEN_MARKERS = [
@@ -76,6 +83,11 @@ FORBIDDEN_MARKERS = [
     "exercise_registry",
     "exercise_path",
     "exerciseUrl",
+    "exercise_sessions",
+    "question_attempts",
+    "exercise_slug",
+    "exercise_slugs",
+    "institution/assignments.html",
     "check-achievements",
     "Interactive Exercises",
     "Interactive Exercise",
@@ -117,6 +129,8 @@ def iter_source_files():
         if relative not in SCAN_ROOT_FILES and first_part not in SCAN_ROOTS:
             continue
         if any(part in SKIP_DIRS for part in path.relative_to(ROOT).parts):
+            continue
+        if any(relative.startswith(prefix) for prefix in SKIP_PATH_PREFIXES):
             continue
         if relative in ALLOWED_FILES:
             continue

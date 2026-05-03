@@ -18,6 +18,7 @@ The former online exercise product line is retired. New work must not restore:
 - `assets/js/exercise_hub.js`
 - `functions/api/v1/exercise/`
 - `institution/assignments.html`
+- `exercise_sessions`, `question_attempts`, or the old exercise-catalog `assignments` tables in final Supabase schema
 
 Legacy `/exercises/*` URLs are handled by redirects only. Public CTAs should point to `/cie0580/free/`, `/edx4ma1/free/`, `/kahoot/`, or membership/product pages.
 
@@ -44,7 +45,7 @@ bash scripts/health/check_bilingual_coverage.sh
 env -u JEKYLL_GITHUB_TOKEN bundle exec jekyll build
 ```
 
-`check_exercise_data.py` is now the exercise-retirement guard. A failure means the retired product line has been reintroduced or a deleted path came back.
+`check_exercise_data.py` is now the exercise-retirement guard. A failure means the retired product line has been reintroduced, a deleted path came back, or an active seed/page source is trying to use the retired telemetry model.
 
 ## Important Files
 

@@ -70,7 +70,7 @@ Expected:
 - ✅ Membership system (auth/payment/engagement/downloads) — 90% complete
 - ✅ Engagement system (streak/XP/achievements/leaderboard/parent dashboard)
 - ✅ Bilingual support: static toggle + JS t(en,zh) dynamic translations — 100% complete
-- ✅ Retired online exercise product line removed from public pages, data collections, runtime JS, and Functions APIs
+- ✅ Retired online exercise product line removed from public pages, data collections, runtime JS, Functions APIs, and final Supabase schema
 - ⏳ Kahoot sellable readiness is **186 / 202** (`presale`/`live`), with 16 still `planned`
 
 ## 🧾 Latest Updates (2026-03-01)
@@ -94,7 +94,7 @@ bash scripts/health/check_style_consistency.sh
 bash scripts/health/check_bilingual_coverage.sh
 ```
 
-`check_exercise_data.py` is retained as a guard to verify that the retired online exercise product line has not been reintroduced.
+`check_exercise_data.py` is retained as a guard to verify that the retired online exercise product line and old telemetry/assignment dependencies have not been reintroduced.
 
 Run deployment checks against production:
 

@@ -53,7 +53,7 @@
   - Auth 回调 URL 配置完成（本地 + 生产）
   - OTP 登录上线（自定义 SMTP 未接入，使用 Supabase 默认）
 - [x] **完成数据层与权限控制**
-  - 18 张表：profiles、retired exercise telemetry tables、membership_status、entitlements + engagement 5 表 + B2B 6 表 + payhip_event_log + member_benefit_offers
+  - 14 张最终 public 表：profiles、membership_status、entitlements + engagement 5 表 + B2B 基础 4 表 + payhip_event_log + member_benefit_offers
   - RLS：全部 18 表启用，用户仅能读写本人数据
 - [x] **网页练习产品线下线**
   - 移除旧题目集合、页面、播放器 JS 和 Functions API

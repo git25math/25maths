@@ -163,10 +163,8 @@ async function setupUser(userCfg) {
     console.log(`  Entitlements: none`);
   }
 
-  // (e) Retired exercise session cleanup + synthetic learning activity
+  // (e) Synthetic learning activity
   const sessionCount = userCfg.sessions || 0;
-  await supabase.from('question_attempts').delete().eq('user_id', userId);
-  await supabase.from('exercise_sessions').delete().eq('user_id', userId);
 
   const dailyMap = new Map(); // date -> { sessions, questions, correct, time, skills }
 
