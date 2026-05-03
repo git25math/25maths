@@ -50,10 +50,10 @@
 17. **2026-02-27**: 创建总工程师运维计划 `plan/CHIEF-ENGINEER-OPS-PLAN.md`，统一 AI 工具分配与验收标准。
 18. **待执行**: 用户创建 Payhip 订阅产品 -> 替换 `{PRODUCT_ID}` -> 配置 Cloudflare env vars -> E2E 验证。
 19. **2026-02-27**: 北极星愿景确立 — 目标：全球最佳 IGCSE 数学备考平台。详见 `plan/NORTH-STAR-VISION.md`。
-20. **已完成**: Q2 自适应难度引擎技术规格 `plan/specs/ADAPTIVE-DIFFICULTY-ENGINE.md`。
-21. **已完成**: Q2 打卡/成就/XP 系统技术规格 `plan/specs/STREAK-ACHIEVEMENT-SYSTEM.md`。
-22. **已完成**: Q2 学生周报系统技术规格 `plan/specs/WEEKLY-REPORT-SYSTEM.md`。
-23. **已完成**: B2B 教培机构平台深度研究 + 技术规格 `plan/specs/B2B-INSTITUTION-PLATFORM.md`。
+20. **已修订**: Q2 自适应难度引擎技术规格 `plan/specs/ADAPTIVE-DIFFICULTY-ENGINE.md` — website 内已 retired，未来需新 question-bank 架构。
+21. **已修订**: Q2 打卡/成就/XP 系统技术规格 `plan/specs/STREAK-ACHIEVEMENT-SYSTEM.md` — 改走非 exercise 活动摘要。
+22. **已修订**: Q2 学生周报系统技术规格 `plan/specs/WEEKLY-REPORT-SYSTEM.md` — 改走资源/会员/机构活动摘要。
+23. **已修订**: B2B 教培机构平台技术规格 `plan/specs/B2B-INSTITUTION-PLATFORM.md` — 改为资源规划与跟进。
 24. **已完成**: 5 篇 SEO 博客文章发布 (IGCSE revision strategy, Paper 4 tips, trigonometry, percentage, CIE vs Edexcel)。
 25. **已完成**: sitemap.xml 更新 — 新增 5 篇博客条目。
 26. **规划中**: Q3 中文家长面板 (parents.25maths.com) + 双语月度 PDF 进度报告。
@@ -74,7 +74,7 @@
 41. **已完成**: Streak freeze API 端点 `functions/api/v1/engagement/freeze.js` — 仅付费会员可用。
 42. **已完成**: sitemap.xml 更新 — 新增 membership 页面条目。
 43. **已完成**: DECISIONS.md 更新 — 记录 engagement 全链路实施决策。
-44. **已完成**: CHIEF-ENGINEER-OPS-PLAN.md audit trail 更新 — 18 条新记录。
+44. **已归档**: CHIEF-ENGINEER-OPS-PLAN.md 已压缩为历史快照，当前执行入口改为 `docs/DEVELOPMENT-PLAN.md`。
 45. **已完成**: 竞争情报报告 `plan/COMPETITIVE-INTELLIGENCE.md` — 7 大竞争对手深度分析 + 市场数据 + 双语空白发现。
 46. **已完成**: 中文家长着陆页 `zh-cn/parents.html` — 微信/小红书分发优化，痛点+对比表+CTA。
 47. **已完成**: sitemap.xml 更新 — 新增 institution/B2B 页面 + 家长页面 + 会员页面条目。
@@ -96,7 +96,7 @@
 63. **关键发现**: 25Maths 可成为唯一同时覆盖 IGCSE 专题练习+机构管理+微信家长通讯+防火墙可访问+中英双语 的平台。无现有竞品覆盖全部五点。
 64. **已完成**: Jekyll 构建修复 — 使用 Homebrew Ruby 3.2 (`/opt/homebrew/opt/ruby@3.2/bin`) + bundler 2.7.1 成功构建。零错误零警告。
 65. **已完成**: Liquid 警告修复 — `plan/specs/WEEKLY-REPORT-SYSTEM.md` Handlebars 模板添加 raw/endraw 标签包裹。
-66. **已完成**: 路线图更新 — `CHIEF-ENGINEER-OPS-PLAN.md` §9 已标记所有已完成的 Q2/Q3 项目（streak、家长面板、B2B 页面、FAQ、排行榜等）。
+66. **已修订**: 路线图入口更新 — 当前执行入口改为 `docs/DEVELOPMENT-PLAN.md`，旧 ops plan 仅保留历史说明。
 67. **已完成**: API 一致性修复 — `leaderboard.js` 和 `weekly.js` 移除本地 `serviceHeaders()` 重复定义，改为从 `supabase_server.js` 导入。
 68. **已完成**: hreflang 标签 — `_includes/head.html` 添加双语页面 `<link rel="alternate" hreflang>` 标签，基于 `lang_links` 前置数据自动渲染。
 69. **已完成**: 机构页结构化数据 — `institution/index.html` 添加 `schema.org/SoftwareApplication` JSON-LD（含定价层级）。

@@ -269,11 +269,11 @@
 - 教师账号免费（随机构方案）
 
 #### 2. 技术规格库建立
-四份技术规格已落盘，可直接交给 Codex/Gemini 实施：
-- `plan/specs/ADAPTIVE-DIFFICULTY-ENGINE.md` — Elo 算法 + IRT 简化模型
-- `plan/specs/STREAK-ACHIEVEMENT-SYSTEM.md` — 打卡/成就/XP/等级体系
-- `plan/specs/WEEKLY-REPORT-SYSTEM.md` — 双语邮件 + 家长 CC
-- `plan/specs/B2B-INSTITUTION-PLATFORM.md` — 完整机构端设计
+四份技术规格曾在 2026-02-27 落盘；2026-05-03 已按 exercise 产品线下线后的范围重写：
+- `plan/specs/ADAPTIVE-DIFFICULTY-ENGINE.md` — retired for website；未来需以新 question-bank 架构重做
+- `plan/specs/STREAK-ACHIEVEMENT-SYSTEM.md` — 改为非 exercise 活动摘要
+- `plan/specs/WEEKLY-REPORT-SYSTEM.md` — 改为资源/会员/机构活动周报
+- `plan/specs/B2B-INSTITUTION-PLATFORM.md` — 改为机构资源规划与跟进
 
 #### 3. SEO 内容发布
 新增 5 篇英文 SEO 博客文章，目标关键词：

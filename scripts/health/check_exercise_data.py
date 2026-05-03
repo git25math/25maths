@@ -25,7 +25,7 @@ REMOVED_PATHS = [
     "plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md",
 ]
 
-SCAN_SUFFIXES = {".html", ".md", ".js", ".json", ".xml", ".yml", ".yaml", ".txt", ".sh", ".py", ".mjs", ".sql"}
+SCAN_SUFFIXES = {".html", ".md", ".js", ".json", ".xml", ".yml", ".yaml", ".txt", ".sh", ".py", ".mjs", ".sql", ".tex"}
 SCAN_ROOTS = {
     "_includes",
     "_layouts",
@@ -40,6 +40,8 @@ SCAN_ROOTS = {
     "institution",
     "kahoot",
     "membership",
+    "payhip",
+    "scripts",
     "start",
     "supabase",
     "tests",
@@ -91,6 +93,8 @@ FORBIDDEN_MARKERS = [
     "check-achievements",
     "Interactive Exercises",
     "Interactive Exercise",
+    "Interactive Practice Suite",
+    "Interactive practice",
     "interactive exercise",
     "interactive practice",
     "互动练习",
