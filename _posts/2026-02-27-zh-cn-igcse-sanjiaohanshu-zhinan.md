@@ -119,7 +119,7 @@ $\text{面积} = \frac{1}{2}\, ab \sin C$
 
 ### 立即练习三角函数
 
-- [CIE 0580 三角函数练习](/exercises/) — 互动题目即时反馈
+- [CIE 0580 免费资源](/zh-cn/cie0580/free/) — 专题练习包与完整解析
 - [免费主题资源](/cie0580/free/)
 - [每周考试练习包](/zh-cn/subscription.html)
 

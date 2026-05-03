@@ -293,7 +293,7 @@ lang_links:
               <p class="font-medium text-gray-800">${capitalise(m.skill_tag.replace(/-/g, ' '))}</p>
               <p class="text-xs text-gray-500">${isZh() ? `本周 ${m.count} 次错误` : `${m.count} mistake${m.count !== 1 ? 's' : ''} this week`}</p>
             </div>
-            <a href="/exercises/?board=cie0580" class="text-xs bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition ui-focus-ring">${t('Practice', '练习')}</a>
+            <a href="/cie0580/free/" class="text-xs bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition ui-focus-ring">${t('Resources', '资源')}</a>
           </div>
         `).join('');
       }
@@ -347,8 +347,8 @@ lang_links:
         recs.push(t('Start a streak — daily practice builds lasting knowledge', '开始打卡 — 每日练习积累扎实知识'));
       }
       recs.push(t(
-        'Try a <a href="/exercises/?board=cie0580" class="text-primary underline">new interactive exercise</a> for variety',
-        '尝试<a href="/exercises/?board=cie0580" class="text-primary underline">新的互动练习</a>增加多样性'
+        'Try a <a href="/kahoot/" class="text-primary underline">new Kahoot quiz</a> for variety',
+        '尝试<a href="/zh-cn/kahoot/" class="text-primary underline">新的 Kahoot 题组</a>增加多样性'
       ));
 
       recList.innerHTML = recs.map(r => `

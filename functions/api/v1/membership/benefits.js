@@ -3,8 +3,6 @@ import {
   fetchMembershipStatus,
   getUserFromAccessToken,
   listMemberBenefitOffers,
-  listRecentSessions,
-  listRecentWrongAttempts,
 } from '../../../_lib/supabase_server.js';
 
 function isMembershipActive(record) {
@@ -55,113 +53,14 @@ function parseOfferTrigger(rawMetadata) {
   };
 }
 
-function isWithinDays(isoString, days) {
-  const createdMs = new Date(isoString || '').getTime();
-  if (!Number.isFinite(createdMs)) return false;
-  const cutoffMs = Date.now() - (days * 24 * 60 * 60 * 1000);
-  return createdMs >= cutoffMs;
-}
-
-function countRecentSessions(rows, days) {
-  return rows.reduce((count, row) => {
-    return count + (isWithinDays(row.started_at, days) ? 1 : 0);
-  }, 0);
-}
-
-function countWrongAttempts(rows, days, skillTagPrefixes = []) {
-  let total = 0;
-  let matching = 0;
-
-  rows.forEach((row) => {
-    if (!isWithinDays(row.created_at, days)) return;
-    total += 1;
-
-    if (!skillTagPrefixes.length) {
-      matching += 1;
-      return;
-    }
-
-    const skillTag = String(row.skill_tag || '').trim().toLowerCase();
-    if (!skillTag) return;
-    if (skillTagPrefixes.some((prefix) => skillTag.startsWith(prefix))) {
-      matching += 1;
-    }
-  });
-
-  return { total, matching };
-}
-
-function evaluateOfferEligibility(offer, wrongAttempts, sessions) {
+function evaluateOfferEligibility(offer) {
   const trigger = parseOfferTrigger(offer?.metadata || {});
-  const hasTriggerRule = (
-    trigger.minRecentWrongAttempts > 0
-    || trigger.minRecentSessions > 0
-    || trigger.minMatchingWrongAttempts > 0
-    || trigger.skillTagPrefixes.length > 0
-  );
-
-  if (!hasTriggerRule) {
-    return {
-      eligible: true,
-      code: 'active_member_default',
-      reason: 'Active member default offer.',
-      metrics: {
-        lookback_days: trigger.lookbackDays,
-        recent_sessions: countRecentSessions(sessions, trigger.lookbackDays),
-        recent_wrong_attempts: countWrongAttempts(wrongAttempts, trigger.lookbackDays).total,
-      },
-    };
-  }
-
-  const recentSessions = countRecentSessions(sessions, trigger.lookbackDays);
-  const wrongCounts = countWrongAttempts(wrongAttempts, trigger.lookbackDays, trigger.skillTagPrefixes);
-
-  if (recentSessions < trigger.minRecentSessions) {
-    return {
-      eligible: false,
-      code: 'insufficient_recent_sessions',
-      reason: `Need at least ${trigger.minRecentSessions} recent sessions.`,
-      metrics: {
-        lookback_days: trigger.lookbackDays,
-        recent_sessions: recentSessions,
-      },
-    };
-  }
-
-  if (wrongCounts.total < trigger.minRecentWrongAttempts) {
-    return {
-      eligible: false,
-      code: 'insufficient_recent_wrong_attempts',
-      reason: `Need at least ${trigger.minRecentWrongAttempts} recent wrong attempts.`,
-      metrics: {
-        lookback_days: trigger.lookbackDays,
-        recent_wrong_attempts: wrongCounts.total,
-      },
-    };
-  }
-
-  if (wrongCounts.matching < trigger.minMatchingWrongAttempts) {
-    return {
-      eligible: false,
-      code: 'insufficient_matching_wrong_attempts',
-      reason: `Need at least ${trigger.minMatchingWrongAttempts} wrong attempts matching target skills.`,
-      metrics: {
-        lookback_days: trigger.lookbackDays,
-        matching_wrong_attempts: wrongCounts.matching,
-        skill_tag_prefixes: trigger.skillTagPrefixes,
-      },
-    };
-  }
-
   return {
     eligible: true,
-    code: 'trigger_matched',
-    reason: trigger.reasonLabel || 'Matched your recent weak-point activity.',
+    code: 'active_member_default',
+    reason: trigger.reasonLabel || 'Active member default offer.',
     metrics: {
       lookback_days: trigger.lookbackDays,
-      recent_sessions: recentSessions,
-      recent_wrong_attempts: wrongCounts.total,
-      matching_wrong_attempts: wrongCounts.matching,
       skill_tag_prefixes: trigger.skillTagPrefixes,
     },
   };
@@ -258,15 +157,9 @@ async function resolveBenefitsWithSource(env, userId) {
       limit: 200,
     });
     if (Array.isArray(dbOffers) && dbOffers.length) {
-      const maxLookbackDays = resolveMaxLookbackDays(dbOffers);
-      const [wrongAttempts, sessions] = await Promise.all([
-        listRecentWrongAttempts(env, userId, { lookbackDays: maxLookbackDays, limit: 1000 }),
-        listRecentSessions(env, userId, { lookbackDays: maxLookbackDays, limit: 300 }),
-      ]);
-
       const eligible = dbOffers
         .map((offer) => {
-          const eligibility = evaluateOfferEligibility(offer, wrongAttempts, sessions);
+          const eligibility = evaluateOfferEligibility(offer);
           return { offer, eligibility };
         })
         .filter((item) => item.eligibility.eligible)
@@ -329,4 +222,3 @@ export async function onRequestGet(context) {
     generated_at: new Date().toISOString(),
   });
 }
-

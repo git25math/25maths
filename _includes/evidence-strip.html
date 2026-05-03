@@ -1,13 +1,13 @@
 <!-- Evidence Strip — product screenshots proving the platform is real -->
 {% assign evidence_dir = "/assets/evidence/" %}
-{% assign shots = "exercises-hub,free-packs,kahoot-hub,term-pass" | split: "," %}
-{% assign labels = "Interactive Exercises,Free Worksheet Packs,Kahoot Quiz Hub,Term Practice Pass" | split: "," %}
-{% assign links = "/exercises/,/cie0580/free/,/kahoot/,/subscription.html" | split: "," %}
+{% assign shots = "free-packs,kahoot-hub,term-pass" | split: "," %}
+{% assign labels = "Free Worksheet Packs,Kahoot Quiz Hub,Term Practice Pass" | split: "," %}
+{% assign links = "/cie0580/free/,/kahoot/,/subscription.html" | split: "," %}
 
 <section class="bg-gray-50 py-20 md:py-24 border-b border-gray-200">
     <div class="max-w-5xl mx-auto px-6 lg:px-8">
         <p class="text-xs tracking-widest uppercase text-gray-500 mb-6">Inside the Platform</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {% for shot in shots %}
             {% assign idx = forloop.index0 %}
             <a href="{{ links[idx] }}" class="group block">

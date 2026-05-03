@@ -2,7 +2,7 @@
 
 > **日期**: 2026-04-03
 > **类型**: 战略分析 — 主站重新规划前置研究
-> **状态**: Phase 2 待决策（产品定义未完成）
+> **状态**: Historical analysis; updated 2026-05-03 to note that the website exercise product line has been retired.
 
 ---
 

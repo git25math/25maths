@@ -5,7 +5,7 @@ url: "https://www.25maths.com"
 baseurl: ""
 repository: "git25math/25maths"
 assets_version: "20260219-bilingual-shutter-v2"
-og_image_default: "/assets/evidence/exercises-hub.webp"
+og_image_default: "/assets/evidence/free-packs.webp"
 
 # Waitlist collection (single endpoint for all topics)
 waitlist:
@@ -31,20 +31,6 @@ security:
 permalink: /:year/:month/:day/:title:output_ext
 plugins:
   - jekyll-redirect-from
-
-# Collections
-collections:
-  exercises:
-    output: true
-    permalink: /exercises/:path/
-
-defaults:
-  - scope:
-      path: ""
-      type: exercises
-    values:
-      active_global: exercises
-      lang: en
 
 # Module definitions
 modules:

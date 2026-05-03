@@ -99,7 +99,7 @@ $\vec{AB} = \vec{AO} + \vec{OB} = -\mathbf{a} + \mathbf{b} = \mathbf{b} - \mathb
 
 ### 练习 Paper 4 主题
 
-- [CIE 0580 互动练习](/cie0580/) — 所有 Extended 主题
+- [CIE 0580 免费资源](/zh-cn/cie0580/free/) — 专题练习包与解析
 - [每周练习包](/zh-cn/subscription.html) — 考试风格题目配完整答案
 - [免费代数练习](/cie0580/free/) — 从分值最高的主题开始
 

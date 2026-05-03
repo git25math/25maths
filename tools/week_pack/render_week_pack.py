@@ -459,14 +459,16 @@ def render_content(data, out_path, lang="bilingual"):
             lines.append(r"  \item $\square$ \textbf{Not sure} — I need to review this topic")
         lines.append(r"\end{itemize}")
 
-        # Link to exercises
+        # Link to live free resources. The retired online exercise product line
+        # must not be referenced from newly rendered week packs.
         subtopic_ids = data.get("subtopic_ids", [])
         if subtopic_ids:
-            exercise_key = subtopic_ids[0].replace(":", "-")
-            url = f"https://www.25maths.com/exercises/{exercise_key}/"
+            board_text = str(data.get("board", "")).lower()
+            resource_path = "edx4ma1/free/" if "edexcel" in board_text or "4ma1" in board_text else "cie0580/free/"
+            url = f"https://www.25maths.com/{resource_path}"
             lines.append(r"\vspace{4mm}")
-            lines.append(f"{{\\small\\sffamily\\noindent Practice online:\\par"
-                          f"\\href{{{url}}}{{25maths.com/exercises}}}}")
+            lines.append(f"{{\\small\\sffamily\\noindent More free resources:\\par"
+                          f"\\href{{{url}}}{{25maths.com/{resource_path}}}}}")
 
         lines.append(r"\end{multicols}")
 

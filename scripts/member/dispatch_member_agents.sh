@@ -140,7 +140,7 @@ Task:
 - free member login UX
 - progress + weak-point dashboard
 - paid member recommendation cards and coupon visibility logic
-2) Keep anonymous exercise flow intact.
+2) Keep the retired exercise flow absent from member navigation.
 3) Provide browser compatibility checks.
 
 Output sections:
@@ -486,15 +486,11 @@ EOF_CTX
         assets/js/member_center.js \
         assets/js/member_benefits.js \
         assets/js/member_recommendations.js \
-        assets/js/exercise_engine.js \
         functions/_lib/payhip_events.js \
         functions/_lib/supabase_server.js \
         functions/api/v1/membership/webhook/payhip.js \
         functions/api/v1/membership/reconcile.js \
         functions/api/v1/membership/benefits.js \
-        'functions/api/v1/exercise/session/[id]/attempt.js' \
-        'functions/api/v1/exercise/session/[id]/complete.js' \
-        functions/api/v1/exercise/session/start.js \
         'functions/api/v1/download/[release_id].js'
       do
         node --check "$f"

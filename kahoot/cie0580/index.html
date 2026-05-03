@@ -1,7 +1,7 @@
 ---
 layout: global
 title: CIE 0580 Kahoot SubTopic Directory
-description: "CIE 0580 Kahoot SubTopic list with Core/Extended filters and a closed-loop presale ladder: L0 Kahoot, L1 interactive exercise, L2 worksheet, L3 section bundle, L4 unit bundle."
+description: "CIE 0580 Kahoot SubTopic list with Core/Extended filters and a closed-loop presale ladder: L0 Kahoot, L1 worksheet, L2 section bundle, L3 unit bundle."
 active_global: kahoot
 lang: en
 ---
@@ -17,11 +17,11 @@ lang: en
         <h1 class="text-4xl md:text-5xl font-semibold mb-4">CIE 0580 Kahoot + Worksheet Directory</h1>
         <p class="text-lg text-gray-100 max-w-3xl">
             Every SubTopic follows one growth path:
-            <strong>L0 Kahoot</strong> -> <strong>L1 Interactive Exercise</strong> -> <strong>L2 Worksheet</strong> -> <strong>L3 Section Bundle</strong> -> <strong>L4 Unit Bundle</strong>.
+            <strong>L0 Kahoot</strong> -> <strong>L1 Worksheet</strong> -> <strong>L2 Section Bundle</strong> -> <strong>L3 Unit Bundle</strong>.
             Includes both <strong>Core</strong> and <strong>Extended</strong> tracks.
         </p>
         <p class="bilingual-support-only text-base text-gray-100 mt-3 max-w-3xl">
-            每个小考点都遵循同一升级路径：L0 Kahoot -> L1 互动练习 -> L2 单讲义 -> L3 章节包 -> L4 单元包，并同时覆盖 Core 与 Extended。
+            每个小考点都遵循同一升级路径：L0 Kahoot -> L1 单讲义 -> L2 章节包 -> L3 单元包，并同时覆盖 Core 与 Extended。
         </p>
         <div class="mt-8 flex flex-col sm:flex-row cta-row-equal gap-4 justify-center">
             <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="sm:flex-1 cta-btn-equal kahoot-solid-bg text-white px-8 py-4 rounded-lg font-semibold kahoot-solid-hover hover:shadow-md transition ui-focus-ring">Open CIE 0580 Kahoot Channel</a>
@@ -36,7 +36,6 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3 items-center">
         <span class="text-sm font-semibold text-gray-700">Quick links:</span>
         <a href="/kahoot/" class="text-sm px-3 py-1.5 rounded-full border kahoot-soft-border kahoot-soft-bg kahoot-soft-text kahoot-soft-hover transition ui-focus-ring">Back to Kahoot Hub</a>
-        <a href="/exercises/?board=cie0580" class="text-sm px-3 py-1.5 rounded-full border cie-soft-border cie-soft-bg cie-soft-text cie-soft-hover transition ui-focus-ring">Open Interactive Exercises</a>
         <a href="{{ kahoot_channel_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full kahoot-solid-bg text-white kahoot-solid-hover transition ui-focus-ring">Kahoot Channel</a>
         <a href="{{ catalog.default_worksheet_payhip_url }}" target="_blank" rel="noopener" class="text-sm px-3 py-1.5 rounded-full cie-solid-bg cie-solid-text cie-solid-hover transition ui-focus-ring">Payhip Storefront</a>
         <span class="text-sm text-gray-500">{{ data.total_subtopics }} SubTopics</span>
@@ -76,8 +75,8 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
             <h2 class="text-3xl font-semibold text-gray-900 mb-2">SubTopic Listing (Core + Extended)</h2>
-            <p class="text-gray-600">Each SubTopic card has a complete loop: L0 Kahoot, L1 interactive practice, L2 worksheet, L3 section bundle, L4 unit bundle.</p>
-            <p class="bilingual-support-only text-sm text-gray-600 mt-2">每张卡片都包含完整闭环：L0 Kahoot、L1 互动练习、L2 单讲义、L3 章节包、L4 单元包。</p>
+            <p class="text-gray-600">Each SubTopic card has a complete loop: L0 Kahoot, L1 worksheet, L2 section bundle, L3 unit bundle.</p>
+            <p class="bilingual-support-only text-sm text-gray-600 mt-2">每张卡片都包含完整闭环：L0 Kahoot、L1 单讲义、L2 章节包、L3 单元包。</p>
         </div>
 
         {% for section in data.sections %}
@@ -101,13 +100,6 @@ lang: en
                 <div class="grid items-stretch sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                     {% for item in section.items %}
                         {% assign link = link_map[item.id] %}
-                        {% assign exercise_page = site.exercises | where: "subtopic_id", item.id | first %}
-                        {% assign card_exercise_url = "" %}
-                        {% if link and link.exercise_path and link.exercise_path != '' %}
-                            {% assign card_exercise_url = link.exercise_path %}
-                        {% elsif exercise_page %}
-                            {% assign card_exercise_url = exercise_page.url %}
-                        {% endif %}
 
                         {% capture kahoot_fallback_url %}{{ kahoot_channel_url }}?src=kahoot_cie0580_subtopic&asset={{ item.code | downcase }}{% endcapture %}
                         {% assign card_kahoot_url = kahoot_fallback_url %}
@@ -157,7 +149,7 @@ lang: en
                         {% endif %}
                         {% assign release_date = catalog.default_release_date %}
                         {% assign early_bird_deadline = catalog.default_early_bird_deadline %}
-                        {% assign presale_note = 'Upgrade path: L0 Kahoot -> L1 interactive exercise -> L2 worksheet -> L3 section bundle -> L4 unit bundle.' %}
+                        {% assign presale_note = 'Upgrade path: L0 Kahoot -> L1 worksheet -> L2 section bundle -> L3 unit bundle.' %}
                         {% if unit and unit.release_date and unit.release_date != '' %}
                             {% assign release_date = unit.release_date %}
                         {% endif %}
@@ -193,11 +185,7 @@ lang: en
                             <h4 class="text-sm font-bold text-gray-900 mb-2 capitalize kahoot-card-title">{{ item.title }}</h4>
                             <p class="text-[11px] text-gray-500 mb-1 kahoot-card-release">{{ release_line }}</p>
                             <p class="text-[11px] text-gray-500 mb-3 kahoot-card-note">{{ presale_note }}</p>
-                            {% assign card_exercise_relative_url = '' %}
-                            {% if card_exercise_url != '' %}
-                                {% assign card_exercise_relative_url = card_exercise_url | relative_url %}
-                            {% endif %}
-                            {% include ui/kahoot-card-actions.html board='cie' exercise_url=card_exercise_relative_url kahoot_url=card_kahoot_url worksheet_url=card_worksheet_url section_bundle_url=card_section_bundle_url unit_bundle_url=card_unit_bundle_url %}
+                            {% include ui/kahoot-card-actions.html board='cie' kahoot_url=card_kahoot_url worksheet_url=card_worksheet_url section_bundle_url=card_section_bundle_url unit_bundle_url=card_unit_bundle_url %}
                         </article>
                     {% endfor %}
                 </div>

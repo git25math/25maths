@@ -6,6 +6,25 @@
 
 ---
 
+## 2026-05-03 | 网页练习产品线完整下线
+
+### 决策背景
+- 旧 exercise 模块导致 website validate-and-build 持续被历史题目数据完整性问题阻塞。
+- CIE 0580 与 Edexcel 4MA1 的长期方向已经转向更高质量的模块化题库、worksheet、Kahoot 与 paid bundle 闭环。
+- 旧网页练习数据虽然来自公开内容，但清洗与解析成本高；继续公开成批 JSON 与题干会削弱数据护城河。
+
+### 关键决策
+- 删除 `_exercises/`、`_data/exercises/`、`_data/exercises_backup/`、`_data/exercise_registry.json`。
+- 删除旧 hub/detail 页面、exercise player layout、exercise JS、exercise Functions API、依赖旧 catalog 的 institution assignment 页面。
+- `/exercises/*` 与 `/zh-cn/exercises/*` 只保留 301 重定向，分别指向 CIE 免费资源页与中文 CIE 免费资源页。
+- 保留 `scripts/health/check_exercise_data.py` 文件名以兼容 CI，但职责改为“下线守卫”。
+- 新内容和 CTA 统一导向 free packs、Kahoot、membership downloads 或 paid bundles。
+
+### 结果
+- 旧产品线不再参与 Jekyll collection、sitemap、导航、footer、evidence strip、JS runtime 或 API。
+- 既有 CI 步骤继续运行，但不再验证已删除的 exercise data integrity。
+- 后续不得恢复旧 `/exercises/` 入口；如需在线做题能力，应在独立产品或新受控数据模型中重建。
+
 ## 2026-04-03 | 练习系统 v2 Schema 迁移 + 组卷模块重构
 
 ### 决策背景

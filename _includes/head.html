@@ -60,8 +60,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Site CSS (generated from Tailwind) -->
 <link rel="stylesheet" href="/assets/css/site.css?v={{ site.assets_version }}">
 
-{% if page.layout == 'interactive_exercise' or page.layout == 'post' %}
-<!-- KaTeX (interactive exercise formula rendering) -->
+{% if page.layout == 'post' %}
+<!-- KaTeX (post formula rendering) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
@@ -277,46 +277,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         border-color: var(--edx-igcse-700);
     }
 
-    .exercise-warm-primary {
-        background-color: var(--warm-action-600);
-        color: #fff;
-        border: 1px solid var(--warm-action-600);
-    }
-    .exercise-warm-primary:hover {
-        background-color: var(--warm-action-700);
-        color: #fff;
-        border-color: var(--warm-action-700);
-    }
-    .exercise-warm-primary:active {
-        background-color: var(--warm-action-900);
-        color: #fff;
-        border-color: var(--warm-action-900);
-    }
-
-    .exercise-warm-secondary {
-        background-color: var(--warm-action-100);
-        color: var(--warm-action-900);
-        border: 1px solid var(--warm-action-400);
-    }
-    .exercise-warm-secondary:hover {
-        background-color: var(--warm-action-200);
-        color: var(--warm-action-900);
-        border-color: var(--warm-action-600);
-    }
-    .exercise-warm-secondary:active {
-        background-color: var(--warm-action-200);
-        color: var(--warm-action-900);
-        border-color: var(--warm-action-700);
-    }
-
-    .exercise-kahoot-bridge {
-        box-shadow: 0 5px 12px rgba(183, 82, 52, 0.22);
-    }
-    .exercise-kahoot-bridge:hover {
-        box-shadow: 0 8px 16px rgba(183, 82, 52, 0.28);
-    }
-
-
     /* Stable Kahoot brand helpers (avoid build-time loss of arbitrary color classes). */
     .kahoot-solid-bg {
         background-color: #46178f;
@@ -355,7 +315,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .accent-left-green { box-shadow: inset 4px 0 0 #10b981; }
     .accent-left-primary { box-shadow: inset 4px 0 0 var(--color-primary); }
 
-    /* Interactive exercise loop button system (shared across CIE/Edexcel). */
+    /* Resource loop button system (shared across CIE/Edexcel). */
     .loop-btn-base {
         display: inline-flex;
         align-items: center;
@@ -400,76 +360,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         color: #111827;
     }
 
-    .resource-loop--cie .loop-btn-primary,
-    .exercise-completion-actions--cie .loop-btn-primary {
+    .resource-loop--cie .loop-btn-primary {
         background-color: var(--cie-igcse-600);
         border-color: var(--cie-igcse-600);
         color: #ffffff;
     }
-    .resource-loop--cie .loop-btn-primary:hover,
-    .exercise-completion-actions--cie .loop-btn-primary:hover {
+    .resource-loop--cie .loop-btn-primary:hover {
         background-color: var(--cie-igcse-700);
         border-color: var(--cie-igcse-700);
         color: #ffffff;
     }
-    .resource-loop--cie .loop-btn-soft,
-    .exercise-completion-actions--cie .loop-btn-soft {
+    .resource-loop--cie .loop-btn-soft {
         background-color: var(--cie-igcse-100);
         border-color: var(--cie-igcse-700);
         color: var(--cie-igcse-700);
     }
-    .resource-loop--cie .loop-btn-soft:hover,
-    .exercise-completion-actions--cie .loop-btn-soft:hover {
+    .resource-loop--cie .loop-btn-soft:hover {
         background-color: #d4b9b2;
         border-color: var(--cie-igcse-700);
         color: var(--cie-igcse-700);
     }
 
-    .resource-loop--edx .loop-btn-primary,
-    .exercise-completion-actions--edx .loop-btn-primary {
+    .resource-loop--edx .loop-btn-primary {
         background-color: var(--edx-igcse-600);
         border-color: var(--edx-igcse-600);
         color: #ffffff;
     }
-    .resource-loop--edx .loop-btn-primary:hover,
-    .exercise-completion-actions--edx .loop-btn-primary:hover {
+    .resource-loop--edx .loop-btn-primary:hover {
         background-color: var(--edx-igcse-700);
         border-color: var(--edx-igcse-700);
         color: #ffffff;
     }
-    .resource-loop--edx .loop-btn-soft,
-    .exercise-completion-actions--edx .loop-btn-soft {
+    .resource-loop--edx .loop-btn-soft {
         background-color: var(--edx-igcse-100);
         border-color: var(--edx-igcse-700);
         color: var(--edx-igcse-700);
     }
-    .resource-loop--edx .loop-btn-soft:hover,
-    .exercise-completion-actions--edx .loop-btn-soft:hover {
+    .resource-loop--edx .loop-btn-soft:hover {
         background-color: #c3dbd7;
         border-color: var(--edx-igcse-700);
         color: var(--edx-igcse-700);
     }
 
-    .resource-loop--neutral .loop-btn-primary,
-    .exercise-completion-actions--neutral .loop-btn-primary {
+    .resource-loop--neutral .loop-btn-primary {
         background-color: #374151;
         border-color: #374151;
         color: #ffffff;
     }
-    .resource-loop--neutral .loop-btn-primary:hover,
-    .exercise-completion-actions--neutral .loop-btn-primary:hover {
+    .resource-loop--neutral .loop-btn-primary:hover {
         background-color: #1f2937;
         border-color: #1f2937;
         color: #ffffff;
     }
-    .resource-loop--neutral .loop-btn-soft,
-    .exercise-completion-actions--neutral .loop-btn-soft {
+    .resource-loop--neutral .loop-btn-soft {
         background-color: #ffffff;
         border-color: #d1d5db;
         color: #1f2937;
     }
-    .resource-loop--neutral .loop-btn-soft:hover,
-    .exercise-completion-actions--neutral .loop-btn-soft:hover {
+    .resource-loop--neutral .loop-btn-soft:hover {
         background-color: #f9fafb;
         border-color: #9ca3af;
         color: #111827;

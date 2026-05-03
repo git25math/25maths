@@ -26,6 +26,32 @@ title: 25Maths Changelog
             <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">PRIVATE</span>
         </div>
 
+        <!-- 2026-05-03 -->
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-primary text-white text-xs px-3 py-1 rounded-full font-bold">2026-05-03</span>
+                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full font-semibold">PRODUCT RETIREMENT</span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-3">Retired the legacy online exercise product line</h2>
+            <ul class="space-y-2 text-gray-700 text-sm">
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 mt-0.5">-</span>
+                    <span><strong>Surface removed</strong>: Removed the legacy exercise collection, data registry, player layout, runtime JS, API routes, visual baselines, and assignment page that depended on that catalog.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 mt-0.5">~</span>
+                    <span><strong>Public paths redirected</strong>: Retired exercise URLs now redirect to free-resource pages and are excluded from crawl targets.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-0.5">+</span>
+                    <span><strong>Guardrail retained</strong>: The former data integrity health check now verifies the retired product line stays offline.</span>
+                </li>
+            </ul>
+            <div class="mt-4 text-xs text-gray-400">
+                Files: website navigation, redirects, sitemap, evidence strip, health checks, Functions API, docs, scripts | Commit: pending
+            </div>
+        </div>
+
         <!-- 2026-03-01 -->
         <div class="bg-white rounded-xl shadow p-6 mb-6">
             <div class="flex items-center gap-3 mb-4">

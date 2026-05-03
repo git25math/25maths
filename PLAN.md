@@ -85,9 +85,9 @@
 |---|------|------|------|
 | 1 | UI chip 统一 | `edx4ma1/products.html` | raw `token-chip` → `{% include ui/board-status-chip.html board='edx' %}` |
 | 2 | 产品子页面 redirect | `edx4ma1/products/{algebra,functions,number}.html` | 3 个新文件，redirect → `/edx4ma1/products.html` |
-| 3 | "Try before you buy" CTA | `edx4ma1/products.html` | 互动练习 + 免费下载 双 CTA 区块 |
+| 3 | "Try before you buy" CTA | `edx4ma1/products.html` | Kahoot + 免费下载 双 CTA 区块 |
 | 4 | Value Propositions 3 卡片 | `edx4ma1/index.html` | Bilingual / Syllabus-Aligned / Quality，文案适配 4MA1 |
-| 5 | Statistics 指标补全 | `edx4ma1/index.html` | 3→4 列，新增 "78 Interactive Exercises" |
+| 5 | Statistics 指标补全 | `edx4ma1/index.html` | 3→4 列，新增 Edexcel free/Kahoot coverage |
 
 ### 之前已完成（Round 1-9）
 
@@ -136,7 +136,7 @@
 | 文件 | 剩余 | 说明 |
 |------|------|------|
 | `assets/js/member_downloads.js` | ~5 | JS 动态生成文案，需 t() 或类似 i18n 机制 |
-| `assets/js/exercise_engine.js` | ~3 | 做题引擎内嵌文案 |
+| Retired exercise JS | 0 | 已删除；不再跟踪该文件的 i18n 工作 |
 
 ---
 
@@ -207,10 +207,10 @@
 - `functions/api/v1/user/profile.js` — VALID_BOARDS 对齐 DB
 - `functions/api/v1/reports/weekly.js` — import computeLevel
 - `functions/api/v1/engagement/achievements.js` — import XP_THRESHOLDS
-- `functions/api/v1/engagement/check-achievements.js` — import streak_utils + date_utils
+- Retired `functions/api/v1/engagement/check-achievements.js`; no public endpoint writes exercise-based achievement events.
 - `functions/api/v1/engagement/streak.js` — import date_utils
 - `functions/api/v1/engagement/freeze.js` — import date_utils
-- `functions/api/v1/exercise/session/[id]/complete.js` — import streak_utils + date_utils
+- Retired online exercise API files removed; engagement remains on non-exercise membership surfaces.
 - `membership/settings.html` — target_board values + 双语补全 (P0+P1.3 共 13 处)
 - `membership/index.html` — Settings 入口 + 双语补全 (P0+P1.3 共 25 处)
 - `membership/leaderboard.html` — 双语补全 (P0+P1.3 共 13 处)

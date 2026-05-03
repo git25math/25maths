@@ -18,7 +18,6 @@ LAYOUT_FILES = [
     ROOT / "_layouts" / "global.html",
     ROOT / "_layouts" / "module.html",
     ROOT / "_layouts" / "post.html",
-    ROOT / "_layouts" / "interactive_exercise.html",
 ]
 
 FAILURES = 0
@@ -63,11 +62,11 @@ def check_marker_order(section_text: str, section_label: str, markers: list[str]
     if positions and positions != sorted(positions):
         fail(
             f"{section_label}: marker order mismatch; expected "
-            "Interactive Exercises -> Kahoot -> Membership"
+            "Kahoot -> Membership"
         )
     elif positions:
         pass_msg(
-            f"{section_label}: order verified (Interactive Exercises -> Kahoot -> Membership)"
+            f"{section_label}: order verified (Kahoot -> Membership)"
         )
 
 
@@ -97,7 +96,6 @@ def check_global_nav() -> None:
         mobile_text = text[mobile_start_idx:]
 
     ordered_markers = [
-        '<a href="{{ exercises_path }}"',
         '<a href="{{ kahoot_path }}"',
         '<a href="{{ membership_path }}"',
     ]
@@ -140,7 +138,6 @@ def check_footer_entry_preservation() -> None:
         "about_label",
         "support_label",
         "{{ kahoot_label }}",
-        "{{ exercises_label }}",
         "{{ membership_label }}",
         "/about.html",
         "/support.html",
@@ -149,7 +146,7 @@ def check_footer_entry_preservation() -> None:
     if missing:
         fail(f"Footer: missing expected retained entry markers {missing}")
     else:
-        pass_msg("Footer: retained entry markers present (Blog/About/Support/Kahoot/Exercises)")
+        pass_msg("Footer: retained entry markers present (Blog/About/Support/Kahoot/Membership)")
 
 
 def check_homepage_blog_entries() -> None:

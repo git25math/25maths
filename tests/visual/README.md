@@ -25,8 +25,6 @@ bash scripts/health/update_visual_baseline.sh
 - `/edx4ma1/products.html`
 - `/edx4ma1/pricing.html`
 - `/edx4ma1/free/`
-- `/exercises/`
-- `/zh-cn/exercises/`
 - `/kahoot/`
 
 Each route is captured in both desktop and mobile profiles.

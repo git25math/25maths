@@ -1,8 +1,4 @@
 (() => {
-  const WRONG_ATTEMPT_LOOKBACK_DAYS = 60;
-  const MAX_RECENT_SESSIONS = 50;
-  const MAX_RECENT_WRONG_ATTEMPTS = 200;
-
   function isZh() {
     return String(document.documentElement.lang || '').toLowerCase() === 'zh-cn';
   }
@@ -35,8 +31,8 @@
     sessionsCountNode.textContent = '0';
     averageScoreNode.textContent = '-';
     weakSkillCountNode.textContent = '0';
-    weakSkillListNode.innerHTML = `<li class="text-gray-500">${t('No mistake data yet.', '暂无错题数据')}</li>`;
-    recentSessionsNode.innerHTML = `<li class="text-gray-500">${t('No sessions yet.', '暂无练习记录')}</li>`;
+    weakSkillListNode.innerHTML = `<li class="text-gray-500">${t('Sign in to see your recommended resource loop.', '登录后查看推荐资源路径')}</li>`;
+    recentSessionsNode.innerHTML = `<li class="text-gray-500">${t('Online quiz telemetry is retired; use packs and Kahoot for practice.', '在线测验记录已下线；请使用资料包和 Kahoot 练习')}</li>`;
   }
 
   function setBadge(text, classesToAdd = [], classesToRemove = []) {
@@ -127,7 +123,7 @@
 
   function renderRecentSessions(rows) {
     if (!rows.length) {
-      recentSessionsNode.innerHTML = `<li class="text-gray-500">${t('No completed sessions yet.', '暂无已完成的练习')}</li>`;
+      recentSessionsNode.innerHTML = `<li class="text-gray-500">${t('Online quiz telemetry is retired. New practice should use worksheet packs and Kahoot.', '在线测验记录已下线。新的练习请使用资料包和 Kahoot。')}</li>`;
       sessionsCountNode.textContent = '0';
       averageScoreNode.textContent = '-';
       return;
@@ -150,46 +146,25 @@
         : t('in progress', '进行中');
       const when = formatDate(row.completed_at || row.started_at);
       return `<li class="border border-gray-100 rounded-lg px-3 py-2">
-        <p class="font-medium text-gray-900 truncate">${escapeHtml(row.exercise_slug || 'interactive-exercise')}</p>
+        <p class="font-medium text-gray-900 truncate">${escapeHtml(row.resource_label || 'Member resource')}</p>
         <p class="mt-1 text-xs text-gray-600">${t('Score:', '得分：')} ${scoreText} • ${when}</p>
       </li>`;
     }).join('');
   }
 
   async function fetchDashboardData(client, userId) {
-    const attemptsCutoffIso = new Date(Date.now() - (WRONG_ATTEMPT_LOOKBACK_DAYS * 24 * 60 * 60 * 1000)).toISOString();
-
-    const [membershipResult, sessionsResult, attemptsResult] = await Promise.all([
-      client
-        .from('membership_status')
-        .select('status, period_end')
-        .eq('user_id', userId)
-        .maybeSingle(),
-      client
-        .from('exercise_sessions')
-        .select('exercise_slug, score, question_count, started_at, completed_at')
-        .eq('user_id', userId)
-        .order('started_at', { ascending: false })
-        .limit(MAX_RECENT_SESSIONS),
-      client
-        .from('question_attempts')
-        .select('skill_tag, created_at')
-        .eq('user_id', userId)
-        .eq('is_correct', false)
-        .gte('created_at', attemptsCutoffIso)
-        .order('created_at', { ascending: false })
-        .limit(MAX_RECENT_WRONG_ATTEMPTS),
-    ]);
+    const membershipResult = await client
+      .from('membership_status')
+      .select('status, period_end')
+      .eq('user_id', userId)
+      .maybeSingle();
 
     if (membershipResult.error) throw membershipResult.error;
-    if (sessionsResult.error) throw sessionsResult.error;
-    if (attemptsResult.error) throw attemptsResult.error;
 
     return {
       membership: membershipResult.data || null,
-      sessions: sessionsResult.data || [],
-      wrongAttempts: attemptsResult.data || [],
-      attemptsCutoffIso,
+      sessions: [],
+      wrongAttempts: [],
     };
   }
 
@@ -216,7 +191,7 @@
   async function loadForUser(user) {
     if (!window.memberSupabase || !user || !user.id) {
       setBadge(t('NOT SIGNED IN', '未登录'), ['bg-gray-200', 'text-gray-700'], ['bg-emerald-100', 'text-emerald-800', 'bg-red-100', 'text-red-800']);
-      helper.textContent = t('Sign in to see your latest progress and weak-point summary.', '登录后查看最新学习进度和薄弱环节');
+      helper.textContent = t('Sign in to see membership status and resource access.', '登录后查看会员状态与资源权限');
       resetUi();
       emitDashboardData({
         loaded: false,
@@ -232,7 +207,7 @@
     }
 
     setBadge(t('LOADING', '加载中'), ['bg-blue-100', 'text-blue-800'], ['bg-gray-200', 'text-gray-700', 'bg-emerald-100', 'text-emerald-800', 'bg-red-100', 'text-red-800']);
-    helper.textContent = t('Loading your latest learning telemetry...', '正在加载学习数据...');
+    helper.textContent = t('Loading your member resource access...', '正在加载会员资源权限...');
 
     try {
       const data = await fetchDashboardData(window.memberSupabase, user.id);
@@ -246,9 +221,14 @@
       } else {
         setBadge(t('NOT ACTIVE', '未激活'), ['bg-red-100', 'text-red-800'], ['bg-gray-200', 'text-gray-700', 'bg-blue-100', 'text-blue-800', 'bg-emerald-100', 'text-emerald-800']);
       }
+      sessionsCountNode.textContent = t('PDF + Kahoot', 'PDF + Kahoot');
+      averageScoreNode.textContent = membershipActive ? t('Active', '可用') : t('Login', '需登录');
+      weakSkillCountNode.textContent = t('Kahoot', 'Kahoot');
+      weakSkillListNode.innerHTML = `<li class="border border-gray-100 rounded-lg px-3 py-2">${t('Use weekly packs for written practice, then review matching Kahoot topics.', '先用周练资料包进行书面练习，再用对应 Kahoot 题组复习。')}</li>`;
+      recentSessionsNode.innerHTML = `<li class="border border-gray-100 rounded-lg px-3 py-2">${t('The legacy online quiz tracker is retired. New activity is centered on downloads, packs, and Kahoot.', '旧在线测验追踪已下线。新的活动围绕下载、资料包和 Kahoot 展开。')}</li>`;
       helper.textContent = t(
-        `Data updated from your member profile records. Weak-point window: last ${WRONG_ATTEMPT_LOOKBACK_DAYS} days.`,
-        `数据已从会员档案更新，薄弱项窗口：最近 ${WRONG_ATTEMPT_LOOKBACK_DAYS} 天。`
+        'Member access loaded. Practice flow now uses worksheet packs, Kahoot, and paid bundles.',
+        '会员权限已加载。当前练习路径使用资料包、Kahoot 和付费合集。'
       );
 
       emitDashboardData({

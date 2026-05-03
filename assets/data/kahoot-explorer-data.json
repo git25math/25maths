@@ -35,13 +35,6 @@ layout: null
   {% for item in section.items %}
     {% unless first %},{% endunless %}
     {% assign link = link_map[item.id] %}
-    {% assign exercise_page = site.exercises | where: "subtopic_id", item.id | first %}
-    {% assign exercise_url = "" %}
-    {% if link and link.exercise_path and link.exercise_path != "" %}
-      {% assign exercise_url = link.exercise_path %}
-    {% elsif exercise_page %}
-      {% assign exercise_url = exercise_page.url %}
-    {% endif %}
     {% assign section_bundle_url = "" %}
     {% if link and link.section_bundle_payhip_url and link.section_bundle_payhip_url != "" %}
       {% assign section_bundle_url = link.section_bundle_payhip_url %}
@@ -88,7 +81,6 @@ layout: null
       "unitKey": {{ section.domain | jsonify }},
       "unitTitle": {{ unit.title | default: section.domain | jsonify }},
       "kahootUrl": {{ link.kahoot_url | default: "" | jsonify }},
-      "exerciseUrl": {{ exercise_url | default: "" | jsonify }},
       "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }},
       "sectionBundleUrl": {{ section_bundle_url | jsonify }},
       "unitBundleUrl": {{ unit_bundle_url | default: "" | jsonify }},
@@ -105,13 +97,6 @@ layout: null
   {% for item in section.items %}
     {% unless first %},{% endunless %}
     {% assign link = link_map[item.id] %}
-    {% assign exercise_page = site.exercises | where: "subtopic_id", item.id | first %}
-    {% assign exercise_url = "" %}
-    {% if link and link.exercise_path and link.exercise_path != "" %}
-      {% assign exercise_url = link.exercise_path %}
-    {% elsif exercise_page %}
-      {% assign exercise_url = exercise_page.url %}
-    {% endif %}
     {% assign section_bundle_url = "" %}
     {% if link and link.section_bundle_payhip_url and link.section_bundle_payhip_url != "" %}
       {% assign section_bundle_url = link.section_bundle_payhip_url %}
@@ -158,7 +143,6 @@ layout: null
       "unitKey": {{ section.domain | jsonify }},
       "unitTitle": {{ unit.title | default: section.domain | jsonify }},
       "kahootUrl": {{ link.kahoot_url | default: "" | jsonify }},
-      "exerciseUrl": {{ exercise_url | default: "" | jsonify }},
       "worksheetUrl": {{ link.worksheet_payhip_url | default: "" | jsonify }},
       "sectionBundleUrl": {{ section_bundle_url | jsonify }},
       "unitBundleUrl": {{ unit_bundle_url | default: "" | jsonify }},

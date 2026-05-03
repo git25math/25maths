@@ -17,7 +17,6 @@ CORE_EFFECT_PAGES=(
   "edx4ma1/products.html"
   "edx4ma1/pricing.html"
   "edx4ma1/free/index.html"
-  "exercises/index.html"
   "kahoot/index.html"
   "kahoot/cie0580/index.html"
   "kahoot/edexcel-4ma1/index.html"
@@ -45,6 +44,9 @@ EXPECTED_ZERO_MARKER_PAGES=(
   "cie0580/products/algebra.html"
   "cie0580/products/functions.html"
   "cie0580/products/number.html"
+  "edx4ma1/products/algebra.html"
+  "edx4ma1/products/functions.html"
+  "edx4ma1/products/number.html"
   "projects/kahoot-channel/_templates/worksheet-pdf-template.html"
   "templates/emails/weekly-report.html"
 )

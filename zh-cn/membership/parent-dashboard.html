@@ -284,7 +284,7 @@ lang_links:
               <p class="font-medium text-gray-800">${topicCn(m.skill_tag.split('-')[0])} — ${m.skill_tag.replace(/-/g, ' ')}</p>
               <p class="text-xs text-gray-500">本周错误 ${m.count} 次</p>
             </div>
-            <a href="/exercises/?board=cie0580" class="text-xs bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition ui-focus-ring">去练习</a>
+            <a href="/zh-cn/cie0580/free/" class="text-xs bg-gray-900 text-white px-3 py-1 rounded-full hover:bg-gray-700 transition ui-focus-ring">看资源</a>
           </div>
         `).join('');
       }
@@ -332,7 +332,7 @@ lang_links:
       } else {
         recs.push('开始每日练习 — 持续练习才能巩固知识');
       }
-      recs.push('尝试一个 <a href="/exercises/?board=cie0580" class="text-primary underline">新的互动练习</a> 增加多样性');
+      recs.push('尝试一个 <a href="/zh-cn/kahoot/" class="text-primary underline">新的 Kahoot 题组</a> 增加多样性');
 
       recList.innerHTML = recs.map(r => `
         <li class="flex items-start gap-2">

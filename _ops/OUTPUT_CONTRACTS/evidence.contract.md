@@ -15,10 +15,9 @@
 
 | Slot | Page | Filename | What to capture |
 |------|------|----------|----------------|
-| 1 | `/exercises/` | `exercises-hub.webp` | Exercise hub with board/tier filters visible |
-| 2 | `/cie0580/free/` | `free-packs.webp` | Free worksheet download cards |
-| 3 | `/kahoot/` | `kahoot-hub.webp` | Kahoot explorer with topic listing |
-| 4 | `/subscription.html` | `term-pass.webp` | Term Practice Pass purchase page |
+| 1 | `/cie0580/free/` | `free-packs.webp` | Free worksheet download cards |
+| 2 | `/kahoot/` | `kahoot-hub.webp` | Kahoot explorer with topic listing |
+| 3 | `/subscription.html` | `term-pass.webp` | Term Practice Pass purchase page |
 
 ---
 
@@ -46,7 +45,7 @@
 node _ops/screenshots/shot.mjs
 
 # Generate single screenshot
-node _ops/screenshots/shot.mjs --url /exercises/
+node _ops/screenshots/shot.mjs --url /cie0580/free/
 ```
 
 **Configuration**:
@@ -66,8 +65,8 @@ node _ops/screenshots/shot.mjs --url /exercises/
     <p class="text-xs tracking-widest uppercase text-gray-500 mb-6">
       Inside the Platform
     </p>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <!-- 4 screenshot cards with caption -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- 3 screenshot cards with caption -->
     </div>
   </div>
 </section>
@@ -76,7 +75,7 @@ node _ops/screenshots/shot.mjs --url /exercises/
 Each card:
 - Rounded corners (`rounded-xl`)
 - Subtle shadow (`shadow-sm`)
-- Caption below image (page name, e.g., "Interactive Exercises")
+- Caption below image (page name, e.g., "Free Packs")
 - Links to the actual page
 - `loading="lazy"` on all images
 
@@ -85,7 +84,7 @@ Each card:
 ## Refresh Cadence
 
 Re-run screenshot script:
-- After any visual change to the 4 target pages
+- After any visual change to the 3 target pages
 - Before major launches or PR reviews
 - Monthly at minimum to keep screenshots current
 

@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /exercises/
 Disallow: /institution/
 Disallow: /assets/js/
 Disallow: /products/

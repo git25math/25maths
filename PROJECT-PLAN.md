@@ -17,7 +17,7 @@
 
 To support long-term retention and member value, the project now includes a dedicated execution track for:
 
-1. Account login for interactive exercise users.
+1. Account login for members and resource users.
 2. Cloud-based progress and per-question mistake tracking.
 3. Member-only download authorization.
 4. Dual-channel release pipeline:
@@ -187,7 +187,7 @@ active_global: about   # highlights in global-nav
 1. ~~**Freeze MVP scope and acceptance criteria**~~ — ✅ Done
 2. ~~**Supabase Auth setup for production path**~~ — ✅ Done (OTP login, redirect URLs configured)
 3. ~~**Data model + RLS**~~ — ✅ Done (18 tables, all RLS enabled)
-4. ~~**Interactive exercise telemetry**~~ — ✅ Done (session/attempt/complete API, anonymous fallback preserved)
+4. ~~**Online exercise telemetry**~~ — Retired 2026-05-03; no active public write path remains.
 5. ~~**Membership center data binding**~~ — ✅ Done (streak, XP, achievements, learning snapshot, download cards)
 6. ~~**Payhip webhook sync**~~ — ✅ Done (E2E verified: sale_completed → 24 entitlements granted)
 7. ~~**Member-only download gateway**~~ — ✅ Done (E2E verified: 24/24 signed URLs → PDF bytes)
@@ -197,8 +197,7 @@ active_global: about   # highlights in global-nav
 9. **Complete Payhip integration** — Upload 3 paid products, replace remaining Gumroad purchase links.
 10. **Google Search Console** — Submit `sitemap.xml`, verify site ownership.
 11. **Edexcel 4MA1 products** — Create premium bundles and update `products.html` / `pricing.html`.
-12. **Gemini interactive exercise generator** — Continue micro-topic generation to close Kahoot + worksheet + web loop.
-   - Execution checklist: `plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md`
+12. **Kahoot + worksheet loop** — Keep public practice links focused on free PDFs, Kahoot, and paid bundles.
 
 ### Medium-term
 13. **Tailwind build pipeline** — Replace CDN with CLI-built CSS for production.

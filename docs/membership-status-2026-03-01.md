@@ -1,6 +1,7 @@
 # 25maths.com 会员系统状态报告
 
 > 日期：2026-03-01 | 代码库版本：47bc9b9 | 总行数：7,300+ 行（31 个核心文件 + 6 个双语更新）
+> 2026-05-03 update: this is a historical status report. Exercise-specific APIs and JS described here have since been retired from the website.
 
 ---
 

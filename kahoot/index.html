@@ -17,12 +17,11 @@ lang: en
             Browse SubTopic directories for CIE 0580 and Edexcel 4MA1.
             CIE is grouped by <strong>Core / Extended</strong>; Edexcel is grouped by <strong>Foundation / Higher</strong>.
         </p>
-        <p class="text-sm text-gray-300 mt-3 max-w-3xl mx-auto">The retrieval layer of the 25Maths practice system — fast-cycle recall that reinforces what worksheets and exercises introduce.</p>
-        <p data-bilingual-block class="text-sm text-gray-300 mt-2 max-w-3xl mx-auto">25Maths 练习体系的检索层 — 快速循环回忆，巩固练习册与互动练习引入的知识点。</p>
+        <p class="text-sm text-gray-300 mt-3 max-w-3xl mx-auto">The retrieval layer of the 25Maths resource system: fast-cycle recall that reinforces worksheets and bundle study.</p>
+        <p data-bilingual-block class="text-sm text-gray-300 mt-2 max-w-3xl mx-auto">25Maths 资源体系的检索层：用快速循环回忆巩固讲义和套装学习。</p>
         <div class="mt-8 flex flex-col sm:flex-row sm:items-stretch gap-4 justify-center">
             <a href="/kahoot/cie0580/" class="sm:flex-1 inline-flex items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-md transition ui-focus-ring">Open CIE 0580 SubTopic Directory</a>
             <a href="/kahoot/edexcel-4ma1/" class="sm:flex-1 inline-flex items-center justify-center text-center edx-solid-bg px-8 py-4 rounded-lg font-semibold edx-solid-hover hover:shadow-md transition ui-focus-ring">Open Edexcel 4MA1 SubTopic Directory</a>
-            <a href="/exercises/" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 hover:shadow-md transition ui-focus-ring">Open Interactive Exercises Hub</a>
             <a href="/kahoot/#free-sample-live" class="sm:flex-1 inline-flex items-center justify-center text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 hover:shadow-md transition ui-focus-ring">Free Samples Live Now</a>
         </div>
     </div>
@@ -308,7 +307,7 @@ lang: en
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-8">
             <h2 class="text-3xl font-semibold text-gray-900 mb-3">SubTopic Filter Explorer</h2>
-            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 interactive practice -> L1 -> L2 -> L3 with presale terms.</p>
+            <p class="text-gray-600">Filter in order: Exam Board -> Tier -> SubTopic. Each result card supports one conversion path: L0 Kahoot -> L1 worksheet -> L2 section bundle -> L3 unit bundle with presale terms.</p>
             <p data-bilingual-block class="text-sm text-gray-600 mt-2">建议筛选顺序：先选考试局，再选层级，最后按关键词定位题组。</p>
         </div>
 
@@ -539,14 +538,9 @@ lang: en
         ? item.unitBundleUrl
         : `${config.defaultUnitBundleUrl}?src=kahoot_hub_filter&level=unit&asset=${encodeURIComponent((item.unitKey || '').toLowerCase())}`;
       const termsPdfUrl = config.termsPdfUrl || '/payhip/presale/kahoot-presale-info-template.pdf';
-      const hasInteractiveExercise = Boolean((item.exerciseUrl || '').trim());
-      const interactiveExerciseUrl = hasInteractiveExercise ? item.exerciseUrl : '';
       const boardBadge = item.board === 'cie0580'
         ? 'bg-emerald-100 text-emerald-700'
         : 'border edx-soft-border edx-soft-bg edx-soft-text';
-      const interactiveButtonClass = item.board === 'cie0580'
-        ? 'cie-solid-bg text-white cie-solid-hover hover:shadow-md ui-focus-ring'
-        : 'edx-solid-bg edx-solid-hover hover:shadow-md ui-focus-ring';
       const worksheetButtonClass = item.board === 'cie0580'
         ? 'border cie-soft-border cie-soft-bg cie-solid-text cie-soft-hover hover:shadow-sm ui-focus-ring'
         : 'border edx-soft-border edx-soft-bg edx-soft-text edx-soft-hover hover:shadow-sm ui-focus-ring';
@@ -584,14 +578,10 @@ lang: en
         ? item.cover.replace(/\.png$/i, '.webp')
         : item.cover;
       const kahootLabel = 'L0: Open Kahoot';
-      const interactiveLabel = 'L1: Interactive Exercise';
-      const worksheetLabel = 'L2: Worksheet';
-      const sectionBundleLabel = 'L3: Section Bundle';
-      const unitBundleLabel = 'L4: Unit Bundle';
-      const fallbackPresaleNote = 'Upgrade path: L0 Kahoot -> L1 interactive exercise -> L2 single worksheet -> L3 section bundle -> L4 unit bundle.';
-      const interactiveButton = hasInteractiveExercise
-        ? `<a href="${escapeHtml(interactiveExerciseUrl)}" class="text-center ${interactiveButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">${interactiveLabel}</a>`
-        : `<span class="text-center ${interactiveButtonClass} kahoot-ladder-disabled py-3 rounded-lg font-semibold text-sm transition">${interactiveLabel}</span>`;
+      const worksheetLabel = 'L1: Worksheet';
+      const sectionBundleLabel = 'L2: Section Bundle';
+      const unitBundleLabel = 'L3: Unit Bundle';
+      const fallbackPresaleNote = 'Upgrade path: L0 Kahoot -> L1 single worksheet -> L2 section bundle -> L3 unit bundle.';
 
       return `
         <article class="bg-white rounded-xl border border-gray-200 p-4 shadow-sm h-full flex flex-col">
@@ -611,7 +601,6 @@ lang: en
           <p class="text-[11px] text-gray-500 mb-3 kahoot-card-note">${escapeHtml(item.presaleNote || fallbackPresaleNote)}</p>
           <div class="mt-auto pt-2 cta-stack">
             <a href="${escapeHtml(kahootUrl)}" target="_blank" rel="noopener" class="text-center kahoot-solid-bg text-white py-3 rounded-lg font-semibold text-sm kahoot-solid-hover hover:shadow-md transition ui-focus-ring">${kahootLabel}</a>
-            ${interactiveButton}
             <a href="${escapeHtml(worksheetUrl)}" target="_blank" rel="noopener" class="text-center ${worksheetButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">${worksheetLabel}</a>
             <a href="${escapeHtml(sectionBundleUrl)}" target="_blank" rel="noopener" class="text-center ${sectionBundleButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">${sectionBundleLabel}</a>
             <a href="${escapeHtml(unitBundleUrl)}" target="_blank" rel="noopener" class="text-center ${unitBundleButtonClass} py-3 rounded-lg font-semibold text-sm transition ui-focus-ring">${unitBundleLabel}</a>

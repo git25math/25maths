@@ -8,7 +8,7 @@
  * Usage:
  *   node _ops/screenshots/shot.mjs                          # All pages (production)
  *   node _ops/screenshots/shot.mjs --base http://localhost:4000  # Local dev
- *   node _ops/screenshots/shot.mjs --url /exercises/        # Single page
+ *   node _ops/screenshots/shot.mjs --url /cie0580/free/     # Single page
  */
 
 import { chromium } from 'playwright';
@@ -21,7 +21,6 @@ const ROOT = resolve(__dirname, '../..');
 const OUTPUT_DIR = resolve(ROOT, 'assets/evidence');
 
 const PAGES = [
-  { path: '/exercises/',        filename: 'exercises-hub.webp',  label: 'Exercise Hub' },
   { path: '/cie0580/free/',     filename: 'free-packs.webp',     label: 'Free Packs' },
   { path: '/kahoot/',           filename: 'kahoot-hub.webp',     label: 'Kahoot Hub' },
   { path: '/subscription.html', filename: 'term-pass.webp',      label: 'Term Pass' },

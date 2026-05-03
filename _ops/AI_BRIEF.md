@@ -1,7 +1,7 @@
 # 25Maths — AI Agent Brief
 
 > Drop this file (+ `_ops/OUTPUT_CONTRACTS/`) into any LLM context to onboard it fast.
-> Last updated: 2026-02-27
+> Last updated: 2026-05-03
 
 ---
 
@@ -9,7 +9,6 @@
 
 25Maths (www.25maths.com) is an exam-aligned mathematics practice platform for international school students preparing for **CIE 0580** (Cambridge IGCSE) and **Edexcel 4MA1** (Pearson IGCSE).
 It provides:
-- Free interactive exercises (web)
 - Free + paid worksheet packs (PDF)
 - Free Kahoot practice hubs
 - A paid **Term Practice Pass** (weekly packs)
@@ -43,13 +42,10 @@ Notes:
 /_config.yml                Site config, CSP, module definitions, Supabase config
 
 /_data/
-  exercises/                202 exercise JSON files (one per subtopic)
   releases.json             Product registry (Payhip IDs, asset keys, status)
   kahoot_subtopic_links.json
   kahoot_*_subtopics.json
   content/                  Week packs / releases content data (e.g. week01.*)
-
-/_exercises/                202 markdown stubs (frontmatter only)
 
 /_includes/
   head.html                 Tailwind CDN, OG meta, CSP, Payhip.js
@@ -61,16 +57,15 @@ Notes:
 /_layouts/
   global.html               Global/portal pages
   module.html               Board pages (cie0580/, edx4ma1/)
-  interactive_exercise.html Exercise player layout
 
 /assets/
-  js/                       exercise_engine.js, member_auth.js, bilingual_support.js
+  js/                       member_auth.js, bilingual_support.js, member dashboards
   css/site.css
   evidence/                 Auto-generated screenshots for evidence strip (webp/png)
 
 /functions/
   _lib/                     release_registry.js, supabase_server.js, payhip_events.js
-  api/v1/                   exercise/, membership/, download/, engagement/, reports/
+  api/v1/                   membership/, download/, engagement/, reports/
 
 /supabase/migrations/       SQL schema (engagement, membership, learning, institution)
 
@@ -90,14 +85,7 @@ Notes:
 
 ## Content Types
 
-### 1) Interactive Exercises (free, 202 sets)
-
-- **Data**: `_data/exercises/{exercise_key}.json` (10-12 MCQ recommended)
-- **Page stub**: `_exercises/{exercise_key}.md` (frontmatter only)
-- **Renderer**: `_layouts/interactive_exercise.html`
-- **Player**: `assets/js/exercise_engine.js` (client-side quiz engine + session tracking)
-
-### 2) Worksheet Packs (PDF)
+### 1) Worksheet Packs (PDF)
 
 - **Free packs**: 14 packs across both boards, hosted under:
   - `cie0580/free/`
@@ -105,12 +93,12 @@ Notes:
 - **Paid bundles** (examples): Algebra, Functions, Number (Payhip products)
 - **Sales**: Payhip embed buttons (`data-payhip-product`)
 
-### 3) Kahoot Quizzes (free hub, 40+)
+### 2) Kahoot Quizzes (free hub, 40+)
 
 - **Data**: `_data/kahoot_subtopic_links.json` (maps subtopic IDs to Kahoot room URLs)
 - **Hub**: `/kahoot/` (board listings)
 
-### 4) Term Practice Pass (paid, $24.99 one-time)
+### 3) Term Practice Pass (paid, $24.99 one-time)
 
 - **Product**: 12 weekly topical practice packs with full solutions (CIE 0580 aligned)
 - **Payhip Product ID**: `eN4l6`
@@ -134,30 +122,6 @@ Examples:
 ```txt
 cie0580:algebra-c2:c2-01-introduction-to-algebra
 edexcel-4ma1:number-h1:h1-05-set-language-and-notation
-```
-
-### Exercise Key (filesystem + URL safe)
-
-Exercise JSON filenames and exercise stub filenames use a URL-safe key.
-
-**Transform rule (IMPORTANT):**
-
-- Replace `:` with `-` (hyphen)
-- Keep existing hyphens `-` as-is
-
-Example:
-
-```txt
-cie0580:algebra-c2:c2-01-introduction-to-algebra
-→ cie0580-algebra-c2-c2-01-introduction-to-algebra
-```
-
-Used as:
-
-```txt
-_data/exercises/{exercise_key}.json
-_exercises/{exercise_key}.md
-/exercises/{exercise_key}/
 ```
 
 ### Language Paths
@@ -222,7 +186,7 @@ All AI-generated outputs must conform to contracts in `_ops/OUTPUT_CONTRACTS/`:
 
 - `week_pack.contract.md` — Week Pack PDF structure + checklist
 - `evidence.contract.md` — Homepage evidence screenshots spec (sizes/names/refresh cadence)
-- `data.contract.json` — Schema for `exercise_set`, `release_entry`, `week_pack_spec`
+- `data.contract.json` — Schema for `release_entry`, `week_pack_spec`, and PDF question content
 
 ---
 
@@ -232,9 +196,6 @@ Authoritative source: `functions/api/v1/` route tree.
 
 | Method | Path | Auth | Purpose |
 |--------|------|------|---------|
-| POST | `/api/v1/exercise/session/start` | Optional | Start session |
-| POST | `/api/v1/exercise/session/:id/attempt` | Optional | Record attempt |
-| POST | `/api/v1/exercise/session/:id/complete` | Optional | Complete session |
 | POST | `/api/v1/membership/webhook/payhip` | HMAC | Payhip webhook |
 | GET | `/api/v1/membership/benefits` | Bearer | Member benefits |
 | GET | `/api/v1/download/:release_id` | Bearer | Signed download URL |
@@ -255,6 +216,8 @@ bash scripts/health/check_style_consistency.sh
 python3 scripts/health/check_exercise_data.py
 python3 scripts/health/check_kahoot_data.py
 ```
+
+`check_exercise_data.py` is now a retirement guard: it verifies that the retired online exercise product line stays offline and that public entry points do not reintroduce it.
 
 Screenshots (evidence strip):
 

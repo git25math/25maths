@@ -3,7 +3,7 @@
 > Version: 1.0
 > Created: 2026-02-27
 > Owner: Claude Code Opus (Architecture) → Codex (Implementation)
-> Status: Draft — awaiting approval
+> Status: Partially superseded 2026-05-03 — exercise-session integration is retired; dashboard engagement may continue on non-exercise activity.
 
 ## 1. Problem Statement
 

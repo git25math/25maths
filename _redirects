@@ -12,6 +12,16 @@
 /zh-cn/cie0580/products/index.html /cie0580/products.html 301
 /zh-cn/cie0580/products/* /cie0580/products.html 301
 
+# Retired exercise product line
+/exercises /cie0580/free/ 301
+/exercises/ /cie0580/free/ 301
+/exercises/* /cie0580/free/ 301
+/zh-cn/exercises /zh-cn/cie0580/free/ 301
+/zh-cn/exercises/ /zh-cn/cie0580/free/ 301
+/zh-cn/exercises/* /zh-cn/cie0580/free/ 301
+/institution/assignments /membership/ 301
+/institution/assignments/ /membership/ 301
+
 # Index-file variants
 /en/index.html / 301
 /zh-cn/index.html / 301

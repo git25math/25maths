@@ -1,5 +1,7 @@
 # Gemini 互动练习执行日志
 
+> RETIRED 2026-05-03: this log is historical. Do not use it as an active execution plan; the website exercise product line has been removed.
+
 > **开始日期**: 2026-02-17  
 > **执行策略**: 按考纲顺序推进 + 每批自动审校（generate -> audit -> validate）
 
