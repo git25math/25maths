@@ -2,6 +2,7 @@
 
 > Updated: 2026-02-18 (UTC)
 > Scope: Free member foundation + paid member personalization + dual-channel content rights
+> 2026-05-03 update: Online exercise telemetry in this plan is retired. The active member platform scope is auth, entitlements, downloads, engagement surfaces, and recommendations that point to free packs/Kahoot.
 
 Supporting files:
 - `plan/MEMBER-SYSTEM-COMMAND-CENTER.md`

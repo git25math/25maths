@@ -23,10 +23,10 @@
 
     var positions=[Math.floor(paragraphs.length*0.33),Math.floor(paragraphs.length*0.75)];
     var ctaTexts=isZH?[
-      {title:'想要更多练习？',text:'浏览我们的考试专题练习，提升做题准确率。',link:'/zh-cn/exercises/',btn:'去看练习'},
+      {title:'想要更多资源？',text:'浏览免费的考试专题练习包，配合解析巩固方法。',link:'/zh-cn/cie0580/free/',btn:'查看免费资源'},
       {title:'准备好了吗？',text:'获取学期练习通行证，12 周系统复习。',link:'/zh-cn/subscription.html',btn:'了解通行证'}
     ]:[
-      {title:'Want more practice?',text:'Browse our exam-focused exercises to build accuracy.',link:'/exercises/',btn:'Explore exercises'},
+      {title:'Want more resources?',text:'Browse free exam-focused worksheet packs with worked solutions.',link:'/cie0580/free/',btn:'Explore resources'},
       {title:'Ready for structured practice?',text:'Get the Term Practice Pass — 12 weekly packs with full solutions.',link:'/subscription.html',btn:'Get Term Pass'}
     ];
 
@@ -53,11 +53,11 @@
     if(!waitlistCTA) return;
 
     var steps=isZH?[
-      {icon:'📝',title:'互动练习',desc:'即时反馈训练，边做边学。',link:'/zh-cn/exercises/'},
+      {icon:'📝',title:'免费练习包',desc:'专题练习配完整解析。',link:'/zh-cn/cie0580/free/'},
       {icon:'📊',title:'考纲分析',desc:'了解 CIE 和 Edexcel 考纲重点。',link:'/zh-cn/cie0580/'},
       {icon:'📦',title:'每周练习包',desc:'12 周系统化练习，含完整解析。',link:'/zh-cn/subscription.html'}
     ]:[
-      {icon:'📝',title:'Interactive exercises',desc:'Instant feedback drills to build accuracy.',link:'/exercises/'},
+      {icon:'📝',title:'Free worksheet packs',desc:'Topic practice with worked solutions.',link:'/cie0580/free/'},
       {icon:'📊',title:'Exam board guides',desc:'See topic breakdowns for CIE and Edexcel.',link:'/cie0580/'},
       {icon:'📦',title:'Weekly practice packs',desc:'12-week structured practice with full solutions.',link:'/subscription.html'}
     ];

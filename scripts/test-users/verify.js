@@ -127,26 +127,22 @@ async function verifyDbUser(userCfg, userId) {
       `expires_at=${ent?.expires_at}`);
   }
 
-  // 4. exercise_sessions count
+  // 4. retired exercise tables are cleaned for test users
   const { count: sessCount } = await supabase
     .from('exercise_sessions')
     .select('id', { count: 'exact', head: true })
     .eq('user_id', userId);
-  check(userId, 'DB', 'exercise_sessions count', sessCount === userCfg.sessions,
-    `expected=${userCfg.sessions}, got=${sessCount}`);
+  check(userId, 'DB', 'exercise_sessions retired cleanup', sessCount === 0,
+    `expected=0, got=${sessCount}`);
 
-  // 5. question_attempts exist (if sessions > 0)
-  if (userCfg.sessions > 0) {
-    const { count: attCount } = await supabase
-      .from('question_attempts')
-      .select('id', { count: 'exact', head: true })
-      .eq('user_id', userId);
-    const expectedAttempts = userCfg.sessions * 12; // 12 questions per session
-    check(userId, 'DB', 'question_attempts count', attCount === expectedAttempts,
-      `expected=${expectedAttempts}, got=${attCount}`);
-  }
+  const { count: attCount } = await supabase
+    .from('question_attempts')
+    .select('id', { count: 'exact', head: true })
+    .eq('user_id', userId);
+  check(userId, 'DB', 'question_attempts retired cleanup', attCount === 0,
+    `expected=0, got=${attCount}`);
 
-  // 6. user_streaks
+  // 5. user_streaks
   const { data: streak } = await supabase
     .from('user_streaks')
     .select('current_streak, best_streak, total_active_days')

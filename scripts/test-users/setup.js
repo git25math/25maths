@@ -13,7 +13,7 @@
 
 import { createClient } from '@supabase/supabase-js';
 import { config } from 'dotenv';
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -43,36 +43,10 @@ const supabase = createClient(SUPABASE_URL, SERVICE_KEY, {
 const usersConfig = JSON.parse(readFileSync(resolve(__dirname, 'users.json'), 'utf-8'));
 const ALL_CIE = usersConfig.ALL_CIE;
 
-// ── Load real exercise slugs (CIE 0580 only) ──
-const exercisesDir = resolve(__dirname, '../../_data/exercises');
-const CIE_SLUGS = readdirSync(exercisesDir)
-  .filter(f => f.startsWith('cie0580-') && f.endsWith('.json'))
-  .map(f => f.replace('.json', ''));
-
-// ── Parse exercise metadata from slug ──
-function parseSlug(slug) {
-  // cie0580-algebra-c2-c2-01-introduction-to-algebra
-  const parts = slug.split('-');
-  const board = 'CIE 0580';
-  // tier: c = Core, e = Extended
-  const tierPart = parts.find(p => /^[ce]\d+$/.test(p));
-  const tier = tierPart && tierPart.startsWith('e') ? 'Extended' : 'Core';
-  // syllabus code: e.g., C2-01
-  const scPart = parts.find(p => /^[ce]\d+-\d+$/.test(p));
-  let syllabusCode = '';
-  if (!scPart) {
-    // find pattern like c2-01 by checking pairs
-    for (let i = 0; i < parts.length - 1; i++) {
-      if (/^[ce]\d+$/.test(parts[i]) && /^\d+$/.test(parts[i + 1])) {
-        syllabusCode = `${parts[i].toUpperCase()}-${parts[i + 1]}`;
-        break;
-      }
-    }
-  } else {
-    syllabusCode = scPart.toUpperCase();
-  }
-  return { board, tier, syllabusCode };
-}
+const CIE_SKILL_CODES = [
+  'C1-04', 'C1-13', 'C2-05', 'C3-03', 'C4-06', 'C5-04',
+  'E1-18', 'E2-12', 'E6-05', 'E7-01', 'E8-04', 'E9-06',
+];
 
 // ── Helpers ──
 function makeEmail(alias) {
@@ -189,75 +163,24 @@ async function setupUser(userCfg) {
     console.log(`  Entitlements: none`);
   }
 
-  // (e) Exercise sessions + question attempts
+  // (e) Retired exercise session cleanup + synthetic learning activity
   const sessionCount = userCfg.sessions || 0;
-  // Clean existing test data
   await supabase.from('question_attempts').delete().eq('user_id', userId);
   await supabase.from('exercise_sessions').delete().eq('user_id', userId);
 
   const dailyMap = new Map(); // date -> { sessions, questions, correct, time, skills }
 
   if (sessionCount > 0) {
-    console.log(`  Sessions: generating ${sessionCount}...`);
+    console.log(`  Learning activity: generating ${sessionCount} synthetic day entries...`);
     for (let s = 0; s < sessionCount; s++) {
-      const slug = pickRandom(CIE_SLUGS);
-      const meta = parseSlug(slug);
+      const skillCode = pickRandom(CIE_SKILL_CODES);
       const dayOffset = randomInt(1, 30);
       const startTime = daysAgo(dayOffset);
       startTime.setHours(randomInt(8, 20), randomInt(0, 59), 0, 0);
       const durationSec = randomInt(180, 600);
-      const endTime = new Date(startTime.getTime() + durationSec * 1000);
       const questionCount = 12;
       const accuracyPct = randomInt(60, 100);
       const correctCount = Math.round((accuracyPct / 100) * questionCount);
-      const score = Math.round((correctCount / questionCount) * 100);
-
-      const { data: session, error: sessErr } = await supabase
-        .from('exercise_sessions')
-        .insert({
-          user_id: userId,
-          exercise_slug: slug,
-          board: meta.board,
-          tier: meta.tier,
-          syllabus_code: meta.syllabusCode,
-          started_at: startTime.toISOString(),
-          completed_at: endTime.toISOString(),
-          score,
-          question_count: questionCount,
-          duration_seconds: durationSec,
-        })
-        .select('id')
-        .single();
-
-      if (sessErr) {
-        console.error(`    Session ${s + 1} FAIL: ${sessErr.message}`);
-        continue;
-      }
-
-      // Generate question attempts
-      const attempts = [];
-      const correctIndices = new Set();
-      while (correctIndices.size < correctCount) {
-        correctIndices.add(randomInt(0, questionCount - 1));
-      }
-
-      for (let q = 0; q < questionCount; q++) {
-        const isCorrect = correctIndices.has(q);
-        const correctAnswer = randomInt(0, 3);
-        const selectedAnswer = isCorrect ? correctAnswer : ((correctAnswer + randomInt(1, 3)) % 4);
-        attempts.push({
-          session_id: session.id,
-          user_id: userId,
-          question_index: q,
-          is_correct: isCorrect,
-          selected_answer: selectedAnswer,
-          correct_answer: correctAnswer,
-          skill_tag: meta.syllabusCode || 'general',
-        });
-      }
-
-      const { error: attErr } = await supabase.from('question_attempts').insert(attempts);
-      if (attErr) console.error(`    Attempts for session ${s + 1} FAIL: ${attErr.message}`);
 
       // Accumulate daily activity
       const dateStr = formatDate(startTime);
@@ -268,12 +191,12 @@ async function setupUser(userCfg) {
       day.questions += questionCount;
       day.correct += correctCount;
       day.time += durationSec;
-      day.skills.add(meta.syllabusCode || 'general');
+      day.skills.add(skillCode);
       dailyMap.set(dateStr, day);
     }
-    console.log(`  Sessions: ${sessionCount} created`);
+    console.log(`  Learning activity: ${sessionCount} synthetic sessions counted`);
   } else {
-    console.log(`  Sessions: 0 (skipped)`);
+    console.log(`  Learning activity: 0 (skipped)`);
   }
 
   // (f) User streaks

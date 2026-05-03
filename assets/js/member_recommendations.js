@@ -33,7 +33,7 @@
   function detectBoardFromSessions(sessions) {
     if (!Array.isArray(sessions)) return '';
     for (const row of sessions) {
-      const slug = String(row?.exercise_slug || '').toLowerCase();
+      const slug = String(row?.board || row?.resource_label || '').toLowerCase();
       if (slug.includes('edexcel') || slug.includes('4ma1')) return 'edexcel-4ma1';
       if (slug.includes('cie') || slug.includes('0580')) return 'cie0580';
     }
@@ -47,12 +47,12 @@
     return '/membership/';
   }
 
-  function detectExerciseUrl(skill, boardHint) {
+  function detectReviewUrl(skill, boardHint) {
     const board = detectBoardFromSkill(skill) || boardHint;
     const params = new URLSearchParams();
     params.set('q', skill);
     if (board) params.set('board', board);
-    return `/exercises/?${params.toString()}`;
+    return `/kahoot/?${params.toString()}`;
   }
 
   function renderEmpty(message) {
@@ -61,7 +61,7 @@
 
   function renderRecommendations(weakSkills, membershipActive, sessions) {
     if (!Array.isArray(weakSkills) || weakSkills.length === 0) {
-      renderEmpty(t('Keep practicing to unlock targeted weak-point recommendations.', '继续练习以解锁针对性薄弱项推荐'));
+      renderEmpty(t('Use the current resource loop: download the weekly pack, review with Kahoot, then move to the matching bundle when ready.', '使用当前资源路径：下载周练资料包，用 Kahoot 复习，准备好后进入对应合集。'));
       return;
     }
 
@@ -78,7 +78,7 @@
       const skill = String(item.skill || 'unclassified');
       const count = Number(item.count || 0);
       const weighted = Number(item.weighted_score || count || 0).toFixed(2);
-      const practiceUrl = detectExerciseUrl(skill, boardHint);
+      const reviewUrl = detectReviewUrl(skill, boardHint);
       const packUrl = detectPackUrl(skill, boardHint);
       const lockTag = membershipActive ? '' : `<span class="inline-flex rounded-full bg-amber-100 text-amber-800 text-[11px] font-semibold px-2 py-0.5">${t('Member unlock', '会员解锁')}</span>`;
       return `<article class="border border-gray-200 rounded-xl p-4 bg-white">
@@ -89,7 +89,7 @@
         <p class="mt-2 text-xs text-gray-600">${t('Recent mistakes:', '近期错误：')} ${count} • ${t('priority:', '优先级：')} ${weighted}</p>
         <p class="mt-1 text-xs text-gray-500">${formatLastSeen(item.last_seen_at)}</p>
         <div class="mt-3 flex flex-wrap gap-2">
-          <a href="${escapeHtml(practiceUrl)}" class="inline-flex items-center rounded-lg bg-secondary px-3 py-1.5 text-xs font-semibold text-white hover:bg-gray-800 transition">${t('Practice now', '立即练习')}</a>
+          <a href="${escapeHtml(reviewUrl)}" class="inline-flex items-center rounded-lg bg-secondary px-3 py-1.5 text-xs font-semibold text-white hover:bg-gray-800 transition">${t('Review on Kahoot', '用 Kahoot 复习')}</a>
           <a href="${escapeHtml(packUrl)}" class="inline-flex items-center rounded-lg border border-gray-300 px-3 py-1.5 text-xs font-semibold text-gray-800 hover:bg-gray-50 transition">${t('Matching pack', '匹配资料包')}</a>
         </div>
       </article>`;

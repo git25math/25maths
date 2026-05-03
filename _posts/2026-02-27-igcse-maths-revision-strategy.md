@@ -94,7 +94,7 @@ Review this log before every practice session. Your mistakes are your syllabus.
 
 ### Put This Plan Into Action
 
-- Track your weak topics automatically: [Free Interactive Practice](/exercises/)
+- Start with worked topic resources: [Free Worksheet Packs](/cie0580/free/)
 - Get weekly targeted practice packs: [Weekly Membership](/subscription.html)
 - Practice CIE 0580 topics now: [CIE 0580 Practice](/cie0580/)
 

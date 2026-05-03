@@ -47,7 +47,7 @@
         </article>
         <article class="rounded-xl border border-blue-200 bg-blue-50 p-4">
           <p class="text-sm font-semibold text-blue-900">How to unlock more offers</p>
-          <p class="mt-1 text-sm text-blue-800">Keep practicing interactive exercises. The system checks recent weak-point and activity rules to unlock targeted coupons.</p>
+          <p class="mt-1 text-sm text-blue-800">Keep using the worksheet and Kahoot resource loop. The system checks recent weak-point and activity rules to unlock targeted coupons.</p>
         </article>
       </div>`;
       return;

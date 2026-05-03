@@ -5,7 +5,6 @@ import {
   fetchUserXp,
   listUserAchievements,
   listAchievementDefinitions,
-  serviceHeaders,
 } from '../../../_lib/supabase_server.js';
 import { computeLevel } from '../../../_lib/achievement_evaluator.js';
 import { formatDateStr } from '../../../_lib/date_utils.js';
@@ -45,78 +44,6 @@ function formatDuration(totalSeconds) {
   return `${minutes}m`;
 }
 
-// Fetch completed sessions for a date range using Supabase REST API
-async function fetchSessionsInRange(env, userId, startDate, endDate) {
-  const baseUrl = `${env.SUPABASE_URL}/rest/v1/exercise_sessions`;
-  const params = new URLSearchParams({
-    select: 'id,exercise_slug,question_count,score,duration_seconds,started_at,completed_at',
-    user_id: `eq.${userId}`,
-    started_at: `gte.${startDate}T00:00:00Z`,
-    completed_at: `not.is.null`,
-    order: 'started_at.desc',
-  });
-  // Also filter started_at < endDate
-  const url = `${baseUrl}?${params.toString()}&started_at=lt.${endDate}T00:00:00Z`;
-  const resp = await fetch(url, { headers: serviceHeaders(env) });
-  if (!resp.ok) return [];
-  return await resp.json();
-}
-
-// Fetch question attempts for given session IDs
-async function fetchAttemptsForSessions(env, sessionIds) {
-  if (!sessionIds.length) return [];
-  const baseUrl = `${env.SUPABASE_URL}/rest/v1/question_attempts`;
-  const idList = sessionIds.join(',');
-  const params = new URLSearchParams({
-    select: 'session_id,skill_tag,is_correct',
-    session_id: `in.(${idList})`,
-  });
-  const url = `${baseUrl}?${params.toString()}`;
-  const resp = await fetch(url, { headers: serviceHeaders(env) });
-  if (!resp.ok) return [];
-  return await resp.json();
-}
-
-// Aggregate topic stats from attempts
-function aggregateTopics(attempts) {
-  const byTopic = {};
-  for (const a of attempts) {
-    const tag = a.skill_tag || 'unknown';
-    // Use first segment (e.g., "algebra" from "algebra-quadratics-factoring")
-    const topic = tag.split('-')[0] || 'unknown';
-    if (!byTopic[topic]) {
-      byTopic[topic] = { correct: 0, wrong: 0, total: 0 };
-    }
-    byTopic[topic].total += 1;
-    if (a.is_correct) {
-      byTopic[topic].correct += 1;
-    } else {
-      byTopic[topic].wrong += 1;
-    }
-  }
-  return Object.entries(byTopic).map(([name, stats]) => ({
-    topic: name,
-    correct: stats.correct,
-    wrong: stats.wrong,
-    total: stats.total,
-    accuracy: stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0,
-  }));
-}
-
-// Find top mistake skill tags
-function topMistakes(attempts, limit = 3) {
-  const mistakeCounts = {};
-  for (const a of attempts) {
-    if (!a.is_correct && a.skill_tag) {
-      mistakeCounts[a.skill_tag] = (mistakeCounts[a.skill_tag] || 0) + 1;
-    }
-  }
-  return Object.entries(mistakeCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, limit)
-    .map(([skill_tag, count]) => ({ skill_tag, count }));
-}
-
 export async function onRequestGet(context) {
   const { request, env } = context;
 
@@ -137,72 +64,23 @@ export async function onRequestGet(context) {
   const userId = authUser.id;
   const bounds = weekBounds();
 
-  // Fetch data in parallel
-  const [
-    thisWeekSessions,
-    prevWeekSessions,
-    streak,
-    xpRecord,
-    userAchievements,
-    achievementDefs,
-  ] = await Promise.all([
-    fetchSessionsInRange(env, userId, bounds.weekStart, bounds.weekEnd),
-    fetchSessionsInRange(env, userId, bounds.prevWeekStart, bounds.prevWeekEnd),
+  const [streak, xpRecord, userAchievements, achievementDefs] = await Promise.all([
     fetchUserStreak(env, userId),
     fetchUserXp(env, userId),
     listUserAchievements(env, userId),
     listAchievementDefinitions(env),
   ]);
 
-  // Session IDs for attempts lookup
-  const thisWeekIds = thisWeekSessions.map((s) => s.id);
-  const prevWeekIds = prevWeekSessions.map((s) => s.id);
-
-  const [thisWeekAttempts, prevWeekAttempts] = await Promise.all([
-    fetchAttemptsForSessions(env, thisWeekIds),
-    fetchAttemptsForSessions(env, prevWeekIds),
-  ]);
-
-  // Weekly summary stats
-  const sessionsCount = thisWeekSessions.length;
-  const prevSessionsCount = prevWeekSessions.length;
-
-  const questionsAnswered = thisWeekSessions.reduce((sum, s) => sum + (s.question_count || 0), 0);
-  const prevQuestionsAnswered = prevWeekSessions.reduce(
-    (sum, s) => sum + (s.question_count || 0),
-    0
-  );
-
-  const totalCorrect = thisWeekAttempts.filter((a) => a.is_correct).length;
-  const totalAttempts = thisWeekAttempts.length;
-  const accuracyPct = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
-
-  const prevCorrect = prevWeekAttempts.filter((a) => a.is_correct).length;
-  const prevTotal = prevWeekAttempts.length;
-  const prevAccuracyPct = prevTotal > 0 ? Math.round((prevCorrect / prevTotal) * 100) : 0;
-
-  const totalSeconds = thisWeekSessions.reduce((sum, s) => sum + (s.duration_seconds || 0), 0);
-  const prevTotalSeconds = prevWeekSessions.reduce((sum, s) => sum + (s.duration_seconds || 0), 0);
-
-  // Topic performance
-  const thisWeekTopics = aggregateTopics(thisWeekAttempts);
-  const prevWeekTopics = aggregateTopics(prevWeekAttempts);
-
-  // Merge with trend arrows
-  const prevTopicMap = {};
-  for (const t of prevWeekTopics) {
-    prevTopicMap[t.topic] = t.accuracy;
-  }
-  const topicPerformance = thisWeekTopics
-    .map((t) => ({
-      ...t,
-      prev_accuracy: prevTopicMap[t.topic] || 0,
-      trend: trendArrow(t.accuracy, prevTopicMap[t.topic] || 0),
-    }))
-    .sort((a, b) => b.total - a.total);
-
-  // Top mistakes
-  const mistakes = topMistakes(thisWeekAttempts, 5);
+  const sessionsCount = 0;
+  const prevSessionsCount = 0;
+  const questionsAnswered = 0;
+  const prevQuestionsAnswered = 0;
+  const accuracyPct = 0;
+  const prevAccuracyPct = 0;
+  const totalSeconds = 0;
+  const prevTotalSeconds = 0;
+  const topicPerformance = [];
+  const mistakes = [];
 
   // Recent achievements (unlocked this week)
   const weekStartDate = new Date(`${bounds.weekStart}T00:00:00Z`);

@@ -2,6 +2,7 @@
 
 > Frozen on: 2026-02-18  
 > Applies to branch: `codex/member-system-dev`
+> 2026-05-03 update: Exercise telemetry APIs are retired and no longer exist on the public website.
 
 ## 1) Auth Context
 

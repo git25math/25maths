@@ -3,7 +3,7 @@
 > Version: 1.0
 > Created: 2026-02-27
 > Owner: Claude Code Opus (Architecture) → Codex (Implementation)
-> Status: Draft — awaiting approval
+> Status: Retired 2026-05-03 — do not implement against the website; the underlying exercise product line has been removed.
 
 ## 1. Problem Statement
 

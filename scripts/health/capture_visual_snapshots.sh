@@ -25,8 +25,6 @@ PAGES=(
   "edx4ma1-products|/edx4ma1/products.html"
   "edx4ma1-pricing|/edx4ma1/pricing.html"
   "edx4ma1-free|/edx4ma1/free/"
-  "exercises|/exercises/"
-  "exercises-zh|/zh-cn/exercises/"
   "kahoot|/kahoot/"
 )
 

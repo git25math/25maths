@@ -279,7 +279,7 @@ Supabase Edge Functions have direct DB access, reducing latency and complexity.
 
         <!-- CTA -->
         <div style="text-align:center;padding:24px 0;">
-            <a href="https://www.25maths.com/exercises/" class="cta-button">
+            <a href="https://www.25maths.com/cie0580/free/" class="cta-button">
                 {{cta_text}}
             </a>
         </div>

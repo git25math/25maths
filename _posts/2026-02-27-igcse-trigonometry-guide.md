@@ -125,7 +125,7 @@ This is faster and more accurate than $\frac{1}{2} \times \text{base} \times \te
 
 ### Practice Trigonometry Now
 
-- [CIE 0580 Trigonometry Practice](/exercises/) — interactive questions with instant feedback
+- [CIE 0580 Free Resources](/cie0580/free/) — worksheet packs with worked solutions
 - [Free Topic Resources](/cie0580/free/)
 - [Weekly Exam Practice Packs](/subscription.html)
 

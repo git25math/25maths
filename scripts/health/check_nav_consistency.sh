@@ -59,28 +59,24 @@ first_line_no_text() {
 check_order_in_section() {
   local section_label="$1"
   local section_text="$2"
-  local a='<a href="{{ exercises_path }}"'
-  local b='<a href="{{ kahoot_path }}"'
-  local c='<a href="{{ membership_path }}"'
+  local a='<a href="{{ kahoot_path }}"'
+  local b='<a href="{{ membership_path }}"'
 
-  local ca cb cc
+  local ca cb
   ca="$(count_occurrences_text "$a" "$section_text")"
   cb="$(count_occurrences_text "$b" "$section_text")"
-  cc="$(count_occurrences_text "$c" "$section_text")"
 
   [[ "$ca" == "1" ]] || fail "$section_label: '$a' appears $ca time(s), expected 1"
   [[ "$cb" == "1" ]] || fail "$section_label: '$b' appears $cb time(s), expected 1"
-  [[ "$cc" == "1" ]] || fail "$section_label: '$c' appears $cc time(s), expected 1"
 
-  local la lb lc
+  local la lb
   la="$(first_line_no_text "$a" "$section_text")"
   lb="$(first_line_no_text "$b" "$section_text")"
-  lc="$(first_line_no_text "$c" "$section_text")"
 
-  if [[ -n "$la" && -n "$lb" && -n "$lc" && "$la" -lt "$lb" && "$lb" -lt "$lc" ]]; then
-    pass "$section_label: order verified (Interactive Exercises -> Kahoot -> Membership)"
+  if [[ -n "$la" && -n "$lb" && "$la" -lt "$lb" ]]; then
+    pass "$section_label: order verified (Kahoot -> Membership)"
   else
-    fail "$section_label: marker order mismatch; expected Interactive Exercises -> Kahoot -> Membership"
+    fail "$section_label: marker order mismatch; expected Kahoot -> Membership"
   fi
 }
 
@@ -116,7 +112,6 @@ check_global_nav() {
 
   local marker
   for marker in \
-    '<a href="{{ exercises_path }}"' \
     '<a href="{{ kahoot_path }}"' \
     '<a href="{{ membership_path }}"'; do
     local total
@@ -153,7 +148,6 @@ check_footer_preserved_entries() {
     'about_label' \
     'support_label' \
     '{{ kahoot_label }}' \
-    '{{ exercises_label }}' \
     '{{ membership_label }}' \
     '/about.html' \
     '/support.html'; do
@@ -164,7 +158,7 @@ check_footer_preserved_entries() {
     fi
   done
 
-  pass "Footer: retained entry markers present (Blog/About/Support/Kahoot/Exercises)"
+  pass "Footer: retained entry markers present (Blog/About/Support/Kahoot/Membership)"
 }
 
 check_homepage_blog_entry() {
@@ -190,8 +184,7 @@ check_layout_global_nav_usage() {
   for layout in \
     "$ROOT/_layouts/global.html" \
     "$ROOT/_layouts/module.html" \
-    "$ROOT/_layouts/post.html" \
-    "$ROOT/_layouts/interactive_exercise.html"; do
+    "$ROOT/_layouts/post.html"; do
     local name
     name="$(basename "$layout")"
     if ! require_file "$layout" "Layout $name"; then
@@ -209,7 +202,7 @@ echo "== Navigation Consistency Check (Bash) =="
 check_global_nav
 check_footer_preserved_entries
 check_homepage_blog_entry "$SITE_INDEX_FILE" "Home default" "/blog/"
-check_homepage_blog_entry "$SITE_EN_INDEX_FILE" "Home EN" "/en/blog/"
+check_homepage_blog_entry "$SITE_EN_INDEX_FILE" "Home EN" "/blog/"
 check_homepage_blog_entry "$SITE_ZH_INDEX_FILE" "Home ZH" "/zh-cn/blog/"
 check_layout_global_nav_usage
 

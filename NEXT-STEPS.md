@@ -53,12 +53,12 @@
   - Auth 回调 URL 配置完成（本地 + 生产）
   - OTP 登录上线（自定义 SMTP 未接入，使用 Supabase 默认）
 - [x] **完成数据层与权限控制**
-  - 18 张表：profiles、exercise_sessions、question_attempts、membership_status、entitlements + engagement 5 表 + B2B 6 表 + payhip_event_log + member_benefit_offers
+  - 18 张表：profiles、retired exercise telemetry tables、membership_status、entitlements + engagement 5 表 + B2B 6 表 + payhip_event_log + member_benefit_offers
   - RLS：全部 18 表启用，用户仅能读写本人数据
-- [x] **Interactive Exercises 接入云端记录**
-  - 保留匿名模式 + localStorage 回退
-  - 登录用户写入 session 与 attempt 轨迹
-  - 完成时自动触发 engagement（streak + XP + 成就评估）
+- [x] **网页练习产品线下线**
+  - 移除旧题目集合、页面、播放器 JS 和 Functions API
+  - 旧 URL 通过 `_redirects` 指向免费资源页
+  - `scripts/health/check_exercise_data.py` 改为下线守卫
 - [x] **会员下载权限网关**
   - Webhook：`POST /api/v1/membership/webhook/payhip` — E2E 验证通过（24 entitlements granted）
   - 下载：`GET /api/v1/download/:release_id` — E2E 验证通过（24/24 签名 URL → PDF）
@@ -77,9 +77,8 @@
 - [x] **移除站内直链免费 PDF/ZIP** — 已改为 Payhip 邮箱墙
 
 ### P1 转化与一致性
-- [ ] **Gemini CLI 互动练习生成模块（当前优先开发）**
-  - 基于已提取考纲按“小考点”生成网页互动练习页，形成 `Kahoot + Worksheet + Online Interactive` 练习闭环
-  - 执行清单：`plan/GEMINI-INTERACTIVE-EXERCISE-CHECKLIST.md`
+- [ ] **Kahoot + Worksheet 闭环继续完善**
+  - 新内容入口统一指向免费 worksheet、Kahoot 和 paid bundle，不再生成网页练习页
 - [ ] **Algebra Bundle v2.0 完成重构与 QA**
 - [ ] **Functions/Number Bundle 质量审查**
 - [ ] **定价页“School & Bulk Licensing”是否保留**（若暂不做则下线）

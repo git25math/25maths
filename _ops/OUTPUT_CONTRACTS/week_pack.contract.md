@@ -51,8 +51,8 @@
 ### Page 8: Review Checklist
 - 5-8 checkbox items: "I can... [skill]"
 - Self-assessment rating (Confident / Needs practice / Not sure)
-- Link to related interactive exercises on 25maths.com
-- QR code to exercise page (optional)
+- Link to related free worksheet resources or the Kahoot hub on 25maths.com
+- QR code to the relevant free-resource page (optional)
 
 ---
 

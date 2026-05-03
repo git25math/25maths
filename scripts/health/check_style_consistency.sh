@@ -17,8 +17,6 @@ KEY_PAGES=(
   "$ROOT/zh-cn/cie0580/free/index.html"
   "$ROOT/edx4ma1/index.html"
   "$ROOT/edx4ma1/free/index.html"
-  "$ROOT/exercises/index.html"
-  "$ROOT/zh-cn/exercises/index.html"
   "$ROOT/kahoot/index.html"
   "$ROOT/kahoot/cie0580/index.html"
   "$ROOT/kahoot/edexcel-4ma1/index.html"
@@ -235,46 +233,6 @@ check_cross_board_copy_isolation() {
   fi
 }
 
-check_exercise_warm_cta_ladder() {
-  local en_hub="$ROOT/exercises/index.html"
-  local zh_hub="$ROOT/zh-cn/exercises/index.html"
-  local interactive_layout="$ROOT/_layouts/interactive_exercise.html"
-  local exercise_engine="$ROOT/assets/js/exercise_engine.js"
-  local style_include="$ROOT/_includes/head.html"
-
-  local file
-  for file in "$en_hub" "$zh_hub" "$interactive_layout" "$exercise_engine" "$style_include"; do
-    require_file "$file" "Exercise warm CTA source ${file#"$ROOT/"}" || continue
-  done
-
-  if rg -q 'exercise-warm-primary' "$style_include" && rg -q 'exercise-warm-secondary' "$style_include" && rg -q 'exercise-kahoot-bridge' "$style_include"; then
-    pass "Head include: exercise warm CTA classes defined"
-  else
-    fail "Head include: missing one or more exercise warm CTA class definitions"
-  fi
-
-  for file in "$en_hub" "$zh_hub"; do
-    local name="${file#"$ROOT/"}"
-    if rg -q 'exercise-warm-primary' "$file" && rg -q 'exercise-warm-secondary' "$file" && rg -q 'exercise-kahoot-bridge' "$file"; then
-      pass "Exercise hub $name: warm CTA ladder classes present"
-    else
-      fail "Exercise hub $name: missing warm CTA ladder classes"
-    fi
-  done
-
-  if rg -q 'exercise-warm-primary' "$interactive_layout" && rg -q 'exercise-warm-secondary' "$interactive_layout" && rg -q 'exercise-kahoot-bridge' "$interactive_layout"; then
-    pass "Interactive layout: warm CTA ladder classes present"
-  else
-    fail "Interactive layout: missing warm CTA ladder classes"
-  fi
-
-  if rg -q 'exercise-warm-primary' "$exercise_engine" && rg -q 'exercise-kahoot-bridge' "$exercise_engine"; then
-    pass "Exercise engine: dynamic CTA warm/kahoot classes present"
-  else
-    fail "Exercise engine: missing dynamic CTA warm/kahoot classes"
-  fi
-}
-
 check_board_presale_tokenization() {
   local file
   for file in "${BOARD_PRESALE_PAGES[@]}"; do
@@ -319,7 +277,6 @@ check_legacy_focus_chain_absent
 check_ui_focus_adoption
 check_hero_cta_tokenization
 check_cross_board_copy_isolation
-check_exercise_warm_cta_ladder
 check_board_presale_tokenization
 
 echo "== Summary =="

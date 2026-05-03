@@ -15,9 +15,9 @@
 └─ 5. Tailwind ── 如涉及 CSS → npx @tailwindcss/cli -i styles/site.tailwind.css -o assets/css/site.css --minify
 ```
 
-如涉及练习/组卷，额外读取：
-- `docs/EXERCISE-SCHEMA.md` → v2 schema 规范（含工作流 + 金标准）
-- `docs/examples/exercise-variants-showcase.json` → 9 种变式题示例
+如涉及已下线的网页练习产品线，额外确认：
+- `scripts/health/check_exercise_data.py` 必须继续通过；它现在是下线守卫，不再是题目数据完整性检查。
+- 不要恢复 `_exercises/`、`_data/exercises/`、exercise player layout、exercise JS 或 `/api/v1/exercise/*`。
 
 ## 结束协议（每次会话结束前必须执行）
 
@@ -46,13 +46,13 @@
 | AP-1 | 修改 `assets/css/site.css`（编译产物） | 改 `styles/site.tailwind.css` 然后编译 |
 | AP-2 | 提交 `.env` 或任何含密钥的文件 | 环境变量仅在 `.env` 中，已 gitignore |
 | AP-3 | 根目录 `package.json` 加非 Tailwind 依赖 | 参见 BUG-POSTMORTEM.md #B1，会破坏 Cloudflare Pages |
-| AP-4 | 练习 JSON 的 correctAnswer 未经算术验证 | 每个答案必须用 Python/计算器反向验算 |
+| AP-4 | 恢复已下线的网页练习产品线 | 保持重定向 + 下线守卫，不重建 exercise 集合、页面或 API |
 | AP-5 | "show that" 题跳步或数学错误 | 每步推导必须完整，最终等式必须验证 |
 | AP-6 | EDX 文件用 CIE 的 command words | CIE: "Calculate/Show that"，EDX: "Work out/Give a reason" |
 | AP-7 | Core/Foundation 题包含 Higher-only 内容 | 微积分、向量几何证明等仅限 Extended/Higher |
 | AP-8 | 结束会话时有未提交的变更 | 必须 commit + push，工作树必须干净 |
 | AP-9 | `service_role_key` 出现在前端代码中 | 仅在 Cloudflare Workers 侧使用 |
-| AP-10 | 直接修改 `exercise_registry.json` | 用 Python 脚本从 202 个 JSON 重新生成 |
+| AP-10 | 新增指向 `/exercises/` 的入口 | 指向 `/cie0580/free/`、`/edx4ma1/free/` 或 `/kahoot/` |
 
 ---
 
@@ -61,7 +61,7 @@
 - **部署**: push main → Cloudflare Pages → https://www.25maths.com
 - **仓库**: `git25math/25maths`
 - **技术栈**: Jekyll + Tailwind CSS v4 + Supabase + Cloudflare Workers + Payhip
-- **状态**: 练习 v2 schema 100% (202/202) | 会员系统 ~98% | B2B 组卷 UI 35%
+- **状态**: 网页练习产品线已下线 | 会员系统 ~98% | Free packs + Kahoot + Term Pass 保留
 
 ## 关联项目
 
@@ -84,7 +84,7 @@
 3. **API 安全**: 所有端点验证 `Authorization` header，`service_role_key` 仅在 Workers 侧
 4. **部署安全**: 根目录 `package.json` 只能含 Tailwind 依赖（参见 BUG-POSTMORTEM.md #B1）
 5. **Serverless**: 函数遵循 Cloudflare Workers `onRequest` 模式
-6. **练习 v2 Schema**: 所有练习文件必须遵循 `docs/EXERCISE-SCHEMA.md` 规范
+6. **练习产品线下线**: 保持 retired exercise guard 通过；不要恢复已删除的数据、页面、JS 或 API
 
 ## 环境变量
 
@@ -105,8 +105,6 @@
 |------|------|--------|
 | `docs/CONTRIBUTING.md` | **开发规范**（AI/人类通用唯一权威） | **必读** |
 | `docs/DEVELOPMENT-PLAN.md` | **愿景 + 进度 + 任务 + 工作流 + 金标准** | **必读** |
-| `docs/EXERCISE-SCHEMA.md` | **练习 v2 schema 规范**（CIE + EDX 双 board） | **必读**（涉及练习时） |
-| `docs/examples/exercise-variants-showcase.json` | 9 种 CIE 风格变式题示例 | 高（填题时参考） |
 | `docs/BUG-POSTMORTEM.md` | Bug 根因分析 + 防范规则 | 高 |
 | `docs/ECOSYSTEM-ANALYSIS.md` | 生态系统 5 项目集成分析 | 参考 |
 | `DECISIONS.md` | 决策日志 | 参考 |
@@ -119,16 +117,13 @@
 | `_config.yml` | Jekyll 配置 + 模块定义 + Supabase 公钥 |
 | `functions/_lib/supabase_server.js` | **DB 操作入口**（700+ 行），理解表结构的入口 |
 | `functions/_lib/release_registry.js` | 产品元数据 + release_id 映射 |
-| `_data/exercise_registry.json` | 202 练习元数据注册表（slug/board/tier/domain/status） |
-| `assets/js/exercise_engine.js` | 做题引擎（**待适配 v2 schema**） |
 | `assets/js/member_auth.js` | 认证客户端 |
-| `institution/assignments.html` | 教师组卷页面（UI 完成，API 待开发） |
 | `styles/site.tailwind.css` | Tailwind CSS 源文件 |
 
 ### 数据库表速查（18 张 public 表）
 
 **核心业务**: `profiles`, `membership_status`, `entitlements`, `payhip_event_log`, `member_benefit_offers`
-**练习系统**: `exercise_sessions`, `question_attempts`
+**已下线遥测表**: `exercise_sessions`, `question_attempts`（仅历史/清理用途，不再有站点写入端点）
 **Engagement**: `user_streaks`, `user_xp`, `user_daily_activity`, `user_achievements`, `achievement_definitions`
 **B2B（schema 就绪，API 未开发）**: `institutions`, `institution_members`, `classes`, `class_students`, `assignments`, `assignment_submissions`
 
@@ -150,17 +145,8 @@ python3 scripts/health/check_nav_consistency.py
 bash scripts/health/check_style_consistency.sh
 bash scripts/health/check_bilingual_coverage.sh
 
-# 练习 mark total 验证
-python3 -c "
-import json, os
-for f in sorted(os.listdir('_data/exercises')):
-    if not f.endswith('.json'): continue
-    with open(f'_data/exercises/{f}') as fh: d = json.load(fh)
-    nq = len(d.get('questions',[]));
-    if nq == 0: continue
-    calc = sum(q['totalMarks'] if q['type']!='structured' else sum(p['marks'] for p in q.get('parts',[])) for q in d['questions'])
-    if calc != d.get('totalMarks',0): print(f'MISMATCH {d[\"syllabusCode\"]}: stated={d[\"totalMarks\"]}, calc={calc}')
-"
+# Retired exercise product line guard
+python3 scripts/health/check_exercise_data.py
 ```
 
 ---
@@ -179,13 +165,9 @@ Plan ──→ Execute ──→ Validate ──→ Ship ──→ Document
   │  输出计划                 测试通过      merge     DECISIONS
 ```
 
-### 练习填充专用工作流
+### 已下线产品线规则
 
-详见 `docs/EXERCISE-SCHEMA.md` → "Exercise Authoring Workflow" 章节：
-- Phase A: 准备（读 schema + 读示例 + 查真题）
-- Phase B: 填充（3-5 题/文件 + 算术验证）
-- Phase C: 验证 → 提交 → 合并
-- Phase D: 质量审查（draft → review → live）
+网页练习产品线已经从主站移除。任何后续工作不得恢复 `_exercises/`、`_data/exercises/`、exercise player layout、exercise JS、exercise Functions API 或公开 `/exercises/` 入口；旧 URL 只保留 301 重定向。
 
 ---
 

@@ -61,16 +61,16 @@ Expected:
 
 ---
 
-## 📁 Current Status (2026-03-01)
+## 📁 Current Status (2026-05-03)
 
 - ✅ Portal + module architecture (Jekyll + Cloudflare Pages)
-- ✅ CIE 0580 + Edexcel 4MA1 bilingual worksheet content is fully indexed (202 active subtopics)
-- ✅ Kahoot + worksheet + section bundle + unit bundle link fields are complete for all active records
+- ✅ CIE 0580 + Edexcel 4MA1 bilingual worksheet content is indexed for free packs and paid bundles
+- ✅ Kahoot + worksheet + section bundle + unit bundle link fields are complete for active records
 - ✅ Legal pages + SEO + sitemap
 - ✅ Membership system (auth/payment/engagement/downloads) — 90% complete
 - ✅ Engagement system (streak/XP/achievements/leaderboard/parent dashboard)
 - ✅ Bilingual support: static toggle + JS t(en,zh) dynamic translations — 100% complete
-- ✅ LaTeX math rendering Phase 1-2 (superscripts/roots/fractions, 278 JSON files) — 60% overall
+- ✅ Retired online exercise product line removed from public pages, data collections, runtime JS, and Functions APIs
 - ⏳ Kahoot sellable readiness is **186 / 202** (`presale`/`live`), with 16 still `planned`
 
 ## 🧾 Latest Updates (2026-03-01)
@@ -85,7 +85,7 @@ Expected:
 
 ## Health Checks
 
-Run data consistency checks before publishing:
+Run data consistency and retirement checks before publishing:
 
 ```bash
 python3 scripts/health/check_kahoot_data.py
@@ -93,6 +93,8 @@ python3 scripts/health/check_exercise_data.py
 bash scripts/health/check_style_consistency.sh
 bash scripts/health/check_bilingual_coverage.sh
 ```
+
+`check_exercise_data.py` is retained as a guard to verify that the retired online exercise product line has not been reintroduced.
 
 Run deployment checks against production:
 
