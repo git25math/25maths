@@ -127,22 +127,7 @@ async function verifyDbUser(userCfg, userId) {
       `expires_at=${ent?.expires_at}`);
   }
 
-  // 4. retired exercise tables are cleaned for test users
-  const { count: sessCount } = await supabase
-    .from('exercise_sessions')
-    .select('id', { count: 'exact', head: true })
-    .eq('user_id', userId);
-  check(userId, 'DB', 'exercise_sessions retired cleanup', sessCount === 0,
-    `expected=0, got=${sessCount}`);
-
-  const { count: attCount } = await supabase
-    .from('question_attempts')
-    .select('id', { count: 'exact', head: true })
-    .eq('user_id', userId);
-  check(userId, 'DB', 'question_attempts retired cleanup', attCount === 0,
-    `expected=0, got=${attCount}`);
-
-  // 5. user_streaks
+  // 4. user_streaks
   const { data: streak } = await supabase
     .from('user_streaks')
     .select('current_streak, best_streak, total_active_days')
@@ -161,7 +146,7 @@ async function verifyDbUser(userCfg, userId) {
     check(userId, 'DB', 'streak none', !streak, streak ? 'unexpected record found' : 'correctly absent');
   }
 
-  // 7. user_xp
+  // 5. user_xp
   const { data: xp } = await supabase
     .from('user_xp')
     .select('total_xp, level')
@@ -180,7 +165,7 @@ async function verifyDbUser(userCfg, userId) {
       xp ? `total_xp=${xp.total_xp}` : 'correctly absent');
   }
 
-  // 8. user_daily_activity date range
+  // 6. user_daily_activity date range
   if (userCfg.sessions > 0) {
     const { data: activities } = await supabase
       .from('user_daily_activity')

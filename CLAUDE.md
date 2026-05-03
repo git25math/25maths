@@ -18,6 +18,7 @@
 如涉及已下线的网页练习产品线，额外确认：
 - `scripts/health/check_exercise_data.py` 必须继续通过；它现在是下线守卫，不再是题目数据完整性检查。
 - 不要恢复 `_exercises/`、`_data/exercises/`、exercise player layout、exercise JS 或 `/api/v1/exercise/*`。
+- 不要恢复 `exercise_sessions`、`question_attempts`、旧 `assignments` / `assignment_submissions` schema；最终 Supabase schema 通过迁移删除这些旧表。
 
 ## 结束协议（每次会话结束前必须执行）
 
@@ -27,7 +28,7 @@
 ├─ 3. 构建确认 ── bundle exec jekyll build → 零错误（如环境可用）
 ├─ 4. 验证 ────── git status --short → 必须为空（工作树干净）
 ├─ 5. 更新文档 ── 如有里程碑变化 → 更新 docs/DEVELOPMENT-PLAN.md（进度 + 任务状态）
-├─ 6. 金标准更新 ─ 如有新的质量规则 → 追加到 EXERCISE-SCHEMA.md 或 DEVELOPMENT-PLAN.md
+├─ 6. 金标准更新 ─ 如有新的质量规则 → 追加到 DEVELOPMENT-PLAN.md
 ├─ 7. 推送文档 ── git push origin main
 ├─ 8. 接手验证 ── 确认: 新窗口/新用户能否仅凭仓库文档接手？
 └─ 9. 向用户确认 ─ 输出: 变更摘要 + 当前进度 + 下一步 + 是否有未完成项
@@ -61,7 +62,7 @@
 - **部署**: push main → Cloudflare Pages → https://www.25maths.com
 - **仓库**: `git25math/25maths`
 - **技术栈**: Jekyll + Tailwind CSS v4 + Supabase + Cloudflare Workers + Payhip
-- **状态**: 网页练习产品线已下线 | 会员系统 ~98% | Free packs + Kahoot + Term Pass 保留
+- **状态**: 网页练习产品线和旧 telemetry schema 已下线 | 会员系统 ~98% | Free packs + Kahoot + Term Pass 保留
 
 ## 关联项目
 
@@ -120,12 +121,13 @@
 | `assets/js/member_auth.js` | 认证客户端 |
 | `styles/site.tailwind.css` | Tailwind CSS 源文件 |
 
-### 数据库表速查（18 张 public 表）
+### 数据库表速查（14 张 public 表）
 
 **核心业务**: `profiles`, `membership_status`, `entitlements`, `payhip_event_log`, `member_benefit_offers`
-**已下线遥测表**: `exercise_sessions`, `question_attempts`（仅历史/清理用途，不再有站点写入端点）
 **Engagement**: `user_streaks`, `user_xp`, `user_daily_activity`, `user_achievements`, `achievement_definitions`
-**B2B（schema 就绪，API 未开发）**: `institutions`, `institution_members`, `classes`, `class_students`, `assignments`, `assignment_submissions`
+**B2B（基础 schema，就绪部分）**: `institutions`, `institution_members`, `classes`, `class_students`
+
+**已下线 DB 表**: `exercise_sessions`, `question_attempts`, `assignments`, `assignment_submissions`。不要在新代码中查询或重建这些表；历史迁移后由 `20260503080000_retire_exercise_schema.sql` 删除。
 
 ---
 

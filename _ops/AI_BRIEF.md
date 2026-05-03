@@ -136,7 +136,7 @@ edexcel-4ma1:number-h1:h1-05-set-language-and-notation
 
 ## Data Formats (JSON)
 
-### Exercise Question
+### Kahoot / Worksheet Question
 
 ```json
 {
@@ -153,8 +153,9 @@ edexcel-4ma1:number-h1:h1-05-set-language-and-notation
 Conventions:
 
 - Math is wrapped in backticks: `` `x^2 + 3x - 4` ``
-- MCQ only (3-5 options)
-- `correctAnswer` is **0-based index**
+- Kahoot MCQ items use 3-5 options.
+- Worksheet items may be short-answer or structured when the target contract requires it.
+- For MCQ, `correctAnswer` is a **0-based index**.
 - Keep explanations concise and correct
 
 ### Release Entry (`_data/releases.json`)

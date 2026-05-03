@@ -2,7 +2,7 @@
 
 > Updated: 2026-02-18 (UTC)
 > Scope: Free member foundation + paid member personalization + dual-channel content rights
-> 2026-05-03 update: Online exercise telemetry in this plan is retired. The active member platform scope is auth, entitlements, downloads, engagement surfaces, and recommendations that point to free packs/Kahoot.
+> 2026-05-03 update: Online exercise telemetry in this plan is retired and removed from the final schema. The active member platform scope is auth, entitlements, downloads, engagement surfaces, and recommendations that point to free packs/Kahoot.
 
 Supporting files:
 - `plan/MEMBER-SYSTEM-COMMAND-CENTER.md`
@@ -15,12 +15,12 @@ Supporting files:
 
 1. 免费会员
 - 注册登录
-- 做题进度记录
-- 错题轨迹记录
+- 查看会员资源与学习活动摘要
+- 获取 worksheet / Kahoot / bundle 路径建议
 
 2. 付费会员
-- 基于错题的针对性学习计划推荐
-- 基于薄弱环节的学习路径强化
+- 基于资源访问与学习活动的学习路径推荐
+- 基于目标考试模块的学习路径强化
 - 订阅优惠
 - 课程包优惠券权益
 
@@ -34,7 +34,7 @@ Supporting files:
 2. Identity/Data: Supabase Auth + Postgres + RLS
 3. Billing Sync: Payhip Webhook -> membership_status + entitlements
 4. Access Gateway: `/api/v1/download/:release_id`
-5. Telemetry: exercise_sessions + question_attempts
+5. Activity: `user_daily_activity` + entitlement/download/resource signals
 
 ## 3) Phased Delivery
 
@@ -54,13 +54,13 @@ DoD:
 
 Deliverables:
 1. 登录与会话可用
-2. 进度记录（session）
-3. 错题记录（attempt）
+2. 会员资源状态可见
+3. 学习活动摘要可见
 
 DoD:
 1. 登录回跳稳定
 2. 会员中心可看到基础学习数据
-3. 匿名用户仍可练习（不写云端数据）
+3. 公共资源入口不依赖云端写入
 
 ## Phase P2 - Paid Membership Core
 

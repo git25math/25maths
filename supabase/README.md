@@ -1,5 +1,8 @@
 # Supabase Setup Notes (Member System)
 
+The website exercise product line is retired. Final schema must not expose the
+old exercise telemetry tables or exercise-catalog assignment tables.
+
 ## Migration File
 
 - `supabase/migrations/20260218000000_member_system_mvp.sql`
@@ -7,6 +10,9 @@
 - `supabase/migrations/20260218211000_payhip_event_log_processing_state.sql`
 - `supabase/migrations/20260218214000_payhip_reconcile_lookup_index.sql`
 - `supabase/migrations/20260218230000_member_benefit_offers.sql`
+- `supabase/migrations/20260227000000_engagement_system.sql`
+- `supabase/migrations/20260227010000_b2b_institution_tables.sql`
+- `supabase/migrations/20260503080000_retire_exercise_schema.sql`
 
 ## Apply Options
 
@@ -36,10 +42,19 @@ from pg_tables
 where schemaname = 'public'
   and tablename in (
     'profiles',
-    'exercise_sessions',
-    'question_attempts',
     'membership_status',
-    'entitlements'
+    'entitlements',
+    'payhip_event_log',
+    'member_benefit_offers',
+    'user_streaks',
+    'user_daily_activity',
+    'achievement_definitions',
+    'user_achievements',
+    'user_xp',
+    'institutions',
+    'institution_members',
+    'classes',
+    'class_students'
   )
 order by tablename;
 ```
@@ -50,12 +65,33 @@ from pg_tables
 where schemaname = 'public'
   and tablename in (
     'profiles',
-    'exercise_sessions',
-    'question_attempts',
     'membership_status',
-    'entitlements'
+    'entitlements',
+    'user_streaks',
+    'user_daily_activity',
+    'achievement_definitions',
+    'user_achievements',
+    'user_xp',
+    'institutions',
+    'institution_members',
+    'classes',
+    'class_students'
   )
 order by tablename;
+```
+
+Retired tables should be absent:
+
+```sql
+select tablename
+from pg_tables
+where schemaname = 'public'
+  and tablename in (
+    'exercise_sessions',
+    'question_attempts',
+    'assignments',
+    'assignment_submissions'
+  );
 ```
 
 ## Frontend Auth Bootstrap Config

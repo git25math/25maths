@@ -58,18 +58,18 @@
 25. **已完成**: sitemap.xml 更新 — 新增 5 篇博客条目。
 26. **规划中**: Q3 中文家长面板 (parents.25maths.com) + 双语月度 PDF 进度报告。
 27. **已完成**: demo 账户种子脚本 `supabase/seed.demo_accounts.sql` + `scripts/seed_demo_accounts.js` 创建完成。
-28. **已完成**: Supabase 迁移 — engagement 系统 5 表 + B2B 机构系统 6 表 (`supabase/migrations/20260227*.sql`)。
+28. **已完成**: Supabase 迁移 — engagement 系统 5 表 + B2B 机构基础 4 表；旧 assignment 表已随 exercise schema 下线。
 29. **已完成**: 5 篇中文 SEO 博客翻译 (`_posts/2026-02-27-zh-cn-*.md`)，含双向 `lang_links`。
 30. **已完成**: B2B 机构着陆页 `institution/index.html` + 教师仪表盘骨架 `institution/dashboard.html`。
 31. **已完成**: 会员面板 streak 打卡组件 + 30 天热力图 + XP 等级条 + 成就徽章区 (`membership/index.html`)。
 32. **已完成**: 前端 JS — `assets/js/streak_widget.js` + `assets/js/achievement_toast.js`。
 33. **已完成**: 成就画廊页 `membership/achievements.html` — 分类筛选、XP 汇总、解锁/锁定网格。
-34. **已完成**: Engagement API 三端点 — `functions/api/v1/engagement/streak.js` + `achievements.js` + `check-achievements.js`。
+34. **部分保留**: Engagement API 保留 `streak.js` + `achievements.js`；旧 `check-achievements.js` 随 exercise completion flow 下线。
 35. **已完成**: `functions/_lib/supabase_server.js` 新增 10 个 engagement helper 函数。
-36. **已完成**: 教师作业管理页 `institution/assignments.html` — 创建表单 + 作业列表 + 完成度追踪。
+36. **已下线**: 教师作业管理页 `institution/assignments.html` — 依赖旧 exercise catalog，已删除。
 37. **已完成**: sitemap.xml 更新 — 新增 5 篇中文博客条目（共 10 篇新博客）。
-38. **已完成**: Session complete 端点集成 engagement 系统 — 自动更新 streak/XP/成就。
-39. **已完成**: 练习引擎 `exercise_engine.js` 集成 — 完成时派发 `achievement-unlocked` 事件触发 toast。
+38. **已下线**: Session complete 端点随 exercise Functions API 删除。
+39. **已下线**: 练习引擎 `exercise_engine.js` 已删除；会员 engagement 改走非 exercise 活动摘要。
 40. **已完成**: 家长周报邮件模板 `templates/emails/weekly-report.html` — 双语 + 内联 CSS。
 41. **已完成**: Streak freeze API 端点 `functions/api/v1/engagement/freeze.js` — 仅付费会员可用。
 42. **已完成**: sitemap.xml 更新 — 新增 membership 页面条目。

@@ -1,7 +1,7 @@
 ---
 layout: global
 title: Teacher Dashboard | 教师仪表盘
-description: "25Maths teacher dashboard — manage classes, assign homework, track student progress."
+description: "25Maths teacher dashboard — manage classes, plan resources, track student progress."
 active_global: institution
 noindex: true
 supabase: true
@@ -20,8 +20,8 @@ supabase: true
                 <select id="class-selector" class="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
                     <option value="">Select class...</option>
                 </select>
-                <a href="/institution/assignments.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
-                    + New Assignment
+                <a href="mailto:institution@25maths.com?subject=Resource%20Plan%20Request" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+                    Request Resource Plan
                 </a>
             </div>
         </div>
@@ -40,8 +40,8 @@ supabase: true
             </div>
             <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center">
                 <div class="text-3xl font-semibold text-green-600" id="stat-sessions">--</div>
-                <div class="text-xs text-gray-500 mt-1">Sessions This Week</div>
-                <div class="text-xs text-gray-500" data-bilingual-block>本周练习数</div>
+                <div class="text-xs text-gray-500 mt-1">Resource Touchpoints</div>
+                <div class="text-xs text-gray-500" data-bilingual-block>本周资源使用</div>
             </div>
             <div class="bg-white border border-gray-200 rounded-2xl p-5 text-center">
                 <div class="text-3xl font-semibold text-red-600" id="stat-at-risk">--</div>
@@ -51,17 +51,17 @@ supabase: true
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-8">
-            <!-- Pending Assignments -->
+            <!-- Resource Follow-Ups -->
             <div class="bg-white border border-gray-200 rounded-2xl p-5">
                 <h2 class="text-sm font-semibold text-gray-700 mb-4">
-                    Pending Assignments
-                    <span data-bilingual-block class="text-xs font-normal text-gray-400 ml-2">未完成作业</span>
+                    Resource Follow-Ups
+                    <span data-bilingual-block class="text-xs font-normal text-gray-400 ml-2">资源跟进</span>
                 </h2>
-                <div id="pending-assignments" class="space-y-3">
+                <div id="resource-follow-ups" class="space-y-3">
                     <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
                         <div>
-                            <div class="text-sm font-medium text-gray-800">Algebra Ch2 Practice</div>
-                            <div class="text-xs text-gray-500">Due: Mar 1 · CIE 0580</div>
+                            <div class="text-sm font-medium text-gray-800">Algebra Ch2 Worksheet Pack</div>
+                            <div class="text-xs text-gray-500">This week · CIE 0580</div>
                         </div>
                         <div class="text-sm">
                             <span class="text-blue-600 font-semibold">5</span>
@@ -70,8 +70,8 @@ supabase: true
                     </div>
                     <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
                         <div>
-                            <div class="text-sm font-medium text-gray-800">Trigonometry Practice</div>
-                            <div class="text-xs text-gray-500">Due: Mar 3 · CIE 0580</div>
+                            <div class="text-sm font-medium text-gray-800">Trigonometry Kahoot Set</div>
+                            <div class="text-xs text-gray-500">This week · CIE 0580</div>
                         </div>
                         <div class="text-sm">
                             <span class="text-blue-600 font-semibold">20</span>
@@ -80,8 +80,8 @@ supabase: true
                     </div>
                     <div class="flex items-center justify-between border border-gray-100 rounded-lg px-3 py-2">
                         <div>
-                            <div class="text-sm font-medium text-gray-800">Mock Exam 1</div>
-                            <div class="text-xs text-gray-500">Due: Mar 5 · Full paper</div>
+                            <div class="text-sm font-medium text-gray-800">Mock Exam Review Pack</div>
+                            <div class="text-xs text-gray-500">Next lesson · Full paper</div>
                         </div>
                         <div class="text-sm">
                             <span class="text-blue-600 font-semibold">28</span>

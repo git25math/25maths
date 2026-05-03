@@ -6,6 +6,22 @@
 
 ---
 
+## 2026-05-03 | exercise 关联数据库与 institution 残留继续清理
+
+### 决策背景
+- 第一轮下线已移除公开页面、数据、JS 与 API，但 Supabase schema/seed、测试脚本和 institution 页面仍有旧 exercise/assignment 结构残留。
+- 这些残留不会直接暴露旧页面，但会误导后续开发继续依赖已删除的 exercise catalog。
+
+### 关键决策
+- 通过后续 Supabase 迁移删除最终 schema 中的 `exercise_sessions`、`question_attempts`、`assignments`、`assignment_submissions`。
+- Demo seed 与 test-user 脚本改用 `user_daily_activity`，不再写入或验证旧 exercise telemetry 表。
+- Institution 页面改为 resource planning / resource follow-up 表达，不再链接已删除的 assignment 页面。
+- 下线守卫扩展到 institution 页面与 Supabase seed，防止旧表写入、旧 assignment 链接或 exercise 入口回流。
+
+### 结果
+- 主站 active surface 与最终数据库模型都不再依赖旧 exercise 产品线。
+- 历史 migrations / changelog 可保留作为记录，但不得作为新开发入口。
+
 ## 2026-05-03 | 网页练习产品线完整下线
 
 ### 决策背景

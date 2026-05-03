@@ -1,7 +1,7 @@
 # 25Maths Website — Handoff
 
 > Last updated: 2026-05-03
-> Status: public website active; online exercise product line retired.
+> Status: public website active; online exercise product line and legacy exercise-backed schema retired.
 
 ## Current Product Surface
 
@@ -20,12 +20,13 @@ Retired:
 - Exercise player layout and JS.
 - Exercise Functions API routes.
 - Institution assignment page that depended on the exercise catalog.
+- Supabase `exercise_sessions`, `question_attempts`, `assignments`, and `assignment_submissions` final-schema tables.
 
 Legacy URLs redirect to free-resource pages and are disallowed in `robots.txt`.
 
 ## Must-Know Guardrail
 
-`scripts/health/check_exercise_data.py` now verifies retirement, not data integrity. Keep this command in CI. It should fail if any deleted path or public exercise entry point returns.
+`scripts/health/check_exercise_data.py` now verifies retirement, not data integrity. Keep this command in CI. It should fail if any deleted path, public exercise entry point, institution assignment link, or active Supabase seed dependency returns.
 
 ## Key Files
 
@@ -62,6 +63,6 @@ Use `env -u JEKYLL_GITHUB_TOKEN` locally if an invalid token is present in the s
 Highest leverage:
 
 1. Finish Edexcel 4MA1 paid product metadata and Payhip links.
-2. Refresh visual baselines after the exercise retirement PR lands.
+2. Refresh visual baselines after the exercise retirement changes land.
 3. Continue bilingual polish on public pages with low marker density.
 4. Keep the retired exercise guard active in every CI path.

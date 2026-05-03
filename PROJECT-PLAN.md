@@ -187,7 +187,7 @@ active_global: about   # highlights in global-nav
 1. ~~**Freeze MVP scope and acceptance criteria**~~ — ✅ Done
 2. ~~**Supabase Auth setup for production path**~~ — ✅ Done (OTP login, redirect URLs configured)
 3. ~~**Data model + RLS**~~ — ✅ Done (18 tables, all RLS enabled)
-4. ~~**Online exercise telemetry**~~ — Retired 2026-05-03; no active public write path remains.
+4. ~~**Online exercise telemetry**~~ — Retired 2026-05-03; no active public write path remains, and final Supabase schema removes the old telemetry tables.
 5. ~~**Membership center data binding**~~ — ✅ Done (streak, XP, achievements, learning snapshot, download cards)
 6. ~~**Payhip webhook sync**~~ — ✅ Done (E2E verified: sale_completed → 24 entitlements granted)
 7. ~~**Member-only download gateway**~~ — ✅ Done (E2E verified: 24/24 signed URLs → PDF bytes)

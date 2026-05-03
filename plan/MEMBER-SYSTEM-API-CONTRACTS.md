@@ -2,7 +2,7 @@
 
 > Frozen on: 2026-02-18  
 > Applies to branch: `codex/member-system-dev`
-> 2026-05-03 update: Exercise telemetry APIs are retired and no longer exist on the public website.
+> 2026-05-03 update: Exercise telemetry APIs and their Supabase tables are retired and no longer exist in the final website schema.
 
 ## 1) Auth Context
 
@@ -10,90 +10,16 @@
 - Client carries access token as bearer JWT for member-protected endpoints.
 - Server-side privileged actions use `SUPABASE_SERVICE_ROLE_KEY` only in backend runtime.
 
-## 2) Exercise Telemetry APIs
+## 2) Retired Exercise Telemetry
 
-## `POST /api/v1/exercise/session/start`
+No `/api/v1/exercise/*` endpoints are active. Final Supabase schema removes:
 
-Request JSON:
+- `exercise_sessions`
+- `question_attempts`
+- `assignments`
+- `assignment_submissions`
 
-```json
-{
-  "exercise_slug": "cie0580-number-c1-c1-01-types-of-number",
-  "board": "cie0580",
-  "tier": "core",
-  "syllabus_code": "C1-01"
-}
-```
-
-Response `201`:
-
-```json
-{
-  "session_id": "uuid",
-  "started_at": "2026-02-18T06:00:00.000Z"
-}
-```
-
-Errors:
-- `401`: missing or invalid auth token
-- `422`: invalid payload fields
-- `500`: server failure
-
-## `POST /api/v1/exercise/session/:id/attempt`
-
-Request JSON:
-
-```json
-{
-  "question_index": 0,
-  "is_correct": true,
-  "selected_answer": 2,
-  "correct_answer": 2,
-  "skill_tag": "number/types-of-number"
-}
-```
-
-Response `201`:
-
-```json
-{
-  "attempt_id": "uuid",
-  "recorded_at": "2026-02-18T06:01:00.000Z"
-}
-```
-
-Errors:
-- `401`: missing or invalid auth token
-- `403`: session does not belong to authenticated user
-- `422`: invalid payload fields
-- `500`: server failure
-
-## `POST /api/v1/exercise/session/:id/complete`
-
-Request JSON:
-
-```json
-{
-  "score": 9,
-  "question_count": 12,
-  "duration_seconds": 380
-}
-```
-
-Response `200`:
-
-```json
-{
-  "session_id": "uuid",
-  "completed_at": "2026-02-18T06:08:00.000Z"
-}
-```
-
-Errors:
-- `401`: missing or invalid auth token
-- `403`: session does not belong to authenticated user
-- `422`: invalid payload fields
-- `500`: server failure
+Learning widgets use `user_daily_activity`, membership status, entitlement status, and static resource metadata.
 
 ## 3) Billing + Membership APIs
 
@@ -144,7 +70,7 @@ Behavior:
 - 读取当前用户会员状态。
 - 仅当会员有效时返回优惠权益。
 - 优先读取 `public.member_benefit_offers` 中有效权益（按 `priority`）。
-- 当 `metadata.trigger` 存在时，按触发规则筛选权益（支持 `lookback_days`、`min_recent_wrong_attempts`、`min_recent_sessions`、`skill_tag_prefixes`、`min_matching_wrong_attempts`）。
+- 当 `metadata.trigger` 存在时，只允许使用非 exercise telemetry 的权益触发规则；旧错题/练习次数触发器已下线。
 - 当 DB 无可用权益时，回退到 `MEMBER_BENEFITS_JSON` 或 fallback env。
 
 Response:
@@ -177,7 +103,7 @@ Response:
 
 ## 5) Non-Functional Contract
 
-1. Anonymous exercise mode must continue to work without cloud APIs.
-2. Cloud write failures must not block question progression.
+1. Retired exercise endpoints must stay absent.
+2. Resource and member surfaces must not depend on cloud writes from removed exercise flows.
 3. All member data tables must enforce RLS.
 4. Signed download links expire in <= 10 minutes.

@@ -1,7 +1,7 @@
 # 25Maths Website — Development Plan
 
 > Last updated: 2026-05-03
-> Current state: online exercise product line retired; Free Packs, Kahoot, membership downloads, and Term Practice Pass remain active.
+> Current state: online exercise product line and legacy exercise-backed database schema retired; Free Packs, Kahoot, membership downloads, and Term Practice Pass remain active.
 
 ## Product Scope
 
@@ -12,7 +12,7 @@
 - Paid worksheet bundles and Term Practice Pass delivery.
 - Membership login, entitlement checks, downloads, engagement widgets, and parent/member dashboards.
 
-The previous online exercise product line has been fully retired from the website. Do not restore the deleted collection, data files, player layout, runtime JS, Functions API routes, or public `/exercises/` entry points. Legacy URLs are handled only through redirects.
+The previous online exercise product line has been fully retired from the website. Do not restore the deleted collection, data files, player layout, runtime JS, Functions API routes, public `/exercises/` entry points, or legacy exercise telemetry/assignment tables. Legacy URLs are handled only through redirects.
 
 ## Current Priorities
 
@@ -38,7 +38,7 @@ bash scripts/health/check_bilingual_coverage.sh
 env -u JEKYLL_GITHUB_TOKEN bundle exec jekyll build
 ```
 
-`check_exercise_data.py` is intentionally still named for CI continuity, but its role is now a retirement guard. It verifies that the retired exercise paths are absent and that public source files do not reintroduce exercise entry points.
+`check_exercise_data.py` is intentionally still named for CI continuity, but its role is now a retirement guard. It verifies that the retired exercise paths are absent and that public/institution/Supabase seed sources do not reintroduce exercise entry points or old telemetry writes.
 
 ## Retired Exercise Line
 
@@ -51,13 +51,14 @@ Removed surface area:
 - `assets/js/exercise_engine.js`, `assets/js/exercise_hub.js`
 - `functions/api/v1/exercise/`
 - `institution/assignments.html`
+- final Supabase schema: `exercise_sessions`, `question_attempts`, `assignments`, `assignment_submissions`
 
 Preserved behavior:
 
 - `/exercises/*` redirects to `/cie0580/free/`.
 - `/zh-cn/exercises/*` redirects to `/zh-cn/cie0580/free/`.
 - `robots.txt` disallows the retired path.
-- Health checks fail if public navigation, sitemap, screenshots, or content links bring the line back.
+- Health checks fail if public navigation, sitemap, screenshots, institution pages, Supabase seed data, or content links bring the line back.
 
 ## Shipping Workflow
 
