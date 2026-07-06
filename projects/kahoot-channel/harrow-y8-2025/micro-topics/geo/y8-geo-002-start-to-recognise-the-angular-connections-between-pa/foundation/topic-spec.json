@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-GEO-002-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y8-GEO-002",
+    "text_en": "Start to recognise the angular connections between parallel lines, perpendicular lines and transversals.",
+    "text_zh": "开始识别平行线、垂直线和横截线内角度的关系。",
+    "source_heading": "Angles in Parallel Lines"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-GEO-002 | Start to recognise the angular connections between parallel | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-GEO-002. Objective: Start to recognise the angular connections between parallel lines, perpendicular lines and transversals. Includes 12 exam-style MCQs. 对应学习目标：开始识别平行线、垂直线和横截线内角度的关系。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: GEO\nObjective EN: Start to recognise the angular connections between parallel lines, perpendicular lines and transversals.\nObjective ZH: 开始识别平行线、垂直线和横截线内角度的关系。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/geo/y8-geo-002-start-to-recognise-the-angular-connections-between-pa/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/geo/y8-geo-002-start-to-recognise-the-angular-connections-between-pa/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/geo/y8-geo-002-start-to-recognise-the-angular-connections-between-pa/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/geo/y8-geo-002-start-to-recognise-the-angular-connections-between-pa/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/geo/y8-geo-002-start-to-recognise-the-angular-connections-between-pa/foundation/ai-question-prompt.md"
+  }
+}

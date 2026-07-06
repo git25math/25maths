@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-FUN-002-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y10-FUN-002",
+    "text_en": "Understand the graphs and properties of quadratic functions, including domain, range, symmetry, intercepts, and extrema.",
+    "text_zh": "理解二次函数的图像和属性，包括定义域、值域、对称性、截距和极值点。",
+    "source_heading": "Quadratic functions"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-FUN-002 | Understand the graphs and properties of quadratic functions | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-FUN-002. Objective: Understand the graphs and properties of quadratic functions, including domain, range, symmetry, intercepts, and extrema. Includes 12 exam-style MCQs. 对应学习目标：理解二次函数的图像和属性，包括定义域、值域、对称性、截距和极值点。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #FUN #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: FUN\nObjective EN: Understand the graphs and properties of quadratic functions, including domain, range, symmetry, intercepts, and extrema.\nObjective ZH: 理解二次函数的图像和属性，包括定义域、值域、对称性、截距和极值点。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-002-understand-the-graphs-and-properties-of-quadratic-fu/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-002-understand-the-graphs-and-properties-of-quadratic-fu/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-002-understand-the-graphs-and-properties-of-quadratic-fu/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-002-understand-the-graphs-and-properties-of-quadratic-fu/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-002-understand-the-graphs-and-properties-of-quadratic-fu/foundation/ai-question-prompt.md"
+  }
+}

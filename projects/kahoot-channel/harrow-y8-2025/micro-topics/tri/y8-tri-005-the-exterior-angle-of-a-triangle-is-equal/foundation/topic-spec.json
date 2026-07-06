@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-TRI-005-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y8-TRI-005",
+    "text_en": "The exterior angle of a triangle is equal to the sum of the two interior opposite angles.",
+    "text_zh": "",
+    "source_heading": "Intersecting Lines and Parallel Lines"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-TRI-005 | The exterior angle of a triangle is equal | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-TRI-005. Objective: The exterior angle of a triangle is equal to the sum of the two interior opposite angles. Includes 12 exam-style MCQs. 对应学习目标训练，含分层练习与课堂巩固。",
+    "tags": "#Harrow #Bilingual #Year8 #TRI #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: TRI\nObjective EN: The exterior angle of a triangle is equal to the sum of the two interior opposite angles.\nObjective ZH: N/A\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-005-the-exterior-angle-of-a-triangle-is-equal/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-005-the-exterior-angle-of-a-triangle-is-equal/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-005-the-exterior-angle-of-a-triangle-is-equal/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-005-the-exterior-angle-of-a-triangle-is-equal/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-005-the-exterior-angle-of-a-triangle-is-equal/foundation/ai-question-prompt.md"
+  }
+}

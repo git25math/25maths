@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-GEO-001-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y9-GEO-001",
+    "text_en": "Calculate the length and the mid-points of a line segment given the coordinates of the endpoints.",
+    "text_zh": "计算给定端点坐标的线段的长度和中点。",
+    "source_heading": "Linear Graphs"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-GEO-001 | Calculate the length and the mid points of | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-GEO-001. Objective: Calculate the length and the mid-points of a line segment given the coordinates of the endpoints. Includes 12 exam-style MCQs. 对应学习目标：计算给定端点坐标的线段的长度和中点。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: GEO\nObjective EN: Calculate the length and the mid-points of a line segment given the coordinates of the endpoints.\nObjective ZH: 计算给定端点坐标的线段的长度和中点。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-001-calculate-the-length-and-the-mid-points-of/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-001-calculate-the-length-and-the-mid-points-of/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-001-calculate-the-length-and-the-mid-points-of/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-001-calculate-the-length-and-the-mid-points-of/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-001-calculate-the-length-and-the-mid-points-of/foundation/ai-question-prompt.md"
+  }
+}

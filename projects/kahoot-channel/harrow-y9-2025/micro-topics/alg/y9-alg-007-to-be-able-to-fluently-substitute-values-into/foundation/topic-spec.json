@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-ALG-007-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y9-ALG-007",
+    "text_en": "To be able to fluently substitute values into algebraic expressions and formula including those formula with indices.",
+    "text_zh": "能够熟练地将值代入代数表达式和公式，包括有指数的公式。",
+    "source_heading": "Working with Expressions"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-ALG-007 | To be able to fluently substitute values into | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-ALG-007. Objective: To be able to fluently substitute values into algebraic expressions and formula including those formula with indices. Includes 12 exam-style MCQs. 对应学习目标：能够熟练地将值代入代数表达式和公式，包括有指数的公式。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: ALG\nObjective EN: To be able to fluently substitute values into algebraic expressions and formula including those formula with indices.\nObjective ZH: 能够熟练地将值代入代数表达式和公式，包括有指数的公式。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-007-to-be-able-to-fluently-substitute-values-into/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-007-to-be-able-to-fluently-substitute-values-into/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-007-to-be-able-to-fluently-substitute-values-into/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-007-to-be-able-to-fluently-substitute-values-into/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-007-to-be-able-to-fluently-substitute-values-into/foundation/ai-question-prompt.md"
+  }
+}

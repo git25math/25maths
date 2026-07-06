@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-STA-003-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y9-STA-003",
+    "text_en": "Extract data from various tables and charts and calculate percentages based on this data. Make inferences of data based on percentages.",
+    "text_zh": "从各种表格和图表中提取数据，并基于这些数据计算百分比。根据百分比对数据进行推断。",
+    "source_heading": "Percentages"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-STA-003 | Extract data from various tables and charts and | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-STA-003. Objective: Extract data from various tables and charts and calculate percentages based on this data. Make inferences of data based on percentages. Includes 12 exam-style MCQs. 对应学习目标：从各种表格和图表中提取数据，并基于这些数据计算百分比。根据百分比对数据进行推断。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #STA #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: STA\nObjective EN: Extract data from various tables and charts and calculate percentages based on this data. Make inferences of data based on percentages.\nObjective ZH: 从各种表格和图表中提取数据，并基于这些数据计算百分比。根据百分比对数据进行推断。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-003-extract-data-from-various-tables-and-charts-and/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-003-extract-data-from-various-tables-and-charts-and/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-003-extract-data-from-various-tables-and-charts-and/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-003-extract-data-from-various-tables-and-charts-and/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-003-extract-data-from-various-tables-and-charts-and/foundation/ai-question-prompt.md"
+  }
+}

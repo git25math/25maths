@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-TRI-002-C",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y8-TRI-002",
+    "text_en": "Calculate the sum of angles at a point, on a straight line and in a triangle: Prove that vertically opposite angles are equal, Derive and use the property that the angle sum of a quadrilateral is 360 degrees.",
+    "text_zh": "计算点、直线上及三角形内的角度和：证明对顶角相等；推导并使用四边形的内角和为360度的性质。",
+    "source_heading": "Intersecting Lines and Parallel Lines"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-TRI-002 | Calculate the sum of angles at a point | Challenge",
+    "description_en": "Year 8 Challenge practice aligned to Y8-TRI-002. Objective: Calculate the sum of angles at a point, on a straight line and in a triangle: Prove that vertically opposite angles are equal, Derive and use the property that the angle sum of a quadrilateral is 360 degrees. Includes 15 exam-style MCQs. 对应学习目标：计算点、直线上及三角形内的角度和：证明对顶角相等；推导并使用四边形的内角和为360度的性质。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #TRI #Challenge",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: TRI\nObjective EN: Calculate the sum of angles at a point, on a straight line and in a triangle: Prove that vertically opposite angles are equal, Derive and use the property that the angle sum of a quadrilateral is 360 degrees.\nObjective ZH: 计算点、直线上及三角形内的角度和：证明对顶角相等；推导并使用四边形的内角和为360度的性质。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-002-calculate-the-sum-of-angles-at-a-point/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-002-calculate-the-sum-of-angles-at-a-point/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-002-calculate-the-sum-of-angles-at-a-point/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-002-calculate-the-sum-of-angles-at-a-point/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/tri/y8-tri-002-calculate-the-sum-of-angles-at-a-point/challenge/ai-question-prompt.md"
+  }
+}

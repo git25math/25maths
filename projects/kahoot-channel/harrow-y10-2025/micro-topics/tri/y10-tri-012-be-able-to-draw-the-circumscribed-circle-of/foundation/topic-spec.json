@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-TRI-012-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y10-TRI-012",
+    "text_en": "Be able to draw the circumscribed circle of a triangle and the inscribed circle of a triangle (links to constructions).",
+    "text_zh": "能够画出三角形的外接圆和内切圆（链接到构造）。",
+    "source_heading": "Circle Theorems"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-TRI-012 | Be able to draw the circumscribed circle of | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-TRI-012. Objective: Be able to draw the circumscribed circle of a triangle and the inscribed circle of a triangle (links to constructions). Includes 12 exam-style MCQs. 对应学习目标：能够画出三角形的外接圆和内切圆（链接到构造）。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #TRI #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: TRI\nObjective EN: Be able to draw the circumscribed circle of a triangle and the inscribed circle of a triangle (links to constructions).\nObjective ZH: 能够画出三角形的外接圆和内切圆（链接到构造）。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-012-be-able-to-draw-the-circumscribed-circle-of/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-012-be-able-to-draw-the-circumscribed-circle-of/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-012-be-able-to-draw-the-circumscribed-circle-of/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-012-be-able-to-draw-the-circumscribed-circle-of/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-012-be-able-to-draw-the-circumscribed-circle-of/foundation/ai-question-prompt.md"
+  }
+}

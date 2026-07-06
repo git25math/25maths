@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-FUN-002-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y8-FUN-002",
+    "text_en": "Construct tables of values and use all four quadrants to plot the graphs of linear functions, where y is given explicitly in terms of x; recognise that equations of the form y = mx + c correspond to straight-line graphs.",
+    "text_zh": "构建数值表，并在所有四个象限中绘制线性函数的图表，其中y是以x形式表示；识别y=mx+c形式的方程对应线性图。",
+    "source_heading": "Linear Graphs"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-FUN-002 | Construct tables of values and use all four | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-FUN-002. Objective: Construct tables of values and use all four quadrants to plot the graphs of linear functions, where y is given explicitly in terms of x; recognise that equations of the form y = mx + c correspond to straight-line graphs. Includes 12 exam-style MCQs. 对应学习目标：构建数值表，并在所有四个象限中绘制线性函数的图表，其中y是以x形式表示；识别y=mx+c形式的方程对应线性图。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #FUN #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: FUN\nObjective EN: Construct tables of values and use all four quadrants to plot the graphs of linear functions, where y is given explicitly in terms of x; recognise that equations of the form y = mx + c correspond to straight-line graphs.\nObjective ZH: 构建数值表，并在所有四个象限中绘制线性函数的图表，其中y是以x形式表示；识别y=mx+c形式的方程对应线性图。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/fun/y8-fun-002-construct-tables-of-values-and-use-all-four/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/fun/y8-fun-002-construct-tables-of-values-and-use-all-four/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/fun/y8-fun-002-construct-tables-of-values-and-use-all-four/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/fun/y8-fun-002-construct-tables-of-values-and-use-all-four/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/fun/y8-fun-002-construct-tables-of-values-and-use-all-four/foundation/ai-question-prompt.md"
+  }
+}

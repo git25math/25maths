@@ -1,0 +1,8 @@
+## Kahoot Name
+Year 7 | Y7-GEO-014 | Design and make models of cylinders and cones | Foundation
+
+## Kahoot Description (EN)
+Year 7 Foundation practice aligned to Y7-GEO-014. Objective: Design and make models of cylinders and cones so that students can understand the relationship between a plane and a three-dimensional figure. Includes 12 exam-style MCQs. 对应学习目标：设计和制作圆柱和圆锥的模型，以便学生理解平面与三维图形之间的关系。。共12道选择题。
+
+## Tags
+#Harrow #Bilingual #Year7 #GEO #Foundation

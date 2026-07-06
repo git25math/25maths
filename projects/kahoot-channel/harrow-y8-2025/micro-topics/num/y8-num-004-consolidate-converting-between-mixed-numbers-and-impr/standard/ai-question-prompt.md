@@ -1,0 +1,16 @@
+# AI Prompt - Year 8 | Y8-NUM-004 | Consolidate converting between mixed numbers and improper fractions | Standard
+
+Generate complete Kahoot table rows for this topic.
+
+Constraints:
+- Question count: 15
+- Question length <= 95 chars
+- Option length <= 60 chars
+- 4 options and one correct answer per row
+- Keep language clear, exam-style, and grade-appropriate
+
+Objective:
+- EN: Consolidate converting between mixed numbers and improper fractions.
+- ZH: 巩固在带分数和假分数之间转换。
+- Unit: NUM
+- Difficulty: Standard

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-TRI-001-S",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y9-TRI-001",
+    "text_en": "Sum of angles rules for triangles, quadrilaterals.",
+    "text_zh": "三角形和四边形的角度和规则。",
+    "source_heading": "Mastery of Angles"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-TRI-001 | Sum of angles rules for triangles quadrilaterals | Standard",
+    "description_en": "Year 9 Standard practice aligned to Y9-TRI-001. Objective: Sum of angles rules for triangles, quadrilaterals. Includes 15 exam-style MCQs. 对应学习目标：三角形和四边形的角度和规则。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #TRI #Standard",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: TRI\nObjective EN: Sum of angles rules for triangles, quadrilaterals.\nObjective ZH: 三角形和四边形的角度和规则。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-001-sum-of-angles-rules-for-triangles-quadrilaterals/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-001-sum-of-angles-rules-for-triangles-quadrilaterals/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-001-sum-of-angles-rules-for-triangles-quadrilaterals/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-001-sum-of-angles-rules-for-triangles-quadrilaterals/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-001-sum-of-angles-rules-for-triangles-quadrilaterals/standard/ai-question-prompt.md"
+  }
+}

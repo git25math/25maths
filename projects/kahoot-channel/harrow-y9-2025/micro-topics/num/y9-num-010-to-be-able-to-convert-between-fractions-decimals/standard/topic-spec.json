@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-NUM-010-S",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y9-NUM-010",
+    "text_en": "To be able to convert between fractions, decimals, and percentages.",
+    "text_zh": "能够在分数、小数和百分比之间转换。",
+    "source_heading": "Percentages"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-NUM-010 | To be able to convert between fractions decimals | Standard",
+    "description_en": "Year 9 Standard practice aligned to Y9-NUM-010. Objective: To be able to convert between fractions, decimals, and percentages. Includes 15 exam-style MCQs. 对应学习目标：能够在分数、小数和百分比之间转换。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #NUM #Standard",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: NUM\nObjective EN: To be able to convert between fractions, decimals, and percentages.\nObjective ZH: 能够在分数、小数和百分比之间转换。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/num/y9-num-010-to-be-able-to-convert-between-fractions-decimals/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/num/y9-num-010-to-be-able-to-convert-between-fractions-decimals/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/num/y9-num-010-to-be-able-to-convert-between-fractions-decimals/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/num/y9-num-010-to-be-able-to-convert-between-fractions-decimals/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/num/y9-num-010-to-be-able-to-convert-between-fractions-decimals/standard/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-NUM-013-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y8-NUM-013",
+    "text_en": "Understand and use the commutative, associative, and distributive laws, and master the addition, subtraction, multiplication, division, exponentiation, and simple mixed operations of rational numbers. Include working with negative numbers (including mixed operations with integers, fractions, and decimals).",
+    "text_zh": "理解并使用交换律、结合律和分配律，掌握有理数的加、减、乘、除、乘方及简单混合运算，包括负数的运算（包括与整数、分数和小数的混合运算）。",
+    "source_heading": "Rational numbers"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-NUM-013 | Understand and use the commutative associative and distributive | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-NUM-013. Objective: Understand and use the commutative, associative, and distributive laws, and master the addition, subtraction, multiplication, division, exponentiation, and simple mixed operations of rational numbers. Include working with negative numbers (including mixed operations with integers, fractions, and decimals). Includes 12 exam-style MCQs. 对应学习目标：理解并使用交换律、结合律和分配律，掌握有理数的加、减、乘、除、乘方及简单混合运算，包括负数的运算（包括与整数、分数和小数的混合运算）。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #NUM #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: NUM\nObjective EN: Understand and use the commutative, associative, and distributive laws, and master the addition, subtraction, multiplication, division, exponentiation, and simple mixed operations of rational numbers. Include working with negative numbers (including mixed operations with integers, fractions, and decimals).\nObjective ZH: 理解并使用交换律、结合律和分配律，掌握有理数的加、减、乘、除、乘方及简单混合运算，包括负数的运算（包括与整数、分数和小数的混合运算）。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-013-understand-and-use-the-commutative-associative-and-di/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-013-understand-and-use-the-commutative-associative-and-di/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-013-understand-and-use-the-commutative-associative-and-di/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-013-understand-and-use-the-commutative-associative-and-di/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-013-understand-and-use-the-commutative-associative-and-di/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-FUN-006-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y9-FUN-006",
+    "text_en": "Understand the meaning of Functions and investigate real-life and cross-curricular links with functions.",
+    "text_zh": "理解函数的含义，并调查函数的实际和跨学科联系。",
+    "source_heading": "Introduction to Functions"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-FUN-006 | Understand the meaning of Functions and investigate real | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-FUN-006. Objective: Understand the meaning of Functions and investigate real-life and cross-curricular links with functions. Includes 12 exam-style MCQs. 对应学习目标：理解函数的含义，并调查函数的实际和跨学科联系。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #FUN #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: FUN\nObjective EN: Understand the meaning of Functions and investigate real-life and cross-curricular links with functions.\nObjective ZH: 理解函数的含义，并调查函数的实际和跨学科联系。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-006-understand-the-meaning-of-functions-and-investigate-r/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-006-understand-the-meaning-of-functions-and-investigate-r/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-006-understand-the-meaning-of-functions-and-investigate-r/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-006-understand-the-meaning-of-functions-and-investigate-r/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-006-understand-the-meaning-of-functions-and-investigate-r/foundation/ai-question-prompt.md"
+  }
+}

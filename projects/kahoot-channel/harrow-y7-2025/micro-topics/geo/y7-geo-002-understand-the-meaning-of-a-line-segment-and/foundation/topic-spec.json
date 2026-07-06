@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-GEO-002-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y7-GEO-002",
+    "text_en": "Understand the meaning of a line segment and be able to find the midpoint of the line segment AB, given the coordinates of points A and B.",
+    "text_zh": "理解线段的意义，并能够通过点A和B坐标求出的线段AB的中点坐标。",
+    "source_heading": "Co-ordinates"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-GEO-002 | Understand the meaning of a line segment and | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-GEO-002. Objective: Understand the meaning of a line segment and be able to find the midpoint of the line segment AB, given the coordinates of points A and B. Includes 12 exam-style MCQs. 对应学习目标：理解线段的意义，并能够通过点A和B坐标求出的线段AB的中点坐标。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: GEO\nObjective EN: Understand the meaning of a line segment and be able to find the midpoint of the line segment AB, given the coordinates of points A and B.\nObjective ZH: 理解线段的意义，并能够通过点A和B坐标求出的线段AB的中点坐标。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-002-understand-the-meaning-of-a-line-segment-and/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-002-understand-the-meaning-of-a-line-segment-and/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-002-understand-the-meaning-of-a-line-segment-and/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-002-understand-the-meaning-of-a-line-segment-and/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-002-understand-the-meaning-of-a-line-segment-and/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-TRI-002-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y7-TRI-002",
+    "text_en": "Use constructions to inscribe squares, equilateral triangles, regular hexagons and octagons by constructing equal divisions of a circle.",
+    "text_zh": "通过对圆的平分在圆内画出正方形、等边三角形、正六边形和正八边形。",
+    "source_heading": "Introductions to Constructions"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-TRI-002 | Use constructions to inscribe squares equilateral triangles regular | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-TRI-002. Objective: Use constructions to inscribe squares, equilateral triangles, regular hexagons and octagons by constructing equal divisions of a circle. Includes 12 exam-style MCQs. 对应学习目标：通过对圆的平分在圆内画出正方形、等边三角形、正六边形和正八边形。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #TRI #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: TRI\nObjective EN: Use constructions to inscribe squares, equilateral triangles, regular hexagons and octagons by constructing equal divisions of a circle.\nObjective ZH: 通过对圆的平分在圆内画出正方形、等边三角形、正六边形和正八边形。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-002-use-constructions-to-inscribe-squares-equilateral-tri/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-002-use-constructions-to-inscribe-squares-equilateral-tri/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-002-use-constructions-to-inscribe-squares-equilateral-tri/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-002-use-constructions-to-inscribe-squares-equilateral-tri/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-002-use-constructions-to-inscribe-squares-equilateral-tri/foundation/ai-question-prompt.md"
+  }
+}

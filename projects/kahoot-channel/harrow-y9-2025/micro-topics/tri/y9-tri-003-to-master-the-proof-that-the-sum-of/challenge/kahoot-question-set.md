@@ -1,0 +1,47 @@
+# Year 9 | Y9-TRI-003 | To master the proof that the sum of | Challenge
+
+## Learning Objective
+To master the proof that the sum of angles in a triangle is equal to 180 and that the exterior angle of a triangle is equal to the sum of the two, opposite, interior angles.
+掌握证明三角形内角和等于180度的证明，以及三角形的外角等于两个相对内角之和的证明。
+
+## Grade Group
+Year 9
+
+## LO ID
+Y9-TRI-003
+
+## Unit Code
+TRI
+
+## Difficulty
+Challenge
+
+## Writing Rules
+- Keep question text <= 95 chars.
+- Keep each option <= 60 chars.
+- Use plain text formulas for import; render with KaTeX in QA pass.
+- Use one best answer (A/B/C/D) unless explicitly required.
+
+## Timer
+- Q1-Q4: 30s
+- Q5-Q10: 60s
+- Q11-Q15: 90s
+
+## Kahoot Table
+| # | Question | A | B | C | D | Correct | Type |
+|---|---|---|---|---|---|---|---|
+| 1 | TODO: replace with objective-aligned question 1. | Option A | Option B | Option C | Option D | A | quiz |
+| 2 | TODO: replace with objective-aligned question 2. | Option A | Option B | Option C | Option D | A | quiz |
+| 3 | TODO: replace with objective-aligned question 3. | Option A | Option B | Option C | Option D | A | quiz |
+| 4 | TODO: replace with objective-aligned question 4. | Option A | Option B | Option C | Option D | A | quiz |
+| 5 | TODO: replace with objective-aligned question 5. | Option A | Option B | Option C | Option D | A | quiz |
+| 6 | TODO: replace with objective-aligned question 6. | Option A | Option B | Option C | Option D | A | quiz |
+| 7 | TODO: replace with objective-aligned question 7. | Option A | Option B | Option C | Option D | A | quiz |
+| 8 | TODO: replace with objective-aligned question 8. | Option A | Option B | Option C | Option D | A | quiz |
+| 9 | TODO: replace with objective-aligned question 9. | Option A | Option B | Option C | Option D | A | quiz |
+| 10 | TODO: replace with objective-aligned question 10. | Option A | Option B | Option C | Option D | A | quiz |
+| 11 | TODO: replace with objective-aligned question 11. | Option A | Option B | Option C | Option D | A | quiz |
+| 12 | TODO: replace with objective-aligned question 12. | Option A | Option B | Option C | Option D | A | quiz |
+| 13 | TODO: replace with objective-aligned question 13. | Option A | Option B | Option C | Option D | A | quiz |
+| 14 | TODO: replace with objective-aligned question 14. | Option A | Option B | Option C | Option D | A | quiz |
+| 15 | TODO: replace with objective-aligned question 15. | Option A | Option B | Option C | Option D | A | quiz |

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-GEN-003-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "GEN",
+  "learning_objective": {
+    "lo_id": "Y10-GEN-003",
+    "text_en": "Understand the difference between congruence and similarity.",
+    "text_zh": "理解全等和相似的区别。",
+    "source_heading": "Congruence and Similarity"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-GEN-003 | Understand the difference between congruence and similarity | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-GEN-003. Objective: Understand the difference between congruence and similarity. Includes 12 exam-style MCQs. 对应学习目标：理解全等和相似的区别。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #GEN #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: GEN\nObjective EN: Understand the difference between congruence and similarity.\nObjective ZH: 理解全等和相似的区别。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-003-understand-the-difference-between-congruence-and-sim/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-003-understand-the-difference-between-congruence-and-sim/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-003-understand-the-difference-between-congruence-and-sim/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-003-understand-the-difference-between-congruence-and-sim/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-003-understand-the-difference-between-congruence-and-sim/foundation/ai-question-prompt.md"
+  }
+}

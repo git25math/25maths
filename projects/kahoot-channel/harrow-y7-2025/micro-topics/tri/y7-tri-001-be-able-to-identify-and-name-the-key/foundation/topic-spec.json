@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-TRI-001-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y7-TRI-001",
+    "text_en": "Be able to identify and name the key parts of a circle (include chord, tangent, major/minor segment, and sector).",
+    "text_zh": "能识别和命名圆的关键部分（包括弦、切线、主/次弧和扇形）。",
+    "source_heading": "Circles"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-TRI-001 | Be able to identify and name the key | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-TRI-001. Objective: Be able to identify and name the key parts of a circle (include chord, tangent, major/minor segment, and sector). Includes 12 exam-style MCQs. 对应学习目标：能识别和命名圆的关键部分（包括弦、切线、主/次弧和扇形）。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #TRI #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: TRI\nObjective EN: Be able to identify and name the key parts of a circle (include chord, tangent, major/minor segment, and sector).\nObjective ZH: 能识别和命名圆的关键部分（包括弦、切线、主/次弧和扇形）。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-001-be-able-to-identify-and-name-the-key/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-001-be-able-to-identify-and-name-the-key/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-001-be-able-to-identify-and-name-the-key/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-001-be-able-to-identify-and-name-the-key/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/tri/y7-tri-001-be-able-to-identify-and-name-the-key/foundation/ai-question-prompt.md"
+  }
+}

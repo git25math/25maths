@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-FUN-005-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y9-FUN-005",
+    "text_en": "Identify the equations of parallel and perpendicular lines to a given linear function (and/or given co-ordinates).",
+    "text_zh": "确定与给定线性函数（或给定坐标）平行和垂直的直线方程。",
+    "source_heading": "Linear Graphs"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-FUN-005 | Identify the equations of parallel and perpendicular lines | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-FUN-005. Objective: Identify the equations of parallel and perpendicular lines to a given linear function (and/or given co-ordinates). Includes 12 exam-style MCQs. 对应学习目标：确定与给定线性函数（或给定坐标）平行和垂直的直线方程。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #FUN #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: FUN\nObjective EN: Identify the equations of parallel and perpendicular lines to a given linear function (and/or given co-ordinates).\nObjective ZH: 确定与给定线性函数（或给定坐标）平行和垂直的直线方程。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-005-identify-the-equations-of-parallel-and-perpendicular-/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-005-identify-the-equations-of-parallel-and-perpendicular-/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-005-identify-the-equations-of-parallel-and-perpendicular-/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-005-identify-the-equations-of-parallel-and-perpendicular-/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-005-identify-the-equations-of-parallel-and-perpendicular-/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-ALG-005-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y8-ALG-005",
+    "text_en": "Simplify linear expressions, e.g., collect like terms, multiply a single term over a bracket, multiplying terms and using index notation for small positive integer powers.",
+    "text_zh": "简化线性表达式，如收集同类项、展开单项括号、项的乘积和使用指数符号表示低整数次幂。",
+    "source_heading": "Algebraic Formula"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-ALG-005 | Simplify linear expressions e g collect like terms | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-ALG-005. Objective: Simplify linear expressions, e.g., collect like terms, multiply a single term over a bracket, multiplying terms and using index notation for small positive integer powers. Includes 12 exam-style MCQs. 对应学习目标：简化线性表达式，如收集同类项、展开单项括号、项的乘积和使用指数符号表示低整数次幂。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: ALG\nObjective EN: Simplify linear expressions, e.g., collect like terms, multiply a single term over a bracket, multiplying terms and using index notation for small positive integer powers.\nObjective ZH: 简化线性表达式，如收集同类项、展开单项括号、项的乘积和使用指数符号表示低整数次幂。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-005-simplify-linear-expressions-e-g-collect-like-terms/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-005-simplify-linear-expressions-e-g-collect-like-terms/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-005-simplify-linear-expressions-e-g-collect-like-terms/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-005-simplify-linear-expressions-e-g-collect-like-terms/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-005-simplify-linear-expressions-e-g-collect-like-terms/foundation/ai-question-prompt.md"
+  }
+}

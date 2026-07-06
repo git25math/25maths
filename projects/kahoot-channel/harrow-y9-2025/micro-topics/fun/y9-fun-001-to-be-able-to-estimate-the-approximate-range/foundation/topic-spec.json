@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-FUN-001-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y9-FUN-001",
+    "text_en": "To be able to estimate the approximate range of an irrational number using rational numbers and roots.",
+    "text_zh": "能够使用有理数和根来估计无理数的大致范围。",
+    "source_heading": "Quadratic Surds"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-FUN-001 | To be able to estimate the approximate range | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-FUN-001. Objective: To be able to estimate the approximate range of an irrational number using rational numbers and roots. Includes 12 exam-style MCQs. 对应学习目标：能够使用有理数和根来估计无理数的大致范围。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #FUN #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: FUN\nObjective EN: To be able to estimate the approximate range of an irrational number using rational numbers and roots.\nObjective ZH: 能够使用有理数和根来估计无理数的大致范围。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-001-to-be-able-to-estimate-the-approximate-range/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-001-to-be-able-to-estimate-the-approximate-range/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-001-to-be-able-to-estimate-the-approximate-range/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-001-to-be-able-to-estimate-the-approximate-range/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/fun/y9-fun-001-to-be-able-to-estimate-the-approximate-range/foundation/ai-question-prompt.md"
+  }
+}

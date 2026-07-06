@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-ALG-002-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y7-ALG-002",
+    "text_en": "Master the formulae for circumference and area of a circle by solving equations when given the circumference of area.",
+    "text_zh": "通过解决在已知圆的周长和面积求周长或面积的方程来掌握圆的周长面积公式。",
+    "source_heading": "Circles"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-ALG-002 | Master the formulae for circumference and area of | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-ALG-002. Objective: Master the formulae for circumference and area of a circle by solving equations when given the circumference of area. Includes 12 exam-style MCQs. 对应学习目标：通过解决在已知圆的周长和面积求周长或面积的方程来掌握圆的周长面积公式。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: ALG\nObjective EN: Master the formulae for circumference and area of a circle by solving equations when given the circumference of area.\nObjective ZH: 通过解决在已知圆的周长和面积求周长或面积的方程来掌握圆的周长面积公式。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-002-master-the-formulae-for-circumference-and-area-of/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-002-master-the-formulae-for-circumference-and-area-of/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-002-master-the-formulae-for-circumference-and-area-of/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-002-master-the-formulae-for-circumference-and-area-of/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-002-master-the-formulae-for-circumference-and-area-of/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-STA-001-C",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y8-STA-001",
+    "text_en": "Understand and identify primary and secondary data. Understand and identify discrete and continuous data.",
+    "text_zh": "理解并识别初级和次级数据。理解并识别离散和连续数据。",
+    "source_heading": "Further Statistics"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-STA-001 | Understand and identify primary and secondary data Understand | Challenge",
+    "description_en": "Year 8 Challenge practice aligned to Y8-STA-001. Objective: Understand and identify primary and secondary data. Understand and identify discrete and continuous data. Includes 15 exam-style MCQs. 对应学习目标：理解并识别初级和次级数据。理解并识别离散和连续数据。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #STA #Challenge",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: STA\nObjective EN: Understand and identify primary and secondary data. Understand and identify discrete and continuous data.\nObjective ZH: 理解并识别初级和次级数据。理解并识别离散和连续数据。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-001-understand-and-identify-primary-and-secondary-data-un/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-001-understand-and-identify-primary-and-secondary-data-un/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-001-understand-and-identify-primary-and-secondary-data-un/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-001-understand-and-identify-primary-and-secondary-data-un/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-001-understand-and-identify-primary-and-secondary-data-un/challenge/ai-question-prompt.md"
+  }
+}

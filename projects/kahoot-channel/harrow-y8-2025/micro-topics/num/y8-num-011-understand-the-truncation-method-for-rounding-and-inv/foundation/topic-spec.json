@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-NUM-011-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y8-NUM-011",
+    "text_en": "Understand the truncation method for rounding. And investigate the differences in values when numbers have been rounded using different methods.",
+    "text_zh": "理解截断法并研究使用不同方法四舍五入时数值的差异。",
+    "source_heading": ""
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-NUM-011 | Understand the truncation method for rounding And investigate | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-NUM-011. Objective: Understand the truncation method for rounding. And investigate the differences in values when numbers have been rounded using different methods. Includes 12 exam-style MCQs. 对应学习目标：理解截断法并研究使用不同方法四舍五入时数值的差异。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #NUM #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: NUM\nObjective EN: Understand the truncation method for rounding. And investigate the differences in values when numbers have been rounded using different methods.\nObjective ZH: 理解截断法并研究使用不同方法四舍五入时数值的差异。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-011-understand-the-truncation-method-for-rounding-and-inv/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-011-understand-the-truncation-method-for-rounding-and-inv/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-011-understand-the-truncation-method-for-rounding-and-inv/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-011-understand-the-truncation-method-for-rounding-and-inv/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-011-understand-the-truncation-method-for-rounding-and-inv/foundation/ai-question-prompt.md"
+  }
+}

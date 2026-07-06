@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-NUM-002-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y8-NUM-002",
+    "text_en": "Understand the meaning of opposite numbers and absolute value/modulus/magnitude of a number.",
+    "text_zh": "理解相反数的含义及数的绝对值/模/大小。",
+    "source_heading": ""
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-NUM-002 | Understand the meaning of opposite numbers and absolute | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-NUM-002. Objective: Understand the meaning of opposite numbers and absolute value/modulus/magnitude of a number. Includes 12 exam-style MCQs. 对应学习目标：理解相反数的含义及数的绝对值/模/大小。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #NUM #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: NUM\nObjective EN: Understand the meaning of opposite numbers and absolute value/modulus/magnitude of a number.\nObjective ZH: 理解相反数的含义及数的绝对值/模/大小。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-002-understand-the-meaning-of-opposite-numbers-and-absolu/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-002-understand-the-meaning-of-opposite-numbers-and-absolu/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-002-understand-the-meaning-of-opposite-numbers-and-absolu/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-002-understand-the-meaning-of-opposite-numbers-and-absolu/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-002-understand-the-meaning-of-opposite-numbers-and-absolu/foundation/ai-question-prompt.md"
+  }
+}

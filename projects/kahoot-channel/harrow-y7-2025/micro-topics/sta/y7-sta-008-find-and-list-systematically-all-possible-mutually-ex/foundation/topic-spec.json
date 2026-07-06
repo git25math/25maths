@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-STA-008-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y7-STA-008",
+    "text_en": "Find and list systematically all possible mutually exclusive outcomes for single events and for two successive events. Record all outcomes for two successive events in a sample space diagram.",
+    "text_zh": "系统地找到并列出所有可能的互斥结果，对于单一事件和连续两次事件。将连续两次事件的所有结果记录在样本空间图中。",
+    "source_heading": "Probability"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-STA-008 | Find and list systematically all possible mutually exclusive | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-STA-008. Objective: Find and list systematically all possible mutually exclusive outcomes for single events and for two successive events. Record all outcomes for two successive events in a sample space diagram. Includes 12 exam-style MCQs. 对应学习目标：系统地找到并列出所有可能的互斥结果，对于单一事件和连续两次事件。将连续两次事件的所有结果记录在样本空间图中。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #STA #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: STA\nObjective EN: Find and list systematically all possible mutually exclusive outcomes for single events and for two successive events. Record all outcomes for two successive events in a sample space diagram.\nObjective ZH: 系统地找到并列出所有可能的互斥结果，对于单一事件和连续两次事件。将连续两次事件的所有结果记录在样本空间图中。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/sta/y7-sta-008-find-and-list-systematically-all-possible-mutually-ex/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/sta/y7-sta-008-find-and-list-systematically-all-possible-mutually-ex/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/sta/y7-sta-008-find-and-list-systematically-all-possible-mutually-ex/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/sta/y7-sta-008-find-and-list-systematically-all-possible-mutually-ex/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/sta/y7-sta-008-find-and-list-systematically-all-possible-mutually-ex/foundation/ai-question-prompt.md"
+  }
+}

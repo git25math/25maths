@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-STA-010-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y9-STA-010",
+    "text_en": "Construct cumulative frequency graphs from given data and estimate values from the graph.",
+    "text_zh": "从给定数据构建累积频率图，并从图中估计值。",
+    "source_heading": "Statistics – Group Data Averages"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-STA-010 | Construct cumulative frequency graphs from given data and | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-STA-010. Objective: Construct cumulative frequency graphs from given data and estimate values from the graph. Includes 12 exam-style MCQs. 对应学习目标：从给定数据构建累积频率图，并从图中估计值。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #STA #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: STA\nObjective EN: Construct cumulative frequency graphs from given data and estimate values from the graph.\nObjective ZH: 从给定数据构建累积频率图，并从图中估计值。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-010-construct-cumulative-frequency-graphs-from-given-data/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-010-construct-cumulative-frequency-graphs-from-given-data/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-010-construct-cumulative-frequency-graphs-from-given-data/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-010-construct-cumulative-frequency-graphs-from-given-data/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-010-construct-cumulative-frequency-graphs-from-given-data/foundation/ai-question-prompt.md"
+  }
+}

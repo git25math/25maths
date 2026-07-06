@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-GEO-013-S",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y9-GEO-013",
+    "text_en": "Identify lines of symmetry of 2D solids along with the order of rotational symmetry.",
+    "text_zh": "探索并证明属性决定（平行四边形、矩形、菱形和正方形）和中位线理论。",
+    "source_heading": "2D Shape"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-GEO-013 | Identify lines of symmetry of 2D solids along | Standard",
+    "description_en": "Year 9 Standard practice aligned to Y9-GEO-013. Objective: Identify lines of symmetry of 2D solids along with the order of rotational symmetry. Includes 15 exam-style MCQs. 对应学习目标：探索并证明属性决定（平行四边形、矩形、菱形和正方形）和中位线理论。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #GEO #Standard",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: GEO\nObjective EN: Identify lines of symmetry of 2D solids along with the order of rotational symmetry.\nObjective ZH: 探索并证明属性决定（平行四边形、矩形、菱形和正方形）和中位线理论。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-013-identify-lines-of-symmetry-of-2d-solids-along/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-013-identify-lines-of-symmetry-of-2d-solids-along/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-013-identify-lines-of-symmetry-of-2d-solids-along/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-013-identify-lines-of-symmetry-of-2d-solids-along/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-013-identify-lines-of-symmetry-of-2d-solids-along/standard/ai-question-prompt.md"
+  }
+}

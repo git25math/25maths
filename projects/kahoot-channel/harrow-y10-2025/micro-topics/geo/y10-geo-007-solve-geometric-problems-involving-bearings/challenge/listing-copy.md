@@ -1,0 +1,8 @@
+## Kahoot Name
+Year 10 | Y10-GEO-007 | Solve geometric problems involving bearings | Challenge
+
+## Kahoot Description (EN)
+Year 10 Challenge practice aligned to Y10-GEO-007. Objective: Solve geometric problems involving bearings Includes 15 exam-style MCQs. 对应学习目标：解决涉及方位角的几何问题。共15道选择题。
+
+## Tags
+#Harrow #Bilingual #Year10 #GEO #Challenge

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y11-ALG-010-F",
+  "channel_key": "harrow-y11-2025",
+  "channel_name": "Harrow Year 11 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.345735+00:00",
+  "grade_group": "Year 11",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y11-ALG-010",
+    "text_en": "To solve practical problems involving quadratic sequences.",
+    "text_zh": "",
+    "source_heading": "Quadratic Sequences"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 11 | Y11-ALG-010 | To solve practical problems involving quadratic sequences | Foundation",
+    "description_en": "Year 11 Foundation practice aligned to Y11-ALG-010. Objective: To solve practical problems involving quadratic sequences. Includes 12 exam-style MCQs. 对应学习目标训练，含分层练习与课堂巩固。",
+    "tags": "#Harrow #Bilingual #Year11 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 11 Bilingual Maths\nUnit: ALG\nObjective EN: To solve practical problems involving quadratic sequences.\nObjective ZH: N/A\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/alg/y11-alg-010-to-solve-practical-problems-involving-quadratic-sequ/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/alg/y11-alg-010-to-solve-practical-problems-involving-quadratic-sequ/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/alg/y11-alg-010-to-solve-practical-problems-involving-quadratic-sequ/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/alg/y11-alg-010-to-solve-practical-problems-involving-quadratic-sequ/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/alg/y11-alg-010-to-solve-practical-problems-involving-quadratic-sequ/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-ALG-003-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y7-ALG-003",
+    "text_en": "Generate terms of a linear sequence using term-to-term and position-to-term rules; find term-to-term and position-to-term rules of sequences, including spatial patterns.",
+    "text_zh": "求出等差序列中项的数值通过项和项规律和项数与项规则；找到等差序列的项与项关系和项数与项规则，包括空间模式。",
+    "source_heading": "Linear Sequences"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-ALG-003 | Generate terms of a linear sequence using term | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-ALG-003. Objective: Generate terms of a linear sequence using term-to-term and position-to-term rules; find term-to-term and position-to-term rules of sequences, including spatial patterns. Includes 12 exam-style MCQs. 对应学习目标：求出等差序列中项的数值通过项和项规律和项数与项规则；找到等差序列的项与项关系和项数与项规则，包括空间模式。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: ALG\nObjective EN: Generate terms of a linear sequence using term-to-term and position-to-term rules; find term-to-term and position-to-term rules of sequences, including spatial patterns.\nObjective ZH: 求出等差序列中项的数值通过项和项规律和项数与项规则；找到等差序列的项与项关系和项数与项规则，包括空间模式。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-003-generate-terms-of-a-linear-sequence-using-term/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-003-generate-terms-of-a-linear-sequence-using-term/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-003-generate-terms-of-a-linear-sequence-using-term/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-003-generate-terms-of-a-linear-sequence-using-term/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/alg/y7-alg-003-generate-terms-of-a-linear-sequence-using-term/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-RAT-006-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "RAT",
+  "learning_objective": {
+    "lo_id": "Y10-RAT-006",
+    "text_en": "Understand the monotonicity of inverse function in each quadrant and be able to compare the values of the function given the x-coordinate.",
+    "text_zh": "理解每个象限中反函数的单调性，并能够根据 x 坐标比较函数的值。",
+    "source_heading": "Inverse proportional function"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-RAT-006 | Understand the monotonicity of inverse function in each | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-RAT-006. Objective: Understand the monotonicity of inverse function in each quadrant and be able to compare the values of the function given the x-coordinate. Includes 12 exam-style MCQs. 对应学习目标：理解每个象限中反函数的单调性，并能够根据 x 坐标比较函数的值。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #RAT #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: RAT\nObjective EN: Understand the monotonicity of inverse function in each quadrant and be able to compare the values of the function given the x-coordinate.\nObjective ZH: 理解每个象限中反函数的单调性，并能够根据 x 坐标比较函数的值。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/rat/y10-rat-006-understand-the-monotonicity-of-inverse-function-in-e/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/rat/y10-rat-006-understand-the-monotonicity-of-inverse-function-in-e/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/rat/y10-rat-006-understand-the-monotonicity-of-inverse-function-in-e/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/rat/y10-rat-006-understand-the-monotonicity-of-inverse-function-in-e/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/rat/y10-rat-006-understand-the-monotonicity-of-inverse-function-in-e/foundation/ai-question-prompt.md"
+  }
+}

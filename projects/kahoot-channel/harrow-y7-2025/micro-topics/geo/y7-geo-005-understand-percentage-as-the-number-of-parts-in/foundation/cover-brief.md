@@ -1,0 +1,7 @@
+Theme: Harrow Year 7 Bilingual Maths
+Unit: GEO
+Objective EN: Understand percentage as the number of parts in every 100; use percentages to describe parts of shapes, quantities and measures.
+Objective ZH: 了解百分比是一个数字表示每100个中一部分；使用百分比描述形状、数量和测量值的部分。
+Difficulty: Foundation
+Visual direction: clean math symbols, high contrast, mobile readable
+Do not crowd text near edges; keep center title safe area

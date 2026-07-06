@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-NUM-007-S",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y8-NUM-007",
+    "text_en": "Consolidate dividing by decimals by transforming to division by an integer.",
+    "text_zh": "巩固小数除法，通过转换为整数除法。",
+    "source_heading": ""
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-NUM-007 | Consolidate dividing by decimals by transforming to division | Standard",
+    "description_en": "Year 8 Standard practice aligned to Y8-NUM-007. Objective: Consolidate dividing by decimals by transforming to division by an integer. Includes 15 exam-style MCQs. 对应学习目标：巩固小数除法，通过转换为整数除法。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #NUM #Standard",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: NUM\nObjective EN: Consolidate dividing by decimals by transforming to division by an integer.\nObjective ZH: 巩固小数除法，通过转换为整数除法。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-007-consolidate-dividing-by-decimals-by-transforming-to-d/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-007-consolidate-dividing-by-decimals-by-transforming-to-d/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-007-consolidate-dividing-by-decimals-by-transforming-to-d/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-007-consolidate-dividing-by-decimals-by-transforming-to-d/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-007-consolidate-dividing-by-decimals-by-transforming-to-d/standard/ai-question-prompt.md"
+  }
+}

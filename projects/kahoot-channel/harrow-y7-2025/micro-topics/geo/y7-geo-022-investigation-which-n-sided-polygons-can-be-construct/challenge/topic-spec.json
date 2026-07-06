@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-GEO-022-C",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y7-GEO-022",
+    "text_en": "Investigation: which n-sided polygons can be constructed using the equal division of a circle?",
+    "text_zh": "研究可以用圆的等分构建的多边形。",
+    "source_heading": "Introductions to Constructions"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-GEO-022 | Investigation which n sided polygons can be constructed | Challenge",
+    "description_en": "Year 7 Challenge practice aligned to Y7-GEO-022. Objective: Investigation: which n-sided polygons can be constructed using the equal division of a circle? Includes 15 exam-style MCQs. 对应学习目标：研究可以用圆的等分构建的多边形。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #GEO #Challenge",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: GEO\nObjective EN: Investigation: which n-sided polygons can be constructed using the equal division of a circle?\nObjective ZH: 研究可以用圆的等分构建的多边形。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-022-investigation-which-n-sided-polygons-can-be-construct/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-022-investigation-which-n-sided-polygons-can-be-construct/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-022-investigation-which-n-sided-polygons-can-be-construct/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-022-investigation-which-n-sided-polygons-can-be-construct/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-022-investigation-which-n-sided-polygons-can-be-construct/challenge/ai-question-prompt.md"
+  }
+}

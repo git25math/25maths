@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-NUM-016-C",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y7-NUM-016",
+    "text_en": "Find equivalent fractions, decimals and percentages by converting between them. Use to compare and order different quantities.",
+    "text_zh": "通过互化找到等价分数、小数和百分比。用它们来比较和排序不同的数量。",
+    "source_heading": "Introduction to Percentages"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-NUM-016 | Find equivalent fractions decimals and percentages by converting | Challenge",
+    "description_en": "Year 7 Challenge practice aligned to Y7-NUM-016. Objective: Find equivalent fractions, decimals and percentages by converting between them. Use to compare and order different quantities. Includes 15 exam-style MCQs. 对应学习目标：通过互化找到等价分数、小数和百分比。用它们来比较和排序不同的数量。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #NUM #Challenge",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: NUM\nObjective EN: Find equivalent fractions, decimals and percentages by converting between them. Use to compare and order different quantities.\nObjective ZH: 通过互化找到等价分数、小数和百分比。用它们来比较和排序不同的数量。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-016-find-equivalent-fractions-decimals-and-percentages-by/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-016-find-equivalent-fractions-decimals-and-percentages-by/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-016-find-equivalent-fractions-decimals-and-percentages-by/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-016-find-equivalent-fractions-decimals-and-percentages-by/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-016-find-equivalent-fractions-decimals-and-percentages-by/challenge/ai-question-prompt.md"
+  }
+}

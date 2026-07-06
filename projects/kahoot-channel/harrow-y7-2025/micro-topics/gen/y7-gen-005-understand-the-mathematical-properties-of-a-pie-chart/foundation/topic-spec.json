@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-GEN-005-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "GEN",
+  "learning_objective": {
+    "lo_id": "Y7-GEN-005",
+    "text_en": "Understand the mathematical properties of a pie chart and how the proportions directly link to percentages.",
+    "text_zh": "了解饼图的数学特性，以及比例如何直接与百分比关联。",
+    "source_heading": "Pie Charts"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-GEN-005 | Understand the mathematical properties of a pie chart | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-GEN-005. Objective: Understand the mathematical properties of a pie chart and how the proportions directly link to percentages. Includes 12 exam-style MCQs. 对应学习目标：了解饼图的数学特性，以及比例如何直接与百分比关联。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #GEN #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: GEN\nObjective EN: Understand the mathematical properties of a pie chart and how the proportions directly link to percentages.\nObjective ZH: 了解饼图的数学特性，以及比例如何直接与百分比关联。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/gen/y7-gen-005-understand-the-mathematical-properties-of-a-pie-chart/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/gen/y7-gen-005-understand-the-mathematical-properties-of-a-pie-chart/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/gen/y7-gen-005-understand-the-mathematical-properties-of-a-pie-chart/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/gen/y7-gen-005-understand-the-mathematical-properties-of-a-pie-chart/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/gen/y7-gen-005-understand-the-mathematical-properties-of-a-pie-chart/foundation/ai-question-prompt.md"
+  }
+}

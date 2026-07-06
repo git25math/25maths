@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-GEN-003-S",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "GEN",
+  "learning_objective": {
+    "lo_id": "Y9-GEN-003",
+    "text_en": "Explore the process of finding Pythagoras’ Theorem and prove the Pythagorean theorem using practical techniques.",
+    "text_zh": "探索找到勾股定理的过程，并使用实际技巧证明勾股定理。",
+    "source_heading": "Pythagoras’ theorem"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-GEN-003 | Explore the process of finding Pythagoras Theorem and | Standard",
+    "description_en": "Year 9 Standard practice aligned to Y9-GEN-003. Objective: Explore the process of finding Pythagoras’ Theorem and prove the Pythagorean theorem using practical techniques. Includes 15 exam-style MCQs. 对应学习目标：探索找到勾股定理的过程，并使用实际技巧证明勾股定理。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #GEN #Standard",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: GEN\nObjective EN: Explore the process of finding Pythagoras’ Theorem and prove the Pythagorean theorem using practical techniques.\nObjective ZH: 探索找到勾股定理的过程，并使用实际技巧证明勾股定理。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-003-explore-the-process-of-finding-pythagoras-theorem-and/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-003-explore-the-process-of-finding-pythagoras-theorem-and/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-003-explore-the-process-of-finding-pythagoras-theorem-and/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-003-explore-the-process-of-finding-pythagoras-theorem-and/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-003-explore-the-process-of-finding-pythagoras-theorem-and/standard/ai-question-prompt.md"
+  }
+}

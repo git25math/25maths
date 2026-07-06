@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-TRI-003-S",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y9-TRI-003",
+    "text_en": "To master the proof that the sum of angles in a triangle is equal to 180 and that the exterior angle of a triangle is equal to the sum of the two, opposite, interior angles.",
+    "text_zh": "掌握证明三角形内角和等于180度的证明，以及三角形的外角等于两个相对内角之和的证明。",
+    "source_heading": "Proof"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-TRI-003 | To master the proof that the sum of | Standard",
+    "description_en": "Year 9 Standard practice aligned to Y9-TRI-003. Objective: To master the proof that the sum of angles in a triangle is equal to 180 and that the exterior angle of a triangle is equal to the sum of the two, opposite, interior angles. Includes 15 exam-style MCQs. 对应学习目标：掌握证明三角形内角和等于180度的证明，以及三角形的外角等于两个相对内角之和的证明。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #TRI #Standard",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: TRI\nObjective EN: To master the proof that the sum of angles in a triangle is equal to 180 and that the exterior angle of a triangle is equal to the sum of the two, opposite, interior angles.\nObjective ZH: 掌握证明三角形内角和等于180度的证明，以及三角形的外角等于两个相对内角之和的证明。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-003-to-master-the-proof-that-the-sum-of/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-003-to-master-the-proof-that-the-sum-of/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-003-to-master-the-proof-that-the-sum-of/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-003-to-master-the-proof-that-the-sum-of/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-003-to-master-the-proof-that-the-sum-of/standard/ai-question-prompt.md"
+  }
+}

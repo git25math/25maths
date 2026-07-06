@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-TRI-010-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y10-TRI-010",
+    "text_en": "Use trigonometry (sine, cosine, and tangent) to solve bearing problems involving right-angled and non-right-angled triangles.",
+    "text_zh": "使用三角函数（正弦、余弦、正切）解决包含直角和非直角三角形的方位角问题。",
+    "source_heading": "Bearing"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-TRI-010 | Use trigonometry sine cosine and tangent to solve | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-TRI-010. Objective: Use trigonometry (sine, cosine, and tangent) to solve bearing problems involving right-angled and non-right-angled triangles. Includes 12 exam-style MCQs. 对应学习目标：使用三角函数（正弦、余弦、正切）解决包含直角和非直角三角形的方位角问题。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #TRI #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: TRI\nObjective EN: Use trigonometry (sine, cosine, and tangent) to solve bearing problems involving right-angled and non-right-angled triangles.\nObjective ZH: 使用三角函数（正弦、余弦、正切）解决包含直角和非直角三角形的方位角问题。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-010-use-trigonometry-sine-cosine-and-tangent-to-solve/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-010-use-trigonometry-sine-cosine-and-tangent-to-solve/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-010-use-trigonometry-sine-cosine-and-tangent-to-solve/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-010-use-trigonometry-sine-cosine-and-tangent-to-solve/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/tri/y10-tri-010-use-trigonometry-sine-cosine-and-tangent-to-solve/foundation/ai-question-prompt.md"
+  }
+}

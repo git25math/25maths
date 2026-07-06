@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-GEO-016-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y10-GEO-016",
+    "text_en": "Apply and use circle theorems to find missing lengths and angles.",
+    "text_zh": "应用和使用圆定理找出缺失的长度和角度。",
+    "source_heading": "Circle Theorems"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-GEO-016 | Apply and use circle theorems to find missing | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-GEO-016. Objective: Apply and use circle theorems to find missing lengths and angles. Includes 12 exam-style MCQs. 对应学习目标：应用和使用圆定理找出缺失的长度和角度。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: GEO\nObjective EN: Apply and use circle theorems to find missing lengths and angles.\nObjective ZH: 应用和使用圆定理找出缺失的长度和角度。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-016-apply-and-use-circle-theorems-to-find-missing/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-016-apply-and-use-circle-theorems-to-find-missing/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-016-apply-and-use-circle-theorems-to-find-missing/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-016-apply-and-use-circle-theorems-to-find-missing/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-016-apply-and-use-circle-theorems-to-find-missing/foundation/ai-question-prompt.md"
+  }
+}

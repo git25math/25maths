@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-GEN-005-S",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "GEN",
+  "learning_objective": {
+    "lo_id": "Y10-GEN-005",
+    "text_en": "To be able to combine transformations or identify and describe a single transformation given several previous transformations.",
+    "text_zh": "能够组合变换或根据之前的多个变换识别和描述单一变换。",
+    "source_heading": "Transformations"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-GEN-005 | To be able to combine transformations or identify | Standard",
+    "description_en": "Year 10 Standard practice aligned to Y10-GEN-005. Objective: To be able to combine transformations or identify and describe a single transformation given several previous transformations. Includes 15 exam-style MCQs. 对应学习目标：能够组合变换或根据之前的多个变换识别和描述单一变换。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #GEN #Standard",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: GEN\nObjective EN: To be able to combine transformations or identify and describe a single transformation given several previous transformations.\nObjective ZH: 能够组合变换或根据之前的多个变换识别和描述单一变换。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-005-to-be-able-to-combine-transformations-or-identify/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-005-to-be-able-to-combine-transformations-or-identify/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-005-to-be-able-to-combine-transformations-or-identify/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-005-to-be-able-to-combine-transformations-or-identify/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-005-to-be-able-to-combine-transformations-or-identify/standard/ai-question-prompt.md"
+  }
+}
