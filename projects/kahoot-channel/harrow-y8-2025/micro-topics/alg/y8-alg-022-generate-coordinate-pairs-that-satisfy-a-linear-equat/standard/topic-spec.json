@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-ALG-022-S",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y8-ALG-022",
+    "text_en": "Generate coordinate pairs that satisfy a linear equation, where y is given explicitly in terms of x; plot the corresponding graphs; recognise straight-line graphs parallel to the x- or y-axis.",
+    "text_zh": "生成满足线性方程的坐标对，其中y是以x的形式表示；绘制相应的图表；识别平行于x轴或y轴的直线。",
+    "source_heading": "Linear Graphs"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-ALG-022 | Generate coordinate pairs that satisfy a linear equation | Standard",
+    "description_en": "Year 8 Standard practice aligned to Y8-ALG-022. Objective: Generate coordinate pairs that satisfy a linear equation, where y is given explicitly in terms of x; plot the corresponding graphs; recognise straight-line graphs parallel to the x- or y-axis. Includes 15 exam-style MCQs. 对应学习目标：生成满足线性方程的坐标对，其中y是以x的形式表示；绘制相应的图表；识别平行于x轴或y轴的直线。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #ALG #Standard",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: ALG\nObjective EN: Generate coordinate pairs that satisfy a linear equation, where y is given explicitly in terms of x; plot the corresponding graphs; recognise straight-line graphs parallel to the x- or y-axis.\nObjective ZH: 生成满足线性方程的坐标对，其中y是以x的形式表示；绘制相应的图表；识别平行于x轴或y轴的直线。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-022-generate-coordinate-pairs-that-satisfy-a-linear-equat/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-022-generate-coordinate-pairs-that-satisfy-a-linear-equat/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-022-generate-coordinate-pairs-that-satisfy-a-linear-equat/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-022-generate-coordinate-pairs-that-satisfy-a-linear-equat/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-022-generate-coordinate-pairs-that-satisfy-a-linear-equat/standard/ai-question-prompt.md"
+  }
+}

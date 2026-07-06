@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-FUN-008-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y10-FUN-008",
+    "text_en": "Be able to use the properties of quadratic functions to solve more complex problems related to geometry and practical applications.",
+    "text_zh": "能够利用二次函数的属性解决与几何和实际应用相关的更复杂的问题。",
+    "source_heading": "Quadratic functions"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-FUN-008 | Be able to use the properties of quadratic | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-FUN-008. Objective: Be able to use the properties of quadratic functions to solve more complex problems related to geometry and practical applications. Includes 12 exam-style MCQs. 对应学习目标：能够利用二次函数的属性解决与几何和实际应用相关的更复杂的问题。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #FUN #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: FUN\nObjective EN: Be able to use the properties of quadratic functions to solve more complex problems related to geometry and practical applications.\nObjective ZH: 能够利用二次函数的属性解决与几何和实际应用相关的更复杂的问题。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-008-be-able-to-use-the-properties-of-quadratic/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-008-be-able-to-use-the-properties-of-quadratic/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-008-be-able-to-use-the-properties-of-quadratic/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-008-be-able-to-use-the-properties-of-quadratic/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/fun/y10-fun-008-be-able-to-use-the-properties-of-quadratic/foundation/ai-question-prompt.md"
+  }
+}

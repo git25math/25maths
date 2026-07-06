@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-NUM-006-C",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y8-NUM-006",
+    "text_en": "Consolidate adding and subtracting decimals.",
+    "text_zh": "巩固小数的加法和减法。",
+    "source_heading": ""
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-NUM-006 | Consolidate adding and subtracting decimals | Challenge",
+    "description_en": "Year 8 Challenge practice aligned to Y8-NUM-006. Objective: Consolidate adding and subtracting decimals. Includes 15 exam-style MCQs. 对应学习目标：巩固小数的加法和减法。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #NUM #Challenge",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: NUM\nObjective EN: Consolidate adding and subtracting decimals.\nObjective ZH: 巩固小数的加法和减法。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-006-consolidate-adding-and-subtracting-decimals/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-006-consolidate-adding-and-subtracting-decimals/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-006-consolidate-adding-and-subtracting-decimals/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-006-consolidate-adding-and-subtracting-decimals/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/num/y8-num-006-consolidate-adding-and-subtracting-decimals/challenge/ai-question-prompt.md"
+  }
+}

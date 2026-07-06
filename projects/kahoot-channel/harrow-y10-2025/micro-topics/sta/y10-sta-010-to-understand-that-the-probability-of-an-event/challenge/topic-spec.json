@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-STA-010-C",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y10-STA-010",
+    "text_en": "To understand that the probability of an event occurring is 1 – the probability of the event not occurring and apply this to a variety of problems.",
+    "text_zh": "理解事件发生的概率等于1减去事件不发生的概率，并能够将此原理应用于各种问题中。",
+    "source_heading": "Probability"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-STA-010 | To understand that the probability of an event | Challenge",
+    "description_en": "Year 10 Challenge practice aligned to Y10-STA-010. Objective: To understand that the probability of an event occurring is 1 – the probability of the event not occurring and apply this to a variety of problems. Includes 15 exam-style MCQs. 对应学习目标：理解事件发生的概率等于1减去事件不发生的概率，并能够将此原理应用于各种问题中。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #STA #Challenge",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: STA\nObjective EN: To understand that the probability of an event occurring is 1 – the probability of the event not occurring and apply this to a variety of problems.\nObjective ZH: 理解事件发生的概率等于1减去事件不发生的概率，并能够将此原理应用于各种问题中。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-010-to-understand-that-the-probability-of-an-event/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-010-to-understand-that-the-probability-of-an-event/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-010-to-understand-that-the-probability-of-an-event/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-010-to-understand-that-the-probability-of-an-event/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-010-to-understand-that-the-probability-of-an-event/challenge/ai-question-prompt.md"
+  }
+}

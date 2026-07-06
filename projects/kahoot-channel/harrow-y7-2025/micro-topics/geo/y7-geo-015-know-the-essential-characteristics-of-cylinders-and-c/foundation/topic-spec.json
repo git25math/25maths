@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-GEO-015-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y7-GEO-015",
+    "text_en": "Know the essential characteristics of cylinders and cones.",
+    "text_zh": "了解圆柱和圆锥的基本特征。",
+    "source_heading": "Introduction to Cones and Cylinders"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-GEO-015 | Know the essential characteristics of cylinders and cones | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-GEO-015. Objective: Know the essential characteristics of cylinders and cones. Includes 12 exam-style MCQs. 对应学习目标：了解圆柱和圆锥的基本特征。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: GEO\nObjective EN: Know the essential characteristics of cylinders and cones.\nObjective ZH: 了解圆柱和圆锥的基本特征。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-015-know-the-essential-characteristics-of-cylinders-and-c/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-015-know-the-essential-characteristics-of-cylinders-and-c/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-015-know-the-essential-characteristics-of-cylinders-and-c/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-015-know-the-essential-characteristics-of-cylinders-and-c/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/geo/y7-geo-015-know-the-essential-characteristics-of-cylinders-and-c/foundation/ai-question-prompt.md"
+  }
+}

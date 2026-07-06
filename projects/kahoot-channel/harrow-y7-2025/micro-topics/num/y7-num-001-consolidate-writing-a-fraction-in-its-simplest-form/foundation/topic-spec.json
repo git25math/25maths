@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-NUM-001-F",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "NUM",
+  "learning_objective": {
+    "lo_id": "Y7-NUM-001",
+    "text_en": "Consolidate writing a fraction in its simplest form by cancelling common factors.",
+    "text_zh": "通过约分，将分数写成最简形式。",
+    "source_heading": "Multiplication of Fractions"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-NUM-001 | Consolidate writing a fraction in its simplest form | Foundation",
+    "description_en": "Year 7 Foundation practice aligned to Y7-NUM-001. Objective: Consolidate writing a fraction in its simplest form by cancelling common factors. Includes 12 exam-style MCQs. 对应学习目标：通过约分，将分数写成最简形式。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #NUM #Foundation",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: NUM\nObjective EN: Consolidate writing a fraction in its simplest form by cancelling common factors.\nObjective ZH: 通过约分，将分数写成最简形式。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-001-consolidate-writing-a-fraction-in-its-simplest-form/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-001-consolidate-writing-a-fraction-in-its-simplest-form/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-001-consolidate-writing-a-fraction-in-its-simplest-form/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-001-consolidate-writing-a-fraction-in-its-simplest-form/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/num/y7-num-001-consolidate-writing-a-fraction-in-its-simplest-form/foundation/ai-question-prompt.md"
+  }
+}

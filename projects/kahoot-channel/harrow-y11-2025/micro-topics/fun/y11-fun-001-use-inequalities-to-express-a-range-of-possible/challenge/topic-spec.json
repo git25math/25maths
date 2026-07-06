@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y11-FUN-001-C",
+  "channel_key": "harrow-y11-2025",
+  "channel_name": "Harrow Year 11 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.345735+00:00",
+  "grade_group": "Year 11",
+  "unit_code": "FUN",
+  "learning_objective": {
+    "lo_id": "Y11-FUN-001",
+    "text_en": "Use inequalities to express a range of possible solutions given estimated values and the degree of accuracy given.",
+    "text_zh": "",
+    "source_heading": "Estimation and bounds"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 11 | Y11-FUN-001 | Use inequalities to express a range of possible | Challenge",
+    "description_en": "Year 11 Challenge practice aligned to Y11-FUN-001. Objective: Use inequalities to express a range of possible solutions given estimated values and the degree of accuracy given. Includes 15 exam-style MCQs. 对应学习目标训练，含分层练习与课堂巩固。",
+    "tags": "#Harrow #Bilingual #Year11 #FUN #Challenge",
+    "cover_brief": "Theme: Harrow Year 11 Bilingual Maths\nUnit: FUN\nObjective EN: Use inequalities to express a range of possible solutions given estimated values and the degree of accuracy given.\nObjective ZH: N/A\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/fun/y11-fun-001-use-inequalities-to-express-a-range-of-possible/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/fun/y11-fun-001-use-inequalities-to-express-a-range-of-possible/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/fun/y11-fun-001-use-inequalities-to-express-a-range-of-possible/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/fun/y11-fun-001-use-inequalities-to-express-a-range-of-possible/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y11-2025/micro-topics/fun/y11-fun-001-use-inequalities-to-express-a-range-of-possible/challenge/ai-question-prompt.md"
+  }
+}

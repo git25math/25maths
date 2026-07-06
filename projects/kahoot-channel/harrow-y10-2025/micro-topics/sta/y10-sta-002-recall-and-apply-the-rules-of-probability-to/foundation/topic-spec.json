@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-STA-002-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y10-STA-002",
+    "text_en": "Recall and apply the rules of probability to single events.",
+    "text_zh": "回忆并应用概率规则到单一事件。",
+    "source_heading": "Probability"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-STA-002 | Recall and apply the rules of probability to | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-STA-002. Objective: Recall and apply the rules of probability to single events. Includes 12 exam-style MCQs. 对应学习目标：回忆并应用概率规则到单一事件。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #STA #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: STA\nObjective EN: Recall and apply the rules of probability to single events.\nObjective ZH: 回忆并应用概率规则到单一事件。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-002-recall-and-apply-the-rules-of-probability-to/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-002-recall-and-apply-the-rules-of-probability-to/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-002-recall-and-apply-the-rules-of-probability-to/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-002-recall-and-apply-the-rules-of-probability-to/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/sta/y10-sta-002-recall-and-apply-the-rules-of-probability-to/foundation/ai-question-prompt.md"
+  }
+}

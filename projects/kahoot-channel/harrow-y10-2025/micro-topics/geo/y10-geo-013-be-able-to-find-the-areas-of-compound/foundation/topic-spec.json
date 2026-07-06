@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-GEO-013-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y10-GEO-013",
+    "text_en": "Be able to find the areas of compound shapes including shapes involving sectors.",
+    "text_zh": "能够计算复合形状的面积，包括涉及扇形的形状。",
+    "source_heading": "Arcs and Sectors"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-GEO-013 | Be able to find the areas of compound | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-GEO-013. Objective: Be able to find the areas of compound shapes including shapes involving sectors. Includes 12 exam-style MCQs. 对应学习目标：能够计算复合形状的面积，包括涉及扇形的形状。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: GEO\nObjective EN: Be able to find the areas of compound shapes including shapes involving sectors.\nObjective ZH: 能够计算复合形状的面积，包括涉及扇形的形状。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-013-be-able-to-find-the-areas-of-compound/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-013-be-able-to-find-the-areas-of-compound/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-013-be-able-to-find-the-areas-of-compound/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-013-be-able-to-find-the-areas-of-compound/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-013-be-able-to-find-the-areas-of-compound/foundation/ai-question-prompt.md"
+  }
+}

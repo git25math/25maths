@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-STA-003-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y8-STA-003",
+    "text_en": "Collect and tabulate discrete and continuous data, choosing suitable equal class intervals where appropriate.",
+    "text_zh": "收集并制表离散和连续数据，选择适当的等类间隔。",
+    "source_heading": "Further Statistics"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-STA-003 | Collect and tabulate discrete and continuous data choosing | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-STA-003. Objective: Collect and tabulate discrete and continuous data, choosing suitable equal class intervals where appropriate. Includes 12 exam-style MCQs. 对应学习目标：收集并制表离散和连续数据，选择适当的等类间隔。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #STA #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: STA\nObjective EN: Collect and tabulate discrete and continuous data, choosing suitable equal class intervals where appropriate.\nObjective ZH: 收集并制表离散和连续数据，选择适当的等类间隔。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-003-collect-and-tabulate-discrete-and-continuous-data-cho/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-003-collect-and-tabulate-discrete-and-continuous-data-cho/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-003-collect-and-tabulate-discrete-and-continuous-data-cho/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-003-collect-and-tabulate-discrete-and-continuous-data-cho/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-003-collect-and-tabulate-discrete-and-continuous-data-cho/foundation/ai-question-prompt.md"
+  }
+}

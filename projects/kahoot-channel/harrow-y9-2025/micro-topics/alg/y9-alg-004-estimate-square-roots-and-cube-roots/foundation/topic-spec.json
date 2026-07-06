@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-ALG-004-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y9-ALG-004",
+    "text_en": "Estimate square roots and cube roots",
+    "text_zh": "估算平方根和立方根",
+    "source_heading": "Quadratic Surds"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-ALG-004 | Estimate square roots and cube roots | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-ALG-004. Objective: Estimate square roots and cube roots Includes 12 exam-style MCQs. 对应学习目标：估算平方根和立方根。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: ALG\nObjective EN: Estimate square roots and cube roots\nObjective ZH: 估算平方根和立方根\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-004-estimate-square-roots-and-cube-roots/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-004-estimate-square-roots-and-cube-roots/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-004-estimate-square-roots-and-cube-roots/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-004-estimate-square-roots-and-cube-roots/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-004-estimate-square-roots-and-cube-roots/foundation/ai-question-prompt.md"
+  }
+}

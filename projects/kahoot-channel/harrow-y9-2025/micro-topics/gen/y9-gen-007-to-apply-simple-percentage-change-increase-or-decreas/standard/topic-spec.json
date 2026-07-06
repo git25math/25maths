@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-GEN-007-S",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "GEN",
+  "learning_objective": {
+    "lo_id": "Y9-GEN-007",
+    "text_en": "To apply simple percentage change (increase or decrease).",
+    "text_zh": "应用简单的百分比变化（增加或减少）。",
+    "source_heading": "Percentages"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-GEN-007 | To apply simple percentage change increase or decrease | Standard",
+    "description_en": "Year 9 Standard practice aligned to Y9-GEN-007. Objective: To apply simple percentage change (increase or decrease). Includes 15 exam-style MCQs. 对应学习目标：应用简单的百分比变化（增加或减少）。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #GEN #Standard",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: GEN\nObjective EN: To apply simple percentage change (increase or decrease).\nObjective ZH: 应用简单的百分比变化（增加或减少）。\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-007-to-apply-simple-percentage-change-increase-or-decreas/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-007-to-apply-simple-percentage-change-increase-or-decreas/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-007-to-apply-simple-percentage-change-increase-or-decreas/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-007-to-apply-simple-percentage-change-increase-or-decreas/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/gen/y9-gen-007-to-apply-simple-percentage-change-increase-or-decreas/standard/ai-question-prompt.md"
+  }
+}

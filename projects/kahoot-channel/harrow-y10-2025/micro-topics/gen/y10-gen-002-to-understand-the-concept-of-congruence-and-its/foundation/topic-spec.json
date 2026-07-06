@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-GEN-002-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "GEN",
+  "learning_objective": {
+    "lo_id": "Y10-GEN-002",
+    "text_en": "To understand the concept of congruence and its proof (SSS, SAS, ASA and RHS).",
+    "text_zh": "理解全等的概念及其证明（SSS、SAS、ASA和RHS）。",
+    "source_heading": "Congruence and Similarity"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-GEN-002 | To understand the concept of congruence and its | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-GEN-002. Objective: To understand the concept of congruence and its proof (SSS, SAS, ASA and RHS). Includes 12 exam-style MCQs. 对应学习目标：理解全等的概念及其证明（SSS、SAS、ASA和RHS）。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #GEN #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: GEN\nObjective EN: To understand the concept of congruence and its proof (SSS, SAS, ASA and RHS).\nObjective ZH: 理解全等的概念及其证明（SSS、SAS、ASA和RHS）。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-002-to-understand-the-concept-of-congruence-and-its/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-002-to-understand-the-concept-of-congruence-and-its/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-002-to-understand-the-concept-of-congruence-and-its/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-002-to-understand-the-concept-of-congruence-and-its/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/gen/y10-gen-002-to-understand-the-concept-of-congruence-and-its/foundation/ai-question-prompt.md"
+  }
+}

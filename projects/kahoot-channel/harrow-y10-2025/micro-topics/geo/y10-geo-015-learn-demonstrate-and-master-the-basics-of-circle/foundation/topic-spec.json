@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y10-GEO-015-F",
+  "channel_key": "harrow-y10-2025",
+  "channel_name": "Harrow Year 10 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.194685+00:00",
+  "grade_group": "Year 10",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y10-GEO-015",
+    "text_en": "Learn, demonstrate, and master the basics of circle theorems.",
+    "text_zh": "学习、展示和掌握圆定理的基础知识。",
+    "source_heading": "Circle Theorems"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 10 | Y10-GEO-015 | Learn demonstrate and master the basics of circle | Foundation",
+    "description_en": "Year 10 Foundation practice aligned to Y10-GEO-015. Objective: Learn, demonstrate, and master the basics of circle theorems. Includes 12 exam-style MCQs. 对应学习目标：学习、展示和掌握圆定理的基础知识。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year10 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 10 Bilingual Maths\nUnit: GEO\nObjective EN: Learn, demonstrate, and master the basics of circle theorems.\nObjective ZH: 学习、展示和掌握圆定理的基础知识。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-015-learn-demonstrate-and-master-the-basics-of-circle/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-015-learn-demonstrate-and-master-the-basics-of-circle/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-015-learn-demonstrate-and-master-the-basics-of-circle/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-015-learn-demonstrate-and-master-the-basics-of-circle/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y10-2025/micro-topics/geo/y10-geo-015-learn-demonstrate-and-master-the-basics-of-circle/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-STA-007-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y9-STA-007",
+    "text_en": "To develop a skillset to process data, using techniques such as interpretation of averages and range, including calculator methods where necessary.",
+    "text_zh": "发展处理数据的技能，包括解释平均值和范围的技术，在必要时使用计算器方法",
+    "source_heading": "Statistical Sampling"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-STA-007 | To develop a skillset to process data using | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-STA-007. Objective: To develop a skillset to process data, using techniques such as interpretation of averages and range, including calculator methods where necessary. Includes 12 exam-style MCQs. 对应学习目标：发展处理数据的技能，包括解释平均值和范围的技术，在必要时使用计算器方法。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #STA #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: STA\nObjective EN: To develop a skillset to process data, using techniques such as interpretation of averages and range, including calculator methods where necessary.\nObjective ZH: 发展处理数据的技能，包括解释平均值和范围的技术，在必要时使用计算器方法\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-007-to-develop-a-skillset-to-process-data-using/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-007-to-develop-a-skillset-to-process-data-using/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-007-to-develop-a-skillset-to-process-data-using/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-007-to-develop-a-skillset-to-process-data-using/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/sta/y9-sta-007-to-develop-a-skillset-to-process-data-using/foundation/ai-question-prompt.md"
+  }
+}

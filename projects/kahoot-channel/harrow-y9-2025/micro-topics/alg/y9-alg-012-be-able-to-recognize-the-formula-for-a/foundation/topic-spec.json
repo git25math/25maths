@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-ALG-012-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y9-ALG-012",
+    "text_en": "Be able to recognize the formula for a perfect square binomial expression and use the formula to solve the calculation appropriately.",
+    "text_zh": "能够识别完全平方二项式公式并使用该公式进行正确计算。",
+    "source_heading": "Multiplication formulas"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-ALG-012 | Be able to recognize the formula for a | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-ALG-012. Objective: Be able to recognize the formula for a perfect square binomial expression and use the formula to solve the calculation appropriately. Includes 12 exam-style MCQs. 对应学习目标：能够识别完全平方二项式公式并使用该公式进行正确计算。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: ALG\nObjective EN: Be able to recognize the formula for a perfect square binomial expression and use the formula to solve the calculation appropriately.\nObjective ZH: 能够识别完全平方二项式公式并使用该公式进行正确计算。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-012-be-able-to-recognize-the-formula-for-a/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-012-be-able-to-recognize-the-formula-for-a/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-012-be-able-to-recognize-the-formula-for-a/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-012-be-able-to-recognize-the-formula-for-a/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/alg/y9-alg-012-be-able-to-recognize-the-formula-for-a/foundation/ai-question-prompt.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-GEO-003-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y9-GEO-003",
+    "text_en": "Angles on a straight line and around a point.",
+    "text_zh": "直线和点周围的角度。",
+    "source_heading": "Mastery of Angles"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-GEO-003 | Angles on a straight line and around a | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-GEO-003. Objective: Angles on a straight line and around a point. Includes 12 exam-style MCQs. 对应学习目标：直线和点周围的角度。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: GEO\nObjective EN: Angles on a straight line and around a point.\nObjective ZH: 直线和点周围的角度。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-003-angles-on-a-straight-line-and-around-a/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-003-angles-on-a-straight-line-and-around-a/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-003-angles-on-a-straight-line-and-around-a/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-003-angles-on-a-straight-line-and-around-a/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-003-angles-on-a-straight-line-and-around-a/foundation/ai-question-prompt.md"
+  }
+}

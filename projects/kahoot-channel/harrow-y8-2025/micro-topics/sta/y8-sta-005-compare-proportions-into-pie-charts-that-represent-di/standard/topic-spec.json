@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-STA-005-S",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "STA",
+  "learning_objective": {
+    "lo_id": "Y8-STA-005",
+    "text_en": "Compare proportions into pie charts that represent different totals.",
+    "text_zh": "",
+    "source_heading": "Further Statistics"
+  },
+  "difficulty": {
+    "key": "standard",
+    "label": "Standard",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-STA-005 | Compare proportions into pie charts that represent different | Standard",
+    "description_en": "Year 8 Standard practice aligned to Y8-STA-005. Objective: Compare proportions into pie charts that represent different totals. Includes 15 exam-style MCQs. 对应学习目标训练，含分层练习与课堂巩固。",
+    "tags": "#Harrow #Bilingual #Year8 #STA #Standard",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: STA\nObjective EN: Compare proportions into pie charts that represent different totals.\nObjective ZH: N/A\nDifficulty: Standard\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-005-compare-proportions-into-pie-charts-that-represent-di/standard",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-005-compare-proportions-into-pie-charts-that-represent-di/standard/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-005-compare-proportions-into-pie-charts-that-represent-di/standard/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-005-compare-proportions-into-pie-charts-that-represent-di/standard/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/sta/y8-sta-005-compare-proportions-into-pie-charts-that-represent-di/standard/ai-question-prompt.md"
+  }
+}

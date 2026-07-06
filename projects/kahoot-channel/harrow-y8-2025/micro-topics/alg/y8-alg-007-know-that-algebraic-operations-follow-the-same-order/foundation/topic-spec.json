@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-ALG-007-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y8-ALG-007",
+    "text_en": "Know that algebraic operations follow the same order as arithmetic operations when substituting positive and negative integers into simple linear expressions/formulae and substitute positive and negative integers into formulae, linear expressions and expressions involving small powers, including examples that lead to an equation to solve.",
+    "text_zh": "了解代数运算遵循与算术运算相同的顺序，将正负整数代入简单的线性表达式/公式，并代入涉及低次幂的公式，包括解方程的示例。",
+    "source_heading": "Substitution"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-ALG-007 | Know that algebraic operations follow the same order | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-ALG-007. Objective: Know that algebraic operations follow the same order as arithmetic operations when substituting positive and negative integers into simple linear expressions/formulae and substitute positive and negative integers into formulae, linear expressions and expressions involving small powers, including examples that lead to an equation to solve. Includes 12 exam-style MCQs. 对应学习目标：了解代数运算遵循与算术运算相同的顺序，将正负整数代入简单的线性表达式/公式，并代入涉及低次幂的公式，包括解方程的示例。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: ALG\nObjective EN: Know that algebraic operations follow the same order as arithmetic operations when substituting positive and negative integers into simple linear expressions/formulae and substitute positive and negative integers into formulae, linear expressions and expressions involving small powers, including examples that lead to an equation to solve.\nObjective ZH: 了解代数运算遵循与算术运算相同的顺序，将正负整数代入简单的线性表达式/公式，并代入涉及低次幂的公式，包括解方程的示例。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-007-know-that-algebraic-operations-follow-the-same-order/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-007-know-that-algebraic-operations-follow-the-same-order/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-007-know-that-algebraic-operations-follow-the-same-order/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-007-know-that-algebraic-operations-follow-the-same-order/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-007-know-that-algebraic-operations-follow-the-same-order/foundation/ai-question-prompt.md"
+  }
+}

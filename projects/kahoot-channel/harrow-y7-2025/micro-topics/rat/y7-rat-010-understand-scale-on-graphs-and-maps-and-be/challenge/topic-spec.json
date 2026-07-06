@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y7-RAT-010-C",
+  "channel_key": "harrow-y7-2025",
+  "channel_name": "Harrow Year 7 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.817884+00:00",
+  "grade_group": "Year 7",
+  "unit_code": "RAT",
+  "learning_objective": {
+    "lo_id": "Y7-RAT-010",
+    "text_en": "Understand scale on graphs and maps and be able to calculate the scale as a ratio.",
+    "text_zh": "理解图表和地图上的比例并能以比例计算。",
+    "source_heading": "Proportion"
+  },
+  "difficulty": {
+    "key": "challenge",
+    "label": "Challenge",
+    "question_count": 15
+  },
+  "kahoot": {
+    "name": "Year 7 | Y7-RAT-010 | Understand scale on graphs and maps and be | Challenge",
+    "description_en": "Year 7 Challenge practice aligned to Y7-RAT-010. Objective: Understand scale on graphs and maps and be able to calculate the scale as a ratio. Includes 15 exam-style MCQs. 对应学习目标：理解图表和地图上的比例并能以比例计算。。共15道选择题。",
+    "tags": "#Harrow #Bilingual #Year7 #RAT #Challenge",
+    "cover_brief": "Theme: Harrow Year 7 Bilingual Maths\nUnit: RAT\nObjective EN: Understand scale on graphs and maps and be able to calculate the scale as a ratio.\nObjective ZH: 理解图表和地图上的比例并能以比例计算。\nDifficulty: Challenge\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/rat/y7-rat-010-understand-scale-on-graphs-and-maps-and-be/challenge",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/rat/y7-rat-010-understand-scale-on-graphs-and-maps-and-be/challenge/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/rat/y7-rat-010-understand-scale-on-graphs-and-maps-and-be/challenge/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/rat/y7-rat-010-understand-scale-on-graphs-and-maps-and-be/challenge/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y7-2025/micro-topics/rat/y7-rat-010-understand-scale-on-graphs-and-maps-and-be/challenge/ai-question-prompt.md"
+  }
+}

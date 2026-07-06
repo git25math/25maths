@@ -60,3 +60,8 @@ scripts/test-users/reports/
 
 # Claude Code worktrees
 .claude/worktrees/
+
+# Harrow cover PNGs are regenerable from the committed SVG via
+# scripts/kahoot/new_channel/generate_harrow_covers.py — kept on disk for
+# manual Kahoot upload but excluded from history to avoid ~290MB of bloat.
+projects/kahoot-channel/harrow-*/**/cover-2320x1520-kahoot-minimal.png

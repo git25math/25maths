@@ -1,0 +1,8 @@
+## Kahoot Name
+Year 10 | Y10-TRI-014 | To be able to construct any given triangle | Challenge
+
+## Kahoot Description (EN)
+Year 10 Challenge practice aligned to Y10-TRI-014. Objective: To be able to construct any given triangle (SAS, ASA, SSS, RHS). Includes 15 exam-style MCQs. 对应学习目标：能够构造任意给定的三角形（SAS、ASA、SSS、RHS）。。共15道选择题。
+
+## Tags
+#Harrow #Bilingual #Year10 #TRI #Challenge

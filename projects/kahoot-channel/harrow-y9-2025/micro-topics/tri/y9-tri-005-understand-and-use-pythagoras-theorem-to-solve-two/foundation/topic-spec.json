@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-TRI-005-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "TRI",
+  "learning_objective": {
+    "lo_id": "Y9-TRI-005",
+    "text_en": "Understand and use Pythagoras’ theorem to solve two-dimensional problems involving right-angled triangles.",
+    "text_zh": "理解并使用勾股定理解决涉及直角三角形的二维问题。",
+    "source_heading": "Pythagoras’ theorem"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-TRI-005 | Understand and use Pythagoras theorem to solve two | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-TRI-005. Objective: Understand and use Pythagoras’ theorem to solve two-dimensional problems involving right-angled triangles. Includes 12 exam-style MCQs. 对应学习目标：理解并使用勾股定理解决涉及直角三角形的二维问题。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #TRI #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: TRI\nObjective EN: Understand and use Pythagoras’ theorem to solve two-dimensional problems involving right-angled triangles.\nObjective ZH: 理解并使用勾股定理解决涉及直角三角形的二维问题。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-005-understand-and-use-pythagoras-theorem-to-solve-two/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-005-understand-and-use-pythagoras-theorem-to-solve-two/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-005-understand-and-use-pythagoras-theorem-to-solve-two/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-005-understand-and-use-pythagoras-theorem-to-solve-two/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/tri/y9-tri-005-understand-and-use-pythagoras-theorem-to-solve-two/foundation/ai-question-prompt.md"
+  }
+}

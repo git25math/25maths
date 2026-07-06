@@ -1,0 +1,16 @@
+# AI Prompt - Year 10 | Y10-RAT-003 | Be able to identify the properties of inverse | Standard
+
+Generate complete Kahoot table rows for this topic.
+
+Constraints:
+- Question count: 15
+- Question length <= 95 chars
+- Option length <= 60 chars
+- 4 options and one correct answer per row
+- Keep language clear, exam-style, and grade-appropriate
+
+Objective:
+- EN: Be able to identify the properties of inverse functions by observing the graph of the function, including domain, range, symmetry.
+- ZH: 能够通过观察函数图像确定反函数的属性，包括定义域、值域和对称性。
+- Unit: RAT
+- Difficulty: Standard

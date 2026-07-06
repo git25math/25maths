@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y9-GEO-014-F",
+  "channel_key": "harrow-y9-2025",
+  "channel_name": "Harrow Year 9 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:04.048248+00:00",
+  "grade_group": "Year 9",
+  "unit_code": "GEO",
+  "learning_objective": {
+    "lo_id": "Y9-GEO-014",
+    "text_en": "To recognize and appreciate rotational and reflective symmetry in real-life, in art for example.",
+    "text_zh": "识别二维固体的对称轴以及旋转对称的顺序。",
+    "source_heading": "2D Shape"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 9 | Y9-GEO-014 | To recognize and appreciate rotational and reflective symmetry | Foundation",
+    "description_en": "Year 9 Foundation practice aligned to Y9-GEO-014. Objective: To recognize and appreciate rotational and reflective symmetry in real-life, in art for example. Includes 12 exam-style MCQs. 对应学习目标：识别二维固体的对称轴以及旋转对称的顺序。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year9 #GEO #Foundation",
+    "cover_brief": "Theme: Harrow Year 9 Bilingual Maths\nUnit: GEO\nObjective EN: To recognize and appreciate rotational and reflective symmetry in real-life, in art for example.\nObjective ZH: 识别二维固体的对称轴以及旋转对称的顺序。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-014-to-recognize-and-appreciate-rotational-and-reflective/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-014-to-recognize-and-appreciate-rotational-and-reflective/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-014-to-recognize-and-appreciate-rotational-and-reflective/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-014-to-recognize-and-appreciate-rotational-and-reflective/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y9-2025/micro-topics/geo/y9-geo-014-to-recognize-and-appreciate-rotational-and-reflective/foundation/ai-question-prompt.md"
+  }
+}

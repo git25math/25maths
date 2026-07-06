@@ -1,0 +1,33 @@
+{
+  "topic_id": "Y8-ALG-006-F",
+  "channel_key": "harrow-y8-2025",
+  "channel_name": "Harrow Year 8 Bilingual Maths",
+  "board_label": "Harrow Bilingual Maths",
+  "generated_at_utc": "2026-03-03T03:12:03.936738+00:00",
+  "grade_group": "Year 8",
+  "unit_code": "ALG",
+  "learning_objective": {
+    "lo_id": "Y8-ALG-006",
+    "text_en": "Factorise more complex linear expressions including identifying common unknowns with differing index into single brackets.",
+    "text_zh": "因式分解更复杂的线性表达式，包括将具有不同指数的公共未知数合并到一个括号中。",
+    "source_heading": "Factorising"
+  },
+  "difficulty": {
+    "key": "foundation",
+    "label": "Foundation",
+    "question_count": 12
+  },
+  "kahoot": {
+    "name": "Year 8 | Y8-ALG-006 | Factorise more complex linear expressions including identifying common | Foundation",
+    "description_en": "Year 8 Foundation practice aligned to Y8-ALG-006. Objective: Factorise more complex linear expressions including identifying common unknowns with differing index into single brackets. Includes 12 exam-style MCQs. 对应学习目标：因式分解更复杂的线性表达式，包括将具有不同指数的公共未知数合并到一个括号中。。共12道选择题。",
+    "tags": "#Harrow #Bilingual #Year8 #ALG #Foundation",
+    "cover_brief": "Theme: Harrow Year 8 Bilingual Maths\nUnit: ALG\nObjective EN: Factorise more complex linear expressions including identifying common unknowns with differing index into single brackets.\nObjective ZH: 因式分解更复杂的线性表达式，包括将具有不同指数的公共未知数合并到一个括号中。\nDifficulty: Foundation\nVisual direction: clean math symbols, high contrast, mobile readable\nDo not crowd text near edges; keep center title safe area"
+  },
+  "paths": {
+    "topic_dir": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-006-factorise-more-complex-linear-expressions-including-i/foundation",
+    "question_set": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-006-factorise-more-complex-linear-expressions-including-i/foundation/kahoot-question-set.md",
+    "listing_copy": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-006-factorise-more-complex-linear-expressions-including-i/foundation/listing-copy.md",
+    "cover_brief": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-006-factorise-more-complex-linear-expressions-including-i/foundation/cover-brief.md",
+    "ai_prompt": "/Users/zhuxingzhe/Project/ExamBoard/25maths-website/projects/kahoot-channel/harrow-y8-2025/micro-topics/alg/y8-alg-006-factorise-more-complex-linear-expressions-including-i/foundation/ai-question-prompt.md"
+  }
+}
