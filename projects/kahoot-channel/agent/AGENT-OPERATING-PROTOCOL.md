@@ -11,6 +11,21 @@ Each micro-topic pack must contain:
 3. `worksheet-answers.md`
 4. `listing-copy.md`
 
+## Non-negotiables (铁律)
+1. Research deeply first; never guess or assume. Read the actual files/data,
+   scripts, and official syllabus before you assert, write, or mark anything
+   done. 动手前必须深入调研,绝不臆想和猜。
+2. Respect the already-developed history. Before building anything, find what
+   already exists in the repo (content, covers, scripts, pipeline, docs) and
+   build on it — never reinvent, ignore, bypass, or overwrite prior work based
+   on assumption. 尊重已开发的历史:先摸清仓库已有成果,在其基础上做,绝不重造或覆盖。
+3. If something is not verified, say it is unverified. Do not fabricate
+   answers, counts, statuses, URLs, or "completed/done" claims.
+   未经核实就如实说未知,不得编造。
+4. When a check contradicts how something was described, surface the
+   contradiction instead of proceeding on the assumption.
+   发现与描述不符,先暴露矛盾,不要将错就错。
+
 ## Source of truth
 - CIE backlog: `CIE0580-MICROTOPIC-BACKLOG.csv`
 - Edexcel backlog: `EDEXCEL-4MA1-MICROTOPIC-BACKLOG.csv`
