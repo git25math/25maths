@@ -11,7 +11,10 @@ permissions:
 
 jobs:
   validate-and-build:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04, which Playwright 1.52.0 cannot
+    # install browsers on ("ERROR: Playwright does not support chromium on
+    # ubuntu26.04-x64"). Stay on 24.04 until the Playwright pin is bumped.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
       JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
