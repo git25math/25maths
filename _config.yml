@@ -13,10 +13,14 @@ waitlist:
   success_path: "/thanks.html"
 
 # Supabase member system bootstrap (publishable values only)
+# 2026-11-26: the public site is static read-only. Member sign-in moved to the
+# local installation together with the database, so no SDK is loaded and no
+# request can reach the retired cloud project. Flip enabled back to true only
+# if a backend is live again — the URL/key are kept here for that case.
 supabase:
-  enabled: true
-  url: "https://jjjigohjvmyewasmmmyf.supabase.co"
-  anon_key: "sb_publishable_EDe6c9jFS4_PL451oYMYzg_86KRbHRZ"
+  enabled: false
+  url: ""      # was https://<retired-project>.supabase.co
+  anon_key: ""
 
 # Analytics (leave gtm_id blank to disable GTM)
 analytics:
@@ -25,7 +29,7 @@ analytics:
 # Security baseline (applied via meta tags in templates)
 security:
   referrer_policy: "strict-origin-when-cross-origin"
-  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.supabase.co wss://*.supabase.co https://www.googletagmanager.com https://cloudflareinsights.com; frame-src https://payhip.com; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  csp: "default-src 'self'; script-src 'self' 'unsafe-inline' https://payhip.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://www.googletagmanager.com https://cloudflareinsights.com; frame-src https://payhip.com; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
 
 # Build settings
 permalink: /:year/:month/:day/:title:output_ext
